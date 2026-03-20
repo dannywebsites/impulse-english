@@ -197,5 +197,11 @@ const schemaGraph = {
     <main id="main" class="min-h-screen w-full bg-white flex flex-col font-sans selection:bg-accent-blue selection:text-white">
       <slot />
     </main>
+    <script>
+      import { inject } from '@vercel/analytics';
+      import { injectSpeedInsights } from '@vercel/speed-insights';
+      inject();
+      injectSpeedInsights();
+    </script>
   </body>
 </html>
