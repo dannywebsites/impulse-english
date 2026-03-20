@@ -5,8 +5,8 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://impulse-english.es/sitemap.xml
-Sitemap: https://impulse-english.es/sitemap-images.xml
+Sitemap: https://www.impulse-english.es/sitemap.xml
+Sitemap: https://www.impulse-english.es/sitemap-images.xml
 
 # Disallow admin/utility pages
 Disallow: /gracias
