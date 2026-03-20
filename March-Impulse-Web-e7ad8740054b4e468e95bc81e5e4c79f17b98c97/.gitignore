@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Backup and archive files
+*.bak
+*.zip
+
+# Legacy/duplicate directories
+Impulse-English-Academy-main/
+components 2/
+location pages /
+new photos/
+files/
+wp-theme/
+brand/
+logos/
+reports/
+
+# Legacy/duplicate files
+package 2.json
+divi-legacy-redirects.csv
+wp-mcp-migration-plan.md
+PAA_DEPLOYMENT_STATUS.md
+metadata.json

@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l \"/Users/danny/Desktop/March Impulse Web page, official/seo-system/brand/files\"/*.md)",
+      "Bash(echo \"EXIT: $?\")",
+      "WebFetch(domain:share.google)",
+      "WebFetch(domain:www.impulse-english.es)",
+      "Read(//Users/danny/Desktop/March Impulse Web page, official/**)",
+      "Bash(rm -f PAA-opportunities.csv INTERNAL-LINKING-MAP.md)",
+      "Bash(rm -rf docs/ node_modules/ dist/)",
+      "Bash(mkdir -p src/data)",
+      "Bash(mv data/images.ts data/academyImages.ts data/imageManifest.json src/data/)",
+      "Bash(rmdir data)",
+      "Bash(mv impulse-website/App.tsx impulse-website/index.tsx impulse-website/index.html impulse-website/package.json impulse-website/package-lock.json impulse-website/tsconfig.json impulse-website/vite.config.ts .)",
+      "Bash(mv impulse-website/components impulse-website/pages impulse-website/public impulse-website/scripts impulse-website/utils impulse-website/src .)",
+      "Bash(rm -rf impulse-website)",
+      "Bash(sed -i '' \"s|from ''../data/images''|from ''../src/data/images''|g\" components/TeamSection.tsx components/InfoCards.tsx components/ExamPageLayout.tsx pages/TestimonialsPage.tsx pages/SobreNosotrosPage.tsx)",
+      "Bash(sed -i '' \"s|from ''../data/academyImages''|from ''../src/data/academyImages''|g\" components/AcademyGallery.tsx components/FullPhotoGallery.tsx)",
+      "Bash(mv brand/files/*.md brand/)",
+      "Bash(rmdir brand/files)",
+      "Bash(cp \"location pages /Impulse_Academy_Location_Pages.docx\" data/location-pages/)",
+      "Bash(rm -rf \"location pages \")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\(''''scripts'''',{}\\), indent=2\\)\\)\")",
+      "Bash(npm -v)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
