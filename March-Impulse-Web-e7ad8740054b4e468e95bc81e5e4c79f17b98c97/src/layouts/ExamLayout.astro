@@ -1,0 +1,33 @@
+---
+/**
+ * ExamLayout.astro
+ * Wraps BaseLayout for Cambridge exam pages with exam-specific SEO defaults.
+ */
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  keywords?: string;
+  canonical: string;
+  schemas?: object[];
+}
+
+const {
+  title,
+  description,
+  keywords,
+  canonical,
+  schemas = [],
+} = Astro.props;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  schemas={schemas}
+>
+  <slot />
+</BaseLayout>

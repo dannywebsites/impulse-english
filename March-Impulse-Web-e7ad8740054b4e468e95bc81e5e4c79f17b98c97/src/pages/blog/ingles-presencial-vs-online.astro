@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InglesPresencialVsOnlinePage, { articleSchema, faqItems } from '../../../pages/blog/InglesPresencialVsOnlinePage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Inglés Presencial vs Online: Ventajas y Desventajas 2026"
+  description="Compara clases de inglés presenciales y online: efectividad, precio, flexibilidad y para quién es mejor cada modalidad. Guía completa con datos reales."
+  canonical="/blog/ingles-presencial-vs-online"
+  ogType="article"
+  schemas={schemas}
+>
+  <InglesPresencialVsOnlinePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

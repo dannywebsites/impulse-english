@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, MessageCircle, Phone } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
 import { NAP } from '../utils/napData';
 
 const LOGO_URL = NAP.logo;
@@ -44,12 +43,11 @@ const navItems: NavItem[] = [
   }
 ];
 
-export default function Navbar() {
+export default function Navbar({ currentPath = '/' }: { currentPath?: string }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const location = useLocation();
-  const isHomePage = location.pathname === '/';
+  const isHomePage = currentPath === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,7 +60,7 @@ export default function Navbar() {
   useEffect(() => {
     setMobileMenuOpen(false);
     setOpenDropdown(null);
-  }, [location]);
+  }, [currentPath]);
 
   // Homepage transparent navbar
   if (isHomePage) {
@@ -77,13 +75,13 @@ export default function Navbar() {
         >
           <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
             {/* Logo */}
-            <Link to="/" className="flex items-center">
+            <a href="/" className="flex items-center">
               <img
                 src={LOGO_URL}
                 alt="Impulse English Academy"
                 className="h-[70px] md:h-20 lg:h-[100px] w-auto"
               />
-            </Link>
+            </a>
 
             {/* Mobile CTA Buttons + Menu Toggle */}
             <div className="xl:hidden flex items-center gap-2">
@@ -127,12 +125,12 @@ export default function Navbar() {
                       <ChevronDown className="w-4 h-4" />
                     </button>
                   ) : (
-                    <Link
-                      to={item.href!}
+                    <a
+                      href={item.href!}
                       className="text-white/90 font-medium text-sm tracking-wide hover:text-white transition-colors px-4 py-2"
                     >
                       {item.label}
-                    </Link>
+                    </a>
                   )}
 
                   {/* Dropdown */}
@@ -145,16 +143,16 @@ export default function Navbar() {
                       onMouseLeave={() => setOpenDropdown(null)}
                     >
                       {item.children.map((child) => (
-                        <Link
+                        <a
                           key={child.href}
-                          to={child.href}
+                          href={child.href}
                           className="block px-4 py-3 hover:bg-zinc-50 transition-colors"
                         >
                           <span className="block text-zinc-900 font-semibold text-sm">{child.label}</span>
                           {child.description && (
                             <span className="block text-zinc-500 text-xs mt-0.5">{child.description}</span>
                           )}
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   )}
@@ -202,13 +200,13 @@ export default function Navbar() {
       >
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img
               src={LOGO_URL}
               alt="Impulse English Academy"
               className="h-[70px] md:h-20 lg:h-[100px] w-auto"
             />
-          </Link>
+          </a>
 
           {/* Mobile CTA Buttons + Menu Toggle */}
           <div className="xl:hidden flex items-center gap-2">
@@ -252,16 +250,16 @@ export default function Navbar() {
                     <ChevronDown className="w-4 h-4" />
                   </button>
                 ) : (
-                  <Link
-                    to={item.href!}
+                  <a
+                    href={item.href!}
                     className={`font-medium text-sm tracking-wide transition-colors px-4 py-2 ${
-                      location.pathname === item.href
+                      currentPath === item.href
                         ? 'text-accent-blue'
                         : 'text-zinc-700 hover:text-accent-blue'
                     }`}
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 )}
 
                 {/* Dropdown */}
@@ -274,16 +272,16 @@ export default function Navbar() {
                     onMouseLeave={() => setOpenDropdown(null)}
                   >
                     {item.children.map((child) => (
-                      <Link
+                      <a
                         key={child.href}
-                        to={child.href}
+                        href={child.href}
                         className="block px-4 py-3 hover:bg-zinc-50 transition-colors"
                       >
                         <span className="block text-zinc-900 font-semibold text-sm">{child.label}</span>
                         {child.description && (
                           <span className="block text-zinc-500 text-xs mt-0.5">{child.description}</span>
                         )}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 )}
@@ -344,28 +342,28 @@ function MobileMenu({ isOpen, onClose, isHomePage }: { isOpen: boolean; onClose:
                   {expandedItem === item.label && (
                     <div className="pl-4 space-y-2 pb-2">
                       {item.children.map((child) => (
-                        <Link
+                        <a
                           key={child.href}
-                          to={child.href}
+                          href={child.href}
                           onClick={onClose}
                           className={`block py-2 ${isHomePage ? 'text-white/70 hover:text-white' : 'text-zinc-600 hover:text-accent-blue'}`}
                         >
                           {child.label}
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   )}
                 </>
               ) : (
-                <Link
-                  to={item.href!}
+                <a
+                  href={item.href!}
                   onClick={onClose}
                   className={`block py-3 text-lg font-semibold ${
                     isHomePage ? 'text-white' : 'text-zinc-900'
                   }`}
                 >
                   {item.label}
-                </Link>
+                </a>
               )}
             </div>
           ))}

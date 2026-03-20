@@ -1,15 +1,11 @@
 import React, { useEffect } from 'react';
 import { Calendar, Clock, ArrowLeft, FileText, Globe, BookOpen, Laptop, MapPin, GraduationCap, CheckCircle, ExternalLink } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
-import SEOHead from '../../components/SEOHead';
-
 const tableOfContents = [
   { id: 'preguntas-frecuentes', title: 'Preguntas Frecuentes' },
   { id: 'donde-aprender', title: 'Dónde Aprender Inglés: Guía Completa' },
@@ -19,7 +15,7 @@ const tableOfContents = [
   { id: 'espana', title: 'Aprender Inglés en España' },
 ];
 
-const faqs = [
+export const faqs = [
   {
     question: "¿Cuánto tiempo se tarda en aprender inglés?",
     answer: "Aprender inglés desde cero hasta nivel B1/B2 requiere entre 600 y 750 horas de estudio guiado, equivalentes a 1-3 años según constancia, método y dedicación. La combinación de estudio diario estructurado, inmersión activa y práctica comunicativa acelera significativamente el progreso."
@@ -166,28 +162,21 @@ const paises = [
   { name: 'Estados Unidos', pros: 'Mayor variedad', cons: 'Visado complejo', ideal: 'Inglés americano' },
 ];
 
-export default function AprendeInglesGuiaPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Aprende Inglés: Guía Completa 2025",
     description: "Guía definitiva para aprender inglés: mejores cursos online, plataformas, países para estudiar y opciones en España. Métodos efectivos y recursos.",
     url: `${businessInfo.url}/blog/aprende-ingles-guia`,
     datePublished: "2025-01-01"
   });
 
+export default function AprendeInglesGuiaPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-      <SEOHead
-        title="Dónde y Cómo Aprender Inglés: Guía Definitiva 2025 | Cursos Online, Plataformas y Países"
-        description="Guía completa para aprender inglés: mejores cursos online, plataformas gratuitas y premium, países para estudiar, academias en España y métodos efectivos. 22 preguntas respondidas."
-        keywords="aprender inglés, cursos inglés online, plataformas aprender inglés, países estudiar inglés, babbel, duolingo, academias inglés españa, métodos aprender inglés"
-        canonical="/aprende-ingles"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       <article>
         {/* Hero Section */}
@@ -346,7 +335,7 @@ export default function AprendeInglesGuiaPage() {
               <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl p-6 text-white">
                 <h3 className="font-bold text-xl mb-2">Nuestra Recomendación</h3>
                 <p className="text-white/90">
-                  Para certificación oficial Cambridge, combina nuestros <Link to="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</Link> en nuestra <Link to="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">academia junto a La Vaguada</Link> (preparación estructurada)
+                  Para certificación oficial Cambridge, combina nuestros <a href="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> en nuestra <a href="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">academia junto a La Vaguada</a> (preparación estructurada)
                   con práctica diaria en apps como Duolingo o Babbel. Esta combinación maximiza resultados
                   en el menor tiempo posible.
                 </p>
@@ -435,14 +424,14 @@ export default function AprendeInglesGuiaPage() {
                     <ul className="text-zinc-600 space-y-1">
                       <li>• British Council (desde 519€/trimestre)</li>
                       <li>• International House (desde 172€/mes)</li>
-                      <li>• <Link to="/academia-ingles-barrio-del-pilar" className="text-purple-600 hover:underline font-medium">Academia en Barrio del Pilar</Link> (desde 79€/mes)</li>
+                      <li>• <a href="/academia-ingles-barrio-del-pilar" className="text-purple-600 hover:underline font-medium">Academia en Barrio del Pilar</a> (desde 79€/mes)</li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-medium text-zinc-900 mb-2">Certificaciones recomendadas</h4>
                     <ul className="text-zinc-600 space-y-1">
-                      <li>• <Link to="/examenes-cambridge" className="text-purple-600 hover:underline font-medium">Exámenes Cambridge</Link> (B1-C2)</li>
-                      <li>• <Link to="/linguaskill" className="text-purple-600 hover:underline font-medium">Linguaskill</Link> (resultados 48h)</li>
+                      <li>• <a href="/examenes-cambridge" className="text-purple-600 hover:underline font-medium">Exámenes Cambridge</a> (B1-C2)</li>
+                      <li>• <a href="/linguaskill" className="text-purple-600 hover:underline font-medium">Linguaskill</a> (resultados 48h)</li>
                       <li>• IELTS (reconocimiento global)</li>
                     </ul>
                   </div>
@@ -520,18 +509,18 @@ export default function AprendeInglesGuiaPage() {
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <Link to="/academias-ingles-madrid" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <a href="/academias-ingles-madrid" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-zinc-900 mb-2">Academias de Inglés Madrid</h3>
                 <p className="text-zinc-600 text-sm">Comparativa completa de academias en Madrid con precios actualizados.</p>
-              </Link>
-              <Link to="/examenes-cambridge" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+              </a>
+              <a href="/examenes-cambridge" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-zinc-900 mb-2">Exámenes Cambridge</h3>
                 <p className="text-zinc-600 text-sm">Guía completa de certificaciones Cambridge: B1, B2, C1 y C2.</p>
-              </Link>
-              <Link to="/metodologia" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+              </a>
+              <a href="/metodologia" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-zinc-900 mb-2">Metodología de Aprendizaje</h3>
                 <p className="text-zinc-600 text-sm">Los métodos más efectivos para aprender inglés rápidamente.</p>
-              </Link>
+              </a>
             </div>
 
           </div>
@@ -560,12 +549,12 @@ export default function AprendeInglesGuiaPage() {
               <p className="text-white/90 text-lg mb-8">
                 100% de aprobados Cambridge. Metodología probada. Profesores que se comprometen con tu éxito.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-full font-bold hover:bg-purple-50 transition-colors"
               >
                 Empieza tu transformación
-              </Link>
+              </a>
             </div>
 
           </div>
@@ -600,7 +589,6 @@ export default function AprendeInglesGuiaPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

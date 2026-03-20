@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PlazaCastillaPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/PlazaCastillaPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Academia de Inglés en Plaza Castilla"
+  description="Academia de inglés cerca de Plaza Castilla Madrid. Centro preparador Cambridge oficial con 100% aprobados. A 15 min en Metro Línea 9. Grupos reducidos."
+  keywords="academia inglés plaza castilla, clases inglés plaza castilla, cursos inglés plaza castilla madrid, cambridge plaza castilla, aprender inglés plaza castilla"
+  canonical="/academia-ingles-plaza-castilla"
+  schemas={schemas}
+>
+  <PlazaCastillaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

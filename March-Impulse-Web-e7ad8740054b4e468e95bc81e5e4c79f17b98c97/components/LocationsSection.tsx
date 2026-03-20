@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { MapPin, Clock, Phone, Train, Navigation, ArrowRight } from 'lucide-react';
 import { NAP } from '../utils/napData';
 
@@ -112,20 +111,20 @@ export default function LocationsSection() {
             </p>
             <div className="grid grid-cols-2 gap-3">
               {areas.map((area, index) => (
-                <Link
+                <a
                   key={index}
-                  to={area.href}
+                  href={area.href}
                   className="flex items-center gap-2 bg-zinc-50 px-4 py-3 rounded-lg hover:bg-accent-blue/10 hover:border-accent-blue/20 border border-transparent transition-colors group"
                 >
                   <div className="w-2 h-2 bg-accent-blue rounded-full"></div>
                   <span className="text-zinc-700 font-medium group-hover:text-accent-blue transition-colors">{area.name}</span>
-                </Link>
+                </a>
               ))}
             </div>
             <div className="mt-4 text-center">
-              <Link to="/academias-ingles-madrid/por-barrios" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
+              <a href="/academias-ingles-madrid/por-barrios" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
                 Ver todas las ubicaciones <ArrowRight className="w-4 h-4" />
-              </Link>
+              </a>
             </div>
 
             <div className="mt-8 p-4 bg-accent-blue/5 rounded-lg border border-accent-blue/10">

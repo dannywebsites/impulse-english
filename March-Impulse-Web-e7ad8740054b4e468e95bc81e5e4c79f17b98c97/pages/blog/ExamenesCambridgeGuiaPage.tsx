@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, CheckCircle, Award, GraduationCap, Briefcase, MessageCircle, ChevronRight, Users, FileText, Target, Lightbulb, Globe, Headphones, Mic, PenTool, ExternalLink } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
 
-const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
   headline: "Guía Completa de Exámenes Cambridge 2026: Niveles, Estructura y Preparación",
   description: "Guía definitiva de exámenes Cambridge: B1 Preliminary, B2 First, C1 Advanced y C2 Proficiency. Estructura, preparación, fechas y consejos de expertos.",
   url: `${businessInfo.url}/blog/examenes-cambridge-guia`,
@@ -71,7 +68,7 @@ const newFaqItems = [
   }
 ];
 
-const faqItems = [
+export const faqItems = [
   {
     question: '¿Cuánto cuestan los exámenes Cambridge y varía el precio según el nivel?',
     answer: 'Los exámenes Cambridge tienen precios que varían según el nivel específico, el centro examinador y la ubicación geográfica. En España durante 2026, el A2 Key cuesta aproximadamente 110-130€, el B1 Preliminary entre 130-150€, el B2 First entre 180-210€, el C1 Advanced entre 195-225€, y el C2 Proficiency entre 210-240€. Los exámenes "for Schools" mantienen precios idénticos a las versiones estándar. Los centros autorizados establecen tarifas individualmente dentro de rangos recomendados por Cambridge, por lo que conviene comparar entre centros cercanos. Estos precios incluyen certificación oficial con validez permanente, pero no cubren materiales de preparación ni cursos previos.'
@@ -121,14 +118,7 @@ export default function ExamenesCambridgeGuiaPage() {
 
   return (
     <>
-      <SEOHead
-        title="Exámenes Cambridge 2026: Guía Completa de Niveles y Preparación"
-        description="Descubre todo sobre los exámenes Cambridge: niveles del A1 al C2, estructura detallada, preparación efectiva y recursos oficiales. Guía actualizada 2026 con estrategias probadas y consejos de expertos."
-        keywords="exámenes cambridge, niveles cambridge, b2 first, c1 advanced, preparación cambridge, estructura exámenes cambridge, recursos cambridge oficiales, certificación inglés cambridge"
-        canonical="/blog/examenes-cambridge-guia"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       <article>
         {/* Hero Section */}
@@ -1038,7 +1028,7 @@ export default function ExamenesCambridgeGuiaPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed mb-6">
-                Para estudiantes que valoran estructura externa, retroalimentación personalizada y práctica de speaking con compañeros, programas de preparación especializados proporcionan valor significativo. Academias como nuestra <strong><Link to="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline font-medium">academia en Barrio del Pilar</Link></strong> en Madrid, con metodología basada en repetición espaciada y tasa de aprobación del 100%, ofrecen entornos optimizados para maximizar probabilidad de éxito. También disponemos de <Link to="/cursos-ingles/particulares" className="text-accent-blue hover:underline font-medium">clases particulares</Link> personalizadas para <Link to="/examenes-cambridge/b2-first" className="text-accent-blue hover:underline font-medium">B2 First</Link>, <Link to="/examenes-cambridge/b1-preliminary" className="text-accent-blue hover:underline font-medium">B1 Preliminary</Link> y otros <Link to="/examenes-cambridge" className="text-accent-blue hover:underline font-medium">exámenes Cambridge</Link>, cerca de <Link to="/academia-ingles-la-vaguada" className="text-accent-blue hover:underline font-medium">La Vaguada</Link>.
+                Para estudiantes que valoran estructura externa, retroalimentación personalizada y práctica de speaking con compañeros, programas de preparación especializados proporcionan valor significativo. Academias como nuestra <strong><a href="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline font-medium">academia en Barrio del Pilar</a></strong> en Madrid, con metodología basada en repetición espaciada y tasa de aprobación del 100%, ofrecen entornos optimizados para maximizar probabilidad de éxito. También disponemos de <a href="/cursos-ingles/particulares" className="text-accent-blue hover:underline font-medium">clases particulares</a> personalizadas para <a href="/examenes-cambridge/b2-first" className="text-accent-blue hover:underline font-medium">B2 First</a>, <a href="/examenes-cambridge/b1-preliminary" className="text-accent-blue hover:underline font-medium">B1 Preliminary</a> y otros <a href="/examenes-cambridge" className="text-accent-blue hover:underline font-medium">exámenes Cambridge</a>, cerca de <a href="/academia-ingles-la-vaguada" className="text-accent-blue hover:underline font-medium">La Vaguada</a>.
               </p>
 
               <div className="bg-green-50 border border-green-200 rounded-xl p-6 my-8">
@@ -1124,12 +1114,12 @@ export default function ExamenesCambridgeGuiaPage() {
                     <MessageCircle className="w-5 h-5" />
                     Consultar por WhatsApp
                   </a>
-                  <Link
-                    to="/examenes-cambridge"
+                  <a
+              href="/examenes-cambridge"
                     className="bg-accent-blue hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-colors"
                   >
                     Ver cursos Cambridge
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -1239,7 +1229,7 @@ export default function ExamenesCambridgeGuiaPage() {
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link to="/examenes-cambridge/fechas-precios" className="group">
+              <a href="/examenes-cambridge/fechas-precios" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Calendario</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -1247,8 +1237,8 @@ export default function ExamenesCambridgeGuiaPage() {
                   </h3>
                   <p className="text-zinc-500 text-sm mt-2">Calendario oficial y fechas límite de inscripción</p>
                 </div>
-              </Link>
-              <Link to="/examenes-cambridge" className="group">
+              </a>
+              <a href="/examenes-cambridge" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Recursos</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -1256,8 +1246,8 @@ export default function ExamenesCambridgeGuiaPage() {
                   </h3>
                   <p className="text-zinc-500 text-sm mt-2">Los mejores materiales para preparar tu examen</p>
                 </div>
-              </Link>
-              <Link to="/linguaskill" className="group">
+              </a>
+              <a href="/linguaskill" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Linguaskill</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -1265,8 +1255,8 @@ export default function ExamenesCambridgeGuiaPage() {
                   </h3>
                   <p className="text-zinc-500 text-sm mt-2">Estructura, ejemplos y estrategias de preparación</p>
                 </div>
-              </Link>
-              <Link to="/academias-ingles-madrid" className="group">
+              </a>
+              <a href="/academias-ingles-madrid" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Academias Madrid</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -1274,8 +1264,8 @@ export default function ExamenesCambridgeGuiaPage() {
                   </h3>
                   <p className="text-zinc-500 text-sm mt-2">Las mejores opciones económicas para estudiar inglés</p>
                 </div>
-              </Link>
-              <Link to="/examenes-cambridge/b2-first" className="group">
+              </a>
+              <a href="/examenes-cambridge/b2-first" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">B2 First</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -1283,8 +1273,8 @@ export default function ExamenesCambridgeGuiaPage() {
                   </h3>
                   <p className="text-zinc-500 text-sm mt-2">El certificado más demandado para el mundo laboral</p>
                 </div>
-              </Link>
-              <Link to="/academias-ingles-madrid/certificaciones" className="group">
+              </a>
+              <a href="/academias-ingles-madrid/certificaciones" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Certificaciones</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -1292,7 +1282,7 @@ export default function ExamenesCambridgeGuiaPage() {
                   </h3>
                   <p className="text-zinc-500 text-sm mt-2">Guía completa de certificaciones oficiales</p>
                 </div>
-              </Link>
+              </a>
             </div>
 
           </div>
@@ -1302,7 +1292,6 @@ export default function ExamenesCambridgeGuiaPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

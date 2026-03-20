@@ -1,6 +1,5 @@
 import React from 'react';
-import { AcademyImage, generateImageSchema } from '../src/data/academyImages';
-import SchemaMarkup from './SchemaMarkup';
+import type { AcademyImage } from '../src/data/academyImages';
 
 interface AcademyGalleryProps {
   images: AcademyImage[];
@@ -26,9 +25,7 @@ export default function AcademyGallery({
   className = "",
   maxImages = 4
 }: AcademyGalleryProps) {
-  // Generate schema for all images
   const displayImages = images.slice(0, maxImages);
-  const imageSchemas = displayImages.map(img => generateImageSchema(img, pageUrl));
 
   return (
     <section className={`py-16 md:py-20 px-6 bg-white ${className}`}>
@@ -75,9 +72,6 @@ export default function AcademyGallery({
           ))}
         </div>
       </div>
-
-      {/* ImageObject Schema for each image */}
-      <SchemaMarkup schema={imageSchemas} />
     </section>
   );
 }
@@ -90,8 +84,6 @@ export function CompactGallery({
   pageUrl,
   className = ""
 }: Omit<AcademyGalleryProps, 'title' | 'subtitle'>) {
-  const imageSchemas = images.map(img => generateImageSchema(img, pageUrl));
-
   return (
     <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 ${className}`}>
       {images.slice(0, 4).map((image, index) => (
@@ -112,7 +104,6 @@ export function CompactGallery({
           <figcaption className="sr-only">{image.description}</figcaption>
         </figure>
       ))}
-      <SchemaMarkup schema={imageSchemas} />
     </div>
   );
 }
@@ -127,7 +118,6 @@ export function HeroGallery({
 }: Omit<AcademyGalleryProps, 'title' | 'subtitle'>) {
   if (images.length < 4) return null;
 
-  const imageSchemas = images.map(img => generateImageSchema(img, pageUrl));
   const [featured, ...rest] = images;
 
   return (
@@ -171,8 +161,6 @@ export function HeroGallery({
           <figcaption className="sr-only">{image.description}</figcaption>
         </figure>
       ))}
-
-      <SchemaMarkup schema={imageSchemas} />
     </div>
   );
 }

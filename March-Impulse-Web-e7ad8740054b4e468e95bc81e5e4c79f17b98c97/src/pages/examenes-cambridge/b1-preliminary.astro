@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import B1PreliminaryPage, { courseSchema, b1Faqs } from '../../../pages/examenes-cambridge/B1PreliminaryPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  courseSchema,
+  ...(b1Faqs?.length > 0 ? [generateFAQSchema(b1Faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Preparación Cambridge B1 Preliminary (PET)"
+  description="Preparación examen Cambridge B1 Preliminary (PET) en Madrid. Centro oficial Cambridge con 100% aprobados. Grupos reducidos, material incluido. La Vaguada."
+  keywords="b1 preliminary madrid, preparación pet cambridge, examen b1 cambridge, curso b1 inglés madrid, academia cambridge b1, pet inglés"
+  canonical="/examenes-cambridge/b1-preliminary"
+  schemas={schemas}
+>
+  <B1PreliminaryPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

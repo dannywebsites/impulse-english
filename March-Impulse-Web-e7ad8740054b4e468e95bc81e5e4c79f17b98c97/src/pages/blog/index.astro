@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPage from '../../../pages/BlogPage';
+import CookieBanner from '../../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Blog - Artículos sobre Inglés, Cambridge y Linguaskill"
+  description="Blog de Impulse English Academy. Guías sobre exámenes Cambridge, Linguaskill, consejos para aprender inglés y recursos educativos. Academia Madrid."
+  keywords="blog inglés, artículos cambridge, guía linguaskill, aprender inglés tips, recursos inglés madrid"
+  canonical="/blog"
+>
+  <BlogPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

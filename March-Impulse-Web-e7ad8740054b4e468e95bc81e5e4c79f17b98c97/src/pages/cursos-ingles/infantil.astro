@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InfantilPage, { courseSchema, faqs } from '../../../pages/cursos/InfantilPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  courseSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Inglés Infantil (2–5 años) | Great Little People"
+  description="Clases de inglés infantil (2–5) en La Vaguada / Barrio del Pilar. Metodología Great Little People 100% en inglés, grupos máx. 7 y clase de prueba gratis. Impulse English Academy."
+  keywords="clases inglés niños la vaguada, inglés infantil barrio del pilar, inglés bebes 2 años, great little people, academia inglés niños madrid"
+  canonical="/cursos-ingles/infantil"
+  schemas={schemas}
+>
+  <InfantilPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

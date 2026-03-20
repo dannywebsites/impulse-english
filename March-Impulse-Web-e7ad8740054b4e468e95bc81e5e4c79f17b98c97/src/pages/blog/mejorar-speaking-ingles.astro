@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MejorarSpeakingInglesPage, { articleSchema, faqItems } from '../../../pages/blog/MejorarSpeakingInglesPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Mejorar Speaking en Inglés: Técnicas y Ejercicios Probados 2026"
+  description="Mejora tu speaking en inglés: técnicas de fluidez, pronunciación y confianza. Ejercicios prácticos para hacer solo o en grupo con resultados en 4 semanas."
+  canonical="/blog/mejorar-speaking-ingles"
+  ogType="article"
+  schemas={schemas}
+>
+  <MejorarSpeakingInglesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

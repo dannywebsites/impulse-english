@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function MejorarListeningInglesPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Mejorar Listening en Inglés: 10 Técnicas Efectivas por Nivel 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Cómo Mejorar el Listening en Inglés: 10 Técnicas Efectivas",
     description: "Mejora tu listening en inglés con 10 técnicas: podcasts, dictados, shadowing y más. Guía detallada por nivel desde A2 hasta C1 con recursos gratuitos.",
     url: `${businessInfo.url}/blog/mejorar-listening-ingles`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Por qué el listening es lo más difícil del inglés?",
       answer: "El listening combina velocidad, acentos, reducción fonética (connected speech) y vocabulario simultáneamente. Es la destreza que más depende de exposición acumulada."
-    },
+    }
+
+  ,
     {
       question: "¿Cuánto tiempo al día practicar listening?",
       answer: "30 minutos diarios de listening activo (con atención plena, no de fondo) produce mejoras visibles en 4-6 semanas. La constancia supera la intensidad."
@@ -47,16 +38,17 @@ export default function MejorarListeningInglesPage() {
     }
   ];
 
+export default function MejorarListeningInglesPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="Mejorar Listening en Inglés: 10 Técnicas Efectivas por Nivel 2026"
-        description="Mejora tu listening en inglés con 10 técnicas: podcasts, dictados, shadowing y más. Guía detallada por nivel desde A2 hasta C1 con recursos gratuitos."
-        keywords="mejorar listening inglés, comprensión auditiva inglés, listening inglés tips, entender inglés hablado"
-        canonical="/blog/mejorar-listening-ingles"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -285,11 +277,11 @@ export default function MejorarListeningInglesPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -301,31 +293,31 @@ export default function MejorarListeningInglesPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 Trabajamos el connected speech, los acentos y la comprensión de inglés real desde el primer día.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Consultar nuestros cursos
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Nuestra Metodología</h3>
                   <p className="text-gray-600 text-sm">Cómo integramos el listening en nuestra metodología de enseñanza.</p>
-                </Link>
-                <Link to="/blog/no-entiendo-ingles-hablado" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/no-entiendo-ingles-hablado" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">No Entiendo el Inglés Hablado</h3>
                   <p className="text-gray-600 text-sm">Causas científicas y plan de mejora progresiva por nivel.</p>
-                </Link>
-                <Link to="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Cursos de Inglés para Adultos</h3>
                   <p className="text-gray-600 text-sm">Programas con entrenamiento de listening integrado.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -355,7 +347,6 @@ export default function MejorarListeningInglesPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function EsDificilC1AdvancedPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = '¿Es Difícil el C1 Advanced? Nivel Real y Preparación 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿Es Muy Difícil el C1 Advanced? Dificultad Real del CAE",
     description: "El C1 Advanced tiene una tasa de aprobados del 55-60%. Descubre qué lo hace difícil, las partes más exigentes y cómo prepararte para aprobar.",
     url: `${businessInfo.url}/blog/es-dificil-c1-advanced`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Cuál es la tasa de aprobados del C1 Advanced?",
       answer: "La tasa global de aprobados del C1 Advanced ronda el 55-60%, aunque varía significativamente según el país y centro de preparación. En España, la tasa se sitúa alrededor del 50-55%. Los candidatos que se preparan en academias especializadas con profesores experimentados alcanzan tasas del 70-80%, mientras que los autodidactas suelen situarse por debajo del 40%."
-    },
+    }
+
+  ,
     {
       question: "¿Qué parte del C1 Advanced es la más difícil?",
       answer: "Para la mayoría de hispanohablantes, el Use of English (integrado en Reading) es la parte más complicada, ya que exige un conocimiento muy profundo de collocations, phrasal verbs y formación de palabras. Le sigue el Listening, donde los audios son significativamente más rápidos que en B2 y los acentos más variados. Writing y Speaking dependen más de la práctica individual."
@@ -47,16 +38,17 @@ export default function EsDificilC1AdvancedPage() {
     }
   ];
 
+export default function EsDificilC1AdvancedPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="¿Es Difícil el C1 Advanced? Nivel Real y Preparación 2026"
-        description="El C1 Advanced tiene una tasa de aprobados del 55-60%. Descubre qué lo hace difícil, las partes más exigentes y cómo prepararte para aprobar."
-        keywords="es difícil c1 advanced, dificultad cae cambridge, tasa aprobados c1, preparar c1 advanced"
-        canonical="/blog/es-dificil-c1-advanced"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -114,7 +106,7 @@ export default function EsDificilC1AdvancedPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              El <Link to="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">Cambridge C1 Advanced</Link> (anteriormente CAE) es uno de los exámenes de inglés más respetados y también uno de los más temidos. Con una tasa de aprobados global del <strong>55-60%</strong>, casi la mitad de los candidatos no consigue el certificado en su primer intento. Pero, ¿es realmente tan difícil? La respuesta depende de tu preparación, tu nivel de partida y tu conocimiento del formato del examen.
+              El <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">Cambridge C1 Advanced</a> (anteriormente CAE) es uno de los exámenes de inglés más respetados y también uno de los más temidos. Con una tasa de aprobados global del <strong>55-60%</strong>, casi la mitad de los candidatos no consigue el certificado en su primer intento. Pero, ¿es realmente tan difícil? La respuesta depende de tu preparación, tu nivel de partida y tu conocimiento del formato del examen.
             </p>
 
             {/* Section 1 */}
@@ -212,7 +204,7 @@ export default function EsDificilC1AdvancedPage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                No todas las partes del <Link to="/blog/examen-cae-cambridge" className="text-emerald-600 hover:underline font-medium">examen CAE</Link> presentan la misma dificultad. Analizamos cada sección según el rendimiento medio de los candidatos hispanohablantes:
+                No todas las partes del <a href="/blog/examen-cae-cambridge" className="text-emerald-600 hover:underline font-medium">examen CAE</a> presentan la misma dificultad. Analizamos cada sección según el rendimiento medio de los candidatos hispanohablantes:
               </p>
 
               <div className="space-y-4 mb-8">
@@ -257,7 +249,7 @@ export default function EsDificilC1AdvancedPage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Muchos candidatos subestiman el salto de dificultad entre el <Link to="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</Link> y el C1 Advanced. Estas son las diferencias clave:
+                Muchos candidatos subestiman el salto de dificultad entre el <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> y el C1 Advanced. Estas son las diferencias clave:
               </p>
 
               <div className="overflow-x-auto mb-8">
@@ -344,7 +336,7 @@ export default function EsDificilC1AdvancedPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En <Link to="/metodologia" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</Link>, nuestros programas de preparación C1 están diseñados para maximizar tu rendimiento en cada parte del examen. Combinamos inmersión comunicativa con técnicas específicas de examen que han demostrado tasas de aprobado superiores al 75%.
+                En <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a>, nuestros programas de preparación C1 están diseñados para maximizar tu rendimiento en cada parte del examen. Combinamos inmersión comunicativa con técnicas específicas de examen que han demostrado tasas de aprobado superiores al 75%.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
@@ -374,11 +366,11 @@ export default function EsDificilC1AdvancedPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -395,7 +387,7 @@ export default function EsDificilC1AdvancedPage() {
                   El C1 Advanced es un examen exigente pero no inalcanzable. Su dificultad reside tanto en el nivel de inglés requerido como en la complejidad del formato. Con una preparación estructurada de <strong>5-8 meses</strong>, profesores especializados y práctica constante, las probabilidades de éxito se multiplican significativamente.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</Link> llevamos años preparando candidatos para el C1 con tasas de éxito muy por encima de la media. Si estás considerando presentarte, <Link to="/contacto" className="text-emerald-600 hover:underline font-medium">contáctanos</Link> para una evaluación de nivel gratuita que te permitirá saber exactamente dónde estás y cuánto necesitas para alcanzar tu objetivo.
+                  En <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> llevamos años preparando candidatos para el C1 con tasas de éxito muy por encima de la media. Si estás considerando presentarte, <a href="/contacto" className="text-emerald-600 hover:underline font-medium">contáctanos</a> para una evaluación de nivel gratuita que te permitirá saber exactamente dónde estás y cuánto necesitas para alcanzar tu objetivo.
                 </p>
               </div>
             </section>
@@ -406,43 +398,43 @@ export default function EsDificilC1AdvancedPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 Nuestros programas de preparación C1 tienen una tasa de aprobados superior al 75%. Descubre cómo podemos ayudarte.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     C1 Advanced: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre estructura, preparación y certificación del C1.</p>
-                </Link>
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo preparamos a nuestros alumnos para exámenes Cambridge.</p>
-                </Link>
-                <Link to="/blog/examen-cae-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/examen-cae-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Examen CAE Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Detalles del formato y estructura del examen CAE.</p>
-                </Link>
-                <Link to="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Examen Cambridge C1: Guía de Preparación
                   </h3>
                   <p className="text-gray-600 text-sm">Estrategias y recursos para preparar el C1.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -473,7 +465,6 @@ export default function EsDificilC1AdvancedPage() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

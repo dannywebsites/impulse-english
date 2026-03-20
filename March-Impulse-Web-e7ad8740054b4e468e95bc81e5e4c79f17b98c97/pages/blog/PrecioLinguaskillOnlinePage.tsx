@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Euro, Clock, ChevronDown, ChevronUp, CheckCircle, Globe, Calculator, CreditCard } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function PrecioLinguaskillOnlinePage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Precio Linguaskill Online 2026: Costes del Examen | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Precio Linguaskill Online 2026: Costes del Examen",
     description: "Precio actualizado del examen Linguaskill online: 130€ completo o modalidad modular. Descuentos para estudiantes universitarios.",
     url: `${businessInfo.url}/blog/precio-linguaskill-online`,
     datePublished: "2025-01-13"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿El precio de 130€ incluye el certificado oficial?",
       answer: "Sí, el precio del test Linguaskill online de 130€ incluye tu certificado digital oficial Cambridge con validez internacional. Recibirás el documento PDF descargable en 6 días laborables, especificando tu nivel CEFR conseguido en cada habilidad evaluada. No existen costes ocultos ni tasas adicionales por emisión de certificado o envío de resultados a instituciones."
-    },
+    }
+
+  ,
     {
       question: "¿Puedo obtener descuentos si repito el examen?",
       answer: "Cambridge no ofrece descuentos oficiales por repetición del Linguaskill completo, deberás pagar nuevamente 130€ por intento. Sin embargo, la modalidad modular permite repetir únicamente habilidades específicas por 48-75€ en lugar del precio completo. Algunos centros examinadores ofrecen paquetes de dos convocatorias con descuento del 10-15% si compras ambas matrículas simultáneamente, aunque esta práctica no está generalizada."
@@ -47,6 +38,14 @@ export default function PrecioLinguaskillOnlinePage() {
     }
   ];
 
+export default function PrecioLinguaskillOnlinePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const priceComparison = [
     { country: "España", price: "130€", notes: "Precio estándar, 120€ universitarios" },
     { country: "Reino Unido", price: "£115 (~135€)", notes: "Online Excellence" },
@@ -64,14 +63,7 @@ export default function PrecioLinguaskillOnlinePage() {
 
   return (
     <>
-      <SEOHead
-        title="Precio Linguaskill Online 2026: Guía Completa de Costes"
-        description="Precio actualizado del examen Linguaskill online 2026: 130€ completo o modalidad modular. Descuentos universitarios, comparativa internacional y costes de preparación en España."
-        keywords="precio linguaskill online, cuánto cuesta linguaskill, linguaskill precio españa, examen linguaskill coste, linguaskill descuento universitario, precio módulos linguaskill"
-        canonical="/blog/precio-linguaskill-online"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
@@ -327,11 +319,11 @@ export default function PrecioLinguaskillOnlinePage() {
                         <ChevronDown className="w-5 h-5 text-zinc-500" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 py-4 bg-white">
-                        <p className="text-zinc-600">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 py-4' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-zinc-600">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -347,8 +339,8 @@ export default function PrecioLinguaskillOnlinePage() {
                   preparación adecuada, es una inversión que puede abrirte puertas académicas y profesionales.
                 </p>
                 <p className="text-white/90">
-                  En nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-bold">academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">junto a La Vaguada</Link>, te preparamos para el <Link to="/linguaskill" className="text-white hover:underline font-bold">Linguaskill</Link> por solo <strong>79€/mes</strong>,
-                  con profesores especializados y materiales actualizados. También ofrecemos <Link to="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</Link> y preparación para otros <Link to="/examenes-cambridge" className="text-white hover:underline font-bold">exámenes Cambridge</Link>.
+                  En nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">junto a La Vaguada</a>, te preparamos para el <a href="/linguaskill" className="text-white hover:underline font-bold">Linguaskill</a> por solo <strong>79€/mes</strong>,
+                  con profesores especializados y materiales actualizados. También ofrecemos <a href="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> y preparación para otros <a href="/examenes-cambridge" className="text-white hover:underline font-bold">exámenes Cambridge</a>.
                 </p>
               </div>
             </section>
@@ -365,12 +357,12 @@ export default function PrecioLinguaskillOnlinePage() {
                       Cursos de preparación desde 79€/mes con profesores expertos en certificaciones Cambridge.
                     </p>
                   </div>
-                  <Link
-                    to="/contacto"
+                  <a
+              href="/contacto"
                     className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Solicitar información
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -380,14 +372,14 @@ export default function PrecioLinguaskillOnlinePage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link to="/linguaskill/precios-fechas" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/linguaskill/precios-fechas" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-green-600">PRECIOS Y SEDES</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Linguaskill: Precios, Sedes y Servicios 2026</h4>
-                </Link>
-                <Link to="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-green-600">REGISTRO</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Cómo Registrarse para el Examen Linguaskill</h4>
-                </Link>
+                </a>
               </div>
             </section>
           </div>
@@ -413,7 +405,6 @@ export default function PrecioLinguaskillOnlinePage() {
 
       <Footer />
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

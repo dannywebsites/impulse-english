@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { s3InfantilImages, s3CambridgeImages } from '../src/data/images';
 
 export default function CoursesSection() {
@@ -82,9 +81,9 @@ export default function CoursesSection() {
                     En nuestra escuela de idiomas en Madrid, impartimos cursos de inglés para todos los niveles, desde principiante hasta avanzado (A1–C2), con especialización en preparación de exámenes Cambridge.
                 </p>
             </div>
-            <Link to="/cursos-ingles/particulares" className="text-zinc-500 hover:text-accent-blue font-medium flex items-center gap-2 transition-colors">
+            <a href="/cursos-ingles/particulares" className="text-zinc-500 hover:text-accent-blue font-medium flex items-center gap-2 transition-colors">
                 Clases Particulares <ArrowRight className="w-4 h-4" />
-            </Link>
+            </a>
         </div>
 
         {/* Intro text */}
@@ -176,9 +175,9 @@ function CourseCard({ course, index }: { course: any, index: number }) {
             ))}
         </div>
 
-        <Link
+        <a
             ref={buttonRef}
-            to={course.link}
+            href={course.link}
             className={`w-full py-3 bg-white border border-zinc-200 text-zinc-900 font-bold text-xs uppercase tracking-widest hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-all duration-400 ease-out transform text-center block
                 ${isVisible
                     ? 'opacity-100 translate-y-0 scale-100'
@@ -187,7 +186,7 @@ function CourseCard({ course, index }: { course: any, index: number }) {
             style={{ transitionDelay: `${index * 100}ms` }}
         >
             Más Información
-        </Link>
+        </a>
       </div>
     </div>
   );

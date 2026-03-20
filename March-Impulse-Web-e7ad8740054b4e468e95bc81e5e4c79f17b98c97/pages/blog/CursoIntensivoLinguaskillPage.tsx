@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Zap, Clock, ChevronDown, ChevronUp, CheckCircle, Calendar, Target, Users, BookOpen } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function CursoIntensivoLinguaskillPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Curso Intensivo Linguaskill Online 2026: Preparación Rápida | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Curso Intensivo Linguaskill Online 2026: Preparación Rápida",
     description: "Guía completa sobre cursos intensivos de Linguaskill online. Duración, modalidades, qué nivel puedes alcanzar y cómo prepararte rápidamente.",
     url: `${businessInfo.url}/linguaskill/curso-intensivo-linguaskill`,
     datePublished: "2025-01-12"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Cuánto tiempo necesito para prepararme para Linguaskill?",
       answer: "Depende de tu nivel actual y objetivo. Un candidato B1 que aspira a B2 necesita 6-8 semanas con 30 horas de curso intensivo más 20 horas de práctica personal. Candidatos A2 que buscan B1 requieren mínimo 10-12 semanas. Programas ultra-acelerados de 2-4 semanas funcionan solo para niveles B1-B2 consolidados que necesitan familiarizarse con el formato del examen."
-    },
+    }
+
+  ,
     {
       question: "¿Los cursos intensivos incluyen el test Linguaskill final?",
       answer: "La mayoría de programas completos incluyen un test Linguaskill (General o Business) en el precio del paquete, evitando costos adicionales de 75€ por módulo. Verifica siempre qué incluye tu curso: algunos ofrecen solo un módulo (Reading&Listening) mientras que paquetes premium incluyen los tres módulos (Reading&Listening, Writing, Speaking). El certificado Cambridge obtenido no tiene fecha de caducidad oficial."
@@ -47,6 +38,14 @@ export default function CursoIntensivoLinguaskillPage() {
     }
   ];
 
+export default function CursoIntensivoLinguaskillPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const courseFeatures = [
     { icon: Clock, title: "Formato flexible", description: "Clases online en directo o grabadas para estudiar a tu ritmo" },
     { icon: Target, title: "Enfoque al examen", description: "Práctica específica de los 4 módulos: Reading, Listening, Writing, Speaking" },
@@ -63,14 +62,7 @@ export default function CursoIntensivoLinguaskillPage() {
 
   return (
     <>
-      <SEOHead
-        title="Curso Intensivo Linguaskill Online 2026: Preparación Rápida y Efectiva"
-        description="Prepárate para el examen Linguaskill en 4-8 semanas con cursos intensivos online. Estrategias, práctica y feedback personalizado desde 79€/mes en Madrid."
-        keywords="curso intensivo linguaskill, linguaskill online, preparación linguaskill rápida, curso linguaskill madrid, linguaskill 4 semanas"
-        canonical="/linguaskill/curso-intensivo"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
@@ -260,8 +252,8 @@ export default function CursoIntensivoLinguaskillPage() {
 
               <div className="bg-zinc-100 rounded-xl p-6">
                 <p className="text-zinc-700">
-                  <strong>Nuestra recomendación:</strong> En <Link to="/academia-ingles-barrio-del-pilar" className="text-orange-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-orange-600 hover:underline font-medium">junto a La Vaguada</Link>, ofrecemos un formato híbrido que combina
-                  clases presenciales para Speaking con recursos online para práctica autónoma en nuestros <Link to="/cursos-ingles/adultos" className="text-orange-600 hover:underline font-medium">cursos de inglés para adultos</Link>. Esto te da lo mejor de ambos mundos
+                  <strong>Nuestra recomendación:</strong> En <a href="/academia-ingles-barrio-del-pilar" className="text-orange-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-orange-600 hover:underline font-medium">junto a La Vaguada</a>, ofrecemos un formato híbrido que combina
+                  clases presenciales para Speaking con recursos online para práctica autónoma en nuestros <a href="/cursos-ingles/adultos" className="text-orange-600 hover:underline font-medium">cursos de inglés para adultos</a>. Esto te da lo mejor de ambos mundos
                   por solo 79€/mes.
                 </p>
               </div>
@@ -300,12 +292,12 @@ export default function CursoIntensivoLinguaskillPage() {
                       Mañana, tarde y fines de semana. Adaptamos los grupos a tu disponibilidad para que puedas compaginar
                       la preparación con trabajo o estudios.
                     </p>
-                    <Link
-                      to="/contacto"
+                    <a
+              href="/contacto"
                       className="inline-block bg-white text-orange-600 font-bold py-2 px-6 rounded-lg hover:bg-zinc-100 transition-colors"
                     >
                       Solicitar información
-                    </Link>
+                    </a>
                   </div>
 
                 </div>
@@ -331,11 +323,11 @@ export default function CursoIntensivoLinguaskillPage() {
                         <ChevronDown className="w-5 h-5 text-zinc-500" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 py-4 bg-white">
-                        <p className="text-zinc-600">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 py-4' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-zinc-600">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -351,8 +343,8 @@ export default function CursoIntensivoLinguaskillPage() {
                   especialmente en Speaking y Writing donde más diferencia marca la preparación guiada.
                 </p>
                 <p className="text-white/90">
-                  En <strong>Impulse English Academy</strong> ofrecemos preparación intensiva de <Link to="/linguaskill" className="text-white hover:underline font-medium">Linguaskill</Link> y otros <Link to="/examenes-cambridge" className="text-white hover:underline font-medium">exámenes Cambridge</Link> desde <strong>79€/mes</strong>,
-                  con profesores especializados en certificaciones Cambridge, <Link to="/cursos-ingles/particulares" className="text-white hover:underline font-medium">clases particulares</Link> disponibles y grupos reducidos para máxima atención.
+                  En <strong>Impulse English Academy</strong> ofrecemos preparación intensiva de <a href="/linguaskill" className="text-white hover:underline font-medium">Linguaskill</a> y otros <a href="/examenes-cambridge" className="text-white hover:underline font-medium">exámenes Cambridge</a> desde <strong>79€/mes</strong>,
+                  con profesores especializados en certificaciones Cambridge, <a href="/cursos-ingles/particulares" className="text-white hover:underline font-medium">clases particulares</a> disponibles y grupos reducidos para máxima atención.
                 </p>
               </div>
             </section>
@@ -369,12 +361,12 @@ export default function CursoIntensivoLinguaskillPage() {
                       Empieza tu curso intensivo y certifica tu nivel en pocas semanas.
                     </p>
                   </div>
-                  <Link
-                    to="/contacto"
+                  <a
+              href="/contacto"
                     className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Empezar ahora
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -384,14 +376,14 @@ export default function CursoIntensivoLinguaskillPage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link to="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-orange-600">GUÍA COMPLETA</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa del Examen Linguaskill 2026</h4>
-                </Link>
-                <Link to="/linguaskill/precios-fechas" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/linguaskill/precios-fechas" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-orange-600">PRECIOS</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Precio del Test Linguaskill Online 2026</h4>
-                </Link>
+                </a>
               </div>
             </section>
           </div>
@@ -417,7 +409,6 @@ export default function CursoIntensivoLinguaskillPage() {
 
       <Footer />
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

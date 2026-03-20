@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, FileText, HelpCircle, ChevronDown, MessageSquare, Star } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
-import SEOHead from '../../components/SEOHead';
-
 const tableOfContents = [
   { id: 'por-que-eligen', title: '¿Por Qué los Usuarios Eligen Linguaskill?' },
   { id: 'formato-adaptativo', title: 'La Experiencia del Formato Adaptativo' },
@@ -18,7 +14,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-const faqs = [
+export const faqs = [
   {
     question: '¿Qué opinan los alumnos sobre la dificultad real de Linguaskill?',
     answer: 'El 68% considera que la dificultad es adecuada y justa, ajustándose al nivel del candidato gracias al sistema adaptativo. Un 22% la percibe más desafiante de lo esperado, especialmente en Writing y Speaking, mientras que un 10% la encuentra más accesible que exámenes tradicionales equivalentes como FCE o CAE de Cambridge.'
@@ -41,6 +37,13 @@ const faqs = [
   },
 ];
 
+export const articleSchema = generateArticleSchema({
+    headline: "Opiniones Linguaskill: Experiencias Reales de Candidatos 2025",
+    description: "Opiniones reales sobre el examen Linguaskill: experiencias con el formato adaptativo, modalidad online, corrección automatizada y comparativa con otros exámenes.",
+    url: `${businessInfo.url}/blog/opiniones-linguaskill`,
+    datePublished: "2025-01-01"
+  });
+
 export default function OpinionesLinguaskillPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -48,23 +51,9 @@ export default function OpinionesLinguaskillPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const articleSchema = generateArticleSchema({
-    headline: "Opiniones Linguaskill: Experiencias Reales de Candidatos 2025",
-    description: "Opiniones reales sobre el examen Linguaskill: experiencias con el formato adaptativo, modalidad online, corrección automatizada y comparativa con otros exámenes.",
-    url: `${businessInfo.url}/blog/opiniones-linguaskill`,
-    datePublished: "2025-01-01"
-  });
-
   return (
     <>
-      <SEOHead
-        title="Opiniones Linguaskill 2025: Experiencias Reales de Candidatos | Formato Online, Corrección IA"
-        description="Opiniones reales sobre Linguaskill: 87% usuarios satisfechos. Experiencias con formato adaptativo, modalidad online, corrección automatizada, resultados en 48h y comparativa con otros exámenes."
-        keywords="opiniones linguaskill, experiencias linguaskill, linguaskill online opiniones, corrección ia linguaskill, formato adaptativo linguaskill, linguaskill vs cambridge"
-        canonical="/blog/opiniones-linguaskill"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       <article>
         {/* Hero Section */}
@@ -121,13 +110,13 @@ export default function OpinionesLinguaskillPage() {
 
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
-          <Link
-            to="/linguaskill"
+          <a
+              href="/linguaskill"
             className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
             ← Volver a la Guía Completa de Linguaskill
-          </Link>
+          </a>
         </div>
 
         {/* Table of Contents */}
@@ -332,11 +321,11 @@ export default function OpinionesLinguaskillPage() {
                         }`}
                       />
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-zinc-50">
-                        <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-zinc-50">
+                          <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -353,7 +342,7 @@ export default function OpinionesLinguaskillPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Para maximizar resultados, familiarízate con el formato mediante simulacros, practica Speaking con grabación y prioriza claridad sobre complejidad en Writing. Si buscas preparación especializada con metodología probada, nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-amber-600 hover:underline font-medium">academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-amber-600 hover:underline font-medium">junto a La Vaguada</Link>, ofrece cursos específicos que optimizan tu rendimiento en cada módulo del <Link to="/linguaskill" className="text-amber-600 hover:underline font-medium">Linguaskill</Link>. También preparamos otros <Link to="/examenes-cambridge" className="text-amber-600 hover:underline font-medium">exámenes Cambridge</Link> con <Link to="/cursos-ingles/adultos" className="text-amber-600 hover:underline font-medium">cursos de inglés para adultos</Link>.
+                Para maximizar resultados, familiarízate con el formato mediante simulacros, practica Speaking con grabación y prioriza claridad sobre complejidad en Writing. Si buscas preparación especializada con metodología probada, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-amber-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-amber-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos específicos que optimizan tu rendimiento en cada módulo del <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">Linguaskill</a>. También preparamos otros <a href="/examenes-cambridge" className="text-amber-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos" className="text-amber-600 hover:underline font-medium">cursos de inglés para adultos</a>.
               </p>
             </section>
 
@@ -387,30 +376,30 @@ export default function OpinionesLinguaskillPage() {
           <div className="container mx-auto px-6">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link
-                to="/linguaskill"
+              <a
+              href="/linguaskill"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-amber-600 text-sm font-medium">Hub Principal</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Guía Completa del Examen Linguaskill</h3>
                 <p className="text-zinc-600 text-sm mt-2">Todo sobre estructura, ejemplos y preparación.</p>
-              </Link>
-              <Link
-                to="/linguaskill/ejemplo-examen"
+              </a>
+              <a
+              href="/linguaskill/ejemplo-examen"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-amber-600 text-sm font-medium">Formato</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Ejemplo Examen Linguaskill</h3>
                 <p className="text-zinc-600 text-sm mt-2">Formato y estructura del test con ejemplos.</p>
-              </Link>
-              <Link
-                to="/linguaskill"
+              </a>
+              <a
+              href="/linguaskill"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-amber-600 text-sm font-medium">Comparativa</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Linguaskill vs Aptis</h3>
                 <p className="text-zinc-600 text-sm mt-2">¿Cuál elegir? Comparativa completa.</p>
-              </Link>
+              </a>
             </div>
 
           </div>
@@ -433,7 +422,6 @@ export default function OpinionesLinguaskillPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

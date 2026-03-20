@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function DiferenciaB2C1Page() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Diferencia entre B2 y C1 Cambridge: Comparativa Completa 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Diferencia entre B2 y C1: ¿Qué Nivel Necesitas?",
     description: "La diferencia entre B2 y C1 radica en profundidad y fluidez. Compara ambos niveles en gramática, vocabulario, examen y valor profesional.",
     url: `${businessInfo.url}/blog/diferencia-b2-c1`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Es muy grande la diferencia entre B2 y C1?",
       answer: "Sí, la diferencia es considerable. Mientras que el B2 certifica que puedes comunicarte con fluidez en la mayoría de situaciones cotidianas, el C1 implica un dominio sofisticado del idioma: comprensión de matices, uso flexible del registro, argumentación compleja y precisión léxica avanzada. El salto requiere 200-300 horas de estudio adicionales según Cambridge Assessment."
-    },
+    }
+
+  ,
     {
       question: "¿Puedo saltar directamente de B1 a C1?",
       answer: "Técnicamente sí, pero no es recomendable. El B2 consolida habilidades fundamentales que son la base del C1. Saltarse el B2 deja lagunas importantes en gramática intermedia-alta y vocabulario que hacen el C1 innecesariamente difícil. Lo ideal es tener un B2 sólido (Grade A o B en el First) antes de abordar el C1."
@@ -47,16 +38,17 @@ export default function DiferenciaB2C1Page() {
     }
   ];
 
+export default function DiferenciaB2C1Page() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="Diferencia entre B2 y C1 Cambridge: Comparativa Completa 2026"
-        description="La diferencia entre B2 y C1 radica en profundidad y fluidez. Compara ambos niveles en gramática, vocabulario, examen y valor profesional."
-        keywords="diferencia b2 c1, b2 vs c1 cambridge, comparar b2 c1, nivel b2 vs c1"
-        canonical="/blog/diferencia-b2-c1"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -114,7 +106,7 @@ export default function DiferenciaB2C1Page() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              ¿Tienes el <Link to="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</Link> y te planteas dar el salto al <Link to="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">C1 Advanced</Link>? ¿O estás decidiendo cuál de los dos preparar primero? Entender las diferencias reales entre estos dos niveles es fundamental para tomar la decisión correcta. En esta guía comparamos B2 y C1 en todas las dimensiones: lingüística, examen, valor profesional y académico.
+              ¿Tienes el <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> y te planteas dar el salto al <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">C1 Advanced</a>? ¿O estás decidiendo cuál de los dos preparar primero? Entender las diferencias reales entre estos dos niveles es fundamental para tomar la decisión correcta. En esta guía comparamos B2 y C1 en todas las dimensiones: lingüística, examen, valor profesional y académico.
             </p>
 
             {/* Section 1 */}
@@ -243,7 +235,7 @@ export default function DiferenciaB2C1Page() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Los exámenes <Link to="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</Link> y C1 Advanced comparten estructura similar pero difieren significativamente en complejidad:
+                Los exámenes <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> y C1 Advanced comparten estructura similar pero difieren significativamente en complejidad:
               </p>
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-6 mb-6">
@@ -413,11 +405,11 @@ export default function DiferenciaB2C1Page() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -431,10 +423,10 @@ export default function DiferenciaB2C1Page() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  La diferencia entre B2 y C1 es sustancial en todos los aspectos: competencia lingüística, complejidad del examen y valor profesional. Mientras el <Link to="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</Link> certifica una comunicación eficaz en contextos cotidianos, el <Link to="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">C1 Advanced</Link> acredita un dominio sofisticado que abre puertas significativamente más amplias.
+                  La diferencia entre B2 y C1 es sustancial en todos los aspectos: competencia lingüística, complejidad del examen y valor profesional. Mientras el <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> certifica una comunicación eficaz en contextos cotidianos, el <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">C1 Advanced</a> acredita un dominio sofisticado que abre puertas significativamente más amplias.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</Link> te ayudamos a decidir qué nivel preparar según tu perfil y te acompañamos hasta conseguir tu objetivo. Consulta nuestra guía de la <Link to="/blog/escala-cambridge" className="text-emerald-600 hover:underline font-medium">escala Cambridge</Link> para una visión completa de todos los niveles.
+                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te ayudamos a decidir qué nivel preparar según tu perfil y te acompañamos hasta conseguir tu objetivo. Consulta nuestra guía de la <a href="/blog/escala-cambridge" className="text-emerald-600 hover:underline font-medium">escala Cambridge</a> para una visión completa de todos los niveles.
                 </p>
               </div>
             </section>
@@ -445,43 +437,43 @@ export default function DiferenciaB2C1Page() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 Realizamos una evaluación de nivel gratuita para recomendarte el camino más eficiente hacia tu objetivo.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar evaluación gratuita
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     C1 Advanced: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge C1 Advanced.</p>
-                </Link>
-                <Link to="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     B2 First: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge B2 First.</p>
-                </Link>
-                <Link to="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Escala Cambridge: Todos los Niveles
                   </h3>
                   <p className="text-gray-600 text-sm">Entiende la escala completa de certificaciones.</p>
-                </Link>
-                <Link to="/blog/tiempo-b2-a-c1" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/tiempo-b2-a-c1" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     De B2 a C1: ¿Cuánto Tiempo?
                   </h3>
                   <p className="text-gray-600 text-sm">Plan realista para dar el salto de nivel.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -512,7 +504,6 @@ export default function DiferenciaB2C1Page() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

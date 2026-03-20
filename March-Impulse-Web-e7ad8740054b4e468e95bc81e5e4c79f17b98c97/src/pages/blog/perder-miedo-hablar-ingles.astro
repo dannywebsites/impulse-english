@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PerderMiedoHablarInglesPage, { articleSchema, faqItems } from '../../../pages/blog/PerderMiedoHablarInglesPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Cómo Perder el Miedo a Hablar Inglés: 7 Estrategias Probadas 2026"
+  description="Pierde el miedo a hablar inglés con 7 estrategias: exposición gradual, grupos pequeños, grabarte a ti mismo y más. Guía práctica para adultos."
+  canonical="/blog/perder-miedo-hablar-ingles"
+  ogType="article"
+  schemas={schemas}
+>
+  <PerderMiedoHablarInglesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import VerguenzaHablarInglesPage, { articleSchema, faqItems } from '../../../pages/blog/VerguenzaHablarInglesPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Vergüenza al Hablar Inglés: Por Qué Ocurre y Cómo Superarla"
+  description="La vergüenza al hablar inglés afecta al 70% de estudiantes adultos. Descubre las causas psicológicas y 6 técnicas probadas para superarla."
+  canonical="/blog/verguenza-hablar-ingles"
+  ogType="article"
+  schemas={schemas}
+>
+  <VerguenzaHablarInglesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

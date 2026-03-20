@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import B1SuficienteTrabajarPage, { articleSchema, faqItems } from '../../../pages/blog/B1SuficienteTrabajarPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿B1 es Suficiente para Trabajar? Empleos y Requisitos 2026"
+  description="El B1 es suficiente para trabajos en atención al cliente, turismo y administración. Conoce qué empleos lo aceptan y cuándo necesitas B2 o superior."
+  canonical="/blog/b1-suficiente-trabajar"
+  ogType="article"
+  schemas={schemas}
+>
+  <B1SuficienteTrabajarPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

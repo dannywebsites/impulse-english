@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { ArrowRight, Clock } from 'lucide-react';
 import type { ArticleCard } from '../data/articles/types';
 
@@ -12,14 +11,14 @@ export default function RelatedArticles({ articles, title = "Artículos relacion
   if (articles.length === 0) return null;
 
   return (
-    <section className="py-12 px-6 bg-zinc-50">
+    <aside className="py-12 px-6 bg-zinc-50">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-2xl font-bold text-zinc-900 mb-6">{title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {articles.map((article) => (
-            <Link
+            <a
               key={article.id}
-              to={article.href}
+              href={article.href}
               className="bg-white rounded-lg p-5 hover:shadow-md transition-shadow group border border-zinc-100"
             >
               <span className="text-xs font-bold text-accent-blue uppercase tracking-wider">
@@ -38,10 +37,10 @@ export default function RelatedArticles({ articles, title = "Artículos relacion
                 </span>
                 <ArrowRight className="w-4 h-4 text-accent-blue opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>
-    </section>
+    </aside>
   );
 }

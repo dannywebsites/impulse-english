@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import B1UniversidadEspanaPage, { articleSchema, faqItems } from '../../../pages/blog/B1UniversidadEspanaPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="B1 para Universidad en España: Requisitos de Inglés 2026"
+  description="El B1 es el nivel mínimo de inglés exigido por muchas universidades españolas para graduación. Conoce requisitos por comunidad y cómo certificarlo."
+  canonical="/blog/b1-universidad-espana"
+  ogType="article"
+  schemas={schemas}
+>
+  <B1UniversidadEspanaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

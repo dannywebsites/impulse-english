@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NinosAprenderInglesPequenosPage, { articleSchema, faqItems } from '../../../pages/blog/NinosAprenderInglesPequenosPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿Es Bueno Aprender Inglés desde Pequeños? Ciencia y Beneficios"
+  description="La ciencia confirma que aprender inglés antes de los 6 años aprovecha la plasticidad cerebral. Beneficios cognitivos, sociales y académicos demostrados."
+  canonical="/blog/ninos-aprender-ingles-pequenos"
+  ogType="article"
+  schemas={schemas}
+>
+  <NinosAprenderInglesPequenosPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

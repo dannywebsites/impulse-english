@@ -1,14 +1,10 @@
 import React, { useEffect } from 'react';
 import { MapPin, Clock, Phone, Train, Bus, CheckCircle, Star, ArrowRight, MessageCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import Breadcrumb from '../../components/Breadcrumb';
-import SEOHead from '../../components/SEOHead';
-import { generateOrganizationSchema, generateFAQSchema } from '../../utils/schemaData';
 import { NAP } from '../../utils/napData';
 
 const benefits = [
@@ -28,7 +24,7 @@ const courses = [
   { name: "Clases Particulares", method: "Flexible", desc: "Presencial u online. Horarios adaptados a ti.", href: "/cursos-ingles/particulares" }
 ];
 
-const localFaqs = [
+export const localFaqs = [
   {
     question: "¿Qué niveles de inglés ofrecéis en La Vaguada?",
     answer: "Ofrecemos todos los niveles desde principiante (A1) hasta avanzado (C2). Realizamos una prueba de nivel gratuita para ubicarte en el grupo adecuado. Preparamos exámenes Cambridge (Pre-A1 Starters hasta C2 Proficiency) y Linguaskill."
@@ -117,6 +113,8 @@ const methodSteps = [
   "Informes personalizados del progreso de cada alumno mes a mes."
 ];
 
+export const locationMeta = {locationName: "La Vaguada", pageUrl: "https://impulse-english.es/academia-ingles-la-vaguada"};
+
 export default function LaVaguadaPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -124,61 +122,8 @@ export default function LaVaguadaPage() {
 
   return (
     <>
-      <SEOHead
-        title="Academia de Inglés en La Vaguada"
-        description="Academia de inglés en La Vaguada y Barrio del Pilar, Madrid. Profesores nativos especializados en preparación de exámenes Cambridge. Clases para niños, adolescentes y adultos. 100% aprobados. ¡Prueba de nivel gratuita!"
-        keywords="academia inglés la vaguada, clases inglés cerca vaguada, cambridge madrid norte, cursos inglés barrio pilar, profesores nativos madrid, preparación cambridge la vaguada"
-        canonical="/academia-ingles-la-vaguada"
-      />
-
-      {/* Exact Schema from Brief */}
-      <SchemaMarkup schema={{
-        "@context": "https://schema.org",
-        "@type": ["EducationalOrganization", "LocalBusiness"],
-        "name": NAP.name,
-        "description": "Academia de inglés en La Vaguada, Barrio del Pilar, Madrid. Centro preparador Cambridge oficial con 100% de aprobados. Clases para niños, adolescentes y adultos.",
-        "url": `${NAP.website}/academia-ingles-la-vaguada`,
-        "telephone": NAP.phoneRaw,
-        "email": NAP.email,
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": NAP.streetAddress,
-          "addressLocality": NAP.city,
-          "addressRegion": NAP.addressRegion,
-          "postalCode": NAP.postalCode,
-          "addressCountry": NAP.country
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": String(NAP.geo.latitude),
-          "longitude": String(NAP.geo.longitude)
-        },
-        "openingHoursSpecification": NAP.openingHours.map(h => ({
-          "dayOfWeek": h.dayOfWeek,
-          "opens": h.opens,
-          "closes": h.closes
-        })),
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": String(NAP.aggregateRating.ratingValue),
-          "reviewCount": String(NAP.aggregateRating.reviewCount)
-        },
-        "sameAs": NAP.sameAs,
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Cursos de Inglés",
-          "itemListElement": [
-            { "@type": "OfferCatalog", "name": "Inglés Infantil (2-5 años)", "url": `${NAP.website}/cursos-ingles/infantil` },
-            { "@type": "OfferCatalog", "name": "Inglés Primaria (6-12 años)", "url": `${NAP.website}/cursos-ingles/primaria` },
-            { "@type": "OfferCatalog", "name": "Inglés Secundaria (13-17 años)", "url": `${NAP.website}/cursos-ingles/secundaria` },
-            { "@type": "OfferCatalog", "name": "Inglés para Adultos", "url": `${NAP.website}/cursos-ingles/adultos` },
-            { "@type": "OfferCatalog", "name": "Clases Particulares", "url": `${NAP.website}/cursos-ingles/particulares` },
-            { "@type": "OfferCatalog", "name": "Preparación Cambridge y Linguaskill", "url": `${NAP.website}/examenes-cambridge` }
-          ]
-        }
-      }} />
-
-      <Navbar />
+{/* Exact Schema from Brief */}
+<Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
@@ -227,13 +172,13 @@ export default function LaVaguadaPage() {
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos Reducidos</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba de Nivel Gratuita
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
               <a
                 href={`${NAP.whatsappUrl}?text=Hola,%20vivo%20cerca%20de%20La%20Vaguada%20y%20me%20gustaría%20información%20sobre%20los%20cursos`}
                 target="_blank"
@@ -361,15 +306,15 @@ export default function LaVaguadaPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {courses.map((course, i) => (
-              <Link
+              <a
                 key={i}
-                to={course.href}
+                href={course.href}
                 className="bg-zinc-50 p-6 rounded-xl hover:shadow-lg transition-shadow group"
               >
                 <h3 className="font-bold text-zinc-900 mb-1 group-hover:text-accent-blue transition-colors">{course.name}</h3>
                 <p className="text-accent-blue font-medium text-sm mb-2">{course.method}</p>
                 <p className="text-zinc-600 text-sm mb-3">{course.desc}</p>
-              </Link>
+              </a>
             ))}
           </div>
 
@@ -479,12 +424,12 @@ export default function LaVaguadaPage() {
                 </li>
               </ul>
               <div className="mt-8">
-                <Link
-                  to="/cursos-ingles/infantil"
+                <a
+              href="/cursos-ingles/infantil"
                   className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1"
                 >
                   Ver cursos infantil y primaria <ArrowRight className="w-4 h-4" />
-                </Link>
+                </a>
               </div>
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg">
@@ -539,12 +484,12 @@ export default function LaVaguadaPage() {
                 </li>
               </ul>
               <div className="mt-8">
-                <Link
-                  to="/cursos-ingles/adultos"
+                <a
+              href="/cursos-ingles/adultos"
                   className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1"
                 >
                   Ver cursos para adultos <ArrowRight className="w-4 h-4" />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -558,7 +503,7 @@ export default function LaVaguadaPage() {
             Preparación Cambridge y Linguaskill
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <Link to="/examenes-cambridge" className="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-colors group">
+            <a href="/examenes-cambridge" className="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-colors group">
               <h3 className="font-bold text-white mb-3 group-hover:text-yellow-300">Exámenes Cambridge</h3>
               <p className="text-white/80 text-sm">Pre-A1 hasta C2 Proficiency</p>
               <div className="flex flex-wrap gap-2 mt-3">
@@ -568,28 +513,28 @@ export default function LaVaguadaPage() {
                 <span className="text-xs text-white/60">•</span>
                 <span className="text-xs text-white/60">C1 Advanced</span>
               </div>
-            </Link>
-            <Link to="/linguaskill" className="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-colors group">
+            </a>
+            <a href="/linguaskill" className="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-colors group">
               <h3 className="font-bold text-white mb-3 group-hover:text-yellow-300">Linguaskill</h3>
               <p className="text-white/80 text-sm">Certificado en 48 horas. Expertos 2024-2025.</p>
-            </Link>
+            </a>
           </div>
           <p className="text-white/90 font-medium mb-8">
             Ventaja única: Haz el examen oficial en nuestra academia.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              to="/examenes-cambridge"
+            <a
+              href="/examenes-cambridge"
               className="bg-white text-accent-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
             >
               Ver todos los exámenes Cambridge
-            </Link>
-            <Link
-              to="/linguaskill"
+            </a>
+            <a
+              href="/linguaskill"
               className="bg-white/10 text-white border border-white/30 font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-accent-blue transition-colors"
             >
               Conocer Linguaskill
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -664,24 +609,24 @@ export default function LaVaguadaPage() {
                   <strong>Servimos también zonas cercanas:</strong>
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link to="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline text-sm">Barrio del Pilar</Link>
+                  <a href="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline text-sm">Barrio del Pilar</a>
                   <span className="text-accent-blue/50">•</span>
-                  <Link to="/academia-ingles-penagrande" className="text-accent-blue hover:underline text-sm">Peñagrande</Link>
+                  <a href="/academia-ingles-penagrande" className="text-accent-blue hover:underline text-sm">Peñagrande</a>
                   <span className="text-accent-blue/50">•</span>
-                  <Link to="/academia-ingles-la-ventilla" className="text-accent-blue hover:underline text-sm">La Ventilla</Link>
+                  <a href="/academia-ingles-la-ventilla" className="text-accent-blue hover:underline text-sm">La Ventilla</a>
                   <span className="text-accent-blue/50">•</span>
-                  <Link to="/academia-ingles-la-paz" className="text-accent-blue hover:underline text-sm">La Paz</Link>
+                  <a href="/academia-ingles-la-paz" className="text-accent-blue hover:underline text-sm">La Paz</a>
                   <span className="text-accent-blue/50">•</span>
-                  <Link to="/academia-ingles-plaza-castilla" className="text-accent-blue hover:underline text-sm">Plaza Castilla</Link>
+                  <a href="/academia-ingles-plaza-castilla" className="text-accent-blue hover:underline text-sm">Plaza Castilla</a>
                   <span className="text-accent-blue/50">•</span>
-                  <Link to="/academia-ingles-tetuan" className="text-accent-blue hover:underline text-sm">Tetuán</Link>
+                  <a href="/academia-ingles-tetuan" className="text-accent-blue hover:underline text-sm">Tetuán</a>
                   <span className="text-accent-blue/50">•</span>
-                  <Link to="/academia-ingles-cuatro-torres" className="text-accent-blue hover:underline text-sm">Cuatro Torres</Link>
+                  <a href="/academia-ingles-cuatro-torres" className="text-accent-blue hover:underline text-sm">Cuatro Torres</a>
                 </div>
                 <div className="mt-4 pt-4 border-t border-accent-blue/10">
-                  <Link to="/academias-ingles-madrid/por-barrios" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
+                  <a href="/academias-ingles-madrid/por-barrios" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
                     Ver todas las ubicaciones en Madrid <ArrowRight className="w-4 h-4" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -760,13 +705,13 @@ export default function LaVaguadaPage() {
           <p className="text-xl md:text-2xl text-white mb-8">
             Si buscas una academia de inglés cerca de La Vaguada, solicita ahora tu prueba de nivel gratuita y empieza a aprender inglés cerca de casa.
           </p>
-          <Link
-            to="/reservar-clase"
+          <a
+              href="/reservar-clase"
             className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
           >
             Reserva tu prueba gratuita
             <ArrowRight className="w-5 h-5" />
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -827,8 +772,6 @@ export default function LaVaguadaPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={generateOrganizationSchema()} />
-      <SchemaMarkup schema={generateFAQSchema(localFaqs)} />
-    </>
+</>
   );
 }

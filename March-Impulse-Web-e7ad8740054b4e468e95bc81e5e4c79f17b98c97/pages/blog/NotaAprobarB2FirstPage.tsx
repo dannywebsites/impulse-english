@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function NotaAprobarB2FirstPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Nota para Aprobar B2 First: Puntuación Mínima y Grades 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿Qué Nota Necesito para Aprobar el B2 First? Puntuación y Grades",
     description: "Para aprobar el B2 First necesitas 160 puntos en la Cambridge English Scale. Conoce las calificaciones Grade A, B y C, y cómo se evalúa cada parte.",
     url: `${businessInfo.url}/blog/nota-aprobar-b2-first`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Cuál es la puntuación mínima para aprobar el B2 First?",
       answer: "La puntuación mínima para aprobar el B2 First es de 160 puntos en la Cambridge English Scale. Esta puntuación corresponde al Grade C y certifica oficialmente el nivel B2 del Marco Común Europeo de Referencia (MCER). Cualquier puntuación entre 160 y 190 significa que has aprobado el examen, aunque con diferentes calificaciones (Grade C, B o A)."
-    },
+    }
+
+  ,
     {
       question: "¿Qué pasa si obtengo 159 puntos o menos?",
       answer: "Si obtienes entre 140 y 159 puntos, no apruebas el B2 First pero recibes un certificado de nivel B1 como reconocimiento parcial de tu competencia lingüística. Si la puntuación es inferior a 140, no recibes ningún certificado. En ambos casos, puedes volver a presentarte al examen sin restricción de intentos ni período de espera obligatorio."
@@ -47,6 +38,14 @@ export default function NotaAprobarB2FirstPage() {
     }
   ];
 
+export default function NotaAprobarB2FirstPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const gradeData = [
     { grade: "Grade A", points: "180-190", level: "C1", color: "text-blue-600", bgColor: "bg-blue-50", borderColor: "border-blue-500", description: "Rendimiento excepcional. Equivale al nivel C1 Advanced." },
     { grade: "Grade B", points: "173-179", level: "B2", color: "text-emerald-600", bgColor: "bg-emerald-50", borderColor: "border-emerald-500", description: "Rendimiento muy bueno. Certificación B2 sólida." },
@@ -57,14 +56,7 @@ export default function NotaAprobarB2FirstPage() {
 
   return (
     <>
-      <SEOHead
-        title="Nota para Aprobar B2 First: Puntuación Mínima y Grades 2026"
-        description="Para aprobar el B2 First necesitas 160 puntos en la Cambridge English Scale. Conoce las calificaciones Grade A, B y C, y cómo se evalúa cada parte."
-        keywords="nota aprobar b2 first, puntuación b2 cambridge, grade a b2 first, cambridge english scale b2"
-        canonical="/blog/nota-aprobar-b2-first"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -122,7 +114,7 @@ export default function NotaAprobarB2FirstPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Entender el sistema de puntuación del <Link to="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First de Cambridge</Link> es fundamental para planificar tu preparación y establecer objetivos realistas. El examen utiliza la <strong>Cambridge English Scale</strong>, un sistema estandarizado donde necesitas un mínimo de <strong>160 puntos</strong> para aprobar. Pero las calificaciones van mucho más allá del simple aprobado: dependiendo de tu puntuación, puedes obtener un Grade C, B o incluso un Grade A que equivale al nivel C1.
+              Entender el sistema de puntuación del <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First de Cambridge</a> es fundamental para planificar tu preparación y establecer objetivos realistas. El examen utiliza la <strong>Cambridge English Scale</strong>, un sistema estandarizado donde necesitas un mínimo de <strong>160 puntos</strong> para aprobar. Pero las calificaciones van mucho más allá del simple aprobado: dependiendo de tu puntuación, puedes obtener un Grade C, B o incluso un Grade A que equivale al nivel C1.
             </p>
 
             {/* Section 1 - Puntuación Mínima */}
@@ -214,7 +206,7 @@ export default function NotaAprobarB2FirstPage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                La <Link to="/blog/escala-cambridge" className="text-emerald-600 hover:underline font-medium">Cambridge English Scale</Link> es el sistema de puntuación unificado que Cambridge introdujo para estandarizar todos sus exámenes. Es una escala que va de 80 a 230 puntos, donde cada examen cubre un rango específico:
+                La <a href="/blog/escala-cambridge" className="text-emerald-600 hover:underline font-medium">Cambridge English Scale</a> es el sistema de puntuación unificado que Cambridge introdujo para estandarizar todos sus exámenes. Es una escala que va de 80 a 230 puntos, donde cada examen cubre un rango específico:
               </p>
 
               <div className="overflow-x-auto mb-8">
@@ -401,11 +393,11 @@ export default function NotaAprobarB2FirstPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -419,10 +411,10 @@ export default function NotaAprobarB2FirstPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El sistema de puntuación del <Link to="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</Link> está diseñado para ser justo y transparente. Con 160 puntos como mínimo, tres niveles de Grade y la posibilidad de obtener certificación C1 con un Grade A, el examen ofrece múltiples niveles de reconocimiento. La clave está en prepararse de forma equilibrada, conocer bien el formato de cada sección y gestionar estratégicamente el tiempo durante el examen.
+                  El sistema de puntuación del <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> está diseñado para ser justo y transparente. Con 160 puntos como mínimo, tres niveles de Grade y la posibilidad de obtener certificación C1 con un Grade A, el examen ofrece múltiples niveles de reconocimiento. La clave está en prepararse de forma equilibrada, conocer bien el formato de cada sección y gestionar estratégicamente el tiempo durante el examen.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si quieres maximizar tu puntuación, una preparación estructurada como la que ofrecemos en nuestros <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos para adultos</Link> marca la diferencia. Consulta también los <Link to="/blog/ejercicios-b2-cambridge" className="text-emerald-600 hover:underline font-medium">ejercicios de práctica B2</Link> y nuestra guía sobre la <Link to="/blog/escala-cambridge" className="text-emerald-600 hover:underline font-medium">escala de Cambridge</Link> para profundizar en el sistema.
+                  Si quieres maximizar tu puntuación, una preparación estructurada como la que ofrecemos en nuestros <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> marca la diferencia. Consulta también los <a href="/blog/ejercicios-b2-cambridge" className="text-emerald-600 hover:underline font-medium">ejercicios de práctica B2</a> y nuestra guía sobre la <a href="/blog/escala-cambridge" className="text-emerald-600 hover:underline font-medium">escala de Cambridge</a> para profundizar en el sistema.
                 </p>
               </div>
             </section>
@@ -433,37 +425,37 @@ export default function NotaAprobarB2FirstPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 En Impulse English Academy te preparamos con simulacros reales y feedback personalizado para maximizar tu puntuación.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cambridge B2 First: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B2 First: estructura, formato y preparación.</p>
-                </Link>
-                <Link to="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Escala de Cambridge Explicada
                   </h3>
                   <p className="text-gray-600 text-sm">Entiende cómo funciona el sistema de puntuación de Cambridge English.</p>
-                </Link>
-                <Link to="/blog/ejercicios-b2-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/ejercicios-b2-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Ejercicios B2 Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Practica con ejercicios reales del B2 First para mejorar tu nota.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -494,7 +486,6 @@ export default function NotaAprobarB2FirstPage() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

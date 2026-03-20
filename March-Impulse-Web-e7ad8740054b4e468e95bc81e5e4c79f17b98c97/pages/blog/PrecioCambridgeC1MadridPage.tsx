@@ -1,45 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, CreditCard, CheckCircle, AlertTriangle, ArrowRight, Euro } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
-import SEOHead from '../../components/SEOHead';
-
-export default function PrecioCambridgeC1MadridPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Precio Cambridge C1 Madrid 2026: Costes y Registro Completo | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Precio Cambridge C1 Madrid 2026: Costes y Registro Completo",
     description: "Precios actualizados del examen Cambridge C1 Advanced en Madrid. Costes de inscripción, descuentos y proceso de registro paso a paso.",
     url: `${businessInfo.url}/blog/precio-cambridge-c1-madrid`,
     datePublished: "2025-01-07"
   });
 
-  const newFaqItems = [
-    {
-      question: '¿Cuánto cuesta Cambridge al año?',
-      answer: 'Los exámenes Cambridge English tienen precios individuales que oscilan entre 69,50€ (Pre A1 Starters, A1 Movers) y 242€ (C2 Proficiency), con descuentos University Project de 9,50€ en niveles B1-C2. Linguaskill cuesta 130€ (120€ con descuento). TKT docente: 75€ por módulo. Los precios varían según el centro autorizado. No existe un coste anual único, ya que los candidatos eligen exámenes específicos según su nivel y necesidades académicas o profesionales.'
-    },
-    {
-      question: '¿Cuánto cuesta el examen de Cambridge?',
-      answer: 'El precio del examen de Cambridge oscila entre 69,50€ y 242€ según el nivel. Young Learners (Pre A1-A2 Flyers): 69,50-72€. Educación general: A2 Key (110€), B1 Preliminary (117,50€), B2 First (218€), C1 Advanced (233€), C2 Proficiency (242€). El University Project ofrece descuentos de 6,50-9,50€ para estudiantes universitarios. Linguaskill cuesta 130€ (120€ con descuento). TKT docente: 75€ por módulo. Los precios varían según el centro autorizado.'
-    }
-  ];
-
-  const faqs = [
+export const faqs = [
     {
       question: "¿El precio del examen Cambridge C1 incluye materiales de preparación?",
       answer: "No, la tarifa de 233 euros cubre únicamente la inscripción al examen oficial. Los materiales de preparación (libros, exámenes de práctica, cursos online) deben adquirirse por separado. Sin embargo, la inscripción incluye una clase online gratuita con recomendaciones para el día del examen y acceso al portal oficial de resultados."
-    },
+    }
+
+  ,
     {
       question: "¿Puedo obtener un reembolso si no puedo asistir al examen?",
       answer: "Sí, se conceden reembolsos por motivos médicos graves o razones familiares serias, siempre que se presente documentación oficial justificativa. El centro examinador deduce tasas administrativas del importe total, generalmente entre 30 y 50 euros. Las solicitudes de reembolso deben presentarse con la mayor antelación posible antes de la fecha del examen."
@@ -58,6 +38,24 @@ export default function PrecioCambridgeC1MadridPage() {
     }
   ];
 
+export default function PrecioCambridgeC1MadridPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const newFaqItems = [
+    {
+      question: '¿Cuánto cuesta Cambridge al año?',
+      answer: 'Los exámenes Cambridge English tienen precios individuales que oscilan entre 69,50€ (Pre A1 Starters, A1 Movers) y 242€ (C2 Proficiency), con descuentos University Project de 9,50€ en niveles B1-C2. Linguaskill cuesta 130€ (120€ con descuento). TKT docente: 75€ por módulo. Los precios varían según el centro autorizado. No existe un coste anual único, ya que los candidatos eligen exámenes específicos según su nivel y necesidades académicas o profesionales.'
+    },
+    {
+      question: '¿Cuánto cuesta el examen de Cambridge?',
+      answer: 'El precio del examen de Cambridge oscila entre 69,50€ y 242€ según el nivel. Young Learners (Pre A1-A2 Flyers): 69,50-72€. Educación general: A2 Key (110€), B1 Preliminary (117,50€), B2 First (218€), C1 Advanced (233€), C2 Proficiency (242€). El University Project ofrece descuentos de 6,50-9,50€ para estudiantes universitarios. Linguaskill cuesta 130€ (120€ con descuento). TKT docente: 75€ por módulo. Los precios varían según el centro autorizado.'
+    }
+  ];
+
+
   const priceComparison = [
     { level: "A2 Key", price: "125-145€" },
     { level: "B1 Preliminary", price: "160-175€" },
@@ -68,14 +66,7 @@ export default function PrecioCambridgeC1MadridPage() {
 
   return (
     <>
-      <SEOHead
-        title="Precio Cambridge C1 Advanced Madrid 2025: 233€ | Costes, Descuentos y Registro Completo"
-        description="Precio del examen Cambridge C1 Advanced en Madrid: 233€ (223,50€ con descuento universitario). Plazos de inscripción, formatos digital y papel, centros autorizados."
-        keywords="precio cambridge c1 madrid, coste c1 advanced madrid, inscripción cambridge c1, descuento universitario cambridge, examen c1 madrid precio, centros cambridge madrid"
-        canonical="/blog/precio-cambridge-c1-madrid"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -390,11 +381,11 @@ export default function PrecioCambridgeC1MadridPage() {
                         <ChevronDown className="w-5 h-5 text-indigo-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -411,7 +402,7 @@ export default function PrecioCambridgeC1MadridPage() {
                   El precio del examen Cambridge C1 Advanced en Madrid (<strong>233 euros</strong>, o 223,50€ con descuento universitario) representa una inversión accesible para obtener una certificación de inglés avanzado reconocida internacionalmente.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Planificar el registro con 6-8 semanas de antelación garantiza acceso a la fecha y formato preferidos. Para quienes buscan preparación adicional, nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-indigo-600 hover:underline font-medium">academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-indigo-600 hover:underline font-medium">junto a La Vaguada</Link>, ofrece cursos especializados con metodologías específicas para maximizar las posibilidades de éxito. Preparamos <Link to="/examenes-cambridge" className="text-indigo-600 hover:underline font-medium">exámenes Cambridge</Link> con <Link to="/cursos-ingles/adultos" className="text-indigo-600 hover:underline font-medium">cursos de inglés para adultos</Link> y <Link to="/cursos-ingles/particulares" className="text-indigo-600 hover:underline font-medium">clases particulares</Link> desde 79€/mes.
+                  Planificar el registro con 6-8 semanas de antelación garantiza acceso a la fecha y formato preferidos. Para quienes buscan preparación adicional, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-indigo-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-indigo-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos especializados con metodologías específicas para maximizar las posibilidades de éxito. Preparamos <a href="/examenes-cambridge" className="text-indigo-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos" className="text-indigo-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares" className="text-indigo-600 hover:underline font-medium">clases particulares</a> desde 79€/mes.
                 </p>
               </div>
             </section>
@@ -422,31 +413,31 @@ export default function PrecioCambridgeC1MadridPage() {
               <p className="text-indigo-100 mb-6 max-w-2xl mx-auto">
                 En Impulse English Academy te ayudamos a conseguir la mejor puntuación con metodología probada.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-indigo-50 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-indigo-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors mb-2">
                     Examen Cambridge C1 Advanced: Guía
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre estructura, formato y preparación del C1.</p>
-                </Link>
-                <Link to="/examenes-cambridge/centros-madrid" className="group bg-gray-50 rounded-xl p-6 hover:bg-indigo-50 transition-colors">
+                </a>
+                <a href="/examenes-cambridge/centros-madrid" className="group bg-gray-50 rounded-xl p-6 hover:bg-indigo-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors mb-2">
                     Centros Cambridge en Madrid
                   </h3>
                   <p className="text-gray-600 text-sm">Dónde examinarte y cómo elegir el mejor centro.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -476,7 +467,6 @@ export default function PrecioCambridgeC1MadridPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

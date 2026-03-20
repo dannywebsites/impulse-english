@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Calendar, Clock, Award, BookOpen, FileText, HelpCircle, ChevronDown, CheckCircle, Star, MapPin, Users, Target, Zap, GraduationCap, DollarSign, Timer } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
 const preparacionB2Faqs = [
@@ -112,6 +109,13 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes' },
 ];
 
+export const articleSchema = generateArticleSchema({
+    headline: "Preparación B2 First Madrid | 100% Aprobados 2024-2025",
+    description: "Preparación B2 First en Madrid, Centro Oficial Cambridge. 100% aprobados 2024-2025. Grupos reducidos, simulacros mensuales. La Vaguada, Barrio del Pilar. Desde 75€/mes.",
+    url: `${businessInfo.url}/preparacion-b2-first-madrid`,
+    datePublished: "2025-01-15"
+  });
+
 export default function PreparacionB2FirstMadridPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -119,23 +123,9 @@ export default function PreparacionB2FirstMadridPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const articleSchema = generateArticleSchema({
-    headline: "Preparación B2 First Madrid | 100% Aprobados 2024-2025",
-    description: "Preparación B2 First en Madrid, Centro Oficial Cambridge. 100% aprobados 2024-2025. Grupos reducidos, simulacros mensuales. La Vaguada, Barrio del Pilar. Desde 75€/mes.",
-    url: `${businessInfo.url}/preparacion-b2-first-madrid`,
-    datePublished: "2025-01-15"
-  });
-
   return (
     <>
-      <SEOHead
-        title="Preparación B2 First | 100% Aprobados 2024-2025"
-        description="Preparación B2 First en Madrid, Centro Oficial Cambridge. 100% aprobados 2024-2025. Grupos reducidos, simulacros mensuales. La Vaguada, Barrio del Pilar. Desde 75€/mes."
-        keywords="preparación b2 first madrid, academia b2 first madrid, curso b2 first cambridge madrid, preparar fce madrid"
-        canonical="/preparacion-b2-first-madrid"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       <article>
         {/* Hero Section */}
@@ -198,13 +188,13 @@ export default function PreparacionB2FirstMadridPage() {
 
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
-          <Link
-            to="/examenes-cambridge"
+          <a
+              href="/examenes-cambridge"
             className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
             ← Volver a Exámenes Cambridge
-          </Link>
+          </a>
         </div>
 
         {/* Table of Contents */}
@@ -507,30 +497,30 @@ export default function PreparacionB2FirstMadridPage() {
           <div className="container mx-auto px-6">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link
-                to="/examenes-cambridge/b2-first"
+              <a
+              href="/examenes-cambridge/b2-first"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">Cambridge B2</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Beneficios del B2 First</h3>
                 <p className="text-zinc-600 text-sm mt-2">Descubre por qué el B2 First es el certificado más demandado.</p>
-              </Link>
-              <Link
-                to="/examenes-cambridge"
+              </a>
+              <a
+              href="/examenes-cambridge"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">Hub Principal</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Guía Completa Exámenes Cambridge</h3>
                 <p className="text-zinc-600 text-sm mt-2">Todo lo que necesitas saber sobre certificaciones.</p>
-              </Link>
-              <Link
-                to="/examenes-cambridge/fechas-precios"
+              </a>
+              <a
+              href="/examenes-cambridge/fechas-precios"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">Fechas</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Fechas Exámenes Cambridge 2026</h3>
                 <p className="text-zinc-600 text-sm mt-2">Calendario oficial y plazos de inscripción.</p>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -553,7 +543,6 @@ export default function PreparacionB2FirstMadridPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

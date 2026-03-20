@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CheckCircle, Phone, Clock, Users, Award, Loader2, Send } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import SEOHead from '../components/SEOHead';
-import SchemaMarkup from '../components/SchemaMarkup';
-import { generateOrganizationSchema } from '../utils/schemaData';
 
 export default function ReservarClasePage() {
   const [formData, setFormData] = useState({
@@ -57,12 +53,6 @@ export default function ReservarClasePage() {
   if (status === 'success') {
     return (
       <>
-        <SEOHead
-          title="Reserva Confirmada - Impulse English Academy"
-          description="Tu reserva ha sido confirmada. Te contactaremos en menos de 24 horas para tu clase de prueba gratuita."
-          canonical="/reservar-clase"
-          noindex={true}
-        />
         <Navbar />
         <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 pt-24 pb-16 px-6 flex items-center justify-center">
           <div className="max-w-lg mx-auto text-center">
@@ -95,12 +85,12 @@ export default function ReservarClasePage() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/"
+              <a
+              href="/"
                 className="bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg transition-colors"
               >
                 Volver al inicio
-              </Link>
+              </a>
               <a
                 href="tel:+34604910611"
                 className="bg-white border border-zinc-200 text-zinc-900 font-bold py-3 px-6 rounded-lg hover:bg-zinc-50 transition-colors"
@@ -116,12 +106,6 @@ export default function ReservarClasePage() {
 
   return (
     <>
-      <SEOHead
-        title="Reservar Clase de Prueba Gratuita"
-        description="Reserva tu clase de prueba gratuita en Impulse English Academy. Sin compromiso. Te contactamos en menos de 24 horas. La Vaguada, Barrio del Pilar."
-        keywords="reservar clase inglés, prueba gratis inglés madrid, clase prueba academia inglés, inscripción cursos inglés"
-        canonical="/reservar-clase"
-      />
       <Navbar />
 
       <div className="min-h-screen bg-zinc-50">
@@ -326,7 +310,6 @@ export default function ReservarClasePage() {
           </div>
         </section>
       </div>
-      <SchemaMarkup schema={generateOrganizationSchema()} />
     </>
   );
 }

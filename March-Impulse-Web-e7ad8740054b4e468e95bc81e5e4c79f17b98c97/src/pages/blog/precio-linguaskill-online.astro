@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PrecioLinguaskillOnlinePage, { articleSchema, faqs } from '../../../pages/blog/PrecioLinguaskillOnlinePage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Precio Linguaskill Online 2026: Guía Completa de Costes"
+  description="Precio actualizado del examen Linguaskill online 2026: 130€ completo o modalidad modular. Descuentos universitarios, comparativa internacional y costes de preparación en España."
+  canonical="/blog/precio-linguaskill-online"
+  ogType="article"
+  schemas={schemas}
+>
+  <PrecioLinguaskillOnlinePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

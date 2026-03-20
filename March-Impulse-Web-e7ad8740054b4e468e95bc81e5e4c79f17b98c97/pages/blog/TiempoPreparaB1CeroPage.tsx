@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function TiempoPreparaB1CeroPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Preparar B1 Cambridge desde Cero: Tiempo y Plan de Estudio 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Tiempo se Tarda en Preparar el B1 desde Cero?",
     description: "Preparar el B1 desde cero lleva 12-18 meses con estudio regular. Desde nivel A2: 10-12 semanas. Plan detallado y horas necesarias por nivel.",
     url: `${businessInfo.url}/blog/tiempo-preparar-b1-cero`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Puedo preparar el B1 en 3 meses desde cero?",
       answer: "Desde cero absoluto, 3 meses es prácticamente imposible para alcanzar un B1 sólido. Necesitarías dedicar más de 6 horas diarias, lo cual no es sostenible ni efectivo para el aprendizaje. Desde un A2 consolidado, sí es posible en 3 meses con estudio intensivo (10-12 horas semanales)."
-    },
+    }
+
+  ,
     {
       question: "¿Cuántas horas al día debo estudiar?",
       answer: "La clave no es la cantidad sino la constancia. Estudiar 1-2 horas diarias de forma consistente es más efectivo que sesiones intensivas esporádicas. Para progreso óptimo, combina 45 minutos de estudio formal (gramática, ejercicios) con 30-45 minutos de exposición natural (podcasts, series, lectura)."
@@ -47,6 +38,14 @@ export default function TiempoPreparaB1CeroPage() {
     }
   ];
 
+export default function TiempoPreparaB1CeroPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const timelineData = [
     { level: "Desde cero (A0)", time: "12-18 meses", hours: "350-500 horas", intensity: "6-8 h/semana" },
     { level: "Desde A1", time: "8-12 meses", hours: "250-350 horas", intensity: "6-8 h/semana" },
@@ -56,14 +55,7 @@ export default function TiempoPreparaB1CeroPage() {
 
   return (
     <>
-      <SEOHead
-        title="Preparar B1 Cambridge desde Cero: Tiempo y Plan de Estudio 2026"
-        description="Preparar el B1 desde cero lleva 12-18 meses con estudio regular. Desde nivel A2: 10-12 semanas. Plan detallado y horas necesarias por nivel."
-        keywords="tiempo preparar b1, b1 desde cero, cuánto tardar b1 cambridge, preparar b1 cambridge"
-        canonical="/blog/tiempo-preparar-b1-cero"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -121,7 +113,7 @@ export default function TiempoPreparaB1CeroPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              La pregunta sobre cuánto tiempo se necesita para preparar el <Link to="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline">B1 Preliminary de Cambridge</Link> es probablemente la más frecuente entre quienes se plantean obtener esta certificación. La respuesta varía enormemente según tu punto de partida, dedicación y método de estudio. En este artículo te damos <strong>estimaciones realistas basadas en datos</strong> y un plan concreto para cada situación.
+              La pregunta sobre cuánto tiempo se necesita para preparar el <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline">B1 Preliminary de Cambridge</a> es probablemente la más frecuente entre quienes se plantean obtener esta certificación. La respuesta varía enormemente según tu punto de partida, dedicación y método de estudio. En este artículo te damos <strong>estimaciones realistas basadas en datos</strong> y un plan concreto para cada situación.
             </p>
 
             {/* Section 1 */}
@@ -331,7 +323,7 @@ export default function TiempoPreparaB1CeroPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                La calidad del estudio importa tanto como la cantidad. Una hora con un <Link to="/metodologia" className="text-emerald-600 hover:underline">profesor especializado</Link> equivale a 2-3 horas de autoestudio, especialmente para las destrezas de speaking y writing que requieren feedback profesional.
+                La calidad del estudio importa tanto como la cantidad. Una hora con un <a href="/metodologia" className="text-emerald-600 hover:underline">profesor especializado</a> equivale a 2-3 horas de autoestudio, especialmente para las destrezas de speaking y writing que requieren feedback profesional.
               </p>
             </section>
 
@@ -359,7 +351,7 @@ export default function TiempoPreparaB1CeroPage() {
                     <Target className="w-5 h-5 text-emerald-600" />
                     Curso intensivo en academia
                   </h3>
-                  <p className="text-gray-700">Los <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">cursos intensivos</Link> con 3-4 clases semanales multiplican la velocidad de aprendizaje. La estructura, los compañeros y la corrección profesional son insustituibles.</p>
+                  <p className="text-gray-700">Los <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">cursos intensivos</a> con 3-4 clases semanales multiplican la velocidad de aprendizaje. La estructura, los compañeros y la corrección profesional son insustituibles.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -398,11 +390,11 @@ export default function TiempoPreparaB1CeroPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -416,10 +408,10 @@ export default function TiempoPreparaB1CeroPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Preparar el <Link to="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">B1 Preliminary</Link> desde cero requiere entre 12 y 18 meses con dedicación regular. Desde un A2 consolidado, el plazo se reduce a 10-16 semanas. La clave está en la constancia, un buen plan de estudio y la combinación de clases en academia con práctica autónoma.
+                  Preparar el <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">B1 Preliminary</a> desde cero requiere entre 12 y 18 meses con dedicación regular. Desde un A2 consolidado, el plazo se reduce a 10-16 semanas. La clave está en la constancia, un buen plan de estudio y la combinación de clases en academia con práctica autónoma.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</Link> diseñamos planes de preparación personalizados según tu nivel de partida y tu fecha objetivo. Nuestra <Link to="/metodologia" className="text-emerald-600 hover:underline font-medium">metodología</Link> ha ayudado a cientos de estudiantes a alcanzar su B1 en los plazos marcados.
+                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> diseñamos planes de preparación personalizados según tu nivel de partida y tu fecha objetivo. Nuestra <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">metodología</a> ha ayudado a cientos de estudiantes a alcanzar su B1 en los plazos marcados.
                 </p>
               </div>
             </section>
@@ -430,31 +422,31 @@ export default function TiempoPreparaB1CeroPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 Realiza una prueba de nivel gratuita y te diseñamos un plan personalizado para alcanzar tu B1 en el menor tiempo posible.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Prueba de nivel gratis
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía Completa del B1 Preliminary
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge B1: formato, precio y estructura.</p>
-                </Link>
-                <Link to="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Cursos adaptados a tu nivel y horario para progresar rápidamente.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -484,7 +476,6 @@ export default function TiempoPreparaB1CeroPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

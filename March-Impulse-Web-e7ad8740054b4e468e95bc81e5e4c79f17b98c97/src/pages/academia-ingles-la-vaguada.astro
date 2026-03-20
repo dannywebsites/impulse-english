@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LaVaguadaPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/LaVaguadaPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Academia de Inglés en La Vaguada"
+  description="Academia de inglés en La Vaguada y Barrio del Pilar, Madrid. Profesores nativos especializados en preparación de exámenes Cambridge. Clases para niños, adolescentes y adultos. 100% aprobados. ¡Prueba de nivel gratuita!"
+  keywords="academia inglés la vaguada, clases inglés cerca vaguada, cambridge madrid norte, cursos inglés barrio pilar, profesores nativos madrid, preparación cambridge la vaguada"
+  canonical="/academia-ingles-la-vaguada"
+  schemas={schemas}
+>
+  <LaVaguadaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

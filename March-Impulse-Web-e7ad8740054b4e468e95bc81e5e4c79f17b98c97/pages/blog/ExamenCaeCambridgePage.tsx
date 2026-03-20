@@ -1,34 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Award, Clock, ChevronDown, ChevronUp, CheckCircle, Target, FileText, Headphones, MessageSquare } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
-import SEOHead from '../../components/SEOHead';
-
-export default function ExamenCaeCambridgePage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Examen CAE Cambridge C1 Advanced: Guía Completa 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Examen CAE Cambridge C1 Advanced: Guía Completa 2026",
     description: "Guía completa del examen CAE C1 Advanced de Cambridge: estructura, partes, puntuación, precio y cómo prepararte.",
     url: `${businessInfo.url}/blog/examen-cae-cambridge`,
     datePublished: "2025-01-06"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Cuánto tiempo se tarda en preparar el examen CAE desde un nivel B2?",
       answer: "Con dedicación de 8-10 horas semanales, necesitas aproximadamente 4-6 meses de preparación intensiva desde un nivel B2 sólido. Este período permite desarrollar el vocabulario académico avanzado requerido, dominar estructuras gramaticales complejas y familiarizarte completamente con el formato específico del examen. Candidatos con menos tiempo disponible pueden extender la preparación a 8-9 meses con estudio de 4-5 horas semanales."
-    },
+    }
+
+  ,
     {
       question: "¿Cuál es la diferencia entre el examen CAE papel y digital?",
       answer: "Ambos formatos tienen contenido idéntico, misma duración y validez equivalente del certificado obtenido. La diferencia principal radica en la interfaz: el digital usa ordenador para Reading, Use of English, Listening y Writing, ofreciendo procesador de texto, cronómetro visible y audífonos individuales. Los resultados digitales están disponibles en 2-3 semanas versus 4-6 para papel. El Speaking mantiene formato presencial en ambas modalidades."
@@ -46,6 +36,14 @@ export default function ExamenCaeCambridgePage() {
       answer: "Sí, Cambridge English permite inscripción directa sin requisito de curso previo. Sin embargo, aprobar sin preparación específica resulta extremadamente difícil incluso para hablantes con nivel B2+ consolidado. El 92% de candidatos exitosos realiza preparación estructurada de 3-6 meses, ya que el formato específico, tipos de ejercicio y criterios de evaluación requieren familiarización práctica detallada que no se adquiere únicamente con buen nivel general de inglés."
     }
   ];
+
+export default function ExamenCaeCambridgePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   const examParts = [
     {
@@ -88,14 +86,7 @@ export default function ExamenCaeCambridgePage() {
 
   return (
     <>
-      <SEOHead
-        title="Examen CAE Cambridge C1 Advanced 2026: Guía Completa | Estructura, Partes y Preparación"
-        description="Guía completa del CAE C1 Advanced: estructura del examen, Reading, Writing, Listening, Speaking, puntuación, precio y cómo prepararte para aprobar en 2026."
-        keywords="examen cae cambridge, c1 advanced cambridge, certificado cae, preparación c1 advanced, estructura cae, puntuación cambridge c1, precio cae madrid"
-        canonical="/blog/examen-cae-cambridge"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
@@ -367,12 +358,12 @@ export default function ExamenCaeCambridgePage() {
                       El 85% de nuestros estudiantes aprueban el C1 Advanced en su primer intento.
                       Seguimiento personalizado de tu progreso y plan de estudio adaptado a tus necesidades.
                     </p>
-                    <Link
-                      to="/contacto"
+                    <a
+              href="/contacto"
                       className="inline-block bg-white text-rose-600 font-bold py-2 px-6 rounded-lg hover:bg-zinc-100 transition-colors"
                     >
                       Solicitar información
-                    </Link>
+                    </a>
                   </div>
 
                 </div>
@@ -398,11 +389,11 @@ export default function ExamenCaeCambridgePage() {
                         <ChevronDown className="w-5 h-5 text-zinc-500" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 py-4 bg-white">
-                        <p className="text-zinc-600">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 py-4' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-zinc-600">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -419,8 +410,8 @@ export default function ExamenCaeCambridgePage() {
                   necesitas conocer el formato y las estrategias para cada sección.
                 </p>
                 <p className="text-white/90">
-                  En nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-bold">academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">junto a La Vaguada</Link>, te preparamos con metodología probada y profesores
-                  expertos por solo <strong>79€/mes</strong>. Ofrecemos <Link to="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</Link> y <Link to="/cursos-ingles/particulares" className="text-white hover:underline font-bold">clases particulares</Link> para preparar todos los <Link to="/examenes-cambridge" className="text-white hover:underline font-bold">exámenes Cambridge</Link>. ¡Da el paso hacia tu certificación C1!
+                  En nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">junto a La Vaguada</a>, te preparamos con metodología probada y profesores
+                  expertos por solo <strong>79€/mes</strong>. Ofrecemos <a href="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares" className="text-white hover:underline font-bold">clases particulares</a> para preparar todos los <a href="/examenes-cambridge" className="text-white hover:underline font-bold">exámenes Cambridge</a>. ¡Da el paso hacia tu certificación C1!
                 </p>
               </div>
             </section>
@@ -437,12 +428,12 @@ export default function ExamenCaeCambridgePage() {
                       Consigue tu certificado C1 con nuestra preparación especializada.
                     </p>
                   </div>
-                  <Link
-                    to="/contacto"
+                  <a
+              href="/contacto"
                     className="bg-rose-500 hover:bg-rose-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Empezar ahora
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -452,14 +443,14 @@ export default function ExamenCaeCambridgePage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link to="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-rose-600">GUÍA COMPLETA</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa de Exámenes Cambridge 2026</h4>
-                </Link>
-                <Link to="/examenes-cambridge/c1-advanced" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/examenes-cambridge/c1-advanced" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-rose-600">RECURSOS</span>
                   <h4 className="font-bold text-zinc-900 mt-1">PDFs Cambridge Advanced: Recursos Oficiales</h4>
-                </Link>
+                </a>
               </div>
             </section>
           </div>
@@ -485,7 +476,6 @@ export default function ExamenCaeCambridgePage() {
 
       <Footer />
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

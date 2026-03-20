@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ExamenCaeCambridgePage, { articleSchema, faqs } from '../../../pages/blog/ExamenCaeCambridgePage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Examen CAE Cambridge C1 Advanced 2026: Guía Completa | Estructura, Partes y Preparación"
+  description="Guía completa del CAE C1 Advanced: estructura del examen, Reading, Writing, Listening, Speaking, puntuación, precio y cómo prepararte para aprobar en 2026."
+  canonical="/blog/examen-cae-cambridge"
+  ogType="article"
+  schemas={schemas}
+>
+  <ExamenCaeCambridgePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

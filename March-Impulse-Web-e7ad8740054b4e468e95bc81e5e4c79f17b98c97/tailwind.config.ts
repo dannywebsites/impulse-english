@@ -2,11 +2,10 @@ import type { Config } from 'tailwindcss';
 
 export default {
   content: [
-    './index.html',
+    './src/**/*.{astro,html,js,jsx,ts,tsx}',
     './*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './pages/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
     './utils/**/*.{ts,tsx}',
   ],
   theme: {

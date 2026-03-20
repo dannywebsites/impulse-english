@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PreparacionB2FirstMadridPage from '../../pages/blog/PreparacionB2FirstMadridPage';
+import CookieBanner from '../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Preparación B2 First | 100% Aprobados 2024-2025"
+  description="Preparación B2 First en Madrid, Centro Oficial Cambridge. 100% aprobados 2024-2025. Grupos reducidos, simulacros mensuales. La Vaguada, Barrio del Pilar. Desde 75€/mes."
+  keywords="preparación b2 first madrid, academia b2 first madrid, curso b2 first cambridge madrid, preparar fce madrid"
+  canonical="/preparacion-b2-first-madrid"
+  ogType="article"
+>
+  <PreparacionB2FirstMadridPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Breadcrumb from '../../components/Breadcrumb';
-import SEOHead from '../../components/SEOHead';
 
 export default function PoliticaCookiesPage() {
   useEffect(() => {
@@ -11,12 +10,6 @@ export default function PoliticaCookiesPage() {
 
   return (
     <>
-      <SEOHead
-        title="Política de Cookies"
-        description="Política de cookies de Impulse English Academy. Información sobre el uso de cookies en nuestro sitio web."
-        canonical="/politica-cookies"
-        noindex={true}
-      />
       <Navbar />
 
       {/* Hero Section */}

@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function NoEntiendoInglesHabladoPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'No Entiendo Inglés Hablado: Por Qué Ocurre y Cómo Mejorarlo 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿Por Qué No Entiendo el Inglés Hablado? Causas y Soluciones",
     description: "No entender inglés hablado se debe a velocidad, acentos y connected speech. Descubre las causas científicas y un plan de mejora paso a paso por nivel.",
     url: `${businessInfo.url}/blog/no-entiendo-ingles-hablado`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Por qué entiendo el inglés escrito pero no el hablado?",
       answer: "El inglés hablado usa reducción fonética, elisions y contracciones que cambian totalmente el sonido de las palabras. 'Want to' se convierte en 'wanna', 'going to' en 'gonna'. El inglés escrito no refleja esto."
-    },
+    }
+
+  ,
     {
       question: "¿Los diferentes acentos del inglés son muy distintos?",
       answer: "Sí, significativamente. El inglés australiano, escocés, americano del sur o indio pueden ser casi incomprensibles al principio. Se necesita exposición específica a múltiples acentos."
@@ -43,16 +34,17 @@ export default function NoEntiendoInglesHabladoPage() {
     }
   ];
 
+export default function NoEntiendoInglesHabladoPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="No Entiendo Inglés Hablado: Por Qué Ocurre y Cómo Mejorarlo 2026"
-        description="No entender inglés hablado se debe a velocidad, acentos y connected speech. Descubre las causas científicas y un plan de mejora paso a paso por nivel."
-        keywords="no entiendo inglés hablado, entender inglés rápido, comprensión oral inglés, inglés hablado difícil"
-        canonical="/blog/no-entiendo-ingles-hablado"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -345,11 +337,11 @@ export default function NoEntiendoInglesHabladoPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -361,31 +353,31 @@ export default function NoEntiendoInglesHabladoPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 Trabajamos el connected speech, los acentos y la comprensión de inglés real desde el primer día de clase.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Nuestra Metodología</h3>
                   <p className="text-gray-600 text-sm">Cómo entrenamos el oído con inglés real desde el primer día.</p>
-                </Link>
-                <Link to="/blog/mejorar-listening-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/mejorar-listening-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Mejorar el Listening en Inglés</h3>
                   <p className="text-gray-600 text-sm">10 técnicas específicas por nivel para mejorar la comprensión oral.</p>
-                </Link>
-                <Link to="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Cursos de Inglés para Adultos</h3>
                   <p className="text-gray-600 text-sm">Programas con entrenamiento de comprensión oral integrado.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -415,7 +407,6 @@ export default function NoEntiendoInglesHabladoPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

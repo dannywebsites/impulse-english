@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CuantoTiempoAprenderInglesPage, { articleSchema, faqItems } from '../../../pages/blog/CuantoTiempoAprenderInglesPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿Cuánto Tiempo se Tarda en Aprender Inglés? Guía Realista 2026"
+  description="Aprender inglés lleva de 6 meses a 3 años según tu nivel objetivo. De cero a B1: 6-12 meses. A B2: 18-24 meses. Plazos reales y factores clave."
+  canonical="/blog/cuanto-tiempo-aprender-ingles"
+  ogType="article"
+  schemas={schemas}
+>
+  <CuantoTiempoAprenderInglesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

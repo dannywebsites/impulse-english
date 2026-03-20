@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { ChevronDown, MessageCircle, Phone, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import FAQSection from '../components/FAQSection';
 import Breadcrumb from '../components/Breadcrumb';
-import SEOHead from '../components/SEOHead';
-import SchemaMarkup from '../components/SchemaMarkup';
-import { generateFAQSchema, generateDefinedTermSchema } from '../utils/schemaData';
 
 interface FAQItem {
   question: string;
@@ -317,31 +313,6 @@ const faqSections: FAQSection[] = [
   }
 ];
 
-// Combine all FAQs for schema generation
-const allFAQs = [
-  ...seoFAQs,
-  ...faqSections.flatMap(section => section.items)
-];
-
-// Generate FAQ schema
-const faqSchema = generateFAQSchema(allFAQs);
-
-// DefinedTerm schemas for key glossary concepts
-const definedTermSchemas = [
-  generateDefinedTermSchema(
-    "MCER (Marco Común Europeo de Referencia)",
-    "Estándar internacional que define niveles de dominio lingüístico: A1-A2 (usuario elemental), B1-B2 (usuario independiente), C1-C2 (usuario competente). Todos los exámenes Cambridge se alinean con MCER."
-  ),
-  generateDefinedTermSchema(
-    "CEFR (Common European Framework of Reference)",
-    "Equivalente en inglés del MCER. Define 6 niveles: A1, A2, B1, B2, C1, C2. Usado por Cambridge, IELTS, Duolingo y todas las instituciones serias para comparar títulos de idiomas entre países."
-  ),
-  generateDefinedTermSchema(
-    "Nivel B2 de Inglés",
-    "Nivel Intermedio-Alto (Independent User) del MCER. Significa comprensión profunda, expresión fluida y espontánea, capacidad para argumentar y defender posiciones. Nivel mínimo para trabajar en multinacionales y estudiar en universidades."
-  )
-];
-
 function FAQAccordion({ section }: { section: FAQSection }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -381,16 +352,7 @@ export default function PreguntasFrecuentesPage() {
 
   return (
     <>
-      <SEOHead
-        title="Preguntas Frecuentes"
-        description="Respuestas a todas tus preguntas sobre cursos, horarios, precios, exámenes Cambridge y Linguaskill. Academia de inglés en La Vaguada, Barrio del Pilar."
-        keywords="preguntas frecuentes academia inglés, faq clases inglés madrid, dudas cambridge linguaskill, información cursos inglés"
-        canonical="/preguntas-frecuentes"
-      />
       <Navbar />
-
-      {/* FAQ Schema + DefinedTerm Schemas */}
-      <SchemaMarkup schema={[faqSchema, ...definedTermSchemas]} />
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
@@ -523,14 +485,14 @@ export default function PreguntasFrecuentesPage() {
               <span className="text-blue-100 text-sm">+34 604 910 611</span>
             </a>
 
-            <Link
-              to="/reservar-clase"
+            <a
+              href="/reservar-clase"
               className="flex flex-col items-center gap-2 bg-red-600 hover:bg-red-700 text-white p-6 rounded-xl transition-colors"
             >
               <Mail className="w-8 h-8" />
               <span className="font-bold">Reservar</span>
               <span className="text-red-100 text-sm">Prueba de Nivel</span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

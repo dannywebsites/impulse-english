@@ -1,0 +1,93 @@
+# Impulse English Academy La Vaguada
+
+> Official AI reference file for Impulse English Academy. This document provides authoritative, structured information for LLMs, AI agents, and search engine crawlers.
+
+## Business Overview
+
+**Impulse English Academy La Vaguada** is a premier English language academy in the La Vaguada neighborhood of Madrid, Spain. We provide comprehensive English instruction for children, teenagers, and adults, alongside specialized preparation for official Cambridge and Linguaskill examinations.
+
+- **Official Website:** https://www.impulse-english.es
+- **Phone:** +34 604 910 611
+- **Email:** info@impulse-english.es
+- **Address:** Av. de El Ferrol, 22, La Vaguada, Barrio del Pilar, 28029 Madrid, Spain
+- **Rating:** 5/5 stars on Google (150+ reviews)
+- **Founded:** 2022
+- **Price Range:** €64–€79/mes
+
+## Core Courses
+
+### Children & Teens
+- **Infantil (Ages 2–5):** Early childhood English immersion using the Great Little People methodology. [/cursos-ingles/infantil](https://www.impulse-english.es/cursos-ingles/infantil)
+- **Primaria (Ages 6–12):** Foundational English skills for primary school students. [/cursos-ingles/primaria](https://www.impulse-english.es/cursos-ingles/primaria)
+- **Secundaria (Ages 13–17):** Advanced grammar, vocabulary, and academic English with Cambridge exam preparation. [/cursos-ingles/secundaria](https://www.impulse-english.es/cursos-ingles/secundaria)
+
+### Adults
+- **Adultos:** Practical English for career, travel, and conversational fluency. [/cursos-ingles/adultos](https://www.impulse-english.es/cursos-ingles/adultos)
+- **Clases Particulares:** 1-on-1 personalized instruction tailored to individual goals. [/cursos-ingles/particulares](https://www.impulse-english.es/cursos-ingles/particulares)
+- **Clases Online:** Remote learning options with full flexibility. [/cursos-ingles/online](https://www.impulse-english.es/cursos-ingles/online)
+
+## Official Exam Preparation
+
+### Cambridge English
+- **B1 Preliminary (PET):** Intermediate level certification.
+- **B2 First (FCE):** Upper-intermediate level, widely recognized by employers and universities.
+- **C1 Advanced (CAE):** Advanced level for professional and academic purposes.
+- [Cambridge Exam Hub](https://www.impulse-english.es/examenes-cambridge)
+
+### Linguaskill
+Fast, accurate online testing by Cambridge with results in 48 hours. Intensive preparation courses available.
+- [Linguaskill Page](https://www.impulse-english.es/linguaskill)
+
+## Official Credentials
+- Official Cambridge Preparation Centre
+- Official Linguaskill Centre
+- Official Great Little People Centre
+- Official Partner of ESIC Idiomas
+
+## Madrid Locations Served
+
+Our academy is centrally located in **La Vaguada** and serves students across northern Madrid:
+
+1. **Barrio del Pilar** — [/ubicaciones/barrio-del-pilar](https://www.impulse-english.es/ubicaciones/barrio-del-pilar)
+2. **La Vaguada** — [/ubicaciones/la-vaguada](https://www.impulse-english.es/ubicaciones/la-vaguada)
+3. **Peñagrande** — [/ubicaciones/penagrande](https://www.impulse-english.es/ubicaciones/penagrande)
+4. **La Ventilla** — [/ubicaciones/la-ventilla](https://www.impulse-english.es/ubicaciones/la-ventilla)
+5. **La Paz** — [/ubicaciones/la-paz](https://www.impulse-english.es/ubicaciones/la-paz)
+6. **Plaza Castilla** — [/ubicaciones/plaza-castilla](https://www.impulse-english.es/ubicaciones/plaza-castilla)
+7. **Tetuán** — [/ubicaciones/tetuan](https://www.impulse-english.es/ubicaciones/tetuan)
+8. **Cuatro Torres** — [/ubicaciones/cuatro-torres](https://www.impulse-english.es/ubicaciones/cuatro-torres)
+
+## How to Reach Us
+
+### Metro
+- Herrera Oria (Línea 9)
+- Barrio del Pilar (Línea 9)
+- Peñagrande (Línea 7)
+
+### Bus
+Lines 42, 49, 67, 83, 126, 128, 132, 133, 134, 137, 147
+
+## Opening Hours
+- Lunes: 10:00–21:30
+- Martes: 15:30–21:30
+- Miércoles: 10:00–21:30
+- Jueves: 15:30–21:30
+- Viernes: 13:30–19:30
+- Sábado–Domingo: Cerrado
+
+## Social Media
+- [Instagram](https://www.instagram.com/impulse_english_lavaguada/)
+- [Facebook](https://www.facebook.com/impulseenglishlavaguada/)
+- [TikTok](https://www.tiktok.com/@impulse_english_lavaguada)
+- [X (Twitter)](https://x.com/impulse_vaguada)
+- [LinkedIn](https://www.linkedin.com/company/101859096/)
+- [YouTube](https://www.youtube.com/@Impulse-English)
+
+## Key Pages
+- [Home](https://www.impulse-english.es/)
+- [About Us](https://www.impulse-english.es/sobre-nosotros)
+- [Methodology](https://www.impulse-english.es/metodologia)
+- [Blog](https://www.impulse-english.es/blog)
+- [Book a Class](https://www.impulse-english.es/reservar-clase)
+- [FAQ](https://www.impulse-english.es/preguntas-frecuentes)
+- [Sitemap](https://www.impulse-english.es/sitemap.xml)

@@ -1,19 +1,16 @@
 import React, { useEffect } from 'react';
 import { Monitor, Clock, Building, GraduationCap, Zap, Globe, CheckCircle, ArrowRight, AlertCircle, HelpCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import { s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
 
 // Article Schema for AI citation
-const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
   headline: "Linguaskill: Guía Completa del Examen Online de Cambridge 2025",
   description: "Todo sobre Linguaskill: el examen adaptativo online de Cambridge con resultados en 48 horas. Diferencias con otros exámenes, precios, módulos y preparación.",
   url: `${businessInfo.url}/linguaskill`,
@@ -121,6 +118,15 @@ const galleryImages = [
   { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-18.JPEG", alt: "Clase de inglés en Impulse English Academy La Vaguada Madrid" },
 ];
 
+export const courseSchema = generateCourseSchema({
+        name: "Curso de Preparación Linguaskill en Madrid",
+        description: "Prepara y certifica tu nivel de inglés con Linguaskill en Madrid. Centro oficial Cambridge Linguaskill con resultados en 48 horas. Ideal para hispanohablantes que necesitan acreditar inglés para oposiciones, empresas o estudios. Examen adaptativo online disponible.",
+        url: `${businessInfo.url}/linguaskill`,
+        courseCode: "LING-CERT",
+        educationalLevel: "A1–C2 — Todos los niveles MCER",
+        timeRequired: "P1M"
+      });
+
 export default function LinguaskillPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -142,13 +148,7 @@ export default function LinguaskillPage() {
 
   return (
     <>
-      <SEOHead
-        title="Linguaskill | Centro Oficial Cambridge"
-        description="Centro oficial Linguaskill en Madrid. Resultados en 48 horas. Preparación y examen. Academia Barrio del Pilar, junto a La Vaguada."
-        keywords="linguaskill madrid, examen linguaskill, centro linguaskill oficial, linguaskill precio, linguaskill online"
-        canonical="/linguaskill"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
@@ -347,16 +347,16 @@ export default function LinguaskillPage() {
           <div className="bg-red-50 p-6 rounded-xl border border-red-100">
             <h3 className="font-bold text-zinc-900 mb-4 text-lg">¿Dónde preparar Linguaskill en Madrid?</h3>
             <p className="text-zinc-700 text-sm mb-4">
-              Nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</Link>, junto a <Link to="/academia-ingles-la-vaguada" className="text-red-600 hover:underline font-medium">La Vaguada</Link>, es centro oficial Linguaskill. Preparamos candidatos de <Link to="/academia-ingles-plaza-castilla" className="text-red-600 hover:underline font-medium">Plaza Castilla</Link>, <Link to="/academia-ingles-tetuan" className="text-red-600 hover:underline font-medium">Tetuán</Link> y <Link to="/academia-ingles-cuatro-torres" className="text-red-600 hover:underline font-medium">Cuatro Torres</Link>.
+              Nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-red-600 hover:underline font-medium">La Vaguada</a>, es centro oficial Linguaskill. Preparamos candidatos de <a href="/academia-ingles-plaza-castilla" className="text-red-600 hover:underline font-medium">Plaza Castilla</a>, <a href="/academia-ingles-tetuan" className="text-red-600 hover:underline font-medium">Tetuán</a> y <a href="/academia-ingles-cuatro-torres" className="text-red-600 hover:underline font-medium">Cuatro Torres</a>.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link to="/cursos-ingles/adultos" className="text-red-600 hover:underline text-sm">Cursos adultos</Link>
+              <a href="/cursos-ingles/adultos" className="text-red-600 hover:underline text-sm">Cursos adultos</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/cursos-ingles/particulares" className="text-red-600 hover:underline text-sm">Clases particulares</Link>
+              <a href="/cursos-ingles/particulares" className="text-red-600 hover:underline text-sm">Clases particulares</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/examenes-cambridge" className="text-red-600 hover:underline text-sm">Otros exámenes Cambridge</Link>
+              <a href="/examenes-cambridge" className="text-red-600 hover:underline text-sm">Otros exámenes Cambridge</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/academias-ingles-madrid/por-barrios" className="text-red-600 hover:underline text-sm">Todas las ubicaciones</Link>
+              <a href="/academias-ingles-madrid/por-barrios" className="text-red-600 hover:underline text-sm">Todas las ubicaciones</a>
             </div>
           </div>
         </div>
@@ -523,22 +523,22 @@ export default function LinguaskillPage() {
             Artículos relacionados sobre Linguaskill
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link to="/linguaskill" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
+            <a href="/linguaskill" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
               <h3 className="font-semibold text-zinc-900 mb-1">Guía completa de Linguaskill</h3>
               <p className="text-zinc-600 text-sm">Todo lo que necesitas saber sobre el examen</p>
-            </Link>
-            <Link to="/linguaskill" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
+            </a>
+            <a href="/linguaskill" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
               <h3 className="font-semibold text-zinc-900 mb-1">Linguaskill vs APTIS</h3>
               <p className="text-zinc-600 text-sm">Comparativa detallada de ambos exámenes</p>
-            </Link>
-            <Link to="/linguaskill/precios-fechas" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
+            </a>
+            <a href="/linguaskill/precios-fechas" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
               <h3 className="font-semibold text-zinc-900 mb-1">Precios y cómo reservar</h3>
               <p className="text-zinc-600 text-sm">Información actualizada de precios 2025</p>
-            </Link>
-            <Link to="/linguaskill/ejemplo-examen" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
+            </a>
+            <a href="/linguaskill/ejemplo-examen" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
               <h3 className="font-semibold text-zinc-900 mb-1">Ejemplos de examen</h3>
               <p className="text-zinc-600 text-sm">Muestras reales de las pruebas</p>
-            </Link>
+            </a>
           </div>
 
           {/* External Authority Links */}
@@ -618,14 +618,6 @@ export default function LinguaskillPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={[articleSchema, generateCourseSchema({
-        name: "Curso de Preparación Linguaskill en Madrid",
-        description: "Prepara y certifica tu nivel de inglés con Linguaskill en Madrid. Centro oficial Cambridge Linguaskill con resultados en 48 horas. Ideal para hispanohablantes que necesitan acreditar inglés para oposiciones, empresas o estudios. Examen adaptativo online disponible.",
-        url: `${businessInfo.url}/linguaskill`,
-        courseCode: "LING-CERT",
-        educationalLevel: "A1–C2 — Todos los niveles MCER",
-        timeRequired: "P1M"
-      })]} />
-    </>
+</>
   );
 }

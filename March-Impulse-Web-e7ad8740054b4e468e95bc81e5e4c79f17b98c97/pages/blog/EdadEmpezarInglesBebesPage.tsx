@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function EdadEmpezarInglesBebesPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = '¿A Qué Edad Empezar Inglés con Bebés? Edad Ideal 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿A Qué Edad Deben Empezar los Bebés con el Inglés?",
     description: "Los bebés pueden empezar con el inglés desde los 6 meses mediante exposición musical y juego. La edad ideal para clases estructuradas es 2-3 años.",
     url: `${businessInfo.url}/blog/edad-empezar-ingles-bebes`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Es demasiado pronto empezar con inglés a los 6 meses?",
       answer: "No, nunca es demasiado pronto para la exposición al inglés. A los 6 meses, el bebé está en plena fase de percepción fonológica universal: puede distinguir todos los sonidos de todos los idiomas. La exposición a canciones, rimas y habla en inglés durante esta etapa preserva su capacidad de distinguir sonidos que se perderían si solo escucha español. No se trata de clases formales, sino de exposición natural a través de música y juego."
-    },
+    }
+
+  ,
     {
       question: "¿Los bebés bilingües tardan más en hablar?",
       answer: "Es un mito muy extendido. Los estudios muestran que los bebés bilingües alcanzan los hitos del habla al mismo tiempo que los monolingües. Pueden tener un vocabulario ligeramente menor en cada idioma por separado al principio, pero su vocabulario total (sumando ambos idiomas) suele ser igual o superior. Hacia los 3-4 años, la diferencia desaparece completamente."
@@ -47,16 +38,17 @@ export default function EdadEmpezarInglesBebesPage() {
     }
   ];
 
+export default function EdadEmpezarInglesBebesPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="¿A Qué Edad Empezar Inglés con Bebés? Edad Ideal 2026"
-        description="Los bebés pueden empezar con el inglés desde los 6 meses mediante exposición musical y juego. La edad ideal para clases estructuradas es 2-3 años."
-        keywords="edad empezar inglés bebés, inglés bebés, cuándo empezar inglés niños, inglés temprana edad"
-        canonical="/blog/edad-empezar-ingles-bebes"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -244,7 +236,7 @@ export default function EdadEmpezarInglesBebesPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En esta etapa, la <Link to="/blog/ingles-jugando-funciona" className="text-purple-600 hover:underline font-medium">metodología de aprender inglés jugando</Link> es fundamental. Los niños de 1-2 años no pueden sentarse y "estudiar", pero pueden absorber cantidades extraordinarias de vocabulario y estructuras a través del juego multisensorial. Por eso en nuestras <Link to="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">clases de inglés infantil</Link> cada sesión está diseñada como una experiencia de juego completa.
+                En esta etapa, la <a href="/blog/ingles-jugando-funciona" className="text-purple-600 hover:underline font-medium">metodología de aprender inglés jugando</a> es fundamental. Los niños de 1-2 años no pueden sentarse y "estudiar", pero pueden absorber cantidades extraordinarias de vocabulario y estructuras a través del juego multisensorial. Por eso en nuestras <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">clases de inglés infantil</a> cada sesión está diseñada como una experiencia de juego completa.
               </p>
             </section>
 
@@ -264,7 +256,7 @@ export default function EdadEmpezarInglesBebesPage() {
                     <Award className="w-5 h-5 text-purple-600" />
                     Características de una buena clase para 2-3 años
                   </h3>
-                  <p className="text-gray-700">Grupos reducidos (máximo 8 niños), profesor titulado, sesiones de 45-60 minutos con variedad de actividades (música, movimiento, manualidades, cuentos), inmersión total en inglés, espacio seguro y estimulante. La <Link to="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline">metodología Great Little People</Link> cumple todos estos criterios.</p>
+                  <p className="text-gray-700">Grupos reducidos (máximo 8 niños), profesor titulado, sesiones de 45-60 minutos con variedad de actividades (música, movimiento, manualidades, cuentos), inmersión total en inglés, espacio seguro y estimulante. La <a href="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline">metodología Great Little People</a> cumple todos estos criterios.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -335,7 +327,7 @@ export default function EdadEmpezarInglesBebesPage() {
                   Recuerda que cada niño tiene su propio ritmo de desarrollo. Si tu hijo de 2 años no está listo para clases grupales, eso no significa que debas renunciar al inglés. Puedes seguir con la exposición en casa mientras esperas el momento adecuado. Lo importante es <strong>no forzar ni crear asociaciones negativas</strong> con el idioma.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">Impulse English Academy</Link> ofrecemos una clase de prueba gratuita para que tanto tú como tu hijo podáis comprobar si es el momento adecuado. Nuestros profesores altamente cualificados evalúan la disposición de cada niño y recomiendan el grupo más apropiado.
+                  En <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos una clase de prueba gratuita para que tanto tú como tu hijo podáis comprobar si es el momento adecuado. Nuestros profesores altamente cualificados evalúan la disposición de cada niño y recomiendan el grupo más apropiado.
                 </p>
               </div>
             </section>
@@ -360,11 +352,11 @@ export default function EdadEmpezarInglesBebesPage() {
                         <ChevronDown className="w-5 h-5 text-purple-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -381,7 +373,7 @@ export default function EdadEmpezarInglesBebesPage() {
                   La respuesta a "¿a qué edad empezar?" es clara: <strong>la exposición al inglés puede comenzar desde los primeros meses de vida</strong>, adaptando el tipo de estímulo a cada etapa. Los 6 meses son ideales para comenzar con canciones y exposición natural, los 1-2 años para el juego en inglés, y los 2-3 años para clases estructuradas con profesores titulados.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Lo más importante es que la experiencia sea positiva y natural. En <Link to="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">nuestros programas de inglés infantil</Link>, con la <Link to="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline font-medium">metodología Great Little People</Link>, cada sesión está diseñada para que tu hijo disfrute mientras su cerebro absorbe el inglés de forma natural. <Link to="/contacto" className="text-purple-600 hover:underline font-medium">Contáctanos</Link> para una clase de prueba gratuita.
+                  Lo más importante es que la experiencia sea positiva y natural. En <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">nuestros programas de inglés infantil</a>, con la <a href="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline font-medium">metodología Great Little People</a>, cada sesión está diseñada para que tu hijo disfrute mientras su cerebro absorbe el inglés de forma natural. <a href="/contacto" className="text-purple-600 hover:underline font-medium">Contáctanos</a> para una clase de prueba gratuita.
                 </p>
               </div>
             </section>
@@ -392,37 +384,37 @@ export default function EdadEmpezarInglesBebesPage() {
               <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
                 Descubre nuestros programas de inglés desde los 2 años con profesores altamente cualificados y metodología lúdica especializada.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link to="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>
                   <p className="text-gray-600 text-sm">Programas diseñados para los más pequeños desde los 2 años.</p>
-                </Link>
-                <Link to="/blog/ingles-jugando-funciona" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/blog/ingles-jugando-funciona" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     ¿Inglés Jugando Funciona?
                   </h3>
                   <p className="text-gray-600 text-sm">Evidencia científica sobre el aprendizaje a través del juego.</p>
-                </Link>
-                <Link to="/blog/great-little-people-metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/blog/great-little-people-metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Great Little People
                   </h3>
                   <p className="text-gray-600 text-sm">La metodología de inglés para niños de 1 a 7 años.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -452,7 +444,6 @@ export default function EdadEmpezarInglesBebesPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

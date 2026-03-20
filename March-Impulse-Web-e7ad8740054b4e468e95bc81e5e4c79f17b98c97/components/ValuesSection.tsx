@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 // S3 images for value cards
 const valueCards = [
@@ -62,10 +61,10 @@ export default function ValuesSection() {
                           <ArrowRight className="w-4 h-4" />
                       </a>
                     ) : (
-                      <Link to={card.href} className="flex items-center text-accent-blue font-semibold text-sm uppercase tracking-wide group-hover:gap-3 gap-2 transition-all">
+                      <a href={card.href} className="flex items-center text-accent-blue font-semibold text-sm uppercase tracking-wide group-hover:gap-3 gap-2 transition-all">
                           {card.link}
                           <ArrowRight className="w-4 h-4" />
-                      </Link>
+                      </a>
                     )}
                 </div>
               </div>

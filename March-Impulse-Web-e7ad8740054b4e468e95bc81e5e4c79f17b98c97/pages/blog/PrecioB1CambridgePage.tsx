@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function PrecioB1CambridgePage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Precio Examen B1 Cambridge 2026: Tasas y Dónde Inscribirse | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Cuesta el Examen B1 Cambridge? Precios 2026",
     description: "El examen B1 Cambridge cuesta entre 115€ y 140€ según el centro y modalidad. Precios actualizados, descuentos y cómo inscribirse paso a paso.",
     url: `${businessInfo.url}/blog/precio-b1-cambridge`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿El precio del B1 incluye el certificado?",
       answer: "Sí, el precio de la matrícula incluye la emisión del certificado oficial en caso de aprobar. No hay costes adicionales por la certificación. El certificado digital está disponible unas semanas después de los resultados, y el certificado físico se envía al centro examinador donde realizaste la inscripción."
-    },
+    }
+
+  ,
     {
       question: "¿Puedo pagar el examen B1 a plazos?",
       answer: "La mayoría de centros examinadores exigen el pago completo en el momento de la inscripción. Sin embargo, algunos centros ofrecen facilidades de pago si te inscribes con antelación suficiente. Consulta directamente con el centro de tu elección. En academias que ofrecen cursos preparatorios, a veces incluyen la tasa del examen en el precio del curso."
@@ -47,6 +38,14 @@ export default function PrecioB1CambridgePage() {
     }
   ];
 
+export default function PrecioB1CambridgePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const priceComparison = [
     { concept: "Tasa de examen (papel)", price: "125€ - 140€", notes: "Varía según centro" },
     { concept: "Tasa de examen (digital)", price: "115€ - 135€", notes: "Resultados más rápidos" },
@@ -58,14 +57,7 @@ export default function PrecioB1CambridgePage() {
 
   return (
     <>
-      <SEOHead
-        title="Precio Examen B1 Cambridge 2026: Tasas y Dónde Inscribirse"
-        description="El examen B1 Cambridge cuesta entre 115€ y 140€ según el centro y modalidad. Precios actualizados, descuentos y cómo inscribirse paso a paso."
-        keywords="precio b1 cambridge, cuánto cuesta b1, examen b1 precio, b1 preliminary precio"
-        canonical="/blog/precio-b1-cambridge"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -123,7 +115,7 @@ export default function PrecioB1CambridgePage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Si estás pensando en certificar tu nivel de inglés con el <Link to="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline">B1 Preliminary de Cambridge</Link>, una de las primeras preguntas que surge es: <strong>¿cuánto cuesta?</strong> En este artículo desglosamos todos los costes asociados al examen, desde la tasa de inscripción hasta los materiales de preparación, para que puedas planificar tu presupuesto sin sorpresas.
+              Si estás pensando en certificar tu nivel de inglés con el <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline">B1 Preliminary de Cambridge</a>, una de las primeras preguntas que surge es: <strong>¿cuánto cuesta?</strong> En este artículo desglosamos todos los costes asociados al examen, desde la tasa de inscripción hasta los materiales de preparación, para que puedas planificar tu presupuesto sin sorpresas.
             </p>
 
             {/* Section 1 */}
@@ -258,7 +250,7 @@ export default function PrecioB1CambridgePage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Madrid cuenta con múltiples centros examinadores autorizados por Cambridge. El proceso de <Link to="/blog/registro-cambridge" className="text-emerald-600 hover:underline">inscripción</Link> es sencillo y se puede completar en pocos pasos:
+                Madrid cuenta con múltiples centros examinadores autorizados por Cambridge. El proceso de <a href="/blog/registro-cambridge" className="text-emerald-600 hover:underline">inscripción</a> es sencillo y se puede completar en pocos pasos:
               </p>
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-6 mb-6">
@@ -286,7 +278,7 @@ export default function PrecioB1CambridgePage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Consulta las <Link to="/examenes-cambridge" className="text-emerald-600 hover:underline">fechas y precios actualizados</Link> de los exámenes Cambridge en nuestra sección dedicada. Los centros más populares en Madrid suelen llenar plazas rápidamente, especialmente en convocatorias de junio y diciembre.
+                Consulta las <a href="/examenes-cambridge" className="text-emerald-600 hover:underline">fechas y precios actualizados</a> de los exámenes Cambridge en nuestra sección dedicada. Los centros más populares en Madrid suelen llenar plazas rápidamente, especialmente en convocatorias de junio y diciembre.
               </p>
             </section>
 
@@ -354,11 +346,11 @@ export default function PrecioB1CambridgePage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -372,10 +364,10 @@ export default function PrecioB1CambridgePage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El <Link to="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">examen B1 Cambridge</Link> tiene un precio de entre 115€ y 140€, con costes adicionales opcionales de preparación. Comparado con otros exámenes de inglés con validez temporal, el B1 Preliminary representa la opción más rentable a largo plazo.
+                  El <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">examen B1 Cambridge</a> tiene un precio de entre 115€ y 140€, con costes adicionales opcionales de preparación. Comparado con otros exámenes de inglés con validez temporal, el B1 Preliminary representa la opción más rentable a largo plazo.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</Link> ofrecemos cursos preparatorios que maximizan tus probabilidades de aprobar a la primera, optimizando así tu inversión total. Consulta nuestros <Link to="/blog/registro-cambridge" className="text-emerald-600 hover:underline font-medium">pasos de registro</Link> para empezar.
+                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos cursos preparatorios que maximizan tus probabilidades de aprobar a la primera, optimizando así tu inversión total. Consulta nuestros <a href="/blog/registro-cambridge" className="text-emerald-600 hover:underline font-medium">pasos de registro</a> para empezar.
                 </p>
               </div>
             </section>
@@ -386,31 +378,31 @@ export default function PrecioB1CambridgePage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 Prepárate con nosotros y aprueba a la primera. Te ayudamos con la inscripción y la preparación completa del examen.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía Completa del B1 Preliminary
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge B1: formato, estructura y preparación.</p>
-                </Link>
-                <Link to="/blog/registro-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/registro-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cómo Registrarse para Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Guía paso a paso para inscribirte en tu examen Cambridge.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -440,7 +432,6 @@ export default function PrecioB1CambridgePage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

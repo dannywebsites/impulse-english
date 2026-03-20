@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, Award, CheckCircle, Globe, ArrowRight, Shield } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
 const certificadoFaqs = [
@@ -49,25 +46,20 @@ const certificadoFaqs = [
   }
 ];
 
-export default function CertificadoLinguaskillPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Certificado Linguaskill y su Validez | Guía Completa 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Certificado Linguaskill y su Validez: Guía Completa 2025",
     description: "Todo sobre el certificado Linguaskill: validez internacional, reconocimiento en España, caducidad y dónde es aceptado.",
     url: `${businessInfo.url}/blog/certificado-linguaskill`,
     datePublished: "2025-01-10"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Cuánto tiempo tarda en llegar el certificado Linguaskill después del examen?",
       answer: "Los resultados del examen Linguaskill están disponibles entre 3 y 5 días laborables tras completar la prueba. El certificado digital oficial con fotografía se emite inmediatamente después de que los resultados sean procesados y validados por Cambridge. Puedes descargarlo desde el portal de resultados de forma instantánea y gratuita, sin necesidad de esperar envíos postales."
-    },
+    }
+
+  ,
     {
       question: "¿Puedo repetir solo un módulo del examen para mejorar mi puntuación?",
       answer: "Sí, desde 2025 puedes repetir módulos individuales del examen Linguaskill (Reading, Listening, Writing o Speaking) sin necesidad de realizar el examen completo nuevamente. El certificado siempre mostrará tu mejor puntuación alcanzada en cada habilidad gracias a la función \"My Best Score\". Esta flexibilidad permite optimizar tiempo y costes económicos para alcanzar objetivos específicos de certificación."
@@ -86,6 +78,13 @@ export default function CertificadoLinguaskillPage() {
     }
   ];
 
+export default function CertificadoLinguaskillPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const levels = [
     { score: "82-99", level: "A1", description: "Básico inicial" },
     { score: "100-119", level: "A2", description: "Básico" },
@@ -97,14 +96,7 @@ export default function CertificadoLinguaskillPage() {
 
   return (
     <>
-      <SEOHead
-        title="Certificado Linguaskill: Validez, Reconocimiento Internacional y Caducidad 2025"
-        description="Todo sobre el certificado Linguaskill: validez internacional sin caducidad oficial, reconocimiento por 25.000+ instituciones, niveles CEFR, qué universidades lo aceptan y cómo verificarlo."
-        keywords="certificado Linguaskill, validez Linguaskill, Linguaskill caduca, reconocimiento Linguaskill, certificado Cambridge Linguaskill, Linguaskill internacional, nivel Linguaskill"
-        canonical="/blog/certificado-linguaskill"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -361,11 +353,11 @@ export default function CertificadoLinguaskillPage() {
                         <ChevronDown className="w-5 h-5 text-violet-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -382,7 +374,7 @@ export default function CertificadoLinguaskillPage() {
                   El certificado Linguaskill representa en 2025 una de las opciones más flexibles, rápidas y reconocidas internacionalmente para acreditar tu nivel de inglés sin fecha de caducidad oficial.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si buscas preparación especializada para alcanzar la certificación que necesitas, nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-violet-600 hover:underline font-medium">academia en Barrio del Pilar</Link>, junto a <Link to="/academia-ingles-la-vaguada" className="text-violet-600 hover:underline font-medium">La Vaguada</Link>, ofrece <Link to="/cursos-ingles/adultos" className="text-violet-600 hover:underline font-medium">cursos específicos de inglés para adultos</Link> con metodología probada y tasas de éxito del 100% en <Link to="/examenes-cambridge" className="text-violet-600 hover:underline font-medium">exámenes Cambridge</Link>.
+                  Si buscas preparación especializada para alcanzar la certificación que necesitas, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-violet-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-violet-600 hover:underline font-medium">La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos" className="text-violet-600 hover:underline font-medium">cursos específicos de inglés para adultos</a> con metodología probada y tasas de éxito del 100% en <a href="/examenes-cambridge" className="text-violet-600 hover:underline font-medium">exámenes Cambridge</a>.
                 </p>
               </div>
             </section>
@@ -393,31 +385,31 @@ export default function CertificadoLinguaskillPage() {
               <p className="text-violet-100 mb-6 max-w-2xl mx-auto">
                 En Impulse English Academy te preparamos para obtener el certificado Linguaskill con la puntuación que necesitas.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-violet-600 px-8 py-4 rounded-xl font-semibold hover:bg-violet-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-violet-50 transition-colors">
+                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-violet-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-violet-600 transition-colors mb-2">
                     Linguaskill: Guía Completa 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre el examen Linguaskill de Cambridge.</p>
-                </Link>
-                <Link to="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-violet-50 transition-colors">
+                </a>
+                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-violet-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-violet-600 transition-colors mb-2">
                     Cómo Registrarse en Linguaskill
                   </h3>
                   <p className="text-gray-600 text-sm">Guía paso a paso para completar tu matrícula.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -447,7 +439,6 @@ export default function CertificadoLinguaskillPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AcademiasBaratasMadridPage from '../../../pages/blog/AcademiasBaratasMadridPage';
+import CookieBanner from '../../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Academias de Inglés Baratas en Madrid: 7 Opciones desde 45€/Mes - Guía 2025"
+  description="Compara las academias de inglés más económicas de Madrid desde 45€/mes: precios, ubicaciones, certificaciones Cambridge, profesores nativos y grupos reducidos."
+  keywords="academias inglés baratas madrid, academia inglés económica madrid, cursos inglés madrid precio, inglés barato madrid"
+  canonical="/academias-ingles-madrid"
+  ogType="article"
+>
+  <AcademiasBaratasMadridPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

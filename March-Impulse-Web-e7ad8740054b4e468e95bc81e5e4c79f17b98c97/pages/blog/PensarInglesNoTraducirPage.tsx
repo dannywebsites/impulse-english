@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function PensarInglesNoTraducirPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Pensar en Inglés sin Traducir: 8 Técnicas Probadas 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Cómo Pensar en Inglés y Dejar de Traducir Mentalmente",
     description: "Aprende a pensar directamente en inglés sin traducir del español. 8 técnicas para desarrollar el pensamiento en inglés y hablar con más fluidez.",
     url: `${businessInfo.url}/blog/pensar-ingles-no-traducir`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿A partir de qué nivel puedo empezar a pensar en inglés?",
       answer: "Desde el nivel B1 ya puedes empezar a pensar en inglés para conceptos sencillos. A nivel B2, la mayoría logra pensar en inglés en situaciones conocidas."
-    },
+    }
+
+  ,
     {
       question: "¿Cuánto tiempo lleva pensar en inglés?",
       answer: "Con práctica constante (30 min/día de exposición + pensamiento activo), la mayoría nota el cambio en 3-6 meses. No es inmediato pero sí progresivo."
@@ -43,16 +34,17 @@ export default function PensarInglesNoTraducirPage() {
     }
   ];
 
+export default function PensarInglesNoTraducirPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="Pensar en Inglés sin Traducir: 8 Técnicas Probadas 2026"
-        description="Aprende a pensar directamente en inglés sin traducir del español. 8 técnicas para desarrollar el pensamiento en inglés y hablar con más fluidez."
-        keywords="pensar en inglés, dejar traducir mentalmente, pensar inglés no traducir, fluir en inglés"
-        canonical="/blog/pensar-ingles-no-traducir"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -263,11 +255,11 @@ export default function PensarInglesNoTraducirPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -279,31 +271,31 @@ export default function PensarInglesNoTraducirPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 Nuestra metodología está diseñada para crear conexiones directas en inglés, sin el paso intermediario de la traducción.
               </p>
-              <Link
-                to="/metodologia"
+              <a
+              href="/metodologia"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Conocer nuestra metodología
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Nuestra Metodología</h3>
                   <p className="text-gray-600 text-sm">Inmersión y pensamiento en inglés desde el primer día.</p>
-                </Link>
-                <Link to="/blog/mejorar-speaking-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/mejorar-speaking-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Mejorar el Speaking en Inglés</h3>
                   <p className="text-gray-600 text-sm">Técnicas de fluidez y pronunciación para hablar mejor.</p>
-                </Link>
-                <Link to="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Cursos de Inglés para Adultos</h3>
                   <p className="text-gray-600 text-sm">Programas de inmersión para adultos de todos los niveles.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -333,7 +325,6 @@ export default function PensarInglesNoTraducirPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

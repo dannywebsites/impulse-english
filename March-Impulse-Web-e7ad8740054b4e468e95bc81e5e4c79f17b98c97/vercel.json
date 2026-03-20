@@ -1,5 +1,6 @@
 {
-  "buildCommand": "npm run build:vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "redirects": [
     { "source": "/exam-impulse", "destination": "/reservar-clase", "permanent": true },
@@ -36,7 +37,20 @@
     { "source": "/linguaskill/registro", "destination": "/blog/registro-linguaskill", "permanent": true },
     { "source": "/linguaskill/certificado-validez", "destination": "/blog/certificado-linguaskill", "permanent": true },
     { "source": "/linguaskill/recursos-pdf", "destination": "/blog/recursos-pdf-linguaskill", "permanent": true },
-    { "source": "/linguaskill/precio-online", "destination": "/blog/precio-linguaskill-online", "permanent": true }
+    { "source": "/linguaskill/precio-online", "destination": "/blog/precio-linguaskill-online", "permanent": true },
+
+    { "source": "/ubicaciones/barrio-del-pilar", "destination": "/academia-ingles-barrio-del-pilar", "permanent": true },
+    { "source": "/ubicaciones/la-vaguada", "destination": "/academia-ingles-la-vaguada", "permanent": true },
+    { "source": "/ubicaciones/penagrande", "destination": "/academia-ingles-penagrande", "permanent": true },
+    { "source": "/ubicaciones/la-ventilla", "destination": "/academia-ingles-la-ventilla", "permanent": true },
+    { "source": "/ubicaciones/la-paz", "destination": "/academia-ingles-la-paz", "permanent": true },
+    { "source": "/ubicaciones/plaza-castilla", "destination": "/academia-ingles-plaza-castilla", "permanent": true },
+    { "source": "/ubicaciones/tetuan", "destination": "/academia-ingles-tetuan", "permanent": true },
+    { "source": "/ubicaciones/cuatro-torres", "destination": "/academia-ingles-cuatro-torres", "permanent": true },
+
+    { "source": "/ingles-la-vaguada/online", "destination": "/cursos-ingles/online", "permanent": true },
+
+    { "source": "/linguaskill/guia-completa", "destination": "/linguaskill", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/404.html" }

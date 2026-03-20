@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CambridgeB2BeneficiosPage, { articleSchema, faqs } from '../../../pages/blog/CambridgeB2BeneficiosPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Cambridge B2: 7 Beneficios Clave del Examen First 2025"
+  description="Descubre los beneficios reales del Cambridge B2 First: reconocimiento internacional, validez ilimitada, mejora profesional y académica. Guía completa 2025 con datos verificados."
+  canonical="/blog/cambridge-b2-beneficios"
+  ogType="article"
+  schemas={schemas}
+>
+  <CambridgeB2BeneficiosPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

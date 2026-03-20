@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EdadEmpezarInglesBebesPage, { articleSchema, faqItems } from '../../../pages/blog/EdadEmpezarInglesBebesPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿A Qué Edad Empezar Inglés con Bebés? Edad Ideal 2026"
+  description="Los bebés pueden empezar con el inglés desde los 6 meses mediante exposición musical y juego. La edad ideal para clases estructuradas es 2-3 años."
+  canonical="/blog/edad-empezar-ingles-bebes"
+  ogType="article"
+  schemas={schemas}
+>
+  <EdadEmpezarInglesBebesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

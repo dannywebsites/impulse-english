@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 export default function WelcomeSection() {
@@ -21,13 +20,13 @@ export default function WelcomeSection() {
         </div>
 
         <div className="mt-10">
-          <Link
-            to="/reservar-clase"
+          <a
+            href="/reservar-clase"
             className="inline-flex items-center gap-2 bg-accent-blue text-white font-semibold py-4 px-8 rounded-lg hover:bg-blue-700 transition-colors text-lg"
           >
             Haz tu prueba de nivel
             <ArrowRight className="w-5 h-5" />
-          </Link>
+          </a>
           <p className="text-sm text-zinc-500 mt-3">
             Descubre tu punto de partida
           </p>

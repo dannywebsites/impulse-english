@@ -1,10 +1,9 @@
 import React from 'react';
 import { ChevronDown, MessageCircle, Phone } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <div className="w-full h-full">
+    <section className="w-full h-full" aria-label="Hero">
         {/* Single H1 for SEO - visually hidden but accessible */}
         <h1 className="sr-only">Academia de Inglés en La Vaguada</h1>
 
@@ -40,9 +39,9 @@ export default function Hero() {
 
                     {/* CTAs */}
                     <div className="flex flex-col w-full xl:flex-row xl:w-auto gap-4 animate-fade-in-up delay-300">
-                        <Link to="/reservar-clase" className="w-full xl:w-auto bg-red-600 text-white px-8 py-4 rounded-lg md:rounded-md font-semibold text-sm uppercase tracking-widest hover:bg-red-700 transition-colors shadow-lg active:scale-[0.98] text-center">
+                        <a href="/reservar-clase" className="w-full xl:w-auto bg-red-600 text-white px-8 py-4 rounded-lg md:rounded-md font-semibold text-sm uppercase tracking-widest hover:bg-red-700 transition-colors shadow-lg active:scale-[0.98] text-center">
                             Clase de Prueba Gratuita
-                        </Link>
+                        </a>
                         <a href="tel:+34604910611" className="w-full xl:w-auto bg-white/10 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded-lg md:rounded-md font-semibold text-sm uppercase tracking-widest hover:bg-white hover:text-accent-blue transition-colors active:scale-[0.98] text-center flex items-center justify-center gap-2">
                             <Phone className="w-5 h-5" />
                             604 910 611
@@ -99,6 +98,6 @@ export default function Hero() {
             }
           }
         `}</style>
-    </div>
+    </section>
   );
 }

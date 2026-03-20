@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BarrioDelPilarPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/BarrioDelPilarPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Academia de Inglés en Barrio del Pilar"
+  description="Academia de inglés en Barrio del Pilar, junto a La Vaguada. Centro preparador Cambridge oficial. Cursos para niños y adultos. 100% aprobados."
+  keywords="academia inglés barrio del pilar, clases inglés la vaguada, cambridge barrio pilar, cursos inglés madrid norte"
+  canonical="/academia-ingles-barrio-del-pilar"
+  schemas={schemas}
+>
+  <BarrioDelPilarPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

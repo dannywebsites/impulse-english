@@ -1,21 +1,18 @@
 import React, { useEffect } from 'react';
 import { BookOpen, Award, Target, Users, Zap, GraduationCap, Clock, CheckCircle, Star, Phone, Calendar } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
 import OptimizedImage from '../../components/OptimizedImage';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
-import SEOHead from '../../components/SEOHead';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import FullPhotoGallery from '../../components/FullPhotoGallery';
 import { primariaImages as galleryImages } from '../../src/data/academyImages';
 import { studentImages } from '../../src/data/images';
 
-const courseSchema = generateCourseSchema({
+export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Primaria (6-12 años)",
   description: "Clases de inglés para primaria en La Vaguada / Barrio del Pilar. Cambridge Young Learners, grupos reducidos, profesores cualificados y seguimiento. Impulse English Academy.",
   url: `${businessInfo.url}/cursos-ingles/primaria`,
@@ -26,7 +23,7 @@ const courseSchema = generateCourseSchema({
 });
 
 
-const faqs = [
+export const faqs = [
   {
     question: "¿Cómo sé qué nivel tiene mi hijo?",
     answer: "Con una prueba de nivel sencilla y observación en clase. Evaluamos comprensión, vocabulario, lectura y expresión oral según su edad. Así evitamos grupos descompensados y conseguimos progreso real. Te explicamos el punto de partida y el plan de mejora de forma clara."
@@ -113,13 +110,7 @@ export default function PrimariaPage() {
 
   return (
     <>
-      <SEOHead
-        title="Inglés Primaria (6–12) | Cambridge Young Learners"
-        description="Clases de inglés para primaria en La Vaguada / Barrio del Pilar. Cambridge Young Learners, grupos reducidos, profesores cualificados y seguimiento. Impulse English Academy."
-        keywords="clases inglés primaria la vaguada, cambridge young learners, inglés niños 6-12 años, academia inglés primaria barrio del pilar"
-        canonical="/cursos-ingles/primaria"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
@@ -160,12 +151,12 @@ export default function PrimariaPage() {
               Construimos una base sólida con clases dinámicas, grupos reducidos y seguimiento personalizado. Cambridge Young Learners en La Vaguada.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-white text-blue-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-amber-50 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
-              </Link>
+              </a>
               <a
                 href="tel:+34604910611"
                 className="backdrop-blur-sm text-white border border-white/25 font-display font-medium py-4 px-8 rounded-lg hover:bg-white/10 transition-all duration-300 text-center flex items-center justify-center gap-2"
@@ -254,10 +245,10 @@ export default function PrimariaPage() {
             {/* Location and Progression Links */}
             <div className="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-100">
               <p className="text-zinc-700 text-sm mb-3">
-                <strong>¿Dónde estamos?</strong> Nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-blue-600 hover:underline font-medium">academia en Barrio del Pilar</Link>, junto a <Link to="/academia-ingles-la-vaguada" className="text-blue-600 hover:underline font-medium">La Vaguada</Link>, está perfectamente comunicada en metro y autobús.
+                <strong>¿Dónde estamos?</strong> Nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-blue-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-blue-600 hover:underline font-medium">La Vaguada</a>, está perfectamente comunicada en metro y autobús.
               </p>
               <p className="text-zinc-600 text-sm">
-                Si tu hijo es más pequeño, consulta nuestros <Link to="/cursos-ingles/infantil" className="text-blue-600 hover:underline font-medium">cursos de infantil</Link>. Si ya está en el instituto, prepárale para el futuro con <Link to="/cursos-ingles/secundaria" className="text-blue-600 hover:underline font-medium">inglés para secundaria</Link> y preparación para <Link to="/examenes-cambridge" className="text-blue-600 hover:underline font-medium">exámenes Cambridge</Link>.
+                Si tu hijo es más pequeño, consulta nuestros <a href="/cursos-ingles/infantil" className="text-blue-600 hover:underline font-medium">cursos de infantil</a>. Si ya está en el instituto, prepárale para el futuro con <a href="/cursos-ingles/secundaria" className="text-blue-600 hover:underline font-medium">inglés para secundaria</a> y preparación para <a href="/examenes-cambridge" className="text-blue-600 hover:underline font-medium">exámenes Cambridge</a>.
               </p>
             </div>
           </div>
@@ -345,12 +336,12 @@ export default function PrimariaPage() {
               </span>
             ))}
           </div>
-          <Link
-            to="/examenes-cambridge"
+          <a
+              href="/examenes-cambridge"
             className="inline-block bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
           >
             Ver todos los exámenes Cambridge
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -425,12 +416,12 @@ export default function PrimariaPage() {
               Evaluamos el nivel real de tu hijo para ubicarlo en el grupo adecuado. Sin compromiso.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Solicitar prueba de nivel
-              </Link>
+              </a>
               <a
                 href="https://wa.me/34604910611?text=Hola,%20me%20gustaría%20información%20sobre%20inglés%20para%20primaria"
                 target="_blank"
@@ -477,7 +468,6 @@ export default function PrimariaPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={courseSchema} />
-    </>
+</>
   );
 }

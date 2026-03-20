@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CentrosLinguaskillPage, { articleSchema, faqs } from '../../../pages/blog/CentrosLinguaskillPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Centros Linguaskill Madrid, Valencia, Zaragoza 2025 - Sedes Oficiales"
+  description="Guía completa de centros autorizados Linguaskill en Madrid, Valencia y Zaragoza. Encuentra sedes oficiales, precios, modalidades presenciales y online para realizar el examen Cambridge."
+  canonical="/blog/centros-linguaskill"
+  ogType="article"
+  schemas={schemas}
+>
+  <CentrosLinguaskillPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

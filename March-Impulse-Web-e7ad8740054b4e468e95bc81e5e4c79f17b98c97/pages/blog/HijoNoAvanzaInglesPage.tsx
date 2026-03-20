@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function HijoNoAvanzaInglesPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Mi Hijo No Avanza en Inglés: 7 Causas y Soluciones 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: '¿Por Qué Mi Hijo No Avanza en Inglés? Causas y Soluciones',
     description: 'Si tu hijo no avanza en inglés puede ser por método inadecuado, falta de exposición o desmotivación. Descubre 7 causas y soluciones para cada una.',
     url: `${businessInfo.url}/blog/hijo-no-avanza-ingles`,
     datePublished: '2025-03-01'
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: '¿Es normal que un niño tarde en mostrar progreso en inglés?',
       answer: 'Los primeros 3-6 meses son de "periodo silencioso": el niño absorbe pero no produce aún. Es normal y necesario. Si a los 6 meses no hay comprensión básica, entonces hay que revisar el método.'
-    },
+    }
+
+  ,
     {
       question: '¿Puede mi hijo tener dificultades de aprendizaje que afecten al inglés?',
       answer: 'Posiblemente. Dislexia, TDAH y otras dificultades afectan el aprendizaje de idiomas. Un profesor especializado puede adaptar el método. Si los problemas con el inglés coinciden con dificultades en español, busca evaluación.'
@@ -42,6 +33,14 @@ export default function HijoNoAvanzaInglesPage() {
       answer: 'Mínimo 3-4 horas semanales de inglés: 2 en academia + 1-2 de exposición natural (series, juegos, lectura). Solo la academia, sin exposición complementaria, limita el progreso.'
     }
   ];
+
+export default function HijoNoAvanzaInglesPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   const causas = [
     {
@@ -90,14 +89,7 @@ export default function HijoNoAvanzaInglesPage() {
 
   return (
     <>
-      <SEOHead
-        title="Mi Hijo No Avanza en Inglés: 7 Causas y Soluciones 2026"
-        description="Si tu hijo no avanza en inglés puede ser por método inadecuado, falta de exposición o desmotivación. Descubre 7 causas y soluciones para cada una."
-        keywords="hijo no avanza inglés, niño no aprende inglés, estancado inglés niño, problema inglés niño"
-        canonical="/blog/hijo-no-avanza-ingles"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -311,11 +303,11 @@ export default function HijoNoAvanzaInglesPage() {
                         <ChevronDown className="w-5 h-5 text-purple-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -327,37 +319,37 @@ export default function HijoNoAvanzaInglesPage() {
               <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
                 Si tu hijo está estancado, contáctanos. Diagnosticamos la causa y proponemos una solución concreta sin compromiso.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Consulta gratuita
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link to="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Primaria
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés para niños de 6 a 12 años en Madrid.</p>
-                </Link>
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">El enfoque que usamos para garantizar el progreso.</p>
-                </Link>
-                <Link to="/blog/motivar-hijo-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/blog/motivar-hijo-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cómo Motivar a tu Hijo
                   </h3>
                   <p className="text-gray-600 text-sm">10 estrategias para que quiera aprender inglés.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -387,7 +379,6 @@ export default function HijoNoAvanzaInglesPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

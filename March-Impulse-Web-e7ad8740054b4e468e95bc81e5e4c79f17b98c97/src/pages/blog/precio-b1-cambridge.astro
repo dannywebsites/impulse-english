@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PrecioB1CambridgePage, { articleSchema, faqItems } from '../../../pages/blog/PrecioB1CambridgePage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Precio Examen B1 Cambridge 2026: Tasas y Dónde Inscribirse"
+  description="El examen B1 Cambridge cuesta entre 115€ y 140€ según el centro y modalidad. Precios actualizados, descuentos y cómo inscribirse paso a paso."
+  canonical="/blog/precio-b1-cambridge"
+  ogType="article"
+  schemas={schemas}
+>
+  <PrecioB1CambridgePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

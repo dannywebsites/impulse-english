@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { FileText, Download, BookOpen, Clock, ChevronDown, ChevronUp, CheckCircle, ExternalLink, AlertCircle, Laptop } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function RecursosPdfLinguaskillPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Recursos PDF Examen Linguaskill: Materiales Oficiales 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Recursos PDF Examen Linguaskill: Materiales Oficiales 2026",
     description: "Materiales PDF oficiales para preparar Linguaskill: guías, ejemplos de ejercicios, consejos y recursos gratuitos de Cambridge.",
     url: `${businessInfo.url}/blog/recursos-pdf-linguaskill`,
     datePublished: "2025-01-09"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Puedo descargar exámenes completos de Linguaskill en PDF?",
       answer: "No, Cambridge no publica exámenes completos descargables por motivos de seguridad. Solo ofrece guías informativas, ejemplos de tareas individuales y hojas de consejos en PDF. Las pruebas oficiales solo están disponibles en centros autorizados mediante la plataforma digital supervisada. Los materiales PDF gratuitos te proporcionan suficiente información para familiarizarte con el formato sin comprometer la integridad del examen."
-    },
+    }
+
+  ,
     {
       question: "¿Los recursos PDF son suficientes para aprobar Linguaskill?",
       answer: "Los PDFs oficiales son excelentes para entender el formato y criterios de evaluación, pero debes complementarlos con práctica activa. Combina el estudio de documentos con ejercicios en plataformas interactivas y, idealmente, clases con profesores especializados. Los candidatos que solo estudian PDFs tienen 40% menos probabilidad de alcanzar su nivel objetivo que quienes siguen preparación estructurada con feedback personalizado."
@@ -47,6 +38,14 @@ export default function RecursosPdfLinguaskillPage() {
     }
   ];
 
+export default function RecursosPdfLinguaskillPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const officialResources = [
     { name: "Guía Rápida Linguaskill", pages: "12 páginas", description: "Formato completo, tipos de tareas y escalas de puntuación MCER" },
     { name: "Consejos Reading & Listening", pages: "8 páginas", description: "Ejemplos de tareas con respuestas y explicaciones" },
@@ -63,14 +62,7 @@ export default function RecursosPdfLinguaskillPage() {
 
   return (
     <>
-      <SEOHead
-        title="Recursos PDF Linguaskill 2026: Materiales Oficiales Gratuitos"
-        description="Materiales PDF oficiales Cambridge para preparar Linguaskill: guías descargables, ejemplos de ejercicios, consejos por módulo y recursos gratuitos actualizados 2026."
-        keywords="recursos pdf linguaskill, materiales linguaskill gratis, guía linguaskill pdf, ejemplos linguaskill, preparación linguaskill pdf, cambridge linguaskill recursos"
-        canonical="/blog/recursos-pdf-linguaskill"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
@@ -363,11 +355,11 @@ export default function RecursosPdfLinguaskillPage() {
                         <ChevronDown className="w-5 h-5 text-zinc-500" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 py-4 bg-white">
-                        <p className="text-zinc-600">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 py-4' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-zinc-600">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -384,9 +376,9 @@ export default function RecursosPdfLinguaskillPage() {
                   práctica digital en plataformas interactivas para maximizar tu preparación.
                 </p>
                 <p className="text-white/90">
-                  Si buscas preparación estructurada con metodología probada, en nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-bold">academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">junto a La Vaguada</Link>, ofrecemos
-                  cursos específicos para <Link to="/linguaskill" className="text-white hover:underline font-bold">Linguaskill</Link> que integran estos recursos PDF con práctica guiada y feedback personalizado
-                  por solo <strong>79€/mes</strong>. También preparamos otros <Link to="/examenes-cambridge" className="text-white hover:underline font-bold">exámenes Cambridge</Link> con <Link to="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</Link>.
+                  Si buscas preparación estructurada con metodología probada, en nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">junto a La Vaguada</a>, ofrecemos
+                  cursos específicos para <a href="/linguaskill" className="text-white hover:underline font-bold">Linguaskill</a> que integran estos recursos PDF con práctica guiada y feedback personalizado
+                  por solo <strong>79€/mes</strong>. También preparamos otros <a href="/examenes-cambridge" className="text-white hover:underline font-bold">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</a>.
                 </p>
               </div>
             </section>
@@ -403,12 +395,12 @@ export default function RecursosPdfLinguaskillPage() {
                       En Impulse English Academy te preparamos con materiales oficiales y práctica personalizada.
                     </p>
                   </div>
-                  <Link
-                    to="/contacto"
+                  <a
+              href="/contacto"
                     className="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Solicitar información
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -418,14 +410,14 @@ export default function RecursosPdfLinguaskillPage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link to="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-teal-600">GUÍA COMPLETA</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa del Examen Linguaskill 2026</h4>
-                </Link>
-                <Link to="/linguaskill/ejemplo-examen" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/linguaskill/ejemplo-examen" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-teal-600">FORMATO</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Ejemplo Examen Linguaskill: Formato del Test</h4>
-                </Link>
+                </a>
               </div>
             </section>
           </div>
@@ -451,7 +443,6 @@ export default function RecursosPdfLinguaskillPage() {
 
       <Footer />
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

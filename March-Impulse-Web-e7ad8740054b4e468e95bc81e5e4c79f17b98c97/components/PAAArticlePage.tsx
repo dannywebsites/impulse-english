@@ -1,15 +1,12 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Clock, Calendar, ArrowRight, BookOpen } from 'lucide-react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import LeadForm from './LeadForm';
 import FAQSection from './FAQSection';
 import Breadcrumb from './Breadcrumb';
-import SchemaMarkup from './SchemaMarkup';
-import SEOHead from './SEOHead';
 import RelatedArticles from './RelatedArticles';
-import { generateArticleSchema, generateFAQSchema, businessInfo } from '../utils/schemaData';
+import { businessInfo } from '../utils/schemaData';
 import { categoryConfig } from '../data/category-config';
 import { resolveInternalLinks } from '../data/internal-links';
 import type { PAAArticle, ArticleCard } from '../data/articles/types';
@@ -64,36 +61,11 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [article.slug]);
-
-  // Schema: Article + FAQ
-  const articleSchema = generateArticleSchema({
-    headline: article.seoTitle,
-    description: article.metaDescription,
-    url: fullUrl,
-    image: image.url,
-    datePublished: article.publishedDate,
-    dateModified: article.modifiedDate,
-    wordCount: estimateWordCount(article),
-  });
-
-  const faqSchema = article.faqItems.length > 0
-    ? generateFAQSchema(article.faqItems)
-    : null;
-
   return (
     <>
-      <SEOHead
-        title={article.seoTitle}
-        description={article.metaDescription}
-        canonical={article.url}
-        ogType="article"
-        ogImage={image.url}
-        publishedTime={article.publishedDate}
-        modifiedTime={article.modifiedDate}
-      />
-      <SchemaMarkup schema={faqSchema ? [articleSchema, faqSchema] : articleSchema} />
-      <Navbar />
+<Navbar />
 
+      <article>
       {/* Hero Section */}
       <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -178,16 +150,16 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
             <h2 className="text-xl font-bold text-zinc-900 mb-4">Te puede interesar</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {resolvedLinks.map((link, i) => (
-                <Link
+                <a
                   key={i}
-                  to={link.url}
+                  href={link.url}
                   className="flex items-center gap-2 p-3 rounded-lg border border-zinc-200 hover:border-accent-blue hover:bg-accent-blue/5 transition-all group"
                 >
                   <ArrowRight className="w-4 h-4 text-accent-blue flex-shrink-0" />
                   <span className="text-zinc-700 group-hover:text-accent-blue transition-colors text-sm font-medium">
                     {link.anchorText}
                   </span>
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -207,9 +179,9 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
               </p>
               <div className="flex flex-wrap gap-3">
                 {article.impulseSection.ctaLinks.map((cta, i) => (
-                  <Link
+                  <a
                     key={i}
-                    to={cta.href}
+                    href={cta.href}
                     className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm transition-all ${
                       i === 0
                         ? 'bg-white text-accent-blue hover:bg-zinc-100'
@@ -218,7 +190,7 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
                   >
                     {cta.text}
                     <ArrowRight className="w-4 h-4" />
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>
@@ -244,18 +216,20 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
       )}
 
       {/* Related Articles */}
+      </article>
+
       <RelatedArticles articles={siblingArticles} />
 
       {/* Back to Hub */}
       <section className="py-8 px-6 bg-white border-t border-zinc-100">
         <div className="container mx-auto max-w-3xl text-center">
-          <Link
-            to={config.hubPath}
+          <a
+            href={config.hubPath}
             className="inline-flex items-center gap-2 text-accent-blue hover:text-accent-blue/80 font-medium transition-colors"
           >
             <ArrowRight className="w-4 h-4 rotate-180" />
             Volver a {config.hubLabel}
-          </Link>
+          </a>
         </div>
       </section>
 

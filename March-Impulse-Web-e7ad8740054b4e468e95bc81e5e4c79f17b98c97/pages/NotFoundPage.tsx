@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import SEOHead from '../components/SEOHead';
 
 export default function NotFoundPage() {
   useEffect(() => {
@@ -11,11 +9,6 @@ export default function NotFoundPage() {
 
   return (
     <>
-      <SEOHead
-        title="Página No Encontrada"
-        description="La página que buscas no existe o ha sido movida."
-        noindex={true}
-      />
       <Navbar />
 
       <section className="min-h-[60vh] flex items-center justify-center py-24 px-6">
@@ -28,18 +21,18 @@ export default function NotFoundPage() {
             Lo sentimos, la página que buscas no existe o ha sido movida.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/"
+            <a
+              href="/"
               className="bg-accent-blue text-white font-display font-semibold py-3 px-8 rounded-lg hover:bg-[#0e3a68] transition-all duration-300"
             >
               Volver al Inicio
-            </Link>
-            <Link
-              to="/contacto"
+            </a>
+            <a
+              href="/contacto"
               className="border-2 border-accent-blue text-accent-blue font-display font-semibold py-3 px-8 rounded-lg hover:bg-accent-blue hover:text-white transition-all duration-300"
             >
               Contactar
-            </Link>
+            </a>
           </div>
         </div>
       </section>

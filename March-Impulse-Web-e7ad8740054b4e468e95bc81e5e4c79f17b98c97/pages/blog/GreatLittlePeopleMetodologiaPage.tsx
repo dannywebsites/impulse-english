@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function GreatLittlePeopleMetodologiaPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Great Little People: Metodología de Inglés Infantil 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: 'Great Little People: El Método de Inglés para los Más Pequeños',
     description: 'Great Little People es el método de inglés para niños de 1-7 años basado en inmersión total, juego y tecnología. Descubre cómo funciona y sus resultados.',
     url: `${businessInfo.url}/blog/great-little-people-metodologia`,
     datePublished: '2025-03-01'
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: '¿Para qué edades es Great Little People?',
       answer: 'Great Little People está diseñado para niños de 1 a 7 años, dividido en niveles: Babies (1-2), Toddlers (2-3), Little People (3-5) y Big Little People (5-7).'
-    },
+    }
+
+  ,
     {
       question: '¿Cómo son las clases Great Little People?',
       answer: 'Son sesiones de 45-60 minutos con máximo 6 niños, 100% en inglés, basadas en juego dirigido, canciones, cuentos, manualidades y rutinas que simulan un entorno anglófono natural.'
@@ -43,16 +34,17 @@ export default function GreatLittlePeopleMetodologiaPage() {
     }
   ];
 
+export default function GreatLittlePeopleMetodologiaPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="Great Little People: Metodología de Inglés Infantil 2026"
-        description="Great Little People es el método de inglés para niños de 1-7 años basado en inmersión total, juego y tecnología. Descubre cómo funciona y sus resultados."
-        keywords="great little people, metodología inglés infantil, great little people opiniones, inglés niños método"
-        canonical="/blog/great-little-people-metodologia"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -340,11 +332,11 @@ export default function GreatLittlePeopleMetodologiaPage() {
                         <ChevronDown className="w-5 h-5 text-purple-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -356,37 +348,37 @@ export default function GreatLittlePeopleMetodologiaPage() {
               <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
                 Primera sesión gratuita. Ven a conocer cómo funciona el método en la práctica con tu hijo.
               </p>
-              <Link
-                to="/cursos-ingles/infantil"
+              <a
+              href="/cursos-ingles/infantil"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Reservar sesión gratuita
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link to="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>
                   <p className="text-gray-600 text-sm">Toda la información sobre nuestras clases para los más pequeños.</p>
-                </Link>
-                <Link to="/blog/mejor-metodo-ingles-ninos" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/blog/mejor-metodo-ingles-ninos" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Mejor Método Inglés Niños
                   </h3>
                   <p className="text-gray-600 text-sm">Comparativa de los mejores métodos para niños.</p>
-                </Link>
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">El enfoque completo de Impulse English Academy.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -416,7 +408,6 @@ export default function GreatLittlePeopleMetodologiaPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

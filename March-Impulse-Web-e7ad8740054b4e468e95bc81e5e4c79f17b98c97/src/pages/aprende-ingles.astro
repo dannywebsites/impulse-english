@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AprendeInglesGuiaPage from '../../pages/blog/AprendeInglesGuiaPage';
+import CookieBanner from '../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Dónde y Cómo Aprender Inglés: Guía Definitiva 2025 | Cursos Online, Plataformas y Países"
+  description="Guía completa para aprender inglés: mejores cursos online, plataformas gratuitas y premium, países para estudiar, academias en España y métodos efectivos. 22 preguntas respondidas."
+  keywords="aprender inglés, cursos inglés online, plataformas aprender inglés, países estudiar inglés, babbel, duolingo, academias inglés españa, métodos aprender inglés"
+  canonical="/aprende-ingles"
+  ogType="article"
+>
+  <AprendeInglesGuiaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

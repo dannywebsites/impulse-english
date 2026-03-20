@@ -1,33 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function InglesEntrevistasTrabajoPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Inglés para Entrevistas de Trabajo: Preparación y Frases 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Inglés para Entrevistas de Trabajo: Guía Completa",
     description: "Prepara tu entrevista de trabajo en inglés: frases clave, preguntas frecuentes, vocabulario específico y técnicas de confianza. Guía práctica.",
     url: `${businessInfo.url}/blog/ingles-entrevistas-trabajo`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Qué nivel de inglés necesito para una entrevista en inglés?",
       answer: "El nivel mínimo recomendado es B2 (Upper-Intermediate). Con este nivel puedes mantener una conversación fluida sobre tu experiencia profesional, responder preguntas imprevistas y expresar opiniones con matices. Para puestos directivos o en empresas donde el inglés es la lengua vehicular, necesitarás C1. Un B1 puede ser suficiente solo si la entrevista incluye pocas preguntas en inglés dentro de un proceso principalmente en español."
-    },
+    }
+
+  ,
     {
       question: "¿Cómo puedo preparar una entrevista en inglés en 1 semana?",
       answer: "Con una semana tienes tiempo suficiente para una preparación intensiva. Día 1-2: Practica las 10 preguntas más comunes con respuestas estructuradas. Día 3-4: Investiga vocabulario específico de la empresa y el sector. Día 5-6: Realiza simulacros cronometrados con un compañero o profesor. Día 7: Repaso general y práctica de small talk. Dedica mínimo 2 horas diarias y graba tus respuestas para identificar errores."
@@ -46,6 +38,13 @@ export default function InglesEntrevistasTrabajoPage() {
     }
   ];
 
+export default function InglesEntrevistasTrabajoPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const commonQuestions = [
     { english: "Tell me about yourself", spanish: "Cuéntame sobre ti", tip: "Estructura: presente (rol actual) → pasado (experiencia relevante) → futuro (por qué esta empresa)" },
     { english: "Why are you interested in this role?", spanish: "¿Por qué te interesa este puesto?", tip: "Conecta tus habilidades con las necesidades específicas del puesto" },
@@ -61,14 +60,7 @@ export default function InglesEntrevistasTrabajoPage() {
 
   return (
     <>
-      <SEOHead
-        title="Inglés para Entrevistas de Trabajo: Preparación y Frases 2026"
-        description="Prepara tu entrevista de trabajo en inglés: frases clave, preguntas frecuentes, vocabulario específico y técnicas de confianza. Guía práctica."
-        keywords="inglés entrevistas trabajo, entrevista trabajo inglés, preparar entrevista inglés, preguntas entrevista inglés"
-        canonical="/blog/ingles-entrevistas-trabajo"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -422,7 +414,7 @@ export default function InglesEntrevistasTrabajoPage() {
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
                   <h3 className="font-bold text-gray-900 mb-2">Días 5-6: Simulacros reales</h3>
                   <ul className="space-y-2 text-gray-700 text-sm">
-                    <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /> Realiza 2-3 simulacros completos con un compañero, profesor o <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">tutor nativo</Link></li>
+                    <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /> Realiza 2-3 simulacros completos con un compañero, profesor o <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">tutor nativo</a></li>
                     <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /> Simula el formato exacto (teléfono, vídeo o presencial)</li>
                     <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /> Practica el small talk inicial y el cierre de la entrevista</li>
                     <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /> Refina respuestas basándote en el feedback recibido</li>
@@ -461,11 +453,11 @@ export default function InglesEntrevistasTrabajoPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -482,7 +474,7 @@ export default function InglesEntrevistasTrabajoPage() {
                   Superar una entrevista de trabajo en inglés es una <strong>habilidad que se entrena</strong>, no un talento innato. Con la preparación adecuada, vocabulario específico y práctica con simulacros reales, puedes proyectar confianza y profesionalismo incluso si el inglés no es tu lengua materna. La clave está en preparar estructura, no memorizar textos.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</Link> ofrecemos preparación intensiva para entrevistas con profesores titulados que simulan entrevistas reales adaptadas a tu sector. Consulta también nuestra guía sobre <Link to="/blog/nivel-ingles-empresas" className="text-emerald-600 hover:underline font-medium">nivel de inglés que piden las empresas</Link> para entender qué certificación necesitas, y explora nuestros <Link to="/examenes-cambridge" className="text-emerald-600 hover:underline font-medium">programas de certificación Cambridge</Link> para respaldar tu nivel con un título oficial.
+                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos preparación intensiva para entrevistas con profesores titulados que simulan entrevistas reales adaptadas a tu sector. Consulta también nuestra guía sobre <a href="/blog/nivel-ingles-empresas" className="text-emerald-600 hover:underline font-medium">nivel de inglés que piden las empresas</a> para entender qué certificación necesitas, y explora nuestros <a href="/examenes-cambridge" className="text-emerald-600 hover:underline font-medium">programas de certificación Cambridge</a> para respaldar tu nivel con un título oficial.
                 </p>
               </div>
             </section>
@@ -493,43 +485,43 @@ export default function InglesEntrevistasTrabajoPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 Prepárate con simulacros reales con profesores titulados. Sesiones intensivas personalizadas para que llegues seguro a tu próxima entrevista.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reservar clase de preparación
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas flexibles adaptados a profesionales en activo.</p>
-                </Link>
-                <Link to="/blog/nivel-ingles-empresas" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/nivel-ingles-empresas" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nivel de Inglés en Empresas España
                   </h3>
                   <p className="text-gray-600 text-sm">Requisitos por sector y cómo certificarte para el mercado laboral.</p>
-                </Link>
-                <Link to="/blog/mejorar-speaking-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/mejorar-speaking-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cómo Mejorar tu Speaking en Inglés
                   </h3>
                   <p className="text-gray-600 text-sm">Técnicas prácticas para ganar fluidez y confianza al hablar.</p>
-                </Link>
-                <Link to="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía de Exámenes Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Certifica tu nivel de inglés con la titulación más reconocida.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -560,7 +552,6 @@ export default function InglesEntrevistasTrabajoPage() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

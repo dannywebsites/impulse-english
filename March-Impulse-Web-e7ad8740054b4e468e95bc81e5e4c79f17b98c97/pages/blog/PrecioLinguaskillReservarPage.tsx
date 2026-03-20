@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, FileText, HelpCircle, ChevronDown, CreditCard, Euro } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
 const tableOfContents = [
@@ -17,7 +14,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-const faqs = [
+export const faqs = [
   {
     question: '¿Puedo pagar el examen Linguaskill en cuotas o necesito abonar el importe completo al reservar?',
     answer: 'El pago completo de 130 euros (o 120 euros con descuento universitario) debe realizarse en el momento de la reserva para confirmar tu plaza. Los centros autorizados no ofrecen habitualmente planes de pago fraccionado, aunque algunas universidades pueden incluir el examen en tasas académicas pagables en plazos. Contacta directamente con tu centro de examen específico para confirmar opciones disponibles.'
@@ -40,6 +37,13 @@ const faqs = [
   },
 ];
 
+export const articleSchema = generateArticleSchema({
+    headline: "Precio Linguaskill 2025: Tarifas y Reserva del Examen",
+    description: "Descubre el precio del examen Linguaskill en 2025 (130€), descuentos universitarios (120€) y cómo reservar tu plaza paso a paso en centros oficiales.",
+    url: `${businessInfo.url}/blog/precio-linguaskill-reservar`,
+    datePublished: "2024-12-01"
+  });
+
 export default function PrecioLinguaskillReservarPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -47,23 +51,9 @@ export default function PrecioLinguaskillReservarPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const articleSchema = generateArticleSchema({
-    headline: "Precio Linguaskill 2025: Tarifas y Reserva del Examen",
-    description: "Descubre el precio del examen Linguaskill en 2025 (130€), descuentos universitarios (120€) y cómo reservar tu plaza paso a paso en centros oficiales.",
-    url: `${businessInfo.url}/blog/precio-linguaskill-reservar`,
-    datePublished: "2024-12-01"
-  });
-
   return (
     <>
-      <SEOHead
-        title="Precio Linguaskill 2025: Tarifas, Descuentos y Cómo Reservar tu Examen"
-        description="Descubre el precio del examen Linguaskill en 2025 (130€), tarifas universitarias (120€), descuentos y cómo reservar paso a paso. Guía completa actualizada con toda la información."
-        keywords="precio Linguaskill, Linguaskill precio 2025, cuánto cuesta Linguaskill, tarifa Linguaskill, descuento universitario Linguaskill, reservar Linguaskill, inscripción Linguaskill"
-        canonical="/blog/precio-linguaskill-reservar"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       <article>
         {/* Hero Section */}
@@ -120,13 +110,13 @@ export default function PrecioLinguaskillReservarPage() {
 
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
-          <Link
-            to="/linguaskill/precios-fechas"
+          <a
+              href="/linguaskill/precios-fechas"
             className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
             ← Volver a Linguaskill: Precios, Sedes y Servicios
-          </Link>
+          </a>
         </div>
 
         {/* Table of Contents */}
@@ -310,11 +300,11 @@ export default function PrecioLinguaskillReservarPage() {
                         }`}
                       />
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-zinc-50">
-                        <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-zinc-50">
+                          <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -331,7 +321,7 @@ export default function PrecioLinguaskillReservarPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Para maximizar tu inversión, prepárate adecuadamente antes del examen mediante recursos oficiales y familiarízate con el formato adaptativo de las preguntas. En nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-green-600 hover:underline font-medium">academia de inglés en Barrio del Pilar</Link>, ofrecemos <Link to="/cursos-ingles/adultos" className="text-green-600 hover:underline font-medium">cursos de preparación para adultos</Link> específicos para Linguaskill que pueden mejorar significativamente tu puntuación final. Si prefieres atención personalizada, consulta nuestras <Link to="/cursos-ingles/particulares" className="text-green-600 hover:underline font-medium">clases particulares de inglés</Link>. Recuerda verificar todos los requisitos técnicos y documentales antes del día del examen para evitar contratiempos innecesarios.
+                Para maximizar tu inversión, prepárate adecuadamente antes del examen mediante recursos oficiales y familiarízate con el formato adaptativo de las preguntas. En nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-green-600 hover:underline font-medium">academia de inglés en Barrio del Pilar</a>, ofrecemos <a href="/cursos-ingles/adultos" className="text-green-600 hover:underline font-medium">cursos de preparación para adultos</a> específicos para Linguaskill que pueden mejorar significativamente tu puntuación final. Si prefieres atención personalizada, consulta nuestras <a href="/cursos-ingles/particulares" className="text-green-600 hover:underline font-medium">clases particulares de inglés</a>. Recuerda verificar todos los requisitos técnicos y documentales antes del día del examen para evitar contratiempos innecesarios.
               </p>
             </section>
 
@@ -365,30 +355,30 @@ export default function PrecioLinguaskillReservarPage() {
           <div className="container mx-auto px-6">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link
-                to="/linguaskill/precios-fechas"
+              <a
+              href="/linguaskill/precios-fechas"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-green-600 text-sm font-medium">Hub Principal</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Linguaskill: Precios, Sedes y Servicios</h3>
                 <p className="text-zinc-600 text-sm mt-2">Guía completa de precios y sedes en España.</p>
-              </Link>
-              <Link
-                to="/linguaskill"
+              </a>
+              <a
+              href="/linguaskill"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-green-600 text-sm font-medium">Centros</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Centros Linguaskill en España</h3>
                 <p className="text-zinc-600 text-sm mt-2">Dónde examinarte en Madrid, Valencia y Zaragoza.</p>
-              </Link>
-              <Link
-                to="/linguaskill"
+              </a>
+              <a
+              href="/linguaskill"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-green-600 text-sm font-medium">Online</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Linguaskill Online desde Casa</h3>
                 <p className="text-zinc-600 text-sm mt-2">Cómo hacer el examen desde tu hogar.</p>
-              </Link>
+              </a>
             </div>
 
           </div>
@@ -412,7 +402,6 @@ export default function PrecioLinguaskillReservarPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

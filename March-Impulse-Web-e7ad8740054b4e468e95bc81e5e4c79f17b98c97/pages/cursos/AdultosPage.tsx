@@ -1,19 +1,16 @@
 import React, { useEffect } from 'react';
 import { Briefcase, BookOpen, Users, Target, Globe, Award, Clock, CheckCircle, Phone, Calendar, Coffee, Sun } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
 import OptimizedImage from '../../components/OptimizedImage';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
-import SEOHead from '../../components/SEOHead';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import { facilityImages } from '../../src/data/images';
 
-const courseSchema = generateCourseSchema({
+export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés para Adultos",
   description: "Inglés para adultos en La Vaguada / Barrio del Pilar. Grupos máx. 8, horarios mañana y tarde, preparación Cambridge y centro oficial Linguaskill. Prueba de nivel gratis.",
   url: `${businessInfo.url}/cursos-ingles/adultos`,
@@ -24,7 +21,7 @@ const courseSchema = generateCourseSchema({
 });
 
 
-const faqs = [
+export const faqs = [
   {
     question: "¿Qué nivel de inglés piden en las empresas?",
     answer: "Depende del sector, pero B2 es el nivel más habitual para entornos profesionales y C1 se valora para roles internacionales o de liderazgo. Lo importante es que puedas comunicarte con seguridad. Te orientamos para elegir preparación Cambridge o Linguaskill según tu objetivo laboral."
@@ -146,13 +143,7 @@ export default function AdultosPage() {
 
   return (
     <>
-      <SEOHead
-        title="Clases de Inglés para Adultos | Cambridge y Linguaskill"
-        description="Inglés para adultos en La Vaguada / Barrio del Pilar. Grupos máx. 8, horarios mañana y tarde, preparación Cambridge y centro oficial Linguaskill. Prueba de nivel gratis."
-        keywords="cursos inglés adultos la vaguada, clases inglés adultos barrio del pilar, inglés para adultos madrid, cambridge adultos"
-        canonical="/cursos-ingles/adultos"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
@@ -193,12 +184,12 @@ export default function AdultosPage() {
               Grupos reducidos, enfoque práctico y objetivos claros. Desde A1 hasta C1/C2, con preparación Cambridge y Linguaskill en La Vaguada.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-white text-teal-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-zinc-100 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
-              </Link>
+              </a>
               <a
                 href="tel:+34604910611"
                 className="backdrop-blur-sm text-white border border-white/25 font-display font-medium py-4 px-8 rounded-lg hover:bg-white/10 transition-all duration-300 text-center flex items-center justify-center gap-2"
@@ -252,10 +243,10 @@ export default function AdultosPage() {
             {/* Location and Certification Links */}
             <div className="mt-6 p-4 bg-teal-50 rounded-xl border border-teal-100">
               <p className="text-zinc-700 text-sm mb-3">
-                <strong>¿Dónde estamos?</strong> Nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-teal-600 hover:underline font-medium">academia en Barrio del Pilar</Link>, junto a <Link to="/academia-ingles-la-vaguada" className="text-teal-600 hover:underline font-medium">La Vaguada</Link>. Bien comunicada desde <Link to="/academia-ingles-plaza-castilla" className="text-teal-600 hover:underline font-medium">Plaza Castilla</Link> y <Link to="/academia-ingles-tetuan" className="text-teal-600 hover:underline font-medium">Tetuán</Link>.
+                <strong>¿Dónde estamos?</strong> Nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-teal-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-teal-600 hover:underline font-medium">La Vaguada</a>. Bien comunicada desde <a href="/academia-ingles-plaza-castilla" className="text-teal-600 hover:underline font-medium">Plaza Castilla</a> y <a href="/academia-ingles-tetuan" className="text-teal-600 hover:underline font-medium">Tetuán</a>.
               </p>
               <p className="text-zinc-600 text-sm">
-                Prepara tus <Link to="/examenes-cambridge" className="text-teal-600 hover:underline font-medium">exámenes Cambridge</Link> o certifica rápido con <Link to="/linguaskill" className="text-teal-600 hover:underline font-medium">Linguaskill</Link>. Si prefieres atención individual, consulta nuestras <Link to="/cursos-ingles/particulares" className="text-teal-600 hover:underline font-medium">clases particulares</Link>.
+                Prepara tus <a href="/examenes-cambridge" className="text-teal-600 hover:underline font-medium">exámenes Cambridge</a> o certifica rápido con <a href="/linguaskill" className="text-teal-600 hover:underline font-medium">Linguaskill</a>. Si prefieres atención individual, consulta nuestras <a href="/cursos-ingles/particulares" className="text-teal-600 hover:underline font-medium">clases particulares</a>.
               </p>
             </div>
 
@@ -361,22 +352,22 @@ export default function AdultosPage() {
             <div className="bg-white/10 p-6 rounded-xl">
               <h3 className="font-bold text-white mb-2">Exámenes Cambridge</h3>
               <p className="text-white/70 text-sm mb-4">B1 Preliminary, B2 First, C1 Advanced</p>
-              <Link
-                to="/examenes-cambridge"
+              <a
+              href="/examenes-cambridge"
                 className="inline-block bg-white text-teal-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-teal-900 transition-colors text-sm"
               >
                 Ver exámenes Cambridge
-              </Link>
+              </a>
             </div>
             <div className="bg-white/10 p-6 rounded-xl">
               <h3 className="font-bold text-white mb-2">Linguaskill</h3>
               <p className="text-white/70 text-sm mb-4">Certificado en 48h. Ideal para requisitos laborales</p>
-              <Link
-                to="/linguaskill"
+              <a
+              href="/linguaskill"
                 className="inline-block bg-white text-teal-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-teal-900 transition-colors text-sm"
               >
                 Conocer Linguaskill
-              </Link>
+              </a>
             </div>
           </div>
           <p className="text-white/90 font-medium">
@@ -456,12 +447,12 @@ export default function AdultosPage() {
               Te evaluamos sin compromiso y te ubicamos en el grupo adecuado para tu nivel.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Solicitar prueba de nivel
-              </Link>
+              </a>
               <a
                 href="https://wa.me/34604910611?text=Hola,%20me%20gustaría%20información%20sobre%20inglés%20para%20adultos"
                 target="_blank"
@@ -567,7 +558,6 @@ export default function AdultosPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={courseSchema} />
-    </>
+</>
   );
 }

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CambridgeVsLinguaskillDiferenciasPage, { articleSchema, faqItems } from '../../../pages/blog/CambridgeVsLinguaskillDiferenciasPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Cambridge vs Linguaskill: Diferencias Completas y Cuál Elegir 2026"
+  description="Compara Cambridge y Linguaskill: formato, precio, validez, dificultad y reconocimiento. Guía para elegir el examen que más te conviene."
+  canonical="/blog/cambridge-vs-linguaskill-diferencias"
+  ogType="article"
+  schemas={schemas}
+>
+  <CambridgeVsLinguaskillDiferenciasPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

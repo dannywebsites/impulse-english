@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function CambridgeVsIeltsEspanaPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Cambridge vs IELTS en España: Comparativa Definitiva 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Cambridge vs IELTS en España: ¿Qué Examen Te Conviene?",
     description: "Compara Cambridge e IELTS para España: validez, reconocimiento laboral, precio y formato. Cambridge no caduca, IELTS sí. Guía para decidir.",
     url: `${businessInfo.url}/blog/cambridge-vs-ielts-espana`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿El IELTS caduca? ¿Y Cambridge?",
       answer: "Sí, el certificado IELTS tiene una validez de 2 años desde la fecha del examen. Después de ese periodo, necesitas volver a presentarte si la institución lo requiere. Los certificados Cambridge (PET, FCE, CAE, CPE) no caducan nunca y son válidos de forma permanente. Esta es una de las diferencias más significativas entre ambos."
-    },
+    }
+
+  ,
     {
       question: "¿Qué examen es más difícil, Cambridge o IELTS?",
       answer: "No se puede decir que uno sea más difícil que otro, ya que evalúan de forma diferente. IELTS mide tu nivel en una escala continua (1-9), mientras que Cambridge examina si alcanzas un nivel específico (B1, B2, C1, C2). Muchos candidatos encuentran el Speaking de Cambridge más natural (conversación con otro candidato) y el de IELTS más formal (entrevista individual)."
@@ -47,6 +38,14 @@ export default function CambridgeVsIeltsEspanaPage() {
     }
   ];
 
+export default function CambridgeVsIeltsEspanaPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const comparisonData = [
     { feature: "Validez del certificado", cambridge: "No caduca nunca", ielts: "2 años" },
     { feature: "Precio del examen", cambridge: "115€-230€ según nivel", ielts: "200€-250€" },
@@ -60,14 +59,7 @@ export default function CambridgeVsIeltsEspanaPage() {
 
   return (
     <>
-      <SEOHead
-        title="Cambridge vs IELTS en España: Comparativa Definitiva 2026"
-        description="Compara Cambridge e IELTS para España: validez, reconocimiento laboral, precio y formato. Cambridge no caduca, IELTS sí. Guía para decidir."
-        keywords="cambridge vs ielts españa, ielts o cambridge, comparar cambridge ielts, mejor examen inglés españa"
-        canonical="/blog/cambridge-vs-ielts-espana"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -204,7 +196,7 @@ export default function CambridgeVsIeltsEspanaPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Para la mayoría de personas en España, la validez permanente de Cambridge es una ventaja decisiva. Si consideras que podrías necesitar tu certificado de inglés durante los próximos 10 años, Cambridge te ahorrará dinero y tiempo en repetir exámenes. Consulta la <Link to="/blog/escala-cambridge" className="text-blue-600 hover:underline">escala de niveles Cambridge</Link> para más detalles.
+                Para la mayoría de personas en España, la validez permanente de Cambridge es una ventaja decisiva. Si consideras que podrías necesitar tu certificado de inglés durante los próximos 10 años, Cambridge te ahorrará dinero y tiempo en repetir exámenes. Consulta la <a href="/blog/escala-cambridge" className="text-blue-600 hover:underline">escala de niveles Cambridge</a> para más detalles.
               </p>
             </section>
 
@@ -240,7 +232,7 @@ export default function CambridgeVsIeltsEspanaPage() {
                     <Award className="w-5 h-5 text-blue-600" />
                     Oposiciones y administración pública
                   </h3>
-                  <p className="text-gray-700">Las <Link to="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline">certificaciones Cambridge</Link> son las más referenciadas en convocatorias de oposiciones españolas. IELTS también es aceptado, pero su caducidad puede ser un problema si la oposición se retrasa.</p>
+                  <p className="text-gray-700">Las <a href="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline">certificaciones Cambridge</a> son las más referenciadas en convocatorias de oposiciones españolas. IELTS también es aceptado, pero su caducidad puede ser un problema si la oposición se retrasa.</p>
                 </div>
               </div>
 
@@ -325,7 +317,7 @@ export default function CambridgeVsIeltsEspanaPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En <Link to="/examenes-cambridge" className="text-blue-600 hover:underline">Impulse English Academy</Link> nos especializamos en preparación Cambridge, la opción más demandada en España. Si necesitas ayuda para decidir, nuestro equipo puede asesorarte según tu situación específica.
+                En <a href="/examenes-cambridge" className="text-blue-600 hover:underline">Impulse English Academy</a> nos especializamos en preparación Cambridge, la opción más demandada en España. Si necesitas ayuda para decidir, nuestro equipo puede asesorarte según tu situación específica.
               </p>
             </section>
 
@@ -349,11 +341,11 @@ export default function CambridgeVsIeltsEspanaPage() {
                         <ChevronDown className="w-5 h-5 text-blue-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -367,10 +359,10 @@ export default function CambridgeVsIeltsEspanaPage() {
 
               <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Para la mayoría de personas en España, <Link to="/examenes-cambridge" className="text-blue-600 hover:underline font-medium">Cambridge es la mejor opción</Link>: no caduca, tiene el máximo reconocimiento en el contexto español y es más económico a largo plazo. IELTS es la elección correcta si planeas emigrar a países anglófonos o si una institución específica lo requiere.
+                  Para la mayoría de personas en España, <a href="/examenes-cambridge" className="text-blue-600 hover:underline font-medium">Cambridge es la mejor opción</a>: no caduca, tiene el máximo reconocimiento en el contexto español y es más económico a largo plazo. IELTS es la elección correcta si planeas emigrar a países anglófonos o si una institución específica lo requiere.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline font-medium">Impulse English Academy</Link> te preparamos para obtener la <Link to="/blog/escala-cambridge" className="text-blue-600 hover:underline font-medium">certificación Cambridge</Link> que necesitas con metodología probada y profesores especializados en los exámenes oficiales.
+                  En <a href="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> te preparamos para obtener la <a href="/blog/escala-cambridge" className="text-blue-600 hover:underline font-medium">certificación Cambridge</a> que necesitas con metodología probada y profesores especializados en los exámenes oficiales.
                 </p>
               </div>
             </section>
@@ -381,31 +373,31 @@ export default function CambridgeVsIeltsEspanaPage() {
               <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
                 En Impulse te preparamos para Cambridge con la mejor tasa de aprobados. Solicita información sin compromiso.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Exámenes Cambridge: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todos los niveles Cambridge explicados: B1, B2, C1 y C2.</p>
-                </Link>
-                <Link to="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                </a>
+                <a href="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Escala de Niveles Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Entiende la puntuación y los niveles del sistema Cambridge.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -435,7 +427,6 @@ export default function CambridgeVsIeltsEspanaPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

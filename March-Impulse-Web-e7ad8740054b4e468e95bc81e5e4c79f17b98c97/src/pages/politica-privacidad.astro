@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PoliticaPrivacidadPage from '../../pages/legal/PoliticaPrivacidadPage';
+import CookieBanner from '../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Política de Privacidad"
+  description="Política de privacidad de Impulse English Academy. Información sobre el tratamiento de datos personales según RGPD y LOPDGDD."
+  canonical="/politica-privacidad"
+>
+  <PoliticaPrivacidadPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

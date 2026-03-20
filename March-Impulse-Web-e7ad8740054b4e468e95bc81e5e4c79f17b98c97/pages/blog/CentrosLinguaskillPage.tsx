@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, FileText, HelpCircle, ChevronDown, MapPin, Building } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
 const centrosFaqs = [
@@ -25,7 +22,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-const faqs = [
+export const faqs = [
   {
     question: '¿Cuánto cuesta el examen Linguaskill en Madrid, Valencia y Zaragoza?',
     answer: 'El precio del examen completo (4 módulos) oscila entre 130€ en Zaragoza y 145€ en Valencia, siendo Madrid el punto intermedio con 135€. Los centros permiten contratar módulos individuales desde 45€, ideal si solo necesitas certificar Reading & Listening para requisitos universitarios básicos. Algunos centros ofrecen descuentos del 10-15% para estudiantes con tarjeta universitaria válida.'
@@ -48,6 +45,13 @@ const faqs = [
   },
 ];
 
+export const articleSchema = generateArticleSchema({
+    headline: "Centros Linguaskill en España: Dónde Realizar el Examen 2025",
+    description: "Guía completa de centros autorizados Linguaskill en Madrid, Valencia, Zaragoza y otras ciudades españolas donde realizar el examen oficial.",
+    url: `${businessInfo.url}/blog/centros-linguaskill`,
+    datePublished: "2025-01-01"
+  });
+
 export default function CentrosLinguaskillPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -55,23 +59,9 @@ export default function CentrosLinguaskillPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const articleSchema = generateArticleSchema({
-    headline: "Centros Linguaskill en España: Dónde Realizar el Examen 2025",
-    description: "Guía completa de centros autorizados Linguaskill en Madrid, Valencia, Zaragoza y otras ciudades españolas donde realizar el examen oficial.",
-    url: `${businessInfo.url}/blog/centros-linguaskill`,
-    datePublished: "2025-01-01"
-  });
-
   return (
     <>
-      <SEOHead
-        title="Centros Linguaskill Madrid, Valencia, Zaragoza 2025 - Sedes Oficiales"
-        description="Guía completa de centros autorizados Linguaskill en Madrid, Valencia y Zaragoza. Encuentra sedes oficiales, precios, modalidades presenciales y online para realizar el examen Cambridge."
-        keywords="centros Linguaskill Madrid, sedes Linguaskill España, Linguaskill Valencia, Linguaskill Zaragoza, dónde hacer Linguaskill, centros examen Linguaskill, centros autorizados Linguaskill"
-        canonical="/blog/centros-linguaskill"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       <article>
         {/* Hero Section */}
@@ -128,13 +118,13 @@ export default function CentrosLinguaskillPage() {
 
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
-          <Link
-            to="/linguaskill/precios-fechas"
+          <a
+              href="/linguaskill/precios-fechas"
             className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
             ← Volver a Linguaskill: Precios, Sedes y Servicios
-          </Link>
+          </a>
         </div>
 
         {/* Table of Contents */}
@@ -295,11 +285,11 @@ export default function CentrosLinguaskillPage() {
                         }`}
                       />
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-zinc-50">
-                        <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-zinc-50">
+                          <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -316,7 +306,7 @@ export default function CentrosLinguaskillPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Si buscas preparación intensiva antes del examen, nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-teal-600 hover:underline font-medium">academia en Barrio del Pilar</Link>, junto a <Link to="/academia-ingles-la-vaguada" className="text-teal-600 hover:underline font-medium">La Vaguada</Link>, ofrece <Link to="/cursos-ingles/adultos" className="text-teal-600 hover:underline font-medium">cursos específicos para adultos</Link> que combinan metodología probada con simulacros del formato oficial <Link to="/linguaskill" className="text-teal-600 hover:underline font-medium">Linguaskill</Link>. También preparamos otros <Link to="/examenes-cambridge" className="text-teal-600 hover:underline font-medium">exámenes Cambridge</Link> como <Link to="/examenes-cambridge/b2-first" className="text-teal-600 hover:underline font-medium">B2 First</Link>.
+                Si buscas preparación intensiva antes del examen, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-teal-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-teal-600 hover:underline font-medium">La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos" className="text-teal-600 hover:underline font-medium">cursos específicos para adultos</a> que combinan metodología probada con simulacros del formato oficial <a href="/linguaskill" className="text-teal-600 hover:underline font-medium">Linguaskill</a>. También preparamos otros <a href="/examenes-cambridge" className="text-teal-600 hover:underline font-medium">exámenes Cambridge</a> como <a href="/examenes-cambridge/b2-first" className="text-teal-600 hover:underline font-medium">B2 First</a>.
               </p>
             </section>
 
@@ -350,30 +340,30 @@ export default function CentrosLinguaskillPage() {
           <div className="container mx-auto px-6">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link
-                to="/linguaskill/precios-fechas"
+              <a
+              href="/linguaskill/precios-fechas"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-teal-600 text-sm font-medium">Hub Principal</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Linguaskill: Precios, Sedes y Servicios</h3>
                 <p className="text-zinc-600 text-sm mt-2">Guía completa de precios y sedes en España.</p>
-              </Link>
-              <Link
-                to="/linguaskill/precios-fechas"
+              </a>
+              <a
+              href="/linguaskill/precios-fechas"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-teal-600 text-sm font-medium">Precios</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Precio Linguaskill y Reserva</h3>
                 <p className="text-zinc-600 text-sm mt-2">Tarifas actualizadas y proceso de inscripción.</p>
-              </Link>
-              <Link
-                to="/linguaskill"
+              </a>
+              <a
+              href="/linguaskill"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-teal-600 text-sm font-medium">Online</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Linguaskill Online desde Casa</h3>
                 <p className="text-zinc-600 text-sm mt-2">Cómo hacer el examen desde tu hogar.</p>
-              </Link>
+              </a>
             </div>
 
           </div>
@@ -397,7 +387,6 @@ export default function CentrosLinguaskillPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

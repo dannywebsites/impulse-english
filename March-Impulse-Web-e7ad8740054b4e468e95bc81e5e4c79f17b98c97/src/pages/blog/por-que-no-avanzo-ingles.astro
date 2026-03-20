@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PorQueNoAvanzoInglesPage, { articleSchema, faqItems } from '../../../pages/blog/PorQueNoAvanzoInglesPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="No Avanzo en Inglés: 8 Razones y Cómo Solucionarlo 2026"
+  description="Si llevas tiempo estudiando y no avanzas, probablemente cometes uno de estos 8 errores. Descubre las causas del estancamiento y soluciones prácticas."
+  canonical="/blog/por-que-no-avanzo-ingles"
+  ogType="article"
+  schemas={schemas}
+>
+  <PorQueNoAvanzoInglesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

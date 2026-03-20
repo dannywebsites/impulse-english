@@ -1,34 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { PenTool, Clock, ChevronDown, ChevronUp, CheckCircle, BookOpen, Target, FileText, Headphones } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
-import SEOHead from '../../components/SEOHead';
-
-export default function EjerciciosB2CambridgePage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Ejercicios B2 Cambridge: Guía Práctica First 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Ejercicios B2 Cambridge: Guía Práctica First 2026",
     description: "Ejercicios prácticos para preparar el B2 First de Cambridge. Reading, Writing, Listening y Speaking con recursos gratuitos.",
     url: `${businessInfo.url}/blog/ejercicios-b2-cambridge`,
     datePublished: "2025-01-08"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Cuántos ejercicios debo hacer para aprobar el B2 First de Cambridge?",
       answer: "No existe un número exacto, pero se recomienda practicar al menos 50 ejercicios de Use of English, escribir 30 textos diferentes, completar 20 readings y 20 listenings durante tres meses de preparación. La calidad de la práctica con análisis de errores importa más que la cantidad pura de ejercicios realizados."
-    },
+    }
+
+  ,
     {
       question: "¿Dónde encuentro ejercicios B2 Cambridge gratuitos con respuestas?",
       answer: "La web oficial de Cambridge English ofrece materiales gratuitos en Test & Train. Además, sitios como CLGranada.com, MundoEstudiante.com y Flo-Joe.co.uk proporcionan ejercicios resueltos descargables en PDF y tests interactivos online sin coste. ESL-Lounge también dispone de quizzes gratuitos específicos para cada sección del examen."
@@ -46,6 +36,14 @@ export default function EjerciciosB2CambridgePage() {
       answer: "Los recursos gratuitos disponibles online son amplios y suficientes para una preparación completa si se usan sistemáticamente. Sin embargo, los libros oficiales Cambridge (Cambridge English B2 First Trainer) garantizan ejercicios con el nivel exacto del examen real y proporcionan estructura de estudio organizada que facilita la planificación autónoma."
     }
   ];
+
+export default function EjerciciosB2CambridgePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   const exerciseTypes = [
     {
@@ -103,14 +101,7 @@ export default function EjerciciosB2CambridgePage() {
 
   return (
     <>
-      <SEOHead
-        title="Ejercicios B2 Cambridge First 2026: Guía Práctica por Secciones | Reading, Writing, Listening, Speaking"
-        description="Tipos de ejercicios del B2 First Cambridge: Reading, Use of English, Writing, Listening y Speaking. Estrategias, ejemplos y recursos gratuitos para practicar."
-        keywords="ejercicios b2 cambridge, b2 first ejercicios, use of english b2, writing b2 first, listening b2 cambridge, speaking first certificate, práctica b2"
-        canonical="/blog/ejercicios-b2-cambridge"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
@@ -397,8 +388,8 @@ export default function EjerciciosB2CambridgePage() {
 
               <div className="bg-blue-100 rounded-xl p-6">
                 <p className="text-blue-800">
-                  En nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-blue-600 hover:underline font-bold">academia en Barrio del Pilar</Link> complementamos estos recursos con práctica guiada,
-                  corrección personalizada de Writing y Speaking en vivo con feedback inmediato. Ofrecemos <Link to="/examenes-cambridge/b2-first" className="text-blue-600 hover:underline font-bold">preparación B2 First</Link> con <Link to="/cursos-ingles/particulares" className="text-blue-600 hover:underline font-bold">clases particulares</Link> o grupales desde <strong>79€/mes</strong>. También preparamos <Link to="/examenes-cambridge/b1-preliminary" className="text-blue-600 hover:underline font-bold">B1 Preliminary</Link> y otros <Link to="/examenes-cambridge" className="text-blue-600 hover:underline font-bold">exámenes Cambridge</Link>.
+                  En nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-blue-600 hover:underline font-bold">academia en Barrio del Pilar</a> complementamos estos recursos con práctica guiada,
+                  corrección personalizada de Writing y Speaking en vivo con feedback inmediato. Ofrecemos <a href="/examenes-cambridge/b2-first" className="text-blue-600 hover:underline font-bold">preparación B2 First</a> con <a href="/cursos-ingles/particulares" className="text-blue-600 hover:underline font-bold">clases particulares</a> o grupales desde <strong>79€/mes</strong>. También preparamos <a href="/examenes-cambridge/b1-preliminary" className="text-blue-600 hover:underline font-bold">B1 Preliminary</a> y otros <a href="/examenes-cambridge" className="text-blue-600 hover:underline font-bold">exámenes Cambridge</a>.
                 </p>
               </div>
             </section>
@@ -422,11 +413,11 @@ export default function EjerciciosB2CambridgePage() {
                         <ChevronDown className="w-5 h-5 text-zinc-500" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 py-4 bg-white">
-                        <p className="text-zinc-600">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 py-4' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-zinc-600">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -461,12 +452,12 @@ export default function EjerciciosB2CambridgePage() {
                       Práctica guiada con profesores expertos en exámenes Cambridge.
                     </p>
                   </div>
-                  <Link
-                    to="/contacto"
+                  <a
+              href="/contacto"
                     className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Solicitar información
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -476,14 +467,14 @@ export default function EjerciciosB2CambridgePage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link to="/examenes-cambridge/b2-first" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/b2-first" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-blue-600">B2 FIRST</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Cambridge B2: 7 Beneficios del Examen First</h4>
-                </Link>
-                <Link to="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-blue-600">PUNTUACIÓN</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Escala Cambridge Explicada: Niveles y Grades</h4>
-                </Link>
+                </a>
               </div>
             </section>
           </div>
@@ -509,7 +500,6 @@ export default function EjerciciosB2CambridgePage() {
 
       <Footer />
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

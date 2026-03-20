@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import UniversidadesAceptanLinguaskillPage, { articleSchema, faqItems } from '../../../pages/blog/UniversidadesAceptanLinguaskillPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Universidades que Aceptan Linguaskill en España e Internacional 2026"
+  description="Más de 80 universidades españolas aceptan Linguaskill, incluidas UNED, UOC y universidades públicas de Madrid, Andalucía y Cataluña. Lista completa."
+  canonical="/blog/universidades-aceptan-linguaskill"
+  ogType="article"
+  schemas={schemas}
+>
+  <UniversidadesAceptanLinguaskillPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

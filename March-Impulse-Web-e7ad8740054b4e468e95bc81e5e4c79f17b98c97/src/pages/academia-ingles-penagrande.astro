@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PenagrandePage, { locationMeta, localFaqs } from '../../pages/ubicaciones/PenagrandePage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Academia de Inglés en Peñagrande"
+  description="Academia de inglés cerca de Peñagrande Madrid. Centro preparador Cambridge oficial con 100% aprobados. A 15 min de Metro Peñagrande. Grupos reducidos."
+  keywords="academia inglés peñagrande, clases inglés peñagrande, cursos inglés peñagrande madrid, cambridge peñagrande, aprender inglés peñagrande"
+  canonical="/academia-ingles-penagrande"
+  schemas={schemas}
+>
+  <PenagrandePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

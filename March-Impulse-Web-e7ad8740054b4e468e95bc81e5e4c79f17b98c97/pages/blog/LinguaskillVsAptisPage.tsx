@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, Scale, CheckCircle, ArrowRight } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
 const vsAptisFaqs = [
@@ -41,25 +38,20 @@ const vsAptisFaqs = [
   }
 ];
 
-export default function LinguaskillVsAptisPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Linguaskill vs Aptis: ¿Cuál Elegir? Comparativa 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Linguaskill vs Aptis: ¿Cuál Elegir? Comparativa Completa 2025",
     description: "Comparativa detallada entre Linguaskill y Aptis: formato adaptativo vs estructurado, resultados en 48 vs 72 horas, reconocimiento internacional y flexibilidad.",
     url: `${businessInfo.url}/blog/linguaskill-vs-aptis`,
     datePublished: "2025-12-10"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Cuál es más fácil, Linguaskill o Aptis?",
       answer: "La dificultad es comparable ya que ambos evalúan el mismo espectro CEFR de A1 a C2. Linguaskill puede parecer más desafiante porque su formato adaptativo ajusta preguntas según tu desempeño, mientras que Aptis presenta preguntas con dificultad progresiva predecible. La \"facilidad\" depende de tu nivel real: ambos exámenes identificarán con precisión tu competencia lingüística sin posibilidad de inflarlo artificialmente."
-    },
+    }
+
+  ,
     {
       question: "¿Puedo preparar ambos exámenes con los mismos recursos?",
       answer: "Sí, parcialmente. Ambos evalúan las cuatro destrezas con tareas similares (redacciones, comprensión auditiva, expresión oral), por lo que mejorar tu inglés general beneficia ambos exámenes. Sin embargo, familiarizarse con el formato específico es crucial: Linguaskill utiliza interfaces digitales únicas con tecnología de reconocimiento de voz, mientras que Aptis tiene secciones particulares de Grammar y Vocabulary. Dedica al menos 10-15 horas a practicar con simulacros del examen específico que elijas."
@@ -78,6 +70,13 @@ export default function LinguaskillVsAptisPage() {
     }
   ];
 
+export default function LinguaskillVsAptisPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const comparisonData = [
     { feature: "Organismo", linguaskill: "Cambridge Assessment English", aptis: "British Council" },
     { feature: "Formato", linguaskill: "Adaptativo (IA)", aptis: "Estructurado fijo" },
@@ -91,14 +90,7 @@ export default function LinguaskillVsAptisPage() {
 
   return (
     <>
-      <SEOHead
-        title="Linguaskill vs Aptis: Comparativa Completa 2025 - ¿Cuál Elegir?"
-        description="Comparativa detallada Linguaskill vs Aptis: formato adaptativo vs estructurado, resultados en 48 vs 72 horas, precios ~130€ vs 130-150€, reconocimiento y flexibilidad. Guía completa para elegir."
-        keywords="Linguaskill vs Aptis, comparativa Linguaskill Aptis, diferencias Linguaskill Aptis, cuál es mejor Linguaskill o Aptis, Linguaskill o Aptis, Cambridge vs British Council"
-        canonical="/blog/linguaskill-vs-aptis"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -161,7 +153,7 @@ export default function LinguaskillVsAptisPage() {
           <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              ¿Necesitas certificar tu nivel de inglés pero no sabes si elegir <Link to="/linguaskill" className="text-orange-600 hover:underline font-medium">Linguaskill</Link> o Aptis? Ambos exámenes computarizados evalúan las cuatro destrezas lingüísticas y entregan resultados en menos de una semana, pero presentan diferencias importantes en formato, velocidad y flexibilidad. En esta comparativa analizamos los aspectos clave que distinguen a estos dos certificados para que puedas tomar una decisión informada según tu situación académica o profesional. Si prefieres los <Link to="/examenes-cambridge" className="text-orange-600 hover:underline font-medium">exámenes Cambridge tradicionales</Link> como el <Link to="/examenes-cambridge/b2-first" className="text-orange-600 hover:underline font-medium">B2 First</Link>, también tenemos opciones para ti.
+              ¿Necesitas certificar tu nivel de inglés pero no sabes si elegir <a href="/linguaskill" className="text-orange-600 hover:underline font-medium">Linguaskill</a> o Aptis? Ambos exámenes computarizados evalúan las cuatro destrezas lingüísticas y entregan resultados en menos de una semana, pero presentan diferencias importantes en formato, velocidad y flexibilidad. En esta comparativa analizamos los aspectos clave que distinguen a estos dos certificados para que puedas tomar una decisión informada según tu situación académica o profesional. Si prefieres los <a href="/examenes-cambridge" className="text-orange-600 hover:underline font-medium">exámenes Cambridge tradicionales</a> como el <a href="/examenes-cambridge/b2-first" className="text-orange-600 hover:underline font-medium">B2 First</a>, también tenemos opciones para ti.
             </p>
 
             {/* Section 1 */}
@@ -356,11 +348,11 @@ export default function LinguaskillVsAptisPage() {
                         <ChevronDown className="w-5 h-5 text-orange-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -398,7 +390,7 @@ export default function LinguaskillVsAptisPage() {
                 </div>
 
                 <p className="text-gray-700 leading-relaxed">
-                  Para prepararte eficazmente para cualquiera de estos exámenes con metodología personalizada y profesores certificados, en nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-orange-600 hover:underline font-medium">academia en Barrio del Pilar</Link> ofrecemos <Link to="/cursos-ingles/adultos" className="text-orange-600 hover:underline font-medium">cursos de inglés para adultos</Link> con preparación específica que maximizan tus posibilidades de éxito en la primera convocatoria.
+                  Para prepararte eficazmente para cualquiera de estos exámenes con metodología personalizada y profesores certificados, en nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-orange-600 hover:underline font-medium">academia en Barrio del Pilar</a> ofrecemos <a href="/cursos-ingles/adultos" className="text-orange-600 hover:underline font-medium">cursos de inglés para adultos</a> con preparación específica que maximizan tus posibilidades de éxito en la primera convocatoria.
                 </p>
               </div>
             </section>
@@ -409,31 +401,31 @@ export default function LinguaskillVsAptisPage() {
               <p className="text-orange-100 mb-6 max-w-2xl mx-auto">
                 En Impulse English Academy te orientamos sobre qué examen es mejor para tu situación y te preparamos con metodología especializada.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-orange-600 px-8 py-4 rounded-xl font-semibold hover:bg-orange-50 transition-colors"
               >
                 Solicitar asesoramiento gratuito
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-orange-50 transition-colors">
+                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-orange-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors mb-2">
                     Linguaskill: Guía Completa 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre el examen Linguaskill de Cambridge.</p>
-                </Link>
-                <Link to="/linguaskill/precios-fechas" className="group bg-gray-50 rounded-xl p-6 hover:bg-orange-50 transition-colors">
+                </a>
+                <a href="/linguaskill/precios-fechas" className="group bg-gray-50 rounded-xl p-6 hover:bg-orange-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors mb-2">
                     Precio Linguaskill 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Descubre los precios actualizados y cómo reservar tu examen.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -464,7 +456,6 @@ export default function LinguaskillVsAptisPage() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

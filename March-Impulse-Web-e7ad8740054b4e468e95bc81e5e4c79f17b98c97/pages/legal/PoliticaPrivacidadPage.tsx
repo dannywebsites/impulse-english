@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Breadcrumb from '../../components/Breadcrumb';
-import SEOHead from '../../components/SEOHead';
 
 export default function PoliticaPrivacidadPage() {
   useEffect(() => {
@@ -11,12 +10,6 @@ export default function PoliticaPrivacidadPage() {
 
   return (
     <>
-      <SEOHead
-        title="Política de Privacidad"
-        description="Política de privacidad de Impulse English Academy. Información sobre el tratamiento de datos personales según RGPD y LOPDGDD."
-        canonical="/politica-privacidad"
-        noindex={true}
-      />
       <Navbar />
 
       {/* Hero Section */}

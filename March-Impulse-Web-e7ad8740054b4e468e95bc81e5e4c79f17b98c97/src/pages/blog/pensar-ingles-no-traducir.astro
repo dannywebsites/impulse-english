@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PensarInglesNoTraducirPage, { articleSchema, faqItems } from '../../../pages/blog/PensarInglesNoTraducirPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Pensar en Inglés sin Traducir: 8 Técnicas Probadas 2026"
+  description="Aprende a pensar directamente en inglés sin traducir del español. 8 técnicas para desarrollar el pensamiento en inglés y hablar con más fluidez."
+  canonical="/blog/pensar-ingles-no-traducir"
+  ogType="article"
+  schemas={schemas}
+>
+  <PensarInglesNoTraducirPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

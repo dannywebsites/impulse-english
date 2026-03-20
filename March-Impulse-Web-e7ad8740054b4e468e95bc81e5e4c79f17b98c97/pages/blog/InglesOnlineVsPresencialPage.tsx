@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function InglesOnlineVsPresencialPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Inglés Online vs Presencial para Niños: Cuál Elegir 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: 'Inglés Online vs Presencial para Niños: ¿Qué es Mejor?',
     description: 'Para niños, el inglés presencial es más efectivo por la interacción real. Descubre cuándo el online puede complementar y qué edades se adaptan mejor a cada formato.',
     url: `${businessInfo.url}/blog/ingles-online-vs-presencial`,
     datePublished: '2025-03-01'
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: '¿Pueden los niños pequeños aprender inglés online?',
       answer: 'Los menores de 7 años aprenden mejor en presencial: necesitan interacción física, movimiento y presencia real del profesor. A partir de 10-12 años, el online puede ser efectivo con buena estructura.'
-    },
+    }
+
+  ,
     {
       question: '¿El online es más barato para niños?',
       answer: 'Generalmente sí, un 15-30% más económico. Sin embargo, para niños pequeños, el presencial ofrece mejor calidad-precio dado el mayor impacto pedagógico.'
@@ -43,16 +34,17 @@ export default function InglesOnlineVsPresencialPage() {
     }
   ];
 
+export default function InglesOnlineVsPresencialPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="Inglés Online vs Presencial para Niños: Cuál Elegir 2026"
-        description="Para niños, el inglés presencial es más efectivo por la interacción real. Descubre cuándo el online puede complementar y qué edades se adaptan mejor a cada formato."
-        keywords="inglés online presencial niños, clases inglés online niños, presencial vs online niños, inglés virtual niños"
-        canonical="/blog/ingles-online-vs-presencial"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -356,11 +348,11 @@ export default function InglesOnlineVsPresencialPage() {
                         <ChevronDown className="w-5 h-5 text-purple-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -377,7 +369,7 @@ export default function InglesOnlineVsPresencialPage() {
                   Para niños menores de 10 años, el presencial sigue siendo claramente superior al online. La interacción física, el movimiento, la relación con el profesor y la dinámica de grupo son elementos que el online no puede replicar completamente a estas edades.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  El modelo óptimo es el híbrido inteligente: <Link to="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">clases presenciales</Link> como base, complementadas con apps, contenido digital y, para mayores de 10 años, sesiones online ocasionales con nativos. En Impulse, nuestras clases presenciales integran recursos digitales de forma que los niños disfrutan de lo mejor de ambos mundos.
+                  El modelo óptimo es el híbrido inteligente: <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">clases presenciales</a> como base, complementadas con apps, contenido digital y, para mayores de 10 años, sesiones online ocasionales con nativos. En Impulse, nuestras clases presenciales integran recursos digitales de forma que los niños disfrutan de lo mejor de ambos mundos.
                 </p>
               </div>
             </section>
@@ -388,37 +380,37 @@ export default function InglesOnlineVsPresencialPage() {
               <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
                 El mejor de los dos mundos: presencial de calidad con recursos digitales integrados. Primera clase gratuita.
               </p>
-              <Link
-                to="/cursos-ingles/infantil"
+              <a
+              href="/cursos-ingles/infantil"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Ver clases infantil
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link to="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés presencial para los más pequeños en Madrid.</p>
-                </Link>
-                <Link to="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Primaria
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés para niños de 6 a 12 años con prep Cambridge.</p>
-                </Link>
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">El enfoque híbrido que usamos en Impulse Academy.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -448,7 +440,6 @@ export default function InglesOnlineVsPresencialPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

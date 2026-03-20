@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react';
 import { Wifi, Users, Target, Award, Clock, CheckCircle, Phone, Globe, Video, Laptop, Calendar, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
-import SEOHead from '../../components/SEOHead';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 
-const courseSchema = generateCourseSchema({
+export const courseSchema = generateCourseSchema({
   name: "Clases de Inglés Online",
   description: "Clases de inglés online en directo con profesores nativos. Grupos reducidos, preparación Cambridge y Linguaskill, modalidad 100% online o híbrida. Misma metodología Impulse, desde cualquier lugar de España.",
   url: `${businessInfo.url}/cursos-ingles/online`,
@@ -20,7 +17,7 @@ const courseSchema = generateCourseSchema({
   image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
 });
 
-const faqs = [
+export const faqs = [
   {
     question: "¿Las clases online son en directo o grabadas?",
     answer: "Siempre en directo por videoconferencia con tu profesor. No son vídeos pregrabados. Participas, preguntas, practicas speaking y recibes correcciones en tiempo real, igual que en clase presencial."
@@ -62,14 +59,7 @@ export default function OnlinePage() {
 
   return (
     <>
-      <SEOHead
-        title="Clases de Inglés Online | En Directo con Profesores Nativos"
-        description="Clases de inglés online en directo. Grupos reducidos (máx. 8), preparación Cambridge y Linguaskill, modalidad 100% online o híbrida. Misma metodología Impulse desde cualquier lugar de España."
-        keywords="clases inglés online, cursos inglés online españa, inglés online directo, clases inglés videoconferencia, cambridge online, linguaskill online"
-        canonical="/cursos-ingles/online"
-      />
-      <SchemaMarkup schema={courseSchema} />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
@@ -102,12 +92,12 @@ export default function OnlinePage() {
               La misma metodología Impulse, los mismos profesores, los mismos resultados. Desde tu casa, tu oficina o donde estés. Grupos reducidos con preparación Cambridge y Linguaskill.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-white text-indigo-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-zinc-100 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
-              </Link>
+              </a>
               <a
                 href="https://wa.me/34604910611?text=Hola,%20me%20interesan%20las%20clases%20de%20inglés%20online"
                 target="_blank"
@@ -322,16 +312,16 @@ export default function OnlinePage() {
               { name: "Cambridge B1/B2/C1", href: "/examenes-cambridge" },
               { name: "Linguaskill", href: "/linguaskill" }
             ].map((course, index) => (
-              <Link
+              <a
                 key={index}
-                to={course.href}
+                href={course.href}
                 className="bg-white p-5 rounded-xl border border-zinc-100 hover:border-indigo-300 hover:shadow-md transition-all group"
               >
                 <h3 className="font-bold text-zinc-900 group-hover:text-indigo-600 transition-colors">{course.name}</h3>
                 <span className="text-zinc-400 text-xs mt-2 flex items-center gap-1 group-hover:text-indigo-400">
                   Ver detalles <ArrowRight className="w-3 h-3" />
                 </span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -405,11 +395,11 @@ export default function OnlinePage() {
         <div className="container mx-auto max-w-4xl">
           <p className="text-zinc-500 text-sm text-center">
             <strong className="text-zinc-600">También disponible presencial:</strong>{' '}
-            <Link to="/academia-ingles-barrio-del-pilar" className="text-indigo-600 hover:underline">Barrio del Pilar</Link>{' | '}
-            <Link to="/academia-ingles-la-vaguada" className="text-indigo-600 hover:underline">La Vaguada</Link>{' | '}
-            <Link to="/academia-ingles-penagrande" className="text-indigo-600 hover:underline">Peñagrande</Link>{' | '}
-            <Link to="/academia-ingles-plaza-castilla" className="text-indigo-600 hover:underline">Plaza Castilla</Link>{' | '}
-            <Link to="/academia-ingles-tetuan" className="text-indigo-600 hover:underline">Tetuán</Link>
+            <a href="/academia-ingles-barrio-del-pilar" className="text-indigo-600 hover:underline">Barrio del Pilar</a>{' | '}
+            <a href="/academia-ingles-la-vaguada" className="text-indigo-600 hover:underline">La Vaguada</a>{' | '}
+            <a href="/academia-ingles-penagrande" className="text-indigo-600 hover:underline">Peñagrande</a>{' | '}
+            <a href="/academia-ingles-plaza-castilla" className="text-indigo-600 hover:underline">Plaza Castilla</a>{' | '}
+            <a href="/academia-ingles-tetuan" className="text-indigo-600 hover:underline">Tetuán</a>
           </p>
         </div>
       </section>

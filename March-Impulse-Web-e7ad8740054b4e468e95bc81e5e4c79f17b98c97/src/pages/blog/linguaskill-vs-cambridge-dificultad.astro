@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LinguaskillVsCambridgeDificultadPage, { articleSchema, faqItems } from '../../../pages/blog/LinguaskillVsCambridgeDificultadPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Linguaskill vs Cambridge: ¿Cuál es Más Fácil? Comparativa 2026"
+  description="Linguaskill no es más fácil que Cambridge, sino diferente. Compara dificultad, formato, duración y reconocimiento de ambos exámenes."
+  canonical="/blog/linguaskill-vs-cambridge-dificultad"
+  ogType="article"
+  schemas={schemas}
+>
+  <LinguaskillVsCambridgeDificultadPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

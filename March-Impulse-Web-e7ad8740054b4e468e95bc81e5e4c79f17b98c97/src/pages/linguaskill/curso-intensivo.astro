@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CursoIntensivoLinguaskillPage from '../../../pages/blog/CursoIntensivoLinguaskillPage';
+import CookieBanner from '../../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Curso Intensivo Linguaskill Online 2026: Preparación Rápida y Efectiva"
+  description="Prepárate para el examen Linguaskill en 4-8 semanas con cursos intensivos online. Estrategias, práctica y feedback personalizado desde 79€/mes en Madrid."
+  keywords="curso intensivo linguaskill, linguaskill online, preparación linguaskill rápida, curso linguaskill madrid, linguaskill 4 semanas"
+  canonical="/linguaskill/curso-intensivo"
+  ogType="article"
+>
+  <CursoIntensivoLinguaskillPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

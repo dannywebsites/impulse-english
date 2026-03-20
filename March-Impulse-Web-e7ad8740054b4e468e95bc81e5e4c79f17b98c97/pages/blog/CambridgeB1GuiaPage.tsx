@@ -1,28 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function CambridgeB1GuiaPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Examen Cambridge B1: Formato, Precio y Cómo Prepararte en 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Examen Cambridge B1 Preliminary: Guía Completa 2026",
     description: "Guía completa del B1 Preliminary: estructura, formato del examen, precio, preparación y estrategias para aprobar con éxito.",
     url: `${businessInfo.url}/blog/cambridge-b1-guia`,
     datePublished: "2025-01-01"
   });
+
+export default function CambridgeB1GuiaPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const newFaqItems = [
     {
@@ -80,14 +76,7 @@ export default function CambridgeB1GuiaPage() {
 
   return (
     <>
-      <SEOHead
-        title="Examen Cambridge B1 Preliminary: Guía Completa 2025 - Estructura y Preparación"
-        description="Guía completa del B1 Preliminary Cambridge: formato del examen, puntuación, preparación efectiva y estrategias de éxito. Precio, duración y certificación oficial."
-        keywords="cambridge b1, b1 preliminary, examen b1 cambridge, preparación b1, precio b1 cambridge, estructura b1 preliminary"
-        canonical="/blog/cambridge-b1-guia"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -361,11 +350,11 @@ export default function CambridgeB1GuiaPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -379,10 +368,10 @@ export default function CambridgeB1GuiaPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El <Link to="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">examen Cambridge B1 Preliminary</Link> representa una certificación accesible y valiosa que demuestra tu capacidad para comunicarte efectivamente en inglés cotidiano. Con estructura clara de 140 minutos distribuidos equitativamente entre cuatro competencias, preparación estratégica de 10-12 semanas y validez permanente, es inversión inteligente para desarrollo profesional y académico.
+                  El <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">examen Cambridge B1 Preliminary</a> representa una certificación accesible y valiosa que demuestra tu capacidad para comunicarte efectivamente en inglés cotidiano. Con estructura clara de 140 minutos distribuidos equitativamente entre cuatro competencias, preparación estratégica de 10-12 semanas y validez permanente, es inversión inteligente para desarrollo profesional y académico.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  <Link to="/academia-ingles-barrio-del-pilar" className="text-emerald-600 hover:underline font-medium">Nuestra academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-emerald-600 hover:underline font-medium">junto a La Vaguada</Link>, ofrece <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos de inglés para adultos</Link> y programas de <Link to="/cursos-ingles/secundaria" className="text-emerald-600 hover:underline font-medium">cursos de secundaria</Link> especializados con excelentes tasas de aprobación para candidatos comprometidos.
+                  <a href="/academia-ingles-barrio-del-pilar" className="text-emerald-600 hover:underline font-medium">Nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-emerald-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos de inglés para adultos</a> y programas de <a href="/cursos-ingles/secundaria" className="text-emerald-600 hover:underline font-medium">cursos de secundaria</a> especializados con excelentes tasas de aprobación para candidatos comprometidos.
                 </p>
               </div>
             </section>
@@ -393,31 +382,31 @@ export default function CambridgeB1GuiaPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 En Impulse English Academy te preparamos con metodología probada para aprobar el B1 Preliminary con la mejor puntuación.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía de Exámenes Cambridge 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Comparativa completa de todos los niveles Cambridge.</p>
-                </Link>
-                <Link to="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cambridge B2 First: Beneficios
                   </h3>
                   <p className="text-gray-600 text-sm">El siguiente paso después del B1 Preliminary.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -448,7 +437,6 @@ export default function CambridgeB1GuiaPage() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

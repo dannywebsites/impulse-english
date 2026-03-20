@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TetuanPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/TetuanPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Academia de Inglés en Tetuán"
+  description="Academia de inglés cerca de Tetuán Madrid. Centro preparador Cambridge oficial con 100% aprobados. A 15 min en Metro Línea 1. Grupos reducidos máx 10 alumnos."
+  keywords="academia inglés tetuán, clases inglés tetuán madrid, cursos inglés tetuán, cambridge tetuán, aprender inglés tetuán"
+  canonical="/academia-ingles-tetuan"
+  schemas={schemas}
+>
+  <TetuanPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

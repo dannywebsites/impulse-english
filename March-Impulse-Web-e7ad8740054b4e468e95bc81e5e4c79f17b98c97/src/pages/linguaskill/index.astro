@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LinguaskillGuiaCompletaPage from '../../../pages/blog/LinguaskillGuiaCompletaPage';
+import CookieBanner from '../../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Linguaskill Examen Ejemplo: Guía Completa 2026"
+  description="Guía definitiva del examen Linguaskill con ejemplos reales, estructura, tipos de preguntas y preparación. Resultados en 48 horas. Todo lo que necesitas saber."
+  keywords="linguaskill, examen linguaskill, linguaskill cambridge, estructura linguaskill, preparación linguaskill, linguaskill general, linguaskill business, módulos linguaskill"
+  canonical="/linguaskill"
+  ogType="article"
+>
+  <LinguaskillGuiaCompletaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

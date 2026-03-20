@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function B1SuficienteTrabajarPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = '¿B1 es Suficiente para Trabajar? Empleos y Requisitos 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿Es Suficiente el B1 para Trabajar? Realidad del Mercado Laboral",
     description: "El B1 es suficiente para trabajos en atención al cliente, turismo y administración. Conoce qué empleos lo aceptan y cuándo necesitas B2 o superior.",
     url: `${businessInfo.url}/blog/b1-suficiente-trabajar`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Puedo trabajar en una multinacional con un B1?",
       answer: "Depende del puesto. Para roles administrativos o de soporte en multinacionales, un B1 puede ser suficiente. Sin embargo, para puestos que requieran negociación, presentaciones o comunicación constante con clientes internacionales, normalmente se exige B2 o superior. Algunas multinacionales aceptan B1 como mínimo para la contratación y ofrecen formación interna."
-    },
+    }
+
+  ,
     {
       question: "¿El B1 sirve para oposiciones en España?",
       answer: "Sí, muchas oposiciones en España aceptan el B1 como nivel mínimo de inglés, especialmente en administración general, correos y fuerzas de seguridad. Sin embargo, para cuerpos diplomáticos, traducción o puestos internacionales se suele exigir B2 o C1. Consulta siempre las bases específicas de cada convocatoria."
@@ -46,6 +37,14 @@ export default function B1SuficienteTrabajarPage() {
       answer: "Ambos son reconocidos por Cambridge y tienen alta aceptación. El certificado B1 Preliminary tiene la ventaja de no caducar, mientras que Linguaskill ofrece resultados más rápidos. Para el mercado laboral español, ambos son igualmente válidos, aunque algunas empresas específicas pueden tener preferencias. Lo importante es demostrar el nivel."
     }
   ];
+
+export default function B1SuficienteTrabajarPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   const sectorData = [
     {
@@ -88,14 +87,7 @@ export default function B1SuficienteTrabajarPage() {
 
   return (
     <>
-      <SEOHead
-        title="¿B1 es Suficiente para Trabajar? Empleos y Requisitos 2026"
-        description="El B1 es suficiente para trabajos en atención al cliente, turismo y administración. Conoce qué empleos lo aceptan y cuándo necesitas B2 o superior."
-        keywords="b1 suficiente para trabajar, empleo b1 inglés, trabajos nivel b1, b1 mercado laboral"
-        canonical="/blog/b1-suficiente-trabajar"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -163,7 +155,7 @@ export default function B1SuficienteTrabajarPage() {
               </h2>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Según datos recientes de portales de empleo españoles, aproximadamente el <strong>60% de las ofertas que requieren inglés</strong> solicitan un nivel B1 como mínimo. Esto convierte al <Link to="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline">B1 Preliminary</Link> en la certificación más demandada para el mercado laboral general.
+                Según datos recientes de portales de empleo españoles, aproximadamente el <strong>60% de las ofertas que requieren inglés</strong> solicitan un nivel B1 como mínimo. Esto convierte al <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline">B1 Preliminary</a> en la certificación más demandada para el mercado laboral general.
               </p>
 
               <div className="grid md:grid-cols-3 gap-4 mb-6">
@@ -257,7 +249,7 @@ export default function B1SuficienteTrabajarPage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Hay situaciones profesionales claras donde el B1 se queda corto. Si te identificas con alguno de estos perfiles, considera seriamente dar el salto al <Link to="/blog/diferencia-b2-c1" className="text-emerald-600 hover:underline">nivel B2 o C1</Link>:
+                Hay situaciones profesionales claras donde el B1 se queda corto. Si te identificas con alguno de estos perfiles, considera seriamente dar el salto al <a href="/blog/diferencia-b2-c1" className="text-emerald-600 hover:underline">nivel B2 o C1</a>:
               </p>
 
               <div className="space-y-4 mb-8">
@@ -369,7 +361,7 @@ export default function B1SuficienteTrabajarPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                La forma más eficiente de dar el salto es combinar <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">clases en academia</Link> con práctica autónoma diaria. En <Link to="/metodologia" className="text-emerald-600 hover:underline">Impulse English Academy</Link>, nuestros cursos de preparación B2 First están diseñados específicamente para estudiantes que parten de un B1 consolidado.
+                La forma más eficiente de dar el salto es combinar <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">clases en academia</a> con práctica autónoma diaria. En <a href="/metodologia" className="text-emerald-600 hover:underline">Impulse English Academy</a>, nuestros cursos de preparación B2 First están diseñados específicamente para estudiantes que parten de un B1 consolidado.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
@@ -399,11 +391,11 @@ export default function B1SuficienteTrabajarPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -417,10 +409,10 @@ export default function B1SuficienteTrabajarPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El <Link to="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">B1 Preliminary</Link> es suficiente para una amplia gama de empleos en España, especialmente en turismo, atención al cliente y administración. Sin embargo, si aspiras a puestos con mayor responsabilidad internacional o en sectores como tecnología y finanzas, planifica tu progresión hacia el B2.
+                  El <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">B1 Preliminary</a> es suficiente para una amplia gama de empleos en España, especialmente en turismo, atención al cliente y administración. Sin embargo, si aspiras a puestos con mayor responsabilidad internacional o en sectores como tecnología y finanzas, planifica tu progresión hacia el B2.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</Link> te ayudamos tanto a certificar tu B1 como a preparar tu salto al B2 First con <Link to="/metodologia" className="text-emerald-600 hover:underline font-medium">metodología probada</Link> y profesores altamente cualificados especializados en exámenes Cambridge.
+                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te ayudamos tanto a certificar tu B1 como a preparar tu salto al B2 First con <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">metodología probada</a> y profesores altamente cualificados especializados en exámenes Cambridge.
                 </p>
               </div>
             </section>
@@ -431,31 +423,31 @@ export default function B1SuficienteTrabajarPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 Ya sea certificar tu B1 o dar el salto al B2, en Impulse te acompañamos con clases adaptadas a tus objetivos laborales.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía Completa del B1 Preliminary
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge B1: formato, precio y preparación.</p>
-                </Link>
-                <Link to="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Mejora tu inglés profesional con nuestros cursos especializados.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -485,7 +477,6 @@ export default function B1SuficienteTrabajarPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

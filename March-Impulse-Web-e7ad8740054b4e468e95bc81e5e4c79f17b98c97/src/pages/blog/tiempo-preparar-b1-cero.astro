@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TiempoPreparaB1CeroPage, { articleSchema, faqItems } from '../../../pages/blog/TiempoPreparaB1CeroPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Preparar B1 Cambridge desde Cero: Tiempo y Plan de Estudio 2026"
+  description="Preparar el B1 desde cero lleva 12-18 meses con estudio regular. Desde nivel A2: 10-12 semanas. Plan detallado y horas necesarias por nivel."
+  canonical="/blog/tiempo-preparar-b1-cero"
+  ogType="article"
+  schemas={schemas}
+>
+  <TiempoPreparaB1CeroPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

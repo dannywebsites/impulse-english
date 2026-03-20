@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NivelInglesEmpresasPage, { articleSchema, faqItems } from '../../../pages/blog/NivelInglesEmpresasPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Nivel de Inglés en Empresas España: Requisitos por Sector 2026"
+  description="El 85% de ofertas cualificadas piden inglés. B2 es el mínimo para multinacionales, C1 para directivos. Descubre requisitos por sector y puesto."
+  canonical="/blog/nivel-ingles-empresas"
+  ogType="article"
+  schemas={schemas}
+>
+  <NivelInglesEmpresasPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

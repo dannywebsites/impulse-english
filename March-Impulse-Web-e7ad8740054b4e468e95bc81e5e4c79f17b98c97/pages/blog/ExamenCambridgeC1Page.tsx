@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, FileText, HelpCircle, ChevronDown, Award, Target } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
 const c1AdvancedFaqs = [
@@ -85,7 +82,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-const faqs = [
+export const faqs = [
   {
     question: '¿Cuánto cuesta el examen Cambridge C1 Advanced en España?',
     answer: 'El precio del examen C1 Advanced varía entre 210-240€ según el centro examinador oficial en España. Algunos centros autorizados ofrecen descuentos para estudiantes matriculados o inscripciones grupales. El precio incluye certificado digital y físico con envío estándar a domicilio tras publicación de resultados oficiales.'
@@ -128,6 +125,13 @@ const faqs = [
   },
 ];
 
+export const articleSchema = generateArticleSchema({
+    headline: "Examen Cambridge C1 Advanced: Guía Completa 2025",
+    description: "Guía completa del C1 Advanced: estructura del examen, sistema de puntuación, estrategias de preparación y requisitos para aprobar.",
+    url: `${businessInfo.url}/examenes-cambridge/c1-advanced`,
+    datePublished: "2025-01-01"
+  });
+
 export default function ExamenCambridgeC1Page() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -135,23 +139,9 @@ export default function ExamenCambridgeC1Page() {
     window.scrollTo(0, 0);
   }, []);
 
-  const articleSchema = generateArticleSchema({
-    headline: "Examen Cambridge C1 Advanced: Guía Completa 2025",
-    description: "Guía completa del C1 Advanced: estructura del examen, sistema de puntuación, estrategias de preparación y requisitos para aprobar.",
-    url: `${businessInfo.url}/examenes-cambridge/c1-advanced`,
-    datePublished: "2025-01-01"
-  });
-
   return (
     <>
-      <SEOHead
-        title="Examen Cambridge C1 Advanced: Guía Completa 2025 - Estructura y Puntuación"
-        description="Guía completa del C1 Advanced Cambridge: estructura del examen, sistema de puntuación, estrategias de preparación efectivas y requisitos para aprobar el nivel avanzado."
-        keywords="cambridge c1 advanced, examen c1 cambridge, c1 advanced puntuación, preparación c1, precio c1 cambridge, estructura c1 advanced"
-        canonical="/examenes-cambridge/c1-advanced"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       <article>
         {/* Hero Section */}
@@ -214,13 +204,13 @@ export default function ExamenCambridgeC1Page() {
 
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
-          <Link
-            to="/examenes-cambridge"
+          <a
+              href="/examenes-cambridge"
             className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
             ← Volver a la Guía Completa de Exámenes Cambridge
-          </Link>
+          </a>
         </div>
 
         {/* Table of Contents */}
@@ -449,11 +439,11 @@ export default function ExamenCambridgeC1Page() {
                         }`}
                       />
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-zinc-50">
-                        <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-zinc-50">
+                          <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -466,11 +456,11 @@ export default function ExamenCambridgeC1Page() {
               </h2>
 
               <p className="text-zinc-600 leading-relaxed mb-6">
-                El Cambridge C1 Advanced es una certificación de alto valor que demuestra dominio avanzado del inglés en contextos profesionales y académicos. Con reconocimiento global, validez permanente y una estructura de examen que evalúa competencias reales, representa una inversión sólida para tu futuro. Para más información sobre todos los <Link to="/examenes-cambridge" className="text-indigo-600 hover:underline font-medium">exámenes Cambridge</Link> disponibles, consulta nuestra guía completa.
+                El Cambridge C1 Advanced es una certificación de alto valor que demuestra dominio avanzado del inglés en contextos profesionales y académicos. Con reconocimiento global, validez permanente y una estructura de examen que evalúa competencias reales, representa una inversión sólida para tu futuro. Para más información sobre todos los <a href="/examenes-cambridge" className="text-indigo-600 hover:underline font-medium">exámenes Cambridge</a> disponibles, consulta nuestra guía completa.
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Si buscas preparación estructurada con metodología probada, <Link to="/academia-ingles-barrio-del-pilar" className="text-indigo-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-indigo-600 hover:underline font-medium">junto a La Vaguada</Link>, ofrece <Link to="/cursos-ingles/adultos" className="text-indigo-600 hover:underline font-medium">cursos de inglés para adultos</Link> y <Link to="/cursos-ingles/particulares" className="text-indigo-600 hover:underline font-medium">clases particulares</Link> específicos de preparación C1 Advanced con profesores certificados y tasas de éxito excepcionales. Reserva tu clase gratuita para comenzar tu camino hacia la certificación avanzada.
+                Si buscas preparación estructurada con metodología probada, <a href="/academia-ingles-barrio-del-pilar" className="text-indigo-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-indigo-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos" className="text-indigo-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares" className="text-indigo-600 hover:underline font-medium">clases particulares</a> específicos de preparación C1 Advanced con profesores certificados y tasas de éxito excepcionales. Reserva tu clase gratuita para comenzar tu camino hacia la certificación avanzada.
               </p>
             </section>
 
@@ -504,30 +494,30 @@ export default function ExamenCambridgeC1Page() {
           <div className="container mx-auto px-6">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link
-                to="/examenes-cambridge"
+              <a
+              href="/examenes-cambridge"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-indigo-600 text-sm font-medium">Hub Principal</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Guía Completa de Exámenes Cambridge</h3>
                 <p className="text-zinc-600 text-sm mt-2">Todo lo que necesitas saber sobre certificaciones.</p>
-              </Link>
-              <Link
-                to="/examenes-cambridge/b2-first"
+              </a>
+              <a
+              href="/examenes-cambridge/b2-first"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-indigo-600 text-sm font-medium">B2 First</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Cambridge B2: Beneficios del Examen</h3>
                 <p className="text-zinc-600 text-sm mt-2">Ventajas del nivel intermedio-alto.</p>
-              </Link>
-              <Link
-                to="/examenes-cambridge/fechas-precios"
+              </a>
+              <a
+              href="/examenes-cambridge/fechas-precios"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-indigo-600 text-sm font-medium">Fechas</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Fechas Exámenes Cambridge 2026</h3>
                 <p className="text-zinc-600 text-sm mt-2">Calendario oficial y plazos de inscripción.</p>
-              </Link>
+              </a>
             </div>
 
           </div>
@@ -551,7 +541,6 @@ export default function ExamenCambridgeC1Page() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

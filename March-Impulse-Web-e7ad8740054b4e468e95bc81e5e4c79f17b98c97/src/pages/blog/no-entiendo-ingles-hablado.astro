@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NoEntiendoInglesHabladoPage, { articleSchema, faqItems } from '../../../pages/blog/NoEntiendoInglesHabladoPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="No Entiendo Inglés Hablado: Por Qué Ocurre y Cómo Mejorarlo 2026"
+  description="No entender inglés hablado se debe a velocidad, acentos y connected speech. Descubre las causas científicas y un plan de mejora paso a paso por nivel."
+  canonical="/blog/no-entiendo-ingles-hablado"
+  ogType="article"
+  schemas={schemas}
+>
+  <NoEntiendoInglesHabladoPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -1,33 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, FileText, CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function RegistroLinguaskillPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Registro Linguaskill 2025: Guía Completa de Matrícula | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Registro Linguaskill 2025: Guía Completa de Matrícula",
     description: "Cómo registrarse en el examen Linguaskill: proceso de inscripción, requisitos, costes y plazos para matricularte en España.",
     url: `${businessInfo.url}/blog/registro-linguaskill`,
     datePublished: "2025-01-16"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Cuánto cuesta registrarse en el examen Linguaskill en España?",
       answer: "El coste varía según el centro y los módulos seleccionados. El módulo Reading and Listening cuesta aproximadamente 60-80€, mientras que un examen completo con los cuatro módulos (Reading, Listening, Writing, Speaking) puede oscilar entre 120€ y 180€. Los centros establecen precios propios, por lo que conviene comparar varias opciones."
-    },
+    }
+
+  ,
     {
       question: "¿Puedo cambiar la fecha de mi examen después de registrarme?",
       answer: "Sí, pero depende de la política de cada centro. La mayoría permite cambios con al menos 48-72 horas de antelación sin coste adicional o con una pequeña penalización administrativa de 10-20€. Cambios más cercanos a la fecha o ausencia sin aviso previo suelen implicar pérdida total o parcial de las tasas pagadas."
@@ -45,6 +37,13 @@ export default function RegistroLinguaskillPage() {
       answer: "Sí, Linguaskill es completamente modular. Puedes registrarte únicamente para Reading and Listening, o añadir Writing, Speaking o ambos según tus necesidades de certificación. Muchos estudiantes universitarios solo requieren certificar comprensión lectora y auditiva para graduarse, mientras que profesionales suelen necesitar los cuatro módulos para promociones laborales o procesos de selección."
     }
   ];
+
+export default function RegistroLinguaskillPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   const registrationSteps = [
     {
@@ -76,14 +75,7 @@ export default function RegistroLinguaskillPage() {
 
   return (
     <>
-      <SEOHead
-        title="Registro Linguaskill 2025: Cómo Inscribirse Paso a Paso"
-        description="Guía completa de registro Linguaskill: proceso de inscripción, documentación requerida, modalidades presencial y online, y centros autorizados en España 2025."
-        keywords="registro linguaskill, inscripción linguaskill, cómo registrarse linguaskill, matrícula linguaskill online, centros linguaskill españa, documentos linguaskill"
-        canonical="/blog/registro-linguaskill"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -308,11 +300,11 @@ export default function RegistroLinguaskillPage() {
                         <ChevronDown className="w-5 h-5 text-cyan-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -329,7 +321,7 @@ export default function RegistroLinguaskillPage() {
                   Registrarse en el examen Linguaskill requiere elegir un centro autorizado, preparar tu documentación oficial, completar el formulario de inscripción con datos precisos y realizar el pago en plazo.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En Madrid, nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-cyan-600 hover:underline font-medium">academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-cyan-600 hover:underline font-medium">junto a La Vaguada</Link>, ofrece preparación específica para <Link to="/linguaskill" className="text-cyan-600 hover:underline font-medium">Linguaskill</Link> además de actuar como centro examinador oficial, facilitando todo el proceso de matrícula y certificación. También preparamos otros <Link to="/examenes-cambridge" className="text-cyan-600 hover:underline font-medium">exámenes Cambridge</Link> con <Link to="/cursos-ingles/adultos" className="text-cyan-600 hover:underline font-medium">cursos de inglés para adultos</Link> y <Link to="/cursos-ingles/particulares" className="text-cyan-600 hover:underline font-medium">clases particulares</Link>. Planifica tu registro con al menos una semana de antelación para asegurar tu plaza en la fecha deseada.
+                  En Madrid, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-cyan-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-cyan-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece preparación específica para <a href="/linguaskill" className="text-cyan-600 hover:underline font-medium">Linguaskill</a> además de actuar como centro examinador oficial, facilitando todo el proceso de matrícula y certificación. También preparamos otros <a href="/examenes-cambridge" className="text-cyan-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos" className="text-cyan-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares" className="text-cyan-600 hover:underline font-medium">clases particulares</a>. Planifica tu registro con al menos una semana de antelación para asegurar tu plaza en la fecha deseada.
                 </p>
               </div>
             </section>
@@ -340,31 +332,31 @@ export default function RegistroLinguaskillPage() {
               <p className="text-cyan-100 mb-6 max-w-2xl mx-auto">
                 En Impulse English Academy te ayudamos con todo el proceso de registro y te preparamos para obtener la mejor puntuación posible.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-cyan-600 px-8 py-4 rounded-xl font-semibold hover:bg-cyan-50 transition-colors"
               >
                 Contactar ahora
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-cyan-50 transition-colors">
+                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-cyan-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors mb-2">
                     Linguaskill: Guía Completa 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre el examen Linguaskill de Cambridge.</p>
-                </Link>
-                <Link to="/linguaskill/precios-fechas" className="group bg-gray-50 rounded-xl p-6 hover:bg-cyan-50 transition-colors">
+                </a>
+                <a href="/linguaskill/precios-fechas" className="group bg-gray-50 rounded-xl p-6 hover:bg-cyan-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors mb-2">
                     Precio Linguaskill 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Descubre los precios actualizados y cómo reservar tu examen.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -394,7 +386,6 @@ export default function RegistroLinguaskillPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

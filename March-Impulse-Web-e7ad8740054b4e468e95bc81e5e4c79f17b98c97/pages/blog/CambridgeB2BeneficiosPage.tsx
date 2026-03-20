@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, FileText, HelpCircle, ChevronDown, Award, Globe, Briefcase } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
 const b2FirstFaqs = [
@@ -97,7 +94,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-const faqs = [
+export const faqs = [
   {
     question: '¿Cuánto tiempo es válido el certificado Cambridge B2 First?',
     answer: 'El certificado Cambridge B2 First tiene validez ilimitada y no caduca nunca. A diferencia de TOEFL o IELTS que expiran tras dos años, puedes usar tu B2 First durante toda tu vida profesional sin necesidad de renovación. Algunas instituciones pueden solicitar certificados recientes (2-3 años) para admisiones específicas, pero el documento oficial conserva su validez.'
@@ -120,6 +117,13 @@ const faqs = [
   },
 ];
 
+export const articleSchema = generateArticleSchema({
+    headline: "Cambridge B2: 7 Beneficios Clave del Examen First en 2025",
+    description: "Descubre los beneficios reales del Cambridge B2: reconocimiento internacional, validez ilimitada, mejora profesional y académica. Guía completa 2025.",
+    url: `${businessInfo.url}/blog/cambridge-b2-beneficios`,
+    datePublished: "2024-12-01"
+  });
+
 export default function CambridgeB2BeneficiosPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -127,23 +131,9 @@ export default function CambridgeB2BeneficiosPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const articleSchema = generateArticleSchema({
-    headline: "Cambridge B2: 7 Beneficios Clave del Examen First en 2025",
-    description: "Descubre los beneficios reales del Cambridge B2: reconocimiento internacional, validez ilimitada, mejora profesional y académica. Guía completa 2025.",
-    url: `${businessInfo.url}/blog/cambridge-b2-beneficios`,
-    datePublished: "2024-12-01"
-  });
-
   return (
     <>
-      <SEOHead
-        title="Cambridge B2: 7 Beneficios Clave del Examen First 2025"
-        description="Descubre los beneficios reales del Cambridge B2 First: reconocimiento internacional, validez ilimitada, mejora profesional y académica. Guía completa 2025 con datos verificados."
-        keywords="cambridge b2 beneficios, b2 first ventajas, certificado cambridge validez, reconocimiento internacional b2, cambridge b2 empleo, cambridge universidad, examen b2 first"
-        canonical="/blog/cambridge-b2-beneficios"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       <article>
         {/* Hero Section */}
@@ -200,13 +190,13 @@ export default function CambridgeB2BeneficiosPage() {
 
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
-          <Link
-            to="/examenes-cambridge"
+          <a
+              href="/examenes-cambridge"
             className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
             ← Volver a la Guía Completa de Exámenes Cambridge
-          </Link>
+          </a>
         </div>
 
         {/* FAQ Section - High Priority */}
@@ -385,11 +375,11 @@ export default function CambridgeB2BeneficiosPage() {
                         }`}
                       />
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-zinc-50">
-                        <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-zinc-50">
+                          <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -406,7 +396,7 @@ export default function CambridgeB2BeneficiosPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Ya sea para acceder a educación superior internacional, mejorar tu empleabilidad en mercados globalizados o cumplir requisitos académicos, el <Link to="/examenes-cambridge/b2-first" className="text-red-600 hover:underline font-medium">B2 First</Link> abre puertas tangibles. Si buscas preparación estructurada con metodología probada, nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-red-600 hover:underline font-medium">junto a La Vaguada</Link>, ofrece cursos específicos de preparación con tasas de éxito del 100% en 2024-2025. Preparamos todos los <Link to="/examenes-cambridge" className="text-red-600 hover:underline font-medium">exámenes Cambridge</Link> con <Link to="/cursos-ingles/adultos" className="text-red-600 hover:underline font-medium">cursos de inglés para adultos</Link> y <Link to="/cursos-ingles/particulares" className="text-red-600 hover:underline font-medium">clases particulares</Link>.
+                Ya sea para acceder a educación superior internacional, mejorar tu empleabilidad en mercados globalizados o cumplir requisitos académicos, el <a href="/examenes-cambridge/b2-first" className="text-red-600 hover:underline font-medium">B2 First</a> abre puertas tangibles. Si buscas preparación estructurada con metodología probada, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-red-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos específicos de preparación con tasas de éxito del 100% en 2024-2025. Preparamos todos los <a href="/examenes-cambridge" className="text-red-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos" className="text-red-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares" className="text-red-600 hover:underline font-medium">clases particulares</a>.
               </p>
             </section>
 
@@ -440,30 +430,30 @@ export default function CambridgeB2BeneficiosPage() {
           <div className="container mx-auto px-6">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link
-                to="/examenes-cambridge"
+              <a
+              href="/examenes-cambridge"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">Hub Principal</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Guía Completa de Exámenes Cambridge</h3>
                 <p className="text-zinc-600 text-sm mt-2">Todo lo que necesitas saber sobre certificaciones.</p>
-              </Link>
-              <Link
-                to="/examenes-cambridge/c1-advanced"
+              </a>
+              <a
+              href="/examenes-cambridge/c1-advanced"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">C1 Advanced</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Examen Cambridge C1 Advanced</h3>
                 <p className="text-zinc-600 text-sm mt-2">Guía completa del nivel avanzado.</p>
-              </Link>
-              <Link
-                to="/examenes-cambridge/fechas-precios"
+              </a>
+              <a
+              href="/examenes-cambridge/fechas-precios"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">Fechas</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Fechas Exámenes Cambridge 2026</h3>
                 <p className="text-zinc-600 text-sm mt-2">Calendario oficial y plazos de inscripción.</p>
-              </Link>
+              </a>
             </div>
 
           </div>
@@ -486,7 +476,6 @@ export default function CambridgeB2BeneficiosPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

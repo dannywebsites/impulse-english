@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Phone, Mail, MapPin, Linkedin, Youtube } from 'lucide-react';
 import { NAP, getAddressLines } from '../utils/napData';
 
@@ -27,11 +26,11 @@ export default function Footer({ variant = 'full' }: FooterProps) {
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex flex-wrap justify-center gap-6 md:gap-12">
-              <Link to="/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Inicio</Link>
-              <Link to="/cursos-ingles/infantil" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Cursos</Link>
-              <Link to="/examenes-cambridge" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Cambridge</Link>
-              <Link to="/sobre-nosotros" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Nosotros</Link>
-              <Link to="/contacto" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Contacto</Link>
+              <a href="/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Inicio</a>
+              <a href="/cursos-ingles/infantil" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Cursos</a>
+              <a href="/examenes-cambridge" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Cambridge</a>
+              <a href="/sobre-nosotros" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Nosotros</a>
+              <a href="/contacto" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Contacto</a>
             </div>
 
             <div className="flex items-center gap-6">
@@ -46,7 +45,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
               {serviceAreas.map((area, i) => (
                 <span key={area.name}>
                   {area.href ? (
-                    <Link to={area.href} className="hover:text-white transition-colors">{area.name}</Link>
+                    <a href={area.href} className="hover:text-white transition-colors">{area.name}</a>
                   ) : (
                     <span>{area.name}</span>
                   )}
@@ -57,9 +56,9 @@ export default function Footer({ variant = 'full' }: FooterProps) {
           </div>
 
           <div className="mt-6 flex flex-wrap justify-center gap-4 md:gap-8">
-            <Link to="/aviso-legal" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Aviso Legal</Link>
-            <Link to="/politica-privacidad" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Privacidad</Link>
-            <Link to="/politica-cookies" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Cookies</Link>
+            <a href="/aviso-legal" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Aviso Legal</a>
+            <a href="/politica-privacidad" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Privacidad</a>
+            <a href="/politica-cookies" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Cookies</a>
           </div>
 
           <div className="mt-4 text-center">
@@ -75,13 +74,13 @@ export default function Footer({ variant = 'full' }: FooterProps) {
       <div className="container mx-auto px-6 md:px-12">
         {/* Logo and Partner Logos Section */}
         <div className="flex flex-col items-center mb-12">
-          <Link to="/" className="mb-8">
+          <a href="/" className="mb-8">
             <img
               src={LOGO_URL}
               alt="Impulse English Academy"
               className="h-20 md:h-24 lg:h-28 w-auto"
             />
-          </Link>
+          </a>
 
           {/* Partner Logos */}
           <div className="flex flex-col items-center">
@@ -125,11 +124,11 @@ export default function Footer({ variant = 'full' }: FooterProps) {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-6">Cursos</h3>
             <ul className="space-y-4 text-zinc-400 text-sm">
-              <li><Link to="/cursos-ingles/infantil" className="hover:text-white transition-colors">Infantil (2-5 años)</Link></li>
-              <li><Link to="/cursos-ingles/primaria" className="hover:text-white transition-colors">Primaria (6-12 años)</Link></li>
-              <li><Link to="/cursos-ingles/secundaria" className="hover:text-white transition-colors">Secundaria (13-17 años)</Link></li>
-              <li><Link to="/cursos-ingles/adultos" className="hover:text-white transition-colors">Adultos</Link></li>
-              <li><Link to="/cursos-ingles/particulares" className="hover:text-white transition-colors">Clases Particulares</Link></li>
+              <li><a href="/cursos-ingles/infantil" className="hover:text-white transition-colors">Infantil (2-5 años)</a></li>
+              <li><a href="/cursos-ingles/primaria" className="hover:text-white transition-colors">Primaria (6-12 años)</a></li>
+              <li><a href="/cursos-ingles/secundaria" className="hover:text-white transition-colors">Secundaria (13-17 años)</a></li>
+              <li><a href="/cursos-ingles/adultos" className="hover:text-white transition-colors">Adultos</a></li>
+              <li><a href="/cursos-ingles/particulares" className="hover:text-white transition-colors">Clases Particulares</a></li>
             </ul>
           </div>
 
@@ -137,10 +136,10 @@ export default function Footer({ variant = 'full' }: FooterProps) {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-6">Exámenes</h3>
             <ul className="space-y-4 text-zinc-400 text-sm">
-              <li><Link to="/examenes-cambridge" className="hover:text-white transition-colors">Exámenes Cambridge</Link></li>
-              <li><Link to="/examenes-cambridge/b2-first" className="hover:text-white transition-colors">B2 First</Link></li>
-              <li><Link to="/examenes-cambridge/b1-preliminary" className="hover:text-white transition-colors">B1 Preliminary</Link></li>
-              <li><Link to="/linguaskill" className="hover:text-white transition-colors">Linguaskill</Link></li>
+              <li><a href="/examenes-cambridge" className="hover:text-white transition-colors">Exámenes Cambridge</a></li>
+              <li><a href="/examenes-cambridge/b2-first" className="hover:text-white transition-colors">B2 First</a></li>
+              <li><a href="/examenes-cambridge/b1-preliminary" className="hover:text-white transition-colors">B1 Preliminary</a></li>
+              <li><a href="/linguaskill" className="hover:text-white transition-colors">Linguaskill</a></li>
               <li>
                 <a
                   href="https://www.cambridgeenglish.org/exams-and-tests/"
@@ -158,10 +157,10 @@ export default function Footer({ variant = 'full' }: FooterProps) {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-6">Academia</h3>
             <ul className="space-y-4 text-zinc-400 text-sm">
-              <li><Link to="/sobre-nosotros" className="hover:text-white transition-colors">Sobre Nosotros</Link></li>
-              <li><Link to="/metodologia" className="hover:text-white transition-colors">Metodología</Link></li>
-              <li><Link to="/preguntas-frecuentes" className="hover:text-white transition-colors">Preguntas Frecuentes</Link></li>
-              <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+              <li><a href="/sobre-nosotros" className="hover:text-white transition-colors">Sobre Nosotros</a></li>
+              <li><a href="/metodologia" className="hover:text-white transition-colors">Metodología</a></li>
+              <li><a href="/preguntas-frecuentes" className="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
+              <li><a href="/blog" className="hover:text-white transition-colors">Blog</a></li>
             </ul>
           </div>
 
@@ -234,7 +233,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
             {serviceAreas.map((area, i) => (
               <span key={area.name}>
                 {area.href ? (
-                  <Link to={area.href} className="hover:text-white transition-colors">{area.name}</Link>
+                  <a href={area.href} className="hover:text-white transition-colors">{area.name}</a>
                 ) : (
                   <span>{area.name}</span>
                 )}
@@ -248,9 +247,9 @@ export default function Footer({ variant = 'full' }: FooterProps) {
         <div className="border-t border-zinc-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-zinc-600 text-xs uppercase tracking-widest">&copy; 2025 {NAP.name}. Todos los derechos reservados.</p>
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-            <Link to="/aviso-legal" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Aviso Legal</Link>
-            <Link to="/politica-privacidad" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Privacidad</Link>
-            <Link to="/politica-cookies" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Cookies</Link>
+            <a href="/aviso-legal" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Aviso Legal</a>
+            <a href="/politica-privacidad" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Privacidad</a>
+            <a href="/politica-cookies" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Cookies</a>
           </div>
         </div>
       </div>

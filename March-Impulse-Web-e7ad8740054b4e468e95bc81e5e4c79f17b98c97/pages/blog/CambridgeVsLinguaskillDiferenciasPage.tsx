@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function CambridgeVsLinguaskillDiferenciasPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Cambridge vs Linguaskill: Diferencias Completas y Cuál Elegir 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Cambridge vs Linguaskill: Diferencias, Precio y ¿Cuál Elegir?",
     description: "Compara Cambridge y Linguaskill: formato, precio, validez, dificultad y reconocimiento. Guía para elegir el examen que más te conviene.",
     url: `${businessInfo.url}/blog/cambridge-vs-linguaskill-diferencias`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Linguaskill es más fácil que Cambridge?",
       answer: "No es más fácil, pero sí más flexible. Linguaskill es un test adaptativo que ajusta la dificultad a tu nivel, lo que puede sentirse más natural. Sin embargo, el resultado refleja tu nivel real independientemente del formato. La dificultad percibida depende más de tu preparación que del examen en sí."
-    },
+    }
+
+  ,
     {
       question: "¿Las universidades aceptan Linguaskill igual que Cambridge?",
       answer: "Sí, la gran mayoría de universidades españolas aceptan ambas certificaciones para acreditar el nivel de inglés. Ambos son emitidos por Cambridge Assessment English. Consulta siempre la normativa específica de tu universidad, pero en general, Linguaskill tiene la misma validez académica que los exámenes Cambridge tradicionales."
@@ -47,6 +38,14 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
     }
   ];
 
+export default function CambridgeVsLinguaskillDiferenciasPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const comparisonData = [
     { feature: "Formato", cambridge: "Examen fijo por nivel (B1, B2, C1, C2)", linguaskill: "Test adaptativo multinivel" },
     { feature: "Duración", cambridge: "2-4 horas según nivel", linguaskill: "60-85 minutos por módulo" },
@@ -60,14 +59,7 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
 
   return (
     <>
-      <SEOHead
-        title="Cambridge vs Linguaskill: Diferencias Completas y Cuál Elegir 2026"
-        description="Compara Cambridge y Linguaskill: formato, precio, validez, dificultad y reconocimiento. Guía para elegir el examen que más te conviene."
-        keywords="cambridge vs linguaskill, diferencias cambridge linguaskill, linguaskill o cambridge, comparar cambridge linguaskill"
-        canonical="/blog/cambridge-vs-linguaskill-diferencias"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -202,7 +194,7 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                El formato adaptativo de <Link to="/linguaskill" className="text-blue-600 hover:underline">Linguaskill</Link> tiene la ventaja de que no necesitas elegir nivel previamente. El propio examen determina tu nivel. Esto elimina el riesgo de inscribirte en un examen Cambridge de nivel inadecuado.
+                El formato adaptativo de <a href="/linguaskill" className="text-blue-600 hover:underline">Linguaskill</a> tiene la ventaja de que no necesitas elegir nivel previamente. El propio examen determina tu nivel. Esto elimina el riesgo de inscribirte en un examen Cambridge de nivel inadecuado.
               </p>
             </section>
 
@@ -288,7 +280,7 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
                     <CheckCircle className="w-5 h-5 text-blue-600" />
                     En oposiciones
                   </h3>
-                  <p className="text-gray-700">Para <Link to="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline">oposiciones en España</Link>, ambos son generalmente aceptados, pero conviene verificar las bases específicas de cada convocatoria, ya que algunas mencionan certificaciones concretas.</p>
+                  <p className="text-gray-700">Para <a href="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline">oposiciones en España</a>, ambos son generalmente aceptados, pero conviene verificar las bases específicas de cada convocatoria, ya que algunas mencionan certificaciones concretas.</p>
                 </div>
               </div>
 
@@ -333,7 +325,7 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En <Link to="/examenes-cambridge" className="text-blue-600 hover:underline">Impulse English Academy</Link> preparamos para ambos exámenes y te asesoramos sobre cuál es la mejor opción según tu perfil, plazo y objetivos específicos.
+                En <a href="/examenes-cambridge" className="text-blue-600 hover:underline">Impulse English Academy</a> preparamos para ambos exámenes y te asesoramos sobre cuál es la mejor opción según tu perfil, plazo y objetivos específicos.
               </p>
             </section>
 
@@ -357,11 +349,11 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
                         <ChevronDown className="w-5 h-5 text-blue-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -375,10 +367,10 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
 
               <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Tanto <Link to="/examenes-cambridge" className="text-blue-600 hover:underline font-medium">Cambridge</Link> como <Link to="/linguaskill" className="text-blue-600 hover:underline font-medium">Linguaskill</Link> son excelentes opciones para certificar tu nivel de inglés. Cambridge destaca por su reconocimiento universal y validez permanente; Linguaskill por su flexibilidad y rapidez. Ambos están respaldados por Cambridge Assessment English.
+                  Tanto <a href="/examenes-cambridge" className="text-blue-600 hover:underline font-medium">Cambridge</a> como <a href="/linguaskill" className="text-blue-600 hover:underline font-medium">Linguaskill</a> son excelentes opciones para certificar tu nivel de inglés. Cambridge destaca por su reconocimiento universal y validez permanente; Linguaskill por su flexibilidad y rapidez. Ambos están respaldados por Cambridge Assessment English.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline font-medium">Impulse English Academy</Link> somos centro preparador de ambos exámenes y podemos orientarte sobre la mejor opción para tu situación concreta. Contacta con nosotros para una evaluación personalizada.
+                  En <a href="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> somos centro preparador de ambos exámenes y podemos orientarte sobre la mejor opción para tu situación concreta. Contacta con nosotros para una evaluación personalizada.
                 </p>
               </div>
             </section>
@@ -389,31 +381,31 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
               <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
                 Te ayudamos a decidir y te preparamos para el examen que mejor se adapte a tus necesidades y plazos.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
                 Pide asesoramiento gratis
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Exámenes Cambridge: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todos los niveles de Cambridge: B1, B2, C1 y C2 explicados.</p>
-                </Link>
-                <Link to="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                </a>
+                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Linguaskill: Todo lo que Debes Saber
                   </h3>
                   <p className="text-gray-600 text-sm">El examen adaptativo de Cambridge con resultados en 48 horas.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -443,7 +435,6 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

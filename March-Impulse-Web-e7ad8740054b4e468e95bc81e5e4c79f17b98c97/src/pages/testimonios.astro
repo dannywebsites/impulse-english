@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TestimonialsPage from '../../pages/TestimonialsPage';
+import CookieBanner from '../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Opiniones y Testimonios"
+  description="Opiniones reales de alumnos de Impulse English Academy. 150+ reseñas 5 estrellas en Google. Testimonios de éxito con Cambridge y Linguaskill."
+  keywords="opiniones academia inglés madrid, reseñas impulse english, testimonios alumnos cambridge, valoraciones clases inglés"
+  canonical="/testimonios"
+>
+  <TestimonialsPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MejorarListeningInglesPage, { articleSchema, faqItems } from '../../../pages/blog/MejorarListeningInglesPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Mejorar Listening en Inglés: 10 Técnicas Efectivas por Nivel 2026"
+  description="Mejora tu listening en inglés con 10 técnicas: podcasts, dictados, shadowing y más. Guía detallada por nivel desde A2 hasta C1 con recursos gratuitos."
+  canonical="/blog/mejorar-listening-ingles"
+  ogType="article"
+  schemas={schemas}
+>
+  <MejorarListeningInglesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function InglesJugandoFuncionaPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = '¿Inglés Jugando Funciona? Evidencia y Resultados Reales 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: '¿Inglés Jugando Funciona? Metodología y Resultados Reales',
     description: 'Sí, aprender inglés jugando funciona y está respaldado por la neurociencia. Descubre cómo el juego acelera el aprendizaje en niños y qué metodologías lo aplican.',
     url: `${businessInfo.url}/blog/ingles-jugando-funciona`,
     datePublished: '2025-03-01'
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: '¿Por qué el juego funciona mejor que la instrucción directa para niños?',
       answer: 'El cerebro infantil aprende más en estados de bajo estrés y alta motivación. El juego activa el sistema de recompensa dopaminérgico, fijando el aprendizaje de forma más duradera que la memorización.'
-    },
+    }
+
+  ,
     {
       question: '¿Hasta qué edad funciona aprender inglés jugando?',
       answer: 'El juego es efectivo hasta los 12 años, con mayor impacto antes de los 7. A partir de la adolescencia, se combina con métodos más estructurados, aunque el elemento lúdico sigue siendo beneficioso.'
@@ -43,16 +34,17 @@ export default function InglesJugandoFuncionaPage() {
     }
   ];
 
+export default function InglesJugandoFuncionaPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="¿Inglés Jugando Funciona? Evidencia y Resultados Reales 2026"
-        description="Sí, aprender inglés jugando funciona y está respaldado por la neurociencia. Descubre cómo el juego acelera el aprendizaje en niños y qué metodologías lo aplican."
-        keywords="inglés jugando funciona, aprender inglés juego, metodología lúdica inglés, gamificación inglés niños"
-        canonical="/blog/ingles-jugando-funciona"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -350,11 +342,11 @@ export default function InglesJugandoFuncionaPage() {
                         <ChevronDown className="w-5 h-5 text-purple-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -371,7 +363,7 @@ export default function InglesJugandoFuncionaPage() {
                   El inglés jugando no solo funciona: es la forma más natural y efectiva de aprender idiomas en la infancia. La neurociencia, la pedagogía y los resultados prácticos de miles de niños lo demuestran. Lo importante es que el juego sea estructurado, dirigido por profesores formados y que combine inmersión real con objetivos lingüísticos claros.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">nuestras clases infantiles</Link> aplicamos el método <Link to="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline font-medium">Great Little People</Link>, que convierte cada sesión en una experiencia memorable donde el inglés fluye de forma natural. Visita nuestra página de <Link to="/metodologia" className="text-purple-600 hover:underline font-medium">metodología</Link> para conocer más detalles.
+                  En <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">nuestras clases infantiles</a> aplicamos el método <a href="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline font-medium">Great Little People</a>, que convierte cada sesión en una experiencia memorable donde el inglés fluye de forma natural. Visita nuestra página de <a href="/metodologia" className="text-purple-600 hover:underline font-medium">metodología</a> para conocer más detalles.
                 </p>
               </div>
             </section>
@@ -382,37 +374,37 @@ export default function InglesJugandoFuncionaPage() {
               <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
                 Primera clase gratis. Descubre cómo los niños aprenden inglés jugando en un entorno diseñado para ellos.
               </p>
-              <Link
-                to="/cursos-ingles/infantil"
+              <a
+              href="/cursos-ingles/infantil"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Ver clases infantil
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link to="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>
                   <p className="text-gray-600 text-sm">Clases para los más pequeños con Great Little People.</p>
-                </Link>
-                <Link to="/blog/great-little-people-metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/blog/great-little-people-metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Metodología Great Little People
                   </h3>
                   <p className="text-gray-600 text-sm">Conoce en detalle el método que usamos con nuestros alumnos.</p>
-                </Link>
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Descubre cómo enseñamos inglés en Impulse.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -442,7 +434,6 @@ export default function InglesJugandoFuncionaPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

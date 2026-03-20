@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MejorMetodoInglesNinosPage, { articleSchema, faqItems } from '../../../pages/blog/MejorMetodoInglesNinosPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Mejor Método de Inglés para Niños: Comparativa 2026"
+  description="Compara los mejores métodos de inglés para niños: inmersión total, CLIL, TPR, juego y Great Little People. Descubre cuál es más efectivo según la edad."
+  canonical="/blog/mejor-metodo-ingles-ninos"
+  ogType="article"
+  schemas={schemas}
+>
+  <MejorMetodoInglesNinosPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

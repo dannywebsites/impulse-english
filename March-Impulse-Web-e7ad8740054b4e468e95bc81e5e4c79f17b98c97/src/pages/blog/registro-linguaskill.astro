@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RegistroLinguaskillPage, { articleSchema, faqs } from '../../../pages/blog/RegistroLinguaskillPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Registro Linguaskill 2025: Cómo Inscribirse Paso a Paso"
+  description="Guía completa de registro Linguaskill: proceso de inscripción, documentación requerida, modalidades presencial y online, y centros autorizados en España 2025."
+  canonical="/blog/registro-linguaskill"
+  ogType="article"
+  schemas={schemas}
+>
+  <RegistroLinguaskillPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

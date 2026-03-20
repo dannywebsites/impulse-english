@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CursosInglesAdultosMadridPage from '../../../pages/blog/CursosInglesAdultosMadridPage';
+import CookieBanner from '../../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Cursos de Inglés para Adultos en Madrid: Guía Completa 2025 - EOI, Academias y Particulares"
+  description="Guía completa de cursos de inglés para adultos en Madrid: EOI, academias privadas, clases particulares. Compara precios, horarios, metodologías y certificaciones."
+  keywords="cursos inglés adultos madrid, inglés para adultos madrid, clases inglés adultos, eoi madrid, academias inglés adultos"
+  canonical="/academias-ingles-madrid/adultos"
+  ogType="article"
+>
+  <CursosInglesAdultosMadridPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

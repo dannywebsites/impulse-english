@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function InglesPresencialVsOnlinePage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Inglés Presencial vs Online: Ventajas y Desventajas 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Inglés Presencial vs Online: ¿Qué Modalidad es Mejor?",
     description: "Compara clases de inglés presenciales y online: efectividad, precio, flexibilidad y para quién es mejor cada modalidad. Guía completa con datos reales.",
     url: `${businessInfo.url}/blog/ingles-presencial-vs-online`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿El inglés online es tan efectivo como el presencial?",
       answer: "Los estudios muestran resultados similares cuando el alumno tiene autodisciplina. El presencial tiene ventaja en speaking y corrección inmediata, el online en flexibilidad y precio."
-    },
+    }
+
+  ,
     {
       question: "¿Cuánto más barato es el inglés online?",
       answer: "El inglés online suele ser un 20-40% más barato que el presencial, ahorrando también en desplazamientos. Sin embargo, requiere mayor autodisciplina."
@@ -47,16 +38,17 @@ export default function InglesPresencialVsOnlinePage() {
     }
   ];
 
+export default function InglesPresencialVsOnlinePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="Inglés Presencial vs Online: Ventajas y Desventajas 2026"
-        description="Compara clases de inglés presenciales y online: efectividad, precio, flexibilidad y para quién es mejor cada modalidad. Guía completa con datos reales."
-        keywords="inglés presencial vs online, clases inglés online, inglés presencial mejor, online o presencial inglés"
-        canonical="/blog/ingles-presencial-vs-online"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -364,11 +356,11 @@ export default function InglesPresencialVsOnlinePage() {
                         <ChevronDown className="w-5 h-5 text-blue-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -385,7 +377,7 @@ export default function InglesPresencialVsOnlinePage() {
                   No hay una respuesta universal: tanto el inglés presencial como el online pueden llevarte al mismo destino. Lo que marca la diferencia es la consistencia, la calidad del profesorado y que el formato sea compatible con tu vida real.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/metodologia" className="text-blue-600 hover:underline font-medium">Impulse English Academy</Link> ofrecemos ambas modalidades para que puedas elegir —o combinar— según tus necesidades. Lo importante es que empieces y no pares.
+                  En <a href="/metodologia" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos ambas modalidades para que puedas elegir —o combinar— según tus necesidades. Lo importante es que empieces y no pares.
                 </p>
               </div>
             </section>
@@ -396,37 +388,37 @@ export default function InglesPresencialVsOnlinePage() {
               <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
                 Cuéntanos tu horario, objetivos y nivel actual. Te orientamos hacia la modalidad que mejor encaja con tu vida real.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
                 Consúltanos gratis
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo estructuramos el aprendizaje para maximizar resultados.</p>
-                </Link>
-                <Link to="/cursos-ingles/online" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/online" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Cursos de Inglés Online
                   </h3>
                   <p className="text-gray-600 text-sm">Nuestros programas online con la misma calidad que el presencial.</p>
-                </Link>
-                <Link to="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas presenciales adaptados al ritmo de vida adulto.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -457,7 +449,6 @@ export default function InglesPresencialVsOnlinePage() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

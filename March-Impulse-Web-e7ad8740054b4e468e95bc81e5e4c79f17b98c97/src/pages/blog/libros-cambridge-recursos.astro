@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LibrosCambridgeRecursosPage, { articleSchema, faqItems } from '../../../pages/blog/LibrosCambridgeRecursosPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Libros Cambridge 2026: Guía Completa de Recursos Oficiales"
+  description="Descubre los mejores libros Cambridge y recursos oficiales para preparar tu examen 2026. Materiales gratuitos, cursos especializados, plataformas digitales y estrategias de estudio efectivas."
+  canonical="/blog/libros-cambridge-recursos"
+  ogType="article"
+  schemas={schemas}
+>
+  <LibrosCambridgeRecursosPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

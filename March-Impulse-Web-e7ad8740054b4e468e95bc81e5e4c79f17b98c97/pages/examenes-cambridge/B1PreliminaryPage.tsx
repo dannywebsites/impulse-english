@@ -1,11 +1,9 @@
 import React from 'react';
 import { BookOpen, PenTool, Headphones, Mic } from 'lucide-react';
 import ExamPageLayout from '../../components/ExamPageLayout';
-import SEOHead from '../../components/SEOHead';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 
-const b1Faqs = [
+export const b1Faqs = [
   {
     question: "¿Es suficiente el B1 para trabajar en una empresa internacional?",
     answer: "El B1 es suficiente para trabajar en empresas con contacto internacional limitado o en puestos no especializados. Para roles que requieren negociación, presentaciones o interacción constante con clientes extranjeros, se recomienda B2. Muchas multinacionales piden mínimo B2, pero con B1 puedes acceder a empleos en startups, empresas pequeñas o contextos específicos donde se habla menos inglés."
@@ -36,16 +34,20 @@ const b1Faqs = [
   }
 ];
 
+export const courseSchema = generateCourseSchema({
+      name: "Curso de Preparación Cambridge B1 Preliminary (PET)",
+      description: "Prepara el examen Cambridge B1 Preliminary (PET) con clases en Madrid en grupos reducidos. Centro oficial Cambridge con 100% de aprobados. Ideal para estudiantes hispanohablantes que quieren certificar su nivel de inglés.",
+      url: `${businessInfo.url}/examenes-cambridge/b1-preliminary`,
+      courseCode: "CAM-B1-PET",
+      educationalLevel: "B1 — Nivel Intermedio",
+      timeRequired: "P9M",
+      price: "71"
+    });
+
 export default function B1PreliminaryPage() {
   return (
     <>
-      <SEOHead
-        title="Preparación Cambridge B1 Preliminary (PET)"
-        description="Preparación examen Cambridge B1 Preliminary (PET) en Madrid. Centro oficial Cambridge con 100% aprobados. Grupos reducidos, material incluido. La Vaguada."
-        keywords="b1 preliminary madrid, preparación pet cambridge, examen b1 cambridge, curso b1 inglés madrid, academia cambridge b1, pet inglés"
-        canonical="/examenes-cambridge/b1-preliminary"
-      />
-      <ExamPageLayout
+<ExamPageLayout
       examName="B1 Preliminary (PET)"
       cefrLevel="Nivel B1"
       tagline="Demuestra que dominas los fundamentos del inglés para situaciones cotidianas"
@@ -99,15 +101,6 @@ export default function B1PreliminaryPage() {
       formSource="cambridge-b1-preliminary"
       heroImage="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG"
     />
-    <SchemaMarkup schema={generateCourseSchema({
-      name: "Curso de Preparación Cambridge B1 Preliminary (PET)",
-      description: "Prepara el examen Cambridge B1 Preliminary (PET) con clases en Madrid en grupos reducidos. Centro oficial Cambridge con 100% de aprobados. Ideal para estudiantes hispanohablantes que quieren certificar su nivel de inglés.",
-      url: `${businessInfo.url}/examenes-cambridge/b1-preliminary`,
-      courseCode: "CAM-B1-PET",
-      educationalLevel: "B1 — Nivel Intermedio",
-      timeRequired: "P9M",
-      price: "71"
-    })} />
-    </>
+</>
   );
 }

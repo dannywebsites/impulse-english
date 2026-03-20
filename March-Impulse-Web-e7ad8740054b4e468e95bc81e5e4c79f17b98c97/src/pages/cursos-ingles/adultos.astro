@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AdultosPage, { courseSchema, faqs } from '../../../pages/cursos/AdultosPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  courseSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Clases de Inglés para Adultos | Cambridge y Linguaskill"
+  description="Inglés para adultos en La Vaguada / Barrio del Pilar. Grupos máx. 8, horarios mañana y tarde, preparación Cambridge y centro oficial Linguaskill. Prueba de nivel gratis."
+  keywords="cursos inglés adultos la vaguada, clases inglés adultos barrio del pilar, inglés para adultos madrid, cambridge adultos"
+  canonical="/cursos-ingles/adultos"
+  schemas={schemas}
+>
+  <AdultosPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

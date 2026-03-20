@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LinguaskillCasaFiablePage, { articleSchema, faqItems } from '../../../pages/blog/LinguaskillCasaFiablePage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿Linguaskill desde Casa es Fiable? Supervisión y Seguridad 2026"
+  description="Linguaskill desde casa es 100% fiable gracias a supervisión remota, IA y tecnología anti-fraude. Descubre cómo funciona la seguridad del examen online."
+  canonical="/blog/linguaskill-casa-fiable"
+  ogType="article"
+  schemas={schemas}
+>
+  <LinguaskillCasaFiablePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

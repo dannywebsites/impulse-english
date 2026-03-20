@@ -1,15 +1,11 @@
 import React, { useEffect } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, CheckCircle, AlertCircle, Bell, MessageCircle, MapPin, Monitor, FileText, Target, HelpCircle, Globe, Users, Building } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
-import SEOHead from '../../components/SEOHead';
-
 const tableOfContents = [
   { id: 'que-son-fechas', title: '¿Qué son las fechas de exámenes Cambridge y por qué son importantes?' },
   { id: 'calendario-completo-2026', title: 'Calendario completo 2026: fechas por nivel (B1, B2, C1, C2)' },
@@ -40,7 +36,7 @@ const newFaqItems = [
   }
 ];
 
-const faqItems = [
+export const faqItems = [
   {
     question: '¿Cuándo se publican oficialmente las fechas de exámenes Cambridge para 2026?',
     answer: 'Cambridge Assessment English publica el calendario oficial global entre octubre y noviembre de 2025 en formato PDF descargable desde su web oficial. Este documento incluye todas las convocatorias por nivel y formato (digital/papel) para el año completo 2026. Sin embargo, cada centro autorizado decide qué fechas específicas ofrecerá según su capacidad operativa y demanda local, publicando su calendario particular entre noviembre 2025 y enero 2026. Los candidatos deben consultar tanto el calendario oficial general como el calendario específico de su centro preferido para confirmar disponibilidad real. Las fechas pueden sufrir modificaciones excepcionales por circunstancias extraordinarias, pero históricamente Cambridge mantiene más del 98% de estabilidad en convocatorias planificadas.'
@@ -83,28 +79,21 @@ const faqItems = [
   }
 ];
 
-export default function FechasExamenesCambridgePage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Fechas Exámenes Cambridge 2026: Calendario Completo y Convocatorias",
     description: "Descubre todas las fechas de exámenes Cambridge 2026 por nivel (B1, B2, C1, C2), formato digital y papel, plazos de inscripción y cómo elegir tu convocatoria ideal.",
     url: `${businessInfo.url}/examenes-cambridge/fechas`,
     datePublished: "2025-01-01"
   });
 
+export default function FechasExamenesCambridgePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-      <SEOHead
-        title="Fechas Exámenes Cambridge 2026: Calendario Completo B1, B2, C1, C2 | Digital y Papel"
-        description="Descubre todas las fechas de exámenes Cambridge 2026 por nivel (B1, B2, C1, C2), formato digital y papel, plazos de inscripción y cómo elegir tu convocatoria ideal."
-        keywords="fechas exámenes cambridge 2026, calendario cambridge 2026, convocatorias b2 first 2026, fechas c1 advanced 2026, inscripción cambridge, examen digital cambridge"
-        canonical="/examenes-cambridge/fechas-precios"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       <article>
         {/* Hero Section */}
@@ -885,7 +874,7 @@ export default function FechasExamenesCambridgePage() {
               <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 my-8">
                 <h4 className="font-bold text-purple-800 mb-3">Tu próximo paso</h4>
                 <p className="text-purple-700 text-sm">
-                  Para candidatos en Madrid que buscan no solo conocer las fechas 2026 sino prepararse con garantías de éxito, nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-purple-600 hover:underline font-bold">academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-purple-600 hover:underline font-bold">junto a La Vaguada</Link>, ofrece combinación única: conocimiento profundo del calendario oficial, preparación estructurada mediante metodologías probadas (The Impulse Method™ con tasas de aprobación del 100% en 2024-25), placement tests gratuitos para identificar tu nivel real y tiempo necesario, y flexibilidad de horarios con <Link to="/cursos-ingles/adultos" className="text-purple-600 hover:underline font-bold">cursos de inglés para adultos</Link> y <Link to="/cursos-ingles/secundaria" className="text-purple-600 hover:underline font-bold">cursos de secundaria</Link> (clases presenciales y online) que facilitan compaginar preparación con estudios o trabajo. Preparamos todos los <Link to="/examenes-cambridge" className="text-purple-600 hover:underline font-bold">exámenes Cambridge</Link> incluyendo <Link to="/linguaskill" className="text-purple-600 hover:underline font-bold">Linguaskill</Link>.
+                  Para candidatos en Madrid que buscan no solo conocer las fechas 2026 sino prepararse con garantías de éxito, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-purple-600 hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-purple-600 hover:underline font-bold">junto a La Vaguada</a>, ofrece combinación única: conocimiento profundo del calendario oficial, preparación estructurada mediante metodologías probadas (The Impulse Method™ con tasas de aprobación del 100% en 2024-25), placement tests gratuitos para identificar tu nivel real y tiempo necesario, y flexibilidad de horarios con <a href="/cursos-ingles/adultos" className="text-purple-600 hover:underline font-bold">cursos de inglés para adultos</a> y <a href="/cursos-ingles/secundaria" className="text-purple-600 hover:underline font-bold">cursos de secundaria</a> (clases presenciales y online) que facilitan compaginar preparación con estudios o trabajo. Preparamos todos los <a href="/examenes-cambridge" className="text-purple-600 hover:underline font-bold">exámenes Cambridge</a> incluyendo <a href="/linguaskill" className="text-purple-600 hover:underline font-bold">Linguaskill</a>.
                 </p>
               </div>
 
@@ -938,12 +927,12 @@ export default function FechasExamenesCambridgePage() {
                     <MessageCircle className="w-5 h-5" />
                     Consultar por WhatsApp
                   </a>
-                  <Link
-                    to="/examenes-cambridge"
+                  <a
+              href="/examenes-cambridge"
                     className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
                   >
                     Ver cursos Cambridge
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -968,7 +957,7 @@ export default function FechasExamenesCambridgePage() {
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link to="/examenes-cambridge" className="group">
+              <a href="/examenes-cambridge" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-purple-600 text-sm font-medium">Guía</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-purple-600 transition-colors">
@@ -976,8 +965,8 @@ export default function FechasExamenesCambridgePage() {
                   </h3>
                   <p className="text-zinc-500 text-sm mt-2">Todo sobre niveles, estructura y preparación</p>
                 </div>
-              </Link>
-              <Link to="/examenes-cambridge" className="group">
+              </a>
+              <a href="/examenes-cambridge" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-purple-600 text-sm font-medium">Recursos</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-purple-600 transition-colors">
@@ -985,8 +974,8 @@ export default function FechasExamenesCambridgePage() {
                   </h3>
                   <p className="text-zinc-500 text-sm mt-2">Los mejores materiales para preparar tu examen</p>
                 </div>
-              </Link>
-              <Link to="/linguaskill" className="group">
+              </a>
+              <a href="/linguaskill" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-purple-600 text-sm font-medium">Linguaskill</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-purple-600 transition-colors">
@@ -994,7 +983,7 @@ export default function FechasExamenesCambridgePage() {
                   </h3>
                   <p className="text-zinc-500 text-sm mt-2">Estructura, ejemplos y estrategias de preparación</p>
                 </div>
-              </Link>
+              </a>
             </div>
 
           </div>
@@ -1018,7 +1007,6 @@ export default function FechasExamenesCambridgePage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

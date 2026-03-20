@@ -1,6 +1,5 @@
 import React from 'react';
-import { AcademyImage, generateImageSchema } from '../src/data/academyImages';
-import SchemaMarkup from './SchemaMarkup';
+import type { AcademyImage } from '../src/data/academyImages';
 
 interface FullPhotoGalleryProps {
   images: AcademyImage[];
@@ -25,8 +24,6 @@ export default function FullPhotoGallery({
   subtitle = "Mira lo que logran nuestros estudiantes",
   className = ""
 }: FullPhotoGalleryProps) {
-  const imageSchemas = images.map(img => generateImageSchema(img, pageUrl));
-
   return (
     <section className={`py-16 md:py-20 px-6 bg-white ${className}`}>
       <div className="container mx-auto max-w-6xl">
@@ -73,9 +70,6 @@ export default function FullPhotoGallery({
           ))}
         </div>
       </div>
-
-      {/* ImageObject Schema for each image */}
-      <SchemaMarkup schema={imageSchemas} />
     </section>
   );
 }

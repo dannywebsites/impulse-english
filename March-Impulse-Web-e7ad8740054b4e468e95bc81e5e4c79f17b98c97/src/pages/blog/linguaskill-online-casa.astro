@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LinguaskillOnlineCasaPage, { articleSchema, faqs } from '../../../pages/blog/LinguaskillOnlineCasaPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Linguaskill Online desde Casa 2025: Guía Completa del Examen Remoto"
+  description="Todo sobre el examen Linguaskill online desde casa: requisitos técnicos, supervisión remota, estructura del examen, ventajas y preparación efectiva. Guía completa actualizada 2025."
+  canonical="/blog/linguaskill-online-casa"
+  ogType="article"
+  schemas={schemas}
+>
+  <LinguaskillOnlineCasaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

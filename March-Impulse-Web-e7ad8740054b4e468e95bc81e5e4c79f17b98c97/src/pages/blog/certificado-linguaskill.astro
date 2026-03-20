@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CertificadoLinguaskillPage, { articleSchema, faqs } from '../../../pages/blog/CertificadoLinguaskillPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Certificado Linguaskill: Validez, Reconocimiento Internacional y Caducidad 2025"
+  description="Todo sobre el certificado Linguaskill: validez internacional sin caducidad oficial, reconocimiento por 25.000+ instituciones, niveles CEFR, qué universidades lo aceptan y cómo verificarlo."
+  canonical="/blog/certificado-linguaskill"
+  ogType="article"
+  schemas={schemas}
+>
+  <CertificadoLinguaskillPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MotivarHijoInglesPage, { articleSchema, faqItems } from '../../../pages/blog/MotivarHijoInglesPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Cómo Motivar a tu Hijo con el Inglés: 10 Estrategias 2026"
+  description="Motiva a tu hijo con el inglés usando estas 10 estrategias probadas: videojuegos, series, recompensas por hitos y más. Guía práctica para padres con niños 6-14 años."
+  canonical="/blog/motivar-hijo-ingles"
+  ogType="article"
+  schemas={schemas}
+>
+  <MotivarHijoInglesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

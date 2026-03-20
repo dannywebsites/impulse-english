@@ -1,14 +1,10 @@
 import React, { useEffect } from 'react';
 import { CheckCircle, XCircle, Brain, Target, MessageCircle, Heart, RefreshCw, Users, BarChart3, Star, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
 import FAQSection from '../components/FAQSection';
 import Breadcrumb from '../components/Breadcrumb';
-import SchemaMarkup from '../components/SchemaMarkup';
-import SEOHead from '../components/SEOHead';
-import { businessInfo } from '../utils/schemaData';
 
 const pillars = [
   {
@@ -301,72 +297,6 @@ const metodologiaFAQs = [
   }
 ];
 
-// HowTo Schema for the 7 Pillars methodology
-const howToSchema = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Cómo Aprender Inglés de Verdad con la Metodología Impulse",
-  "description": "El método de 7 pilares que llevó a 100% de nuestros estudiantes a aprobar Cambridge 2024-2025. Sistema basado en ciencia del aprendizaje.",
-  "image": "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg",
-  "totalTime": "PT6M",
-  "estimatedCost": {
-    "@type": "MonetaryAmount",
-    "currency": "EUR",
-    "value": "64-79"
-  },
-  "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Personalización Total del Aprendizaje",
-      "text": "Evaluación inicial completa de nivel, estilo de aprendizaje y objetivos. Plan de estudios 100% personalizado con adaptación continua según tu progreso mensual.",
-      "url": `${businessInfo.url}/metodologia#pilar-1`
-    },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Identificación de Motivación y Objetivos",
-      "text": "Definimos tu 'Por Qué': examen/universidad, trabajo/profesional, viajes/experiencias, o conexión familiar. Tu motivación determina todo el enfoque.",
-      "url": `${businessInfo.url}/metodologia#pilar-2`
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "Conversación desde el Primer Día",
-      "text": "70% del tiempo de clase hablando TÚ. Errores bienvenidos y corregidos constructivamente con role-plays, debates y conversación espontánea.",
-      "url": `${businessInfo.url}/metodologia#pilar-3`
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Ambiente Psicológicamente Seguro",
-      "text": "Los errores no son fracasos, son el camino hacia la fluidez. Corrección constructiva y celebración del progreso, no perfección.",
-      "url": `${businessInfo.url}/metodologia#pilar-4`
-    },
-    {
-      "@type": "HowToStep",
-      "position": 5,
-      "name": "Repetición Espaciada Científica",
-      "text": "Sistema basado en la curva del olvido: Día 1 aprendes, Día 3 repasas, Día 7 usas en conversación, Día 30 está en memoria a largo plazo. 40-60% mejor retención.",
-      "url": `${businessInfo.url}/metodologia#pilar-5`
-    },
-    {
-      "@type": "HowToStep",
-      "position": 6,
-      "name": "Práctica Comunicativa en Contextos Reales",
-      "text": "Situaciones cotidianas (restaurantes, hoteles), laborales (reuniones, presentaciones, emails) y exposición a acentos diversos.",
-      "url": `${businessInfo.url}/metodologia#pilar-6`
-    },
-    {
-      "@type": "HowToStep",
-      "position": 7,
-      "name": "Desarrollo Sistemático de las 5 Habilidades",
-      "text": "Secuencia óptima: Reading (patrones gramaticales), Listening (pronunciación), Writing (producción controlada), Speaking (tiempo real), Grammar (explicación de porqué).",
-      "url": `${businessInfo.url}/metodologia#pilar-7`
-    }
-  ]
-};
-
 export default function MetodologiaPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -374,12 +304,6 @@ export default function MetodologiaPage() {
 
   return (
     <>
-      <SEOHead
-        title="Metodología Impulse - Cómo Enseñamos Inglés"
-        description="Conoce la metodología Impulse: conversación desde día 1, grupos reducidos máx 10 alumnos, personalización total. 100% aprobados Cambridge. Academia Madrid."
-        keywords="metodología inglés, como aprender inglés rápido, método conversacional inglés, clases inglés personalizadas madrid"
-        canonical="/metodologia"
-      />
       <Navbar />
 
       {/* Hero Section */}
@@ -414,13 +338,13 @@ export default function MetodologiaPage() {
               No es magia. Es ciencia del aprendizaje aplicada con pasión. La Metodología Impulse es nuestro sistema propietario desarrollado en el aula con cientos de estudiantes.
             </p>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-300">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Experimenta la Metodología
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -665,8 +589,6 @@ export default function MetodologiaPage() {
       </section>
 
       <Footer />
-
-      <SchemaMarkup schema={howToSchema} />
     </>
   );
 }

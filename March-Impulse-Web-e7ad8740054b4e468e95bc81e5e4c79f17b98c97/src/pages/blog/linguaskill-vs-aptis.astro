@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LinguaskillVsAptisPage, { articleSchema, faqs } from '../../../pages/blog/LinguaskillVsAptisPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Linguaskill vs Aptis: Comparativa Completa 2025 - ¿Cuál Elegir?"
+  description="Comparativa detallada Linguaskill vs Aptis: formato adaptativo vs estructurado, resultados en 48 vs 72 horas, precios ~130€ vs 130-150€, reconocimiento y flexibilidad. Guía completa para elegir."
+  canonical="/blog/linguaskill-vs-aptis"
+  ogType="article"
+  schemas={schemas}
+>
+  <LinguaskillVsAptisPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { BarChart3, Clock, ChevronDown, ChevronUp, CheckCircle, ArrowRight, Award, TrendingUp } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
 const escalaFaqs = [
@@ -49,26 +46,20 @@ const escalaFaqs = [
   }
 ];
 
-export default function EscalaCambridgePage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Escala Cambridge Explicada: Niveles y Puntuaciones 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Escala Cambridge Explicada: Niveles y Puntuaciones 2026",
     description: "Guía completa de la escala Cambridge: niveles A1-C2, puntuaciones, equivalencias MCER y qué significa cada Grade.",
     url: `${businessInfo.url}/blog/escala-cambridge`,
     datePublished: "2025-01-05"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Qué significa exactamente una puntuación de 160 en la escala Cambridge?",
       answer: "Una puntuación de 160 certifica nivel B2 del MCER, indicando usuario independiente capaz de desenvolverse en situaciones académicas y profesionales comunes. Específicamente, 160 es el mínimo para aprobar B2 First con Grade C, demostrando competencia sólida aunque con áreas mejorables en precisión o fluidez."
-    },
+    }
+
+  ,
     {
       question: "¿Por qué mi puntuación global difiere del promedio de mis habilidades individuales?",
       answer: "Cambridge calcula la puntuación global ponderando las habilidades según complejidad, no mediante simple promedio aritmético. Writing y Speaking suelen pesar más por requerir producción activa versus comprensión pasiva. Una diferencia de 2-3 puntos entre el promedio manual y la puntuación oficial es completamente normal."
@@ -86,6 +77,14 @@ export default function EscalaCambridgePage() {
       answer: "Analiza tu Statement of Results detalladamente para identificar habilidades débiles. Si Writing puntúa bajo, practica redacción estructurada con feedback profesional sobre gramática y organización. Para Speaking, busca conversación regular con hablantes competentes. Cambridge ofrece materiales específicos por habilidad para práctica focalizada según tus necesidades."
     }
   ];
+
+export default function EscalaCambridgePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   const scaleData = [
     { level: "C2", range: "200-230", exam: "C2 Proficiency", color: "bg-purple-500" },
@@ -105,14 +104,7 @@ export default function EscalaCambridgePage() {
 
   return (
     <>
-      <SEOHead
-        title="Escala Cambridge Explicada: Niveles, Puntuaciones y Grades A, B, C - Guía 2026"
-        description="Entiende la Cambridge English Scale: niveles A1-C2, puntuaciones, Grades A/B/C, equivalencias MCER y cómo interpretar tus resultados en exámenes Cambridge."
-        keywords="escala cambridge, cambridge english scale, grades cambridge, puntuación cambridge, niveles cambridge, a1 a2 b1 b2 c1 c2"
-        canonical="/blog/escala-cambridge"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
@@ -380,8 +372,8 @@ export default function EscalaCambridgePage() {
 
               <div className="bg-indigo-100 rounded-xl p-6">
                 <p className="text-indigo-800">
-                  En <Link to="/academia-ingles-barrio-del-pilar" className="text-indigo-900 hover:underline font-semibold">nuestra academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-indigo-900 hover:underline font-semibold">junto a La Vaguada</Link>, analizamos tu puntuación por habilidad para crear un plan
-                  de mejora personalizado. Nuestros <Link to="/cursos-ingles/adultos" className="text-indigo-900 hover:underline font-semibold">cursos de inglés para adultos</Link> y preparación para <Link to="/examenes-cambridge/b2-first" className="text-indigo-900 hover:underline font-semibold">B2 First</Link> desde <strong>79€/mes</strong> te ayudan
+                  En <a href="/academia-ingles-barrio-del-pilar" className="text-indigo-900 hover:underline font-semibold">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-indigo-900 hover:underline font-semibold">junto a La Vaguada</a>, analizamos tu puntuación por habilidad para crear un plan
+                  de mejora personalizado. Nuestros <a href="/cursos-ingles/adultos" className="text-indigo-900 hover:underline font-semibold">cursos de inglés para adultos</a> y preparación para <a href="/examenes-cambridge/b2-first" className="text-indigo-900 hover:underline font-semibold">B2 First</a> desde <strong>79€/mes</strong> te ayudan
                   a subir en la escala de forma eficiente.
                 </p>
               </div>
@@ -406,11 +398,11 @@ export default function EscalaCambridgePage() {
                         <ChevronDown className="w-5 h-5 text-zinc-500" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 py-4 bg-white">
-                        <p className="text-zinc-600">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 py-4' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-zinc-600">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -424,10 +416,10 @@ export default function EscalaCambridgePage() {
                   La Cambridge English Scale proporciona una visión clara y comparable de tu nivel de inglés. Entender
                   cómo funcionan los Grades y las puntuaciones te permite establecer objetivos realistas y medir tu
                   progreso de forma precisa. Recuerda que con puntuaciones excepcionales puedes certificar niveles
-                  superiores al examen presentado. Ya sea que busques preparar el <Link to="/examenes-cambridge/b1-preliminary" className="text-white hover:underline font-semibold">B1 Preliminary</Link> o el <Link to="/examenes-cambridge/b2-first" className="text-white hover:underline font-semibold">B2 First</Link>, entender la escala es fundamental.
+                  superiores al examen presentado. Ya sea que busques preparar el <a href="/examenes-cambridge/b1-preliminary" className="text-white hover:underline font-semibold">B1 Preliminary</a> o el <a href="/examenes-cambridge/b2-first" className="text-white hover:underline font-semibold">B2 First</a>, entender la escala es fundamental.
                 </p>
                 <p className="text-white/90">
-                  En <Link to="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-semibold">nuestra academia</Link> te preparamos para alcanzar tu puntuación objetivo con
+                  En <a href="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-semibold">nuestra academia</a> te preparamos para alcanzar tu puntuación objetivo con
                   metodología probada y seguimiento personalizado por solo <strong>79€/mes</strong>.
                 </p>
               </div>
@@ -445,12 +437,12 @@ export default function EscalaCambridgePage() {
                       Te ayudamos a subir en la escala con preparación específica para tu nivel objetivo.
                     </p>
                   </div>
-                  <Link
-                    to="/contacto"
+                  <a
+              href="/contacto"
                     className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Solicitar información
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -460,14 +452,14 @@ export default function EscalaCambridgePage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link to="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-indigo-600">GUÍA COMPLETA</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa de Exámenes Cambridge 2026</h4>
-                </Link>
-                <Link to="/examenes-cambridge/b2-first" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/examenes-cambridge/b2-first" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-indigo-600">B2 FIRST</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Cambridge B2: 7 Beneficios del Examen First</h4>
-                </Link>
+                </a>
               </div>
             </section>
           </div>
@@ -493,7 +485,6 @@ export default function EscalaCambridgePage() {
 
       <Footer />
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

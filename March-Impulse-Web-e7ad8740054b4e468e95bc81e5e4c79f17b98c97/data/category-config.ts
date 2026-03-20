@@ -1,6 +1,6 @@
 // Category configuration: hub pages, display names, colors, images, and lead form sources
 
-import { ArticleCategory } from './articles/types';
+import type { ArticleCategory } from './articles/types';
 
 export interface CategoryConfig {
   displayName: string;

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InglesJugandoFuncionaPage, { articleSchema, faqItems } from '../../../pages/blog/InglesJugandoFuncionaPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿Inglés Jugando Funciona? Evidencia y Resultados Reales 2026"
+  description="Sí, aprender inglés jugando funciona y está respaldado por la neurociencia. Descubre cómo el juego acelera el aprendizaje en niños y qué metodologías lo aplican."
+  canonical="/blog/ingles-jugando-funciona"
+  ogType="article"
+  schemas={schemas}
+>
+  <InglesJugandoFuncionaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PdfsCambridgeAdvancedPage, { articleSchema, faqs } from '../../../pages/blog/PdfsCambridgeAdvancedPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="PDFs Cambridge Advanced C1: Recursos Oficiales Gratuitos 2026"
+  description="Descarga gratuita de PDFs oficiales para preparar el C1 Advanced Cambridge: sample papers, handbook for teachers, answer keys y materiales de práctica."
+  canonical="/blog/pdfs-cambridge-advanced"
+  ogType="article"
+  schemas={schemas}
+>
+  <PdfsCambridgeAdvancedPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

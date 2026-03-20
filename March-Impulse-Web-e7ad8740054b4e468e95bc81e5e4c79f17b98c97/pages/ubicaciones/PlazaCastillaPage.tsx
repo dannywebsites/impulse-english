@@ -1,14 +1,10 @@
 import React, { useEffect } from 'react';
 import { MapPin, Clock, Phone, Train, Bus, CheckCircle, Star, ArrowRight, MessageCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import Breadcrumb from '../../components/Breadcrumb';
-import SEOHead from '../../components/SEOHead';
-import { generateLocationPageSchema, generateOrganizationSchema, generateFAQSchema } from '../../utils/schemaData';
 import { NAP } from '../../utils/napData';
 
 const benefits = [
@@ -28,7 +24,7 @@ const courses = [
   { name: "Clases Particulares", method: "Presencial u online", href: "/cursos-ingles/particulares" }
 ];
 
-const localFaqs = [
+export const localFaqs = [
   {
     question: "¿Qué niveles de inglés ofrecéis cerca de Plaza Castilla?",
     answer: "Ofrecemos todos los niveles desde principiante (A1) hasta avanzado (C2). Realizamos una prueba de nivel gratuita para ubicarte en el grupo adecuado. Preparamos exámenes Cambridge (Pre-A1 Starters hasta C2 Proficiency) y Linguaskill."
@@ -52,6 +48,9 @@ const localFaqs = [
 ];
 
 
+export const locationMeta = {locationName: "Plaza Castilla",
+        pageUrl: "https://impulse-english.es/academia-ingles-plaza-castilla"};
+
 export default function PlazaCastillaPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -60,17 +59,7 @@ export default function PlazaCastillaPage() {
 
   return (
     <>
-      <SEOHead
-        title="Academia de Inglés en Plaza Castilla"
-        description="Academia de inglés cerca de Plaza Castilla Madrid. Centro preparador Cambridge oficial con 100% aprobados. A 15 min en Metro Línea 9. Grupos reducidos."
-        keywords="academia inglés plaza castilla, clases inglés plaza castilla, cursos inglés plaza castilla madrid, cambridge plaza castilla, aprender inglés plaza castilla"
-        canonical="/academia-ingles-plaza-castilla"
-      />
-      <SchemaMarkup schema={generateLocationPageSchema({
-        locationName: "Plaza Castilla",
-        pageUrl: "https://impulse-english.es/academia-ingles-plaza-castilla"
-      })} />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
@@ -119,13 +108,13 @@ export default function PlazaCastillaPage() {
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos Reducidos</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba de Nivel Gratuita
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
               <a
                 href={`${NAP.whatsappUrl}?text=Hola,%20trabajo%20en%20Plaza%20Castilla%20y%20me%20gustaría%20información%20sobre%20los%20cursos`}
                 target="_blank"
@@ -239,14 +228,14 @@ export default function PlazaCastillaPage() {
           <p className="text-zinc-600 text-center mb-12">Horarios adaptados a tu jornada laboral</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {courses.map((course, i) => (
-              <Link
+              <a
                 key={i}
-                to={course.href}
+                href={course.href}
                 className="bg-zinc-50 p-6 rounded-xl hover:shadow-lg transition-shadow group"
               >
                 <h3 className="font-bold text-zinc-900 mb-2 group-hover:text-accent-blue transition-colors">{course.name}</h3>
                 <p className="text-zinc-600 text-sm mb-3">{course.method}</p>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -282,12 +271,12 @@ export default function PlazaCastillaPage() {
                 </li>
               </ul>
               <div className="mt-8">
-                <Link
-                  to="/cursos-ingles/infantil"
+                <a
+              href="/cursos-ingles/infantil"
                   className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1"
                 >
                   Ver cursos infantil y primaria <ArrowRight className="w-4 h-4" />
-                </Link>
+                </a>
               </div>
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg">
@@ -340,12 +329,12 @@ export default function PlazaCastillaPage() {
                 </li>
               </ul>
               <div className="mt-8">
-                <Link
-                  to="/cursos-ingles/adultos"
+                <a
+              href="/cursos-ingles/adultos"
                   className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1"
                 >
                   Ver cursos para adultos <ArrowRight className="w-4 h-4" />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -366,27 +355,27 @@ export default function PlazaCastillaPage() {
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">A1 Movers</span>
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">A2 Flyers</span>
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">A2 Key</span>
-            <Link to="/examenes-cambridge/b1-preliminary" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">B1 Preliminary</Link>
-            <Link to="/examenes-cambridge/b2-first" className="px-4 py-2 rounded-full text-sm font-medium bg-white text-accent-blue hover:bg-yellow-400 hover:text-blue-900 transition-colors">B2 First</Link>
-            <Link to="/examenes-cambridge/c1-advanced" className="px-4 py-2 rounded-full text-sm font-medium bg-white text-accent-blue hover:bg-yellow-400 hover:text-blue-900 transition-colors">C1 Advanced</Link>
+            <a href="/examenes-cambridge/b1-preliminary" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">B1 Preliminary</a>
+            <a href="/examenes-cambridge/b2-first" className="px-4 py-2 rounded-full text-sm font-medium bg-white text-accent-blue hover:bg-yellow-400 hover:text-blue-900 transition-colors">B2 First</a>
+            <a href="/examenes-cambridge/c1-advanced" className="px-4 py-2 rounded-full text-sm font-medium bg-white text-accent-blue hover:bg-yellow-400 hover:text-blue-900 transition-colors">C1 Advanced</a>
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">C2 Proficiency</span>
           </div>
           <p className="text-white/90 font-medium mb-8">
             B2 First y C1 Advanced: Los más demandados por empresas.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              to="/examenes-cambridge"
+            <a
+              href="/examenes-cambridge"
               className="bg-white text-accent-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
             >
               Ver todos los exámenes Cambridge
-            </Link>
-            <Link
-              to="/linguaskill"
+            </a>
+            <a
+              href="/linguaskill"
               className="bg-white/10 text-white border border-white/30 font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-accent-blue transition-colors"
             >
               Conocer Linguaskill
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -478,23 +467,23 @@ export default function PlazaCastillaPage() {
               <strong>Servimos también zonas cercanas:</strong>
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <Link to="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline text-sm">Barrio del Pilar</Link>
+              <a href="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline text-sm">Barrio del Pilar</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/academia-ingles-la-vaguada" className="text-accent-blue hover:underline text-sm">La Vaguada</Link>
+              <a href="/academia-ingles-la-vaguada" className="text-accent-blue hover:underline text-sm">La Vaguada</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/academia-ingles-penagrande" className="text-accent-blue hover:underline text-sm">Peñagrande</Link>
+              <a href="/academia-ingles-penagrande" className="text-accent-blue hover:underline text-sm">Peñagrande</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/academia-ingles-la-ventilla" className="text-accent-blue hover:underline text-sm">La Ventilla</Link>
+              <a href="/academia-ingles-la-ventilla" className="text-accent-blue hover:underline text-sm">La Ventilla</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/academia-ingles-la-paz" className="text-accent-blue hover:underline text-sm">La Paz</Link>
+              <a href="/academia-ingles-la-paz" className="text-accent-blue hover:underline text-sm">La Paz</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/academia-ingles-tetuan" className="text-accent-blue hover:underline text-sm">Tetuán</Link>
+              <a href="/academia-ingles-tetuan" className="text-accent-blue hover:underline text-sm">Tetuán</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/academia-ingles-cuatro-torres" className="text-accent-blue hover:underline text-sm">Cuatro Torres</Link>
+              <a href="/academia-ingles-cuatro-torres" className="text-accent-blue hover:underline text-sm">Cuatro Torres</a>
             </div>
-            <Link to="/academias-ingles-madrid/por-barrios" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
+            <a href="/academias-ingles-madrid/por-barrios" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
               Ver todas las ubicaciones en Madrid <ArrowRight className="w-4 h-4" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -549,13 +538,13 @@ export default function PlazaCastillaPage() {
           <p className="text-xl md:text-2xl text-white mb-8">
             Si buscas una academia de inglés cerca de Plaza Castilla, solicita ahora tu prueba de nivel gratuita y empieza a aprender inglés cerca de casa.
           </p>
-          <Link
-            to="/reservar-clase"
+          <a
+              href="/reservar-clase"
             className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
           >
             Reserva tu prueba gratuita
             <ArrowRight className="w-5 h-5" />
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -569,18 +558,18 @@ export default function PlazaCastillaPage() {
             Estamos a solo 8 minutos en metro. Aprovecha tu hora de comer o después del trabajo.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              to="/reservar-clase"
+            <a
+              href="/reservar-clase"
               className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               Reservar Clase de Prueba
-            </Link>
-            <Link
-              to="/contacto"
+            </a>
+            <a
+              href="/contacto"
               className="bg-white hover:bg-zinc-100 text-zinc-900 font-bold py-3 px-8 rounded-lg transition-colors"
             >
               Contactar
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -589,8 +578,6 @@ export default function PlazaCastillaPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={generateOrganizationSchema()} />
-      <SchemaMarkup schema={generateFAQSchema(localFaqs)} />
-    </>
+</>
   );
 }

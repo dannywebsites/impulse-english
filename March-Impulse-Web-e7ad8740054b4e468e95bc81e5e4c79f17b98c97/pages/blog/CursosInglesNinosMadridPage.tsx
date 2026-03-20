@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Baby, Clock, ChevronDown, ChevronUp, CheckCircle, Star, Euro, Gamepad2, BookOpen, Users, Sparkles } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
-import SEOHead from '../../components/SEOHead';
-
-const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
   headline: "Cursos de Inglés para Niños en Madrid: Guía Completa 2026",
   description: "Guía completa de cursos de inglés para niños en Madrid. Metodologías por edad, preparación Cambridge Young Learners y consejos para elegir la mejor academia.",
   url: `${businessInfo.url}/academias-ingles-madrid/ninos`,
@@ -18,19 +14,13 @@ const articleSchema = generateArticleSchema({
   dateModified: "2025-01-01"
 });
 
-export default function CursosInglesNinosMadridPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Cursos de Inglés para Niños en Madrid 2026: Metodologías | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const faqs = [
+export const faqs = [
     {
       question: "¿A qué edad deben comenzar los niños cursos de inglés en Madrid?",
       answer: "La edad óptima para iniciar cursos estructurados es 3-4 años, cuando los niños han consolidado suficiente lenguaje materno. Programas infantiles de 2-5 años utilizan metodologías lúdicas con sesiones de 45-50 minutos semanales, priorizando exposición natural mediante canciones, juegos y cuentos. El cerebro retiene fonética nativa con mayor facilidad antes de los 7 años, haciendo este período ideal para iniciar."
-    },
+    }
+
+  ,
     {
       question: "¿Cuántas horas semanales necesitan los niños para progresar efectivamente?",
       answer: "Para avance consistente, los niños de 6-12 años requieren mínimo 2 horas semanales de clase presencial (dos sesiones de 60 minutos) más 15-20 minutos diarios de exposición en casa mediante apps, vídeos o lectura. Este formato permite completar un nivel del Marco Común Europeo cada 9-12 meses. Programas con solo 1 hora semanal alargan el progreso a 18-24 meses por nivel, reduciendo motivación y efectividad."
@@ -48,6 +38,14 @@ export default function CursosInglesNinosMadridPage() {
       answer: "La resistencia inicial es común en 30-40% de los niños, generalmente por ansiedad ante lo desconocido o metodologías poco lúdicas. Soluciona esto eligiendo programas con clases trial gratuitas, grupos homogéneos de edad (máximo 2 años de diferencia), y metodología 80% juego-actividades versus 20% trabajo formal. Comunica la situación al profesor para adaptación individualizada. Si persiste tras 4-6 sesiones, evalúa cambiar de grupo o academia con enfoque más dinámico."
     }
   ];
+
+export default function CursosInglesNinosMadridPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   const ageGroups = [
     {
@@ -121,14 +119,7 @@ export default function CursosInglesNinosMadridPage() {
 
   return (
     <>
-      <SEOHead
-        title="Cursos de Inglés para Niños en Madrid 2026: Metodologías y Academias"
-        description="Guía completa de cursos de inglés para niños en Madrid. Metodologías por edad, preparación Cambridge Young Learners, precios y academias especializadas desde 2 años."
-        keywords="cursos inglés niños madrid, academia inglés infantil madrid, great little people madrid, cambridge young learners, inglés niños 2-17 años, metodología inglés niños"
-        canonical="/academias-ingles-madrid/ninos"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
@@ -194,8 +185,8 @@ export default function CursosInglesNinosMadridPage() {
               <p className="text-xl text-zinc-600 leading-relaxed">
                 El inglés se ha convertido en una habilidad esencial para el futuro de nuestros hijos. Madrid ofrece
                 una amplia variedad de academias y metodologías adaptadas a cada edad, desde programas de inmersión
-                para bebés hasta preparación de <Link to="/examenes-cambridge" className="text-pink-600 hover:underline">exámenes Cambridge</Link> para adolescentes. Esta guía te ayuda a entender
-                las diferentes opciones y elegir la más adecuada para tu hijo. Si buscas <Link to="/cursos-ingles/infantil" className="text-pink-600 hover:underline">cursos infantil</Link> o academias en zonas como <Link to="/academia-ingles-barrio-del-pilar" className="text-pink-600 hover:underline">Barrio del Pilar</Link>, <Link to="/academia-ingles-tetuan" className="text-pink-600 hover:underline">Tetuán</Link> o <Link to="/academia-ingles-plaza-castilla" className="text-pink-600 hover:underline">Plaza Castilla</Link>, disponemos de centros en el norte de Madrid.
+                para bebés hasta preparación de <a href="/examenes-cambridge" className="text-pink-600 hover:underline">exámenes Cambridge</a> para adolescentes. Esta guía te ayuda a entender
+                las diferentes opciones y elegir la más adecuada para tu hijo. Si buscas <a href="/cursos-ingles/infantil" className="text-pink-600 hover:underline">cursos infantil</a> o academias en zonas como <a href="/academia-ingles-barrio-del-pilar" className="text-pink-600 hover:underline">Barrio del Pilar</a>, <a href="/academia-ingles-tetuan" className="text-pink-600 hover:underline">Tetuán</a> o <a href="/academia-ingles-plaza-castilla" className="text-pink-600 hover:underline">Plaza Castilla</a>, disponemos de centros en el norte de Madrid.
               </p>
             </div>
 
@@ -211,7 +202,7 @@ export default function CursosInglesNinosMadridPage() {
 
                 <p className="text-white/90 mb-4">
                   Somos centro oficial del método <strong>Great Little People</strong>, diseñado específicamente para
-                  que los niños de 2 a 6 años aprendan inglés de forma natural, como si fuera su lengua materna. Ubicados <Link to="/academia-ingles-la-vaguada" className="text-white underline hover:text-pink-200">junto a La Vaguada</Link> en <Link to="/academia-ingles-barrio-del-pilar" className="text-white underline hover:text-pink-200">nuestra academia en Barrio del Pilar</Link>.
+                  que los niños de 2 a 6 años aprendan inglés de forma natural, como si fuera su lengua materna. Ubicados <a href="/academia-ingles-la-vaguada" className="text-white underline hover:text-pink-200">junto a La Vaguada</a> en <a href="/academia-ingles-barrio-del-pilar" className="text-white underline hover:text-pink-200">nuestra academia en Barrio del Pilar</a>.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -256,12 +247,12 @@ export default function CursosInglesNinosMadridPage() {
                     <Euro className="w-5 h-5" />
                     <span className="text-lg">Precios competitivos para todas las edades</span>
                   </div>
-                  <Link
-                    to="/contacto"
+                  <a
+              href="/contacto"
                     className="bg-white text-pink-600 font-bold py-3 px-8 rounded-lg hover:bg-zinc-100 transition-colors"
                   >
                     Reservar clase de prueba
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -411,9 +402,9 @@ export default function CursosInglesNinosMadridPage() {
                       <td className="p-4 text-zinc-500">Método propio, instalaciones modernas</td>
                     </tr>
                     <tr className="bg-pink-50">
-                      <td className="p-4 font-bold text-pink-700"><Link to="/cursos-ingles/infantil" className="text-pink-700 hover:underline">Impulse English Academy</Link></td>
+                      <td className="p-4 font-bold text-pink-700"><a href="/cursos-ingles/infantil" className="text-pink-700 hover:underline">Impulse English Academy</a></td>
                       <td className="p-4 text-center font-bold text-pink-700">Desde 64€</td>
-                      <td className="p-4 text-pink-600">Great Little People, grupos reducidos, <Link to="/academia-ingles-penagrande" className="text-pink-700 hover:underline">Peñagrande</Link></td>
+                      <td className="p-4 text-pink-600">Great Little People, grupos reducidos, <a href="/academia-ingles-penagrande" className="text-pink-700 hover:underline">Peñagrande</a></td>
                     </tr>
                     <tr>
                       <td className="p-4">Academias de barrio</td>
@@ -449,11 +440,11 @@ export default function CursosInglesNinosMadridPage() {
                         <ChevronDown className="w-5 h-5 text-zinc-500" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 py-4 bg-white">
-                        <p className="text-zinc-600">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 py-4' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-zinc-600">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -464,12 +455,12 @@ export default function CursosInglesNinosMadridPage() {
               <div className="bg-gradient-to-r from-pink-500 to-rose-500 rounded-2xl p-8 text-white">
                 <h2 className="text-2xl font-bold mb-4">Conclusión</h2>
                 <p className="text-white/90 mb-6">
-                  Elegir la academia de <Link to="/cursos-ingles/infantil" className="text-white underline hover:text-pink-200">inglés para niños</Link> adecuada para tu hijo es una inversión en su futuro. Busca una
+                  Elegir la academia de <a href="/cursos-ingles/infantil" className="text-white underline hover:text-pink-200">inglés para niños</a> adecuada para tu hijo es una inversión en su futuro. Busca una
                   metodología adaptada a su edad, grupos reducidos y profesores con experiencia infantil. Lo más
-                  importante es que tu hijo asocie el inglés con experiencias positivas y divertidas. Para adolescentes, considera la preparación para <Link to="/examenes-cambridge" className="text-white underline hover:text-pink-200">exámenes Cambridge</Link> oficiales.
+                  importante es que tu hijo asocie el inglés con experiencias positivas y divertidas. Para adolescentes, considera la preparación para <a href="/examenes-cambridge" className="text-white underline hover:text-pink-200">exámenes Cambridge</a> oficiales.
                 </p>
                 <p className="text-white/90">
-                  En <strong>Impulse English Academy</strong>, con sede <Link to="/academia-ingles-la-vaguada" className="text-white underline hover:text-pink-200">junto a La Vaguada</Link> en <Link to="/academia-ingles-la-ventilla" className="text-white underline hover:text-pink-200">La Ventilla</Link>, ofrecemos el método <strong>Great Little People</strong>
+                  En <strong>Impulse English Academy</strong>, con sede <a href="/academia-ingles-la-vaguada" className="text-white underline hover:text-pink-200">junto a La Vaguada</a> en <a href="/academia-ingles-la-ventilla" className="text-white underline hover:text-pink-200">La Ventilla</a>, ofrecemos el método <strong>Great Little People</strong>
                   para los más pequeños, con preparación Cambridge para todas las edades. ¡Reserva una clase de prueba gratuita!
                 </p>
               </div>
@@ -487,12 +478,12 @@ export default function CursosInglesNinosMadridPage() {
                       Reserva una clase de prueba gratuita y descubre nuestra metodología.
                     </p>
                   </div>
-                  <Link
-                    to="/contacto"
+                  <a
+              href="/contacto"
                     className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Clase de prueba gratis
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -502,22 +493,22 @@ export default function CursosInglesNinosMadridPage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link to="/academias-ingles-madrid" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/academias-ingles-madrid" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-pink-600">MADRID</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Academias Baratas de Inglés en Madrid</h4>
-                </Link>
-                <Link to="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-pink-600">CAMBRIDGE</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa de Exámenes Cambridge</h4>
-                </Link>
-                <Link to="/cursos-ingles/infantil" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/cursos-ingles/infantil" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-pink-600">CURSOS</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Curso de Inglés Infantil (2-5 años)</h4>
-                </Link>
-                <Link to="/cursos-ingles/primaria" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/cursos-ingles/primaria" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-pink-600">CURSOS</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Curso de Inglés Primaria (6-12 años)</h4>
-                </Link>
+                </a>
               </div>
             </section>
           </div>
@@ -544,7 +535,6 @@ export default function CursosInglesNinosMadridPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

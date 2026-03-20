@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NotFoundPage from '../../pages/NotFoundPage';
+import CookieBanner from '../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Página No Encontrada"
+  description="La página que buscas no existe o ha sido movida."
+  noindex={true}
+>
+  <NotFoundPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

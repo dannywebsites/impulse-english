@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { MapPin, Clock, ChevronDown, ChevronUp, CheckCircle, Star, Euro, Users, Train } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function AcademiasPorBarriosMadridPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Academias de Inglés por Barrios en Madrid 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Academias de Inglés por Barrios en Madrid 2026",
     description: "Encuentra academias de inglés en tu barrio de Madrid: Chamberí, Salamanca, Centro, Tetuán, Moncloa y más. Guía completa con precios y ubicaciones.",
     url: `${businessInfo.url}/blog/academias-barrios-madrid`,
     datePublished: "2025-01-01"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Cuál es el barrio de Madrid con mayor concentración de academias de inglés?",
       answer: "El distrito Centro lidera con 127 academias registradas, seguido por Fuencarral-El Pardo con 43 centros. Sin embargo, los barrios periféricos como Peñagrande, La Vaguada o Barrio del Pilar ofrecen mejor relación calidad-precio, con tarifas entre 18-25% inferiores manteniendo metodologías certificadas Cambridge. La accesibilidad mediante metro líneas 9, 7 y 1 compensa la distancia del centro."
-    },
+    }
+
+  ,
     {
       question: "¿Qué precio medio tienen las academias de oposiciones en Madrid en 2025?",
       answer: "Las academias presenciales cobran entre 129€ y 280€ mensuales según especialidad y servicios incluidos. Los paquetes completos que incluyen temario físico, plataforma online, simulacros y tutorías personalizadas oscilan entre 1.850€ y 3.200€ anuales. Las modalidades 100% online reducen costes un 35-40%, pero sacrifican interacción presencial que mejora resultados según el 78% de opositores exitosos encuestados."
@@ -46,6 +37,14 @@ export default function AcademiasPorBarriosMadridPage() {
       answer: "Múltiples estudios demuestran que la ubicación no determina calidad: el factor crítico es la certificación del profesorado (TEFL, CELTA), metodología empleada y tamaño de grupos. Academias de barrios como Peñagrande, Tetuán o Carabanchel con profesorado certificado, grupos reducidos y metodología conversacional obtienen resultados equivalentes o superiores a grandes centros del centro, con precios significativamente inferiores y mayor flexibilidad horaria personalizada."
     }
   ];
+
+export default function AcademiasPorBarriosMadridPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   const barrios = [
     {
@@ -116,14 +115,7 @@ export default function AcademiasPorBarriosMadridPage() {
 
   return (
     <>
-      <SEOHead
-        title="Academias de Inglés por Barrios en Madrid 2026 - Guía Completa de Precios y Ubicaciones"
-        description="Encuentra las mejores academias de inglés cerca de ti en Madrid: Chamberí, Salamanca, Centro, Barrio del Pilar, La Vaguada. Comparativa de precios 55-180€/mes con transporte y recomendaciones."
-        keywords="academias inglés Madrid, academias inglés barrios Madrid, mejor academia inglés Madrid norte, inglés Barrio del Pilar, academia inglés La Vaguada, clases inglés cerca, academias baratas Madrid"
-        canonical="/academias-ingles-madrid/por-barrios"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
@@ -198,9 +190,9 @@ export default function AcademiasPorBarriosMadridPage() {
             <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-zinc-600 leading-relaxed">
                 Elegir academia de inglés cerca de casa o del trabajo es fundamental para mantener la constancia.
-                Madrid tiene más de 500 <Link to="/academias-ingles-madrid" className="text-violet-600 hover:underline">academias de inglés</Link> repartidas por sus 21 distritos, con diferencias
+                Madrid tiene más de 500 <a href="/academias-ingles-madrid" className="text-violet-600 hover:underline">academias de inglés</a> repartidas por sus 21 distritos, con diferencias
                 significativas de precio según la zona. Esta guía te ayuda a encontrar las mejores opciones
-                en tu barrio y a entender qué esperar en cada zona de la capital, una de las ciudades con mejor oferta educativa según la <a href="https://www.comunidad.madrid/servicios/educacion" target="_blank" rel="noopener noreferrer" className="text-violet-600 hover:underline">Comunidad de Madrid</a>. Si buscas opciones específicas para <Link to="/academias-ingles-madrid/ninos" className="text-violet-600 hover:underline">niños</Link> o <Link to="/academias-ingles-madrid/adultos" className="text-violet-600 hover:underline">adultos</Link>, consulta nuestras guías especializadas.
+                en tu barrio y a entender qué esperar en cada zona de la capital, una de las ciudades con mejor oferta educativa según la <a href="https://www.comunidad.madrid/servicios/educacion" target="_blank" rel="noopener noreferrer" className="text-violet-600 hover:underline">Comunidad de Madrid</a>. Si buscas opciones específicas para <a href="/academias-ingles-madrid/ninos" className="text-violet-600 hover:underline">niños</a> o <a href="/academias-ingles-madrid/adultos" className="text-violet-600 hover:underline">adultos</a>, consulta nuestras guías especializadas.
               </p>
             </div>
 
@@ -238,12 +230,12 @@ export default function AcademiasPorBarriosMadridPage() {
 
                 </div>
 
-                <Link
-                  to="/contacto"
+                <a
+              href="/contacto"
                   className="inline-block bg-white text-violet-600 font-bold py-3 px-8 rounded-lg hover:bg-zinc-100 transition-colors"
                 >
                   Solicitar información
-                </Link>
+                </a>
               </div>
             </section>
 
@@ -417,11 +409,11 @@ export default function AcademiasPorBarriosMadridPage() {
                         <ChevronDown className="w-5 h-5 text-zinc-500" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 py-4 bg-white">
-                        <p className="text-zinc-600">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 py-4' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-zinc-600">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -434,7 +426,7 @@ export default function AcademiasPorBarriosMadridPage() {
                 <p className="text-white/90 mb-6">
                   La ubicación de tu academia importa para mantener la constancia, pero no debería ser el único
                   factor. Un buen Metro puede conectarte con academias de mejor calidad-precio en otros barrios.
-                  Y las clases online eliminan completamente la barrera geográfica. Si tu objetivo es obtener una <Link to="/academias-ingles-madrid/certificaciones" className="text-white underline hover:text-violet-200">certificación oficial</Link>, asegúrate de elegir una academia con experiencia en preparación de <Link to="/examenes-cambridge" className="text-white underline hover:text-violet-200">exámenes Cambridge</Link>.
+                  Y las clases online eliminan completamente la barrera geográfica. Si tu objetivo es obtener una <a href="/academias-ingles-madrid/certificaciones" className="text-white underline hover:text-violet-200">certificación oficial</a>, asegúrate de elegir una academia con experiencia en preparación de <a href="/examenes-cambridge" className="text-white underline hover:text-violet-200">exámenes Cambridge</a>.
                 </p>
                 <p className="text-white/90">
                   En <strong>Impulse English Academy</strong> combinamos precio competitivo,
@@ -455,12 +447,12 @@ export default function AcademiasPorBarriosMadridPage() {
                       Te ayudamos a encontrar la mejor opción cerca de ti o te ofrecemos clases online.
                     </p>
                   </div>
-                  <Link
-                    to="/contacto"
+                  <a
+              href="/contacto"
                     className="bg-violet-500 hover:bg-violet-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Contactar
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -473,38 +465,38 @@ export default function AcademiasPorBarriosMadridPage() {
                 Encuentra información específica de nuestra academia según tu zona de Madrid:
               </p>
               <div className="grid md:grid-cols-4 gap-3">
-                <Link to="/academia-ingles-barrio-del-pilar" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                <a href="/academia-ingles-barrio-del-pilar" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Barrio del Pilar</h4>
-                </Link>
-                <Link to="/academia-ingles-la-vaguada" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                </a>
+                <a href="/academia-ingles-la-vaguada" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">La Vaguada</h4>
-                </Link>
-                <Link to="/academia-ingles-penagrande" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                </a>
+                <a href="/academia-ingles-penagrande" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Peñagrande</h4>
-                </Link>
-                <Link to="/academia-ingles-la-ventilla" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                </a>
+                <a href="/academia-ingles-la-ventilla" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">La Ventilla</h4>
-                </Link>
-                <Link to="/academia-ingles-la-paz" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                </a>
+                <a href="/academia-ingles-la-paz" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">La Paz</h4>
-                </Link>
-                <Link to="/academia-ingles-plaza-castilla" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                </a>
+                <a href="/academia-ingles-plaza-castilla" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Plaza Castilla</h4>
-                </Link>
-                <Link to="/academia-ingles-tetuan" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                </a>
+                <a href="/academia-ingles-tetuan" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Tetuán</h4>
-                </Link>
-                <Link to="/academia-ingles-cuatro-torres" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                </a>
+                <a href="/academia-ingles-cuatro-torres" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Cuatro Torres</h4>
-                </Link>
+                </a>
               </div>
             </section>
 
@@ -512,22 +504,22 @@ export default function AcademiasPorBarriosMadridPage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link to="/academias-ingles-madrid" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/academias-ingles-madrid" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-violet-600">PRECIOS</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Academias Baratas de Inglés en Madrid</h4>
-                </Link>
-                <Link to="/academias-ingles-madrid/certificaciones" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/academias-ingles-madrid/certificaciones" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-violet-600">CERTIFICACIONES</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Certificaciones de Inglés en Madrid</h4>
-                </Link>
-                <Link to="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-violet-600">CAMBRIDGE</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Exámenes Cambridge</h4>
-                </Link>
-                <Link to="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-violet-600">LINGUASKILL</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa de Linguaskill</h4>
-                </Link>
+                </a>
               </div>
             </section>
           </div>
@@ -554,7 +546,6 @@ export default function AcademiasPorBarriosMadridPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

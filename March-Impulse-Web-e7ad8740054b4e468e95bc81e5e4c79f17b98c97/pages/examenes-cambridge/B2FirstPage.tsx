@@ -1,11 +1,9 @@
 import React from 'react';
 import { BookOpen, PenTool, Headphones, Mic, Languages } from 'lucide-react';
 import ExamPageLayout from '../../components/ExamPageLayout';
-import SEOHead from '../../components/SEOHead';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 
-const b2Faqs = [
+export const b2Faqs = [
   {
     question: "¿Cuántas veces puedo presentarme al B2 First?",
     answer: "Puedes presentarte al B2 First tantas veces como desees sin límite establecido por Cambridge English, pero solo una vez por convocatoria oficial. Cada intento permite mejorar la puntuación (escala 160-190 para certificación B2). Los resultados se publican en 5-10 días laborables para el formato digital."
@@ -84,16 +82,20 @@ const b2Faqs = [
   }
 ];
 
+export const courseSchema = generateCourseSchema({
+      name: "Curso de Preparación Cambridge B2 First (FCE)",
+      description: "Prepara el examen Cambridge B2 First (FCE) con clases en Madrid en grupos reducidos. Centro oficial Cambridge con 100% de aprobados. Perfecto para estudiantes hispanohablantes que necesitan el B2 para la universidad, oposiciones o trabajo.",
+      url: `${businessInfo.url}/examenes-cambridge/b2-first`,
+      courseCode: "CAM-B2-FCE",
+      educationalLevel: "B2 — Nivel Intermedio Alto",
+      timeRequired: "P9M",
+      price: "75"
+    });
+
 export default function B2FirstPage() {
   return (
     <>
-      <SEOHead
-        title="Preparación Cambridge B2 First (FCE)"
-        description="Preparación Cambridge B2 First (FCE) en Madrid. Centro oficial Cambridge, 100% aprobados. El certificado más demandado. La Vaguada, Barrio del Pilar."
-        keywords="b2 first madrid, preparación fce cambridge, examen b2 cambridge, curso b2 inglés madrid, academia cambridge b2, first certificate"
-        canonical="/examenes-cambridge/b2-first"
-      />
-      <ExamPageLayout
+<ExamPageLayout
       examName="B2 First (FCE)"
       cefrLevel="Nivel B2"
       tagline="El certificado más demandado: demuestra que puedes trabajar y estudiar en inglés"
@@ -148,15 +150,6 @@ export default function B2FirstPage() {
       formSource="cambridge-b2-first"
       heroImage="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg"
     />
-    <SchemaMarkup schema={generateCourseSchema({
-      name: "Curso de Preparación Cambridge B2 First (FCE)",
-      description: "Prepara el examen Cambridge B2 First (FCE) con clases en Madrid en grupos reducidos. Centro oficial Cambridge con 100% de aprobados. Perfecto para estudiantes hispanohablantes que necesitan el B2 para la universidad, oposiciones o trabajo.",
-      url: `${businessInfo.url}/examenes-cambridge/b2-first`,
-      courseCode: "CAM-B2-FCE",
-      educationalLevel: "B2 — Nivel Intermedio Alto",
-      timeRequired: "P9M",
-      price: "75"
-    })} />
-    </>
+</>
   );
 }

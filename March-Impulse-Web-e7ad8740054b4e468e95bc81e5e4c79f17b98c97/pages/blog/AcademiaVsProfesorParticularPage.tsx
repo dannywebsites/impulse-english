@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function AcademiaVsProfesorParticularPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Academia vs Profesor Particular de Inglés: ¿Qué es Mejor? 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿Academia o Profesor Particular de Inglés? Pros y Contras",
     description: "Compara academia y profesor particular de inglés: precios, metodología, resultados y flexibilidad. Descubre cuál se adapta mejor a tus necesidades.",
     url: `${businessInfo.url}/blog/academia-vs-profesor-particular`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Qué es más barato, academia o profesor particular?",
       answer: "Generalmente, la academia es más económica por hora de clase (15-25€/h en grupo vs 25-45€/h particular). Sin embargo, el profesor particular puede ser más eficiente en tiempo total porque la atención es exclusiva. Si necesitas 100 horas de grupo, quizás con 60-70 horas de particular consigas el mismo resultado, equilibrando el coste total."
-    },
+    }
+
+  ,
     {
       question: "¿Se aprende más rápido con un profesor particular?",
       answer: "El progreso individual suele ser más rápido con un profesor particular porque la clase se centra 100% en tus necesidades. Sin embargo, la academia aporta algo que el particular no puede: interacción con otros estudiantes. Para el speaking y la confianza comunicativa, practicar con compañeros tiene un valor insustituible."
@@ -47,6 +38,14 @@ export default function AcademiaVsProfesorParticularPage() {
     }
   ];
 
+export default function AcademiaVsProfesorParticularPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   const comparisonData = [
     { feature: "Precio por hora", academia: "15€-25€/h (grupo)", particular: "25€-45€/h" },
     { feature: "Atención personalizada", academia: "Compartida (6-12 alumnos)", particular: "100% individual" },
@@ -60,14 +59,7 @@ export default function AcademiaVsProfesorParticularPage() {
 
   return (
     <>
-      <SEOHead
-        title="Academia vs Profesor Particular de Inglés: ¿Qué es Mejor? 2026"
-        description="Compara academia y profesor particular de inglés: precios, metodología, resultados y flexibilidad. Descubre cuál se adapta mejor a tus necesidades."
-        keywords="academia o profesor particular inglés, clase particular o academia, profesor particular inglés, academia inglés vs particular"
-        canonical="/blog/academia-vs-profesor-particular"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -186,7 +178,7 @@ export default function AcademiaVsProfesorParticularPage() {
                     <CheckCircle className="w-5 h-5 text-blue-600" />
                     Metodología estructurada y probada
                   </h3>
-                  <p className="text-gray-700">Las academias siguen currículos diseñados profesionalmente con progresión lógica de contenidos. La <Link to="/metodologia" className="text-blue-600 hover:underline">metodología de enseñanza</Link> está testada con cientos de estudiantes y optimizada para resultados. No dependes de la improvisación.</p>
+                  <p className="text-gray-700">Las academias siguen currículos diseñados profesionalmente con progresión lógica de contenidos. La <a href="/metodologia" className="text-blue-600 hover:underline">metodología de enseñanza</a> está testada con cientos de estudiantes y optimizada para resultados. No dependes de la improvisación.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -350,7 +342,7 @@ export default function AcademiaVsProfesorParticularPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En <Link to="/contacto" className="text-blue-600 hover:underline">Impulse English Academy</Link> ofrecemos ambas opciones: <Link to="/cursos-ingles/particulares" className="text-blue-600 hover:underline">clases particulares</Link> y cursos en grupo reducido. Así puedes encontrar la modalidad perfecta o combinar ambas para un progreso óptimo.
+                En <a href="/contacto" className="text-blue-600 hover:underline">Impulse English Academy</a> ofrecemos ambas opciones: <a href="/cursos-ingles/particulares" className="text-blue-600 hover:underline">clases particulares</a> y cursos en grupo reducido. Así puedes encontrar la modalidad perfecta o combinar ambas para un progreso óptimo.
               </p>
 
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl">
@@ -380,11 +372,11 @@ export default function AcademiaVsProfesorParticularPage() {
                         <ChevronDown className="w-5 h-5 text-blue-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -401,7 +393,7 @@ export default function AcademiaVsProfesorParticularPage() {
                   No hay una respuesta universal: la academia es mejor para quienes buscan estructura, interacción grupal y preparación de exámenes a precio asequible. El profesor particular es mejor para quienes necesitan flexibilidad total y contenido muy personalizado.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/metodologia" className="text-blue-600 hover:underline font-medium">Impulse English Academy</Link> ofrecemos lo mejor de ambos mundos con grupos reducidos que combinan la interacción grupal con atención personalizada, y <Link to="/cursos-ingles/particulares" className="text-blue-600 hover:underline font-medium">clases particulares</Link> para quienes prefieren la opción individual.
+                  En <a href="/metodologia" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos lo mejor de ambos mundos con grupos reducidos que combinan la interacción grupal con atención personalizada, y <a href="/cursos-ingles/particulares" className="text-blue-600 hover:underline font-medium">clases particulares</a> para quienes prefieren la opción individual.
                 </p>
               </div>
             </section>
@@ -412,31 +404,31 @@ export default function AcademiaVsProfesorParticularPage() {
               <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
                 Ven a conocernos y descubre cómo nuestros grupos reducidos te ofrecen lo mejor de la academia y del profesor particular.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
                 Solicitar clase de prueba
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Descubre cómo enseñamos inglés con resultados probados.</p>
-                </Link>
-                <Link to="/cursos-ingles/particulares" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/particulares" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Clases Particulares en Impulse
                   </h3>
                   <p className="text-gray-600 text-sm">Atención personalizada con profesores titulados cualificados.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -466,7 +458,6 @@ export default function AcademiaVsProfesorParticularPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 interface NewsOverlayProps {
     mobile?: boolean;
@@ -34,7 +33,7 @@ export default function NewsOverlay({ mobile = false }: NewsOverlayProps) {
         <section className="w-full px-6 py-2">
             <div className="flex flex-col gap-6">
                 {items.slice(0, 2).map((item, index) => (
-                    <Link key={index} to={item.href} className="group cursor-pointer">
+                    <a key={index} href={item.href} className="group cursor-pointer">
                         <div className="flex justify-between items-start mb-1">
                             <span className="text-accent-blue text-[10px] font-bold tracking-widest uppercase bg-blue-50 px-2 py-0.5 rounded-sm">
                                 {item.label}
@@ -44,7 +43,7 @@ export default function NewsOverlay({ mobile = false }: NewsOverlayProps) {
                         <h3 className="text-zinc-900 text-lg font-bold leading-tight mb-1">
                             {item.title}
                         </h3>
-                    </Link>
+                    </a>
                 ))}
                 <div className="text-center pt-2 border-t border-zinc-100">
                     <span className="text-xs font-bold text-zinc-400 uppercase tracking-widest">Desliza para más</span>
@@ -59,7 +58,7 @@ export default function NewsOverlay({ mobile = false }: NewsOverlayProps) {
     <section className="w-full bg-white border-b border-zinc-100">
       <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-zinc-100 container mx-auto border-x border-zinc-100 max-w-7xl">
         {items.map((item, index) => (
-          <Link key={index} to={item.href} className="p-8 md:p-12 group cursor-pointer hover:bg-zinc-50 transition-colors">
+          <a key={index} href={item.href} className="p-8 md:p-12 group cursor-pointer hover:bg-zinc-50 transition-colors">
             <div className="flex justify-between items-start mb-4">
                 <span className="text-accent-blue text-xs font-bold tracking-widest uppercase bg-blue-50 px-2 py-1 rounded-sm">
                     {item.label}
@@ -72,7 +71,7 @@ export default function NewsOverlay({ mobile = false }: NewsOverlayProps) {
             <span className="text-zinc-400 text-sm font-medium group-hover:text-zinc-900 transition-colors inline-block mt-4 border-b border-transparent group-hover:border-zinc-900 pb-0.5">
                 {item.action}
             </span>
-          </Link>
+          </a>
         ))}
       </div>
     </section>

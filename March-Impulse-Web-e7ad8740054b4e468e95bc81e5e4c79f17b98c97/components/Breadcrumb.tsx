@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Home } from 'lucide-react';
-import SchemaMarkup from './SchemaMarkup';
-import { generateBreadcrumbSchema, businessInfo } from '../utils/schemaData';
 
 export interface BreadcrumbItem {
   label: string;
@@ -27,12 +24,6 @@ export default function Breadcrumb({
     ? [{ label: 'Inicio', href: '/' }, ...items]
     : items;
 
-  // Generate schema data
-  const schemaItems = fullItems.map(item => ({
-    name: item.label,
-    url: item.href ? `${businessInfo.url}${item.href}` : businessInfo.url
-  }));
-
   const textColor = variant === 'light'
     ? 'text-white/70 hover:text-white'
     : 'text-zinc-500 hover:text-zinc-900';
@@ -46,9 +37,7 @@ export default function Breadcrumb({
     : 'text-zinc-400';
 
   return (
-    <>
-      <SchemaMarkup schema={generateBreadcrumbSchema(schemaItems)} />
-      <nav aria-label="Breadcrumb" className={`flex items-center gap-2 text-sm ${className}`}>
+    <nav aria-label="Breadcrumb" className={`flex items-center gap-2 text-sm ${className}`}>
         {fullItems.map((item, index) => {
           const isLast = index === fullItems.length - 1;
           const isFirst = index === 0;
@@ -63,8 +52,8 @@ export default function Breadcrumb({
                   {isFirst && showHome ? <Home className="w-4 h-4" /> : item.label}
                 </span>
               ) : (
-                <Link
-                  to={item.href}
+                <a
+                  href={item.href}
                   className={`${textColor} transition-colors truncate flex items-center gap-1`}
                 >
                   {isFirst && showHome ? (
@@ -72,13 +61,12 @@ export default function Breadcrumb({
                   ) : (
                     item.label
                   )}
-                </Link>
+                </a>
               )}
             </React.Fragment>
           );
         })}
-      </nav>
-    </>
+    </nav>
   );
 }
 

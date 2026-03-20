@@ -1,0 +1,168 @@
+{
+  "$ref": "#/definitions/articles",
+  "definitions": {
+    "articles": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "High",
+            "Medium"
+          ]
+        },
+        "question": {
+          "type": "string"
+        },
+        "seoTitle": {
+          "type": "string"
+        },
+        "metaDescription": {
+          "type": "string"
+        },
+        "paaAnswer": {
+          "type": "string"
+        },
+        "contextSections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "heading": {
+                "type": "string"
+              },
+              "content": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "heading",
+              "content"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "impulseSection": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            },
+            "ctaLinks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "href": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "text",
+                  "href"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "heading",
+            "content",
+            "ctaLinks"
+          ],
+          "additionalProperties": false
+        },
+        "faqItems": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string"
+              },
+              "answer": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "answer"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "internalLinkRefs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "breadcrumbs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "publishedDate": {
+          "type": "string"
+        },
+        "modifiedDate": {
+          "type": "string"
+        },
+        "readTime": {
+          "type": "string"
+        },
+        "imageKey": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "category",
+        "priority",
+        "question",
+        "seoTitle",
+        "metaDescription",
+        "paaAnswer",
+        "contextSections",
+        "impulseSection",
+        "faqItems",
+        "internalLinkRefs",
+        "breadcrumbs",
+        "publishedDate",
+        "modifiedDate",
+        "readTime",
+        "imageKey"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

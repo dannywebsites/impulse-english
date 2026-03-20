@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NinosConfusionDosIdiomasPage, { articleSchema, faqItems } from '../../../pages/blog/NinosConfusionDosIdiomasPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿Se Confunden los Niños con Dos Idiomas? La Verdad Científica"
+  description="No, los niños no se confunden con dos idiomas. El bilingüismo mejora la cognición. Desmontamos los 5 mitos más comunes sobre niños bilingües."
+  canonical="/blog/ninos-confusion-dos-idiomas"
+  ogType="article"
+  schemas={schemas}
+>
+  <NinosConfusionDosIdiomasPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

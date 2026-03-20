@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function HijoPrepararCambridgePage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = '¿Tu Hijo Debería Preparar Cambridge? Guía para Padres 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: '¿Mi Hijo Debería Preparar Cambridge? Guía para Padres',
     description: 'Preparar Cambridge da ventaja académica y motivación. Descubre a qué edad empezar, qué examen elegir (Young Learners, B1, B2) y cómo preparar sin presión.',
     url: `${businessInfo.url}/blog/hijo-preparar-cambridge`,
     datePublished: '2025-03-01'
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: '¿A qué edad puede hacer Cambridge mi hijo?',
       answer: 'Los Young Learners (Starters, Movers, Flyers) son para 7-12 años. El B1 Preliminary es habitual a los 14-15. El B2 First, a los 16-17. No hay edad mínima para los Young Learners.'
-    },
+    }
+
+  ,
     {
       question: '¿Es Cambridge obligatorio para los niños?',
       answer: 'No es obligatorio, pero tener certificación Cambridge antes del instituto da ventaja en acceso a programas bilingües, becas y motivación académica.'
@@ -47,16 +38,17 @@ export default function HijoPrepararCambridgePage() {
     }
   ];
 
+export default function HijoPrepararCambridgePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="¿Tu Hijo Debería Preparar Cambridge? Guía para Padres 2026"
-        description="Preparar Cambridge da ventaja académica y motivación. Descubre a qué edad empezar, qué examen elegir (Young Learners, B1, B2) y cómo preparar sin presión."
-        keywords="hijo preparar cambridge, cambridge niños, examen cambridge niños, cambridge young learners"
-        canonical="/blog/hijo-preparar-cambridge"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -333,11 +325,11 @@ export default function HijoPrepararCambridgePage() {
                         <ChevronDown className="w-5 h-5 text-purple-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -349,37 +341,37 @@ export default function HijoPrepararCambridgePage() {
               <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
                 Evaluamos el nivel de tu hijo y diseñamos el plan de preparación Cambridge más adecuado para su edad y momento.
               </p>
-              <Link
-                to="/cursos-ingles/primaria"
+              <a
+              href="/cursos-ingles/primaria"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Ver cursos de primaria
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link to="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Primaria
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés para niños de 6 a 12 años con prep Cambridge.</p>
-                </Link>
-                <Link to="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Exámenes Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Toda la información sobre los exámenes Cambridge.</p>
-                </Link>
-                <Link to="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cambridge B1 Preliminary
                   </h3>
                   <p className="text-gray-600 text-sm">Guía completa del examen B1 Preliminary de Cambridge.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -409,7 +401,6 @@ export default function HijoPrepararCambridgePage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function ClasesParticularesVsAcademiaPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Clases Particulares vs Academia de Inglés: Comparativa 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Clases Particulares vs Academia de Inglés: ¿Qué Elegir?",
     description: "Compara clases particulares y academia de inglés: precio (30-50€/h vs 64-79€/mes), método, resultados y flexibilidad. Descubre cuál se adapta a tu perfil.",
     url: `${businessInfo.url}/blog/clases-particulares-vs-academia`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Son más efectivas las clases particulares?",
       answer: "Depende del perfil. El particular es más efectivo para objetivos muy específicos o ritmos no estándar. La academia ofrece estructura probada, materiales y seguimiento de progreso."
-    },
+    }
+
+  ,
     {
       question: "¿Cuánto cuesta un profesor particular de inglés?",
       answer: "Un profesor particular en Madrid cobra entre 25-50€/hora según experiencia y titulación. Una academia cuesta 64-79€/mes por varias sesiones, resultando más económica."
@@ -43,16 +34,17 @@ export default function ClasesParticularesVsAcademiaPage() {
     }
   ];
 
+export default function ClasesParticularesVsAcademiaPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="Clases Particulares vs Academia de Inglés: Comparativa 2026"
-        description="Compara clases particulares y academia de inglés: precio (30-50€/h vs 64-79€/mes), método, resultados y flexibilidad. Descubre cuál se adapta a tu perfil."
-        keywords="clases particulares vs academia inglés, particular o academia, mejor opción inglés, comparar particular academia"
-        canonical="/blog/clases-particulares-vs-academia"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -328,11 +320,11 @@ export default function ClasesParticularesVsAcademiaPage() {
                         <ChevronDown className="w-5 h-5 text-blue-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -344,37 +336,37 @@ export default function ClasesParticularesVsAcademiaPage() {
               <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
                 Te orientamos hacia la modalidad que mejor encaja con tus objetivos y presupuesto. Sin compromiso.
               </p>
-              <Link
-                to="/cursos-ingles/particulares"
+              <a
+              href="/cursos-ingles/particulares"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
                 Ver clases particulares
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo funcionan nuestras clases grupales y one-to-one.</p>
-                </Link>
-                <Link to="/cursos-ingles/particulares" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/particulares" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Cursos Particulares
                   </h3>
                   <p className="text-gray-600 text-sm">Clases one-to-one con la estructura y calidad de una academia.</p>
-                </Link>
-                <Link to="/contacto" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                </a>
+                <a href="/contacto" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Contacto
                   </h3>
                   <p className="text-gray-600 text-sm">Cuéntanos tu caso y te orientamos sin compromiso.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -405,7 +397,6 @@ export default function ClasesParticularesVsAcademiaPage() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

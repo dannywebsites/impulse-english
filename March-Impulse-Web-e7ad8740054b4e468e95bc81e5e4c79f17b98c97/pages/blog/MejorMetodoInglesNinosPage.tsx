@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function MejorMetodoInglesNinosPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Mejor Método de Inglés para Niños: Comparativa 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: '¿Cuál es el Mejor Método de Inglés para Niños? Comparativa',
     description: 'Compara los mejores métodos de inglés para niños: inmersión total, CLIL, TPR, juego y Great Little People. Descubre cuál es más efectivo según la edad.',
     url: `${businessInfo.url}/blog/mejor-metodo-ingles-ninos`,
     datePublished: '2025-03-01'
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: '¿Es mejor la inmersión total o el método bilingüe?',
       answer: 'Para niños hasta 6 años, la inmersión total (solo inglés en clase) da mejores resultados. Para primaria, el bilingüe CLIL (inglés como vehículo para otras materias) es muy efectivo.'
-    },
+    }
+
+  ,
     {
       question: '¿Los métodos con canciones y rimas funcionan?',
       answer: 'Sí, especialmente para 2-5 años. Las canciones aprovegan la memoria musical, más duradera que la semántica. Pero deben complementarse con interacción real, no ser el único método.'
@@ -43,16 +34,17 @@ export default function MejorMetodoInglesNinosPage() {
     }
   ];
 
+export default function MejorMetodoInglesNinosPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="Mejor Método de Inglés para Niños: Comparativa 2026"
-        description="Compara los mejores métodos de inglés para niños: inmersión total, CLIL, TPR, juego y Great Little People. Descubre cuál es más efectivo según la edad."
-        keywords="mejor método inglés niños, métodos inglés infantil, enseñar inglés niños, metodología inglés niños"
-        canonical="/blog/mejor-metodo-ingles-ninos"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -324,11 +316,11 @@ export default function MejorMetodoInglesNinosPage() {
                         <ChevronDown className="w-5 h-5 text-purple-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -340,37 +332,37 @@ export default function MejorMetodoInglesNinosPage() {
               <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
                 Clases de inglés infantil con metodología probada, grupos reducidos y profesores especializados.
               </p>
-              <Link
-                to="/cursos-ingles/infantil"
+              <a
+              href="/cursos-ingles/infantil"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Ver clases infantil
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link to="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>
                   <p className="text-gray-600 text-sm">Clases para bebés y niños pequeños en Madrid.</p>
-                </Link>
-                <Link to="/blog/ingles-jugando-funciona" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/blog/ingles-jugando-funciona" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     ¿Inglés Jugando Funciona?
                   </h3>
                   <p className="text-gray-600 text-sm">La ciencia detrás del aprendizaje lúdico.</p>
-                </Link>
-                <Link to="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Primaria
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés para niños de 6 a 12 años con Cambridge prep.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -400,7 +392,6 @@ export default function MejorMetodoInglesNinosPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

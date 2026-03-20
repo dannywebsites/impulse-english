@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PrecioLinguaskillReservarPage, { articleSchema, faqs } from '../../../pages/blog/PrecioLinguaskillReservarPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Precio Linguaskill 2025: Tarifas, Descuentos y Cómo Reservar tu Examen"
+  description="Descubre el precio del examen Linguaskill en 2025 (130€), tarifas universitarias (120€), descuentos y cómo reservar paso a paso. Guía completa actualizada con toda la información."
+  canonical="/blog/precio-linguaskill-reservar"
+  ogType="article"
+  schemas={schemas}
+>
+  <PrecioLinguaskillReservarPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

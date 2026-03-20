@@ -1,18 +1,15 @@
 import React, { useEffect } from 'react';
 import { User, Video, MapPin, Calendar, Target, Clock, CheckCircle, Phone, Briefcase, FileText, Award } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
 import OptimizedImage from '../../components/OptimizedImage';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import Breadcrumb from '../../components/Breadcrumb';
-import SEOHead from '../../components/SEOHead';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import { facilityImages, brandingImages, s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
 
-const courseSchema = generateCourseSchema({
+export const courseSchema = generateCourseSchema({
   name: "Clases Particulares de Inglés (1:1)",
   description: "Clases particulares de inglés 1:1 en La Vaguada / Barrio del Pilar. 100% personalizadas, horarios flexibles, online o presencial. Preparación Cambridge y centro oficial Linguaskill.",
   url: `${businessInfo.url}/cursos-ingles/particulares`,
@@ -50,7 +47,7 @@ const courseGalleryImages = [
   },
 ];
 
-const faqs = [
+export const faqs = [
   {
     q: "¿Qué es mejor: clases particulares o grupo reducido?",
     a: "Depende de tu objetivo. Si necesitas rapidez, un plan muy específico o tienes horarios variables, 1:1 suele ser más eficiente. Si buscas constancia y practicar con más interacción social, un grupo reducido funciona muy bien. Te recomendamos lo mejor tras conocerte y evaluarte."
@@ -115,13 +112,7 @@ export default function ParticularesPage() {
 
   return (
     <>
-      <SEOHead
-        title="Clases Particulares de Inglés (1:1) | Online y Presencial"
-        description="Clases particulares de inglés 1:1 en La Vaguada / Barrio del Pilar. 100% personalizadas, horarios flexibles, online o presencial. Preparación Cambridge y centro oficial Linguaskill."
-        keywords="clases particulares inglés la vaguada, profesor particular inglés barrio del pilar, clases privadas inglés madrid"
-        canonical="/cursos-ingles/particulares"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
@@ -246,10 +237,10 @@ export default function ParticularesPage() {
             {/* Location and Course Links */}
             <div className="mt-6 p-4 bg-orange-50 rounded-xl border border-orange-100">
               <p className="text-zinc-700 text-sm mb-3">
-                <strong>¿Dónde estamos?</strong> Clases presenciales en nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-orange-600 hover:underline font-medium">academia en Barrio del Pilar</Link>, junto a <Link to="/academia-ingles-la-vaguada" className="text-orange-600 hover:underline font-medium">La Vaguada</Link>. También accesible desde <Link to="/academia-ingles-cuatro-torres" className="text-orange-600 hover:underline font-medium">Cuatro Torres</Link> y <Link to="/academia-ingles-plaza-castilla" className="text-orange-600 hover:underline font-medium">Plaza Castilla</Link>.
+                <strong>¿Dónde estamos?</strong> Clases presenciales en nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-orange-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-orange-600 hover:underline font-medium">La Vaguada</a>. También accesible desde <a href="/academia-ingles-cuatro-torres" className="text-orange-600 hover:underline font-medium">Cuatro Torres</a> y <a href="/academia-ingles-plaza-castilla" className="text-orange-600 hover:underline font-medium">Plaza Castilla</a>.
               </p>
               <p className="text-zinc-600 text-sm">
-                Preparamos <Link to="/examenes-cambridge" className="text-orange-600 hover:underline font-medium">exámenes Cambridge</Link> (<Link to="/examenes-cambridge/b2-first" className="text-orange-600 hover:underline font-medium">B2 First</Link>, <Link to="/examenes-cambridge/c1-advanced" className="text-orange-600 hover:underline font-medium">C1 Advanced</Link>) y <Link to="/linguaskill" className="text-orange-600 hover:underline font-medium">Linguaskill</Link>. Si prefieres grupos reducidos, consulta nuestros <Link to="/cursos-ingles/adultos" className="text-orange-600 hover:underline font-medium">cursos para adultos</Link>.
+                Preparamos <a href="/examenes-cambridge" className="text-orange-600 hover:underline font-medium">exámenes Cambridge</a> (<a href="/examenes-cambridge/b2-first" className="text-orange-600 hover:underline font-medium">B2 First</a>, <a href="/examenes-cambridge/c1-advanced" className="text-orange-600 hover:underline font-medium">C1 Advanced</a>) y <a href="/linguaskill" className="text-orange-600 hover:underline font-medium">Linguaskill</a>. Si prefieres grupos reducidos, consulta nuestros <a href="/cursos-ingles/adultos" className="text-orange-600 hover:underline font-medium">cursos para adultos</a>.
               </p>
             </div>
 
@@ -388,12 +379,12 @@ export default function ParticularesPage() {
                 <Phone className="w-5 h-5" />
                 Contactar por WhatsApp
               </a>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Más formas de contacto
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -462,7 +453,6 @@ export default function ParticularesPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={courseSchema} />
-    </>
+</>
   );
 }

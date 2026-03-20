@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Award, CheckCircle, ArrowRight, Trophy, Users, FileText, Target, HelpCircle } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -7,13 +6,11 @@ import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import { s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
 
 // Article Schema for SEO
-const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
   headline: "Exámenes Cambridge: Guía Completa de Certificaciones de Inglés 2025",
   description: "Todo sobre los exámenes Cambridge: niveles A2 Key, B1 Preliminary, B2 First, C1 Advanced y Linguaskill. Comparativa, precios, validez y preparación.",
   url: `${businessInfo.url}/examenes-cambridge`,
@@ -116,6 +113,15 @@ const stats = [
   { number: "100%", label: "Alumnos satisfechos" }
 ];
 
+export const courseSchema = generateCourseSchema({
+        name: "Preparación Oficial de Exámenes Cambridge en Madrid",
+        description: "Cursos de preparación para exámenes Cambridge en Madrid: B1 Preliminary (PET), B2 First (FCE) y C1 Advanced (CAE). Centro oficial Cambridge con 100% de aprobados. Clases para hispanohablantes con metodología probada, grupos reducidos y material incluido.",
+        url: `${businessInfo.url}/examenes-cambridge`,
+        courseCode: "CAM-HUB",
+        educationalLevel: "B1, B2 y C1 — Todos los niveles Cambridge",
+        timeRequired: "P9M"
+      });
+
 export default function CambridgeHubPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -137,13 +143,7 @@ export default function CambridgeHubPage() {
 
   return (
     <>
-      <SEOHead
-        title="Exámenes Cambridge | Centro Preparador Oficial"
-        description="Centro preparador Cambridge oficial en Madrid. B1 Preliminary, B2 First, C1 Advanced. 100% aprobados. Academia Barrio del Pilar, La Vaguada."
-        keywords="exámenes cambridge madrid, preparación cambridge, b2 first madrid, c1 advanced madrid, centro cambridge oficial"
-        canonical="/examenes-cambridge"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
@@ -246,9 +246,9 @@ export default function CambridgeHubPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {examLevels.map((exam, index) => (
-              <Link
+              <a
                 key={index}
-                to={exam.href}
+                href={exam.href}
                 className={`relative bg-white rounded-xl shadow-sm border border-zinc-100 p-6 hover:shadow-xl transition-all duration-300 group reveal-on-scroll opacity-0 translate-y-8 ${exam.popular ? 'ring-2 ring-accent-blue' : ''}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
@@ -274,7 +274,7 @@ export default function CambridgeHubPage() {
                   Ver detalles
                   <ArrowRight className="w-4 h-4" />
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -311,16 +311,16 @@ export default function CambridgeHubPage() {
           <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
             <h3 className="font-bold text-zinc-900 mb-4 text-lg">¿Dónde preparar tu examen Cambridge?</h3>
             <p className="text-zinc-700 text-sm mb-4">
-              Nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline font-medium">academia en Barrio del Pilar</Link>, junto a <Link to="/academia-ingles-la-vaguada" className="text-accent-blue hover:underline font-medium">La Vaguada</Link>, es centro preparador oficial Cambridge. Bien comunicada desde <Link to="/academia-ingles-plaza-castilla" className="text-accent-blue hover:underline font-medium">Plaza Castilla</Link>, <Link to="/academia-ingles-tetuan" className="text-accent-blue hover:underline font-medium">Tetuán</Link> y <Link to="/academia-ingles-cuatro-torres" className="text-accent-blue hover:underline font-medium">Cuatro Torres</Link>.
+              Nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-accent-blue hover:underline font-medium">La Vaguada</a>, es centro preparador oficial Cambridge. Bien comunicada desde <a href="/academia-ingles-plaza-castilla" className="text-accent-blue hover:underline font-medium">Plaza Castilla</a>, <a href="/academia-ingles-tetuan" className="text-accent-blue hover:underline font-medium">Tetuán</a> y <a href="/academia-ingles-cuatro-torres" className="text-accent-blue hover:underline font-medium">Cuatro Torres</a>.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link to="/cursos-ingles/adultos" className="text-accent-blue hover:underline text-sm">Cursos adultos</Link>
+              <a href="/cursos-ingles/adultos" className="text-accent-blue hover:underline text-sm">Cursos adultos</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/cursos-ingles/secundaria" className="text-accent-blue hover:underline text-sm">Cursos secundaria</Link>
+              <a href="/cursos-ingles/secundaria" className="text-accent-blue hover:underline text-sm">Cursos secundaria</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/cursos-ingles/particulares" className="text-accent-blue hover:underline text-sm">Clases particulares</Link>
+              <a href="/cursos-ingles/particulares" className="text-accent-blue hover:underline text-sm">Clases particulares</a>
               <span className="text-zinc-400">•</span>
-              <Link to="/academias-ingles-madrid/por-barrios" className="text-accent-blue hover:underline text-sm">Ver todas las ubicaciones</Link>
+              <a href="/academias-ingles-madrid/por-barrios" className="text-accent-blue hover:underline text-sm">Ver todas las ubicaciones</a>
             </div>
           </div>
         </div>
@@ -525,14 +525,6 @@ export default function CambridgeHubPage() {
       <Footer />
 
       {/* Schema Markup */}
-      <SchemaMarkup schema={[articleSchema, generateCourseSchema({
-        name: "Preparación Oficial de Exámenes Cambridge en Madrid",
-        description: "Cursos de preparación para exámenes Cambridge en Madrid: B1 Preliminary (PET), B2 First (FCE) y C1 Advanced (CAE). Centro oficial Cambridge con 100% de aprobados. Clases para hispanohablantes con metodología probada, grupos reducidos y material incluido.",
-        url: `${businessInfo.url}/examenes-cambridge`,
-        courseCode: "CAM-HUB",
-        educationalLevel: "B1, B2 y C1 — Todos los niveles Cambridge",
-        timeRequired: "P9M"
-      })]} />
-    </>
+</>
   );
 }

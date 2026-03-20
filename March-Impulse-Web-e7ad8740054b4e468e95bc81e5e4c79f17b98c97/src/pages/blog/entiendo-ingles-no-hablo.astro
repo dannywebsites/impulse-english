@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EntiendoInglesNoHabloPage, { articleSchema, faqItems } from '../../../pages/blog/EntiendoInglesNoHabloPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Entiendo Inglés Pero No Lo Hablo: Por Qué y Cómo Solucionarlo"
+  description="Es normal entender inglés pero no hablarlo. Se debe al desequilibrio entre habilidades pasivas y activas. Descubre 5 estrategias para empezar a hablar."
+  canonical="/blog/entiendo-ingles-no-hablo"
+  ogType="article"
+  schemas={schemas}
+>
+  <EntiendoInglesNoHabloPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

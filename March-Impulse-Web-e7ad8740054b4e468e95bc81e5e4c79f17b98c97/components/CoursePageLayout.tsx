@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Clock, Users, Award, BookOpen } from 'lucide-react';
 import Navbar from './Navbar';
 import Footer from './Footer';

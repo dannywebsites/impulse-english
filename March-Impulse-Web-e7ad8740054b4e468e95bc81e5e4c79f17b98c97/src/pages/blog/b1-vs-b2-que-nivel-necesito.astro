@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import B1VsB2QueNivelNecesitoPage, { articleSchema, faqItems } from '../../../pages/blog/B1VsB2QueNivelNecesitoPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="B1 vs B2 Cambridge: Diferencias y Qué Nivel Necesitas 2026"
+  description="Compara B1 y B2 de Cambridge: dificultad, reconocimiento laboral, uso académico y precio. Guía para elegir el nivel que necesitas según tu situación."
+  canonical="/blog/b1-vs-b2-que-nivel-necesito"
+  ogType="article"
+  schemas={schemas}
+>
+  <B1VsB2QueNivelNecesitoPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

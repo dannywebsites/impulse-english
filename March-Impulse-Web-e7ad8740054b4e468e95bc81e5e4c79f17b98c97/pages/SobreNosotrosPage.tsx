@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Award, Users, Target, Heart, CheckCircle, Home, UserCheck, Eye } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
@@ -8,9 +7,6 @@ import FAQSection from '../components/FAQSection';
 import LazyVideo from '../components/LazyVideo';
 import OptimizedImage from '../components/OptimizedImage';
 import Breadcrumb from '../components/Breadcrumb';
-import SEOHead from '../components/SEOHead';
-import SchemaMarkup from '../components/SchemaMarkup';
-import { generateOrganizationSchema } from '../utils/schemaData';
 import { facilityImages, certificationImages, studentImages } from '../src/data/images';
 
 const certifications = [
@@ -63,12 +59,6 @@ export default function SobreNosotrosPage() {
 
   return (
     <>
-      <SEOHead
-        title="Sobre Nosotros"
-        description="Conoce Impulse English Academy. Centro preparador Cambridge oficial en La Vaguada, Madrid. Más de 10 años enseñando inglés. 100% aprobados."
-        keywords="sobre nosotros academia inglés, quienes somos impulse english, historia academia inglés madrid, equipo profesores inglés"
-        canonical="/sobre-nosotros"
-      />
       <Navbar />
 
       {/* Hero Section */}
@@ -337,18 +327,18 @@ export default function SobreNosotrosPage() {
               Te invitamos a conocernos, a formar parte de esta comunidad especial que hemos construido en el corazón de La Vaguada, Madrid. Aquí encontrarás más que clases de inglés—encontrarás un espacio donde los errores se celebran, donde el aprendizaje es colaborativo, y donde cada persona importa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Reservar Clase de Prueba
-              </Link>
-              <Link
-                to="/contacto"
+              </a>
+              <a
+              href="/contacto"
                 className="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-8 rounded-lg border border-white/30 transition-colors"
               >
                 Contactar
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -368,7 +358,6 @@ export default function SobreNosotrosPage() {
       </section>
 
       <Footer />
-      <SchemaMarkup schema={generateOrganizationSchema()} />
     </>
   );
 }

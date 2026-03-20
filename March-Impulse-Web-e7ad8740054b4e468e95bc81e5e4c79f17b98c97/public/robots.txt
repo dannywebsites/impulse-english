@@ -11,5 +11,8 @@ Sitemap: https://impulse-english.es/sitemap-images.xml
 # Disallow admin/utility pages
 Disallow: /gracias
 
+# LLM reference file
+Llms: /llms.txt
+
 # Crawl-delay (optional, for polite crawling)
 Crawl-delay: 1

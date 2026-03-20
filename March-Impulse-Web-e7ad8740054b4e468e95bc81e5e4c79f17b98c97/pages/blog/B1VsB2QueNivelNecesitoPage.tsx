@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function B1VsB2QueNivelNecesitoPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'B1 vs B2 Cambridge: Diferencias y Qué Nivel Necesitas 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "B1 vs B2 Cambridge: ¿Qué Nivel Necesitas?",
     description: "Compara B1 y B2 de Cambridge: dificultad, reconocimiento laboral, uso académico y precio. Guía para elegir el nivel que necesitas según tu situación.",
     url: `${businessInfo.url}/blog/b1-vs-b2-que-nivel-necesito`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Es muy difícil pasar de B1 a B2?",
       answer: "El salto de B1 a B2 requiere 150-200 horas adicionales de estudio. Es el nivel donde más abandonan, por eso es importante una buena preparación estructurada."
-    },
+    }
+
+  ,
     {
       question: "¿B1 sirve para entrar a la universidad?",
       answer: "El B1 es el mínimo exigido para graduación en muchas universidades españolas, pero para acceso a programas Erasmus o posgrado suelen pedir B2."
@@ -47,16 +38,17 @@ export default function B1VsB2QueNivelNecesitoPage() {
     }
   ];
 
+export default function B1VsB2QueNivelNecesitoPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="B1 vs B2 Cambridge: Diferencias y Qué Nivel Necesitas 2026"
-        description="Compara B1 y B2 de Cambridge: dificultad, reconocimiento laboral, uso académico y precio. Guía para elegir el nivel que necesitas según tu situación."
-        keywords="b1 vs b2, diferencia b1 b2, qué nivel inglés necesito, b1 o b2 cambridge"
-        canonical="/blog/b1-vs-b2-que-nivel-necesito"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -355,11 +347,11 @@ export default function B1VsB2QueNivelNecesitoPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -373,7 +365,7 @@ export default function B1VsB2QueNivelNecesitoPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  La elección entre <Link to="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">B1</Link> y <Link to="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2</Link> no es solo de dificultad, es de estrategia. El B2 abre significativamente más puertas laborales y académicas, pero requiere una preparación más seria. Si tu nivel actual lo permite, el B2 es la inversión más rentable.
+                  La elección entre <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">B1</a> y <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2</a> no es solo de dificultad, es de estrategia. El B2 abre significativamente más puertas laborales y académicas, pero requiere una preparación más seria. Si tu nivel actual lo permite, el B2 es la inversión más rentable.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Lo más importante es partir de un diagnóstico de nivel correcto para no prepararse a un examen que no se puede aprobar ni infraprepararse para uno que está por debajo de tu nivel real. Te evaluamos sin compromiso para orientarte al examen correcto.
@@ -387,37 +379,37 @@ export default function B1VsB2QueNivelNecesitoPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 Una prueba de nivel gratuita te dirá exactamente si estás listo para B1 o B2 y cuánto tiempo necesitarías prepararte.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Prueba de nivel gratuita
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía B1 Preliminary Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B1: estructura, preparación y tasas de aprobados.</p>
-                </Link>
-                <Link to="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía B2 First Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B2 First: el más valorado en el mercado español.</p>
-                </Link>
-                <Link to="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     La Escala Cambridge Explicada
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo funciona la puntuación Cambridge y qué significa tu nota.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -448,7 +440,6 @@ export default function B1VsB2QueNivelNecesitoPage() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

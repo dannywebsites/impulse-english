@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AvisoLegalPage from '../../pages/legal/AvisoLegalPage';
+import CookieBanner from '../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Aviso Legal"
+  description="Aviso legal e información de la empresa Impulse English Academy. Datos fiscales y condiciones de uso."
+  canonical="/aviso-legal"
+>
+  <AvisoLegalPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

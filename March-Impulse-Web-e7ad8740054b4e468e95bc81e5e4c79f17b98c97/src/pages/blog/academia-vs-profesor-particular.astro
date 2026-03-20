@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AcademiaVsProfesorParticularPage, { articleSchema, faqItems } from '../../../pages/blog/AcademiaVsProfesorParticularPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Academia vs Profesor Particular de Inglés: ¿Qué es Mejor? 2026"
+  description="Compara academia y profesor particular de inglés: precios, metodología, resultados y flexibilidad. Descubre cuál se adapta mejor a tus necesidades."
+  canonical="/blog/academia-vs-profesor-particular"
+  ogType="article"
+  schemas={schemas}
+>
+  <AcademiaVsProfesorParticularPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

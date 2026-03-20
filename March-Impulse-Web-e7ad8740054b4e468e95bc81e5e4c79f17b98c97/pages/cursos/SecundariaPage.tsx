@@ -1,21 +1,18 @@
 import React, { useEffect } from 'react';
 import { GraduationCap, FileText, Target, TrendingUp, Clock, Award, Users, Phone, Calendar, CheckCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
 import OptimizedImage from '../../components/OptimizedImage';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
-import SEOHead from '../../components/SEOHead';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import AcademyGallery from '../../components/AcademyGallery';
 import { secundariaImages as galleryImages } from '../../src/data/academyImages';
 import { studentImages } from '../../src/data/images';
 
-const courseSchema = generateCourseSchema({
+export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Secundaria (13-17 años)",
   description: "Clases de inglés para secundaria en La Vaguada / Barrio del Pilar. Preparación EBAU y Cambridge B1, B2, C1 con grupos reducidos y seguimiento. 100% aprobados 2024/2025.",
   url: `${businessInfo.url}/cursos-ingles/secundaria`,
@@ -26,7 +23,7 @@ const courseSchema = generateCourseSchema({
 });
 
 
-const faqs = [
+export const faqs = [
   {
     question: "¿Qué nivel suele tener un alumno de 4º ESO?",
     answer: "Suele estar alrededor de B1, aunque varía mucho. Por eso hacemos prueba de nivel y observación, para no perder tiempo. Si el alumno está en B1, trazamos un plan para consolidar base y avanzar hacia B2, que es el estándar más solicitado."
@@ -97,13 +94,7 @@ export default function SecundariaPage() {
 
   return (
     <>
-      <SEOHead
-        title="Inglés Secundaria (13–17) | EBAU + Cambridge B1–C1"
-        description="Clases de inglés para secundaria en La Vaguada / Barrio del Pilar. Preparación EBAU y Cambridge B1, B2, C1 con grupos reducidos y seguimiento. 100% aprobados 2024/2025."
-        keywords="clases inglés secundaria la vaguada, preparación EBAU inglés, cambridge b1 b2 c1 adolescentes, inglés bachillerato barrio del pilar"
-        canonical="/cursos-ingles/secundaria"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
@@ -143,12 +134,12 @@ export default function SecundariaPage() {
               Preparación EBAU y Cambridge B1, B2, C1 en La Vaguada. Grupos por nivel real, seguimiento continuo y 100% de aprobados.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-white text-indigo-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-amber-50 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
-              </Link>
+              </a>
               <a
                 href="tel:+34604910611"
                 className="backdrop-blur-sm text-white border border-white/25 font-display font-medium py-4 px-8 rounded-lg hover:bg-white/10 transition-all duration-300 text-center flex items-center justify-center gap-2"
@@ -217,10 +208,10 @@ export default function SecundariaPage() {
             {/* Location and Certification Links */}
             <div className="mt-6 p-4 bg-indigo-50 rounded-xl border border-indigo-100">
               <p className="text-zinc-700 text-sm mb-3">
-                <strong>¿Dónde estamos?</strong> Nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-indigo-600 hover:underline font-medium">academia en Barrio del Pilar</Link>, junto a <Link to="/academia-ingles-la-vaguada" className="text-indigo-600 hover:underline font-medium">La Vaguada</Link>, está a solo 2 minutos del metro.
+                <strong>¿Dónde estamos?</strong> Nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-indigo-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-indigo-600 hover:underline font-medium">La Vaguada</a>, está a solo 2 minutos del metro.
               </p>
               <p className="text-zinc-600 text-sm">
-                Prepara tu <Link to="/examenes-cambridge/b1-preliminary" className="text-indigo-600 hover:underline font-medium">B1 Preliminary</Link>, <Link to="/examenes-cambridge/b2-first" className="text-indigo-600 hover:underline font-medium">B2 First</Link> o C1 Advanced. Si necesitas certificar rápido para la universidad, <Link to="/linguaskill" className="text-indigo-600 hover:underline font-medium">Linguaskill</Link> te da resultados en 48h.
+                Prepara tu <a href="/examenes-cambridge/b1-preliminary" className="text-indigo-600 hover:underline font-medium">B1 Preliminary</a>, <a href="/examenes-cambridge/b2-first" className="text-indigo-600 hover:underline font-medium">B2 First</a> o C1 Advanced. Si necesitas certificar rápido para la universidad, <a href="/linguaskill" className="text-indigo-600 hover:underline font-medium">Linguaskill</a> te da resultados en 48h.
               </p>
             </div>
           </div>
@@ -305,22 +296,22 @@ export default function SecundariaPage() {
             <div className="bg-white/10 p-6 rounded-xl">
               <h3 className="font-bold text-white mb-2">Exámenes Cambridge</h3>
               <p className="text-white/70 text-sm mb-4">B1 Preliminary, B2 First, C1 Advanced</p>
-              <Link
-                to="/examenes-cambridge"
+              <a
+              href="/examenes-cambridge"
                 className="inline-block bg-white text-indigo-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-indigo-900 transition-colors text-sm"
               >
                 Ver exámenes Cambridge
-              </Link>
+              </a>
             </div>
             <div className="bg-white/10 p-6 rounded-xl">
               <h3 className="font-bold text-white mb-2">Linguaskill</h3>
               <p className="text-white/70 text-sm mb-4">Certificado en 48h. Ideal para requisitos universitarios urgentes</p>
-              <Link
-                to="/linguaskill"
+              <a
+              href="/linguaskill"
                 className="inline-block bg-white text-indigo-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-indigo-900 transition-colors text-sm"
               >
                 Conocer Linguaskill
-              </Link>
+              </a>
             </div>
           </div>
           <p className="text-white/90 font-medium">
@@ -400,12 +391,12 @@ export default function SecundariaPage() {
               Te ubicamos en el grupo adecuado según tu nivel real. Sin compromiso.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Solicitar prueba de nivel
-              </Link>
+              </a>
               <a
                 href="https://wa.me/34604910611?text=Hola,%20me%20gustaría%20información%20sobre%20inglés%20para%20secundaria"
                 target="_blank"
@@ -453,7 +444,6 @@ export default function SecundariaPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={courseSchema} />
-    </>
+</>
   );
 }

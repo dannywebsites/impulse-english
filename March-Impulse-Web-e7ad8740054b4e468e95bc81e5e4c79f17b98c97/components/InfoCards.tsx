@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight, Users, Award, BookOpen } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { s3FacilityImages } from '../src/data/images';
 
 export default function InfoCards() {
@@ -83,19 +82,19 @@ export default function InfoCards() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link
-                to="/sobre-nosotros"
+              <a
+                href="/sobre-nosotros"
                 className="inline-flex items-center justify-center gap-2 bg-accent-blue text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Conocer más
                 <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link
-                to="/examenes-cambridge"
+              </a>
+              <a
+                href="/examenes-cambridge"
                 className="inline-flex items-center justify-center gap-2 border-2 border-accent-blue text-accent-blue font-semibold py-3 px-6 rounded-lg hover:bg-accent-blue hover:text-white transition-colors"
               >
                 Exámenes Cambridge
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CambridgeHubPage, { articleSchema, courseSchema } from '../../../pages/examenes-cambridge/CambridgeHubPage';
+import CookieBanner from '../../../components/CookieBanner';
+
+const schemas = [
+  articleSchema,
+  courseSchema,
+];
+---
+
+<BaseLayout
+  title="Exámenes Cambridge | Centro Preparador Oficial"
+  description="Centro preparador Cambridge oficial en Madrid. B1 Preliminary, B2 First, C1 Advanced. 100% aprobados. Academia Barrio del Pilar, La Vaguada."
+  keywords="exámenes cambridge madrid, preparación cambridge, b2 first madrid, c1 advanced madrid, centro cambridge oficial"
+  canonical="/examenes-cambridge"
+  schemas={schemas}
+>
+  <CambridgeHubPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

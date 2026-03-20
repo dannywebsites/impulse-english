@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import { CheckCircle, Phone, Clock, MapPin, Instagram, Facebook, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import SEOHead from '../components/SEOHead';
 
 const nextSteps = [
   {
@@ -44,12 +42,6 @@ export default function GraciasPage() {
 
   return (
     <>
-      <SEOHead
-        title="Gracias por Contactarnos"
-        description="Tu solicitud ha sido recibida. Te contactaremos en menos de 24 horas."
-        canonical="/gracias"
-        noindex={true}
-      />
       <Navbar />
 
       {/* Hero Section */}
@@ -257,9 +249,9 @@ export default function GraciasPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {courses.map((course, index) => (
-              <Link
+              <a
                 key={index}
-                to={course.href}
+                href={course.href}
                 className="p-4 bg-zinc-50 rounded-lg border border-zinc-100 hover:bg-accent-blue hover:text-white group transition-colors"
               >
                 <h3 className="font-bold text-zinc-900 group-hover:text-white mb-1">{course.name}</h3>
@@ -267,7 +259,7 @@ export default function GraciasPage() {
                 <div className="flex items-center gap-1 text-accent-blue group-hover:text-white text-sm font-semibold mt-2">
                   Ver Más <ArrowRight className="w-4 h-4" />
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -287,12 +279,12 @@ export default function GraciasPage() {
             El equipo de Impulse English Academy
           </p>
 
-          <Link
-            to="/"
+          <a
+              href="/"
             className="inline-block mt-8 bg-white text-accent-blue font-bold py-3 px-8 rounded-lg hover:bg-zinc-100 transition-colors"
           >
             Volver al Inicio
-          </Link>
+          </a>
         </div>
       </section>
 

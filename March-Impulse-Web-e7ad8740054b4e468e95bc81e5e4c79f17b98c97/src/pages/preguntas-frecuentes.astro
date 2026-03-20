@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PreguntasFrecuentesPage from '../../pages/PreguntasFrecuentesPage';
+import CookieBanner from '../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Preguntas Frecuentes"
+  description="Respuestas a todas tus preguntas sobre cursos, horarios, precios, exámenes Cambridge y Linguaskill. Academia de inglés en La Vaguada, Barrio del Pilar."
+  keywords="preguntas frecuentes academia inglés, faq clases inglés madrid, dudas cambridge linguaskill, información cursos inglés"
+  canonical="/preguntas-frecuentes"
+>
+  <PreguntasFrecuentesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

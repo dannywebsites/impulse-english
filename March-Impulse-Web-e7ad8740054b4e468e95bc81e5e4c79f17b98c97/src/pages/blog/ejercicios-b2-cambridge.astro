@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EjerciciosB2CambridgePage, { articleSchema, faqs } from '../../../pages/blog/EjerciciosB2CambridgePage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Ejercicios B2 Cambridge First 2026: Guía Práctica por Secciones | Reading, Writing, Listening, Speaking"
+  description="Tipos de ejercicios del B2 First Cambridge: Reading, Use of English, Writing, Listening y Speaking. Estrategias, ejemplos y recursos gratuitos para practicar."
+  canonical="/blog/ejercicios-b2-cambridge"
+  ogType="article"
+  schemas={schemas}
+>
+  <EjerciciosB2CambridgePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

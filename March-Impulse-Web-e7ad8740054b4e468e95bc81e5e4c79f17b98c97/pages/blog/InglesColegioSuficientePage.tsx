@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function InglesColegioSuficientePage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = '¿El Inglés del Colegio es Suficiente? Realidad y Datos 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: '¿El Inglés del Colegio es Suficiente? Lo que los Padres Deben Saber',
     description: 'El inglés del colegio suele ser insuficiente: solo 2-3 horas semanales con grupos de 25 alumnos. Descubre por qué y cómo complementar la formación de tu hijo.',
     url: `${businessInfo.url}/blog/ingles-colegio-suficiente`,
     datePublished: '2025-03-01'
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: '¿Cuántas horas de inglés tienen los niños en el colegio?',
       answer: 'En la mayoría de colegios españoles, 2-3 horas semanales. En colegios bilingües, 4-8 horas. El Consejo de Europa recomienda mínimo 5 horas semanales para adquisición efectiva.'
-    },
+    }
+
+  ,
     {
       question: '¿Los colegios bilingües resuelven el problema?',
       answer: 'Parcialmente. Los bilingües mejoran vocabulario y comprensión, pero el speaking e interacción real suelen ser limitados. Muchos alumnos de colegios bilingües tienen dificultad para mantener conversaciones fluidas.'
@@ -43,16 +34,17 @@ export default function InglesColegioSuficientePage() {
     }
   ];
 
+export default function InglesColegioSuficientePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="¿El Inglés del Colegio es Suficiente? Realidad y Datos 2026"
-        description="El inglés del colegio suele ser insuficiente: solo 2-3 horas semanales con grupos de 25 alumnos. Descubre por qué y cómo complementar la formación de tu hijo."
-        keywords="inglés colegio suficiente, refuerzo inglés niños, horas inglés colegio, inglés extraescolar necesario"
-        canonical="/blog/ingles-colegio-suficiente"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -305,11 +297,11 @@ export default function InglesColegioSuficientePage() {
                         <ChevronDown className="w-5 h-5 text-purple-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -321,37 +313,37 @@ export default function InglesColegioSuficientePage() {
               <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
                 Metodología que genera resultados medibles. Grupos reducidos, preparación Cambridge y profesores especializados.
               </p>
-              <Link
-                to="/cursos-ingles/primaria"
+              <a
+              href="/cursos-ingles/primaria"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Ver cursos de primaria
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link to="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Primaria
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés para niños de 6 a 12 años en Madrid.</p>
-                </Link>
-                <Link to="/cursos-ingles/secundaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/secundaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Secundaria
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés para adolescentes de 12 a 18 años.</p>
-                </Link>
-                <Link to="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés para los más pequeños antes del colegio.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -381,7 +373,6 @@ export default function InglesColegioSuficientePage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

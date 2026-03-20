@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RegistroCambridgePage, { articleSchema, faqs } from '../../../pages/blog/RegistroCambridgePage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Cómo Registrarse en Exámenes Cambridge 2025: Guía Paso a Paso - Inscripción"
+  description="Guía completa para registrarse en exámenes Cambridge en España: proceso de inscripción paso a paso, documentos necesarios, plazos, precios y centros autorizados."
+  canonical="/blog/registro-cambridge"
+  ogType="article"
+  schemas={schemas}
+>
+  <RegistroCambridgePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

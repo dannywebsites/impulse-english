@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ClasesParticularesVsAcademiaPage, { articleSchema, faqItems } from '../../../pages/blog/ClasesParticularesVsAcademiaPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Clases Particulares vs Academia de Inglés: Comparativa 2026"
+  description="Compara clases particulares y academia de inglés: precio (30-50€/h vs 64-79€/mes), método, resultados y flexibilidad. Descubre cuál se adapta a tu perfil."
+  canonical="/blog/clases-particulares-vs-academia"
+  ogType="article"
+  schemas={schemas}
+>
+  <ClasesParticularesVsAcademiaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

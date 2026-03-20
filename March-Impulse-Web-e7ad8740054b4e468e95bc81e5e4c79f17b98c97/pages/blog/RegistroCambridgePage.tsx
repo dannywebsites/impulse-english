@@ -1,33 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, FileText, CheckCircle, AlertTriangle, ArrowRight, UserCheck } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function RegistroCambridgePage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Cómo Registrarse en Exámenes Cambridge 2025 | Guía Paso a Paso | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Cómo Registrarse en Exámenes Cambridge 2025: Guía Paso a Paso",
     description: "Guía completa para registrarse en exámenes Cambridge en España. Proceso de inscripción, documentos necesarios y plazos importantes.",
     url: `${businessInfo.url}/blog/registro-cambridge`,
     datePublished: "2025-01-02"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Puedo registrarme directamente en la web de Cambridge English?",
       answer: "No, Cambridge English no gestiona inscripciones individuales de candidatos. Debes registrarte obligatoriamente a través de un centro examinador autorizado de tu zona. Estos centros son los únicos con capacidad legal para procesar tu inscripción, cobrar las tasas y organizar las sesiones de examen. Puedes buscar tu centro más cercano usando la herramienta oficial \"Find a Centre\" en cambridgeenglish.org."
-    },
+    }
+
+  ,
     {
       question: "¿Qué ocurre si mi documento de identidad caduca antes del examen?",
       answer: "Tu documento debe estar vigente el día de todas las pruebas, incluyendo el Speaking si se realiza en fecha diferente. Si tu DNI o pasaporte caduca antes, renuévalo inmediatamente o no podrás realizar el examen bajo ninguna circunstancia. No se aceptan documentos caducados ni certificados provisionales de renovación. Planifica con meses de antelación para evitar este problema común."
@@ -45,6 +37,13 @@ export default function RegistroCambridgePage() {
       answer: "Sí, candidatos menores de 18 años requieren firma de consentimiento de padres o tutores legales en el formulario de inscripción. Para menores de 14 años, esta autorización es aún más estricta e incluye la responsabilidad de un adulto que debe acompañar al menor el día del examen. La documentación específica varía según el centro, así que consulta sus requisitos particulares durante el registro inicial."
     }
   ];
+
+export default function RegistroCambridgePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   const registrationSteps = [
     {
@@ -76,14 +75,7 @@ export default function RegistroCambridgePage() {
 
   return (
     <>
-      <SEOHead
-        title="Cómo Registrarse en Exámenes Cambridge 2025: Guía Paso a Paso - Inscripción"
-        description="Guía completa para registrarse en exámenes Cambridge en España: proceso de inscripción paso a paso, documentos necesarios, plazos, precios y centros autorizados."
-        keywords="registro cambridge, inscripción examen cambridge, cómo inscribirse cambridge, centros cambridge españa, fechas cambridge 2025"
-        canonical="/blog/registro-cambridge"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -365,11 +357,11 @@ export default function RegistroCambridgePage() {
                         <ChevronDown className="w-5 h-5 text-sky-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -383,10 +375,10 @@ export default function RegistroCambridgePage() {
 
               <div className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El registro Cambridge es un proceso estructurado que requiere atención a detalles específicos: elegir el centro autorizado correcto, preparar documentación vigente, respetar plazos de inscripción y confirmar el pago completo. Puedes consultar más información sobre los <Link to="/examenes-cambridge" className="text-sky-600 hover:underline font-medium">exámenes Cambridge</Link> disponibles, incluyendo el <Link to="/examenes-cambridge/b2-first" className="text-sky-600 hover:underline font-medium">B2 First</Link> y <Link to="/linguaskill" className="text-sky-600 hover:underline font-medium">Linguaskill</Link>.
+                  El registro Cambridge es un proceso estructurado que requiere atención a detalles específicos: elegir el centro autorizado correcto, preparar documentación vigente, respetar plazos de inscripción y confirmar el pago completo. Puedes consultar más información sobre los <a href="/examenes-cambridge" className="text-sky-600 hover:underline font-medium">exámenes Cambridge</a> disponibles, incluyendo el <a href="/examenes-cambridge/b2-first" className="text-sky-600 hover:underline font-medium">B2 First</a> y <a href="/linguaskill" className="text-sky-600 hover:underline font-medium">Linguaskill</a>.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Con planificación anticipada de 6-8 semanas, evitarás problemas de disponibilidad y costes adicionales. Si buscas un centro de preparación oficial en Madrid que también gestione tu registro, <Link to="/academia-ingles-barrio-del-pilar" className="text-sky-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-sky-600 hover:underline font-medium">junto a La Vaguada</Link>, ofrece soporte integral desde <Link to="/cursos-ingles/adultos" className="text-sky-600 hover:underline font-medium">cursos para adultos</Link> hasta la inscripción formal.
+                  Con planificación anticipada de 6-8 semanas, evitarás problemas de disponibilidad y costes adicionales. Si buscas un centro de preparación oficial en Madrid que también gestione tu registro, <a href="/academia-ingles-barrio-del-pilar" className="text-sky-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-sky-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece soporte integral desde <a href="/cursos-ingles/adultos" className="text-sky-600 hover:underline font-medium">cursos para adultos</a> hasta la inscripción formal.
                 </p>
               </div>
             </section>
@@ -397,31 +389,31 @@ export default function RegistroCambridgePage() {
               <p className="text-sky-100 mb-6 max-w-2xl mx-auto">
                 En Impulse English Academy te ayudamos con todo el proceso de registro y te preparamos para tu examen Cambridge.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-sky-600 px-8 py-4 rounded-xl font-semibold hover:bg-sky-50 transition-colors"
               >
                 Contactar ahora
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-sky-50 transition-colors">
+                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-sky-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-sky-600 transition-colors mb-2">
                     Guía de Exámenes Cambridge 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre certificaciones Cambridge.</p>
-                </Link>
-                <Link to="/examenes-cambridge/centros-madrid" className="group bg-gray-50 rounded-xl p-6 hover:bg-sky-50 transition-colors">
+                </a>
+                <a href="/examenes-cambridge/centros-madrid" className="group bg-gray-50 rounded-xl p-6 hover:bg-sky-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-sky-600 transition-colors mb-2">
                     Centros Cambridge en Madrid y Barcelona
                   </h3>
                   <p className="text-gray-600 text-sm">Dónde examinarte y cómo elegir el mejor centro.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -451,7 +443,6 @@ export default function RegistroCambridgePage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

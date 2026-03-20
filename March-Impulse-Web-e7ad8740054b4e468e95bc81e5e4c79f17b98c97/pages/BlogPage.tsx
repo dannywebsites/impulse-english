@@ -1,11 +1,7 @@
 import React, { useEffect } from 'react';
 import { Calendar, Clock, ArrowRight, BookOpen, Star, FileText } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import SEOHead from '../components/SEOHead';
-import SchemaMarkup from '../components/SchemaMarkup';
-import { businessInfo } from '../utils/schemaData';
 
 // Direct S3 image URLs for reliability
 const articleImageUrls: Record<string, { url: string; alt: string }> = {
@@ -870,12 +866,6 @@ export default function BlogPage() {
 
   return (
     <>
-      <SEOHead
-        title="Blog - Artículos sobre Inglés, Cambridge y Linguaskill"
-        description="Blog de Impulse English Academy. Guías sobre exámenes Cambridge, Linguaskill, consejos para aprender inglés y recursos educativos. Academia Madrid."
-        keywords="blog inglés, artículos cambridge, guía linguaskill, aprender inglés tips, recursos inglés madrid"
-        canonical="/blog"
-      />
       <Navbar />
 
       {/* Hero Section */}
@@ -917,9 +907,9 @@ export default function BlogPage() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {featuredArticles.map((article) => (
-              <Link
+              <a
                 key={article.id}
-                to={article.href}
+                href={article.href}
                 className="group relative overflow-hidden rounded-2xl"
               >
                 <div className="aspect-[16/9] overflow-hidden">
@@ -948,7 +938,7 @@ export default function BlogPage() {
                     {article.readTime} de lectura
                   </span>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -982,9 +972,9 @@ export default function BlogPage() {
             <h2 className="text-xl font-bold text-zinc-900 mb-6">Guías completas</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredHubArticles.map((article) => (
-                <Link
+                <a
                   key={article.id}
-                  to={article.href}
+                  href={article.href}
                   className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
                 >
                   <div className="aspect-video overflow-hidden">
@@ -1019,7 +1009,7 @@ export default function BlogPage() {
                       {article.readTime} de lectura
                     </div>
                   </div>
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -1036,9 +1026,9 @@ export default function BlogPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {filteredSpokeArticles.map((article) => (
-                <Link
+                <a
                   key={article.id}
-                  to={article.href}
+                  href={article.href}
                   className="bg-zinc-50 rounded-lg overflow-hidden hover:bg-zinc-100 transition-colors group border border-zinc-100"
                 >
                   <div className="p-5">
@@ -1056,7 +1046,7 @@ export default function BlogPage() {
                       {article.readTime}
                     </div>
                   </div>
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -1070,9 +1060,9 @@ export default function BlogPage() {
             <h2 className="text-xl font-bold text-zinc-900 mb-6">Más artículos</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {filteredAdditionalArticles.map((article) => (
-                <Link
+                <a
                   key={article.id}
-                  to={article.href}
+                  href={article.href}
                   className="bg-zinc-50 rounded-xl overflow-hidden hover:bg-zinc-100 transition-colors group"
                 >
                   <div className="aspect-video overflow-hidden">
@@ -1099,7 +1089,7 @@ export default function BlogPage() {
                       {article.readTime}
                     </div>
                   </div>
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -1123,34 +1113,17 @@ export default function BlogPage() {
           <p className="text-white/80 mb-8 max-w-2xl mx-auto">
             Suscríbete a nuestra newsletter y recibe tips de inglés, noticias sobre exámenes Cambridge y ofertas exclusivas.
           </p>
-          <Link
-            to="/contacto"
+          <a
+              href="/contacto"
             className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-3 px-8 rounded-lg hover:bg-zinc-100 transition-colors"
           >
             Contactar
             <ArrowRight className="w-5 h-5" />
-          </Link>
+          </a>
         </div>
       </section>
 
       <Footer variant="simple" />
-      <SchemaMarkup schema={{
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        name: "Blog - Impulse English Academy",
-        description: "Guías sobre exámenes Cambridge, Linguaskill, consejos para aprender inglés y recursos educativos.",
-        url: `${businessInfo.url}/blog`,
-        isPartOf: { "@type": "WebSite", "@id": `${businessInfo.url}/#website`, name: businessInfo.name },
-        mainEntity: {
-          "@type": "ItemList",
-          itemListElement: [...hubArticles, ...spokeArticles].map((article, i) => ({
-            "@type": "ListItem",
-            position: i + 1,
-            url: `${businessInfo.url}${article.href}`,
-            name: article.title
-          }))
-        }
-      }} />
     </>
   );
 }

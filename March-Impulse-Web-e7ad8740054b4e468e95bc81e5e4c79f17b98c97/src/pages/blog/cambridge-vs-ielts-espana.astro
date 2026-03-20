@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CambridgeVsIeltsEspanaPage, { articleSchema, faqItems } from '../../../pages/blog/CambridgeVsIeltsEspanaPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Cambridge vs IELTS en España: Comparativa Definitiva 2026"
+  description="Compara Cambridge e IELTS para España: validez, reconocimiento laboral, precio y formato. Cambridge no caduca, IELTS sí. Guía para decidir."
+  canonical="/blog/cambridge-vs-ielts-espana"
+  ogType="article"
+  schemas={schemas}
+>
+  <CambridgeVsIeltsEspanaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

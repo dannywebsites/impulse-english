@@ -1,21 +1,18 @@
 import React, { useEffect } from 'react';
 import { Baby, Music, Gamepad2, Heart, Users, Sparkles, Clock, CheckCircle, Star, Phone, Calendar } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
 import OptimizedImage from '../../components/OptimizedImage';
 import AcademyGallery from '../../components/AcademyGallery';
-import SchemaMarkup from '../../components/SchemaMarkup';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
-import SEOHead from '../../components/SEOHead';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import { infantilImages as galleryImages } from '../../src/data/academyImages';
 import { infantilImages as heroImages } from '../../src/data/images';
 
-const courseSchema = generateCourseSchema({
+export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Infantil (2-5 años)",
   description: "Clases de inglés para niños de 2 a 5 años con metodología Great Little People. Aprenden jugando, cantando y divirtiéndose. Grupos reducidos de máximo 7 alumnos.",
   url: `${businessInfo.url}/cursos-ingles/infantil`,
@@ -27,7 +24,7 @@ const courseSchema = generateCourseSchema({
 
 
 // FAQs for Infantil page
-const faqs = [
+export const faqs = [
   {
     question: "¿Es buena idea empezar inglés a los 2 años?",
     answer: "Sí, a esta edad el aprendizaje es natural y sin bloqueo. En clase trabajamos rutinas, canciones, juego guiado y comprensión oral para que el niño se familiarice con el idioma con confianza. El objetivo no es \"memorizar\", sino crear una relación positiva y constante con el inglés."
@@ -130,13 +127,7 @@ export default function InfantilPage() {
 
   return (
     <>
-      <SEOHead
-        title="Inglés Infantil (2–5 años) | Great Little People"
-        description="Clases de inglés infantil (2–5) en La Vaguada / Barrio del Pilar. Metodología Great Little People 100% en inglés, grupos máx. 7 y clase de prueba gratis. Impulse English Academy."
-        keywords="clases inglés niños la vaguada, inglés infantil barrio del pilar, inglés bebes 2 años, great little people, academia inglés niños madrid"
-        canonical="/cursos-ingles/infantil"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
@@ -177,12 +168,12 @@ export default function InfantilPage() {
               Los más pequeños aprenden jugando, cantando y explorando en un entorno seguro y positivo. Metodología Great Little People en La Vaguada, Barrio del Pilar.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-white text-fuchsia-900 font-display font-semibold py-4 px-8 rounded-lg hover:bg-amber-50 transition-all duration-300 text-center"
               >
                 Clase de prueba GRATIS
-              </Link>
+              </a>
               <a
                 href="tel:+34604910611"
                 className="backdrop-blur-sm text-white border border-white/25 font-display font-medium py-4 px-8 rounded-lg hover:bg-white/10 transition-all duration-300 text-center flex items-center justify-center gap-2"
@@ -262,7 +253,7 @@ export default function InfantilPage() {
                 <strong>¿Dónde estamos?</strong> Estamos en Barrio del Pilar, junto a La Vaguada (Madrid 28029), con acceso cómodo desde metro y zonas cercanas.
               </p>
               <p className="text-zinc-600 text-sm">
-                Cuando crezcan, pueden continuar en <Link to="/cursos-ingles/primaria" className="text-purple-600 hover:underline font-medium">Primaria (6–12)</Link> y empezar con sus primeros <Link to="/examenes-cambridge" className="text-purple-600 hover:underline font-medium">exámenes Cambridge Young Learners</Link>.
+                Cuando crezcan, pueden continuar en <a href="/cursos-ingles/primaria" className="text-purple-600 hover:underline font-medium">Primaria (6–12)</a> y empezar con sus primeros <a href="/examenes-cambridge" className="text-purple-600 hover:underline font-medium">exámenes Cambridge Young Learners</a>.
               </p>
             </div>
           </div>
@@ -397,12 +388,12 @@ export default function InfantilPage() {
               Ven a conocernos sin compromiso. Tu hijo/a probará una clase real y verás cómo disfruta aprendiendo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/reservar-clase"
+              <a
+              href="/reservar-clase"
                 className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Reservar clase gratuita
-              </Link>
+              </a>
               <a
                 href="https://wa.me/34604910611?text=Hola,%20me%20gustaría%20información%20sobre%20inglés%20para%20infantil"
                 target="_blank"
@@ -450,7 +441,6 @@ export default function InfantilPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={courseSchema} />
-    </>
+</>
   );
 }

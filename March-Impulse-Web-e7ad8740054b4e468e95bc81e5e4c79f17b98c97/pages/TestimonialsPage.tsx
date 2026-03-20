@@ -6,9 +6,6 @@ import LeadForm from '../components/LeadForm';
 import LazyVideo from '../components/LazyVideo';
 import OptimizedImage from '../components/OptimizedImage';
 import Breadcrumb from '../components/Breadcrumb';
-import SEOHead from '../components/SEOHead';
-import SchemaMarkup from '../components/SchemaMarkup';
-import { generateOrganizationSchema, businessInfo } from '../utils/schemaData';
 import { facilityImages, certificationImages } from '../src/data/images';
 
 const videoTestimonials = [
@@ -89,17 +86,6 @@ const googleReviews = [
   }
 ];
 
-// Organization schema with embedded reviews for testimonials page
-const testimonialsSchema = {
-  ...generateOrganizationSchema(),
-  review: googleReviews.map(r => ({
-    "@type": "Review",
-    author: { "@type": "Person", name: r.name },
-    reviewBody: r.quote,
-    reviewRating: { "@type": "Rating", ratingValue: 5, bestRating: 5 }
-  }))
-};
-
 export default function TestimonialsPage() {
   const [currentReview, setCurrentReview] = useState(0);
 
@@ -118,12 +104,6 @@ export default function TestimonialsPage() {
 
   return (
     <>
-      <SEOHead
-        title="Opiniones y Testimonios"
-        description="Opiniones reales de alumnos de Impulse English Academy. 150+ reseñas 5 estrellas en Google. Testimonios de éxito con Cambridge y Linguaskill."
-        keywords="opiniones academia inglés madrid, reseñas impulse english, testimonios alumnos cambridge, valoraciones clases inglés"
-        canonical="/testimonios"
-      />
       <Navbar />
 
       {/* Hero Section */}
@@ -325,7 +305,6 @@ export default function TestimonialsPage() {
       </section>
 
       <Footer />
-      <SchemaMarkup schema={testimonialsSchema} />
     </>
   );
 }

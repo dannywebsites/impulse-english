@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LaPazPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/LaPazPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Academia de Inglés en La Paz"
+  description="Academia de inglés cerca de La Paz Madrid. Centro preparador Cambridge oficial con 100% aprobados. A 20 min de La Paz. Grupos reducidos máx 10 alumnos."
+  keywords="academia inglés la paz madrid, clases inglés la paz, cursos inglés la paz madrid, cambridge la paz, aprender inglés la paz"
+  canonical="/academia-ingles-la-paz"
+  schemas={schemas}
+>
+  <LaPazPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

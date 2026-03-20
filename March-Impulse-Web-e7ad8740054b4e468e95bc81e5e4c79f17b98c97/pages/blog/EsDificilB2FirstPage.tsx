@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function EsDificilB2FirstPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = '¿Es Difícil el B2 First? Dificultad Real y Consejos 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿Es Difícil el B2 First? Nivel Real y Cómo Prepararte",
     description: "El B2 First tiene una tasa de aprobados del 65-70%. Descubre qué lo hace difícil, qué parte es más complicada y cómo prepararte eficazmente.",
     url: `${businessInfo.url}/blog/es-dificil-b2-first`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿El B2 First es más difícil que el IELTS?",
       answer: "Son exámenes diferentes que no se comparan directamente en dificultad. El B2 First evalúa competencia a nivel B2 específicamente, mientras que IELTS ofrece una puntuación en toda la escala. Para un candidato de nivel B2, ambos exámenes tienen una dificultad similar. La diferencia está en el formato: el B2 First incluye Use of English (gramática y vocabulario), que muchos consideran más exigente, mientras que IELTS Academic tiene textos más densos en Reading."
-    },
+    }
+
+  ,
     {
       question: "¿Cuál es la parte del B2 First que más gente suspende?",
       answer: "Estadísticamente, la parte de Reading and Use of English es donde más candidatos hispanohablantes pierden puntos, especialmente en las secciones de Use of English (partes 1-4). Los phrasal verbs, las transformaciones de palabras (word formation) y las key word transformations son particularmente difíciles porque requieren conocimiento léxico-gramatical preciso que no se puede deducir del contexto."
@@ -47,16 +38,17 @@ export default function EsDificilB2FirstPage() {
     }
   ];
 
+export default function EsDificilB2FirstPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="¿Es Difícil el B2 First? Dificultad Real y Consejos 2026"
-        description="El B2 First tiene una tasa de aprobados del 65-70%. Descubre qué lo hace difícil, qué parte es más complicada y cómo prepararte eficazmente."
-        keywords="es difícil b2 first, dificultad b2 cambridge, tasa aprobados b2 first, preparar b2 first"
-        canonical="/blog/es-dificil-b2-first"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -160,7 +152,7 @@ export default function EsDificilB2FirstPage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                No todas las secciones del <Link to="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</Link> presentan la misma dificultad. Basándonos en las puntuaciones medias de los candidatos hispanohablantes, este es el ranking de dificultad:
+                No todas las secciones del <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> presentan la misma dificultad. Basándonos en las puntuaciones medias de los candidatos hispanohablantes, este es el ranking de dificultad:
               </p>
 
               <div className="space-y-4 mb-8">
@@ -296,7 +288,7 @@ export default function EsDificilB2FirstPage() {
                     <Target className="w-5 h-5 text-emerald-600" />
                     Preparación guiada con feedback
                   </h3>
-                  <p className="text-gray-700">Un profesor especializado en Cambridge identifica tus errores específicos y te da estrategias personalizadas. En nuestra <Link to="/metodologia" className="text-emerald-600 hover:underline">metodología</Link>, trabajamos con análisis individualizado de cada alumno para optimizar su preparación y maximizar puntuación en las áreas con más potencial de mejora.</p>
+                  <p className="text-gray-700">Un profesor especializado en Cambridge identifica tus errores específicos y te da estrategias personalizadas. En nuestra <a href="/metodologia" className="text-emerald-600 hover:underline">metodología</a>, trabajamos con análisis individualizado de cada alumno para optimizar su preparación y maximizar puntuación en las áreas con más potencial de mejora.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -385,11 +377,11 @@ export default function EsDificilB2FirstPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -403,10 +395,10 @@ export default function EsDificilB2FirstPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El <Link to="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</Link> no es un examen fácil, pero tampoco es inalcanzable. Con una tasa de aprobados del 65-70% global y del 85-90% entre candidatos bien preparados, la clave está claramente en la preparación. Los hispanohablantes tienen retos específicos, especialmente en Use of English, pero estos son completamente superables con práctica dirigida y constancia.
+                  El <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> no es un examen fácil, pero tampoco es inalcanzable. Con una tasa de aprobados del 65-70% global y del 85-90% entre candidatos bien preparados, la clave está claramente en la preparación. Los hispanohablantes tienen retos específicos, especialmente en Use of English, pero estos son completamente superables con práctica dirigida y constancia.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si quieres prepararte con las mejores garantías, nuestros <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos para adultos</Link> combinan nuestra <Link to="/metodologia" className="text-emerald-600 hover:underline font-medium">metodología probada</Link> con simulacros reales y feedback personalizado. No dejes que el miedo a la dificultad te impida obtener un certificado que puede transformar tu carrera profesional.
+                  Si quieres prepararte con las mejores garantías, nuestros <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> combinan nuestra <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">metodología probada</a> con simulacros reales y feedback personalizado. No dejes que el miedo a la dificultad te impida obtener un certificado que puede transformar tu carrera profesional.
                 </p>
               </div>
             </section>
@@ -417,37 +409,37 @@ export default function EsDificilB2FirstPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 En Impulse English Academy convertimos la dificultad del B2 First en una ventaja competitiva. Preparación intensiva con resultados comprobados.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cambridge B2 First: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B2 First: estructura, formato y preparación.</p>
-                </Link>
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Descubre cómo preparamos a nuestros alumnos para aprobar Cambridge.</p>
-                </Link>
-                <Link to="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas de preparación Cambridge adaptados a tu nivel y objetivos.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -478,7 +470,6 @@ export default function EsDificilB2FirstPage() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

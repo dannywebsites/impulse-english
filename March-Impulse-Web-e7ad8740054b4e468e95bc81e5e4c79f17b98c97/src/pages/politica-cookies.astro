@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PoliticaCookiesPage from '../../pages/legal/PoliticaCookiesPage';
+import CookieBanner from '../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Política de Cookies"
+  description="Política de cookies de Impulse English Academy. Información sobre el uso de cookies en nuestro sitio web."
+  canonical="/politica-cookies"
+>
+  <PoliticaCookiesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

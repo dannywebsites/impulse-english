@@ -1,33 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, MapPin, CheckCircle, Building, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function CentrosCambridgeMadridPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Centros Cambridge Madrid y Barcelona: Dónde Examinarte 2025 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "Centros Cambridge en Madrid y Barcelona: Guía Completa 2025",
     description: "Guía completa de centros Cambridge en Madrid y Barcelona. Dónde examinarte, precios, diferencias entre centros Platino y regulares.",
     url: `${businessInfo.url}/blog/centros-cambridge-madrid`,
     datePublished: "2025-01-15"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Cuánto cuesta hacer un examen Cambridge en Madrid o Barcelona?",
       answer: "El precio varía según el nivel: A2 Key cuesta aproximadamente 125-145 euros, B1 Preliminary 160-175 euros, B2 First 195-220 euros, C1 Advanced 210-230 euros, y C2 Proficiency 220-240 euros. Los centros Platino suelen aplicar tarifas en el rango superior debido a servicios adicionales incluidos, mientras que centros más pequeños pueden ofrecer precios ligeramente inferiores. Algunas academias ofrecen paquetes que combinan curso preparatorio y examen con descuentos del 10-15%."
-    },
+    }
+
+  ,
     {
       question: "¿Con cuánta antelación debo inscribirme en un centro Cambridge?",
       answer: "Se recomienda inscribirse con 6-8 semanas de antelación mínima para asegurar plaza en la fecha deseada, especialmente para convocatorias populares como junio (antes de vacaciones) o diciembre (antes de fin de año). Los centros grandes con formato digital pueden ofrecer plazas con 3-4 semanas de antelación, pero sujetas a disponibilidad limitada. Para exámenes en papel, el plazo de inscripción suele cerrar 5-6 semanas antes de la fecha oficial."
@@ -46,16 +38,16 @@ export default function CentrosCambridgeMadridPage() {
     }
   ];
 
+export default function CentrosCambridgeMadridPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="Centros Cambridge en Madrid y Barcelona 2025: Dónde Examinarte"
-        description="Guía completa de centros Cambridge autorizados en Madrid y Barcelona 2025. Centros Platino, precios, diferencias digital vs papel y cómo inscribirse en tu examen oficial."
-        keywords="centros cambridge madrid, centros cambridge barcelona, examen cambridge madrid, sedes cambridge españa, centro platino cambridge, inscripción cambridge madrid"
-        canonical="/examenes-cambridge/centros-madrid"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -364,11 +356,11 @@ export default function CentrosCambridgeMadridPage() {
                         <ChevronDown className="w-5 h-5 text-red-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -385,7 +377,7 @@ export default function CentrosCambridgeMadridPage() {
                   Elegir el centro Cambridge adecuado en Madrid o Barcelona requiere evaluar ubicación, formato disponible, servicios complementarios y política de cambios específica de cada sede.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Para candidatos que buscan preparación integral antes del examen, academias especializadas como <strong><Link to="/academia-ingles-barrio-del-pilar" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</Link></strong> ofrecen programas específicos Cambridge con tasas de éxito comprobadas. Si buscas <Link to="/examenes-cambridge/b2-first" className="text-red-600 hover:underline font-medium">B2 First</Link> o <Link to="/examenes-cambridge/b1-preliminary" className="text-red-600 hover:underline font-medium">B1 Preliminary</Link>, nuestra <Link to="/academia-ingles-la-vaguada" className="text-red-600 hover:underline font-medium">junto a La Vaguada</Link> ofrece <Link to="/cursos-ingles/particulares" className="text-red-600 hover:underline font-medium">clases particulares</Link> personalizadas para maximizar tu puntuación.
+                  Para candidatos que buscan preparación integral antes del examen, academias especializadas como <strong><a href="/academia-ingles-barrio-del-pilar" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</a></strong> ofrecen programas específicos Cambridge con tasas de éxito comprobadas. Si buscas <a href="/examenes-cambridge/b2-first" className="text-red-600 hover:underline font-medium">B2 First</a> o <a href="/examenes-cambridge/b1-preliminary" className="text-red-600 hover:underline font-medium">B1 Preliminary</a>, nuestra <a href="/academia-ingles-la-vaguada" className="text-red-600 hover:underline font-medium">junto a La Vaguada</a> ofrece <a href="/cursos-ingles/particulares" className="text-red-600 hover:underline font-medium">clases particulares</a> personalizadas para maximizar tu puntuación.
                 </p>
               </div>
             </section>
@@ -396,31 +388,31 @@ export default function CentrosCambridgeMadridPage() {
               <p className="text-red-100 mb-6 max-w-2xl mx-auto">
                 En Impulse English Academy te preparamos con metodología oficial para aprobar tu examen Cambridge con la mejor puntuación.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-red-600 px-8 py-4 rounded-xl font-semibold hover:bg-red-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-red-50 transition-colors">
+                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-red-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors mb-2">
                     Guía de Exámenes Cambridge 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre certificaciones Cambridge.</p>
-                </Link>
-                <Link to="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-red-50 transition-colors">
+                </a>
+                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-red-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors mb-2">
                     Precio C1 Advanced en Madrid
                   </h3>
                   <p className="text-gray-600 text-sm">Costes detallados y proceso de registro para el C1.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -450,7 +442,6 @@ export default function CentrosCambridgeMadridPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

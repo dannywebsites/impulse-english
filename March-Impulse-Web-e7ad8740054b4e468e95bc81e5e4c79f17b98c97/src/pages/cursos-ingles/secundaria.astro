@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SecundariaPage, { courseSchema, faqs } from '../../../pages/cursos/SecundariaPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  courseSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Inglés Secundaria (13–17) | EBAU + Cambridge B1–C1"
+  description="Clases de inglés para secundaria en La Vaguada / Barrio del Pilar. Preparación EBAU y Cambridge B1, B2, C1 con grupos reducidos y seguimiento. 100% aprobados 2024/2025."
+  keywords="clases inglés secundaria la vaguada, preparación EBAU inglés, cambridge b1 b2 c1 adolescentes, inglés bachillerato barrio del pilar"
+  canonical="/cursos-ingles/secundaria"
+  schemas={schemas}
+>
+  <SecundariaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

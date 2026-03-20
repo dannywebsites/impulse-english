@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function LinguaskillOposicionesValidezPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Linguaskill para Oposiciones: Validez y Reconocimiento 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿Linguaskill Tiene Validez para Oposiciones? Guía Oficial",
     description: "Linguaskill es aceptado en oposiciones públicas en España con reconocimiento creciente. Descubre qué convocatorias lo aceptan y requisitos de nivel.",
     url: `${businessInfo.url}/blog/linguaskill-oposiciones-validez`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Linguaskill sirve para oposiciones de educación?",
       answer: "Sí, en la mayoría de comunidades autónomas Linguaskill es aceptado para acreditar el nivel de idiomas en oposiciones de educación (maestros y profesores de secundaria). Generalmente se exige B2 para docentes de primaria y B2-C1 para secundaria. Sin embargo, cada convocatoria autonómica establece sus propias certificaciones aceptadas, por lo que debes verificar las bases específicas."
-    },
+    }
+
+  ,
     {
       question: "¿Qué nivel de Linguaskill necesito para oposiciones?",
       answer: "Depende del cuerpo y la convocatoria. Para la mayoría de oposiciones de grupo A1 y A2 se exige B2 (puntuación Linguaskill 160-179). Para algunas oposiciones que requieren C1, necesitas una puntuación de 180 o superior. Para grupos C1 y C2, el requisito suele ser B1 (140-159). Verifica siempre las bases de la convocatoria específica."
@@ -47,16 +38,17 @@ export default function LinguaskillOposicionesValidezPage() {
     }
   ];
 
+export default function LinguaskillOposicionesValidezPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="Linguaskill para Oposiciones: Validez y Reconocimiento 2026"
-        description="Linguaskill es aceptado en oposiciones públicas en España con reconocimiento creciente. Descubre qué convocatorias lo aceptan y requisitos de nivel."
-        keywords="linguaskill oposiciones, linguaskill validez oposiciones, linguaskill función pública, oposiciones inglés linguaskill"
-        canonical="/blog/linguaskill-oposiciones-validez"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -114,7 +106,7 @@ export default function LinguaskillOposicionesValidezPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Si estás preparando oposiciones y necesitas acreditar tu nivel de inglés, <Link to="/linguaskill" className="text-amber-600 hover:underline font-medium">Linguaskill de Cambridge</Link> es una de las opciones más eficientes del mercado. Con resultados en <strong>48 horas</strong>, formato 100% online y respaldo oficial de Cambridge Assessment English, cada vez más opositores eligen Linguaskill para certificar su nivel de idiomas. En esta guía analizamos su validez actual para oposiciones públicas en España, qué convocatorias lo aceptan y cómo aprovecharlo al máximo en tu proceso selectivo.
+              Si estás preparando oposiciones y necesitas acreditar tu nivel de inglés, <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">Linguaskill de Cambridge</a> es una de las opciones más eficientes del mercado. Con resultados en <strong>48 horas</strong>, formato 100% online y respaldo oficial de Cambridge Assessment English, cada vez más opositores eligen Linguaskill para certificar su nivel de idiomas. En esta guía analizamos su validez actual para oposiciones públicas en España, qué convocatorias lo aceptan y cómo aprovecharlo al máximo en tu proceso selectivo.
             </p>
 
             {/* Section 1 */}
@@ -445,11 +437,11 @@ export default function LinguaskillOposicionesValidezPage() {
                         <ChevronDown className="w-5 h-5 text-amber-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -466,7 +458,7 @@ export default function LinguaskillOposicionesValidezPage() {
                   <strong>Linguaskill es una opción cada vez más válida y popular para acreditar idiomas en oposiciones públicas en España.</strong> Su rapidez de resultados, formato flexible, precio accesible y el respaldo de Cambridge lo convierten en una herramienta estratégica para opositores que necesitan certificar su nivel de inglés de forma eficiente. La tendencia en 2025/26 es de mayor aceptación por parte de las administraciones públicas.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <Link to="/linguaskill" className="text-amber-600 hover:underline font-medium">Impulse English Academy</Link> te preparamos específicamente para Linguaskill con simulacros reales y estrategias probadas. Consulta nuestra información sobre el <Link to="/blog/certificado-linguaskill" className="text-amber-600 hover:underline font-medium">certificado Linguaskill</Link> y los <Link to="/linguaskill/precios-fechas" className="text-amber-600 hover:underline font-medium">precios y fechas disponibles</Link> para planificar tu certificación. No dejes que la acreditación de idiomas sea un obstáculo en tu camino hacia la plaza.
+                  En <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">Impulse English Academy</a> te preparamos específicamente para Linguaskill con simulacros reales y estrategias probadas. Consulta nuestra información sobre el <a href="/blog/certificado-linguaskill" className="text-amber-600 hover:underline font-medium">certificado Linguaskill</a> y los <a href="/linguaskill/precios-fechas" className="text-amber-600 hover:underline font-medium">precios y fechas disponibles</a> para planificar tu certificación. No dejes que la acreditación de idiomas sea un obstáculo en tu camino hacia la plaza.
                 </p>
               </div>
             </section>
@@ -477,37 +469,37 @@ export default function LinguaskillOposicionesValidezPage() {
               <p className="text-amber-100 mb-6 max-w-2xl mx-auto">
                 Te preparamos para obtener la puntuación Linguaskill que necesitas con cursos intensivos adaptados a opositores.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-amber-600 px-8 py-4 rounded-xl font-semibold hover:bg-amber-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Linguaskill: Toda la Información
                   </h3>
                   <p className="text-gray-600 text-sm">Guía completa del examen Linguaskill de Cambridge.</p>
-                </Link>
-                <Link to="/blog/certificado-linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                </a>
+                <a href="/blog/certificado-linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Certificado Linguaskill
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el certificado oficial y su validez.</p>
-                </Link>
-                <Link to="/linguaskill/precios-fechas" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                </a>
+                <a href="/linguaskill/precios-fechas" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Precios y Fechas Linguaskill
                   </h3>
                   <p className="text-gray-600 text-sm">Consulta las próximas convocatorias y precios actualizados.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -538,7 +530,6 @@ export default function LinguaskillOposicionesValidezPage() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

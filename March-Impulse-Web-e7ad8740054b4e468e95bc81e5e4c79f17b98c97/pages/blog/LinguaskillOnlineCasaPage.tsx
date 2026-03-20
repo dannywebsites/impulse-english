@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, FileText, HelpCircle, ChevronDown, Laptop, Wifi } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
 const tableOfContents = [
@@ -17,7 +14,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-const faqs = [
+export const faqs = [
   {
     question: '¿Cuánto cuesta hacer Linguaskill online desde casa en 2025?',
     answer: 'El precio varía según el centro examinador y módulos seleccionados, oscilando entre 75€ para un módulo único y 180€ para el examen completo de cuatro destrezas. Los centros españoles oficiales suelen cobrar 90-110€ por Reading & Listening, 50-60€ por Speaking y 40-50€ por Writing. Es posible realizar únicamente los módulos que necesitas certificar según requisitos específicos de tu institución.'
@@ -40,6 +37,13 @@ const faqs = [
   },
 ];
 
+export const articleSchema = generateArticleSchema({
+    headline: "Linguaskill Online desde Casa: Guía Completa 2025",
+    description: "Todo sobre el examen Linguaskill online desde casa: requisitos técnicos, estructura, precio y ventajas de la modalidad remota.",
+    url: `${businessInfo.url}/blog/linguaskill-online-casa`,
+    datePublished: "2025-01-14"
+  });
+
 export default function LinguaskillOnlineCasaPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -47,23 +51,9 @@ export default function LinguaskillOnlineCasaPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const articleSchema = generateArticleSchema({
-    headline: "Linguaskill Online desde Casa: Guía Completa 2025",
-    description: "Todo sobre el examen Linguaskill online desde casa: requisitos técnicos, estructura, precio y ventajas de la modalidad remota.",
-    url: `${businessInfo.url}/blog/linguaskill-online-casa`,
-    datePublished: "2025-01-14"
-  });
-
   return (
     <>
-      <SEOHead
-        title="Linguaskill Online desde Casa 2025: Guía Completa del Examen Remoto"
-        description="Todo sobre el examen Linguaskill online desde casa: requisitos técnicos, supervisión remota, estructura del examen, ventajas y preparación efectiva. Guía completa actualizada 2025."
-        keywords="Linguaskill online, Linguaskill desde casa, examen Linguaskill remoto, Linguaskill supervisión online, requisitos técnicos Linguaskill, hacer Linguaskill casa"
-        canonical="/blog/linguaskill-online-casa"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       <article>
         {/* Hero Section */}
@@ -120,13 +110,13 @@ export default function LinguaskillOnlineCasaPage() {
 
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
-          <Link
-            to="/linguaskill"
+          <a
+              href="/linguaskill"
             className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
             ← Volver a la Guía Completa de Linguaskill
-          </Link>
+          </a>
         </div>
 
         {/* Table of Contents */}
@@ -314,11 +304,11 @@ export default function LinguaskillOnlineCasaPage() {
                         }`}
                       />
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-zinc-50">
-                        <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-zinc-50">
+                          <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -335,7 +325,7 @@ export default function LinguaskillOnlineCasaPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Tu siguiente paso es verificar la aceptación específica de tu institución destino y reservar tu fecha óptima considerando plazos de entrega de certificados. En nuestra <Link to="/academia-ingles-barrio-del-pilar" className="text-purple-600 hover:underline font-medium">academia de inglés en Barrio del Pilar</Link>, junto a <Link to="/academia-ingles-la-vaguada" className="text-purple-600 hover:underline font-medium">La Vaguada</Link>, ofrecemos <Link to="/cursos-ingles/adultos" className="text-purple-600 hover:underline font-medium">cursos de preparación para adultos</Link> que adaptan el entrenamiento al formato específico del <Link to="/linguaskill" className="text-purple-600 hover:underline font-medium">examen Linguaskill</Link>.
+                Tu siguiente paso es verificar la aceptación específica de tu institución destino y reservar tu fecha óptima considerando plazos de entrega de certificados. En nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-purple-600 hover:underline font-medium">academia de inglés en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-purple-600 hover:underline font-medium">La Vaguada</a>, ofrecemos <a href="/cursos-ingles/adultos" className="text-purple-600 hover:underline font-medium">cursos de preparación para adultos</a> que adaptan el entrenamiento al formato específico del <a href="/linguaskill" className="text-purple-600 hover:underline font-medium">examen Linguaskill</a>.
               </p>
             </section>
 
@@ -369,30 +359,30 @@ export default function LinguaskillOnlineCasaPage() {
           <div className="container mx-auto px-6">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link
-                to="/linguaskill"
+              <a
+              href="/linguaskill"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-purple-600 text-sm font-medium">Hub Principal</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Guía Completa del Examen Linguaskill</h3>
                 <p className="text-zinc-600 text-sm mt-2">Todo sobre estructura, ejemplos y preparación.</p>
-              </Link>
-              <Link
-                to="/linguaskill/ejemplo-examen"
+              </a>
+              <a
+              href="/linguaskill/ejemplo-examen"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-purple-600 text-sm font-medium">Formato</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Ejemplo Examen Linguaskill</h3>
                 <p className="text-zinc-600 text-sm mt-2">Formato y estructura del test con ejemplos.</p>
-              </Link>
-              <Link
-                to="/linguaskill/precios-fechas"
+              </a>
+              <a
+              href="/linguaskill/precios-fechas"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-purple-600 text-sm font-medium">Precios</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Precio Linguaskill y Reserva</h3>
                 <p className="text-zinc-600 text-sm mt-2">Tarifas actualizadas y proceso de inscripción.</p>
-              </Link>
+              </a>
             </div>
 
           </div>
@@ -415,7 +405,6 @@ export default function LinguaskillOnlineCasaPage() {
 
       <Footer />
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

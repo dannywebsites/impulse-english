@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HijoPrepararCambridgePage, { articleSchema, faqItems } from '../../../pages/blog/HijoPrepararCambridgePage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿Tu Hijo Debería Preparar Cambridge? Guía para Padres 2026"
+  description="Preparar Cambridge da ventaja académica y motivación. Descubre a qué edad empezar, qué examen elegir (Young Learners, B1, B2) y cómo preparar sin presión."
+  canonical="/blog/hijo-preparar-cambridge"
+  ogType="article"
+  schemas={schemas}
+>
+  <HijoPrepararCambridgePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

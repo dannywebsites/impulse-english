@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SobreNosotrosPage from '../../pages/SobreNosotrosPage';
+import CookieBanner from '../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Sobre Nosotros"
+  description="Conoce Impulse English Academy. Centro preparador Cambridge oficial en La Vaguada, Madrid. Más de 10 años enseñando inglés. 100% aprobados."
+  keywords="sobre nosotros academia inglés, quienes somos impulse english, historia academia inglés madrid, equipo profesores inglés"
+  canonical="/sobre-nosotros"
+>
+  <SobreNosotrosPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

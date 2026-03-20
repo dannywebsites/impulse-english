@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, FileText, HelpCircle, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
 const tableOfContents = [
@@ -17,7 +14,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-const faqs = [
+export const faqs = [
   {
     question: '¿Cuánto tiempo dura el examen Linguaskill completo?',
     answer: 'El examen completo dura aproximadamente 120 minutos de tiempo activo: 60-75 minutos para Reading and Listening, 45 minutos para Writing y 15 minutos para Speaking. Puedes realizar los módulos en diferentes momentos dentro de un periodo máximo de 48 horas desde el inicio, lo que permite descansar entre secciones según tu conveniencia y nivel de concentración.'
@@ -40,6 +37,13 @@ const faqs = [
   },
 ];
 
+export const articleSchema = generateArticleSchema({
+    headline: "Ejemplo Examen Linguaskill: Estructura y Tipos de Preguntas 2025",
+    description: "Ejemplos reales del examen Linguaskill: estructura de Reading, Listening, Writing y Speaking con tipos de preguntas y sistema adaptativo.",
+    url: `${businessInfo.url}/linguaskill/ejemplo-examen`,
+    datePublished: "2025-01-01"
+  });
+
 export default function EjemploExamenLinguaskillPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -47,23 +51,9 @@ export default function EjemploExamenLinguaskillPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const articleSchema = generateArticleSchema({
-    headline: "Ejemplo Examen Linguaskill: Estructura y Tipos de Preguntas 2025",
-    description: "Ejemplos reales del examen Linguaskill: estructura de Reading, Listening, Writing y Speaking con tipos de preguntas y sistema adaptativo.",
-    url: `${businessInfo.url}/linguaskill/ejemplo-examen`,
-    datePublished: "2025-01-01"
-  });
-
   return (
     <>
-      <SEOHead
-        title="Ejemplo Examen Linguaskill 2025: Estructura, Formato y Tipos de Preguntas"
-        description="Descubre el formato completo del examen Linguaskill con ejemplos reales de cada módulo: Reading, Listening, Writing y Speaking. Sistema adaptativo, duración y tipos de preguntas detallados."
-        keywords="ejemplo examen Linguaskill, formato Linguaskill, estructura Linguaskill, tipos de preguntas Linguaskill, módulos Linguaskill, sistema adaptativo Linguaskill, prueba Linguaskill"
-        canonical="/linguaskill/ejemplo-examen"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       <article>
         {/* Hero Section */}
@@ -120,13 +110,13 @@ export default function EjemploExamenLinguaskillPage() {
 
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
-          <Link
-            to="/linguaskill"
+          <a
+              href="/linguaskill"
             className="inline-flex items-center gap-2 text-accent-blue hover:text-blue-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
             ← Volver a la Guía Completa de Linguaskill
-          </Link>
+          </a>
         </div>
 
         {/* Table of Contents */}
@@ -301,11 +291,11 @@ export default function EjemploExamenLinguaskillPage() {
                         }`}
                       />
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-zinc-50">
-                        <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-zinc-50">
+                          <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -322,7 +312,7 @@ export default function EjemploExamenLinguaskillPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Si buscas preparación especializada con metodología probada, <Link to="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline font-medium">nuestra academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-accent-blue hover:underline font-medium">junto a La Vaguada</Link>, ofrece <Link to="/cursos-ingles/adultos" className="text-accent-blue hover:underline font-medium">cursos de inglés para adultos</Link> específicos de <Link to="/linguaskill" className="text-accent-blue hover:underline font-medium">Linguaskill</Link> con docentes expertos y recursos actualizados que te preparan para cada detalle del formato actual del test, además de <Link to="/cursos-ingles/particulares" className="text-accent-blue hover:underline font-medium">clases particulares</Link> personalizadas.
+                Si buscas preparación especializada con metodología probada, <a href="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-accent-blue hover:underline font-medium">junto a La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos" className="text-accent-blue hover:underline font-medium">cursos de inglés para adultos</a> específicos de <a href="/linguaskill" className="text-accent-blue hover:underline font-medium">Linguaskill</a> con docentes expertos y recursos actualizados que te preparan para cada detalle del formato actual del test, además de <a href="/cursos-ingles/particulares" className="text-accent-blue hover:underline font-medium">clases particulares</a> personalizadas.
               </p>
             </section>
 
@@ -356,30 +346,30 @@ export default function EjemploExamenLinguaskillPage() {
           <div className="container mx-auto px-6">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link
-                to="/linguaskill"
+              <a
+              href="/linguaskill"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-accent-blue text-sm font-medium">Hub Principal</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Guía Completa del Examen Linguaskill 2026</h3>
                 <p className="text-zinc-600 text-sm mt-2">Todo sobre estructura, ejemplos y preparación.</p>
-              </Link>
-              <Link
-                to="/linguaskill/precios-fechas"
+              </a>
+              <a
+              href="/linguaskill/precios-fechas"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-accent-blue text-sm font-medium">Precios</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Linguaskill: Precios, Sedes y Servicios</h3>
                 <p className="text-zinc-600 text-sm mt-2">Precios exactos y sedes disponibles en España.</p>
-              </Link>
-              <Link
-                to="/linguaskill/precios-fechas"
+              </a>
+              <a
+              href="/linguaskill/precios-fechas"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-accent-blue text-sm font-medium">Reserva</span>
                 <h3 className="text-lg font-bold text-zinc-900 mt-2">Precio Linguaskill y Cómo Reservar</h3>
                 <p className="text-zinc-600 text-sm mt-2">Tarifas actualizadas y proceso de inscripción.</p>
-              </Link>
+              </a>
             </div>
 
           </div>
@@ -403,7 +393,6 @@ export default function EjemploExamenLinguaskillPage() {
       <Footer />
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

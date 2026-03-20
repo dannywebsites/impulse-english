@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MejoresAcademiasMadridPage, { articleSchema, faqs } from '../../../pages/blog/MejoresAcademiasMadridPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Mejores Academias de Inglés en Madrid 2026 | Guía Comparativa"
+  description="Guía comparativa de las mejores academias de inglés en Madrid 2026. Precios, metodologías, ubicaciones y opiniones. Encuentra la academia perfecta para ti."
+  canonical="/blog/mejores-academias-madrid"
+  ogType="article"
+  schemas={schemas}
+>
+  <MejoresAcademiasMadridPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

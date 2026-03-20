@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Breadcrumb from '../../components/Breadcrumb';
-import SEOHead from '../../components/SEOHead';
 
 export default function AvisoLegalPage() {
   useEffect(() => {
@@ -11,12 +10,6 @@ export default function AvisoLegalPage() {
 
   return (
     <>
-      <SEOHead
-        title="Aviso Legal"
-        description="Aviso legal e información de la empresa Impulse English Academy. Datos fiscales y condiciones de uso."
-        canonical="/aviso-legal"
-        noindex={true}
-      />
       <Navbar />
 
       {/* Hero Section */}

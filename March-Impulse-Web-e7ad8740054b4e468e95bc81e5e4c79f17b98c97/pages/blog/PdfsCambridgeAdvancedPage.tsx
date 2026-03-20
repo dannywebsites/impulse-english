@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { FileText, Download, Clock, ChevronDown, ChevronUp, CheckCircle, ExternalLink, AlertCircle, BookOpen } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function PdfsCambridgeAdvancedPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'PDFs Cambridge Advanced C1: Recursos Oficiales 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "PDFs Cambridge Advanced C1: Recursos Oficiales 2026",
     description: "Recursos PDF oficiales para preparar el C1 Advanced de Cambridge: sample papers, handbook, answer keys y materiales gratuitos.",
     url: `${businessInfo.url}/blog/pdfs-cambridge-advanced`,
     datePublished: "2025-01-04"
   });
 
-  const faqs = [
+export const faqs = [
     {
       question: "¿Dónde puedo descargar PDFs oficiales de Cambridge Advanced gratis legalmente?",
       answer: "Los PDFs oficiales gratuitos están disponibles en www.cambridgeenglish.org/exams-and-tests/advanced/preparation. Este sitio proporciona sample papers completos, el handbook para profesores de 116 páginas, y FAQs sobre el formato digital. Archive.org también ofrece libros de vocabulario y gramática legalmente bajo programas de préstamo digital bibliotecario con registro gratuito."
-    },
+    }
+
+  ,
     {
       question: "¿Cuántos exámenes de práctica en PDF necesito completar antes del examen real?",
       answer: "Cambridge recomienda completar mínimo cuatro exámenes completos bajo condiciones reales antes de presentarse al C1 Advanced. Estudios de preparación efectiva indican que candidatos que completan 6-8 prácticas cronometradas aumentan sus puntuaciones en 15-20 puntos comparado con quienes hacen menos de tres. Distribuye las prácticas durante tus últimos cuatro meses de preparación."
@@ -46,6 +37,14 @@ export default function PdfsCambridgeAdvancedPage() {
       answer: "Para estudiantes con nivel B2 consolidado, Cambridge recomienda 12-18 meses de preparación dedicando 6-8 horas semanales. Si tu nivel actual es B2 inicial o intermedio, necesitarás 18-24 meses. Un indicador confiable: si completas un examen de práctica y obtienes menos de 160 puntos (de 210 totales), necesitas mínimo seis meses más de estudio intensivo con estos materiales."
     }
   ];
+
+export default function PdfsCambridgeAdvancedPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   const officialPdfs = [
     {
@@ -96,14 +95,7 @@ export default function PdfsCambridgeAdvancedPage() {
 
   return (
     <>
-      <SEOHead
-        title="PDFs Cambridge Advanced C1: Recursos Oficiales Gratuitos 2026"
-        description="Descarga gratuita de PDFs oficiales para preparar el C1 Advanced Cambridge: sample papers, handbook for teachers, answer keys y materiales de práctica."
-        keywords="pdfs cambridge advanced, c1 advanced sample papers, handbook cambridge c1, descargar examen c1, materiales gratuitos c1"
-        canonical="/blog/pdfs-cambridge-advanced"
-        ogType="article"
-      />
-      <Navbar />
+<Navbar />
 
       {/* Hero Section */}
       <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
@@ -358,9 +350,9 @@ export default function PdfsCambridgeAdvancedPage() {
 
               <div className="bg-zinc-100 rounded-xl p-6">
                 <p className="text-zinc-700">
-                  En <Link to="/academia-ingles-barrio-del-pilar" className="text-amber-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</Link>, <Link to="/academia-ingles-la-vaguada" className="text-amber-600 hover:underline font-medium">junto a La Vaguada</Link>, complementamos estos recursos PDF con clases guiadas,
+                  En <a href="/academia-ingles-barrio-del-pilar" className="text-amber-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-amber-600 hover:underline font-medium">junto a La Vaguada</a>, complementamos estos recursos PDF con clases guiadas,
                   corrección personalizada de Writing y práctica de Speaking con feedback en tiempo real.
-                  Ofrecemos <Link to="/cursos-ingles/adultos" className="text-amber-600 hover:underline font-medium">cursos de inglés para adultos</Link> y preparación para <Link to="/examenes-cambridge" className="text-amber-600 hover:underline font-medium">exámenes Cambridge</Link> desde <strong>79€/mes</strong>.
+                  Ofrecemos <a href="/cursos-ingles/adultos" className="text-amber-600 hover:underline font-medium">cursos de inglés para adultos</a> y preparación para <a href="/examenes-cambridge" className="text-amber-600 hover:underline font-medium">exámenes Cambridge</a> desde <strong>79€/mes</strong>.
                 </p>
               </div>
             </section>
@@ -384,11 +376,11 @@ export default function PdfsCambridgeAdvancedPage() {
                         <ChevronDown className="w-5 h-5 text-zinc-500" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 py-4 bg-white">
-                        <p className="text-zinc-600">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 py-4' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-zinc-600">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -401,11 +393,11 @@ export default function PdfsCambridgeAdvancedPage() {
                 <p className="text-white/90 mb-6">
                   Los recursos PDF oficiales de Cambridge son tu punto de partida esencial para preparar el C1 Advanced.
                   El Handbook for Teachers y los Sample Papers te dan toda la información necesaria sobre el formato
-                  y criterios de evaluación. Complementa estos materiales gratuitos con práctica guiada mediante <Link to="/cursos-ingles/particulares" className="text-white hover:underline font-semibold">clases particulares</Link> para maximizar
-                  tus posibilidades de éxito en el <Link to="/examenes-cambridge" className="text-white hover:underline font-semibold">examen Cambridge</Link>.
+                  y criterios de evaluación. Complementa estos materiales gratuitos con práctica guiada mediante <a href="/cursos-ingles/particulares" className="text-white hover:underline font-semibold">clases particulares</a> para maximizar
+                  tus posibilidades de éxito en el <a href="/examenes-cambridge" className="text-white hover:underline font-semibold">examen Cambridge</a>.
                 </p>
                 <p className="text-white/90">
-                  En <Link to="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-semibold">nuestra academia</Link> integramos estos recursos en nuestros cursos de
+                  En <a href="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-semibold">nuestra academia</a> integramos estos recursos en nuestros cursos de
                   preparación por solo <strong>79€/mes</strong>, con profesores especializados en exámenes Cambridge.
                 </p>
               </div>
@@ -423,12 +415,12 @@ export default function PdfsCambridgeAdvancedPage() {
                       Te ayudamos a sacar el máximo partido a los recursos oficiales con preparación guiada.
                     </p>
                   </div>
-                  <Link
-                    to="/contacto"
+                  <a
+              href="/contacto"
                     className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Solicitar información
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -438,14 +430,14 @@ export default function PdfsCambridgeAdvancedPage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link to="/examenes-cambridge/c1-advanced" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-amber-600">C1 ADVANCED</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Examen Cambridge C1 Advanced: Guía Completa</h4>
-                </Link>
-                <Link to="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                </a>
+                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-amber-600">PUNTUACIÓN</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Escala Cambridge Explicada: Niveles y Grades</h4>
-                </Link>
+                </a>
               </div>
             </section>
           </div>
@@ -489,7 +481,6 @@ export default function PdfsCambridgeAdvancedPage() {
 
       <Footer />
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

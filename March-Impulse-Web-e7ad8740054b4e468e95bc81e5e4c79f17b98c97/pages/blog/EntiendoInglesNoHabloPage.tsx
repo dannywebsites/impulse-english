@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function EntiendoInglesNoHabloPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Entiendo Inglés Pero No Lo Hablo: Por Qué y Cómo Solucionarlo | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿Por Qué Entiendo Inglés Pero No Puedo Hablarlo?",
     description: "Es normal entender inglés pero no hablarlo. Se debe al desequilibrio entre habilidades pasivas y activas. Descubre 5 estrategias para empezar a hablar.",
     url: `${businessInfo.url}/blog/entiendo-ingles-no-hablo`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Es normal entender inglés pero no poder hablarlo?",
       answer: "Completamente normal. Es un fenómeno lingüístico conocido como 'competencia pasiva'. Tu cerebro ha desarrollado la capacidad de reconocer patrones del idioma (comprensión) pero aún no ha automatizado los procesos necesarios para producir el idioma (expresión). Es como reconocer una cara vs dibujarla: son habilidades cognitivas diferentes."
-    },
+    }
+
+  ,
     {
       question: "¿Cuánto tiempo tarda en activarse la capacidad de hablar?",
       answer: "Con práctica regular de speaking (3-4 veces por semana, 20-30 minutos), la mayoría de estudiantes empiezan a notar mejora significativa en 4-8 semanas. La transición de comprensión pasiva a producción activa se acelera enormemente con la práctica oral constante en un entorno de confianza."
@@ -43,16 +34,17 @@ export default function EntiendoInglesNoHabloPage() {
     }
   ];
 
+export default function EntiendoInglesNoHabloPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="Entiendo Inglés Pero No Lo Hablo: Por Qué y Cómo Solucionarlo"
-        description="Es normal entender inglés pero no hablarlo. Se debe al desequilibrio entre habilidades pasivas y activas. Descubre 5 estrategias para empezar a hablar."
-        keywords="entiendo inglés no hablo, no puedo hablar inglés, comprendo inglés no hablo, hablar inglés fluido"
-        canonical="/blog/entiendo-ingles-no-hablo"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -194,7 +186,7 @@ export default function EntiendoInglesNoHabloPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                La <Link to="/blog/verguenza-hablar-ingles" className="text-emerald-600 hover:underline">vergüenza al hablar inglés</Link> es extremadamente común y tiene solución. El primer paso es entender que los errores son parte natural del proceso y que comunicar imperfectamente es infinitamente mejor que no comunicar.
+                La <a href="/blog/verguenza-hablar-ingles" className="text-emerald-600 hover:underline">vergüenza al hablar inglés</a> es extremadamente común y tiene solución. El primer paso es entender que los errores son parte natural del proceso y que comunicar imperfectamente es infinitamente mejor que no comunicar.
               </p>
             </section>
 
@@ -331,7 +323,7 @@ export default function EntiendoInglesNoHabloPage() {
               </div>
 
               <p className="text-gray-700 leading-relaxed">
-                En <Link to="/metodologia" className="text-emerald-600 hover:underline">Impulse English Academy</Link> utilizamos una <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">metodología comunicativa</Link> donde el speaking representa el 70% de cada clase. Nuestros profesores altamente cualificados crean un entorno de confianza donde los errores son bienvenidos como parte del aprendizaje.
+                En <a href="/metodologia" className="text-emerald-600 hover:underline">Impulse English Academy</a> utilizamos una <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">metodología comunicativa</a> donde el speaking representa el 70% de cada clase. Nuestros profesores altamente cualificados crean un entorno de confianza donde los errores son bienvenidos como parte del aprendizaje.
               </p>
             </section>
 
@@ -355,11 +347,11 @@ export default function EntiendoInglesNoHabloPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -376,7 +368,7 @@ export default function EntiendoInglesNoHabloPage() {
                   Entender inglés sin poder hablarlo no es un defecto: es una fase normal del aprendizaje. Tu comprensión es una base sólida sobre la que construir tu producción oral. Con las estrategias correctas y práctica constante, puedes activar todo ese conocimiento pasivo y empezar a hablar con confianza.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si sientes que necesitas apoyo profesional, en <Link to="/metodologia" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</Link> te ayudamos a romper el bloqueo con <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">clases diseñadas para hablar desde el primer día</Link>. <Link to="/contacto" className="text-emerald-600 hover:underline font-medium">Contacta con nosotros</Link> para una clase de prueba gratuita.
+                  Si sientes que necesitas apoyo profesional, en <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te ayudamos a romper el bloqueo con <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">clases diseñadas para hablar desde el primer día</a>. <a href="/contacto" className="text-emerald-600 hover:underline font-medium">Contacta con nosotros</a> para una clase de prueba gratuita.
                 </p>
               </div>
             </section>
@@ -387,37 +379,37 @@ export default function EntiendoInglesNoHabloPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 En Impulse English Academy te ayudamos a activar tu inglés con clases 100% comunicativas donde hablarás desde el primer minuto.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reservar clase de prueba
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link to="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo enseñamos inglés de forma comunicativa y efectiva.</p>
-                </Link>
-                <Link to="/blog/mejorar-speaking-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/mejorar-speaking-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Mejorar Speaking en Inglés
                   </h3>
                   <p className="text-gray-600 text-sm">Técnicas y ejercicios para mejorar tu producción oral.</p>
-                </Link>
-                <Link to="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas comunicativos con grupos reducidos.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -447,7 +439,6 @@ export default function EntiendoInglesNoHabloPage() {
         <Footer />
       </div>
 
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

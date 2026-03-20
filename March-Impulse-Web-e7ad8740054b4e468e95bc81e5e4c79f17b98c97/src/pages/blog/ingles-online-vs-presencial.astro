@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InglesOnlineVsPresencialPage, { articleSchema, faqItems } from '../../../pages/blog/InglesOnlineVsPresencialPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Inglés Online vs Presencial para Niños: Cuál Elegir 2026"
+  description="Para niños, el inglés presencial es más efectivo por la interacción real. Descubre cuándo el online puede complementar y qué edades se adaptan mejor a cada formato."
+  canonical="/blog/ingles-online-vs-presencial"
+  ogType="article"
+  schemas={schemas}
+>
+  <InglesOnlineVsPresencialPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

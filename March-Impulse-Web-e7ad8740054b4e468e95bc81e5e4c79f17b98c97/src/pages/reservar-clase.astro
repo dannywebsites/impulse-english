@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ReservarClasePage from '../../pages/ReservarClasePage';
+import CookieBanner from '../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Reservar Clase de Prueba Gratuita"
+  description="Reserva tu clase de prueba gratuita en Impulse English Academy. Sin compromiso. Te contactamos en menos de 24 horas. La Vaguada, Barrio del Pilar."
+  keywords="reservar clase inglés, prueba gratis inglés madrid, clase prueba academia inglés, inscripción cursos inglés"
+  canonical="/reservar-clase"
+>
+  <ReservarClasePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

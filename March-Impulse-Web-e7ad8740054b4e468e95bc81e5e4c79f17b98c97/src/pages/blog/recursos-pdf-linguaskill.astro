@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RecursosPdfLinguaskillPage, { articleSchema, faqs } from '../../../pages/blog/RecursosPdfLinguaskillPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Recursos PDF Linguaskill 2026: Materiales Oficiales Gratuitos"
+  description="Materiales PDF oficiales Cambridge para preparar Linguaskill: guías descargables, ejemplos de ejercicios, consejos por módulo y recursos gratuitos actualizados 2026."
+  canonical="/blog/recursos-pdf-linguaskill"
+  ogType="article"
+  schemas={schemas}
+>
+  <RecursosPdfLinguaskillPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

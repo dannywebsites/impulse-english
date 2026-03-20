@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Send, CheckCircle, Loader2 } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 interface LeadFormProps {
   title?: string;
@@ -9,6 +8,9 @@ interface LeadFormProps {
   webhookUrl?: string;
   source?: string;
   compact?: boolean;
+  showPhone?: boolean;
+  showAge?: boolean;
+  showLevel?: boolean;
 }
 
 export default function LeadForm({
@@ -17,9 +19,11 @@ export default function LeadForm({
   ctaText = "Enviar solicitud",
   webhookUrl = "https://services.leadconnectorhq.com/hooks/OAJYwGK3D8G66kUMQsht/webhook-trigger/0fe57216-4cdc-42af-b2d6-d401e9015573",
   source = "general",
-  compact = false
+  compact = false,
+  showPhone = true,
+  showAge: _showAge = false,
+  showLevel = true
 }: LeadFormProps) {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -61,7 +65,7 @@ export default function LeadForm({
       setPrivacyAccepted(false);
 
       // Redirect to thank you page
-      navigate('/gracias');
+      window.location.href = '/gracias';
     } catch (error) {
       setStatus('error');
     }
@@ -114,6 +118,7 @@ export default function LeadForm({
         </div>
 
         {/* Teléfono */}
+        {showPhone && (
         <div>
           <label className="block text-sm font-semibold text-zinc-700 mb-2">Teléfono *</label>
           <input
@@ -125,8 +130,10 @@ export default function LeadForm({
             placeholder="+34 600 000 000"
           />
         </div>
+        )}
 
         {/* Nivel */}
+        {showLevel && (
         <div>
           <label className="block text-sm font-semibold text-zinc-700 mb-2">Nivel *</label>
           <select
@@ -144,6 +151,7 @@ export default function LeadForm({
             <option value="nos">Nos</option>
           </select>
         </div>
+        )}
 
         {/* Política de privacidad */}
         <div className="flex items-start gap-3">

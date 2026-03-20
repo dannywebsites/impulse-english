@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
-import SchemaMarkup from '../../components/SchemaMarkup';
-import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
-export default function CuantasVecesB2FirstPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = '¿Cuántas Veces Puedo Hacer el B2 First? Sin Límite 2026 | Impulse English Academy La Vaguada – Barrio del Pilar';
-  }, []);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const articleSchema = generateArticleSchema({
+export const articleSchema = generateArticleSchema({
     headline: "¿Cuántas Veces Puedo Presentarme al B2 First?",
     description: "No hay límite de intentos para el B2 First. Puedes presentarte tantas veces como quieras. Conoce los plazos, costes y estrategias para el segundo intento.",
     url: `${businessInfo.url}/blog/cuantas-veces-b2-first`,
     datePublished: "2025-03-01"
   });
 
-  const faqItems = [
+export const faqItems = [
     {
       question: "¿Hay un período de espera entre intentos del B2 First?",
       answer: "No, Cambridge no establece ningún período de espera obligatorio entre intentos. Técnicamente puedes inscribirte en la siguiente convocatoria disponible, aunque sea al mes siguiente. Sin embargo, la recomendación de expertos es esperar al menos 2-3 meses para tener tiempo de trabajar las áreas débiles y mejorar realmente tu nivel antes de volver a presentarte."
-    },
+    }
+
+  ,
     {
       question: "¿Puedo repetir solo la parte de Speaking si es donde he fallado?",
       answer: "No, el B2 First no permite retomar partes individuales del examen. Si no alcanzas los 160 puntos necesarios, debes volver a realizar las cuatro partes completas: Reading and Use of English, Writing, Listening y Speaking. No existe modalidad de examen parcial ni reválida de secciones específicas en los exámenes Cambridge de este tipo."
@@ -47,16 +38,17 @@ export default function CuantasVecesB2FirstPage() {
     }
   ];
 
+export default function CuantasVecesB2FirstPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+
   return (
     <>
-      <SEOHead
-        title="¿Cuántas Veces Puedo Hacer el B2 First? Sin Límite 2026"
-        description="No hay límite de intentos para el B2 First. Puedes presentarte tantas veces como quieras. Conoce los plazos, costes y estrategias para el segundo intento."
-        keywords="cuántas veces b2 first, repetir b2 first, segundo intento b2 cambridge, suspender b2 first"
-        canonical="/blog/cuantas-veces-b2-first"
-        ogType="article"
-      />
-      <div className="min-h-screen flex flex-col bg-white">
+<div className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         <main className="flex-grow">
@@ -114,7 +106,7 @@ export default function CuantasVecesB2FirstPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Si estás pensando en presentarte al <Link to="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First de Cambridge</Link> o si ya te has presentado y no has obtenido el resultado esperado, una de las primeras preguntas que surge es: ¿cuántas veces puedo intentarlo? La buena noticia es clara: <strong>no hay límite de intentos</strong>. Puedes presentarte tantas veces como desees, sin restricción alguna por parte de Cambridge. Cada intento es independiente y tu certificado final será igual de válido, independientemente de si es tu primer o quinto intento.
+              Si estás pensando en presentarte al <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First de Cambridge</a> o si ya te has presentado y no has obtenido el resultado esperado, una de las primeras preguntas que surge es: ¿cuántas veces puedo intentarlo? La buena noticia es clara: <strong>no hay límite de intentos</strong>. Puedes presentarte tantas veces como desees, sin restricción alguna por parte de Cambridge. Cada intento es independiente y tu certificado final será igual de válido, independientemente de si es tu primer o quinto intento.
             </p>
 
             {/* Section 1 - Sin límite */}
@@ -342,13 +334,13 @@ export default function CuantasVecesB2FirstPage() {
                     <BookOpen className="w-5 h-5 text-emerald-600" />
                     Considerar Linguaskill como alternativa
                   </h3>
-                  <p className="text-gray-700">Si necesitas acreditar tu nivel de inglés urgentemente y no puedes esperar a prepararte más para el B2 First, el <Link to="/examenes-cambridge/linguaskill" className="text-emerald-600 hover:underline">Linguaskill</Link> es una alternativa más flexible. Es más barato (~80-100 EUR), tiene resultados en 48 horas y se puede realizar con mucha más frecuencia. Sin embargo, el resultado caduca a los 2 años, a diferencia del certificado B2 First que es permanente.</p>
+                  <p className="text-gray-700">Si necesitas acreditar tu nivel de inglés urgentemente y no puedes esperar a prepararte más para el B2 First, el <a href="/examenes-cambridge/linguaskill" className="text-emerald-600 hover:underline">Linguaskill</a> es una alternativa más flexible. Es más barato (~80-100 EUR), tiene resultados en 48 horas y se puede realizar con mucha más frecuencia. Sin embargo, el resultado caduca a los 2 años, a diferencia del certificado B2 First que es permanente.</p>
                 </div>
               </div>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Nuestra recomendación:</strong> Si necesitas el B2 para un objetivo específico (oposiciones, universidad, trabajo), invierte en preparación de calidad antes de repetir. Un buen curso de 2-3 meses es más rentable que 2-3 intentos fallidos. Consulta nuestro <Link to="/blog/registro-cambridge" className="text-emerald-600 hover:underline">proceso de registro</Link> para planificar tu próximo intento.
+                  <strong>Nuestra recomendación:</strong> Si necesitas el B2 para un objetivo específico (oposiciones, universidad, trabajo), invierte en preparación de calidad antes de repetir. Un buen curso de 2-3 meses es más rentable que 2-3 intentos fallidos. Consulta nuestro <a href="/blog/registro-cambridge" className="text-emerald-600 hover:underline">proceso de registro</a> para planificar tu próximo intento.
                 </p>
               </div>
             </section>
@@ -373,11 +365,11 @@ export default function CuantasVecesB2FirstPage() {
                         <ChevronDown className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       )}
                     </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6 bg-white">
-                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+                        <div className="px-6 bg-white">
+                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                        </div>
                       </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -391,10 +383,10 @@ export default function CuantasVecesB2FirstPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  No hay límite de intentos para el <Link to="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</Link>, y eso es una tranquilidad. Pero la clave no está en repetir mecánicamente, sino en utilizar cada intento como una oportunidad de aprendizaje. Analiza tus resultados, invierte en preparación específica para tus áreas débiles y espera el tiempo necesario para mejorar realmente antes de volver a presentarte.
+                  No hay límite de intentos para el <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a>, y eso es una tranquilidad. Pero la clave no está en repetir mecánicamente, sino en utilizar cada intento como una oportunidad de aprendizaje. Analiza tus resultados, invierte en preparación específica para tus áreas débiles y espera el tiempo necesario para mejorar realmente antes de volver a presentarte.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si necesitas apoyo para preparar tu próximo intento, nuestros <Link to="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos para adultos</Link> están diseñados para identificar y trabajar exactamente las áreas que necesitas mejorar. Consulta también el <Link to="/blog/registro-cambridge" className="text-emerald-600 hover:underline font-medium">proceso de registro de Cambridge</Link> para planificar las fechas de tu próxima convocatoria.
+                  Si necesitas apoyo para preparar tu próximo intento, nuestros <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> están diseñados para identificar y trabajar exactamente las áreas que necesitas mejorar. Consulta también el <a href="/blog/registro-cambridge" className="text-emerald-600 hover:underline font-medium">proceso de registro de Cambridge</a> para planificar las fechas de tu próxima convocatoria.
                 </p>
               </div>
             </section>
@@ -405,37 +397,37 @@ export default function CuantasVecesB2FirstPage() {
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
                 En Impulse English Academy analizamos tus resultados anteriores y diseñamos un plan de preparación personalizado para que apruebes en tu próximo intento.
               </p>
-              <Link
-                to="/contacto"
+              <a
+              href="/contacto"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
 
             {/* Related Articles */}
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cambridge B2 First: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B2 First: estructura, formato y preparación.</p>
-                </Link>
-                <Link to="/blog/registro-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/blog/registro-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cómo Registrarse en Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Guía paso a paso para inscribirte en tu examen Cambridge.</p>
-                </Link>
-                <Link to="/examenes-cambridge/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                </a>
+                <a href="/examenes-cambridge/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Linguaskill: Alternativa Rápida
                   </h3>
                   <p className="text-gray-600 text-sm">Conoce esta alternativa de Cambridge con resultados en 48 horas.</p>
-                </Link>
+                </a>
               </div>
             </section>
           </article>
@@ -466,7 +458,6 @@ export default function CuantasVecesB2FirstPage() {
       </div>
 
       {/* Schema.org Structured Data */}
-      <SchemaMarkup schema={articleSchema} />
-    </>
+</>
   );
 }

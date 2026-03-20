@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GraciasPage from '../../pages/GraciasPage';
+import CookieBanner from '../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Gracias por Contactarnos"
+  description="Tu solicitud ha sido recibida. Te contactaremos en menos de 24 horas."
+  canonical="/gracias"
+  noindex={true}
+>
+  <GraciasPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

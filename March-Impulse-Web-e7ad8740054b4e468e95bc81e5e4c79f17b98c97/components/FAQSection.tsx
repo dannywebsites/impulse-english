@@ -15,20 +15,6 @@ interface FAQSectionProps {
 export default function FAQSection({ faqs, title = "Preguntas Frecuentes", className = "" }: FAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  // Generate JSON-LD schema
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
-
   return (
     <section className={`py-16 px-6 bg-zinc-50 ${className}`}>
       <div className="container mx-auto max-w-4xl">
@@ -46,20 +32,12 @@ export default function FAQSection({ faqs, title = "Preguntas Frecuentes", class
                   className={`w-5 h-5 text-accent-blue flex-shrink-0 transition-transform ${openIndex === index ? 'rotate-180' : ''}`}
                 />
               </button>
-              {openIndex === index && (
-                <div className="px-6 pb-5">
-                  <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
-                </div>
-              )}
+              <div className={`px-6 overflow-hidden transition-all duration-300 ${openIndex === index ? 'pb-5 max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+              </div>
             </div>
           ))}
         </div>
-
-        {/* JSON-LD Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-        />
       </div>
     </section>
   );
