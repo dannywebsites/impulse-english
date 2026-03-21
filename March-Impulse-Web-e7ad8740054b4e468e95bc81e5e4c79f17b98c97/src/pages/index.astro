@@ -38,18 +38,16 @@ import CookieBanner from '../../components/CookieBanner';
       ></iframe>
     </div>
 
-    <!-- MOBILE/TABLET BACKGROUND: Video Layer -->
-    <div class="xl:hidden absolute inset-0 z-0 overflow-hidden">
+    <!-- MOBILE/TABLET BACKGROUND: Image Fallback -->
+    <div class="xl:hidden absolute inset-0 z-0">
       <div class="absolute inset-0 bg-black/20 z-10"></div>
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-[178vh] h-[100vh] pointer-events-none">
-        <iframe
-          src="https://player.vimeo.com/video/1143999306?badge=0&autopause=0&player_id=0&app_id=58479&muted=1&loop=1&autoplay=1&background=1"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-          class="w-full h-full"
-          title="Impulse English Academy"
-        ></iframe>
-      </div>
+      <img
+        src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG"
+        alt="Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy"
+        class="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+        fetchpriority="high"
+      />
     </div>
 
     <!-- Navbar -->
