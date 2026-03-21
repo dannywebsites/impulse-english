@@ -56,30 +56,7 @@ export default function Hero() {
             MOBILE & TABLET VERSION (LOYOLA SHIELD STYLE)
             Hidden on Desktop (XL+)
            ========================================= */}
-        <div className="xl:hidden w-full h-full flex items-center justify-center pb-32 pointer-events-auto">
-            {/* The Shield Container */}
-            <div
-                className="relative bg-accent-blue w-56 pt-8 pb-14 px-4 text-center drop-shadow-2xl animate-fade-in-up"
-                style={{
-                    clipPath: "polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)",
-                    WebkitClipPath: "polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)"
-                }}
-            >
-                {/* Text Content - Using span instead of h1 since the real H1 is in desktop version */}
-                <div className="text-2xl font-bold text-white uppercase leading-[0.9] tracking-tight mb-2 font-display" aria-hidden="true">
-                    Academia<br/>de Inglés
-                </div>
-                <div className="text-xl font-light text-white/90 uppercase leading-[0.9] tracking-tight mb-6 font-display" aria-hidden="true">
-                    La<br/>Vaguada
-                </div>
-
-                {/* Bottom Detail */}
-                <div className="flex flex-col items-center gap-1 opacity-80 absolute bottom-6 left-0 right-0">
-                    <span className="text-[9px] uppercase tracking-[0.2em] text-white font-medium">Centro Cambridge</span>
-                    <ChevronDown className="w-3 h-3 text-white animate-bounce mt-1" />
-                </div>
-            </div>
-        </div>
+        <div className="xl:hidden w-full h-full" aria-hidden="true"></div>
 
         <style>{`
           .animate-fade-in-up {

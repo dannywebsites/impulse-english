@@ -72,7 +72,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
               <img
                 src={LOGO_URL}
                 alt="Impulse English Academy"
-                className="h-[70px] md:h-20 lg:h-[100px] w-auto"
+                className="h-[105px] md:h-20 lg:h-[100px] w-auto"
               />
             </a>
 
@@ -197,7 +197,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
             <img
               src={LOGO_URL}
               alt="Impulse English Academy"
-              className="h-[70px] md:h-20 lg:h-[100px] w-auto"
+              className="h-[105px] md:h-20 lg:h-[100px] w-auto"
             />
           </a>
 
