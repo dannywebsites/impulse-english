@@ -56,7 +56,7 @@ export default function Hero() {
             MOBILE & TABLET VERSION (LOYOLA SHIELD STYLE)
             Hidden on Desktop (XL+)
            ========================================= */}
-        <div className="xl:hidden w-full h-full flex flex-col items-center justify-end pb-48 pointer-events-auto relative z-[25]">
+        <div className="xl:hidden w-full h-full flex flex-col items-center justify-center pointer-events-auto relative z-[25]">
             <div className="text-center px-6">
                 <a
                     href="/reservar-clase"
