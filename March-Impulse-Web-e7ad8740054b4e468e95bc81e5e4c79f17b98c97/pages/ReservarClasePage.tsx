@@ -266,7 +266,7 @@ export default function ReservarClasePage() {
                         <option value="secundaria">Secundaria</option>
                         <option value="adulto">Adulto</option>
                         <option value="one-to-one">One to One</option>
-                        <option value="nos">Nos</option>
+                        <option value="no-se">No sé</option>
                       </select>
                     </div>
 
