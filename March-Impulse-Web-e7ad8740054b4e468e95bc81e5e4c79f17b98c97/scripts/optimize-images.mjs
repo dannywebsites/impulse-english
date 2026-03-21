@@ -153,6 +153,45 @@ const imagesCatalog = [
     alt: 'Academia de inglés La Vaguada exterior - Impulse English Academy',
     altEn: 'English academy La Vaguada exterior - Impulse English Academy',
     category: 'facilities'
+  },
+
+  // COURSE CARDS — used in CoursesSection
+  {
+    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/INFANTIL.jpg',
+    name: 'curso-ingles-general-infantil',
+    alt: 'Curso de inglés general infantil - Impulse English Academy',
+    altEn: 'General English course for children - Impulse English Academy',
+    category: 'courses'
+  },
+  {
+    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/PRIAMRY.jpg',
+    name: 'curso-preparacion-movers-primaria',
+    alt: 'Curso preparación MOVERS primaria - Cambridge Young Learners',
+    altEn: 'MOVERS preparation course primary - Cambridge Young Learners',
+    category: 'courses'
+  },
+  {
+    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/SECONDARY+OFF.jpg',
+    name: 'curso-extensivo-secundaria',
+    alt: 'Cursos extensivos inglés secundaria - Impulse English Academy',
+    altEn: 'Extensive English courses secondary - Impulse English Academy',
+    category: 'courses'
+  },
+  {
+    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg',
+    name: 'curso-preparacion-ket',
+    alt: 'Curso preparación KET Cambridge - clases de inglés',
+    altEn: 'KET Cambridge preparation course - English classes',
+    category: 'courses'
+  },
+
+  // TEAM / CTA — used in TeamSection and VideoCTA
+  {
+    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG',
+    name: 'estudiantes-primaria-sonriendo',
+    alt: 'Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy',
+    altEn: 'Primary students smiling in English class - Impulse English Academy',
+    category: 'students'
   }
 ];
 

@@ -520,5 +520,150 @@
         "width": 1920
       }
     }
+  },
+  {
+    "name": "curso-ingles-general-infantil",
+    "alt": "Curso de inglés general infantil - Impulse English Academy",
+    "altEn": "General English course for children - Impulse English Academy",
+    "category": "courses",
+    "original": "https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/INFANTIL.jpg",
+    "sizes": {
+      "sm": {
+        "webp": "/images/optimized/curso-ingles-general-infantil-sm.webp",
+        "jpg": "/images/optimized/curso-ingles-general-infantil-sm.jpg",
+        "width": 400
+      },
+      "md": {
+        "webp": "/images/optimized/curso-ingles-general-infantil-md.webp",
+        "jpg": "/images/optimized/curso-ingles-general-infantil-md.jpg",
+        "width": 800
+      },
+      "lg": {
+        "webp": "/images/optimized/curso-ingles-general-infantil-lg.webp",
+        "jpg": "/images/optimized/curso-ingles-general-infantil-lg.jpg",
+        "width": 1200
+      },
+      "xl": {
+        "webp": "/images/optimized/curso-ingles-general-infantil-xl.webp",
+        "jpg": "/images/optimized/curso-ingles-general-infantil-xl.jpg",
+        "width": 1920
+      }
+    }
+  },
+  {
+    "name": "curso-preparacion-movers-primaria",
+    "alt": "Curso preparación MOVERS primaria - Cambridge Young Learners",
+    "altEn": "MOVERS preparation course primary - Cambridge Young Learners",
+    "category": "courses",
+    "original": "https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/PRIAMRY.jpg",
+    "sizes": {
+      "sm": {
+        "webp": "/images/optimized/curso-preparacion-movers-primaria-sm.webp",
+        "jpg": "/images/optimized/curso-preparacion-movers-primaria-sm.jpg",
+        "width": 400
+      },
+      "md": {
+        "webp": "/images/optimized/curso-preparacion-movers-primaria-md.webp",
+        "jpg": "/images/optimized/curso-preparacion-movers-primaria-md.jpg",
+        "width": 800
+      },
+      "lg": {
+        "webp": "/images/optimized/curso-preparacion-movers-primaria-lg.webp",
+        "jpg": "/images/optimized/curso-preparacion-movers-primaria-lg.jpg",
+        "width": 1200
+      },
+      "xl": {
+        "webp": "/images/optimized/curso-preparacion-movers-primaria-xl.webp",
+        "jpg": "/images/optimized/curso-preparacion-movers-primaria-xl.jpg",
+        "width": 1920
+      }
+    }
+  },
+  {
+    "name": "curso-extensivo-secundaria",
+    "alt": "Cursos extensivos inglés secundaria - Impulse English Academy",
+    "altEn": "Extensive English courses secondary - Impulse English Academy",
+    "category": "courses",
+    "original": "https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/SECONDARY+OFF.jpg",
+    "sizes": {
+      "sm": {
+        "webp": "/images/optimized/curso-extensivo-secundaria-sm.webp",
+        "jpg": "/images/optimized/curso-extensivo-secundaria-sm.jpg",
+        "width": 400
+      },
+      "md": {
+        "webp": "/images/optimized/curso-extensivo-secundaria-md.webp",
+        "jpg": "/images/optimized/curso-extensivo-secundaria-md.jpg",
+        "width": 800
+      },
+      "lg": {
+        "webp": "/images/optimized/curso-extensivo-secundaria-lg.webp",
+        "jpg": "/images/optimized/curso-extensivo-secundaria-lg.jpg",
+        "width": 1200
+      },
+      "xl": {
+        "webp": "/images/optimized/curso-extensivo-secundaria-xl.webp",
+        "jpg": "/images/optimized/curso-extensivo-secundaria-xl.jpg",
+        "width": 1920
+      }
+    }
+  },
+  {
+    "name": "curso-preparacion-ket",
+    "alt": "Curso preparación KET Cambridge - clases de inglés",
+    "altEn": "KET Cambridge preparation course - English classes",
+    "category": "courses",
+    "original": "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg",
+    "sizes": {
+      "sm": {
+        "webp": "/images/optimized/curso-preparacion-ket-sm.webp",
+        "jpg": "/images/optimized/curso-preparacion-ket-sm.jpg",
+        "width": 400
+      },
+      "md": {
+        "webp": "/images/optimized/curso-preparacion-ket-md.webp",
+        "jpg": "/images/optimized/curso-preparacion-ket-md.jpg",
+        "width": 800
+      },
+      "lg": {
+        "webp": "/images/optimized/curso-preparacion-ket-lg.webp",
+        "jpg": "/images/optimized/curso-preparacion-ket-lg.jpg",
+        "width": 1200
+      },
+      "xl": {
+        "webp": "/images/optimized/curso-preparacion-ket-xl.webp",
+        "jpg": "/images/optimized/curso-preparacion-ket-xl.jpg",
+        "width": 1920
+      }
+    }
+  },
+  {
+    "name": "estudiantes-primaria-sonriendo",
+    "alt": "Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy",
+    "altEn": "Primary students smiling in English class - Impulse English Academy",
+    "category": "students",
+    "original": "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG",
+    "sizes": {
+      "sm": {
+        "webp": "/images/optimized/estudiantes-primaria-sonriendo-sm.webp",
+        "jpg": "/images/optimized/estudiantes-primaria-sonriendo-sm.jpg",
+        "width": 400
+      },
+      "md": {
+        "webp": "/images/optimized/estudiantes-primaria-sonriendo-md.webp",
+        "jpg": "/images/optimized/estudiantes-primaria-sonriendo-md.jpg",
+        "width": 800
+      },
+      "lg": {
+        "webp": "/images/optimized/estudiantes-primaria-sonriendo-lg.webp",
+        "jpg": "/images/optimized/estudiantes-primaria-sonriendo-lg.jpg",
+        "width": 1200
+      },
+      "xl": {
+        "webp": "/images/optimized/estudiantes-primaria-sonriendo-xl.webp",
+        "jpg": "/images/optimized/estudiantes-primaria-sonriendo-xl.jpg",
+        "width": 1920
+      }
+    }
   }
 ]

@@ -64,6 +64,21 @@ export default function SEOHead({
       link.setAttribute('href', href);
     };
 
+    // Preconnect to S3 for faster image loading
+    const s3Domain = 'https://impulseenglish.s3.us-east-1.amazonaws.com';
+    if (!document.querySelector(`link[rel="preconnect"][href="${s3Domain}"]`)) {
+      const preconnect = document.createElement('link');
+      preconnect.rel = 'preconnect';
+      preconnect.href = s3Domain;
+      preconnect.crossOrigin = 'anonymous';
+      document.head.appendChild(preconnect);
+
+      const dnsPrefetch = document.createElement('link');
+      dnsPrefetch.rel = 'dns-prefetch';
+      dnsPrefetch.href = s3Domain;
+      document.head.appendChild(dnsPrefetch);
+    }
+
     // Basic meta tags
     setMetaTag('description', description);
     setMetaTag('robots', noindex ? 'noindex, nofollow' : 'index, follow');

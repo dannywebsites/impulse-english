@@ -84,6 +84,8 @@ export default function OptimizedImage({
         srcSet={jpegSrcSet}
         sizes={sizes}
         alt={image.alt}
+        width={xl.width}
+        height={Math.round(xl.width * 0.667)}
         className={className}
         loading={priority ? 'eager' : loading}
         decoding={priority ? 'sync' : 'async'}

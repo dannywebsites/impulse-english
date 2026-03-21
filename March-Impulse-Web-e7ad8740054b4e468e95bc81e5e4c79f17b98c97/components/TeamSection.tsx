@@ -1,5 +1,6 @@
 import React from 'react';
-import { s3FacilityImages } from '../src/data/images';
+import { teamImages } from '../src/data/images';
+import OptimizedImage from './OptimizedImage';
 
 export default function TeamSection() {
   return (
@@ -10,11 +11,11 @@ export default function TeamSection() {
           {/* Image Side */}
           <div className="relative order-2 lg:order-1">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={s3FacilityImages.classroom1.url}
-                alt="Equipo docente de Impulse English Academy"
+              <OptimizedImage
+                image={teamImages.estudiantesSonriendo}
                 className="w-full h-auto object-cover"
                 loading="lazy"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>
