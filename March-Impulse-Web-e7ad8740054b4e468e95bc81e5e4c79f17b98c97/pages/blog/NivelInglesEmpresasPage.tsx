@@ -281,7 +281,7 @@ export default function NivelInglesEmpresasPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Las startups y empresas tech suelen optar por entrevistas directamente en inglés, mientras que las grandes corporaciones y consultoras prefieren <a href="/examenes-cambridge" className="text-emerald-600 hover:underline font-medium">certificaciones oficiales Cambridge</a> como garantía objetiva del nivel. Muchas empresas están adoptando <a href="/examenes-cambridge/linguaskill" className="text-emerald-600 hover:underline font-medium">Linguaskill de Cambridge</a> como herramienta interna de evaluación por su rapidez y fiabilidad.
+                Las startups y empresas tech suelen optar por entrevistas directamente en inglés, mientras que las grandes corporaciones y consultoras prefieren <a href="/examenes-cambridge" className="text-emerald-600 hover:underline font-medium">certificaciones oficiales Cambridge</a> como garantía objetiva del nivel. Muchas empresas están adoptando <a href="/linguaskill" className="text-emerald-600 hover:underline font-medium">Linguaskill de Cambridge</a> como herramienta interna de evaluación por su rapidez y fiabilidad.
               </p>
 
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">

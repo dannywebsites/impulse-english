@@ -334,7 +334,7 @@ export default function CuantasVecesB2FirstPage() {
                     <BookOpen className="w-5 h-5 text-emerald-600" />
                     Considerar Linguaskill como alternativa
                   </h3>
-                  <p className="text-gray-700">Si necesitas acreditar tu nivel de inglés urgentemente y no puedes esperar a prepararte más para el B2 First, el <a href="/examenes-cambridge/linguaskill" className="text-emerald-600 hover:underline">Linguaskill</a> es una alternativa más flexible. Es más barato (~80-100 EUR), tiene resultados en 48 horas y se puede realizar con mucha más frecuencia. Sin embargo, el resultado caduca a los 2 años, a diferencia del certificado B2 First que es permanente.</p>
+                  <p className="text-gray-700">Si necesitas acreditar tu nivel de inglés urgentemente y no puedes esperar a prepararte más para el B2 First, el <a href="/linguaskill" className="text-emerald-600 hover:underline">Linguaskill</a> es una alternativa más flexible. Es más barato (~80-100 EUR), tiene resultados en 48 horas y se puede realizar con mucha más frecuencia. Sin embargo, el resultado caduca a los 2 años, a diferencia del certificado B2 First que es permanente.</p>
                 </div>
               </div>
 
@@ -422,7 +422,7 @@ export default function CuantasVecesB2FirstPage() {
                   </h3>
                   <p className="text-gray-600 text-sm">Guía paso a paso para inscribirte en tu examen Cambridge.</p>
                 </a>
-                <a href="/examenes-cambridge/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Linguaskill: Alternativa Rápida
                   </h3>

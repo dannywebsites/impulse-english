@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AprenderInglesPodcastsPage, { articleSchema, faqItems } from '../../../pages/blog/AprenderInglesPodcastsPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Aprender Inglés con Podcasts: Los Mejores por Nivel (2026)"
+  description="Descubre los mejores podcasts para aprender inglés en 2026 por nivel (A2-C1). Guía con rutina semanal, técnicas de escucha activa y recursos gratuitos."
+  canonical="/blog/aprender-ingles-podcasts"
+  ogType="article"
+  schemas={schemas}
+>
+  <AprenderInglesPodcastsPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

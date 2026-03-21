@@ -2,55 +2,115 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "cleanUrls": true,
+  "trailingSlash": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }
+      ]
+    },
+    {
+      "source": "/gracias",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    }
+  ],
   "redirects": [
-    { "source": "/exam-impulse", "destination": "/reservar-clase", "permanent": true },
-    { "source": "/exam-impulse/", "destination": "/reservar-clase", "permanent": true },
-    { "source": "/blogs-impulse", "destination": "/blog", "permanent": true },
-    { "source": "/blogs-impulse/", "destination": "/blog", "permanent": true },
+    { "source": "/wp-content/themes/impulse-english/assets/images/optimized/:path*", "destination": "/images/optimized/:path*", "permanent": true },
 
-    { "source": "/ingles-la-vaguada/infantil", "destination": "/cursos-ingles/infantil", "permanent": true },
-    { "source": "/ingles-la-vaguada/primaria", "destination": "/cursos-ingles/primaria", "permanent": true },
-    { "source": "/ingles-la-vaguada/secundaria", "destination": "/cursos-ingles/secundaria", "permanent": true },
-    { "source": "/ingles-la-vaguada/adultos", "destination": "/cursos-ingles/adultos", "permanent": true },
-    { "source": "/ingles-la-vaguada/particulares", "destination": "/cursos-ingles/particulares", "permanent": true },
+    { "source": "/exam-impulse", "destination": "/reservar-clase/", "permanent": true },
+    { "source": "/exam-impulse/", "destination": "/reservar-clase/", "permanent": true },
+    { "source": "/blogs-impulse", "destination": "/blog/", "permanent": true },
+    { "source": "/blogs-impulse/", "destination": "/blog/", "permanent": true },
 
-    { "source": "/examenes-cambridge/linguaskill", "destination": "/linguaskill", "permanent": true },
-    { "source": "/examenes-cambridge/guia-completa", "destination": "/examenes-cambridge", "permanent": true },
-    { "source": "/examenes-cambridge/fechas", "destination": "/examenes-cambridge/fechas-precios", "permanent": true },
-    { "source": "/examenes-cambridge/c1-advanced-guia", "destination": "/examenes-cambridge/c1-advanced", "permanent": true },
-    { "source": "/examenes-cambridge/libros-recursos", "destination": "/blog/libros-cambridge-recursos", "permanent": true },
-    { "source": "/examenes-cambridge/b2-beneficios", "destination": "/blog/cambridge-b2-beneficios", "permanent": true },
-    { "source": "/examenes-cambridge/b1-guia", "destination": "/blog/cambridge-b1-guia", "permanent": true },
-    { "source": "/examenes-cambridge/precio-c1", "destination": "/blog/precio-cambridge-c1-madrid", "permanent": true },
-    { "source": "/examenes-cambridge/registro", "destination": "/blog/registro-cambridge", "permanent": true },
-    { "source": "/examenes-cambridge/escala", "destination": "/blog/escala-cambridge", "permanent": true },
-    { "source": "/examenes-cambridge/ejercicios-b2", "destination": "/blog/ejercicios-b2-cambridge", "permanent": true },
-    { "source": "/examenes-cambridge/pdfs-advanced", "destination": "/blog/pdfs-cambridge-advanced", "permanent": true },
-    { "source": "/examenes-cambridge/cae", "destination": "/blog/examen-cae-cambridge", "permanent": true },
+    { "source": "/ingles-la-vaguada/infantil", "destination": "/cursos-ingles/infantil/", "permanent": true },
+    { "source": "/ingles-la-vaguada/primaria", "destination": "/cursos-ingles/primaria/", "permanent": true },
+    { "source": "/ingles-la-vaguada/secundaria", "destination": "/cursos-ingles/secundaria/", "permanent": true },
+    { "source": "/ingles-la-vaguada/adultos", "destination": "/cursos-ingles/adultos/", "permanent": true },
+    { "source": "/ingles-la-vaguada/particulares", "destination": "/cursos-ingles/particulares/", "permanent": true },
 
-    { "source": "/linguaskill/precios-sedes", "destination": "/linguaskill/precios-fechas", "permanent": true },
-    { "source": "/linguaskill/precio-reservar", "destination": "/blog/precio-linguaskill-reservar", "permanent": true },
-    { "source": "/linguaskill/online-desde-casa", "destination": "/blog/linguaskill-online-casa", "permanent": true },
-    { "source": "/linguaskill/centros", "destination": "/blog/centros-linguaskill", "permanent": true },
-    { "source": "/linguaskill/opiniones", "destination": "/blog/opiniones-linguaskill", "permanent": true },
-    { "source": "/linguaskill/vs-aptis", "destination": "/blog/linguaskill-vs-aptis", "permanent": true },
-    { "source": "/linguaskill/registro", "destination": "/blog/registro-linguaskill", "permanent": true },
-    { "source": "/linguaskill/certificado-validez", "destination": "/blog/certificado-linguaskill", "permanent": true },
-    { "source": "/linguaskill/recursos-pdf", "destination": "/blog/recursos-pdf-linguaskill", "permanent": true },
-    { "source": "/linguaskill/precio-online", "destination": "/blog/precio-linguaskill-online", "permanent": true },
+    { "source": "/examenes-cambridge/linguaskill", "destination": "/linguaskill/", "permanent": true },
+    { "source": "/examenes-cambridge/guia-completa", "destination": "/examenes-cambridge/", "permanent": true },
+    { "source": "/examenes-cambridge/fechas", "destination": "/examenes-cambridge/fechas-precios/", "permanent": true },
+    { "source": "/examenes-cambridge/c1-advanced-guia", "destination": "/examenes-cambridge/c1-advanced/", "permanent": true },
+    { "source": "/examenes-cambridge/libros-recursos", "destination": "/blog/libros-cambridge-recursos/", "permanent": true },
+    { "source": "/examenes-cambridge/b2-beneficios", "destination": "/blog/cambridge-b2-beneficios/", "permanent": true },
+    { "source": "/examenes-cambridge/b1-guia", "destination": "/blog/cambridge-b1-guia/", "permanent": true },
+    { "source": "/examenes-cambridge/precio-c1", "destination": "/blog/precio-cambridge-c1-madrid/", "permanent": true },
+    { "source": "/examenes-cambridge/registro", "destination": "/blog/registro-cambridge/", "permanent": true },
+    { "source": "/examenes-cambridge/escala", "destination": "/blog/escala-cambridge/", "permanent": true },
+    { "source": "/examenes-cambridge/ejercicios-b2", "destination": "/blog/ejercicios-b2-cambridge/", "permanent": true },
+    { "source": "/examenes-cambridge/pdfs-advanced", "destination": "/blog/pdfs-cambridge-advanced/", "permanent": true },
+    { "source": "/examenes-cambridge/cae", "destination": "/blog/examen-cae-cambridge/", "permanent": true },
 
-    { "source": "/ubicaciones/barrio-del-pilar", "destination": "/academia-ingles-barrio-del-pilar", "permanent": true },
-    { "source": "/ubicaciones/la-vaguada", "destination": "/academia-ingles-la-vaguada", "permanent": true },
-    { "source": "/ubicaciones/penagrande", "destination": "/academia-ingles-penagrande", "permanent": true },
-    { "source": "/ubicaciones/la-ventilla", "destination": "/academia-ingles-la-ventilla", "permanent": true },
-    { "source": "/ubicaciones/la-paz", "destination": "/academia-ingles-la-paz", "permanent": true },
-    { "source": "/ubicaciones/plaza-castilla", "destination": "/academia-ingles-plaza-castilla", "permanent": true },
-    { "source": "/ubicaciones/tetuan", "destination": "/academia-ingles-tetuan", "permanent": true },
-    { "source": "/ubicaciones/cuatro-torres", "destination": "/academia-ingles-cuatro-torres", "permanent": true },
+    { "source": "/linguaskill/precios-sedes", "destination": "/linguaskill/precios-fechas/", "permanent": true },
+    { "source": "/linguaskill/precio-reservar", "destination": "/blog/precio-linguaskill-reservar/", "permanent": true },
+    { "source": "/linguaskill/online-desde-casa", "destination": "/blog/linguaskill-online-casa/", "permanent": true },
+    { "source": "/linguaskill/centros", "destination": "/blog/centros-linguaskill/", "permanent": true },
+    { "source": "/linguaskill/opiniones", "destination": "/blog/opiniones-linguaskill/", "permanent": true },
+    { "source": "/linguaskill/vs-aptis", "destination": "/blog/linguaskill-vs-aptis/", "permanent": true },
+    { "source": "/linguaskill/registro", "destination": "/blog/registro-linguaskill/", "permanent": true },
+    { "source": "/linguaskill/certificado-validez", "destination": "/blog/certificado-linguaskill/", "permanent": true },
+    { "source": "/linguaskill/recursos-pdf", "destination": "/blog/recursos-pdf-linguaskill/", "permanent": true },
+    { "source": "/linguaskill/precio-online", "destination": "/blog/precio-linguaskill-online/", "permanent": true },
 
-    { "source": "/ingles-la-vaguada/online", "destination": "/cursos-ingles/online", "permanent": true },
+    { "source": "/ubicaciones/barrio-del-pilar", "destination": "/academia-ingles-barrio-del-pilar/", "permanent": true },
+    { "source": "/ubicaciones/la-vaguada", "destination": "/academia-ingles-la-vaguada/", "permanent": true },
+    { "source": "/ubicaciones/penagrande", "destination": "/academia-ingles-penagrande/", "permanent": true },
+    { "source": "/ubicaciones/la-ventilla", "destination": "/academia-ingles-la-ventilla/", "permanent": true },
+    { "source": "/ubicaciones/la-paz", "destination": "/academia-ingles-la-paz/", "permanent": true },
+    { "source": "/ubicaciones/plaza-castilla", "destination": "/academia-ingles-plaza-castilla/", "permanent": true },
+    { "source": "/ubicaciones/tetuan", "destination": "/academia-ingles-tetuan/", "permanent": true },
+    { "source": "/ubicaciones/cuatro-torres", "destination": "/academia-ingles-cuatro-torres/", "permanent": true },
 
-    { "source": "/linguaskill/guia-completa", "destination": "/linguaskill", "permanent": true }
+    { "source": "/ingles-la-vaguada/online", "destination": "/cursos-ingles/online/", "permanent": true },
+
+    { "source": "/linguaskill/guia-completa", "destination": "/linguaskill/", "permanent": true },
+
+    { "source": "/hello-world", "destination": "/", "permanent": true },
+    { "source": "/hello-world/", "destination": "/", "permanent": true },
+    { "source": "/hola-mundo", "destination": "/", "permanent": true },
+    { "source": "/hola-mundo/", "destination": "/", "permanent": true },
+
+    { "source": "/author/:path*", "destination": "/blog/", "permanent": true },
+
+    { "source": "/category/:path*", "destination": "/blog/", "permanent": true },
+
+    { "source": "/dipl-testimonial/:path*", "destination": "/testimonios/", "permanent": true },
+
+    { "source": "/qsm_quiz/:path*", "destination": "/reservar-clase/", "permanent": true },
+
+    { "source": "/blog-1", "destination": "/blog/", "permanent": true },
+    { "source": "/blog-1/", "destination": "/blog/", "permanent": true },
+    { "source": "/blog-2", "destination": "/blog/", "permanent": true },
+    { "source": "/blog-2/", "destination": "/blog/", "permanent": true },
+    { "source": "/blog-3", "destination": "/blog/", "permanent": true },
+    { "source": "/blog-3/", "destination": "/blog/", "permanent": true },
+    { "source": "/blog-4", "destination": "/blog/", "permanent": true },
+    { "source": "/blog-4/", "destination": "/blog/", "permanent": true },
+    { "source": "/blog-5", "destination": "/blog/aprender-ingles-podcasts/", "permanent": true },
+    { "source": "/blog-5/", "destination": "/blog/aprender-ingles-podcasts/", "permanent": true },
+    { "source": "/blog-6", "destination": "/blog/", "permanent": true },
+    { "source": "/blog-6/", "destination": "/blog/", "permanent": true },
+    { "source": "/blog-7", "destination": "/blog/", "permanent": true },
+    { "source": "/blog-7/", "destination": "/blog/", "permanent": true },
+
+    { "source": "/muchas-gracias", "destination": "/gracias/", "permanent": true },
+    { "source": "/muchas-gracias/", "destination": "/gracias/", "permanent": true },
+
+    { "source": "/politica-de-cookies", "destination": "/politica-cookies/", "permanent": true },
+    { "source": "/politica-de-cookies/", "destination": "/politica-cookies/", "permanent": true },
+
+    { "source": "/testimonials", "destination": "/testimonios/", "permanent": true },
+    { "source": "/testimonials/", "destination": "/testimonios/", "permanent": true },
+
+    { "source": "/impulse-blog", "destination": "/blog/", "permanent": true },
+    { "source": "/impulse-blog/", "destination": "/blog/", "permanent": true },
+
+    { "source": "/clase-gratis-impulse", "destination": "/reservar-clase/", "permanent": true },
+    { "source": "/clase-gratis-impulse/", "destination": "/reservar-clase/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/404.html" }

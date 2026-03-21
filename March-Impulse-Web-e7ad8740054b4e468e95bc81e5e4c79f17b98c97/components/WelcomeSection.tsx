@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 export default function WelcomeSection() {
@@ -30,6 +29,13 @@ export default function WelcomeSection() {
           <p className="text-sm text-zinc-500 mt-3">
             Descubre tu punto de partida
           </p>
+          <a
+            href="/metodologia"
+            className="inline-flex items-center gap-1 text-accent-blue hover:text-blue-700 font-medium text-sm mt-4 transition-colors"
+          >
+            Conoce nuestra metodología
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>

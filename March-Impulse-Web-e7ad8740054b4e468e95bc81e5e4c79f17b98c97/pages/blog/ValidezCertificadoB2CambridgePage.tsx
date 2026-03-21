@@ -257,7 +257,7 @@ export default function ValidezCertificadoB2CambridgePage() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  *Linguaskill, aunque también es de Cambridge, funciona como un test (no un certificado) y muchas instituciones requieren resultados recientes. Consulta nuestra <a href="/examenes-cambridge/linguaskill" className="text-emerald-600 hover:underline">guía de Linguaskill</a> para más detalles sobre sus diferencias con el B2 First.
+                  *Linguaskill, aunque también es de Cambridge, funciona como un test (no un certificado) y muchas instituciones requieren resultados recientes. Consulta nuestra <a href="/linguaskill" className="text-emerald-600 hover:underline">guía de Linguaskill</a> para más detalles sobre sus diferencias con el B2 First.
                 </p>
               </div>
             </section>

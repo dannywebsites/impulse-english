@@ -28,7 +28,7 @@ export const NAP = {
   email: "info@impulse-english.es",
 
   // Web
-  website: "https://www.impulse-english.es",
+  website: "https://impulse-english.es",
   gbpUrl: "https://share.google/GuRfJ3TjrnIIUhrdk",
 
   // Assets

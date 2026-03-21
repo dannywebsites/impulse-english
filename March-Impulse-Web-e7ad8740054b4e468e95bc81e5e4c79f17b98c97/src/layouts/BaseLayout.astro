@@ -38,7 +38,9 @@ const {
 } = Astro.props;
 
 const pageTitle = fullTitle ? title : buildPageTitle(title);
-const canonicalUrl = canonical?.startsWith('http') ? canonical : `${BASE_URL}${canonical || '/'}`;
+// Ensure trailing slash on all canonical URLs for consistency with live site
+const rawCanonical = canonical?.startsWith('http') ? canonical : `${BASE_URL}${canonical || '/'}`;
+const canonicalUrl = rawCanonical.endsWith('/') ? rawCanonical : `${rawCanonical}/`;
 
 // Always include Organization + WebSite schemas
 const globalSchemas = [generateOrganizationSchema(), generateWebSiteSchema()];

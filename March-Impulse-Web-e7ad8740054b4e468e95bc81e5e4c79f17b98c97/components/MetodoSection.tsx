@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, ArrowRight } from 'lucide-react';
 
 const metodoItems = [
   {
@@ -79,6 +79,36 @@ export default function MetodoSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Exam Hub Links — crawl path from home page */}
+        <div className="mt-16 text-center border-t border-zinc-100 pt-12">
+          <p className="text-lg text-zinc-600 mb-6">
+            Nuestro método te prepara para obtener las certificaciones más reconocidas a nivel mundial.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="/examenes-cambridge"
+              className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 text-zinc-800 font-medium py-3 px-6 rounded-lg hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
+            >
+              Exámenes Cambridge
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="/linguaskill"
+              className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 text-zinc-800 font-medium py-3 px-6 rounded-lg hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
+            >
+              Linguaskill
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="/examenes-cambridge/fechas-precios"
+              className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 text-zinc-800 font-medium py-3 px-6 rounded-lg hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
+            >
+              Fechas y Precios
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </div>
     </section>

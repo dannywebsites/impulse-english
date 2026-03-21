@@ -5,9 +5,7 @@ import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
 import FAQSection from '../components/FAQSection';
 import LazyVideo from '../components/LazyVideo';
-import OptimizedImage from '../components/OptimizedImage';
 import Breadcrumb from '../components/Breadcrumb';
-import { facilityImages, certificationImages, studentImages } from '../src/data/images';
 
 const certifications = [
   "Centro preparador oficial Cambridge",
@@ -150,10 +148,12 @@ export default function SobreNosotrosPage() {
 
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-100">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                <OptimizedImage
-                  image={studentImages.primarySecondary}
+                <img
+                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG"
+                  alt="Estudiantes de inglés primaria y secundaria - Impulse English Academy La Vaguada Barrio del Pilar Madrid"
                   className="w-full h-full object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>

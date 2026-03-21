@@ -203,8 +203,8 @@ export default function PoliticaCookiesPage() {
               </li>
               <li>
                 <strong>Adobe Analytics:</strong>{' '}
-                <a href="http://www.adobe.com/es/privacy/opt-out.html" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
-                  http://www.adobe.com/es/privacy/opt-out.html
+                <a href="https://www.adobe.com/es/privacy/opt-out.html" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
+                  https://www.adobe.com/es/privacy/opt-out.html
                 </a>
               </li>
             </ul>

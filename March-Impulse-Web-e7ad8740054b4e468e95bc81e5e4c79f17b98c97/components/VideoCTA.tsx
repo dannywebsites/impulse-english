@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play } from 'lucide-react';
+import { Play, ArrowRight } from 'lucide-react';
 
 export default function VideoCTA() {
   return (
@@ -41,6 +41,31 @@ export default function VideoCTA() {
                     <div key={i} className="w-1 h-2 bg-white/60 skew-x-[-20deg]"></div>
                 ))}
              </div>
+
+            {/* Crawl path links */}
+            <div className="flex flex-wrap gap-4 mt-10">
+              <a
+                href="/blog"
+                className="inline-flex items-center gap-2 text-white/90 hover:text-white font-medium text-sm border border-white/30 rounded-lg px-5 py-2.5 hover:bg-white/10 transition-colors"
+              >
+                Recursos y guías
+                <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="/academias-ingles-madrid"
+                className="inline-flex items-center gap-2 text-white/90 hover:text-white font-medium text-sm border border-white/30 rounded-lg px-5 py-2.5 hover:bg-white/10 transition-colors"
+              >
+                Academias en Madrid
+                <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="/sobre-nosotros"
+                className="inline-flex items-center gap-2 text-white/90 hover:text-white font-medium text-sm border border-white/30 rounded-lg px-5 py-2.5 hover:bg-white/10 transition-colors"
+              >
+                Sobre nosotros
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
         </div>
       </div>
     </section>

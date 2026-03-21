@@ -4,9 +4,22 @@
 User-agent: *
 Allow: /
 
+# AI crawlers — explicitly allowed for GEO
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 # Sitemaps
-Sitemap: https://www.impulse-english.es/sitemap.xml
-Sitemap: https://www.impulse-english.es/sitemap-images.xml
+Sitemap: https://impulse-english.es/sitemap.xml
+Sitemap: https://impulse-english.es/sitemap-images.xml
 
 # Disallow admin/utility pages
 Disallow: /gracias

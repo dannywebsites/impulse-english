@@ -4,8 +4,9 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://www.impulse-english.es',
+  site: 'https://impulse-english.es',
   output: 'static',
+  trailingSlash: 'always',
   server: { port: 3000 },
   integrations: [
     react(),

@@ -107,6 +107,12 @@ export function generateOrganizationSchema() {
     },
     // Additional educational organization properties
     knowsLanguage: ["es", "en"],
+    knowsAbout: [
+      "Cambridge Exam Preparation",
+      "Business English",
+      "Linguaskill Certification",
+      "English Language Teaching"
+    ],
     slogan: "Tu academia de inglés en Madrid"
   };
 }
