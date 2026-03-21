@@ -8,10 +8,14 @@ export default function ContactSection() {
     <section id="contact" className="w-full bg-zinc-50 py-16 md:py-24 px-6 border-t border-zinc-100">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-6">
+        <div className="mb-16">
+          <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
+            Contacto
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-4">
             Contacta con nosotros
           </h2>
+          <div className="w-24 h-1 bg-accent-blue/20"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">

@@ -28,6 +28,7 @@ interface ExamPageLayoutProps {
   preparationApproach: string;
   formSource: string;
   heroImage?: string;
+  heroImageMobile?: string;
   galleryImages?: { url: string; alt: string }[];
   faqs?: { question: string; answer: string }[];
 }
@@ -50,6 +51,7 @@ export default function ExamPageLayout({
   preparationApproach,
   formSource,
   heroImage,
+  heroImageMobile,
   galleryImages = defaultGalleryImages,
   faqs
 }: ExamPageLayoutProps) {
@@ -84,7 +86,15 @@ export default function ExamPageLayout({
       <section className={`relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden`}>
         {heroImage && (
           <div className="absolute inset-0">
-            <img src={heroImage} alt={`${examName} preparation`} className="w-full h-full object-cover" loading="eager" />
+            {heroImageMobile ? (
+              <picture>
+                <source media="(max-width: 640px)" srcSet={`${heroImageMobile}.webp`} type="image/webp" />
+                <source media="(max-width: 640px)" srcSet={`${heroImageMobile}.jpg`} type="image/jpeg" />
+                <img src={heroImage} alt={`${examName} preparation`} className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
+              </picture>
+            ) : (
+              <img src={heroImage} alt={`${examName} preparation`} className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
+            )}
           </div>
         )}
         <div className={`absolute inset-0 bg-gradient-to-br ${heroColor}`} style={{opacity: 0.88}}></div>

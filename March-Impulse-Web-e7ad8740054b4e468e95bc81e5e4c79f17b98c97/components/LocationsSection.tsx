@@ -17,14 +17,15 @@ export default function LocationsSection() {
   return (
     <section className="w-full bg-zinc-50 py-12 md:py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <span className="text-accent-blue font-bold tracking-widest text-xs uppercase mb-4 block">
+        <div className="mb-16">
+          <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
             Ubicación
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-4">
             Dónde encontrarnos
           </h2>
-          <p className="text-zinc-500 text-lg max-w-2xl mx-auto">
+          <div className="w-24 h-1 bg-accent-blue/20 mb-6"></div>
+          <p className="text-zinc-500 text-lg max-w-2xl">
             En el corazón del Barrio del Pilar, a 4 minutos andando del Metro
           </p>
         </div>

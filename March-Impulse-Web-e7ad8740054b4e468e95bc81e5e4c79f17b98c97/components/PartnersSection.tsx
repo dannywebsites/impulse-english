@@ -40,9 +40,12 @@ export default function PartnersSection() {
         }
       `}</style>
 
-      <div className="container mx-auto px-6 md:px-12 mb-16 text-center">
-        <h2 className="text-2xl font-bold text-zinc-900 uppercase tracking-widest mb-4">Colaboradores Oficiales</h2>
-        <div className="w-16 h-0.5 bg-accent-blue mx-auto opacity-20"></div>
+      <div className="container mx-auto px-6 md:px-12 mb-16">
+        <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
+          Partners
+        </span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-4">Colaboradores Oficiales</h2>
+        <div className="w-24 h-1 bg-accent-blue/20"></div>
       </div>
 
       {/* Partners Marquee */}
@@ -69,9 +72,10 @@ export default function PartnersSection() {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 mb-12 text-center">
-         <span className="text-accent-blue text-xs font-bold tracking-widest uppercase mb-2 block">Reseñas Reales</span>
-         <h3 className="text-3xl md:text-4xl font-semibold text-zinc-900">Lo Que Dicen de Nosotros</h3>
+      <div className="container mx-auto px-6 md:px-12 mb-12">
+         <span className="text-red-500 text-xs font-bold tracking-widest uppercase mb-4 block">Reseñas Reales</span>
+         <h3 className="text-3xl md:text-4xl font-semibold text-zinc-900 mb-4">Lo Que Dicen de Nosotros</h3>
+         <div className="w-24 h-1 bg-accent-blue/20"></div>
       </div>
 
       {/* Reviews Marquee (Reverse Direction) */}

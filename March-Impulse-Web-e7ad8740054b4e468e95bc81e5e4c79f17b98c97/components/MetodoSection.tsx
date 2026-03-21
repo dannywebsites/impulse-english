@@ -45,14 +45,15 @@ export default function MetodoSection() {
     <section className="w-full bg-white py-16 md:py-24 px-6 border-t border-zinc-100">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="mb-16">
           <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
             Nuestra Metodología
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-4">
             El Método Impulse
           </h2>
-          <p className="text-lg text-zinc-600 max-w-2xl mx-auto leading-relaxed">
+          <div className="w-24 h-1 bg-accent-blue/20 mb-6"></div>
+          <p className="text-lg text-zinc-600 max-w-2xl leading-relaxed">
             Nuestro método propio se basa en una enseñanza estructurada, cercana y eficaz, adaptada a cada alumno y a sus objetivos.
           </p>
         </div>

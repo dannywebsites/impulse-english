@@ -185,9 +185,10 @@ export default function TestimonialsSection() {
                 <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 md:mb-6 block">
                     Opiniones reales de Google
                 </span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight leading-[1.1] mb-6 md:mb-8">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight leading-[1.1] mb-4">
                     Lo que dicen nuestros estudiantes…
                 </h2>
+                <div className="w-24 h-1 bg-accent-blue/20 mb-6 md:mb-8"></div>
                 <p className="text-base md:text-lg text-zinc-600 max-w-md mb-8 leading-relaxed">
                     Nuestros alumnos y familias destacan la calidad del profesorado, el ambiente cercano y los resultados obtenidos a lo largo del curso. Sus testimonios reflejan nuestro compromiso con una enseñanza de calidad y un aprendizaje significativo.
                 </p>

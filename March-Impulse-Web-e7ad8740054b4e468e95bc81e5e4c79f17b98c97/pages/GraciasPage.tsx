@@ -47,7 +47,11 @@ export default function GraciasPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg" alt="Estudiantes con profesor Impulse English Academy" className="w-full h-full object-cover" loading="eager" />
+          <picture>
+            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/jp-with-students-mobile.webp" type="image/webp" />
+            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/jp-with-students-mobile.jpg" type="image/jpeg" />
+            <img src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg" alt="Estudiantes con profesor Impulse English Academy" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/90 via-green-950/80 to-emerald-900/70"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

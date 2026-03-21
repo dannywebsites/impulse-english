@@ -117,12 +117,17 @@ export default function ParticularesPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Daniel+helping+secondary+school+students.JPG"
-            alt="Clases particulares inglés Madrid - profesor nativo Impulse English Academy"
-            className="w-full h-full object-cover object-top"
-            loading="eager"
-          />
+          <picture>
+            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/daniel-helping-mobile.webp" type="image/webp" />
+            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/daniel-helping-mobile.jpg" type="image/jpeg" />
+            <img
+              src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Daniel+helping+secondary+school+students.JPG"
+              alt="Clases particulares inglés Madrid - profesor nativo Impulse English Academy"
+              className="w-full h-full object-cover object-top"
+              loading="eager"
+              fetchPriority="high"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/80 via-accent-blue/70 to-[#0a3560]/60"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

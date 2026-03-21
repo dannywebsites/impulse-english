@@ -149,6 +149,7 @@ export default function B2FirstPage() {
       preparationApproach="El B2 First requiere un dominio sólido de gramática y vocabulario, además de habilidades comunicativas avanzadas. Nuestro curso intensivo trabaja todas las áreas con especial énfasis en Use of English (la parte más técnica) y Writing (donde más puntos se pierden). Realizamos simulacros completos regularmente y damos feedback detallado para que llegues al examen sin sorpresas."
       formSource="cambridge-b2-first"
       heroImage="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg"
+      heroImageMobile="/images/optimized/heroes-mobile/jp-with-students-mobile"
     />
 </>
   );

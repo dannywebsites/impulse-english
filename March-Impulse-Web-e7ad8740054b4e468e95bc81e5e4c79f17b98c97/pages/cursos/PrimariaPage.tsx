@@ -115,12 +115,17 @@ export default function PrimariaPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG"
-            alt="Clases de inglés primaria Madrid - estudiantes Impulse English Academy"
-            className="w-full h-full object-cover object-top"
-            loading="eager"
-          />
+          <picture>
+            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/primary-students-mobile.webp" type="image/webp" />
+            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/primary-students-mobile.jpg" type="image/jpeg" />
+            <img
+              src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG"
+              alt="Clases de inglés primaria Madrid - estudiantes Impulse English Academy"
+              className="w-full h-full object-cover object-top"
+              loading="eager"
+              fetchPriority="high"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-br from-blue-950/80 via-blue-900/70 to-cyan-900/55"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

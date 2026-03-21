@@ -71,12 +71,13 @@ export default function CoursesSection() {
 
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-8">
             <div className="max-w-2xl">
-                <span className="text-accent-blue font-bold tracking-widest text-xs uppercase mb-4 block">
+                <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
                     ¡Tu primera opción!
                 </span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-4">
                     Aprende inglés en todos los niveles:
                 </h2>
+                <div className="w-24 h-1 bg-accent-blue/20"></div>
                 <p className="text-lg text-zinc-600 mt-6 max-w-xl leading-relaxed">
                     En nuestra escuela de idiomas en Madrid, impartimos cursos de inglés para todos los niveles, desde principiante hasta avanzado (A1–C2), con especialización en preparación de exámenes Cambridge.
                 </p>
