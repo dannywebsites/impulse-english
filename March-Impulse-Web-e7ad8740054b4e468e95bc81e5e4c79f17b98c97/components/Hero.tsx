@@ -58,28 +58,9 @@ export default function Hero() {
            ========================================= */}
         <div className="xl:hidden w-full h-full flex flex-col items-center justify-center pb-36 pointer-events-auto">
             <div className="relative z-10 text-center px-6">
-                {/* Decoration line + label */}
-                <div className="flex items-center justify-center gap-4 mb-6 animate-hero-fade-up">
-                    <div className="w-8 h-px bg-white/40"></div>
-                    <span className="font-display text-brand-red text-xs font-semibold uppercase tracking-[0.2em]">
-                        Centro Oficial Cambridge
-                    </span>
-                    <div className="w-8 h-px bg-white/40"></div>
-                </div>
-                {/* Heading */}
-                <h2 className="font-serif text-4xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100" aria-hidden="true">
-                    Impulse English Academy
-                </h2>
-                {/* Red line */}
-                <div className="w-16 h-0.5 bg-brand-red mx-auto mb-6 animate-hero-fade-up animation-delay-150"></div>
-                {/* Subtitle */}
-                <p className="font-display text-lg text-white/80 font-light mb-8 animate-hero-fade-up animation-delay-200">
-                    La Vaguada
-                </p>
-                {/* CTA — subtle style matching the page typography */}
                 <a
                     href="/reservar-clase"
-                    className="inline-flex items-center gap-2 text-white/90 hover:text-white text-sm font-medium tracking-[0.15em] uppercase border-b border-white/30 hover:border-white/60 pb-1 transition-all animate-hero-fade-up animation-delay-300"
+                    className="inline-flex items-center gap-2 text-white/90 hover:text-white text-sm font-medium tracking-[0.15em] uppercase border-b border-white/30 hover:border-white/60 pb-1 transition-all animate-hero-fade-up"
                 >
                     Reservar clase de prueba
                     <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
