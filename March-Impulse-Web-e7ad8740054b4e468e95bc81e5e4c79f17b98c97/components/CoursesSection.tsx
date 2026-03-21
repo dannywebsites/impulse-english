@@ -148,6 +148,7 @@ function CourseCard({ course, index }: { course: any, index: number }) {
           src={course.image}
           alt={course.title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
         />
       </div>
 

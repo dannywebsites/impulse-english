@@ -38,6 +38,7 @@ export default function LocationsSection() {
                 src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg"
                 alt="Fachada exterior Impulse English Academy La Vaguada Barrio del Pilar Madrid"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className="p-8">

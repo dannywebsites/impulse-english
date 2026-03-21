@@ -55,7 +55,7 @@ export default function PartnersSection() {
           <div className="flex gap-16 md:gap-32 px-8 md:px-16 items-center">
             {partners.map((p, i) => (
               <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 flex flex-col items-center">
-                <img src={p.logo} alt={p.name} className="h-10 md:h-14 w-auto object-contain hover:opacity-80 transition-all duration-300" />
+                <img src={p.logo} alt={p.name} className="h-10 md:h-14 w-auto object-contain hover:opacity-80 transition-all duration-300" loading="lazy" />
                 {p.subtitle && <span className="text-[10px] text-zinc-400 mt-1 text-center">{p.subtitle}</span>}
               </a>
             ))}
@@ -64,7 +64,7 @@ export default function PartnersSection() {
           <div className="flex gap-16 md:gap-32 px-8 md:px-16 items-center">
             {partners.map((p, i) => (
               <a key={`dup-${i}`} href={p.url} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 flex flex-col items-center">
-                <img src={p.logo} alt={p.name} className="h-10 md:h-14 w-auto object-contain hover:opacity-80 transition-all duration-300" />
+                <img src={p.logo} alt={p.name} className="h-10 md:h-14 w-auto object-contain hover:opacity-80 transition-all duration-300" loading="lazy" />
                 {p.subtitle && <span className="text-[10px] text-zinc-400 mt-1 text-center">{p.subtitle}</span>}
               </a>
             ))}

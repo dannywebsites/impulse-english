@@ -7,9 +7,10 @@ export default function VideoCTA() {
       {/* Background Image/Video representation */}
       <div className="absolute inset-0 z-0">
         <img
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop"
-            alt="Students collaborating"
+            src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG"
+            alt="Estudiantes aprendiendo inglés en Impulse English Academy"
             className="w-full h-full object-cover opacity-60"
+            loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-accent-blue/80 to-transparent mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-black/20"></div>

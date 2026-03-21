@@ -35,6 +35,7 @@ export function SectionSplit({ image, title, subtitle, text, align = 'left' }: S
             src={image}
             alt={title}
             className="w-full h-full object-cover"
+            loading="lazy"
         />
       </div>
 

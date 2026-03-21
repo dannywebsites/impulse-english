@@ -91,6 +91,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
                   src="https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png"
                   alt="Cambridge English"
                   className="h-10 md:h-12 w-auto"
+                  loading="lazy"
                 />
               </a>
               <a href="https://www.cambridgeenglish.org/es/exams-and-tests/linguaskill/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
@@ -98,6 +99,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
                   src="https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/linguaskill-logo-blanco.png"
                   alt="Linguaskill"
                   className="h-10 md:h-12 w-auto"
+                  loading="lazy"
                 />
               </a>
               <a href="https://www.greatlittlepeople.com/en" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
@@ -105,6 +107,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
                   src="https://impulseenglish.s3.us-east-1.amazonaws.com/GREAT+LITTLE+PEOPLE+WHITE.png"
                   alt="Great Little People"
                   className="h-10 md:h-12 w-auto"
+                  loading="lazy"
                 />
               </a>
               <a href="https://www.esic.edu/idiomas" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity flex flex-col items-center">
@@ -112,6 +115,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
                   src="https://impulseenglish.s3.us-east-1.amazonaws.com/ESIC+IDIOMAS.jpg"
                   alt="ESIC Idiomas - Cambridge English Exam Centre ES278"
                   className="h-10 md:h-12 w-auto"
+                  loading="lazy"
                 />
                 <span className="text-[10px] text-zinc-500 mt-1">Cambridge Exam Centre ES278</span>
               </a>
