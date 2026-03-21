@@ -38,16 +38,36 @@ import CookieBanner from '../../components/CookieBanner';
       ></iframe>
     </div>
 
-    <!-- MOBILE/TABLET BACKGROUND: Image Fallback -->
+    <!-- MOBILE/TABLET BACKGROUND: Optimized Image Fallback -->
     <div class="xl:hidden absolute inset-0 z-0">
       <div class="absolute inset-0 bg-black/20 z-10"></div>
-      <img
-        src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG"
-        alt="Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy"
-        class="absolute inset-0 w-full h-full object-cover"
-        loading="eager"
-        fetchpriority="high"
-      />
+      <picture>
+        <source
+          media="(max-width: 640px)"
+          srcset="/images/optimized/hero-mobile-estudiantes-primaria.webp"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 640px)"
+          srcset="/images/optimized/hero-mobile-estudiantes-primaria.jpg"
+          type="image/jpeg"
+        />
+        <source
+          srcset="/images/optimized/hero-tablet-estudiantes-primaria.webp"
+          type="image/webp"
+        />
+        <source
+          srcset="/images/optimized/hero-tablet-estudiantes-primaria.jpg"
+          type="image/jpeg"
+        />
+        <img
+          src="/images/optimized/hero-tablet-estudiantes-primaria.jpg"
+          alt="Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy"
+          class="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </picture>
     </div>
 
     <!-- Navbar -->

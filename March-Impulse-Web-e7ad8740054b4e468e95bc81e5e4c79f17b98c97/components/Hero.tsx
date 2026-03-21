@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown, MessageCircle, Phone } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -56,7 +56,22 @@ export default function Hero() {
             MOBILE & TABLET VERSION (LOYOLA SHIELD STYLE)
             Hidden on Desktop (XL+)
            ========================================= */}
-        <div className="xl:hidden w-full h-full" aria-hidden="true"></div>
+        <div className="xl:hidden w-full h-full flex flex-col items-center justify-center pb-32 pointer-events-auto">
+            <div className="text-center animate-fade-in-up">
+                <div className="text-3xl font-bold text-white uppercase leading-tight tracking-tight mb-1 font-display drop-shadow-lg" aria-hidden="true">
+                    Impulse English Academy
+                </div>
+                <div className="text-lg font-light text-white/90 uppercase tracking-widest mb-6 drop-shadow-lg" aria-hidden="true">
+                    La Vaguada
+                </div>
+                <a
+                    href="/reservar-clase"
+                    className="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold text-sm uppercase tracking-widest hover:bg-red-700 transition-colors shadow-lg active:scale-[0.98]"
+                >
+                    Prueba de Nivel
+                </a>
+            </div>
+        </div>
 
         <style>{`
           .animate-fade-in-up {
