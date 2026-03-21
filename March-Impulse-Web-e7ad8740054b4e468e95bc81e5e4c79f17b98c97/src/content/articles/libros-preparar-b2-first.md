@@ -3,7 +3,7 @@ url: /blog/libros-preparar-b2-first
 category: Cambridge B2 First
 priority: Medium
 question: "¿Qué libros usar para preparar B2 First?"
-seoTitle: "Mejores libros para preparar B2 First | Top 2025"
+seoTitle: "Libros para Preparar B2 First"
 metaDescription: "Descubre los mejores libros para preparar el B2 First: First Trainer, Complete First, Compact First y más. Guía actualizada con recursos oficiales."
 paaAnswer: "Los libros más recomendados para preparar el B2 First incluyen First Trainer (6 exámenes completos con explicaciones), Complete First de Cambridge (cobertura integral actualizada), Objective First (práctica estructurada por destrezas), Compact First (curso intensivo) y FCE Result (adaptado al formato vigente con recursos online). Cambridge ofrece también herramientas digitales oficiales: Test & Train (300+ preguntas) y Write & Improve (corrección automática de escritura), complementando eficazmente el material impreso."
 contextSections:

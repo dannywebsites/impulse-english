@@ -3,7 +3,7 @@ url: /blog/cuantas-veces-b2-first
 category: Cambridge B2 First
 priority: Medium
 question: "¿Cuántas veces puedo presentarme al B2 First?"
-seoTitle: "Cuántas veces puedo presentarme al B2 First | Guía"
+seoTitle: "Presentarse al B2 First"
 metaDescription: "Descubre cuántas veces puedes presentarte al Cambridge B2 First, plazos entre convocatorias y cómo mejorar tu puntuación en cada nuevo intento."
 paaAnswer: "Puedes presentarte al B2 First tantas veces como desees sin límite establecido por Cambridge English, pero solo una vez por convocatoria oficial. Cada intento permite mejorar la puntuación (escala 160-190 para certificación B2, 180-190 equivale a C1). Los resultados del examen digital se publican en 5-10 días laborables; el formato papel requiere 4-6 semanas. Repetir el examen facilita alcanzar objetivos académicos o profesionales específicos."
 contextSections:

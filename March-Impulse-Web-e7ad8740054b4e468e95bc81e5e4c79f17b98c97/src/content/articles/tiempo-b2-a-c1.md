@@ -3,7 +3,7 @@ url: /blog/tiempo-b2-a-c1
 category: Cambridge C1 Advanced
 priority: High
 question: "¿Cuánto tiempo se tarda en pasar de B2 a C1?"
-seoTitle: "Tiempo para pasar de B2 a C1 en inglés | Guía 2026"
+seoTitle: "Tiempo para Pasar de B2 a C1"
 metaDescription: Descubre cuánto tiempo necesitas para pasar de B2 a C1 en inglés. Conoce las horas de estudio recomendadas y cómo acelerar tu preparación para el C1 Advanced.
 paaAnswer: "Pasar del nivel B2 al C1 en inglés requiere entre 200 y 300 horas de estudio guiado y práctica intensiva. El progreso depende de la frecuencia, método de aprendizaje y motivación. La certificación Cambridge C1 Advanced valida este nivel avanzado, esencial para contextos académicos y profesionales."
 contextSections:

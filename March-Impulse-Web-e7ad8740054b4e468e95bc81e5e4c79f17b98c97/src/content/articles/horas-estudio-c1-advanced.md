@@ -3,7 +3,7 @@ url: /blog/horas-estudio-c1-advanced
 category: Cambridge C1 Advanced
 priority: Medium
 question: "¿Cuántas horas de estudio para C1?"
-seoTitle: "Horas de estudio para el C1 Advanced | Guía práctica"
+seoTitle: "Horas Estudio C1 Advanced"
 metaDescription: "Averiguad cuántas horas de estudio necesitáis para aprobar el Cambridge C1 Advanced. Plan de preparación, distribución del tiempo y consejos prácticos."
 paaAnswer: "La preparación para el Cambridge C1 Advanced requiere unas 200 horas de estudio guiado. Este tiempo incluye práctica intensiva en comprensión lectora, gramática, vocabulario, escritura, escucha y expresión oral, distribuidas en cuatro secciones evaluadas en un examen de aproximadamente 4 horas."
 contextSections:

@@ -3,7 +3,7 @@ url: /blog/speaking-b2-first-guia
 category: Cambridge B2 First
 priority: Medium
 question: "¿Cómo es el Speaking del B2 First?"
-seoTitle: "Speaking B2 First | Guía completa de las 4 partes"
+seoTitle: "Speaking B2 First Guía"
 metaDescription: "El Speaking del B2 First dura 14 minutos y tiene 4 partes. Te explicamos cada una, qué evalúan los examinadores y cómo prepararte eficazmente."
 paaAnswer: "El Speaking del B2 First dura 14 minutos (20 para tres candidatos) y se realiza con otro candidato ante dos examinadores. Consta de cuatro partes: entrevista personal (2 minutos), presentación individual comparando fotografías (long turn, 1 minuto por candidato), tarea colaborativa dialogada (3 minutos) y discusión ampliada (4 minutos). Representa el 20% de la calificación total, evaluando fluidez, coherencia, interacción, gramática, vocabulario y pronunciación mediante conversación auténtica."
 contextSections:

@@ -3,7 +3,7 @@ url: /blog/diferencia-b2-c1
 category: Cambridge C1 Advanced
 priority: High
 question: "¿Qué diferencia hay entre B2 y C1?"
-seoTitle: "Diferencia entre B2 y C1 en inglés | Comparativa"
+seoTitle: "Diferencia entre B2 y C1"
 metaDescription: "Descubre las diferencias reales entre los niveles B2 y C1 de inglés: competencias, exámenes Cambridge y cuándo merece la pena dar el salto al nivel avanzado."
 paaAnswer: "La diferencia principal entre B2 y C1 radica en el dominio y profundidad del inglés: B2 permite comunicarse con fluidez en temas cotidianos y laborales, mientras C1 implica un uso avanzado, flexible y matizado, adecuado para contextos académicos y profesionales exigentes, con comprensión de expresiones idiomáticas y textos complejos."
 contextSections:

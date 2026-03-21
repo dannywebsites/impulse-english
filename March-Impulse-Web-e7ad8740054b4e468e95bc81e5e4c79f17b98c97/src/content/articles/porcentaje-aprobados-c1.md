@@ -3,7 +3,7 @@ url: /blog/porcentaje-aprobados-c1
 category: Cambridge C1 Advanced
 priority: Medium
 question: "¿Qué porcentaje aprueba el C1 Advanced?"
-seoTitle: "Porcentaje de aprobados del C1 Advanced | Datos 2026"
+seoTitle: "Porcentaje Aprobados C1"
 metaDescription: "Conoced el porcentaje real de aprobados del Cambridge C1 Advanced: tasas de éxito por grado, estadísticas actualizadas y cómo aumentar vuestras probabilidades."
 paaAnswer: "El porcentaje de aprobación del Cambridge C1 Advanced es aproximadamente del 75%, donde el 64% obtiene grado B o C (nivel C1) y un 13% alcanza grado A (nivel C2). Cerca del 20% no logra el nivel C1 y alrededor del 5% reprueba el examen directamente."
 contextSections:

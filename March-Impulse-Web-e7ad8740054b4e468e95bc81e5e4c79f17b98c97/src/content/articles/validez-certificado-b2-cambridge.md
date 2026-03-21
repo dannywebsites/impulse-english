@@ -3,7 +3,7 @@ url: /blog/validez-certificado-b2-cambridge
 category: Cambridge B2 First
 priority: High
 question: "¿Cuánto dura el certificado B2 de Cambridge?"
-seoTitle: "Validez del certificado B2 Cambridge | No caduca"
+seoTitle: "Validez Certificado B2 Cambridge"
 metaDescription: El certificado Cambridge B2 First tiene validez permanente y no caduca. Descubre por qué es la certificación de inglés más reconocida a nivel mundial.
 paaAnswer: "El certificado Cambridge B2 First posee validez permanente sin fecha de caducidad, siendo reconocido de por vida por instituciones educativas y empleadores globalmente. El examen completo dura aproximadamente 3 horas y 30 minutos, distribuidos en Reading and Use of English (75 minutos), Writing (80 minutos), Listening (40 minutos) y Speaking (14 minutos). Esta certificación permanente diferencia al B2 First de otros exámenes con validez temporal limitada."
 contextSections:

@@ -3,7 +3,7 @@ url: /blog/preparar-b2-first-3-meses
 category: Cambridge B2 First
 priority: High
 question: "¿Puedo preparar el B2 First en 3 meses?"
-seoTitle: "Preparar el B2 First en 3 meses | Plan realista"
+seoTitle: "Preparar B2 First en 3 Meses"
 metaDescription: Preparar el B2 First en 3 meses es posible con nivel B1 previo y estudio diario. Te damos un plan de preparación intensiva realista y eficaz.
 paaAnswer: "Preparar el B2 First en 3 meses es factible para candidatos con nivel intermedio previo (aproximadamente B1), dedicando 1,5-2 horas diarias de estudio estructurado. La preparación requiere práctica equilibrada en Reading & Use of English (75 minutos), Writing (80 minutos), Listening (40 minutos) y Speaking (14 minutos). Recursos oficiales como Test & Train (300+ preguntas) y Write & Improve optimizan el aprendizaje intensivo mediante simulacros cronometrados y corrección automatizada."
 contextSections:

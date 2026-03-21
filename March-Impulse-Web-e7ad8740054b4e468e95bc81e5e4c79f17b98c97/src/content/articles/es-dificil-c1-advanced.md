@@ -3,7 +3,7 @@ url: /blog/es-dificil-c1-advanced
 category: Cambridge C1 Advanced
 priority: High
 question: "¿Es muy difícil el C1 Advanced?"
-seoTitle: "¿Es difícil el C1 Advanced? Dificultad real del examen"
+seoTitle: "¿Es Difícil el C1 Advanced?"
 metaDescription: "Analizamos la dificultad real del Cambridge C1 Advanced. Descubre qué hace exigente este examen, qué se evalúa y cómo prepararte para aprobarlo con éxito."
 paaAnswer: "El Cambridge C1 Advanced es un examen exigente que certifica un nivel alto de inglés (C1 MCER), evaluando reading, writing, listening y speaking con énfasis en comunicación efectiva. Su dificultad radica en la duración, variedad de tareas y dominio avanzado de vocabulario y gramática."
 contextSections:

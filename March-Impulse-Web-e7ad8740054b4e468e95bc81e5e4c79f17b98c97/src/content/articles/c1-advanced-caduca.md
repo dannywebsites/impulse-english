@@ -3,7 +3,7 @@ url: /blog/c1-advanced-caduca
 category: Cambridge C1 Advanced
 priority: High
 question: "¿El C1 caduca?"
-seoTitle: "¿El C1 Advanced caduca? Validez del certificado 2026"
+seoTitle: "¿Caduca el C1 Advanced?"
 metaDescription: "Descubre si el certificado Cambridge C1 Advanced caduca, su validez real y qué instituciones pueden exigir una certificación reciente. Información actualizada 2026."
 paaAnswer: "El certificado Cambridge C1 Advanced no caduca oficialmente y es válido de por vida. No obstante, muchas universidades y empleadores requieren que la certificación tenga menos de 2-3 años para considerarla vigente, garantizando así la actualización del nivel de inglés del candidato."
 contextSections:

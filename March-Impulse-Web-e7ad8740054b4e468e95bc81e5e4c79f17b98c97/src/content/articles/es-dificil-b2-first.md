@@ -3,7 +3,7 @@ url: /blog/es-dificil-b2-first
 category: Cambridge B2 First
 priority: High
 question: "¿Es difícil el B2 First?"
-seoTitle: "Es difícil el B2 First | Dificultad real del examen"
+seoTitle: "¿Es Difícil el B2 First?"
 metaDescription: El B2 First tiene dificultad moderada pero exige preparación seria. Analizamos cada parte del examen y te damos claves para superarlo con confianza.
 paaAnswer: "El B2 First presenta una dificultad moderada, requiriendo dominio intermedio-alto del inglés (nivel B2 del MCER). El examen evalúa comprensión de textos complejos abstractos y concretos, interacción fluida con hablantes nativos y producción de textos detallados. Consta de Reading & Use of English (75 minutos), Writing (80 minutos), Listening (40 minutos) y Speaking (14 minutos). Aprobar exige vocabulario amplio, gramática compleja y gestión eficaz del tiempo bajo formatos variados."
 contextSections:

@@ -3,7 +3,7 @@ url: /blog/suspender-b2-first
 category: Cambridge B2 First
 priority: Medium
 question: "¿Qué pasa si suspendo el B2 First?"
-seoTitle: "Qué pasa si suspendo el B2 First | Opciones reales"
+seoTitle: "Suspender el B2 First"
 metaDescription: "Si suspendes el B2 First, no pierdes todo: recibes un informe de resultados y podrías certificar B1. Descubre qué hacer después y cómo mejorar."
 paaAnswer: "Al suspender el B2 First sin alcanzar 160 puntos en la Cambridge English Scale, el candidato no recibe certificado B2 pero obtiene un Informe de Resultados (Statement of Results) con puntuaciones individuales por destreza. Puntuaciones entre 140-159 certifican nivel B1; entre 122-139 constan en el informe sin certificación. El examen puede repetirse pagando nuevamente la inscripción completa en convocatorias posteriores."
 contextSections:

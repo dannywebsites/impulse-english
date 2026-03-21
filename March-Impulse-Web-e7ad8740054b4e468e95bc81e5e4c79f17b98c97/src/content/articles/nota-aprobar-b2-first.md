@@ -3,7 +3,7 @@ url: /blog/nota-aprobar-b2-first
 category: Cambridge B2 First
 priority: High
 question: "¿Qué nota necesito para aprobar el B2 First?"
-seoTitle: "Nota para aprobar B2 First | Puntuaciones y grades"
+seoTitle: "Nota para Aprobar B2 First"
 metaDescription: "Necesitas 160 puntos en la Cambridge English Scale para aprobar el B2 First. Te explicamos las calificaciones Grade A, B y C y cómo alcanzarlas."
 paaAnswer: "Para aprobar el Cambridge B2 First se requiere una puntuación mínima de 160 en la Cambridge English Scale. Las calificaciones se dividen en Grade C (160-172 puntos, nivel B2), Grade B (173-179 puntos, nivel B2) y Grade A (180-190 puntos, nivel C1). Puntuaciones entre 140-159 equivalen a nivel B1 sin certificación B2. Cada destreza (Reading, Writing, Listening, Speaking) se evalúa individualmente y se promedian."
 contextSections:

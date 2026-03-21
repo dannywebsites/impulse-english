@@ -3,7 +3,7 @@ url: /blog/c1-sin-b2
 category: Cambridge C1 Advanced
 priority: Medium
 question: "¿Puedo hacer C1 sin haber hecho B2?"
-seoTitle: "¿Se puede hacer el C1 sin tener B2? Lo que debéis saber"
+seoTitle: "C1 sin B2"
 metaDescription: "Descubrid si podéis presentaros al Cambridge C1 Advanced sin haber aprobado el B2 First. Requisitos, recomendaciones y cómo prepararse desde cualquier nivel."
 paaAnswer: "No es obligatorio haber superado el nivel B2 para presentarse al examen Cambridge C1 Advanced. Este certificado evalúa directamente competencias de nivel C1, aunque tener un nivel B2 sólido facilita la preparación y aumenta las probabilidades de éxito en la prueba avanzada."
 contextSections:

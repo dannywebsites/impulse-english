@@ -3,7 +3,7 @@ url: /blog/b2-first-papel-ordenador
 category: Cambridge B2 First
 priority: Medium
 question: "¿B2 First papel o ordenador?"
-seoTitle: "B2 First papel o ordenador | Diferencias y ventajas"
+seoTitle: "B2 First Papel u Ordenador"
 metaDescription: "Compara el B2 First en papel y en ordenador: misma certificación, distintos plazos de resultados. Te ayudamos a elegir el formato que más te conviene."
 paaAnswer: "El B2 First puede realizarse en papel o en ordenador con contenido idéntico y certificación equivalente. El formato digital ofrece resultados en 5-10 días laborables frente a 4-6 semanas del papel. La prueba oral es presencial en ambos casos. El formato ordenador permite gestión ágil de respuestas (marcar, revisar), mientras el papel ofrece experiencia tradicional. Ambos proporcionan papel para notas y evaluación estandarizada con la misma puntuación Cambridge English Scale (160-190 para aprobar)."
 contextSections:

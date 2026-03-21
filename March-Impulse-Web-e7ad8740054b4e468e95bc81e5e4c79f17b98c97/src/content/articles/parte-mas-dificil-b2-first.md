@@ -3,7 +3,7 @@ url: /blog/parte-mas-dificil-b2-first
 category: Cambridge B2 First
 priority: Medium
 question: "¿Qué parte del B2 First es más difícil?"
-seoTitle: "Parte más difícil del B2 First | Use of English"
+seoTitle: "Parte Más Difícil del B2 First"
 metaDescription: "Use of English es la parte más difícil del B2 First para la mayoría. Te explicamos cada ejercicio, por qué es tan exigente y cómo superarlo."
 paaAnswer: "La parte más difícil del B2 First suele ser Use of English dentro de Reading & Use of English, especialmente los ejercicios de transformación de palabras (word formation) y completación sin opciones (open cloze). Estas tareas exigen dominio preciso de gramática, vocabulario, colocaciones y ortografía exacta. La sección completa dura 75 minutos con 52 preguntas, representando el 40% de la puntuación total, requiriendo conocimiento sintáctico avanzado y precisión lingüística superior a otras partes."
 contextSections:

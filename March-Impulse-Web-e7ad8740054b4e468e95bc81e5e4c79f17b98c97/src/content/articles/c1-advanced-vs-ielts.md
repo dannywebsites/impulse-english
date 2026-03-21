@@ -3,7 +3,7 @@ url: /blog/c1-advanced-vs-ielts
 category: Cambridge C1 Advanced
 priority: Medium
 question: "¿C1 Advanced o C1 IELTS?"
-seoTitle: "C1 Advanced vs IELTS: ¿qué examen elegir en 2026?"
+seoTitle: "C1 Advanced vs IELTS"
 metaDescription: "Comparamos el Cambridge C1 Advanced con el IELTS: formato, reconocimiento, validez y cuál os conviene más según vuestros objetivos académicos y profesionales."
 paaAnswer: "El Cambridge C1 Advanced certifica un nivel C1 CEFR con enfoque académico y profesional, evaluando lectura, escritura, comprensión y expresión oral en un formato modular. IELTS es más general, usado para migración y admisión universitaria. C1 Advanced ofrece reconocimiento sólido en Europa y no caduca."
 contextSections:

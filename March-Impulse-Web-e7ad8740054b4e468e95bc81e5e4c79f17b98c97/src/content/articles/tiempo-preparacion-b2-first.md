@@ -3,7 +3,7 @@ url: /blog/tiempo-preparacion-b2-first
 category: Cambridge B2 First
 priority: High
 question: "¿Cuánto tiempo se tarda en preparar el B2 First?"
-seoTitle: "Tiempo para preparar el B2 First | De 3 a 9 meses"
+seoTitle: "Tiempo Preparación B2 First"
 metaDescription: Preparar el B2 First lleva entre 3 y 9 meses según tu nivel de partida. Descubre cuánto tiempo necesitas y cómo planificar tu estudio de forma eficaz.
 paaAnswer: "La preparación para el examen Cambridge B2 First dura entre 3 y 9 meses según el nivel inicial y dedicación. Estudiantes con base B1 pueden alcanzar el nivel en 3-6 meses con estudio regular, mientras principiantes tardan hasta 12-18 meses. Clave: planificación estructurada y práctica constante."
 contextSections:
