@@ -156,7 +156,7 @@ export function generateCourseSchema(props: CourseSchemaProps) {
         price: props.price,
         priceCurrency: props.priceCurrency || "EUR",
         availability: "https://schema.org/InStock",
-        validFrom: "2025-01-01"
+        validFrom: `${new Date().getFullYear()}-01-01`
       }
     })
   };
@@ -182,8 +182,8 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
     description: props.description,
     url: props.url,
     image: props.image || businessInfo.image,
-    datePublished: props.datePublished || "2025-01-01",
-    dateModified: props.dateModified || props.datePublished || "2025-01-01",
+    datePublished: props.datePublished || `${new Date().getFullYear()}-01-01`,
+    dateModified: props.dateModified || props.datePublished || `${new Date().getFullYear()}-01-01`,
     author: {
       "@type": "Organization",
       name: props.author || businessInfo.name,

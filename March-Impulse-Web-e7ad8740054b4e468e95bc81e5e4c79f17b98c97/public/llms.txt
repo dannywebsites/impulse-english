@@ -48,14 +48,14 @@ Fast, accurate online testing by Cambridge with results in 48 hours. Intensive p
 
 Our academy is centrally located in **La Vaguada** and serves students across northern Madrid:
 
-1. **Barrio del Pilar** — [/ubicaciones/barrio-del-pilar](https://impulse-english.es/ubicaciones/barrio-del-pilar)
-2. **La Vaguada** — [/ubicaciones/la-vaguada](https://impulse-english.es/ubicaciones/la-vaguada)
-3. **Peñagrande** — [/ubicaciones/penagrande](https://impulse-english.es/ubicaciones/penagrande)
-4. **La Ventilla** — [/ubicaciones/la-ventilla](https://impulse-english.es/ubicaciones/la-ventilla)
-5. **La Paz** — [/ubicaciones/la-paz](https://impulse-english.es/ubicaciones/la-paz)
-6. **Plaza Castilla** — [/ubicaciones/plaza-castilla](https://impulse-english.es/ubicaciones/plaza-castilla)
-7. **Tetuán** — [/ubicaciones/tetuan](https://impulse-english.es/ubicaciones/tetuan)
-8. **Cuatro Torres** — [/ubicaciones/cuatro-torres](https://impulse-english.es/ubicaciones/cuatro-torres)
+1. **Barrio del Pilar** — [/academia-ingles-barrio-del-pilar/](https://impulse-english.es/academia-ingles-barrio-del-pilar/)
+2. **La Vaguada** — [/academia-ingles-la-vaguada/](https://impulse-english.es/academia-ingles-la-vaguada/)
+3. **Peñagrande** — [/academia-ingles-penagrande/](https://impulse-english.es/academia-ingles-penagrande/)
+4. **La Ventilla** — [/academia-ingles-la-ventilla/](https://impulse-english.es/academia-ingles-la-ventilla/)
+5. **La Paz** — [/academia-ingles-la-paz/](https://impulse-english.es/academia-ingles-la-paz/)
+6. **Plaza Castilla** — [/academia-ingles-plaza-castilla/](https://impulse-english.es/academia-ingles-plaza-castilla/)
+7. **Tetuán** — [/academia-ingles-tetuan/](https://impulse-english.es/academia-ingles-tetuan/)
+8. **Cuatro Torres** — [/academia-ingles-cuatro-torres/](https://impulse-english.es/academia-ingles-cuatro-torres/)
 
 ## How to Reach Us
 
