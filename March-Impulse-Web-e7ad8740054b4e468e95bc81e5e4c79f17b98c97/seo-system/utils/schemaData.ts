@@ -430,7 +430,11 @@ export function generateLocationPageSchema(props: LocationPageSchemaProps) {
     "@graph": [
       {
         "@type": ["LocalBusiness", "EducationalOrganization"],
-        "@id": `${businessInfo.url}/#organization`,
+        "@id": `${props.pageUrl}#localbusiness`,
+        parentOrganization: {
+          "@type": "EducationalOrganization",
+          "@id": `${businessInfo.url}/#organization`
+        },
         name: businessInfo.name,
         alternateName: businessInfo.alternateName,
         description: `Academia de inglés cerca de ${props.locationName}, Madrid. Centro oficial Cambridge y Linguaskill con 100% de aprobados. Clases para todas las edades.`,

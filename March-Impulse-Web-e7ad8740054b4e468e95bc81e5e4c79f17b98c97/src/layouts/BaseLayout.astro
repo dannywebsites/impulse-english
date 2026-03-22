@@ -16,7 +16,6 @@ interface Props {
   author?: string;
   fullTitle?: boolean;
   schemas?: object[];
-  skipGlobalAggregateRating?: boolean;
 }
 
 const DEFAULT_OG_IMAGE = 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/LOGO+WHITE+BACKGROUND.jpg';
@@ -36,7 +35,6 @@ const {
   author = 'Impulse English Academy',
   fullTitle = false,
   schemas = [],
-  skipGlobalAggregateRating = false,
 } = Astro.props;
 
 const pageTitle = fullTitle ? title : buildPageTitle(title);
@@ -44,11 +42,14 @@ const pageTitle = fullTitle ? title : buildPageTitle(title);
 const rawCanonical = canonical?.startsWith('http') ? canonical : `${BASE_URL}${canonical || '/'}`;
 const canonicalUrl = rawCanonical.endsWith('/') ? rawCanonical : `${rawCanonical}/`;
 
-// Always include Organization + WebSite schemas
-// On location pages, strip aggregateRating from global org to avoid Google's
-// "Review has multiple aggregate ratings" error (location entity carries the rating)
+// Auto-detect: if any page schema already carries aggregateRating, strip it
+// from the global Organization schema to prevent Google's "Review has multiple
+// aggregate ratings" error. This makes duplication structurally impossible.
 let orgSchema: Record<string, unknown> = generateOrganizationSchema();
-if (skipGlobalAggregateRating) {
+const pageHasAggregateRating = schemas.some(s =>
+  (s as Record<string, unknown>).aggregateRating != null
+);
+if (pageHasAggregateRating) {
   const { aggregateRating: _, ...rest } = orgSchema;
   orgSchema = rest;
 }
