@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 const centrosFaqs = [
   {
@@ -22,7 +23,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: '¿Cuánto cuesta el examen Linguaskill en Madrid, Valencia y Zaragoza?',
     answer: 'El precio del examen completo (4 módulos) oscila entre 130€ en Zaragoza y 145€ en Valencia, siendo Madrid el punto intermedio con 135€. Los centros permiten contratar módulos individuales desde 45€, ideal si solo necesitas certificar Reading & Listening para requisitos universitarios básicos. Algunos centros ofrecen descuentos del 10-15% para estudiantes con tarjeta universitaria válida.'

@@ -219,6 +219,16 @@ export interface FAQItem {
 }
 
 export function generateFAQSchema(faqs: FAQItem[]) {
+  // Validate at build time — catch mistyped keys before they reach production
+  faqs.forEach((faq, i) => {
+    if (!faq.question || typeof faq.question !== 'string') {
+      throw new Error(`FAQ item ${i}: missing or invalid "question" field. Got: ${JSON.stringify(faq)}`);
+    }
+    if (!faq.answer || typeof faq.answer !== 'string') {
+      throw new Error(`FAQ item ${i}: missing or invalid "answer" field. Got: ${JSON.stringify(faq)}`);
+    }
+  });
+
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",

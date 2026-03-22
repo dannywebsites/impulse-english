@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 const c1AdvancedFaqs = [
   {
@@ -82,7 +83,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: '¿Cuánto cuesta el examen Cambridge C1 Advanced en España?',
     answer: 'El precio del examen C1 Advanced varía entre 210-240€ según el centro examinador oficial en España. Algunos centros autorizados ofrecen descuentos para estudiantes matriculados o inscripciones grupales. El precio incluye certificado digital y físico con envío estándar a domicilio tras publicación de resultados oficiales.'

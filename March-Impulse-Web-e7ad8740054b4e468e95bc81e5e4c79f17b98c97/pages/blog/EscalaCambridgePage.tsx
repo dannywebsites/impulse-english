@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 const escalaFaqs = [
   {
@@ -53,7 +54,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-05"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Qué significa exactamente una puntuación de 160 en la escala Cambridge?",
       answer: "Una puntuación de 160 certifica nivel B2 del MCER, indicando usuario independiente capaz de desenvolverse en situaciones académicas y profesionales comunes. Específicamente, 160 es el mínimo para aprobar B2 First con Grade C, demostrando competencia sólida aunque con áreas mejorables en precisión o fluidez."

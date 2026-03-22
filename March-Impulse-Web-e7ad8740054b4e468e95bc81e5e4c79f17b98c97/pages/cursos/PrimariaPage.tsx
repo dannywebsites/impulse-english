@@ -8,6 +8,7 @@ import OptimizedImage from '../../components/OptimizedImage';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 import FullPhotoGallery from '../../components/FullPhotoGallery';
 import { primariaImages as galleryImages } from '../../src/data/academyImages';
 import { studentImages } from '../../src/data/images';
@@ -23,7 +24,7 @@ export const courseSchema = generateCourseSchema({
 });
 
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: "¿Cómo sé qué nivel tiene mi hijo?",
     answer: "Con una prueba de nivel sencilla y observación en clase. Evaluamos comprensión, vocabulario, lectura y expresión oral según su edad. Así evitamos grupos descompensados y conseguimos progreso real. Te explicamos el punto de partida y el plan de mejora de forma clara."

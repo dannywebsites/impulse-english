@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "Centros Cambridge en Madrid y Barcelona: Guía Completa 2025",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-15"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Cuánto cuesta hacer un examen Cambridge en Madrid o Barcelona?",
       answer: "El precio varía según el nivel: A2 Key cuesta aproximadamente 125-145 euros, B1 Preliminary 160-175 euros, B2 First 195-220 euros, C1 Advanced 210-230 euros, y C2 Proficiency 220-240 euros. Los centros Platino suelen aplicar tarifas en el rango superior debido a servicios adicionales incluidos, mientras que centros más pequeños pueden ofrecer precios ligeramente inferiores. Algunas academias ofrecen paquetes que combinan curso preparatorio y examen con descuentos del 10-15%."

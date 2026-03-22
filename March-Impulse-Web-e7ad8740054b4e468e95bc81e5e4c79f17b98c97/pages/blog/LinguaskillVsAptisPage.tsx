@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 const vsAptisFaqs = [
   {
@@ -45,7 +46,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-12-10"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Cuál es más fácil, Linguaskill o Aptis?",
       answer: "La dificultad es comparable ya que ambos evalúan el mismo espectro CEFR de A1 a C2. Linguaskill puede parecer más desafiante porque su formato adaptativo ajusta preguntas según tu desempeño, mientras que Aptis presenta preguntas con dificultad progresiva predecible. La \"facilidad\" depende de tu nivel real: ambos exámenes identificarán con precisión tu competencia lingüística sin posibilidad de inflarlo artificialmente."

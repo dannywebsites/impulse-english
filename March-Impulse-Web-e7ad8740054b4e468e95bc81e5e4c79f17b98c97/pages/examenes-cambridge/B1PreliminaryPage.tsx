@@ -2,8 +2,9 @@ import React from 'react';
 import { BookOpen, PenTool, Headphones, Mic } from 'lucide-react';
 import ExamPageLayout from '../../components/ExamPageLayout';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
-export const b1Faqs = [
+export const b1Faqs: FAQItem[] = [
   {
     question: "¿Es suficiente el B1 para trabajar en una empresa internacional?",
     answer: "El B1 es suficiente para trabajar en empresas con contacto internacional limitado o en puestos no especializados. Para roles que requieren negociación, presentaciones o interacción constante con clientes extranjeros, se recomienda B2. Muchas multinacionales piden mínimo B2, pero con B1 puedes acceder a empleos en startups, empresas pequeñas o contextos específicos donde se habla menos inglés."

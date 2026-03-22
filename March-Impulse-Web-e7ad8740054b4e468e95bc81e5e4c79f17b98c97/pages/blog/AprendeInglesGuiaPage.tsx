@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 const tableOfContents = [
   { id: 'preguntas-frecuentes', title: 'Preguntas Frecuentes' },
   { id: 'donde-aprender', title: 'Dónde Aprender Inglés: Guía Completa' },
@@ -15,7 +16,7 @@ const tableOfContents = [
   { id: 'espana', title: 'Aprender Inglés en España' },
 ];
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: "¿Cuánto tiempo se tarda en aprender inglés?",
     answer: "Aprender inglés desde cero hasta nivel B1/B2 requiere entre 600 y 750 horas de estudio guiado, equivalentes a 1-3 años según constancia, método y dedicación. La combinación de estudio diario estructurado, inmersión activa y práctica comunicativa acelera significativamente el progreso."

@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 export const articleSchema = generateArticleSchema({
     headline: "Ejercicios B2 Cambridge: Guía Práctica First 2026",
     description: "Ejercicios prácticos para preparar el B2 First de Cambridge. Reading, Writing, Listening y Speaking con recursos gratuitos.",
@@ -12,7 +13,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-08"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Cuántos ejercicios debo hacer para aprobar el B2 First de Cambridge?",
       answer: "No existe un número exacto, pero se recomienda practicar al menos 50 ejercicios de Use of English, escribir 30 textos diferentes, completar 20 readings y 20 listenings durante tres meses de preparación. La calidad de la práctica con análisis de errores importa más que la cantidad pura de ejercicios realizados."

@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 const tableOfContents = [
   { id: 'reading-listening', title: 'Módulo Reading and Listening: Test Adaptativo Combinado' },
@@ -14,7 +15,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: '¿Cuánto tiempo dura el examen Linguaskill completo?',
     answer: 'El examen completo dura aproximadamente 120 minutos de tiempo activo: 60-75 minutos para Reading and Listening, 45 minutos para Writing y 15 minutos para Speaking. Puedes realizar los módulos en diferentes momentos dentro de un periodo máximo de 48 horas desde el inicio, lo que permite descansar entre secciones según tu conveniencia y nivel de concentración.'

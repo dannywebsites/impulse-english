@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
 
 export const articleSchema = generateArticleSchema({
@@ -15,7 +16,7 @@ export const articleSchema = generateArticleSchema({
   dateModified: "2025-01-01"
 });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Cuánto cuesta un curso de inglés para adultos en Madrid en 2025?",
       answer: "Los precios varían según modalidad: cursos grupales regulares cuestan 60-120€/mes (8 horas mensuales), intensivos 300-600€/mes (40-60 horas), y clases particulares 25-45€/hora. Los paquetes anuales con descuento promedian 750-1.200€ completos incluyendo materiales y plataforma digital. Las opciones online son 20-30% más económicas."

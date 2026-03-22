@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 const tableOfContents = [
   { id: 'que-incluye', title: '¿Qué Incluye el Precio del Examen Linguaskill?' },
@@ -14,7 +15,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: '¿Puedo pagar el examen Linguaskill en cuotas o necesito abonar el importe completo al reservar?',
     answer: 'El pago completo de 130 euros (o 120 euros con descuento universitario) debe realizarse en el momento de la reserva para confirmar tu plaza. Los centros autorizados no ofrecen habitualmente planes de pago fraccionado, aunque algunas universidades pueden incluir el examen en tasas académicas pagables en plazos. Contacta directamente con tu centro de examen específico para confirmar opciones disponibles.'

@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 export const articleSchema = generateArticleSchema({
     headline: "Precio Cambridge C1 Madrid 2026: Costes y Registro Completo",
     description: "Precios actualizados del examen Cambridge C1 Advanced en Madrid. Costes de inscripción, descuentos y proceso de registro paso a paso.",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-07"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿El precio del examen Cambridge C1 incluye materiales de preparación?",
       answer: "No, la tarifa de 233 euros cubre únicamente la inscripción al examen oficial. Los materiales de preparación (libros, exámenes de práctica, cursos online) deben adquirirse por separado. Sin embargo, la inscripción incluye una clase online gratuita con recomendaciones para el día del examen y acceso al portal oficial de resultados."

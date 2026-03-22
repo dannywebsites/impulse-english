@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
 import Breadcrumb from '../../components/Breadcrumb';
 import { NAP } from '../../utils/napData';
+import type { FAQItem } from '../../utils/schemaData';
 
 const benefits = [
   { title: "A 15 Minutos de La Ventilla", desc: "15 minutos caminando o 15 minutos en metro. Excelente conexión desde La Ventilla." },
@@ -24,7 +25,7 @@ const courses = [
   { name: "Clases Particulares", method: "Presencial u online", href: "/cursos-ingles/particulares" }
 ];
 
-export const localFaqs = [
+export const localFaqs: FAQItem[] = [
   {
     question: "¿Qué niveles de inglés ofrecéis cerca de La Ventilla?",
     answer: "Ofrecemos todos los niveles desde principiante (A1) hasta avanzado (C2). Realizamos una prueba de nivel gratuita para ubicarte en el grupo adecuado. Preparamos exámenes Cambridge (Pre-A1 Starters hasta C2 Proficiency) y Linguaskill."

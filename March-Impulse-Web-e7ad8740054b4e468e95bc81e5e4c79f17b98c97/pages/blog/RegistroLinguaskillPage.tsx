@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "Registro Linguaskill 2025: Guía Completa de Matrícula",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-16"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Cuánto cuesta registrarse en el examen Linguaskill en España?",
       answer: "El coste varía según el centro y los módulos seleccionados. El módulo Reading and Listening cuesta aproximadamente 60-80€, mientras que un examen completo con los cuatro módulos (Reading, Listening, Writing, Speaking) puede oscilar entre 120€ y 180€. Los centros establecen precios propios, por lo que conviene comparar varias opciones."

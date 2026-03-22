@@ -8,6 +8,7 @@ import OptimizedImage from '../../components/OptimizedImage';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 import { facilityImages } from '../../src/data/images';
 
 export const courseSchema = generateCourseSchema({
@@ -21,7 +22,7 @@ export const courseSchema = generateCourseSchema({
 });
 
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: "¿Qué nivel de inglés piden en las empresas?",
     answer: "Depende del sector, pero B2 es el nivel más habitual para entornos profesionales y C1 se valora para roles internacionales o de liderazgo. Lo importante es que puedas comunicarte con seguridad. Te orientamos para elegir preparación Cambridge o Linguaskill según tu objetivo laboral."

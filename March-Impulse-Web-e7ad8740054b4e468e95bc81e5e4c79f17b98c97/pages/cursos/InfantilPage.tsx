@@ -9,6 +9,7 @@ import AcademyGallery from '../../components/AcademyGallery';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 import { infantilImages as galleryImages } from '../../src/data/academyImages';
 import { infantilImages as heroImages } from '../../src/data/images';
 
@@ -24,7 +25,7 @@ export const courseSchema = generateCourseSchema({
 
 
 // FAQs for Infantil page
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: "¿Es buena idea empezar inglés a los 2 años?",
     answer: "Sí, a esta edad el aprendizaje es natural y sin bloqueo. En clase trabajamos rutinas, canciones, juego guiado y comprensión oral para que el niño se familiarice con el idioma con confianza. El objetivo no es \"memorizar\", sino crear una relación positiva y constante con el inglés."

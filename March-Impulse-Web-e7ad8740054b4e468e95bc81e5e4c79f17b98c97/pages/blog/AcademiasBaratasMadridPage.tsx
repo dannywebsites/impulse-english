@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
 
 export const articleSchema = generateArticleSchema({
@@ -24,7 +25,7 @@ const tableOfContents = [
   { id: 'modalidades', title: 'Modalidades: Presencial, Online e Híbrido' },
 ];
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: "¿Cuál es la academia de inglés más económica de Madrid?",
     answer: "Papora ofrece el precio más bajo con 8,30€ mensuales mediante plataforma digital con lecciones interactivas automatizadas. Para clases con profesores reales, Eco Idiomas comienza en 45€ al mes con sesiones presenciales grupales en Chamartín, incluyendo material y acceso digital complementario."

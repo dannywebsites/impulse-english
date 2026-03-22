@@ -232,26 +232,9 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
   };
 }
 
-// Generate FAQPage schema
-export interface FAQItem {
-  question: string;
-  answer: string;
-}
-
-export function generateFAQSchema(faqs: FAQItem[]) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map(faq => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer
-      }
-    }))
-  };
-}
+// Generate FAQPage schema — re-export from main utils (single source of truth)
+export type { FAQItem } from '../../utils/schemaData';
+export { generateFAQSchema } from '../../utils/schemaData';
 
 // Generate BreadcrumbList schema
 export interface BreadcrumbItem {

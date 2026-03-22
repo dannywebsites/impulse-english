@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
 export const articleSchema = generateArticleSchema({
   headline: "Cursos de Inglés para Niños en Madrid: Guía Completa 2026",
@@ -14,7 +15,7 @@ export const articleSchema = generateArticleSchema({
   dateModified: "2025-01-01"
 });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿A qué edad deben comenzar los niños cursos de inglés en Madrid?",
       answer: "La edad óptima para iniciar cursos estructurados es 3-4 años, cuando los niños han consolidado suficiente lenguaje materno. Programas infantiles de 2-5 años utilizan metodologías lúdicas con sesiones de 45-50 minutos semanales, priorizando exposición natural mediante canciones, juegos y cuentos. El cerebro retiene fonética nativa con mayor facilidad antes de los 7 años, haciendo este período ideal para iniciar."

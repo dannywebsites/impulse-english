@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-
-interface FAQItem {
-  question: string;
-  answer: string;
-}
+import type { FAQItem } from '../../utils/schemaData';
 
 interface FAQSectionProps {
   faqs: FAQItem[];

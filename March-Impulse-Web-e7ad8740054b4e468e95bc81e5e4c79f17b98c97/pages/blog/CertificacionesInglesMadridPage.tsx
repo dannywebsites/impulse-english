@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 export const articleSchema = generateArticleSchema({
     headline: "Certificaciones de Inglés en Madrid: Academias Oficiales 2026",
     description: "Guía completa de certificaciones de inglés en Madrid: Cambridge, Linguaskill, IELTS y TOEFL. Academias oficiales, precios y comparativa.",
@@ -12,7 +13,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-01"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Cuánto tiempo se tarda en preparar el B2 First en Madrid?",
       answer: "La preparación estándar del B2 First requiere 6-9 meses con clases dos veces por semana (4 horas semanales) más estudio personal. Los cursos intensivos de verano reducen este periodo a 3-4 meses con inmersión de 12-15 horas semanales. Tu nivel inicial determina la duración: estudiantes con B1 sólido necesitan 6 meses, mientras que niveles A2 requieren 12-15 meses de preparación continuada."

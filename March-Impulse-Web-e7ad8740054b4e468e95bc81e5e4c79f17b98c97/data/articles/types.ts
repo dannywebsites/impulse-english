@@ -16,10 +16,7 @@ export interface ImpulseSection {
   ctaLinks: CtaLink[];
 }
 
-export interface FAQItem {
-  question: string;
-  answer: string;
-}
+export type { FAQItem } from '../../utils/schemaData';
 
 export interface BreadcrumbItem {
   label: string;

@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "Precio Linguaskill Online 2026: Costes del Examen",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-13"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿El precio de 130€ incluye el certificado oficial?",
       answer: "Sí, el precio del test Linguaskill online de 130€ incluye tu certificado digital oficial Cambridge con validez internacional. Recibirás el documento PDF descargable en 6 días laborables, especificando tu nivel CEFR conseguido en cada habilidad evaluada. No existen costes ocultos ni tasas adicionales por emisión de certificado o envío de resultados a instituciones."

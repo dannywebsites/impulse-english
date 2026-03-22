@@ -1,0 +1,32 @@
+---
+/**
+ * TEMPLATE: Astro page with FAQ schema wiring
+ * =============================================
+ * Copy this file to src/pages/ and rename.
+ * Update imports and schema array to match your page component.
+ *
+ * Steps:
+ * 1. Copy to src/pages/cursos-ingles/, src/pages/blog/, etc.
+ * 2. Update the import path to your page component
+ * 3. Replace all REPLACE markers
+ * 4. The schema array auto-generates FAQPage structured data
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { generateFAQSchema } from '../../../utils/schemaData';
+import TemplatePage, { courseSchema, faqs } from '../../../pages/REPLACE/TemplatePage';
+
+const schemas = [
+  courseSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="REPLACE: Page Title | Impulse English Academy La Vaguada"
+  description="REPLACE: Meta description"
+  keywords="REPLACE: comma, separated, keywords"
+  canonical="/REPLACE-URL-PATH/"
+  schemas={schemas}
+>
+  <TemplatePage client:load />
+</BaseLayout>

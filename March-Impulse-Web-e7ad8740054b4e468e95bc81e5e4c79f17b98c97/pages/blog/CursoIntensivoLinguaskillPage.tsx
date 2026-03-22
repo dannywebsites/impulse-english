@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "Curso Intensivo Linguaskill Online 2026: Preparación Rápida",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-12"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Cuánto tiempo necesito para prepararme para Linguaskill?",
       answer: "Depende de tu nivel actual y objetivo. Un candidato B1 que aspira a B2 necesita 6-8 semanas con 30 horas de curso intensivo más 20 horas de práctica personal. Candidatos A2 que buscan B1 requieren mínimo 10-12 semanas. Programas ultra-acelerados de 2-4 semanas funcionan solo para niveles B1-B2 consolidados que necesitan familiarizarse con el formato del examen."

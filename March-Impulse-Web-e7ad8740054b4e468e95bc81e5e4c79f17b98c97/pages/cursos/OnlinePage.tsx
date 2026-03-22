@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const courseSchema = generateCourseSchema({
   name: "Clases de Inglés Online",
@@ -17,7 +18,7 @@ export const courseSchema = generateCourseSchema({
   image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
 });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: "¿Las clases online son en directo o grabadas?",
     answer: "Siempre en directo por videoconferencia con tu profesor. No son vídeos pregrabados. Participas, preguntas, practicas speaking y recibes correcciones en tiempo real, igual que en clase presencial."

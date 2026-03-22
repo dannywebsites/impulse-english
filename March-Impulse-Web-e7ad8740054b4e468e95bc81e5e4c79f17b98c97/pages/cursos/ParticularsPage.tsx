@@ -7,6 +7,7 @@ import LazyVideo from '../../components/LazyVideo';
 import OptimizedImage from '../../components/OptimizedImage';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 import { facilityImages, brandingImages, s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
 
 export const courseSchema = generateCourseSchema({
@@ -47,7 +48,7 @@ const courseGalleryImages = [
   },
 ];
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: "¿Qué es mejor: clases particulares o grupo reducido?",
     answer: "Depende de tu objetivo. Si necesitas rapidez, un plan muy específico o tienes horarios variables, 1:1 suele ser más eficiente. Si buscas constancia y practicar con más interacción social, un grupo reducido funciona muy bien. Te recomendamos lo mejor tras conocerte y evaluarte."

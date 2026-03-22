@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 const tableOfContents = [
   { id: 'que-es', title: '¿Qué es Linguaskill Online y Cómo Funciona?' },
@@ -14,7 +15,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: '¿Cuánto cuesta hacer Linguaskill online desde casa en 2025?',
     answer: 'El precio varía según el centro examinador y módulos seleccionados, oscilando entre 75€ para un módulo único y 180€ para el examen completo de cuatro destrezas. Los centros españoles oficiales suelen cobrar 90-110€ por Reading & Listening, 50-60€ por Speaking y 40-50€ por Writing. Es posible realizar únicamente los módulos que necesitas certificar según requisitos específicos de tu institución.'

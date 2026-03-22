@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 export const articleSchema = generateArticleSchema({
     headline: "Examen CAE Cambridge C1 Advanced: Guía Completa 2026",
     description: "Guía completa del examen CAE C1 Advanced de Cambridge: estructura, partes, puntuación, precio y cómo prepararte.",
@@ -12,7 +13,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-06"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Cuánto tiempo se tarda en preparar el examen CAE desde un nivel B2?",
       answer: "Con dedicación de 8-10 horas semanales, necesitas aproximadamente 4-6 meses de preparación intensiva desde un nivel B2 sólido. Este período permite desarrollar el vocabulario académico avanzado requerido, dominar estructuras gramaticales complejas y familiarizarte completamente con el formato específico del examen. Candidatos con menos tiempo disponible pueden extender la preparación a 8-9 meses con estudio de 4-5 horas semanales."

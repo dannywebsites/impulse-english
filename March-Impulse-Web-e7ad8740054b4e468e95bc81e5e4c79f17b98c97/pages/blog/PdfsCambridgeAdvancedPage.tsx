@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "PDFs Cambridge Advanced C1: Recursos Oficiales 2026",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-04"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Dónde puedo descargar PDFs oficiales de Cambridge Advanced gratis legalmente?",
       answer: "Los PDFs oficiales gratuitos están disponibles en www.cambridgeenglish.org/exams-and-tests/advanced/preparation. Este sitio proporciona sample papers completos, el handbook para profesores de 116 páginas, y FAQs sobre el formato digital. Archive.org también ofrece libros de vocabulario y gramática legalmente bajo programas de préstamo digital bibliotecario con registro gratuito."

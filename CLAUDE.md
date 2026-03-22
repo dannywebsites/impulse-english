@@ -119,6 +119,14 @@ The project contains:
 - Never use external, stock, or AI-generated images
 - Always write alt text in Spanish
 
+### FAQ Schema Rules (MANDATORY for all pages with FAQs)
+- Always import `FAQItem` from `utils/schemaData.ts` — **never** define the interface locally
+- Always type FAQ exports: `export const faqs: FAQItem[] = [...]`
+- Always use `question` and `answer` keys — never `q`/`a` or other variants
+- Always wire FAQs through `generateFAQSchema()` in the `.astro` file
+- `generateFAQSchema()` includes runtime validation — build will fail on malformed FAQ data
+- See `templates/` directory for starter files when creating new pages
+
 ### Backups
 - Always back up files before editing
 - SEO system auto-backs up to `/site/pages/backups/`

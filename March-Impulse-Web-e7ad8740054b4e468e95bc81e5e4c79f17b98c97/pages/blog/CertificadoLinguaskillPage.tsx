@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 const certificadoFaqs = [
   {
@@ -53,7 +54,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-10"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Cuánto tiempo tarda en llegar el certificado Linguaskill después del examen?",
       answer: "Los resultados del examen Linguaskill están disponibles entre 3 y 5 días laborables tras completar la prueba. El certificado digital oficial con fotografía se emite inmediatamente después de que los resultados sean procesados y validados por Cambridge. Puedes descargarlo desde el portal de resultados de forma instantánea y gratuita, sin necesidad de esperar envíos postales."

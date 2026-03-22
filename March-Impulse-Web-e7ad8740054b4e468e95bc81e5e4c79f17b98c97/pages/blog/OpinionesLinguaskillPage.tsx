@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 const tableOfContents = [
   { id: 'por-que-eligen', title: '¿Por Qué los Usuarios Eligen Linguaskill?' },
   { id: 'formato-adaptativo', title: 'La Experiencia del Formato Adaptativo' },
@@ -14,7 +15,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: '¿Qué opinan los alumnos sobre la dificultad real de Linguaskill?',
     answer: 'El 68% considera que la dificultad es adecuada y justa, ajustándose al nivel del candidato gracias al sistema adaptativo. Un 22% la percibe más desafiante de lo esperado, especialmente en Writing y Speaking, mientras que un 10% la encuentra más accesible que exámenes tradicionales equivalentes como FCE o CAE de Cambridge.'

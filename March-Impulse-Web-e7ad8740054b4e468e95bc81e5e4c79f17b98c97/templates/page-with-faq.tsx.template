@@ -1,0 +1,58 @@
+/**
+ * TEMPLATE: Page with FAQ Schema
+ * ================================
+ * Copy this file and rename for new pages.
+ * FAQs MUST use the FAQItem type — the build will FAIL otherwise.
+ *
+ * Steps:
+ * 1. Copy this file to pages/cursos/, pages/blog/, etc.
+ * 2. Rename the file and component
+ * 3. Replace all REPLACE markers
+ * 4. Create a matching .astro file (see page-with-faq.astro.template)
+ */
+import React from 'react';
+import type { FAQItem } from '../../utils/schemaData';
+import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import FAQSection from '../../components/FAQSection';
+
+// Schema — update for your page type (course, article, etc.)
+export const courseSchema = generateCourseSchema({
+  name: "REPLACE: Course Name",
+  description: "REPLACE: Course description for meta and schema",
+  url: `${businessInfo.url}/REPLACE-URL-PATH`,
+  courseCode: "REPLACE",
+  educationalLevel: "All Levels",
+  timeRequired: "PT1H",
+  image: "REPLACE: image URL"
+});
+
+// FAQs — MUST be typed as FAQItem[]
+// Using wrong keys (e.g., q/a instead of question/answer) will cause a build error.
+export const faqs: FAQItem[] = [
+  {
+    question: "REPLACE: Question text here",
+    answer: "REPLACE: Answer text here"
+  },
+  {
+    question: "REPLACE: Second question",
+    answer: "REPLACE: Second answer"
+  },
+];
+
+// Component
+export default function TemplatePage() {
+  return (
+    <>
+      <Navbar />
+      <main>
+        {/* REPLACE: Add your page sections here */}
+
+        {/* FAQ Section — uses the typed faqs array */}
+        <FAQSection faqs={faqs} />
+      </main>
+      <Footer />
+    </>
+  );
+}

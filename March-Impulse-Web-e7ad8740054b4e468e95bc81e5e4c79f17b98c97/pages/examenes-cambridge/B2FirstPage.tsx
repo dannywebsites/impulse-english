@@ -2,8 +2,9 @@ import React from 'react';
 import { BookOpen, PenTool, Headphones, Mic, Languages } from 'lucide-react';
 import ExamPageLayout from '../../components/ExamPageLayout';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
-export const b2Faqs = [
+export const b2Faqs: FAQItem[] = [
   {
     question: "¿Cuántas veces puedo presentarme al B2 First?",
     answer: "Puedes presentarte al B2 First tantas veces como desees sin límite establecido por Cambridge English, pero solo una vez por convocatoria oficial. Cada intento permite mejorar la puntuación (escala 160-190 para certificación B2). Los resultados se publican en 5-10 días laborables para el formato digital."

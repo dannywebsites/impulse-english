@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 const b2FirstFaqs = [
   {
@@ -94,7 +95,7 @@ const tableOfContents = [
   { id: 'faq', title: 'Preguntas Frecuentes (FAQ)' },
 ];
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: '¿Cuánto tiempo es válido el certificado Cambridge B2 First?',
     answer: 'El certificado Cambridge B2 First tiene validez ilimitada y no caduca nunca. A diferencia de TOEFL o IELTS que expiran tras dos años, puedes usar tu B2 First durante toda tu vida profesional sin necesidad de renovación. Algunas instituciones pueden solicitar certificados recientes (2-3 años) para admisiones específicas, pero el documento oficial conserva su validez.'

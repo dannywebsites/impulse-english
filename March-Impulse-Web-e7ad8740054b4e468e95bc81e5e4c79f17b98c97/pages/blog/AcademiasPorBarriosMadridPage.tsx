@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "Academias de Inglés por Barrios en Madrid 2026",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-01"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Cuál es el barrio de Madrid con mayor concentración de academias de inglés?",
       answer: "El distrito Centro lidera con 127 academias registradas, seguido por Fuencarral-El Pardo con 43 centros. Sin embargo, los barrios periféricos como Peñagrande, La Vaguada o Barrio del Pilar ofrecen mejor relación calidad-precio, con tarifas entre 18-25% inferiores manteniendo metodologías certificadas Cambridge. La accesibilidad mediante metro líneas 9, 7 y 1 compensa la distancia del centro."

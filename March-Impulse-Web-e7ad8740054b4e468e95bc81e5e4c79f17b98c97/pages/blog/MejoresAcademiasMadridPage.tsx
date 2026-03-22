@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
 
 export const articleSchema = generateArticleSchema({
@@ -25,7 +26,7 @@ const tableOfContents = [
   { id: 'impulse', title: 'Por Qué Impulse English Academy' },
 ];
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: "¿Cuánto cuesta una academia de inglés en Madrid?",
     answer: "Los precios varían entre 45€/mes en academias económicas hasta 200€/mes para clases particulares premium. La media está en 70-100€/mes para grupos reducidos con profesores cualificados."

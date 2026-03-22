@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "Recursos PDF Examen Linguaskill: Materiales Oficiales 2026",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-09"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Puedo descargar exámenes completos de Linguaskill en PDF?",
       answer: "No, Cambridge no publica exámenes completos descargables por motivos de seguridad. Solo ofrece guías informativas, ejemplos de tareas individuales y hojas de consejos en PDF. Las pruebas oficiales solo están disponibles en centros autorizados mediante la plataforma digital supervisada. Los materiales PDF gratuitos te proporcionan suficiente información para familiarizarte con el formato sin comprometer la integridad del examen."

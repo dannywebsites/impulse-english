@@ -7,10 +7,7 @@ import FAQSection from '../components/FAQSection';
 import Breadcrumb from '../components/Breadcrumb';
 import SEOHead from '../components/SEOHead';
 
-interface FAQItem {
-  question: string;
-  answer: string;
-}
+import type { FAQItem } from '../../utils/schemaData';
 
 interface FAQSection {
   title: string;

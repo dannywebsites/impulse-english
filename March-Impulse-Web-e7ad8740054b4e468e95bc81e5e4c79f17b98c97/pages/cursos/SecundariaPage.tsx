@@ -8,6 +8,7 @@ import OptimizedImage from '../../components/OptimizedImage';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 import AcademyGallery from '../../components/AcademyGallery';
 import { secundariaImages as galleryImages } from '../../src/data/academyImages';
 import { studentImages } from '../../src/data/images';
@@ -23,7 +24,7 @@ export const courseSchema = generateCourseSchema({
 });
 
 
-export const faqs = [
+export const faqs: FAQItem[] = [
   {
     question: "¿Qué nivel suele tener un alumno de 4º ESO?",
     answer: "Suele estar alrededor de B1, aunque varía mucho. Por eso hacemos prueba de nivel y observación, para no perder tiempo. Si el alumno está en B1, trazamos un plan para consolidar base y avanzar hacia B2, que es el estándar más solicitado."

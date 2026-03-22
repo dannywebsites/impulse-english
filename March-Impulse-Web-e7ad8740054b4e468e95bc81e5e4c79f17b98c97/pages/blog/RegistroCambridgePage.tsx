@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "Cómo Registrarse en Exámenes Cambridge 2025: Guía Paso a Paso",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-01-02"
   });
 
-export const faqs = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Puedo registrarme directamente en la web de Cambridge English?",
       answer: "No, Cambridge English no gestiona inscripciones individuales de candidatos. Debes registrarte obligatoriamente a través de un centro examinador autorizado de tu zona. Estos centros son los únicos con capacidad legal para procesar tu inscripción, cobrar las tasas y organizar las sesiones de examen. Puedes buscar tu centro más cercano usando la herramienta oficial \"Find a Centre\" en cambridgeenglish.org."

@@ -5,10 +5,7 @@ import Footer from '../components/Footer';
 import FAQSection from '../components/FAQSection';
 import Breadcrumb from '../components/Breadcrumb';
 
-interface FAQItem {
-  question: string;
-  answer: string;
-}
+import type { FAQItem } from '../utils/schemaData';
 
 interface FAQSection {
   title: string;

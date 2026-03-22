@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
 import Breadcrumb from '../../components/Breadcrumb';
 import { NAP } from '../../utils/napData';
+import type { FAQItem } from '../../utils/schemaData';
 
 const benefits = [
   { title: "Ubicación Premium en La Vaguada", desc: "A 8-10 minutos del Centro Comercial. Zona comercial y residencial." },
@@ -24,7 +25,7 @@ const courses = [
   { name: "Clases Particulares", method: "Flexible", desc: "Presencial u online. Horarios adaptados a ti.", href: "/cursos-ingles/particulares" }
 ];
 
-export const localFaqs = [
+export const localFaqs: FAQItem[] = [
   {
     question: "¿Qué niveles de inglés ofrecéis en La Vaguada?",
     answer: "Ofrecemos todos los niveles desde principiante (A1) hasta avanzado (C2). Realizamos una prueba de nivel gratuita para ubicarte en el grupo adecuado. Preparamos exámenes Cambridge (Pre-A1 Starters hasta C2 Proficiency) y Linguaskill."
