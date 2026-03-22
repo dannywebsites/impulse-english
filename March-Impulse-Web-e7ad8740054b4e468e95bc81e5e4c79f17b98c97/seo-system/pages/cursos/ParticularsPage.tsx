@@ -53,36 +53,36 @@ const courseGalleryImages = [
 
 const faqs = [
   {
-    q: "¿Qué es mejor: clases particulares o grupo reducido?",
-    a: "Depende de tu objetivo. Si necesitas rapidez, un plan muy específico o tienes horarios variables, 1:1 suele ser más eficiente. Si buscas constancia y practicar con más interacción social, un grupo reducido funciona muy bien. Te recomendamos lo mejor tras conocerte y evaluarte."
+    question:"¿Qué es mejor: clases particulares o grupo reducido?",
+    answer:"Depende de tu objetivo. Si necesitas rapidez, un plan muy específico o tienes horarios variables, 1:1 suele ser más eficiente. Si buscas constancia y practicar con más interacción social, un grupo reducido funciona muy bien. Te recomendamos lo mejor tras conocerte y evaluarte."
   },
   {
-    q: "¿Puedo hacer clases online y presencial combinadas?",
-    a: "Sí. Mucha gente combina ambas modalidades: presencial para speaking y dinámica, online para flexibilidad. Diseñamos un plan único para que el progreso sea continuo independientemente del formato. Lo importante es mantener consistencia y trabajar exactamente lo que necesitas mejorar."
+    question:"¿Puedo hacer clases online y presencial combinadas?",
+    answer:"Sí. Mucha gente combina ambas modalidades: presencial para speaking y dinámica, online para flexibilidad. Diseñamos un plan único para que el progreso sea continuo independientemente del formato. Lo importante es mantener consistencia y trabajar exactamente lo que necesitas mejorar."
   },
   {
-    q: "¿Preparáis entrevistas de trabajo en inglés?",
-    a: "Sí. Trabajamos respuestas, vocabulario por sector, estructura, fluidez y seguridad. Simulamos entrevistas reales, corregimos puntos clave y preparamos preguntas típicas. También trabajamos presentaciones y reuniones si lo necesitas. El objetivo es que llegues con guion, control y soltura."
+    question:"¿Preparáis entrevistas de trabajo en inglés?",
+    answer:"Sí. Trabajamos respuestas, vocabulario por sector, estructura, fluidez y seguridad. Simulamos entrevistas reales, corregimos puntos clave y preparamos preguntas típicas. También trabajamos presentaciones y reuniones si lo necesitas. El objetivo es que llegues con guion, control y soltura."
   },
   {
-    q: "¿También preparáis IELTS / TOEFL?",
-    a: "Podemos preparar distintos exámenes según tu objetivo, pero nuestro foco principal es Cambridge y Linguaskill. Si tu meta es IELTS/TOEFL, te orientamos con un plan específico y práctica por habilidades. Lo definimos en la primera evaluación para ajustar estrategia."
+    question:"¿También preparáis IELTS / TOEFL?",
+    answer:"Podemos preparar distintos exámenes según tu objetivo, pero nuestro foco principal es Cambridge y Linguaskill. Si tu meta es IELTS/TOEFL, te orientamos con un plan específico y práctica por habilidades. Lo definimos en la primera evaluación para ajustar estrategia."
   },
   {
-    q: "¿Cuánto dura una clase particular?",
-    a: "Lo habitual es 60 minutos, aunque se puede adaptar a 90 o 120 minutos según disponibilidad y objetivo. Si estás preparando examen, a veces sesiones más largas permiten simular tareas completas y trabajar writing/speaking con feedback profundo. Te proponemos la mejor opción según tu caso."
+    question:"¿Cuánto dura una clase particular?",
+    answer:"Lo habitual es 60 minutos, aunque se puede adaptar a 90 o 120 minutos según disponibilidad y objetivo. Si estás preparando examen, a veces sesiones más largas permiten simular tareas completas y trabajar writing/speaking con feedback profundo. Te proponemos la mejor opción según tu caso."
   },
   {
-    q: "¿Puedo cambiar de horario?",
-    a: "Sí, con aviso previo. Buscamos flexibilidad real, pero siempre sujeto a disponibilidad de agenda. Si necesitas cambios frecuentes, lo estructuramos desde el principio para evitar interrupciones. Lo importante es sostener el ritmo de aprendizaje sin perder continuidad."
+    question:"¿Puedo cambiar de horario?",
+    answer:"Sí, con aviso previo. Buscamos flexibilidad real, pero siempre sujeto a disponibilidad de agenda. Si necesitas cambios frecuentes, lo estructuramos desde el principio para evitar interrupciones. Lo importante es sostener el ritmo de aprendizaje sin perder continuidad."
   },
   {
-    q: "¿Qué material usáis?",
-    a: "Usamos material adaptado a tu objetivo y nivel: recursos propios, materiales oficiales cuando preparas Cambridge y práctica específica si vas a Linguaskill. También trabajamos con textos, audios y tareas reales para que el inglés te sirva fuera de clase, no solo en ejercicios."
+    question:"¿Qué material usáis?",
+    answer:"Usamos material adaptado a tu objetivo y nivel: recursos propios, materiales oficiales cuando preparas Cambridge y práctica específica si vas a Linguaskill. También trabajamos con textos, audios y tareas reales para que el inglés te sirva fuera de clase, no solo en ejercicios."
   },
   {
-    q: "¿Cómo empiezo?",
-    a: "Lo mejor es una primera toma de contacto para entender tu objetivo y tu nivel actual. Con eso diseñamos un plan y te proponemos horarios. Puedes escribir por WhatsApp o llamar, y te guiamos paso a paso."
+    question:"¿Cómo empiezo?",
+    answer:"Lo mejor es una primera toma de contacto para entender tu objetivo y tu nivel actual. Con eso diseñamos un plan y te proponemos horarios. Puedes escribir por WhatsApp o llamar, y te guiamos paso a paso."
   }
 ];
 
@@ -435,8 +435,8 @@ export default function ParticularesPage() {
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-zinc-100">
-                <h3 className="font-bold text-zinc-900 mb-2">{faq.q}</h3>
-                <p className="text-zinc-600">{faq.a}</p>
+                <h3 className="font-bold text-zinc-900 mb-2">{faq.question}</h3>
+                <p className="text-zinc-600">{faq.answer}</p>
               </div>
             ))}
           </div>
