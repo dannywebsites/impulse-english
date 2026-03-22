@@ -15,6 +15,7 @@ const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchem
   keywords="academia inglés tetuán, clases inglés tetuán madrid, cursos inglés tetuán, cambridge tetuán, aprender inglés tetuán"
   canonical="/academia-ingles-tetuan"
   schemas={schemas}
+  skipGlobalAggregateRating={true}
 >
   <TetuanPage client:load />
   <CookieBanner client:idle />

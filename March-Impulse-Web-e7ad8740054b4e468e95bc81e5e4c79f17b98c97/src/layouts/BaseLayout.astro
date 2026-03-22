@@ -16,6 +16,7 @@ interface Props {
   author?: string;
   fullTitle?: boolean;
   schemas?: object[];
+  skipGlobalAggregateRating?: boolean;
 }
 
 const DEFAULT_OG_IMAGE = 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/LOGO+WHITE+BACKGROUND.jpg';
@@ -35,6 +36,7 @@ const {
   author = 'Impulse English Academy',
   fullTitle = false,
   schemas = [],
+  skipGlobalAggregateRating = false,
 } = Astro.props;
 
 const pageTitle = fullTitle ? title : buildPageTitle(title);
@@ -43,7 +45,14 @@ const rawCanonical = canonical?.startsWith('http') ? canonical : `${BASE_URL}${c
 const canonicalUrl = rawCanonical.endsWith('/') ? rawCanonical : `${rawCanonical}/`;
 
 // Always include Organization + WebSite schemas
-const globalSchemas = [generateOrganizationSchema(), generateWebSiteSchema()];
+// On location pages, strip aggregateRating from global org to avoid Google's
+// "Review has multiple aggregate ratings" error (location entity carries the rating)
+let orgSchema: Record<string, unknown> = generateOrganizationSchema();
+if (skipGlobalAggregateRating) {
+  const { aggregateRating: _, ...rest } = orgSchema;
+  orgSchema = rest;
+}
+const globalSchemas = [orgSchema, generateWebSiteSchema()];
 const allSchemas = [...globalSchemas, ...schemas];
 
 // Build @graph structure (remove @context from individual items)

@@ -15,6 +15,7 @@ const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchem
   keywords="academia inglés barrio del pilar, clases inglés la vaguada, cambridge barrio pilar, cursos inglés madrid norte"
   canonical="/academia-ingles-barrio-del-pilar"
   schemas={schemas}
+  skipGlobalAggregateRating={true}
 >
   <BarrioDelPilarPage client:load />
   <CookieBanner client:idle />

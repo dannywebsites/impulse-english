@@ -15,6 +15,7 @@ const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchem
   keywords="academia inglés la ventilla, clases inglés la ventilla, cursos inglés la ventilla madrid, cambridge la ventilla, aprender inglés la ventilla"
   canonical="/academia-ingles-la-ventilla"
   schemas={schemas}
+  skipGlobalAggregateRating={true}
 >
   <LaVentillaPage client:load />
   <CookieBanner client:idle />

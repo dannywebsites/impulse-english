@@ -15,6 +15,7 @@ const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchem
   keywords="academia inglés plaza castilla, clases inglés plaza castilla, cursos inglés plaza castilla madrid, cambridge plaza castilla, aprender inglés plaza castilla"
   canonical="/academia-ingles-plaza-castilla"
   schemas={schemas}
+  skipGlobalAggregateRating={true}
 >
   <PlazaCastillaPage client:load />
   <CookieBanner client:idle />

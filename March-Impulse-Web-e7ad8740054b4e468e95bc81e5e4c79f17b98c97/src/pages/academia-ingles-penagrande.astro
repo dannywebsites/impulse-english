@@ -15,6 +15,7 @@ const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchem
   keywords="academia inglés peñagrande, clases inglés peñagrande, cursos inglés peñagrande madrid, cambridge peñagrande, aprender inglés peñagrande"
   canonical="/academia-ingles-penagrande"
   schemas={schemas}
+  skipGlobalAggregateRating={true}
 >
   <PenagrandePage client:load />
   <CookieBanner client:idle />
