@@ -3,6 +3,8 @@
 
 User-agent: *
 Allow: /
+Disallow: /gracias
+Crawl-delay: 1
 
 # AI crawlers — explicitly allowed for GEO
 User-agent: GPTBot
@@ -20,12 +22,3 @@ Allow: /
 # Sitemaps
 Sitemap: https://impulse-english.es/sitemap.xml
 Sitemap: https://impulse-english.es/sitemap-images.xml
-
-# Disallow admin/utility pages
-Disallow: /gracias
-
-# LLM reference file
-Llms: /llms.txt
-
-# Crawl-delay (optional, for polite crawling)
-Crawl-delay: 1
