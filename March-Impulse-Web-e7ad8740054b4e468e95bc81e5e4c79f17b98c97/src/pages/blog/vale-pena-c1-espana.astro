@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ValePenaC1EspanaPage, { articleSchema, faqItems } from '../../../pages/blog/ValePenaC1EspanaPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿Merece la Pena el C1 en España? Beneficios Reales 2026"
+  description="El C1 en España abre puertas a empleos mejor pagados, docencia universitaria y oposiciones. Analiza si merece la inversión según tu perfil profesional."
+  canonical="/blog/vale-pena-c1-espana"
+  ogType="article"
+  schemas={schemas}
+>
+  <ValePenaC1EspanaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

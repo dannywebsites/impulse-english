@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿Es Muy Difícil el C1 Advanced? Dificultad Real del CAE",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿Cuál es la tasa de aprobados del C1 Advanced?",
       answer: "La tasa global de aprobados del C1 Advanced ronda el 55-60%, aunque varía significativamente según el país y centro de preparación. En España, la tasa se sitúa alrededor del 50-55%. Los candidatos que se preparan en academias especializadas con profesores experimentados alcanzan tasas del 70-80%, mientras que los autodidactas suelen situarse por debajo del 40%."

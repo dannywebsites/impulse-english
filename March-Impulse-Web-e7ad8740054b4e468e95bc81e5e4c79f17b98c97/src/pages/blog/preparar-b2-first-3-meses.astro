@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PrepararB2First3MesesPage, { articleSchema, faqItems } from '../../../pages/blog/PrepararB2First3MesesPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Preparar B2 First en 3 Meses: Plan de Estudio Completo 2026"
+  description="Sí, puedes preparar el B2 First en 3 meses si tienes nivel B1+. Plan de estudio mes a mes, horas semanales necesarias y estrategias probadas."
+  canonical="/blog/preparar-b2-first-3-meses"
+  ogType="article"
+  schemas={schemas}
+>
+  <PrepararB2First3MesesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

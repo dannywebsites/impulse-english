@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "Diferencia entre B2 y C1: ¿Qué Nivel Necesitas?",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿Es muy grande la diferencia entre B2 y C1?",
       answer: "Sí, la diferencia es considerable. Mientras que el B2 certifica que puedes comunicarte con fluidez en la mayoría de situaciones cotidianas, el C1 implica un dominio sofisticado del idioma: comprensión de matices, uso flexible del registro, argumentación compleja y precisión léxica avanzada. El salto requiere 200-300 horas de estudio adicionales según Cambridge Assessment."

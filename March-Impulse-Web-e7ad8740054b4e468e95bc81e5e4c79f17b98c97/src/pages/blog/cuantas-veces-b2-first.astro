@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CuantasVecesB2FirstPage, { articleSchema, faqItems } from '../../../pages/blog/CuantasVecesB2FirstPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿Cuántas Veces Puedo Hacer el B2 First? Sin Límite 2026"
+  description="No hay límite de intentos para el B2 First. Puedes presentarte tantas veces como quieras. Conoce los plazos, costes y estrategias para el segundo intento."
+  canonical="/blog/cuantas-veces-b2-first"
+  ogType="article"
+  schemas={schemas}
+>
+  <CuantasVecesB2FirstPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

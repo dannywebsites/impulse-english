@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ValidezCertificadoB2CambridgePage, { articleSchema, faqItems } from '../../../pages/blog/ValidezCertificadoB2CambridgePage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿Cuánto Dura el Certificado B2 Cambridge? Validez Permanente 2026"
+  description="El certificado B2 First de Cambridge no caduca nunca. Descubre su validez permanente, reconocimiento internacional y diferencias con IELTS y TOEFL."
+  canonical="/blog/validez-certificado-b2-cambridge"
+  ogType="article"
+  schemas={schemas}
+>
+  <ValidezCertificadoB2CambridgePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

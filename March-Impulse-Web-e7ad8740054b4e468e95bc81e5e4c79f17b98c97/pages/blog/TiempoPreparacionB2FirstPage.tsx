@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Tiempo se Tarda en Preparar el B2 First?",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿Cuántas horas de estudio en total necesito para el B2 First?",
       answer: "Cambridge estima que alcanzar el nivel B2 requiere un acumulado de 500-600 horas de aprendizaje desde cero. Si ya tienes nivel B1, necesitarás unas 150-200 horas adicionales de estudio específico. Si partes de A2, son aproximadamente 300-400 horas. Estas cifras incluyen tanto clases como estudio autónomo, práctica de examen y exposición general al inglés."

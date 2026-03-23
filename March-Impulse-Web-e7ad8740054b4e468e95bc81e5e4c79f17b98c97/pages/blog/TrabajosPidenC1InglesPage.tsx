@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿Qué Trabajos Piden C1 de Inglés? Sectores y Puestos",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿El C1 de inglés es imprescindible para trabajar en una multinacional?",
       answer: "No siempre es un requisito formal, pero en la práctica resulta casi imprescindible para puestos de responsabilidad. Las multinacionales operan en inglés como lingua franca: reuniones, informes, presentaciones y comunicaciones internas se realizan en inglés. Un B2 puede ser suficiente para puestos operativos, pero para roles de gestión, dirección o proyectos internacionales, el C1 es el estándar esperado."

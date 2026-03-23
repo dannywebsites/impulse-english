@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿Cuántas Veces Puedo Presentarme al B2 First?",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿Hay un período de espera entre intentos del B2 First?",
       answer: "No, Cambridge no establece ningún período de espera obligatorio entre intentos. Técnicamente puedes inscribirte en la siguiente convocatoria disponible, aunque sea al mes siguiente. Sin embargo, la recomendación de expertos es esperar al menos 2-3 meses para tener tiempo de trabajar las áreas débiles y mejorar realmente tu nivel antes de volver a presentarte."

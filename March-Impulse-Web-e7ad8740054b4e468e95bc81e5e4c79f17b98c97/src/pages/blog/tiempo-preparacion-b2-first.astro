@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TiempoPreparacionB2FirstPage, { articleSchema, faqItems } from '../../../pages/blog/TiempoPreparacionB2FirstPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Tiempo de Preparación B2 First: Según tu Nivel Actual 2026"
+  description="El tiempo para preparar el B2 First varía de 3 a 12 meses según tu nivel. Desde B1: 3-6 meses. Desde A2: 9-12 meses. Plan detallado por nivel."
+  canonical="/blog/tiempo-preparacion-b2-first"
+  ogType="article"
+  schemas={schemas}
+>
+  <TiempoPreparacionB2FirstPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿Puedo Preparar el B2 First en 3 Meses? Plan Realista",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿Puedo preparar el B2 First en menos de 3 meses?",
       answer: "Es posible pero requiere condiciones muy específicas: necesitas un nivel B1+ muy consolidado (cercano al B2), disponibilidad para estudiar 15-20 horas semanales y, preferiblemente, un curso intensivo con profesor especializado. Con estas condiciones, algunos candidatos logran prepararse en 6-8 semanas. Sin embargo, no es lo recomendable para la mayoría, ya que la presión excesiva puede generar ansiedad que afecte al rendimiento en el examen."

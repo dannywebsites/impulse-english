@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿Qué Nota Necesito para Aprobar el B2 First? Puntuación y Grades",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿Cuál es la puntuación mínima para aprobar el B2 First?",
       answer: "La puntuación mínima para aprobar el B2 First es de 160 puntos en la Cambridge English Scale. Esta puntuación corresponde al Grade C y certifica oficialmente el nivel B2 del Marco Común Europeo de Referencia (MCER). Cualquier puntuación entre 160 y 190 significa que has aprobado el examen, aunque con diferentes calificaciones (Grade C, B o A)."

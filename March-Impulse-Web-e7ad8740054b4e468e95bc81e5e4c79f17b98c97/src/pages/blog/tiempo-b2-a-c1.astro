@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TiempoB2AC1Page, { articleSchema, faqItems } from '../../../pages/blog/TiempoB2AC1Page';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="De B2 a C1: ¿Cuánto Tiempo Necesitas? Guía Realista 2026"
+  description="Pasar de B2 a C1 requiere 200-300 horas de estudio guiado. Conoce el plan de transición, duración según dedicación y estrategias para acelerar el proceso."
+  canonical="/blog/tiempo-b2-a-c1"
+  ogType="article"
+  schemas={schemas}
+>
+  <TiempoB2AC1Page client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

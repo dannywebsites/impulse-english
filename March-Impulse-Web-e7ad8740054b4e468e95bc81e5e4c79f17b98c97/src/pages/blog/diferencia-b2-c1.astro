@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DiferenciaB2C1Page, { articleSchema, faqItems } from '../../../pages/blog/DiferenciaB2C1Page';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Diferencia entre B2 y C1 Cambridge: Comparativa Completa 2026"
+  description="La diferencia entre B2 y C1 radica en profundidad y fluidez. Compara ambos niveles en gramática, vocabulario, examen y valor profesional."
+  canonical="/blog/diferencia-b2-c1"
+  ogType="article"
+  schemas={schemas}
+>
+  <DiferenciaB2C1Page client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

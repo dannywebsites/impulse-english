@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿Es Difícil el B2 First? Nivel Real y Cómo Prepararte",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿El B2 First es más difícil que el IELTS?",
       answer: "Son exámenes diferentes que no se comparan directamente en dificultad. El B2 First evalúa competencia a nivel B2 específicamente, mientras que IELTS ofrece una puntuación en toda la escala. Para un candidato de nivel B2, ambos exámenes tienen una dificultad similar. La diferencia está en el formato: el B2 First incluye Use of English (gramática y vocabulario), que muchos consideran más exigente, mientras que IELTS Academic tiene textos más densos en Reading."

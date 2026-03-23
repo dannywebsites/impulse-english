@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Tiempo se Tarda en Pasar de B2 a C1?",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿Cuántas horas de estudio necesito para pasar de B2 a C1?",
       answer: "Según Cambridge Assessment, se necesitan entre 200 y 300 horas de estudio guiado para avanzar de B2 a C1. Si estudias 10 horas semanales, esto equivale a unos 5-7 meses de preparación. Con 15 horas semanales (estudio intensivo), puedes acortar el plazo a 3-5 meses. La clave está en la consistencia y calidad de las horas invertidas."

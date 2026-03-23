@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Dura el Certificado B2 de Cambridge? Validez y Caducidad",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿El certificado B2 First de Cambridge caduca?",
       answer: "No, el certificado B2 First de Cambridge no caduca nunca. A diferencia de certificaciones como IELTS o TOEFL que tienen una validez de 2 años, los certificados de Cambridge English tienen validez permanente. Una vez que obtienes tu B2 First, es tuyo para siempre y no necesitas renovarlo ni volver a examinarte para mantenerlo vigente."

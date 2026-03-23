@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TrabajosPidenC1InglesPage, { articleSchema, faqItems } from '../../../pages/blog/TrabajosPidenC1InglesPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="Trabajos que Piden C1 de Inglés: Sectores y Salarios 2026"
+  description="El C1 de inglés es esencial en consultoría, banca, IT, docencia universitaria y multinacionales. Descubre qué puestos lo exigen y cómo mejora tu salario."
+  canonical="/blog/trabajos-piden-c1-ingles"
+  ogType="article"
+  schemas={schemas}
+>
+  <TrabajosPidenC1InglesPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

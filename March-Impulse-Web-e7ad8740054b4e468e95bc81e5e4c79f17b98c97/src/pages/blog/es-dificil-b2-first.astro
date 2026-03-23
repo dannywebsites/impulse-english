@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EsDificilB2FirstPage, { articleSchema, faqItems } from '../../../pages/blog/EsDificilB2FirstPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿Es Difícil el B2 First? Dificultad Real y Consejos 2026"
+  description="El B2 First tiene una tasa de aprobados del 65-70%. Descubre qué lo hace difícil, qué parte es más complicada y cómo prepararte eficazmente."
+  canonical="/blog/es-dificil-b2-first"
+  ogType="article"
+  schemas={schemas}
+>
+  <EsDificilB2FirstPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

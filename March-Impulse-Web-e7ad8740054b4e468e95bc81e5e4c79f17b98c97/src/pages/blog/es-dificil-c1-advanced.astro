@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EsDificilC1AdvancedPage, { articleSchema, faqItems } from '../../../pages/blog/EsDificilC1AdvancedPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿Es Difícil el C1 Advanced? Nivel Real y Preparación 2026"
+  description="El C1 Advanced tiene una tasa de aprobados del 55-60%. Descubre qué lo hace difícil, las partes más exigentes y cómo prepararte para aprobar."
+  canonical="/blog/es-dificil-c1-advanced"
+  ogType="article"
+  schemas={schemas}
+>
+  <EsDificilC1AdvancedPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

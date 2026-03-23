@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿Merece la Pena el C1 en España? Valor Real del Advanced",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿Es el C1 el certificado más valorado en España?",
       answer: "Sí, el C1 Advanced de Cambridge es el certificado de inglés más valorado en el mercado laboral y académico español. Según encuestas de InfoJobs y LinkedIn, es la certificación de idiomas más solicitada en ofertas de empleo cualificado. Su reconocimiento supera al IELTS y TOEFL en el contexto español, europeo y también en Latinoamérica."

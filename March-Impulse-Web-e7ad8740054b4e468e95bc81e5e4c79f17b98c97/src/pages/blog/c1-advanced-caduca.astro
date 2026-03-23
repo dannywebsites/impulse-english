@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import C1AdvancedCaducaPage, { articleSchema, faqItems } from '../../../pages/blog/C1AdvancedCaducaPage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqItems?.length > 0 ? [generateFAQSchema(faqItems)] : []),
+];
+---
+
+<BaseLayout
+  title="¿El C1 Advanced Caduca? Validez Permanente Explicada 2026"
+  description="El certificado C1 Advanced no caduca nunca. Descubre su validez permanente, cuándo las instituciones piden certificados recientes y diferencias con IELTS."
+  canonical="/blog/c1-advanced-caduca"
+  ogType="article"
+  schemas={schemas}
+>
+  <C1AdvancedCaducaPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿El C1 Advanced Caduca? Validez del Certificado Cambridge",
@@ -13,7 +14,7 @@ export const articleSchema = generateArticleSchema({
     datePublished: "2025-03-01"
   });
 
-export const faqItems = [
+export const faqItems: FAQItem[] = [
     {
       question: "¿Mi certificado C1 Advanced de hace 10 años sigue siendo válido?",
       answer: "Sí, oficialmente tu certificado C1 Advanced es válido independientemente de cuándo lo obtuviste. Cambridge Assessment no establece fecha de caducidad. Sin embargo, algunas instituciones (especialmente universidades anglófonas y ciertos empleadores) pueden preferir certificaciones obtenidas en los últimos 2-3 años, argumentando que el nivel puede deteriorarse con el tiempo si no se practica."
