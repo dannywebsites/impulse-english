@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MontecarmeloLasTablasPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/MontecarmeloLasTablasPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Academia Inglés Montecarmelo y Las Tablas"
+  description="Academia de inglés cerca de Montecarmelo y Las Tablas Madrid. Centro preparador Cambridge oficial con 100% aprobados. A 8 min en Metro Línea 9. Grupos reducidos."
+  keywords="academia inglés montecarmelo, academia inglés las tablas, clases inglés montecarmelo las tablas, cambridge montecarmelo"
+  canonical="/academia-ingles-montecarmelo-las-tablas"
+  schemas={schemas}
+>
+  <MontecarmeloLasTablasPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

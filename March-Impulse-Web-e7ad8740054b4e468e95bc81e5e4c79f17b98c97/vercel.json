@@ -64,6 +64,8 @@
     { "source": "/ubicaciones/plaza-castilla", "destination": "/academia-ingles-plaza-castilla/", "permanent": true },
     { "source": "/ubicaciones/tetuan", "destination": "/academia-ingles-tetuan/", "permanent": true },
     { "source": "/ubicaciones/cuatro-torres", "destination": "/academia-ingles-cuatro-torres/", "permanent": true },
+    { "source": "/ubicaciones/mirasierra", "destination": "/academia-ingles-mirasierra/", "permanent": true },
+    { "source": "/ubicaciones/montecarmelo-las-tablas", "destination": "/academia-ingles-montecarmelo-las-tablas/", "permanent": true },
 
     { "source": "/ingles-la-vaguada/online", "destination": "/cursos-ingles/online/", "permanent": true },
 

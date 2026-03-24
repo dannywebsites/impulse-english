@@ -16,7 +16,9 @@ const serviceAreas = [
   { name: "La Paz", href: "/academia-ingles-la-paz" },
   { name: "Plaza Castilla", href: "/academia-ingles-plaza-castilla" },
   { name: "Tetuán", href: "/academia-ingles-tetuan" },
-  { name: "Cuatro Torres", href: "/academia-ingles-cuatro-torres" }
+  { name: "Cuatro Torres", href: "/academia-ingles-cuatro-torres" },
+  { name: "Mirasierra", href: "/academia-ingles-mirasierra" },
+  { name: "Montecarmelo / Las Tablas", href: "/academia-ingles-montecarmelo-las-tablas" }
 ];
 
 export default function Footer({ variant = 'full' }: FooterProps) {

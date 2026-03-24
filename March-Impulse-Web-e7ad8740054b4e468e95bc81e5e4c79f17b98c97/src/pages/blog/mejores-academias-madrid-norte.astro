@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MejoresAcademiasMadridNortePage, { articleSchema, faqs } from '../../../pages/blog/MejoresAcademiasMadridNortePage';
+import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
+
+const schemas = [
+  articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Las 7 Mejores Academias de Inglés en Madrid Norte (2026)"
+  description="Guía actualizada de las mejores academias de inglés en Madrid Norte 2026. Comparativa de precios, metodologías y opiniones en Barrio del Pilar, Montecarmelo, Las Tablas y Mirasierra."
+  canonical="/blog/mejores-academias-madrid-norte"
+  ogType="article"
+  schemas={schemas}
+>
+  <MejoresAcademiasMadridNortePage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

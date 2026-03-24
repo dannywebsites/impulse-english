@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MirasierraPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/MirasierraPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Academia Inglés Mirasierra"
+  description="Academia de inglés cerca de Mirasierra Madrid. Centro preparador Cambridge oficial con 100% aprobados. A 4 min en Metro Línea 9. Grupos reducidos, todas las edades."
+  keywords="academia inglés mirasierra, clases inglés mirasierra, cursos inglés mirasierra madrid, cambridge mirasierra, aprender inglés mirasierra"
+  canonical="/academia-ingles-mirasierra"
+  schemas={schemas}
+>
+  <MirasierraPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

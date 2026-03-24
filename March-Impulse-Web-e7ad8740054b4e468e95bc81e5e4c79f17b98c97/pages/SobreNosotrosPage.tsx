@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Award, Users, Target, Heart, CheckCircle, Home, UserCheck, Eye } from 'lucide-react';
+import { Award, Users, Target, Heart, CheckCircle, Home, UserCheck, Eye, ArrowRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
@@ -165,6 +165,21 @@ export default function SobreNosotrosPage() {
           </div>
         </div>
       </section>
+
+      {/* Meet Our Team CTA */}
+      <div className="py-8 px-6 bg-zinc-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center">
+            <a
+              href="/nuestro-equipo"
+              className="inline-flex items-center gap-2 bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition-colors"
+            >
+              Conoce a nuestro equipo
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* What Makes Us Different */}
       <section className="py-12 md:py-20 px-6 bg-white">
