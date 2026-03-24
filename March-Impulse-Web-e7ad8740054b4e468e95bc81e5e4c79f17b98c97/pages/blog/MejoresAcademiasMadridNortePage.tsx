@@ -10,7 +10,7 @@ import type { FAQItem } from '../../utils/schemaData';
 import { NAP } from '../../utils/napData';
 
 export const articleSchema = generateArticleSchema({
-  headline: "Las 7 Mejores Academias de Inglés en Madrid Norte (2026)",
+  headline: "Las 8 Mejores Academias de Inglés en Madrid Norte (2026)",
   description: "Guía actualizada de las mejores academias de inglés en Madrid Norte 2026. Comparativa de precios, metodologías, opiniones y ubicaciones en Barrio del Pilar, Montecarmelo, Las Tablas y Mirasierra.",
   url: `${businessInfo.url}/blog/mejores-academias-madrid-norte`,
   image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG",
@@ -47,7 +47,7 @@ export const faqs: FAQItem[] = [
 const tableOfContents = [
   { id: 'preguntas-frecuentes', title: 'Preguntas Frecuentes' },
   { id: 'criterios', title: 'Criterios de Evaluación' },
-  { id: 'academias', title: 'Las 7 Mejores Academias' },
+  { id: 'academias', title: 'Las 8 Mejores Academias' },
   { id: 'precios', title: 'Comparativa de Precios' },
   { id: 'impulse', title: 'Por Qué Impulse English Academy' },
   { id: 'conclusion', title: 'Conclusión' },
@@ -118,6 +118,19 @@ const academies = [
   },
   {
     rank: 5,
+    name: "Cambridge House La Vaguada",
+    address: "Santiago de Compostela, 62, 28029 Madrid",
+    neighborhood: "La Vaguada / Barrio del Pilar",
+    rating: "—",
+    reviewCount: "",
+    price: "Consultar",
+    highlights: ["Desde 1987", "Método Comunicativo Integral", "95% aprobados Cambridge 2023", "6 centros en Madrid"],
+    website: "https://www.cambridge-house.com",
+    isInternal: false,
+    description: "Cadena de academias de inglés con más de 35 años de experiencia en Madrid y un centro en La Vaguada (Santiago de Compostela, 62). Ofrecen cursos para adultos y niños, preparación Cambridge, clases intensivas y particulares. Su método comunicativo integral combina las cuatro destrezas. Reportan un 95% de aprobados en exámenes Cambridge en 2023, aunque con grupos más grandes que las academias independientes."
+  },
+  {
+    rank: 6,
     name: "EOI Madrid-Valdezarza",
     address: "C/ Fermín Caballero, 92, 28035 Madrid",
     neighborhood: "Valdezarza / Mirasierra",
@@ -130,7 +143,7 @@ const academies = [
     description: "Escuela Oficial de Idiomas con precios públicos muy económicos (188-250€ por curso completo). Ofrece inglés, francés, alemán, italiano y chino. Sin embargo, tiene lista de espera habitual, grupos grandes, no ofrece profesores nativos ni preparación Cambridge específica, y no atiende a niños pequeños."
   },
   {
-    rank: 6,
+    rank: 7,
     name: "Wall Street English Madrid",
     address: "C/ Cea Bermúdez, 29, Chamberí, Madrid",
     neighborhood: "Chamberí (fuera de Madrid Norte)",
@@ -143,7 +156,7 @@ const academies = [
     description: "Cadena internacional premium con inmersión 100% en inglés y coach personal. Sin embargo, no está ubicada en Madrid Norte (su centro más cercano está en Chamberí). Precio elevado y sin especialización en niños ni programas de primera infancia."
   },
   {
-    rank: 7,
+    rank: 8,
     name: "International House Madrid",
     address: "C/ Zurbano, 8, Chamberí, 28010 Madrid",
     neighborhood: "Chamberí (fuera de Madrid Norte)",
@@ -223,7 +236,7 @@ export default function MejoresAcademiasMadridNortePage() {
               </div>
 
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                Las 7 Mejores Academias de Inglés en Madrid Norte (2026)
+                Las 8 Mejores Academias de Inglés en Madrid Norte (2026)
               </h1>
               <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
               <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -340,7 +353,7 @@ export default function MejoresAcademiasMadridNortePage() {
             {/* Academy Rankings */}
             <section id="academias" className="mb-16 scroll-mt-24">
               <h2 className="text-3xl font-bold text-zinc-900 mb-6">
-                Las 7 Mejores Academias de Inglés en Madrid Norte
+                Las 8 Mejores Academias de Inglés en Madrid Norte
               </h2>
 
               <p className="text-zinc-600 leading-relaxed mb-8">
@@ -418,14 +431,16 @@ export default function MejoresAcademiasMadridNortePage() {
                               Visitar Impulse English <ArrowRight className="w-4 h-4" />
                             </a>
                           ) : academy.website ? (
-                            <a
-                              href={academy.website}
-                              target="_blank"
-                              rel="nofollow noopener"
-                              className="text-zinc-400 text-xs hover:text-zinc-500 transition-colors mt-2 inline-block"
-                            >
-                              Visitar web →
-                            </a>
+                            <span className="mt-4 pt-3 border-t border-zinc-100 block">
+                              <a
+                                href={academy.website}
+                                target="_blank"
+                                rel="nofollow noopener"
+                                className="text-zinc-300 text-[10px] tracking-wide hover:text-zinc-400 transition-colors"
+                              >
+                                {academy.website.replace('https://www.', '').replace('https://', '')}
+                              </a>
+                            </span>
                           ) : null}
                         </div>
                       </div>

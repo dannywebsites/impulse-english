@@ -14,11 +14,11 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay matrícula o coste de inscripción?",
-    answer: "No cobramos matrícula. Solo pagas la cuota mensual que incluye todas las clases, material didáctico y seguimiento personalizado."
+    answer: "Sí, hay matrícula y libro de texto que van aparte como coste adicional. La cuota mensual incluye las clases semanales y el seguimiento personalizado."
   },
   {
     question: "¿Qué incluye el precio de las clases?",
-    answer: "El precio incluye clases semanales, material didáctico, simulacros de examen, seguimiento personalizado del progreso y acceso a recursos online complementarios."
+    answer: "La cuota mensual incluye clases semanales, simulacros de examen, seguimiento personalizado del progreso y acceso a recursos online complementarios. El libro de texto y la matrícula son un extra aparte."
   },
   {
     question: "¿Ofrecéis descuentos?",
@@ -45,35 +45,35 @@ const courses = [
   {
     name: "Primaria",
     ages: "6–12 años",
-    price: "Desde 64€/mes",
+    price: "71€/mes",
     desc: "Cambridge Young Learners. Refuerzo escolar y preparación de exámenes.",
     href: "/cursos-ingles/primaria/"
   },
   {
     name: "Secundaria",
     ages: "13–17 años",
-    price: "Desde 64€/mes",
+    price: "Desde 75€/mes",
     desc: "Preparación Cambridge B1/B2/C1 y EBAU. Grupos reducidos.",
     href: "/cursos-ingles/secundaria/"
   },
   {
     name: "Adultos",
     ages: "Todos los niveles",
-    price: "Desde 64€/mes",
+    price: "79€/mes",
     desc: "Desde principiante hasta C2. Conversación, Cambridge y Linguaskill.",
     href: "/cursos-ingles/adultos/"
   },
   {
     name: "Clases Particulares",
     ages: "Todas las edades",
-    price: "Consultar",
+    price: "A consultar",
     desc: "Clases individuales presenciales u online, adaptadas a tu ritmo.",
     href: "/cursos-ingles/particulares/"
   },
   {
     name: "Clases Online",
     ages: "Todas las edades",
-    price: "Consultar",
+    price: "A consultar",
     desc: "Misma calidad desde casa. Plataforma interactiva y profesor en directo.",
     href: "/contacto/"
   }
@@ -84,7 +84,7 @@ const included = [
   "Material didáctico incluido",
   "Simulacros de examen Cambridge",
   "Seguimiento personalizado del progreso",
-  "Sin matrícula ni costes ocultos",
+  "Matrícula y libro aparte",
   "Descuento trimestral disponible"
 ];
 
@@ -125,7 +125,7 @@ export default function PreciosPage() {
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
-              Inglés de calidad a precios accesibles. Sin matrícula, sin sorpresas.
+              Inglés de calidad a precios accesibles. Precios claros, sin sorpresas.
             </p>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress}
