@@ -26,17 +26,24 @@ import CookieBanner from '../../components/CookieBanner';
 >
   <!-- Hero Wrapper: Full Screen 100dvh -->
   <div class="relative w-full h-[100dvh] overflow-hidden bg-accent-blue">
-    <!-- DESKTOP BACKGROUND: Video Layer -->
-    <div class="hidden xl:block absolute inset-0 z-0 pointer-events-none">
+    <!-- DESKTOP BACKGROUND: Video Layer (only loads iframe on xl+ screens) -->
+    <div class="hidden xl:block absolute inset-0 z-0 pointer-events-none" id="hero-video-container">
       <div class="absolute inset-0 bg-black/40 z-10"></div>
-      <iframe
-        src="https://player.vimeo.com/video/1143999306?badge=0&autopause=0&player_id=0&app_id=58479&muted=1&loop=1&autoplay=1&background=1"
-        class="w-full h-full object-cover"
-        style="min-width: 100%; min-height: 100%;"
-        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-        title="Impulse English Academy, La Vaguada, Barrio del Pilar."
-      ></iframe>
     </div>
+    <script is:inline>
+      if (window.matchMedia('(min-width: 1280px)').matches) {
+        var c = document.getElementById('hero-video-container');
+        if (c) {
+          var f = document.createElement('iframe');
+          f.src = 'https://player.vimeo.com/video/1143999306?badge=0&autopause=0&player_id=0&app_id=58479&muted=1&loop=1&autoplay=1&background=1';
+          f.className = 'w-full h-full object-cover';
+          f.style.cssText = 'min-width:100%;min-height:100%';
+          f.allow = 'autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media';
+          f.title = 'Impulse English Academy, La Vaguada, Barrio del Pilar.';
+          c.appendChild(f);
+        }
+      }
+    </script>
 
     <!-- MOBILE/TABLET BACKGROUND: Optimized Image Fallback -->
     <div class="xl:hidden absolute inset-0 z-0">
@@ -64,6 +71,8 @@ import CookieBanner from '../../components/CookieBanner';
           src="/images/optimized/hero-tablet-estudiantes-primaria.jpg"
           alt="Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy"
           class="absolute inset-0 w-full h-full object-cover"
+          width="640"
+          height="960"
           loading="eager"
           fetchpriority="high"
         />

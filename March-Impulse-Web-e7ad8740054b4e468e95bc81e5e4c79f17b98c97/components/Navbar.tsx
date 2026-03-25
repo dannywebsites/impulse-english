@@ -73,6 +73,8 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
                 src={LOGO_URL}
                 alt="Impulse English Academy"
                 className="h-[105px] md:h-20 lg:h-[100px] w-auto"
+                width="105"
+                height="105"
               />
             </a>
 

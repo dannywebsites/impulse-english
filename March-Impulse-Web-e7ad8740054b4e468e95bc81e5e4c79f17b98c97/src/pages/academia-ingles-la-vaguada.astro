@@ -16,6 +16,6 @@ const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchem
   canonical="/academia-ingles-la-vaguada"
   schemas={schemas}
 >
-  <LaVaguadaPage client:load />
+  <LaVaguadaPage client:idle />
   <CookieBanner client:idle />
 </BaseLayout>

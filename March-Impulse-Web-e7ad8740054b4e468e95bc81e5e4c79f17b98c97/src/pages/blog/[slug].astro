@@ -60,6 +60,6 @@ if (data.faqItems.length > 0) {
   modifiedTime={data.modifiedDate}
   schemas={schemas}
 >
-  <PAAArticlePage article={article} siblingArticles={siblings} client:load />
+  <PAAArticlePage article={article} siblingArticles={siblings} client:idle />
   <CookieBanner client:idle />
 </BaseLayout>

@@ -87,21 +87,33 @@ const schemaGraph = {
       });
     </script>
 
-    <!-- Global site tag (gtag.js) — GA4 + Google Ads -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN5973VY1M"></script>
+    <!-- Deferred GA4 + GTM: loads after 3.5s or first user interaction -->
     <script is:inline>
-      gtag('js', new Date());
-      gtag('config', 'G-WN5973VY1M');
-      gtag('config', 'AW-11461982741');
+      (function(){
+        var loaded = false;
+        function load(){
+          if(loaded) return; loaded = true;
+          var g = document.createElement('script');
+          g.src = 'https://www.googletagmanager.com/gtag/js?id=G-WN5973VY1M';
+          g.async = true;
+          document.head.appendChild(g);
+          g.onload = function(){
+            gtag('js', new Date());
+            gtag('config', 'G-WN5973VY1M');
+            gtag('config', 'AW-11461982741');
+          };
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-TDC7CQDD');
+        }
+        setTimeout(load, 3500);
+        ['scroll','click','touchstart','keydown'].forEach(function(e){
+          document.addEventListener(e, load, {once:true, passive:true});
+        });
+      })();
     </script>
-
-    <!-- Google Tag Manager -->
-    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TDC7CQDD');</script>
-    <!-- End Google Tag Manager -->
 
     <!-- SEO Meta Tags (server-rendered) -->
     <title>{pageTitle}</title>
@@ -143,20 +155,22 @@ const schemaGraph = {
     <link rel="icon" type="image/png" sizes="16x16" href="/images/original/impulse-english-academy-logo-oficial.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/original/impulse-english-academy-logo-oficial.png" />
 
-    <!-- Fonts -->
+    <!-- Fonts (non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"></noscript>
 
-    <!-- Vimeo video preconnect (hero background video) -->
-    <link rel="preconnect" href="https://player.vimeo.com" crossorigin>
-    <link rel="preconnect" href="https://f.vimeocdn.com" crossorigin>
-    <link rel="preconnect" href="https://i.vimeocdn.com" crossorigin>
-    <link rel="dns-prefetch" href="https://fresnel.vimeo.com">
-
-    <!-- Hero poster image preload -->
-    <link rel="preload" as="image" href="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/hero-poster.jpg">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- Vimeo preconnects + hero poster (homepage only) -->
+    {Astro.url.pathname === '/' && (
+      <>
+        <link rel="preconnect" href="https://player.vimeo.com" crossorigin>
+        <link rel="preconnect" href="https://f.vimeocdn.com" crossorigin>
+        <link rel="dns-prefetch" href="https://i.vimeocdn.com">
+        <link rel="dns-prefetch" href="https://fresnel.vimeo.com">
+      </>
+    )}
 
     <!-- Hero entrance animations -->
     <style>
@@ -207,10 +221,15 @@ const schemaGraph = {
       <slot />
     </main>
     <script>
-      import { inject } from '@vercel/analytics';
-      import { injectSpeedInsights } from '@vercel/speed-insights';
-      inject();
-      injectSpeedInsights();
+      const loadAnalytics = () => {
+        import('@vercel/analytics').then(m => m.inject());
+        import('@vercel/speed-insights').then(m => m.injectSpeedInsights());
+      };
+      if (typeof requestIdleCallback !== 'undefined') {
+        requestIdleCallback(loadAnalytics);
+      } else {
+        setTimeout(loadAnalytics, 2000);
+      }
     </script>
   </body>
 </html>

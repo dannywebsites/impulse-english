@@ -16,6 +16,6 @@ const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchem
   canonical="/academia-ingles-barrio-del-pilar"
   schemas={schemas}
 >
-  <BarrioDelPilarPage client:load />
+  <BarrioDelPilarPage client:idle />
   <CookieBanner client:idle />
 </BaseLayout>

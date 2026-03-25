@@ -81,6 +81,8 @@ export default function Footer({ variant = 'full' }: FooterProps) {
               src={LOGO_URL}
               alt="Impulse English Academy"
               className="h-20 md:h-24 lg:h-28 w-auto"
+              width="80"
+              height="80"
             />
           </a>
 

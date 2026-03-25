@@ -16,6 +16,6 @@ const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchem
   canonical="/academia-ingles-cuatro-torres"
   schemas={schemas}
 >
-  <CuatroTorresPage client:load />
+  <CuatroTorresPage client:idle />
   <CookieBanner client:idle />
 </BaseLayout>

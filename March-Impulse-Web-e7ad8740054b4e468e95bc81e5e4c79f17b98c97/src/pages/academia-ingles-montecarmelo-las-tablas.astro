@@ -16,6 +16,6 @@ const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchem
   canonical="/academia-ingles-montecarmelo-las-tablas"
   schemas={schemas}
 >
-  <MontecarmeloLasTablasPage client:load />
+  <MontecarmeloLasTablasPage client:idle />
   <CookieBanner client:idle />
 </BaseLayout>
