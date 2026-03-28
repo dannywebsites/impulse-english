@@ -112,7 +112,10 @@
     { "source": "/impulse-blog/", "destination": "/blog/", "permanent": true },
 
     { "source": "/clase-gratis-impulse", "destination": "/reservar-clase/", "permanent": true },
-    { "source": "/clase-gratis-impulse/", "destination": "/reservar-clase/", "permanent": true }
+    { "source": "/clase-gratis-impulse/", "destination": "/reservar-clase/", "permanent": true },
+
+    { "source": "/landing-page", "destination": "/", "permanent": true },
+    { "source": "/landing-page/", "destination": "/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/404.html" }
