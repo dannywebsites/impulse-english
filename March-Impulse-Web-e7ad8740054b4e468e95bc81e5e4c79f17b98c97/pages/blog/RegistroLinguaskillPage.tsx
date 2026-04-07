@@ -322,7 +322,7 @@ export default function RegistroLinguaskillPage() {
                   Registrarse en el examen Linguaskill requiere elegir un centro autorizado, preparar tu documentación oficial, completar el formulario de inscripción con datos precisos y realizar el pago en plazo.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En Madrid, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-cyan-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-cyan-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece preparación específica para <a href="/linguaskill" className="text-cyan-600 hover:underline font-medium">Linguaskill</a> además de actuar como centro examinador oficial, facilitando todo el proceso de matrícula y certificación. También preparamos otros <a href="/examenes-cambridge" className="text-cyan-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos" className="text-cyan-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares" className="text-cyan-600 hover:underline font-medium">clases particulares</a>. Planifica tu registro con al menos una semana de antelación para asegurar tu plaza en la fecha deseada.
+                  En Madrid, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-cyan-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-cyan-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece preparación específica para <a href="/linguaskill/" className="text-cyan-600 hover:underline font-medium">Linguaskill</a> además de actuar como centro examinador oficial, facilitando todo el proceso de matrícula y certificación. También preparamos otros <a href="/examenes-cambridge/" className="text-cyan-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos/" className="text-cyan-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-cyan-600 hover:underline font-medium">clases particulares</a>. Planifica tu registro con al menos una semana de antelación para asegurar tu plaza en la fecha deseada.
                 </p>
               </div>
             </section>
@@ -334,7 +334,7 @@ export default function RegistroLinguaskillPage() {
                 En Impulse English Academy te ayudamos con todo el proceso de registro y te preparamos para obtener la mejor puntuación posible.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-cyan-600 px-8 py-4 rounded-xl font-semibold hover:bg-cyan-50 transition-colors"
               >
                 Contactar ahora
@@ -346,13 +346,13 @@ export default function RegistroLinguaskillPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-cyan-50 transition-colors">
+                <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-cyan-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors mb-2">
                     Linguaskill: Guía Completa 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre el examen Linguaskill de Cambridge.</p>
                 </a>
-                <a href="/linguaskill/precios-fechas" className="group bg-gray-50 rounded-xl p-6 hover:bg-cyan-50 transition-colors">
+                <a href="/linguaskill/precios-fechas/" className="group bg-gray-50 rounded-xl p-6 hover:bg-cyan-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors mb-2">
                     Precio Linguaskill 2025
                   </h3>

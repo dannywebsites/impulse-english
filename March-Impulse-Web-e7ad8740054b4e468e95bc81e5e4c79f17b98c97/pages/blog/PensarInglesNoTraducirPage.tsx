@@ -272,7 +272,7 @@ export default function PensarInglesNoTraducirPage() {
                 Nuestra metodología está diseñada para crear conexiones directas en inglés, sin el paso intermediario de la traducción.
               </p>
               <a
-              href="/metodologia"
+              href="/metodologia/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Conocer nuestra metodología
@@ -284,15 +284,15 @@ export default function PensarInglesNoTraducirPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Nuestra Metodología</h3>
                   <p className="text-gray-600 text-sm">Inmersión y pensamiento en inglés desde el primer día.</p>
                 </a>
-                <a href="/blog/mejorar-speaking-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/mejorar-speaking-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Mejorar el Speaking en Inglés</h3>
                   <p className="text-gray-600 text-sm">Técnicas de fluidez y pronunciación para hablar mejor.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Cursos de Inglés para Adultos</h3>
                   <p className="text-gray-600 text-sm">Programas de inmersión para adultos de todos los niveles.</p>
                 </a>

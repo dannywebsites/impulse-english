@@ -354,7 +354,7 @@ export default function NoEntiendoInglesHabladoPage() {
                 Trabajamos el connected speech, los acentos y la comprensión de inglés real desde el primer día de clase.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -366,15 +366,15 @@ export default function NoEntiendoInglesHabladoPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Nuestra Metodología</h3>
                   <p className="text-gray-600 text-sm">Cómo entrenamos el oído con inglés real desde el primer día.</p>
                 </a>
-                <a href="/blog/mejorar-listening-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/mejorar-listening-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Mejorar el Listening en Inglés</h3>
                   <p className="text-gray-600 text-sm">10 técnicas específicas por nivel para mejorar la comprensión oral.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Cursos de Inglés para Adultos</h3>
                   <p className="text-gray-600 text-sm">Programas con entrenamiento de comprensión oral integrado.</p>
                 </a>

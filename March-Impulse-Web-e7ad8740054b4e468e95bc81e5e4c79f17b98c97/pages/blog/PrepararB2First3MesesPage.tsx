@@ -107,7 +107,7 @@ export default function PrepararB2First3MesesPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Preparar el <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First en 3 meses</a> es completamente posible, pero requiere un punto de partida adecuado y un plan de estudio estructurado. La clave está en organizar la preparación en tres fases claras: <strong>diagnóstico y refuerzo de bases</strong> (mes 1), <strong>práctica intensiva por habilidades</strong> (mes 2) y <strong>simulacros cronometrados con estrategia de examen</strong> (mes 3). Con dedicación de 10-15 horas semanales y un nivel de partida B1+, este plan te dará las herramientas para presentarte con confianza al examen.
+              Preparar el <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First en 3 meses</a> es completamente posible, pero requiere un punto de partida adecuado y un plan de estudio estructurado. La clave está en organizar la preparación en tres fases claras: <strong>diagnóstico y refuerzo de bases</strong> (mes 1), <strong>práctica intensiva por habilidades</strong> (mes 2) y <strong>simulacros cronometrados con estrategia de examen</strong> (mes 3). Con dedicación de 10-15 horas semanales y un nivel de partida B1+, este plan te dará las herramientas para presentarte con confianza al examen.
             </p>
 
             {/* Section 1 - Requisitos */}
@@ -379,10 +379,10 @@ export default function PrepararB2First3MesesPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Preparar el <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First en 3 meses</a> es un objetivo ambicioso pero alcanzable si partes de un nivel B1+ y sigues un plan estructurado de tres fases. La clave del éxito está en la constancia diaria, el enfoque en tus debilidades específicas y la práctica abundante con el formato real del examen.
+                  Preparar el <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First en 3 meses</a> es un objetivo ambicioso pero alcanzable si partes de un nivel B1+ y sigues un plan estructurado de tres fases. La clave del éxito está en la constancia diaria, el enfoque en tus debilidades específicas y la práctica abundante con el formato real del examen.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si quieres optimizar tu preparación al máximo, nuestros <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos intensivos para adultos</a> están diseñados exactamente para este tipo de preparación acelerada. Con nuestra <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">metodología probada</a>, feedback personalizado y simulacros reales, maximizamos tus posibilidades de éxito en el menor tiempo posible.
+                  Si quieres optimizar tu preparación al máximo, nuestros <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">cursos intensivos para adultos</a> están diseñados exactamente para este tipo de preparación acelerada. Con nuestra <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">metodología probada</a>, feedback personalizado y simulacros reales, maximizamos tus posibilidades de éxito en el menor tiempo posible.
                 </p>
               </div>
             </section>
@@ -394,7 +394,7 @@ export default function PrepararB2First3MesesPage() {
                 En Impulse English Academy tenemos cursos intensivos diseñados para prepararte en el menor tiempo posible con las mejores garantías de éxito.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -406,19 +406,19 @@ export default function PrepararB2First3MesesPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cambridge B2 First: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B2 First: estructura, formato y preparación.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas intensivos de preparación Cambridge para adultos.</p>
                 </a>
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>

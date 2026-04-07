@@ -360,7 +360,7 @@ export default function ExamenCaeCambridgePage() {
                       Seguimiento personalizado de tu progreso y plan de estudio adaptado a tus necesidades.
                     </p>
                     <a
-              href="/contacto"
+              href="/contacto/"
                       className="inline-block bg-white text-rose-600 font-bold py-2 px-6 rounded-lg hover:bg-zinc-100 transition-colors"
                     >
                       Solicitar información
@@ -411,8 +411,8 @@ export default function ExamenCaeCambridgePage() {
                   necesitas conocer el formato y las estrategias para cada sección.
                 </p>
                 <p className="text-white/90">
-                  En nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">junto a La Vaguada</a>, te preparamos con metodología probada y profesores
-                  expertos por solo <strong>79€/mes</strong>. Ofrecemos <a href="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares" className="text-white hover:underline font-bold">clases particulares</a> para preparar todos los <a href="/examenes-cambridge" className="text-white hover:underline font-bold">exámenes Cambridge</a>. ¡Da el paso hacia tu certificación C1!
+                  En nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-white hover:underline font-bold">junto a La Vaguada</a>, te preparamos con metodología probada y profesores
+                  expertos por solo <strong>79€/mes</strong>. Ofrecemos <a href="/cursos-ingles/adultos/" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-white hover:underline font-bold">clases particulares</a> para preparar todos los <a href="/examenes-cambridge/" className="text-white hover:underline font-bold">exámenes Cambridge</a>. ¡Da el paso hacia tu certificación C1!
                 </p>
               </div>
             </section>
@@ -430,7 +430,7 @@ export default function ExamenCaeCambridgePage() {
                     </p>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-rose-500 hover:bg-rose-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Empezar ahora
@@ -444,11 +444,11 @@ export default function ExamenCaeCambridgePage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-rose-600">GUÍA COMPLETA</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa de Exámenes Cambridge 2026</h4>
                 </a>
-                <a href="/examenes-cambridge/c1-advanced" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-rose-600">RECURSOS</span>
                   <h4 className="font-bold text-zinc-900 mt-1">PDFs Cambridge Advanced: Recursos Oficiales</h4>
                 </a>

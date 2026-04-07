@@ -373,8 +373,8 @@ export default function EscalaCambridgePage() {
 
               <div className="bg-indigo-100 rounded-xl p-6">
                 <p className="text-indigo-800">
-                  En <a href="/academia-ingles-barrio-del-pilar" className="text-indigo-900 hover:underline font-semibold">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-indigo-900 hover:underline font-semibold">junto a La Vaguada</a>, analizamos tu puntuación por habilidad para crear un plan
-                  de mejora personalizado. Nuestros <a href="/cursos-ingles/adultos" className="text-indigo-900 hover:underline font-semibold">cursos de inglés para adultos</a> y preparación para <a href="/examenes-cambridge/b2-first" className="text-indigo-900 hover:underline font-semibold">B2 First</a> desde <strong>79€/mes</strong> te ayudan
+                  En <a href="/academia-ingles-barrio-del-pilar/" className="text-indigo-900 hover:underline font-semibold">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-indigo-900 hover:underline font-semibold">junto a La Vaguada</a>, analizamos tu puntuación por habilidad para crear un plan
+                  de mejora personalizado. Nuestros <a href="/cursos-ingles/adultos/" className="text-indigo-900 hover:underline font-semibold">cursos de inglés para adultos</a> y preparación para <a href="/examenes-cambridge/b2-first/" className="text-indigo-900 hover:underline font-semibold">B2 First</a> desde <strong>79€/mes</strong> te ayudan
                   a subir en la escala de forma eficiente.
                 </p>
               </div>
@@ -417,10 +417,10 @@ export default function EscalaCambridgePage() {
                   La Cambridge English Scale proporciona una visión clara y comparable de tu nivel de inglés. Entender
                   cómo funcionan los Grades y las puntuaciones te permite establecer objetivos realistas y medir tu
                   progreso de forma precisa. Recuerda que con puntuaciones excepcionales puedes certificar niveles
-                  superiores al examen presentado. Ya sea que busques preparar el <a href="/examenes-cambridge/b1-preliminary" className="text-white hover:underline font-semibold">B1 Preliminary</a> o el <a href="/examenes-cambridge/b2-first" className="text-white hover:underline font-semibold">B2 First</a>, entender la escala es fundamental.
+                  superiores al examen presentado. Ya sea que busques preparar el <a href="/examenes-cambridge/b1-preliminary/" className="text-white hover:underline font-semibold">B1 Preliminary</a> o el <a href="/examenes-cambridge/b2-first/" className="text-white hover:underline font-semibold">B2 First</a>, entender la escala es fundamental.
                 </p>
                 <p className="text-white/90">
-                  En <a href="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-semibold">nuestra academia</a> te preparamos para alcanzar tu puntuación objetivo con
+                  En <a href="/academia-ingles-barrio-del-pilar/" className="text-white hover:underline font-semibold">nuestra academia</a> te preparamos para alcanzar tu puntuación objetivo con
                   metodología probada y seguimiento personalizado por solo <strong>79€/mes</strong>.
                 </p>
               </div>
@@ -439,7 +439,7 @@ export default function EscalaCambridgePage() {
                     </p>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Solicitar información
@@ -453,11 +453,11 @@ export default function EscalaCambridgePage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-indigo-600">GUÍA COMPLETA</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa de Exámenes Cambridge 2026</h4>
                 </a>
-                <a href="/examenes-cambridge/b2-first" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-indigo-600">B2 FIRST</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Cambridge B2: 7 Beneficios del Examen First</h4>
                 </a>

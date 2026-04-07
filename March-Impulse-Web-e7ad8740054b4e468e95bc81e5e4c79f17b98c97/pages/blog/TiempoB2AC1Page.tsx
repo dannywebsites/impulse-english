@@ -103,7 +103,7 @@ export default function TiempoB2AC1Page() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              El salto de B2 a C1 es considerado uno de los más exigentes en el aprendizaje de inglés. Mientras que el <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> certifica que puedes comunicarte con fluidez en la mayoría de situaciones, el <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">C1 Advanced</a> exige un dominio sofisticado y flexible del idioma. ¿Cuánto tiempo necesitas realmente? Depende de tu punto de partida, dedicación y método, pero la referencia estándar es de <strong>200-300 horas de estudio guiado</strong>.
+              El salto de B2 a C1 es considerado uno de los más exigentes en el aprendizaje de inglés. Mientras que el <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First</a> certifica que puedes comunicarte con fluidez en la mayoría de situaciones, el <a href="/examenes-cambridge/c1-advanced/" className="text-emerald-600 hover:underline font-medium">C1 Advanced</a> exige un dominio sofisticado y flexible del idioma. ¿Cuánto tiempo necesitas realmente? Depende de tu punto de partida, dedicación y método, pero la referencia estándar es de <strong>200-300 horas de estudio guiado</strong>.
             </p>
 
             {/* Section 1 */}
@@ -205,7 +205,7 @@ export default function TiempoB2AC1Page() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Dato clave:</strong> Los alumnos que combinan <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">clases presenciales</a> con estudio autónomo estructurado reducen el tiempo de preparación en un 25-30% respecto a quienes estudian exclusivamente por su cuenta.
+                  <strong>Dato clave:</strong> Los alumnos que combinan <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">clases presenciales</a> con estudio autónomo estructurado reducen el tiempo de preparación en un 25-30% respecto a quienes estudian exclusivamente por su cuenta.
                 </p>
               </div>
             </section>
@@ -292,7 +292,7 @@ export default function TiempoB2AC1Page() {
                     <CheckCircle className="w-5 h-5" />
                     Preparación específica del examen
                   </h3>
-                  <p className="text-gray-700 text-sm">Conocer a fondo el formato del <a href="/blog/examen-cae-cambridge" className="text-emerald-600 hover:underline">examen CAE</a> y practicar con materiales oficiales puede significar la diferencia entre aprobar y suspender, independientemente de tu nivel real de inglés.</p>
+                  <p className="text-gray-700 text-sm">Conocer a fondo el formato del <a href="/blog/examen-cae-cambridge/" className="text-emerald-600 hover:underline">examen CAE</a> y practicar con materiales oficiales puede significar la diferencia entre aprobar y suspender, independientemente de tu nivel real de inglés.</p>
                 </div>
               </div>
             </section>
@@ -335,7 +335,7 @@ export default function TiempoB2AC1Page() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Consejo:</strong> Consulta la <a href="/blog/escala-cambridge" className="text-emerald-600 hover:underline">escala Cambridge</a> para entender exactamente dónde te sitúas y qué distancia real hay entre tu nivel actual y el C1 que necesitas.
+                  <strong>Consejo:</strong> Consulta la <a href="/blog/escala-cambridge/" className="text-emerald-600 hover:underline">escala Cambridge</a> para entender exactamente dónde te sitúas y qué distancia real hay entre tu nivel actual y el C1 que necesitas.
                 </p>
               </div>
             </section>
@@ -381,7 +381,7 @@ export default function TiempoB2AC1Page() {
                   El tiempo necesario para pasar de B2 a C1 oscila entre <strong>3 y 18 meses</strong> dependiendo de tu dedicación, método de estudio y punto de partida. La referencia estándar de 200-300 horas es orientativa, pero lo más importante es la calidad de esas horas: inmersión activa, feedback profesional y práctica específica del examen.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> diseñamos planes de transición personalizados B2→C1 con seguimiento mensual de progreso. Nuestros <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">métodos de enseñanza</a> están optimizados para maximizar tu rendimiento en el menor tiempo posible.
+                  En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> diseñamos planes de transición personalizados B2→C1 con seguimiento mensual de progreso. Nuestros <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">métodos de enseñanza</a> están optimizados para maximizar tu rendimiento en el menor tiempo posible.
                 </p>
               </div>
             </section>
@@ -393,7 +393,7 @@ export default function TiempoB2AC1Page() {
                 Evaluamos tu nivel actual y diseñamos un plan de preparación personalizado para que consigas tu C1 Advanced en el menor tiempo posible.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar evaluación gratuita
@@ -405,25 +405,25 @@ export default function TiempoB2AC1Page() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     C1 Advanced: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge C1 Advanced.</p>
                 </a>
-                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     B2 First: Tu punto de partida
                   </h3>
                   <p className="text-gray-600 text-sm">Consolida tu B2 antes de preparar el C1.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas adaptados a tu nivel y objetivos.</p>
                 </a>
-                <a href="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/escala-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Escala Cambridge: Todos los niveles
                   </h3>

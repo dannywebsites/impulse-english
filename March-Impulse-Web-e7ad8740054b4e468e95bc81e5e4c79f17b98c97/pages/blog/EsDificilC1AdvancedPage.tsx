@@ -107,7 +107,7 @@ export default function EsDificilC1AdvancedPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              El <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">Cambridge C1 Advanced</a> (anteriormente CAE) es uno de los exámenes de inglés más respetados y también uno de los más temidos. Con una tasa de aprobados global del <strong>55-60%</strong>, casi la mitad de los candidatos no consigue el certificado en su primer intento. Pero, ¿es realmente tan difícil? La respuesta depende de tu preparación, tu nivel de partida y tu conocimiento del formato del examen.
+              El <a href="/examenes-cambridge/c1-advanced/" className="text-emerald-600 hover:underline font-medium">Cambridge C1 Advanced</a> (anteriormente CAE) es uno de los exámenes de inglés más respetados y también uno de los más temidos. Con una tasa de aprobados global del <strong>55-60%</strong>, casi la mitad de los candidatos no consigue el certificado en su primer intento. Pero, ¿es realmente tan difícil? La respuesta depende de tu preparación, tu nivel de partida y tu conocimiento del formato del examen.
             </p>
 
             {/* Section 1 */}
@@ -205,7 +205,7 @@ export default function EsDificilC1AdvancedPage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                No todas las partes del <a href="/blog/examen-cae-cambridge" className="text-emerald-600 hover:underline font-medium">examen CAE</a> presentan la misma dificultad. Analizamos cada sección según el rendimiento medio de los candidatos hispanohablantes:
+                No todas las partes del <a href="/blog/examen-cae-cambridge/" className="text-emerald-600 hover:underline font-medium">examen CAE</a> presentan la misma dificultad. Analizamos cada sección según el rendimiento medio de los candidatos hispanohablantes:
               </p>
 
               <div className="space-y-4 mb-8">
@@ -250,7 +250,7 @@ export default function EsDificilC1AdvancedPage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Muchos candidatos subestiman el salto de dificultad entre el <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> y el C1 Advanced. Estas son las diferencias clave:
+                Muchos candidatos subestiman el salto de dificultad entre el <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First</a> y el C1 Advanced. Estas son las diferencias clave:
               </p>
 
               <div className="overflow-x-auto mb-8">
@@ -337,7 +337,7 @@ export default function EsDificilC1AdvancedPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a>, nuestros programas de preparación C1 están diseñados para maximizar tu rendimiento en cada parte del examen. Combinamos inmersión comunicativa con técnicas específicas de examen que han demostrado tasas de aprobado superiores al 75%.
+                En <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a>, nuestros programas de preparación C1 están diseñados para maximizar tu rendimiento en cada parte del examen. Combinamos inmersión comunicativa con técnicas específicas de examen que han demostrado tasas de aprobado superiores al 75%.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
@@ -388,7 +388,7 @@ export default function EsDificilC1AdvancedPage() {
                   El C1 Advanced es un examen exigente pero no inalcanzable. Su dificultad reside tanto en el nivel de inglés requerido como en la complejidad del formato. Con una preparación estructurada de <strong>5-8 meses</strong>, profesores especializados y práctica constante, las probabilidades de éxito se multiplican significativamente.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> llevamos años preparando candidatos para el C1 con tasas de éxito muy por encima de la media. Si estás considerando presentarte, <a href="/contacto" className="text-emerald-600 hover:underline font-medium">contáctanos</a> para una evaluación de nivel gratuita que te permitirá saber exactamente dónde estás y cuánto necesitas para alcanzar tu objetivo.
+                  En <a href="/examenes-cambridge/c1-advanced/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> llevamos años preparando candidatos para el C1 con tasas de éxito muy por encima de la media. Si estás considerando presentarte, <a href="/contacto/" className="text-emerald-600 hover:underline font-medium">contáctanos</a> para una evaluación de nivel gratuita que te permitirá saber exactamente dónde estás y cuánto necesitas para alcanzar tu objetivo.
                 </p>
               </div>
             </section>
@@ -400,7 +400,7 @@ export default function EsDificilC1AdvancedPage() {
                 Nuestros programas de preparación C1 tienen una tasa de aprobados superior al 75%. Descubre cómo podemos ayudarte.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -412,25 +412,25 @@ export default function EsDificilC1AdvancedPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     C1 Advanced: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre estructura, preparación y certificación del C1.</p>
                 </a>
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo preparamos a nuestros alumnos para exámenes Cambridge.</p>
                 </a>
-                <a href="/blog/examen-cae-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/examen-cae-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Examen CAE Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Detalles del formato y estructura del examen CAE.</p>
                 </a>
-                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Examen Cambridge C1: Guía de Preparación
                   </h3>

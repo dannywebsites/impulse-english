@@ -375,7 +375,7 @@ export default function CertificadoLinguaskillPage() {
                   El certificado Linguaskill representa en 2025 una de las opciones más flexibles, rápidas y reconocidas internacionalmente para acreditar tu nivel de inglés sin fecha de caducidad oficial.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si buscas preparación especializada para alcanzar la certificación que necesitas, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-violet-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-violet-600 hover:underline font-medium">La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos" className="text-violet-600 hover:underline font-medium">cursos específicos de inglés para adultos</a> con metodología probada y tasas de éxito del 100% en <a href="/examenes-cambridge" className="text-violet-600 hover:underline font-medium">exámenes Cambridge</a>.
+                  Si buscas preparación especializada para alcanzar la certificación que necesitas, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-violet-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada/" className="text-violet-600 hover:underline font-medium">La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos/" className="text-violet-600 hover:underline font-medium">cursos específicos de inglés para adultos</a> con metodología probada y tasas de éxito del 100% en <a href="/examenes-cambridge/" className="text-violet-600 hover:underline font-medium">exámenes Cambridge</a>.
                 </p>
               </div>
             </section>
@@ -387,7 +387,7 @@ export default function CertificadoLinguaskillPage() {
                 En Impulse English Academy te preparamos para obtener el certificado Linguaskill con la puntuación que necesitas.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-violet-600 px-8 py-4 rounded-xl font-semibold hover:bg-violet-50 transition-colors"
               >
                 Solicitar información
@@ -399,13 +399,13 @@ export default function CertificadoLinguaskillPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-violet-50 transition-colors">
+                <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-violet-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-violet-600 transition-colors mb-2">
                     Linguaskill: Guía Completa 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre el examen Linguaskill de Cambridge.</p>
                 </a>
-                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-violet-50 transition-colors">
+                <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-violet-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-violet-600 transition-colors mb-2">
                     Cómo Registrarse en Linguaskill
                   </h3>

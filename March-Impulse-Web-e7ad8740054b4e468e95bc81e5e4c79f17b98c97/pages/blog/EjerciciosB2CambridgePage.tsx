@@ -389,8 +389,8 @@ export default function EjerciciosB2CambridgePage() {
 
               <div className="bg-blue-100 rounded-xl p-6">
                 <p className="text-blue-800">
-                  En nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-blue-600 hover:underline font-bold">academia en Barrio del Pilar</a> complementamos estos recursos con práctica guiada,
-                  corrección personalizada de Writing y Speaking en vivo con feedback inmediato. Ofrecemos <a href="/examenes-cambridge/b2-first" className="text-blue-600 hover:underline font-bold">preparación B2 First</a> con <a href="/cursos-ingles/particulares" className="text-blue-600 hover:underline font-bold">clases particulares</a> o grupales desde <strong>79€/mes</strong>. También preparamos <a href="/examenes-cambridge/b1-preliminary" className="text-blue-600 hover:underline font-bold">B1 Preliminary</a> y otros <a href="/examenes-cambridge" className="text-blue-600 hover:underline font-bold">exámenes Cambridge</a>.
+                  En nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-blue-600 hover:underline font-bold">academia en Barrio del Pilar</a> complementamos estos recursos con práctica guiada,
+                  corrección personalizada de Writing y Speaking en vivo con feedback inmediato. Ofrecemos <a href="/examenes-cambridge/b2-first/" className="text-blue-600 hover:underline font-bold">preparación B2 First</a> con <a href="/cursos-ingles/particulares/" className="text-blue-600 hover:underline font-bold">clases particulares</a> o grupales desde <strong>79€/mes</strong>. También preparamos <a href="/examenes-cambridge/b1-preliminary/" className="text-blue-600 hover:underline font-bold">B1 Preliminary</a> y otros <a href="/examenes-cambridge/" className="text-blue-600 hover:underline font-bold">exámenes Cambridge</a>.
                 </p>
               </div>
             </section>
@@ -454,7 +454,7 @@ export default function EjerciciosB2CambridgePage() {
                     </p>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Solicitar información
@@ -468,11 +468,11 @@ export default function EjerciciosB2CambridgePage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <a href="/examenes-cambridge/b2-first" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-blue-600">B2 FIRST</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Cambridge B2: 7 Beneficios del Examen First</h4>
                 </a>
-                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-blue-600">PUNTUACIÓN</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Escala Cambridge Explicada: Niveles y Grades</h4>
                 </a>

@@ -299,7 +299,7 @@ export default function PorQueNoAvanzoInglesPage() {
                 Una evaluación de nivel y una sesión de diagnóstico nos permite identificar exactamente cuál de las 8 causas te afecta y cómo resolverla.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar diagnóstico gratuito
@@ -311,19 +311,19 @@ export default function PorQueNoAvanzoInglesPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo diseñamos el aprendizaje para evitar el estancamiento.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas con seguimiento individualizado de progreso.</p>
                 </a>
-                <a href="/blog/entiendo-ingles-no-hablo" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/entiendo-ingles-no-hablo/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Entiendo Inglés pero No Hablo
                   </h3>

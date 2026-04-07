@@ -155,7 +155,7 @@ export default function B1SuficienteTrabajarPage() {
               </h2>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Según datos recientes de portales de empleo españoles, aproximadamente el <strong>60% de las ofertas que requieren inglés</strong> solicitan un nivel B1 como mínimo. Esto convierte al <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline">B1 Preliminary</a> en la certificación más demandada para el mercado laboral general.
+                Según datos recientes de portales de empleo españoles, aproximadamente el <strong>60% de las ofertas que requieren inglés</strong> solicitan un nivel B1 como mínimo. Esto convierte al <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline">B1 Preliminary</a> en la certificación más demandada para el mercado laboral general.
               </p>
 
               <div className="grid md:grid-cols-3 gap-4 mb-6">
@@ -249,7 +249,7 @@ export default function B1SuficienteTrabajarPage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Hay situaciones profesionales claras donde el B1 se queda corto. Si te identificas con alguno de estos perfiles, considera seriamente dar el salto al <a href="/blog/diferencia-b2-c1" className="text-emerald-600 hover:underline">nivel B2 o C1</a>:
+                Hay situaciones profesionales claras donde el B1 se queda corto. Si te identificas con alguno de estos perfiles, considera seriamente dar el salto al <a href="/blog/diferencia-b2-c1/" className="text-emerald-600 hover:underline">nivel B2 o C1</a>:
               </p>
 
               <div className="space-y-4 mb-8">
@@ -361,7 +361,7 @@ export default function B1SuficienteTrabajarPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                La forma más eficiente de dar el salto es combinar <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">clases en academia</a> con práctica autónoma diaria. En <a href="/metodologia" className="text-emerald-600 hover:underline">Impulse English Academy</a>, nuestros cursos de preparación B2 First están diseñados específicamente para estudiantes que parten de un B1 consolidado.
+                La forma más eficiente de dar el salto es combinar <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">clases en academia</a> con práctica autónoma diaria. En <a href="/metodologia/" className="text-emerald-600 hover:underline">Impulse English Academy</a>, nuestros cursos de preparación B2 First están diseñados específicamente para estudiantes que parten de un B1 consolidado.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
@@ -409,10 +409,10 @@ export default function B1SuficienteTrabajarPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">B1 Preliminary</a> es suficiente para una amplia gama de empleos en España, especialmente en turismo, atención al cliente y administración. Sin embargo, si aspiras a puestos con mayor responsabilidad internacional o en sectores como tecnología y finanzas, planifica tu progresión hacia el B2.
+                  El <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline font-medium">B1 Preliminary</a> es suficiente para una amplia gama de empleos en España, especialmente en turismo, atención al cliente y administración. Sin embargo, si aspiras a puestos con mayor responsabilidad internacional o en sectores como tecnología y finanzas, planifica tu progresión hacia el B2.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te ayudamos tanto a certificar tu B1 como a preparar tu salto al B2 First con <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">metodología probada</a> y profesores altamente cualificados especializados en exámenes Cambridge.
+                  En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te ayudamos tanto a certificar tu B1 como a preparar tu salto al B2 First con <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">metodología probada</a> y profesores altamente cualificados especializados en exámenes Cambridge.
                 </p>
               </div>
             </section>
@@ -424,7 +424,7 @@ export default function B1SuficienteTrabajarPage() {
                 Ya sea certificar tu B1 o dar el salto al B2, en Impulse te acompañamos con clases adaptadas a tus objetivos laborales.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -436,13 +436,13 @@ export default function B1SuficienteTrabajarPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b1-preliminary/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía Completa del B1 Preliminary
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge B1: formato, precio y preparación.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>

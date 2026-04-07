@@ -236,7 +236,7 @@ export default function EdadEmpezarInglesBebesPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En esta etapa, la <a href="/blog/ingles-jugando-funciona" className="text-purple-600 hover:underline font-medium">metodología de aprender inglés jugando</a> es fundamental. Los niños de 1-2 años no pueden sentarse y "estudiar", pero pueden absorber cantidades extraordinarias de vocabulario y estructuras a través del juego multisensorial. Por eso en nuestras <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">clases de inglés infantil</a> cada sesión está diseñada como una experiencia de juego completa.
+                En esta etapa, la <a href="/blog/ingles-jugando-funciona/" className="text-purple-600 hover:underline font-medium">metodología de aprender inglés jugando</a> es fundamental. Los niños de 1-2 años no pueden sentarse y "estudiar", pero pueden absorber cantidades extraordinarias de vocabulario y estructuras a través del juego multisensorial. Por eso en nuestras <a href="/cursos-ingles/infantil/" className="text-purple-600 hover:underline font-medium">clases de inglés infantil</a> cada sesión está diseñada como una experiencia de juego completa.
               </p>
             </section>
 
@@ -256,7 +256,7 @@ export default function EdadEmpezarInglesBebesPage() {
                     <Award className="w-5 h-5 text-purple-600" />
                     Características de una buena clase para 2-3 años
                   </h3>
-                  <p className="text-gray-700">Grupos reducidos (máximo 8 niños), profesor titulado, sesiones de 45-60 minutos con variedad de actividades (música, movimiento, manualidades, cuentos), inmersión total en inglés, espacio seguro y estimulante. La <a href="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline">metodología Great Little People</a> cumple todos estos criterios.</p>
+                  <p className="text-gray-700">Grupos reducidos (máximo 8 niños), profesor titulado, sesiones de 45-60 minutos con variedad de actividades (música, movimiento, manualidades, cuentos), inmersión total en inglés, espacio seguro y estimulante. La <a href="/blog/great-little-people-metodologia/" className="text-purple-600 hover:underline">metodología Great Little People</a> cumple todos estos criterios.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -327,7 +327,7 @@ export default function EdadEmpezarInglesBebesPage() {
                   Recuerda que cada niño tiene su propio ritmo de desarrollo. Si tu hijo de 2 años no está listo para clases grupales, eso no significa que debas renunciar al inglés. Puedes seguir con la exposición en casa mientras esperas el momento adecuado. Lo importante es <strong>no forzar ni crear asociaciones negativas</strong> con el idioma.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos una clase de prueba gratuita para que tanto tú como tu hijo podáis comprobar si es el momento adecuado. Nuestros profesores altamente cualificados evalúan la disposición de cada niño y recomiendan el grupo más apropiado.
+                  En <a href="/cursos-ingles/infantil/" className="text-purple-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos una clase de prueba gratuita para que tanto tú como tu hijo podáis comprobar si es el momento adecuado. Nuestros profesores altamente cualificados evalúan la disposición de cada niño y recomiendan el grupo más apropiado.
                 </p>
               </div>
             </section>
@@ -373,7 +373,7 @@ export default function EdadEmpezarInglesBebesPage() {
                   La respuesta a "¿a qué edad empezar?" es clara: <strong>la exposición al inglés puede comenzar desde los primeros meses de vida</strong>, adaptando el tipo de estímulo a cada etapa. Los 6 meses son ideales para comenzar con canciones y exposición natural, los 1-2 años para el juego en inglés, y los 2-3 años para clases estructuradas con profesores titulados.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Lo más importante es que la experiencia sea positiva y natural. En <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">nuestros programas de inglés infantil</a>, con la <a href="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline font-medium">metodología Great Little People</a>, cada sesión está diseñada para que tu hijo disfrute mientras su cerebro absorbe el inglés de forma natural. <a href="/contacto" className="text-purple-600 hover:underline font-medium">Contáctanos</a> para una clase de prueba gratuita.
+                  Lo más importante es que la experiencia sea positiva y natural. En <a href="/cursos-ingles/infantil/" className="text-purple-600 hover:underline font-medium">nuestros programas de inglés infantil</a>, con la <a href="/blog/great-little-people-metodologia/" className="text-purple-600 hover:underline font-medium">metodología Great Little People</a>, cada sesión está diseñada para que tu hijo disfrute mientras su cerebro absorbe el inglés de forma natural. <a href="/contacto/" className="text-purple-600 hover:underline font-medium">Contáctanos</a> para una clase de prueba gratuita.
                 </p>
               </div>
             </section>
@@ -385,7 +385,7 @@ export default function EdadEmpezarInglesBebesPage() {
                 Descubre nuestros programas de inglés desde los 2 años con profesores altamente cualificados y metodología lúdica especializada.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Solicitar información
@@ -397,19 +397,19 @@ export default function EdadEmpezarInglesBebesPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/infantil/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>
                   <p className="text-gray-600 text-sm">Programas diseñados para los más pequeños desde los 2 años.</p>
                 </a>
-                <a href="/blog/ingles-jugando-funciona" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/blog/ingles-jugando-funciona/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     ¿Inglés Jugando Funciona?
                   </h3>
                   <p className="text-gray-600 text-sm">Evidencia científica sobre el aprendizaje a través del juego.</p>
                 </a>
-                <a href="/blog/great-little-people-metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/blog/great-little-people-metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Great Little People
                   </h3>

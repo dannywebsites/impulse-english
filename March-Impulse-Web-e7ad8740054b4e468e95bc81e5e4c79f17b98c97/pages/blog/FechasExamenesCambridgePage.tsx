@@ -874,7 +874,7 @@ export default function FechasExamenesCambridgePage() {
               <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 my-8">
                 <h4 className="font-bold text-purple-800 mb-3">Tu próximo paso</h4>
                 <p className="text-purple-700 text-sm">
-                  Para candidatos en Madrid que buscan no solo conocer las fechas 2026 sino prepararse con garantías de éxito, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-purple-600 hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-purple-600 hover:underline font-bold">junto a La Vaguada</a>, ofrece combinación única: conocimiento profundo del calendario oficial, preparación estructurada mediante metodologías probadas (The Impulse Method™ con tasas de aprobación del 100% en 2024-25), placement tests gratuitos para identificar tu nivel real y tiempo necesario, y flexibilidad de horarios con <a href="/cursos-ingles/adultos" className="text-purple-600 hover:underline font-bold">cursos de inglés para adultos</a> y <a href="/cursos-ingles/secundaria" className="text-purple-600 hover:underline font-bold">cursos de secundaria</a> (clases presenciales y online) que facilitan compaginar preparación con estudios o trabajo. Preparamos todos los <a href="/examenes-cambridge" className="text-purple-600 hover:underline font-bold">exámenes Cambridge</a> incluyendo <a href="/linguaskill" className="text-purple-600 hover:underline font-bold">Linguaskill</a>.
+                  Para candidatos en Madrid que buscan no solo conocer las fechas 2026 sino prepararse con garantías de éxito, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-purple-600 hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-purple-600 hover:underline font-bold">junto a La Vaguada</a>, ofrece combinación única: conocimiento profundo del calendario oficial, preparación estructurada mediante metodologías probadas (The Impulse Method™ con tasas de aprobación del 100% en 2024-25), placement tests gratuitos para identificar tu nivel real y tiempo necesario, y flexibilidad de horarios con <a href="/cursos-ingles/adultos/" className="text-purple-600 hover:underline font-bold">cursos de inglés para adultos</a> y <a href="/cursos-ingles/secundaria/" className="text-purple-600 hover:underline font-bold">cursos de secundaria</a> (clases presenciales y online) que facilitan compaginar preparación con estudios o trabajo. Preparamos todos los <a href="/examenes-cambridge/" className="text-purple-600 hover:underline font-bold">exámenes Cambridge</a> incluyendo <a href="/linguaskill/" className="text-purple-600 hover:underline font-bold">Linguaskill</a>.
                 </p>
               </div>
 
@@ -928,7 +928,7 @@ export default function FechasExamenesCambridgePage() {
                     Consultar por WhatsApp
                   </a>
                   <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
                     className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
                   >
                     Ver cursos Cambridge
@@ -957,7 +957,7 @@ export default function FechasExamenesCambridgePage() {
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/examenes-cambridge" className="group">
+              <a href="/examenes-cambridge/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-purple-600 text-sm font-medium">Guía</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-purple-600 transition-colors">
@@ -966,7 +966,7 @@ export default function FechasExamenesCambridgePage() {
                   <p className="text-zinc-500 text-sm mt-2">Todo sobre niveles, estructura y preparación</p>
                 </div>
               </a>
-              <a href="/examenes-cambridge" className="group">
+              <a href="/examenes-cambridge/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-purple-600 text-sm font-medium">Recursos</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-purple-600 transition-colors">
@@ -975,7 +975,7 @@ export default function FechasExamenesCambridgePage() {
                   <p className="text-zinc-500 text-sm mt-2">Los mejores materiales para preparar tu examen</p>
                 </div>
               </a>
-              <a href="/linguaskill" className="group">
+              <a href="/linguaskill/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-purple-600 text-sm font-medium">Linguaskill</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-purple-600 transition-colors">

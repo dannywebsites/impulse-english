@@ -107,7 +107,7 @@ export default function ValidezCertificadoB2CambridgePage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Una de las preguntas más frecuentes entre los candidatos al <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First de Cambridge</a> es si el certificado caduca. La respuesta es clara y definitiva: <strong>el certificado B2 First no caduca nunca</strong>. A diferencia de otras certificaciones de inglés como IELTS o TOEFL, que expiran a los 2 años, los certificados de Cambridge English tienen validez permanente. Esto convierte al B2 First en una de las inversiones más inteligentes para acreditar tu nivel de inglés, ya que solo necesitas aprobar una vez para tenerlo de por vida.
+              Una de las preguntas más frecuentes entre los candidatos al <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First de Cambridge</a> es si el certificado caduca. La respuesta es clara y definitiva: <strong>el certificado B2 First no caduca nunca</strong>. A diferencia de otras certificaciones de inglés como IELTS o TOEFL, que expiran a los 2 años, los certificados de Cambridge English tienen validez permanente. Esto convierte al B2 First en una de las inversiones más inteligentes para acreditar tu nivel de inglés, ya que solo necesitas aprobar una vez para tenerlo de por vida.
             </p>
 
             {/* Section 1 - Validez */}
@@ -199,7 +199,7 @@ export default function ValidezCertificadoB2CambridgePage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En España, el B2 First es especialmente valioso para acreditar el nivel B2 exigido en oposiciones, habilitación lingüística docente y requisitos de graduación universitaria. Según la <a href="/blog/escala-cambridge" className="text-emerald-600 hover:underline font-medium">escala de Cambridge</a>, obtener una puntuación de 160 o superior confirma el nivel B2 del MCER reconocido por todas las comunidades autónomas.
+                En España, el B2 First es especialmente valioso para acreditar el nivel B2 exigido en oposiciones, habilitación lingüística docente y requisitos de graduación universitaria. Según la <a href="/blog/escala-cambridge/" className="text-emerald-600 hover:underline font-medium">escala de Cambridge</a>, obtener una puntuación de 160 o superior confirma el nivel B2 del MCER reconocido por todas las comunidades autónomas.
               </p>
             </section>
 
@@ -258,7 +258,7 @@ export default function ValidezCertificadoB2CambridgePage() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  *Linguaskill, aunque también es de Cambridge, funciona como un test (no un certificado) y muchas instituciones requieren resultados recientes. Consulta nuestra <a href="/linguaskill" className="text-emerald-600 hover:underline">guía de Linguaskill</a> para más detalles sobre sus diferencias con el B2 First.
+                  *Linguaskill, aunque también es de Cambridge, funciona como un test (no un certificado) y muchas instituciones requieren resultados recientes. Consulta nuestra <a href="/linguaskill/" className="text-emerald-600 hover:underline">guía de Linguaskill</a> para más detalles sobre sus diferencias con el B2 First.
                 </p>
               </div>
             </section>
@@ -287,7 +287,7 @@ export default function ValidezCertificadoB2CambridgePage() {
                     <Target className="w-5 h-5 text-emerald-600" />
                     Para subir de nivel
                   </h3>
-                  <p className="text-gray-700">Si tu inglés ha mejorado significativamente desde que obtuviste el B2, puede ser más beneficioso presentarte directamente al <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline">C1 Advanced</a> para obtener una certificación que refleje tu nivel actual y abra más puertas profesionales.</p>
+                  <p className="text-gray-700">Si tu inglés ha mejorado significativamente desde que obtuviste el B2, puede ser más beneficioso presentarte directamente al <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline">C1 Advanced</a> para obtener una certificación que refleje tu nivel actual y abra más puertas profesionales.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -386,10 +386,10 @@ export default function ValidezCertificadoB2CambridgePage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">certificado B2 First de Cambridge</a> es una inversión permanente en tu futuro profesional y académico. Su validez ilimitada, combinada con el reconocimiento de más de 25.000 organizaciones en todo el mundo, lo convierte en la opción más rentable y práctica para acreditar tu nivel de inglés intermedio-alto.
+                  El <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">certificado B2 First de Cambridge</a> es una inversión permanente en tu futuro profesional y académico. Su validez ilimitada, combinada con el reconocimiento de más de 25.000 organizaciones en todo el mundo, lo convierte en la opción más rentable y práctica para acreditar tu nivel de inglés intermedio-alto.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si estás considerando certificar tu nivel de inglés, la combinación de validez permanente, reconocimiento universal y una única inversión hace del B2 First la elección más inteligente. En <a href="/blog/registro-cambridge" className="text-emerald-600 hover:underline font-medium">nuestra guía de registro</a> encontrarás todo lo necesario para inscribirte, y en nuestros <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> te preparamos para obtener la mejor puntuación posible.
+                  Si estás considerando certificar tu nivel de inglés, la combinación de validez permanente, reconocimiento universal y una única inversión hace del B2 First la elección más inteligente. En <a href="/blog/registro-cambridge/" className="text-emerald-600 hover:underline font-medium">nuestra guía de registro</a> encontrarás todo lo necesario para inscribirte, y en nuestros <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> te preparamos para obtener la mejor puntuación posible.
                 </p>
               </div>
             </section>
@@ -401,7 +401,7 @@ export default function ValidezCertificadoB2CambridgePage() {
                 En Impulse English Academy te preparamos con metodología probada para aprobar el B2 First con la mejor puntuación posible. Un certificado para toda la vida.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -413,19 +413,19 @@ export default function ValidezCertificadoB2CambridgePage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cambridge B2 First: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B2 First: estructura, formato y preparación.</p>
                 </a>
-                <a href="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/escala-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Escala de Cambridge Explicada
                   </h3>
                   <p className="text-gray-600 text-sm">Entiende cómo funciona el sistema de puntuación de Cambridge English.</p>
                 </a>
-                <a href="/blog/registro-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/registro-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cómo Registrarse en Cambridge
                   </h3>

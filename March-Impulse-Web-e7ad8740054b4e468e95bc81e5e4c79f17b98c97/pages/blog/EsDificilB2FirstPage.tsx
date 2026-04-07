@@ -153,7 +153,7 @@ export default function EsDificilB2FirstPage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                No todas las secciones del <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> presentan la misma dificultad. Basándonos en las puntuaciones medias de los candidatos hispanohablantes, este es el ranking de dificultad:
+                No todas las secciones del <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First</a> presentan la misma dificultad. Basándonos en las puntuaciones medias de los candidatos hispanohablantes, este es el ranking de dificultad:
               </p>
 
               <div className="space-y-4 mb-8">
@@ -289,7 +289,7 @@ export default function EsDificilB2FirstPage() {
                     <Target className="w-5 h-5 text-emerald-600" />
                     Preparación guiada con feedback
                   </h3>
-                  <p className="text-gray-700">Un profesor especializado en Cambridge identifica tus errores específicos y te da estrategias personalizadas. En nuestra <a href="/metodologia" className="text-emerald-600 hover:underline">metodología</a>, trabajamos con análisis individualizado de cada alumno para optimizar su preparación y maximizar puntuación en las áreas con más potencial de mejora.</p>
+                  <p className="text-gray-700">Un profesor especializado en Cambridge identifica tus errores específicos y te da estrategias personalizadas. En nuestra <a href="/metodologia/" className="text-emerald-600 hover:underline">metodología</a>, trabajamos con análisis individualizado de cada alumno para optimizar su preparación y maximizar puntuación en las áreas con más potencial de mejora.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -396,10 +396,10 @@ export default function EsDificilB2FirstPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> no es un examen fácil, pero tampoco es inalcanzable. Con una tasa de aprobados del 65-70% global y del 85-90% entre candidatos bien preparados, la clave está claramente en la preparación. Los hispanohablantes tienen retos específicos, especialmente en Use of English, pero estos son completamente superables con práctica dirigida y constancia.
+                  El <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First</a> no es un examen fácil, pero tampoco es inalcanzable. Con una tasa de aprobados del 65-70% global y del 85-90% entre candidatos bien preparados, la clave está claramente en la preparación. Los hispanohablantes tienen retos específicos, especialmente en Use of English, pero estos son completamente superables con práctica dirigida y constancia.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si quieres prepararte con las mejores garantías, nuestros <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> combinan nuestra <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">metodología probada</a> con simulacros reales y feedback personalizado. No dejes que el miedo a la dificultad te impida obtener un certificado que puede transformar tu carrera profesional.
+                  Si quieres prepararte con las mejores garantías, nuestros <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> combinan nuestra <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">metodología probada</a> con simulacros reales y feedback personalizado. No dejes que el miedo a la dificultad te impida obtener un certificado que puede transformar tu carrera profesional.
                 </p>
               </div>
             </section>
@@ -411,7 +411,7 @@ export default function EsDificilB2FirstPage() {
                 En Impulse English Academy convertimos la dificultad del B2 First en una ventaja competitiva. Preparación intensiva con resultados comprobados.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -423,19 +423,19 @@ export default function EsDificilB2FirstPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cambridge B2 First: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B2 First: estructura, formato y preparación.</p>
                 </a>
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Descubre cómo preparamos a nuestros alumnos para aprobar Cambridge.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>

@@ -175,7 +175,7 @@ export default function NinosAprenderInglesPequenosPage() {
                     <Target className="w-5 h-5 text-purple-600" />
                     1-3 años: Explosión del vocabulario
                   </h3>
-                  <p className="text-gray-700">En esta fase los niños pueden aprender hasta 10 palabras nuevas al día. Si reciben input en dos idiomas, construyen dos sistemas léxicos paralelos. El juego sensorial y las canciones son herramientas ideales para esta etapa, tal como aplica la <a href="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline">metodología Great Little People</a>.</p>
+                  <p className="text-gray-700">En esta fase los niños pueden aprender hasta 10 palabras nuevas al día. Si reciben input en dos idiomas, construyen dos sistemas léxicos paralelos. El juego sensorial y las canciones son herramientas ideales para esta etapa, tal como aplica la <a href="/blog/great-little-people-metodologia/" className="text-purple-600 hover:underline">metodología Great Little People</a>.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -183,13 +183,13 @@ export default function NinosAprenderInglesPequenosPage() {
                     <Target className="w-5 h-5 text-purple-600" />
                     3-6 años: Estructuración gramatical
                   </h3>
-                  <p className="text-gray-700">El niño comienza a internalizar reglas gramaticales de forma natural. Es capaz de construir frases complejas, hacer preguntas y narrar historias en ambos idiomas. Las clases estructuradas de <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline">inglés infantil</a> maximizan esta capacidad natural.</p>
+                  <p className="text-gray-700">El niño comienza a internalizar reglas gramaticales de forma natural. Es capaz de construir frases complejas, hacer preguntas y narrar historias en ambos idiomas. Las clases estructuradas de <a href="/cursos-ingles/infantil/" className="text-purple-600 hover:underline">inglés infantil</a> maximizan esta capacidad natural.</p>
                 </div>
               </div>
 
               <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Importante:</strong> No se trata de presionar al niño, sino de aprovechar su curiosidad natural. Los niños pequeños no "estudian" un idioma: lo adquieren a través del juego, la música y la interacción social. Por eso las metodologías lúdicas como las que utilizamos en <a href="/metodologia" className="text-purple-600 hover:underline">nuestra academia</a> son tan efectivas.
+                  <strong>Importante:</strong> No se trata de presionar al niño, sino de aprovechar su curiosidad natural. Los niños pequeños no "estudian" un idioma: lo adquieren a través del juego, la música y la interacción social. Por eso las metodologías lúdicas como las que utilizamos en <a href="/metodologia/" className="text-purple-600 hover:underline">nuestra academia</a> son tan efectivas.
                 </p>
               </div>
             </section>
@@ -328,7 +328,7 @@ export default function NinosAprenderInglesPequenosPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">nuestros cursos de inglés infantil</a>, aplicamos la <a href="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline font-medium">metodología Great Little People</a>, diseñada específicamente para que los más pequeños aprendan inglés a través de la inmersión total y el juego estructurado. Cada sesión combina música, movimiento, storytelling y actividades sensoriales para aprovechar al máximo la plasticidad cerebral de esta etapa.
+                En <a href="/cursos-ingles/infantil/" className="text-purple-600 hover:underline font-medium">nuestros cursos de inglés infantil</a>, aplicamos la <a href="/blog/great-little-people-metodologia/" className="text-purple-600 hover:underline font-medium">metodología Great Little People</a>, diseñada específicamente para que los más pequeños aprendan inglés a través de la inmersión total y el juego estructurado. Cada sesión combina música, movimiento, storytelling y actividades sensoriales para aprovechar al máximo la plasticidad cerebral de esta etapa.
               </p>
 
               <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8">
@@ -336,7 +336,7 @@ export default function NinosAprenderInglesPequenosPage() {
                   La clave del éxito no está solo en las clases: la <strong>consistencia y la exposición en casa</strong> son fundamentales. Poner dibujos animados en inglés, escuchar canciones durante el desayuno o leer cuentos bilingües antes de dormir multiplica el impacto de las clases formales.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Descubre más sobre nuestra <a href="/metodologia" className="text-purple-600 hover:underline font-medium">metodología</a> y cómo creamos entornos de aprendizaje naturales y divertidos para cada grupo de edad.
+                  Descubre más sobre nuestra <a href="/metodologia/" className="text-purple-600 hover:underline font-medium">metodología</a> y cómo creamos entornos de aprendizaje naturales y divertidos para cada grupo de edad.
                 </p>
               </div>
             </section>
@@ -382,7 +382,7 @@ export default function NinosAprenderInglesPequenosPage() {
                   La evidencia científica es contundente: aprender inglés desde pequeño es una de las mejores decisiones que puedes tomar por el futuro de tu hijo. La plasticidad cerebral de los primeros años ofrece una ventana de oportunidad única que, una vez cerrada, es difícil de recuperar. Los beneficios cognitivos, sociales y emocionales del bilingüismo temprano acompañarán a tu hijo durante toda su vida.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">Impulse English Academy</a> contamos con programas diseñados para cada etapa del desarrollo, con profesores altamente cualificados especializados en primera infancia y la <a href="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline font-medium">metodología Great Little People</a>. Descubre cómo podemos ayudar a tu hijo a crecer bilingüe de forma natural y divertida.
+                  En <a href="/cursos-ingles/infantil/" className="text-purple-600 hover:underline font-medium">Impulse English Academy</a> contamos con programas diseñados para cada etapa del desarrollo, con profesores altamente cualificados especializados en primera infancia y la <a href="/blog/great-little-people-metodologia/" className="text-purple-600 hover:underline font-medium">metodología Great Little People</a>. Descubre cómo podemos ayudar a tu hijo a crecer bilingüe de forma natural y divertida.
                 </p>
               </div>
             </section>
@@ -394,7 +394,7 @@ export default function NinosAprenderInglesPequenosPage() {
                 En Impulse English Academy ofrecemos clases de inglés para los más pequeños con metodología lúdica y profesores altamente cualificados especializados.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Solicitar información
@@ -406,19 +406,19 @@ export default function NinosAprenderInglesPequenosPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/infantil/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>
                   <p className="text-gray-600 text-sm">Programas diseñados para los más pequeños de la casa.</p>
                 </a>
-                <a href="/blog/great-little-people-metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/blog/great-little-people-metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Great Little People: Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Descubre el método de inglés para niños de 1 a 7 años.</p>
                 </a>
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>

@@ -103,7 +103,7 @@ export default function TrabajosPidenC1InglesPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              En un mercado laboral cada vez más globalizado, el nivel <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">C1 de inglés certificado por Cambridge</a> se ha convertido en un requisito diferenciador en múltiples sectores profesionales. Ya no basta con incluir "inglés avanzado" en el currículum: las empresas exigen certificaciones oficiales que acrediten tu nivel de forma objetiva. Descubre qué sectores y puestos valoran especialmente el C1 y cómo puede impulsar tu carrera profesional.
+              En un mercado laboral cada vez más globalizado, el nivel <a href="/examenes-cambridge/c1-advanced/" className="text-emerald-600 hover:underline font-medium">C1 de inglés certificado por Cambridge</a> se ha convertido en un requisito diferenciador en múltiples sectores profesionales. Ya no basta con incluir "inglés avanzado" en el currículum: las empresas exigen certificaciones oficiales que acrediten tu nivel de forma objetiva. Descubre qué sectores y puestos valoran especialmente el C1 y cómo puede impulsar tu carrera profesional.
             </p>
 
             {/* Section 1 */}
@@ -338,7 +338,7 @@ export default function TrabajosPidenC1InglesPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En la práctica, tener un <a href="/examenes-cambridge" className="text-emerald-600 hover:underline font-medium">certificado Cambridge</a> C1 significa que tu CV no será descartado automáticamente en el filtro inicial, que puedes negociar desde una posición más fuerte y que accedes a un pool de ofertas significativamente más amplio y mejor remunerado.
+                En la práctica, tener un <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline font-medium">certificado Cambridge</a> C1 significa que tu CV no será descartado automáticamente en el filtro inicial, que puedes negociar desde una posición más fuerte y que accedes a un pool de ofertas significativamente más amplio y mejor remunerado.
               </p>
             </section>
 
@@ -380,7 +380,7 @@ export default function TrabajosPidenC1InglesPage() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Consejo:</strong> Prepárate para demostrar tu nivel en la entrevista. Muchas empresas incluyen una parte en inglés para verificar que el certificado refleja tu nivel real. Mantén tu inglés activo con <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">clases de conversación avanzada</a>.
+                  <strong>Consejo:</strong> Prepárate para demostrar tu nivel en la entrevista. Muchas empresas incluyen una parte en inglés para verificar que el certificado refleja tu nivel real. Mantén tu inglés activo con <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">clases de conversación avanzada</a>.
                 </p>
               </div>
             </section>
@@ -423,10 +423,10 @@ export default function TrabajosPidenC1InglesPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El C1 de inglés se ha convertido en un requisito estándar en los sectores profesionales más competitivos y mejor remunerados. Desde la consultoría hasta la tecnología, pasando por la banca, la educación y el sector legal, el <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">C1 Advanced de Cambridge</a> abre puertas que el B2 simplemente no puede abrir.
+                  El C1 de inglés se ha convertido en un requisito estándar en los sectores profesionales más competitivos y mejor remunerados. Desde la consultoría hasta la tecnología, pasando por la banca, la educación y el sector legal, el <a href="/examenes-cambridge/c1-advanced/" className="text-emerald-600 hover:underline font-medium">C1 Advanced de Cambridge</a> abre puertas que el B2 simplemente no puede abrir.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  La inversión en obtener el C1 se recupera rápidamente a través de mejores salarios, acceso a puestos de mayor responsabilidad y oportunidades de movilidad internacional. En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te preparamos para conseguir tu C1 con programas adaptados a profesionales en activo.
+                  La inversión en obtener el C1 se recupera rápidamente a través de mejores salarios, acceso a puestos de mayor responsabilidad y oportunidades de movilidad internacional. En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te preparamos para conseguir tu C1 con programas adaptados a profesionales en activo.
                 </p>
               </div>
             </section>
@@ -438,7 +438,7 @@ export default function TrabajosPidenC1InglesPage() {
                 Prepárate para el C1 Advanced con horarios compatibles con tu jornada laboral y una metodología enfocada en resultados profesionales.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -450,25 +450,25 @@ export default function TrabajosPidenC1InglesPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     C1 Advanced: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge C1 Advanced.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas adaptados a profesionales en activo.</p>
                 </a>
-                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Exámenes Cambridge: Guía General
                   </h3>
                   <p className="text-gray-600 text-sm">Comparativa de todos los niveles Cambridge.</p>
                 </a>
-                <a href="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/escala-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Escala Cambridge: Todos los Niveles
                   </h3>

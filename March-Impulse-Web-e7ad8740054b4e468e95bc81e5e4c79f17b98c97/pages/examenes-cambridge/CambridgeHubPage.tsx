@@ -316,16 +316,16 @@ export default function CambridgeHubPage() {
           <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
             <h3 className="font-bold text-zinc-900 mb-4 text-lg">¿Dónde preparar tu examen Cambridge?</h3>
             <p className="text-zinc-700 text-sm mb-4">
-              Nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-accent-blue hover:underline font-medium">La Vaguada</a>, es centro preparador oficial Cambridge. Bien comunicada desde <a href="/academia-ingles-plaza-castilla" className="text-accent-blue hover:underline font-medium">Plaza Castilla</a>, <a href="/academia-ingles-tetuan" className="text-accent-blue hover:underline font-medium">Tetuán</a> y <a href="/academia-ingles-cuatro-torres" className="text-accent-blue hover:underline font-medium">Cuatro Torres</a>.
+              Nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-accent-blue hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada/" className="text-accent-blue hover:underline font-medium">La Vaguada</a>, es centro preparador oficial Cambridge. Bien comunicada desde <a href="/academia-ingles-plaza-castilla/" className="text-accent-blue hover:underline font-medium">Plaza Castilla</a>, <a href="/academia-ingles-tetuan/" className="text-accent-blue hover:underline font-medium">Tetuán</a> y <a href="/academia-ingles-cuatro-torres/" className="text-accent-blue hover:underline font-medium">Cuatro Torres</a>.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="/cursos-ingles/adultos" className="text-accent-blue hover:underline text-sm">Cursos adultos</a>
+              <a href="/cursos-ingles/adultos/" className="text-accent-blue hover:underline text-sm">Cursos adultos</a>
               <span className="text-zinc-400">•</span>
-              <a href="/cursos-ingles/secundaria" className="text-accent-blue hover:underline text-sm">Cursos secundaria</a>
+              <a href="/cursos-ingles/secundaria/" className="text-accent-blue hover:underline text-sm">Cursos secundaria</a>
               <span className="text-zinc-400">•</span>
-              <a href="/cursos-ingles/particulares" className="text-accent-blue hover:underline text-sm">Clases particulares</a>
+              <a href="/cursos-ingles/particulares/" className="text-accent-blue hover:underline text-sm">Clases particulares</a>
               <span className="text-zinc-400">•</span>
-              <a href="/academias-ingles-madrid/por-barrios" className="text-accent-blue hover:underline text-sm">Ver todas las ubicaciones</a>
+              <a href="/academias-ingles-madrid/por-barrios/" className="text-accent-blue hover:underline text-sm">Ver todas las ubicaciones</a>
             </div>
           </div>
         </div>

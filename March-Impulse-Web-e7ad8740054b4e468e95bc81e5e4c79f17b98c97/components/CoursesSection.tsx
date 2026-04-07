@@ -83,7 +83,7 @@ export default function CoursesSection() {
                     En nuestra escuela de idiomas en Madrid, impartimos cursos de inglés para todos los niveles, desde principiante hasta avanzado (A1–C2), con especialización en preparación de exámenes Cambridge.
                 </p>
             </div>
-            <a href="/cursos-ingles/particulares" className="text-zinc-500 hover:text-accent-blue font-medium flex items-center gap-2 transition-colors">
+            <a href="/cursos-ingles/particulares/" className="text-zinc-500 hover:text-accent-blue font-medium flex items-center gap-2 transition-colors">
                 Clases Particulares <ArrowRight className="w-4 h-4" />
             </a>
         </div>

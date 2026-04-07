@@ -194,7 +194,7 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                El formato adaptativo de <a href="/linguaskill" className="text-blue-600 hover:underline">Linguaskill</a> tiene la ventaja de que no necesitas elegir nivel previamente. El propio examen determina tu nivel. Esto elimina el riesgo de inscribirte en un examen Cambridge de nivel inadecuado.
+                El formato adaptativo de <a href="/linguaskill/" className="text-blue-600 hover:underline">Linguaskill</a> tiene la ventaja de que no necesitas elegir nivel previamente. El propio examen determina tu nivel. Esto elimina el riesgo de inscribirte en un examen Cambridge de nivel inadecuado.
               </p>
             </section>
 
@@ -280,7 +280,7 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
                     <CheckCircle className="w-5 h-5 text-blue-600" />
                     En oposiciones
                   </h3>
-                  <p className="text-gray-700">Para <a href="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline">oposiciones en España</a>, ambos son generalmente aceptados, pero conviene verificar las bases específicas de cada convocatoria, ya que algunas mencionan certificaciones concretas.</p>
+                  <p className="text-gray-700">Para <a href="/academias-ingles-madrid/certificaciones/" className="text-blue-600 hover:underline">oposiciones en España</a>, ambos son generalmente aceptados, pero conviene verificar las bases específicas de cada convocatoria, ya que algunas mencionan certificaciones concretas.</p>
                 </div>
               </div>
 
@@ -325,7 +325,7 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En <a href="/examenes-cambridge" className="text-blue-600 hover:underline">Impulse English Academy</a> preparamos para ambos exámenes y te asesoramos sobre cuál es la mejor opción según tu perfil, plazo y objetivos específicos.
+                En <a href="/examenes-cambridge/" className="text-blue-600 hover:underline">Impulse English Academy</a> preparamos para ambos exámenes y te asesoramos sobre cuál es la mejor opción según tu perfil, plazo y objetivos específicos.
               </p>
             </section>
 
@@ -367,10 +367,10 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
 
               <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Tanto <a href="/examenes-cambridge" className="text-blue-600 hover:underline font-medium">Cambridge</a> como <a href="/linguaskill" className="text-blue-600 hover:underline font-medium">Linguaskill</a> son excelentes opciones para certificar tu nivel de inglés. Cambridge destaca por su reconocimiento universal y validez permanente; Linguaskill por su flexibilidad y rapidez. Ambos están respaldados por Cambridge Assessment English.
+                  Tanto <a href="/examenes-cambridge/" className="text-blue-600 hover:underline font-medium">Cambridge</a> como <a href="/linguaskill/" className="text-blue-600 hover:underline font-medium">Linguaskill</a> son excelentes opciones para certificar tu nivel de inglés. Cambridge destaca por su reconocimiento universal y validez permanente; Linguaskill por su flexibilidad y rapidez. Ambos están respaldados por Cambridge Assessment English.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> somos centro preparador de ambos exámenes y podemos orientarte sobre la mejor opción para tu situación concreta. Contacta con nosotros para una evaluación personalizada.
+                  En <a href="/academias-ingles-madrid/certificaciones/" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> somos centro preparador de ambos exámenes y podemos orientarte sobre la mejor opción para tu situación concreta. Contacta con nosotros para una evaluación personalizada.
                 </p>
               </div>
             </section>
@@ -382,7 +382,7 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
                 Te ayudamos a decidir y te preparamos para el examen que mejor se adapte a tus necesidades y plazos.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
                 Pide asesoramiento gratis
@@ -394,13 +394,13 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Exámenes Cambridge: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todos los niveles de Cambridge: B1, B2, C1 y C2 explicados.</p>
                 </a>
-                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Linguaskill: Todo lo que Debes Saber
                   </h3>

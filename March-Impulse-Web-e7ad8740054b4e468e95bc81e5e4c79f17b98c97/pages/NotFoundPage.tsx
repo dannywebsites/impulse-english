@@ -28,7 +28,7 @@ export default function NotFoundPage() {
               Volver al Inicio
             </a>
             <a
-              href="/contacto"
+              href="/contacto/"
               className="border-2 border-accent-blue text-accent-blue font-display font-semibold py-3 px-8 rounded-lg hover:bg-accent-blue hover:text-white transition-all duration-300"
             >
               Contactar

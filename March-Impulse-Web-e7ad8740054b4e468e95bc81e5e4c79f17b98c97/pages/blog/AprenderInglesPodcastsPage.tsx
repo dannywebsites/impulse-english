@@ -332,7 +332,7 @@ export default function AprenderInglesPodcastsPage() {
                 En Impulse English trabajamos la comprensión oral con materiales auténticos adaptados a tu nivel, desde el primer día.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Consultar nuestros cursos
@@ -344,15 +344,15 @@ export default function AprenderInglesPodcastsPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/blog/mejorar-listening-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/mejorar-listening-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Cómo Mejorar el Listening en Inglés</h3>
                   <p className="text-gray-600 text-sm">10 técnicas efectivas por nivel para mejorar tu comprensión oral.</p>
                 </a>
-                <a href="/blog/mejorar-speaking-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/mejorar-speaking-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Cómo Mejorar el Speaking en Inglés</h3>
                   <p className="text-gray-600 text-sm">Técnicas para ganar fluidez y confianza al hablar inglés.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Cursos de Inglés para Adultos</h3>
                   <p className="text-gray-600 text-sm">Programas con listening integrado y materiales auténticos.</p>
                 </a>

@@ -107,7 +107,7 @@ export default function ValePenaC1EspanaPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              España se sitúa en el puesto 33 del ranking mundial de competencia en inglés según el EF English Proficiency Index, con un nivel "moderado". En este contexto, tener un <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">C1 Advanced de Cambridge</a> te coloca en un percentil muy alto respecto a la población general. Pero, ¿merece realmente la pena la inversión de tiempo y dinero? Analizamos los beneficios reales con datos concretos del mercado español.
+              España se sitúa en el puesto 33 del ranking mundial de competencia en inglés según el EF English Proficiency Index, con un nivel "moderado". En este contexto, tener un <a href="/examenes-cambridge/c1-advanced/" className="text-emerald-600 hover:underline font-medium">C1 Advanced de Cambridge</a> te coloca en un percentil muy alto respecto a la población general. Pero, ¿merece realmente la pena la inversión de tiempo y dinero? Analizamos los beneficios reales con datos concretos del mercado español.
             </p>
 
             {/* Section 1 */}
@@ -394,7 +394,7 @@ export default function ValePenaC1EspanaPage() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Conclusión honesta:</strong> Para el 80% de los profesionales españoles con formación universitaria, el C1 representa una de las mejores inversiones posibles en su carrera. Para el 20% restante, el B2 puede ser suficiente. Si tienes dudas, <a href="/blog/trabajos-piden-c1-ingles" className="text-emerald-600 hover:underline">revisa qué trabajos piden C1</a> y compara con tus aspiraciones.
+                  <strong>Conclusión honesta:</strong> Para el 80% de los profesionales españoles con formación universitaria, el C1 representa una de las mejores inversiones posibles en su carrera. Para el 20% restante, el B2 puede ser suficiente. Si tienes dudas, <a href="/blog/trabajos-piden-c1-ingles/" className="text-emerald-600 hover:underline">revisa qué trabajos piden C1</a> y compara con tus aspiraciones.
                 </p>
               </div>
             </section>
@@ -437,10 +437,10 @@ export default function ValePenaC1EspanaPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  En el contexto español actual, el <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">C1 Advanced de Cambridge</a> es una inversión excepcional para la gran mayoría de profesionales y estudiantes. Con solo un 5% de la población con este nivel, representa un factor diferenciador extraordinario que se traduce en mejores salarios, acceso a puestos de calidad y ventajas en oposiciones.
+                  En el contexto español actual, el <a href="/examenes-cambridge/c1-advanced/" className="text-emerald-600 hover:underline font-medium">C1 Advanced de Cambridge</a> es una inversión excepcional para la gran mayoría de profesionales y estudiantes. Con solo un 5% de la población con este nivel, representa un factor diferenciador extraordinario que se traduce en mejores salarios, acceso a puestos de calidad y ventajas en oposiciones.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> llevamos años preparando profesionales españoles para obtener su C1 con programas adaptados a agendas laborales exigentes. Si quieres saber si el C1 merece la pena para tu caso concreto, <a href="/contacto" className="text-emerald-600 hover:underline font-medium">solicita una consulta gratuita</a> y te orientaremos con total honestidad.
+                  En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> llevamos años preparando profesionales españoles para obtener su C1 con programas adaptados a agendas laborales exigentes. Si quieres saber si el C1 merece la pena para tu caso concreto, <a href="/contacto/" className="text-emerald-600 hover:underline font-medium">solicita una consulta gratuita</a> y te orientaremos con total honestidad.
                 </p>
               </div>
             </section>
@@ -452,7 +452,7 @@ export default function ValePenaC1EspanaPage() {
                 El C1 es la inversión con mayor retorno que puedes hacer en tu carrera. Empieza hoy tu preparación con profesores especializados.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -464,25 +464,25 @@ export default function ValePenaC1EspanaPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     C1 Advanced: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge C1 Advanced.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas adaptados a profesionales en activo.</p>
                 </a>
-                <a href="/blog/trabajos-piden-c1-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/trabajos-piden-c1-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Trabajos que Piden C1 de Inglés
                   </h3>
                   <p className="text-gray-600 text-sm">Sectores y puestos que exigen nivel C1.</p>
                 </a>
-                <a href="/blog/diferencia-b2-c1" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/diferencia-b2-c1/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Diferencia entre B2 y C1
                   </h3>

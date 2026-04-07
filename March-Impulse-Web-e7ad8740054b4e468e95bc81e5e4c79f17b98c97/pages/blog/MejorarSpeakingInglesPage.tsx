@@ -296,7 +296,7 @@ export default function MejorarSpeakingInglesPage() {
                 El feedback inmediato de un profesor experto acelera el progreso de speaking más que cualquier práctica en solitario.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reservar clase de speaking
@@ -308,15 +308,15 @@ export default function MejorarSpeakingInglesPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Nuestra Metodología</h3>
                   <p className="text-gray-600 text-sm">Speaking como centro de nuestra metodología de enseñanza.</p>
                 </a>
-                <a href="/blog/perder-miedo-hablar-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/perder-miedo-hablar-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Perder el Miedo a Hablar Inglés</h3>
                   <p className="text-gray-600 text-sm">7 estrategias para superar la ansiedad lingüística.</p>
                 </a>
-                <a href="/blog/mejorar-listening-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/mejorar-listening-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Mejorar el Listening en Inglés</h3>
                   <p className="text-gray-600 text-sm">10 técnicas para mejorar la comprensión oral.</p>
                 </a>

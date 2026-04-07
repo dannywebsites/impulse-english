@@ -186,7 +186,7 @@ export default function EntiendoInglesNoHabloPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                La <a href="/blog/verguenza-hablar-ingles" className="text-emerald-600 hover:underline">vergüenza al hablar inglés</a> es extremadamente común y tiene solución. El primer paso es entender que los errores son parte natural del proceso y que comunicar imperfectamente es infinitamente mejor que no comunicar.
+                La <a href="/blog/verguenza-hablar-ingles/" className="text-emerald-600 hover:underline">vergüenza al hablar inglés</a> es extremadamente común y tiene solución. El primer paso es entender que los errores son parte natural del proceso y que comunicar imperfectamente es infinitamente mejor que no comunicar.
               </p>
             </section>
 
@@ -323,7 +323,7 @@ export default function EntiendoInglesNoHabloPage() {
               </div>
 
               <p className="text-gray-700 leading-relaxed">
-                En <a href="/metodologia" className="text-emerald-600 hover:underline">Impulse English Academy</a> utilizamos una <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">metodología comunicativa</a> donde el speaking representa el 70% de cada clase. Nuestros profesores altamente cualificados crean un entorno de confianza donde los errores son bienvenidos como parte del aprendizaje.
+                En <a href="/metodologia/" className="text-emerald-600 hover:underline">Impulse English Academy</a> utilizamos una <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">metodología comunicativa</a> donde el speaking representa el 70% de cada clase. Nuestros profesores altamente cualificados crean un entorno de confianza donde los errores son bienvenidos como parte del aprendizaje.
               </p>
             </section>
 
@@ -368,7 +368,7 @@ export default function EntiendoInglesNoHabloPage() {
                   Entender inglés sin poder hablarlo no es un defecto: es una fase normal del aprendizaje. Tu comprensión es una base sólida sobre la que construir tu producción oral. Con las estrategias correctas y práctica constante, puedes activar todo ese conocimiento pasivo y empezar a hablar con confianza.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si sientes que necesitas apoyo profesional, en <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te ayudamos a romper el bloqueo con <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">clases diseñadas para hablar desde el primer día</a>. <a href="/contacto" className="text-emerald-600 hover:underline font-medium">Contacta con nosotros</a> para una clase de prueba gratuita.
+                  Si sientes que necesitas apoyo profesional, en <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te ayudamos a romper el bloqueo con <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">clases diseñadas para hablar desde el primer día</a>. <a href="/contacto/" className="text-emerald-600 hover:underline font-medium">Contacta con nosotros</a> para una clase de prueba gratuita.
                 </p>
               </div>
             </section>
@@ -380,7 +380,7 @@ export default function EntiendoInglesNoHabloPage() {
                 En Impulse English Academy te ayudamos a activar tu inglés con clases 100% comunicativas donde hablarás desde el primer minuto.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reservar clase de prueba
@@ -392,19 +392,19 @@ export default function EntiendoInglesNoHabloPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo enseñamos inglés de forma comunicativa y efectiva.</p>
                 </a>
-                <a href="/blog/mejorar-speaking-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/mejorar-speaking-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Mejorar Speaking en Inglés
                   </h3>
                   <p className="text-gray-600 text-sm">Técnicas y ejercicios para mejorar tu producción oral.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos para Adultos
                   </h3>

@@ -120,7 +120,7 @@ export default function CentrosLinguaskillPage() {
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
           <a
-              href="/linguaskill/precios-fechas"
+              href="/linguaskill/precios-fechas/"
             className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
@@ -307,7 +307,7 @@ export default function CentrosLinguaskillPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Si buscas preparación intensiva antes del examen, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-teal-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-teal-600 hover:underline font-medium">La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos" className="text-teal-600 hover:underline font-medium">cursos específicos para adultos</a> que combinan metodología probada con simulacros del formato oficial <a href="/linguaskill" className="text-teal-600 hover:underline font-medium">Linguaskill</a>. También preparamos otros <a href="/examenes-cambridge" className="text-teal-600 hover:underline font-medium">exámenes Cambridge</a> como <a href="/examenes-cambridge/b2-first" className="text-teal-600 hover:underline font-medium">B2 First</a>.
+                Si buscas preparación intensiva antes del examen, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-teal-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada/" className="text-teal-600 hover:underline font-medium">La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos/" className="text-teal-600 hover:underline font-medium">cursos específicos para adultos</a> que combinan metodología probada con simulacros del formato oficial <a href="/linguaskill/" className="text-teal-600 hover:underline font-medium">Linguaskill</a>. También preparamos otros <a href="/examenes-cambridge/" className="text-teal-600 hover:underline font-medium">exámenes Cambridge</a> como <a href="/examenes-cambridge/b2-first/" className="text-teal-600 hover:underline font-medium">B2 First</a>.
               </p>
             </section>
 
@@ -342,7 +342,7 @@ export default function CentrosLinguaskillPage() {
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a
-              href="/linguaskill/precios-fechas"
+              href="/linguaskill/precios-fechas/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-teal-600 text-sm font-medium">Hub Principal</span>
@@ -350,7 +350,7 @@ export default function CentrosLinguaskillPage() {
                 <p className="text-zinc-600 text-sm mt-2">Guía completa de precios y sedes en España.</p>
               </a>
               <a
-              href="/linguaskill/precios-fechas"
+              href="/linguaskill/precios-fechas/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-teal-600 text-sm font-medium">Precios</span>
@@ -358,7 +358,7 @@ export default function CentrosLinguaskillPage() {
                 <p className="text-zinc-600 text-sm mt-2">Tarifas actualizadas y proceso de inscripción.</p>
               </a>
               <a
-              href="/linguaskill"
+              href="/linguaskill/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-teal-600 text-sm font-medium">Online</span>

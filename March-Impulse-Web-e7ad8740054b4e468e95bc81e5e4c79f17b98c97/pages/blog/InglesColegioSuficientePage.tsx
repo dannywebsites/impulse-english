@@ -314,7 +314,7 @@ export default function InglesColegioSuficientePage() {
                 Metodología que genera resultados medibles. Grupos reducidos, preparación Cambridge y profesores especializados.
               </p>
               <a
-              href="/cursos-ingles/primaria"
+              href="/cursos-ingles/primaria/"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Ver cursos de primaria
@@ -326,19 +326,19 @@ export default function InglesColegioSuficientePage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <a href="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/primaria/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Primaria
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés para niños de 6 a 12 años en Madrid.</p>
                 </a>
-                <a href="/cursos-ingles/secundaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/secundaria/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Secundaria
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés para adolescentes de 12 a 18 años.</p>
                 </a>
-                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/infantil/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>

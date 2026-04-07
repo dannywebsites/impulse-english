@@ -243,10 +243,10 @@ export default function ParticularesPage() {
             {/* Location and Course Links */}
             <div className="mt-6 p-4 bg-orange-50 rounded-xl border border-orange-100">
               <p className="text-zinc-700 text-sm mb-3">
-                <strong>¿Dónde estamos?</strong> Clases presenciales en nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-orange-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-orange-600 hover:underline font-medium">La Vaguada</a>. También accesible desde <a href="/academia-ingles-cuatro-torres" className="text-orange-600 hover:underline font-medium">Cuatro Torres</a> y <a href="/academia-ingles-plaza-castilla" className="text-orange-600 hover:underline font-medium">Plaza Castilla</a>.
+                <strong>¿Dónde estamos?</strong> Clases presenciales en nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-orange-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada/" className="text-orange-600 hover:underline font-medium">La Vaguada</a>. También accesible desde <a href="/academia-ingles-cuatro-torres/" className="text-orange-600 hover:underline font-medium">Cuatro Torres</a> y <a href="/academia-ingles-plaza-castilla/" className="text-orange-600 hover:underline font-medium">Plaza Castilla</a>.
               </p>
               <p className="text-zinc-600 text-sm">
-                Preparamos <a href="/examenes-cambridge" className="text-orange-600 hover:underline font-medium">exámenes Cambridge</a> (<a href="/examenes-cambridge/b2-first" className="text-orange-600 hover:underline font-medium">B2 First</a>, <a href="/examenes-cambridge/c1-advanced" className="text-orange-600 hover:underline font-medium">C1 Advanced</a>) y <a href="/linguaskill" className="text-orange-600 hover:underline font-medium">Linguaskill</a>. Si prefieres grupos reducidos, consulta nuestros <a href="/cursos-ingles/adultos" className="text-orange-600 hover:underline font-medium">cursos para adultos</a>.
+                Preparamos <a href="/examenes-cambridge/" className="text-orange-600 hover:underline font-medium">exámenes Cambridge</a> (<a href="/examenes-cambridge/b2-first/" className="text-orange-600 hover:underline font-medium">B2 First</a>, <a href="/examenes-cambridge/c1-advanced/" className="text-orange-600 hover:underline font-medium">C1 Advanced</a>) y <a href="/linguaskill/" className="text-orange-600 hover:underline font-medium">Linguaskill</a>. Si prefieres grupos reducidos, consulta nuestros <a href="/cursos-ingles/adultos/" className="text-orange-600 hover:underline font-medium">cursos para adultos</a>.
               </p>
             </div>
 
@@ -386,7 +386,7 @@ export default function ParticularesPage() {
                 Contactar por WhatsApp
               </a>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Más formas de contacto

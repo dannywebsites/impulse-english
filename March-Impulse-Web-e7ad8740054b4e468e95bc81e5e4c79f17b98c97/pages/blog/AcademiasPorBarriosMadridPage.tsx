@@ -191,9 +191,9 @@ export default function AcademiasPorBarriosMadridPage() {
             <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-zinc-600 leading-relaxed">
                 Elegir academia de inglés cerca de casa o del trabajo es fundamental para mantener la constancia.
-                Madrid tiene más de 500 <a href="/academias-ingles-madrid" className="text-violet-600 hover:underline">academias de inglés</a> repartidas por sus 21 distritos, con diferencias
+                Madrid tiene más de 500 <a href="/academias-ingles-madrid/" className="text-violet-600 hover:underline">academias de inglés</a> repartidas por sus 21 distritos, con diferencias
                 significativas de precio según la zona. Esta guía te ayuda a encontrar las mejores opciones
-                en tu barrio y a entender qué esperar en cada zona de la capital, una de las ciudades con mejor oferta educativa según la <a href="https://www.comunidad.madrid/servicios/educacion" target="_blank" rel="noopener noreferrer" className="text-violet-600 hover:underline">Comunidad de Madrid</a>. Si buscas opciones específicas para <a href="/academias-ingles-madrid/ninos" className="text-violet-600 hover:underline">niños</a> o <a href="/academias-ingles-madrid/adultos" className="text-violet-600 hover:underline">adultos</a>, consulta nuestras guías especializadas.
+                en tu barrio y a entender qué esperar en cada zona de la capital, una de las ciudades con mejor oferta educativa según la <a href="https://www.comunidad.madrid/servicios/educacion" target="_blank" rel="noopener noreferrer" className="text-violet-600 hover:underline">Comunidad de Madrid</a>. Si buscas opciones específicas para <a href="/academias-ingles-madrid/ninos/" className="text-violet-600 hover:underline">niños</a> o <a href="/academias-ingles-madrid/adultos/" className="text-violet-600 hover:underline">adultos</a>, consulta nuestras guías especializadas.
               </p>
             </div>
 
@@ -232,7 +232,7 @@ export default function AcademiasPorBarriosMadridPage() {
                 </div>
 
                 <a
-              href="/contacto"
+              href="/contacto/"
                   className="inline-block bg-white text-violet-600 font-bold py-3 px-8 rounded-lg hover:bg-zinc-100 transition-colors"
                 >
                   Solicitar información
@@ -427,7 +427,7 @@ export default function AcademiasPorBarriosMadridPage() {
                 <p className="text-white/90 mb-6">
                   La ubicación de tu academia importa para mantener la constancia, pero no debería ser el único
                   factor. Un buen Metro puede conectarte con academias de mejor calidad-precio en otros barrios.
-                  Y las clases online eliminan completamente la barrera geográfica. Si tu objetivo es obtener una <a href="/academias-ingles-madrid/certificaciones" className="text-white underline hover:text-violet-200">certificación oficial</a>, asegúrate de elegir una academia con experiencia en preparación de <a href="/examenes-cambridge" className="text-white underline hover:text-violet-200">exámenes Cambridge</a>.
+                  Y las clases online eliminan completamente la barrera geográfica. Si tu objetivo es obtener una <a href="/academias-ingles-madrid/certificaciones/" className="text-white underline hover:text-violet-200">certificación oficial</a>, asegúrate de elegir una academia con experiencia en preparación de <a href="/examenes-cambridge/" className="text-white underline hover:text-violet-200">exámenes Cambridge</a>.
                 </p>
                 <p className="text-white/90">
                   En <strong>Impulse English Academy</strong> combinamos precio competitivo,
@@ -449,7 +449,7 @@ export default function AcademiasPorBarriosMadridPage() {
                     </p>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-violet-500 hover:bg-violet-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Contactar
@@ -466,35 +466,35 @@ export default function AcademiasPorBarriosMadridPage() {
                 Encuentra información específica de nuestra academia según tu zona de Madrid:
               </p>
               <div className="grid md:grid-cols-4 gap-3">
-                <a href="/academia-ingles-barrio-del-pilar" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                <a href="/academia-ingles-barrio-del-pilar/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Barrio del Pilar</h4>
                 </a>
-                <a href="/academia-ingles-la-vaguada" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                <a href="/academia-ingles-la-vaguada/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">La Vaguada</h4>
                 </a>
-                <a href="/academia-ingles-penagrande" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                <a href="/academia-ingles-penagrande/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Peñagrande</h4>
                 </a>
-                <a href="/academia-ingles-la-ventilla" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                <a href="/academia-ingles-la-ventilla/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">La Ventilla</h4>
                 </a>
-                <a href="/academia-ingles-la-paz" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                <a href="/academia-ingles-la-paz/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">La Paz</h4>
                 </a>
-                <a href="/academia-ingles-plaza-castilla" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                <a href="/academia-ingles-plaza-castilla/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Plaza Castilla</h4>
                 </a>
-                <a href="/academia-ingles-tetuan" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                <a href="/academia-ingles-tetuan/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Tetuán</h4>
                 </a>
-                <a href="/academia-ingles-cuatro-torres" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                <a href="/academia-ingles-cuatro-torres/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Cuatro Torres</h4>
                 </a>
@@ -505,19 +505,19 @@ export default function AcademiasPorBarriosMadridPage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <a href="/academias-ingles-madrid" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/academias-ingles-madrid/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-violet-600">PRECIOS</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Academias Baratas de Inglés en Madrid</h4>
                 </a>
-                <a href="/academias-ingles-madrid/certificaciones" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/academias-ingles-madrid/certificaciones/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-violet-600">CERTIFICACIONES</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Certificaciones de Inglés en Madrid</h4>
                 </a>
-                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-violet-600">CAMBRIDGE</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Exámenes Cambridge</h4>
                 </a>
-                <a href="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/linguaskill/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-violet-600">LINGUASKILL</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa de Linguaskill</h4>
                 </a>

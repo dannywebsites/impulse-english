@@ -706,7 +706,7 @@ export default function LinguaskillPreciosSedesPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                La inversión total recomendada para certificación B2 mediante <a href="/linguaskill" className="text-green-600 hover:underline font-medium">Linguaskill</a>, partiendo de nivel B1, ronda 400-600 euros incluyendo: preparación general (150-300 euros en <a href="/cursos-ingles/adultos" className="text-green-600 hover:underline font-medium">cursos de inglés para adultos</a> o materiales durante 3-6 meses), materiales específicos Linguaskill (30-80 euros), preparación específica intensiva opcional con <a href="/cursos-ingles/particulares" className="text-green-600 hover:underline font-medium">clases particulares</a> (100-200 euros), y precio del examen (130 euros). Comparado con inversión necesaria para <a href="/examenes-cambridge/b2-first" className="text-green-600 hover:underline font-medium">B2 First</a> tradicional (curso preparación 300-500 euros + examen 215 euros = 515-715 euros totales), Linguaskill ofrece ahorro marginal pero sobre todo ventajas de flexibilidad temporal y rapidez de resultados. La decisión final debe considerar no solo precio sino también requisitos específicos de tu contexto, plazos disponibles, y preferencias personales sobre formato presencial tradicional versus digital adaptativo.
+                La inversión total recomendada para certificación B2 mediante <a href="/linguaskill/" className="text-green-600 hover:underline font-medium">Linguaskill</a>, partiendo de nivel B1, ronda 400-600 euros incluyendo: preparación general (150-300 euros en <a href="/cursos-ingles/adultos/" className="text-green-600 hover:underline font-medium">cursos de inglés para adultos</a> o materiales durante 3-6 meses), materiales específicos Linguaskill (30-80 euros), preparación específica intensiva opcional con <a href="/cursos-ingles/particulares/" className="text-green-600 hover:underline font-medium">clases particulares</a> (100-200 euros), y precio del examen (130 euros). Comparado con inversión necesaria para <a href="/examenes-cambridge/b2-first/" className="text-green-600 hover:underline font-medium">B2 First</a> tradicional (curso preparación 300-500 euros + examen 215 euros = 515-715 euros totales), Linguaskill ofrece ahorro marginal pero sobre todo ventajas de flexibilidad temporal y rapidez de resultados. La decisión final debe considerar no solo precio sino también requisitos específicos de tu contexto, plazos disponibles, y preferencias personales sobre formato presencial tradicional versus digital adaptativo.
               </p>
             </section>
 
@@ -846,7 +846,7 @@ export default function LinguaskillPreciosSedesPage() {
                     Consultar por WhatsApp
                   </a>
                   <a
-              href="/linguaskill"
+              href="/linguaskill/"
                     className="bg-accent-blue hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-colors"
                   >
                     Ver curso Linguaskill
@@ -875,7 +875,7 @@ export default function LinguaskillPreciosSedesPage() {
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/linguaskill" className="group">
+              <a href="/linguaskill/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-green-600 text-sm font-medium">Linguaskill</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-green-600 transition-colors">
@@ -883,7 +883,7 @@ export default function LinguaskillPreciosSedesPage() {
                   </h3>
                 </div>
               </a>
-              <a href="/examenes-cambridge" className="group">
+              <a href="/examenes-cambridge/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Cambridge</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -891,7 +891,7 @@ export default function LinguaskillPreciosSedesPage() {
                   </h3>
                 </div>
               </a>
-              <a href="/examenes-cambridge/fechas-precios" className="group">
+              <a href="/examenes-cambridge/fechas-precios/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-purple-600 text-sm font-medium">Calendario</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-purple-600 transition-colors">

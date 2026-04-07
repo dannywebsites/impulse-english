@@ -27,7 +27,7 @@ export default function WelcomeSection() {
 
           <div className="mt-10 flex flex-col sm:flex-row items-start gap-4">
             <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
               className="inline-flex items-center gap-2 bg-accent-blue text-white font-semibold py-4 px-8 rounded-lg hover:bg-blue-700 transition-colors text-lg"
             >
               Haz tu prueba de nivel
@@ -38,7 +38,7 @@ export default function WelcomeSection() {
                 Descubre tu punto de partida
               </p>
               <a
-                href="/metodologia"
+                href="/metodologia/"
                 className="inline-flex items-center gap-1 text-accent-blue hover:text-blue-700 font-medium text-sm mt-2 transition-colors"
               >
                 Conoce nuestra metodología

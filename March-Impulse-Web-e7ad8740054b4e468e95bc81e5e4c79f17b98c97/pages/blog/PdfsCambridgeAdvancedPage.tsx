@@ -351,9 +351,9 @@ export default function PdfsCambridgeAdvancedPage() {
 
               <div className="bg-zinc-100 rounded-xl p-6">
                 <p className="text-zinc-700">
-                  En <a href="/academia-ingles-barrio-del-pilar" className="text-amber-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-amber-600 hover:underline font-medium">junto a La Vaguada</a>, complementamos estos recursos PDF con clases guiadas,
+                  En <a href="/academia-ingles-barrio-del-pilar/" className="text-amber-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-amber-600 hover:underline font-medium">junto a La Vaguada</a>, complementamos estos recursos PDF con clases guiadas,
                   corrección personalizada de Writing y práctica de Speaking con feedback en tiempo real.
-                  Ofrecemos <a href="/cursos-ingles/adultos" className="text-amber-600 hover:underline font-medium">cursos de inglés para adultos</a> y preparación para <a href="/examenes-cambridge" className="text-amber-600 hover:underline font-medium">exámenes Cambridge</a> desde <strong>79€/mes</strong>.
+                  Ofrecemos <a href="/cursos-ingles/adultos/" className="text-amber-600 hover:underline font-medium">cursos de inglés para adultos</a> y preparación para <a href="/examenes-cambridge/" className="text-amber-600 hover:underline font-medium">exámenes Cambridge</a> desde <strong>79€/mes</strong>.
                 </p>
               </div>
             </section>
@@ -394,11 +394,11 @@ export default function PdfsCambridgeAdvancedPage() {
                 <p className="text-white/90 mb-6">
                   Los recursos PDF oficiales de Cambridge son tu punto de partida esencial para preparar el C1 Advanced.
                   El Handbook for Teachers y los Sample Papers te dan toda la información necesaria sobre el formato
-                  y criterios de evaluación. Complementa estos materiales gratuitos con práctica guiada mediante <a href="/cursos-ingles/particulares" className="text-white hover:underline font-semibold">clases particulares</a> para maximizar
-                  tus posibilidades de éxito en el <a href="/examenes-cambridge" className="text-white hover:underline font-semibold">examen Cambridge</a>.
+                  y criterios de evaluación. Complementa estos materiales gratuitos con práctica guiada mediante <a href="/cursos-ingles/particulares/" className="text-white hover:underline font-semibold">clases particulares</a> para maximizar
+                  tus posibilidades de éxito en el <a href="/examenes-cambridge/" className="text-white hover:underline font-semibold">examen Cambridge</a>.
                 </p>
                 <p className="text-white/90">
-                  En <a href="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-semibold">nuestra academia</a> integramos estos recursos en nuestros cursos de
+                  En <a href="/academia-ingles-barrio-del-pilar/" className="text-white hover:underline font-semibold">nuestra academia</a> integramos estos recursos en nuestros cursos de
                   preparación por solo <strong>79€/mes</strong>, con profesores especializados en exámenes Cambridge.
                 </p>
               </div>
@@ -417,7 +417,7 @@ export default function PdfsCambridgeAdvancedPage() {
                     </p>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Solicitar información
@@ -431,11 +431,11 @@ export default function PdfsCambridgeAdvancedPage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <a href="/examenes-cambridge/c1-advanced" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-amber-600">C1 ADVANCED</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Examen Cambridge C1 Advanced: Guía Completa</h4>
                 </a>
-                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-amber-600">PUNTUACIÓN</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Escala Cambridge Explicada: Niveles y Grades</h4>
                 </a>

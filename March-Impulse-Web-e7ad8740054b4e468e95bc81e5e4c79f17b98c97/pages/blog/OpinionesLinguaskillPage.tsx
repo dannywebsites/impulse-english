@@ -112,7 +112,7 @@ export default function OpinionesLinguaskillPage() {
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
           <a
-              href="/linguaskill"
+              href="/linguaskill/"
             className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
@@ -343,7 +343,7 @@ export default function OpinionesLinguaskillPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Para maximizar resultados, familiarízate con el formato mediante simulacros, practica Speaking con grabación y prioriza claridad sobre complejidad en Writing. Si buscas preparación especializada con metodología probada, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-amber-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-amber-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos específicos que optimizan tu rendimiento en cada módulo del <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">Linguaskill</a>. También preparamos otros <a href="/examenes-cambridge" className="text-amber-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos" className="text-amber-600 hover:underline font-medium">cursos de inglés para adultos</a>.
+                Para maximizar resultados, familiarízate con el formato mediante simulacros, practica Speaking con grabación y prioriza claridad sobre complejidad en Writing. Si buscas preparación especializada con metodología probada, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-amber-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-amber-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos específicos que optimizan tu rendimiento en cada módulo del <a href="/linguaskill/" className="text-amber-600 hover:underline font-medium">Linguaskill</a>. También preparamos otros <a href="/examenes-cambridge/" className="text-amber-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos/" className="text-amber-600 hover:underline font-medium">cursos de inglés para adultos</a>.
               </p>
             </section>
 
@@ -378,7 +378,7 @@ export default function OpinionesLinguaskillPage() {
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a
-              href="/linguaskill"
+              href="/linguaskill/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-amber-600 text-sm font-medium">Hub Principal</span>
@@ -386,7 +386,7 @@ export default function OpinionesLinguaskillPage() {
                 <p className="text-zinc-600 text-sm mt-2">Todo sobre estructura, ejemplos y preparación.</p>
               </a>
               <a
-              href="/linguaskill/ejemplo-examen"
+              href="/linguaskill/ejemplo-examen/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-amber-600 text-sm font-medium">Formato</span>
@@ -394,7 +394,7 @@ export default function OpinionesLinguaskillPage() {
                 <p className="text-zinc-600 text-sm mt-2">Formato y estructura del test con ejemplos.</p>
               </a>
               <a
-              href="/linguaskill"
+              href="/linguaskill/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-amber-600 text-sm font-medium">Comparativa</span>

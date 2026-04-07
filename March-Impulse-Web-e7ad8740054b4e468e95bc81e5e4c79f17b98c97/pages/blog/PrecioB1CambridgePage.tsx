@@ -115,7 +115,7 @@ export default function PrecioB1CambridgePage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Si estás pensando en certificar tu nivel de inglés con el <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline">B1 Preliminary de Cambridge</a>, una de las primeras preguntas que surge es: <strong>¿cuánto cuesta?</strong> En este artículo desglosamos todos los costes asociados al examen, desde la tasa de inscripción hasta los materiales de preparación, para que puedas planificar tu presupuesto sin sorpresas.
+              Si estás pensando en certificar tu nivel de inglés con el <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline">B1 Preliminary de Cambridge</a>, una de las primeras preguntas que surge es: <strong>¿cuánto cuesta?</strong> En este artículo desglosamos todos los costes asociados al examen, desde la tasa de inscripción hasta los materiales de preparación, para que puedas planificar tu presupuesto sin sorpresas.
             </p>
 
             {/* Section 1 */}
@@ -250,7 +250,7 @@ export default function PrecioB1CambridgePage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Madrid cuenta con múltiples centros examinadores autorizados por Cambridge. El proceso de <a href="/blog/registro-cambridge" className="text-emerald-600 hover:underline">inscripción</a> es sencillo y se puede completar en pocos pasos:
+                Madrid cuenta con múltiples centros examinadores autorizados por Cambridge. El proceso de <a href="/blog/registro-cambridge/" className="text-emerald-600 hover:underline">inscripción</a> es sencillo y se puede completar en pocos pasos:
               </p>
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-6 mb-6">
@@ -278,7 +278,7 @@ export default function PrecioB1CambridgePage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Consulta las <a href="/examenes-cambridge" className="text-emerald-600 hover:underline">fechas y precios actualizados</a> de los exámenes Cambridge en nuestra sección dedicada. Los centros más populares en Madrid suelen llenar plazas rápidamente, especialmente en convocatorias de junio y diciembre.
+                Consulta las <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline">fechas y precios actualizados</a> de los exámenes Cambridge en nuestra sección dedicada. Los centros más populares en Madrid suelen llenar plazas rápidamente, especialmente en convocatorias de junio y diciembre.
               </p>
             </section>
 
@@ -364,10 +364,10 @@ export default function PrecioB1CambridgePage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">examen B1 Cambridge</a> tiene un precio de entre 115€ y 140€, con costes adicionales opcionales de preparación. Comparado con otros exámenes de inglés con validez temporal, el B1 Preliminary representa la opción más rentable a largo plazo.
+                  El <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline font-medium">examen B1 Cambridge</a> tiene un precio de entre 115€ y 140€, con costes adicionales opcionales de preparación. Comparado con otros exámenes de inglés con validez temporal, el B1 Preliminary representa la opción más rentable a largo plazo.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos cursos preparatorios que maximizan tus probabilidades de aprobar a la primera, optimizando así tu inversión total. Consulta nuestros <a href="/blog/registro-cambridge" className="text-emerald-600 hover:underline font-medium">pasos de registro</a> para empezar.
+                  En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos cursos preparatorios que maximizan tus probabilidades de aprobar a la primera, optimizando así tu inversión total. Consulta nuestros <a href="/blog/registro-cambridge/" className="text-emerald-600 hover:underline font-medium">pasos de registro</a> para empezar.
                 </p>
               </div>
             </section>
@@ -379,7 +379,7 @@ export default function PrecioB1CambridgePage() {
                 Prepárate con nosotros y aprueba a la primera. Te ayudamos con la inscripción y la preparación completa del examen.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -391,13 +391,13 @@ export default function PrecioB1CambridgePage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b1-preliminary/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía Completa del B1 Preliminary
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge B1: formato, estructura y preparación.</p>
                 </a>
-                <a href="/blog/registro-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/registro-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cómo Registrarse para Cambridge
                   </h3>

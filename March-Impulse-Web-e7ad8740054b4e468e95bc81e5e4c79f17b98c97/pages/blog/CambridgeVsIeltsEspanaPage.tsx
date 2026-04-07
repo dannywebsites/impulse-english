@@ -196,7 +196,7 @@ export default function CambridgeVsIeltsEspanaPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Para la mayoría de personas en España, la validez permanente de Cambridge es una ventaja decisiva. Si consideras que podrías necesitar tu certificado de inglés durante los próximos 10 años, Cambridge te ahorrará dinero y tiempo en repetir exámenes. Consulta la <a href="/blog/escala-cambridge" className="text-blue-600 hover:underline">escala de niveles Cambridge</a> para más detalles.
+                Para la mayoría de personas en España, la validez permanente de Cambridge es una ventaja decisiva. Si consideras que podrías necesitar tu certificado de inglés durante los próximos 10 años, Cambridge te ahorrará dinero y tiempo en repetir exámenes. Consulta la <a href="/blog/escala-cambridge/" className="text-blue-600 hover:underline">escala de niveles Cambridge</a> para más detalles.
               </p>
             </section>
 
@@ -232,7 +232,7 @@ export default function CambridgeVsIeltsEspanaPage() {
                     <Award className="w-5 h-5 text-blue-600" />
                     Oposiciones y administración pública
                   </h3>
-                  <p className="text-gray-700">Las <a href="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline">certificaciones Cambridge</a> son las más referenciadas en convocatorias de oposiciones españolas. IELTS también es aceptado, pero su caducidad puede ser un problema si la oposición se retrasa.</p>
+                  <p className="text-gray-700">Las <a href="/academias-ingles-madrid/certificaciones/" className="text-blue-600 hover:underline">certificaciones Cambridge</a> son las más referenciadas en convocatorias de oposiciones españolas. IELTS también es aceptado, pero su caducidad puede ser un problema si la oposición se retrasa.</p>
                 </div>
               </div>
 
@@ -317,7 +317,7 @@ export default function CambridgeVsIeltsEspanaPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En <a href="/examenes-cambridge" className="text-blue-600 hover:underline">Impulse English Academy</a> nos especializamos en preparación Cambridge, la opción más demandada en España. Si necesitas ayuda para decidir, nuestro equipo puede asesorarte según tu situación específica.
+                En <a href="/examenes-cambridge/" className="text-blue-600 hover:underline">Impulse English Academy</a> nos especializamos en preparación Cambridge, la opción más demandada en España. Si necesitas ayuda para decidir, nuestro equipo puede asesorarte según tu situación específica.
               </p>
             </section>
 
@@ -359,10 +359,10 @@ export default function CambridgeVsIeltsEspanaPage() {
 
               <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Para la mayoría de personas en España, <a href="/examenes-cambridge" className="text-blue-600 hover:underline font-medium">Cambridge es la mejor opción</a>: no caduca, tiene el máximo reconocimiento en el contexto español y es más económico a largo plazo. IELTS es la elección correcta si planeas emigrar a países anglófonos o si una institución específica lo requiere.
+                  Para la mayoría de personas en España, <a href="/examenes-cambridge/" className="text-blue-600 hover:underline font-medium">Cambridge es la mejor opción</a>: no caduca, tiene el máximo reconocimiento en el contexto español y es más económico a largo plazo. IELTS es la elección correcta si planeas emigrar a países anglófonos o si una institución específica lo requiere.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/academias-ingles-madrid/certificaciones" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> te preparamos para obtener la <a href="/blog/escala-cambridge" className="text-blue-600 hover:underline font-medium">certificación Cambridge</a> que necesitas con metodología probada y profesores especializados en los exámenes oficiales.
+                  En <a href="/academias-ingles-madrid/certificaciones/" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> te preparamos para obtener la <a href="/blog/escala-cambridge/" className="text-blue-600 hover:underline font-medium">certificación Cambridge</a> que necesitas con metodología probada y profesores especializados en los exámenes oficiales.
                 </p>
               </div>
             </section>
@@ -374,7 +374,7 @@ export default function CambridgeVsIeltsEspanaPage() {
                 En Impulse te preparamos para Cambridge con la mejor tasa de aprobados. Solicita información sin compromiso.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
                 Solicitar información
@@ -386,13 +386,13 @@ export default function CambridgeVsIeltsEspanaPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Exámenes Cambridge: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todos los niveles Cambridge explicados: B1, B2, C1 y C2.</p>
                 </a>
-                <a href="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/blog/escala-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Escala de Niveles Cambridge
                   </h3>

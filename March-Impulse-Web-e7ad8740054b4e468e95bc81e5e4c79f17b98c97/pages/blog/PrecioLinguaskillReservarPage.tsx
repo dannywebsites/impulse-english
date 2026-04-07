@@ -112,7 +112,7 @@ export default function PrecioLinguaskillReservarPage() {
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
           <a
-              href="/linguaskill/precios-fechas"
+              href="/linguaskill/precios-fechas/"
             className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
@@ -322,7 +322,7 @@ export default function PrecioLinguaskillReservarPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Para maximizar tu inversión, prepárate adecuadamente antes del examen mediante recursos oficiales y familiarízate con el formato adaptativo de las preguntas. En nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-green-600 hover:underline font-medium">academia de inglés en Barrio del Pilar</a>, ofrecemos <a href="/cursos-ingles/adultos" className="text-green-600 hover:underline font-medium">cursos de preparación para adultos</a> específicos para Linguaskill que pueden mejorar significativamente tu puntuación final. Si prefieres atención personalizada, consulta nuestras <a href="/cursos-ingles/particulares" className="text-green-600 hover:underline font-medium">clases particulares de inglés</a>. Recuerda verificar todos los requisitos técnicos y documentales antes del día del examen para evitar contratiempos innecesarios.
+                Para maximizar tu inversión, prepárate adecuadamente antes del examen mediante recursos oficiales y familiarízate con el formato adaptativo de las preguntas. En nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-green-600 hover:underline font-medium">academia de inglés en Barrio del Pilar</a>, ofrecemos <a href="/cursos-ingles/adultos/" className="text-green-600 hover:underline font-medium">cursos de preparación para adultos</a> específicos para Linguaskill que pueden mejorar significativamente tu puntuación final. Si prefieres atención personalizada, consulta nuestras <a href="/cursos-ingles/particulares/" className="text-green-600 hover:underline font-medium">clases particulares de inglés</a>. Recuerda verificar todos los requisitos técnicos y documentales antes del día del examen para evitar contratiempos innecesarios.
               </p>
             </section>
 
@@ -357,7 +357,7 @@ export default function PrecioLinguaskillReservarPage() {
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a
-              href="/linguaskill/precios-fechas"
+              href="/linguaskill/precios-fechas/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-green-600 text-sm font-medium">Hub Principal</span>
@@ -365,7 +365,7 @@ export default function PrecioLinguaskillReservarPage() {
                 <p className="text-zinc-600 text-sm mt-2">Guía completa de precios y sedes en España.</p>
               </a>
               <a
-              href="/linguaskill"
+              href="/linguaskill/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-green-600 text-sm font-medium">Centros</span>
@@ -373,7 +373,7 @@ export default function PrecioLinguaskillReservarPage() {
                 <p className="text-zinc-600 text-sm mt-2">Dónde examinarte en Madrid, Valencia y Zaragoza.</p>
               </a>
               <a
-              href="/linguaskill"
+              href="/linguaskill/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-green-600 text-sm font-medium">Online</span>

@@ -368,10 +368,10 @@ export default function CambridgeB1GuiaPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">examen Cambridge B1 Preliminary</a> representa una certificación accesible y valiosa que demuestra tu capacidad para comunicarte efectivamente en inglés cotidiano. Con estructura clara de 140 minutos distribuidos equitativamente entre cuatro competencias, preparación estratégica de 10-12 semanas y validez permanente, es inversión inteligente para desarrollo profesional y académico.
+                  El <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline font-medium">examen Cambridge B1 Preliminary</a> representa una certificación accesible y valiosa que demuestra tu capacidad para comunicarte efectivamente en inglés cotidiano. Con estructura clara de 140 minutos distribuidos equitativamente entre cuatro competencias, preparación estratégica de 10-12 semanas y validez permanente, es inversión inteligente para desarrollo profesional y académico.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  <a href="/academia-ingles-barrio-del-pilar" className="text-emerald-600 hover:underline font-medium">Nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-emerald-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos de inglés para adultos</a> y programas de <a href="/cursos-ingles/secundaria" className="text-emerald-600 hover:underline font-medium">cursos de secundaria</a> especializados con excelentes tasas de aprobación para candidatos comprometidos.
+                  <a href="/academia-ingles-barrio-del-pilar/" className="text-emerald-600 hover:underline font-medium">Nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-emerald-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">cursos de inglés para adultos</a> y programas de <a href="/cursos-ingles/secundaria/" className="text-emerald-600 hover:underline font-medium">cursos de secundaria</a> especializados con excelentes tasas de aprobación para candidatos comprometidos.
                 </p>
               </div>
             </section>
@@ -383,7 +383,7 @@ export default function CambridgeB1GuiaPage() {
                 En Impulse English Academy te preparamos con metodología probada para aprobar el B1 Preliminary con la mejor puntuación.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -395,13 +395,13 @@ export default function CambridgeB1GuiaPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía de Exámenes Cambridge 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Comparativa completa de todos los niveles Cambridge.</p>
                 </a>
-                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cambridge B2 First: Beneficios
                   </h3>

@@ -19,7 +19,7 @@ export default function CentrosCambridgeMadridPage() {
   const articleSchema = generateArticleSchema({
     headline: "Centros Cambridge en Madrid y Barcelona: Guía Completa 2025",
     description: "Guía completa de centros Cambridge en Madrid y Barcelona. Dónde examinarte, precios, diferencias entre centros Platino y regulares.",
-    url: `${businessInfo.url}/blog/centros-cambridge-madrid`,
+    url: `${businessInfo.url}/examenes-cambridge/centros-madrid/`,
     datePublished: "2025-01-15"
   });
 

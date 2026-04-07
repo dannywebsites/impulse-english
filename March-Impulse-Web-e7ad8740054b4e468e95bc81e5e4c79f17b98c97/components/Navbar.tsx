@@ -15,25 +15,25 @@ const navItems: NavItem[] = [
   {
     label: "Cursos",
     children: [
-      { label: "Infantil (2-5 años)", href: "/cursos-ingles/infantil", description: "Great Little People methodology" },
-      { label: "Primaria (6-12 años)", href: "/cursos-ingles/primaria", description: "Cambridge Young Learners" },
-      { label: "Secundaria (13-17 años)", href: "/cursos-ingles/secundaria", description: "EBAU & Cambridge B1-C1" },
-      { label: "Adultos", href: "/cursos-ingles/adultos", description: "Desde principiante hasta C2" },
-      { label: "Clases Particulares", href: "/cursos-ingles/particulares", description: "Presencial y online" },
-      { label: "Online", href: "/cursos-ingles/online", description: "Clases en directo por videoconferencia" },
+      { label: "Infantil (2-5 años)", href: "/cursos-ingles/infantil/", description: "Great Little People methodology" },
+      { label: "Primaria (6-12 años)", href: "/cursos-ingles/primaria/", description: "Cambridge Young Learners" },
+      { label: "Secundaria (13-17 años)", href: "/cursos-ingles/secundaria/", description: "EBAU & Cambridge B1-C1" },
+      { label: "Adultos", href: "/cursos-ingles/adultos/", description: "Desde principiante hasta C2" },
+      { label: "Clases Particulares", href: "/cursos-ingles/particulares/", description: "Presencial y online" },
+      { label: "Online", href: "/cursos-ingles/online/", description: "Clases en directo por videoconferencia" },
     ]
   },
   {
     label: "Exámenes",
     children: [
-      { label: "Exámenes Cambridge", href: "/examenes-cambridge", description: "B1, B2 First, C1 Advanced" },
-      { label: "Linguaskill", href: "/linguaskill", description: "Certificación rápida de Cambridge" },
+      { label: "Exámenes Cambridge", href: "/examenes-cambridge/", description: "B1, B2 First, C1 Advanced" },
+      { label: "Linguaskill", href: "/linguaskill/", description: "Certificación rápida de Cambridge" },
     ]
   },
-  { label: "Sobre Nosotros", href: "/sobre-nosotros" },
-  { label: "Testimonios", href: "/testimonios" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contacto", href: "/contacto" }
+  { label: "Sobre Nosotros", href: "/sobre-nosotros/" },
+  { label: "Testimonios", href: "/testimonios/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Contacto", href: "/contacto/" }
 ];
 
 export default function Navbar({ currentPath = '/' }: { currentPath?: string }) {

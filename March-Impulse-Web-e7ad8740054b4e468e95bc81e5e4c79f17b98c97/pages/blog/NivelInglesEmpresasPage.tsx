@@ -234,7 +234,7 @@ export default function NivelInglesEmpresasPage() {
                     <Target className="w-5 h-5 text-emerald-600" />
                     Perfiles Junior y Técnicos (B1 - B2)
                   </h3>
-                  <p className="text-gray-700">Para posiciones de entrada, un B1 sólido puede ser aceptable en sectores menos internacionalizados. Sin embargo, el B2 es lo que realmente te diferencia y abre puertas a <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">promoción interna y mejores oportunidades</a>.</p>
+                  <p className="text-gray-700">Para posiciones de entrada, un B1 sólido puede ser aceptable en sectores menos internacionalizados. Sin embargo, el B2 es lo que realmente te diferencia y abre puertas a <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">promoción interna y mejores oportunidades</a>.</p>
                 </div>
               </div>
 
@@ -281,7 +281,7 @@ export default function NivelInglesEmpresasPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Las startups y empresas tech suelen optar por entrevistas directamente en inglés, mientras que las grandes corporaciones y consultoras prefieren <a href="/examenes-cambridge" className="text-emerald-600 hover:underline font-medium">certificaciones oficiales Cambridge</a> como garantía objetiva del nivel. Muchas empresas están adoptando <a href="/linguaskill" className="text-emerald-600 hover:underline font-medium">Linguaskill de Cambridge</a> como herramienta interna de evaluación por su rapidez y fiabilidad.
+                Las startups y empresas tech suelen optar por entrevistas directamente en inglés, mientras que las grandes corporaciones y consultoras prefieren <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline font-medium">certificaciones oficiales Cambridge</a> como garantía objetiva del nivel. Muchas empresas están adoptando <a href="/linguaskill/" className="text-emerald-600 hover:underline font-medium">Linguaskill de Cambridge</a> como herramienta interna de evaluación por su rapidez y fiabilidad.
               </p>
 
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">
@@ -329,7 +329,7 @@ export default function NivelInglesEmpresasPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos preparación especializada para todas estas certificaciones. Nuestros profesores altamente cualificados te ayudan a alcanzar el nivel que necesitas con un enfoque práctico orientado al mundo profesional.
+                  En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos preparación especializada para todas estas certificaciones. Nuestros profesores altamente cualificados te ayudan a alcanzar el nivel que necesitas con un enfoque práctico orientado al mundo profesional.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Si no tienes claro qué nivel necesitas, te ofrecemos una <strong>evaluación gratuita</strong> para determinar tu punto de partida y diseñar un plan personalizado para alcanzar tus objetivos laborales.
@@ -378,7 +378,7 @@ export default function NivelInglesEmpresasPage() {
                   El inglés ya no es opcional en el mercado laboral español. Con el <strong>85% de ofertas cualificadas</strong> exigiendo algún nivel, y empresas verificando activamente tu competencia, certificar tu nivel es una inversión directa en tu empleabilidad. El B2 es el mínimo competitivo para la mayoría de sectores, mientras que el C1 te posiciona para roles de mayor responsabilidad y mejor remunerados.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te preparamos con programas adaptados a tu sector profesional. Consulta también nuestra guía sobre <a href="/examenes-cambridge" className="text-emerald-600 hover:underline font-medium">exámenes Cambridge</a> para elegir la certificación más adecuada a tus objetivos, o visita nuestra página de <a href="/blog/ingles-entrevistas-trabajo" className="text-emerald-600 hover:underline font-medium">inglés para entrevistas de trabajo</a> si tienes un proceso de selección próximo.
+                  En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te preparamos con programas adaptados a tu sector profesional. Consulta también nuestra guía sobre <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline font-medium">exámenes Cambridge</a> para elegir la certificación más adecuada a tus objetivos, o visita nuestra página de <a href="/blog/ingles-entrevistas-trabajo/" className="text-emerald-600 hover:underline font-medium">inglés para entrevistas de trabajo</a> si tienes un proceso de selección próximo.
                 </p>
               </div>
             </section>
@@ -390,7 +390,7 @@ export default function NivelInglesEmpresasPage() {
                 Te ayudamos a alcanzar el nivel que tu sector exige con preparación personalizada y profesores altamente cualificados especializados en inglés profesional.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar evaluación gratuita
@@ -402,25 +402,25 @@ export default function NivelInglesEmpresasPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas adaptados a profesionales con horarios flexibles.</p>
                 </a>
-                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía de Exámenes Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Comparativa completa de todas las certificaciones Cambridge.</p>
                 </a>
-                <a href="/blog/ingles-entrevistas-trabajo" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/ingles-entrevistas-trabajo/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Inglés para Entrevistas de Trabajo
                   </h3>
                   <p className="text-gray-600 text-sm">Frases clave, preguntas frecuentes y técnicas de preparación.</p>
                 </a>
-                <a href="/blog/trabajos-piden-c1-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/trabajos-piden-c1-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Trabajos que Piden C1 de Inglés
                   </h3>

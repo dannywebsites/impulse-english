@@ -160,7 +160,7 @@ export default function CuantoTiempoAprenderInglesPage() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  Estos plazos son orientativos para estudiantes hispanohablantes con dedicación regular. La inmersión lingüística, clases con <a href="/metodologia" className="text-emerald-600 hover:underline">metodología comunicativa</a> y la práctica diaria pueden reducirlos significativamente.
+                  Estos plazos son orientativos para estudiantes hispanohablantes con dedicación regular. La inmersión lingüística, clases con <a href="/metodologia/" className="text-emerald-600 hover:underline">metodología comunicativa</a> y la práctica diaria pueden reducirlos significativamente.
                 </p>
               </div>
             </section>
@@ -255,7 +255,7 @@ export default function CuantoTiempoAprenderInglesPage() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  Estas horas se refieren a instrucción guiada de calidad. En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">nuestros cursos para adultos</a>, maximizamos cada hora con metodología comunicativa que prioriza la práctica activa sobre la teoría pasiva.
+                  Estas horas se refieren a instrucción guiada de calidad. En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">nuestros cursos para adultos</a>, maximizamos cada hora con metodología comunicativa que prioriza la práctica activa sobre la teoría pasiva.
                 </p>
               </div>
             </section>
@@ -292,7 +292,7 @@ export default function CuantoTiempoAprenderInglesPage() {
                     <BookOpen className="w-5 h-5 text-emerald-600" />
                     Clases con metodología activa
                   </h3>
-                  <p className="text-gray-700 text-sm">Elige <a href="/metodologia" className="text-emerald-600 hover:underline">programas que prioricen la comunicación real</a> sobre la memorización de reglas. Las clases donde hablas el 70% del tiempo aceleran enormemente el progreso.</p>
+                  <p className="text-gray-700 text-sm">Elige <a href="/metodologia/" className="text-emerald-600 hover:underline">programas que prioricen la comunicación real</a> sobre la memorización de reglas. Las clases donde hablas el 70% del tiempo aceleran enormemente el progreso.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -385,10 +385,10 @@ export default function CuantoTiempoAprenderInglesPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Aprender inglés es una inversión a largo plazo que requiere constancia más que intensidad. Con expectativas realistas y un plan estructurado, puedes alcanzar nivel B1 en 6-12 meses y B2 en 18-24 meses desde cero. Lo más importante es elegir un <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">método que priorice la comunicación real</a> y mantener la práctica diaria.
+                  Aprender inglés es una inversión a largo plazo que requiere constancia más que intensidad. Con expectativas realistas y un plan estructurado, puedes alcanzar nivel B1 en 6-12 meses y B2 en 18-24 meses desde cero. Lo más importante es elegir un <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">método que priorice la comunicación real</a> y mantener la práctica diaria.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> diseñamos itinerarios personalizados que maximizan tu progreso con clases comunicativas, grupos reducidos y seguimiento constante de tu evolución. <a href="/contacto" className="text-emerald-600 hover:underline font-medium">Contáctanos</a> para una evaluación gratuita de tu nivel.
+                  En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> diseñamos itinerarios personalizados que maximizan tu progreso con clases comunicativas, grupos reducidos y seguimiento constante de tu evolución. <a href="/contacto/" className="text-emerald-600 hover:underline font-medium">Contáctanos</a> para una evaluación gratuita de tu nivel.
                 </p>
               </div>
             </section>
@@ -400,7 +400,7 @@ export default function CuantoTiempoAprenderInglesPage() {
                 Evaluamos tu nivel actual y te damos un plan con plazos realistas para alcanzar tu objetivo. Primera clase de prueba gratuita.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar evaluación gratuita
@@ -412,19 +412,19 @@ export default function CuantoTiempoAprenderInglesPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Descubre cómo enseñamos inglés de forma efectiva y comunicativa.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas adaptados a tu ritmo y nivel con grupos reducidos.</p>
                 </a>
-                <a href="/contacto" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/contacto/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Contacto
                   </h3>

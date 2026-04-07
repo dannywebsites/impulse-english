@@ -158,7 +158,7 @@ export default function PrimariaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-white text-blue-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-amber-50 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
@@ -251,10 +251,10 @@ export default function PrimariaPage() {
             {/* Location and Progression Links */}
             <div className="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-100">
               <p className="text-zinc-700 text-sm mb-3">
-                <strong>¿Dónde estamos?</strong> Nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-blue-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-blue-600 hover:underline font-medium">La Vaguada</a>, está perfectamente comunicada en metro y autobús.
+                <strong>¿Dónde estamos?</strong> Nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-blue-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada/" className="text-blue-600 hover:underline font-medium">La Vaguada</a>, está perfectamente comunicada en metro y autobús.
               </p>
               <p className="text-zinc-600 text-sm">
-                Si tu hijo es más pequeño, consulta nuestros <a href="/cursos-ingles/infantil" className="text-blue-600 hover:underline font-medium">cursos de infantil</a>. Si ya está en el instituto, prepárale para el futuro con <a href="/cursos-ingles/secundaria" className="text-blue-600 hover:underline font-medium">inglés para secundaria</a> y preparación para <a href="/examenes-cambridge" className="text-blue-600 hover:underline font-medium">exámenes Cambridge</a>.
+                Si tu hijo es más pequeño, consulta nuestros <a href="/cursos-ingles/infantil/" className="text-blue-600 hover:underline font-medium">cursos de infantil</a>. Si ya está en el instituto, prepárale para el futuro con <a href="/cursos-ingles/secundaria/" className="text-blue-600 hover:underline font-medium">inglés para secundaria</a> y preparación para <a href="/examenes-cambridge/" className="text-blue-600 hover:underline font-medium">exámenes Cambridge</a>.
               </p>
             </div>
           </div>
@@ -343,7 +343,7 @@ export default function PrimariaPage() {
             ))}
           </div>
           <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
             className="inline-block bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
           >
             Ver todos los exámenes Cambridge
@@ -423,7 +423,7 @@ export default function PrimariaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Solicitar prueba de nivel

@@ -871,7 +871,7 @@ export default function LibrosCambridgeRecursosPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed mb-6">
-                Tu próximo paso inmediato debería ser <strong>realizar un Mock Test diagnóstico completo</strong> bajo condiciones cronometradas para establecer tu nivel actual preciso y la brecha que necesitas cerrar. Después, diseña tu plan de preparación personalizado seleccionando recursos específicos según tu estilo de aprendizaje, presupuesto y áreas de debilidad identificadas. Centros especializados como nuestra <strong><a href="/academia-ingles-barrio-del-pilar" className="text-orange-600 hover:underline font-medium">academia en Barrio del Pilar</a></strong>, con metodología científica y tasa de éxito del 100% en 2024-25, pueden proporcionarte estructura y apoyo experto si prefieres preparación guiada. También ofrecemos <a href="/cursos-ingles/particulares" className="text-orange-600 hover:underline font-medium">clases particulares</a> especializadas para <a href="/examenes-cambridge/b2-first" className="text-orange-600 hover:underline font-medium">B2 First</a> y otros <a href="/examenes-cambridge" className="text-orange-600 hover:underline font-medium">exámenes Cambridge</a>.
+                Tu próximo paso inmediato debería ser <strong>realizar un Mock Test diagnóstico completo</strong> bajo condiciones cronometradas para establecer tu nivel actual preciso y la brecha que necesitas cerrar. Después, diseña tu plan de preparación personalizado seleccionando recursos específicos según tu estilo de aprendizaje, presupuesto y áreas de debilidad identificadas. Centros especializados como nuestra <strong><a href="/academia-ingles-barrio-del-pilar/" className="text-orange-600 hover:underline font-medium">academia en Barrio del Pilar</a></strong>, con metodología científica y tasa de éxito del 100% en 2024-25, pueden proporcionarte estructura y apoyo experto si prefieres preparación guiada. También ofrecemos <a href="/cursos-ingles/particulares/" className="text-orange-600 hover:underline font-medium">clases particulares</a> especializadas para <a href="/examenes-cambridge/b2-first/" className="text-orange-600 hover:underline font-medium">B2 First</a> y otros <a href="/examenes-cambridge/" className="text-orange-600 hover:underline font-medium">exámenes Cambridge</a>.
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
@@ -924,7 +924,7 @@ export default function LibrosCambridgeRecursosPage() {
                     Consultar por WhatsApp
                   </a>
                   <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
                     className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-colors"
                   >
                     Ver cursos Cambridge
@@ -953,7 +953,7 @@ export default function LibrosCambridgeRecursosPage() {
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/examenes-cambridge" className="group">
+              <a href="/examenes-cambridge/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-orange-500 text-sm font-medium">Guía</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-orange-500 transition-colors">
@@ -962,7 +962,7 @@ export default function LibrosCambridgeRecursosPage() {
                   <p className="text-zinc-500 text-sm mt-2">Todo sobre niveles, estructura y preparación</p>
                 </div>
               </a>
-              <a href="/examenes-cambridge/fechas-precios" className="group">
+              <a href="/examenes-cambridge/fechas-precios/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-orange-500 text-sm font-medium">Calendario</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-orange-500 transition-colors">
@@ -971,7 +971,7 @@ export default function LibrosCambridgeRecursosPage() {
                   <p className="text-zinc-500 text-sm mt-2">Calendario oficial y fechas límite de inscripción</p>
                 </div>
               </a>
-              <a href="/linguaskill" className="group">
+              <a href="/linguaskill/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-orange-500 text-sm font-medium">Linguaskill</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-orange-500 transition-colors">

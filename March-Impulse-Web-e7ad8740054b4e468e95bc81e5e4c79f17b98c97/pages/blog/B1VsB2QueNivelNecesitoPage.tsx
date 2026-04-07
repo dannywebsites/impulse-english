@@ -365,7 +365,7 @@ export default function B1VsB2QueNivelNecesitoPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  La elección entre <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">B1</a> y <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2</a> no es solo de dificultad, es de estrategia. El B2 abre significativamente más puertas laborales y académicas, pero requiere una preparación más seria. Si tu nivel actual lo permite, el B2 es la inversión más rentable.
+                  La elección entre <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline font-medium">B1</a> y <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2</a> no es solo de dificultad, es de estrategia. El B2 abre significativamente más puertas laborales y académicas, pero requiere una preparación más seria. Si tu nivel actual lo permite, el B2 es la inversión más rentable.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Lo más importante es partir de un diagnóstico de nivel correcto para no prepararse a un examen que no se puede aprobar ni infraprepararse para uno que está por debajo de tu nivel real. Te evaluamos sin compromiso para orientarte al examen correcto.
@@ -380,7 +380,7 @@ export default function B1VsB2QueNivelNecesitoPage() {
                 Una prueba de nivel gratuita te dirá exactamente si estás listo para B1 o B2 y cuánto tiempo necesitarías prepararte.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Prueba de nivel gratuita
@@ -392,19 +392,19 @@ export default function B1VsB2QueNivelNecesitoPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b1-preliminary/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía B1 Preliminary Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B1: estructura, preparación y tasas de aprobados.</p>
                 </a>
-                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía B2 First Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B2 First: el más valorado en el mercado español.</p>
                 </a>
-                <a href="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/escala-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     La Escala Cambridge Explicada
                   </h3>

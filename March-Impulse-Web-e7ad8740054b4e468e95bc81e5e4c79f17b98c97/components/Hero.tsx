@@ -39,7 +39,7 @@ export default function Hero() {
 
                     {/* CTAs */}
                     <div className="flex flex-col w-full xl:flex-row xl:w-auto gap-4 animate-fade-in-up delay-300">
-                        <a href="/reservar-clase" className="w-full xl:w-auto bg-red-600 text-white px-8 py-4 rounded-lg md:rounded-md font-semibold text-sm uppercase tracking-widest hover:bg-red-700 transition-colors shadow-lg active:scale-[0.98] text-center">
+                        <a href="/reservar-clase/" className="w-full xl:w-auto bg-red-600 text-white px-8 py-4 rounded-lg md:rounded-md font-semibold text-sm uppercase tracking-widest hover:bg-red-700 transition-colors shadow-lg active:scale-[0.98] text-center">
                             Clase de Prueba Gratuita
                         </a>
                         <a href="tel:+34604910611" className="w-full xl:w-auto bg-white/10 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded-lg md:rounded-md font-semibold text-sm uppercase tracking-widest hover:bg-white hover:text-accent-blue transition-colors active:scale-[0.98] text-center flex items-center justify-center gap-2">
@@ -59,7 +59,7 @@ export default function Hero() {
         <div className="xl:hidden w-full h-full flex flex-col items-center justify-center pointer-events-auto relative z-[25]">
             <div className="text-center px-6">
                 <a
-                    href="/reservar-clase"
+                    href="/reservar-clase/"
                     className="inline-flex items-center gap-2 text-white/90 hover:text-white text-sm font-medium tracking-[0.15em] uppercase border-b border-white/30 hover:border-white/60 pb-1 transition-all animate-hero-fade-up"
                 >
                     Reservar clase de prueba

@@ -191,7 +191,7 @@ export default function AdultosPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-white text-teal-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-zinc-100 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
@@ -249,10 +249,10 @@ export default function AdultosPage() {
             {/* Location and Certification Links */}
             <div className="mt-6 p-4 bg-teal-50 rounded-xl border border-teal-100">
               <p className="text-zinc-700 text-sm mb-3">
-                <strong>¿Dónde estamos?</strong> Nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-teal-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-teal-600 hover:underline font-medium">La Vaguada</a>. Bien comunicada desde <a href="/academia-ingles-plaza-castilla" className="text-teal-600 hover:underline font-medium">Plaza Castilla</a> y <a href="/academia-ingles-tetuan" className="text-teal-600 hover:underline font-medium">Tetuán</a>.
+                <strong>¿Dónde estamos?</strong> Nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-teal-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada/" className="text-teal-600 hover:underline font-medium">La Vaguada</a>. Bien comunicada desde <a href="/academia-ingles-plaza-castilla/" className="text-teal-600 hover:underline font-medium">Plaza Castilla</a> y <a href="/academia-ingles-tetuan/" className="text-teal-600 hover:underline font-medium">Tetuán</a>.
               </p>
               <p className="text-zinc-600 text-sm">
-                Prepara tus <a href="/examenes-cambridge" className="text-teal-600 hover:underline font-medium">exámenes Cambridge</a> o certifica rápido con <a href="/linguaskill" className="text-teal-600 hover:underline font-medium">Linguaskill</a>. Si prefieres atención individual, consulta nuestras <a href="/cursos-ingles/particulares" className="text-teal-600 hover:underline font-medium">clases particulares</a>.
+                Prepara tus <a href="/examenes-cambridge/" className="text-teal-600 hover:underline font-medium">exámenes Cambridge</a> o certifica rápido con <a href="/linguaskill/" className="text-teal-600 hover:underline font-medium">Linguaskill</a>. Si prefieres atención individual, consulta nuestras <a href="/cursos-ingles/particulares/" className="text-teal-600 hover:underline font-medium">clases particulares</a>.
               </p>
             </div>
 
@@ -359,7 +359,7 @@ export default function AdultosPage() {
               <h3 className="font-bold text-white mb-2">Exámenes Cambridge</h3>
               <p className="text-white/70 text-sm mb-4">B1 Preliminary, B2 First, C1 Advanced</p>
               <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
                 className="inline-block bg-white text-teal-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-teal-900 transition-colors text-sm"
               >
                 Ver exámenes Cambridge
@@ -369,7 +369,7 @@ export default function AdultosPage() {
               <h3 className="font-bold text-white mb-2">Linguaskill</h3>
               <p className="text-white/70 text-sm mb-4">Certificado en 48h. Ideal para requisitos laborales</p>
               <a
-              href="/linguaskill"
+              href="/linguaskill/"
                 className="inline-block bg-white text-teal-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-teal-900 transition-colors text-sm"
               >
                 Conocer Linguaskill
@@ -454,7 +454,7 @@ export default function AdultosPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Solicitar prueba de nivel

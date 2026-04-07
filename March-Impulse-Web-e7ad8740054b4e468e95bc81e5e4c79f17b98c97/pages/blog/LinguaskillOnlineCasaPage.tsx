@@ -112,7 +112,7 @@ export default function LinguaskillOnlineCasaPage() {
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
           <a
-              href="/linguaskill"
+              href="/linguaskill/"
             className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
@@ -326,7 +326,7 @@ export default function LinguaskillOnlineCasaPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Tu siguiente paso es verificar la aceptación específica de tu institución destino y reservar tu fecha óptima considerando plazos de entrega de certificados. En nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-purple-600 hover:underline font-medium">academia de inglés en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-purple-600 hover:underline font-medium">La Vaguada</a>, ofrecemos <a href="/cursos-ingles/adultos" className="text-purple-600 hover:underline font-medium">cursos de preparación para adultos</a> que adaptan el entrenamiento al formato específico del <a href="/linguaskill" className="text-purple-600 hover:underline font-medium">examen Linguaskill</a>.
+                Tu siguiente paso es verificar la aceptación específica de tu institución destino y reservar tu fecha óptima considerando plazos de entrega de certificados. En nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-purple-600 hover:underline font-medium">academia de inglés en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada/" className="text-purple-600 hover:underline font-medium">La Vaguada</a>, ofrecemos <a href="/cursos-ingles/adultos/" className="text-purple-600 hover:underline font-medium">cursos de preparación para adultos</a> que adaptan el entrenamiento al formato específico del <a href="/linguaskill/" className="text-purple-600 hover:underline font-medium">examen Linguaskill</a>.
               </p>
             </section>
 
@@ -361,7 +361,7 @@ export default function LinguaskillOnlineCasaPage() {
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a
-              href="/linguaskill"
+              href="/linguaskill/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-purple-600 text-sm font-medium">Hub Principal</span>
@@ -369,7 +369,7 @@ export default function LinguaskillOnlineCasaPage() {
                 <p className="text-zinc-600 text-sm mt-2">Todo sobre estructura, ejemplos y preparación.</p>
               </a>
               <a
-              href="/linguaskill/ejemplo-examen"
+              href="/linguaskill/ejemplo-examen/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-purple-600 text-sm font-medium">Formato</span>
@@ -377,7 +377,7 @@ export default function LinguaskillOnlineCasaPage() {
                 <p className="text-zinc-600 text-sm mt-2">Formato y estructura del test con ejemplos.</p>
               </a>
               <a
-              href="/linguaskill/precios-fechas"
+              href="/linguaskill/precios-fechas/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-purple-600 text-sm font-medium">Precios</span>

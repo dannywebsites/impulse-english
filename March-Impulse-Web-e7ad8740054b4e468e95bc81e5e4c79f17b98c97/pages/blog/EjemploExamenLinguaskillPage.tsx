@@ -112,7 +112,7 @@ export default function EjemploExamenLinguaskillPage() {
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
           <a
-              href="/linguaskill"
+              href="/linguaskill/"
             className="inline-flex items-center gap-2 text-accent-blue hover:text-blue-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
@@ -313,7 +313,7 @@ export default function EjemploExamenLinguaskillPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Si buscas preparación especializada con metodología probada, <a href="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-accent-blue hover:underline font-medium">junto a La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos" className="text-accent-blue hover:underline font-medium">cursos de inglés para adultos</a> específicos de <a href="/linguaskill" className="text-accent-blue hover:underline font-medium">Linguaskill</a> con docentes expertos y recursos actualizados que te preparan para cada detalle del formato actual del test, además de <a href="/cursos-ingles/particulares" className="text-accent-blue hover:underline font-medium">clases particulares</a> personalizadas.
+                Si buscas preparación especializada con metodología probada, <a href="/academia-ingles-barrio-del-pilar/" className="text-accent-blue hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-accent-blue hover:underline font-medium">junto a La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos/" className="text-accent-blue hover:underline font-medium">cursos de inglés para adultos</a> específicos de <a href="/linguaskill/" className="text-accent-blue hover:underline font-medium">Linguaskill</a> con docentes expertos y recursos actualizados que te preparan para cada detalle del formato actual del test, además de <a href="/cursos-ingles/particulares/" className="text-accent-blue hover:underline font-medium">clases particulares</a> personalizadas.
               </p>
             </section>
 
@@ -348,7 +348,7 @@ export default function EjemploExamenLinguaskillPage() {
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a
-              href="/linguaskill"
+              href="/linguaskill/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-accent-blue text-sm font-medium">Hub Principal</span>
@@ -356,7 +356,7 @@ export default function EjemploExamenLinguaskillPage() {
                 <p className="text-zinc-600 text-sm mt-2">Todo sobre estructura, ejemplos y preparación.</p>
               </a>
               <a
-              href="/linguaskill/precios-fechas"
+              href="/linguaskill/precios-fechas/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-accent-blue text-sm font-medium">Precios</span>
@@ -364,7 +364,7 @@ export default function EjemploExamenLinguaskillPage() {
                 <p className="text-zinc-600 text-sm mt-2">Precios exactos y sedes disponibles en España.</p>
               </a>
               <a
-              href="/linguaskill/precios-fechas"
+              href="/linguaskill/precios-fechas/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-accent-blue text-sm font-medium">Reserva</span>

@@ -157,7 +157,7 @@ export default function AcademiasBaratasMadridPage() {
             {/* Introduction */}
             <section className="mb-16">
               <p className="text-xl text-zinc-600 leading-relaxed">
-                El mercado de academias de inglés en Madrid ofrece opciones desde 45€ mensuales sin comprometer la calidad educativa. En 2025, la competencia entre centros ha generado promociones que permiten acceder a profesores certificados, grupos reducidos y metodologías comunicativas a precios antes impensables. Este artículo analiza las siete academias más económicas de Madrid, compara rangos de precios entre 45€ y 250€ mensuales, y proporciona estrategias concretas para maximizar tu inversión en formación lingüística. Si buscas opciones en zonas específicas como <a href="/academia-ingles-barrio-del-pilar" className="text-emerald-600 hover:underline">Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-emerald-600 hover:underline">La Vaguada</a> o <a href="/academia-ingles-tetuan" className="text-emerald-600 hover:underline">Tetuán</a>, tenemos academias en el norte de Madrid.
+                El mercado de academias de inglés en Madrid ofrece opciones desde 45€ mensuales sin comprometer la calidad educativa. En 2025, la competencia entre centros ha generado promociones que permiten acceder a profesores certificados, grupos reducidos y metodologías comunicativas a precios antes impensables. Este artículo analiza las siete academias más económicas de Madrid, compara rangos de precios entre 45€ y 250€ mensuales, y proporciona estrategias concretas para maximizar tu inversión en formación lingüística. Si buscas opciones en zonas específicas como <a href="/academia-ingles-barrio-del-pilar/" className="text-emerald-600 hover:underline">Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-emerald-600 hover:underline">La Vaguada</a> o <a href="/academia-ingles-tetuan/" className="text-emerald-600 hover:underline">Tetuán</a>, tenemos academias en el norte de Madrid.
               </p>
             </section>
 
@@ -214,7 +214,7 @@ export default function AcademiasBaratasMadridPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed mb-6">
-                <strong>Academias económicas tradicionales (64-250€/mes):</strong> Representan el equilibrio óptimo entre precio y servicios completos. Impulse English Academy comienza en 64€/mes (<a href="/cursos-ingles/infantil" className="text-emerald-600 hover:underline">inglés para niños</a>), 71€/mes (primaria) y 79€/mes (<a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">cursos de inglés para adultos</a>) con clases presenciales y online en nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-emerald-600 hover:underline">academia en Barrio del Pilar</a>. That's Fun parte de 69€ mensuales con dos sesiones semanales grupales, mientras Your Language Club desde 80€ con profesores certificados. Este rango incluye material didáctico, acceso a plataformas digitales complementarias y grupos reducidos de 6-10 estudiantes.
+                <strong>Academias económicas tradicionales (64-250€/mes):</strong> Representan el equilibrio óptimo entre precio y servicios completos. Impulse English Academy comienza en 64€/mes (<a href="/cursos-ingles/infantil/" className="text-emerald-600 hover:underline">inglés para niños</a>), 71€/mes (primaria) y 79€/mes (<a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">cursos de inglés para adultos</a>) con clases presenciales y online en nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-emerald-600 hover:underline">academia en Barrio del Pilar</a>. That's Fun parte de 69€ mensuales con dos sesiones semanales grupales, mientras Your Language Club desde 80€ con profesores certificados. Este rango incluye material didáctico, acceso a plataformas digitales complementarias y grupos reducidos de 6-10 estudiantes.
               </p>
 
               <p className="text-zinc-600 leading-relaxed mb-6">
@@ -222,7 +222,7 @@ export default function AcademiasBaratasMadridPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                <strong>Academias premium (+300€/mes):</strong> Ofrecen <a href="/cursos-ingles/particulares" className="text-emerald-600 hover:underline">clases particulares</a>, horarios completamente personalizados y preparación especializada para <a href="/linguaskill" className="text-emerald-600 hover:underline">Linguaskill</a> o IELTS. Este segmento representa menos del 15% del mercado madrileño y raramente resulta necesario para objetivos estándar de <a href="/examenes-cambridge" className="text-emerald-600 hover:underline">exámenes Cambridge</a>.
+                <strong>Academias premium (+300€/mes):</strong> Ofrecen <a href="/cursos-ingles/particulares/" className="text-emerald-600 hover:underline">clases particulares</a>, horarios completamente personalizados y preparación especializada para <a href="/linguaskill/" className="text-emerald-600 hover:underline">Linguaskill</a> o IELTS. Este segmento representa menos del 15% del mercado madrileño y raramente resulta necesario para objetivos estándar de <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline">exámenes Cambridge</a>.
               </p>
             </section>
 
@@ -288,11 +288,11 @@ export default function AcademiasBaratasMadridPage() {
               </h2>
 
               <p className="text-zinc-600 leading-relaxed mb-6">
-                Madrid ofrece academias de inglés desde 45€ mensuales con profesores certificados, grupos reducidos y metodologías probadas. Comparar entre Eco Idiomas, That's Fun y Your Language Club según ubicación y horarios disponibles maximiza la relación calidad-precio. Si buscas opciones en zonas como <a href="/academia-ingles-penagrande" className="text-emerald-600 hover:underline">Peñagrande</a>, <a href="/academia-ingles-plaza-castilla" className="text-emerald-600 hover:underline">Plaza Castilla</a> o <a href="/academia-ingles-la-ventilla" className="text-emerald-600 hover:underline">La Ventilla</a>, disponemos de academias cercanas en el norte de Madrid.
+                Madrid ofrece academias de inglés desde 45€ mensuales con profesores certificados, grupos reducidos y metodologías probadas. Comparar entre Eco Idiomas, That's Fun y Your Language Club según ubicación y horarios disponibles maximiza la relación calidad-precio. Si buscas opciones en zonas como <a href="/academia-ingles-penagrande/" className="text-emerald-600 hover:underline">Peñagrande</a>, <a href="/academia-ingles-plaza-castilla/" className="text-emerald-600 hover:underline">Plaza Castilla</a> o <a href="/academia-ingles-la-ventilla/" className="text-emerald-600 hover:underline">La Ventilla</a>, disponemos de academias cercanas en el norte de Madrid.
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Contactar directamente vía teléfono revela promociones no publicadas y descuentos por contratación múltiple que reducen costes reales un 10-15%. Para quienes buscan flexibilidad total combinada con interacción real, las opciones híbridas representan alternativas cada vez más competitivas en 2025. Si necesitas <a href="/academias-ingles-madrid/certificaciones" className="text-emerald-600 hover:underline">certificaciones oficiales de inglés</a>, asegúrate de que la academia prepare para exámenes reconocidos.
+                Contactar directamente vía teléfono revela promociones no publicadas y descuentos por contratación múltiple que reducen costes reales un 10-15%. Para quienes buscan flexibilidad total combinada con interacción real, las opciones híbridas representan alternativas cada vez más competitivas en 2025. Si necesitas <a href="/academias-ingles-madrid/certificaciones/" className="text-emerald-600 hover:underline">certificaciones oficiales de inglés</a>, asegúrate de que la academia prepare para exámenes reconocidos.
               </p>
             </section>
 
@@ -399,7 +399,7 @@ export default function AcademiasBaratasMadridPage() {
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-emerald-600 text-sm font-medium">Cambridge</span>
@@ -407,7 +407,7 @@ export default function AcademiasBaratasMadridPage() {
                 <p className="text-zinc-600 text-sm mt-2">Todo sobre certificaciones oficiales.</p>
               </a>
               <a
-              href="/linguaskill"
+              href="/linguaskill/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-emerald-600 text-sm font-medium">Linguaskill</span>
@@ -415,7 +415,7 @@ export default function AcademiasBaratasMadridPage() {
                 <p className="text-zinc-600 text-sm mt-2">Certificación rápida y flexible.</p>
               </a>
               <a
-              href="/examenes-cambridge/b2-first"
+              href="/examenes-cambridge/b2-first/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-emerald-600 text-sm font-medium">B2 First</span>

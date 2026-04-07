@@ -4,7 +4,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
   // ─── 1. tiempo-b2-a-c1 ───────────────────────────────────────────────
   {
     slug: 'tiempo-b2-a-c1',
-    url: '/blog/tiempo-b2-a-c1',
+    url: '/blog/tiempo-b2-a-c1/',
     category: 'Cambridge C1 Advanced',
     priority: 'High',
     question: '¿Cuánto tiempo se tarda en pasar de B2 a C1?',
@@ -71,7 +71,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
   // ─── 2. es-dificil-c1-advanced ────────────────────────────────────────
   {
     slug: 'es-dificil-c1-advanced',
-    url: '/blog/es-dificil-c1-advanced',
+    url: '/blog/es-dificil-c1-advanced/',
     category: 'Cambridge C1 Advanced',
     priority: 'High',
     question: '¿Es muy difícil el C1 Advanced?',
@@ -138,7 +138,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
   // ─── 3. trabajos-piden-c1-ingles ──────────────────────────────────────
   {
     slug: 'trabajos-piden-c1-ingles',
-    url: '/blog/trabajos-piden-c1-ingles',
+    url: '/blog/trabajos-piden-c1-ingles/',
     category: 'Cambridge C1 Advanced',
     priority: 'High',
     question: '¿Qué trabajos piden C1 de inglés?',
@@ -210,7 +210,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
   // ─── 4. c1-advanced-vs-ielts ──────────────────────────────────────────
   {
     slug: 'c1-advanced-vs-ielts',
-    url: '/blog/c1-advanced-vs-ielts',
+    url: '/blog/c1-advanced-vs-ielts/',
     category: 'Cambridge C1 Advanced',
     priority: 'Medium',
     question: '¿C1 Advanced o C1 IELTS?',
@@ -272,7 +272,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
   // ─── 5. horas-estudio-c1-advanced ─────────────────────────────────────
   {
     slug: 'horas-estudio-c1-advanced',
-    url: '/blog/horas-estudio-c1-advanced',
+    url: '/blog/horas-estudio-c1-advanced/',
     category: 'Cambridge C1 Advanced',
     priority: 'Medium',
     question: '¿Cuántas horas de estudio para C1?',
@@ -339,7 +339,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
   // ─── 6. c1-advanced-caduca ────────────────────────────────────────────
   {
     slug: 'c1-advanced-caduca',
-    url: '/blog/c1-advanced-caduca',
+    url: '/blog/c1-advanced-caduca/',
     category: 'Cambridge C1 Advanced',
     priority: 'High',
     question: '¿El C1 caduca?',
@@ -406,7 +406,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
   // ─── 7. diferencia-b2-c1 ──────────────────────────────────────────────
   {
     slug: 'diferencia-b2-c1',
-    url: '/blog/diferencia-b2-c1',
+    url: '/blog/diferencia-b2-c1/',
     category: 'Cambridge C1 Advanced',
     priority: 'High',
     question: '¿Qué diferencia hay entre B2 y C1?',
@@ -478,7 +478,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
   // ─── 8. c1-sin-b2 ────────────────────────────────────────────────────
   {
     slug: 'c1-sin-b2',
-    url: '/blog/c1-sin-b2',
+    url: '/blog/c1-sin-b2/',
     category: 'Cambridge C1 Advanced',
     priority: 'Medium',
     question: '¿Puedo hacer C1 sin haber hecho B2?',
@@ -550,7 +550,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
   // ─── 9. porcentaje-aprobados-c1 ───────────────────────────────────────
   {
     slug: 'porcentaje-aprobados-c1',
-    url: '/blog/porcentaje-aprobados-c1',
+    url: '/blog/porcentaje-aprobados-c1/',
     category: 'Cambridge C1 Advanced',
     priority: 'Medium',
     question: '¿Qué porcentaje aprueba el C1 Advanced?',
@@ -617,7 +617,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
   // ─── 10. vale-pena-c1-espana ──────────────────────────────────────────
   {
     slug: 'vale-pena-c1-espana',
-    url: '/blog/vale-pena-c1-espana',
+    url: '/blog/vale-pena-c1-espana/',
     category: 'Cambridge C1 Advanced',
     priority: 'High',
     question: '¿Merece la pena el C1 en España?',

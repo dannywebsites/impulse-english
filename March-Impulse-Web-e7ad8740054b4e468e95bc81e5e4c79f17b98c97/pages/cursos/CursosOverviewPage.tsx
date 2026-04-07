@@ -143,7 +143,7 @@ export default function CursosOverviewPage() {
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
-                href="/reservar-clase"
+                href="/reservar-clase/"
                 className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba de Nivel Gratuita
@@ -280,25 +280,25 @@ export default function CursosOverviewPage() {
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">A1 Movers</span>
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">A2 Flyers</span>
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">A2 Key</span>
-            <a href="/examenes-cambridge/b1-preliminary" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">B1 Preliminary</a>
-            <a href="/examenes-cambridge/b2-first" className="px-4 py-2 rounded-full text-sm font-medium bg-white text-accent-blue hover:bg-yellow-400 hover:text-blue-900 transition-colors">B2 First</a>
-            <a href="/examenes-cambridge/c1-advanced" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">C1 Advanced</a>
+            <a href="/examenes-cambridge/b1-preliminary/" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">B1 Preliminary</a>
+            <a href="/examenes-cambridge/b2-first/" className="px-4 py-2 rounded-full text-sm font-medium bg-white text-accent-blue hover:bg-yellow-400 hover:text-blue-900 transition-colors">B2 First</a>
+            <a href="/examenes-cambridge/c1-advanced/" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">C1 Advanced</a>
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">C2 Proficiency</span>
           </div>
           <div className="bg-white/10 p-4 rounded-xl inline-block mb-8">
             <p className="text-white/90 font-medium">
-              <a href="/linguaskill" className="underline hover:text-yellow-300 transition-colors">Linguaskill</a> también disponible - Certificado en 48 horas
+              <a href="/linguaskill/" className="underline hover:text-yellow-300 transition-colors">Linguaskill</a> también disponible - Certificado en 48 horas
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
               className="bg-white text-accent-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
             >
               Ver todos los exámenes Cambridge
             </a>
             <a
-              href="/linguaskill"
+              href="/linguaskill/"
               className="bg-white/10 text-white border border-white/30 font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-accent-blue transition-colors"
             >
               Conocer Linguaskill
@@ -365,7 +365,7 @@ export default function CursosOverviewPage() {
                 </a>
               </div>
               <p className="text-zinc-500 mt-6 text-sm">
-                <a href="/precios" className="text-accent-blue hover:underline font-medium">Ver precios</a> · {NAP.fullAddress}
+                <a href="/precios/" className="text-accent-blue hover:underline font-medium">Ver precios</a> · {NAP.fullAddress}
               </p>
             </div>
             <div>

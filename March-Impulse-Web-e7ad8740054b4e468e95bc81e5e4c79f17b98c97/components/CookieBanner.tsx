@@ -77,11 +77,11 @@ export default function CookieBanner() {
           Utilizamos cookies propias y de terceros para analizar el uso de nuestro sitio web y mejorar tu experiencia.
           Puedes aceptar todas las cookies o rechazar las no esenciales.
           Consulta nuestra{' '}
-          <a href="/politica-cookies" className="text-accent-blue underline hover:text-blue-800">
+          <a href="/politica-cookies/" className="text-accent-blue underline hover:text-blue-800">
             Política de Cookies
           </a>{' '}
           y nuestra{' '}
-          <a href="/politica-privacidad" className="text-accent-blue underline hover:text-blue-800">
+          <a href="/politica-privacidad/" className="text-accent-blue underline hover:text-blue-800">
             Política de Privacidad
           </a>.
         </p>

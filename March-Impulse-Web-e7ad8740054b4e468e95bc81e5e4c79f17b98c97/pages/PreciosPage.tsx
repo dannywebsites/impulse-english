@@ -132,7 +132,7 @@ export default function PreciosPage() {
             </p>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
-                href="/reservar-clase"
+                href="/reservar-clase/"
                 className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba Gratuita
@@ -251,7 +251,7 @@ export default function PreciosPage() {
               WhatsApp
             </a>
             <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
               className="bg-white text-accent-blue font-bold py-3 px-8 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors flex items-center gap-2"
             >
               Reservar Prueba Gratuita

@@ -146,7 +146,7 @@ export default function NuestroEquipoPage() {
 
               <div className="mt-6">
                 <p className="text-zinc-500 text-sm">
-                  JP dirige los programas de <a href="/cursos-ingles/infantil" className="text-accent-blue hover:underline">inglés infantil</a> y supervisa la preparación <a href="/cursos-ingles/adultos" className="text-accent-blue hover:underline">Cambridge para adultos</a>.
+                  JP dirige los programas de <a href="/cursos-ingles/infantil/" className="text-accent-blue hover:underline">inglés infantil</a> y supervisa la preparación <a href="/cursos-ingles/adultos/" className="text-accent-blue hover:underline">Cambridge para adultos</a>.
                 </p>
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function NuestroEquipoPage() {
 
               <div className="mt-6">
                 <p className="text-zinc-500 text-sm">
-                  Danny trabaja con estudiantes de <a href="/cursos-ingles/infantil" className="text-accent-blue hover:underline">primaria y secundaria</a> y apoya la formación <a href="/cursos-ingles/adultos" className="text-accent-blue hover:underline">de adultos</a>.
+                  Danny trabaja con estudiantes de <a href="/cursos-ingles/infantil/" className="text-accent-blue hover:underline">primaria y secundaria</a> y apoya la formación <a href="/cursos-ingles/adultos/" className="text-accent-blue hover:underline">de adultos</a>.
                 </p>
               </div>
             </div>
@@ -274,7 +274,7 @@ export default function NuestroEquipoPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/reservar-clase"
+                href="/reservar-clase/"
                 className="bg-white text-accent-blue hover:bg-zinc-100 font-bold py-4 px-8 rounded-lg transition-colors inline-flex items-center justify-center gap-2"
               >
                 Reservar Prueba

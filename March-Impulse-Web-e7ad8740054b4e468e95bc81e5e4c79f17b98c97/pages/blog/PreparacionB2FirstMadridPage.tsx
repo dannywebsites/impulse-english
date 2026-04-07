@@ -189,7 +189,7 @@ export default function PreparacionB2FirstMadridPage() {
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
           <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
             className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
@@ -498,7 +498,7 @@ export default function PreparacionB2FirstMadridPage() {
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a
-              href="/examenes-cambridge/b2-first"
+              href="/examenes-cambridge/b2-first/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">Cambridge B2</span>
@@ -506,7 +506,7 @@ export default function PreparacionB2FirstMadridPage() {
                 <p className="text-zinc-600 text-sm mt-2">Descubre por qué el B2 First es el certificado más demandado.</p>
               </a>
               <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">Hub Principal</span>
@@ -514,7 +514,7 @@ export default function PreparacionB2FirstMadridPage() {
                 <p className="text-zinc-600 text-sm mt-2">Todo lo que necesitas saber sobre certificaciones.</p>
               </a>
               <a
-              href="/examenes-cambridge/fechas-precios"
+              href="/examenes-cambridge/fechas-precios/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">Fechas</span>

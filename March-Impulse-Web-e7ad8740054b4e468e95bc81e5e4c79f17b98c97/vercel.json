@@ -18,6 +18,8 @@
     }
   ],
   "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.impulse-english.es" }], "destination": "https://impulse-english.es/:path*", "permanent": true },
+
     { "source": "/wp-content/themes/impulse-english/assets/images/optimized/:path*", "destination": "/images/optimized/:path*", "permanent": true },
 
     { "source": "/exam-impulse", "destination": "/reservar-clase/", "permanent": true },
@@ -115,7 +117,12 @@
     { "source": "/clase-gratis-impulse/", "destination": "/reservar-clase/", "permanent": true },
 
     { "source": "/landing-page", "destination": "/", "permanent": true },
-    { "source": "/landing-page/", "destination": "/", "permanent": true }
+    { "source": "/landing-page/", "destination": "/", "permanent": true },
+
+    { "source": "/blog/author/:path*", "destination": "/sobre-nosotros/", "permanent": true },
+    { "source": "/blog/dipl-testimonial/:path*", "destination": "/testimonios/", "permanent": true },
+    { "source": "/blog/centros-cambridge-madrid", "destination": "/examenes-cambridge/centros-madrid/", "permanent": true },
+    { "source": "/blog/academias-ingles-madrid", "destination": "/academias-ingles-madrid/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/404.html" }

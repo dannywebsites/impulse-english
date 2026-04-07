@@ -339,7 +339,7 @@ export default function PerderMiedoHablarInglesPage() {
                   El miedo a hablar inglés es universal pero no permanente. Con el entorno correcto y las estrategias adecuadas, la mayoría de adultos nota mejora significativa en 4-8 semanas. No esperes a tener nivel perfecto para empezar a hablar: empieza a hablar para conseguir ese nivel.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> creamos un entorno seguro donde el error es bienvenido y la práctica del speaking es el centro de cada clase. Prueba una clase gratis y comprueba la diferencia.
+                  En <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> creamos un entorno seguro donde el error es bienvenido y la práctica del speaking es el centro de cada clase. Prueba una clase gratis y comprueba la diferencia.
                 </p>
               </div>
             </section>
@@ -351,7 +351,7 @@ export default function PerderMiedoHablarInglesPage() {
                 Nuestros grupos reducidos y metodología positiva están diseñados para convertir el miedo en confianza. Primera clase sin compromiso.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reservar clase de prueba
@@ -363,19 +363,19 @@ export default function PerderMiedoHablarInglesPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo creamos el entorno ideal para hablar sin miedo.</p>
                 </a>
-                <a href="/blog/verguenza-hablar-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/verguenza-hablar-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Vergüenza al Hablar Inglés
                   </h3>
                   <p className="text-gray-600 text-sm">Causas y soluciones para la vergüenza lingüística en adultos.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>

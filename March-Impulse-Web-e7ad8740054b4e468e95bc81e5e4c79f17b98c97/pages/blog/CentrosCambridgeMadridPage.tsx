@@ -10,7 +10,7 @@ import type { FAQItem } from '../../utils/schemaData';
 export const articleSchema = generateArticleSchema({
     headline: "Centros Cambridge en Madrid y Barcelona: Guía Completa 2025",
     description: "Guía completa de centros Cambridge en Madrid y Barcelona. Dónde examinarte, precios, diferencias entre centros Platino y regulares.",
-    url: `${businessInfo.url}/blog/centros-cambridge-madrid`,
+    url: `${businessInfo.url}/examenes-cambridge/centros-madrid/`,
     datePublished: "2025-01-15"
   });
 
@@ -378,7 +378,7 @@ export default function CentrosCambridgeMadridPage() {
                   Elegir el centro Cambridge adecuado en Madrid o Barcelona requiere evaluar ubicación, formato disponible, servicios complementarios y política de cambios específica de cada sede.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Para candidatos que buscan preparación integral antes del examen, academias especializadas como <strong><a href="/academia-ingles-barrio-del-pilar" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</a></strong> ofrecen programas específicos Cambridge con tasas de éxito comprobadas. Si buscas <a href="/examenes-cambridge/b2-first" className="text-red-600 hover:underline font-medium">B2 First</a> o <a href="/examenes-cambridge/b1-preliminary" className="text-red-600 hover:underline font-medium">B1 Preliminary</a>, nuestra <a href="/academia-ingles-la-vaguada" className="text-red-600 hover:underline font-medium">junto a La Vaguada</a> ofrece <a href="/cursos-ingles/particulares" className="text-red-600 hover:underline font-medium">clases particulares</a> personalizadas para maximizar tu puntuación.
+                  Para candidatos que buscan preparación integral antes del examen, academias especializadas como <strong><a href="/academia-ingles-barrio-del-pilar/" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</a></strong> ofrecen programas específicos Cambridge con tasas de éxito comprobadas. Si buscas <a href="/examenes-cambridge/b2-first/" className="text-red-600 hover:underline font-medium">B2 First</a> o <a href="/examenes-cambridge/b1-preliminary/" className="text-red-600 hover:underline font-medium">B1 Preliminary</a>, nuestra <a href="/academia-ingles-la-vaguada/" className="text-red-600 hover:underline font-medium">junto a La Vaguada</a> ofrece <a href="/cursos-ingles/particulares/" className="text-red-600 hover:underline font-medium">clases particulares</a> personalizadas para maximizar tu puntuación.
                 </p>
               </div>
             </section>
@@ -390,7 +390,7 @@ export default function CentrosCambridgeMadridPage() {
                 En Impulse English Academy te preparamos con metodología oficial para aprobar tu examen Cambridge con la mejor puntuación.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-red-600 px-8 py-4 rounded-xl font-semibold hover:bg-red-50 transition-colors"
               >
                 Solicitar información
@@ -402,13 +402,13 @@ export default function CentrosCambridgeMadridPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-red-50 transition-colors">
+                <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-red-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors mb-2">
                     Guía de Exámenes Cambridge 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre certificaciones Cambridge.</p>
                 </a>
-                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-red-50 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced/" className="group bg-gray-50 rounded-xl p-6 hover:bg-red-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors mb-2">
                     Precio C1 Advanced en Madrid
                   </h3>

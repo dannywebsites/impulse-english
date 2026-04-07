@@ -1114,7 +1114,7 @@ export default function BlogPage() {
             Suscríbete a nuestra newsletter y recibe tips de inglés, noticias sobre exámenes Cambridge y ofertas exclusivas.
           </p>
           <a
-              href="/contacto"
+              href="/contacto/"
             className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-3 px-8 rounded-lg hover:bg-zinc-100 transition-colors"
           >
             Contactar

@@ -107,7 +107,7 @@ export default function CuantasVecesB2FirstPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Si estás pensando en presentarte al <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First de Cambridge</a> o si ya te has presentado y no has obtenido el resultado esperado, una de las primeras preguntas que surge es: ¿cuántas veces puedo intentarlo? La buena noticia es clara: <strong>no hay límite de intentos</strong>. Puedes presentarte tantas veces como desees, sin restricción alguna por parte de Cambridge. Cada intento es independiente y tu certificado final será igual de válido, independientemente de si es tu primer o quinto intento.
+              Si estás pensando en presentarte al <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First de Cambridge</a> o si ya te has presentado y no has obtenido el resultado esperado, una de las primeras preguntas que surge es: ¿cuántas veces puedo intentarlo? La buena noticia es clara: <strong>no hay límite de intentos</strong>. Puedes presentarte tantas veces como desees, sin restricción alguna por parte de Cambridge. Cada intento es independiente y tu certificado final será igual de válido, independientemente de si es tu primer o quinto intento.
             </p>
 
             {/* Section 1 - Sin límite */}
@@ -335,13 +335,13 @@ export default function CuantasVecesB2FirstPage() {
                     <BookOpen className="w-5 h-5 text-emerald-600" />
                     Considerar Linguaskill como alternativa
                   </h3>
-                  <p className="text-gray-700">Si necesitas acreditar tu nivel de inglés urgentemente y no puedes esperar a prepararte más para el B2 First, el <a href="/linguaskill" className="text-emerald-600 hover:underline">Linguaskill</a> es una alternativa más flexible. Es más barato (~80-100 EUR), tiene resultados en 48 horas y se puede realizar con mucha más frecuencia. Sin embargo, el resultado caduca a los 2 años, a diferencia del certificado B2 First que es permanente.</p>
+                  <p className="text-gray-700">Si necesitas acreditar tu nivel de inglés urgentemente y no puedes esperar a prepararte más para el B2 First, el <a href="/linguaskill/" className="text-emerald-600 hover:underline">Linguaskill</a> es una alternativa más flexible. Es más barato (~80-100 EUR), tiene resultados en 48 horas y se puede realizar con mucha más frecuencia. Sin embargo, el resultado caduca a los 2 años, a diferencia del certificado B2 First que es permanente.</p>
                 </div>
               </div>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Nuestra recomendación:</strong> Si necesitas el B2 para un objetivo específico (oposiciones, universidad, trabajo), invierte en preparación de calidad antes de repetir. Un buen curso de 2-3 meses es más rentable que 2-3 intentos fallidos. Consulta nuestro <a href="/blog/registro-cambridge" className="text-emerald-600 hover:underline">proceso de registro</a> para planificar tu próximo intento.
+                  <strong>Nuestra recomendación:</strong> Si necesitas el B2 para un objetivo específico (oposiciones, universidad, trabajo), invierte en preparación de calidad antes de repetir. Un buen curso de 2-3 meses es más rentable que 2-3 intentos fallidos. Consulta nuestro <a href="/blog/registro-cambridge/" className="text-emerald-600 hover:underline">proceso de registro</a> para planificar tu próximo intento.
                 </p>
               </div>
             </section>
@@ -384,10 +384,10 @@ export default function CuantasVecesB2FirstPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  No hay límite de intentos para el <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a>, y eso es una tranquilidad. Pero la clave no está en repetir mecánicamente, sino en utilizar cada intento como una oportunidad de aprendizaje. Analiza tus resultados, invierte en preparación específica para tus áreas débiles y espera el tiempo necesario para mejorar realmente antes de volver a presentarte.
+                  No hay límite de intentos para el <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First</a>, y eso es una tranquilidad. Pero la clave no está en repetir mecánicamente, sino en utilizar cada intento como una oportunidad de aprendizaje. Analiza tus resultados, invierte en preparación específica para tus áreas débiles y espera el tiempo necesario para mejorar realmente antes de volver a presentarte.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si necesitas apoyo para preparar tu próximo intento, nuestros <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> están diseñados para identificar y trabajar exactamente las áreas que necesitas mejorar. Consulta también el <a href="/blog/registro-cambridge" className="text-emerald-600 hover:underline font-medium">proceso de registro de Cambridge</a> para planificar las fechas de tu próxima convocatoria.
+                  Si necesitas apoyo para preparar tu próximo intento, nuestros <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> están diseñados para identificar y trabajar exactamente las áreas que necesitas mejorar. Consulta también el <a href="/blog/registro-cambridge/" className="text-emerald-600 hover:underline font-medium">proceso de registro de Cambridge</a> para planificar las fechas de tu próxima convocatoria.
                 </p>
               </div>
             </section>
@@ -399,7 +399,7 @@ export default function CuantasVecesB2FirstPage() {
                 En Impulse English Academy analizamos tus resultados anteriores y diseñamos un plan de preparación personalizado para que apruebes en tu próximo intento.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -411,19 +411,19 @@ export default function CuantasVecesB2FirstPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cambridge B2 First: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B2 First: estructura, formato y preparación.</p>
                 </a>
-                <a href="/blog/registro-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/registro-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cómo Registrarse en Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Guía paso a paso para inscribirte en tu examen Cambridge.</p>
                 </a>
-                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Linguaskill: Alternativa Rápida
                   </h3>

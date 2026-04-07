@@ -369,7 +369,7 @@ export default function InglesOnlineVsPresencialPage() {
                   Para niños menores de 10 años, el presencial sigue siendo claramente superior al online. La interacción física, el movimiento, la relación con el profesor y la dinámica de grupo son elementos que el online no puede replicar completamente a estas edades.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  El modelo óptimo es el híbrido inteligente: <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">clases presenciales</a> como base, complementadas con apps, contenido digital y, para mayores de 10 años, sesiones online ocasionales con nativos. En Impulse, nuestras clases presenciales integran recursos digitales de forma que los niños disfrutan de lo mejor de ambos mundos.
+                  El modelo óptimo es el híbrido inteligente: <a href="/cursos-ingles/infantil/" className="text-purple-600 hover:underline font-medium">clases presenciales</a> como base, complementadas con apps, contenido digital y, para mayores de 10 años, sesiones online ocasionales con nativos. En Impulse, nuestras clases presenciales integran recursos digitales de forma que los niños disfrutan de lo mejor de ambos mundos.
                 </p>
               </div>
             </section>
@@ -381,7 +381,7 @@ export default function InglesOnlineVsPresencialPage() {
                 El mejor de los dos mundos: presencial de calidad con recursos digitales integrados. Primera clase gratuita.
               </p>
               <a
-              href="/cursos-ingles/infantil"
+              href="/cursos-ingles/infantil/"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Ver clases infantil
@@ -393,19 +393,19 @@ export default function InglesOnlineVsPresencialPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/infantil/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés presencial para los más pequeños en Madrid.</p>
                 </a>
-                <a href="/cursos-ingles/primaria" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/primaria/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Primaria
                   </h3>
                   <p className="text-gray-600 text-sm">Inglés para niños de 6 a 12 años con prep Cambridge.</p>
                 </a>
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>

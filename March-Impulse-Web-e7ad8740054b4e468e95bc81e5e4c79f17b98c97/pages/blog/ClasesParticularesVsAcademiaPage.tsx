@@ -337,7 +337,7 @@ export default function ClasesParticularesVsAcademiaPage() {
                 Te orientamos hacia la modalidad que mejor encaja con tus objetivos y presupuesto. Sin compromiso.
               </p>
               <a
-              href="/cursos-ingles/particulares"
+              href="/cursos-ingles/particulares/"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
                 Ver clases particulares
@@ -349,19 +349,19 @@ export default function ClasesParticularesVsAcademiaPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo funcionan nuestras clases grupales y one-to-one.</p>
                 </a>
-                <a href="/cursos-ingles/particulares" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/cursos-ingles/particulares/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Cursos Particulares
                   </h3>
                   <p className="text-gray-600 text-sm">Clases one-to-one con la estructura y calidad de una academia.</p>
                 </a>
-                <a href="/contacto" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/contacto/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Contacto
                   </h3>

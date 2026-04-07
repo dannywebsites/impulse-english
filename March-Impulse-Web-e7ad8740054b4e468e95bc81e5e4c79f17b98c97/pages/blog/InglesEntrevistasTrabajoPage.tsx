@@ -414,7 +414,7 @@ export default function InglesEntrevistasTrabajoPage() {
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
                   <h3 className="font-bold text-gray-900 mb-2">Días 5-6: Simulacros reales</h3>
                   <ul className="space-y-2 text-gray-700 text-sm">
-                    <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /> Realiza 2-3 simulacros completos con un compañero, profesor o <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">tutor nativo</a></li>
+                    <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /> Realiza 2-3 simulacros completos con un compañero, profesor o <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">tutor nativo</a></li>
                     <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /> Simula el formato exacto (teléfono, vídeo o presencial)</li>
                     <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /> Practica el small talk inicial y el cierre de la entrevista</li>
                     <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /> Refina respuestas basándote en el feedback recibido</li>
@@ -474,7 +474,7 @@ export default function InglesEntrevistasTrabajoPage() {
                   Superar una entrevista de trabajo en inglés es una <strong>habilidad que se entrena</strong>, no un talento innato. Con la preparación adecuada, vocabulario específico y práctica con simulacros reales, puedes proyectar confianza y profesionalismo incluso si el inglés no es tu lengua materna. La clave está en preparar estructura, no memorizar textos.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos preparación intensiva para entrevistas con profesores titulados que simulan entrevistas reales adaptadas a tu sector. Consulta también nuestra guía sobre <a href="/blog/nivel-ingles-empresas" className="text-emerald-600 hover:underline font-medium">nivel de inglés que piden las empresas</a> para entender qué certificación necesitas, y explora nuestros <a href="/examenes-cambridge" className="text-emerald-600 hover:underline font-medium">programas de certificación Cambridge</a> para respaldar tu nivel con un título oficial.
+                  En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos preparación intensiva para entrevistas con profesores titulados que simulan entrevistas reales adaptadas a tu sector. Consulta también nuestra guía sobre <a href="/blog/nivel-ingles-empresas/" className="text-emerald-600 hover:underline font-medium">nivel de inglés que piden las empresas</a> para entender qué certificación necesitas, y explora nuestros <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline font-medium">programas de certificación Cambridge</a> para respaldar tu nivel con un título oficial.
                 </p>
               </div>
             </section>
@@ -486,7 +486,7 @@ export default function InglesEntrevistasTrabajoPage() {
                 Prepárate con simulacros reales con profesores titulados. Sesiones intensivas personalizadas para que llegues seguro a tu próxima entrevista.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reservar clase de preparación
@@ -498,25 +498,25 @@ export default function InglesEntrevistasTrabajoPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas flexibles adaptados a profesionales en activo.</p>
                 </a>
-                <a href="/blog/nivel-ingles-empresas" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/nivel-ingles-empresas/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nivel de Inglés en Empresas España
                   </h3>
                   <p className="text-gray-600 text-sm">Requisitos por sector y cómo certificarte para el mercado laboral.</p>
                 </a>
-                <a href="/blog/mejorar-speaking-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/mejorar-speaking-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cómo Mejorar tu Speaking en Inglés
                   </h3>
                   <p className="text-gray-600 text-sm">Técnicas prácticas para ganar fluidez y confianza al hablar.</p>
                 </a>
-                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía de Exámenes Cambridge
                   </h3>

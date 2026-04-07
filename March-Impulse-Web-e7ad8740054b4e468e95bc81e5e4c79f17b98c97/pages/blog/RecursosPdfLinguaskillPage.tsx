@@ -377,9 +377,9 @@ export default function RecursosPdfLinguaskillPage() {
                   práctica digital en plataformas interactivas para maximizar tu preparación.
                 </p>
                 <p className="text-white/90">
-                  Si buscas preparación estructurada con metodología probada, en nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">junto a La Vaguada</a>, ofrecemos
-                  cursos específicos para <a href="/linguaskill" className="text-white hover:underline font-bold">Linguaskill</a> que integran estos recursos PDF con práctica guiada y feedback personalizado
-                  por solo <strong>79€/mes</strong>. También preparamos otros <a href="/examenes-cambridge" className="text-white hover:underline font-bold">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</a>.
+                  Si buscas preparación estructurada con metodología probada, en nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-white hover:underline font-bold">junto a La Vaguada</a>, ofrecemos
+                  cursos específicos para <a href="/linguaskill/" className="text-white hover:underline font-bold">Linguaskill</a> que integran estos recursos PDF con práctica guiada y feedback personalizado
+                  por solo <strong>79€/mes</strong>. También preparamos otros <a href="/examenes-cambridge/" className="text-white hover:underline font-bold">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos/" className="text-white hover:underline font-bold">cursos de inglés para adultos</a>.
                 </p>
               </div>
             </section>
@@ -397,7 +397,7 @@ export default function RecursosPdfLinguaskillPage() {
                     </p>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Solicitar información
@@ -411,11 +411,11 @@ export default function RecursosPdfLinguaskillPage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <a href="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/linguaskill/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-teal-600">GUÍA COMPLETA</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa del Examen Linguaskill 2026</h4>
                 </a>
-                <a href="/linguaskill/ejemplo-examen" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/linguaskill/ejemplo-examen/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-teal-600">FORMATO</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Ejemplo Examen Linguaskill: Formato del Test</h4>
                 </a>

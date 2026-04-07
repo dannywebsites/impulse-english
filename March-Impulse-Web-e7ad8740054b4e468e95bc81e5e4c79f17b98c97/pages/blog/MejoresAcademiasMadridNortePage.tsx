@@ -299,7 +299,7 @@ export default function MejoresAcademiasMadridNortePage() {
             {/* Introduction */}
             <section className="mb-16">
               <p className="text-xl text-zinc-600 leading-relaxed">
-                Madrid Norte es una de las zonas con mayor demanda de academias de inglés de la capital. Barrios como Barrio del Pilar, Mirasierra, Montecarmelo, Las Tablas y Fuencarral concentran a miles de familias y profesionales que buscan opciones de calidad para aprender inglés cerca de casa. Hemos analizado las mejores opciones disponibles en 2026, evaluando metodología, profesorado, certificaciones, precios y opiniones de alumnos reales. Ya busques preparación para <a href="/examenes-cambridge" className="text-emerald-600 hover:underline">exámenes Cambridge</a>, <a href="/linguaskill" className="text-emerald-600 hover:underline">Linguaskill</a>, o clases para tus hijos, esta guía te ayudará a elegir.
+                Madrid Norte es una de las zonas con mayor demanda de academias de inglés de la capital. Barrios como Barrio del Pilar, Mirasierra, Montecarmelo, Las Tablas y Fuencarral concentran a miles de familias y profesionales que buscan opciones de calidad para aprender inglés cerca de casa. Hemos analizado las mejores opciones disponibles en 2026, evaluando metodología, profesorado, certificaciones, precios y opiniones de alumnos reales. Ya busques preparación para <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline">exámenes Cambridge</a>, <a href="/linguaskill/" className="text-emerald-600 hover:underline">Linguaskill</a>, o clases para tus hijos, esta guía te ayudará a elegir.
               </p>
             </section>
 
@@ -502,7 +502,7 @@ export default function MejoresAcademiasMadridNortePage() {
 
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-8">
                 <p className="text-zinc-700 font-medium">
-                  <strong>Consejo:</strong> No te dejes guiar solo por el precio mensual. Calcula el coste por hora de clase y compara el tamaño de los grupos. Una academia de 79€/mes con 8 horas y 10 alumnos es más rentable que una de 60€/mes con 4 horas y 20 alumnos. Consulta nuestra <a href="/precios" className="text-emerald-600 hover:underline">página de precios</a> para más detalles.
+                  <strong>Consejo:</strong> No te dejes guiar solo por el precio mensual. Calcula el coste por hora de clase y compara el tamaño de los grupos. Una academia de 79€/mes con 8 horas y 10 alumnos es más rentable que una de 60€/mes con 4 horas y 20 alumnos. Consulta nuestra <a href="/precios/" className="text-emerald-600 hover:underline">página de precios</a> para más detalles.
                 </p>
               </div>
             </section>
@@ -514,7 +514,7 @@ export default function MejoresAcademiasMadridNortePage() {
               </h2>
 
               <p className="text-zinc-600 leading-relaxed mb-6">
-                En un mercado con tantas opciones, los resultados verificables son lo que diferencia a las mejores academias. Impulse English Academy, ubicada en la zona de <a href="/academia-ingles-la-vaguada" className="text-emerald-600 hover:underline">La Vaguada</a> y <a href="/academia-ingles-barrio-del-pilar" className="text-emerald-600 hover:underline">Barrio del Pilar</a>, destaca por varios factores objetivos:
+                En un mercado con tantas opciones, los resultados verificables son lo que diferencia a las mejores academias. Impulse English Academy, ubicada en la zona de <a href="/academia-ingles-la-vaguada/" className="text-emerald-600 hover:underline">La Vaguada</a> y <a href="/academia-ingles-barrio-del-pilar/" className="text-emerald-600 hover:underline">Barrio del Pilar</a>, destaca por varios factores objetivos:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
@@ -562,11 +562,11 @@ export default function MejoresAcademiasMadridNortePage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-zinc-600"><strong>Desde 64€/mes</strong> con cursos para <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">adultos</a>, <a href="/cursos-ingles/infantil" className="text-emerald-600 hover:underline">niños</a>, <a href="/cursos-ingles/primaria" className="text-emerald-600 hover:underline">primaria</a> y <a href="/cursos-ingles/secundaria" className="text-emerald-600 hover:underline">secundaria</a></span>
+                    <span className="text-zinc-600"><strong>Desde 64€/mes</strong> con cursos para <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">adultos</a>, <a href="/cursos-ingles/infantil/" className="text-emerald-600 hover:underline">niños</a>, <a href="/cursos-ingles/primaria/" className="text-emerald-600 hover:underline">primaria</a> y <a href="/cursos-ingles/secundaria/" className="text-emerald-600 hover:underline">secundaria</a></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-zinc-600"><strong>Preparación especializada</strong> para <a href="/examenes-cambridge" className="text-emerald-600 hover:underline">exámenes Cambridge</a> y <a href="/linguaskill" className="text-emerald-600 hover:underline">Linguaskill</a></span>
+                    <span className="text-zinc-600"><strong>Preparación especializada</strong> para <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline">exámenes Cambridge</a> y <a href="/linguaskill/" className="text-emerald-600 hover:underline">Linguaskill</a></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
@@ -580,20 +580,20 @@ export default function MejoresAcademiasMadridNortePage() {
                 Si vives o trabajas en zonas cercanas, Impulse English Academy está a pocos minutos. Nuestra ubicación es accesible desde todo el norte de Madrid:
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
-                <a href="/academia-ingles-barrio-del-pilar" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Barrio del Pilar</a>
-                <a href="/academia-ingles-la-vaguada" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">La Vaguada</a>
-                <a href="/academia-ingles-mirasierra" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Mirasierra</a>
-                <a href="/academia-ingles-montecarmelo" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Montecarmelo</a>
-                <a href="/academia-ingles-las-tablas" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Las Tablas</a>
-                <a href="/academia-ingles-tetuan" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Tetuán</a>
-                <a href="/academia-ingles-plaza-castilla" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Plaza Castilla</a>
-                <a href="/academia-ingles-penagrande" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Peñagrande</a>
-                <a href="/academia-ingles-la-ventilla" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">La Ventilla</a>
-                <a href="/academia-ingles-cuatro-torres" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Cuatro Torres</a>
+                <a href="/academia-ingles-barrio-del-pilar/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Barrio del Pilar</a>
+                <a href="/academia-ingles-la-vaguada/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">La Vaguada</a>
+                <a href="/academia-ingles-mirasierra/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Mirasierra</a>
+                <a href="/academia-ingles-montecarmelo/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Montecarmelo</a>
+                <a href="/academia-ingles-las-tablas/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Las Tablas</a>
+                <a href="/academia-ingles-tetuan/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Tetuán</a>
+                <a href="/academia-ingles-plaza-castilla/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Plaza Castilla</a>
+                <a href="/academia-ingles-penagrande/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Peñagrande</a>
+                <a href="/academia-ingles-la-ventilla/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">La Ventilla</a>
+                <a href="/academia-ingles-cuatro-torres/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Cuatro Torres</a>
               </div>
 
               <p className="text-zinc-600 leading-relaxed">
-                Consulta nuestra <a href="/precios" className="text-emerald-600 hover:underline">página de precios</a> y descubre todos nuestros <a href="/cursos-ingles" className="text-emerald-600 hover:underline">cursos de inglés</a> disponibles.
+                Consulta nuestra <a href="/precios/" className="text-emerald-600 hover:underline">página de precios</a> y descubre todos nuestros <a href="/cursos-ingles/" className="text-emerald-600 hover:underline">cursos de inglés</a> disponibles.
               </p>
             </section>
 
@@ -657,7 +657,7 @@ export default function MejoresAcademiasMadridNortePage() {
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a
-                href="/blog/mejores-academias-madrid"
+                href="/blog/mejores-academias-madrid/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-emerald-600 text-sm font-medium">Academias</span>
@@ -665,7 +665,7 @@ export default function MejoresAcademiasMadridNortePage() {
                 <p className="text-zinc-600 text-sm mt-2">Guía comparativa completa de toda la ciudad.</p>
               </a>
               <a
-                href="/blog/cambridge-b2-beneficios"
+                href="/blog/cambridge-b2-beneficios/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-emerald-600 text-sm font-medium">Cambridge</span>
@@ -673,7 +673,7 @@ export default function MejoresAcademiasMadridNortePage() {
                 <p className="text-zinc-600 text-sm mt-2">Descubre por qué esta certificación impulsa tu carrera.</p>
               </a>
               <a
-                href="/blog/cursos-ingles-adultos-madrid"
+                href="/blog/cursos-ingles-adultos-madrid/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-emerald-600 text-sm font-medium">Cursos</span>

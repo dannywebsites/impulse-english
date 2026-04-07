@@ -106,7 +106,7 @@ export default function LinguaskillCasaFiablePage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              La posibilidad de realizar <a href="/blog/linguaskill-online-casa" className="text-amber-600 hover:underline font-medium">Linguaskill desde casa</a> ha generado tanto entusiasmo como escepticismo. Muchos candidatos se preguntan si un examen de inglés realizado en el propio domicilio puede tener la misma fiabilidad y validez que uno realizado en un centro examinador presencial. La respuesta es un rotundo <strong>sí</strong>: Cambridge Assessment English ha implementado un sistema de seguridad multicapa que garantiza la integridad del examen con independencia de dónde se realice.
+              La posibilidad de realizar <a href="/blog/linguaskill-online-casa/" className="text-amber-600 hover:underline font-medium">Linguaskill desde casa</a> ha generado tanto entusiasmo como escepticismo. Muchos candidatos se preguntan si un examen de inglés realizado en el propio domicilio puede tener la misma fiabilidad y validez que uno realizado en un centro examinador presencial. La respuesta es un rotundo <strong>sí</strong>: Cambridge Assessment English ha implementado un sistema de seguridad multicapa que garantiza la integridad del examen con independencia de dónde se realice.
             </p>
 
             {/* Section 1 */}
@@ -326,12 +326,12 @@ export default function LinguaskillCasaFiablePage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Según datos internos de centros examinadores, los candidatos que realizan <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">Linguaskill</a> desde casa obtienen puntuaciones equivalentes a quienes lo hacen en centro. No hay diferencia estadística significativa en los resultados, lo que confirma la fiabilidad de la modalidad remota.
+                Según datos internos de centros examinadores, los candidatos que realizan <a href="/linguaskill/" className="text-amber-600 hover:underline font-medium">Linguaskill</a> desde casa obtienen puntuaciones equivalentes a quienes lo hacen en centro. No hay diferencia estadística significativa en los resultados, lo que confirma la fiabilidad de la modalidad remota.
               </p>
 
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Nota:</strong> Si tienes dudas sobre tu conexión a Internet o tu equipamiento técnico, hacer el examen en un centro autorizado elimina esos riesgos por completo. Consulta nuestros <a href="/blog/registro-linguaskill" className="text-amber-600 hover:underline">centros de registro Linguaskill</a> para más información.
+                  <strong>Nota:</strong> Si tienes dudas sobre tu conexión a Internet o tu equipamiento técnico, hacer el examen en un centro autorizado elimina esos riesgos por completo. Consulta nuestros <a href="/blog/registro-linguaskill/" className="text-amber-600 hover:underline">centros de registro Linguaskill</a> para más información.
                 </p>
               </div>
             </section>
@@ -382,7 +382,7 @@ export default function LinguaskillCasaFiablePage() {
 
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Recomendación:</strong> Haz una simulación completa en las mismas condiciones antes del examen real. Practica con los <a href="/blog/linguaskill-online-casa" className="text-amber-600 hover:underline">materiales de práctica oficiales</a> sentado en el mismo escritorio, con el mismo ordenador y en el mismo horario que planeas para el examen real.
+                  <strong>Recomendación:</strong> Haz una simulación completa en las mismas condiciones antes del examen real. Practica con los <a href="/blog/linguaskill-online-casa/" className="text-amber-600 hover:underline">materiales de práctica oficiales</a> sentado en el mismo escritorio, con el mismo ordenador y en el mismo horario que planeas para el examen real.
                 </p>
               </div>
             </section>
@@ -428,7 +428,7 @@ export default function LinguaskillCasaFiablePage() {
                   <strong>Linguaskill desde casa es completamente fiable y seguro.</strong> Cambridge Assessment ha invertido años y millones en desarrollar un sistema de supervisión remota que garantiza la integridad del examen con el mismo rigor que en un centro presencial. La combinación de supervisión humana en tiempo real, IA de detección de anomalías, navegador seguro y tecnología adaptativa hace prácticamente imposible cualquier fraude.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si estás considerando certificar tu nivel de inglés con Linguaskill, la modalidad desde casa es una opción excelente que combina comodidad y validez total. En <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">Impulse English Academy</a> te preparamos específicamente para este formato y te guiamos en todo el proceso de <a href="/blog/registro-linguaskill" className="text-amber-600 hover:underline font-medium">registro y preparación</a>. Consulta también los <a href="/linguaskill/precios-fechas" className="text-amber-600 hover:underline font-medium">precios y fechas disponibles</a> para planificar tu examen.
+                  Si estás considerando certificar tu nivel de inglés con Linguaskill, la modalidad desde casa es una opción excelente que combina comodidad y validez total. En <a href="/linguaskill/" className="text-amber-600 hover:underline font-medium">Impulse English Academy</a> te preparamos específicamente para este formato y te guiamos en todo el proceso de <a href="/blog/registro-linguaskill/" className="text-amber-600 hover:underline font-medium">registro y preparación</a>. Consulta también los <a href="/linguaskill/precios-fechas/" className="text-amber-600 hover:underline font-medium">precios y fechas disponibles</a> para planificar tu examen.
                 </p>
               </div>
             </section>
@@ -440,7 +440,7 @@ export default function LinguaskillCasaFiablePage() {
                 Te ayudamos a prepararte y te asesoramos sobre la modalidad que mejor se adapta a ti: en centro o desde casa.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-amber-600 px-8 py-4 rounded-xl font-semibold hover:bg-amber-50 transition-colors"
               >
                 Solicitar información
@@ -452,19 +452,19 @@ export default function LinguaskillCasaFiablePage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/blog/linguaskill-online-casa" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/blog/linguaskill-online-casa/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Linguaskill Online desde Casa
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo prepararte y realizar el examen desde tu hogar.</p>
                 </a>
-                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Linguaskill: Toda la Información
                   </h3>
                   <p className="text-gray-600 text-sm">Guía completa del examen Linguaskill de Cambridge.</p>
                 </a>
-                <a href="/blog/registro-linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/blog/registro-linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Registro Linguaskill
                   </h3>

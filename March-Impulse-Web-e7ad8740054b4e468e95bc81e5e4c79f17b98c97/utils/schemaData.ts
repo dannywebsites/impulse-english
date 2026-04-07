@@ -274,14 +274,6 @@ export function generateWebSiteSchema() {
       "@type": "EducationalOrganization",
       "@id": `${businessInfo.url}/#organization`
     },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${businessInfo.url}/blog?q={search_term_string}`
-      },
-      "query-input": "required name=search_term_string"
-    },
     inLanguage: "es"
   };
 }

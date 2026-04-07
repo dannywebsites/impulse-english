@@ -115,7 +115,7 @@ export default function NotaAprobarB2FirstPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Entender el sistema de puntuación del <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First de Cambridge</a> es fundamental para planificar tu preparación y establecer objetivos realistas. El examen utiliza la <strong>Cambridge English Scale</strong>, un sistema estandarizado donde necesitas un mínimo de <strong>160 puntos</strong> para aprobar. Pero las calificaciones van mucho más allá del simple aprobado: dependiendo de tu puntuación, puedes obtener un Grade C, B o incluso un Grade A que equivale al nivel C1.
+              Entender el sistema de puntuación del <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First de Cambridge</a> es fundamental para planificar tu preparación y establecer objetivos realistas. El examen utiliza la <strong>Cambridge English Scale</strong>, un sistema estandarizado donde necesitas un mínimo de <strong>160 puntos</strong> para aprobar. Pero las calificaciones van mucho más allá del simple aprobado: dependiendo de tu puntuación, puedes obtener un Grade C, B o incluso un Grade A que equivale al nivel C1.
             </p>
 
             {/* Section 1 - Puntuación Mínima */}
@@ -207,7 +207,7 @@ export default function NotaAprobarB2FirstPage() {
               </h2>
 
               <p className="text-gray-700 mb-6 leading-relaxed">
-                La <a href="/blog/escala-cambridge" className="text-emerald-600 hover:underline font-medium">Cambridge English Scale</a> es el sistema de puntuación unificado que Cambridge introdujo para estandarizar todos sus exámenes. Es una escala que va de 80 a 230 puntos, donde cada examen cubre un rango específico:
+                La <a href="/blog/escala-cambridge/" className="text-emerald-600 hover:underline font-medium">Cambridge English Scale</a> es el sistema de puntuación unificado que Cambridge introdujo para estandarizar todos sus exámenes. Es una escala que va de 80 a 230 puntos, donde cada examen cubre un rango específico:
               </p>
 
               <div className="overflow-x-auto mb-8">
@@ -412,10 +412,10 @@ export default function NotaAprobarB2FirstPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El sistema de puntuación del <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> está diseñado para ser justo y transparente. Con 160 puntos como mínimo, tres niveles de Grade y la posibilidad de obtener certificación C1 con un Grade A, el examen ofrece múltiples niveles de reconocimiento. La clave está en prepararse de forma equilibrada, conocer bien el formato de cada sección y gestionar estratégicamente el tiempo durante el examen.
+                  El sistema de puntuación del <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First</a> está diseñado para ser justo y transparente. Con 160 puntos como mínimo, tres niveles de Grade y la posibilidad de obtener certificación C1 con un Grade A, el examen ofrece múltiples niveles de reconocimiento. La clave está en prepararse de forma equilibrada, conocer bien el formato de cada sección y gestionar estratégicamente el tiempo durante el examen.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si quieres maximizar tu puntuación, una preparación estructurada como la que ofrecemos en nuestros <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> marca la diferencia. Consulta también los <a href="/blog/ejercicios-b2-cambridge" className="text-emerald-600 hover:underline font-medium">ejercicios de práctica B2</a> y nuestra guía sobre la <a href="/blog/escala-cambridge" className="text-emerald-600 hover:underline font-medium">escala de Cambridge</a> para profundizar en el sistema.
+                  Si quieres maximizar tu puntuación, una preparación estructurada como la que ofrecemos en nuestros <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> marca la diferencia. Consulta también los <a href="/blog/ejercicios-b2-cambridge/" className="text-emerald-600 hover:underline font-medium">ejercicios de práctica B2</a> y nuestra guía sobre la <a href="/blog/escala-cambridge/" className="text-emerald-600 hover:underline font-medium">escala de Cambridge</a> para profundizar en el sistema.
                 </p>
               </div>
             </section>
@@ -427,7 +427,7 @@ export default function NotaAprobarB2FirstPage() {
                 En Impulse English Academy te preparamos con simulacros reales y feedback personalizado para maximizar tu puntuación.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -439,19 +439,19 @@ export default function NotaAprobarB2FirstPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cambridge B2 First: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B2 First: estructura, formato y preparación.</p>
                 </a>
-                <a href="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/escala-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Escala de Cambridge Explicada
                   </h3>
                   <p className="text-gray-600 text-sm">Entiende cómo funciona el sistema de puntuación de Cambridge English.</p>
                 </a>
-                <a href="/blog/ejercicios-b2-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/ejercicios-b2-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Ejercicios B2 Cambridge
                   </h3>

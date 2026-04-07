@@ -106,7 +106,7 @@ export default function LinguaskillOposicionesValidezPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Si estás preparando oposiciones y necesitas acreditar tu nivel de inglés, <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">Linguaskill de Cambridge</a> es una de las opciones más eficientes del mercado. Con resultados en <strong>48 horas</strong>, formato 100% online y respaldo oficial de Cambridge Assessment English, cada vez más opositores eligen Linguaskill para certificar su nivel de idiomas. En esta guía analizamos su validez actual para oposiciones públicas en España, qué convocatorias lo aceptan y cómo aprovecharlo al máximo en tu proceso selectivo.
+              Si estás preparando oposiciones y necesitas acreditar tu nivel de inglés, <a href="/linguaskill/" className="text-amber-600 hover:underline font-medium">Linguaskill de Cambridge</a> es una de las opciones más eficientes del mercado. Con resultados en <strong>48 horas</strong>, formato 100% online y respaldo oficial de Cambridge Assessment English, cada vez más opositores eligen Linguaskill para certificar su nivel de idiomas. En esta guía analizamos su validez actual para oposiciones públicas en España, qué convocatorias lo aceptan y cómo aprovecharlo al máximo en tu proceso selectivo.
             </p>
 
             {/* Section 1 */}
@@ -458,7 +458,7 @@ export default function LinguaskillOposicionesValidezPage() {
                   <strong>Linguaskill es una opción cada vez más válida y popular para acreditar idiomas en oposiciones públicas en España.</strong> Su rapidez de resultados, formato flexible, precio accesible y el respaldo de Cambridge lo convierten en una herramienta estratégica para opositores que necesitan certificar su nivel de inglés de forma eficiente. La tendencia en 2025/26 es de mayor aceptación por parte de las administraciones públicas.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">Impulse English Academy</a> te preparamos específicamente para Linguaskill con simulacros reales y estrategias probadas. Consulta nuestra información sobre el <a href="/blog/certificado-linguaskill" className="text-amber-600 hover:underline font-medium">certificado Linguaskill</a> y los <a href="/linguaskill/precios-fechas" className="text-amber-600 hover:underline font-medium">precios y fechas disponibles</a> para planificar tu certificación. No dejes que la acreditación de idiomas sea un obstáculo en tu camino hacia la plaza.
+                  En <a href="/linguaskill/" className="text-amber-600 hover:underline font-medium">Impulse English Academy</a> te preparamos específicamente para Linguaskill con simulacros reales y estrategias probadas. Consulta nuestra información sobre el <a href="/blog/certificado-linguaskill/" className="text-amber-600 hover:underline font-medium">certificado Linguaskill</a> y los <a href="/linguaskill/precios-fechas/" className="text-amber-600 hover:underline font-medium">precios y fechas disponibles</a> para planificar tu certificación. No dejes que la acreditación de idiomas sea un obstáculo en tu camino hacia la plaza.
                 </p>
               </div>
             </section>
@@ -470,7 +470,7 @@ export default function LinguaskillOposicionesValidezPage() {
                 Te preparamos para obtener la puntuación Linguaskill que necesitas con cursos intensivos adaptados a opositores.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-amber-600 px-8 py-4 rounded-xl font-semibold hover:bg-amber-50 transition-colors"
               >
                 Solicitar información
@@ -482,19 +482,19 @@ export default function LinguaskillOposicionesValidezPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Linguaskill: Toda la Información
                   </h3>
                   <p className="text-gray-600 text-sm">Guía completa del examen Linguaskill de Cambridge.</p>
                 </a>
-                <a href="/blog/certificado-linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/blog/certificado-linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Certificado Linguaskill
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el certificado oficial y su validez.</p>
                 </a>
-                <a href="/linguaskill/precios-fechas" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/linguaskill/precios-fechas/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Precios y Fechas Linguaskill
                   </h3>

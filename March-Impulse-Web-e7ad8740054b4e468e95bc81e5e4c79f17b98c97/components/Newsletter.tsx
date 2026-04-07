@@ -61,7 +61,7 @@ function AnimatedButtons() {
     return (
         <div ref={containerRef} className="flex flex-col sm:flex-row gap-4 w-full">
             <a
-                href="/reservar-clase"
+                href="/reservar-clase/"
                 className={`bg-accent-blue text-white font-bold py-4 px-8 rounded-md hover:bg-blue-900 transition-all duration-400 ease-out transform w-full sm:w-auto text-center
                 ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-5 scale-95'}`}
             >

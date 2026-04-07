@@ -336,7 +336,7 @@ export default function AprendeInglesGuiaPage() {
               <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl p-6 text-white">
                 <h3 className="font-bold text-xl mb-2">Nuestra Recomendación</h3>
                 <p className="text-white/90">
-                  Para certificación oficial Cambridge, combina nuestros <a href="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> en nuestra <a href="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">academia junto a La Vaguada</a> (preparación estructurada)
+                  Para certificación oficial Cambridge, combina nuestros <a href="/cursos-ingles/adultos/" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> en nuestra <a href="/academia-ingles-la-vaguada/" className="text-white hover:underline font-bold">academia junto a La Vaguada</a> (preparación estructurada)
                   con práctica diaria en apps como Duolingo o Babbel. Esta combinación maximiza resultados
                   en el menor tiempo posible.
                 </p>
@@ -425,14 +425,14 @@ export default function AprendeInglesGuiaPage() {
                     <ul className="text-zinc-600 space-y-1">
                       <li>• British Council (desde 519€/trimestre)</li>
                       <li>• International House (desde 172€/mes)</li>
-                      <li>• <a href="/academia-ingles-barrio-del-pilar" className="text-purple-600 hover:underline font-medium">Academia en Barrio del Pilar</a> (desde 79€/mes)</li>
+                      <li>• <a href="/academia-ingles-barrio-del-pilar/" className="text-purple-600 hover:underline font-medium">Academia en Barrio del Pilar</a> (desde 79€/mes)</li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-medium text-zinc-900 mb-2">Certificaciones recomendadas</h4>
                     <ul className="text-zinc-600 space-y-1">
-                      <li>• <a href="/examenes-cambridge" className="text-purple-600 hover:underline font-medium">Exámenes Cambridge</a> (B1-C2)</li>
-                      <li>• <a href="/linguaskill" className="text-purple-600 hover:underline font-medium">Linguaskill</a> (resultados 48h)</li>
+                      <li>• <a href="/examenes-cambridge/" className="text-purple-600 hover:underline font-medium">Exámenes Cambridge</a> (B1-C2)</li>
+                      <li>• <a href="/linguaskill/" className="text-purple-600 hover:underline font-medium">Linguaskill</a> (resultados 48h)</li>
                       <li>• IELTS (reconocimiento global)</li>
                     </ul>
                   </div>
@@ -510,15 +510,15 @@ export default function AprendeInglesGuiaPage() {
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <a href="/academias-ingles-madrid" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <a href="/academias-ingles-madrid/" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-zinc-900 mb-2">Academias de Inglés Madrid</h3>
                 <p className="text-zinc-600 text-sm">Comparativa completa de academias en Madrid con precios actualizados.</p>
               </a>
-              <a href="/examenes-cambridge" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <a href="/examenes-cambridge/" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-zinc-900 mb-2">Exámenes Cambridge</h3>
                 <p className="text-zinc-600 text-sm">Guía completa de certificaciones Cambridge: B1, B2, C1 y C2.</p>
               </a>
-              <a href="/metodologia" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <a href="/metodologia/" className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-zinc-900 mb-2">Metodología de Aprendizaje</h3>
                 <p className="text-zinc-600 text-sm">Los métodos más efectivos para aprender inglés rápidamente.</p>
               </a>
@@ -551,7 +551,7 @@ export default function AprendeInglesGuiaPage() {
                 100% de aprobados Cambridge. Metodología probada. Profesores que se comprometen con tu éxito.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-full font-bold hover:bg-purple-50 transition-colors"
               >
                 Empieza tu transformación

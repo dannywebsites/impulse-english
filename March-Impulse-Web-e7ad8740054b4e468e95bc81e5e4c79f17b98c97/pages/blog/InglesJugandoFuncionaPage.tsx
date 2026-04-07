@@ -363,7 +363,7 @@ export default function InglesJugandoFuncionaPage() {
                   El inglés jugando no solo funciona: es la forma más natural y efectiva de aprender idiomas en la infancia. La neurociencia, la pedagogía y los resultados prácticos de miles de niños lo demuestran. Lo importante es que el juego sea estructurado, dirigido por profesores formados y que combine inmersión real con objetivos lingüísticos claros.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">nuestras clases infantiles</a> aplicamos el método <a href="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline font-medium">Great Little People</a>, que convierte cada sesión en una experiencia memorable donde el inglés fluye de forma natural. Visita nuestra página de <a href="/metodologia" className="text-purple-600 hover:underline font-medium">metodología</a> para conocer más detalles.
+                  En <a href="/cursos-ingles/infantil/" className="text-purple-600 hover:underline font-medium">nuestras clases infantiles</a> aplicamos el método <a href="/blog/great-little-people-metodologia/" className="text-purple-600 hover:underline font-medium">Great Little People</a>, que convierte cada sesión en una experiencia memorable donde el inglés fluye de forma natural. Visita nuestra página de <a href="/metodologia/" className="text-purple-600 hover:underline font-medium">metodología</a> para conocer más detalles.
                 </p>
               </div>
             </section>
@@ -375,7 +375,7 @@ export default function InglesJugandoFuncionaPage() {
                 Primera clase gratis. Descubre cómo los niños aprenden inglés jugando en un entorno diseñado para ellos.
               </p>
               <a
-              href="/cursos-ingles/infantil"
+              href="/cursos-ingles/infantil/"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Ver clases infantil
@@ -387,19 +387,19 @@ export default function InglesJugandoFuncionaPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/infantil/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>
                   <p className="text-gray-600 text-sm">Clases para los más pequeños con Great Little People.</p>
                 </a>
-                <a href="/blog/great-little-people-metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/blog/great-little-people-metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Metodología Great Little People
                   </h3>
                   <p className="text-gray-600 text-sm">Conoce en detalle el método que usamos con nuestros alumnos.</p>
                 </a>
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>

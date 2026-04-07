@@ -905,7 +905,7 @@ export default function LinguaskillGuiaCompletaPage() {
                   Tu éxito es nuestra misión
                 </h2>
                 <p className="text-zinc-600 mb-6">
-                  Como Centro Oficial de Preparación Cambridge con <strong>100% de aprobados</strong> en 2024-25, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-blue-600 hover:underline font-medium">academia en Barrio del Pilar</a> tiene la experiencia y el compromiso para llevarte al nivel que tu carrera exige. Ofrecemos <a href="/cursos-ingles/particulares" className="text-blue-600 hover:underline font-medium">clases particulares</a> especializadas en <a href="/linguaskill" className="text-blue-600 hover:underline font-medium">Linguaskill</a> y otros <a href="/examenes-cambridge" className="text-blue-600 hover:underline font-medium">exámenes Cambridge</a>, <a href="/academia-ingles-la-vaguada" className="text-blue-600 hover:underline font-medium">junto a La Vaguada</a>. No eres solo un alumno más: eres alguien con metas reales que merece resultados reales.
+                  Como Centro Oficial de Preparación Cambridge con <strong>100% de aprobados</strong> en 2024-25, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-blue-600 hover:underline font-medium">academia en Barrio del Pilar</a> tiene la experiencia y el compromiso para llevarte al nivel que tu carrera exige. Ofrecemos <a href="/cursos-ingles/particulares/" className="text-blue-600 hover:underline font-medium">clases particulares</a> especializadas en <a href="/linguaskill/" className="text-blue-600 hover:underline font-medium">Linguaskill</a> y otros <a href="/examenes-cambridge/" className="text-blue-600 hover:underline font-medium">exámenes Cambridge</a>, <a href="/academia-ingles-la-vaguada/" className="text-blue-600 hover:underline font-medium">junto a La Vaguada</a>. No eres solo un alumno más: eres alguien con metas reales que merece resultados reales.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3 text-zinc-600">
@@ -936,7 +936,7 @@ export default function LinguaskillGuiaCompletaPage() {
                     Consultar por WhatsApp
                   </a>
                   <a
-              href="/linguaskill"
+              href="/linguaskill/"
                     className="bg-accent-blue hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-colors"
                   >
                     Ver curso Linguaskill
@@ -1024,7 +1024,7 @@ export default function LinguaskillGuiaCompletaPage() {
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a href="/linguaskill/precios-fechas" className="group">
+              <a href="/linguaskill/precios-fechas/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Linguaskill</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -1032,7 +1032,7 @@ export default function LinguaskillGuiaCompletaPage() {
                   </h3>
                 </div>
               </a>
-              <a href="/examenes-cambridge" className="group">
+              <a href="/examenes-cambridge/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Cambridge</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -1040,7 +1040,7 @@ export default function LinguaskillGuiaCompletaPage() {
                   </h3>
                 </div>
               </a>
-              <a href="/examenes-cambridge/fechas-precios" className="group">
+              <a href="/examenes-cambridge/fechas-precios/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Calendario</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -1048,7 +1048,7 @@ export default function LinguaskillGuiaCompletaPage() {
                   </h3>
                 </div>
               </a>
-              <a href="/academias-ingles-madrid/adultos" className="group">
+              <a href="/academias-ingles-madrid/adultos/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Cursos Adultos</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -1056,7 +1056,7 @@ export default function LinguaskillGuiaCompletaPage() {
                   </h3>
                 </div>
               </a>
-              <a href="/academias-ingles-madrid/certificaciones" className="group">
+              <a href="/academias-ingles-madrid/certificaciones/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Certificaciones</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">
@@ -1064,7 +1064,7 @@ export default function LinguaskillGuiaCompletaPage() {
                   </h3>
                 </div>
               </a>
-              <a href="/cursos-ingles/adultos" className="group">
+              <a href="/cursos-ingles/adultos/" className="group">
                 <div className="bg-zinc-50 rounded-xl p-6 hover:bg-zinc-100 transition-colors">
                   <span className="text-accent-blue text-sm font-medium">Nuestros Cursos</span>
                   <h3 className="font-bold text-zinc-900 mt-2 group-hover:text-accent-blue transition-colors">

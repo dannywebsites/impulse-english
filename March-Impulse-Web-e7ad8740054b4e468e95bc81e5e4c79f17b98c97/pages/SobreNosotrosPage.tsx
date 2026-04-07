@@ -171,7 +171,7 @@ export default function SobreNosotrosPage() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center">
             <a
-              href="/nuestro-equipo"
+              href="/nuestro-equipo/"
               className="inline-flex items-center gap-2 bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               Conoce a nuestro equipo
@@ -348,13 +348,13 @@ export default function SobreNosotrosPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Reservar Clase de Prueba
               </a>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-8 rounded-lg border border-white/30 transition-colors"
               >
                 Contactar

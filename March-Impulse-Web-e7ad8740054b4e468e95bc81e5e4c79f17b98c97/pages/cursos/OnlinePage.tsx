@@ -94,7 +94,7 @@ export default function OnlinePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-white text-indigo-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-zinc-100 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
@@ -396,11 +396,11 @@ export default function OnlinePage() {
         <div className="container mx-auto max-w-4xl">
           <p className="text-zinc-500 text-sm text-center">
             <strong className="text-zinc-600">También disponible presencial:</strong>{' '}
-            <a href="/academia-ingles-barrio-del-pilar" className="text-indigo-600 hover:underline">Barrio del Pilar</a>{' | '}
-            <a href="/academia-ingles-la-vaguada" className="text-indigo-600 hover:underline">La Vaguada</a>{' | '}
-            <a href="/academia-ingles-penagrande" className="text-indigo-600 hover:underline">Peñagrande</a>{' | '}
-            <a href="/academia-ingles-plaza-castilla" className="text-indigo-600 hover:underline">Plaza Castilla</a>{' | '}
-            <a href="/academia-ingles-tetuan" className="text-indigo-600 hover:underline">Tetuán</a>
+            <a href="/academia-ingles-barrio-del-pilar/" className="text-indigo-600 hover:underline">Barrio del Pilar</a>{' | '}
+            <a href="/academia-ingles-la-vaguada/" className="text-indigo-600 hover:underline">La Vaguada</a>{' | '}
+            <a href="/academia-ingles-penagrande/" className="text-indigo-600 hover:underline">Peñagrande</a>{' | '}
+            <a href="/academia-ingles-plaza-castilla/" className="text-indigo-600 hover:underline">Plaza Castilla</a>{' | '}
+            <a href="/academia-ingles-tetuan/" className="text-indigo-600 hover:underline">Tetuán</a>
           </p>
         </div>
       </section>

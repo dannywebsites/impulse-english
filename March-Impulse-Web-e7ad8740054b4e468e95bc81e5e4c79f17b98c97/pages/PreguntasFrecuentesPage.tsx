@@ -487,7 +487,7 @@ export default function PreguntasFrecuentesPage() {
             </a>
 
             <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
               className="flex flex-col items-center gap-2 bg-red-600 hover:bg-red-700 text-white p-6 rounded-xl transition-colors"
             >
               <Mail className="w-8 h-8" />

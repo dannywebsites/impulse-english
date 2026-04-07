@@ -136,7 +136,7 @@ export default function SecundariaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-white text-indigo-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-amber-50 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
@@ -209,10 +209,10 @@ export default function SecundariaPage() {
             {/* Location and Certification Links */}
             <div className="mt-6 p-4 bg-indigo-50 rounded-xl border border-indigo-100">
               <p className="text-zinc-700 text-sm mb-3">
-                <strong>¿Dónde estamos?</strong> Nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-indigo-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-indigo-600 hover:underline font-medium">La Vaguada</a>, está a solo 2 minutos del metro.
+                <strong>¿Dónde estamos?</strong> Nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-indigo-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada/" className="text-indigo-600 hover:underline font-medium">La Vaguada</a>, está a solo 2 minutos del metro.
               </p>
               <p className="text-zinc-600 text-sm">
-                Prepara tu <a href="/examenes-cambridge/b1-preliminary" className="text-indigo-600 hover:underline font-medium">B1 Preliminary</a>, <a href="/examenes-cambridge/b2-first" className="text-indigo-600 hover:underline font-medium">B2 First</a> o C1 Advanced. Si necesitas certificar rápido para la universidad, <a href="/linguaskill" className="text-indigo-600 hover:underline font-medium">Linguaskill</a> te da resultados en 48h.
+                Prepara tu <a href="/examenes-cambridge/b1-preliminary/" className="text-indigo-600 hover:underline font-medium">B1 Preliminary</a>, <a href="/examenes-cambridge/b2-first/" className="text-indigo-600 hover:underline font-medium">B2 First</a> o C1 Advanced. Si necesitas certificar rápido para la universidad, <a href="/linguaskill/" className="text-indigo-600 hover:underline font-medium">Linguaskill</a> te da resultados en 48h.
               </p>
             </div>
           </div>
@@ -298,7 +298,7 @@ export default function SecundariaPage() {
               <h3 className="font-bold text-white mb-2">Exámenes Cambridge</h3>
               <p className="text-white/70 text-sm mb-4">B1 Preliminary, B2 First, C1 Advanced</p>
               <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
                 className="inline-block bg-white text-indigo-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-indigo-900 transition-colors text-sm"
               >
                 Ver exámenes Cambridge
@@ -308,7 +308,7 @@ export default function SecundariaPage() {
               <h3 className="font-bold text-white mb-2">Linguaskill</h3>
               <p className="text-white/70 text-sm mb-4">Certificado en 48h. Ideal para requisitos universitarios urgentes</p>
               <a
-              href="/linguaskill"
+              href="/linguaskill/"
                 className="inline-block bg-white text-indigo-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-indigo-900 transition-colors text-sm"
               >
                 Conocer Linguaskill
@@ -393,7 +393,7 @@ export default function SecundariaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Solicitar prueba de nivel

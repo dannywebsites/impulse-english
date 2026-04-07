@@ -403,7 +403,7 @@ export default function PrecioCambridgeC1MadridPage() {
                   El precio del examen Cambridge C1 Advanced en Madrid (<strong>233 euros</strong>, o 223,50€ con descuento universitario) representa una inversión accesible para obtener una certificación de inglés avanzado reconocida internacionalmente.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Planificar el registro con 6-8 semanas de antelación garantiza acceso a la fecha y formato preferidos. Para quienes buscan preparación adicional, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-indigo-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-indigo-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos especializados con metodologías específicas para maximizar las posibilidades de éxito. Preparamos <a href="/examenes-cambridge" className="text-indigo-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos" className="text-indigo-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares" className="text-indigo-600 hover:underline font-medium">clases particulares</a> desde 79€/mes.
+                  Planificar el registro con 6-8 semanas de antelación garantiza acceso a la fecha y formato preferidos. Para quienes buscan preparación adicional, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-indigo-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-indigo-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos especializados con metodologías específicas para maximizar las posibilidades de éxito. Preparamos <a href="/examenes-cambridge/" className="text-indigo-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline font-medium">clases particulares</a> desde 79€/mes.
                 </p>
               </div>
             </section>
@@ -415,7 +415,7 @@ export default function PrecioCambridgeC1MadridPage() {
                 En Impulse English Academy te ayudamos a conseguir la mejor puntuación con metodología probada.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors"
               >
                 Solicitar información
@@ -427,13 +427,13 @@ export default function PrecioCambridgeC1MadridPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-indigo-50 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced/" className="group bg-gray-50 rounded-xl p-6 hover:bg-indigo-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors mb-2">
                     Examen Cambridge C1 Advanced: Guía
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre estructura, formato y preparación del C1.</p>
                 </a>
-                <a href="/examenes-cambridge/centros-madrid" className="group bg-gray-50 rounded-xl p-6 hover:bg-indigo-50 transition-colors">
+                <a href="/examenes-cambridge/centros-madrid/" className="group bg-gray-50 rounded-xl p-6 hover:bg-indigo-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors mb-2">
                     Centros Cambridge en Madrid
                   </h3>

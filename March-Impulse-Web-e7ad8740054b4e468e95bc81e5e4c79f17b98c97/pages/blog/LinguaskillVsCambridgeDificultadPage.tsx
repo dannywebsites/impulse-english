@@ -106,7 +106,7 @@ export default function LinguaskillVsCambridgeDificultadPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Una de las preguntas más frecuentes entre estudiantes de inglés es si <strong>Linguaskill es más fácil que los exámenes Cambridge tradicionales</strong>. La respuesta corta es que no se trata de fácil o difícil, sino de dos enfoques completamente distintos para certificar tu nivel de inglés. Mientras los exámenes Cambridge (B1 Preliminary, B2 First, C1 Advanced) evalúan un nivel concreto con aprobado o suspenso, <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">Linguaskill</a> es un test adaptativo que determina tu nivel real en el MCER sin necesidad de elegir previamente qué nivel presentar.
+              Una de las preguntas más frecuentes entre estudiantes de inglés es si <strong>Linguaskill es más fácil que los exámenes Cambridge tradicionales</strong>. La respuesta corta es que no se trata de fácil o difícil, sino de dos enfoques completamente distintos para certificar tu nivel de inglés. Mientras los exámenes Cambridge (B1 Preliminary, B2 First, C1 Advanced) evalúan un nivel concreto con aprobado o suspenso, <a href="/linguaskill/" className="text-amber-600 hover:underline font-medium">Linguaskill</a> es un test adaptativo que determina tu nivel real en el MCER sin necesidad de elegir previamente qué nivel presentar.
             </p>
 
             {/* Section 1 */}
@@ -407,7 +407,7 @@ export default function LinguaskillVsCambridgeDificultadPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En <a href="/examenes-cambridge" className="text-amber-600 hover:underline font-medium">Impulse English Academy</a> preparamos para ambos tipos de examen. Nuestros profesores te ayudarán a determinar cuál se adapta mejor a tus objetivos y diseñarán un plan de preparación personalizado.
+                En <a href="/examenes-cambridge/" className="text-amber-600 hover:underline font-medium">Impulse English Academy</a> preparamos para ambos tipos de examen. Nuestros profesores te ayudarán a determinar cuál se adapta mejor a tus objetivos y diseñarán un plan de preparación personalizado.
               </p>
             </section>
 
@@ -452,7 +452,7 @@ export default function LinguaskillVsCambridgeDificultadPage() {
                   La pregunta "¿Linguaskill es más fácil que Cambridge?" tiene una respuesta clara: <strong>no es más fácil, es diferente</strong>. Ambos exámenes evalúan las mismas competencias lingüísticas con rigor, pero con metodologías distintas. Linguaskill ofrece rapidez, flexibilidad y tecnología adaptativa; los exámenes Cambridge tradicionales aportan reconocimiento histórico y validez permanente sin matices.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">nuestra sección de Linguaskill</a> encontrarás toda la información sobre precios, fechas y preparación. También puedes consultar nuestra <a href="/blog/linguaskill-vs-aptis" className="text-amber-600 hover:underline font-medium">comparativa Linguaskill vs Aptis</a> si estás valorando otras alternativas. Visítanos en <a href="/academia-ingles-barrio-del-pilar" className="text-amber-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a> para recibir orientación personalizada.
+                  En <a href="/linguaskill/" className="text-amber-600 hover:underline font-medium">nuestra sección de Linguaskill</a> encontrarás toda la información sobre precios, fechas y preparación. También puedes consultar nuestra <a href="/blog/linguaskill-vs-aptis/" className="text-amber-600 hover:underline font-medium">comparativa Linguaskill vs Aptis</a> si estás valorando otras alternativas. Visítanos en <a href="/academia-ingles-barrio-del-pilar/" className="text-amber-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a> para recibir orientación personalizada.
                 </p>
               </div>
             </section>
@@ -464,7 +464,7 @@ export default function LinguaskillVsCambridgeDificultadPage() {
                 En Impulse English Academy te asesoramos gratuitamente y te preparamos para Linguaskill o Cambridge según tus necesidades.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-amber-600 px-8 py-4 rounded-xl font-semibold hover:bg-amber-50 transition-colors"
               >
                 Solicitar asesoramiento
@@ -476,19 +476,19 @@ export default function LinguaskillVsCambridgeDificultadPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Linguaskill: Toda la Información
                   </h3>
                   <p className="text-gray-600 text-sm">Guía completa del examen Linguaskill de Cambridge.</p>
                 </a>
-                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Exámenes Cambridge: Hub Completo
                   </h3>
                   <p className="text-gray-600 text-sm">Todos los exámenes Cambridge explicados y comparados.</p>
                 </a>
-                <a href="/blog/linguaskill-vs-aptis" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/blog/linguaskill-vs-aptis/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Linguaskill vs Aptis
                   </h3>

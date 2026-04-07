@@ -119,7 +119,7 @@ export default function TetuanPage() {
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba de Nivel Gratuita
@@ -284,7 +284,7 @@ export default function TetuanPage() {
               </ul>
               <div className="mt-8">
                 <a
-              href="/cursos-ingles/infantil"
+              href="/cursos-ingles/infantil/"
                   className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1"
                 >
                   Ver cursos infantil y primaria <ArrowRight className="w-4 h-4" />
@@ -342,7 +342,7 @@ export default function TetuanPage() {
               </ul>
               <div className="mt-8">
                 <a
-              href="/cursos-ingles/adultos"
+              href="/cursos-ingles/adultos/"
                   className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1"
                 >
                   Ver cursos para adultos <ArrowRight className="w-4 h-4" />
@@ -367,9 +367,9 @@ export default function TetuanPage() {
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">A1 Movers</span>
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">A2 Flyers</span>
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">A2 Key</span>
-            <a href="/examenes-cambridge/b1-preliminary" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">B1 Preliminary</a>
-            <a href="/examenes-cambridge/b2-first" className="px-4 py-2 rounded-full text-sm font-medium bg-white text-accent-blue hover:bg-yellow-400 hover:text-blue-900 transition-colors">B2 First</a>
-            <a href="/examenes-cambridge/c1-advanced" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">C1 Advanced</a>
+            <a href="/examenes-cambridge/b1-preliminary/" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">B1 Preliminary</a>
+            <a href="/examenes-cambridge/b2-first/" className="px-4 py-2 rounded-full text-sm font-medium bg-white text-accent-blue hover:bg-yellow-400 hover:text-blue-900 transition-colors">B2 First</a>
+            <a href="/examenes-cambridge/c1-advanced/" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">C1 Advanced</a>
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">C2 Proficiency</span>
           </div>
           <p className="text-white/90 font-medium mb-8">
@@ -377,13 +377,13 @@ export default function TetuanPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
               className="bg-white text-accent-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
             >
               Ver todos los exámenes Cambridge
             </a>
             <a
-              href="/linguaskill"
+              href="/linguaskill/"
               className="bg-white/10 text-white border border-white/30 font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-accent-blue transition-colors"
             >
               Conocer Linguaskill
@@ -479,21 +479,21 @@ export default function TetuanPage() {
               <strong>Servimos también zonas cercanas:</strong>
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <a href="/academia-ingles-barrio-del-pilar" className="text-accent-blue hover:underline text-sm">Barrio del Pilar</a>
+              <a href="/academia-ingles-barrio-del-pilar/" className="text-accent-blue hover:underline text-sm">Barrio del Pilar</a>
               <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-la-vaguada" className="text-accent-blue hover:underline text-sm">La Vaguada</a>
+              <a href="/academia-ingles-la-vaguada/" className="text-accent-blue hover:underline text-sm">La Vaguada</a>
               <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-penagrande" className="text-accent-blue hover:underline text-sm">Peñagrande</a>
+              <a href="/academia-ingles-penagrande/" className="text-accent-blue hover:underline text-sm">Peñagrande</a>
               <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-la-ventilla" className="text-accent-blue hover:underline text-sm">La Ventilla</a>
+              <a href="/academia-ingles-la-ventilla/" className="text-accent-blue hover:underline text-sm">La Ventilla</a>
               <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-la-paz" className="text-accent-blue hover:underline text-sm">La Paz</a>
+              <a href="/academia-ingles-la-paz/" className="text-accent-blue hover:underline text-sm">La Paz</a>
               <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-plaza-castilla" className="text-accent-blue hover:underline text-sm">Plaza Castilla</a>
+              <a href="/academia-ingles-plaza-castilla/" className="text-accent-blue hover:underline text-sm">Plaza Castilla</a>
               <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-cuatro-torres" className="text-accent-blue hover:underline text-sm">Cuatro Torres</a>
+              <a href="/academia-ingles-cuatro-torres/" className="text-accent-blue hover:underline text-sm">Cuatro Torres</a>
             </div>
-            <a href="/academias-ingles-madrid/por-barrios" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
+            <a href="/academias-ingles-madrid/por-barrios/" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
               Ver todas las ubicaciones en Madrid <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -551,7 +551,7 @@ export default function TetuanPage() {
             Si buscas una academia de inglés cerca de Tetuán, solicita ahora tu prueba de nivel gratuita y empieza a aprender inglés cerca de casa.
           </p>
           <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
             className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
           >
             Reserva tu prueba gratuita
@@ -571,13 +571,13 @@ export default function TetuanPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
               className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               Reservar Clase de Prueba
             </a>
             <a
-              href="/contacto"
+              href="/contacto/"
               className="bg-white hover:bg-zinc-100 text-zinc-900 font-bold py-3 px-8 rounded-lg transition-colors"
             >
               Contactar

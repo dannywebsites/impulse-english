@@ -352,16 +352,16 @@ export default function LinguaskillPage() {
           <div className="bg-red-50 p-6 rounded-xl border border-red-100">
             <h3 className="font-bold text-zinc-900 mb-4 text-lg">¿Dónde preparar Linguaskill en Madrid?</h3>
             <p className="text-zinc-700 text-sm mb-4">
-              Nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada" className="text-red-600 hover:underline font-medium">La Vaguada</a>, es centro oficial Linguaskill. Preparamos candidatos de <a href="/academia-ingles-plaza-castilla" className="text-red-600 hover:underline font-medium">Plaza Castilla</a>, <a href="/academia-ingles-tetuan" className="text-red-600 hover:underline font-medium">Tetuán</a> y <a href="/academia-ingles-cuatro-torres" className="text-red-600 hover:underline font-medium">Cuatro Torres</a>.
+              Nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada/" className="text-red-600 hover:underline font-medium">La Vaguada</a>, es centro oficial Linguaskill. Preparamos candidatos de <a href="/academia-ingles-plaza-castilla/" className="text-red-600 hover:underline font-medium">Plaza Castilla</a>, <a href="/academia-ingles-tetuan/" className="text-red-600 hover:underline font-medium">Tetuán</a> y <a href="/academia-ingles-cuatro-torres/" className="text-red-600 hover:underline font-medium">Cuatro Torres</a>.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="/cursos-ingles/adultos" className="text-red-600 hover:underline text-sm">Cursos adultos</a>
+              <a href="/cursos-ingles/adultos/" className="text-red-600 hover:underline text-sm">Cursos adultos</a>
               <span className="text-zinc-400">•</span>
-              <a href="/cursos-ingles/particulares" className="text-red-600 hover:underline text-sm">Clases particulares</a>
+              <a href="/cursos-ingles/particulares/" className="text-red-600 hover:underline text-sm">Clases particulares</a>
               <span className="text-zinc-400">•</span>
-              <a href="/examenes-cambridge" className="text-red-600 hover:underline text-sm">Otros exámenes Cambridge</a>
+              <a href="/examenes-cambridge/" className="text-red-600 hover:underline text-sm">Otros exámenes Cambridge</a>
               <span className="text-zinc-400">•</span>
-              <a href="/academias-ingles-madrid/por-barrios" className="text-red-600 hover:underline text-sm">Todas las ubicaciones</a>
+              <a href="/academias-ingles-madrid/por-barrios/" className="text-red-600 hover:underline text-sm">Todas las ubicaciones</a>
             </div>
           </div>
         </div>
@@ -528,19 +528,19 @@ export default function LinguaskillPage() {
             Artículos relacionados sobre Linguaskill
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <a href="/linguaskill" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
+            <a href="/linguaskill/" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
               <h3 className="font-semibold text-zinc-900 mb-1">Guía completa de Linguaskill</h3>
               <p className="text-zinc-600 text-sm">Todo lo que necesitas saber sobre el examen</p>
             </a>
-            <a href="/linguaskill" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
+            <a href="/linguaskill/" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
               <h3 className="font-semibold text-zinc-900 mb-1">Linguaskill vs APTIS</h3>
               <p className="text-zinc-600 text-sm">Comparativa detallada de ambos exámenes</p>
             </a>
-            <a href="/linguaskill/precios-fechas" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
+            <a href="/linguaskill/precios-fechas/" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
               <h3 className="font-semibold text-zinc-900 mb-1">Precios y cómo reservar</h3>
               <p className="text-zinc-600 text-sm">Información actualizada de precios 2025</p>
             </a>
-            <a href="/linguaskill/ejemplo-examen" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
+            <a href="/linguaskill/ejemplo-examen/" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
               <h3 className="font-semibold text-zinc-900 mb-1">Ejemplos de examen</h3>
               <p className="text-zinc-600 text-sm">Muestras reales de las pruebas</p>
             </a>

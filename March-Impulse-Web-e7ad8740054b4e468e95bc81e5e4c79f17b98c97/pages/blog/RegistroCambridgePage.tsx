@@ -376,10 +376,10 @@ export default function RegistroCambridgePage() {
 
               <div className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El registro Cambridge es un proceso estructurado que requiere atención a detalles específicos: elegir el centro autorizado correcto, preparar documentación vigente, respetar plazos de inscripción y confirmar el pago completo. Puedes consultar más información sobre los <a href="/examenes-cambridge" className="text-sky-600 hover:underline font-medium">exámenes Cambridge</a> disponibles, incluyendo el <a href="/examenes-cambridge/b2-first" className="text-sky-600 hover:underline font-medium">B2 First</a> y <a href="/linguaskill" className="text-sky-600 hover:underline font-medium">Linguaskill</a>.
+                  El registro Cambridge es un proceso estructurado que requiere atención a detalles específicos: elegir el centro autorizado correcto, preparar documentación vigente, respetar plazos de inscripción y confirmar el pago completo. Puedes consultar más información sobre los <a href="/examenes-cambridge/" className="text-sky-600 hover:underline font-medium">exámenes Cambridge</a> disponibles, incluyendo el <a href="/examenes-cambridge/b2-first/" className="text-sky-600 hover:underline font-medium">B2 First</a> y <a href="/linguaskill/" className="text-sky-600 hover:underline font-medium">Linguaskill</a>.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Con planificación anticipada de 6-8 semanas, evitarás problemas de disponibilidad y costes adicionales. Si buscas un centro de preparación oficial en Madrid que también gestione tu registro, <a href="/academia-ingles-barrio-del-pilar" className="text-sky-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-sky-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece soporte integral desde <a href="/cursos-ingles/adultos" className="text-sky-600 hover:underline font-medium">cursos para adultos</a> hasta la inscripción formal.
+                  Con planificación anticipada de 6-8 semanas, evitarás problemas de disponibilidad y costes adicionales. Si buscas un centro de preparación oficial en Madrid que también gestione tu registro, <a href="/academia-ingles-barrio-del-pilar/" className="text-sky-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-sky-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece soporte integral desde <a href="/cursos-ingles/adultos/" className="text-sky-600 hover:underline font-medium">cursos para adultos</a> hasta la inscripción formal.
                 </p>
               </div>
             </section>
@@ -391,7 +391,7 @@ export default function RegistroCambridgePage() {
                 En Impulse English Academy te ayudamos con todo el proceso de registro y te preparamos para tu examen Cambridge.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-sky-600 px-8 py-4 rounded-xl font-semibold hover:bg-sky-50 transition-colors"
               >
                 Contactar ahora
@@ -403,13 +403,13 @@ export default function RegistroCambridgePage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-sky-50 transition-colors">
+                <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-sky-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-sky-600 transition-colors mb-2">
                     Guía de Exámenes Cambridge 2025
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre certificaciones Cambridge.</p>
                 </a>
-                <a href="/examenes-cambridge/centros-madrid" className="group bg-gray-50 rounded-xl p-6 hover:bg-sky-50 transition-colors">
+                <a href="/examenes-cambridge/centros-madrid/" className="group bg-gray-50 rounded-xl p-6 hover:bg-sky-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-sky-600 transition-colors mb-2">
                     Centros Cambridge en Madrid y Barcelona
                   </h3>

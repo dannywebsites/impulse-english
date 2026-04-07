@@ -113,7 +113,7 @@ export default function TiempoPreparaB1CeroPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              La pregunta sobre cuánto tiempo se necesita para preparar el <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline">B1 Preliminary de Cambridge</a> es probablemente la más frecuente entre quienes se plantean obtener esta certificación. La respuesta varía enormemente según tu punto de partida, dedicación y método de estudio. En este artículo te damos <strong>estimaciones realistas basadas en datos</strong> y un plan concreto para cada situación.
+              La pregunta sobre cuánto tiempo se necesita para preparar el <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline">B1 Preliminary de Cambridge</a> es probablemente la más frecuente entre quienes se plantean obtener esta certificación. La respuesta varía enormemente según tu punto de partida, dedicación y método de estudio. En este artículo te damos <strong>estimaciones realistas basadas en datos</strong> y un plan concreto para cada situación.
             </p>
 
             {/* Section 1 */}
@@ -323,7 +323,7 @@ export default function TiempoPreparaB1CeroPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                La calidad del estudio importa tanto como la cantidad. Una hora con un <a href="/metodologia" className="text-emerald-600 hover:underline">profesor especializado</a> equivale a 2-3 horas de autoestudio, especialmente para las destrezas de speaking y writing que requieren feedback profesional.
+                La calidad del estudio importa tanto como la cantidad. Una hora con un <a href="/metodologia/" className="text-emerald-600 hover:underline">profesor especializado</a> equivale a 2-3 horas de autoestudio, especialmente para las destrezas de speaking y writing que requieren feedback profesional.
               </p>
             </section>
 
@@ -351,7 +351,7 @@ export default function TiempoPreparaB1CeroPage() {
                     <Target className="w-5 h-5 text-emerald-600" />
                     Curso intensivo en academia
                   </h3>
-                  <p className="text-gray-700">Los <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">cursos intensivos</a> con 3-4 clases semanales multiplican la velocidad de aprendizaje. La estructura, los compañeros y la corrección profesional son insustituibles.</p>
+                  <p className="text-gray-700">Los <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">cursos intensivos</a> con 3-4 clases semanales multiplican la velocidad de aprendizaje. La estructura, los compañeros y la corrección profesional son insustituibles.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -408,10 +408,10 @@ export default function TiempoPreparaB1CeroPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Preparar el <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">B1 Preliminary</a> desde cero requiere entre 12 y 18 meses con dedicación regular. Desde un A2 consolidado, el plazo se reduce a 10-16 semanas. La clave está en la constancia, un buen plan de estudio y la combinación de clases en academia con práctica autónoma.
+                  Preparar el <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline font-medium">B1 Preliminary</a> desde cero requiere entre 12 y 18 meses con dedicación regular. Desde un A2 consolidado, el plazo se reduce a 10-16 semanas. La clave está en la constancia, un buen plan de estudio y la combinación de clases en academia con práctica autónoma.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> diseñamos planes de preparación personalizados según tu nivel de partida y tu fecha objetivo. Nuestra <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">metodología</a> ha ayudado a cientos de estudiantes a alcanzar su B1 en los plazos marcados.
+                  En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> diseñamos planes de preparación personalizados según tu nivel de partida y tu fecha objetivo. Nuestra <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">metodología</a> ha ayudado a cientos de estudiantes a alcanzar su B1 en los plazos marcados.
                 </p>
               </div>
             </section>
@@ -423,7 +423,7 @@ export default function TiempoPreparaB1CeroPage() {
                 Realiza una prueba de nivel gratuita y te diseñamos un plan personalizado para alcanzar tu B1 en el menor tiempo posible.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Prueba de nivel gratis
@@ -435,13 +435,13 @@ export default function TiempoPreparaB1CeroPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b1-preliminary/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía Completa del B1 Preliminary
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge B1: formato, precio y estructura.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>

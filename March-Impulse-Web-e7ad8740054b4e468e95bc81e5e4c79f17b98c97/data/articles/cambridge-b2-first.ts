@@ -6,7 +6,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
   {
     slug: 'cuantas-veces-b2-first',
-    url: '/blog/cuantas-veces-b2-first',
+    url: '/blog/cuantas-veces-b2-first/',
     category: 'Cambridge B2 First',
     priority: 'Medium',
     question: '¿Cuántas veces puedo presentarme al B2 First?',
@@ -75,7 +75,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
   {
     slug: 'suspender-b2-first',
-    url: '/blog/suspender-b2-first',
+    url: '/blog/suspender-b2-first/',
     category: 'Cambridge B2 First',
     priority: 'Medium',
     question: '¿Qué pasa si suspendo el B2 First?',
@@ -144,7 +144,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
   {
     slug: 'validez-certificado-b2-cambridge',
-    url: '/blog/validez-certificado-b2-cambridge',
+    url: '/blog/validez-certificado-b2-cambridge/',
     category: 'Cambridge B2 First',
     priority: 'High',
     question: '¿Cuánto dura el certificado B2 de Cambridge?',
@@ -213,7 +213,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
   {
     slug: 'nota-aprobar-b2-first',
-    url: '/blog/nota-aprobar-b2-first',
+    url: '/blog/nota-aprobar-b2-first/',
     category: 'Cambridge B2 First',
     priority: 'High',
     question: '¿Qué nota necesito para aprobar el B2 First?',
@@ -287,7 +287,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
   {
     slug: 'es-dificil-b2-first',
-    url: '/blog/es-dificil-b2-first',
+    url: '/blog/es-dificil-b2-first/',
     category: 'Cambridge B2 First',
     priority: 'High',
     question: '¿Es difícil el B2 First?',
@@ -361,7 +361,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
   {
     slug: 'preparar-b2-first-3-meses',
-    url: '/blog/preparar-b2-first-3-meses',
+    url: '/blog/preparar-b2-first-3-meses/',
     category: 'Cambridge B2 First',
     priority: 'High',
     question: '¿Puedo preparar el B2 First en 3 meses?',
@@ -430,7 +430,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
   {
     slug: 'parte-mas-dificil-b2-first',
-    url: '/blog/parte-mas-dificil-b2-first',
+    url: '/blog/parte-mas-dificil-b2-first/',
     category: 'Cambridge B2 First',
     priority: 'Medium',
     question: '¿Qué parte del B2 First es más difícil?',
@@ -499,7 +499,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
   {
     slug: 'speaking-b2-first-guia',
-    url: '/blog/speaking-b2-first-guia',
+    url: '/blog/speaking-b2-first-guia/',
     category: 'Cambridge B2 First',
     priority: 'Medium',
     question: '¿Cómo es el Speaking del B2 First?',
@@ -568,7 +568,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
   {
     slug: 'libros-preparar-b2-first',
-    url: '/blog/libros-preparar-b2-first',
+    url: '/blog/libros-preparar-b2-first/',
     category: 'Cambridge B2 First',
     priority: 'Medium',
     question: '¿Qué libros usar para preparar B2 First?',
@@ -637,7 +637,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
   {
     slug: 'b2-first-papel-ordenador',
-    url: '/blog/b2-first-papel-ordenador',
+    url: '/blog/b2-first-papel-ordenador/',
     category: 'Cambridge B2 First',
     priority: 'Medium',
     question: '¿B2 First papel o ordenador?',
@@ -706,7 +706,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
   {
     slug: 'tiempo-preparacion-b2-first',
-    url: '/blog/tiempo-preparacion-b2-first',
+    url: '/blog/tiempo-preparacion-b2-first/',
     category: 'Cambridge B2 First',
     priority: 'High',
     question: '¿Cuánto tiempo se tarda en preparar el B2 First?',

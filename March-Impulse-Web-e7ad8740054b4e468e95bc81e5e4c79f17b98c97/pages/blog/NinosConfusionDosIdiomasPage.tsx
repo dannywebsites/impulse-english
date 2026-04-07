@@ -256,7 +256,7 @@ export default function NinosConfusionDosIdiomasPage() {
 
               <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Para saber más:</strong> Si te interesa cómo funciona la adquisición temprana de idiomas en la práctica, descubre la <a href="/blog/edad-empezar-ingles-bebes" className="text-purple-600 hover:underline">edad ideal para empezar con el inglés</a> y cómo la <a href="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline">metodología Great Little People</a> aplica estos principios científicos en el aula.
+                  <strong>Para saber más:</strong> Si te interesa cómo funciona la adquisición temprana de idiomas en la práctica, descubre la <a href="/blog/edad-empezar-ingles-bebes/" className="text-purple-600 hover:underline">edad ideal para empezar con el inglés</a> y cómo la <a href="/blog/great-little-people-metodologia/" className="text-purple-600 hover:underline">metodología Great Little People</a> aplica estos principios científicos en el aula.
                 </p>
               </div>
             </section>
@@ -294,7 +294,7 @@ export default function NinosConfusionDosIdiomasPage() {
                     <li>• Busca playdates con niños anglófonos o bilingües</li>
                     <li>• Apúntale a actividades extraescolares en inglés (deporte, arte)</li>
                     <li>• Viaja a países anglófonos cuando sea posible</li>
-                    <li>• Matricúlale en <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline">clases de inglés con profesores titulados</a></li>
+                    <li>• Matricúlale en <a href="/cursos-ingles/infantil/" className="text-purple-600 hover:underline">clases de inglés con profesores titulados</a></li>
                     <li>• Crea una comunidad de familias con interés en el bilingüismo</li>
                   </ul>
                 </div>
@@ -305,7 +305,7 @@ export default function NinosConfusionDosIdiomasPage() {
                   La clave es la <strong>exposición consistente y positiva</strong>. Los expertos recomiendan que un niño reciba al menos el 30% de su input lingüístico total en el segundo idioma para desarrollar un bilingüismo funcional. Esto puede lograrse combinando clases regulares, exposición en casa y actividades en inglés.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">Impulse English Academy</a>, nuestras clases de inglés infantil proporcionan la base de inmersión que tu hijo necesita, y te orientamos sobre cómo complementar en casa para maximizar los resultados.
+                  En <a href="/cursos-ingles/infantil/" className="text-purple-600 hover:underline font-medium">Impulse English Academy</a>, nuestras clases de inglés infantil proporcionan la base de inmersión que tu hijo necesita, y te orientamos sobre cómo complementar en casa para maximizar los resultados.
                 </p>
               </div>
             </section>
@@ -351,7 +351,7 @@ export default function NinosConfusionDosIdiomasPage() {
                   La ciencia es clara: <strong>los niños no se confunden con dos idiomas</strong>. El bilingüismo temprano es una ventaja cognitiva, social y académica que beneficiará a tu hijo durante toda su vida. Lo que a veces parece confusión es en realidad code-switching, una habilidad lingüística sofisticada que demuestra competencia en ambos idiomas.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si estás considerando iniciar a tu hijo en el inglés, no dejes que los mitos te frenen. En <a href="/cursos-ingles/infantil" className="text-purple-600 hover:underline font-medium">Impulse English Academy</a> contamos con profesores altamente cualificados especializados en primera infancia y la <a href="/blog/great-little-people-metodologia" className="text-purple-600 hover:underline font-medium">metodología Great Little People</a> para que tu hijo crezca bilingüe de forma natural. <a href="/contacto" className="text-purple-600 hover:underline font-medium">Solicita información</a> y resuelve todas tus dudas.
+                  Si estás considerando iniciar a tu hijo en el inglés, no dejes que los mitos te frenen. En <a href="/cursos-ingles/infantil/" className="text-purple-600 hover:underline font-medium">Impulse English Academy</a> contamos con profesores altamente cualificados especializados en primera infancia y la <a href="/blog/great-little-people-metodologia/" className="text-purple-600 hover:underline font-medium">metodología Great Little People</a> para que tu hijo crezca bilingüe de forma natural. <a href="/contacto/" className="text-purple-600 hover:underline font-medium">Solicita información</a> y resuelve todas tus dudas.
                 </p>
               </div>
             </section>
@@ -363,7 +363,7 @@ export default function NinosConfusionDosIdiomasPage() {
                 Nuestros programas de inglés infantil están diseñados para que los niños aprendan de forma natural, sin presión y con resultados demostrados.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
               >
                 Solicitar información
@@ -375,19 +375,19 @@ export default function NinosConfusionDosIdiomasPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <a href="/cursos-ingles/infantil" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/cursos-ingles/infantil/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Cursos de Inglés Infantil
                   </h3>
                   <p className="text-gray-600 text-sm">Programas de inmersión para niños desde los 2 años.</p>
                 </a>
-                <a href="/blog/edad-empezar-ingles-bebes" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/blog/edad-empezar-ingles-bebes/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     ¿A Qué Edad Empezar con el Inglés?
                   </h3>
                   <p className="text-gray-600 text-sm">Guía por etapas desde los 6 meses hasta los 6 años.</p>
                 </a>
-                <a href="/blog/great-little-people-metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
+                <a href="/blog/great-little-people-metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-purple-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors mb-2">
                     Great Little People
                   </h3>

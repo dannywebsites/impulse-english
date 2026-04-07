@@ -107,7 +107,7 @@ export default function C1AdvancedCaducaPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Una de las preguntas más frecuentes entre quienes obtienen el <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">Cambridge C1 Advanced</a> es si el certificado tiene fecha de caducidad. La respuesta corta es <strong>no: el certificado C1 Advanced no caduca nunca</strong>. Pero la realidad es más matizada de lo que parece, ya que algunas instituciones imponen sus propios límites temporales. Analizamos todos los escenarios.
+              Una de las preguntas más frecuentes entre quienes obtienen el <a href="/examenes-cambridge/c1-advanced/" className="text-emerald-600 hover:underline font-medium">Cambridge C1 Advanced</a> es si el certificado tiene fecha de caducidad. La respuesta corta es <strong>no: el certificado C1 Advanced no caduca nunca</strong>. Pero la realidad es más matizada de lo que parece, ya que algunas instituciones imponen sus propios límites temporales. Analizamos todos los escenarios.
             </p>
 
             {/* Section 1 */}
@@ -194,7 +194,7 @@ export default function C1AdvancedCaducaPage() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Consejo práctico:</strong> Antes de presentar tu C1, verifica los requisitos específicos de la institución. Si piden un certificado reciente, considera el <a href="/examenes-cambridge" className="text-emerald-600 hover:underline">Linguaskill de Cambridge</a>, que certifica el mismo nivel con resultados en 48 horas y a menor coste.
+                  <strong>Consejo práctico:</strong> Antes de presentar tu C1, verifica los requisitos específicos de la institución. Si piden un certificado reciente, considera el <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline">Linguaskill de Cambridge</a>, que certifica el mismo nivel con resultados en 48 horas y a menor coste.
                 </p>
               </div>
             </section>
@@ -292,7 +292,7 @@ export default function C1AdvancedCaducaPage() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  Si necesitas un certificado reciente pero no quieres repetir el C1 Advanced completo, el <a href="/blog/escala-cambridge" className="text-emerald-600 hover:underline">Linguaskill</a> es una alternativa eficiente: mismo reconocimiento Cambridge, resultados en 48 horas, formato digital y coste inferior.
+                  Si necesitas un certificado reciente pero no quieres repetir el C1 Advanced completo, el <a href="/blog/escala-cambridge/" className="text-emerald-600 hover:underline">Linguaskill</a> es una alternativa eficiente: mismo reconocimiento Cambridge, resultados en 48 horas, formato digital y coste inferior.
                 </p>
               </div>
             </section>
@@ -335,7 +335,7 @@ export default function C1AdvancedCaducaPage() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  En <a href="/examenes-cambridge" className="text-emerald-600 hover:underline">Impulse English Academy</a> ofrecemos programas de mantenimiento de nivel para profesionales que ya tienen su C1 y quieren seguir mejorando o mantener su inglés activo.
+                  En <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline">Impulse English Academy</a> ofrecemos programas de mantenimiento de nivel para profesionales que ya tienen su C1 y quieren seguir mejorando o mantener su inglés activo.
                 </p>
               </div>
             </section>
@@ -378,10 +378,10 @@ export default function C1AdvancedCaducaPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El <a href="/examenes-cambridge/c1-advanced" className="text-emerald-600 hover:underline font-medium">certificado C1 Advanced de Cambridge</a> no caduca y es válido de por vida, lo que lo convierte en una inversión a largo plazo frente a alternativas como IELTS o TOEFL. Sin embargo, es importante mantener tu nivel de inglés activo para que el certificado refleje tu competencia real.
+                  El <a href="/examenes-cambridge/c1-advanced/" className="text-emerald-600 hover:underline font-medium">certificado C1 Advanced de Cambridge</a> no caduca y es válido de por vida, lo que lo convierte en una inversión a largo plazo frente a alternativas como IELTS o TOEFL. Sin embargo, es importante mantener tu nivel de inglés activo para que el certificado refleje tu competencia real.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si necesitas obtener tu C1 o recertificarte, en <a href="/examenes-cambridge" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te preparamos con programas intensivos y regulares adaptados a tu disponibilidad. Consulta la <a href="/blog/escala-cambridge" className="text-emerald-600 hover:underline font-medium">escala Cambridge</a> para entender los niveles y elige el que mejor se adapte a tus necesidades.
+                  Si necesitas obtener tu C1 o recertificarte, en <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te preparamos con programas intensivos y regulares adaptados a tu disponibilidad. Consulta la <a href="/blog/escala-cambridge/" className="text-emerald-600 hover:underline font-medium">escala Cambridge</a> para entender los niveles y elige el que mejor se adapte a tus necesidades.
                 </p>
               </div>
             </section>
@@ -393,7 +393,7 @@ export default function C1AdvancedCaducaPage() {
                 Obtén un certificado que no caduca nunca. Te preparamos para aprobar el C1 Advanced con la mejor puntuación posible.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -405,25 +405,25 @@ export default function C1AdvancedCaducaPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/c1-advanced" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/c1-advanced/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     C1 Advanced: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge C1 Advanced.</p>
                 </a>
-                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Exámenes Cambridge: Hub Completo
                   </h3>
                   <p className="text-gray-600 text-sm">Comparativa de todos los exámenes Cambridge disponibles.</p>
                 </a>
-                <a href="/blog/escala-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/escala-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Escala Cambridge: Niveles y Puntuaciones
                   </h3>
                   <p className="text-gray-600 text-sm">Entiende la escala completa de certificaciones Cambridge.</p>
                 </a>
-                <a href="/blog/examen-cae-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/examen-cae-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Examen CAE Cambridge
                   </h3>

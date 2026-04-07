@@ -192,7 +192,7 @@ export default function CambridgeB2BeneficiosPage() {
         {/* Breadcrumb to Hub */}
         <div className="container mx-auto max-w-5xl px-6 mb-8">
           <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
             className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 font-medium transition-colors"
           >
             <BookOpen className="w-4 h-4" />
@@ -397,7 +397,7 @@ export default function CambridgeB2BeneficiosPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Ya sea para acceder a educación superior internacional, mejorar tu empleabilidad en mercados globalizados o cumplir requisitos académicos, el <a href="/examenes-cambridge/b2-first" className="text-red-600 hover:underline font-medium">B2 First</a> abre puertas tangibles. Si buscas preparación estructurada con metodología probada, nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-red-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos específicos de preparación con tasas de éxito del 100% en 2024-2025. Preparamos todos los <a href="/examenes-cambridge" className="text-red-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos" className="text-red-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares" className="text-red-600 hover:underline font-medium">clases particulares</a>.
+                Ya sea para acceder a educación superior internacional, mejorar tu empleabilidad en mercados globalizados o cumplir requisitos académicos, el <a href="/examenes-cambridge/b2-first/" className="text-red-600 hover:underline font-medium">B2 First</a> abre puertas tangibles. Si buscas preparación estructurada con metodología probada, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-red-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos específicos de preparación con tasas de éxito del 100% en 2024-2025. Preparamos todos los <a href="/examenes-cambridge/" className="text-red-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos/" className="text-red-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-red-600 hover:underline font-medium">clases particulares</a>.
               </p>
             </section>
 
@@ -432,7 +432,7 @@ export default function CambridgeB2BeneficiosPage() {
             <h2 className="text-2xl font-bold text-zinc-900 mb-8">Artículos Relacionados</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">Hub Principal</span>
@@ -440,7 +440,7 @@ export default function CambridgeB2BeneficiosPage() {
                 <p className="text-zinc-600 text-sm mt-2">Todo lo que necesitas saber sobre certificaciones.</p>
               </a>
               <a
-              href="/examenes-cambridge/c1-advanced"
+              href="/examenes-cambridge/c1-advanced/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">C1 Advanced</span>
@@ -448,7 +448,7 @@ export default function CambridgeB2BeneficiosPage() {
                 <p className="text-zinc-600 text-sm mt-2">Guía completa del nivel avanzado.</p>
               </a>
               <a
-              href="/examenes-cambridge/fechas-precios"
+              href="/examenes-cambridge/fechas-precios/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-red-600 text-sm font-medium">Fechas</span>

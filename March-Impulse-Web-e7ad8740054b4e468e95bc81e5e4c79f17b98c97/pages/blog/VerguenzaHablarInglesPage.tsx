@@ -246,7 +246,7 @@ export default function VerguenzaHablarInglesPage() {
                     <span className="bg-emerald-600 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold">6</span>
                     Elegir el entorno adecuado
                   </h3>
-                  <p className="text-gray-700">Busca espacios donde los errores sean bienvenidos: clases con <a href="/metodologia" className="text-emerald-600 hover:underline">profesores empáticos</a>, grupos de conversación informales, intercambios de idiomas donde el otro también está aprendiendo.</p>
+                  <p className="text-gray-700">Busca espacios donde los errores sean bienvenidos: clases con <a href="/metodologia/" className="text-emerald-600 hover:underline">profesores empáticos</a>, grupos de conversación informales, intercambios de idiomas donde el otro también está aprendiendo.</p>
                 </div>
               </div>
             </section>
@@ -288,7 +288,7 @@ export default function VerguenzaHablarInglesPage() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">Impulse English Academy</a> creamos este entorno seguro con grupos máximos de 8 alumnos, profesores cualificados formados en gestión emocional del aula y una cultura donde equivocarse es parte natural del proceso.
+                  En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">Impulse English Academy</a> creamos este entorno seguro con grupos máximos de 8 alumnos, profesores cualificados formados en gestión emocional del aula y una cultura donde equivocarse es parte natural del proceso.
                 </p>
               </div>
             </section>
@@ -371,7 +371,7 @@ export default function VerguenzaHablarInglesPage() {
                   La vergüenza al hablar inglés es una barrera emocional, no lingüística. Con las técnicas adecuadas y el entorno correcto, puedes superarla en semanas, no en años. El primer paso es reconocer que es normal y que no refleja tu nivel real de inglés.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te ayudamos a <a href="/blog/perder-miedo-hablar-ingles" className="text-emerald-600 hover:underline font-medium">perder el miedo a hablar</a> con un entorno diseñado para la confianza. <a href="/contacto" className="text-emerald-600 hover:underline font-medium">Contáctanos</a> y descubre cómo nuestros alumnos superan la vergüenza desde la primera clase.
+                  En <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te ayudamos a <a href="/blog/perder-miedo-hablar-ingles/" className="text-emerald-600 hover:underline font-medium">perder el miedo a hablar</a> con un entorno diseñado para la confianza. <a href="/contacto/" className="text-emerald-600 hover:underline font-medium">Contáctanos</a> y descubre cómo nuestros alumnos superan la vergüenza desde la primera clase.
                 </p>
               </div>
             </section>
@@ -383,7 +383,7 @@ export default function VerguenzaHablarInglesPage() {
                 Nuestras clases están diseñadas para que hables sin miedo desde el primer día. Grupos reducidos y profesores que te apoyan.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar clase de prueba
@@ -395,19 +395,19 @@ export default function VerguenzaHablarInglesPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo creamos un entorno de aprendizaje seguro y efectivo.</p>
                 </a>
-                <a href="/blog/perder-miedo-hablar-ingles" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/blog/perder-miedo-hablar-ingles/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Perder el Miedo a Hablar Inglés
                   </h3>
                   <p className="text-gray-600 text-sm">7 estrategias probadas para ganar confianza al hablar.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos para Adultos
                   </h3>

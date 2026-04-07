@@ -89,21 +89,21 @@ export default function MetodoSection() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="/examenes-cambridge"
+              href="/examenes-cambridge/"
               className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 text-zinc-800 font-medium py-3 px-6 rounded-lg hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
             >
               Exámenes Cambridge
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="/linguaskill"
+              href="/linguaskill/"
               className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 text-zinc-800 font-medium py-3 px-6 rounded-lg hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
             >
               Linguaskill
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="/examenes-cambridge/fechas-precios"
+              href="/examenes-cambridge/fechas-precios/"
               className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 text-zinc-800 font-medium py-3 px-6 rounded-lg hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
             >
               Fechas y Precios

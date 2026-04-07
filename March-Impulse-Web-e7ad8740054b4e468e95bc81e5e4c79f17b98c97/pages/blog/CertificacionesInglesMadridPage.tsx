@@ -133,9 +133,9 @@ export default function CertificacionesInglesMadridPage() {
             {/* Introduction */}
             <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-zinc-600 leading-relaxed">
-                Madrid ofrece múltiples opciones para certificar tu nivel de inglés, desde los prestigiosos <a href="/examenes-cambridge" className="text-emerald-600 hover:underline">exámenes Cambridge</a> hasta el rápido <a href="/linguaskill" className="text-emerald-600 hover:underline">Linguaskill</a>. Elegir la certificación adecuada y la academia correcta para
+                Madrid ofrece múltiples opciones para certificar tu nivel de inglés, desde los prestigiosos <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline">exámenes Cambridge</a> hasta el rápido <a href="/linguaskill/" className="text-emerald-600 hover:underline">Linguaskill</a>. Elegir la certificación adecuada y la academia correcta para
                 prepararte puede marcar la diferencia entre aprobar a la primera o tener que repetir. Esta guía
-                compara todas las opciones disponibles en la capital para que tomes la mejor decisión. Si buscas preparación en zonas como <a href="/academia-ingles-barrio-del-pilar" className="text-emerald-600 hover:underline">Barrio del Pilar</a>, <a href="/academia-ingles-tetuan" className="text-emerald-600 hover:underline">Tetuán</a> o <a href="/academia-ingles-plaza-castilla" className="text-emerald-600 hover:underline">Plaza Castilla</a>, disponemos de centros especializados.
+                compara todas las opciones disponibles en la capital para que tomes la mejor decisión. Si buscas preparación en zonas como <a href="/academia-ingles-barrio-del-pilar/" className="text-emerald-600 hover:underline">Barrio del Pilar</a>, <a href="/academia-ingles-tetuan/" className="text-emerald-600 hover:underline">Tetuán</a> o <a href="/academia-ingles-plaza-castilla/" className="text-emerald-600 hover:underline">Plaza Castilla</a>, disponemos de centros especializados.
               </p>
             </div>
 
@@ -206,11 +206,11 @@ export default function CertificacionesInglesMadridPage() {
                     <ul className="space-y-2 text-sm">
                       <li className="flex items-center gap-2">
                         <CheckCircle className="w-4 h-4" />
-                        <a href="/examenes-cambridge" className="text-white hover:underline">Cambridge B2 First, C1 Advanced, C2 Proficiency</a>
+                        <a href="/examenes-cambridge/" className="text-white hover:underline">Cambridge B2 First, C1 Advanced, C2 Proficiency</a>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="w-4 h-4" />
-                        <a href="/linguaskill" className="text-white hover:underline">Linguaskill General y Business</a>
+                        <a href="/linguaskill/" className="text-white hover:underline">Linguaskill General y Business</a>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="w-4 h-4" />
@@ -245,10 +245,10 @@ export default function CertificacionesInglesMadridPage() {
                 <div className="mt-6 pt-6 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4">
                   <div className="flex items-center gap-2">
                     <Euro className="w-5 h-5" />
-                    <span className="text-lg">Precios competitivos desde <strong>64€</strong>/mes - <a href="/academia-ingles-la-vaguada" className="text-white underline hover:text-teal-200">junto a La Vaguada</a></span>
+                    <span className="text-lg">Precios competitivos desde <strong>64€</strong>/mes - <a href="/academia-ingles-la-vaguada/" className="text-white underline hover:text-teal-200">junto a La Vaguada</a></span>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-white text-emerald-600 font-bold py-3 px-8 rounded-lg hover:bg-zinc-100 transition-colors"
                   >
                     Solicitar información
@@ -392,10 +392,10 @@ export default function CertificacionesInglesMadridPage() {
                 <p className="text-white/90 mb-6">
                   Madrid ofrece todas las opciones de certificación de inglés que puedas necesitar. La clave está
                   en elegir el examen adecuado para tu objetivo y prepararte en una academia que conozca el formato
-                  específico. Ya sea que necesites <a href="/cursos-ingles/adultos" className="text-white underline hover:text-teal-200">cursos de inglés para adultos</a>, <a href="/cursos-ingles/particulares" className="text-white underline hover:text-teal-200">clases particulares</a> o preparación para <a href="/linguaskill" className="text-white underline hover:text-teal-200">Linguaskill</a>, no te conformes con aprobar: prepárate para conseguir la mejor puntuación posible.
+                  específico. Ya sea que necesites <a href="/cursos-ingles/adultos/" className="text-white underline hover:text-teal-200">cursos de inglés para adultos</a>, <a href="/cursos-ingles/particulares/" className="text-white underline hover:text-teal-200">clases particulares</a> o preparación para <a href="/linguaskill/" className="text-white underline hover:text-teal-200">Linguaskill</a>, no te conformes con aprobar: prepárate para conseguir la mejor puntuación posible.
                 </p>
                 <p className="text-white/90">
-                  En <strong>Impulse English Academy</strong>, con sedes en <a href="/academia-ingles-barrio-del-pilar" className="text-white underline hover:text-teal-200">Barrio del Pilar</a>, <a href="/academia-ingles-penagrande" className="text-white underline hover:text-teal-200">Peñagrande</a> y <a href="/academia-ingles-la-ventilla" className="text-white underline hover:text-teal-200">La Ventilla</a>, te preparamos para cualquier certificación
+                  En <strong>Impulse English Academy</strong>, con sedes en <a href="/academia-ingles-barrio-del-pilar/" className="text-white underline hover:text-teal-200">Barrio del Pilar</a>, <a href="/academia-ingles-penagrande/" className="text-white underline hover:text-teal-200">Peñagrande</a> y <a href="/academia-ingles-la-ventilla/" className="text-white underline hover:text-teal-200">La Ventilla</a>, te preparamos para cualquier certificación
                   con profesores especializados y material oficial. ¡Certifica tu inglés con confianza!
                 </p>
               </div>
@@ -414,7 +414,7 @@ export default function CertificacionesInglesMadridPage() {
                     </p>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Solicitar información
@@ -428,19 +428,19 @@ export default function CertificacionesInglesMadridPage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <a href="/academias-ingles-madrid" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/academias-ingles-madrid/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-emerald-600">MADRID</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Academias Baratas de Inglés en Madrid</h4>
                 </a>
-                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-emerald-600">CAMBRIDGE</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa de Exámenes Cambridge 2026</h4>
                 </a>
-                <a href="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/linguaskill/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-emerald-600">LINGUASKILL</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa de Linguaskill 2026</h4>
                 </a>
-                <a href="/examenes-cambridge/b2-first" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-emerald-600">B2 FIRST</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Preparación B2 First (FCE)</h4>
                 </a>

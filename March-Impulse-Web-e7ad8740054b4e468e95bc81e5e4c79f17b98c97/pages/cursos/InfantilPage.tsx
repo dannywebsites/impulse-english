@@ -175,7 +175,7 @@ export default function InfantilPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-white text-fuchsia-900 font-display font-semibold py-4 px-8 rounded-lg hover:bg-amber-50 transition-all duration-300 text-center"
               >
                 Clase de prueba GRATIS
@@ -259,7 +259,7 @@ export default function InfantilPage() {
                 <strong>¿Dónde estamos?</strong> Estamos en Barrio del Pilar, junto a La Vaguada (Madrid 28029), con acceso cómodo desde metro y zonas cercanas.
               </p>
               <p className="text-zinc-600 text-sm">
-                Cuando crezcan, pueden continuar en <a href="/cursos-ingles/primaria" className="text-purple-600 hover:underline font-medium">Primaria (6–12)</a> y empezar con sus primeros <a href="/examenes-cambridge" className="text-purple-600 hover:underline font-medium">exámenes Cambridge Young Learners</a>.
+                Cuando crezcan, pueden continuar en <a href="/cursos-ingles/primaria/" className="text-purple-600 hover:underline font-medium">Primaria (6–12)</a> y empezar con sus primeros <a href="/examenes-cambridge/" className="text-purple-600 hover:underline font-medium">exámenes Cambridge Young Learners</a>.
               </p>
             </div>
           </div>
@@ -395,7 +395,7 @@ export default function InfantilPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Reservar clase gratuita

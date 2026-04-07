@@ -168,7 +168,7 @@ export default function TiempoPreparacionB2FirstPage() {
 
                 <div className="bg-red-50 border-l-4 border-red-500 rounded-r-xl p-6">
                   <h3 className="font-bold text-gray-900 mb-2">Desde A2 básico o inferior: 12-18 meses</h3>
-                  <p className="text-gray-700">Si tu nivel está por debajo de un A2 sólido, el <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline">B2 First</a> es un objetivo a medio-largo plazo. Planifica en etapas: primero A2 → B1 (6-9 meses), luego B1 → B2 (3-6 meses más). Intentar saltar directamente a B2 desde este nivel suele resultar en frustración y abandono.</p>
+                  <p className="text-gray-700">Si tu nivel está por debajo de un A2 sólido, el <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline">B2 First</a> es un objetivo a medio-largo plazo. Planifica en etapas: primero A2 → B1 (6-9 meses), luego B1 → B2 (3-6 meses más). Intentar saltar directamente a B2 desde este nivel suele resultar en frustración y abandono.</p>
                 </div>
               </div>
             </section>
@@ -409,10 +409,10 @@ export default function TiempoPreparacionB2FirstPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El tiempo para preparar el <a href="/examenes-cambridge/b2-first" className="text-emerald-600 hover:underline font-medium">B2 First</a> varía significativamente según tu nivel de partida, dedicación y método de estudio. Desde 3-4 meses con un B1+ sólido hasta 12-18 meses desde niveles más bajos, lo importante es ser realista con tus expectativas y mantener la constancia. Las 200-600 horas de estudio necesarias son una inversión que rinde frutos permanentes, ya que el certificado B2 First no caduca nunca.
+                  El tiempo para preparar el <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline font-medium">B2 First</a> varía significativamente según tu nivel de partida, dedicación y método de estudio. Desde 3-4 meses con un B1+ sólido hasta 12-18 meses desde niveles más bajos, lo importante es ser realista con tus expectativas y mantener la constancia. Las 200-600 horas de estudio necesarias son una inversión que rinde frutos permanentes, ya que el certificado B2 First no caduca nunca.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si quieres optimizar tu tiempo de preparación, nuestros <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> combinan la eficacia de clases presenciales con nuestra <a href="/metodologia" className="text-emerald-600 hover:underline font-medium">metodología probada</a> para que alcances tu objetivo en el menor tiempo posible. Realizamos un test de nivel inicial gratuito para recomendarte el plan de preparación más adecuado a tu situación.
+                  Si quieres optimizar tu tiempo de preparación, nuestros <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">cursos para adultos</a> combinan la eficacia de clases presenciales con nuestra <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">metodología probada</a> para que alcances tu objetivo en el menor tiempo posible. Realizamos un test de nivel inicial gratuito para recomendarte el plan de preparación más adecuado a tu situación.
                 </p>
               </div>
             </section>
@@ -424,7 +424,7 @@ export default function TiempoPreparacionB2FirstPage() {
                 Realizamos un test de nivel gratuito para recomendarte el plan de preparación más eficiente según tu nivel actual y tus objetivos.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar test de nivel gratuito
@@ -436,19 +436,19 @@ export default function TiempoPreparacionB2FirstPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cambridge B2 First: Guía Completa
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen B2 First: estructura, formato y preparación.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>
                   <p className="text-gray-600 text-sm">Programas de preparación Cambridge adaptados a tu nivel y disponibilidad.</p>
                 </a>
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>

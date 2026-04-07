@@ -134,7 +134,7 @@ export default function CursosInglesAdultosMadridPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Madrid ofrece cientos de opciones para estudiar inglés siendo adulto, desde las económicas Escuelas Oficiales de Idiomas hasta academias privadas especializadas y <a href="/cursos-ingles/particulares" className="text-slate-700 hover:underline font-medium">clases particulares</a> personalizadas. Esta guía te ayuda a navegar entre todas las alternativas para encontrar el curso que mejor se adapte a tus necesidades profesionales, disponibilidad horaria y presupuesto. Ya seas un profesional que necesita inglés para su carrera o alguien que quiere retomar el idioma después de años, aquí encontrarás la información que necesitas. Si buscas academias en zonas específicas como <a href="/academia-ingles-tetuan" className="text-slate-700 hover:underline font-medium">Tetuán</a>, <a href="/academia-ingles-plaza-castilla" className="text-slate-700 hover:underline font-medium">Plaza Castilla</a> o <a href="/academia-ingles-la-vaguada" className="text-slate-700 hover:underline font-medium">junto a La Vaguada</a>, disponemos de sedes en el norte de Madrid.
+              Madrid ofrece cientos de opciones para estudiar inglés siendo adulto, desde las económicas Escuelas Oficiales de Idiomas hasta academias privadas especializadas y <a href="/cursos-ingles/particulares/" className="text-slate-700 hover:underline font-medium">clases particulares</a> personalizadas. Esta guía te ayuda a navegar entre todas las alternativas para encontrar el curso que mejor se adapte a tus necesidades profesionales, disponibilidad horaria y presupuesto. Ya seas un profesional que necesita inglés para su carrera o alguien que quiere retomar el idioma después de años, aquí encontrarás la información que necesitas. Si buscas academias en zonas específicas como <a href="/academia-ingles-tetuan/" className="text-slate-700 hover:underline font-medium">Tetuán</a>, <a href="/academia-ingles-plaza-castilla/" className="text-slate-700 hover:underline font-medium">Plaza Castilla</a> o <a href="/academia-ingles-la-vaguada/" className="text-slate-700 hover:underline font-medium">junto a La Vaguada</a>, disponemos de sedes en el norte de Madrid.
             </p>
 
             {/* Section 1 */}
@@ -178,7 +178,7 @@ export default function CursosInglesAdultosMadridPage() {
 
                   </div>
                   <p className="text-gray-700 mb-4">
-                    Las academias privadas ofrecen mayor flexibilidad y atención personalizada. En Madrid hay cientos de opciones, desde grandes franquicias hasta academias locales especializadas. Suelen ofrecer grupos reducidos de 6-12 alumnos, horarios flexibles incluyendo tardes-noches y fines de semana, y metodologías comunicativas modernas. Muchas son centros preparadores oficiales para <a href="/examenes-cambridge" className="text-slate-600 hover:underline">exámenes Cambridge</a> y <a href="/linguaskill" className="text-slate-600 hover:underline">Linguaskill</a>.
+                    Las academias privadas ofrecen mayor flexibilidad y atención personalizada. En Madrid hay cientos de opciones, desde grandes franquicias hasta academias locales especializadas. Suelen ofrecer grupos reducidos de 6-12 alumnos, horarios flexibles incluyendo tardes-noches y fines de semana, y metodologías comunicativas modernas. Muchas son centros preparadores oficiales para <a href="/examenes-cambridge/" className="text-slate-600 hover:underline">exámenes Cambridge</a> y <a href="/linguaskill/" className="text-slate-600 hover:underline">Linguaskill</a>.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Grupos reducidos</span>
@@ -223,7 +223,7 @@ export default function CursosInglesAdultosMadridPage() {
 
                   </div>
                   <p className="text-gray-700 mb-4">
-                    Centro oficial de preparación Cambridge en el norte de Madrid. Ubicados <a href="/academia-ingles-la-vaguada" className="text-blue-700 hover:underline">junto a La Vaguada</a> en <a href="/academia-ingles-barrio-del-pilar" className="text-blue-700 hover:underline">Barrio del Pilar</a>. Cursos presenciales y online con total flexibilidad. Profesores cualificados y certificados con metodología comunicativa. 100% de aprobados en exámenes Cambridge 2024/25. Grupos reducidos de máximo 7-10 alumnos.
+                    Centro oficial de preparación Cambridge en el norte de Madrid. Ubicados <a href="/academia-ingles-la-vaguada/" className="text-blue-700 hover:underline">junto a La Vaguada</a> en <a href="/academia-ingles-barrio-del-pilar/" className="text-blue-700 hover:underline">Barrio del Pilar</a>. Cursos presenciales y online con total flexibilidad. Profesores cualificados y certificados con metodología comunicativa. 100% de aprobados en exámenes Cambridge 2024/25. Grupos reducidos de máximo 7-10 alumnos.
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Centro oficial Cambridge</span>
@@ -231,7 +231,7 @@ export default function CursosInglesAdultosMadridPage() {
                     <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Presencial + Online</span>
                     <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">Grupos 7-10 alumnos</span>
                   </div>
-                  <a href="/cursos-ingles/adultos" className="inline-flex items-center gap-2 text-blue-700 font-semibold hover:text-blue-800">
+                  <a href="/cursos-ingles/adultos/" className="inline-flex items-center gap-2 text-blue-700 font-semibold hover:text-blue-800">
                     Ver cursos para adultos <ArrowRight className="w-4 h-4" />
                   </a>
                 </div>
@@ -395,10 +395,10 @@ export default function CursosInglesAdultosMadridPage() {
 
               <div className="bg-gradient-to-r from-slate-50 to-gray-100 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Madrid ofrece opciones de <a href="/cursos-ingles/adultos" className="text-slate-700 hover:underline font-medium">cursos de inglés para adultos</a> para todos los perfiles: desde las económicas EOI para quienes tienen horarios flexibles y presupuesto ajustado, hasta academias privadas especializadas para profesionales que necesitan flexibilidad y atención personalizada. Si tu objetivo es obtener una certificación oficial de inglés, asegúrate de elegir una academia con experiencia en preparación de <a href="/examenes-cambridge" className="text-slate-700 hover:underline font-medium">exámenes Cambridge</a>.
+                  Madrid ofrece opciones de <a href="/cursos-ingles/adultos/" className="text-slate-700 hover:underline font-medium">cursos de inglés para adultos</a> para todos los perfiles: desde las económicas EOI para quienes tienen horarios flexibles y presupuesto ajustado, hasta academias privadas especializadas para profesionales que necesitan flexibilidad y atención personalizada. Si tu objetivo es obtener una certificación oficial de inglés, asegúrate de elegir una academia con experiencia en preparación de <a href="/examenes-cambridge/" className="text-slate-700 hover:underline font-medium">exámenes Cambridge</a>.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Para adultos en el norte de Madrid (<a href="/academia-ingles-barrio-del-pilar" className="text-slate-700 hover:underline font-medium">Barrio del Pilar</a>, <a href="/academia-ingles-penagrande" className="text-slate-700 hover:underline font-medium">Peñagrande</a>, <a href="/academia-ingles-la-ventilla" className="text-slate-700 hover:underline font-medium">La Ventilla</a>), <strong>Impulse English Academy</strong> en <a href="/academia-ingles-la-vaguada" className="text-slate-700 hover:underline font-medium">La Vaguada</a> ofrece grupos reducidos de 7-10 alumnos, horarios adaptados a profesionales, modalidad presencial y online con total flexibilidad, y profesores cualificados y certificados. Centro oficial de preparación Cambridge con 100% de aprobados en 2024/25.
+                  Para adultos en el norte de Madrid (<a href="/academia-ingles-barrio-del-pilar/" className="text-slate-700 hover:underline font-medium">Barrio del Pilar</a>, <a href="/academia-ingles-penagrande/" className="text-slate-700 hover:underline font-medium">Peñagrande</a>, <a href="/academia-ingles-la-ventilla/" className="text-slate-700 hover:underline font-medium">La Ventilla</a>), <strong>Impulse English Academy</strong> en <a href="/academia-ingles-la-vaguada/" className="text-slate-700 hover:underline font-medium">La Vaguada</a> ofrece grupos reducidos de 7-10 alumnos, horarios adaptados a profesionales, modalidad presencial y online con total flexibilidad, y profesores cualificados y certificados. Centro oficial de preparación Cambridge con 100% de aprobados en 2024/25.
                 </p>
               </div>
             </section>
@@ -410,7 +410,7 @@ export default function CursosInglesAdultosMadridPage() {
                 En Impulse English Academy ofrecemos cursos específicos para adultos con grupos reducidos y horarios flexibles.
               </p>
               <a
-              href="/cursos-ingles/adultos"
+              href="/cursos-ingles/adultos/"
                 className="inline-flex items-center gap-2 bg-white text-slate-700 px-8 py-4 rounded-xl font-semibold hover:bg-slate-100 transition-colors"
               >
                 Ver cursos para adultos
@@ -422,25 +422,25 @@ export default function CursosInglesAdultosMadridPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/academias-ingles-madrid" className="group bg-gray-50 rounded-xl p-6 hover:bg-slate-50 transition-colors">
+                <a href="/academias-ingles-madrid/" className="group bg-gray-50 rounded-xl p-6 hover:bg-slate-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-slate-700 transition-colors mb-2">
                     Academias de Inglés Baratas en Madrid
                   </h3>
                   <p className="text-gray-600 text-sm">Las mejores opciones económicas para estudiar inglés en Madrid.</p>
                 </a>
-                <a href="/examenes-cambridge" className="group bg-gray-50 rounded-xl p-6 hover:bg-slate-50 transition-colors">
+                <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-slate-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-slate-700 transition-colors mb-2">
                     Guía de Exámenes Cambridge
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre las certificaciones oficiales de inglés.</p>
                 </a>
-                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-slate-50 transition-colors">
+                <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-slate-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-slate-700 transition-colors mb-2">
                     Guía de Linguaskill
                   </h3>
                   <p className="text-gray-600 text-sm">Certificación rápida y flexible con resultados en 48 horas.</p>
                 </a>
-                <a href="/examenes-cambridge/b2-first" className="group bg-gray-50 rounded-xl p-6 hover:bg-slate-50 transition-colors">
+                <a href="/examenes-cambridge/b2-first/" className="group bg-gray-50 rounded-xl p-6 hover:bg-slate-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-slate-700 transition-colors mb-2">
                     Preparación B2 First
                   </h3>

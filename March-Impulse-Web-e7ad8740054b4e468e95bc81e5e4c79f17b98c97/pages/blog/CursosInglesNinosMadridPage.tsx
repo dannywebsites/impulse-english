@@ -186,8 +186,8 @@ export default function CursosInglesNinosMadridPage() {
               <p className="text-xl text-zinc-600 leading-relaxed">
                 El inglés se ha convertido en una habilidad esencial para el futuro de nuestros hijos. Madrid ofrece
                 una amplia variedad de academias y metodologías adaptadas a cada edad, desde programas de inmersión
-                para bebés hasta preparación de <a href="/examenes-cambridge" className="text-pink-600 hover:underline">exámenes Cambridge</a> para adolescentes. Esta guía te ayuda a entender
-                las diferentes opciones y elegir la más adecuada para tu hijo. Si buscas <a href="/cursos-ingles/infantil" className="text-pink-600 hover:underline">cursos infantil</a> o academias en zonas como <a href="/academia-ingles-barrio-del-pilar" className="text-pink-600 hover:underline">Barrio del Pilar</a>, <a href="/academia-ingles-tetuan" className="text-pink-600 hover:underline">Tetuán</a> o <a href="/academia-ingles-plaza-castilla" className="text-pink-600 hover:underline">Plaza Castilla</a>, disponemos de centros en el norte de Madrid.
+                para bebés hasta preparación de <a href="/examenes-cambridge/" className="text-pink-600 hover:underline">exámenes Cambridge</a> para adolescentes. Esta guía te ayuda a entender
+                las diferentes opciones y elegir la más adecuada para tu hijo. Si buscas <a href="/cursos-ingles/infantil/" className="text-pink-600 hover:underline">cursos infantil</a> o academias en zonas como <a href="/academia-ingles-barrio-del-pilar/" className="text-pink-600 hover:underline">Barrio del Pilar</a>, <a href="/academia-ingles-tetuan/" className="text-pink-600 hover:underline">Tetuán</a> o <a href="/academia-ingles-plaza-castilla/" className="text-pink-600 hover:underline">Plaza Castilla</a>, disponemos de centros en el norte de Madrid.
               </p>
             </div>
 
@@ -203,7 +203,7 @@ export default function CursosInglesNinosMadridPage() {
 
                 <p className="text-white/90 mb-4">
                   Somos centro oficial del método <strong>Great Little People</strong>, diseñado específicamente para
-                  que los niños de 2 a 6 años aprendan inglés de forma natural, como si fuera su lengua materna. Ubicados <a href="/academia-ingles-la-vaguada" className="text-white underline hover:text-pink-200">junto a La Vaguada</a> en <a href="/academia-ingles-barrio-del-pilar" className="text-white underline hover:text-pink-200">nuestra academia en Barrio del Pilar</a>.
+                  que los niños de 2 a 6 años aprendan inglés de forma natural, como si fuera su lengua materna. Ubicados <a href="/academia-ingles-la-vaguada/" className="text-white underline hover:text-pink-200">junto a La Vaguada</a> en <a href="/academia-ingles-barrio-del-pilar/" className="text-white underline hover:text-pink-200">nuestra academia en Barrio del Pilar</a>.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -249,7 +249,7 @@ export default function CursosInglesNinosMadridPage() {
                     <span className="text-lg">Precios competitivos para todas las edades</span>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-white text-pink-600 font-bold py-3 px-8 rounded-lg hover:bg-zinc-100 transition-colors"
                   >
                     Reservar clase de prueba
@@ -403,9 +403,9 @@ export default function CursosInglesNinosMadridPage() {
                       <td className="p-4 text-zinc-500">Método propio, instalaciones modernas</td>
                     </tr>
                     <tr className="bg-pink-50">
-                      <td className="p-4 font-bold text-pink-700"><a href="/cursos-ingles/infantil" className="text-pink-700 hover:underline">Impulse English Academy</a></td>
+                      <td className="p-4 font-bold text-pink-700"><a href="/cursos-ingles/infantil/" className="text-pink-700 hover:underline">Impulse English Academy</a></td>
                       <td className="p-4 text-center font-bold text-pink-700">Desde 64€</td>
-                      <td className="p-4 text-pink-600">Great Little People, grupos reducidos, <a href="/academia-ingles-penagrande" className="text-pink-700 hover:underline">Peñagrande</a></td>
+                      <td className="p-4 text-pink-600">Great Little People, grupos reducidos, <a href="/academia-ingles-penagrande/" className="text-pink-700 hover:underline">Peñagrande</a></td>
                     </tr>
                     <tr>
                       <td className="p-4">Academias de barrio</td>
@@ -456,12 +456,12 @@ export default function CursosInglesNinosMadridPage() {
               <div className="bg-gradient-to-r from-pink-500 to-rose-500 rounded-2xl p-8 text-white">
                 <h2 className="text-2xl font-bold mb-4">Conclusión</h2>
                 <p className="text-white/90 mb-6">
-                  Elegir la academia de <a href="/cursos-ingles/infantil" className="text-white underline hover:text-pink-200">inglés para niños</a> adecuada para tu hijo es una inversión en su futuro. Busca una
+                  Elegir la academia de <a href="/cursos-ingles/infantil/" className="text-white underline hover:text-pink-200">inglés para niños</a> adecuada para tu hijo es una inversión en su futuro. Busca una
                   metodología adaptada a su edad, grupos reducidos y profesores con experiencia infantil. Lo más
-                  importante es que tu hijo asocie el inglés con experiencias positivas y divertidas. Para adolescentes, considera la preparación para <a href="/examenes-cambridge" className="text-white underline hover:text-pink-200">exámenes Cambridge</a> oficiales.
+                  importante es que tu hijo asocie el inglés con experiencias positivas y divertidas. Para adolescentes, considera la preparación para <a href="/examenes-cambridge/" className="text-white underline hover:text-pink-200">exámenes Cambridge</a> oficiales.
                 </p>
                 <p className="text-white/90">
-                  En <strong>Impulse English Academy</strong>, con sede <a href="/academia-ingles-la-vaguada" className="text-white underline hover:text-pink-200">junto a La Vaguada</a> en <a href="/academia-ingles-la-ventilla" className="text-white underline hover:text-pink-200">La Ventilla</a>, ofrecemos el método <strong>Great Little People</strong>
+                  En <strong>Impulse English Academy</strong>, con sede <a href="/academia-ingles-la-vaguada/" className="text-white underline hover:text-pink-200">junto a La Vaguada</a> en <a href="/academia-ingles-la-ventilla/" className="text-white underline hover:text-pink-200">La Ventilla</a>, ofrecemos el método <strong>Great Little People</strong>
                   para los más pequeños, con preparación Cambridge para todas las edades. ¡Reserva una clase de prueba gratuita!
                 </p>
               </div>
@@ -480,7 +480,7 @@ export default function CursosInglesNinosMadridPage() {
                     </p>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Clase de prueba gratis
@@ -494,19 +494,19 @@ export default function CursosInglesNinosMadridPage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <a href="/academias-ingles-madrid" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/academias-ingles-madrid/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-pink-600">MADRID</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Academias Baratas de Inglés en Madrid</h4>
                 </a>
-                <a href="/examenes-cambridge" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/examenes-cambridge/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-pink-600">CAMBRIDGE</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa de Exámenes Cambridge</h4>
                 </a>
-                <a href="/cursos-ingles/infantil" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/cursos-ingles/infantil/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-pink-600">CURSOS</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Curso de Inglés Infantil (2-5 años)</h4>
                 </a>
-                <a href="/cursos-ingles/primaria" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/cursos-ingles/primaria/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-pink-600">CURSOS</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Curso de Inglés Primaria (6-12 años)</h4>
                 </a>

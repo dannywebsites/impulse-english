@@ -339,7 +339,7 @@ export default function MetodologiaPage() {
             </p>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Experimenta la Metodología

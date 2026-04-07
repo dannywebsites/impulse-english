@@ -178,7 +178,7 @@ export default function AcademiaVsProfesorParticularPage() {
                     <CheckCircle className="w-5 h-5 text-blue-600" />
                     Metodología estructurada y probada
                   </h3>
-                  <p className="text-gray-700">Las academias siguen currículos diseñados profesionalmente con progresión lógica de contenidos. La <a href="/metodologia" className="text-blue-600 hover:underline">metodología de enseñanza</a> está testada con cientos de estudiantes y optimizada para resultados. No dependes de la improvisación.</p>
+                  <p className="text-gray-700">Las academias siguen currículos diseñados profesionalmente con progresión lógica de contenidos. La <a href="/metodologia/" className="text-blue-600 hover:underline">metodología de enseñanza</a> está testada con cientos de estudiantes y optimizada para resultados. No dependes de la improvisación.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -342,7 +342,7 @@ export default function AcademiaVsProfesorParticularPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En <a href="/contacto" className="text-blue-600 hover:underline">Impulse English Academy</a> ofrecemos ambas opciones: <a href="/cursos-ingles/particulares" className="text-blue-600 hover:underline">clases particulares</a> y cursos en grupo reducido. Así puedes encontrar la modalidad perfecta o combinar ambas para un progreso óptimo.
+                En <a href="/contacto/" className="text-blue-600 hover:underline">Impulse English Academy</a> ofrecemos ambas opciones: <a href="/cursos-ingles/particulares/" className="text-blue-600 hover:underline">clases particulares</a> y cursos en grupo reducido. Así puedes encontrar la modalidad perfecta o combinar ambas para un progreso óptimo.
               </p>
 
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl">
@@ -393,7 +393,7 @@ export default function AcademiaVsProfesorParticularPage() {
                   No hay una respuesta universal: la academia es mejor para quienes buscan estructura, interacción grupal y preparación de exámenes a precio asequible. El profesor particular es mejor para quienes necesitan flexibilidad total y contenido muy personalizado.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/metodologia" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos lo mejor de ambos mundos con grupos reducidos que combinan la interacción grupal con atención personalizada, y <a href="/cursos-ingles/particulares" className="text-blue-600 hover:underline font-medium">clases particulares</a> para quienes prefieren la opción individual.
+                  En <a href="/metodologia/" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos lo mejor de ambos mundos con grupos reducidos que combinan la interacción grupal con atención personalizada, y <a href="/cursos-ingles/particulares/" className="text-blue-600 hover:underline font-medium">clases particulares</a> para quienes prefieren la opción individual.
                 </p>
               </div>
             </section>
@@ -405,7 +405,7 @@ export default function AcademiaVsProfesorParticularPage() {
                 Ven a conocernos y descubre cómo nuestros grupos reducidos te ofrecen lo mejor de la academia y del profesor particular.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
                 Solicitar clase de prueba
@@ -417,13 +417,13 @@ export default function AcademiaVsProfesorParticularPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Descubre cómo enseñamos inglés con resultados probados.</p>
                 </a>
-                <a href="/cursos-ingles/particulares" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/cursos-ingles/particulares/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Clases Particulares en Impulse
                   </h3>

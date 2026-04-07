@@ -253,8 +253,8 @@ export default function CursoIntensivoLinguaskillPage() {
 
               <div className="bg-zinc-100 rounded-xl p-6">
                 <p className="text-zinc-700">
-                  <strong>Nuestra recomendación:</strong> En <a href="/academia-ingles-barrio-del-pilar" className="text-orange-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-orange-600 hover:underline font-medium">junto a La Vaguada</a>, ofrecemos un formato híbrido que combina
-                  clases presenciales para Speaking con recursos online para práctica autónoma en nuestros <a href="/cursos-ingles/adultos" className="text-orange-600 hover:underline font-medium">cursos de inglés para adultos</a>. Esto te da lo mejor de ambos mundos
+                  <strong>Nuestra recomendación:</strong> En <a href="/academia-ingles-barrio-del-pilar/" className="text-orange-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-orange-600 hover:underline font-medium">junto a La Vaguada</a>, ofrecemos un formato híbrido que combina
+                  clases presenciales para Speaking con recursos online para práctica autónoma en nuestros <a href="/cursos-ingles/adultos/" className="text-orange-600 hover:underline font-medium">cursos de inglés para adultos</a>. Esto te da lo mejor de ambos mundos
                   por solo 79€/mes.
                 </p>
               </div>
@@ -294,7 +294,7 @@ export default function CursoIntensivoLinguaskillPage() {
                       la preparación con trabajo o estudios.
                     </p>
                     <a
-              href="/contacto"
+              href="/contacto/"
                       className="inline-block bg-white text-orange-600 font-bold py-2 px-6 rounded-lg hover:bg-zinc-100 transition-colors"
                     >
                       Solicitar información
@@ -344,8 +344,8 @@ export default function CursoIntensivoLinguaskillPage() {
                   especialmente en Speaking y Writing donde más diferencia marca la preparación guiada.
                 </p>
                 <p className="text-white/90">
-                  En <strong>Impulse English Academy</strong> ofrecemos preparación intensiva de <a href="/linguaskill" className="text-white hover:underline font-medium">Linguaskill</a> y otros <a href="/examenes-cambridge" className="text-white hover:underline font-medium">exámenes Cambridge</a> desde <strong>79€/mes</strong>,
-                  con profesores especializados en certificaciones Cambridge, <a href="/cursos-ingles/particulares" className="text-white hover:underline font-medium">clases particulares</a> disponibles y grupos reducidos para máxima atención.
+                  En <strong>Impulse English Academy</strong> ofrecemos preparación intensiva de <a href="/linguaskill/" className="text-white hover:underline font-medium">Linguaskill</a> y otros <a href="/examenes-cambridge/" className="text-white hover:underline font-medium">exámenes Cambridge</a> desde <strong>79€/mes</strong>,
+                  con profesores especializados en certificaciones Cambridge, <a href="/cursos-ingles/particulares/" className="text-white hover:underline font-medium">clases particulares</a> disponibles y grupos reducidos para máxima atención.
                 </p>
               </div>
             </section>
@@ -363,7 +363,7 @@ export default function CursoIntensivoLinguaskillPage() {
                     </p>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Empezar ahora
@@ -377,11 +377,11 @@ export default function CursoIntensivoLinguaskillPage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <a href="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/linguaskill/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-orange-600">GUÍA COMPLETA</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Guía Completa del Examen Linguaskill 2026</h4>
                 </a>
-                <a href="/linguaskill/precios-fechas" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/linguaskill/precios-fechas/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-orange-600">PRECIOS</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Precio del Test Linguaskill Online 2026</h4>
                 </a>

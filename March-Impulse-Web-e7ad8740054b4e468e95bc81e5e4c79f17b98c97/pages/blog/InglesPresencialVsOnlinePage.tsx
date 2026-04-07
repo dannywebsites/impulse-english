@@ -377,7 +377,7 @@ export default function InglesPresencialVsOnlinePage() {
                   No hay una respuesta universal: tanto el inglés presencial como el online pueden llevarte al mismo destino. Lo que marca la diferencia es la consistencia, la calidad del profesorado y que el formato sea compatible con tu vida real.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/metodologia" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos ambas modalidades para que puedas elegir —o combinar— según tus necesidades. Lo importante es que empieces y no pares.
+                  En <a href="/metodologia/" className="text-blue-600 hover:underline font-medium">Impulse English Academy</a> ofrecemos ambas modalidades para que puedas elegir —o combinar— según tus necesidades. Lo importante es que empieces y no pares.
                 </p>
               </div>
             </section>
@@ -389,7 +389,7 @@ export default function InglesPresencialVsOnlinePage() {
                 Cuéntanos tu horario, objetivos y nivel actual. Te orientamos hacia la modalidad que mejor encaja con tu vida real.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
                 Consúltanos gratis
@@ -401,19 +401,19 @@ export default function InglesPresencialVsOnlinePage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/metodologia" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/metodologia/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Nuestra Metodología
                   </h3>
                   <p className="text-gray-600 text-sm">Cómo estructuramos el aprendizaje para maximizar resultados.</p>
                 </a>
-                <a href="/cursos-ingles/online" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/cursos-ingles/online/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Cursos de Inglés Online
                   </h3>
                   <p className="text-gray-600 text-sm">Nuestros programas online con la misma calidad que el presencial.</p>
                 </a>
-                <a href="/cursos-ingles/adultos" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
+                <a href="/cursos-ingles/adultos/" className="group bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     Cursos de Inglés para Adultos
                   </h3>

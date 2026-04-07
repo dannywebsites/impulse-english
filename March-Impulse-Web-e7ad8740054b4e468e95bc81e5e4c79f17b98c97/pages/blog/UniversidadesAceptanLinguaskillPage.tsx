@@ -106,7 +106,7 @@ export default function UniversidadesAceptanLinguaskillPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Si necesitas acreditar tu nivel de inglés para la universidad, <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">Linguaskill de Cambridge</a> es una de las opciones más populares entre estudiantes universitarios en España. Su formato 100% online, resultados en 48 horas y reconocimiento por parte de la CRUE lo convierten en la certificación preferida para acreditar el B1 de graduación, programas de movilidad Erasmus+ y acceso a másteres. En esta guía actualizada encontrarás la <strong>lista completa de universidades que aceptan Linguaskill en 2026</strong>.
+              Si necesitas acreditar tu nivel de inglés para la universidad, <a href="/linguaskill/" className="text-amber-600 hover:underline font-medium">Linguaskill de Cambridge</a> es una de las opciones más populares entre estudiantes universitarios en España. Su formato 100% online, resultados en 48 horas y reconocimiento por parte de la CRUE lo convierten en la certificación preferida para acreditar el B1 de graduación, programas de movilidad Erasmus+ y acceso a másteres. En esta guía actualizada encontrarás la <strong>lista completa de universidades que aceptan Linguaskill en 2026</strong>.
             </p>
 
             {/* Section 1 */}
@@ -477,7 +477,7 @@ export default function UniversidadesAceptanLinguaskillPage() {
                   <strong>Linguaskill es aceptado por la gran mayoría de universidades españolas e internacionales</strong> gracias al respaldo de Cambridge Assessment y la CRUE. Con más de 80 universidades públicas y privadas en España, además de miles de instituciones internacionales, es una de las certificaciones de inglés con mayor aceptación en el ámbito académico.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/linguaskill" className="text-amber-600 hover:underline font-medium">Impulse English Academy</a> te preparamos específicamente para alcanzar la puntuación que necesitas en Linguaskill. Consulta nuestro <a href="/blog/certificado-linguaskill" className="text-amber-600 hover:underline font-medium">artículo sobre el certificado Linguaskill</a> para entender exactamente qué recibirás, y revisa los <a href="/linguaskill/precios-fechas" className="text-amber-600 hover:underline font-medium">precios y fechas disponibles</a> para planificar tu examen. Visita nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-amber-600 hover:underline font-medium">academia en Barrio del Pilar</a> o contacta con nosotros online.
+                  En <a href="/linguaskill/" className="text-amber-600 hover:underline font-medium">Impulse English Academy</a> te preparamos específicamente para alcanzar la puntuación que necesitas en Linguaskill. Consulta nuestro <a href="/blog/certificado-linguaskill/" className="text-amber-600 hover:underline font-medium">artículo sobre el certificado Linguaskill</a> para entender exactamente qué recibirás, y revisa los <a href="/linguaskill/precios-fechas/" className="text-amber-600 hover:underline font-medium">precios y fechas disponibles</a> para planificar tu examen. Visita nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-amber-600 hover:underline font-medium">academia en Barrio del Pilar</a> o contacta con nosotros online.
                 </p>
               </div>
             </section>
@@ -489,7 +489,7 @@ export default function UniversidadesAceptanLinguaskillPage() {
                 Te preparamos para alcanzar la puntuación exacta que necesitas con cursos específicos y simulacros reales.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-amber-600 px-8 py-4 rounded-xl font-semibold hover:bg-amber-50 transition-colors"
               >
                 Solicitar información
@@ -501,19 +501,19 @@ export default function UniversidadesAceptanLinguaskillPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Linguaskill: Toda la Información
                   </h3>
                   <p className="text-gray-600 text-sm">Guía completa del examen Linguaskill de Cambridge.</p>
                 </a>
-                <a href="/blog/certificado-linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/blog/certificado-linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Certificado Linguaskill
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el certificado oficial y su validez.</p>
                 </a>
-                <a href="/linguaskill/precios-fechas" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
+                <a href="/linguaskill/precios-fechas/" className="group bg-gray-50 rounded-xl p-6 hover:bg-amber-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors mb-2">
                     Precios y Fechas Linguaskill
                   </h3>

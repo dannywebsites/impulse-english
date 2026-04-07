@@ -124,7 +124,7 @@ export default function LocationsSection() {
               ))}
             </div>
             <div className="mt-4 text-center">
-              <a href="/academias-ingles-madrid/por-barrios" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
+              <a href="/academias-ingles-madrid/por-barrios/" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
                 Ver todas las ubicaciones <ArrowRight className="w-4 h-4" />
               </a>
             </div>

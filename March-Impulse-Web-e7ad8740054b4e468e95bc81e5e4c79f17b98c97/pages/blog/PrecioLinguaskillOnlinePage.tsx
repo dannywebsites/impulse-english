@@ -340,8 +340,8 @@ export default function PrecioLinguaskillOnlinePage() {
                   preparación adecuada, es una inversión que puede abrirte puertas académicas y profesionales.
                 </p>
                 <p className="text-white/90">
-                  En nuestra <a href="/academia-ingles-barrio-del-pilar" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada" className="text-white hover:underline font-bold">junto a La Vaguada</a>, te preparamos para el <a href="/linguaskill" className="text-white hover:underline font-bold">Linguaskill</a> por solo <strong>79€/mes</strong>,
-                  con profesores especializados y materiales actualizados. También ofrecemos <a href="/cursos-ingles/adultos" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> y preparación para otros <a href="/examenes-cambridge" className="text-white hover:underline font-bold">exámenes Cambridge</a>.
+                  En nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-white hover:underline font-bold">junto a La Vaguada</a>, te preparamos para el <a href="/linguaskill/" className="text-white hover:underline font-bold">Linguaskill</a> por solo <strong>79€/mes</strong>,
+                  con profesores especializados y materiales actualizados. También ofrecemos <a href="/cursos-ingles/adultos/" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> y preparación para otros <a href="/examenes-cambridge/" className="text-white hover:underline font-bold">exámenes Cambridge</a>.
                 </p>
               </div>
             </section>
@@ -359,7 +359,7 @@ export default function PrecioLinguaskillOnlinePage() {
                     </p>
                   </div>
                   <a
-              href="/contacto"
+              href="/contacto/"
                     className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Solicitar información
@@ -373,11 +373,11 @@ export default function PrecioLinguaskillOnlinePage() {
             <section>
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Artículos relacionados</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <a href="/linguaskill/precios-fechas" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/linguaskill/precios-fechas/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-green-600">PRECIOS Y SEDES</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Linguaskill: Precios, Sedes y Servicios 2026</h4>
                 </a>
-                <a href="/linguaskill" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
+                <a href="/linguaskill/" className="bg-zinc-50 rounded-xl p-4 hover:bg-zinc-100 transition-colors">
                   <span className="text-xs font-bold text-green-600">REGISTRO</span>
                   <h4 className="font-bold text-zinc-900 mt-1">Cómo Registrarse para el Examen Linguaskill</h4>
                 </a>

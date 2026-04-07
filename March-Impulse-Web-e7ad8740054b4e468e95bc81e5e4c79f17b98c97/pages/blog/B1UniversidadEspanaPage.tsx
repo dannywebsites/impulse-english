@@ -125,7 +125,7 @@ export default function B1UniversidadEspanaPage() {
               </h2>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Con la implantación del Espacio Europeo de Educación Superior (Plan Bolonia), las universidades españolas comenzaron a incorporar la acreditación de un nivel mínimo de lengua extranjera como requisito para la obtención del título de grado. En la mayoría de los casos, este nivel mínimo es el <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline">B1 del Marco Común Europeo</a>.
+                Con la implantación del Espacio Europeo de Educación Superior (Plan Bolonia), las universidades españolas comenzaron a incorporar la acreditación de un nivel mínimo de lengua extranjera como requisito para la obtención del título de grado. En la mayoría de los casos, este nivel mínimo es el <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline">B1 del Marco Común Europeo</a>.
               </p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -224,7 +224,7 @@ export default function B1UniversidadEspanaPage() {
                     <Award className="w-5 h-5 text-emerald-600" />
                     Linguaskill de Cambridge
                   </h3>
-                  <p className="text-gray-700">Test adaptativo online con <a href="/linguaskill" className="text-emerald-600 hover:underline">resultados en 48 horas</a>. Muy aceptado en universidades españolas. Formato más flexible y rápido. Ideal para quien necesita la acreditación con urgencia.</p>
+                  <p className="text-gray-700">Test adaptativo online con <a href="/linguaskill/" className="text-emerald-600 hover:underline">resultados en 48 horas</a>. Muy aceptado en universidades españolas. Formato más flexible y rápido. Ideal para quien necesita la acreditación con urgencia.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -336,7 +336,7 @@ export default function B1UniversidadEspanaPage() {
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  En <a href="/cursos-ingles/adultos" className="text-emerald-600 hover:underline">Impulse English Academy</a> tenemos horarios especiales para universitarios y programas de preparación que se adaptan al calendario académico. Muchos de nuestros estudiantes universitarios obtienen su B1 o B2 durante el primer o segundo año de carrera.
+                  En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">Impulse English Academy</a> tenemos horarios especiales para universitarios y programas de preparación que se adaptan al calendario académico. Muchos de nuestros estudiantes universitarios obtienen su B1 o B2 durante el primer o segundo año de carrera.
                 </p>
               </div>
             </section>
@@ -379,10 +379,10 @@ export default function B1UniversidadEspanaPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El <a href="/examenes-cambridge/b1-preliminary" className="text-emerald-600 hover:underline font-medium">B1</a> es el nivel mínimo de inglés exigido por la mayoría de universidades españolas para graduación. La mejor estrategia es obtenerlo durante los primeros cursos de carrera, optando por una certificación oficial como Cambridge o <a href="/linguaskill" className="text-emerald-600 hover:underline font-medium">Linguaskill</a> que te sirva también para tu futuro profesional.
+                  El <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline font-medium">B1</a> es el nivel mínimo de inglés exigido por la mayoría de universidades españolas para graduación. La mejor estrategia es obtenerlo durante los primeros cursos de carrera, optando por una certificación oficial como Cambridge o <a href="/linguaskill/" className="text-emerald-600 hover:underline font-medium">Linguaskill</a> que te sirva también para tu futuro profesional.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  En <a href="/examenes-cambridge" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> preparamos a universitarios para obtener su certificación de inglés de forma eficiente y compatible con sus estudios. No dejes este requisito para el final de la carrera.
+                  En <a href="/examenes-cambridge/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> preparamos a universitarios para obtener su certificación de inglés de forma eficiente y compatible con sus estudios. No dejes este requisito para el final de la carrera.
                 </p>
               </div>
             </section>
@@ -394,7 +394,7 @@ export default function B1UniversidadEspanaPage() {
                 Preparamos a universitarios con horarios flexibles y programas específicos para certificaciones Cambridge y Linguaskill.
               </p>
               <a
-              href="/contacto"
+              href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Solicitar información
@@ -406,13 +406,13 @@ export default function B1UniversidadEspanaPage() {
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <a href="/examenes-cambridge/b1-preliminary" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/examenes-cambridge/b1-preliminary/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Guía Completa del B1 Preliminary
                   </h3>
                   <p className="text-gray-600 text-sm">Todo sobre el examen Cambridge B1: formato, precio y preparación.</p>
                 </a>
-                <a href="/linguaskill" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
+                <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
                     Linguaskill: Alternativa Rápida
                   </h3>
