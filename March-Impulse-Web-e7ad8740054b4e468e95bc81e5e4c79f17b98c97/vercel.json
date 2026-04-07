@@ -75,12 +75,17 @@
 
     { "source": "/hello-world", "destination": "/", "permanent": true },
     { "source": "/hello-world/", "destination": "/", "permanent": true },
+    { "source": "/hello-world/feed", "destination": "/", "permanent": true },
+    { "source": "/hello-world/feed/", "destination": "/", "permanent": true },
     { "source": "/hola-mundo", "destination": "/", "permanent": true },
     { "source": "/hola-mundo/", "destination": "/", "permanent": true },
 
     { "source": "/author/:path*", "destination": "/blog/", "permanent": true },
 
     { "source": "/category/:path*", "destination": "/blog/", "permanent": true },
+
+    { "source": "/comments/feed", "destination": "/blog/", "permanent": true },
+    { "source": "/comments/feed/", "destination": "/blog/", "permanent": true },
 
     { "source": "/dipl-testimonial/:path*", "destination": "/testimonios/", "permanent": true },
 
@@ -107,6 +112,9 @@
     { "source": "/politica-de-cookies", "destination": "/politica-cookies/", "permanent": true },
     { "source": "/politica-de-cookies/", "destination": "/politica-cookies/", "permanent": true },
 
+    { "source": "/politica-de-privacidad", "destination": "/politica-privacidad/", "permanent": true },
+    { "source": "/politica-de-privacidad/", "destination": "/politica-privacidad/", "permanent": true },
+
     { "source": "/testimonials", "destination": "/testimonios/", "permanent": true },
     { "source": "/testimonials/", "destination": "/testimonios/", "permanent": true },
 
@@ -122,7 +130,12 @@
     { "source": "/blog/author/:path*", "destination": "/sobre-nosotros/", "permanent": true },
     { "source": "/blog/dipl-testimonial/:path*", "destination": "/testimonios/", "permanent": true },
     { "source": "/blog/centros-cambridge-madrid", "destination": "/examenes-cambridge/centros-madrid/", "permanent": true },
-    { "source": "/blog/academias-ingles-madrid", "destination": "/academias-ingles-madrid/", "permanent": true }
+    { "source": "/blog/academias-ingles-madrid", "destination": "/academias-ingles-madrid/", "permanent": true },
+
+    { "source": "/search/:path*", "destination": "/", "permanent": true },
+
+    { "source": "/:path*/feed", "destination": "/blog/", "permanent": true },
+    { "source": "/:path*/feed/", "destination": "/blog/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/404.html" }
