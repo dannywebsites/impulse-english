@@ -1,0 +1,159 @@
+// This is your Prisma schema file
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Brand {
+  id   String @id @default(uuid())
+  name String // Display name, e.g. "Acme Corp"
+
+  // Article Basics
+  articleLength   String @default("auto")
+  customWordCount Int?
+  language        String @default("English")
+
+  // Brand Identity
+  companyName        String @default("")
+  companyDescription String @default("")
+  uniqueValue        String @default("")
+  targetAudience     String @default("")
+  brandMentionLevel  String @default("subtle")
+  productsServices   String @default("")
+  socialProof        String @default("")
+  competitorHandling String @default("neutral")
+
+  // Voice & Style
+  voicePreset       String @default("natural")
+  customVoiceSample String @default("")
+  bannedWords       String @default("")
+
+  // Repurposing style samples
+  linkedinStyleSample  String @default("")
+  youtubeStyleSample   String @default("")
+
+  // Internal Linking
+  sitemapUrl       String    @default("")
+  linksPerArticle  String    @default("balanced")
+  customLinkRules  String    @default("")
+  sitemapLastSync  DateTime?
+  sitemapPageCount Int       @default(0)
+
+  // Images (defaults)
+  defaultImageQuality    String @default("1K")
+  defaultImageDimensions String @default("3:2")
+
+  // Advanced
+  researchDepth          String  @default("standard")
+  metaTitleMaxLength     Int     @default(60)
+  metaDescMaxLength      Int     @default(160)
+  includeTableOfContents Boolean @default(false)
+  includeFAQSection      Boolean @default(false)
+
+  // Timestamps
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  jobs              ContentJob[]
+  sitemapPages      SitemapPage[]
+  optimizationJobs  OptimizationJob[]
+  writingSamples    WritingSample[]
+}
+
+model ContentJob {
+  id       String @id @default(uuid())
+  brandId  String
+  brand    Brand  @relation(fields: [brandId], references: [id])
+  batchId  String? // Groups jobs created together (UUID, nullable)
+
+  topic        String
+  keywords     String
+  language     String @default("English")
+  locationCode String @default("us")
+
+  // Pipeline status
+  action      String  @default("Idle") // Idle, Generate Content, Running, Done, Error
+  currentStep String? // Current pipeline step for progress tracking
+
+  // Research outputs
+  researchData String? // Markdown research brief
+
+  // Content outputs
+  content         String? // Markdown article
+  metatitle       String?
+  metadescription String?
+  slug            String?
+
+  // Image outputs
+  thumbnailUrl    String?
+  thumbnailPrompt String?
+  inBlogImages    String? // JSON array: [{url, alt_text, caption, placement}]
+
+  // Image configuration
+  generateImage        Boolean @default(true)
+  generateInblogImages Boolean @default(true)
+  imageQuality         String  @default("1K") // 1K, 2K, 4K
+  imageDimensions      String  @default("3:2") // aspect ratio
+
+  // Repurposed content
+  linkedinPost  String?
+  youtubeScript String?
+
+  // Error handling
+  errorMessage String?
+
+  // Timestamps
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model SitemapPage {
+  id      String @id @default(uuid())
+  brandId String
+  brand   Brand  @relation(fields: [brandId], references: [id])
+
+  url         String
+  title       String   @default("")
+  description String   @default("")
+  lastSynced  DateTime @default(now())
+
+  @@unique([brandId, url])
+}
+
+model OptimizationJob {
+  id              String   @id @default(uuid())
+  brandId         String
+  brand           Brand    @relation(fields: [brandId], references: [id])
+  sourceUrl       String
+  targetKeyword   String?
+  detectedKeyword String?
+
+  scrapedContent   String?
+  scrapedMeta      String?
+  researchData     String?
+  analysisReport   String?
+  optimizedContent String?
+
+  action          String   @default("Idle")
+  currentStep     String?
+  errorMessage    String?
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model WritingSample {
+  id        String   @id @default(uuid())
+  brandId   String
+  brand     Brand    @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

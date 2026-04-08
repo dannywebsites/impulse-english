@@ -72,6 +72,7 @@ The project contains:
 | **Git Commit Helper** | `.claude/skills/git-commit-helper/` | Writing commit messages, analyzing staged changes, conventional commits format |
 | **Skill Creator** | `.claude/skills/skill-creator/` | Creating new skills, running evaluations, benchmarking skill performance, optimising descriptions |
 | **Systematic Debugging** | `.claude/skills/systematic-debugging/` | Any bug, test failure, or unexpected behaviour — enforces root cause investigation before fixes |
+| **Taste** | `.claude/skills/taste/` | Design quality enforcement — anti-slop rules, style archetypes, premium craft standards. Used in SEO pipeline as Agent 06.5 |
 
 ### Nested Project Skills
 
