@@ -32,7 +32,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // ---------------------------------------------------------------------------
 
 const CLAUDE_MODEL = process.env.CLAUDE_MODEL || 'claude-sonnet-4-5-20250929';
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3-flash-preview';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
+const GEMINI_TIMEOUT_MS = 120_000; // 2 min per Gemini call before abort+retry
 
 const SITE_ROOT = resolve(
   __dirname,
@@ -99,7 +100,7 @@ async function withRetry(fn, label, maxRetries = 3) {
       return await fn();
     } catch (err) {
       const retryable =
-        /503|429|UNAVAILABLE|RESOURCE_EXHAUSTED|timeout|ECONNRESET|socket hang up|fetch failed|ETIMEDOUT|ECONNABORTED/i.test(
+        /503|429|UNAVAILABLE|RESOURCE_EXHAUSTED|timeout|ECONNRESET|socket hang up|fetch failed|ETIMEDOUT|ECONNABORTED|abort/i.test(
           err.message
         );
       if (attempt < maxRetries && retryable) {
@@ -400,12 +401,17 @@ Begin your comprehensive research now. Use all available tools extensively to ga
     log(`  Research iteration ${iterations}…`);
 
     const response = await withRetry(
-      () =>
-        getGemini().models.generateContent({
-          model: GEMINI_MODEL,
-          contents,
-          config,
-        }),
+      () => {
+        const ac = new AbortController();
+        const timer = setTimeout(() => ac.abort(), GEMINI_TIMEOUT_MS);
+        return getGemini()
+          .models.generateContent({
+            model: GEMINI_MODEL,
+            contents,
+            config: { ...config, abortSignal: ac.signal },
+          })
+          .finally(() => clearTimeout(timer));
+      },
       `research-iter-${iterations}`
     );
 
@@ -574,8 +580,10 @@ ${articleContent.substring(0, 5000)}
 Generate optimized SEO metadata.`;
 
   const meta = await withRetry(
-    () =>
-      getGemini()
+    () => {
+      const ac = new AbortController();
+      const timer = setTimeout(() => ac.abort(), GEMINI_TIMEOUT_MS);
+      return getGemini()
         .models.generateContent({
           model: GEMINI_MODEL,
           contents: prompt,
@@ -583,9 +591,12 @@ Generate optimized SEO metadata.`;
             responseMimeType: 'application/json',
             responseJsonSchema: META_SCHEMA,
             systemInstruction: META_SYSTEM_PROMPT,
+            abortSignal: ac.signal,
           },
         })
-        .then((r) => JSON.parse(r.text)),
+        .then((r) => JSON.parse(r.text))
+        .finally(() => clearTimeout(timer));
+    },
     'meta-gen'
   );
 
@@ -868,6 +879,21 @@ async function main() {
   const missing = required.filter((k) => !process.env[k]);
   if (missing.length) {
     log(`Missing environment variables: ${missing.join(', ')}`);
+    process.exit(1);
+  }
+
+  // Pre-flight: verify Anthropic key is valid before spending time on research
+  log('\n🔑 Validating API keys…');
+  try {
+    await getClaude().messages.create({
+      model: CLAUDE_MODEL,
+      max_tokens: 5,
+      messages: [{ role: 'user', content: 'ping' }],
+    });
+    log('  ✅ Anthropic key valid');
+  } catch (err) {
+    log(`  ❌ Anthropic key invalid: ${err.message}`);
+    log('  → Update ANTHROPIC_API_KEY in GitHub repo secrets');
     process.exit(1);
   }
 
