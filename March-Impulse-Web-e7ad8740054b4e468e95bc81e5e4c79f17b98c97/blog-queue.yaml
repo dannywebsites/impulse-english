@@ -1,0 +1,104 @@
+# ============================================================
+# Blog Publishing Queue — Impulse English Academy
+# ============================================================
+# Add articles below with status: pending
+# The pipeline picks the first "pending" item each run.
+#
+# Required: topic
+# Optional: category, keywords, imageKey
+#
+# Status values: pending | published | failed
+# ============================================================
+
+schedule:
+  days: [mon, tue, wed, thu]
+  timezone: Europe/Madrid
+  time: "10:00"
+
+articles:
+  # --- Cambridge B2 First ---
+  - topic: "¿Cuánto tiempo se tarda en preparar el B2 First desde cero?"
+    category: "Cambridge B2 First"
+    keywords: "tiempo preparar b2 first desde cero"
+    status: pending
+
+  - topic: "Mejores libros para preparar el B2 First en 2026"
+    category: "Cambridge B2 First"
+    keywords: "libros preparar b2 first 2026"
+    status: pending
+
+  - topic: "¿Qué diferencia hay entre el B2 First y el B2 de la EOI?"
+    category: "Cambridge B2 First"
+    keywords: "diferencia b2 first eoi"
+    status: pending
+
+  - topic: "Consejos para aprobar el Writing del B2 First"
+    category: "Cambridge B2 First"
+    keywords: "aprobar writing b2 first consejos"
+    status: pending
+
+  # --- Cambridge C1 Advanced ---
+  - topic: "¿Merece la pena sacarse el C1 Advanced para trabajar?"
+    category: "Cambridge C1 Advanced"
+    keywords: "c1 advanced trabajo merece la pena"
+    status: pending
+
+  - topic: "¿Cuánto cuesta preparar el C1 Advanced en Madrid?"
+    category: "Cambridge C1 Advanced"
+    keywords: "precio preparar c1 advanced madrid"
+    status: pending
+
+  # --- Linguaskill ---
+  - topic: "¿Merece la pena el Linguaskill para oposiciones?"
+    category: "Linguaskill"
+    keywords: "linguaskill oposiciones merece la pena"
+    status: pending
+
+  - topic: "Linguaskill vs APTIS: ¿cuál es mejor para tu currículum?"
+    category: "Linguaskill"
+    keywords: "linguaskill vs aptis comparativa"
+    status: pending
+
+  # --- Kids / Infantil ---
+  - topic: "¿A qué edad deben empezar los niños a aprender inglés?"
+    category: "Kids"
+    keywords: "edad niños aprender ingles"
+    status: pending
+
+  - topic: "Mejores métodos para enseñar inglés a niños de 3 a 6 años"
+    category: "Kids"
+    keywords: "metodos enseñar ingles niños 3 6 años"
+    status: pending
+
+  # --- General / Learning ---
+  - topic: "¿Cómo mejorar tu Speaking en inglés sin vivir en el extranjero?"
+    category: "Learning Methods"
+    keywords: "mejorar speaking ingles sin vivir extranjero"
+    status: pending
+
+  - topic: "Las 10 excusas más comunes para no aprender inglés (y cómo superarlas)"
+    category: "Learning Methods"
+    keywords: "excusas no aprender ingles superarlas"
+    status: pending
+
+  # --- Local Madrid ---
+  - topic: "Las mejores academias de inglés en La Vaguada y Barrio del Pilar"
+    category: "Local Madrid"
+    keywords: "academias ingles la vaguada barrio del pilar"
+    status: pending
+
+  - topic: "¿Por qué elegir una academia Cambridge frente a una academia genérica?"
+    category: "Cambridge"
+    keywords: "academia cambridge vs academia generica"
+    status: pending
+
+  # --- Price ---
+  - topic: "¿Cuánto cuestan las clases de inglés en Madrid en 2026?"
+    category: "Price"
+    keywords: "precio clases ingles madrid 2026"
+    status: pending
+
+  - topic: "¿Vale la pena invertir en un curso de preparación Cambridge?"
+    category: "Price"
+    keywords: "invertir curso preparacion cambridge vale la pena"
+    status: pending
