@@ -99,7 +99,7 @@ async function withRetry(fn, label, maxRetries = 3) {
       return await fn();
     } catch (err) {
       const retryable =
-        /503|429|UNAVAILABLE|RESOURCE_EXHAUSTED|timeout|ECONNRESET|socket hang up/i.test(
+        /503|429|UNAVAILABLE|RESOURCE_EXHAUSTED|timeout|ECONNRESET|socket hang up|fetch failed|ETIMEDOUT|ECONNABORTED/i.test(
           err.message
         );
       if (attempt < maxRetries && retryable) {
