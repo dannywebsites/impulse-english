@@ -32,7 +32,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // ---------------------------------------------------------------------------
 
 const CLAUDE_MODEL = process.env.CLAUDE_MODEL || 'claude-sonnet-4-5-20250929';
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash-preview-05-20';
 const GEMINI_TIMEOUT_MS = 120_000; // 2 min per Gemini call before abort+retry
 
 const SITE_ROOT = resolve(
@@ -412,7 +412,8 @@ Begin your comprehensive research now. Use all available tools extensively to ga
           })
           .finally(() => clearTimeout(timer));
       },
-      `research-iter-${iterations}`
+      `research-iter-${iterations}`,
+      5 // more retries for Gemini 503s
     );
 
     const message = response.candidates[0].content;
@@ -597,7 +598,8 @@ Generate optimized SEO metadata.`;
         .then((r) => JSON.parse(r.text))
         .finally(() => clearTimeout(timer));
     },
-    'meta-gen'
+    'meta-gen',
+    5
   );
 
   log(`  ✅ Meta: "${meta.metatitle}" → /${meta.slug}`);
