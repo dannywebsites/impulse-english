@@ -1,0 +1,224 @@
+name: Auto-Publish Blog Post
+
+on:
+  schedule:
+    # Mon-Thu at 08:00 UTC (10:00 Madrid time)
+    - cron: '0 8 * * 1-4'
+  workflow_dispatch:
+    inputs:
+      topic_override:
+        description: 'Override topic (skips queue, publishes this topic directly)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Read queue and find next article
+        id: queue
+        run: |
+          QUEUE_FILE="March-Impulse-Web-e7ad8740054b4e468e95bc81e5e4c79f17b98c97/blog-queue.yaml"
+
+          # Check if manual topic override was provided
+          if [ -n "${{ inputs.topic_override }}" ]; then
+            echo "topic=${{ inputs.topic_override }}" >> "$GITHUB_OUTPUT"
+            echo "keywords=" >> "$GITHUB_OUTPUT"
+            echo "category=" >> "$GITHUB_OUTPUT"
+            echo "queue_index=-1" >> "$GITHUB_OUTPUT"
+            echo "📝 Using manual topic override: ${{ inputs.topic_override }}"
+            exit 0
+          fi
+
+          # Check today is a publishing day (from schedule config)
+          DAY_OF_WEEK=$(date -u +%a | tr '[:upper:]' '[:lower:]')
+          echo "Today is: $DAY_OF_WEEK"
+
+          # Parse queue for first pending article using Node.js (no deps needed)
+          node -e "
+            const fs = require('fs');
+            const content = fs.readFileSync('$QUEUE_FILE', 'utf-8');
+            const lines = content.split('\n');
+
+            let inArticles = false;
+            let currentArticle = null;
+            let articles = [];
+            let articleIndex = -1;
+
+            for (const line of lines) {
+              if (line.trim() === 'articles:') {
+                inArticles = true;
+                continue;
+              }
+              if (!inArticles) continue;
+
+              // New article item
+              if (line.match(/^\s{2}- topic:/)) {
+                if (currentArticle) articles.push(currentArticle);
+                articleIndex++;
+                const topic = line.match(/topic:\s*[\"'](.+?)[\"']/)?.[1]
+                  || line.match(/topic:\s*(.+)/)?.[1]?.trim();
+                currentArticle = { topic, index: articleIndex };
+              } else if (currentArticle && line.match(/^\s{4}(category|keywords|status):/)) {
+                const [, key, val] = line.match(/^\s{4}(\w+):\s*[\"']?([^\"']+)[\"']?/) || [];
+                if (key) currentArticle[key] = val.trim();
+              }
+            }
+            if (currentArticle) articles.push(currentArticle);
+
+            // Find first pending
+            const pending = articles.find(a => a.status === 'pending');
+
+            if (!pending) {
+              console.log('No pending articles in queue.');
+              process.exit(0);
+            }
+
+            // Write outputs
+            const output = process.env.GITHUB_OUTPUT;
+            fs.appendFileSync(output, 'topic=' + pending.topic + '\n');
+            fs.appendFileSync(output, 'keywords=' + (pending.keywords || '') + '\n');
+            fs.appendFileSync(output, 'category=' + (pending.category || '') + '\n');
+            fs.appendFileSync(output, 'queue_index=' + pending.index + '\n');
+            console.log('📝 Next article: ' + pending.topic);
+          " 2>&1 || true
+
+      - name: Check if article was found
+        if: steps.queue.outputs.topic == ''
+        run: |
+          echo "✅ No pending articles in queue. Nothing to publish."
+          exit 0
+
+      - name: Setup Node.js
+        if: steps.queue.outputs.topic != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install pipeline dependencies
+        if: steps.queue.outputs.topic != ''
+        working-directory: seo-writer/scripts
+        run: npm ci
+
+      - name: Run auto-publish pipeline
+        if: steps.queue.outputs.topic != ''
+        id: pipeline
+        working-directory: seo-writer/scripts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: |
+          TOPIC="${{ steps.queue.outputs.topic }}"
+          KEYWORDS="${{ steps.queue.outputs.keywords }}"
+          CATEGORY="${{ steps.queue.outputs.category }}"
+
+          echo "🚀 Running pipeline for: $TOPIC"
+
+          # Run pipeline - slug is printed to stdout, logs go to stderr
+          node auto-publish.js "$TOPIC" "$KEYWORDS" "$CATEGORY" > /tmp/slug.txt
+
+          SLUG=$(cat /tmp/slug.txt)
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+          echo "✅ Article generated: $SLUG"
+
+      - name: Update queue status
+        if: steps.queue.outputs.topic != '' && steps.pipeline.outputs.slug != ''
+        run: |
+          QUEUE_FILE="March-Impulse-Web-e7ad8740054b4e468e95bc81e5e4c79f17b98c97/blog-queue.yaml"
+          TODAY=$(date -u +%Y-%m-%d)
+          TOPIC="${{ steps.queue.outputs.topic }}"
+
+          # Update the status of the published article (first pending match only)
+          python3 << PYEOF
+          import sys
+
+          queue_file = "$QUEUE_FILE"
+          today = "$TODAY"
+
+          with open(queue_file, 'r') as f:
+              lines = f.readlines()
+
+          found = False
+          for i, line in enumerate(lines):
+              if not found and line.strip() == 'status: pending':
+                  lines[i] = line.replace('status: pending', 'status: published')
+                  # Insert publishedDate on the next line with same indentation
+                  indent = line[:len(line) - len(line.lstrip())]
+                  lines.insert(i + 1, f'{indent}publishedDate: "{today}"\n')
+                  found = True
+                  break
+
+          with open(queue_file, 'w') as f:
+              f.writelines(lines)
+
+          print('Queue updated: status -> published')
+          PYEOF
+
+      - name: Commit and push
+        if: steps.queue.outputs.topic != '' && steps.pipeline.outputs.slug != ''
+        run: |
+          SLUG="${{ steps.pipeline.outputs.slug }}"
+
+          git config user.name "Impulse Blog Bot"
+          git config user.email "blog-bot@impulseenglish.es"
+
+          git add "March-Impulse-Web-e7ad8740054b4e468e95bc81e5e4c79f17b98c97/src/content/articles/${SLUG}.md"
+          git add "March-Impulse-Web-e7ad8740054b4e468e95bc81e5e4c79f17b98c97/blog-queue.yaml"
+
+          # Safety: verify only blog files are staged — abort if anything else snuck in
+          STAGED=$(git diff --cached --name-only)
+          for file in $STAGED; do
+            case "$file" in
+              March-Impulse-Web-*/src/content/articles/*.md|March-Impulse-Web-*/blog-queue.yaml) ;;
+              *) echo "❌ SAFETY: Unexpected file staged: $file"; exit 1 ;;
+            esac
+          done
+
+          git commit -m "blog: auto-publish ${SLUG}
+
+          Automated blog post generated by the auto-publish pipeline.
+          Topic: ${{ steps.queue.outputs.topic }}"
+
+          git push
+
+          echo "🎉 Published and deployed: /blog/${SLUG}/"
+
+      - name: Mark as failed on error
+        if: failure() && steps.queue.outputs.topic != '' && steps.queue.outputs.queue_index != '-1'
+        run: |
+          QUEUE_FILE="March-Impulse-Web-e7ad8740054b4e468e95bc81e5e4c79f17b98c97/blog-queue.yaml"
+          TOPIC="${{ steps.queue.outputs.topic }}"
+
+          python3 << PYEOF
+          queue_file = "$QUEUE_FILE"
+
+          with open(queue_file, 'r') as f:
+              lines = f.readlines()
+
+          for i, line in enumerate(lines):
+              if line.strip() == 'status: pending':
+                  lines[i] = line.replace('status: pending', 'status: failed')
+                  break
+
+          with open(queue_file, 'w') as f:
+              f.writelines(lines)
+          PYEOF
+
+          git config user.name "Impulse Blog Bot"
+          git config user.email "blog-bot@impulseenglish.es"
+          git add "$QUEUE_FILE"
+          git commit -m "blog: mark failed - ${TOPIC}" || true
+          git push || true
