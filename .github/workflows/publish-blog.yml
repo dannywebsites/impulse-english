@@ -128,9 +128,18 @@ jobs:
           echo "🚀 Running pipeline for: $TOPIC"
 
           # Run pipeline - slug is printed to stdout, logs go to stderr
-          node auto-publish.js "$TOPIC" "$KEYWORDS" "$CATEGORY" > /tmp/slug.txt
+          # Apify SDK leaks colored logs to stdout, so we filter for the clean slug line
+          node auto-publish.js "$TOPIC" "$KEYWORDS" "$CATEGORY" > /tmp/slug-raw.txt
 
-          SLUG=$(cat /tmp/slug.txt)
+          # Extract the slug: last line matching a valid slug pattern (lowercase, dashes, no ANSI)
+          SLUG=$(grep -E '^[a-z0-9][a-z0-9-]+[a-z0-9]$' /tmp/slug-raw.txt | tail -1)
+
+          if [ -z "$SLUG" ]; then
+            echo "❌ Pipeline ran but no valid slug found in output"
+            cat /tmp/slug-raw.txt >&2
+            exit 1
+          fi
+
           echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
           echo "✅ Article generated: $SLUG"
 
