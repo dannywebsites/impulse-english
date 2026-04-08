@@ -15,12 +15,22 @@
       "headers": [
         { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
       ]
+    },
+    {
+      "source": "/blog",
+      "has": [{ "type": "query", "key": "q" }],
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
     }
   ],
   "redirects": [
     { "source": "/:path*", "has": [{ "type": "host", "value": "www.impulse-english.es" }], "destination": "https://impulse-english.es/:path*", "permanent": true },
 
     { "source": "/wp-content/themes/impulse-english/assets/images/optimized/:path*", "destination": "/images/optimized/:path*", "permanent": true },
+    { "source": "/wp-content/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-includes/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-admin/:path*", "destination": "/", "permanent": true },
 
     { "source": "/exam-impulse", "destination": "/reservar-clase/", "permanent": true },
     { "source": "/exam-impulse/", "destination": "/reservar-clase/", "permanent": true },
