@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle, Loader2 } from 'lucide-react';
+import { Send, CheckCircle, Loader2, AlertCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'sonner';
+import { NAP } from '../../utils/napData';
 
 interface LeadFormProps {
   title?: string;
   subtitle?: string;
   ctaText?: string;
-  webhookUrl?: string;
   source?: string;
   compact?: boolean;
 }
@@ -15,7 +16,6 @@ export default function LeadForm({
   title = "Solicita información",
   subtitle = "Déjanos tus datos y te contactamos en menos de 24 horas",
   ctaText = "Enviar solicitud",
-  webhookUrl = "https://n8n.example.com/webhook/impulse-lead",
   source = "general",
   compact = false
 }: LeadFormProps) {
@@ -28,36 +28,50 @@ export default function LeadForm({
     message: ''
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [honeypot, setHoneypot] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // FORM-04/FORM-05: Honeypot guard — FIRST check, before setStatus('loading')
+    if (honeypot) {
+      navigate('/gracias');
+      return;
+    }
+
     setStatus('loading');
 
     try {
-      // In production, this would send to the actual webhook
       const payload = {
         ...formData,
         source,
         timestamp: new Date().toISOString()
       };
 
-      // Simulate API call for demo
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // FORM-01 (Vite version): PUBLIC_WEBHOOK_URL from Vite env — NOT astro:env/client
+      // FORM-02: Check response.ok — throws on 4xx/5xx
+      const response = await fetch(import.meta.env.PUBLIC_WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
 
-      // Uncomment for real webhook:
-      // await fetch(webhookUrl, {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(payload)
-      // });
+      if (!response.ok) {
+        throw new Error(`Error del servidor: ${response.status}`);
+      }
 
+      // FORM-06: Success toast before navigate (D-02)
+      toast.success('¡Solicitud enviada! Te contactamos en menos de 24 horas.');
       setStatus('success');
       setFormData({ name: '', email: '', phone: '', age: '', message: '' });
 
-      // Redirect to thank you page
-      navigate('/gracias');
+      // 1500ms delay so user sees the toast before navigation
+      setTimeout(() => { navigate('/gracias'); }, 1500);
+
     } catch (error) {
       setStatus('error');
+      // FORM-06: Error toast with Spanish message and phone number (D-03)
+      toast.error(`Ha ocurrido un error. Inténtalo de nuevo o llámanos al ${NAP.phone}.`);
     }
   };
 
@@ -81,6 +95,21 @@ export default function LeadForm({
       )}
 
       <form onSubmit={handleSubmit} className="space-y-4">
+        {/* Honeypot — hidden from real users, visible to bots (D-04, D-05, D-06) */}
+        <div
+          aria-hidden="true"
+          style={{ position: 'absolute', left: '-9999px', top: 'auto', width: '1px', height: '1px', overflow: 'hidden' }}
+        >
+          <input
+            type="text"
+            name="website"
+            tabIndex={-1}
+            autoComplete="one-time-code"
+            value={honeypot}
+            onChange={(e) => setHoneypot(e.target.value)}
+          />
+        </div>
+
         {/* Name */}
         <div>
           <label className="block text-sm font-semibold text-zinc-700 mb-2">Nombre completo *</label>
@@ -166,6 +195,18 @@ export default function LeadForm({
             </>
           )}
         </button>
+
+        {status === 'error' && (
+          <div className="mt-3 p-3 bg-red-50 border border-red-200 rounded-lg">
+            <p className="text-sm text-red-700 flex items-center gap-2">
+              <AlertCircle className="w-4 h-4 flex-shrink-0" />
+              Ha ocurrido un error. Inténtalo de nuevo o llámanos al{' '}
+              <a href={NAP.phoneTel} className="font-semibold underline">
+                {NAP.phone}
+              </a>.
+            </p>
+          </div>
+        )}
 
         <p className="text-xs text-zinc-400 text-center">
           Al enviar este formulario, aceptas nuestra política de privacidad.
