@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { NAP } from '../utils/napData';
 
 interface SEOHeadProps {
   title: string;
@@ -15,8 +16,6 @@ interface SEOHeadProps {
 }
 
 const DEFAULT_OG_IMAGE = '/images/academy/logos/logo-white-background.jpg';
-const SITE_NAME = 'Impulse English Academy La Vaguada – Barrio del Pilar';
-const BASE_URL = 'https://impulse-english.es';
 const DEFAULT_DESCRIPTION = 'Academia de inglés La Vaguada, Barrio del Pilar. Centro preparador Cambridge oficial 100% aprobados. Barrio del Pilar, Peñagrande. Cursos niños y adultos.';
 
 /**
@@ -33,13 +32,13 @@ export default function SEOHead({
   noindex = false,
   publishedTime,
   modifiedTime,
-  author = 'Impulse English Academy',
+  author = NAP.name,
   fullTitle = false
 }: SEOHeadProps) {
 
   useEffect(() => {
     // Set document title (use as-is if fullTitle, otherwise append site name)
-    document.title = fullTitle ? title : `${title} | ${SITE_NAME}`;
+    document.title = fullTitle ? title : `${title} | ${NAP.siteTitle}`;
 
     // Helper function to set or create meta tag
     const setMetaTag = (name: string, content: string, property = false) => {
@@ -74,12 +73,12 @@ export default function SEOHead({
     }
 
     // Publisher
-    setMetaTag('publisher', SITE_NAME);
+    setMetaTag('publisher', NAP.siteTitle);
     setMetaTag('author', author);
 
     // Canonical URL
     if (canonical) {
-      setLinkTag('canonical', canonical.startsWith('http') ? canonical : `${BASE_URL}${canonical}`);
+      setLinkTag('canonical', canonical.startsWith('http') ? canonical : `${NAP.website}${canonical}`);
     }
 
     // Open Graph tags
@@ -87,10 +86,10 @@ export default function SEOHead({
     setMetaTag('og:description', description, true);
     setMetaTag('og:type', ogType, true);
     setMetaTag('og:image', ogImage, true);
-    setMetaTag('og:site_name', SITE_NAME, true);
+    setMetaTag('og:site_name', NAP.siteTitle, true);
     setMetaTag('og:locale', 'es_ES', true);
     if (canonical) {
-      setMetaTag('og:url', canonical.startsWith('http') ? canonical : `${BASE_URL}${canonical}`, true);
+      setMetaTag('og:url', canonical.startsWith('http') ? canonical : `${NAP.website}${canonical}`, true);
     }
 
     // Twitter Card tags
