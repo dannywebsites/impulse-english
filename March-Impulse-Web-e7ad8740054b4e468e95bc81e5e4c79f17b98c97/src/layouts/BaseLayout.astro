@@ -2,6 +2,7 @@
 import '../index.css';
 import { generateOrganizationSchema, generateWebSiteSchema } from '../../utils/schemaData';
 import { buildPageTitle } from '../../utils/buildPageTitle';
+import { Toaster } from 'sonner';
 
 interface Props {
   title: string;
@@ -115,6 +116,30 @@ const schemaGraph = {
       })();
     </script>
 
+    <!-- Global click tracking: phone calls + WhatsApp clicks → dataLayer -->
+    <script is:inline>
+      document.addEventListener('click', function(e) {
+        var link = e.target.closest('a[href]');
+        if (!link) return;
+        var href = link.getAttribute('href') || '';
+        if (href.startsWith('tel:')) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'phone_click',
+            phone_number: href.replace('tel:', ''),
+            click_location: document.title
+          });
+        }
+        if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp') !== -1) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'whatsapp_click',
+            click_location: document.title
+          });
+        }
+      });
+    </script>
+
     <!-- SEO Meta Tags (server-rendered) -->
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
@@ -220,6 +245,7 @@ const schemaGraph = {
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <Toaster client:load />
     <main id="main" class="min-h-screen w-full bg-white flex flex-col font-sans selection:bg-accent-blue selection:text-white">
       <slot />
     </main>
