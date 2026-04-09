@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-09 after Phase 5 completion (critical infrastructure debranded — BaseLayout, SEOHead, webmanifest read from napData)*
+*Last updated: 2026-04-09 after Phase 6 completion (components debranded — Logo, Navbar, Footer, CoursePageLayout, CookieBanner, LeadForm, PAAArticlePage read from NAP; ImpulseSection→BrandSection; FORM-06 closed)*
