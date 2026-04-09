@@ -17,6 +17,11 @@ export const BRAND_CONFIG = {
   brandMentionLevel: 'subtle',     // subtle | moderate | prominent
   tone: 'Professional yet approachable. Authority through results, not academic jargon.',
 
+  // ─── Pipeline Settings ─────────────────────────────────────────────
+  pipelineLanguage: 'Spanish',     // Human-readable language name used in pipeline prompts (not BCP 47)
+  locationCode: 'Spain',           // Country string used in DataForSEO location_name
+  researchDepth: 'standard',       // standard | deep — controls research thoroughness
+
   // ─── Target Audience ────────────────────────────────────────────────
   targetAudience: 'Padres buscando clases de ingles para sus hijos y adultos/jovenes profesionales en Madrid',
   audienceSegments: [
