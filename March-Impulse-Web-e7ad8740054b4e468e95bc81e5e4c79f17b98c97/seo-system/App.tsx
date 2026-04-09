@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { Toaster } from 'sonner';
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -84,6 +85,8 @@ import PoliticaPrivacidadPage from './pages/legal/PoliticaPrivacidadPage';
 
 export default function App() {
   return (
+    <>
+    <Toaster />
     <main className="min-h-screen w-full bg-white flex flex-col font-sans selection:bg-accent-blue selection:text-white">
       <Routes>
         {/* Home */}
@@ -173,5 +176,6 @@ export default function App() {
         <Route path="/about" element={<SobreNosotrosPage />} />
       </Routes>
     </main>
+    </>
   );
 }
