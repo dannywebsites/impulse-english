@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Users, Award, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { s3FacilityImages } from '../src/data/images';
+import { s3FacilityImages } from '../../utils/images';
 
 export default function InfoCards() {
   return (
