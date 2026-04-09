@@ -83,6 +83,12 @@ export const BRAND_CONFIG = {
   brandMentionLevel: '${esc(answers.brandMentionLevel)}',     // subtle | moderate | prominent
   tone: '${esc(answers.tone)}',
 
+  // ─── Pipeline Settings ─────────────────────────────────────────────
+  // NOTE: Edit these manually for non-Spanish or non-Spain clients
+  pipelineLanguage: 'Spanish',          // Human-readable language for pipeline prompts
+  locationCode: 'Spain',                // Country for DataForSEO location_name
+  researchDepth: 'standard',            // standard | deep
+
   // ─── Target Audience ────────────────────────────────────────────────
   targetAudience: '${esc(answers.targetAudience)}',
   audienceSegments: [
