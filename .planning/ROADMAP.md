@@ -50,7 +50,7 @@ Plans:
 - [x] 02-02-PLAN.md — Migrate main site components, pages, layouts, and data layer to registry
 - [x] 02-03-PLAN.md — Migrate all 85 blog pages from inline S3 URLs to registry imports
 - [x] 02-04-PLAN.md — Migrate seo-system components and pages to shared registry via relative paths
-- [ ] 02-05-PLAN.md — Delete old data files, full S3 audit, build verification, visual check
+- [x] 02-05-PLAN.md — Delete old data files, full S3 audit, build verification, visual check
 
 ### Phase 3: Image Optimization
 **Goal**: All images are served in modern formats with correct loading strategies — no hand-rolled optimization scripts remain
