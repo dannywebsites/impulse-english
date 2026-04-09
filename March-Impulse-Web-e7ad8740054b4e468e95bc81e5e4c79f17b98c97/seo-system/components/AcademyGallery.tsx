@@ -1,5 +1,5 @@
 import React from 'react';
-import { AcademyImage, generateImageSchema } from '../src/data/academyImages';
+import { AcademyImage, generateImageSchema } from '../../utils/images';
 import SchemaMarkup from './SchemaMarkup';
 
 interface AcademyGalleryProps {

@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Phone, Mail, MapPin, Linkedin, Youtube } from 'lucide-react';
+import { brandingImages, brandingGalleryImages } from '../../utils/images';
 
-const LOGO_URL = 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG';
+const LOGO_URL = brandingImages.logoS3.url;
+const CAMBRIDGE_LOGO_URL = brandingGalleryImages[1].url;
+const LINGUASKILL_LOGO_URL = '/images/academy/logos/linguaskill-logo-blanco.png';
+const GLP_LOGO_URL = brandingGalleryImages[2].url;
+const ESIC_LOGO_URL = brandingGalleryImages[3].url;
 
 interface FooterProps {
   variant?: 'simple' | 'full';
@@ -88,28 +93,28 @@ export default function Footer({ variant = 'full' }: FooterProps) {
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
               <a href="https://www.cambridgeenglish.org" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png"
+                  src={CAMBRIDGE_LOGO_URL}
                   alt="Cambridge English"
                   className="h-10 md:h-12 w-auto"
                 />
               </a>
               <a href="https://www.cambridgeenglish.org/es/exams-and-tests/linguaskill/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/linguaskill-logo-blanco.png"
+                  src={LINGUASKILL_LOGO_URL}
                   alt="Linguaskill"
                   className="h-10 md:h-12 w-auto"
                 />
               </a>
               <a href="https://www.greatlittlepeople.com/en" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/GREAT+LITTLE+PEOPLE+WHITE.png"
+                  src={GLP_LOGO_URL}
                   alt="Great Little People"
                   className="h-10 md:h-12 w-auto"
                 />
               </a>
               <a href="https://www.esic.edu/idiomas" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity flex flex-col items-center">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/ESIC+IDIOMAS.jpg"
+                  src={ESIC_LOGO_URL}
                   alt="ESIC Idiomas - Cambridge English Exam Centre ES278"
                   className="h-10 md:h-12 w-auto"
                 />

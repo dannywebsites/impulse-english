@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, MessageCircle, Phone } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import { brandingImages } from '../../utils/images';
 
-const LOGO_URL = 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG';
+const LOGO_URL = brandingImages.logoS3.url;
 
 interface NavItem {
   label: string;

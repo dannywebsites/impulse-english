@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Clock, Phone, Train, Navigation, ArrowRight } from 'lucide-react';
+import { exteriorGalleryImages } from '../../utils/images';
 
 export default function LocationsSection() {
   const areas = [
@@ -34,7 +35,7 @@ export default function LocationsSection() {
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="aspect-video w-full overflow-hidden">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg"
+                src={exteriorGalleryImages[0].url}
                 alt="Fachada exterior Impulse English Academy La Vaguada Barrio del Pilar Madrid"
                 className="w-full h-full object-cover"
               />

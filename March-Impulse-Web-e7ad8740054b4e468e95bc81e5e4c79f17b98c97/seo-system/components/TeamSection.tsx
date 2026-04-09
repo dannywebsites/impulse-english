@@ -1,5 +1,5 @@
 import React from 'react';
-import { s3FacilityImages } from '../src/data/images';
+import { s3FacilityImages } from '../../utils/images';
 
 export default function TeamSection() {
   return (
