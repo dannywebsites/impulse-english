@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Phase 8 context gathered (auto)
-last_updated: "2026-04-09T18:17:46.424Z"
+status: executing
+stopped_at: Completed 08-01-PLAN.md
+last_updated: "2026-04-09T18:30:38.911Z"
 last_activity: 2026-04-09
 progress:
   total_phases: 8
   completed_phases: 7
-  total_plans: 20
-  completed_plans: 20
+  total_plans: 22
+  completed_plans: 21
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-09)
 
 **Core value:** Template portability — changing brand-config.ts, napData.ts, and config files produces a fully functional website for a new client with zero hardcoded Impulse references
-**Current focus:** Phase 07 — content-debranding
+**Current focus:** Phase 08 — auto-publish-pipeline-decouple
 
 ## Current Position
 
-Phase: 08
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 08 (auto-publish-pipeline-decouple) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
 Last activity: 2026-04-09
 
 Progress: [░░░░░░░░░░] 0%
@@ -72,6 +72,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 06-component-debranding P01 | 12m | 2 tasks | 30 files |
 | Phase 07-content-debranding P02 | 99s | 1 tasks | 1 files |
 | Phase 07-content-debranding P01 | 20m | 2 tasks | 18 files |
+| Phase 08-auto-publish-pipeline-decouple P01 | 180 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -125,6 +126,8 @@ Recent decisions affecting current work:
 - [Phase 07-content-debranding]: Articles backed up to timestamped directory (articles-backup-{Date.now()}) before modification — satisfies CLAUDE.md backup rule
 - [Phase 07-content-debranding]: NAP import depth varies by page directory — ../../ for root pages, ../../../ for subdirs, ../utils/ for data/articles
 - [Phase 07-content-debranding]: index.astro inline script uses define:vars to pass NAP values — is:inline blocks cannot access frontmatter variables without this Astro directive
+- [Phase 08-auto-publish-pipeline-decouple]: BRAND alias approach preserves all prompt references with zero diff to prompt code — BRAND_CONFIG fields mapped to local alias
+- [Phase 08-auto-publish-pipeline-decouple]: IMAGE_POOL = Object.values(blogImages) replaces 90-line S3 catalog — flat array with shuffle + modulo guard handles any pool size
 
 ### Pending Todos
 
@@ -138,6 +141,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-09T18:17:46.419Z
-Stopped at: Phase 8 context gathered (auto)
-Resume file: .planning/phases/08-auto-publish-pipeline-decouple/08-CONTEXT.md
+Last session: 2026-04-09T18:30:38.909Z
+Stopped at: Completed 08-01-PLAN.md
+Resume file: None

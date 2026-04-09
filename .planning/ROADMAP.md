@@ -149,7 +149,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 08-01-PLAN.md — Replace hardcoded BRAND block and S3 IMAGE_CATALOG with brand-config.ts and utils/images.ts imports
+- [x] 08-01-PLAN.md — Replace hardcoded BRAND block and S3 IMAGE_CATALOG with brand-config.ts and utils/images.ts imports
 - [ ] 08-02-PLAN.md — Update onboarding CLI generator with pipeline fields + end-to-end verification
 
 ## Progress
@@ -166,4 +166,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 5. Critical Infrastructure Debranding | 2/2 | Complete   | 2026-04-09 |
 | 6. Component Debranding | 2/2 | Complete   | 2026-04-09 |
 | 7. Content Debranding | 2/2 | Complete   | 2026-04-09 |
-| 8. Auto-Publish Pipeline Decouple | 0/0 | Pending | — |
+| 8. Auto-Publish Pipeline Decouple | 1/2 | In Progress|  |
