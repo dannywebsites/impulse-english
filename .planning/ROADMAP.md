@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Image Optimization** - Astro native image pipeline replaces hand-rolled system (completed 2026-04-09)
 - [x] **Phase 4: Client Onboarding CLI** - Interactive question flow generates fully configured website (completed 2026-04-09)
 - [x] **Phase 5: Critical Infrastructure Debranding** - Remove hardcoded tracking IDs, site names, and broken PWA manifest from core layout files (completed 2026-04-09)
-- [ ] **Phase 6: Component Debranding** - Replace hardcoded Impulse references in React/Astro components with napData/brand-config imports
+- [x] **Phase 6: Component Debranding** - Replace hardcoded Impulse references in React/Astro components with napData/brand-config imports (completed 2026-04-09)
 - [ ] **Phase 7: Content Debranding** - Remove hardcoded Impulse references from page meta tags and article content
 - [ ] **Phase 8: Auto-Publish Pipeline Decouple** - Connect auto-publish.js to brand-config.ts instead of hardcoded BRAND block
 
@@ -117,7 +117,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md — Rename ImpulseSection to BrandSection across types, schema, data, and consumers
+- [x] 06-01-PLAN.md — Rename ImpulseSection to BrandSection across types, schema, data, and consumers
 - [x] 06-02-PLAN.md — Debrand 7 main-site components with NAP field imports + verify FORM-06 Toaster
 
 
@@ -164,6 +164,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 3. Image Optimization | 4/4 | Complete   | 2026-04-09 |
 | 4. Client Onboarding CLI | 2/2 | Complete   | 2026-04-09 |
 | 5. Critical Infrastructure Debranding | 2/2 | Complete   | 2026-04-09 |
-| 6. Component Debranding | 1/2 | In Progress|  |
+| 6. Component Debranding | 2/2 | Complete   | 2026-04-09 |
 | 7. Content Debranding | 0/0 | Pending | — |
 | 8. Auto-Publish Pipeline Decouple | 0/0 | Pending | — |
