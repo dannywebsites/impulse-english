@@ -12,7 +12,7 @@
 - [x] **FORM-03**: User sees a visible error message with retry option when form submission fails
 - [x] **FORM-04**: LeadForm includes a honeypot field using off-screen CSS positioning (not display:none) with tabIndex={-1} and autoComplete="one-time-code"
 - [x] **FORM-05**: Bot submissions (honeypot filled) return fake success without hitting webhook
-- [ ] **FORM-06**: Sonner toast library added for error/success notifications in LeadForm
+- [x] **FORM-06**: Sonner toast library added for error/success notifications in LeadForm
 
 ### Image Consolidation
 
@@ -90,7 +90,7 @@
 | FORM-03 | Phase 1 | Complete |
 | FORM-04 | Phase 1 | Complete |
 | FORM-05 | Phase 1 | Complete |
-| FORM-06 | Phase 6 | Pending |
+| FORM-06 | Phase 6 | Complete |
 | IMG-01 | Phase 2 | Complete |
 | IMG-02 | Phase 2 | Complete |
 | IMG-03 | Phase 2 | Complete |
