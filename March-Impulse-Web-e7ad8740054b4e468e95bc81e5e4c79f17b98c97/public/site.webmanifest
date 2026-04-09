@@ -3,12 +3,12 @@
   "short_name": "Impulse English",
   "icons": [
     {
-      "src": "/images/optimized/favicon-192x192.png",
+      "src": "/images/favicons/favicon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/images/optimized/apple-touch-icon.png",
+      "src": "/images/favicons/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     }
