@@ -28,7 +28,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. When the webhook returns a 4xx or 5xx error, the user sees a visible error message with a retry option instead of a silent failure
   3. The webhook URL does not appear anywhere in source code — it is read from an environment variable via astro:env
   4. Sonner toast notifications fire on both successful and failed submissions
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Infrastructure: sonner install, astro:env schema, .env.example
+- [ ] 01-02-PLAN.md — Main LeadForm: all four hardening changes + Toaster in BaseLayout
+- [ ] 01-03-PLAN.md — seo-system LeadForm: adapted hardening for Vite/React Router context
 
 ### Phase 2: Image Consolidation
 **Goal**: Every production image lives in src/assets/images/ and is referenced through a single central registry — no S3 URLs remain in source code
@@ -68,7 +73,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. LeadForm Hardening | 0/? | Not started | - |
+| 1. LeadForm Hardening | 0/3 | Not started | - |
 | 2. Image Consolidation | 0/? | Not started | - |
 | 3. Image Optimization | 0/? | Not started | - |
 | 4. Client Onboarding CLI | 0/? | Not started | - |
