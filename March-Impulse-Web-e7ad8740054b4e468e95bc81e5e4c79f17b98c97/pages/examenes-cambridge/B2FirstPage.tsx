@@ -93,7 +93,11 @@ export const courseSchema = generateCourseSchema({
       price: "75"
     });
 
-export default function B2FirstPage() {
+interface B2FirstPageProps {
+  heroImageSrc?: string;
+}
+
+export default function B2FirstPage({ heroImageSrc }: B2FirstPageProps) {
   return (
     <>
 <ExamPageLayout
@@ -149,8 +153,7 @@ export default function B2FirstPage() {
       ]}
       preparationApproach="El B2 First requiere un dominio sólido de gramática y vocabulario, además de habilidades comunicativas avanzadas. Nuestro curso intensivo trabaja todas las áreas con especial énfasis en Use of English (la parte más técnica) y Writing (donde más puntos se pierden). Realizamos simulacros completos regularmente y damos feedback detallado para que llegues al examen sin sorpresas."
       formSource="cambridge-b2-first"
-      heroImage="/images/academy/team/jp-with-students.jpg"
-      heroImageMobile="/images/optimized/heroes-mobile/jp-with-students-mobile"
+      heroImage={heroImageSrc || '/images/academy/team/jp-with-students.jpg'}
     />
 </>
   );

@@ -2,6 +2,15 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CambridgeHubPage, { articleSchema, courseSchema } from '../../../pages/examenes-cambridge/CambridgeHubPage';
 import CookieBanner from '../../../components/CookieBanner';
+import { getImage } from 'astro:assets';
+import { astroHeroImages } from '../../../utils/images-astro';
+
+const heroImg = await getImage({
+  src: astroHeroImages.laraC1Cert,
+  format: 'webp',
+  width: 1920,
+  quality: 80,
+});
 
 const schemas = [
   articleSchema,
@@ -16,6 +25,6 @@ const schemas = [
   canonical="/examenes-cambridge"
   schemas={schemas}
 >
-  <CambridgeHubPage client:idle />
+  <CambridgeHubPage heroImageSrc={heroImg.src} client:idle />
   <CookieBanner client:idle />
 </BaseLayout>

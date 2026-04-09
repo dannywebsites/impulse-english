@@ -137,7 +137,11 @@ const scheduleOptions = [
   }
 ];
 
-export default function AdultosPage() {
+interface AdultosPageProps {
+  heroImageSrc?: string;
+}
+
+export default function AdultosPage({ heroImageSrc }: AdultosPageProps) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -149,17 +153,13 @@ export default function AdultosPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <picture>
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/adult-classes-mobile.webp" type="image/webp" />
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/adult-classes-mobile.jpg" type="image/jpeg" />
-            <img
-              src="/images/academy/facilities/adult-one-to-one-classes.jpg"
-              alt="Clases de inglés para adultos La Vaguada Madrid - Impulse English Academy"
-              className="w-full h-full object-cover object-top"
-              loading="eager"
-              fetchPriority="high"
-            />
-          </picture>
+          <img
+            src={heroImageSrc || '/images/academy/facilities/adult-one-to-one-classes.jpg'}
+            alt="Clases de inglés para adultos La Vaguada Madrid - Impulse English Academy"
+            className="w-full h-full object-cover object-top"
+            loading="eager"
+            fetchPriority="high"
+          />
           <div className="absolute inset-0 bg-gradient-to-br from-teal-950/80 via-emerald-950/70 to-teal-900/55"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

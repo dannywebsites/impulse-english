@@ -3,6 +3,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import B1PreliminaryPage, { courseSchema, b1Faqs } from '../../../pages/examenes-cambridge/B1PreliminaryPage';
 import CookieBanner from '../../../components/CookieBanner';
 import { generateFAQSchema } from '../../../utils/schemaData';
+import { getImage } from 'astro:assets';
+import { astroHeroImages } from '../../../utils/images-astro';
+
+const heroImg = await getImage({
+  src: astroHeroImages.techClassroom,
+  format: 'webp',
+  width: 1920,
+  quality: 80,
+});
 
 const schemas = [
   courseSchema,
@@ -17,6 +26,6 @@ const schemas = [
   canonical="/examenes-cambridge/b1-preliminary"
   schemas={schemas}
 >
-  <B1PreliminaryPage client:idle />
+  <B1PreliminaryPage heroImageSrc={heroImg.src} client:idle />
   <CookieBanner client:idle />
 </BaseLayout>
