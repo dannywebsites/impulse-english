@@ -66,7 +66,7 @@ let claudeClient = null;
 function getClaude() {
   if (!claudeClient) {
     claudeClient = new Anthropic({
-      apiKey: process.env.ANTHROPIC_API_KEY,
+      apiKey: (process.env.ANTHROPIC_API_KEY || '').trim(),
       timeout: 5 * 60 * 1000,
       maxRetries: 3,
     });
@@ -238,12 +238,12 @@ function mapImageKey(topic, category) {
 // ---------------------------------------------------------------------------
 
 const CATEGORY_RULES = [
+  { pattern: /vs|compar|diferencia/i, cat: 'Comparison' },
   { pattern: /b2.*first|first.*b2/i, cat: 'Cambridge B2 First' },
   { pattern: /c1.*advanced|advanced|cae/i, cat: 'Cambridge C1 Advanced' },
   { pattern: /b1.*preliminary|preliminary|pet/i, cat: 'Cambridge B1 Preliminary' },
   { pattern: /a2.*key|key.*a2|ket/i, cat: 'Cambridge A2 Key' },
   { pattern: /linguaskill|aptis/i, cat: 'Linguaskill' },
-  { pattern: /vs|compar|diferencia/i, cat: 'Comparison' },
   { pattern: /speaking|listening|writing|reading/i, cat: 'Skills' },
   { pattern: /niñ|infantil|bebé|3.años|4.años|5.años/i, cat: 'Kids Early Childhood' },
   { pattern: /primaria|colegio|6.años/i, cat: 'Kids Primary' },
@@ -558,6 +558,36 @@ Create:
 
 Respond with valid JSON only.`;
 
+// ---------------------------------------------------------------------------
+// Post-writer validation (deterministic, no API calls)
+// ---------------------------------------------------------------------------
+
+function validateArticle(articleContent) {
+  const warnings = [];
+
+  const wordCount = articleContent.split(/\s+/).length;
+  if (wordCount < 800) warnings.push(`Article too short: ${wordCount} words (min 800)`);
+  if (wordCount > 5000) warnings.push(`Article very long: ${wordCount} words`);
+
+  const hasFAQ = /^## (?:Preguntas [Ff]recuentes|FAQ)/m.test(articleContent);
+  if (!hasFAQ) warnings.push('Missing FAQ section (## Preguntas frecuentes)');
+
+  const h2Count = (articleContent.match(/^## /gm) || []).length;
+  if (h2Count < 3) warnings.push(`Only ${h2Count} H2 sections (min 3)`);
+
+  const hasVosotros = /vosotros|vuestro|vuestra|vuestros|vuestras|tenéis|podéis|sabéis|estéis|necesitáis|habéis/i.test(articleContent);
+  if (!hasVosotros) warnings.push('No vosotros forms found — may not be Peninsular Spanish');
+
+  const hasMdTables = /^\|.+\|.*\n\|[-:| ]+\|/m.test(articleContent);
+  if (hasMdTables) warnings.push('Contains markdown tables (will be auto-converted to HTML)');
+
+  const banned = /\bdelve\b|\btapestry\b|\brealm\b|\blandscape\b|\bever-evolving\b|\bcutting-edge\b|\brobust\b|\btransformative\b|\bpivotal\b|\bseamless\b/i;
+  if (banned.test(articleContent)) warnings.push('Contains banned AI slop words');
+
+  for (const w of warnings) log(`  ⚠️ ${w}`);
+  return { warnings, hasFAQ };
+}
+
 const META_SCHEMA = {
   type: 'object',
   properties: {
@@ -596,12 +626,38 @@ Generate optimized SEO metadata.`;
             abortSignal: ac.signal,
           },
         })
-        .then((r) => JSON.parse(r.text))
+        .then((r) => {
+          try {
+            return JSON.parse(r.text);
+          } catch (_) {
+            const jsonMatch = r.text.match(/\{[\s\S]*\}/);
+            if (jsonMatch) return JSON.parse(jsonMatch[0]);
+            throw new Error(`Meta gen returned invalid JSON: ${r.text.substring(0, 200)}`);
+          }
+        })
         .finally(() => clearTimeout(timer));
     },
     'meta-gen',
     5
   );
+
+  // Sanitize slug: lowercase, strip accents, only [a-z0-9-]
+  meta.slug = meta.slug
+    .toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9-]/g, '-')
+    .replace(/-{2,}/g, '-')
+    .replace(/^-|-$/g, '');
+
+  // Validate and auto-fix meta lengths
+  if (meta.metatitle.length > 65) {
+    log(`  ⚠️ Meta title too long (${meta.metatitle.length} chars), truncating`);
+    meta.metatitle = meta.metatitle.substring(0, 60).replace(/\s\S*$/, '') || meta.metatitle.substring(0, 60);
+  }
+  if (meta.metadescription.length > 165) {
+    log(`  ⚠️ Meta description too long (${meta.metadescription.length} chars), truncating`);
+    meta.metadescription = meta.metadescription.substring(0, 160).replace(/\s\S*$/, '') || meta.metadescription.substring(0, 160);
+  }
 
   log(`  ✅ Meta: "${meta.metatitle}" → /${meta.slug}`);
   return meta;
@@ -628,6 +684,23 @@ function markdownToHTML(md) {
 
   return paragraphs
     .map((p) => {
+      // Handle markdown tables (pipe-delimited rows)
+      if (p.match(/^\|.+\|/m)) {
+        const rows = p.split('\n').filter((r) => r.trim().startsWith('|'));
+        if (rows.length >= 2) {
+          const parseRow = (r) => r.split('|').slice(1, -1).map((c) => c.trim());
+          const isSeparator = (r) => /^[\s|:-]+$/.test(r);
+          const headers = parseRow(rows[0]);
+          const dataRows = rows.slice(1).filter((r) => !isSeparator(r)).map(parseRow);
+          let html = '<table><thead><tr>' + headers.map((h) => `<th>${convertInlineMarkdown(h)}</th>`).join('') + '</tr></thead><tbody>';
+          for (const row of dataRows) {
+            html += '<tr>' + row.map((c) => `<td>${convertInlineMarkdown(c)}</td>`).join('') + '</tr>';
+          }
+          html += '</tbody></table>';
+          return html;
+        }
+      }
+
       // Skip if it's a heading (### subsection inside a section)
       if (p.startsWith('###')) {
         const text = p.replace(/^###\s*/, '');
@@ -666,6 +739,7 @@ function markdownToHTML(md) {
  */
 function convertInlineMarkdown(text) {
   return text
+    .replace(/&(?!amp;|lt;|gt;|nbsp;|#\d+;)/g, '&amp;')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
     .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>');
@@ -681,32 +755,51 @@ function extractFAQs(articleContent) {
     /## (?:Preguntas [Ff]recuentes|FAQ|Preguntas [Rr]elacionadas|Preguntas y [Rr]espuestas|Dudas [Ff]recuentes|Lo que más nos preguntáis|Resolvemos tus dudas)[\s\S]*$/
   );
 
-  if (!faqMatch) return [];
+  if (!faqMatch) {
+    log('  ⚠️ No FAQ heading found in article');
+    return [];
+  }
 
   const faqSection = faqMatch[0];
   const faqs = [];
-
-  // Pattern 1: ### Question\n\nAnswer
-  const h3Pattern = /###\s*(.+?)\n\n([\s\S]*?)(?=###|\n## |$)/g;
   let match;
+
+  // Pattern 1: ### Question\n(Answer paragraphs until next ### or ## or end)
+  const h3Pattern = /###\s*(.+?)\n\n?([\s\S]*?)(?=\n###|\n## |$)/g;
   while ((match = h3Pattern.exec(faqSection)) !== null) {
-    const question = match[1].trim().replace(/^\*\*|\*\*$/g, '');
-    const answer = match[2].trim().split('\n\n')[0].trim();
+    const question = match[1].trim().replace(/^\*\*|\*\*$/g, '').replace(/^¿?\s*|\s*\?$/g, '').trim();
+    const answer = match[2].trim().replace(/\n{3,}/g, '\n\n');
     if (question && answer) {
-      faqs.push({ question, answer });
+      faqs.push({ question: question.startsWith('¿') ? question : `¿${question}?`, answer });
     }
   }
 
-  // Pattern 2: **Question**\n\nAnswer (if no ### matches found)
+  // Pattern 2: **Question**\n(Answer) — if no ### matches
   if (faqs.length === 0) {
-    const boldPattern = /\*\*(.+?)\*\*\n\n([\s\S]*?)(?=\*\*|\n## |$)/g;
+    const boldPattern = /\*\*(.+?)\*\*\n\n?([\s\S]*?)(?=\n\*\*|\n## |$)/g;
     while ((match = boldPattern.exec(faqSection)) !== null) {
       const question = match[1].trim();
-      const answer = match[2].trim().split('\n\n')[0].trim();
+      const answer = match[2].trim().replace(/\n{3,}/g, '\n\n');
       if (question && answer) {
         faqs.push({ question, answer });
       }
     }
+  }
+
+  // Pattern 3: Numbered questions — 1. **Q**\nA
+  if (faqs.length === 0) {
+    const numberedPattern = /\d+\.\s*\*\*(.+?)\*\*\n\n?([\s\S]*?)(?=\n\d+\.\s*\*\*|\n## |$)/g;
+    while ((match = numberedPattern.exec(faqSection)) !== null) {
+      const question = match[1].trim();
+      const answer = match[2].trim();
+      if (question && answer) {
+        faqs.push({ question, answer });
+      }
+    }
+  }
+
+  if (faqs.length === 0) {
+    log(`  ⚠️ FAQ section found but 0 items extracted. Section preview: "${faqSection.substring(0, 200)}…"`);
   }
 
   return faqs;
@@ -755,11 +848,16 @@ function runSchemaConversion(topic, articleContent, category) {
     .split(/\n\n+/)
     .filter((p) => p.trim().length > 0 && !p.startsWith('#'));
 
-  // Use the first 2-3 paragraphs as the direct answer
-  const paaAnswer = introParagraphs
-    .slice(0, 3)
-    .map((p) => p.replace(/\*\*(.+?)\*\*/g, '$1').replace(/\*(.+?)\*/g, '$1').trim())
-    .join(' ');
+  // Use the first paragraph as the direct answer (matching hand-crafted articles)
+  // Append second paragraph only if first is too short
+  const stripMd = (p) => p.replace(/\*\*(.+?)\*\*/g, '$1').replace(/\*(.+?)\*/g, '$1').trim();
+  let paaAnswer = introParagraphs.length > 0 ? stripMd(introParagraphs[0]) : topic;
+  if (paaAnswer.length < 100 && introParagraphs.length > 1) {
+    paaAnswer += ' ' + stripMd(introParagraphs[1]);
+  }
+  if (paaAnswer.length > 500) {
+    paaAnswer = paaAnswer.substring(0, 500).replace(/\s\S*$/, '');
+  }
 
   // Calculate read time from word count
   const wordCount = articleContent.split(/\s+/).length;
@@ -809,6 +907,12 @@ function runSchemaConversion(topic, articleContent, category) {
 // Step 5 - Assemble & write file
 // ---------------------------------------------------------------------------
 
+function truncateLabel(text, max = 50) {
+  if (text.length <= max) return text;
+  const truncated = text.substring(0, max).replace(/\s\S*$/, '');
+  return truncated.length > 0 ? truncated : text.substring(0, max);
+}
+
 function assembleArticle(meta, schema, category, imageKey) {
   const today = new Date().toISOString().split('T')[0];
   const hub = CATEGORY_HUB[category];
@@ -821,7 +925,7 @@ function assembleArticle(meta, schema, category, imageKey) {
   const breadcrumbs = [
     { label: 'Blog', href: '/blog' },
     ...(hub ? [hub] : []),
-    { label: meta.metatitle.length <= 50 ? meta.metatitle : meta.metatitle.substring(0, 50).replace(/\s\S*$/, '') },
+    { label: truncateLabel(meta.metatitle, 50) },
   ];
 
   const frontmatter = {
@@ -915,6 +1019,10 @@ async function main() {
 
   // Step 2: Write article
   const articleContent = await runWriter(topic, keywords, researchBrief);
+
+  // Step 2.5: Validate article quality (deterministic, no API calls)
+  log('\n✅ Validating article…');
+  validateArticle(articleContent);
 
   // Step 3: Meta generation
   const meta = await runMetaGen(topic, keywords, articleContent);
