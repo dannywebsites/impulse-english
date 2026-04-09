@@ -122,7 +122,11 @@ export const courseSchema = generateCourseSchema({
         timeRequired: "P9M"
       });
 
-export default function CambridgeHubPage() {
+interface CambridgeHubPageProps {
+  heroImageSrc?: string;
+}
+
+export default function CambridgeHubPage({ heroImageSrc }: CambridgeHubPageProps) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -148,17 +152,13 @@ export default function CambridgeHubPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <picture>
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/lara-c1-cert-mobile.webp" type="image/webp" />
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/lara-c1-cert-mobile.jpg" type="image/jpeg" />
-            <img
-              src={pageImages.hero}
-              alt="Cambridge English exam preparation"
-              className="w-full h-full object-cover"
-              loading="eager"
-              fetchPriority="high"
-            />
-          </picture>
+          <img
+            src={heroImageSrc || pageImages.hero}
+            alt="Cambridge English exam preparation"
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+          />
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

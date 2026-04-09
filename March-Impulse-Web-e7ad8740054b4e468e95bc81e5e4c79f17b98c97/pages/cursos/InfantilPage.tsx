@@ -11,7 +11,6 @@ import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import { infantilGalleryImages as galleryImages } from '@/utils/images';
-import { infantilImages as heroImages } from '@/utils/images';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Infantil (2-5 años)",
@@ -121,7 +120,11 @@ export const faqs: FAQItem[] = [
   }
 ];
 
-export default function InfantilPage() {
+interface InfantilPageProps {
+  heroImageSrc?: string;
+}
+
+export default function InfantilPage({ heroImageSrc }: InfantilPageProps) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -133,17 +136,13 @@ export default function InfantilPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <picture>
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/infantil-classes-mobile.webp" type="image/webp" />
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/infantil-classes-mobile.jpg" type="image/jpeg" />
-            <img
-              src="/images/academy/facilities/infantil-classes.jpg"
-              alt="Clases de inglés infantil Madrid - Great Little People Impulse English Academy"
-              className="w-full h-full object-cover"
-              loading="eager"
-              fetchPriority="high"
-            />
-          </picture>
+          <img
+            src={heroImageSrc || '/images/academy/facilities/infantil-classes.jpg'}
+            alt="Clases de inglés infantil Madrid - Great Little People Impulse English Academy"
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+          />
           <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-900/80 via-purple-900/70 to-violet-800/55"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

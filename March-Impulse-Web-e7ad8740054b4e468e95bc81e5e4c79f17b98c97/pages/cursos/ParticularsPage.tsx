@@ -106,7 +106,11 @@ const services = [
   }
 ];
 
-export default function ParticularesPage() {
+interface ParticularesPageProps {
+  heroImageSrc?: string;
+}
+
+export default function ParticularesPage({ heroImageSrc }: ParticularesPageProps) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -118,17 +122,13 @@ export default function ParticularesPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <picture>
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/daniel-helping-mobile.webp" type="image/webp" />
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/daniel-helping-mobile.jpg" type="image/jpeg" />
-            <img
-              src="/images/academy/team/daniel-helping-secondary-school-students.jpg"
-              alt="Clases particulares inglés Madrid - profesor nativo Impulse English Academy"
-              className="w-full h-full object-cover object-top"
-              loading="eager"
-              fetchPriority="high"
-            />
-          </picture>
+          <img
+            src={heroImageSrc || '/images/academy/team/daniel-helping-secondary-school-students.jpg'}
+            alt="Clases particulares inglés Madrid - profesor nativo Impulse English Academy"
+            className="w-full h-full object-cover object-top"
+            loading="eager"
+            fetchPriority="high"
+          />
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/80 via-accent-blue/70 to-[#0a3560]/60"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

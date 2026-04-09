@@ -127,7 +127,11 @@ export const courseSchema = generateCourseSchema({
         timeRequired: "P1M"
       });
 
-export default function LinguaskillPage() {
+interface LinguaskillPageProps {
+  heroImageSrc?: string;
+}
+
+export default function LinguaskillPage({ heroImageSrc }: LinguaskillPageProps) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -153,17 +157,13 @@ export default function LinguaskillPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <picture>
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/tech-classroom-mobile.webp" type="image/webp" />
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/tech-classroom-mobile.jpg" type="image/jpeg" />
-            <img
-              src="/images/academy/facilities/technology-based-classroom-photo.jpg"
-              alt="Linguaskill preparation"
-              className="w-full h-full object-cover"
-              loading="eager"
-              fetchPriority="high"
-            />
-          </picture>
+          <img
+            src={heroImageSrc || '/images/academy/facilities/technology-based-classroom-photo.jpg'}
+            alt="Linguaskill preparation"
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+          />
           <div className="absolute inset-0 bg-gradient-to-br from-[#7a1520]/92 via-[#8b1a28]/82 to-brand-red/65"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

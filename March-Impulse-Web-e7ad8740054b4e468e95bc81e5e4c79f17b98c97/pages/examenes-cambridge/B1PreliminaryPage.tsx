@@ -45,7 +45,11 @@ export const courseSchema = generateCourseSchema({
       price: "71"
     });
 
-export default function B1PreliminaryPage() {
+interface B1PreliminaryPageProps {
+  heroImageSrc?: string;
+}
+
+export default function B1PreliminaryPage({ heroImageSrc }: B1PreliminaryPageProps) {
   return (
     <>
 <ExamPageLayout
@@ -100,8 +104,7 @@ export default function B1PreliminaryPage() {
       ]}
       preparationApproach="Nuestro método combina la práctica intensiva de las cuatro destrezas con técnicas específicas de examen. Cada semana trabajamos simulacros de las diferentes partes, con especial énfasis en Speaking y Writing donde los alumnos suelen tener más dificultades. El objetivo es que llegues al examen con confianza y familiarizado con el formato."
       formSource="cambridge-b1-preliminary"
-      heroImage="/images/academy/facilities/technology-based-classroom-photo.jpg"
-      heroImageMobile="/images/optimized/heroes-mobile/tech-classroom-mobile"
+      heroImage={heroImageSrc || '/images/academy/facilities/technology-based-classroom-photo.jpg'}
     />
 </>
   );
