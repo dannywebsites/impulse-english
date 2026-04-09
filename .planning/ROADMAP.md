@@ -49,7 +49,7 @@ Plans:
 - [x] 02-01-PLAN.md — Download 73 S3 images + create central registry at utils/images.ts
 - [x] 02-02-PLAN.md — Migrate main site components, pages, layouts, and data layer to registry
 - [x] 02-03-PLAN.md — Migrate all 85 blog pages from inline S3 URLs to registry imports
-- [ ] 02-04-PLAN.md — Migrate seo-system components and pages to shared registry via relative paths
+- [x] 02-04-PLAN.md — Migrate seo-system components and pages to shared registry via relative paths
 - [ ] 02-05-PLAN.md — Delete old data files, full S3 audit, build verification, visual check
 
 ### Phase 3: Image Optimization

@@ -19,7 +19,7 @@
 - [x] **IMG-01**: All S3-hosted images used by production components are downloaded to public/images/academy/ (Phase 3 migrates to src/assets/images/ for Astro pipeline)
 - [x] **IMG-02**: Central image registry file (utils/images.ts) exports all image imports from one location
 - [x] **IMG-03**: All component files reference images through the central registry, not direct S3 URLs
-- [ ] **IMG-04**: seo-system mirrored components updated to use local image paths in the same changeset
+- [x] **IMG-04**: seo-system mirrored components updated to use local image paths in the same changeset
 
 ### Image Optimization
 
@@ -94,7 +94,7 @@
 | IMG-01 | Phase 2 | Complete |
 | IMG-02 | Phase 2 | Complete |
 | IMG-03 | Phase 2 | Complete |
-| IMG-04 | Phase 2 | Pending |
+| IMG-04 | Phase 2 | Complete |
 | OPT-01 | Phase 3 | Pending |
 | OPT-02 | Phase 3 | Pending |
 | OPT-03 | Phase 3 | Pending |
