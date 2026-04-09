@@ -16,7 +16,7 @@ contextSections:
   - heading: Cómo mejorar vuestra puntuación en Use of English
     content: |
       <p>La mejora en Use of English no se consigue de un día para otro: requiere estudio constante y acumulativo. Dedicad al menos 20 minutos diarios a ejercicios específicos de esta sección, alternando entre los distintos tipos de tareas. Llevad un registro de vuestros errores recurrentes y repasadlos semanalmente.</p><p>Leer en inglés de forma habitual (artículos, novelas adaptadas al nivel B2, noticias) os ayudará a interiorizar colocaciones y estructuras de forma natural. Complementad la lectura con ejercicios de vocabulario en contexto y no os limitéis a memorizar listas de palabras aisladas. La comprensión de cómo se usan las palabras en contexto es lo que realmente marca la diferencia.</p>
-impulseSection:
+brandSection:
   heading: Domina Use of English con Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, dedicamos sesiones específicas a Use of English, la sección que más preocupa a los candidatos. Con grupos reducidos de máximo 10 alumnos y profesores certificados TEFL/CELTA, trabajamos cada tipo de ejercicio con material actualizado y técnicas probadas. Nuestro 100% de aprobados en 2024-2025 demuestra que nuestra preparación funciona."
   ctaLinks:

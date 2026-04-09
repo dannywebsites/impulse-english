@@ -16,7 +16,7 @@ contextSections:
   - heading: Plazos y coste de la reinscripción
     content: |
       <p>Para volver a presentaros, tendréis que abonar la inscripción completa nuevamente, ya que Cambridge no ofrece descuentos ni exenciones por repetición. Los precios pueden variar según el centro examinador y la convocatoria, así que consultad las tarifas actualizadas con antelación.</p><p>Os recomendamos no precipitaros en la reinscripción. Dejad al menos un mes de preparación intensiva focalizada antes de fijar una nueva fecha. Si optáis por el formato ordenador, tendréis más flexibilidad con las fechas disponibles y recibiréis los resultados mucho antes, lo que os permite organizar mejor vuestros plazos.</p>
-impulseSection:
+brandSection:
   heading: En Impulse te ayudamos a aprobar el B2 First
   content: "Como Centro Preparador Oficial Cambridge, en Impulse English Academy hemos conseguido un 100% de aprobados en la temporada 2024-2025. Nuestros profesores certificados TEFL/CELTA analizan vuestro Statement of Results y diseñan un plan de recuperación personalizado. Con grupos reducidos de máximo 10 alumnos y simulacros mensuales, identificamos vuestros puntos débiles y los convertimos en fortalezas."
   ctaLinks:

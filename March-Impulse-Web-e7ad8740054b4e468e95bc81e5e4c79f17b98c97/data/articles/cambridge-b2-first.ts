@@ -32,7 +32,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
           '<p>Los resultados del B2 First en formato ordenador se publican en un plazo de 5 a 10 días laborables, lo que os permite tomar decisiones rápidamente sobre una posible reinscripción. En cambio, el formato papel tarda entre 4 y 6 semanas, así que tened esto en cuenta a la hora de elegir la modalidad.</p><p>Si tenéis una fecha límite para presentar el certificado (una solicitud universitaria, un proceso de selección laboral, etc.), es recomendable inscribiros con suficiente antelación y contemplar la posibilidad de un segundo intento. De esta forma, dispondréis de tiempo para repetir el examen si fuese necesario.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Preparamos el B2 First en Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial Cambridge, os acompañamos en cada intento hasta que obtengáis vuestro certificado. Nuestro ratio de aprobados en 2024-2025 es del 100%, gracias a grupos reducidos de máximo 10 alumnos, simulacros mensuales en condiciones reales y profesores certificados TEFL/CELTA que conocen el examen a la perfección. Si necesitáis repetir, diseñamos un plan personalizado centrado en vuestras áreas de mejora.',
@@ -101,7 +101,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
           '<p>Para volver a presentaros, tendréis que abonar la inscripción completa nuevamente, ya que Cambridge no ofrece descuentos ni exenciones por repetición. Los precios pueden variar según el centro examinador y la convocatoria, así que consultad las tarifas actualizadas con antelación.</p><p>Os recomendamos no precipitaros en la reinscripción. Dejad al menos un mes de preparación intensiva focalizada antes de fijar una nueva fecha. Si optáis por el formato ordenador, tendréis más flexibilidad con las fechas disponibles y recibiréis los resultados mucho antes, lo que os permite organizar mejor vuestros plazos.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'En Impulse te ayudamos a aprobar el B2 First',
       content:
         'Como Centro Preparador Oficial Cambridge, en Impulse English Academy hemos conseguido un 100% de aprobados en la temporada 2024-2025. Nuestros profesores certificados TEFL/CELTA analizan vuestro Statement of Results y diseñan un plan de recuperación personalizado. Con grupos reducidos de máximo 10 alumnos y simulacros mensuales, identificamos vuestros puntos débiles y los convertimos en fortalezas.',
@@ -170,7 +170,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
           '<p>El examen B2 First tiene una duración total de aproximadamente 3 horas y 30 minutos, repartidos en cuatro pruebas. Reading & Use of English ocupa 75 minutos y evalúa tanto la comprensión lectora como el dominio gramatical y léxico. Writing dura 80 minutos e incluye la redacción de dos textos de diferente tipología.</p><p>La prueba de Listening se extiende durante 40 minutos y evalúa la comprensión auditiva mediante distintos formatos de audio. Por último, el Speaking dura 14 minutos, se realiza en parejas y valora vuestra capacidad de interacción oral. Conocer bien la estructura os ayudará a distribuir mejor la energía y la concentración durante el examen.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Consigue tu B2 First de por vida con Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial Cambridge, os preparamos para obtener un certificado que os acompañará toda la vida. Con un 100% de aprobados en 2024-2025, grupos reducidos de máximo 10 alumnos y simulacros mensuales en condiciones reales de examen, nuestros profesores certificados TEFL/CELTA os garantizan la mejor preparación posible para el B2 First.',
@@ -239,7 +239,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
           '<p>Si vuestra puntuación media se sitúa entre 140 y 159 puntos, no obtendréis el certificado B2, pero Cambridge os reconocerá el nivel B1. Recibiréis un certificado de B1 junto con vuestro Statement of Results, algo que puede resultar útil si necesitáis acreditar al menos ese nivel.</p><p>Si la puntuación es inferior a 140 (entre 122 y 139), constará en el informe de resultados pero sin certificación de ningún nivel. En este caso, os recomendamos valorar si es más adecuado prepararos primero para el B1 Preliminary y consolidar una base sólida antes de volver a intentar el B2 First.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Alcanza la nota que necesitas con Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial Cambridge, nuestros alumnos no solo aprueban: muchos alcanzan Grade A. Con un 100% de aprobados en 2024-2025, simulacros mensuales con corrección detallada y grupos reducidos de máximo 10 alumnos, nuestros profesores certificados TEFL/CELTA os preparan para superar ampliamente los 160 puntos.',
@@ -313,7 +313,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
           '<p>Vuestra percepción de la dificultad del B2 First dependerá en gran medida de vuestro punto de partida. Si tenéis un nivel B1 consolidado, con un vocabulario amplio y buen dominio de las estructuras gramaticales básicas, el salto al B2 es perfectamente asumible en unos meses de preparación dedicada.</p><p>Otros factores que influyen son la familiaridad con el formato del examen, la capacidad de concentración durante casi cuatro horas y la confianza a la hora de hablar en la prueba oral. La preparación no solo debe centrarse en el inglés, sino también en la técnica de examen: saber qué esperar reduce considerablemente el nivel de estrés.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Supera el B2 First con la preparación de Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial Cambridge, hacemos que el B2 First sea alcanzable para todos. Con un 100% de aprobados en 2024-2025, nuestros profesores certificados TEFL/CELTA os enseñan técnicas específicas para cada parte del examen. Grupos reducidos de máximo 10 alumnos y simulacros mensuales aseguran que lleguéis al examen con total confianza.',
@@ -387,7 +387,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
           '<p>Uno de los errores más frecuentes en las preparaciones de tres meses es dedicar todo el tiempo a Reading & Use of English y descuidar Writing y Speaking. Estas dos destrezas requieren práctica activa y retroalimentación regular, no basta con estudiar teoría gramatical.</p><p>Otro error habitual es no cronometrar los ejercicios durante la preparación. Si practicáis sin límite de tiempo, el día del examen os encontraréis con una presión inesperada que puede afectar a vuestro rendimiento. Desde la primera semana, acostumbraos a trabajar con el reloj en marcha y aprended a gestionar el tiempo de cada sección.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Preparación intensiva B2 First en Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial Cambridge, ofrecemos programas intensivos diseñados para preparar el B2 First en plazos reducidos. Con un 100% de aprobados en 2024-2025, nuestros profesores certificados TEFL/CELTA crean planes personalizados con simulacros mensuales y grupos reducidos de máximo 10 alumnos. Optimizamos cada hora de clase para que avancéis al máximo ritmo posible.',
@@ -456,7 +456,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
           '<p>La mejora en Use of English no se consigue de un día para otro: requiere estudio constante y acumulativo. Dedicad al menos 20 minutos diarios a ejercicios específicos de esta sección, alternando entre los distintos tipos de tareas. Llevad un registro de vuestros errores recurrentes y repasadlos semanalmente.</p><p>Leer en inglés de forma habitual (artículos, novelas adaptadas al nivel B2, noticias) os ayudará a interiorizar colocaciones y estructuras de forma natural. Complementad la lectura con ejercicios de vocabulario en contexto y no os limitéis a memorizar listas de palabras aisladas. La comprensión de cómo se usan las palabras en contexto es lo que realmente marca la diferencia.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Domina Use of English con Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial Cambridge, dedicamos sesiones específicas a Use of English, la sección que más preocupa a los candidatos. Con grupos reducidos de máximo 10 alumnos y profesores certificados TEFL/CELTA, trabajamos cada tipo de ejercicio con material actualizado y técnicas probadas. Nuestro 100% de aprobados en 2024-2025 demuestra que nuestra preparación funciona.',
@@ -525,7 +525,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
           '<p>Practicad el Speaking con un compañero siempre que sea posible. Grabad vuestras respuestas y escuchadlas después para identificar muletillas, pausas excesivas o errores recurrentes. Para la Parte 2, practicad describiendo y comparando fotografías en un minuto exacto: ni más, ni menos.</p><p>Para la Parte 3, aprended expresiones útiles para mostrar acuerdo y desacuerdo, pedir opiniones y negociar: "I see your point, but...", "What do you think about...?", "Shall we agree on...?". No dominéis la conversación ni dejéis que vuestro compañero hable solo. La interacción equilibrada es clave para obtener una buena puntuación en comunicación interactiva.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Practica el Speaking del B2 First en Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial Cambridge, dedicamos sesiones completas a la práctica del Speaking en condiciones reales de examen. Con grupos reducidos de máximo 10 alumnos, cada estudiante tiene oportunidades constantes para hablar. Nuestros profesores certificados TEFL/CELTA os dan retroalimentación individualizada sobre pronunciación, fluidez e interacción. El 100% de aprobados en 2024-2025 avala nuestra metodología.',
@@ -594,7 +594,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
           '<p>No necesitáis comprar todos los libros: elegid uno como manual principal (Complete First u Objective First) y añadid First Trainer para los simulacros finales. Si tenéis poco tiempo, Compact First puede ser vuestro único libro de referencia, complementado con las herramientas digitales.</p><p>Organizad vuestro estudio alternando entre el manual principal y la práctica de exámenes. Reservad el First Trainer para las últimas semanas, cuando ya tengáis una base sólida. Utilizad Test & Train para sesiones cortas de 15-20 minutos cuando no dispongáis de tiempo para una sesión completa. La combinación de material impreso y digital os dará la preparación más completa.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Material oficial incluido en los cursos Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial Cambridge, proporcionamos a nuestros alumnos acceso al material más actualizado y eficaz. Nuestros profesores certificados TEFL/CELTA seleccionan los recursos más adecuados para cada alumno, complementados con simulacros mensuales y corrección detallada en grupos reducidos de máximo 10 estudiantes. El 100% de aprobados en 2024-2025 refleja la calidad de nuestra preparación.',
@@ -663,7 +663,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
           '<p>Es fundamental que tengáis claro que el contenido, la dificultad y la certificación son exactamente iguales en ambos formatos. Las preguntas siguen la misma estructura, los criterios de evaluación son idénticos y el certificado que recibís tiene el mismo valor y reconocimiento internacional.</p><p>La prueba de Speaking es presencial en ambos casos: os sentaréis frente a dos examinadores con otro candidato, independientemente de si habéis realizado el resto del examen en papel o en ordenador. Elegid el formato en función de vuestra comodidad personal y de los plazos que necesitéis para recibir los resultados, no por diferencias de contenido o dificultad.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Te preparamos para el B2 First en cualquier formato',
       content:
         'En Impulse English Academy, Centro Preparador Oficial Cambridge, os preparamos tanto para el formato papel como para el ordenador. Nuestros simulacros mensuales replican ambas modalidades para que el día del examen no tengáis sorpresas. Con grupos reducidos de máximo 10 alumnos, profesores certificados TEFL/CELTA y un 100% de aprobados en 2024-2025, os asesoramos sobre qué formato se ajusta mejor a vuestro perfil.',
@@ -732,7 +732,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
           '<p>La mejor forma de evaluar vuestra preparación es realizar simulacros completos en condiciones reales: sin diccionario, con el tiempo exacto de cada sección y en un entorno silencioso. Si obtenéis de forma consistente puntuaciones superiores a 165 en vuestros simulacros, es probable que estéis listos para presentaros con garantías.</p><p>Otro indicador fiable es vuestra comodidad con el formato del examen. Si sabéis exactamente qué esperar en cada parte, cuántas preguntas tiene cada sección y cuánto tiempo dedicar a cada una, habéis alcanzado un nivel de preparación técnica adecuado. Combinad esta seguridad con una puntuación de simulacro estable y estaréis en condiciones óptimas para afrontar el examen real.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Preparamos el B2 First a tu ritmo en Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial Cambridge, adaptamos la duración del curso a vuestro nivel de partida y vuestros objetivos. Con un 100% de aprobados en 2024-2025, grupos reducidos de máximo 10 alumnos y simulacros mensuales, nuestros profesores certificados TEFL/CELTA diseñan un plan de estudio personalizado para que alcancéis el B2 First en el tiempo óptimo, sin prisas innecesarias ni demoras evitables.',

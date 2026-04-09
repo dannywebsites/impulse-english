@@ -16,7 +16,7 @@ contextSections:
   - heading: Consejos prácticos para preparar el Speaking
     content: |
       <p>Practicad el Speaking con un compañero siempre que sea posible. Grabad vuestras respuestas y escuchadlas después para identificar muletillas, pausas excesivas o errores recurrentes. Para la Parte 2, practicad describiendo y comparando fotografías en un minuto exacto: ni más, ni menos.</p><p>Para la Parte 3, aprended expresiones útiles para mostrar acuerdo y desacuerdo, pedir opiniones y negociar: "I see your point, but...", "What do you think about...?", "Shall we agree on...?". No dominéis la conversación ni dejéis que vuestro compañero hable solo. La interacción equilibrada es clave para obtener una buena puntuación en comunicación interactiva.</p>
-impulseSection:
+brandSection:
   heading: Practica el Speaking del B2 First en Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, dedicamos sesiones completas a la práctica del Speaking en condiciones reales de examen. Con grupos reducidos de máximo 10 alumnos, cada estudiante tiene oportunidades constantes para hablar. Nuestros profesores certificados TEFL/CELTA os dan retroalimentación individualizada sobre pronunciación, fluidez e interacción. El 100% de aprobados en 2024-2025 avala nuestra metodología."
   ctaLinks:

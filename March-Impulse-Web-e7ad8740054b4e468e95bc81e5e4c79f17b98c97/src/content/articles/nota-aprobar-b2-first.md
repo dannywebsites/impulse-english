@@ -16,7 +16,7 @@ contextSections:
   - heading: Qué ocurre con puntuaciones por debajo de 160
     content: |
       <p>Si vuestra puntuación media se sitúa entre 140 y 159 puntos, no obtendréis el certificado B2, pero Cambridge os reconocerá el nivel B1. Recibiréis un certificado de B1 junto con vuestro Statement of Results, algo que puede resultar útil si necesitáis acreditar al menos ese nivel.</p><p>Si la puntuación es inferior a 140 (entre 122 y 139), constará en el informe de resultados pero sin certificación de ningún nivel. En este caso, os recomendamos valorar si es más adecuado prepararos primero para el B1 Preliminary y consolidar una base sólida antes de volver a intentar el B2 First.</p>
-impulseSection:
+brandSection:
   heading: Alcanza la nota que necesitas con Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, nuestros alumnos no solo aprueban: muchos alcanzan Grade A. Con un 100% de aprobados en 2024-2025, simulacros mensuales con corrección detallada y grupos reducidos de máximo 10 alumnos, nuestros profesores certificados TEFL/CELTA os preparan para superar ampliamente los 160 puntos."
   ctaLinks:

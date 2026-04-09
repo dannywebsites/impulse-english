@@ -13,7 +13,7 @@ contextSections:
   - heading: "¿Cuándo elegir C1 Advanced y cuándo IELTS?"
     content: |
       <p>Si vuestro objetivo es certificar un nivel alto de inglés para el mercado laboral europeo, oposiciones en España o estudios universitarios dentro de la UE, el C1 Advanced es generalmente la mejor opción por su prestigio y validez permanente. El IELTS suele ser preferido para procesos de migración a países anglosajones como Australia, Canadá o Nueva Zelanda, y para admisión en universidades del Reino Unido y EE.UU. que lo solicitan específicamente. Evaluad vuestras necesidades concretas antes de decidir.</p>
-impulseSection:
+brandSection:
   heading: Preparaos para el C1 Advanced en Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, os orientamos sobre qué examen se adapta mejor a vuestros objetivos y os preparamos específicamente para el C1 Advanced. Nuestros profesores especializados trabajan con grupos reducidos, ofreciendo simulacros reales y estrategias probadas. Con un 100% de aprobados, os garantizamos una preparación de calidad que os llevará al éxito en el examen."
   ctaLinks:

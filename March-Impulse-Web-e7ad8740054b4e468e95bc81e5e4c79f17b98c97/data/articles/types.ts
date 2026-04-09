@@ -10,7 +10,7 @@ export interface CtaLink {
   href: string;
 }
 
-export interface ImpulseSection {
+export interface BrandSection {
   heading: string;
   content: string;
   ctaLinks: CtaLink[];
@@ -42,6 +42,12 @@ export type ArticleCategory =
   | 'Price'
   | 'Definitions';
 
+export interface ArticleImage {
+  url: string;
+  alt: string;
+  placement: 'hero' | 'inline';
+}
+
 export interface PAAArticle {
   slug: string;
   url: string;
@@ -52,14 +58,15 @@ export interface PAAArticle {
   metaDescription: string;
   paaAnswer: string;
   contextSections: ContentSection[];
-  impulseSection: ImpulseSection;
+  brandSection: BrandSection;
   faqItems: FAQItem[];
   internalLinkRefs: string[];
   breadcrumbs: BreadcrumbItem[];
   publishedDate: string;
   modifiedDate: string;
   readTime: string;
-  imageKey: string;
+  imageKey?: string;
+  articleImages?: ArticleImage[];
 }
 
 // Blog listing card for BlogPage

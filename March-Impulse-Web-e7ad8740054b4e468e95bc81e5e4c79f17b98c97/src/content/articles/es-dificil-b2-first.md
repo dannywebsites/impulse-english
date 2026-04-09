@@ -16,7 +16,7 @@ contextSections:
   - heading: Factores que influyen en la dificultad percibida
     content: |
       <p>Vuestra percepción de la dificultad del B2 First dependerá en gran medida de vuestro punto de partida. Si tenéis un nivel B1 consolidado, con un vocabulario amplio y buen dominio de las estructuras gramaticales básicas, el salto al B2 es perfectamente asumible en unos meses de preparación dedicada.</p><p>Otros factores que influyen son la familiaridad con el formato del examen, la capacidad de concentración durante casi cuatro horas y la confianza a la hora de hablar en la prueba oral. La preparación no solo debe centrarse en el inglés, sino también en la técnica de examen: saber qué esperar reduce considerablemente el nivel de estrés.</p>
-impulseSection:
+brandSection:
   heading: Supera el B2 First con la preparación de Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, hacemos que el B2 First sea alcanzable para todos. Con un 100% de aprobados en 2024-2025, nuestros profesores certificados TEFL/CELTA os enseñan técnicas específicas para cada parte del examen. Grupos reducidos de máximo 10 alumnos y simulacros mensuales aseguran que lleguéis al examen con total confianza."
   ctaLinks:

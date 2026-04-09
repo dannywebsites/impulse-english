@@ -16,7 +16,7 @@ contextSections:
   - heading: El C1 como inversión a largo plazo
     content: |
       <p>A diferencia de otros certificados que caducan, el Cambridge C1 Advanced es válido de por vida, lo que lo convierte en una inversión a largo plazo. El coste del examen y la preparación se amortiza con creces a lo largo de vuestra carrera profesional y académica. En España, donde el nivel medio de inglés sigue siendo mejorable, contar con un C1 certificado os posiciona en una minoría cualificada que destaca en cualquier proceso selectivo. Considerando que la demanda de profesionales con inglés avanzado sigue creciendo, obtener el C1 Advanced hoy es una decisión estratégica para vuestro futuro.</p>
-impulseSection:
+brandSection:
   heading: Conseguid el C1 Advanced con Impulse en Madrid
   content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge en Madrid, os preparamos para obtener el C1 Advanced con la máxima garantía de éxito. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos, materiales oficiales y simulacros reales. Con un historial del 100% de aprobados, somos la academia de confianza para dar el paso definitivo en vuestro nivel de inglés. Reservad vuestra prueba de nivel gratuita y empezad a preparar vuestro futuro."
   ctaLinks:

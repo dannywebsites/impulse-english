@@ -16,7 +16,7 @@ contextSections:
   - heading: Errores comunes en la preparación intensiva
     content: |
       <p>Uno de los errores más frecuentes en las preparaciones de tres meses es dedicar todo el tiempo a Reading & Use of English y descuidar Writing y Speaking. Estas dos destrezas requieren práctica activa y retroalimentación regular, no basta con estudiar teoría gramatical.</p><p>Otro error habitual es no cronometrar los ejercicios durante la preparación. Si practicáis sin límite de tiempo, el día del examen os encontraréis con una presión inesperada que puede afectar a vuestro rendimiento. Desde la primera semana, acostumbraos a trabajar con el reloj en marcha y aprended a gestionar el tiempo de cada sección.</p>
-impulseSection:
+brandSection:
   heading: Preparación intensiva B2 First en Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, ofrecemos programas intensivos diseñados para preparar el B2 First en plazos reducidos. Con un 100% de aprobados en 2024-2025, nuestros profesores certificados TEFL/CELTA crean planes personalizados con simulacros mensuales y grupos reducidos de máximo 10 alumnos. Optimizamos cada hora de clase para que avancéis al máximo ritmo posible."
   ctaLinks:

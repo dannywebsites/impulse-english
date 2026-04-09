@@ -30,7 +30,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
           '<p>Contar con un plan de estudio bien organizado es fundamental para aprovechar al máximo las horas de preparación. Dividid vuestro tiempo entre las cuatro secciones del examen: Reading and Use of English, Writing, Listening y Speaking. Realizad simulacros de examen completos al menos una vez al mes para evaluar vuestro progreso y detectar áreas de mejora. Un buen plan incluye también revisión de vocabulario avanzado, expresiones idiomáticas y collocations que son habituales en el C1 Advanced.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Preparad el C1 Advanced con Impulse English Academy',
       content:
         'En Impulse English Academy, Centro Preparador Oficial de Cambridge, os ayudamos a dar el salto de B2 a C1 de forma eficaz. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos para garantizar atención personalizada. Contamos con un historial del 100% de aprobados en nuestros cursos de preparación C1 Advanced. Realizamos simulacros de examen periódicos y os proporcionamos materiales actualizados para que lleguéis al examen con total confianza.',
@@ -97,7 +97,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
           '<p>Según la experiencia de nuestros alumnos, las secciones que más cuestan son el Use of English, por la precisión gramatical y léxica requerida, y el Writing, por la necesidad de producir textos bien estructurados bajo presión de tiempo. El Speaking también genera ansiedad, aunque con práctica regular y simulacros se puede dominar. Es importante que dediquéis tiempo a cada sección de forma proporcional a vuestra dificultad personal, sin descuidar ninguna destreza.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Superad el C1 Advanced con la preparación de Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial de Cambridge, sabemos lo que el C1 Advanced exige y os preparamos para afrontarlo con seguridad. Nuestros profesores especializados conocen cada parte del examen y trabajan con grupos reducidos para garantizar atención individualizada. Con un 100% de aprobados en nuestros cursos de preparación, tenemos la experiencia para llevaros al éxito. Realizamos simulacros reales y os enseñamos las estrategias que marcan la diferencia el día del examen.',
@@ -164,7 +164,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
           '<p>En las oposiciones en España, un certificado C1 de Cambridge puede sumar puntos decisivos en el baremo de méritos. Cuerpos como diplomáticos, técnicos de la Unión Europea, profesorado de idiomas y funcionarios de organismos internacionales requieren o valoran especialmente este nivel. Además, en comunidades autónomas como Madrid, el C1 es requisito para programas bilingües en educación. Obtener el Cambridge C1 Advanced no solo mejora vuestra empleabilidad sino que os abre puertas a carreras públicas de alto nivel.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Impulsad vuestra carrera con el C1 de Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial de Cambridge, os preparamos para obtener el C1 Advanced y dar un salto en vuestra carrera profesional. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos y un enfoque práctico orientado al mundo laboral. Con un historial del 100% de aprobados, nuestra preparación está diseñada para que alcancéis vuestro objetivo con la máxima eficacia y confianza.',
@@ -231,7 +231,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
           '<p>Si vuestro objetivo es certificar un nivel alto de inglés para el mercado laboral europeo, oposiciones en España o estudios universitarios dentro de la UE, el C1 Advanced es generalmente la mejor opción por su prestigio y validez permanente. El IELTS suele ser preferido para procesos de migración a países anglosajones como Australia, Canadá o Nueva Zelanda, y para admisión en universidades del Reino Unido y EE.UU. que lo solicitan específicamente. Evaluad vuestras necesidades concretas antes de decidir.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Preparaos para el C1 Advanced en Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial de Cambridge, os orientamos sobre qué examen se adapta mejor a vuestros objetivos y os preparamos específicamente para el C1 Advanced. Nuestros profesores especializados trabajan con grupos reducidos, ofreciendo simulacros reales y estrategias probadas. Con un 100% de aprobados, os garantizamos una preparación de calidad que os llevará al éxito en el examen.',
@@ -298,7 +298,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
           '<p>Aunque el estudio autónomo es importante, las clases guiadas con profesores especializados aceleran significativamente la preparación. Un profesor experimentado os corrige errores que no detectaríais por vuestra cuenta, os enseña técnicas de examen específicas y os proporciona práctica de Speaking real con feedback inmediato. La combinación ideal es complementar las horas de clase con trabajo individual: lectura extensiva, series y podcasts en inglés, y práctica con exámenes oficiales pasados. Este enfoque mixto maximiza el rendimiento de cada hora invertida.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Optimizad vuestra preparación C1 con Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial de Cambridge, diseñamos planes de estudio personalizados para que aprovechéis al máximo cada hora de preparación. Nuestros profesores especializados en el C1 Advanced trabajan con grupos reducidos y os guían con materiales actualizados y simulacros reales. Con un 100% de aprobados, nuestra metodología está probada para llevaros al éxito de la forma más eficiente posible.',
@@ -365,7 +365,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
           '<p>Independientemente de la validez del certificado, lo más importante es mantener vuestro nivel de inglés activo. El idioma se puede perder si no se practica con regularidad. Leed prensa internacional, mantened conversaciones en inglés, consumid contenido audiovisual sin subtítulos y, si es posible, utilizad el inglés en vuestro entorno laboral. De esta forma, aunque vuestro certificado tenga varios años, vuestro nivel real seguirá siendo C1 y podréis demostrarlo en cualquier entrevista o prueba que os soliciten.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Certificad vuestro C1 con Impulse English Academy',
       content:
         'En Impulse English Academy, Centro Preparador Oficial de Cambridge, os ayudamos a obtener el C1 Advanced con una preparación completa y eficaz. Nuestros profesores especializados trabajan con grupos reducidos y materiales oficiales actualizados. Con un historial del 100% de aprobados, os garantizamos una formación de calidad que os permitirá conseguir un certificado válido de por vida y de reconocimiento internacional.',
@@ -432,7 +432,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
           '<p>El momento ideal para dar el salto depende de vuestros objetivos. Si necesitáis el inglés para trabajar en entornos internacionales, acceder a másteres en universidades de prestigio o destacar en oposiciones, el C1 os abrirá puertas que el B2 no puede. También es recomendable si os sentís estancados en el B2 y queréis un reto que os obligue a profundizar en el idioma. Lo importante es que tengáis un B2 sólido antes de empezar la preparación del C1, ya que intentar el salto sin una base firme puede resultar frustrante y contraproducente.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Dad el salto de B2 a C1 con Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial de Cambridge, os acompañamos en la transición de B2 a C1 con un programa diseñado para maximizar vuestro progreso. Nuestros profesores especializados trabajan con grupos reducidos y una metodología centrada en las competencias que marcan la diferencia en el C1 Advanced. Con un 100% de aprobados, tenemos la experiencia para llevaros al siguiente nivel con seguridad y eficacia.',
@@ -504,7 +504,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
           '<p>Si tenéis un nivel alto de inglés pero no habéis hecho el B2 First, vuestra preparación para el C1 Advanced debe incluir una fase inicial de familiarización con el formato de exámenes Cambridge. Dedicad las primeras semanas a conocer los tipos de tareas, los criterios de evaluación y las estrategias específicas de cada sección. Es especialmente importante trabajar el Use of English, que es la parte más técnica y específica del examen. Un curso de preparación con profesores especializados os ahorrará tiempo y os proporcionará la orientación necesaria para abordar el examen con garantías.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Preparad el C1 Advanced desde cualquier punto de partida',
       content:
         'En Impulse English Academy, Centro Preparador Oficial de Cambridge, evaluamos vuestro nivel real con una prueba de nivel gratuita y diseñamos el plan de preparación más adecuado para vosotros. Nuestros profesores especializados trabajan con grupos reducidos, adaptándose a las necesidades de cada alumno. Con un 100% de aprobados en el C1 Advanced, os garantizamos una preparación rigurosa y eficaz, tengáis o no un certificado B2 previo.',
@@ -576,7 +576,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
           '<p>Para situaros en el 75% que aprueba (o incluso aspirar al grado A), seguid estas recomendaciones: realizad un mínimo de 200 horas de preparación específica, completad al menos cinco exámenes de práctica completos cronometrados, trabajad con materiales oficiales de Cambridge y contad con un profesor que os dé feedback detallado de vuestras redacciones y expresión oral. También es fundamental gestionar el estrés del día del examen. Practicad técnicas de gestión del tiempo y aseguraos de conocer perfectamente la logística del examen para evitar sorpresas que afecten a vuestro rendimiento.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Aprobad el C1 Advanced con Impulse',
       content:
         'En Impulse English Academy, Centro Preparador Oficial de Cambridge, superamos ampliamente la media de aprobados: nuestro historial es del 100% de aprobados en el C1 Advanced. Nuestros profesores especializados trabajan con grupos reducidos, realizan simulacros en condiciones reales de examen y proporcionan correcciones detalladas de cada destreza. Con nuestra preparación, no solo aprobaréis, sino que lo haréis con la mejor calificación posible.',
@@ -643,7 +643,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
           '<p>A diferencia de otros certificados que caducan, el Cambridge C1 Advanced es válido de por vida, lo que lo convierte en una inversión a largo plazo. El coste del examen y la preparación se amortiza con creces a lo largo de vuestra carrera profesional y académica. En España, donde el nivel medio de inglés sigue siendo mejorable, contar con un C1 certificado os posiciona en una minoría cualificada que destaca en cualquier proceso selectivo. Considerando que la demanda de profesionales con inglés avanzado sigue creciendo, obtener el C1 Advanced hoy es una decisión estratégica para vuestro futuro.</p>',
       },
     ],
-    impulseSection: {
+    brandSection: {
       heading: 'Conseguid el C1 Advanced con Impulse en Madrid',
       content:
         'En Impulse English Academy, Centro Preparador Oficial de Cambridge en Madrid, os preparamos para obtener el C1 Advanced con la máxima garantía de éxito. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos, materiales oficiales y simulacros reales. Con un historial del 100% de aprobados, somos la academia de confianza para dar el paso definitivo en vuestro nivel de inglés. Reservad vuestra prueba de nivel gratuita y empezad a preparar vuestro futuro.',

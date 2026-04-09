@@ -16,7 +16,7 @@ contextSections:
   - heading: Mantened vuestro nivel C1 actualizado
     content: |
       <p>Independientemente de la validez del certificado, lo más importante es mantener vuestro nivel de inglés activo. El idioma se puede perder si no se practica con regularidad. Leed prensa internacional, mantened conversaciones en inglés, consumid contenido audiovisual sin subtítulos y, si es posible, utilizad el inglés en vuestro entorno laboral. De esta forma, aunque vuestro certificado tenga varios años, vuestro nivel real seguirá siendo C1 y podréis demostrarlo en cualquier entrevista o prueba que os soliciten.</p>
-impulseSection:
+brandSection:
   heading: Certificad vuestro C1 con Impulse English Academy
   content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, os ayudamos a obtener el C1 Advanced con una preparación completa y eficaz. Nuestros profesores especializados trabajan con grupos reducidos y materiales oficiales actualizados. Con un historial del 100% de aprobados, os garantizamos una formación de calidad que os permitirá conseguir un certificado válido de por vida y de reconocimiento internacional."
   ctaLinks:

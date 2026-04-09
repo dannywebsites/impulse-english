@@ -16,7 +16,7 @@ contextSections:
   - heading: Estructura y duración del examen B2 First
     content: |
       <p>El examen B2 First tiene una duración total de aproximadamente 3 horas y 30 minutos, repartidos en cuatro pruebas. Reading & Use of English ocupa 75 minutos y evalúa tanto la comprensión lectora como el dominio gramatical y léxico. Writing dura 80 minutos e incluye la redacción de dos textos de diferente tipología.</p><p>La prueba de Listening se extiende durante 40 minutos y evalúa la comprensión auditiva mediante distintos formatos de audio. Por último, el Speaking dura 14 minutos, se realiza en parejas y valora vuestra capacidad de interacción oral. Conocer bien la estructura os ayudará a distribuir mejor la energía y la concentración durante el examen.</p>
-impulseSection:
+brandSection:
   heading: Consigue tu B2 First de por vida con Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, os preparamos para obtener un certificado que os acompañará toda la vida. Con un 100% de aprobados en 2024-2025, grupos reducidos de máximo 10 alumnos y simulacros mensuales en condiciones reales de examen, nuestros profesores certificados TEFL/CELTA os garantizan la mejor preparación posible para el B2 First."
   ctaLinks:

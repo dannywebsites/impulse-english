@@ -16,7 +16,7 @@ contextSections:
   - heading: Lo que no cambia entre ambos formatos
     content: |
       <p>Es fundamental que tengáis claro que el contenido, la dificultad y la certificación son exactamente iguales en ambos formatos. Las preguntas siguen la misma estructura, los criterios de evaluación son idénticos y el certificado que recibís tiene el mismo valor y reconocimiento internacional.</p><p>La prueba de Speaking es presencial en ambos casos: os sentaréis frente a dos examinadores con otro candidato, independientemente de si habéis realizado el resto del examen en papel o en ordenador. Elegid el formato en función de vuestra comodidad personal y de los plazos que necesitéis para recibir los resultados, no por diferencias de contenido o dificultad.</p>
-impulseSection:
+brandSection:
   heading: Te preparamos para el B2 First en cualquier formato
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, os preparamos tanto para el formato papel como para el ordenador. Nuestros simulacros mensuales replican ambas modalidades para que el día del examen no tengáis sorpresas. Con grupos reducidos de máximo 10 alumnos, profesores certificados TEFL/CELTA y un 100% de aprobados en 2024-2025, os asesoramos sobre qué formato se ajusta mejor a vuestro perfil."
   ctaLinks:
