@@ -12,7 +12,7 @@ This milestone converts the Impulse English Academy website from a one-off produ
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: LeadForm Hardening** - Secure, reliable lead capture with error feedback and bot protection
+- [x] **Phase 1: LeadForm Hardening** - Secure, reliable lead capture with error feedback and bot protection (completed 2026-04-09)
 - [ ] **Phase 2: Image Consolidation** - All S3 images moved to local assets with central registry
 - [ ] **Phase 3: Image Optimization** - Astro native image pipeline replaces hand-rolled system
 - [ ] **Phase 4: Client Onboarding CLI** - Interactive question flow generates fully configured website
@@ -32,8 +32,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Infrastructure: sonner install, astro:env schema, .env.example
-- [ ] 01-02-PLAN.md — Main LeadForm: all four hardening changes + Toaster in BaseLayout
-- [ ] 01-03-PLAN.md — seo-system LeadForm: adapted hardening for Vite/React Router context
+- [x] 01-02-PLAN.md — Main LeadForm: all four hardening changes + Toaster in BaseLayout
+- [x] 01-03-PLAN.md — seo-system LeadForm: adapted hardening for Vite/React Router context
 
 ### Phase 2: Image Consolidation
 **Goal**: Every production image lives in src/assets/images/ and is referenced through a single central registry — no S3 URLs remain in source code
@@ -73,7 +73,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. LeadForm Hardening | 1/3 | In Progress|  |
+| 1. LeadForm Hardening | 3/3 | Complete   | 2026-04-09 |
 | 2. Image Consolidation | 0/? | Not started | - |
 | 3. Image Optimization | 0/? | Not started | - |
 | 4. Client Onboarding CLI | 0/? | Not started | - |

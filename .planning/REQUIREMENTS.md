@@ -7,12 +7,12 @@
 
 ### Lead Form
 
-- [ ] **FORM-01**: LeadForm webhook URL is read from environment variable via astro:env, not hardcoded in component
-- [ ] **FORM-02**: LeadForm checks response.ok after fetch and throws on HTTP 4xx/5xx errors (fixes silent lead loss)
-- [ ] **FORM-03**: User sees a visible error message with retry option when form submission fails
-- [ ] **FORM-04**: LeadForm includes a honeypot field using off-screen CSS positioning (not display:none) with tabIndex={-1} and autoComplete="one-time-code"
-- [ ] **FORM-05**: Bot submissions (honeypot filled) return fake success without hitting webhook
-- [ ] **FORM-06**: Sonner toast library added for error/success notifications in LeadForm
+- [x] **FORM-01**: LeadForm webhook URL is read from environment variable via astro:env, not hardcoded in component
+- [x] **FORM-02**: LeadForm checks response.ok after fetch and throws on HTTP 4xx/5xx errors (fixes silent lead loss)
+- [x] **FORM-03**: User sees a visible error message with retry option when form submission fails
+- [x] **FORM-04**: LeadForm includes a honeypot field using off-screen CSS positioning (not display:none) with tabIndex={-1} and autoComplete="one-time-code"
+- [x] **FORM-05**: Bot submissions (honeypot filled) return fake success without hitting webhook
+- [x] **FORM-06**: Sonner toast library added for error/success notifications in LeadForm
 
 ### Image Consolidation
 
@@ -85,12 +85,12 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FORM-01 | Phase 1 | Pending |
-| FORM-02 | Phase 1 | Pending |
-| FORM-03 | Phase 1 | Pending |
-| FORM-04 | Phase 1 | Pending |
-| FORM-05 | Phase 1 | Pending |
-| FORM-06 | Phase 1 | Pending |
+| FORM-01 | Phase 1 | Complete |
+| FORM-02 | Phase 1 | Complete |
+| FORM-03 | Phase 1 | Complete |
+| FORM-04 | Phase 1 | Complete |
+| FORM-05 | Phase 1 | Complete |
+| FORM-06 | Phase 1 | Complete |
 | IMG-01 | Phase 2 | Pending |
 | IMG-02 | Phase 2 | Pending |
 | IMG-03 | Phase 2 | Pending |
