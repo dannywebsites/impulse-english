@@ -38,6 +38,9 @@ brand/
 logos/
 reports/
 
+# Onboarding drafts
+.draft/
+
 # Legacy/duplicate files
 package 2.json
 divi-legacy-redirects.csv
