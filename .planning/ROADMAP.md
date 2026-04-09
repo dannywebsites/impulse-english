@@ -97,7 +97,11 @@ Plans:
   2. SEOHead.tsx reads site name, base URL, and author from napData — no duplicate constants
   3. site.webmanifest reads brand name from config and icon paths resolve to existing files
   4. After running `npm run onboard` with test data, none of the above files contain "Impulse", "G-WN5973VY1M", "AW-11461982741", or "GTM-TDC7CQDD"
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
+- [ ] 05-02-PLAN.md — Extend onboarding CLI with tracking questions, webmanifest generator, verification
 
 ### Phase 6: Component Debranding
 **Goal**: All React and Astro components read brand name, location, and display text from napData/brand-config — no visible Impulse references remain in component source
@@ -110,7 +114,11 @@ Plans:
   3. LeadForm.tsx GTM dataLayer reads location from napData, not hardcoded "Barrio del Pilar"
   4. seo-system App.tsx mounts `<Toaster />` so toast notifications are visible
   5. `ImpulseSection` type/schema renamed to brand-agnostic name across types.ts and config.ts
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
+- [ ] 05-02-PLAN.md — Extend onboarding CLI with tracking questions, webmanifest generator, verification
 
 ### Phase 7: Content Debranding
 **Goal**: All page meta tags and article content use brand-config values — a grep for "Impulse" in .astro pages and article data returns zero results
@@ -121,7 +129,11 @@ Plans:
   1. All 18 .astro page files read meta titles, descriptions, and keywords from napData/brand-config or a page data file — no hardcoded "Impulse" strings
   2. Article data in data/articles/ and src/content/articles/ references brand name through a template variable or config import — not literal "Impulse English Academy"
   3. After running `npm run onboard` with test data and `npm run build`, zero "Impulse" strings appear in the generated dist/ output
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
+- [ ] 05-02-PLAN.md — Extend onboarding CLI with tracking questions, webmanifest generator, verification
 
 ### Phase 8: Auto-Publish Pipeline Decouple
 **Goal**: auto-publish.js reads all brand identity and image URLs from brand-config.ts — the SEO pipeline generates correctly branded articles for any client
@@ -132,7 +144,11 @@ Plans:
   1. auto-publish.js imports brand name, voice, and content rules from brand-config.ts — the hardcoded BRAND block is deleted
   2. Article image selection uses the central image registry (utils/images.ts) — no hardcoded S3 URLs remain in the script
   3. Running the pipeline after onboarding with test client data produces articles with the test client's brand name, not "Impulse"
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
+- [ ] 05-02-PLAN.md — Extend onboarding CLI with tracking questions, webmanifest generator, verification
 
 ## Progress
 
