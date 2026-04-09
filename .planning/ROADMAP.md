@@ -63,7 +63,7 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Move images to src/assets/ + create images-astro.ts registry
+- [x] 03-01-PLAN.md — Move images to src/assets/ + create images-astro.ts registry
 - [ ] 03-02-PLAN.md — Migrate homepage hero, favicons, TeamSection, CoursesSection to Astro pipeline
 - [ ] 03-03-PLAN.md — Migrate 13 React page components to getImage() props
 - [ ] 03-04-PLAN.md — Delete hand-rolled system, clean up types, visual verification
@@ -88,5 +88,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. LeadForm Hardening | 3/3 | Complete   | 2026-04-09 |
 | 2. Image Consolidation | 5/5 | Complete | 2026-04-09 |
-| 3. Image Optimization | 0/4 | Planned | - |
+| 3. Image Optimization | 1/4 | In Progress|  |
 | 4. Client Onboarding CLI | 0/? | Not started | - |
