@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-09 after Phase 6 completion (components debranded — Logo, Navbar, Footer, CoursePageLayout, CookieBanner, LeadForm, PAAArticlePage read from NAP; ImpulseSection→BrandSection; FORM-06 closed)*
+*Last updated: 2026-04-09 after Phase 7 completion (content debranded — 16 .astro page meta tags + 2 TS article files use NAP imports; CLI replaces markdown + astro residuals during onboarding)*
