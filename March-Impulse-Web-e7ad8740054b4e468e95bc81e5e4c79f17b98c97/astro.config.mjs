@@ -1,6 +1,10 @@
 import { defineConfig, envField } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
@@ -17,7 +21,7 @@ export default defineConfig({
   // Redirects handled exclusively by vercel.json (single source of truth)
   vite: {
     resolve: {
-      alias: { '@': '.' }
+      alias: { '@': __dirname }
     }
   },
   env: {
