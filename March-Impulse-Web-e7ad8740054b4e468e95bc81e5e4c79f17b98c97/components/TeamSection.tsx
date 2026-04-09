@@ -1,8 +1,14 @@
 import React from 'react';
-import { teamImages } from '@/utils/images';
-import OptimizedImage from './OptimizedImage';
 
-export default function TeamSection() {
+interface TeamSectionProps {
+  teamImageSrc?: string;
+  teamImageAlt?: string;
+}
+
+export default function TeamSection({
+  teamImageSrc = '/images/academy/team/jp-with-students.jpg',
+  teamImageAlt = 'Profesores y estudiantes de inglés en Impulse English Academy',
+}: TeamSectionProps) {
   return (
     <section className="w-full bg-zinc-50 py-16 md:py-24 px-6 border-t border-zinc-100">
       <div className="max-w-7xl mx-auto">
@@ -11,11 +17,11 @@ export default function TeamSection() {
           {/* Image Side */}
           <div className="relative order-2 lg:order-1">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <OptimizedImage
-                image={teamImages.estudiantesSonriendo}
-                className="w-full h-auto object-cover"
+              <img
+                src={teamImageSrc}
+                alt={teamImageAlt}
+                className="w-full h-auto object-cover rounded-2xl"
                 loading="lazy"
-                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>
