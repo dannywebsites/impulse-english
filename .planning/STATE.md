@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Completed 04-01-PLAN.md (client onboarding CLI)
-last_updated: "2026-04-09T16:04:51.047Z"
+status: verifying
+stopped_at: Completed 04-02-PLAN.md (onboarding CLI integration test)
+last_updated: "2026-04-09T16:09:05.810Z"
 last_activity: 2026-04-09
 progress:
   total_phases: 4
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 14
-  completed_plans: 13
+  completed_plans: 14
   percent: 0
 ---
 
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-04-09)
 
 Phase: 04 (client-onboarding-cli) — EXECUTING
 Plan: 2 of 2
-Status: Ready to execute
+Status: Phase complete — ready for verification
 Last activity: 2026-04-09
 
 Progress: [░░░░░░░░░░] 0%
@@ -65,6 +65,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 03 P03 | 9m | 2 tasks | 25 files |
 | Phase 03 P04 | 8m | 2 tasks | 246 files |
 | Phase 04-client-onboarding-cli P01 | 8m | 2 tasks | 4 files |
+| Phase 04-client-onboarding-cli P02 | 2m | 2 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -102,6 +103,8 @@ Recent decisions affecting current work:
 - [Phase 03]: napData.ts logo/image updated from /images/optimized/ to /images/academy/logos/img-4117.png
 - [Phase 04-client-onboarding-cli]: categoryTopicRef uses Impulse defaults in generated brand-config.ts with comment to update for non-English-academy clients — avoids complex editor prompt for rarely-changed mapping
 - [Phase 04-client-onboarding-cli]: napData helper functions generated as known template content rather than reading original file at runtime — simpler and stable since they only reference NAP.*
+- [Phase 04-client-onboarding-cli]: Build verification requires PUBLIC_WEBHOOK_URL env var — pre-existing Astro env schema requirement, unrelated to generators
+- [Phase 04-client-onboarding-cli]: Named exports added to onboard-client.js for generator testability — kept permanently since they don't affect runtime
 
 ### Pending Todos
 
@@ -115,6 +118,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-09T16:04:51.041Z
-Stopped at: Completed 04-01-PLAN.md (client onboarding CLI)
+Last session: 2026-04-09T16:09:05.808Z
+Stopped at: Completed 04-02-PLAN.md (onboarding CLI integration test)
 Resume file: None

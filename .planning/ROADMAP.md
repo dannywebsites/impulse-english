@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: LeadForm Hardening** - Secure, reliable lead capture with error feedback and bot protection (completed 2026-04-09)
 - [ ] **Phase 2: Image Consolidation** - All S3 images moved to local assets with central registry
 - [x] **Phase 3: Image Optimization** - Astro native image pipeline replaces hand-rolled system (completed 2026-04-09)
-- [ ] **Phase 4: Client Onboarding CLI** - Interactive question flow generates fully configured website
+- [x] **Phase 4: Client Onboarding CLI** - Interactive question flow generates fully configured website (completed 2026-04-09)
 
 ## Phase Details
 
@@ -81,7 +81,7 @@ Plans:
 
 Plans:
 - [x] 04-01-PLAN.md — Create complete CLI script with guard, 8-category question flow, 4 file generators, draft/diff/promotion UX, and build verification
-- [ ] 04-02-PLAN.md — Integration test of generated files against TypeScript compiler + human verification of interactive UX
+- [x] 04-02-PLAN.md — Integration test of generated files against TypeScript compiler + human verification of interactive UX
 
 ## Progress
 
@@ -93,4 +93,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. LeadForm Hardening | 3/3 | Complete   | 2026-04-09 |
 | 2. Image Consolidation | 5/5 | Complete | 2026-04-09 |
 | 3. Image Optimization | 4/4 | Complete   | 2026-04-09 |
-| 4. Client Onboarding CLI | 1/2 | In Progress|  |
+| 4. Client Onboarding CLI | 2/2 | Complete   | 2026-04-09 |
