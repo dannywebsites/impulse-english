@@ -16,7 +16,7 @@
 
 ### Image Consolidation
 
-- [ ] **IMG-01**: All S3-hosted images used by production components are downloaded to src/assets/images/
+- [ ] **IMG-01**: All S3-hosted images used by production components are downloaded to public/images/academy/ (Phase 3 migrates to src/assets/images/ for Astro pipeline)
 - [ ] **IMG-02**: Central image registry file (utils/images.ts) exports all image imports from one location
 - [ ] **IMG-03**: All component files reference images through the central registry, not direct S3 URLs
 - [ ] **IMG-04**: seo-system mirrored components updated to use local image paths in the same changeset

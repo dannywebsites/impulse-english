@@ -15,11 +15,11 @@ Move every S3-hosted image to local `src/assets/images/` and route all image ref
 
 ### Registry Architecture
 - **D-01:** Create `utils/images.ts` as the single canonical image registry. Organize exports as category-based objects (facilities, logos, blog, team, partners, locations, etc.) matching the semantic groupings already present in `src/data/images.ts` and `src/data/academyImages.ts`.
-- **D-02:** Each image entry exports: `name`, `alt` (Spanish), `altEn` (English), `category`, and a local import reference. The import uses Astro-compatible static imports from `src/assets/images/`.
+- **D-02:** Each image entry exports: `name`, `alt` (Spanish), `altEn` (English), `category`, and a local URL string path. Images live in `public/images/academy/` so URL strings (`/images/academy/...`) work in both Astro SSG and seo-system Vite SPA. Phase 3 migrates to `src/assets/images/` with Astro static imports when the image pipeline is configured. *(Amended: original said src/assets/images/ but research found seo-system Vite SPA cannot consume Astro static imports — public/ with URL strings is the cross-system compatible approach for Phase 2.)*
 - **D-03:** After `utils/images.ts` is established, delete `src/data/images.ts` and `src/data/academyImages.ts` — consolidate their contents into the single registry. Update all consumers.
 
 ### Image Download & Organization
-- **D-04:** Download all 73 unique S3 images to `src/assets/images/` with category subdirectories: `facilities/`, `logos/`, `blog/`, `team/`, `partners/`, `locations/`, `general/`. This keeps the directory navigable.
+- **D-04:** Download all 73 unique S3 images to `public/images/academy/` with category subdirectories: `facilities/`, `logos/`, `blog/`, `team/`, `partners/`, `locations/`, `general/`. This keeps the directory navigable. *(Amended: changed from src/assets/images/ to public/images/academy/ per D-02 rationale — seo-system cross-compatibility. Phase 3 moves to src/assets/ for Astro pipeline.)*
 - **D-05:** Use original filenames from S3 where possible, cleaned to kebab-case (no URL-encoded `+` signs, no ALL CAPS). Preserve file extensions as-is (jpg, png, webp).
 - **D-06:** The `public/images/optimized/` directory (194 files from hand-rolled optimization) is NOT deleted in this phase — it's referenced by the existing `src/data/images.ts` responsive variants. Phase 3 handles replacing these with Astro's native pipeline. For Phase 2, the registry maps these local paths for images that already have optimized variants.
 
