@@ -77,7 +77,11 @@ Plans:
   2. The script halts with an error if run against the production Impulse repo (TEMPLATE_MODE guard active)
   3. Draft files require explicit human confirmation before being promoted to final files — the originals are never overwritten silently
   4. After confirmation, running npm run build against the generated config succeeds without TypeScript or Astro errors
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 04-01-PLAN.md — Create complete CLI script with guard, 8-category question flow, 4 file generators, draft/diff/promotion UX, and build verification
+- [ ] 04-02-PLAN.md — Integration test of generated files against TypeScript compiler + human verification of interactive UX
 
 ## Progress
 
@@ -89,4 +93,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. LeadForm Hardening | 3/3 | Complete   | 2026-04-09 |
 | 2. Image Consolidation | 5/5 | Complete | 2026-04-09 |
 | 3. Image Optimization | 4/4 | Complete   | 2026-04-09 |
-| 4. Client Onboarding CLI | 0/? | Not started | - |
+| 4. Client Onboarding CLI | 0/2 | Not started | - |
