@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import { blogImages } from '@/utils/images';
 
 const tableOfContents = [
   { id: 'materiales-oficiales', title: 'Materiales oficiales de Cambridge para la preparación' },
@@ -84,7 +85,7 @@ export default function LibrosCambridgeRecursosPage() {
         {/* Hero Section */}
         <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
           <div className="absolute inset-0">
-            <img src="/images/academy/facilities/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg" alt="Certificado Cambridge English centro oficial Impulse Academy" className="w-full h-full object-cover" loading="eager" />
+            <img src={blogImages.cambridgeCertificate.url} alt="Certificado Cambridge English centro oficial Impulse Academy" className="w-full h-full object-cover" loading="eager" />
             <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
           </div>
           <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import { blogImages } from '@/utils/images';
 
 export const articleSchema = generateArticleSchema({
     headline: "Aprender Inglés con Podcasts: Los Mejores por Nivel (2026)",
@@ -53,7 +54,7 @@ export default function AprenderInglesPodcastsPage() {
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="/images/academy/facilities/technology-based-classroom-photo.jpg"
+                src={blogImages.technologyClassroom.url}
                 alt="Aprender inglés con podcasts en Impulse English Academy"
                 className="w-full h-full object-cover"
                 loading="eager"

@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import { blogImages } from '@/utils/images';
 
 export const articleSchema = generateArticleSchema({
     headline: "¿Por Qué No Entiendo el Inglés Hablado? Causas y Soluciones",
@@ -52,7 +53,7 @@ export default function NoEntiendoInglesHabladoPage() {
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="/images/academy/facilities/technology-based-classroom-photo.jpg"
+                src={blogImages.technologyClassroom.url}
                 alt="No entiendo el inglés hablado, comprensión oral"
                 className="w-full h-full object-cover"
                 loading="eager"

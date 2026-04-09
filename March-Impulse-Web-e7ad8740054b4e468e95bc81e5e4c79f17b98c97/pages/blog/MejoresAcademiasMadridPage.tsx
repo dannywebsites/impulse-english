@@ -7,6 +7,7 @@ import FAQSection from '../../components/FAQSection';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
+import { blogImages } from '@/utils/images';
 
 export const articleSchema = generateArticleSchema({
   headline: "Mejores Academias de Inglés en Madrid 2026: Guía Comparativa",
@@ -72,7 +73,7 @@ export default function MejoresAcademiasMadridPage() {
         {/* Hero Section */}
         <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
           <div className="absolute inset-0">
-            <img src="/images/academy/facilities/classroom-facilities-main-classroom.jpg" alt="Aula de academia de inglés en Madrid - Impulse English Academy" className="w-full h-full object-cover" loading="eager" />
+            <img src={blogImages.mainClassroom.url} alt="Aula de academia de inglés en Madrid - Impulse English Academy" className="w-full h-full object-cover" loading="eager" />
             <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
           </div>
           <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
@@ -113,7 +114,7 @@ export default function MejoresAcademiasMadridPage() {
         <div className="relative -mt-8 mb-12 px-6">
           <div className="container mx-auto max-w-5xl">
             <img
-              src="/images/academy/facilities/classroom-facilities-main-classroom.jpg"
+              src={blogImages.mainClassroom.url}
               alt="Mejores academias de inglés en Madrid - comparativa 2026"
               className="w-full h-64 md:h-96 object-cover rounded-2xl shadow-xl"
             />
