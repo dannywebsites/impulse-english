@@ -12,8 +12,7 @@ import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import SEOHead from '../../components/SEOHead';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
-import { infantilImages as galleryImages } from '../../src/data/academyImages';
-import { infantilImages as heroImages } from '../../src/data/images';
+import { infantilGalleryImages as galleryImages, infantilImages as heroImages } from '../../../utils/images';
 
 const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Infantil (2-5 años)",
@@ -23,7 +22,7 @@ const courseSchema = generateCourseSchema({
   educationalLevel: "Preschool",
   timeRequired: "PT1H",
   price: "64",
-  image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+  image: "/images/academy/logos/img-4117.png"
 });
 
 

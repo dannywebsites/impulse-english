@@ -7,7 +7,7 @@ import LazyVideo from '../components/LazyVideo';
 import OptimizedImage from '../components/OptimizedImage';
 import Breadcrumb from '../components/Breadcrumb';
 import SEOHead from '../components/SEOHead';
-import { facilityImages, certificationImages } from '../src/data/images';
+import { facilityImages, certificationImages } from '../../utils/images';
 
 const videoTestimonials = [
   {

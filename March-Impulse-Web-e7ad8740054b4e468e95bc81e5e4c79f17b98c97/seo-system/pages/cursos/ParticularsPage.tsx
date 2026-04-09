@@ -10,7 +10,7 @@ import SchemaMarkup from '../../components/SchemaMarkup';
 import Breadcrumb from '../../components/Breadcrumb';
 import SEOHead from '../../components/SEOHead';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
-import { facilityImages, brandingImages, s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
+import { facilityImages, brandingImages, s3CambridgeImages, s3SecondaryImages } from '../../../utils/images';
 
 const courseSchema = generateCourseSchema({
   name: "Clases Particulares de Inglés (1:1)",
@@ -20,33 +20,33 @@ const courseSchema = generateCourseSchema({
   educationalLevel: "All Levels",
   timeRequired: "PT1H",
   price: "495",
-  image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+  image: "/images/academy/logos/img-4117.png"
 });
 
-// S3 images for bottom gallery section - focused on adults and one-to-one
+// Local images for bottom gallery section - focused on adults and one-to-one
 const courseGalleryImages = [
   {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Adult+one-to-one+classes.JPG",
+    url: "/images/academy/facilities/adult-one-to-one-classes.jpg",
     alt: "Clases particulares one-to-one inglés La Vaguada Barrio del Pilar Madrid"
   },
   {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg",
+    url: "/images/academy/team/jp-with-students.jpg",
     alt: "Profesor JP con estudiantes adultos y certificados Cambridge La Vaguada Madrid"
   },
   {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/LARA+C1+CERT.JPEG",
+    url: "/images/academy/students/lara-c1-cert.jpeg",
     alt: "Lara con certificado Cambridge C1 Advanced academia La Vaguada Madrid"
   },
   {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/Cambridge+search.JPEG",
+    url: "/images/academy/logos/cambridge-search.jpeg",
     alt: "Búsqueda centro Cambridge oficial Impulse English Academy verificado"
   },
   {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png",
+    url: "/images/academy/logos/cambridge-logo-edited.png",
     alt: "Centro Preparador Oficial Cambridge English La Vaguada Madrid"
   },
   {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Daniel+helping+secondary+school+students.JPG",
+    url: "/images/academy/team/daniel-helping-secondary-school-students.jpg",
     alt: "Profesor Daniel ayudando estudiantes academia La Vaguada Barrio del Pilar"
   },
 ];

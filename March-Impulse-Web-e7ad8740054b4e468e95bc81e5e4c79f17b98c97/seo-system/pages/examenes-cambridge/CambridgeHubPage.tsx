@@ -10,7 +10,7 @@ import FAQSection from '../../components/FAQSection';
 import SchemaMarkup from '../../components/SchemaMarkup';
 import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
-import { s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
+import { s3CambridgeImages, s3SecondaryImages } from '../../../utils/images';
 
 // Article Schema for SEO
 const articleSchema = generateArticleSchema({
