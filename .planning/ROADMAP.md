@@ -19,7 +19,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 5: Critical Infrastructure Debranding** - Remove hardcoded tracking IDs, site names, and broken PWA manifest from core layout files (completed 2026-04-09)
 - [x] **Phase 6: Component Debranding** - Replace hardcoded Impulse references in React/Astro components with napData/brand-config imports (completed 2026-04-09)
 - [x] **Phase 7: Content Debranding** - Remove hardcoded Impulse references from page meta tags and article content (completed 2026-04-09)
-- [ ] **Phase 8: Auto-Publish Pipeline Decouple** - Connect auto-publish.js to brand-config.ts instead of hardcoded BRAND block
+- [x] **Phase 8: Auto-Publish Pipeline Decouple** - Connect auto-publish.js to brand-config.ts instead of hardcoded BRAND block (completed 2026-04-09)
 
 ## Phase Details
 
@@ -150,7 +150,7 @@ Plans:
 
 Plans:
 - [x] 08-01-PLAN.md — Replace hardcoded BRAND block and S3 IMAGE_CATALOG with brand-config.ts and utils/images.ts imports
-- [ ] 08-02-PLAN.md — Update onboarding CLI generator with pipeline fields + end-to-end verification
+- [x] 08-02-PLAN.md — Update onboarding CLI generator with pipeline fields + end-to-end verification
 
 ## Progress
 
@@ -166,4 +166,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 5. Critical Infrastructure Debranding | 2/2 | Complete   | 2026-04-09 |
 | 6. Component Debranding | 2/2 | Complete   | 2026-04-09 |
 | 7. Content Debranding | 2/2 | Complete   | 2026-04-09 |
-| 8. Auto-Publish Pipeline Decouple | 1/2 | In Progress|  |
+| 8. Auto-Publish Pipeline Decouple | 2/2 | Complete   | 2026-04-09 |
