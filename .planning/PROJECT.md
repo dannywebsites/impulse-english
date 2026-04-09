@@ -29,7 +29,7 @@ The template must be portable — changing `brand-config.ts`, `napData.ts`, and 
 
 - [x] LeadForm error feedback — Validated in Phase 1: LeadForm Hardening
 - [x] Webhook URL to env var — Validated in Phase 1: LeadForm Hardening
-- [ ] Image consolidation — move all S3-hosted images to local /assets/ directory
+- [x] Image consolidation — Validated in Phase 2: Image Consolidation (69 images to public/images/academy/, central registry at utils/images.ts)
 - [ ] Image optimization — implement Astro image pipeline (webp, srcset, lazy-loading) for all images
 - [x] Honeypot spam protection — Validated in Phase 1: LeadForm Hardening
 - [ ] Auto-publish integration — ensure pipeline auto-posts articles without manual intervention (approval workflow deferred)
@@ -74,7 +74,7 @@ The template must be portable — changing `brand-config.ts`, `napData.ts`, and 
 |----------|-----------|---------|
 | Move webhook URL to env var (not backend proxy) | Simpler, no new infrastructure needed, Vercel supports env vars natively | — Pending |
 | Honeypot over CAPTCHA/rate-limiting | Zero UX friction, no external dependencies, effective against most bots | — Pending |
-| Move S3 images to local /assets/ | Template portability — new clients won't have access to Impulse's S3 bucket | — Pending |
+| Move S3 images to local public/images/academy/ | Template portability — new clients won't have access to Impulse's S3 bucket | Phase 2 Complete |
 | Auto-post articles (no approval workflow) | Keep it simple now, revisit approval flow in future milestone | — Pending |
 | Skip GSC verification | User will provide code later, don't block template improvements on this | — Pending |
 | Client onboarding as core feature | Template's value prop is "give info, get website" — research agent + question flow + auto-build | — Pending |
@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-09 after Phase 1 completion*
+*Last updated: 2026-04-09 after Phase 2 completion*
