@@ -2,6 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PreguntasFrecuentesPage from '../../pages/PreguntasFrecuentesPage';
 import CookieBanner from '../../components/CookieBanner';
+import { getImage } from 'astro:assets';
+import { astroHeroImages } from '../../utils/images-astro';
+
+const heroImg = await getImage({
+  src: astroHeroImages.classroomLaVaguada,
+  format: 'webp',
+  width: 1920,
+  quality: 80,
+});
 ---
 
 <BaseLayout
@@ -10,6 +19,6 @@ import CookieBanner from '../../components/CookieBanner';
   keywords="preguntas frecuentes academia inglés, faq clases inglés madrid, dudas cambridge linguaskill, información cursos inglés"
   canonical="/preguntas-frecuentes"
 >
-  <PreguntasFrecuentesPage client:idle />
+  <PreguntasFrecuentesPage heroImageSrc={heroImg.src} client:idle />
   <CookieBanner client:idle />
 </BaseLayout>

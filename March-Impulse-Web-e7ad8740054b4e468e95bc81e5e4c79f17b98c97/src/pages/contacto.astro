@@ -2,6 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactoPage from '../../pages/ContactoPage';
 import CookieBanner from '../../components/CookieBanner';
+import { getImage } from 'astro:assets';
+import { astroHeroImages } from '../../utils/images-astro';
+
+const heroImg = await getImage({
+  src: astroHeroImages.outsideAcademy,
+  format: 'webp',
+  width: 1920,
+  quality: 80,
+});
 ---
 
 <BaseLayout
@@ -10,6 +19,6 @@ import CookieBanner from '../../components/CookieBanner';
   keywords="contacto academia inglés madrid, dirección impulse english, teléfono academia inglés la vaguada, horarios academia inglés"
   canonical="/contacto"
 >
-  <ContactoPage client:load />
+  <ContactoPage heroImageSrc={heroImg.src} client:load />
   <CookieBanner client:idle />
 </BaseLayout>

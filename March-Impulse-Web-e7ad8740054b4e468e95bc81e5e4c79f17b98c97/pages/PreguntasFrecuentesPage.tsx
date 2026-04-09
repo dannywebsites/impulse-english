@@ -342,7 +342,11 @@ function FAQAccordion({ section }: { section: FAQSection }) {
   );
 }
 
-export default function PreguntasFrecuentesPage() {
+interface PreguntasFrecuentesPageProps {
+  heroImageSrc?: string;
+}
+
+export default function PreguntasFrecuentesPage({ heroImageSrc }: PreguntasFrecuentesPageProps) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -354,11 +358,7 @@ export default function PreguntasFrecuentesPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">
-          <picture>
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/facilities-mobile.webp" type="image/webp" />
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/facilities-mobile.jpg" type="image/jpeg" />
-            <img src="/images/academy/facilities/photos-of-facilities.jpg" alt="Instalaciones Impulse English Academy La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
-          </picture>
+          <img src={heroImageSrc || '/images/academy/facilities/photos-of-facilities.jpg'} alt="Instalaciones Impulse English Academy La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
