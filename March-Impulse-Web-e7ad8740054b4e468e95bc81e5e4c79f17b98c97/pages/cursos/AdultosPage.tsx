@@ -4,12 +4,11 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
-import OptimizedImage from '../../components/OptimizedImage';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
-import { facilityImages } from '@/utils/images';
+
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés para Adultos",

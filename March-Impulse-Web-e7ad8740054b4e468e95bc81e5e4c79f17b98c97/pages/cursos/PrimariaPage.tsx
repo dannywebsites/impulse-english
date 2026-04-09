@@ -4,14 +4,12 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
-import OptimizedImage from '../../components/OptimizedImage';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import FullPhotoGallery from '../../components/FullPhotoGallery';
 import { primariaGalleryImages as galleryImages } from '@/utils/images';
-import { studentImages } from '@/utils/images';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Primaria (6-12 años)",
