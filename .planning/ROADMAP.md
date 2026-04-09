@@ -60,7 +60,13 @@ Plans:
   1. Hero images are served as avif/webp with loading="eager" via Astro's <Picture> component
   2. Non-hero images use loading="lazy" via Astro's <Image> component
   3. The files optimize-images.mjs and any manual srcset generation are deleted — the Astro pipeline handles all optimization at build time
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Move images to src/assets/ + create images-astro.ts registry
+- [ ] 03-02-PLAN.md — Migrate homepage hero, favicons, TeamSection, CoursesSection to Astro pipeline
+- [ ] 03-03-PLAN.md — Migrate 13 React page components to getImage() props
+- [ ] 03-04-PLAN.md — Delete hand-rolled system, clean up types, visual verification
 
 ### Phase 4: Client Onboarding CLI
 **Goal**: A developer can clone the repo, run a single CLI script, answer questions, and receive a fully configured website ready to build — without touching Impulse-specific config files manually
@@ -81,6 +87,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. LeadForm Hardening | 3/3 | Complete   | 2026-04-09 |
-| 2. Image Consolidation | 0/5 | Planned | - |
-| 3. Image Optimization | 0/? | Not started | - |
+| 2. Image Consolidation | 5/5 | Complete | 2026-04-09 |
+| 3. Image Optimization | 0/4 | Planned | - |
 | 4. Client Onboarding CLI | 0/? | Not started | - |
