@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-09 after Phase 7 completion (content debranded — 16 .astro page meta tags + 2 TS article files use NAP imports; CLI replaces markdown + astro residuals during onboarding)*
+*Last updated: 2026-04-09 after Phase 8 completion — ALL PHASES COMPLETE. auto-publish.js decoupled from hardcoded BRAND/S3 — imports brand-config.ts + blogImages. v1.0 milestone fully delivered.*
