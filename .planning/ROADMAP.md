@@ -134,8 +134,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
-- [ ] 05-02-PLAN.md — Extend onboarding CLI with tracking questions, webmanifest generator, verification
+- [ ] 07-01-PLAN.md — Debrand 16 .astro page meta tags + 2 TS article data files with NAP imports
+- [ ] 07-02-PLAN.md — Add markdown article debranding step to onboarding CLI
 
 ### Phase 8: Auto-Publish Pipeline Decouple
 **Goal**: auto-publish.js reads all brand identity and image URLs from brand-config.ts — the SEO pipeline generates correctly branded articles for any client
@@ -165,5 +165,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 4. Client Onboarding CLI | 2/2 | Complete   | 2026-04-09 |
 | 5. Critical Infrastructure Debranding | 2/2 | Complete   | 2026-04-09 |
 | 6. Component Debranding | 2/2 | Complete   | 2026-04-09 |
-| 7. Content Debranding | 0/0 | Pending | — |
+| 7. Content Debranding | 0/2 | Pending | — |
 | 8. Auto-Publish Pipeline Decouple | 0/0 | Pending | — |
