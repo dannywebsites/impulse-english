@@ -80,7 +80,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
           <a href="/" className="mb-8">
             <img
               src={LOGO_URL}
-              alt="Impulse English Academy"
+              alt={NAP.name}
               className="h-20 md:h-24 lg:h-28 w-auto"
               width="80"
               height="80"

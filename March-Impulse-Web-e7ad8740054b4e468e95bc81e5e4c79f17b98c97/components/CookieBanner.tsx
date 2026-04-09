@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { NAP } from '../utils/napData';
 
-const CONSENT_KEY = 'impulse_cookie_consent';
+const CONSENT_KEY = NAP.shortName.toLowerCase().replace(/\s+/g, '_') + '_cookie_consent';
 
 type ConsentStatus = 'pending' | 'accepted' | 'rejected';
 

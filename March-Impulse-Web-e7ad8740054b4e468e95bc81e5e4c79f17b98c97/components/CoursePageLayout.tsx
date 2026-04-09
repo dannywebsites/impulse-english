@@ -69,7 +69,7 @@ export default function CoursePageLayout({
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-accent-blue to-blue-900 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src={heroImage} alt={heroImageAlt || `${title} - Impulse English Academy La Vaguada Madrid`} className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
+          <img src={heroImage} alt={heroImageAlt || `${title} - ${NAP.name} ${NAP.city}`} className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-accent-blue/90 to-accent-blue/70"></div>
 

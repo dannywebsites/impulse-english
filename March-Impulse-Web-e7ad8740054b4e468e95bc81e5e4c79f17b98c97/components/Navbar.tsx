@@ -71,7 +71,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
             <a href="/" className="flex items-center">
               <img
                 src={LOGO_URL}
-                alt="Impulse English Academy"
+                alt={NAP.name}
                 className="h-[105px] md:h-20 lg:h-[100px] w-auto"
                 width="105"
                 height="105"
@@ -198,7 +198,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
           <a href="/" className="flex items-center">
             <img
               src={LOGO_URL}
-              alt="Impulse English Academy"
+              alt={NAP.name}
               className="h-[105px] md:h-20 lg:h-[100px] w-auto"
             />
           </a>

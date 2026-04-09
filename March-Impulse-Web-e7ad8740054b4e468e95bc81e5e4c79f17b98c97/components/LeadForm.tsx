@@ -46,7 +46,7 @@ export default function LeadForm({
         event: 'generate_lead',
         form_type: 'course_inquiry',
         course_name: formData.level || 'General',
-        location_preference: 'Barrio del Pilar',
+        location_preference: NAP.neighborhood,
       });
       window.location.href = '/gracias';
       return;
@@ -79,7 +79,7 @@ export default function LeadForm({
         event: 'generate_lead',
         form_type: 'course_inquiry',
         course_name: formData.level || 'General',
-        location_preference: 'Barrio del Pilar',
+        location_preference: NAP.neighborhood,
       });
 
       // FORM-06: Success toast before redirect (D-02)
