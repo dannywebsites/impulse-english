@@ -1,4 +1,5 @@
 import React from 'react';
+import { NAP } from '../utils/napData';
 
 interface LogoProps {
   className?: string;
@@ -11,6 +12,8 @@ export default function Logo({
 }: LogoProps) {
   const mainColor = dark ? "white" : "#0F2C59"; // accent-blue
   const secondaryColor = dark ? "rgba(255,255,255,0.8)" : "#0F2C59";
+  const [brandWord, ...rest] = NAP.shortName.split(' ');
+  const secondWord = rest.join(' ');
 
   return (
     <div className={`flex items-center gap-3 ${className}`}>
@@ -31,8 +34,8 @@ export default function Logo({
 
       {/* Text Graphic */}
       <div className="flex flex-col leading-none justify-center">
-        <span className={`font-bold text-xl tracking-tight uppercase ${dark ? "text-white" : "text-accent-blue"}`}>Impulse</span>
-        <span className={`font-medium text-[0.6rem] tracking-[0.2em] uppercase ${dark ? "text-white/80" : "text-zinc-500"}`}>Academy</span>
+        <span className={`font-bold text-xl tracking-tight uppercase ${dark ? "text-white" : "text-accent-blue"}`}>{brandWord}</span>
+        <span className={`font-medium text-[0.6rem] tracking-[0.2em] uppercase ${dark ? "text-white/80" : "text-zinc-500"}`}>{secondWord}</span>
       </div>
     </div>
   );

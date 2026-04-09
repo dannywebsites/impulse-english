@@ -10,6 +10,7 @@ import { businessInfo } from '../utils/schemaData';
 import { categoryConfig } from '../data/category-config';
 import { resolveInternalLinks } from '../data/internal-links';
 import type { PAAArticle, ArticleCard, ArticleImage } from '../data/articles/types';
+import { NAP } from '../utils/napData';
 
 interface PAAArticlePageProps {
   article: PAAArticle;
@@ -123,7 +124,7 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
               </span>
               <span className="flex items-center gap-1">
                 <BookOpen className="w-3.5 h-3.5" />
-                Impulse English Academy
+                {NAP.name}
               </span>
             </div>
           </div>
@@ -206,13 +207,13 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                {article.impulseSection.heading}
+                {article.brandSection.heading}
               </h2>
               <p className="text-white/85 leading-relaxed mb-6">
-                {article.impulseSection.content}
+                {article.brandSection.content}
               </p>
               <div className="flex flex-wrap gap-3">
-                {article.impulseSection.ctaLinks.map((cta, i) => (
+                {article.brandSection.ctaLinks.map((cta, i) => (
                   <a
                     key={i}
                     href={cta.href}
@@ -277,7 +278,7 @@ function estimateWordCount(article: PAAArticle): number {
   for (const section of article.contextSections) {
     text += ' ' + section.content;
   }
-  text += ' ' + article.impulseSection.content;
+  text += ' ' + article.brandSection.content;
   for (const faq of article.faqItems) {
     text += ' ' + faq.question + ' ' + faq.answer;
   }
