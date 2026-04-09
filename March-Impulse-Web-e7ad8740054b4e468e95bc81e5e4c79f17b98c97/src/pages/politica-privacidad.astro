@@ -2,11 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PoliticaPrivacidadPage from '../../pages/legal/PoliticaPrivacidadPage';
 import CookieBanner from '../../components/CookieBanner';
+import { NAP } from '../../utils/napData';
 ---
 
 <BaseLayout
   title="Política Privacidad"
-  description="Política de privacidad de Impulse English Academy. Información sobre el tratamiento de datos personales según RGPD y LOPDGDD."
+  description={`Política de privacidad de ${NAP.name}. Información sobre el tratamiento de datos personales según RGPD y LOPDGDD.`}
   canonical="/politica-privacidad"
 >
   <PoliticaPrivacidadPage client:idle />

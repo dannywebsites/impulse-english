@@ -5,6 +5,7 @@ import CookieBanner from '../../../components/CookieBanner';
 import { generateFAQSchema } from '../../../utils/schemaData';
 import { getImage } from 'astro:assets';
 import { astroHeroImages } from '../../../utils/images-astro';
+import { NAP } from '../../../utils/napData';
 
 const heroImg = await getImage({
   src: astroHeroImages.infantilClasses,
@@ -21,7 +22,7 @@ const schemas = [
 
 <BaseLayout
   title="Inglés Infantil (2–5 años)"
-  description="Clases de inglés infantil (2–5) en La Vaguada / Barrio del Pilar. Metodología Great Little People 100% en inglés, grupos máx. 7 y clase de prueba gratis. Impulse English Academy."
+  description={`Clases de inglés infantil (2–5) en La Vaguada / Barrio del Pilar. Metodología Great Little People 100% en inglés, grupos máx. 7 y clase de prueba gratis. ${NAP.name}.`}
   keywords="clases inglés niños la vaguada, inglés infantil barrio del pilar, inglés bebes 2 años, great little people, academia inglés niños madrid"
   canonical="/cursos-ingles/infantil"
   schemas={schemas}

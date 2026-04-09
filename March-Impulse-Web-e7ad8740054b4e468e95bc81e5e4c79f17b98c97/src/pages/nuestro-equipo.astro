@@ -3,14 +3,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import NuestroEquipoPage, { faqs } from '../../pages/NuestroEquipoPage';
 import CookieBanner from '../../components/CookieBanner';
 import { generateFAQSchema } from '../../utils/schemaData';
+import { NAP } from '../../utils/napData';
 
 const schemas = faqs?.length > 0 ? [generateFAQSchema(faqs)] : [];
 ---
 
 <BaseLayout
   title="Nuestro Equipo"
-  description="Conoce al equipo de profesores de Impulse English Academy. Profesores cualificados y certificados especializados en enseñanza del inglés en Madrid Norte."
-  keywords="profesores inglés madrid, equipo impulse english, profesores nativos madrid, academia inglés profesores"
+  description={`Conoce al equipo de profesores de ${NAP.name}. Profesores cualificados y certificados especializados en enseñanza del inglés en ${NAP.city} Norte.`}
+  keywords={`profesores inglés madrid, equipo ${NAP.shortName.toLowerCase()}, profesores nativos madrid, academia inglés profesores`}
   canonical="/nuestro-equipo"
   schemas={schemas}
 >

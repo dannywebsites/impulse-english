@@ -4,6 +4,7 @@ import ContactoPage from '../../pages/ContactoPage';
 import CookieBanner from '../../components/CookieBanner';
 import { getImage } from 'astro:assets';
 import { astroHeroImages } from '../../utils/images-astro';
+import { NAP } from '../../utils/napData';
 
 const heroImg = await getImage({
   src: astroHeroImages.outsideAcademy,
@@ -15,8 +16,8 @@ const heroImg = await getImage({
 
 <BaseLayout
   title="Contacto"
-  description="Contacta con Impulse English Academy. Av. de El Ferrol 22, La Vaguada, Madrid. Tel: 604 910 611. Prueba de nivel gratuita. Metro Barrio del Pilar."
-  keywords="contacto academia inglés madrid, dirección impulse english, teléfono academia inglés la vaguada, horarios academia inglés"
+  description={`Contacta con ${NAP.name}. ${NAP.streetAddress}, La Vaguada, ${NAP.city}. Tel: 604 910 611. Prueba de nivel gratuita. Metro Barrio del Pilar.`}
+  keywords={`contacto academia inglés madrid, dirección ${NAP.shortName.toLowerCase()}, teléfono academia inglés la vaguada, horarios academia inglés`}
   canonical="/contacto"
 >
   <ContactoPage heroImageSrc={heroImg.src} client:load />
