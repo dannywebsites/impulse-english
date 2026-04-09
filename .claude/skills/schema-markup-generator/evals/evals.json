@@ -1,0 +1,40 @@
+{
+  "skill_name": "schema-markup-generator",
+  "domain": "general",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Generate Schema.org JSON-LD for a blog article page about 'Preparacion B2 First en Madrid' published 2026-03-15, modified 2026-03-20, with 3 FAQ items. The article URL is /blog/preparacion-b2-first-madrid/.",
+      "expected_output": "A complete @graph JSON-LD block containing Organization, WebSite, Article, and FAQPage schemas with correct properties",
+      "assertions": [
+        {"text": "Output contains @context: https://schema.org", "type": "structural", "deterministic": true},
+        {"text": "Output uses @graph array pattern (not standalone schemas)", "type": "structural", "deterministic": true},
+        {"text": "Article schema has author as Organization type, NOT Person", "type": "content", "deterministic": true},
+        {"text": "Article schema includes inLanguage: es", "type": "content", "deterministic": true},
+        {"text": "FAQPage schema has mainEntity array with Question items", "type": "structural", "deterministic": true},
+        {"text": "Article schema includes datePublished and dateModified fields", "type": "content", "deterministic": true},
+        {"text": "References napData.ts as the source for business data (phone, address, etc.)", "type": "content", "deterministic": true},
+        {"text": "Mentions the aggregateRating dedup logic to prevent duplicate rating errors", "type": "content", "deterministic": false},
+        {"text": "FAQItem type is imported from utils/schemaData.ts, never defined locally", "type": "content", "deterministic": true},
+        {"text": "No banned AI words used (delve, tapestry, realm, leverage, etc.)", "type": "quality", "deterministic": true}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Generate Schema.org markup for a new location page: Academia Ingles Tetuan at /academia-ingles-tetuan/. The page serves the Tetuan neighborhood near Cuatro Torres and Plaza Castilla.",
+      "expected_output": "A location page @graph with LocalBusiness, 6 Service schemas with PriceSpecification, and proper areaServed",
+      "assertions": [
+        {"text": "Output includes LocalBusiness schema type", "type": "structural", "deterministic": true},
+        {"text": "Location page includes exactly 6 Service schemas (Infantil, Primaria, Secundaria, Adultos, Cambridge Prep, Linguaskill)", "type": "content", "deterministic": false},
+        {"text": "Service schemas include PriceSpecification with minPrice 64 and maxPrice 79", "type": "content", "deterministic": true},
+        {"text": "PriceSpecification includes unitText /mes and priceCurrency EUR", "type": "content", "deterministic": true},
+        {"text": "areaServed includes Tetuan, Cuatro Torres, and Plaza Castilla", "type": "content", "deterministic": true},
+        {"text": "Uses generateLocationPageSchema function from utils/schemaData.ts", "type": "content", "deterministic": true},
+        {"text": "NAP data sourced from napData.ts (not hardcoded)", "type": "content", "deterministic": true},
+        {"text": "Phone number matches +34 604 910 611 from napData", "type": "content", "deterministic": true},
+        {"text": "Uses @graph pattern for combining multiple schemas", "type": "structural", "deterministic": true},
+        {"text": "No placeholder text remains (TODO, REPLACE, TBD, PLACEHOLDER)", "type": "quality", "deterministic": true}
+      ]
+    }
+  ]
+}

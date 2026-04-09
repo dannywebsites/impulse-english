@@ -1,0 +1,40 @@
+{
+  "skill_name": "brand-voice-enforcer",
+  "domain": "general",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Write a 300-word blog introduction about Cambridge B2 First exam preparation tips for the Impulse English Academy website. The content must be in Spanish and target students in Madrid preparing for the B2 First exam.",
+      "expected_output": "A 300-word Spanish blog introduction using Peninsular Spanish (vosotros forms, Spain vocabulary), no banned AI words, professional but approachable tone, with subtle brand mention of Impulse English Academy",
+      "assertions": [
+        {"text": "Contains at least one vosotros-form verb (vosotros, vuestro, vuestra, tenéis, podéis, sabéis, estéis, necesitáis, habéis)", "type": "content", "deterministic": true},
+        {"text": "No banned AI words appear (delve, tapestry, realm, landscape, ever-evolving, cutting-edge, robust, transformative, pivotal, vibrant, crucial, compelling, seamless, groundbreaking, leverage, harness, embark, navigate, unveil, facilitate, synergy, game-changer, unlock, unleash, elevate, utilize, endeavour, multifaceted, holistic, paradigm, empower)", "type": "quality", "deterministic": true},
+        {"text": "No em dashes (U+2014) or en dashes (U+2013) appear anywhere in the output", "type": "quality", "deterministic": true},
+        {"text": "Uses Spain-specific vocabulary (academia not instituto, ordenador not computadora, aprobar not pasar, nota not calificacion)", "type": "content", "deterministic": false},
+        {"text": "Does NOT use Latin American forms (ustedes, computadora, celular, carro, chevere, tarea for homework, materia, inscribirse, cupo, reprobar)", "type": "content", "deterministic": true},
+        {"text": "Word count is between 250 and 400 words", "type": "structural", "deterministic": true},
+        {"text": "Tone is professional but approachable - reads like a knowledgeable peer, not a textbook or government document", "type": "quality", "deterministic": false},
+        {"text": "Brand mention of Impulse English Academy is subtle (1-2 mentions maximum, not promotional or salesy)", "type": "content", "deterministic": false},
+        {"text": "References Madrid, La Vaguada, or Barrio del Pilar as local signals", "type": "content", "deterministic": true},
+        {"text": "Content is written entirely in Spanish with no unnecessary English words where Spanish equivalents exist", "type": "quality", "deterministic": false}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Write a FAQ section with 5 questions and answers about Linguaskill exam pricing and preparation for the Impulse English Academy website. Format as markdown with ### headings for each question. Content must be in Peninsular Spanish.",
+      "expected_output": "A FAQ section with 5 Q&A pairs in Peninsular Spanish, using ### headings for questions, vosotros forms throughout, no banned AI words, with a heading of '## Preguntas frecuentes'",
+      "assertions": [
+        {"text": "Contains the heading '## Preguntas frecuentes' or '## Preguntas Frecuentes'", "type": "structural", "deterministic": true},
+        {"text": "Contains exactly 5 FAQ questions formatted as ### subheadings", "type": "structural", "deterministic": true},
+        {"text": "Contains at least 2 vosotros-form verbs across all answers", "type": "content", "deterministic": true},
+        {"text": "No banned AI words appear (delve, tapestry, realm, landscape, ever-evolving, cutting-edge, robust, transformative, pivotal, seamless, groundbreaking, leverage, harness, embark, navigate, unveil, facilitate, synergy, unlock, unleash, elevate, utilize, endeavour, multifaceted)", "type": "quality", "deterministic": true},
+        {"text": "No em dashes (U+2014) or en dashes (U+2013) appear anywhere", "type": "quality", "deterministic": true},
+        {"text": "Does NOT use Latin American Spanish forms (ustedes, computadora, celular, inscribirse, reprobar)", "type": "content", "deterministic": true},
+        {"text": "Each FAQ answer is between 40 and 150 words (not too short, not walls of text)", "type": "structural", "deterministic": true},
+        {"text": "FAQ questions address Linguaskill-specific topics (pricing, preparation time, exam format, scoring, or validity)", "type": "content", "deterministic": false},
+        {"text": "No passive voice overuse - majority of sentences use active constructions", "type": "quality", "deterministic": false},
+        {"text": "No emoji appear in the output text", "type": "quality", "deterministic": true}
+      ]
+    }
+  ]
+}

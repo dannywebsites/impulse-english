@@ -1,0 +1,40 @@
+{
+  "skill_name": "redirect-manager",
+  "domain": "general",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Add a redirect for the old WordPress URL /cambridge-b2-first-precio/ to the new Astro path /examenes-cambridge/b2-first/precios/ in vercel.json. Also add the non-trailing-slash variant.",
+      "expected_output": "Valid vercel.json redirect entries with permanent: true, both trailing slash variants, destination ending with /",
+      "assertions": [
+        {"text": "Output contains valid JSON with 'source' and 'destination' fields", "type": "structural", "deterministic": true},
+        {"text": "Redirect uses permanent: true (301 status code)", "type": "content", "deterministic": true},
+        {"text": "Both trailing-slash and non-trailing-slash source variants are included", "type": "content", "deterministic": true},
+        {"text": "Destination path ends with a trailing slash", "type": "content", "deterministic": true},
+        {"text": "Redirect is placed in vercel.json, NOT in astro.config.mjs", "type": "content", "deterministic": true},
+        {"text": "No placeholder text remains (TODO, REPLACE, TBD)", "type": "quality", "deterministic": true},
+        {"text": "Source path matches the exact old URL provided (/cambridge-b2-first-precio/)", "type": "content", "deterministic": true},
+        {"text": "Destination path matches the exact new URL provided (/examenes-cambridge/b2-first/precios/)", "type": "content", "deterministic": true},
+        {"text": "Output mentions that vercel.json is the single source of truth for redirects", "type": "content", "deterministic": false},
+        {"text": "Output suggests checking Google Search Console after deploy to verify the redirect works", "type": "quality", "deterministic": false}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Audit the current redirect configuration for potential redirect chains or loops. The redirect /linguaskill/guia-completa -> /linguaskill/ exists, and someone wants to add /linguaskill/ -> /linguaskill/general/. Is this safe?",
+      "expected_output": "Analysis identifying the redirect chain risk, explaining that /linguaskill/guia-completa would chain through /linguaskill/ to /linguaskill/general/, and recommending to update the first redirect's destination instead",
+      "assertions": [
+        {"text": "Identifies that adding the second redirect would create a redirect chain", "type": "content", "deterministic": false},
+        {"text": "Explains that /linguaskill/guia-completa would chain through two redirects", "type": "content", "deterministic": false},
+        {"text": "Recommends updating the existing redirect's destination rather than adding a new chain", "type": "content", "deterministic": false},
+        {"text": "Mentions that redirect chains harm SEO (PageRank dilution, crawl budget waste)", "type": "quality", "deterministic": false},
+        {"text": "References the trailingSlash: true setting and its importance for avoiding loops", "type": "content", "deterministic": true},
+        {"text": "Mentions vercel.json as the single source of truth", "type": "content", "deterministic": true},
+        {"text": "Does not suggest putting redirects in astro.config.mjs", "type": "quality", "deterministic": true},
+        {"text": "Output is actionable with a specific fix rather than vague advice", "type": "quality", "deterministic": false},
+        {"text": "No banned AI words used (delve, tapestry, realm, leverage, etc.)", "type": "quality", "deterministic": true},
+        {"text": "Mentions checking for 301 permanent status on all redirects", "type": "content", "deterministic": true}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "skill_name": "github-actions-publisher",
+  "domain": "general",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Create the publish-blog.yml GitHub Actions workflow that runs the auto-publish pipeline on a cron schedule. Show the complete YAML file.",
+      "expected_output": "Complete GitHub Actions workflow with cron schedule Mon-Thu 08:00 UTC, queue reading, Node.js setup, pipeline execution, queue update, commit, and safety checks",
+      "assertions": [
+        {"text": "Cron schedule is '0 8 * * 1-4' (Mon-Thu 08:00 UTC = 10:00 Madrid)", "type": "content", "deterministic": true},
+        {"text": "Includes workflow_dispatch with topic_override input", "type": "content", "deterministic": true},
+        {"text": "Uses actions/checkout@v4", "type": "content", "deterministic": true},
+        {"text": "Node.js version is 20", "type": "content", "deterministic": true},
+        {"text": "Environment variables include ANTHROPIC_API_KEY, GEMINI_API_KEY, DATAFORSEO_LOGIN, DATAFORSEO_PASSWORD, APIFY_API_TOKEN from secrets", "type": "content", "deterministic": true},
+        {"text": "Includes a staged file safety check that aborts on unexpected files", "type": "content", "deterministic": false},
+        {"text": "Git identity uses 'Impulse Blog Bot' name", "type": "content", "deterministic": true},
+        {"text": "Permissions include contents: write", "type": "content", "deterministic": true},
+        {"text": "Reads from blog-queue.yaml for pending articles", "type": "content", "deterministic": true},
+        {"text": "No banned AI words used (delve, tapestry, realm, leverage, etc.)", "type": "quality", "deterministic": true}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "The publish-blog workflow failed because the blog-queue.yaml had no pending articles. How should the workflow handle this gracefully without failing the entire run?",
+      "expected_output": "Explanation of graceful exit when queue is empty: check for pending articles early, output a message, and exit with success (0) rather than error",
+      "assertions": [
+        {"text": "Recommends checking for pending articles before running the pipeline", "type": "content", "deterministic": false},
+        {"text": "Suggests exiting with success (exit 0) when no pending articles exist, not failure", "type": "content", "deterministic": true},
+        {"text": "Mentions the blog-queue.yaml status field (pending/published/failed)", "type": "content", "deterministic": true},
+        {"text": "Mentions the failure handler that marks articles as status: failed", "type": "content", "deterministic": true},
+        {"text": "References the queue isolation principle (only first pending article processed)", "type": "content", "deterministic": false},
+        {"text": "Suggests using GitHub Actions step conditionals (if: steps.read-queue.outputs.topic)", "type": "content", "deterministic": false},
+        {"text": "Output provides a concrete fix with code, not just a description", "type": "quality", "deterministic": false},
+        {"text": "No banned AI words used", "type": "quality", "deterministic": true},
+        {"text": "Mentions that failed articles don't block the next day's run", "type": "content", "deterministic": false},
+        {"text": "No placeholder text remains (TODO, REPLACE, TBD)", "type": "quality", "deterministic": true}
+      ]
+    }
+  ]
+}
