@@ -27,11 +27,11 @@ The template must be portable — changing `brand-config.ts`, `napData.ts`, and 
 
 ### Active
 
-- [ ] LeadForm error feedback — show user-visible error messages on webhook failure instead of silent fail
-- [ ] Webhook URL to env var — move hardcoded LeadConnectorHQ URL from component to .env for security and portability
+- [x] LeadForm error feedback — Validated in Phase 1: LeadForm Hardening
+- [x] Webhook URL to env var — Validated in Phase 1: LeadForm Hardening
 - [ ] Image consolidation — move all S3-hosted images to local /assets/ directory
 - [ ] Image optimization — implement Astro image pipeline (webp, srcset, lazy-loading) for all images
-- [ ] Honeypot spam protection — add hidden honeypot field to lead form to block bots
+- [x] Honeypot spam protection — Validated in Phase 1: LeadForm Hardening
 - [ ] Auto-publish integration — ensure pipeline auto-posts articles without manual intervention (approval workflow deferred)
 - [ ] Client onboarding system — automated flow: provide client info + images → answer questions → full website built from template. Research agent scrapes client details, populates brand-config.ts/napData.ts, builds all pages
 
@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-09 after initialization*
+*Last updated: 2026-04-09 after Phase 1 completion*
