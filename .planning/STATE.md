@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Phase 4 context gathered
-last_updated: "2026-04-09T15:44:18.811Z"
+status: executing
+stopped_at: Completed 04-01-PLAN.md (client onboarding CLI)
+last_updated: "2026-04-09T16:04:51.047Z"
 last_activity: 2026-04-09
 progress:
   total_phases: 4
   completed_phases: 3
-  total_plans: 12
-  completed_plans: 12
+  total_plans: 14
+  completed_plans: 13
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-09)
 
 **Core value:** Template portability — changing brand-config.ts, napData.ts, and config files produces a fully functional website for a new client with zero hardcoded Impulse references
-**Current focus:** Phase 03 — image-optimization
+**Current focus:** Phase 04 — client-onboarding-cli
 
 ## Current Position
 
-Phase: 4
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 04 (client-onboarding-cli) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
 Last activity: 2026-04-09
 
 Progress: [░░░░░░░░░░] 0%
@@ -64,6 +64,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 03-image-optimization P02 | 5m | 2 tasks | 8 files |
 | Phase 03 P03 | 9m | 2 tasks | 25 files |
 | Phase 03 P04 | 8m | 2 tasks | 246 files |
+| Phase 04-client-onboarding-cli P01 | 8m | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -99,6 +100,8 @@ Recent decisions affecting current work:
 - [Phase 03]: LinguaskillPage.tsx has no astro wrapper (seo-system SPA only) — still updated to accept heroImageSrc prop for correctness
 - [Phase 03]: OptimizedImage consumers replaced with plain img tags using /images/academy/ paths
 - [Phase 03]: napData.ts logo/image updated from /images/optimized/ to /images/academy/logos/img-4117.png
+- [Phase 04-client-onboarding-cli]: categoryTopicRef uses Impulse defaults in generated brand-config.ts with comment to update for non-English-academy clients — avoids complex editor prompt for rarely-changed mapping
+- [Phase 04-client-onboarding-cli]: napData helper functions generated as known template content rather than reading original file at runtime — simpler and stable since they only reference NAP.*
 
 ### Pending Todos
 
@@ -112,6 +115,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-09T15:44:18.808Z
-Stopped at: Phase 4 context gathered
-Resume file: .planning/phases/04-client-onboarding-cli/04-CONTEXT.md
+Last session: 2026-04-09T16:04:51.041Z
+Stopped at: Completed 04-01-PLAN.md (client onboarding CLI)
+Resume file: None

@@ -30,14 +30,14 @@
 
 ### Client Onboarding
 
-- [ ] **ONBD-01**: CLI script at scripts/onboard-client.js walks user through structured question flow using @inquirer/prompts
-- [ ] **ONBD-02**: Question flow covers: business identity, contact info, geo coordinates, opening hours, social profiles, brand voice, credentials
-- [ ] **ONBD-03**: Script generates populated brand-config.ts and napData.ts from answers
-- [ ] **ONBD-04**: Script generates buildPageTitle.ts with new brand constants
-- [ ] **ONBD-05**: Script creates .env.template with required environment variables documented
-- [ ] **ONBD-06**: Script runs npm run build after generation to verify the template compiles
-- [ ] **ONBD-07**: TEMPLATE_MODE guard prevents running onboarding on production repo (checks git remote or env var)
-- [ ] **ONBD-08**: Generated config files are written as drafts first, requiring human confirmation before promotion to final files
+- [x] **ONBD-01**: CLI script at scripts/onboard-client.js walks user through structured question flow using @inquirer/prompts
+- [x] **ONBD-02**: Question flow covers: business identity, contact info, geo coordinates, opening hours, social profiles, brand voice, credentials
+- [x] **ONBD-03**: Script generates populated brand-config.ts and napData.ts from answers
+- [x] **ONBD-04**: Script generates buildPageTitle.ts with new brand constants
+- [x] **ONBD-05**: Script creates .env.template with required environment variables documented
+- [x] **ONBD-06**: Script runs npm run build after generation to verify the template compiles
+- [x] **ONBD-07**: TEMPLATE_MODE guard prevents running onboarding on production repo (checks git remote or env var)
+- [x] **ONBD-08**: Generated config files are written as drafts first, requiring human confirmation before promotion to final files
 
 ## v2 Requirements
 
@@ -99,14 +99,14 @@
 | OPT-02 | Phase 3 | Complete |
 | OPT-03 | Phase 3 | Complete |
 | OPT-04 | Phase 3 | Complete |
-| ONBD-01 | Phase 4 | Pending |
-| ONBD-02 | Phase 4 | Pending |
-| ONBD-03 | Phase 4 | Pending |
-| ONBD-04 | Phase 4 | Pending |
-| ONBD-05 | Phase 4 | Pending |
-| ONBD-06 | Phase 4 | Pending |
-| ONBD-07 | Phase 4 | Pending |
-| ONBD-08 | Phase 4 | Pending |
+| ONBD-01 | Phase 4 | Complete |
+| ONBD-02 | Phase 4 | Complete |
+| ONBD-03 | Phase 4 | Complete |
+| ONBD-04 | Phase 4 | Complete |
+| ONBD-05 | Phase 4 | Complete |
+| ONBD-06 | Phase 4 | Complete |
+| ONBD-07 | Phase 4 | Complete |
+| ONBD-08 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 22 total
