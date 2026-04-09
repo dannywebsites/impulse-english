@@ -847,7 +847,7 @@ function runSchemaConversion(topic, articleContent, category) {
   const readMinutes = Math.max(3, Math.round(wordCount / 200));
   const readTime = `${readMinutes} min`;
 
-  // Generate impulse section (programmatic, not AI-rewritten)
+  // Generate brand section (programmatic, not AI-rewritten)
   const categoryNames = {
     'Cambridge B2 First': 'el B2 First',
     'Cambridge C1 Advanced': 'el C1 Advanced',
@@ -864,7 +864,7 @@ function runSchemaConversion(topic, articleContent, category) {
   };
 
   const topicRef = categoryNames[category] || 'tu aprendizaje de ingles';
-  const impulseSection = {
+  const brandSection = {
     heading: `${BRAND.companyName} te ayuda con ${topicRef}`,
     content: `En ${BRAND.companyName}, ${BRAND.companyDescription}, os acompañamos en cada paso. Con un ${BRAND.socialProof}, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.`,
   };
@@ -880,7 +880,7 @@ function runSchemaConversion(topic, articleContent, category) {
     question: topic,
     paaAnswer,
     contextSections: htmlSections,
-    impulseSection,
+    brandSection,
     faqItems,
     readTime,
   };
@@ -920,9 +920,9 @@ function assembleArticle(meta, schema, category, articleImages) {
     metaDescription: meta.metadescription,
     paaAnswer: schema.paaAnswer,
     contextSections: schema.contextSections,
-    impulseSection: {
-      heading: schema.impulseSection.heading,
-      content: schema.impulseSection.content,
+    brandSection: {
+      heading: schema.brandSection.heading,
+      content: schema.brandSection.content,
       ctaLinks,
     },
     faqItems: schema.faqItems,
