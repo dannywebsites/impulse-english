@@ -118,7 +118,7 @@ Plans:
 
 Plans:
 - [ ] 06-01-PLAN.md — Rename ImpulseSection to BrandSection across types, schema, data, and consumers
-- [ ] 06-02-PLAN.md — Debrand 7 main-site components with NAP field imports + verify FORM-06 Toaster
+- [x] 06-02-PLAN.md — Debrand 7 main-site components with NAP field imports + verify FORM-06 Toaster
 
 
 
@@ -164,6 +164,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 3. Image Optimization | 4/4 | Complete   | 2026-04-09 |
 | 4. Client Onboarding CLI | 2/2 | Complete   | 2026-04-09 |
 | 5. Critical Infrastructure Debranding | 2/2 | Complete   | 2026-04-09 |
-| 6. Component Debranding | 0/0 | Pending | — |
+| 6. Component Debranding | 1/2 | In Progress|  |
 | 7. Content Debranding | 0/0 | Pending | — |
 | 8. Auto-Publish Pipeline Decouple | 0/0 | Pending | — |
