@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-01-PLAN.md
-last_updated: "2026-04-09T15:03:03.670Z"
+stopped_at: Completed 03-02-PLAN.md
+last_updated: "2026-04-09T15:07:30.405Z"
 last_activity: 2026-04-09
 progress:
   total_phases: 4
   completed_phases: 2
   total_plans: 12
-  completed_plans: 9
+  completed_plans: 10
   percent: 0
 ---
 
@@ -26,7 +26,7 @@ See: .planning/PROJECT.md (updated 2026-04-09)
 ## Current Position
 
 Phase: 03 (image-optimization) — EXECUTING
-Plan: 2 of 4
+Plan: 3 of 4
 Status: Ready to execute
 Last activity: 2026-04-09
 
@@ -61,6 +61,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 02-image-consolidation P04 | 15m | 2 tasks | 27 files |
 | Phase 02-image-consolidation P05 | 3m | 3 tasks | 6 files |
 | Phase 03-image-optimization P01 | 12m | 2 tasks | 92 files |
+| Phase 03-image-optimization P02 | 5m | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -90,6 +91,8 @@ Recent decisions affecting current work:
 - [Phase 02-image-consolidation]: SITE-DOCUMENTATION.md S3 URLs left as-is — documentation reference, not compiled source
 - [Phase 03-image-optimization]: Images copied (not moved) from public/ so seo-system retains access at public/images/academy/
 - [Phase 03-image-optimization]: Two-registry pattern: utils/images-astro.ts (ImageMetadata for Astro) and utils/images.ts (URL strings for seo-system) are separate files
+- [Phase 03-image-optimization]: TeamSection uses jpWithStudents not estudiantesSonriendo — more contextually accurate team photo
+- [Phase 03-image-optimization]: CoursesSection fallback URLs use /images/academy/ paths — always available in public/
 
 ### Pending Todos
 
@@ -103,6 +106,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-09T15:02:56.163Z
-Stopped at: Completed 03-01-PLAN.md
+Last session: 2026-04-09T15:07:30.403Z
+Stopped at: Completed 03-02-PLAN.md
 Resume file: None
