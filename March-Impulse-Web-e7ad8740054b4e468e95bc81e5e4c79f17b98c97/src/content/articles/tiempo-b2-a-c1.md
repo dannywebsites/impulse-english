@@ -16,7 +16,7 @@ contextSections:
   - heading: La importancia de un plan de estudio estructurado
     content: |
       <p>Contar con un plan de estudio bien organizado es fundamental para aprovechar al máximo las horas de preparación. Dividid vuestro tiempo entre las cuatro secciones del examen: Reading and Use of English, Writing, Listening y Speaking. Realizad simulacros de examen completos al menos una vez al mes para evaluar vuestro progreso y detectar áreas de mejora. Un buen plan incluye también revisión de vocabulario avanzado, expresiones idiomáticas y collocations que son habituales en el C1 Advanced.</p>
-impulseSection:
+brandSection:
   heading: Preparad el C1 Advanced con Impulse English Academy
   content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, os ayudamos a dar el salto de B2 a C1 de forma eficaz. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos para garantizar atención personalizada. Contamos con un historial del 100% de aprobados en nuestros cursos de preparación C1 Advanced. Realizamos simulacros de examen periódicos y os proporcionamos materiales actualizados para que lleguéis al examen con total confianza."
   ctaLinks:

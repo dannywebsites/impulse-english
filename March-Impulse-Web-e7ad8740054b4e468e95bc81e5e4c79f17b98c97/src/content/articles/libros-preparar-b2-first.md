@@ -16,7 +16,7 @@ contextSections:
   - heading: Cómo organizar el estudio con estos materiales
     content: |
       <p>No necesitáis comprar todos los libros: elegid uno como manual principal (Complete First u Objective First) y añadid First Trainer para los simulacros finales. Si tenéis poco tiempo, Compact First puede ser vuestro único libro de referencia, complementado con las herramientas digitales.</p><p>Organizad vuestro estudio alternando entre el manual principal y la práctica de exámenes. Reservad el First Trainer para las últimas semanas, cuando ya tengáis una base sólida. Utilizad Test & Train para sesiones cortas de 15-20 minutos cuando no dispongáis de tiempo para una sesión completa. La combinación de material impreso y digital os dará la preparación más completa.</p>
-impulseSection:
+brandSection:
   heading: Material oficial incluido en los cursos Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, proporcionamos a nuestros alumnos acceso al material más actualizado y eficaz. Nuestros profesores certificados TEFL/CELTA seleccionan los recursos más adecuados para cada alumno, complementados con simulacros mensuales y corrección detallada en grupos reducidos de máximo 10 estudiantes. El 100% de aprobados en 2024-2025 refleja la calidad de nuestra preparación."
   ctaLinks:

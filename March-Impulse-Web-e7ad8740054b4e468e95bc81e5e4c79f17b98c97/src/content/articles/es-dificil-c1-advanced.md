@@ -16,7 +16,7 @@ contextSections:
   - heading: Partes del examen que más desafían a los candidatos
     content: |
       <p>Según la experiencia de nuestros alumnos, las secciones que más cuestan son el Use of English, por la precisión gramatical y léxica requerida, y el Writing, por la necesidad de producir textos bien estructurados bajo presión de tiempo. El Speaking también genera ansiedad, aunque con práctica regular y simulacros se puede dominar. Es importante que dediquéis tiempo a cada sección de forma proporcional a vuestra dificultad personal, sin descuidar ninguna destreza.</p>
-impulseSection:
+brandSection:
   heading: Superad el C1 Advanced con la preparación de Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, sabemos lo que el C1 Advanced exige y os preparamos para afrontarlo con seguridad. Nuestros profesores especializados conocen cada parte del examen y trabajan con grupos reducidos para garantizar atención individualizada. Con un 100% de aprobados en nuestros cursos de preparación, tenemos la experiencia para llevaros al éxito. Realizamos simulacros reales y os enseñamos las estrategias que marcan la diferencia el día del examen."
   ctaLinks:

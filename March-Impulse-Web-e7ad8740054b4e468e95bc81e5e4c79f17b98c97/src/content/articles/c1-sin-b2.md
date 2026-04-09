@@ -16,7 +16,7 @@ contextSections:
   - heading: Cómo prepararse para el C1 sin certificado B2
     content: |
       <p>Si tenéis un nivel alto de inglés pero no habéis hecho el B2 First, vuestra preparación para el C1 Advanced debe incluir una fase inicial de familiarización con el formato de exámenes Cambridge. Dedicad las primeras semanas a conocer los tipos de tareas, los criterios de evaluación y las estrategias específicas de cada sección. Es especialmente importante trabajar el Use of English, que es la parte más técnica y específica del examen. Un curso de preparación con profesores especializados os ahorrará tiempo y os proporcionará la orientación necesaria para abordar el examen con garantías.</p>
-impulseSection:
+brandSection:
   heading: Preparad el C1 Advanced desde cualquier punto de partida
   content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, evaluamos vuestro nivel real con una prueba de nivel gratuita y diseñamos el plan de preparación más adecuado para vosotros. Nuestros profesores especializados trabajan con grupos reducidos, adaptándose a las necesidades de cada alumno. Con un 100% de aprobados en el C1 Advanced, os garantizamos una preparación rigurosa y eficaz, tengáis o no un certificado B2 previo."
   ctaLinks:

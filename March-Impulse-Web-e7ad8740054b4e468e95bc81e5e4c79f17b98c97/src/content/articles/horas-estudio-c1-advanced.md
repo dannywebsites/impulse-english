@@ -16,7 +16,7 @@ contextSections:
   - heading: Estudio autónomo vs. clases guiadas
     content: |
       <p>Aunque el estudio autónomo es importante, las clases guiadas con profesores especializados aceleran significativamente la preparación. Un profesor experimentado os corrige errores que no detectaríais por vuestra cuenta, os enseña técnicas de examen específicas y os proporciona práctica de Speaking real con feedback inmediato. La combinación ideal es complementar las horas de clase con trabajo individual: lectura extensiva, series y podcasts en inglés, y práctica con exámenes oficiales pasados. Este enfoque mixto maximiza el rendimiento de cada hora invertida.</p>
-impulseSection:
+brandSection:
   heading: Optimizad vuestra preparación C1 con Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, diseñamos planes de estudio personalizados para que aprovechéis al máximo cada hora de preparación. Nuestros profesores especializados en el C1 Advanced trabajan con grupos reducidos y os guían con materiales actualizados y simulacros reales. Con un 100% de aprobados, nuestra metodología está probada para llevaros al éxito de la forma más eficiente posible."
   ctaLinks:

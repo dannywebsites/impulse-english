@@ -16,7 +16,7 @@ contextSections:
   - heading: Plazos de resultados y planificación de reinscripción
     content: |
       <p>Los resultados del B2 First en formato ordenador se publican en un plazo de 5 a 10 días laborables, lo que os permite tomar decisiones rápidamente sobre una posible reinscripción. En cambio, el formato papel tarda entre 4 y 6 semanas, así que tened esto en cuenta a la hora de elegir la modalidad.</p><p>Si tenéis una fecha límite para presentar el certificado (una solicitud universitaria, un proceso de selección laboral, etc.), es recomendable inscribiros con suficiente antelación y contemplar la posibilidad de un segundo intento. De esta forma, dispondréis de tiempo para repetir el examen si fuese necesario.</p>
-impulseSection:
+brandSection:
   heading: Preparamos el B2 First en Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, os acompañamos en cada intento hasta que obtengáis vuestro certificado. Nuestro ratio de aprobados en 2024-2025 es del 100%, gracias a grupos reducidos de máximo 10 alumnos, simulacros mensuales en condiciones reales y profesores certificados TEFL/CELTA que conocen el examen a la perfección. Si necesitáis repetir, diseñamos un plan personalizado centrado en vuestras áreas de mejora."
   ctaLinks:

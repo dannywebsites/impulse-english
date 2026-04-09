@@ -16,7 +16,7 @@ contextSections:
   - heading: "¿Cuándo dar el salto de B2 a C1?"
     content: |
       <p>El momento ideal para dar el salto depende de vuestros objetivos. Si necesitáis el inglés para trabajar en entornos internacionales, acceder a másteres en universidades de prestigio o destacar en oposiciones, el C1 os abrirá puertas que el B2 no puede. También es recomendable si os sentís estancados en el B2 y queréis un reto que os obligue a profundizar en el idioma. Lo importante es que tengáis un B2 sólido antes de empezar la preparación del C1, ya que intentar el salto sin una base firme puede resultar frustrante y contraproducente.</p>
-impulseSection:
+brandSection:
   heading: Dad el salto de B2 a C1 con Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, os acompañamos en la transición de B2 a C1 con un programa diseñado para maximizar vuestro progreso. Nuestros profesores especializados trabajan con grupos reducidos y una metodología centrada en las competencias que marcan la diferencia en el C1 Advanced. Con un 100% de aprobados, tenemos la experiencia para llevaros al siguiente nivel con seguridad y eficacia."
   ctaLinks:

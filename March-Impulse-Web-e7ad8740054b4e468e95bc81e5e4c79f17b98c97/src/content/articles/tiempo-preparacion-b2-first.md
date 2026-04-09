@@ -16,7 +16,7 @@ contextSections:
   - heading: Cómo saber si estáis preparados para el examen
     content: |
       <p>La mejor forma de evaluar vuestra preparación es realizar simulacros completos en condiciones reales: sin diccionario, con el tiempo exacto de cada sección y en un entorno silencioso. Si obtenéis de forma consistente puntuaciones superiores a 165 en vuestros simulacros, es probable que estéis listos para presentaros con garantías.</p><p>Otro indicador fiable es vuestra comodidad con el formato del examen. Si sabéis exactamente qué esperar en cada parte, cuántas preguntas tiene cada sección y cuánto tiempo dedicar a cada una, habéis alcanzado un nivel de preparación técnica adecuado. Combinad esta seguridad con una puntuación de simulacro estable y estaréis en condiciones óptimas para afrontar el examen real.</p>
-impulseSection:
+brandSection:
   heading: Preparamos el B2 First a tu ritmo en Impulse
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, adaptamos la duración del curso a vuestro nivel de partida y vuestros objetivos. Con un 100% de aprobados en 2024-2025, grupos reducidos de máximo 10 alumnos y simulacros mensuales, nuestros profesores certificados TEFL/CELTA diseñan un plan de estudio personalizado para que alcancéis el B2 First en el tiempo óptimo, sin prisas innecesarias ni demoras evitables."
   ctaLinks:
