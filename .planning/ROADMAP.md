@@ -100,7 +100,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
+- [x] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
 - [ ] 05-02-PLAN.md — Extend onboarding CLI with tracking questions, webmanifest generator, verification
 
 ### Phase 6: Component Debranding
@@ -161,7 +161,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 2. Image Consolidation | 5/5 | Complete | 2026-04-09 |
 | 3. Image Optimization | 4/4 | Complete   | 2026-04-09 |
 | 4. Client Onboarding CLI | 2/2 | Complete   | 2026-04-09 |
-| 5. Critical Infrastructure Debranding | 0/0 | Pending | — |
+| 5. Critical Infrastructure Debranding | 1/2 | In Progress|  |
 | 6. Component Debranding | 0/0 | Pending | — |
 | 7. Content Debranding | 0/0 | Pending | — |
 | 8. Auto-Publish Pipeline Decouple | 0/0 | Pending | — |
