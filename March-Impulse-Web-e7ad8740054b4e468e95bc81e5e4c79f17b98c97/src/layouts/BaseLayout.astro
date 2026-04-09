@@ -3,6 +3,7 @@ import '../index.css';
 import { generateOrganizationSchema, generateWebSiteSchema } from '../../utils/schemaData';
 import { buildPageTitle } from '../../utils/buildPageTitle';
 import { Toaster } from 'sonner';
+import { NAP } from '../../utils/napData';
 
 interface Props {
   title: string;
@@ -20,8 +21,6 @@ interface Props {
 }
 
 const DEFAULT_OG_IMAGE = '/images/academy/logos/logo-white-background.jpg';
-const SITE_NAME = 'Impulse English Academy La Vaguada – Barrio del Pilar';
-const BASE_URL = 'https://impulse-english.es';
 
 const {
   title,
@@ -33,14 +32,14 @@ const {
   noindex = false,
   publishedTime,
   modifiedTime,
-  author = 'Impulse English Academy',
+  author = NAP.name,
   fullTitle = false,
   schemas = [],
 } = Astro.props;
 
 const pageTitle = fullTitle ? title : buildPageTitle(title);
 // Ensure trailing slash on all canonical URLs for consistency with live site
-const rawCanonical = canonical?.startsWith('http') ? canonical : `${BASE_URL}${canonical || '/'}`;
+const rawCanonical = canonical?.startsWith('http') ? canonical : `${NAP.website}${canonical || '/'}`;
 const canonicalUrl = rawCanonical.endsWith('/') ? rawCanonical : `${rawCanonical}/`;
 
 // Auto-detect: if any page schema already carries aggregateRating, strip it
@@ -89,25 +88,25 @@ const schemaGraph = {
     </script>
 
     <!-- Deferred GA4 + GTM: loads after 3.5s or first user interaction -->
-    <script is:inline>
+    <script is:inline define:vars={{ ga4Id: NAP.tracking.ga4Id, googleAdsId: NAP.tracking.googleAdsId, gtmContainerId: NAP.tracking.gtmContainerId }}>
       (function(){
         var loaded = false;
         function load(){
           if(loaded) return; loaded = true;
           var g = document.createElement('script');
-          g.src = 'https://www.googletagmanager.com/gtag/js?id=G-WN5973VY1M';
+          g.src = 'https://www.googletagmanager.com/gtag/js?id=' + ga4Id;
           g.async = true;
           document.head.appendChild(g);
           g.onload = function(){
             gtag('js', new Date());
-            gtag('config', 'G-WN5973VY1M');
-            gtag('config', 'AW-11461982741');
+            gtag('config', ga4Id);
+            gtag('config', googleAdsId);
           };
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-TDC7CQDD');
+          })(window,document,'script','dataLayer', gtmContainerId);
         }
         setTimeout(load, 3500);
         ['scroll','click','touchstart','keydown'].forEach(function(e){
@@ -146,7 +145,7 @@ const schemaGraph = {
     <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'} />
     {keywords && <meta name="keywords" content={keywords} />}
     <meta name="author" content={author} />
-    <meta name="publisher" content={SITE_NAME} />
+    <meta name="publisher" content={NAP.siteTitle} />
     <meta name="geo.region" content="ES-MD" />
     <meta name="geo.placename" content="Madrid" />
     <link rel="canonical" href={canonicalUrl} />
@@ -158,7 +157,7 @@ const schemaGraph = {
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:site_name" content={NAP.siteTitle} />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:url" content={canonicalUrl} />
 
@@ -167,8 +166,8 @@ const schemaGraph = {
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
-    <meta name="twitter:site" content="@ImpulseEnglish" />
-    <meta name="twitter:creator" content="@ImpulseEnglish" />
+    <meta name="twitter:site" content={NAP.social.xHandle} />
+    <meta name="twitter:creator" content={NAP.social.xHandle} />
 
     <!-- Article-specific tags -->
     {ogType === 'article' && publishedTime && <meta property="article:published_time" content={publishedTime} />}
@@ -241,7 +240,7 @@ const schemaGraph = {
       Saltar al contenido principal
     </a>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDC7CQDD"
+    <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${NAP.tracking.gtmContainerId}`}
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
