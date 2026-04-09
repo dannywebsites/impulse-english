@@ -1,10 +1,10 @@
 {
   "name": "impulse-auto-publish",
   "version": "1.0.0",
-  "description": "Headless blog auto-publish pipeline for Impulse English Academy",
+  "description": "Headless blog auto-publish pipeline",
   "type": "module",
   "scripts": {
-    "publish": "node auto-publish.js"
+    "publish": "node --experimental-strip-types auto-publish.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.72.1",
