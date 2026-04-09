@@ -117,8 +117,10 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [x] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
-- [ ] 05-02-PLAN.md — Extend onboarding CLI with tracking questions, webmanifest generator, verification
+- [ ] 06-01-PLAN.md — Rename ImpulseSection to BrandSection across types, schema, data, and consumers
+- [ ] 06-02-PLAN.md — Debrand 7 main-site components with NAP field imports + verify FORM-06 Toaster
+
+
 
 ### Phase 7: Content Debranding
 **Goal**: All page meta tags and article content use brand-config values — a grep for "Impulse" in .astro pages and article data returns zero results
