@@ -30,7 +30,7 @@ The template must be portable — changing `brand-config.ts`, `napData.ts`, and 
 - [x] LeadForm error feedback — Validated in Phase 1: LeadForm Hardening
 - [x] Webhook URL to env var — Validated in Phase 1: LeadForm Hardening
 - [x] Image consolidation — Validated in Phase 2: Image Consolidation (69 images to public/images/academy/, central registry at utils/images.ts)
-- [ ] Image optimization — implement Astro image pipeline (webp, srcset, lazy-loading) for all images
+- [x] Image optimization — Validated in Phase 3: Image Optimization (Astro <Picture>/<Image> pipeline, getImage() for React props, hand-rolled system deleted)
 - [x] Honeypot spam protection — Validated in Phase 1: LeadForm Hardening
 - [ ] Auto-publish integration — ensure pipeline auto-posts articles without manual intervention (approval workflow deferred)
 - [ ] Client onboarding system — automated flow: provide client info + images → answer questions → full website built from template. Research agent scrapes client details, populates brand-config.ts/napData.ts, builds all pages
@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-09 after Phase 2 completion*
+*Last updated: 2026-04-09 after Phase 3 completion*
