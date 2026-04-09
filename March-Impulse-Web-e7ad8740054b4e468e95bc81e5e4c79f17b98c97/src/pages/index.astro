@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Picture, getImage } from 'astro:assets';
+import { astroHeroImages, astroTeamImages, astroCourseImages, astroCertImages, astroStudentImages } from '../../utils/images-astro';
 import Navbar from '../../components/Navbar';
 import Hero from '../../components/Hero';
 import NewsOverlay from '../../components/NewsOverlay';
@@ -15,6 +17,20 @@ import Newsletter from '../../components/Newsletter';
 import LocationsSection from '../../components/LocationsSection';
 import Footer from '../../components/Footer';
 import CookieBanner from '../../components/CookieBanner';
+
+// Team image — pre-optimized for TeamSection React component
+const teamImg = await getImage({ src: astroTeamImages.jpWithStudents, format: 'webp', width: 800, quality: 80 });
+
+// Course images — pre-optimized for CoursesSection React component
+const courseImgUrls = {
+  generalInfantil: (await getImage({ src: astroCourseImages.generalInfantil, format: 'webp', width: 800, quality: 80 })).src,
+  preparacionMovers: (await getImage({ src: astroCourseImages.preparacionMovers, format: 'webp', width: 800, quality: 80 })).src,
+  extensivoSecundaria: (await getImage({ src: astroCourseImages.extensivoSecundaria, format: 'webp', width: 800, quality: 80 })).src,
+  preparacionKet: (await getImage({ src: astroCourseImages.preparacionKet, format: 'webp', width: 800, quality: 80 })).src,
+  kidsLearning: (await getImage({ src: astroStudentImages.ninosJugando, format: 'webp', width: 800, quality: 80 })).src,
+  cambridgeCert: (await getImage({ src: astroCertImages.certificadoCambridge, format: 'webp', width: 800, quality: 80 })).src,
+  studentC1: (await getImage({ src: astroCertImages.alumnaCertC1, format: 'webp', width: 800, quality: 80 })).src,
+};
 ---
 
 <BaseLayout
@@ -45,38 +61,19 @@ import CookieBanner from '../../components/CookieBanner';
       }
     </script>
 
-    <!-- MOBILE/TABLET BACKGROUND: Optimized Image Fallback -->
+    <!-- MOBILE/TABLET BACKGROUND: Astro <Picture> with avif/webp -->
     <div class="xl:hidden absolute inset-0 z-0">
       <div class="absolute inset-0 bg-black/30 z-10"></div>
-      <picture>
-        <source
-          media="(max-width: 640px)"
-          srcset="/images/optimized/hero-mobile-estudiantes-primaria.webp"
-          type="image/webp"
-        />
-        <source
-          media="(max-width: 640px)"
-          srcset="/images/optimized/hero-mobile-estudiantes-primaria.jpg"
-          type="image/jpeg"
-        />
-        <source
-          srcset="/images/optimized/hero-tablet-estudiantes-primaria.webp"
-          type="image/webp"
-        />
-        <source
-          srcset="/images/optimized/hero-tablet-estudiantes-primaria.jpg"
-          type="image/jpeg"
-        />
-        <img
-          src="/images/optimized/hero-tablet-estudiantes-primaria.jpg"
-          alt="Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy"
-          class="absolute inset-0 w-full h-full object-cover"
-          width="640"
-          height="960"
-          loading="eager"
-          fetchpriority="high"
-        />
-      </picture>
+      <Picture
+        src={astroHeroImages.estudiantesSonriendo}
+        formats={['avif', 'webp']}
+        widths={[640, 1024, 1920]}
+        sizes="100vw"
+        alt="Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy"
+        loading="eager"
+        fetchpriority="high"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
     </div>
 
     <!-- Navbar -->
@@ -102,8 +99,8 @@ import CookieBanner from '../../components/CookieBanner';
   </div>
 
   <WelcomeSection />
-  <TeamSection />
-  <CoursesSection client:visible />
+  <TeamSection teamImageSrc={teamImg.src} teamImageAlt="Profesores y estudiantes de inglés en Impulse English Academy" client:visible />
+  <CoursesSection courseImageUrls={courseImgUrls} client:visible />
   <MetodoSection />
   <PartnersSection />
   <TestimonialsSection client:visible />
