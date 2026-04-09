@@ -26,7 +26,7 @@
 - [x] **OPT-01**: Astro image pipeline configured with <Image> and <Picture> components from astro:assets
 - [x] **OPT-02**: Hero images use <Picture> with avif and webp formats and loading="eager"
 - [x] **OPT-03**: Non-hero images use lazy loading via loading="lazy"
-- [ ] **OPT-04**: Hand-rolled image optimization system (optimize-images.mjs, manual srcset) replaced by Astro native pipeline
+- [x] **OPT-04**: Hand-rolled image optimization system (optimize-images.mjs, manual srcset) replaced by Astro native pipeline
 
 ### Client Onboarding
 
@@ -98,7 +98,7 @@
 | OPT-01 | Phase 3 | Complete |
 | OPT-02 | Phase 3 | Complete |
 | OPT-03 | Phase 3 | Complete |
-| OPT-04 | Phase 3 | Pending |
+| OPT-04 | Phase 3 | Complete |
 | ONBD-01 | Phase 4 | Pending |
 | ONBD-02 | Phase 4 | Pending |
 | ONBD-03 | Phase 4 | Pending |

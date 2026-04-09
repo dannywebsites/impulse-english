@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: LeadForm Hardening** - Secure, reliable lead capture with error feedback and bot protection (completed 2026-04-09)
 - [ ] **Phase 2: Image Consolidation** - All S3 images moved to local assets with central registry
-- [ ] **Phase 3: Image Optimization** - Astro native image pipeline replaces hand-rolled system
+- [x] **Phase 3: Image Optimization** - Astro native image pipeline replaces hand-rolled system (completed 2026-04-09)
 - [ ] **Phase 4: Client Onboarding CLI** - Interactive question flow generates fully configured website
 
 ## Phase Details
@@ -66,7 +66,7 @@ Plans:
 - [x] 03-01-PLAN.md — Move images to src/assets/ + create images-astro.ts registry
 - [x] 03-02-PLAN.md — Migrate homepage hero, favicons, TeamSection, CoursesSection to Astro pipeline
 - [x] 03-03-PLAN.md — Migrate 13 React page components to getImage() props
-- [ ] 03-04-PLAN.md — Delete hand-rolled system, clean up types, visual verification
+- [x] 03-04-PLAN.md — Delete hand-rolled system, clean up types, visual verification
 
 ### Phase 4: Client Onboarding CLI
 **Goal**: A developer can clone the repo, run a single CLI script, answer questions, and receive a fully configured website ready to build — without touching Impulse-specific config files manually
@@ -88,5 +88,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. LeadForm Hardening | 3/3 | Complete   | 2026-04-09 |
 | 2. Image Consolidation | 5/5 | Complete | 2026-04-09 |
-| 3. Image Optimization | 3/4 | In Progress|  |
+| 3. Image Optimization | 4/4 | Complete   | 2026-04-09 |
 | 4. Client Onboarding CLI | 0/? | Not started | - |

@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Completed 03-03-PLAN.md
-last_updated: "2026-04-09T15:12:36.047Z"
+status: verifying
+stopped_at: Completed 03-04-PLAN.md
+last_updated: "2026-04-09T15:22:00.441Z"
 last_activity: 2026-04-09
 progress:
   total_phases: 4
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 12
-  completed_plans: 11
+  completed_plans: 12
   percent: 0
 ---
 
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-04-09)
 
 Phase: 03 (image-optimization) — EXECUTING
 Plan: 4 of 4
-Status: Ready to execute
+Status: Phase complete — ready for verification
 Last activity: 2026-04-09
 
 Progress: [░░░░░░░░░░] 0%
@@ -63,6 +63,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 03-image-optimization P01 | 12m | 2 tasks | 92 files |
 | Phase 03-image-optimization P02 | 5m | 2 tasks | 8 files |
 | Phase 03 P03 | 9m | 2 tasks | 25 files |
+| Phase 03 P04 | 8m | 2 tasks | 246 files |
 
 ## Accumulated Context
 
@@ -96,6 +97,8 @@ Recent decisions affecting current work:
 - [Phase 03-image-optimization]: CoursesSection fallback URLs use /images/academy/ paths — always available in public/
 - [Phase 03]: heroImageSrc prop is optional with fallback to original /images/academy/ URL for backward compatibility
 - [Phase 03]: LinguaskillPage.tsx has no astro wrapper (seo-system SPA only) — still updated to accept heroImageSrc prop for correctness
+- [Phase 03]: OptimizedImage consumers replaced with plain img tags using /images/academy/ paths
+- [Phase 03]: napData.ts logo/image updated from /images/optimized/ to /images/academy/logos/img-4117.png
 
 ### Pending Todos
 
@@ -109,6 +112,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-09T15:12:36.045Z
-Stopped at: Completed 03-03-PLAN.md
+Last session: 2026-04-09T15:22:00.439Z
+Stopped at: Completed 03-04-PLAN.md
 Resume file: None
