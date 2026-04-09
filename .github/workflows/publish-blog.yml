@@ -110,6 +110,22 @@ jobs:
         working-directory: seo-writer/scripts
         run: npm ci
 
+      - name: Debug API key format
+        if: steps.queue.outputs.topic != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          KEY_LEN=${#ANTHROPIC_API_KEY}
+          KEY_PREFIX="${ANTHROPIC_API_KEY:0:7}"
+          echo "🔑 Key length: $KEY_LEN, prefix: $KEY_PREFIX"
+          # Quick validation
+          curl -s -o /dev/null -w "HTTP %{http_code}" https://api.anthropic.com/v1/messages \
+            -H "x-api-key: $(echo -n "$ANTHROPIC_API_KEY" | tr -d '[:space:]')" \
+            -H "anthropic-version: 2023-06-01" \
+            -H "content-type: application/json" \
+            -d '{"model":"claude-sonnet-4-5-20250929","max_tokens":5,"messages":[{"role":"user","content":"ping"}]}'
+          echo ""
+
       - name: Run auto-publish pipeline
         if: steps.queue.outputs.topic != ''
         id: pipeline
