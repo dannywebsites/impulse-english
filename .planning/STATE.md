@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Phase 2 planning complete — 5 plans in 3 waves
-last_updated: "2026-04-09T13:40:24.206Z"
+status: executing
+stopped_at: Completed 02-01-PLAN.md — S3 download and central image registry
+last_updated: "2026-04-09T13:50:08.196Z"
 last_activity: 2026-04-09
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 8
-  completed_plans: 3
+  completed_plans: 4
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-09)
 
 **Core value:** Template portability — changing brand-config.ts, napData.ts, and config files produces a fully functional website for a new client with zero hardcoded Impulse references
-**Current focus:** Phase 01 — leadform-hardening
+**Current focus:** Phase 02 — image-consolidation
 
 ## Current Position
 
-Phase: 2
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 02 (image-consolidation) — EXECUTING
+Plan: 2 of 5
+Status: Ready to execute
 Last activity: 2026-04-09
 
 Progress: [░░░░░░░░░░] 0%
@@ -55,6 +55,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01-leadform-hardening P01 | 73s | 2 tasks | 4 files |
 | Phase 01-leadform-hardening P03 | 120s | 1 tasks | 3 files |
 | Phase 01-leadform-hardening P02 | 8m | 2 tasks | 2 files |
+| Phase 02-image-consolidation P01 | 18m | 2 tasks | 73 files |
 
 ## Accumulated Context
 
@@ -73,6 +74,7 @@ Recent decisions affecting current work:
 - [Phase 01-leadform-hardening]: sonner installed separately in seo-system/package.json — seo-system has independent dependency tree from main Astro project
 - [Phase 01-leadform-hardening]: NAP.phone and NAP.phoneTel used directly (flat structure, not nested contact object)
 - [Phase 01-leadform-hardening]: Honeypot uses inline style position:absolute — Tailwind purges unused classes at build
+- [Phase 02-image-consolidation]: Gallery suffix for academyImages.ts exports to avoid collision with images.ts exports
 
 ### Pending Todos
 
@@ -86,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-09T13:40:24.197Z
-Stopped at: Phase 2 planning complete — 5 plans in 3 waves
-Resume file: .planning/phases/02-image-consolidation/02-01-PLAN.md
+Last session: 2026-04-09T13:50:08.194Z
+Stopped at: Completed 02-01-PLAN.md — S3 download and central image registry
+Resume file: None
