@@ -1,29 +1,20 @@
 import React from 'react';
 import { Play, ArrowRight } from 'lucide-react';
-import { teamImages } from '@/utils/images';
 
 export default function VideoCTA() {
-  const img = teamImages.estudiantesSonriendo;
-  const webpSrcSet = `${img.sizes.sm.webp} 400w, ${img.sizes.md.webp} 800w, ${img.sizes.lg.webp} 1200w, ${img.sizes.xl.webp} 1920w`;
-  const jpegSrcSet = `${img.sizes.sm.jpg} 400w, ${img.sizes.md.jpg} 800w, ${img.sizes.lg.jpg} 1200w, ${img.sizes.xl.jpg} 1920w`;
-
   return (
     <section id="vision" className="relative w-full h-[600px] flex items-center justify-center overflow-hidden bg-zinc-900">
       {/* Background Image/Video representation */}
       <div className="absolute inset-0 z-0">
-        <picture>
-          <source type="image/webp" srcSet={webpSrcSet} sizes="100vw" />
-          <source type="image/jpeg" srcSet={jpegSrcSet} sizes="100vw" />
-          <img
-            src={img.sizes.lg.jpg}
-            alt={img.alt}
-            width={1200}
-            height={800}
-            className="w-full h-full object-cover opacity-60"
-            loading="lazy"
-            decoding="async"
-          />
-        </picture>
+        <img
+          src="/images/academy/facilities/primary-classes-students-smiling.jpg"
+          alt="Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover opacity-60"
+          loading="lazy"
+          decoding="async"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-accent-blue/80 to-transparent mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-black/20"></div>
       </div>

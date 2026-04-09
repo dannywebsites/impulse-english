@@ -4,11 +4,9 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
-import OptimizedImage from '../../components/OptimizedImage';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
-import { facilityImages, brandingImages, s3CambridgeImages, s3SecondaryImages } from '@/utils/images';
 
 export const courseSchema = generateCourseSchema({
   name: "Clases Particulares de Inglés (1:1)",

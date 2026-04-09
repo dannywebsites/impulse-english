@@ -32,8 +32,8 @@ export const NAP = {
   gbpUrl: "https://share.google/GuRfJ3TjrnIIUhrdk",
 
   // Assets
-  logo: "/images/optimized/impulse-logo-400.webp",
-  image: "/images/optimized/impulse-logo-400.webp",
+  logo: "/images/academy/logos/img-4117.png",
+  image: "/images/academy/logos/img-4117.png",
 
   // Geo coordinates
   geo: {

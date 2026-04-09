@@ -4,7 +4,6 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
-import OptimizedImage from '../../components/OptimizedImage';
 import AcademyGallery from '../../components/AcademyGallery';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';

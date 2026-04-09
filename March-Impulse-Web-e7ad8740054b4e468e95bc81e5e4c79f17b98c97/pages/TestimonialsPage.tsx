@@ -4,9 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
 import LazyVideo from '../components/LazyVideo';
-import OptimizedImage from '../components/OptimizedImage';
 import Breadcrumb from '../components/Breadcrumb';
-import { facilityImages, certificationImages } from '@/utils/images';
 
 const videoTestimonials = [
   {
@@ -109,10 +107,13 @@ export default function TestimonialsPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <OptimizedImage
-            image={certificationImages.studentC1}
+          <img
+            src="/images/academy/students/lara-c1-cert.jpeg"
+            alt="Alumna con certificado C1 Advanced Cambridge - caso de éxito"
             className="w-full h-full object-cover"
-            sizes="100vw"
+            loading="eager"
+            decoding="sync"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
         </div>

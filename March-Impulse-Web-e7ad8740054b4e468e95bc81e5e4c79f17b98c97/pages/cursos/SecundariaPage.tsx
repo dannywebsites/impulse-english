@@ -4,14 +4,12 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import LazyVideo from '../../components/LazyVideo';
-import OptimizedImage from '../../components/OptimizedImage';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import AcademyGallery from '../../components/AcademyGallery';
 import { secundariaGalleryImages as galleryImages } from '@/utils/images';
-import { studentImages } from '@/utils/images';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Secundaria (13-17 años)",
@@ -100,10 +98,13 @@ export default function SecundariaPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <OptimizedImage
-            image={studentImages.teenagers}
+          <img
+            src="/images/academy/students/lucia-secundary.jpeg"
+            alt="Clases de inglés para jóvenes Madrid - preparación Cambridge"
             className="w-full h-full object-cover"
-            sizes="100vw"
+            loading="eager"
+            decoding="sync"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/80 via-indigo-900/70 to-purple-900/55"></div>
         </div>
