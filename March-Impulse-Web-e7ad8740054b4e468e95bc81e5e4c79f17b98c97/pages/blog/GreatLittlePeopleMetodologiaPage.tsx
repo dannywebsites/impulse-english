@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import { blogImages } from '@/utils/images';
 
 export const articleSchema = generateArticleSchema({
     headline: 'Great Little People: El Método de Inglés para los Más Pequeños',
@@ -52,7 +53,7 @@ export default function GreatLittlePeopleMetodologiaPage() {
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="/images/academy/facilities/infantil-classes.jpg"
+                src={blogImages.infantilClass.url}
                 alt="Clase Great Little People de inglés infantil"
                 className="w-full h-full object-cover"
                 loading="eager"

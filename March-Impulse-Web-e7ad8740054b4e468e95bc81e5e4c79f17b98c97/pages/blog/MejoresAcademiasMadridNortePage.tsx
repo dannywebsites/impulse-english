@@ -8,6 +8,7 @@ import FAQSection from '../../components/FAQSection';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import { NAP } from '../../utils/napData';
+import { blogImages } from '@/utils/images';
 
 export const articleSchema = generateArticleSchema({
   headline: "Las 8 Mejores Academias de Inglés en Madrid Norte (2026)",
@@ -209,7 +210,7 @@ export default function MejoresAcademiasMadridNortePage() {
         {/* Hero Section */}
         <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
           <div className="absolute inset-0">
-            <img src="/images/academy/facilities/classroom-facilities-main-classroom.jpg" alt="Aula de academia de inglés en Madrid Norte - Impulse English Academy" className="w-full h-full object-cover" loading="eager" />
+            <img src={blogImages.mainClassroom.url} alt="Aula de academia de inglés en Madrid Norte - Impulse English Academy" className="w-full h-full object-cover" loading="eager" />
             <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
           </div>
           <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
@@ -256,7 +257,7 @@ export default function MejoresAcademiasMadridNortePage() {
         <div className="relative -mt-8 mb-12 px-6">
           <div className="container mx-auto max-w-5xl">
             <img
-              src="/images/academy/facilities/classroom-facilities-main-classroom.jpg"
+              src={blogImages.mainClassroom.url}
               alt="Mejores academias de inglés en Madrid Norte - comparativa 2026"
               className="w-full h-64 md:h-96 object-cover rounded-2xl shadow-xl"
             />
@@ -538,12 +539,12 @@ export default function MejoresAcademiasMadridNortePage() {
               {/* Academy Photos */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
                 <img
-                  src="/images/academy/locations/outside-academy.jpg"
+                  src={blogImages.outsideAcademy.url}
                   alt="Exterior de Impulse English Academy en Barrio del Pilar, Madrid Norte"
                   className="w-full h-56 object-cover rounded-xl shadow-md"
                 />
                 <img
-                  src="/images/academy/facilities/classroom-facilities-main-classroom.jpg"
+                  src={blogImages.mainClassroom.url}
                   alt="Aula de clases de Impulse English Academy en Madrid Norte"
                   className="w-full h-56 object-cover rounded-xl shadow-md"
                 />

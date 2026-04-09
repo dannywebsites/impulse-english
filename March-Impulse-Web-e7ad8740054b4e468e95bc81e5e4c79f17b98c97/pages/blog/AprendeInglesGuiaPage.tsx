@@ -7,6 +7,7 @@ import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
+import { blogImages } from '@/utils/images';
 const tableOfContents = [
   { id: 'preguntas-frecuentes', title: 'Preguntas Frecuentes' },
   { id: 'donde-aprender', title: 'Dónde Aprender Inglés: Guía Completa' },
@@ -183,7 +184,7 @@ export default function AprendeInglesGuiaPage() {
         {/* Hero Section */}
         <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
           <div className="absolute inset-0">
-            <img src="/images/academy/team/jp-with-students.jpg" alt="Estudiantes con profesor Impulse English Academy" className="w-full h-full object-cover" loading="eager" />
+            <img src={blogImages.jpWithStudents.url} alt="Estudiantes con profesor Impulse English Academy" className="w-full h-full object-cover" loading="eager" />
             <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
           </div>
           <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

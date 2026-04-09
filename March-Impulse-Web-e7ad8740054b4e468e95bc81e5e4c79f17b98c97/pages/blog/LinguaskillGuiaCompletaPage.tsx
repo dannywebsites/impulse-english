@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
+import { blogImages } from '@/utils/images';
 
 export const articleSchema = generateArticleSchema({
   headline: "Guía Completa del Examen Linguaskill: Ejemplos, Estructura y Preparación 2026",
@@ -122,7 +123,7 @@ export default function LinguaskillGuiaCompletaPage() {
       {/* Hero Section */}
       <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/academy/facilities/technology-based-classroom-photo.jpg" alt="Aula tecnológica preparación Linguaskill Impulse English Academy" className="w-full h-full object-cover" loading="eager" />
+          <img src={blogImages.technologyClassroom.url} alt="Aula tecnológica preparación Linguaskill Impulse English Academy" className="w-full h-full object-cover" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

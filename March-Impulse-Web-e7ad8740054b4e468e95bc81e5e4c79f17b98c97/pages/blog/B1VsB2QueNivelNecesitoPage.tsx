@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import { blogImages } from '@/utils/images';
 
 export const articleSchema = generateArticleSchema({
     headline: "B1 vs B2 Cambridge: ¿Qué Nivel Necesitas?",
@@ -56,7 +57,7 @@ export default function B1VsB2QueNivelNecesitoPage() {
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="/images/academy/facilities/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg"
+                src={blogImages.cambridgeCertificate.url}
                 alt="B1 vs B2 Cambridge, qué nivel necesito"
                 className="w-full h-full object-cover"
                 loading="eager"

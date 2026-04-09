@@ -1191,6 +1191,70 @@ export const courseImages = {
   }
 } as const;
 
+// ============================================
+// BLOG IMAGES — Named registry for all 8 unique images used across blog pages
+// Blog pages use S3ImageData shape (single url, no responsive variants).
+// ============================================
+
+export const blogImages = {
+  cambridgeCertificate: {
+    name: 'cambridge-certificado-oficial-blog',
+    alt: 'Certificado oficial Cambridge - centro preparador autorizado',
+    altEn: 'Official Cambridge certificate - authorized preparation center',
+    category: 'cambridge',
+    url: '/images/academy/facilities/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg'
+  },
+  mainClassroom: {
+    name: 'aula-principal-impulse-blog',
+    alt: 'Aula principal academia de inglés Impulse English Academy Madrid',
+    altEn: 'Main classroom Impulse English Academy Madrid',
+    category: 'facilities',
+    url: '/images/academy/facilities/classroom-facilities-main-classroom.jpg'
+  },
+  technologyClassroom: {
+    name: 'aula-tecnologica-impulse-blog',
+    alt: 'Aula tecnológica preparación exámenes Impulse English Academy',
+    altEn: 'Technology classroom exam preparation Impulse English Academy',
+    category: 'facilities',
+    url: '/images/academy/facilities/technology-based-classroom-photo.jpg'
+  },
+  infantilClass: {
+    name: 'clase-infantil-impulse-blog',
+    alt: 'Clase de inglés infantil Great Little People Impulse English Academy',
+    altEn: 'Kids English class Great Little People Impulse English Academy',
+    category: 'infantil',
+    url: '/images/academy/facilities/infantil-classes.jpg'
+  },
+  adultOneToOne: {
+    name: 'clases-adultos-one-to-one-blog',
+    alt: 'Clases individuales de inglés para adultos Impulse English Academy',
+    altEn: 'One-to-one adult English classes Impulse English Academy',
+    category: 'adults',
+    url: '/images/academy/facilities/adult-one-to-one-classes.jpg'
+  },
+  outsideAcademy: {
+    name: 'exterior-academia-impulse-blog',
+    alt: 'Exterior academia de inglés Impulse English Academy Madrid',
+    altEn: 'Exterior of Impulse English Academy Madrid',
+    category: 'locations',
+    url: '/images/academy/locations/outside-academy.jpg'
+  },
+  cambridgeLogo: {
+    name: 'cambridge-logo-centro-oficial-blog',
+    alt: 'Logo Cambridge - centro oficial preparador exámenes',
+    altEn: 'Cambridge logo - official exam preparation center',
+    category: 'cambridge',
+    url: '/images/academy/logos/cambridge-logo-edited.png'
+  },
+  jpWithStudents: {
+    name: 'jp-con-estudiantes-certificados-blog',
+    alt: 'Profesor JP con estudiantes y certificados Cambridge Impulse English Academy',
+    altEn: 'Teacher JP with students and Cambridge certificates Impulse English Academy',
+    category: 'team',
+    url: '/images/academy/team/jp-with-students.jpg'
+  }
+} as const satisfies Record<string, S3ImageData>;
+
 // Type exports
 export type FacilityImageKey = keyof typeof facilityImages;
 export type InfantilImageKey = keyof typeof infantilImages;
@@ -1199,3 +1263,4 @@ export type CertificationImageKey = keyof typeof certificationImages;
 export type BrandingImageKey = keyof typeof brandingImages;
 export type AllImageKey = keyof typeof allImages;
 export type S3ImageKey = keyof typeof allS3Images;
+export type BlogImageKey = keyof typeof blogImages;

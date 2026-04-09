@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
+import { blogImages } from '@/utils/images';
 
 export const articleSchema = generateArticleSchema({
   headline: "Cursos de Inglés para Adultos en Madrid: Guía Completa 2025",
@@ -84,7 +85,7 @@ export default function CursosInglesAdultosMadridPage() {
           {/* Hero Section */}
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
-              <img src="/images/academy/facilities/classroom-facilities-main-classroom.jpg" alt="Aula principal academia inglés Impulse English Academy Madrid" className="w-full h-full object-cover" loading="eager" />
+              <img src={blogImages.mainClassroom.url} alt="Aula principal academia inglés Impulse English Academy Madrid" className="w-full h-full object-cover" loading="eager" />
               <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
             </div>
             <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

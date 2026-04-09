@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import { blogImages } from '@/utils/images';
 
 export const articleSchema = generateArticleSchema({
     headline: "Cómo Perder el Miedo a Hablar Inglés: 7 Estrategias",
@@ -56,7 +57,7 @@ export default function PerderMiedoHablarInglesPage() {
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="/images/academy/facilities/adult-one-to-one-classes.jpg"
+                src={blogImages.adultOneToOne.url}
                 alt="Superar el miedo a hablar inglés"
                 className="w-full h-full object-cover"
                 loading="eager"

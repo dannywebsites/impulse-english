@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import { blogImages } from '@/utils/images';
 
 export const articleSchema = generateArticleSchema({
     headline: "Inglés Presencial vs Online: ¿Qué Modalidad es Mejor?",
@@ -56,7 +57,7 @@ export default function InglesPresencialVsOnlinePage() {
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="/images/academy/facilities/classroom-facilities-main-classroom.jpg"
+                src={blogImages.mainClassroom.url}
                 alt="Clases presenciales vs online de inglés"
                 className="w-full h-full object-cover"
                 loading="eager"
