@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: planning
-stopped_at: Phase 1 context gathered
-last_updated: "2026-04-09T12:44:24.332Z"
-last_activity: 2026-04-09 — Roadmap created, phasing derived from 22 v1 requirements
+status: executing
+stopped_at: Completed 01-01-PLAN.md (env schema + sonner)
+last_updated: "2026-04-09T12:59:31.323Z"
+last_activity: 2026-04-09
 progress:
   total_phases: 4
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  total_plans: 3
+  completed_plans: 1
   percent: 0
 ---
 
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-09)
 
 **Core value:** Template portability — changing brand-config.ts, napData.ts, and config files produces a fully functional website for a new client with zero hardcoded Impulse references
-**Current focus:** Phase 1 — LeadForm Hardening
+**Current focus:** Phase 01 — leadform-hardening
 
 ## Current Position
 
-Phase: 1 of 4 (LeadForm Hardening)
-Plan: 0 of ? in current phase
-Status: Ready to plan
-Last activity: 2026-04-09 — Roadmap created, phasing derived from 22 v1 requirements
+Phase: 01 (leadform-hardening) — EXECUTING
+Plan: 2 of 3
+Status: Ready to execute
+Last activity: 2026-04-09
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -52,6 +52,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: —
 
 *Updated after each plan completion*
+| Phase 01-leadform-hardening P01 | 73s | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -64,6 +65,8 @@ Recent decisions affecting current work:
 - Init: Honeypot over CAPTCHA — zero UX friction, no external dependencies
 - Init: S3 images → local /assets/ — template portability, new clients won't have Impulse S3 access
 - Init: Image consolidation must precede optimization — Astro <Image> only works on local images
+- [Phase 01-leadform-hardening]: PUBLIC_WEBHOOK_URL declared with context=client and access=public in astro:env schema (consumed by client-side LeadForm.tsx, not server middleware)
+- [Phase 01-leadform-hardening]: sonner@^2.0.7 installed as toast library for form submission feedback in Plans 02-03
 
 ### Pending Todos
 
@@ -77,6 +80,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-09T12:44:24.322Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-leadform-hardening/01-CONTEXT.md
+Last session: 2026-04-09T12:59:31.318Z
+Stopped at: Completed 01-01-PLAN.md (env schema + sonner)
+Resume file: None
