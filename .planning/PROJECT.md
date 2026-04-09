@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-09 after Phase 4 completion (all v1 phases complete)*
+*Last updated: 2026-04-09 after Phase 5 completion (critical infrastructure debranded — BaseLayout, SEOHead, webmanifest read from napData)*
