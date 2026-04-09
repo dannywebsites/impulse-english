@@ -36,14 +36,21 @@ Plans:
 - [x] 01-03-PLAN.md — seo-system LeadForm: adapted hardening for Vite/React Router context
 
 ### Phase 2: Image Consolidation
-**Goal**: Every production image lives in src/assets/images/ and is referenced through a single central registry — no S3 URLs remain in source code
+**Goal**: Every production image lives in local assets and is referenced through a single central registry — no S3 URLs remain in source code
 **Depends on**: Phase 1
 **Requirements**: IMG-01, IMG-02, IMG-03, IMG-04
 **Success Criteria** (what must be TRUE):
   1. A search for S3 URLs across the entire codebase returns zero results
   2. All image imports in component files resolve through utils/images.ts, not direct file paths or external URLs
   3. The seo-system mirrored components reference the same local image paths as the main site components
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Download 73 S3 images + create central registry at utils/images.ts
+- [ ] 02-02-PLAN.md — Migrate main site components, pages, layouts, and data layer to registry
+- [ ] 02-03-PLAN.md — Migrate all 85 blog pages from inline S3 URLs to registry imports
+- [ ] 02-04-PLAN.md — Migrate seo-system components and pages to shared registry via relative paths
+- [ ] 02-05-PLAN.md — Delete old data files, full S3 audit, build verification, visual check
 
 ### Phase 3: Image Optimization
 **Goal**: All images are served in modern formats with correct loading strategies — no hand-rolled optimization scripts remain
@@ -74,6 +81,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. LeadForm Hardening | 3/3 | Complete   | 2026-04-09 |
-| 2. Image Consolidation | 0/? | Not started | - |
+| 2. Image Consolidation | 0/5 | Planned | - |
 | 3. Image Optimization | 0/? | Not started | - |
 | 4. Client Onboarding CLI | 0/? | Not started | - |
