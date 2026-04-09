@@ -10,7 +10,7 @@ import FAQSection from '../../components/FAQSection';
 import SchemaMarkup from '../../components/SchemaMarkup';
 import SEOHead from '../../components/SEOHead';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
-import { s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
+import { s3CambridgeImages, s3SecondaryImages } from '../../../utils/images';
 
 // Article Schema for AI citation
 const articleSchema = generateArticleSchema({
@@ -117,8 +117,8 @@ const whatYouGet = [
 ];
 
 const galleryImages = [
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg", alt: "Estudiantes con certificados Cambridge en Impulse English Academy" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-18.JPEG", alt: "Clase de inglés en Impulse English Academy La Vaguada Madrid" },
+  { url: "/images/academy/team/jp-with-students.jpg", alt: "Estudiantes con certificados Cambridge en Impulse English Academy" },
+  { url: "/images/academy/facilities/escuela-gonzalo-18.jpeg", alt: "Clase de inglés en Impulse English Academy La Vaguada Madrid" },
 ];
 
 export default function LinguaskillPage() {

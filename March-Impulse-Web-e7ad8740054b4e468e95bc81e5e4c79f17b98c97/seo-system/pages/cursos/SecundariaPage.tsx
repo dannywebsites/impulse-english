@@ -12,8 +12,7 @@ import FAQSection from '../../components/FAQSection';
 import SEOHead from '../../components/SEOHead';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import AcademyGallery from '../../components/AcademyGallery';
-import { secundariaImages as galleryImages } from '../../src/data/academyImages';
-import { studentImages } from '../../src/data/images';
+import { secundariaGalleryImages as galleryImages, studentImages } from '../../../utils/images';
 
 const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Secundaria (13-17 años)",
@@ -23,7 +22,7 @@ const courseSchema = generateCourseSchema({
   educationalLevel: "Secondary",
   timeRequired: "PT2H",
   price: "75",
-  image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+  image: "/images/academy/logos/img-4117.png"
 });
 
 

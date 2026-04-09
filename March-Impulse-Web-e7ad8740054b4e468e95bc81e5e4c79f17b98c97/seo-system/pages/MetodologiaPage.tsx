@@ -188,7 +188,7 @@ const howToSchema = {
   "@type": "HowTo",
   "name": "Cómo Aprender Inglés de Verdad con la Metodología Impulse",
   "description": "El método de 7 pilares que llevó a 100% de nuestros estudiantes a aprobar Cambridge 2024-2025. Sistema basado en ciencia del aprendizaje.",
-  "image": "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg",
+  "image": "/images/academy/team/jp-with-students.jpg",
   "totalTime": "PT6M",
   "estimatedCost": {
     "@type": "MonetaryAmount",

@@ -12,8 +12,7 @@ import FAQSection from '../../components/FAQSection';
 import SEOHead from '../../components/SEOHead';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import FullPhotoGallery from '../../components/FullPhotoGallery';
-import { primariaImages as galleryImages } from '../../src/data/academyImages';
-import { studentImages } from '../../src/data/images';
+import { primariaGalleryImages as galleryImages, studentImages } from '../../../utils/images';
 
 const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Primaria (6-12 años)",
@@ -23,7 +22,7 @@ const courseSchema = generateCourseSchema({
   educationalLevel: "Primary",
   timeRequired: "PT2H",
   price: "71",
-  image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+  image: "/images/academy/logos/img-4117.png"
 });
 
 
