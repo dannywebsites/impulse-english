@@ -6,6 +6,7 @@ export const NAP = {
   name: "Impulse English Academy La Vaguada",
   shortName: "Impulse English",
   legalName: "Impulse English Academy La Vaguada",
+  siteTitle: "Impulse English Academy La Vaguada – Barrio del Pilar",
 
   // Address components
   streetAddress: "Av. de El Ferrol, 22",
@@ -75,6 +76,7 @@ export const NAP = {
     facebook: "https://www.facebook.com/impulseenglishlavaguada/",
     tiktok: "https://www.tiktok.com/@impulse_english_lavaguada",
     x: "https://x.com/impulse_vaguada",
+    xHandle: "@ImpulseEnglish",
     linkedin: "https://www.linkedin.com/company/101859096/",
     youtube: "https://www.youtube.com/@Impulse-English",
   },
@@ -133,6 +135,13 @@ export const NAP = {
 
   // Founding
   foundingDate: "2022",
+
+  // Tracking IDs (Google Analytics, Ads, Tag Manager)
+  tracking: {
+    ga4Id: "G-WN5973VY1M",
+    googleAdsId: "AW-11461982741",
+    gtmContainerId: "GTM-TDC7CQDD",
+  },
 } as const;
 
 // Helper: Schema.org PostalAddress object
