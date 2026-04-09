@@ -1,4 +1,5 @@
 import type { PAAArticle } from './types';
+import { NAP } from '../utils/napData';
 
 export const cambridgeC1AdvancedArticles: PAAArticle[] = [
   // ─── 1. tiempo-b2-a-c1 ───────────────────────────────────────────────
@@ -31,9 +32,9 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Preparad el C1 Advanced con Impulse English Academy',
+      heading: `Preparad el C1 Advanced con ${NAP.name}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial de Cambridge, os ayudamos a dar el salto de B2 a C1 de forma eficaz. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos para garantizar atención personalizada. Contamos con un historial del 100% de aprobados en nuestros cursos de preparación C1 Advanced. Realizamos simulacros de examen periódicos y os proporcionamos materiales actualizados para que lleguéis al examen con total confianza.',
+        `En ${NAP.name}, Centro Preparador Oficial de Cambridge, os ayudamos a dar el salto de B2 a C1 de forma eficaz. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos para garantizar atención personalizada. Contamos con un historial del 100% de aprobados en nuestros cursos de preparación C1 Advanced. Realizamos simulacros de examen periódicos y os proporcionamos materiales actualizados para que lleguéis al examen con total confianza.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación C1 Advanced', href: '/examenes-cambridge/c1-advanced' },
@@ -98,9 +99,9 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Superad el C1 Advanced con la preparación de Impulse',
+      heading: `Superad el C1 Advanced con la preparación de ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial de Cambridge, sabemos lo que el C1 Advanced exige y os preparamos para afrontarlo con seguridad. Nuestros profesores especializados conocen cada parte del examen y trabajan con grupos reducidos para garantizar atención individualizada. Con un 100% de aprobados en nuestros cursos de preparación, tenemos la experiencia para llevaros al éxito. Realizamos simulacros reales y os enseñamos las estrategias que marcan la diferencia el día del examen.',
+        `En ${NAP.name}, Centro Preparador Oficial de Cambridge, sabemos lo que el C1 Advanced exige y os preparamos para afrontarlo con seguridad. Nuestros profesores especializados conocen cada parte del examen y trabajan con grupos reducidos para garantizar atención individualizada. Con un 100% de aprobados en nuestros cursos de preparación, tenemos la experiencia para llevaros al éxito. Realizamos simulacros reales y os enseñamos las estrategias que marcan la diferencia el día del examen.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación C1 Advanced', href: '/examenes-cambridge/c1-advanced' },
@@ -165,9 +166,9 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Impulsad vuestra carrera con el C1 de Impulse',
+      heading: `Impulsad vuestra carrera con el C1 de ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial de Cambridge, os preparamos para obtener el C1 Advanced y dar un salto en vuestra carrera profesional. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos y un enfoque práctico orientado al mundo laboral. Con un historial del 100% de aprobados, nuestra preparación está diseñada para que alcancéis vuestro objetivo con la máxima eficacia y confianza.',
+        `En ${NAP.name}, Centro Preparador Oficial de Cambridge, os preparamos para obtener el C1 Advanced y dar un salto en vuestra carrera profesional. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos y un enfoque práctico orientado al mundo laboral. Con un historial del 100% de aprobados, nuestra preparación está diseñada para que alcancéis vuestro objetivo con la máxima eficacia y confianza.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación C1 Advanced', href: '/examenes-cambridge/c1-advanced' },
@@ -232,9 +233,9 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Preparaos para el C1 Advanced en Impulse',
+      heading: `Preparaos para el C1 Advanced en ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial de Cambridge, os orientamos sobre qué examen se adapta mejor a vuestros objetivos y os preparamos específicamente para el C1 Advanced. Nuestros profesores especializados trabajan con grupos reducidos, ofreciendo simulacros reales y estrategias probadas. Con un 100% de aprobados, os garantizamos una preparación de calidad que os llevará al éxito en el examen.',
+        `En ${NAP.name}, Centro Preparador Oficial de Cambridge, os orientamos sobre qué examen se adapta mejor a vuestros objetivos y os preparamos específicamente para el C1 Advanced. Nuestros profesores especializados trabajan con grupos reducidos, ofreciendo simulacros reales y estrategias probadas. Con un 100% de aprobados, os garantizamos una preparación de calidad que os llevará al éxito en el examen.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación C1 Advanced', href: '/examenes-cambridge/c1-advanced' },
@@ -299,9 +300,9 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Optimizad vuestra preparación C1 con Impulse',
+      heading: `Optimizad vuestra preparación C1 con ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial de Cambridge, diseñamos planes de estudio personalizados para que aprovechéis al máximo cada hora de preparación. Nuestros profesores especializados en el C1 Advanced trabajan con grupos reducidos y os guían con materiales actualizados y simulacros reales. Con un 100% de aprobados, nuestra metodología está probada para llevaros al éxito de la forma más eficiente posible.',
+        `En ${NAP.name}, Centro Preparador Oficial de Cambridge, diseñamos planes de estudio personalizados para que aprovechéis al máximo cada hora de preparación. Nuestros profesores especializados en el C1 Advanced trabajan con grupos reducidos y os guían con materiales actualizados y simulacros reales. Con un 100% de aprobados, nuestra metodología está probada para llevaros al éxito de la forma más eficiente posible.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación C1 Advanced', href: '/examenes-cambridge/c1-advanced' },
@@ -366,9 +367,9 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Certificad vuestro C1 con Impulse English Academy',
+      heading: `Certificad vuestro C1 con ${NAP.name}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial de Cambridge, os ayudamos a obtener el C1 Advanced con una preparación completa y eficaz. Nuestros profesores especializados trabajan con grupos reducidos y materiales oficiales actualizados. Con un historial del 100% de aprobados, os garantizamos una formación de calidad que os permitirá conseguir un certificado válido de por vida y de reconocimiento internacional.',
+        `En ${NAP.name}, Centro Preparador Oficial de Cambridge, os ayudamos a obtener el C1 Advanced con una preparación completa y eficaz. Nuestros profesores especializados trabajan con grupos reducidos y materiales oficiales actualizados. Con un historial del 100% de aprobados, os garantizamos una formación de calidad que os permitirá conseguir un certificado válido de por vida y de reconocimiento internacional.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación C1 Advanced', href: '/examenes-cambridge/c1-advanced' },
@@ -433,9 +434,9 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Dad el salto de B2 a C1 con Impulse',
+      heading: `Dad el salto de B2 a C1 con ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial de Cambridge, os acompañamos en la transición de B2 a C1 con un programa diseñado para maximizar vuestro progreso. Nuestros profesores especializados trabajan con grupos reducidos y una metodología centrada en las competencias que marcan la diferencia en el C1 Advanced. Con un 100% de aprobados, tenemos la experiencia para llevaros al siguiente nivel con seguridad y eficacia.',
+        `En ${NAP.name}, Centro Preparador Oficial de Cambridge, os acompañamos en la transición de B2 a C1 con un programa diseñado para maximizar vuestro progreso. Nuestros profesores especializados trabajan con grupos reducidos y una metodología centrada en las competencias que marcan la diferencia en el C1 Advanced. Con un 100% de aprobados, tenemos la experiencia para llevaros al siguiente nivel con seguridad y eficacia.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación C1 Advanced', href: '/examenes-cambridge/c1-advanced' },
@@ -507,7 +508,7 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
     brandSection: {
       heading: 'Preparad el C1 Advanced desde cualquier punto de partida',
       content:
-        'En Impulse English Academy, Centro Preparador Oficial de Cambridge, evaluamos vuestro nivel real con una prueba de nivel gratuita y diseñamos el plan de preparación más adecuado para vosotros. Nuestros profesores especializados trabajan con grupos reducidos, adaptándose a las necesidades de cada alumno. Con un 100% de aprobados en el C1 Advanced, os garantizamos una preparación rigurosa y eficaz, tengáis o no un certificado B2 previo.',
+        `En ${NAP.name}, Centro Preparador Oficial de Cambridge, evaluamos vuestro nivel real con una prueba de nivel gratuita y diseñamos el plan de preparación más adecuado para vosotros. Nuestros profesores especializados trabajan con grupos reducidos, adaptándose a las necesidades de cada alumno. Con un 100% de aprobados en el C1 Advanced, os garantizamos una preparación rigurosa y eficaz, tengáis o no un certificado B2 previo.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación C1 Advanced', href: '/examenes-cambridge/c1-advanced' },
@@ -577,9 +578,9 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Aprobad el C1 Advanced con Impulse',
+      heading: `Aprobad el C1 Advanced con ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial de Cambridge, superamos ampliamente la media de aprobados: nuestro historial es del 100% de aprobados en el C1 Advanced. Nuestros profesores especializados trabajan con grupos reducidos, realizan simulacros en condiciones reales de examen y proporcionan correcciones detalladas de cada destreza. Con nuestra preparación, no solo aprobaréis, sino que lo haréis con la mejor calificación posible.',
+        `En ${NAP.name}, Centro Preparador Oficial de Cambridge, superamos ampliamente la media de aprobados: nuestro historial es del 100% de aprobados en el C1 Advanced. Nuestros profesores especializados trabajan con grupos reducidos, realizan simulacros en condiciones reales de examen y proporcionan correcciones detalladas de cada destreza. Con nuestra preparación, no solo aprobaréis, sino que lo haréis con la mejor calificación posible.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación C1 Advanced', href: '/examenes-cambridge/c1-advanced' },
@@ -644,9 +645,9 @@ export const cambridgeC1AdvancedArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Conseguid el C1 Advanced con Impulse en Madrid',
+      heading: `Conseguid el C1 Advanced con ${NAP.shortName} en ${NAP.city}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial de Cambridge en Madrid, os preparamos para obtener el C1 Advanced con la máxima garantía de éxito. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos, materiales oficiales y simulacros reales. Con un historial del 100% de aprobados, somos la academia de confianza para dar el paso definitivo en vuestro nivel de inglés. Reservad vuestra prueba de nivel gratuita y empezad a preparar vuestro futuro.',
+        `En ${NAP.name}, Centro Preparador Oficial de Cambridge en ${NAP.city}, os preparamos para obtener el C1 Advanced con la máxima garantía de éxito. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos, materiales oficiales y simulacros reales. Con un historial del 100% de aprobados, somos la academia de confianza para dar el paso definitivo en vuestro nivel de inglés. Reservad vuestra prueba de nivel gratuita y empezad a preparar vuestro futuro.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación C1 Advanced', href: '/examenes-cambridge/c1-advanced' },

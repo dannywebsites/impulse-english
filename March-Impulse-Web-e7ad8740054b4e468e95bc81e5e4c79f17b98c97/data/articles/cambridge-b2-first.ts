@@ -1,4 +1,5 @@
 import type { PAAArticle } from './types';
+import { NAP } from '../utils/napData';
 
 export const cambridgeB2FirstArticles: PAAArticle[] = [
   // ─────────────────────────────────────────────
@@ -33,9 +34,9 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Preparamos el B2 First en Impulse',
+      heading: `Preparamos el B2 First en ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial Cambridge, os acompañamos en cada intento hasta que obtengáis vuestro certificado. Nuestro ratio de aprobados en 2024-2025 es del 100%, gracias a grupos reducidos de máximo 10 alumnos, simulacros mensuales en condiciones reales y profesores certificados TEFL/CELTA que conocen el examen a la perfección. Si necesitáis repetir, diseñamos un plan personalizado centrado en vuestras áreas de mejora.',
+        `En ${NAP.name}, Centro Preparador Oficial Cambridge, os acompañamos en cada intento hasta que obtengáis vuestro certificado. Nuestro ratio de aprobados en 2024-2025 es del 100%, gracias a grupos reducidos de máximo 10 alumnos, simulacros mensuales en condiciones reales y profesores certificados TEFL/CELTA que conocen el examen a la perfección. Si necesitáis repetir, diseñamos un plan personalizado centrado en vuestras áreas de mejora.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación B2 First', href: '/examenes-cambridge/b2-first' },
@@ -102,9 +103,9 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'En Impulse te ayudamos a aprobar el B2 First',
+      heading: `En ${NAP.shortName} te ayudamos a aprobar el B2 First`,
       content:
-        'Como Centro Preparador Oficial Cambridge, en Impulse English Academy hemos conseguido un 100% de aprobados en la temporada 2024-2025. Nuestros profesores certificados TEFL/CELTA analizan vuestro Statement of Results y diseñan un plan de recuperación personalizado. Con grupos reducidos de máximo 10 alumnos y simulacros mensuales, identificamos vuestros puntos débiles y los convertimos en fortalezas.',
+        `Como Centro Preparador Oficial Cambridge, en ${NAP.name} hemos conseguido un 100% de aprobados en la temporada 2024-2025. Nuestros profesores certificados TEFL/CELTA analizan vuestro Statement of Results y diseñan un plan de recuperación personalizado. Con grupos reducidos de máximo 10 alumnos y simulacros mensuales, identificamos vuestros puntos débiles y los convertimos en fortalezas.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación B2 First', href: '/examenes-cambridge/b2-first' },
@@ -171,9 +172,9 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Consigue tu B2 First de por vida con Impulse',
+      heading: `Consigue tu B2 First de por vida con ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial Cambridge, os preparamos para obtener un certificado que os acompañará toda la vida. Con un 100% de aprobados en 2024-2025, grupos reducidos de máximo 10 alumnos y simulacros mensuales en condiciones reales de examen, nuestros profesores certificados TEFL/CELTA os garantizan la mejor preparación posible para el B2 First.',
+        `En ${NAP.name}, Centro Preparador Oficial Cambridge, os preparamos para obtener un certificado que os acompañará toda la vida. Con un 100% de aprobados en 2024-2025, grupos reducidos de máximo 10 alumnos y simulacros mensuales en condiciones reales de examen, nuestros profesores certificados TEFL/CELTA os garantizan la mejor preparación posible para el B2 First.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación B2 First', href: '/examenes-cambridge/b2-first' },
@@ -240,9 +241,9 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Alcanza la nota que necesitas con Impulse',
+      heading: `Alcanza la nota que necesitas con ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial Cambridge, nuestros alumnos no solo aprueban: muchos alcanzan Grade A. Con un 100% de aprobados en 2024-2025, simulacros mensuales con corrección detallada y grupos reducidos de máximo 10 alumnos, nuestros profesores certificados TEFL/CELTA os preparan para superar ampliamente los 160 puntos.',
+        `En ${NAP.name}, Centro Preparador Oficial Cambridge, nuestros alumnos no solo aprueban: muchos alcanzan Grade A. Con un 100% de aprobados en 2024-2025, simulacros mensuales con corrección detallada y grupos reducidos de máximo 10 alumnos, nuestros profesores certificados TEFL/CELTA os preparan para superar ampliamente los 160 puntos.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación B2 First', href: '/examenes-cambridge/b2-first' },
@@ -314,9 +315,9 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Supera el B2 First con la preparación de Impulse',
+      heading: `Supera el B2 First con la preparación de ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial Cambridge, hacemos que el B2 First sea alcanzable para todos. Con un 100% de aprobados en 2024-2025, nuestros profesores certificados TEFL/CELTA os enseñan técnicas específicas para cada parte del examen. Grupos reducidos de máximo 10 alumnos y simulacros mensuales aseguran que lleguéis al examen con total confianza.',
+        `En ${NAP.name}, Centro Preparador Oficial Cambridge, hacemos que el B2 First sea alcanzable para todos. Con un 100% de aprobados en 2024-2025, nuestros profesores certificados TEFL/CELTA os enseñan técnicas específicas para cada parte del examen. Grupos reducidos de máximo 10 alumnos y simulacros mensuales aseguran que lleguéis al examen con total confianza.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación B2 First', href: '/examenes-cambridge/b2-first' },
@@ -388,9 +389,9 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Preparación intensiva B2 First en Impulse',
+      heading: `Preparación intensiva B2 First en ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial Cambridge, ofrecemos programas intensivos diseñados para preparar el B2 First en plazos reducidos. Con un 100% de aprobados en 2024-2025, nuestros profesores certificados TEFL/CELTA crean planes personalizados con simulacros mensuales y grupos reducidos de máximo 10 alumnos. Optimizamos cada hora de clase para que avancéis al máximo ritmo posible.',
+        `En ${NAP.name}, Centro Preparador Oficial Cambridge, ofrecemos programas intensivos diseñados para preparar el B2 First en plazos reducidos. Con un 100% de aprobados en 2024-2025, nuestros profesores certificados TEFL/CELTA crean planes personalizados con simulacros mensuales y grupos reducidos de máximo 10 alumnos. Optimizamos cada hora de clase para que avancéis al máximo ritmo posible.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación B2 First', href: '/examenes-cambridge/b2-first' },
@@ -457,9 +458,9 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Domina Use of English con Impulse',
+      heading: `Domina Use of English con ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial Cambridge, dedicamos sesiones específicas a Use of English, la sección que más preocupa a los candidatos. Con grupos reducidos de máximo 10 alumnos y profesores certificados TEFL/CELTA, trabajamos cada tipo de ejercicio con material actualizado y técnicas probadas. Nuestro 100% de aprobados en 2024-2025 demuestra que nuestra preparación funciona.',
+        `En ${NAP.name}, Centro Preparador Oficial Cambridge, dedicamos sesiones específicas a Use of English, la sección que más preocupa a los candidatos. Con grupos reducidos de máximo 10 alumnos y profesores certificados TEFL/CELTA, trabajamos cada tipo de ejercicio con material actualizado y técnicas probadas. Nuestro 100% de aprobados en 2024-2025 demuestra que nuestra preparación funciona.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación B2 First', href: '/examenes-cambridge/b2-first' },
@@ -526,9 +527,9 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Practica el Speaking del B2 First en Impulse',
+      heading: `Practica el Speaking del B2 First en ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial Cambridge, dedicamos sesiones completas a la práctica del Speaking en condiciones reales de examen. Con grupos reducidos de máximo 10 alumnos, cada estudiante tiene oportunidades constantes para hablar. Nuestros profesores certificados TEFL/CELTA os dan retroalimentación individualizada sobre pronunciación, fluidez e interacción. El 100% de aprobados en 2024-2025 avala nuestra metodología.',
+        `En ${NAP.name}, Centro Preparador Oficial Cambridge, dedicamos sesiones completas a la práctica del Speaking en condiciones reales de examen. Con grupos reducidos de máximo 10 alumnos, cada estudiante tiene oportunidades constantes para hablar. Nuestros profesores certificados TEFL/CELTA os dan retroalimentación individualizada sobre pronunciación, fluidez e interacción. El 100% de aprobados en 2024-2025 avala nuestra metodología.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación B2 First', href: '/examenes-cambridge/b2-first' },
@@ -595,9 +596,9 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Material oficial incluido en los cursos Impulse',
+      heading: `Material oficial incluido en los cursos ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial Cambridge, proporcionamos a nuestros alumnos acceso al material más actualizado y eficaz. Nuestros profesores certificados TEFL/CELTA seleccionan los recursos más adecuados para cada alumno, complementados con simulacros mensuales y corrección detallada en grupos reducidos de máximo 10 estudiantes. El 100% de aprobados en 2024-2025 refleja la calidad de nuestra preparación.',
+        `En ${NAP.name}, Centro Preparador Oficial Cambridge, proporcionamos a nuestros alumnos acceso al material más actualizado y eficaz. Nuestros profesores certificados TEFL/CELTA seleccionan los recursos más adecuados para cada alumno, complementados con simulacros mensuales y corrección detallada en grupos reducidos de máximo 10 estudiantes. El 100% de aprobados en 2024-2025 refleja la calidad de nuestra preparación.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación B2 First', href: '/examenes-cambridge/b2-first' },
@@ -666,7 +667,7 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
     brandSection: {
       heading: 'Te preparamos para el B2 First en cualquier formato',
       content:
-        'En Impulse English Academy, Centro Preparador Oficial Cambridge, os preparamos tanto para el formato papel como para el ordenador. Nuestros simulacros mensuales replican ambas modalidades para que el día del examen no tengáis sorpresas. Con grupos reducidos de máximo 10 alumnos, profesores certificados TEFL/CELTA y un 100% de aprobados en 2024-2025, os asesoramos sobre qué formato se ajusta mejor a vuestro perfil.',
+        `En ${NAP.name}, Centro Preparador Oficial Cambridge, os preparamos tanto para el formato papel como para el ordenador. Nuestros simulacros mensuales replican ambas modalidades para que el día del examen no tengáis sorpresas. Con grupos reducidos de máximo 10 alumnos, profesores certificados TEFL/CELTA y un 100% de aprobados en 2024-2025, os asesoramos sobre qué formato se ajusta mejor a vuestro perfil.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación B2 First', href: '/examenes-cambridge/b2-first' },
@@ -733,9 +734,9 @@ export const cambridgeB2FirstArticles: PAAArticle[] = [
       },
     ],
     brandSection: {
-      heading: 'Preparamos el B2 First a tu ritmo en Impulse',
+      heading: `Preparamos el B2 First a tu ritmo en ${NAP.shortName}`,
       content:
-        'En Impulse English Academy, Centro Preparador Oficial Cambridge, adaptamos la duración del curso a vuestro nivel de partida y vuestros objetivos. Con un 100% de aprobados en 2024-2025, grupos reducidos de máximo 10 alumnos y simulacros mensuales, nuestros profesores certificados TEFL/CELTA diseñan un plan de estudio personalizado para que alcancéis el B2 First en el tiempo óptimo, sin prisas innecesarias ni demoras evitables.',
+        `En ${NAP.name}, Centro Preparador Oficial Cambridge, adaptamos la duración del curso a vuestro nivel de partida y vuestros objetivos. Con un 100% de aprobados en 2024-2025, grupos reducidos de máximo 10 alumnos y simulacros mensuales, nuestros profesores certificados TEFL/CELTA diseñan un plan de estudio personalizado para que alcancéis el B2 First en el tiempo óptimo, sin prisas innecesarias ni demoras evitables.`,
       ctaLinks: [
         { text: 'Prueba de nivel gratis', href: '/reservar-clase' },
         { text: 'Preparación B2 First', href: '/examenes-cambridge/b2-first' },
