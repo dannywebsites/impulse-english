@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Image Consolidation** - All S3 images moved to local assets with central registry (completed 2026-04-09)
 - [x] **Phase 3: Image Optimization** - Astro native image pipeline replaces hand-rolled system (completed 2026-04-09)
 - [x] **Phase 4: Client Onboarding CLI** - Interactive question flow generates fully configured website (completed 2026-04-09)
-- [ ] **Phase 5: Critical Infrastructure Debranding** - Remove hardcoded tracking IDs, site names, and broken PWA manifest from core layout files
+- [x] **Phase 5: Critical Infrastructure Debranding** - Remove hardcoded tracking IDs, site names, and broken PWA manifest from core layout files (completed 2026-04-09)
 - [ ] **Phase 6: Component Debranding** - Replace hardcoded Impulse references in React/Astro components with napData/brand-config imports
 - [ ] **Phase 7: Content Debranding** - Remove hardcoded Impulse references from page meta tags and article content
 - [ ] **Phase 8: Auto-Publish Pipeline Decouple** - Connect auto-publish.js to brand-config.ts instead of hardcoded BRAND block
@@ -101,7 +101,7 @@ Plans:
 
 Plans:
 - [x] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
-- [ ] 05-02-PLAN.md — Extend onboarding CLI with tracking questions, webmanifest generator, verification
+- [x] 05-02-PLAN.md — Extend onboarding CLI with tracking questions, webmanifest generator, verification
 
 ### Phase 6: Component Debranding
 **Goal**: All React and Astro components read brand name, location, and display text from napData/brand-config — no visible Impulse references remain in component source
@@ -117,7 +117,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
+- [x] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
 - [ ] 05-02-PLAN.md — Extend onboarding CLI with tracking questions, webmanifest generator, verification
 
 ### Phase 7: Content Debranding
@@ -161,7 +161,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 2. Image Consolidation | 5/5 | Complete | 2026-04-09 |
 | 3. Image Optimization | 4/4 | Complete   | 2026-04-09 |
 | 4. Client Onboarding CLI | 2/2 | Complete   | 2026-04-09 |
-| 5. Critical Infrastructure Debranding | 1/2 | In Progress|  |
+| 5. Critical Infrastructure Debranding | 2/2 | Complete   | 2026-04-09 |
 | 6. Component Debranding | 0/0 | Pending | — |
 | 7. Content Debranding | 0/0 | Pending | — |
 | 8. Auto-Publish Pipeline Decouple | 0/0 | Pending | — |
