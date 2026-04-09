@@ -33,7 +33,7 @@ The template must be portable — changing `brand-config.ts`, `napData.ts`, and 
 - [x] Image optimization — Validated in Phase 3: Image Optimization (Astro <Picture>/<Image> pipeline, getImage() for React props, hand-rolled system deleted)
 - [x] Honeypot spam protection — Validated in Phase 1: LeadForm Hardening
 - [ ] Auto-publish integration — ensure pipeline auto-posts articles without manual intervention (approval workflow deferred)
-- [ ] Client onboarding system — automated flow: provide client info + images → answer questions → full website built from template. Research agent scrapes client details, populates brand-config.ts/napData.ts, builds all pages
+- [x] Client onboarding system — Validated in Phase 4: Client Onboarding CLI (scripts/onboard-client.js — 8-category question flow, generates brand-config.ts/napData.ts/buildPageTitle.ts/.env.template, draft/promote flow, build verification)
 
 ### Out of Scope
 
@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-09 after Phase 3 completion*
+*Last updated: 2026-04-09 after Phase 4 completion (all v1 phases complete)*
