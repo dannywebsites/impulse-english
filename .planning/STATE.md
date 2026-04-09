@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-01-PLAN.md — S3 download and central image registry
-last_updated: "2026-04-09T13:50:08.196Z"
+stopped_at: Completed 02-02-PLAN.md — main site S3 migration
+last_updated: "2026-04-09T14:00:45.839Z"
 last_activity: 2026-04-09
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 8
-  completed_plans: 4
+  completed_plans: 5
   percent: 0
 ---
 
@@ -26,7 +26,7 @@ See: .planning/PROJECT.md (updated 2026-04-09)
 ## Current Position
 
 Phase: 02 (image-consolidation) — EXECUTING
-Plan: 2 of 5
+Plan: 3 of 5
 Status: Ready to execute
 Last activity: 2026-04-09
 
@@ -56,6 +56,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01-leadform-hardening P03 | 120s | 1 tasks | 3 files |
 | Phase 01-leadform-hardening P02 | 8m | 2 tasks | 2 files |
 | Phase 02-image-consolidation P01 | 18m | 2 tasks | 73 files |
+| Phase 02-image-consolidation P02 | 25m | 2 tasks | 131 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,8 @@ Recent decisions affecting current work:
 - [Phase 01-leadform-hardening]: NAP.phone and NAP.phoneTel used directly (flat structure, not nested contact object)
 - [Phase 01-leadform-hardening]: Honeypot uses inline style position:absolute — Tailwind purges unused classes at build
 - [Phase 02-image-consolidation]: Gallery suffix for academyImages.ts exports to avoid collision with images.ts exports
+- [Phase 02-image-consolidation]: schemaData.ts prepends BASE_URL to NAP.logo/image for schema.org absolute URLs
+- [Phase 02-image-consolidation]: courseImages added to utils/images.ts — was missing from Plan 01 registry, CoursesSection needed it
 
 ### Pending Todos
 
@@ -88,6 +91,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-09T13:50:08.194Z
-Stopped at: Completed 02-01-PLAN.md — S3 download and central image registry
+Last session: 2026-04-09T14:00:45.837Z
+Stopped at: Completed 02-02-PLAN.md — main site S3 migration
 Resume file: None
