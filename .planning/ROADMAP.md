@@ -46,7 +46,7 @@ Plans:
 **Plans**: 5 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Download 73 S3 images + create central registry at utils/images.ts
+- [x] 02-01-PLAN.md — Download 73 S3 images + create central registry at utils/images.ts
 - [ ] 02-02-PLAN.md — Migrate main site components, pages, layouts, and data layer to registry
 - [ ] 02-03-PLAN.md — Migrate all 85 blog pages from inline S3 URLs to registry imports
 - [ ] 02-04-PLAN.md — Migrate seo-system components and pages to shared registry via relative paths
