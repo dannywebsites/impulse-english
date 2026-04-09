@@ -2,11 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MetodologiaPage from '../../pages/MetodologiaPage';
 import CookieBanner from '../../components/CookieBanner';
+import { NAP } from '../../utils/napData';
 ---
 
 <BaseLayout
   title="Metodología"
-  description="Conoce la metodología Impulse: conversación desde día 1, grupos reducidos máx 10 alumnos, personalización total. 100% aprobados Cambridge. Academia Madrid."
+  description={`Conoce la metodología ${NAP.shortName}: conversación desde día 1, grupos reducidos máx 10 alumnos, personalización total. 100% aprobados Cambridge. Academia ${NAP.city}.`}
   keywords="metodología inglés, como aprender inglés rápido, método conversacional inglés, clases inglés personalizadas madrid"
   canonical="/metodologia"
 >

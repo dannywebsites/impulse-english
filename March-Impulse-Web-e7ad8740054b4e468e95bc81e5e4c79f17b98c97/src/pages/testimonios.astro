@@ -2,12 +2,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TestimonialsPage from '../../pages/TestimonialsPage';
 import CookieBanner from '../../components/CookieBanner';
+import { NAP } from '../../utils/napData';
 ---
 
 <BaseLayout
   title="Opiniones"
-  description="Opiniones reales de alumnos de Impulse English Academy. 150+ reseñas 5 estrellas en Google. Testimonios de éxito con Cambridge y Linguaskill."
-  keywords="opiniones academia inglés madrid, reseñas impulse english, testimonios alumnos cambridge, valoraciones clases inglés"
+  description={`Opiniones reales de alumnos de ${NAP.name}. 150+ reseñas 5 estrellas en Google. Testimonios de éxito con Cambridge y Linguaskill.`}
+  keywords={`opiniones academia inglés madrid, reseñas ${NAP.shortName.toLowerCase()}, testimonios alumnos cambridge, valoraciones clases inglés`}
   canonical="/testimonios"
 >
   <TestimonialsPage client:idle />

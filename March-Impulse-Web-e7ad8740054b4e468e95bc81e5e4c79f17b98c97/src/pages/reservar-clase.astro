@@ -4,6 +4,7 @@ import ReservarClasePage from '../../pages/ReservarClasePage';
 import CookieBanner from '../../components/CookieBanner';
 import { getImage } from 'astro:assets';
 import { astroHeroImages } from '../../utils/images-astro';
+import { NAP } from '../../utils/napData';
 
 const heroImg = await getImage({
   src: astroHeroImages.primaryStudentsSmiling,
@@ -15,7 +16,7 @@ const heroImg = await getImage({
 
 <BaseLayout
   title="Reservar Clase"
-  description="Reserva tu clase de prueba gratuita en Impulse English Academy. Sin compromiso. Te contactamos en menos de 24 horas. La Vaguada, Barrio del Pilar."
+  description={`Reserva tu clase de prueba gratuita en ${NAP.name}. Sin compromiso. Te contactamos en menos de 24 horas. La Vaguada, Barrio del Pilar.`}
   keywords="reservar clase inglés, prueba gratis inglés madrid, clase prueba academia inglés, inscripción cursos inglés"
   canonical="/reservar-clase"
 >

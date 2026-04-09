@@ -2,11 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PoliticaCookiesPage from '../../pages/legal/PoliticaCookiesPage';
 import CookieBanner from '../../components/CookieBanner';
+import { NAP } from '../../utils/napData';
 ---
 
 <BaseLayout
   title="Política de Cookies"
-  description="Política de cookies de Impulse English Academy. Información sobre el uso de cookies en nuestro sitio web."
+  description={`Política de cookies de ${NAP.name}. Información sobre el uso de cookies en nuestro sitio web.`}
   canonical="/politica-cookies"
 >
   <PoliticaCookiesPage client:idle />

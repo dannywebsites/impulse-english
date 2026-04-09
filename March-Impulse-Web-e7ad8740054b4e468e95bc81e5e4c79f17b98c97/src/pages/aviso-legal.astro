@@ -2,11 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AvisoLegalPage from '../../pages/legal/AvisoLegalPage';
 import CookieBanner from '../../components/CookieBanner';
+import { NAP } from '../../utils/napData';
 ---
 
 <BaseLayout
   title="Aviso Legal"
-  description="Aviso legal e información de la empresa Impulse English Academy. Datos fiscales y condiciones de uso."
+  description={`Aviso legal e información de la empresa ${NAP.name}. Datos fiscales y condiciones de uso.`}
   canonical="/aviso-legal"
 >
   <AvisoLegalPage client:idle />

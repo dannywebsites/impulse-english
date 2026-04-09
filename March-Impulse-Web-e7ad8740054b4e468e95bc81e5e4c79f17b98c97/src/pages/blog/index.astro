@@ -2,11 +2,12 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BlogPage from '../../../pages/BlogPage';
 import CookieBanner from '../../../components/CookieBanner';
+import { NAP } from '../../../utils/napData';
 ---
 
 <BaseLayout
   title="Blog Inglés"
-  description="Blog de Impulse English Academy. Guías sobre exámenes Cambridge, Linguaskill, consejos para aprender inglés y recursos educativos. Academia Madrid."
+  description={`Blog de ${NAP.name}. Guías sobre exámenes Cambridge, Linguaskill, consejos para aprender inglés y recursos educativos. Academia ${NAP.city}.`}
   keywords="blog inglés, artículos cambridge, guía linguaskill, aprender inglés tips, recursos inglés madrid"
   canonical="/blog"
 >

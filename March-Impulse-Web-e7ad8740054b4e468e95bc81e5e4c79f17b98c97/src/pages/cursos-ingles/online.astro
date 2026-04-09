@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import OnlinePage, { courseSchema, faqs } from '../../../pages/cursos/OnlinePage';
 import CookieBanner from '../../../components/CookieBanner';
 import { generateFAQSchema } from '../../../utils/schemaData';
+import { NAP } from '../../../utils/napData';
 
 const schemas = [
   courseSchema,
@@ -12,7 +13,7 @@ const schemas = [
 
 <BaseLayout
   title="Clases Inglés Online"
-  description="Clases de inglés online en directo. Grupos reducidos (máx. 8), preparación Cambridge y Linguaskill, modalidad 100% online o híbrida. Misma metodología Impulse desde cualquier lugar de España."
+  description={`Clases de inglés online en directo. Grupos reducidos (máx. 8), preparación Cambridge y Linguaskill, modalidad 100% online o híbrida. Misma metodología ${NAP.shortName} desde cualquier lugar de España.`}
   keywords="clases inglés online, cursos inglés online españa, inglés online directo, clases inglés videoconferencia, cambridge online, linguaskill online"
   canonical="/cursos-ingles/online"
   schemas={schemas}

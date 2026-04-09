@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { Picture, getImage } from 'astro:assets';
 import { astroHeroImages, astroTeamImages, astroCourseImages, astroCertImages, astroStudentImages } from '../../utils/images-astro';
+import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Hero from '../../components/Hero';
 import NewsOverlay from '../../components/NewsOverlay';
@@ -34,8 +35,8 @@ const courseImgUrls = {
 ---
 
 <BaseLayout
-  title="Impulse English Academy | academia de inglés en Barrio del Pilar, Madrid. Con profesores nativos especializados en exámenes Cambridge, ofrecemos cursos para niños, infantiles, adolescentes y adultos"
-  description="Academia de inglés en Barrio del Pilar, Madrid. Profesores nativos especializados en exámenes Cambridge. Cursos para niños, infantiles, adolescentes y adultos. 100% aprobados."
+  title={`${NAP.name} | academia de inglés en Barrio del Pilar, Madrid. Con profesores nativos especializados en exámenes Cambridge, ofrecemos cursos para niños, infantiles, adolescentes y adultos`}
+  description={`Academia de inglés en ${NAP.neighborhood}, ${NAP.city}. Profesores nativos especializados en exámenes Cambridge. Cursos para niños, infantiles, adolescentes y adultos. 100% aprobados.`}
   keywords="academia inglés barrio del pilar, academia inglés la vaguada, cambridge madrid, cursos inglés niños, clases inglés adultos, profesores nativos madrid"
   canonical="/"
   fullTitle={true}
@@ -46,7 +47,7 @@ const courseImgUrls = {
     <div class="hidden xl:block absolute inset-0 z-0 pointer-events-none" id="hero-video-container">
       <div class="absolute inset-0 bg-black/40 z-10"></div>
     </div>
-    <script is:inline>
+    <script is:inline define:vars={{ brandName: NAP.name, neighborhood: NAP.neighborhood }}>
       if (window.matchMedia('(min-width: 1280px)').matches) {
         var c = document.getElementById('hero-video-container');
         if (c) {
@@ -55,7 +56,7 @@ const courseImgUrls = {
           f.className = 'w-full h-full object-cover';
           f.style.cssText = 'min-width:100%;min-height:100%';
           f.allow = 'autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media';
-          f.title = 'Impulse English Academy, La Vaguada, Barrio del Pilar.';
+          f.title = `${brandName}, La Vaguada, ${neighborhood}.`;
           c.appendChild(f);
         }
       }
@@ -69,7 +70,7 @@ const courseImgUrls = {
         formats={['avif', 'webp']}
         widths={[640, 1024, 1920]}
         sizes="100vw"
-        alt="Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy"
+        alt={`Estudiantes de primaria sonriendo en clase de inglés - ${NAP.name}`}
         loading="eager"
         fetchpriority="high"
         class="absolute inset-0 w-full h-full object-cover"
@@ -99,7 +100,7 @@ const courseImgUrls = {
   </div>
 
   <WelcomeSection />
-  <TeamSection teamImageSrc={teamImg.src} teamImageAlt="Profesores y estudiantes de inglés en Impulse English Academy" client:visible />
+  <TeamSection teamImageSrc={teamImg.src} teamImageAlt={`Profesores y estudiantes de inglés en ${NAP.name}`} client:visible />
   <CoursesSection courseImageUrls={courseImgUrls} client:visible />
   <MetodoSection />
   <PartnersSection />
