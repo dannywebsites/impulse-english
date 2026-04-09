@@ -179,6 +179,7 @@ export const NAP = {
   name: "${answers.legalName}",
   shortName: "${answers.shortName}",
   legalName: "${answers.legalName}",
+  siteTitle: "${answers.siteTitle}",
 
   // Address components
   streetAddress: "${answers.streetAddress}",
@@ -239,6 +240,7 @@ ${openingHoursTextTs}
     facebook: "${answers.facebook}",
     tiktok: "${answers.tiktok}",
     x: "${answers.x}",
+    xHandle: "${answers.xHandle}",
     linkedin: "${answers.linkedin}",
     youtube: "${answers.youtube}",
   },
@@ -274,6 +276,13 @@ ${credentialsTs}
 
   // Founding
   foundingDate: "${answers.foundingDate}",
+
+  // Tracking IDs (Google Analytics, Ads, Tag Manager)
+  tracking: {
+    ga4Id: "${answers.ga4Id}",
+    googleAdsId: "${answers.googleAdsId}",
+    gtmContainerId: "${answers.gtmContainerId}",
+  },
 } as const;
 
 // Helper: Schema.org PostalAddress object
@@ -338,6 +347,28 @@ PUBLIC_WEBHOOK_URL=https://your-webhook-endpoint.com/submit
 `;
 }
 
+function generateWebmanifest(answers) {
+  return JSON.stringify({
+    name: answers.companyName,
+    short_name: answers.shortName,
+    icons: [
+      {
+        src: "/images/favicons/favicon-192x192.png",
+        sizes: "192x192",
+        type: "image/png"
+      },
+      {
+        src: "/images/favicons/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png"
+      }
+    ],
+    theme_color: "#ffffff",
+    background_color: "#ffffff",
+    display: "standalone"
+  }, null, 2);
+}
+
 // ─── Diff display ────────────────────────────────────────────────────────────
 
 function displayColorDiff(filename, originalContent, newContent) {
@@ -364,7 +395,7 @@ async function main() {
   console.log('\x1b[1m║     Client Onboarding CLI — Impulse Website Template   ║\x1b[0m');
   console.log('\x1b[1m╚════════════════════════════════════════════════════════╝\x1b[0m');
   console.log('\nThis wizard generates brand-config.ts, napData.ts, buildPageTitle.ts,');
-  console.log('and .env.template from your answers. Drafts are reviewed before promotion.\n');
+  console.log('and .env.template, plus site.webmanifest, from your answers. Drafts are reviewed before promotion.\n');
   console.log('Press Enter to keep the default (Impulse) value. Ctrl+C to cancel.\n');
 
   const answers = {};
@@ -474,6 +505,12 @@ async function main() {
   // Derive address strings
   answers.fullAddress = `${answers.streetAddress}, ${answers.neighborhood}, ${answers.postalCode} ${answers.city}`;
   answers.shortAddress = `${answers.streetAddress}, ${answers.postalCode} ${answers.city}`;
+
+  // Derive siteTitle (used in meta tags, page titles)
+  answers.siteTitle = await input({
+    message: 'Site title (shown in browser tab, meta tags):',
+    default: `${answers.legalName} – ${answers.neighborhood}`,
+  });
 
   const latStr = await input({
     message: 'Latitude (decimal degrees, e.g. 40.4789):',
@@ -643,6 +680,11 @@ async function main() {
     default: 'https://x.com/impulse_vaguada',
   });
 
+  answers.xHandle = await input({
+    message: 'X (Twitter) handle (e.g. @YourBrand):',
+    default: '@ImpulseEnglish',
+  });
+
   answers.linkedin = await input({
     message: 'LinkedIn URL:',
     default: 'https://www.linkedin.com/company/101859096/',
@@ -803,6 +845,26 @@ async function main() {
     default: 'Impulse English La Vaguada',
   });
 
+  // ─── (9) Tracking & Analytics ──────────────────────────────────────────────
+
+  console.log('\n─── (9) Tracking & Analytics ───────────────────────────\n');
+  console.log('Leave defaults if you have not yet set up Google Analytics.\n');
+
+  answers.ga4Id = await input({
+    message: 'Google Analytics 4 Measurement ID (G-XXXXXXXXXX):',
+    default: 'G-XXXXXXXXXX',
+  });
+
+  answers.googleAdsId = await input({
+    message: 'Google Ads Conversion ID (AW-XXXXXXXXXXX):',
+    default: 'AW-XXXXXXXXXXX',
+  });
+
+  answers.gtmContainerId = await input({
+    message: 'Google Tag Manager Container ID (GTM-XXXXXXX):',
+    default: 'GTM-XXXXXXX',
+  });
+
   // categoryTopicRef uses Impulse defaults (note for clients)
   answers.categoryTopicRef = {
     'Cambridge B2 First': 'el B2 First',
@@ -847,6 +909,11 @@ async function main() {
       originalPath: join(WEBSITE_ROOT, '.env.template'),
       content: generateEnvTemplate(answers),
     },
+    'site.webmanifest': {
+      draftPath: join(DRAFT_DIR, 'site.webmanifest'),
+      originalPath: join(WEBSITE_ROOT, 'public', 'site.webmanifest'),
+      content: generateWebmanifest(answers),
+    },
   };
 
   for (const [filename, info] of Object.entries(draftFiles)) {
@@ -884,6 +951,7 @@ async function main() {
     { src: join(PROJECT_ROOT, 'brand-config.ts'),         dst: join(BACKUP_DIR, 'brand-config.ts.bak') },
     { src: join(WEBSITE_ROOT, 'utils', 'napData.ts'),      dst: join(BACKUP_DIR, 'napData.ts.bak') },
     { src: join(WEBSITE_ROOT, 'utils', 'buildPageTitle.ts'), dst: join(BACKUP_DIR, 'buildPageTitle.ts.bak') },
+    { src: join(WEBSITE_ROOT, 'public', 'site.webmanifest'), dst: join(BACKUP_DIR, 'site.webmanifest.bak') },
   ];
 
   for (const { src, dst } of backupMap) {
@@ -899,6 +967,7 @@ async function main() {
     { src: join(DRAFT_DIR, 'napData.ts'),           dst: join(WEBSITE_ROOT, 'utils', 'napData.ts') },
     { src: join(DRAFT_DIR, 'buildPageTitle.ts'),    dst: join(WEBSITE_ROOT, 'utils', 'buildPageTitle.ts') },
     { src: join(DRAFT_DIR, '.env.template'),        dst: join(WEBSITE_ROOT, '.env.template') },
+    { src: join(DRAFT_DIR, 'site.webmanifest'),     dst: join(WEBSITE_ROOT, 'public', 'site.webmanifest') },
   ];
 
   for (const { src, dst } of promotionMap) {
@@ -928,7 +997,6 @@ Next steps (see TEMPLATE-SETUP.md):
   7. Update auto-publish-pipeline categories
   8. Update vercel.json redirects for new domain
   9. Update CLAUDE.md project description
-  10. Update Google Analytics / GTM IDs
 `);
   } catch {
     console.log('\nBuild failed. Review the errors above and fix the generated config files.');
@@ -945,4 +1013,4 @@ main().catch((err) => {
 });
 
 // ─── Exported for testing ────────────────────────────────────────────────────
-export { generateBrandConfig, generateNapData, generateBuildPageTitle, generateEnvTemplate };
+export { generateBrandConfig, generateNapData, generateBuildPageTitle, generateEnvTemplate, generateWebmanifest };
