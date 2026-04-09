@@ -2,6 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import GraciasPage from '../../pages/GraciasPage';
 import CookieBanner from '../../components/CookieBanner';
+import { getImage } from 'astro:assets';
+import { astroHeroImages } from '../../utils/images-astro';
+
+const heroImg = await getImage({
+  src: astroHeroImages.jpWithStudents,
+  format: 'webp',
+  width: 1920,
+  quality: 80,
+});
 ---
 
 <BaseLayout
@@ -10,6 +19,6 @@ import CookieBanner from '../../components/CookieBanner';
   canonical="/gracias"
   noindex={true}
 >
-  <GraciasPage client:idle />
+  <GraciasPage heroImageSrc={heroImg.src} client:idle />
   <CookieBanner client:idle />
 </BaseLayout>

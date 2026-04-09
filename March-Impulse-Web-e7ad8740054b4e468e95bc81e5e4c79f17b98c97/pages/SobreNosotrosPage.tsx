@@ -35,7 +35,11 @@ const faqs = [
   }
 ];
 
-export default function SobreNosotrosPage() {
+interface SobreNosotrosPageProps {
+  heroImageSrc?: string;
+}
+
+export default function SobreNosotrosPage({ heroImageSrc }: SobreNosotrosPageProps) {
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = 'Sobre Nosotros | Impulse English Academy La Vaguada – Barrio del Pilar';
@@ -62,17 +66,13 @@ export default function SobreNosotrosPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <picture>
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/jp-with-students-mobile.webp" type="image/webp" />
-            <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/jp-with-students-mobile.jpg" type="image/jpeg" />
-            <img
-              src="/images/academy/team/jp-with-students.jpg"
-              alt="Profesor con estudiantes - Impulse English Academy About Us"
-              className="w-full h-full object-cover object-top"
-              loading="eager"
-              fetchPriority="high"
-            />
-          </picture>
+          <img
+            src={heroImageSrc || '/images/academy/team/jp-with-students.jpg'}
+            alt="Profesor con estudiantes - Impulse English Academy About Us"
+            className="w-full h-full object-cover object-top"
+            loading="eager"
+            fetchPriority="high"
+          />
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

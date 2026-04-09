@@ -2,6 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ReservarClasePage from '../../pages/ReservarClasePage';
 import CookieBanner from '../../components/CookieBanner';
+import { getImage } from 'astro:assets';
+import { astroHeroImages } from '../../utils/images-astro';
+
+const heroImg = await getImage({
+  src: astroHeroImages.primaryStudentsSmiling,
+  format: 'webp',
+  width: 1920,
+  quality: 80,
+});
 ---
 
 <BaseLayout
@@ -10,6 +19,6 @@ import CookieBanner from '../../components/CookieBanner';
   keywords="reservar clase inglés, prueba gratis inglés madrid, clase prueba academia inglés, inscripción cursos inglés"
   canonical="/reservar-clase"
 >
-  <ReservarClasePage client:load />
+  <ReservarClasePage heroImageSrc={heroImg.src} client:load />
   <CookieBanner client:idle />
 </BaseLayout>
