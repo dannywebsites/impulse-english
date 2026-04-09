@@ -17,7 +17,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { GoogleGenAI } from '@google/genai';
 import { ApifyClient } from 'apify-client';
-import { stringify as yamlStringify } from 'yaml';
+import { stringify as yamlStringify, Scalar } from 'yaml';
 import { writeFileSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -840,8 +840,8 @@ function assembleArticle(meta, schema, category, imageKey) {
     faqItems: schema.faqItems,
     internalLinkRefs,
     breadcrumbs,
-    publishedDate: today,
-    modifiedDate: today,
+    publishedDate: (() => { const s = new Scalar(today); s.type = 'QUOTE_DOUBLE'; return s; })(),
+    modifiedDate: (() => { const s = new Scalar(today); s.type = 'QUOTE_DOUBLE'; return s; })(),
     readTime: schema.readTime || '6 min',
     imageKey,
   };

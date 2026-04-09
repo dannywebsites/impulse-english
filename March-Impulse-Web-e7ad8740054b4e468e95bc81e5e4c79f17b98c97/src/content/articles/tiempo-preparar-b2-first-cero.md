@@ -39,8 +39,8 @@ breadcrumbs:
   - label: B2 First
     href: /examenes-cambridge/b2-first
   - label: ¿Cuánto tiempo se tarda en preparar el B
-publishedDate: 2026-04-08
-modifiedDate: 2026-04-08
+publishedDate: "2026-04-08"
+modifiedDate: "2026-04-08"
 readTime: 13 min
 imageKey: cambridge
 ---
