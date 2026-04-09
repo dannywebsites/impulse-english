@@ -149,8 +149,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — Extend napData with tracking/siteTitle/xHandle + debrand BaseLayout, SEOHead, webmanifest
-- [ ] 05-02-PLAN.md — Extend onboarding CLI with tracking questions, webmanifest generator, verification
+- [ ] 08-01-PLAN.md — Replace hardcoded BRAND block and S3 IMAGE_CATALOG with brand-config.ts and utils/images.ts imports
+- [ ] 08-02-PLAN.md — Update onboarding CLI generator with pipeline fields + end-to-end verification
 
 ## Progress
 
