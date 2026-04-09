@@ -9,7 +9,7 @@ import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
-import { facilityImages } from '../../src/data/images';
+import { facilityImages } from '@/utils/images';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés para Adultos",
@@ -18,7 +18,7 @@ export const courseSchema = generateCourseSchema({
   courseCode: "ADULT-CAM",
   educationalLevel: "Adult Education",
   timeRequired: "PT2H",
-  image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+  image: "/images/academy/logos/img-4117.png"
 });
 
 
@@ -153,7 +153,7 @@ export default function AdultosPage() {
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/adult-classes-mobile.webp" type="image/webp" />
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/adult-classes-mobile.jpg" type="image/jpeg" />
             <img
-              src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Adult+one-to-one+classes.JPG"
+              src="/images/academy/facilities/adult-one-to-one-classes.jpg"
               alt="Clases de inglés para adultos La Vaguada Madrid - Impulse English Academy"
               className="w-full h-full object-cover object-top"
               loading="eager"
@@ -486,8 +486,8 @@ export default function AdultosPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {/* Regular landscape photos */}
             {[
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Adult+one-to-one+classes.JPG", alt: "Clases inglés adultos one-to-one La Vaguada Barrio del Pilar Madrid" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg", alt: "Profesor JP con estudiantes adultos certificados Cambridge La Vaguada" },
+              { url: "/images/academy/facilities/adult-one-to-one-classes.jpg", alt: "Clases inglés adultos one-to-one La Vaguada Barrio del Pilar Madrid" },
+              { url: "/images/academy/team/jp-with-students.jpg", alt: "Profesor JP con estudiantes adultos certificados Cambridge La Vaguada" },
             ].map((img, idx) => (
               <div key={idx} className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <img src={img.url} alt={img.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
@@ -497,7 +497,7 @@ export default function AdultosPage() {
             {/* Lara C1 Certificate - Portrait image spanning 2 rows */}
             <div className="row-span-2 rounded-xl overflow-hidden shadow-lg">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/LARA+C1+CERT.JPEG"
+                src="/images/academy/students/lara-c1-cert.jpeg"
                 alt="Lara con certificado Cambridge C1 Advanced La Vaguada Madrid"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 loading="lazy"
@@ -506,11 +506,11 @@ export default function AdultosPage() {
 
             {/* More landscape photos */}
             {[
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG", alt: "Certificado oficial Cambridge English academia La Vaguada Madrid" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/Cambridge+search.JPEG", alt: "Centro Cambridge verificado Impulse English Academy Madrid" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG", alt: "Aula principal academia inglés La Vaguada Barrio del Pilar" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG", alt: "Aula tecnológica academia inglés La Vaguada Madrid" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg", alt: "Fachada exterior Impulse English Academy La Vaguada Madrid" },
+              { url: "/images/academy/facilities/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg", alt: "Certificado oficial Cambridge English academia La Vaguada Madrid" },
+              { url: "/images/academy/facilities/cambridge-search.jpeg", alt: "Centro Cambridge verificado Impulse English Academy Madrid" },
+              { url: "/images/academy/facilities/classroom-facilities-main-classroom.jpg", alt: "Aula principal academia inglés La Vaguada Barrio del Pilar" },
+              { url: "/images/academy/facilities/technology-based-classroom-photo.jpg", alt: "Aula tecnológica academia inglés La Vaguada Madrid" },
+              { url: "/images/academy/locations/outside-academy.jpg", alt: "Fachada exterior Impulse English Academy La Vaguada Madrid" },
             ].map((img, idx) => (
               <div key={`landscape-${idx}`} className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <img src={img.url} alt={img.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
@@ -522,7 +522,7 @@ export default function AdultosPage() {
           <div className="mt-12 flex flex-wrap justify-center items-center gap-8">
             <div className="bg-zinc-100 rounded-xl p-6 flex items-center justify-center">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png"
+                src="/images/academy/logos/cambridge-logo-edited.png"
                 alt="Centro Preparador Oficial Cambridge English La Vaguada Madrid"
                 className="h-16 md:h-20 w-auto object-contain"
                 loading="lazy"
@@ -530,7 +530,7 @@ export default function AdultosPage() {
             </div>
             <div className="bg-teal-600 rounded-xl p-6 flex items-center justify-center">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/linguaskill-logo-blanco.png"
+                src="/images/academy/logos/linguaskill-logo-blanco.png"
                 alt="Centro oficial Linguaskill La Vaguada Madrid"
                 className="h-16 md:h-20 w-auto object-contain"
                 loading="lazy"

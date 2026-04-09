@@ -66,7 +66,7 @@ export default function CambridgeVsIeltsEspanaPage() {
           {/* Hero Section */}
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
-              <img src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG" alt="Comparativa Cambridge vs IELTS exámenes oficiales de inglés" className="w-full h-full object-cover" loading="eager" />
+              <img src="/images/academy/facilities/classroom-facilities-main-classroom.jpg" alt="Comparativa Cambridge vs IELTS exámenes oficiales de inglés" className="w-full h-full object-cover" loading="eager" />
               <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
             </div>
             <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

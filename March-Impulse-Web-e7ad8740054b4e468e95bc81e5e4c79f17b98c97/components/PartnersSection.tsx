@@ -1,12 +1,13 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import { s3CambridgeImages, s3LinguaskillImages } from '@/utils/images';
 
 export default function PartnersSection() {
   const partners = [
-    { name: "Cambridge English", logo: "https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png", url: "https://www.cambridgeenglish.org/", subtitle: "" },
-    { name: "Linguaskill", logo: "https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/linguaskill-logo-blanco.png", url: "https://www.cambridgeenglish.org/es/exams-and-tests/linguaskill/", subtitle: "" },
-    { name: "Great Little People", logo: "https://impulseenglish.s3.us-east-1.amazonaws.com/GREAT+LITTLE+PEOPLE+BLACK.png", url: "https://www.greatlittlepeople.com/en", subtitle: "" },
-    { name: "ESIC Idiomas", logo: "https://impulseenglish.s3.us-east-1.amazonaws.com/ESIC+IDIOMAS.jpg", url: "https://www.esic.edu/idiomas", subtitle: "Cambridge Exam Centre ES278" },
+    { name: "Cambridge English", logo: s3CambridgeImages.cambridgeLogo.url, url: "https://www.cambridgeenglish.org/", subtitle: "" },
+    { name: "Linguaskill", logo: s3LinguaskillImages.logoWhite.url, url: "https://www.cambridgeenglish.org/es/exams-and-tests/linguaskill/", subtitle: "" },
+    { name: "Great Little People", logo: "/images/academy/logos/great-little-people-black.png", url: "https://www.greatlittlepeople.com/en", subtitle: "" },
+    { name: "ESIC Idiomas", logo: "/images/academy/logos/esic-idiomas.jpg", url: "https://www.esic.edu/idiomas", subtitle: "Cambridge Exam Centre ES278" },
   ];
 
   const reviews = [

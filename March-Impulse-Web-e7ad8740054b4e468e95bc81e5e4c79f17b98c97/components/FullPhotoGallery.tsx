@@ -1,5 +1,5 @@
 import React from 'react';
-import type { AcademyImage } from '../src/data/academyImages';
+import type { AcademyImage } from '@/utils/images';
 
 interface FullPhotoGalleryProps {
   images: AcademyImage[];

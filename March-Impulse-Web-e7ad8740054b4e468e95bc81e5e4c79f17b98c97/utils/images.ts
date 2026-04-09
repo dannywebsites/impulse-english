@@ -1136,6 +1136,61 @@ export const allS3Images = {
   ...s3CambridgeImages
 } as const;
 
+// ============================================
+// COURSE IMAGES — Optimized images for CoursesSection
+// ============================================
+
+export const courseImages = {
+  generalInfantil: {
+    name: 'curso-ingles-general-infantil',
+    alt: 'Curso de inglés general infantil - Impulse English Academy',
+    altEn: 'General English course for children - Impulse English Academy',
+    category: 'courses',
+    sizes: {
+      sm: { webp: '/images/optimized/curso-ingles-general-infantil-sm.webp', jpg: '/images/optimized/curso-ingles-general-infantil-sm.jpg', width: 400 },
+      md: { webp: '/images/optimized/curso-ingles-general-infantil-md.webp', jpg: '/images/optimized/curso-ingles-general-infantil-md.jpg', width: 800 },
+      lg: { webp: '/images/optimized/curso-ingles-general-infantil-lg.webp', jpg: '/images/optimized/curso-ingles-general-infantil-lg.jpg', width: 1200 },
+      xl: { webp: '/images/optimized/curso-ingles-general-infantil-xl.webp', jpg: '/images/optimized/curso-ingles-general-infantil-xl.jpg', width: 1920 }
+    }
+  },
+  preparacionMovers: {
+    name: 'curso-preparacion-movers-primaria',
+    alt: 'Curso preparación MOVERS primaria - Cambridge Young Learners',
+    altEn: 'MOVERS preparation course primary - Cambridge Young Learners',
+    category: 'courses',
+    sizes: {
+      sm: { webp: '/images/optimized/curso-preparacion-movers-primaria-sm.webp', jpg: '/images/optimized/curso-preparacion-movers-primaria-sm.jpg', width: 400 },
+      md: { webp: '/images/optimized/curso-preparacion-movers-primaria-md.webp', jpg: '/images/optimized/curso-preparacion-movers-primaria-md.jpg', width: 800 },
+      lg: { webp: '/images/optimized/curso-preparacion-movers-primaria-lg.webp', jpg: '/images/optimized/curso-preparacion-movers-primaria-lg.jpg', width: 1200 },
+      xl: { webp: '/images/optimized/curso-preparacion-movers-primaria-xl.webp', jpg: '/images/optimized/curso-preparacion-movers-primaria-xl.jpg', width: 1920 }
+    }
+  },
+  extensivoSecundaria: {
+    name: 'curso-extensivo-secundaria',
+    alt: 'Cursos extensivos inglés secundaria - Impulse English Academy',
+    altEn: 'Extensive English courses secondary - Impulse English Academy',
+    category: 'courses',
+    sizes: {
+      sm: { webp: '/images/optimized/curso-extensivo-secundaria-sm.webp', jpg: '/images/optimized/curso-extensivo-secundaria-sm.jpg', width: 400 },
+      md: { webp: '/images/optimized/curso-extensivo-secundaria-md.webp', jpg: '/images/optimized/curso-extensivo-secundaria-md.jpg', width: 800 },
+      lg: { webp: '/images/optimized/curso-extensivo-secundaria-lg.webp', jpg: '/images/optimized/curso-extensivo-secundaria-lg.jpg', width: 1200 },
+      xl: { webp: '/images/optimized/curso-extensivo-secundaria-xl.webp', jpg: '/images/optimized/curso-extensivo-secundaria-xl.jpg', width: 1920 }
+    }
+  },
+  preparacionKet: {
+    name: 'curso-preparacion-ket',
+    alt: 'Curso preparación KET Cambridge - clases de inglés',
+    altEn: 'KET Cambridge preparation course - English classes',
+    category: 'courses',
+    sizes: {
+      sm: { webp: '/images/optimized/curso-preparacion-ket-sm.webp', jpg: '/images/optimized/curso-preparacion-ket-sm.jpg', width: 400 },
+      md: { webp: '/images/optimized/curso-preparacion-ket-md.webp', jpg: '/images/optimized/curso-preparacion-ket-sm.jpg', width: 800 },
+      lg: { webp: '/images/optimized/curso-preparacion-ket-lg.webp', jpg: '/images/optimized/curso-preparacion-ket-lg.jpg', width: 1200 },
+      xl: { webp: '/images/optimized/curso-preparacion-ket-xl.webp', jpg: '/images/optimized/curso-preparacion-ket-xl.jpg', width: 1920 }
+    }
+  }
+} as const;
+
 // Type exports
 export type FacilityImageKey = keyof typeof facilityImages;
 export type InfantilImageKey = keyof typeof infantilImages;

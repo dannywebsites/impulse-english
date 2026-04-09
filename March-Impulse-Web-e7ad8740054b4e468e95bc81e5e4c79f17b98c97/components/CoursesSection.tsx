@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import { s3InfantilImages, s3CambridgeImages, courseImages, infantilImages, certificationImages } from '../src/data/images';
-import type { OptimizedImageData } from '../src/data/images';
+import { s3InfantilImages, s3CambridgeImages, courseImages, infantilImages, certificationImages } from '@/utils/images';
+import type { OptimizedImageData } from '@/utils/images';
 
 export default function CoursesSection() {
   const courses = [

@@ -56,7 +56,7 @@ export default function B1VsB2QueNivelNecesitoPage() {
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG"
+                src="/images/academy/facilities/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg"
                 alt="B1 vs B2 Cambridge, qué nivel necesito"
                 className="w-full h-full object-cover"
                 loading="eager"

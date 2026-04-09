@@ -52,7 +52,7 @@ export default function PensarInglesNoTraducirPage() {
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG"
+                src="/images/academy/facilities/technology-based-classroom-photo.jpg"
                 alt="Pensar en inglés sin traducir"
                 className="w-full h-full object-cover"
                 loading="eager"

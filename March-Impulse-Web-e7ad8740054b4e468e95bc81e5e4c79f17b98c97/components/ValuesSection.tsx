@@ -1,10 +1,11 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { s3FacilityImages, s3SecondaryImages } from '@/utils/images';
 
-// S3 images for value cards
+// Images from local registry — no S3 URLs
 const valueCards = [
   {
-    imageUrl: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg',
+    imageUrl: s3FacilityImages.classroom1.url,
     imageAlt: 'Estudiantes con certificados Cambridge en Impulse English Academy',
     title: "100% Aprobados Cambridge",
     description: "Todos nuestros estudiantes aprobaron sus exámenes Cambridge 2024-2025. Centro Oficial de Preparación. Haz el examen donde te preparas.",
@@ -12,7 +13,7 @@ const valueCards = [
     href: "/examenes-cambridge"
   },
   {
-    imageUrl: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/INFANTS+CLASS.jpg',
+    imageUrl: '/images/academy/facilities/infants-class.jpg',
     imageAlt: 'Clase de inglés infantil Great Little People - ambiente familiar y cercano',
     title: "Una academia familiar, cercana y única",
     description: "No somos franquicia. Somos una academia familiar con atención personalizada real en grupos de máximo 7-10 alumnos.",
@@ -20,7 +21,7 @@ const valueCards = [
     href: "/sobre-nosotros"
   },
   {
-    imageUrl: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-18.JPEG',
+    imageUrl: s3SecondaryImages.gonzaloClass1.url,
     imageAlt: 'Clase de inglés en Impulse English Academy La Vaguada Madrid',
     title: "150+ Familias Satisfechas",
     description: "Más de 150 reseñas de 5 estrellas en Google. Las familias de Barrio del Pilar, La Vaguada y alrededores nos recomiendan.",

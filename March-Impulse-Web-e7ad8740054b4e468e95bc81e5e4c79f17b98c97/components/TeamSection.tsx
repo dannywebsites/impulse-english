@@ -1,5 +1,5 @@
 import React from 'react';
-import { teamImages } from '../src/data/images';
+import { teamImages } from '@/utils/images';
 import OptimizedImage from './OptimizedImage';
 
 export default function TeamSection() {

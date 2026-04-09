@@ -10,8 +10,8 @@ import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import FullPhotoGallery from '../../components/FullPhotoGallery';
-import { primariaImages as galleryImages } from '../../src/data/academyImages';
-import { studentImages } from '../../src/data/images';
+import { primariaGalleryImages as galleryImages } from '@/utils/images';
+import { studentImages } from '@/utils/images';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Primaria (6-12 años)",
@@ -20,7 +20,7 @@ export const courseSchema = generateCourseSchema({
   courseCode: "PRIM-CAM",
   educationalLevel: "Primary",
   timeRequired: "PT2H",
-  image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+  image: "/images/academy/logos/img-4117.png"
 });
 
 
@@ -120,7 +120,7 @@ export default function PrimariaPage() {
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/primary-students-mobile.webp" type="image/webp" />
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/primary-students-mobile.jpg" type="image/jpeg" />
             <img
-              src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG"
+              src="/images/academy/facilities/primary-classes-students-smiling.jpg"
               alt="Clases de inglés primaria Madrid - estudiantes Impulse English Academy"
               className="w-full h-full object-cover object-top"
               loading="eager"
