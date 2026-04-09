@@ -21,7 +21,7 @@ contextSections:
     content: "<p>Si empezáis desde cero, el B2 First requiere entre <strong>18 y 24 meses</strong> de trabajo serio y constante. Si partís de un nivel A2, necesitáis <strong>12-15 meses</strong>. Desde un B1 sólido, podéis lograrlo en <strong>6-9 meses</strong>.</p><p>Estas cifras no son negociables si queréis un aprobado sólido. Pero lo que sí podéis controlar es la calidad de esas horas: con buenos profesores, materiales adecuados, grupos reducidos donde tengáis espacio para hablar y practicar, y un método que combine el aprendizaje del idioma con la preparación técnica del examen.</p><p>En Madrid tenéis la ventaja de contar con centros preparadores oficiales que conocen el examen al dedillo. Centros como Impulse English Academy en La Vaguada, que logran tasas de aprobados del 100%, demuestran que con la metodología correcta y el compromiso del alumno, el objetivo es perfectamente alcanzable.</p><p>No adivines tu nivel ni pierdas tiempo con métodos que no están diseñados para Cambridge. El primer paso es saber exactamente dónde estás y cuántas horas te separan de tu objetivo. A partir de ahí, es solo cuestión de hacer el trabajo.</p>"
 impulseSection:
   heading: Impulse English Academy te ayuda con el B2 First
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompanamos en cada paso. Con un 100% de aprobados en examenes Cambridge 2024-2025, grupos reducidos de maximo 10 alumnos y profesores nativos certificados TEFL/CELTA, teneis todo lo necesario para alcanzar vuestros objetivos.
+  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
   ctaLinks:
     - text: Prueba de nivel gratis
       href: /reservar-clase
@@ -38,7 +38,7 @@ breadcrumbs:
     href: /blog
   - label: B2 First
     href: /examenes-cambridge/b2-first
-  - label: ¿Cuánto tiempo se tarda en preparar el B
+  - label: Tiempo preparar B2 First desde cero
 publishedDate: "2026-04-08"
 modifiedDate: "2026-04-08"
 readTime: 13 min

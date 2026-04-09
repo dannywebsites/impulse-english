@@ -478,7 +478,8 @@ EXECUTION REQUIREMENTS:
 - Write to the identified user profile and expertise level
 - Match or exceed the content length recommendation
 - Incorporate semantic keywords naturally throughout
-- Include a detailed FAQ section at the end with 5-8 questions and answers
+- Include a detailed FAQ section at the end titled exactly "## Preguntas frecuentes" with 5-8 questions as ### subheadings followed by their answers
+- Do NOT use markdown tables — use HTML <table> tags instead when presenting tabular data
 
 BANNED WORDS (never use these - they sound robotic and generic):
 delve, tapestry, realm, landscape, ever-evolving, cutting-edge, robust, transformative, pivotal, vibrant, crucial, compelling, seamless, groundbreaking, leverage, harness, embark, navigate (metaphorical), unveil, facilitate, synergy, game-changer, unlock, unleash, elevate, utilize, endeavour, multifaceted, holistic, paradigm, empower
@@ -677,7 +678,7 @@ function convertInlineMarkdown(text) {
 function extractFAQs(articleContent) {
   // Find the FAQ section (various heading patterns)
   const faqMatch = articleContent.match(
-    /## (?:Preguntas [Ff]recuentes|FAQ|Preguntas [Rr]elacionadas|Preguntas y [Rr]espuestas)[\s\S]*$/
+    /## (?:Preguntas [Ff]recuentes|FAQ|Preguntas [Rr]elacionadas|Preguntas y [Rr]espuestas|Dudas [Ff]recuentes|Lo que más nos preguntáis|Resolvemos tus dudas)[\s\S]*$/
   );
 
   if (!faqMatch) return [];
@@ -784,7 +785,7 @@ function runSchemaConversion(topic, articleContent, category) {
   const topicRef = categoryNames[category] || 'tu aprendizaje de ingles';
   const impulseSection = {
     heading: `Impulse English Academy te ayuda con ${topicRef}`,
-    content: `En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompanamos en cada paso. Con un 100% de aprobados en examenes Cambridge 2024-2025, grupos reducidos de maximo 10 alumnos y profesores nativos certificados TEFL/CELTA, teneis todo lo necesario para alcanzar vuestros objetivos.`,
+    content: `En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.`,
   };
 
   // Build the question from the topic
@@ -820,7 +821,7 @@ function assembleArticle(meta, schema, category, imageKey) {
   const breadcrumbs = [
     { label: 'Blog', href: '/blog' },
     ...(hub ? [hub] : []),
-    { label: meta.metatitle.substring(0, 40) },
+    { label: meta.metatitle.length <= 50 ? meta.metatitle : meta.metatitle.substring(0, 50).replace(/\s\S*$/, '') },
   ];
 
   const frontmatter = {
