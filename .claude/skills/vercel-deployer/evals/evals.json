@@ -1,0 +1,40 @@
+{
+  "skill_name": "vercel-deployer",
+  "domain": "general",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Configure the complete Vercel deployment for a new Astro website including build settings, analytics (GTM + GA4), GDPR consent mode, and deferred script loading strategy.",
+      "expected_output": "Complete deployment config with build command, output directory, trailing slash, analytics loading via deferred scripts, and GDPR default denied consent",
+      "assertions": [
+        {"text": "outputDirectory is set to dist", "type": "content", "deterministic": true},
+        {"text": "trailingSlash is set to true", "type": "content", "deterministic": true},
+        {"text": "cleanUrls is set to true", "type": "content", "deterministic": true},
+        {"text": "Analytics scripts use deferred loading (setTimeout or requestIdleCallback, NOT direct head injection)", "type": "content", "deterministic": false},
+        {"text": "GDPR default consent is denied for analytics_storage and ad_storage", "type": "content", "deterministic": true},
+        {"text": "Mentions that trailingSlash must match astro.config.mjs trailingSlash: always", "type": "content", "deterministic": true},
+        {"text": "GTM container ID GTM-TDC7CQDD is referenced", "type": "content", "deterministic": true},
+        {"text": "Deferred loading uses 3.5-second timeout plus user interaction events", "type": "content", "deterministic": true},
+        {"text": "Vercel Analytics loaded via requestIdleCallback with 2-second fallback", "type": "content", "deterministic": true},
+        {"text": "No banned AI words used (delve, tapestry, realm, leverage, etc.)", "type": "quality", "deterministic": true}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Lighthouse scores are low because analytics scripts are blocking rendering. How should the loading strategy be reconfigured to improve performance?",
+      "expected_output": "Explanation of deferred loading pattern with setTimeout + user interaction events, requestIdleCallback for Vercel Analytics, and why this improves Lighthouse scores",
+      "assertions": [
+        {"text": "Recommends deferred loading via setTimeout (3.5s) plus interaction events (scroll, click, touchstart, keydown)", "type": "content", "deterministic": true},
+        {"text": "Mentions requestIdleCallback for Vercel Analytics and Speed Insights", "type": "content", "deterministic": true},
+        {"text": "Explains that analytics should NOT be in the head tag directly", "type": "content", "deterministic": false},
+        {"text": "References the CookieBanner component for GDPR consent flow", "type": "content", "deterministic": true},
+        {"text": "Mentions client:idle hydration strategy for components", "type": "content", "deterministic": true},
+        {"text": "Suggests wait_for_update: 500ms for consent management", "type": "content", "deterministic": true},
+        {"text": "Output includes code examples (not just descriptions)", "type": "structural", "deterministic": false},
+        {"text": "No banned AI words used", "type": "quality", "deterministic": true},
+        {"text": "Output is specific to this project's tech stack (Astro + Vercel), not generic advice", "type": "quality", "deterministic": false},
+        {"text": "Mentions Lighthouse score improvement as the measurable outcome", "type": "content", "deterministic": true}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "skill_name": "page-builder",
+  "domain": "general",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Create a new location page for 'Academia Ingles Tetuan' at /academia-ingles-tetuan/. Show the complete .astro file.",
+      "expected_output": "Complete .astro file using BaseLayout with title, description, canonical, schemas props, LocationPage component with client:idle, CookieBanner with client:idle, and generateLocationPageSchema",
+      "assertions": [
+        {"text": "Imports BaseLayout from layouts/BaseLayout.astro", "type": "structural", "deterministic": true},
+        {"text": "Uses generateLocationPageSchema for schema generation", "type": "content", "deterministic": true},
+        {"text": "Includes CookieBanner with client:idle directive", "type": "content", "deterministic": true},
+        {"text": "React components use client:idle (NOT client:load)", "type": "content", "deterministic": true},
+        {"text": "Canonical URL has trailing slash (/academia-ingles-tetuan/)", "type": "content", "deterministic": true},
+        {"text": "Passes schemas array to BaseLayout props", "type": "content", "deterministic": true},
+        {"text": "Passes title and description props to BaseLayout", "type": "content", "deterministic": true},
+        {"text": "File structure follows the Astro frontmatter pattern (--- delimiters)", "type": "structural", "deterministic": true},
+        {"text": "Location schema includes nearbyAreas array with nearby neighborhoods", "type": "content", "deterministic": false},
+        {"text": "No banned AI words used (delve, tapestry, realm, leverage, etc.)", "type": "quality", "deterministic": true}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Create a new exam preparation page for Linguaskill Business at /linguaskill/business/. This is a course page, not a location page.",
+      "expected_output": "Complete .astro file using BaseLayout with course-specific schema (generateCourseSchema), correct component hydration, and proper canonical URL",
+      "assertions": [
+        {"text": "Uses generateCourseSchema (NOT generateLocationPageSchema) for a course page", "type": "content", "deterministic": true},
+        {"text": "Imports BaseLayout from layouts/BaseLayout.astro", "type": "structural", "deterministic": true},
+        {"text": "Includes CookieBanner with client:idle", "type": "content", "deterministic": true},
+        {"text": "Canonical URL ends with trailing slash (/linguaskill/business/)", "type": "content", "deterministic": true},
+        {"text": "React components use client:idle hydration", "type": "content", "deterministic": true},
+        {"text": "Course schema includes provider reference to Organization", "type": "content", "deterministic": false},
+        {"text": "File is placed in src/pages/linguaskill/ directory", "type": "content", "deterministic": false},
+        {"text": "Mentions checking if old URLs need redirects in vercel.json", "type": "content", "deterministic": false},
+        {"text": "No placeholder text remains (TODO, REPLACE, TBD)", "type": "quality", "deterministic": true},
+        {"text": "No banned AI words used", "type": "quality", "deterministic": true}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "skill_name": "content-collection-designer",
+  "domain": "general",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Create the Zod schema for the article Content Collection including all frontmatter fields. Show the complete src/content/config.ts file.",
+      "expected_output": "Complete Zod schema with all required fields: url, category, priority, question, seoTitle, metaDescription, paaAnswer, contextSections, impulseSection, faqItems, internalLinkRefs, breadcrumbs, publishedDate, modifiedDate, readTime, articleImages",
+      "assertions": [
+        {"text": "Uses z.object() from astro:content for the schema definition", "type": "structural", "deterministic": true},
+        {"text": "contextSections is z.array of objects with heading and content fields", "type": "content", "deterministic": true},
+        {"text": "faqItems is z.array of objects with question and answer keys (not q/a)", "type": "content", "deterministic": true},
+        {"text": "articleImages uses z.array with min(3) constraint", "type": "content", "deterministic": true},
+        {"text": "articleImages items have placement as z.enum(['hero', 'inline'])", "type": "content", "deterministic": true},
+        {"text": "impulseSection includes heading, content, and ctaLinks array", "type": "content", "deterministic": true},
+        {"text": "priority uses z.enum(['High', 'Medium'])", "type": "content", "deterministic": true},
+        {"text": "Exports collections object with articles key", "type": "structural", "deterministic": true},
+        {"text": "FAQItem type is referenced as coming from utils/schemaData.ts (never locally defined)", "type": "content", "deterministic": true},
+        {"text": "No banned AI words used (delve, tapestry, realm, leverage, etc.)", "type": "quality", "deterministic": true}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "A new article category 'Business English' needs to be added with its own CTA links, internal links, breadcrumb hub, and image selection. Walk through all the files that need to change.",
+      "expected_output": "Step-by-step guide covering: types.ts ArticleCategory union, category-config.ts entry, auto-publish.js CATEGORY_RULES regex, CTA links, internal links, breadcrumb hub, and image mapping",
+      "assertions": [
+        {"text": "Mentions updating ArticleCategory type in data/articles/types.ts", "type": "content", "deterministic": true},
+        {"text": "Mentions adding entry to data/category-config.ts", "type": "content", "deterministic": true},
+        {"text": "Mentions adding regex pattern to CATEGORY_RULES in auto-publish.js", "type": "content", "deterministic": true},
+        {"text": "Specifies CTA links array with text and href for the new category", "type": "content", "deterministic": false},
+        {"text": "Mentions internal links mapping for the new category", "type": "content", "deterministic": false},
+        {"text": "Mentions breadcrumb hub configuration with label and href", "type": "content", "deterministic": true},
+        {"text": "Mentions image category mapping (CATEGORY_IMAGE_MAP)", "type": "content", "deterministic": true},
+        {"text": "Lists at least 4 files that need changes", "type": "structural", "deterministic": false},
+        {"text": "Output follows a sequential workflow (not random order)", "type": "structural", "deterministic": false},
+        {"text": "No placeholder text remains (TODO, REPLACE, TBD)", "type": "quality", "deterministic": true}
+      ]
+    }
+  ]
+}

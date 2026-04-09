@@ -1,0 +1,40 @@
+{
+  "skill_name": "astro-site-builder",
+  "domain": "general",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Set up the Astro project configuration from scratch including astro.config.mjs, tailwind.config.ts, and tsconfig.json for a static site deployed on Vercel with React components.",
+      "expected_output": "Complete config files with output: static, trailingSlash: always, React integration, Tailwind integration, sitemap, path aliases, and brand color tokens",
+      "assertions": [
+        {"text": "astro.config.mjs has output: 'static'", "type": "content", "deterministic": true},
+        {"text": "astro.config.mjs has trailingSlash: 'always'", "type": "content", "deterministic": true},
+        {"text": "astro.config.mjs includes @astrojs/react integration", "type": "content", "deterministic": true},
+        {"text": "astro.config.mjs includes @astrojs/tailwind integration", "type": "content", "deterministic": true},
+        {"text": "astro.config.mjs includes @astrojs/sitemap integration", "type": "content", "deterministic": true},
+        {"text": "Redirects are NOT in astro.config.mjs (handled by vercel.json)", "type": "content", "deterministic": true},
+        {"text": "tailwind.config.ts includes brand color tokens (accent-blue #12477d, brand-red #ea4e59)", "type": "content", "deterministic": true},
+        {"text": "Components directory is at project root level, not inside src/", "type": "content", "deterministic": false},
+        {"text": "Font loading uses preload strategy (not render-blocking)", "type": "content", "deterministic": false},
+        {"text": "No banned AI words used (delve, tapestry, realm, leverage, etc.)", "type": "quality", "deterministic": true}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "The build is failing with 'Cannot resolve @/utils/schemaData'. Debug and fix the path alias configuration in the Astro project.",
+      "expected_output": "Explanation that @ alias must be configured in both tsconfig.json and vite config, with the correct mappings for this project structure",
+      "assertions": [
+        {"text": "Identifies that path aliases need to be configured in tsconfig.json", "type": "content", "deterministic": true},
+        {"text": "Shows the correct path alias mapping for this project", "type": "content", "deterministic": false},
+        {"text": "Mentions that the components directory is at root level (not src/)", "type": "content", "deterministic": false},
+        {"text": "References the actual project structure with March-Impulse-Web- prefix", "type": "content", "deterministic": false},
+        {"text": "Provides a concrete fix (not just a description of the problem)", "type": "quality", "deterministic": false},
+        {"text": "Mentions that Astro uses Vite under the hood for module resolution", "type": "content", "deterministic": true},
+        {"text": "No placeholder text remains (TODO, REPLACE, TBD)", "type": "quality", "deterministic": true},
+        {"text": "No banned AI words used", "type": "quality", "deterministic": true},
+        {"text": "Output addresses the specific error message from the prompt", "type": "content", "deterministic": true},
+        {"text": "Mentions both tsconfig.json paths and vite resolve alias as relevant config locations", "type": "content", "deterministic": true}
+      ]
+    }
+  ]
+}
