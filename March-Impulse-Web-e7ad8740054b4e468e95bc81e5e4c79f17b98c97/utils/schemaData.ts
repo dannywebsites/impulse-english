@@ -4,13 +4,19 @@
 
 import { NAP, getSchemaAddress } from './napData';
 
+const BASE_URL = NAP.website; // 'https://impulse-english.es'
+
+// Schema.org requires absolute URLs — NAP.logo/image are root-relative, so we prepend BASE_URL here
+const absoluteLogo = `${BASE_URL}${NAP.logo}`;
+const absoluteImage = `${BASE_URL}${NAP.image}`;
+
 export const businessInfo = {
   name: NAP.name,
   alternateName: NAP.shortName,
   description: "Academia de inglés en Madrid especializada en preparación de exámenes Cambridge, Linguaskill y clases para todas las edades. Centro oficial Cambridge con 100% de aprobados.",
   url: NAP.website,
-  logo: NAP.logo,
-  image: NAP.image,
+  logo: absoluteLogo,
+  image: absoluteImage,
   telephone: NAP.phoneRaw,
   email: NAP.email,
   foundingDate: NAP.foundingDate,
