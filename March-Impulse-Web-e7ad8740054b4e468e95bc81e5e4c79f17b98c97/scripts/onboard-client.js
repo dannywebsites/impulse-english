@@ -5,7 +5,7 @@
 
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 import { input, confirm, select, editor } from '@inquirer/prompts';
 import { createPatch } from 'diff';
@@ -367,6 +367,109 @@ function generateWebmanifest(answers) {
     background_color: "#ffffff",
     display: "standalone"
   }, null, 2);
+}
+
+// ─── Article debranding (D-09) ───────────────────────────────────────────────
+
+function replaceInMarkdownArticles(answers) {
+  const articlesDir = join(WEBSITE_ROOT, 'src', 'content', 'articles');
+  const backupDir = join(WEBSITE_ROOT, 'src', 'content', 'articles-backup-' + Date.now());
+
+  if (!existsSync(articlesDir)) {
+    console.log('  No articles directory found, skipping.');
+    return;
+  }
+
+  const files = readdirSync(articlesDir).filter(f => f.endsWith('.md'));
+
+  if (files.length === 0) {
+    console.log('  No markdown article files found, skipping.');
+    return;
+  }
+
+  // Backup all .md files before any modifications (CLAUDE.md: "Always back up files before editing")
+  mkdirSync(backupDir, { recursive: true });
+  for (const file of files) {
+    copyFileSync(join(articlesDir, file), join(backupDir, file));
+  }
+  console.log(`  Backed up articles to ${backupDir}`);
+
+  let totalCount = 0;
+
+  for (const file of files) {
+    const filePath = join(articlesDir, file);
+    const original = readFileSync(filePath, 'utf-8');
+
+    // Replace longer string first to prevent double-replacement
+    let updated = original.replaceAll('Impulse English Academy', answers.legalName);
+    updated = updated.replaceAll('Impulse English', answers.shortName);
+
+    if (updated !== original) {
+      // Count total replacements in this file
+      const countAcademy = (original.match(/Impulse English Academy/g) || []).length;
+      const countShort = (original.match(/Impulse English/g) || []).length - countAcademy;
+      const count = countAcademy + Math.max(countShort, 0);
+      writeFileSync(filePath, updated, 'utf-8');
+      console.log(`  \x1b[32m+\x1b[0m  ${file} (${count} replacements)`);
+      totalCount += count;
+    }
+  }
+
+  if (totalCount === 0) {
+    console.log('  No brand references found in articles (already debranded or none present).');
+  } else {
+    console.log(`  Total: ${totalCount} replacements across ${files.length} files.`);
+  }
+}
+
+// ─── Astro meta safety net (D-10) ────────────────────────────────────────────
+
+function replaceInAstroPageMeta(answers) {
+  const pagesDir = join(WEBSITE_ROOT, 'src', 'pages');
+
+  if (!existsSync(pagesDir)) {
+    console.log('  No src/pages directory found, skipping.');
+    return;
+  }
+
+  // Recursively collect all .astro files
+  function collectAstroFiles(dir) {
+    const entries = readdirSync(dir, { withFileTypes: true });
+    const results = [];
+    for (const entry of entries) {
+      const fullPath = join(dir, entry.name);
+      if (entry.isDirectory()) {
+        results.push(...collectAstroFiles(fullPath));
+      } else if (entry.isFile() && entry.name.endsWith('.astro')) {
+        results.push(fullPath);
+      }
+    }
+    return results;
+  }
+
+  const astroFiles = collectAstroFiles(pagesDir);
+  let modifiedCount = 0;
+
+  for (const filePath of astroFiles) {
+    const original = readFileSync(filePath, 'utf-8');
+
+    // Replace longer string first to prevent double-replacement
+    let updated = original.replaceAll('Impulse English Academy', answers.legalName);
+    updated = updated.replaceAll('Impulse English', answers.shortName);
+
+    if (updated !== original) {
+      writeFileSync(filePath, updated, 'utf-8');
+      const relPath = filePath.replace(WEBSITE_ROOT + '/', '');
+      console.log(`  \x1b[32m+\x1b[0m  ${relPath}`);
+      modifiedCount++;
+    }
+  }
+
+  if (modifiedCount === 0) {
+    console.log('  No residual brand references found in .astro pages (NAP imports working correctly)');
+  } else {
+    console.log(`  Updated ${modifiedCount} .astro file(s).`);
+  }
 }
 
 // ─── Diff display ────────────────────────────────────────────────────────────
@@ -977,6 +1080,14 @@ async function main() {
 
   console.log('\n\x1b[1mAll drafts promoted.\x1b[0m');
 
+  // --- Article debranding -------------------------------------------------------
+  console.log('\n\x1b[1mUpdating article content with new brand name...\x1b[0m');
+  replaceInMarkdownArticles(answers);
+
+  // --- Astro meta safety net (D-10) ---------------------------------------------
+  console.log('\n\x1b[1mChecking .astro pages for residual brand references...\x1b[0m');
+  replaceInAstroPageMeta(answers);
+
   // ─── Build verification ───────────────────────────────────────────────────
 
   if (skipBuild) {
@@ -1013,4 +1124,4 @@ main().catch((err) => {
 });
 
 // ─── Exported for testing ────────────────────────────────────────────────────
-export { generateBrandConfig, generateNapData, generateBuildPageTitle, generateEnvTemplate, generateWebmanifest };
+export { generateBrandConfig, generateNapData, generateBuildPageTitle, generateEnvTemplate, generateWebmanifest, replaceInMarkdownArticles, replaceInAstroPageMeta };
