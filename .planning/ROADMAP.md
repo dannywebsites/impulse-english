@@ -13,9 +13,13 @@ This milestone converts the Impulse English Academy website from a one-off produ
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: LeadForm Hardening** - Secure, reliable lead capture with error feedback and bot protection (completed 2026-04-09)
-- [ ] **Phase 2: Image Consolidation** - All S3 images moved to local assets with central registry
+- [x] **Phase 2: Image Consolidation** - All S3 images moved to local assets with central registry (completed 2026-04-09)
 - [x] **Phase 3: Image Optimization** - Astro native image pipeline replaces hand-rolled system (completed 2026-04-09)
 - [x] **Phase 4: Client Onboarding CLI** - Interactive question flow generates fully configured website (completed 2026-04-09)
+- [ ] **Phase 5: Critical Infrastructure Debranding** - Remove hardcoded tracking IDs, site names, and broken PWA manifest from core layout files
+- [ ] **Phase 6: Component Debranding** - Replace hardcoded Impulse references in React/Astro components with napData/brand-config imports
+- [ ] **Phase 7: Content Debranding** - Remove hardcoded Impulse references from page meta tags and article content
+- [ ] **Phase 8: Auto-Publish Pipeline Decouple** - Connect auto-publish.js to brand-config.ts instead of hardcoded BRAND block
 
 ## Phase Details
 
@@ -83,10 +87,57 @@ Plans:
 - [x] 04-01-PLAN.md — Create complete CLI script with guard, 8-category question flow, 4 file generators, draft/diff/promotion UX, and build verification
 - [x] 04-02-PLAN.md — Integration test of generated files against TypeScript compiler + human verification of interactive UX
 
+### Phase 5: Critical Infrastructure Debranding
+**Goal**: Core layout files read all brand identity, tracking IDs, and PWA config from napData/brand-config — no Impulse-specific values remain hardcoded
+**Depends on**: Phase 4
+**Requirements**: ONBD-01 (integration gap closure)
+**Gap Closure:** CRIT-01, CRIT-02, CRIT-04, BROKEN-01, BROKEN-03
+**Success Criteria** (what must be TRUE):
+  1. BaseLayout.astro reads SITE_NAME, BASE_URL, GA4 ID, Google Ads ID, GTM container ID, and Twitter handle from napData or brand-config — zero hardcoded tracking strings
+  2. SEOHead.tsx reads site name, base URL, and author from napData — no duplicate constants
+  3. site.webmanifest reads brand name from config and icon paths resolve to existing files
+  4. After running `npm run onboard` with test data, none of the above files contain "Impulse", "G-WN5973VY1M", "AW-11461982741", or "GTM-TDC7CQDD"
+**Plans**: TBD
+
+### Phase 6: Component Debranding
+**Goal**: All React and Astro components read brand name, location, and display text from napData/brand-config — no visible Impulse references remain in component source
+**Depends on**: Phase 5
+**Requirements**: FORM-06, ONBD-01 (integration gap closure)
+**Gap Closure:** HIGH-01, HIGH-02, HIGH-03, HIGH-04, HIGH-05, HIGH-06, FORM-06, MED-01, MED-02, MED-03
+**Success Criteria** (what must be TRUE):
+  1. Logo.tsx, Navbar.tsx, Footer.tsx, CoursePageLayout.tsx, PAAArticlePage.tsx render brand name from napData — no literal "Impulse" strings
+  2. CookieBanner.tsx localStorage key uses a brand-agnostic or config-derived name
+  3. LeadForm.tsx GTM dataLayer reads location from napData, not hardcoded "Barrio del Pilar"
+  4. seo-system App.tsx mounts `<Toaster />` so toast notifications are visible
+  5. `ImpulseSection` type/schema renamed to brand-agnostic name across types.ts and config.ts
+**Plans**: TBD
+
+### Phase 7: Content Debranding
+**Goal**: All page meta tags and article content use brand-config values — a grep for "Impulse" in .astro pages and article data returns zero results
+**Depends on**: Phase 6
+**Requirements**: ONBD-01 (integration gap closure)
+**Gap Closure:** HIGH-07, HIGH-08
+**Success Criteria** (what must be TRUE):
+  1. All 18 .astro page files read meta titles, descriptions, and keywords from napData/brand-config or a page data file — no hardcoded "Impulse" strings
+  2. Article data in data/articles/ and src/content/articles/ references brand name through a template variable or config import — not literal "Impulse English Academy"
+  3. After running `npm run onboard` with test data and `npm run build`, zero "Impulse" strings appear in the generated dist/ output
+**Plans**: TBD
+
+### Phase 8: Auto-Publish Pipeline Decouple
+**Goal**: auto-publish.js reads all brand identity and image URLs from brand-config.ts — the SEO pipeline generates correctly branded articles for any client
+**Depends on**: Phase 5
+**Requirements**: ONBD-01 (integration gap closure), IMG-03 (integration gap closure)
+**Gap Closure:** CRIT-03, BROKEN-02
+**Success Criteria** (what must be TRUE):
+  1. auto-publish.js imports brand name, voice, and content rules from brand-config.ts — the hardcoded BRAND block is deleted
+  2. Article image selection uses the central image registry (utils/images.ts) — no hardcoded S3 URLs remain in the script
+  3. Running the pipeline after onboarding with test client data produces articles with the test client's brand name, not "Impulse"
+**Plans**: TBD
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -94,3 +145,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 2. Image Consolidation | 5/5 | Complete | 2026-04-09 |
 | 3. Image Optimization | 4/4 | Complete   | 2026-04-09 |
 | 4. Client Onboarding CLI | 2/2 | Complete   | 2026-04-09 |
+| 5. Critical Infrastructure Debranding | 0/0 | Pending | — |
+| 6. Component Debranding | 0/0 | Pending | — |
+| 7. Content Debranding | 0/0 | Pending | — |
+| 8. Auto-Publish Pipeline Decouple | 0/0 | Pending | — |

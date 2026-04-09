@@ -12,7 +12,7 @@
 - [x] **FORM-03**: User sees a visible error message with retry option when form submission fails
 - [x] **FORM-04**: LeadForm includes a honeypot field using off-screen CSS positioning (not display:none) with tabIndex={-1} and autoComplete="one-time-code"
 - [x] **FORM-05**: Bot submissions (honeypot filled) return fake success without hitting webhook
-- [x] **FORM-06**: Sonner toast library added for error/success notifications in LeadForm
+- [ ] **FORM-06**: Sonner toast library added for error/success notifications in LeadForm
 
 ### Image Consolidation
 
@@ -90,7 +90,7 @@
 | FORM-03 | Phase 1 | Complete |
 | FORM-04 | Phase 1 | Complete |
 | FORM-05 | Phase 1 | Complete |
-| FORM-06 | Phase 1 | Complete |
+| FORM-06 | Phase 6 | Pending |
 | IMG-01 | Phase 2 | Complete |
 | IMG-02 | Phase 2 | Complete |
 | IMG-03 | Phase 2 | Complete |
@@ -108,10 +108,34 @@
 | ONBD-07 | Phase 4 | Complete |
 | ONBD-08 | Phase 4 | Complete |
 
+### Gap Closure (from v1.0 Milestone Audit)
+
+| Gap ID | Phase | Status |
+|--------|-------|--------|
+| CRIT-01 | Phase 5 | Pending |
+| CRIT-02 | Phase 5 | Pending |
+| CRIT-03 | Phase 8 | Pending |
+| CRIT-04 | Phase 5 | Pending |
+| HIGH-01 | Phase 6 | Pending |
+| HIGH-02 | Phase 6 | Pending |
+| HIGH-03 | Phase 6 | Pending |
+| HIGH-04 | Phase 6 | Pending |
+| HIGH-05 | Phase 6 | Pending |
+| HIGH-06 | Phase 6 | Pending |
+| HIGH-07 | Phase 7 | Pending |
+| HIGH-08 | Phase 7 | Pending |
+| MED-01 | Phase 6 | Pending |
+| MED-02 | Phase 6 | Pending |
+| MED-03 | Phase 6 | Pending |
+| BROKEN-01 | Phase 5 | Pending |
+| BROKEN-02 | Phase 8 | Pending |
+| BROKEN-03 | Phase 5 | Pending |
+
 **Coverage:**
 - v1 requirements: 22 total
-- Mapped to phases: 22
-- Unmapped: 0 ✓
+- Satisfied: 21, Pending: 1 (FORM-06)
+- Gap closure items: 18 (mapped to Phases 5-8)
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-04-09*
