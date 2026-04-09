@@ -65,12 +65,12 @@ function serializeArticle(article: PAAArticle): string {
     lines.push(`    content: ${yamlString(section.content, 6)}`);
   }
 
-  // impulseSection
-  lines.push('impulseSection:');
-  lines.push(`  heading: ${yamlString(article.impulseSection.heading)}`);
-  lines.push(`  content: ${yamlString(article.impulseSection.content, 4)}`);
+  // brandSection
+  lines.push('brandSection:');
+  lines.push(`  heading: ${yamlString(article.brandSection.heading)}`);
+  lines.push(`  content: ${yamlString(article.brandSection.content, 4)}`);
   lines.push('  ctaLinks:');
-  for (const link of article.impulseSection.ctaLinks) {
+  for (const link of article.brandSection.ctaLinks) {
     lines.push(`    - text: ${yamlString(link.text)}`);
     lines.push(`      href: ${yamlString(link.href)}`);
   }

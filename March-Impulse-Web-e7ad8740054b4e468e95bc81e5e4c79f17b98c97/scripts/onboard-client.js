@@ -121,10 +121,10 @@ ${credentialsTs}
     targetLength: '1500-2500 words',
   },
 
-  // ─── Impulse Section Template ──────────────────────────────────────
+  // ─── Brand Section Template ──────────────────────────────────────
   // This is the branded CTA section inserted into every article.
   // {topicRef} is replaced dynamically based on article category.
-  impulseSectionTemplate: {
+  brandSectionTemplate: {
     headingPattern: '{companyName} te ayuda con {topicRef}',
     content: 'En {companyName}, {tagline}, os acompanamos en cada paso. Con un {socialProof}, grupos reducidos de maximo 10 alumnos y profesores nativos certificados TEFL/CELTA, teneis todo lo necesario para alcanzar vuestros objetivos.',
   },
