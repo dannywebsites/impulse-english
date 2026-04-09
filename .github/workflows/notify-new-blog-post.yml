@@ -1,0 +1,68 @@
+name: Notify New Blog Post
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'March-Impulse-Web-*/pages/blog/**'
+      - 'March-Impulse-Web-*/data/articles/**'
+      - 'March-Impulse-Web-*/seo-system/site/pages/blog/**'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Find new blog posts
+        id: blog-info
+        run: |
+          CHANGED=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- \
+            'March-Impulse-Web-*/pages/blog/**' \
+            'March-Impulse-Web-*/data/articles/**' \
+            'March-Impulse-Web-*/seo-system/site/pages/blog/**')
+
+          if [ -z "$CHANGED" ]; then
+            # Also check modified files (updated posts)
+            CHANGED=$(git diff --name-only --diff-filter=M HEAD~1 HEAD -- \
+              'March-Impulse-Web-*/pages/blog/**' \
+              'March-Impulse-Web-*/data/articles/**' \
+              'March-Impulse-Web-*/seo-system/site/pages/blog/**')
+          fi
+
+          if [ -z "$CHANGED" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+          echo "$CHANGED" > /tmp/changed-files.txt
+
+      - name: Extract blog info
+        if: steps.blog-info.outputs.skip != 'true'
+        id: extract
+        run: node .github/scripts/extract-blog-info.mjs /tmp/changed-files.txt
+
+      - name: Send email via Resend
+        if: steps.blog-info.outputs.skip != 'true' && steps.extract.outputs.title != ''
+        run: |
+          curl -s -X POST 'https://api.resend.com/emails' \
+            -H "Authorization: Bearer ${{ secrets.RESEND_API_KEY }}" \
+            -H 'Content-Type: application/json' \
+            -d "$(cat <<EOF
+          {
+            "from": "Impulse Blog <onboarding@resend.dev>",
+            "to": ["${{ secrets.NOTIFICATION_EMAIL }}"],
+            "subject": "New Blog Post: ${{ steps.extract.outputs.title }}",
+            "html": "<h2>New Blog Post Published</h2><p><strong>${{ steps.extract.outputs.title }}</strong></p><p><a href=\"https://impulseenglish.es${{ steps.extract.outputs.url }}\">Read it live →</a></p>"
+          }
+          EOF
+          )"
