@@ -7,7 +7,7 @@ import LazyVideo from '../../components/LazyVideo';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateArticleSchema, generateCourseSchema, businessInfo } from '../../utils/schemaData';
-import { s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
+import { s3CambridgeImages, s3SecondaryImages } from '@/utils/images';
 
 // Article Schema for AI citation
 export const articleSchema = generateArticleSchema({
@@ -114,8 +114,8 @@ const whatYouGet = [
 ];
 
 const galleryImages = [
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg", alt: "Estudiantes con certificados Cambridge en Impulse English Academy" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-18.JPEG", alt: "Clase de inglés en Impulse English Academy La Vaguada Madrid" },
+  { url: "/images/academy/team/jp-with-students.jpg", alt: "Estudiantes con certificados Cambridge en Impulse English Academy" },
+  { url: "/images/academy/facilities/escuela-gonzalo-18.jpeg", alt: "Clase de inglés en Impulse English Academy La Vaguada Madrid" },
 ];
 
 export const courseSchema = generateCourseSchema({
@@ -157,7 +157,7 @@ export default function LinguaskillPage() {
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/tech-classroom-mobile.webp" type="image/webp" />
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/tech-classroom-mobile.jpg" type="image/jpeg" />
             <img
-              src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG"
+              src="/images/academy/facilities/technology-based-classroom-photo.jpg"
               alt="Linguaskill preparation"
               className="w-full h-full object-cover"
               loading="eager"

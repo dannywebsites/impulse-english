@@ -10,8 +10,8 @@ import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import AcademyGallery from '../../components/AcademyGallery';
-import { secundariaImages as galleryImages } from '../../src/data/academyImages';
-import { studentImages } from '../../src/data/images';
+import { secundariaGalleryImages as galleryImages } from '@/utils/images';
+import { studentImages } from '@/utils/images';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Secundaria (13-17 años)",
@@ -20,7 +20,7 @@ export const courseSchema = generateCourseSchema({
   courseCode: "SEC-CAM",
   educationalLevel: "Secondary",
   timeRequired: "PT2H",
-  image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+  image: "/images/academy/logos/img-4117.png"
 });
 
 

@@ -110,7 +110,7 @@ export default function EscalaCambridgePage() {
       {/* Hero Section */}
       <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG" alt="Certificado Cambridge English centro oficial Impulse Academy" className="w-full h-full object-cover" loading="eager" />
+          <img src="/images/academy/facilities/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg" alt="Certificado Cambridge English centro oficial Impulse Academy" className="w-full h-full object-cover" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
@@ -133,7 +133,7 @@ export default function EscalaCambridgePage() {
             </div>
 
             <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Escala Cambridge Explicada: Niveles, Puntuaciones y Grades
+              Escala Cambridge: Puntuaciones, Niveles y Equivalencias
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -150,7 +150,7 @@ export default function EscalaCambridgePage() {
       <section className="py-8 bg-indigo-50">
         <div className="container mx-auto px-6 md:px-12">
           <div className="max-w-4xl">
-            <h2 className="text-lg font-bold text-zinc-900 mb-4">Cambridge English Scale - Visión General</h2>
+            <h2 className="text-lg font-bold text-zinc-900 mb-4">Tabla de puntuaciones por examen (A2 Key – C2 Proficiency)</h2>
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="space-y-2">
                 {scaleData.map((item, index) => (
@@ -193,7 +193,7 @@ export default function EscalaCambridgePage() {
             {/* Section 1 */}
             <section className="mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6">
-                ¿Qué es la Cambridge English Scale?
+                ¿Qué es la escala Cambridge?
               </h2>
               <p className="text-zinc-600 mb-6">
                 Introducida en 2015, la Cambridge English Scale reemplazó el antiguo sistema de porcentajes con una escala
@@ -226,7 +226,7 @@ export default function EscalaCambridgePage() {
             {/* Section 2 - Grades */}
             <section className="mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6">
-                Sistema de Grades: A, B, C y más
+                ¿Qué puntuación necesitas para aprobar cada nivel?
               </h2>
               <p className="text-zinc-600 mb-6">
                 Además de la puntuación numérica, Cambridge asigna un Grade que indica tu nivel de rendimiento en el examen.
@@ -253,14 +253,14 @@ export default function EscalaCambridgePage() {
             {/* Section 3 - Detailed Scores */}
             <section className="mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6">
-                Puntuaciones por examen y certificación
+                Equivalencias con el Marco Europeo (MCER)
               </h2>
 
               <div className="space-y-6">
                 <div className="bg-zinc-50 rounded-xl p-6">
                   <h3 className="font-bold text-zinc-900 mb-4 flex items-center gap-2">
                     <Award className="w-5 h-5 text-blue-600" />
-                    B2 First (FCE)
+                    Puntuaciones B2 First (FCE)
                   </h3>
                   <div className="grid md:grid-cols-3 gap-4 text-sm">
                     <div className="bg-white rounded-lg p-3">
@@ -283,7 +283,7 @@ export default function EscalaCambridgePage() {
                 <div className="bg-zinc-50 rounded-xl p-6">
                   <h3 className="font-bold text-zinc-900 mb-4 flex items-center gap-2">
                     <Award className="w-5 h-5 text-indigo-600" />
-                    C1 Advanced (CAE)
+                    Puntuaciones C1 Advanced (CAE)
                   </h3>
                   <div className="grid md:grid-cols-3 gap-4 text-sm">
                     <div className="bg-white rounded-lg p-3">
@@ -306,7 +306,7 @@ export default function EscalaCambridgePage() {
                 <div className="bg-zinc-50 rounded-xl p-6">
                   <h3 className="font-bold text-zinc-900 mb-4 flex items-center gap-2">
                     <Award className="w-5 h-5 text-purple-600" />
-                    C2 Proficiency (CPE)
+                    Puntuaciones C2 Proficiency (CPE)
                   </h3>
                   <div className="grid md:grid-cols-3 gap-4 text-sm">
                     <div className="bg-white rounded-lg p-3">
@@ -332,7 +332,7 @@ export default function EscalaCambridgePage() {
             {/* Section 4 - How to Improve */}
             <section className="mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6">
-                Cómo mejorar tu puntuación en la escala Cambridge
+                Cómo interpretar tu resultado Cambridge
               </h2>
               <p className="text-zinc-600 mb-6">
                 Tu puntuación total es el promedio de las 4 habilidades evaluadas. Identificar tus áreas débiles y
@@ -383,7 +383,7 @@ export default function EscalaCambridgePage() {
             {/* FAQ Section */}
             <section className="mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6">
-                Preguntas Frecuentes sobre la Escala Cambridge
+                Preguntas frecuentes sobre la escala Cambridge
               </h2>
               <div className="space-y-4">
                 {faqs.map((faq, index) => (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Play, ArrowRight } from 'lucide-react';
-import { teamImages } from '../src/data/images';
+import { teamImages } from '@/utils/images';
 
 export default function VideoCTA() {
   const img = teamImages.estudiantesSonriendo;

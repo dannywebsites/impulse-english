@@ -6,47 +6,47 @@ import Footer from '../components/Footer';
 // Direct S3 image URLs for reliability
 const articleImageUrls: Record<string, { url: string; alt: string }> = {
   classroom: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG",
+    url: "/images/academy/facilities/classroom-facilities-main-classroom.jpg",
     alt: "Aula principal academia inglés La Vaguada Madrid"
   },
   infantil: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Infantil+classes.JPG",
+    url: "/images/academy/facilities/infantil-classes.jpg",
     alt: "Clases inglés infantil La Vaguada Madrid"
   },
   certificate: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg",
+    url: "/images/academy/team/jp-with-students.jpg",
     alt: "Estudiantes con certificados Cambridge La Vaguada Madrid"
   },
   adults: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Adult+one-to-one+classes.JPG",
+    url: "/images/academy/facilities/adult-one-to-one-classes.jpg",
     alt: "Clases inglés adultos La Vaguada Madrid"
   },
   students: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG",
+    url: "/images/academy/facilities/primary-classes-students-smiling.jpg",
     alt: "Estudiantes primaria felices La Vaguada Madrid"
   },
   teenagers: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Secondary+classes+student+happy.JPG",
+    url: "/images/academy/facilities/secondary-classes-student-happy.jpg",
     alt: "Estudiante secundaria La Vaguada Madrid"
   },
   reception: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Photos+of+facilities.JPG",
+    url: "/images/academy/facilities/photos-of-facilities.jpg",
     alt: "Instalaciones academia inglés La Vaguada Madrid"
   },
   cambridge: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG",
+    url: "/images/academy/facilities/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg",
     alt: "Certificado Cambridge oficial La Vaguada Madrid"
   },
   linguaskillLogo: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/linguaskill-logo-blanco.png",
+    url: "/images/academy/logos/linguaskill-logo-blanco.png",
     alt: "Logo Linguaskill centro oficial La Vaguada Madrid"
   },
   cambridgeLogo: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png",
+    url: "/images/academy/logos/cambridge-logo-edited.png",
     alt: "Logo Cambridge centro preparador oficial La Vaguada Madrid"
   },
   technology: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG",
+    url: "/images/academy/facilities/technology-based-classroom-photo.jpg",
     alt: "Aula tecnológica preparación Linguaskill La Vaguada Madrid"
   }
 };
@@ -871,7 +871,7 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG" alt="Aula academia inglés Impulse English Academy La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" />
+          <img src="/images/academy/facilities/classroom-facilities-main-classroom.jpg" alt="Aula academia inglés Impulse English Academy La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>

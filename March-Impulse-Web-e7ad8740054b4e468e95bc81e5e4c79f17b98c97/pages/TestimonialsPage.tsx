@@ -6,7 +6,7 @@ import LeadForm from '../components/LeadForm';
 import LazyVideo from '../components/LazyVideo';
 import OptimizedImage from '../components/OptimizedImage';
 import Breadcrumb from '../components/Breadcrumb';
-import { facilityImages, certificationImages } from '../src/data/images';
+import { facilityImages, certificationImages } from '@/utils/images';
 
 const videoTestimonials = [
   {

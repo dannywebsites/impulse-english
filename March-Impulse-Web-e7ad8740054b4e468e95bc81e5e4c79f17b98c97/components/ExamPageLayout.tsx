@@ -6,7 +6,7 @@ import LeadForm from './LeadForm';
 import LazyVideo from './LazyVideo';
 import Breadcrumb from './Breadcrumb';
 import FAQSection from './FAQSection';
-import { s3CambridgeImages, s3SecondaryImages } from '../src/data/images';
+import { s3CambridgeImages, s3SecondaryImages } from '@/utils/images';
 import { NAP } from '../utils/napData';
 
 interface ExamPart {
@@ -33,10 +33,10 @@ interface ExamPageLayoutProps {
   faqs?: { question: string; answer: string }[];
 }
 
-// Default gallery images - using landscape photos that show well
+// Default gallery images - using local registry references
 const defaultGalleryImages = [
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg", alt: "Estudiantes con certificados Cambridge en Impulse English Academy" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-18.JPEG", alt: "Clase de inglés en Impulse English Academy La Vaguada Madrid" },
+  { url: s3CambridgeImages.cambridgeCertificate.url, alt: "Estudiantes con certificados Cambridge en Impulse English Academy" },
+  { url: s3SecondaryImages.gonzaloClass1.url, alt: "Clase de inglés en Impulse English Academy La Vaguada Madrid" },
 ];
 
 export default function ExamPageLayout({

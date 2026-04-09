@@ -56,7 +56,7 @@ export default function PerderMiedoHablarInglesPage() {
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Adult+one-to-one+classes.JPG"
+                src="/images/academy/facilities/adult-one-to-one-classes.jpg"
                 alt="Superar el miedo a hablar inglés"
                 className="w-full h-full object-cover"
                 loading="eager"

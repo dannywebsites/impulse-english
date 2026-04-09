@@ -10,8 +10,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
-import { infantilImages as galleryImages } from '../../src/data/academyImages';
-import { infantilImages as heroImages } from '../../src/data/images';
+import { infantilGalleryImages as galleryImages } from '@/utils/images';
+import { infantilImages as heroImages } from '@/utils/images';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Infantil (2-5 años)",
@@ -20,7 +20,7 @@ export const courseSchema = generateCourseSchema({
   courseCode: "INF-GLP",
   educationalLevel: "Preschool",
   timeRequired: "PT1H",
-  image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+  image: "/images/academy/logos/img-4117.png"
 });
 
 
@@ -137,7 +137,7 @@ export default function InfantilPage() {
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/infantil-classes-mobile.webp" type="image/webp" />
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/infantil-classes-mobile.jpg" type="image/jpeg" />
             <img
-              src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Infantil+classes.JPG"
+              src="/images/academy/facilities/infantil-classes.jpg"
               alt="Clases de inglés infantil Madrid - Great Little People Impulse English Academy"
               className="w-full h-full object-cover"
               loading="eager"

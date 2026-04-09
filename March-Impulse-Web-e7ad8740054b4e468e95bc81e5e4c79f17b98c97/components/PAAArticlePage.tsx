@@ -9,52 +9,65 @@ import RelatedArticles from './RelatedArticles';
 import { businessInfo } from '../utils/schemaData';
 import { categoryConfig } from '../data/category-config';
 import { resolveInternalLinks } from '../data/internal-links';
-import type { PAAArticle, ArticleCard } from '../data/articles/types';
+import type { PAAArticle, ArticleCard, ArticleImage } from '../data/articles/types';
 
 interface PAAArticlePageProps {
   article: PAAArticle;
   siblingArticles?: ArticleCard[];
 }
 
-// S3 image URLs keyed by imageKey
+// Local image URLs keyed by imageKey
 const articleImages: Record<string, { url: string; alt: string }> = {
   classroom: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG",
+    url: "/images/academy/facilities/classroom-facilities-main-classroom.jpg",
     alt: "Aula principal academia inglés La Vaguada Madrid"
   },
   infantil: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Infantil+classes.JPG",
+    url: "/images/academy/facilities/infantil-classes.jpg",
     alt: "Clases inglés infantil La Vaguada Madrid"
   },
   cambridge: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG",
+    url: "/images/academy/facilities/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg",
     alt: "Certificado Cambridge oficial La Vaguada Madrid"
   },
   adults: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Adult+one-to-one+classes.JPG",
+    url: "/images/academy/facilities/adult-one-to-one-classes.jpg",
     alt: "Clases inglés adultos La Vaguada Madrid"
   },
   students: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG",
+    url: "/images/academy/facilities/primary-classes-students-smiling.jpg",
     alt: "Estudiantes primaria felices La Vaguada Madrid"
   },
   teenagers: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Secondary+classes+student+happy.JPG",
+    url: "/images/academy/facilities/secondary-classes-student-happy.jpg",
     alt: "Estudiante secundaria La Vaguada Madrid"
   },
   reception: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Photos+of+facilities.JPG",
+    url: "/images/academy/facilities/photos-of-facilities.jpg",
     alt: "Instalaciones academia inglés La Vaguada Madrid"
   },
   technology: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG",
+    url: "/images/academy/facilities/technology-based-classroom-photo.jpg",
     alt: "Aula tecnológica preparación Linguaskill La Vaguada Madrid"
   },
 };
 
 export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArticlePageProps) {
   const config = categoryConfig[article.category];
-  const image = articleImages[article.imageKey] || articleImages.classroom;
+
+  // Resolve images: prefer articleImages array, fall back to legacy imageKey
+  const heroImage: { url: string; alt: string } = (() => {
+    if (article.articleImages?.length) {
+      const hero = article.articleImages.find(i => i.placement === 'hero') || article.articleImages[0];
+      return { url: hero.url, alt: hero.alt };
+    }
+    return articleImages[article.imageKey || ''] || articleImages.classroom;
+  })();
+
+  const inlineImages: ArticleImage[] = article.articleImages
+    ? article.articleImages.filter(i => i.placement === 'inline')
+    : [];
+
   const resolvedLinks = resolveInternalLinks(article.internalLinkRefs);
   const fullUrl = `${businessInfo.url}${article.url}`;
 
@@ -70,8 +83,8 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
       <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={image.url}
-            alt={image.alt}
+            src={heroImage.url}
+            alt={heroImage.alt}
             className="w-full h-full object-cover"
             loading="eager"
           />
@@ -127,21 +140,42 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
         </div>
       </section>
 
-      {/* Context Sections */}
-      {article.contextSections.map((section, index) => (
-        <section
-          key={index}
-          className={`py-10 px-6 ${index % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}`}
-        >
-          <div className="container mx-auto max-w-3xl">
-            <h2 className="text-2xl font-bold text-zinc-900 mb-4">{section.heading}</h2>
-            <div
-              className="text-zinc-700 leading-relaxed space-y-4 prose prose-zinc max-w-none"
-              dangerouslySetInnerHTML={{ __html: section.content }}
-            />
-          </div>
-        </section>
-      ))}
+      {/* Context Sections with inline images */}
+      {article.contextSections.map((section, index) => {
+        // Insert inline images after sections 1 and 3 (0-indexed)
+        const inlineImageIndex = index === 1 ? 0 : index === 3 ? 1 : -1;
+        const inlineImg = inlineImageIndex >= 0 && inlineImageIndex < inlineImages.length
+          ? inlineImages[inlineImageIndex]
+          : null;
+
+        return (
+          <React.Fragment key={index}>
+            <section
+              className={`py-10 px-6 ${index % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}`}
+            >
+              <div className="container mx-auto max-w-3xl">
+                <h2 className="text-2xl font-bold text-zinc-900 mb-4">{section.heading}</h2>
+                <div
+                  className="text-zinc-700 leading-relaxed space-y-4 prose prose-zinc max-w-none"
+                  dangerouslySetInnerHTML={{ __html: section.content }}
+                />
+              </div>
+            </section>
+            {inlineImg && (
+              <div className={`py-6 px-6 ${index % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}`}>
+                <div className="container mx-auto max-w-3xl">
+                  <img
+                    src={inlineImg.url}
+                    alt={inlineImg.alt}
+                    className="w-full rounded-xl shadow-sm"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            )}
+          </React.Fragment>
+        );
+      })}
 
       {/* Internal Links Section */}
       {resolvedLinks.length > 0 && (

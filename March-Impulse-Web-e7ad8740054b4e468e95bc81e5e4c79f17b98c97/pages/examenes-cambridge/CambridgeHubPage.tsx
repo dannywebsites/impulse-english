@@ -7,7 +7,7 @@ import LazyVideo from '../../components/LazyVideo';
 import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateArticleSchema, generateCourseSchema, businessInfo } from '../../utils/schemaData';
-import { s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
+import { s3CambridgeImages, s3SecondaryImages } from '@/utils/images';
 
 // Article Schema for SEO
 export const articleSchema = generateArticleSchema({
