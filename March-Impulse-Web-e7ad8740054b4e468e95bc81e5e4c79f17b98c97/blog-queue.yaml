@@ -38,7 +38,8 @@ articles:
   - topic: "Consejos para aprobar el Writing del B2 First"
     category: "Cambridge B2 First"
     keywords: "aprobar writing b2 first consejos"
-    status: pending
+    status: published
+    publishedDate: "2026-04-14"
 
   # --- Cambridge C1 Advanced ---
   - topic: "¿Merece la pena sacarse el C1 Advanced para trabajar?"
