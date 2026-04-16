@@ -51,7 +51,8 @@ articles:
   - topic: "¿Cuánto cuesta preparar el C1 Advanced en Madrid?"
     category: "Cambridge C1 Advanced"
     keywords: "precio preparar c1 advanced madrid"
-    status: pending
+    status: published
+    publishedDate: "2026-04-16"
 
   # --- Linguaskill ---
   - topic: "¿Merece la pena el Linguaskill para oposiciones?"
