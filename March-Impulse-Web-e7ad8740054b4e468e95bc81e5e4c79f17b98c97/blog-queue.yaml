@@ -58,7 +58,8 @@ articles:
   - topic: "¿Merece la pena el Linguaskill para oposiciones?"
     category: "Linguaskill"
     keywords: "linguaskill oposiciones merece la pena"
-    status: pending
+    status: published
+    publishedDate: "2026-04-20"
 
   - topic: "Linguaskill vs APTIS: ¿cuál es mejor para tu currículum?"
     category: "Linguaskill"
