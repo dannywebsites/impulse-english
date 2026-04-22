@@ -34,7 +34,12 @@ const articles = defineCollection({
     publishedDate: z.string(),
     modifiedDate: z.string(),
     readTime: z.string(),
-    imageKey: z.string(),
+    imageKey: z.string().optional(),
+    articleImages: z.array(z.object({
+      url: z.string(),
+      alt: z.string(),
+      placement: z.enum(['hero', 'inline']),
+    })).min(3).optional(),
   }),
 });
 

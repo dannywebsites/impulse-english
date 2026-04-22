@@ -139,6 +139,34 @@
         "imageKey": {
           "type": "string"
         },
+        "articleImages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string"
+              },
+              "alt": {
+                "type": "string"
+              },
+              "placement": {
+                "type": "string",
+                "enum": [
+                  "hero",
+                  "inline"
+                ]
+              }
+            },
+            "required": [
+              "url",
+              "alt",
+              "placement"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 3
+        },
         "$schema": {
           "type": "string"
         }
@@ -158,8 +186,7 @@
         "breadcrumbs",
         "publishedDate",
         "modifiedDate",
-        "readTime",
-        "imageKey"
+        "readTime"
       ],
       "additionalProperties": false
     }

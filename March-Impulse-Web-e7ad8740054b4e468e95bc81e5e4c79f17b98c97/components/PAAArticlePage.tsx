@@ -6,10 +6,9 @@ import LeadForm from './LeadForm';
 import FAQSection from './FAQSection';
 import Breadcrumb from './Breadcrumb';
 import RelatedArticles from './RelatedArticles';
-import { businessInfo } from '../utils/schemaData';
 import { categoryConfig } from '../data/category-config';
 import { resolveInternalLinks } from '../data/internal-links';
-import type { PAAArticle, ArticleCard } from '../data/articles/types';
+import type { PAAArticle, ArticleCard, ArticleImage } from '../data/articles/types';
 
 interface PAAArticlePageProps {
   article: PAAArticle;
@@ -54,9 +53,21 @@ const articleImages: Record<string, { url: string; alt: string }> = {
 
 export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArticlePageProps) {
   const config = categoryConfig[article.category];
-  const image = articleImages[article.imageKey] || articleImages.classroom;
+
+  // Resolve images: prefer articleImages array, fall back to legacy imageKey
+  const heroImage: { url: string; alt: string } = (() => {
+    if (article.articleImages?.length) {
+      const hero = article.articleImages.find(i => i.placement === 'hero') || article.articleImages[0];
+      return { url: hero.url, alt: hero.alt };
+    }
+    return articleImages[article.imageKey || ''] || articleImages.classroom;
+  })();
+
+  const inlineImages: ArticleImage[] = article.articleImages
+    ? article.articleImages.filter(i => i.placement === 'inline')
+    : [];
+
   const resolvedLinks = resolveInternalLinks(article.internalLinkRefs);
-  const fullUrl = `${businessInfo.url}${article.url}`;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -70,8 +81,8 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
       <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={image.url}
-            alt={image.alt}
+            src={heroImage.url}
+            alt={heroImage.alt}
             className="w-full h-full object-cover"
             loading="eager"
           />
@@ -127,21 +138,42 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
         </div>
       </section>
 
-      {/* Context Sections */}
-      {article.contextSections.map((section, index) => (
-        <section
-          key={index}
-          className={`py-10 px-6 ${index % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}`}
-        >
-          <div className="container mx-auto max-w-3xl">
-            <h2 className="text-2xl font-bold text-zinc-900 mb-4">{section.heading}</h2>
-            <div
-              className="text-zinc-700 leading-relaxed space-y-4 prose prose-zinc max-w-none"
-              dangerouslySetInnerHTML={{ __html: section.content }}
-            />
-          </div>
-        </section>
-      ))}
+      {/* Context Sections with inline images */}
+      {article.contextSections.map((section, index) => {
+        // Insert inline images after sections 1 and 3 (0-indexed)
+        const inlineImageIndex = index === 1 ? 0 : index === 3 ? 1 : -1;
+        const inlineImg = inlineImageIndex >= 0 && inlineImageIndex < inlineImages.length
+          ? inlineImages[inlineImageIndex]
+          : null;
+
+        return (
+          <React.Fragment key={index}>
+            <section
+              className={`py-10 px-6 ${index % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}`}
+            >
+              <div className="container mx-auto max-w-3xl">
+                <h2 className="text-2xl font-bold text-zinc-900 mb-4">{section.heading}</h2>
+                <div
+                  className="text-zinc-700 leading-relaxed space-y-4 prose prose-zinc max-w-none"
+                  dangerouslySetInnerHTML={{ __html: section.content }}
+                />
+              </div>
+            </section>
+            {inlineImg && (
+              <div className={`py-6 px-6 ${index % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}`}>
+                <div className="container mx-auto max-w-3xl">
+                  <img
+                    src={inlineImg.url}
+                    alt={inlineImg.alt}
+                    className="w-full rounded-xl shadow-sm"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            )}
+          </React.Fragment>
+        );
+      })}
 
       {/* Internal Links Section */}
       {resolvedLinks.length > 0 && (
@@ -236,18 +268,6 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
       <Footer variant="simple" />
     </>
   );
-}
-
-function estimateWordCount(article: PAAArticle): number {
-  let text = article.paaAnswer;
-  for (const section of article.contextSections) {
-    text += ' ' + section.content;
-  }
-  text += ' ' + article.impulseSection.content;
-  for (const faq of article.faqItems) {
-    text += ' ' + faq.question + ' ' + faq.answer;
-  }
-  return text.split(/\s+/).length;
 }
 
 function formatDate(dateStr: string): string {

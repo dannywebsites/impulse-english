@@ -35,11 +35,14 @@ const siblings = getSiblingArticles(slug, 3);
 const fullUrl = `${businessInfo.url}${data.url}`;
 
 // Build schemas for BaseLayout server-side rendering
+const schemaImage = data.articleImages?.[0]?.url
+  ?? `https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG`;
+
 const articleSchema = generateArticleSchema({
   headline: data.seoTitle,
   description: data.metaDescription,
   url: fullUrl,
-  image: `https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG`,
+  image: schemaImage,
   datePublished: data.publishedDate,
   dateModified: data.modifiedDate,
   wordCount: 1500,

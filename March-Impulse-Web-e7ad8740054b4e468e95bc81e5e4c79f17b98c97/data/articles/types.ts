@@ -42,6 +42,12 @@ export type ArticleCategory =
   | 'Price'
   | 'Definitions';
 
+export interface ArticleImage {
+  url: string;
+  alt: string;
+  placement: 'hero' | 'inline';
+}
+
 export interface PAAArticle {
   slug: string;
   url: string;
@@ -59,7 +65,8 @@ export interface PAAArticle {
   publishedDate: string;
   modifiedDate: string;
   readTime: string;
-  imageKey: string;
+  imageKey?: string;
+  articleImages?: ArticleImage[];
 }
 
 // Blog listing card for BlogPage
