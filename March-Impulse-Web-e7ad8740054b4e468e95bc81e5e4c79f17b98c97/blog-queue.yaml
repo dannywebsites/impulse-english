@@ -71,7 +71,8 @@ articles:
   - topic: "¿A qué edad deben empezar los niños a aprender inglés?"
     category: "Kids"
     keywords: "edad niños aprender ingles"
-    status: pending
+    status: published
+    publishedDate: "2026-04-22"
 
   - topic: "Mejores métodos para enseñar inglés a niños de 3 a 6 años"
     category: "Kids"
