@@ -77,7 +77,8 @@ articles:
   - topic: "Mejores métodos para enseñar inglés a niños de 3 a 6 años"
     category: "Kids"
     keywords: "metodos enseñar ingles niños 3 6 años"
-    status: pending
+    status: published
+    publishedDate: "2026-04-23"
 
   # --- General / Learning ---
   - topic: "¿Cómo mejorar tu Speaking en inglés sin vivir en el extranjero?"
