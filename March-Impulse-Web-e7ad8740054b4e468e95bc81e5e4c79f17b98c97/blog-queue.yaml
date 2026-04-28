@@ -90,7 +90,8 @@ articles:
   - topic: "Las 10 excusas más comunes para no aprender inglés (y cómo superarlas)"
     category: "Learning Methods"
     keywords: "excusas no aprender ingles superarlas"
-    status: pending
+    status: published
+    publishedDate: "2026-04-28"
 
   # --- Local Madrid ---
   - topic: "Las mejores academias de inglés en La Vaguada y Barrio del Pilar"
