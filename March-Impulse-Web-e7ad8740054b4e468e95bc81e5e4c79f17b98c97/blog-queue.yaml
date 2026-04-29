@@ -97,7 +97,8 @@ articles:
   - topic: "Las mejores academias de inglés en La Vaguada y Barrio del Pilar"
     category: "Local Madrid"
     keywords: "academias ingles la vaguada barrio del pilar"
-    status: pending
+    status: published
+    publishedDate: "2026-04-29"
 
   - topic: "¿Por qué elegir una academia Cambridge frente a una academia genérica?"
     category: "Cambridge"
