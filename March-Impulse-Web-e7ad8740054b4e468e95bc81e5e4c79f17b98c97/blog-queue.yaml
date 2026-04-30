@@ -103,7 +103,8 @@ articles:
   - topic: "¿Por qué elegir una academia Cambridge frente a una academia genérica?"
     category: "Cambridge"
     keywords: "academia cambridge vs academia generica"
-    status: pending
+    status: published
+    publishedDate: "2026-04-30"
 
   # --- Price ---
   - topic: "¿Cuánto cuestan las clases de inglés en Madrid en 2026?"
