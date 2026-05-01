@@ -1,6 +1,6 @@
 ---
 url: /blog/academia-cambridge-vs-academia-generica
-category: Cambridge
+category: Cambridge B2 First
 priority: Medium
 question: ¿Por qué elegir una academia Cambridge frente a una academia genérica?
 seoTitle: "Academia Cambridge vs academia genérica: Diferencias clave"

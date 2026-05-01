@@ -1,6 +1,6 @@
 ---
 url: /blog/metodos-ensenar-ingles-ninos
-category: Kids
+category: Kids Early Childhood
 priority: Medium
 question: Mejores métodos para enseñar inglés a niños de 3 a 6 años
 seoTitle: Mejores métodos para enseñar inglés a niños de 3 a 6 años

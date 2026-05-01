@@ -52,7 +52,9 @@ const articleImages: Record<string, { url: string; alt: string }> = {
 };
 
 export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArticlePageProps) {
-  const config = categoryConfig[article.category];
+  // Fallback to Cambridge B2 First config if article category is invalid/missing,
+  // so a bad category in content can't crash the entire build.
+  const config = categoryConfig[article.category] ?? categoryConfig['Cambridge B2 First'];
 
   // Resolve images: prefer articleImages array, fall back to legacy imageKey
   const heroImage: { url: string; alt: string } = (() => {
