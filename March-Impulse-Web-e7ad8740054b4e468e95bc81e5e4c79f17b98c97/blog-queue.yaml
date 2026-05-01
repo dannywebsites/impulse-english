@@ -69,13 +69,13 @@ articles:
 
   # --- Kids / Infantil ---
   - topic: "¿A qué edad deben empezar los niños a aprender inglés?"
-    category: "Kids"
+    category: "Kids Early Childhood"
     keywords: "edad niños aprender ingles"
     status: published
     publishedDate: "2026-04-22"
 
   - topic: "Mejores métodos para enseñar inglés a niños de 3 a 6 años"
-    category: "Kids"
+    category: "Kids Early Childhood"
     keywords: "metodos enseñar ingles niños 3 6 años"
     status: published
     publishedDate: "2026-04-23"
@@ -101,7 +101,7 @@ articles:
     publishedDate: "2026-04-29"
 
   - topic: "¿Por qué elegir una academia Cambridge frente a una academia genérica?"
-    category: "Cambridge"
+    category: "Cambridge B2 First"
     keywords: "academia cambridge vs academia generica"
     status: published
     publishedDate: "2026-04-30"

@@ -1,6 +1,6 @@
 ---
 url: /blog/edad-ninos-aprender-ingles
-category: Kids
+category: Kids Early Childhood
 priority: Medium
 question: ¿A qué edad deben empezar los niños a aprender inglés?
 seoTitle: ¿A qué edad deben empezar los niños a aprender inglés?
