@@ -110,7 +110,8 @@ articles:
   - topic: "¿Cuánto cuestan las clases de inglés en Madrid en 2026?"
     category: "Price"
     keywords: "precio clases ingles madrid 2026"
-    status: pending
+    status: published
+    publishedDate: "2026-05-04"
 
   - topic: "¿Vale la pena invertir en un curso de preparación Cambridge?"
     category: "Price"
