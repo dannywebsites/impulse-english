@@ -285,7 +285,7 @@ Meta Description: Academia de inglés en Barrio del Pilar, Madrid. Profesores na
 Canonical: https://impulse-english.es/
 Keywords: academia inglés barrio del pilar, academia inglés la vaguada, cambridge madrid, cursos inglés niños, clases inglés adultos, profesores nativos madrid
 OG Type: website
-OG Image: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/LOGO+WHITE+BACKGROUND.jpg
+OG Image: /images/academy/logo-white-background.jpg
 fullTitle: true (uses title as-is, no brand append)
 ```
 
@@ -679,9 +679,9 @@ Example: `academia-cambridge-madrid-aula-md.webp`
   "url": "https://impulse-english.es",
   "logo": {
     "@type": "ImageObject",
-    "url": "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+    "url": "/images/academy/img-4117.png"
   },
-  "image": "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG",
+  "image": "/images/academy/img-4117.png",
   "telephone": "+34604910611",
   "email": "info@impulse-english.es",
   "foundingDate": "2022",

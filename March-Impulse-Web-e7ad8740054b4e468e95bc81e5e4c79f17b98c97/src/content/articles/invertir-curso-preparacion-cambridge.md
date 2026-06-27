@@ -61,13 +61,13 @@ publishedDate: "2026-05-05"
 modifiedDate: "2026-05-05"
 readTime: 16 min
 articleImages:
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Photos+of+facilities.JPG
+  - url: /images/academy/photos-of-facilities.jpg
     alt: Instalaciones academia inglés La Vaguada Barrio del Pilar Madrid
     placement: hero
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg
+  - url: /images/academy/outside-academy.jpg
     alt: Fachada exterior academia Impulse English La Vaguada Madrid
     placement: inline
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG
+  - url: /images/academy/technology-based-classroom-photo.jpg
     alt: Aula tecnológica academia inglés La Vaguada Madrid
     placement: inline
 ---

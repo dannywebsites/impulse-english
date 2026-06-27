@@ -66,7 +66,7 @@ export default function SobreNosotrosPage() {
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/jp-with-students-mobile.webp" type="image/webp" />
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/jp-with-students-mobile.jpg" type="image/jpeg" />
             <img
-              src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg"
+              src="/images/academy/jp-with-students.jpg"
               alt="Profesor con estudiantes - Impulse English Academy About Us"
               className="w-full h-full object-cover object-top"
               loading="eager"
@@ -154,7 +154,7 @@ export default function SobreNosotrosPage() {
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-100">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG"
+                  src="/images/academy/primary-classes-students-smiling.jpg"
                   alt="Estudiantes de inglés primaria y secundaria - Impulse English Academy La Vaguada Barrio del Pilar Madrid"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -267,15 +267,15 @@ export default function SobreNosotrosPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4">
             {[
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg", alt: "Fachada exterior Impulse English Academy La Vaguada Barrio del Pilar Madrid", caption: "Nuestra academia en La Vaguada" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG", alt: "Aula principal academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Aula principal equipada" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG", alt: "Aula tecnológica academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Tecnología educativa avanzada" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Photos+of+facilities.JPG", alt: "Instalaciones academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Espacios de aprendizaje" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Stairs.JPG", alt: "Escaleras interior academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Instalaciones amplias" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes.JPG", alt: "Clase primaria academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Clases de primaria" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Daniel+helping+secondary+school+students.JPG", alt: "Profesor Daniel ayudando estudiantes La Vaguada Barrio del Pilar Madrid", caption: "Atención personalizada" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG", alt: "Estudiantes felices clase inglés La Vaguada Barrio del Pilar Madrid", caption: "Ambiente positivo" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Toilet+facilities.JPG", alt: "Aseos instalaciones academia La Vaguada Barrio del Pilar Madrid", caption: "Instalaciones completas" }
+              { url: "/images/academy/outside-academy.jpg", alt: "Fachada exterior Impulse English Academy La Vaguada Barrio del Pilar Madrid", caption: "Nuestra academia en La Vaguada" },
+              { url: "/images/academy/classroom-facilities-main-classroom.jpg", alt: "Aula principal academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Aula principal equipada" },
+              { url: "/images/academy/technology-based-classroom-photo.jpg", alt: "Aula tecnológica academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Tecnología educativa avanzada" },
+              { url: "/images/academy/photos-of-facilities.jpg", alt: "Instalaciones academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Espacios de aprendizaje" },
+              { url: "/images/academy/stairs.jpg", alt: "Escaleras interior academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Instalaciones amplias" },
+              { url: "/images/academy/primary-classes.jpg", alt: "Clase primaria academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Clases de primaria" },
+              { url: "/images/academy/daniel-helping-secondary-school-students.jpg", alt: "Profesor Daniel ayudando estudiantes La Vaguada Barrio del Pilar Madrid", caption: "Atención personalizada" },
+              { url: "/images/academy/primary-classes-students-smiling.jpg", alt: "Estudiantes felices clase inglés La Vaguada Barrio del Pilar Madrid", caption: "Ambiente positivo" },
+              { url: "/images/academy/toilet-facilities.jpg", alt: "Aseos instalaciones academia La Vaguada Barrio del Pilar Madrid", caption: "Instalaciones completas" }
             ].map((image, index) => (
               <div key={index} className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000" style={{ transitionDelay: `${index * 50}ms` }}>
                 <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg bg-zinc-100">
@@ -308,7 +308,7 @@ export default function SobreNosotrosPage() {
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg"
+                  src="/images/academy/jp-with-students.jpg"
                   alt="JP con estudiantes y certificados Cambridge - Impulse English Academy"
                   className="w-full h-auto object-contain"
                 />

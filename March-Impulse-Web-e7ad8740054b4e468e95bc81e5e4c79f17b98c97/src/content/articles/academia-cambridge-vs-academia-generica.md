@@ -65,13 +65,13 @@ publishedDate: "2026-04-30"
 modifiedDate: "2026-04-30"
 readTime: 18 min
 articleImages:
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/Cambridge+search.JPEG
+  - url: /images/academy/cambridge-search.jpeg
     alt: Centro Cambridge verificado Impulse English Academy Madrid
     placement: hero
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg
+  - url: /images/academy/jp-with-students.jpg
     alt: Profesor JP con estudiantes y certificados Cambridge La Vaguada Madrid
     placement: inline
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG
+  - url: /images/academy/classroom-facilities-main-classroom.jpg
     alt: Aula principal academia inglés La Vaguada Barrio del Pilar Madrid
     placement: inline
 ---

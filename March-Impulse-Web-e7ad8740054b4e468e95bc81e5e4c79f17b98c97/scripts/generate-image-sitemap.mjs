@@ -19,55 +19,55 @@ const pageImages = {
   // Infantil Course Page
   '/ingles-la-vaguada/infantil': [
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-21.JPEG',
+      url: '/images/academy/escuela-gonzalo-21.jpeg',
       title: 'Clases de inglés infantil La Vaguada Madrid',
       caption: 'Niño feliz aprendiendo inglés en academia Impulse English La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/INFANTS+CLASS.jpg',
+      url: '/images/academy/infants-class.jpg',
       title: 'Aula de inglés infantil Impulse English La Vaguada',
       caption: 'Clase de inglés para niños pequeños academia La Vaguada metodología inmersiva',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/01b4eaa4-6bd4-425e-b4d7-c500cae1dea4.JPG',
+      url: '/images/academy/01b4eaa4-glp-infantil.jpg',
       title: 'Estudiante infantil Great Little People La Vaguada',
       caption: 'Niño aprendiendo inglés Great Little People academia La Vaguada Barrio del Pilar',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/clase+gratis.png',
+      url: '/images/academy/clase-gratis.png',
       title: 'Clase gratuita inglés infantil Impulse English',
       caption: 'Clase de prueba gratis inglés infantil Great Little People La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/IMG_8636.jpg',
+      url: '/images/academy/img-8636.jpg',
       title: 'Grupo infantil inglés Impulse English La Vaguada',
       caption: 'Estudiantes de infantil aprendiendo inglés Great Little People La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/INFANTIL+3.jpg',
+      url: '/images/academy/infantil-3.jpg',
       title: 'Inmersión inglés infantil Impulse English La Vaguada',
       caption: 'Niños pequeños clase inglés inmersión La Vaguada Barrio del Pilar Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/IMG_9363.JPG',
+      url: '/images/academy/img-9363.jpg',
       title: 'Patrick Panda Great Little People Impulse English',
       caption: 'Patrick Panda mascota Great Little People Impulse English La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/GREAT+LITTLE+PEOPLE+BLACK.png',
+      url: '/images/academy/great-little-people-black.png',
       title: 'Great Little People Centro Oficial Impulse English',
       caption: 'Logo Great Little People metodología inglés infantil centro oficial La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png',
+      url: '/images/academy/cambridge-logo-edited.png',
       title: 'Centro Preparador Cambridge Impulse English La Vaguada',
       caption: 'Logo Cambridge Be Prepared centro preparador oficial La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
@@ -77,55 +77,55 @@ const pageImages = {
   // Primaria Course Page
   '/ingles-la-vaguada/primaria': [
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/IMG_8639.jpg',
+      url: '/images/academy/img-8639.jpg',
       title: 'Clase primaria Cambridge Impulse English La Vaguada',
       caption: 'Estudiante de primaria clase inglés Cambridge Young Learners La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/IMG_8640.jpg',
+      url: '/images/academy/img-8640.jpg',
       title: 'Estudiante primaria Impulse English La Vaguada',
       caption: 'Niño de primaria aprendiendo inglés academia La Vaguada Barrio del Pilar Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/IMG_8642.jpg',
+      url: '/images/academy/img-8642.jpg',
       title: 'Grupos reducidos primaria Impulse English La Vaguada',
       caption: 'Estudiantes primaria clase inglés grupos reducidos La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/IMG_8643.jpg',
+      url: '/images/academy/img-8643.jpg',
       title: 'Ambiente positivo inglés primaria Impulse English',
       caption: 'Clase inglés primaria ambiente positivo La Vaguada Barrio del Pilar Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/PRIAMRY.jpg',
+      url: '/images/academy/priamry.jpg',
       title: 'Clases inglés primaria La Vaguada preparación Cambridge',
       caption: 'Estudiante de primaria inglés academia Cambridge La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg',
+      url: '/images/academy/jp-with-students.jpg',
       title: 'Éxito estudiantes Cambridge Impulse English La Vaguada',
       caption: 'Profesor JP con estudiantes y certificados Cambridge Impulse English La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png',
+      url: '/images/academy/cambridge-logo-edited.png',
       title: 'Centro Preparador Cambridge Impulse English La Vaguada',
       caption: 'Logo Cambridge English centro preparador oficial La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG',
+      url: '/images/academy/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg',
       title: 'Certificado Cambridge oficial Impulse English',
       caption: 'Certificado oficial Cambridge English academia preparación La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/DNNY+TOUR+OF+IRELAND.JPG',
+      url: '/images/academy/dnny-tour-of-ireland.jpg',
       title: 'Tour de Irlanda Impulse English Academy',
       caption: 'Excursión cultural a Irlanda Impulse English Academy inmersión inglés',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
@@ -135,49 +135,49 @@ const pageImages = {
   // Secundaria Course Page
   '/ingles-la-vaguada/secundaria': [
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/SECONDARY+OFF.jpg',
+      url: '/images/academy/secondary-off.jpg',
       title: 'Clases inglés secundaria preparación Cambridge La Vaguada',
       caption: 'Estudiantes secundaria clase inglés Cambridge B2 First La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-18.JPEG',
+      url: '/images/academy/escuela-gonzalo-18.jpeg',
       title: 'Profesor Daniel clase secundaria Impulse English',
       caption: 'Profesor Daniel ayudando estudiantes secundaria inglés La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/LUCIA+SECUNDARY.JPEG',
+      url: '/images/academy/lucia-secundary.jpeg',
       title: 'Lucía estudiante secundaria Impulse English La Vaguada',
       caption: 'Estudiante Lucía secundaria inglés Cambridge academia La Vaguada Barrio del Pilar',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-4.JPEG',
+      url: '/images/academy/escuela-gonzalo-4.jpeg',
       title: 'Estudiante secundaria feliz Impulse English La Vaguada',
       caption: 'Estudiante secundaria trabajando feliz en clase de inglés La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO.JPEG',
+      url: '/images/academy/escuela-gonzalo.jpeg',
       title: 'Estudiante secundaria concentrado Impulse English',
       caption: 'Estudiante secundaria concentrado clase inglés academia La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-21.JPEG',
+      url: '/images/academy/escuela-gonzalo-21.jpeg',
       title: 'Estudiante secundaria Impulse English La Vaguada',
       caption: 'Estudiante secundaria aprendiendo inglés academia La Vaguada Barrio del Pilar',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg',
+      url: '/images/academy/jp-with-students.jpg',
       title: 'Profesor JP con estudiantes secundaria Impulse English',
       caption: 'Profesor JP con estudiantes secundaria clase inglés La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png',
+      url: '/images/academy/cambridge-logo-edited.png',
       title: 'Centro Cambridge preparación secundaria Impulse English',
       caption: 'Centro Preparador Oficial Cambridge English secundaria La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
@@ -187,25 +187,25 @@ const pageImages = {
   // Adultos Course Page
   '/ingles-la-vaguada/adultos': [
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/CERT+CAMBRIDGE.png',
+      url: '/images/academy/cert-cambridge.png',
       title: 'Certificados Cambridge Impulse English La Vaguada',
       caption: 'Certificados Cambridge B2 First C1 Advanced academia oficial La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/LARA+C1+CERT.JPEG',
+      url: '/images/academy/lara-c1-cert.jpeg',
       title: 'Lara certificado C1 Advanced Impulse English',
       caption: 'Lara con certificado Cambridge C1 Advanced academia La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG',
+      url: '/images/academy/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg',
       title: 'Certificado Cambridge oficial Impulse English',
       caption: 'Certificado oficial Cambridge English academia preparación La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/linguaskill-logo-blanco.png',
+      url: '/images/academy/linguaskill-logo-blanco.png',
       title: 'Centro oficial Linguaskill Impulse English La Vaguada',
       caption: 'Examen Linguaskill centro oficial academia La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
@@ -215,25 +215,25 @@ const pageImages = {
   // Barrio del Pilar Location Page
   '/ubicaciones/barrio-del-pilar': [
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/CLASS+ROOM+FACILITIES.JPEG',
+      url: '/images/academy/class-room-facilities.jpeg',
       title: 'Aula principal Impulse English Academy La Vaguada',
       caption: 'Instalaciones aula academia inglés La Vaguada Barrio del Pilar Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg',
+      url: '/images/academy/jp-with-students.jpg',
       title: 'Éxito estudiantes Cambridge Impulse English La Vaguada',
       caption: 'Profesor JP con estudiantes y certificados Cambridge academia La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/%40nabscabDSC_6785.JPEG',
+      url: '/images/academy/nabscabdsc-6785.jpeg',
       title: 'Aula de Stephen Impulse English La Vaguada',
       caption: 'Vista aérea aula Stephen academia inglés La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-4.JPEG',
+      url: '/images/academy/escuela-gonzalo-4.jpeg',
       title: 'Estudiante Impulse English Academy La Vaguada',
       caption: 'Estudiante feliz clase de inglés academia La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
@@ -243,13 +243,13 @@ const pageImages = {
   // Home Page
   '/': [
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117+(1).PNG',
+      url: '/images/academy/img-4117-1.png',
       title: 'Logo Impulse English Academy',
       caption: 'Logo oficial Impulse English Academy La Vaguada Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
     },
     {
-      url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg',
+      url: '/images/academy/outside-academy.jpg',
       title: 'Fachada Impulse English Academy La Vaguada Madrid',
       caption: 'Fachada exterior academia inglés Impulse English La Vaguada Barrio del Pilar Madrid',
       geoLocation: 'La Vaguada, Barrio del Pilar, Madrid, Spain'
@@ -279,7 +279,7 @@ function generateImageSitemap() {
 
     for (const image of images) {
       xml += `    <image:image>
-      <image:loc>${escapeXml(image.url)}</image:loc>
+      <image:loc>${escapeXml(image.url.startsWith('/') ? SITE_URL + image.url : image.url)}</image:loc>
       <image:title>${escapeXml(image.title)}</image:title>
       <image:caption>${escapeXml(image.caption)}</image:caption>
       <image:geo_location>${escapeXml(image.geoLocation)}</image:geo_location>

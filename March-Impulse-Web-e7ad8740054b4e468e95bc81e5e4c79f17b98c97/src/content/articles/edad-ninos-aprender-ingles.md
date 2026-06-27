@@ -61,13 +61,13 @@ publishedDate: "2026-04-22"
 modifiedDate: "2026-04-22"
 readTime: 22 min
 articleImages:
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-21.JPEG
+  - url: /images/academy/escuela-gonzalo-21.jpeg
     alt: Niño de infantil feliz aprendiendo inglés La Vaguada Madrid
     placement: hero
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Infantil+classes.JPG
+  - url: /images/academy/infantil-classes.jpg
     alt: Clase de inglés infantil Great Little People La Vaguada Madrid
     placement: inline
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG
+  - url: /images/academy/classroom-facilities-main-classroom.jpg
     alt: Aula principal academia inglés La Vaguada Barrio del Pilar Madrid
     placement: inline
 ---

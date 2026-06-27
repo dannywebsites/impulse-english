@@ -15,7 +15,7 @@ export const courseSchema = generateCourseSchema({
   courseCode: "ONLINE-ALL",
   educationalLevel: "All Levels",
   timeRequired: "PT1H",
-  image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+  image: "/images/academy/img-4117.png"
 });
 
 export const faqs: FAQItem[] = [

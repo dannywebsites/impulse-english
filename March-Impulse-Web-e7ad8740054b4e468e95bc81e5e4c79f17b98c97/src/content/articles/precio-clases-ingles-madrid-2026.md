@@ -59,13 +59,13 @@ publishedDate: "2026-05-04"
 modifiedDate: "2026-05-04"
 readTime: 15 min
 articleImages:
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Stairs.JPG
+  - url: /images/academy/stairs.jpg
     alt: Escaleras interiores academia inglés La Vaguada Madrid
     placement: hero
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg
+  - url: /images/academy/outside-academy.jpg
     alt: Fachada exterior academia Impulse English La Vaguada Madrid
     placement: inline
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/%40nabscabDSC_6785.JPEG
+  - url: /images/academy/nabscabdsc-6785.jpeg
     alt: Vista aérea aula Stephen academia inglés La Vaguada Madrid
     placement: inline
 ---

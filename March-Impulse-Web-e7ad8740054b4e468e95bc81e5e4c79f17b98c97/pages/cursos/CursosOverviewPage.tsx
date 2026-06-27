@@ -14,7 +14,7 @@ const courses = [
     method: "Great Little People",
     description: "Aprendizaje natural del inglés a través del juego y la inmersión. Grupos de máximo 8 niños con profesores especializados en primera infancia.",
     href: "/cursos-ingles/infantil",
-    image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Infantil+classes.JPG",
+    image: "/images/academy/infantil-classes.jpg",
     age: "2-5 años"
   },
   {
@@ -22,7 +22,7 @@ const courses = [
     method: "Cambridge Young Learners",
     description: "Refuerzo del inglés escolar con metodología comunicativa. Preparación para exámenes Cambridge Young Learners (Starters, Movers, Flyers).",
     href: "/cursos-ingles/primaria",
-    image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG",
+    image: "/images/academy/primary-classes-students-smiling.jpg",
     age: "6-12 años"
   },
   {
@@ -30,7 +30,7 @@ const courses = [
     method: "Cambridge B1/B2/C1 + EBAU",
     description: "Preparación para selectividad y certificaciones Cambridge. Enfoque en speaking y writing para destacar en la EBAU.",
     href: "/cursos-ingles/secundaria",
-    image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Secondary+classes+student+happy.JPG",
+    image: "/images/academy/secondary-classes-student-happy.jpg",
     age: "13-17 años"
   },
   {
@@ -38,7 +38,7 @@ const courses = [
     method: "Todos los niveles (A1-C2)",
     description: "Clases de inglés para profesionales y adultos. Conversación, inglés para trabajo, viajes y preparación de certificaciones oficiales.",
     href: "/cursos-ingles/adultos",
-    image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Adult+one-to-one+classes.JPG",
+    image: "/images/academy/adult-one-to-one-classes.jpg",
     age: "18+ años"
   },
   {
@@ -46,7 +46,7 @@ const courses = [
     method: "Presencial u online",
     description: "Atención 100% personalizada. Ritmo adaptado a tus objetivos: exámenes, trabajo, viajes o refuerzo escolar.",
     href: "/cursos-ingles/particulares",
-    image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Daniel+helping+secondary+school+students.JPG",
+    image: "/images/academy/daniel-helping-secondary-school-students.jpg",
     age: "Todas las edades"
   },
   {
@@ -54,7 +54,7 @@ const courses = [
     method: "Clases en directo por videollamada",
     description: "La misma calidad que nuestras clases presenciales, desde cualquier lugar. Grupos reducidos e interacción real con el profesor.",
     href: "/cursos-ingles/online",
-    image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG",
+    image: "/images/academy/technology-based-classroom-photo.jpg",
     age: "Todas las edades"
   }
 ];
@@ -99,7 +99,7 @@ export default function CursosOverviewPage() {
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg"
+            src="/images/academy/outside-academy.jpg"
             alt="Impulse English Academy fachada exterior Madrid Norte"
             className="w-full h-full object-cover"
             loading="eager"

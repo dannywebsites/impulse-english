@@ -76,30 +76,30 @@ const testimonials = [
 ];
 
 const galleryImages = [
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg", alt: "Fachada exterior Impulse English Academy La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG", alt: "Aula principal academia inglés La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG", alt: "Aula tecnológica academia inglés La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Stairs.JPG", alt: "Interior academia dos plantas La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Infantil+classes.JPG", alt: "Clases inglés infantil La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG", alt: "Estudiantes primaria felices La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Daniel+helping+secondary+school+students.JPG", alt: "Profesor Daniel ayudando estudiantes La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Secondary+classes+student+happy.JPG", alt: "Estudiante secundaria feliz La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Adult+one-to-one+classes.JPG", alt: "Clases particulares adultos La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg", alt: "Estudiantes certificados Cambridge La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Photos+of+facilities.JPG", alt: "Instalaciones academia inglés La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png", alt: "Centro Preparador Cambridge La Vaguada Barrio del Pilar Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG", alt: "Equipo de profesores nativos Impulse English Academy Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG", alt: "Alumnos aprendiendo inglés en academia de inglés Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Adult+one-to-one+classes.JPG", alt: "Clase de inglés de adultos en La Vaguada Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Infantil+classes.JPG", alt: "Clase de inglés infantil en La Vaguada Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Secondary+classes+student+happy.JPG", alt: "Estudiante en clase de inglés en La Vaguada Madrid" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Stairs.JPG", alt: "Instalaciones interiores Impulse English Academy La Vaguada" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg", alt: "Academia inglés La Vaguada Barrio del Pilar exterior" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG", alt: "Aula moderna con tecnología Impulse English La Vaguada" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Daniel+helping+secondary+school+students.JPG", alt: "Profesor nativo Daniel enseñando en La Vaguada" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg", alt: "Alumnos con profesor certificado Cambridge en La Vaguada" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png", alt: "Centro Cambridge ES278 Impulse English La Vaguada" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Photos+of+facilities.JPG", alt: "Facilidades academia inglés La Vaguada Barrio del Pilar" }
+  { url: "/images/academy/outside-academy.jpg", alt: "Fachada exterior Impulse English Academy La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/classroom-facilities-main-classroom.jpg", alt: "Aula principal academia inglés La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/technology-based-classroom-photo.jpg", alt: "Aula tecnológica academia inglés La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/stairs.jpg", alt: "Interior academia dos plantas La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/infantil-classes.jpg", alt: "Clases inglés infantil La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/primary-classes-students-smiling.jpg", alt: "Estudiantes primaria felices La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/daniel-helping-secondary-school-students.jpg", alt: "Profesor Daniel ayudando estudiantes La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/secondary-classes-student-happy.jpg", alt: "Estudiante secundaria feliz La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/adult-one-to-one-classes.jpg", alt: "Clases particulares adultos La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/jp-with-students.jpg", alt: "Estudiantes certificados Cambridge La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/photos-of-facilities.jpg", alt: "Instalaciones academia inglés La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/cambridge-logo-edited.png", alt: "Centro Preparador Cambridge La Vaguada Barrio del Pilar Madrid" },
+  { url: "/images/academy/classroom-facilities-main-classroom.jpg", alt: "Equipo de profesores nativos Impulse English Academy Madrid" },
+  { url: "/images/academy/primary-classes-students-smiling.jpg", alt: "Alumnos aprendiendo inglés en academia de inglés Madrid" },
+  { url: "/images/academy/adult-one-to-one-classes.jpg", alt: "Clase de inglés de adultos en La Vaguada Madrid" },
+  { url: "/images/academy/infantil-classes.jpg", alt: "Clase de inglés infantil en La Vaguada Madrid" },
+  { url: "/images/academy/secondary-classes-student-happy.jpg", alt: "Estudiante en clase de inglés en La Vaguada Madrid" },
+  { url: "/images/academy/stairs.jpg", alt: "Instalaciones interiores Impulse English Academy La Vaguada" },
+  { url: "/images/academy/outside-academy.jpg", alt: "Academia inglés La Vaguada Barrio del Pilar exterior" },
+  { url: "/images/academy/technology-based-classroom-photo.jpg", alt: "Aula moderna con tecnología Impulse English La Vaguada" },
+  { url: "/images/academy/daniel-helping-secondary-school-students.jpg", alt: "Profesor nativo Daniel enseñando en La Vaguada" },
+  { url: "/images/academy/jp-with-students.jpg", alt: "Alumnos con profesor certificado Cambridge en La Vaguada" },
+  { url: "/images/academy/cambridge-logo-edited.png", alt: "Centro Cambridge ES278 Impulse English La Vaguada" },
+  { url: "/images/academy/photos-of-facilities.jpg", alt: "Facilidades academia inglés La Vaguada Barrio del Pilar" }
 ];
 
 const methodSteps = [
@@ -129,7 +129,7 @@ export default function LaVaguadaPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg" alt="Academia de inglés Impulse English La Vaguada Barrio del Pilar Madrid" title="Academia de inglés Impulse English La Vaguada Barrio del Pilar Madrid" className="w-full h-full object-cover" loading="eager" />
+          <img src="/images/academy/outside-academy.jpg" alt="Academia de inglés Impulse English La Vaguada Barrio del Pilar Madrid" title="Academia de inglés Impulse English La Vaguada Barrio del Pilar Madrid" className="w-full h-full object-cover" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
@@ -251,7 +251,7 @@ export default function LaVaguadaPage() {
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG"
+                src="/images/academy/primary-classes-students-smiling.jpg"
                 alt="Equipo de profesores nativos Impulse English Academy Madrid"
                 title="Equipo de profesores nativos Impulse English Academy Madrid"
                 className="w-full h-full object-cover"
@@ -435,7 +435,7 @@ export default function LaVaguadaPage() {
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG"
+                src="/images/academy/primary-classes-students-smiling.jpg"
                 alt="Alumnos aprendiendo inglés en academia de inglés Madrid"
                 title="Alumnos aprendiendo inglés en academia de inglés Madrid"
                 className="w-full h-full object-cover"
@@ -452,7 +452,7 @@ export default function LaVaguadaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-xl overflow-hidden shadow-lg">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Adult+one-to-one+classes.JPG"
+                src="/images/academy/adult-one-to-one-classes.jpg"
                 alt="Clases de inglés para adultos en La Vaguada Barrio del Pilar Madrid"
                 title="Clases de inglés para adultos en La Vaguada Barrio del Pilar Madrid"
                 className="w-full h-full object-cover"

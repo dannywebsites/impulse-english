@@ -108,7 +108,7 @@ export default function NuestroEquipoPage() {
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg"
+                  src="/images/academy/jp-with-students.jpg"
                   alt="JP, Director de Estudios, Impulse English Academy"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -196,7 +196,7 @@ export default function NuestroEquipoPage() {
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-100 order-1 lg:order-2">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Daniel+helping+secondary+school+students.JPG"
+                  src="/images/academy/daniel-helping-secondary-school-students.jpg"
                   alt="Danny Fitzpatrick, profesor Impulse English Academy"
                   className="w-full h-full object-cover"
                   loading="lazy"
