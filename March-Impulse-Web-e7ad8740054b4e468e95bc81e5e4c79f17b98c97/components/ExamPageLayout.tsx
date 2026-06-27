@@ -35,8 +35,8 @@ interface ExamPageLayoutProps {
 
 // Default gallery images - using landscape photos that show well
 const defaultGalleryImages = [
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg", alt: "Estudiantes con certificados Cambridge en Impulse English Academy" },
-  { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-18.JPEG", alt: "Clase de inglés en Impulse English Academy La Vaguada Madrid" },
+  { url: "/images/academy/jp-with-students.jpg", alt: "Estudiantes con certificados Cambridge en Impulse English Academy" },
+  { url: "/images/academy/escuela-gonzalo-18.jpeg", alt: "Clase de inglés en Impulse English Academy La Vaguada Madrid" },
 ];
 
 export default function ExamPageLayout({

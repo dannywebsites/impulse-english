@@ -77,13 +77,13 @@ publishedDate: "2026-04-27"
 modifiedDate: "2026-04-27"
 readTime: 22 min
 articleImages:
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/%40nabscabDSC_6785.JPEG
+  - url: /images/academy/nabscabdsc-6785.jpeg
     alt: Vista aérea aula Stephen academia inglés La Vaguada Madrid
     placement: hero
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/CLASS+ROOM+FACILITIES.JPEG
+  - url: /images/academy/class-room-facilities.jpeg
     alt: Instalaciones aula academia inglés La Vaguada Madrid
     placement: inline
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/Cambridge+search.JPEG
+  - url: /images/academy/cambridge-search.jpeg
     alt: Centro Cambridge verificado Impulse English Academy Madrid
     placement: inline
 ---

@@ -20,7 +20,7 @@ export const courseSchema = generateCourseSchema({
   courseCode: "INF-GLP",
   educationalLevel: "Preschool",
   timeRequired: "PT1H",
-  image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+  image: "/images/academy/img-4117.png"
 });
 
 
@@ -137,7 +137,7 @@ export default function InfantilPage() {
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/infantil-classes-mobile.webp" type="image/webp" />
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/infantil-classes-mobile.jpg" type="image/jpeg" />
             <img
-              src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Infantil+classes.JPG"
+              src="/images/academy/infantil-classes.jpg"
               alt="Clases de inglés infantil Madrid - Great Little People Impulse English Academy"
               className="w-full h-full object-cover"
               loading="eager"

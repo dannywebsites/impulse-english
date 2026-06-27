@@ -87,7 +87,7 @@ export default function ContactoPage() {
           <picture>
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/outside-academy-mobile.webp" type="image/webp" />
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/outside-academy-mobile.jpg" type="image/jpeg" />
-            <img src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg" alt="Fachada exterior Impulse English Academy La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
+            <img src="/images/academy/outside-academy.jpg" alt="Fachada exterior Impulse English Academy La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
           </picture>
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
         </div>
@@ -285,15 +285,15 @@ export default function ContactoPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG", alt: "Aula principal academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Aula principal equipada" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG", alt: "Aula tecnológica academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Tecnología educativa avanzada" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Photos+of+facilities.JPG", alt: "Instalaciones academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Espacios de aprendizaje" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes.JPG", alt: "Clase primaria academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Clases de primaria" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Stairs.JPG", alt: "Interior escaleras academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Instalaciones amplias" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png", alt: "Centro preparador Cambridge oficial La Vaguada Barrio del Pilar Madrid", caption: "Centro Cambridge oficial" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Daniel+helping+secondary+school+students.JPG", alt: "Profesor Daniel ayudando estudiantes academia La Vaguada Barrio del Pilar", caption: "Atención personalizada" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG", alt: "Estudiantes felices clase inglés La Vaguada Barrio del Pilar Madrid", caption: "Ambiente positivo" },
-              { url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg", alt: "Fachada exterior Impulse English Academy La Vaguada Barrio del Pilar Madrid", caption: "Nuestra academia en La Vaguada" }
+              { url: "/images/academy/classroom-facilities-main-classroom.jpg", alt: "Aula principal academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Aula principal equipada" },
+              { url: "/images/academy/technology-based-classroom-photo.jpg", alt: "Aula tecnológica academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Tecnología educativa avanzada" },
+              { url: "/images/academy/photos-of-facilities.jpg", alt: "Instalaciones academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Espacios de aprendizaje" },
+              { url: "/images/academy/primary-classes.jpg", alt: "Clase primaria academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Clases de primaria" },
+              { url: "/images/academy/stairs.jpg", alt: "Interior escaleras academia inglés La Vaguada Barrio del Pilar Madrid", caption: "Instalaciones amplias" },
+              { url: "/images/academy/cambridge-logo-edited.png", alt: "Centro preparador Cambridge oficial La Vaguada Barrio del Pilar Madrid", caption: "Centro Cambridge oficial" },
+              { url: "/images/academy/daniel-helping-secondary-school-students.jpg", alt: "Profesor Daniel ayudando estudiantes academia La Vaguada Barrio del Pilar", caption: "Atención personalizada" },
+              { url: "/images/academy/primary-classes-students-smiling.jpg", alt: "Estudiantes felices clase inglés La Vaguada Barrio del Pilar Madrid", caption: "Ambiente positivo" },
+              { url: "/images/academy/outside-academy.jpg", alt: "Fachada exterior Impulse English Academy La Vaguada Barrio del Pilar Madrid", caption: "Nuestra academia en La Vaguada" }
             ].map((photo, index) => (
               <div key={index} className="group relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <img

@@ -357,7 +357,7 @@ export default function PreguntasFrecuentesPage() {
           <picture>
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/facilities-mobile.webp" type="image/webp" />
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/facilities-mobile.jpg" type="image/jpeg" />
-            <img src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Photos+of+facilities.JPG" alt="Instalaciones Impulse English Academy La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
+            <img src="/images/academy/photos-of-facilities.jpg" alt="Instalaciones Impulse English Academy La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
           </picture>
           <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
         </div>

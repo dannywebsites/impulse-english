@@ -22,28 +22,28 @@ const imagesCatalog = [
     category: 'facilities'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/%40nabscabDSC_6774.JPEG',
+    url: '/images/academy/nabscabdsc-6774.jpeg',
     name: 'academia-ingles-barrio-pilar-interior',
     alt: 'Interior academia de inglés Barrio del Pilar - ambiente de aprendizaje',
     altEn: 'English academy interior Barrio del Pilar - learning environment',
     category: 'facilities'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/%40nabscabDSC_6785.JPEG',
+    url: '/images/academy/nabscabdsc-6785.jpeg',
     name: 'clases-ingles-madrid-norte-instalaciones',
     alt: 'Instalaciones clases de inglés Madrid Norte - Impulse English Academy',
     altEn: 'English class facilities North Madrid - Impulse English Academy',
     category: 'facilities'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/%40nabscabDSC_6786.JPEG',
+    url: '/images/academy/nabscabdsc-6786.jpeg',
     name: 'academia-cambridge-madrid-aula',
     alt: 'Aula preparación exámenes Cambridge Madrid - centro oficial',
     altEn: 'Cambridge exam preparation classroom Madrid - official center',
     category: 'facilities'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/%40nabscabDSC_6794.JPEG',
+    url: '/images/academy/nabscabdsc-6794.jpeg',
     name: 'impulse-academy-recepcion-entrada',
     alt: 'Recepción Impulse English Academy La Vaguada - academia de inglés',
     altEn: 'Reception Impulse English Academy La Vaguada - English academy',
@@ -66,7 +66,7 @@ const imagesCatalog = [
     category: 'infantil'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/crazy+people+follow+2.JPEG',
+    url: '/images/academy/crazy-people-follow-2.jpeg',
     name: 'ninos-aprendiendo-ingles-jugando',
     alt: 'Niños aprendiendo inglés jugando - metodología Great Little People',
     altEn: 'Children learning English through play - Great Little People methodology',
@@ -75,14 +75,14 @@ const imagesCatalog = [
 
   // PRIMARY/SECONDARY STUDENTS
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-18.JPEG',
+    url: '/images/academy/escuela-gonzalo-18.jpeg',
     name: 'estudiantes-ingles-primaria-secundaria',
     alt: 'Estudiantes de inglés primaria y secundaria - Impulse English Academy',
     altEn: 'Primary and secondary English students - Impulse English Academy',
     category: 'students'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-4.JPEG',
+    url: '/images/academy/escuela-gonzalo-4.jpeg',
     name: 'clases-ingles-jovenes-madrid',
     alt: 'Clases de inglés para jóvenes Madrid - preparación Cambridge',
     altEn: 'English classes for teenagers Madrid - Cambridge preparation',
@@ -91,21 +91,21 @@ const imagesCatalog = [
 
   // CERTIFICATIONS & CAMBRIDGE
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG',
+    url: '/images/academy/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg',
     name: 'certificado-oficial-cambridge-impulse',
     alt: 'Certificado oficial centro preparador Cambridge - Impulse English Academy',
     altEn: 'Official Cambridge preparation center certificate - Impulse English Academy',
     category: 'certifications'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/Cambridge+logo.PNG',
+    url: '/images/academy/cambridge-logo.png',
     name: 'cambridge-logo-centro-oficial',
     alt: 'Logo Cambridge English - centro oficial preparador exámenes',
     altEn: 'Cambridge English logo - official exam preparation center',
     category: 'certifications'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/LARA+C1+CERT.JPEG',
+    url: '/images/academy/lara-c1-cert.jpeg',
     name: 'alumna-certificado-c1-cambridge',
     alt: 'Alumna con certificado C1 Advanced Cambridge - caso de éxito',
     altEn: 'Student with C1 Advanced Cambridge certificate - success story',
@@ -114,14 +114,14 @@ const imagesCatalog = [
 
   // LINGUASKILL
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/LINGUASKILL.png',
+    url: '/images/academy/linguaskill.png',
     name: 'linguaskill-logo-examen-cambridge',
     alt: 'Linguaskill logo - examen Cambridge online rápido',
     altEn: 'Linguaskill logo - fast online Cambridge exam',
     category: 'linguaskill'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/Logo-Linguaskill_white.png',
+    url: '/images/academy/logo-linguaskill-white.png',
     name: 'linguaskill-logo-blanco',
     alt: 'Linguaskill logo blanco - certificación inglés online',
     altEn: 'Linguaskill white logo - online English certification',
@@ -130,7 +130,7 @@ const imagesCatalog = [
 
   // BRANDING
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG',
+    url: '/images/academy/img-4117.png',
     name: 'impulse-english-academy-logo-oficial',
     alt: 'Logo oficial Impulse English Academy - academia inglés Madrid',
     altEn: 'Official Impulse English Academy logo - English academy Madrid',
@@ -148,7 +148,7 @@ const imagesCatalog = [
 
   // ACADEMY EXTERIOR
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/Lucia+Photo+Academy.JPEG',
+    url: '/images/academy/lucia-photo-academy.jpeg',
     name: 'academia-ingles-la-vaguada-exterior',
     alt: 'Academia de inglés La Vaguada exterior - Impulse English Academy',
     altEn: 'English academy La Vaguada exterior - Impulse English Academy',
@@ -157,28 +157,28 @@ const imagesCatalog = [
 
   // COURSE CARDS — used in CoursesSection
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/INFANTIL.jpg',
+    url: '/images/academy/infantil.jpg',
     name: 'curso-ingles-general-infantil',
     alt: 'Curso de inglés general infantil - Impulse English Academy',
     altEn: 'General English course for children - Impulse English Academy',
     category: 'courses'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/PRIAMRY.jpg',
+    url: '/images/academy/priamry.jpg',
     name: 'curso-preparacion-movers-primaria',
     alt: 'Curso preparación MOVERS primaria - Cambridge Young Learners',
     altEn: 'MOVERS preparation course primary - Cambridge Young Learners',
     category: 'courses'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/SECONDARY+OFF.jpg',
+    url: '/images/academy/secondary-off.jpg',
     name: 'curso-extensivo-secundaria',
     alt: 'Cursos extensivos inglés secundaria - Impulse English Academy',
     altEn: 'Extensive English courses secondary - Impulse English Academy',
     category: 'courses'
   },
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/JP+WITH+STUDENTS.jpg',
+    url: '/images/academy/jp-with-students.jpg',
     name: 'curso-preparacion-ket',
     alt: 'Curso preparación KET Cambridge - clases de inglés',
     altEn: 'KET Cambridge preparation course - English classes',
@@ -187,7 +187,7 @@ const imagesCatalog = [
 
   // TEAM / CTA — used in TeamSection and VideoCTA
   {
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG',
+    url: '/images/academy/primary-classes-students-smiling.jpg',
     name: 'estudiantes-primaria-sonriendo',
     alt: 'Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy',
     altEn: 'Primary students smiling in English class - Impulse English Academy',

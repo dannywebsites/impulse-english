@@ -58,13 +58,13 @@ publishedDate: "2026-04-20"
 modifiedDate: "2026-04-20"
 readTime: 16 min
 articleImages:
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG
+  - url: /images/academy/technology-based-classroom-photo.jpg
     alt: Aula tecnológica preparación Linguaskill La Vaguada Madrid
     placement: hero
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG
+  - url: /images/academy/classroom-facilities-main-classroom.jpg
     alt: Aula principal academia inglés La Vaguada Madrid
     placement: inline
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/CLASS+ROOM+FACILITIES.JPEG
+  - url: /images/academy/class-room-facilities.jpeg
     alt: Instalaciones aula academia inglés La Vaguada Madrid
     placement: inline
 ---

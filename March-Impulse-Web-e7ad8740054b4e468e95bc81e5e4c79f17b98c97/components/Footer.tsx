@@ -92,7 +92,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
               <a href="https://www.cambridgeenglish.org" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png"
+                  src="/images/academy/cambridge-logo-edited.png"
                   alt="Cambridge English"
                   className="h-10 md:h-12 w-auto"
                   loading="lazy"
@@ -100,7 +100,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
               </a>
               <a href="https://www.cambridgeenglish.org/es/exams-and-tests/linguaskill/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/linguaskill-logo-blanco.png"
+                  src="/images/academy/linguaskill-logo-blanco.png"
                   alt="Linguaskill"
                   className="h-10 md:h-12 w-auto"
                   loading="lazy"
@@ -108,7 +108,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
               </a>
               <a href="https://www.greatlittlepeople.com/en" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/GREAT+LITTLE+PEOPLE+WHITE.png"
+                  src="/images/academy/great-little-people-white.png"
                   alt="Great Little People"
                   className="h-10 md:h-12 w-auto"
                   loading="lazy"
@@ -116,7 +116,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
               </a>
               <a href="https://www.esic.edu/idiomas" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity flex flex-col items-center">
                 <img
-                  src="https://impulseenglish.s3.us-east-1.amazonaws.com/ESIC+IDIOMAS.jpg"
+                  src="/images/academy/esic-idiomas.jpg"
                   alt="ESIC Idiomas - Cambridge English Exam Centre ES278"
                   className="h-10 md:h-12 w-auto"
                   loading="lazy"

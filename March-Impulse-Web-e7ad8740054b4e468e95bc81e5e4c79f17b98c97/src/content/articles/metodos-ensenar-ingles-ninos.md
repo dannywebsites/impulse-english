@@ -68,13 +68,13 @@ publishedDate: "2026-04-23"
 modifiedDate: "2026-04-23"
 readTime: 20 min
 articleImages:
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/JPEG+UPLOADS/INFANTS+CLASS.jpg
+  - url: /images/academy/infants-class.jpg
     alt: Clase de inglés para niños pequeños academia La Vaguada
     placement: hero
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-21.JPEG
+  - url: /images/academy/escuela-gonzalo-21.jpeg
     alt: Niño de infantil feliz aprendiendo inglés La Vaguada Madrid
     placement: inline
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/CLASS+ROOM+FACILITIES.JPEG
+  - url: /images/academy/class-room-facilities.jpeg
     alt: Instalaciones aula academia inglés La Vaguada Madrid
     placement: inline
 ---

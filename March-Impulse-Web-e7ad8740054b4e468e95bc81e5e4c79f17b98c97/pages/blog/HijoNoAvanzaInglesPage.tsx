@@ -97,7 +97,7 @@ export default function HijoNoAvanzaInglesPage() {
           <header className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Infantil+classes.JPG"
+                src="/images/academy/infantil-classes.jpg"
                 alt="Niño aprendiendo inglés en clase"
                 className="w-full h-full object-cover"
                 loading="eager"

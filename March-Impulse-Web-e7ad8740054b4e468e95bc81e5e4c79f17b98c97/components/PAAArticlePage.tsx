@@ -18,35 +18,35 @@ interface PAAArticlePageProps {
 // S3 image URLs keyed by imageKey
 const articleImages: Record<string, { url: string; alt: string }> = {
   classroom: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG",
+    url: "/images/academy/classroom-facilities-main-classroom.jpg",
     alt: "Aula principal academia inglés La Vaguada Madrid"
   },
   infantil: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Infantil+classes.JPG",
+    url: "/images/academy/infantil-classes.jpg",
     alt: "Clases inglés infantil La Vaguada Madrid"
   },
   cambridge: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG",
+    url: "/images/academy/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg",
     alt: "Certificado Cambridge oficial La Vaguada Madrid"
   },
   adults: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Adult+one-to-one+classes.JPG",
+    url: "/images/academy/adult-one-to-one-classes.jpg",
     alt: "Clases inglés adultos La Vaguada Madrid"
   },
   students: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG",
+    url: "/images/academy/primary-classes-students-smiling.jpg",
     alt: "Estudiantes primaria felices La Vaguada Madrid"
   },
   teenagers: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Secondary+classes+student+happy.JPG",
+    url: "/images/academy/secondary-classes-student-happy.jpg",
     alt: "Estudiante secundaria La Vaguada Madrid"
   },
   reception: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Photos+of+facilities.JPG",
+    url: "/images/academy/photos-of-facilities.jpg",
     alt: "Instalaciones academia inglés La Vaguada Madrid"
   },
   technology: {
-    url: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG",
+    url: "/images/academy/technology-based-classroom-photo.jpg",
     alt: "Aula tecnológica preparación Linguaskill La Vaguada Madrid"
   },
 };

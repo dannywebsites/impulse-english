@@ -121,35 +121,35 @@ export const s3FacilityImages = {
     alt: 'Estudiantes primaria felices aprendiendo inglés en Impulse English Academy La Vaguada Madrid',
     altEn: 'Happy primary students learning English at Impulse English Academy La Vaguada Madrid',
     category: 'facilities',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Primary+classes+students+smiling.JPG'
+    url: '/images/academy/primary-classes-students-smiling.jpg'
   },
   classroom2: {
     name: 'impulse-academy-facility-2',
     alt: 'Aula de inglés Impulse English Academy - ambiente de aprendizaje',
     altEn: 'English classroom Impulse English Academy - learning environment',
     category: 'facilities',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/%40nabscabDSC_6774.JPEG'
+    url: '/images/academy/nabscabdsc-6774.jpeg'
   },
   classroom3: {
     name: 'impulse-academy-facility-3',
     alt: 'Instalaciones Impulse English Academy - espacio educativo',
     altEn: 'Impulse English Academy facilities - educational space',
     category: 'facilities',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/%40nabscabDSC_6785.JPEG'
+    url: '/images/academy/nabscabdsc-6785.jpeg'
   },
   classroom4: {
     name: 'impulse-academy-facility-4',
     alt: 'Academia de inglés Barrio del Pilar - vista interior',
     altEn: 'English academy Barrio del Pilar - interior view',
     category: 'facilities',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/%40nabscabDSC_6786.JPEG'
+    url: '/images/academy/nabscabdsc-6786.jpeg'
   },
   classroom5: {
     name: 'impulse-academy-facility-5',
     alt: 'Centro de inglés La Vaguada - sala de clases',
     altEn: 'English center La Vaguada - classroom',
     category: 'facilities',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/%40nabscabDSC_6794.JPEG'
+    url: '/images/academy/nabscabdsc-6794.jpeg'
   }
 } as const;
 
@@ -324,7 +324,7 @@ export const brandingImages = {
     alt: 'Logo oficial Impulse English Academy',
     altEn: 'Official Impulse English Academy logo',
     category: 'branding',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG'
+    url: '/images/academy/img-4117.png'
   },
 
   teacher: {
@@ -355,98 +355,98 @@ export const s3ReviewImages = {
     alt: 'Alumno satisfecho Impulse English Academy - testimonio real',
     altEn: 'Satisfied student Impulse English Academy - real testimonial',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8597.jpg'
+    url: '/images/academy/img-8597.jpg'
   },
   review2: {
     name: 'student-review-impulse-2',
     alt: 'Reseña alumno Impulse English Academy - experiencia positiva',
     altEn: 'Student review Impulse English Academy - positive experience',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8598.jpg'
+    url: '/images/academy/img-8598.jpg'
   },
   review3: {
     name: 'student-review-impulse-3',
     alt: 'Testimonio estudiante inglés Madrid - Impulse Academy',
     altEn: 'English student testimonial Madrid - Impulse Academy',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8599.jpg'
+    url: '/images/academy/img-8599.jpg'
   },
   review4: {
     name: 'student-review-impulse-4',
     alt: 'Opinión alumno academia inglés Barrio del Pilar',
     altEn: 'Student opinion English academy Barrio del Pilar',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8600.jpg'
+    url: '/images/academy/img-8600.jpg'
   },
   review5: {
     name: 'student-review-impulse-5',
     alt: 'Familia satisfecha Impulse English Academy',
     altEn: 'Satisfied family Impulse English Academy',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8602.jpg'
+    url: '/images/academy/img-8602.jpg'
   },
   review6: {
     name: 'student-review-impulse-6',
     alt: 'Estudiante feliz clases inglés La Vaguada',
     altEn: 'Happy student English classes La Vaguada',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8603.jpg'
+    url: '/images/academy/img-8603.jpg'
   },
   review7: {
     name: 'student-review-impulse-7',
     alt: 'Alumno con certificado inglés Impulse Academy',
     altEn: 'Student with English certificate Impulse Academy',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8604.jpg'
+    url: '/images/academy/img-8604.jpg'
   },
   review8: {
     name: 'student-review-impulse-8',
     alt: 'Éxito estudiante academia inglés Madrid Norte',
     altEn: 'Student success English academy North Madrid',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8605.jpg'
+    url: '/images/academy/img-8605.jpg'
   },
   review9: {
     name: 'student-review-impulse-9',
     alt: 'Testimonio real alumno Impulse English',
     altEn: 'Real student testimonial Impulse English',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8606.jpg'
+    url: '/images/academy/img-8606.jpg'
   },
   review10: {
     name: 'student-review-impulse-10',
     alt: 'Estudiante certificado Cambridge Impulse Academy',
     altEn: 'Cambridge certified student Impulse Academy',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8607.jpg'
+    url: '/images/academy/img-8607.jpg'
   },
   review11: {
     name: 'student-review-impulse-11',
     alt: 'Reseña positiva academia inglés Madrid',
     altEn: 'Positive review English academy Madrid',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8608.jpg'
+    url: '/images/academy/img-8608.jpg'
   },
   review12: {
     name: 'student-review-impulse-12',
     alt: 'Alumno feliz aprendiendo inglés Impulse',
     altEn: 'Happy student learning English Impulse',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8609.jpg'
+    url: '/images/academy/img-8609.jpg'
   },
   review13: {
     name: 'student-review-impulse-13',
     alt: 'Familia recomendando Impulse English Academy',
     altEn: 'Family recommending Impulse English Academy',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8610.jpg'
+    url: '/images/academy/img-8610.jpg'
   },
   review14: {
     name: 'student-review-impulse-14',
     alt: 'Experiencia alumno Impulse English Academy',
     altEn: 'Student experience Impulse English Academy',
     category: 'reviews',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/IMG_8611.jpg'
+    url: '/images/academy/img-8611.jpg'
   }
 } as const;
 
@@ -460,21 +460,21 @@ export const s3SecondaryImages = {
     alt: 'Lucia - alumna de secundaria en Impulse English Academy',
     altEn: 'Lucia - secondary student at Impulse English Academy',
     category: 'secondary',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/Lucia+Photo+Academy.JPEG'
+    url: '/images/academy/lucia-photo-academy.jpeg'
   },
   gonzaloClass1: {
     name: 'clase-secundaria-gonzalo-1',
     alt: 'Clase de inglés secundaria - estudiantes preparando Cambridge',
     altEn: 'Secondary English class - students preparing Cambridge',
     category: 'secondary',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-18.JPEG'
+    url: '/images/academy/escuela-gonzalo-18.jpeg'
   },
   gonzaloClass2: {
     name: 'clase-secundaria-gonzalo-2',
     alt: 'Alumnos de secundaria en clase de inglés - Impulse Academy',
     altEn: 'Secondary students in English class - Impulse Academy',
     category: 'secondary',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/ESCUELA_GONZALO-4.JPEG'
+    url: '/images/academy/escuela-gonzalo-4.jpeg'
   }
 } as const;
 
@@ -488,7 +488,7 @@ export const s3InfantilImages = {
     alt: 'Clase de inglés infantil Great Little People - niños aprendiendo jugando',
     altEn: 'Kids English class Great Little People - children learning through play',
     category: 'infantil',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/crazy+people+follow+2.JPEG'
+    url: '/images/academy/crazy-people-follow-2.jpeg'
   }
 } as const;
 
@@ -502,14 +502,14 @@ export const s3LinguaskillImages = {
     alt: 'Logo Linguaskill - examen oficial Cambridge en Impulse Academy',
     altEn: 'Linguaskill logo - official Cambridge exam at Impulse Academy',
     category: 'linguaskill',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/LINGUASKILL.png'
+    url: '/images/academy/linguaskill.png'
   },
   logoWhite: {
     name: 'linguaskill-logo-white-impulse',
     alt: 'Logo Linguaskill blanco - certificación inglés online',
     altEn: 'Linguaskill white logo - online English certification',
     category: 'linguaskill',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/Logo-Linguaskill_white.png'
+    url: '/images/academy/logo-linguaskill-white.png'
   }
 } as const;
 
@@ -523,28 +523,28 @@ export const s3CambridgeImages = {
     alt: 'Lara con certificado C1 Cambridge - caso de éxito adultos',
     altEn: 'Lara with C1 Cambridge certificate - adult success story',
     category: 'cambridge',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/LARA+C1+CERT.JPEG'
+    url: '/images/academy/lara-c1-cert.jpeg'
   },
   cambridgeLogo: {
     name: 'cambridge-logo-centro-oficial',
     alt: 'Logo Cambridge - centro oficial preparador exámenes',
     altEn: 'Cambridge logo - official exam preparation center',
     category: 'cambridge',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/NEW/Cambridge+logo+-+Edited.png'
+    url: '/images/academy/cambridge-logo-edited.png'
   },
   cambridgeSearch: {
     name: 'cambridge-search-centro-preparador',
     alt: 'Búsqueda centro Cambridge - Impulse English Academy verificado',
     altEn: 'Cambridge center search - Impulse English Academy verified',
     category: 'cambridge',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/Cambridge+search.JPEG'
+    url: '/images/academy/cambridge-search.jpeg'
   },
   cambridgeCertificate: {
     name: 'cambridge-certificado-oficial',
     alt: 'Certificado oficial Cambridge - centro preparador autorizado',
     altEn: 'Official Cambridge certificate - authorized preparation center',
     category: 'cambridge',
-    url: 'https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG'
+    url: '/images/academy/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg'
   }
 } as const;
 

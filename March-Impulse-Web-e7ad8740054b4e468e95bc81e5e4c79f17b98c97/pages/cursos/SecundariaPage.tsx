@@ -20,7 +20,7 @@ export const courseSchema = generateCourseSchema({
   courseCode: "SEC-CAM",
   educationalLevel: "Secondary",
   timeRequired: "PT2H",
-  image: "https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/IMG_4117.PNG"
+  image: "/images/academy/img-4117.png"
 });
 
 

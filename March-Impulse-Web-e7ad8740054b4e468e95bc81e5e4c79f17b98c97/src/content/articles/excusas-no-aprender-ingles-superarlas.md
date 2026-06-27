@@ -70,13 +70,13 @@ publishedDate: "2026-04-28"
 modifiedDate: "2026-04-28"
 readTime: 18 min
 articleImages:
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Classroom+Facilities+Main+Classroom.JPG
+  - url: /images/academy/classroom-facilities-main-classroom.jpg
     alt: Aula principal academia inglés La Vaguada Barrio del Pilar Madrid
     placement: hero
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/NACHOS+photos.+/Technology-based+classroom+photo.JPG
+  - url: /images/academy/technology-based-classroom-photo.jpg
     alt: Aula tecnológica academia inglés La Vaguada Madrid
     placement: inline
-  - url: https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/6E08CD95-47B7-4D36-95C7-FECFB41E3883.JPEG
+  - url: /images/academy/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg
     alt: Certificado oficial Cambridge English academia La Vaguada Madrid
     placement: inline
 ---

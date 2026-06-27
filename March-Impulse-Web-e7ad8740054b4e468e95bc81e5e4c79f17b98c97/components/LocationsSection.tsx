@@ -35,7 +35,7 @@ export default function LocationsSection() {
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="aspect-video w-full overflow-hidden">
               <img
-                src="https://impulseenglish.s3.us-east-1.amazonaws.com/impulsephotos/OUTSIDE+ACADEMY.jpg"
+                src="/images/academy/outside-academy.jpg"
                 alt="Fachada exterior Impulse English Academy La Vaguada Barrio del Pilar Madrid"
                 className="w-full h-full object-cover"
                 loading="lazy"
