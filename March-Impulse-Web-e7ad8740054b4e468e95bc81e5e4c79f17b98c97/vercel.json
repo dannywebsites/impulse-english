@@ -27,6 +27,9 @@
   "redirects": [
     { "source": "/:path*", "has": [{ "type": "host", "value": "www.impulse-english.es" }], "destination": "https://impulse-english.es/:path*", "permanent": true },
 
+    { "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true },
+    { "source": "/sitemap-images.xml", "destination": "/sitemap-index.xml", "permanent": true },
+
     { "source": "/wp-content/themes/impulse-english/assets/images/optimized/:path*", "destination": "/images/optimized/:path*", "permanent": true },
     { "source": "/wp-content/:path*", "destination": "/", "permanent": true },
     { "source": "/wp-includes/:path*", "destination": "/", "permanent": true },
@@ -117,6 +120,8 @@
 
     { "source": "/blog/dipl-testimonial/:path*", "destination": "/testimonios/", "permanent": true },
     { "source": "/blog/academias-ingles-madrid/", "destination": "/academias-ingles-madrid/", "permanent": true },
+    { "source": "/blog/centros-cambridge-madrid/", "destination": "/examenes-cambridge/centros-madrid/", "permanent": true },
+    { "source": "/formularios-de-recogida-de-datos/", "destination": "/contacto/", "permanent": true },
 
     { "source": "/search/", "destination": "/", "permanent": true },
     { "source": "/search/:path*", "destination": "/", "permanent": true },

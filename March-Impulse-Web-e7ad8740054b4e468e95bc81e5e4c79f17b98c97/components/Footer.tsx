@@ -32,6 +32,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
               <a href="/cursos-ingles/infantil/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Cursos</a>
               <a href="/examenes-cambridge/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Cambridge</a>
               <a href="/sobre-nosotros/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Nosotros</a>
+              <a href="/blog/todos/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Artículos</a>
               <a href="/contacto/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Contacto</a>
             </div>
 
@@ -169,6 +170,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
               <li><a href="/metodologia/" className="hover:text-white transition-colors">Metodología</a></li>
               <li><a href="/preguntas-frecuentes/" className="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
               <li><a href="/blog/" className="hover:text-white transition-colors">Blog</a></li>
+              <li><a href="/blog/todos/" className="hover:text-white transition-colors">Todos los artículos</a></li>
             </ul>
           </div>
 
