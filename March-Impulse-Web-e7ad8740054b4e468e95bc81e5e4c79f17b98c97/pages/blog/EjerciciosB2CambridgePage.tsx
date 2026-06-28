@@ -10,7 +10,8 @@ export const articleSchema = generateArticleSchema({
     headline: "Ejercicios B2 Cambridge: Guía Práctica First 2026",
     description: "Ejercicios prácticos para preparar el B2 First de Cambridge. Reading, Writing, Listening y Speaking con recursos gratuitos.",
     url: `${businessInfo.url}/blog/ejercicios-b2-cambridge`,
-    datePublished: "2025-01-08"
+    datePublished: "2025-01-08",
+    dateModified: "2026-06-28"
   });
 
 export const faqs: FAQItem[] = [
@@ -35,6 +36,22 @@ export const faqs: FAQItem[] = [
     {
       question: "¿Son suficientes los ejercicios gratuitos o necesito comprar material oficial?",
       answer: "Los recursos gratuitos disponibles online son amplios y suficientes para una preparación completa si se usan sistemáticamente. Sin embargo, los libros oficiales Cambridge (Cambridge English B2 First Trainer) garantizan ejercicios con el nivel exacto del examen real y proporcionan estructura de estudio organizada que facilita la planificación autónoma."
+    },
+    {
+      question: "¿Cuántas horas a la semana debo practicar para el B2 First?",
+      answer: "Con un nivel B1+ consolidado, entre 8 y 10 horas semanales durante 3 o 4 meses suele ser suficiente. Lo importante es repartir esas horas entre las cuatro destrezas y dedicar parte del tiempo a corregir y entender los errores, no solo a hacer ejercicios nuevos."
+    },
+    {
+      question: "¿Puedo aprobar el B2 First solo haciendo ejercicios por mi cuenta?",
+      answer: "Sí es posible, sobre todo en Reading, Use of English y Listening, que se autocorrigen. La dificultad está en el Writing y el Speaking: necesitas que alguien con criterio corrija tus textos y te dé feedback de tu expresión oral. Por eso muchos estudiantes combinan la práctica autónoma con clases o tutorías puntuales."
+    },
+    {
+      question: "¿En qué orden conviene practicar las secciones del examen?",
+      answer: "Empieza por Use of English y Reading, que consolidan la gramática y el vocabulario base. Después incorpora Writing y Listening, y deja el Speaking y los simulacros cronometrados completos para las últimas semanas, cuando ya dominas el formato de cada parte."
+    },
+    {
+      question: "¿Qué nota necesito para aprobar el B2 First?",
+      answer: "Necesitas al menos 160 puntos en la Cambridge English Scale (Grade C) para obtener el certificado de nivel B2. Con 180 o más consigues Grade A, que acredita un nivel C1. Tienes el desglose completo en nuestra guía sobre la nota para aprobar el B2 First."
     }
   ];
 
@@ -343,6 +360,140 @@ export default function EjerciciosB2CambridgePage() {
               </div>
             </section>
 
+            {/* Practice Exercises with Solutions */}
+            <section className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 flex items-center gap-3">
+                <PenTool className="w-8 h-8 text-blue-600" />
+                Ejercicios B2 de práctica con soluciones
+              </h2>
+              <p className="text-zinc-600 mb-6">
+                La mejor forma de preparar el Use of English es practicar con ejercicios del nivel real del examen.
+                Aquí tienes una muestra de cada tipo con su solución. Intenta resolverlos antes de mirar la respuesta.
+              </p>
+
+              <div className="bg-zinc-50 rounded-xl p-6 mb-6">
+                <h3 className="font-bold text-zinc-900 mb-4">Part 4: Key Word Transformations</h3>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <p className="text-zinc-700 mb-1">1. "She started learning English five years ago." (<strong>BEEN</strong>)</p>
+                    <p className="text-zinc-700 mb-2">She ____________ English for five years.</p>
+                    <p className="text-sm text-green-700"><strong>Solución:</strong> has been learning</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4">
+                    <p className="text-zinc-700 mb-1">2. "It wasn't necessary to bring your passport." (<strong>HAVE</strong>)</p>
+                    <p className="text-zinc-700 mb-2">You ____________ brought your passport.</p>
+                    <p className="text-sm text-green-700"><strong>Solución:</strong> needn't have</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4">
+                    <p className="text-zinc-700 mb-1">3. "I'm sure he didn't steal the money." (<strong>CANNOT</strong>)</p>
+                    <p className="text-zinc-700 mb-2">He ____________ the money.</p>
+                    <p className="text-sm text-green-700"><strong>Solución:</strong> cannot have stolen</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-zinc-50 rounded-xl p-6 mb-6">
+                <h3 className="font-bold text-zinc-900 mb-4">Part 3: Word Formation</h3>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <p className="text-zinc-700 mb-2">1. The ____________ of the new system improved efficiency. (<strong>INTRODUCE</strong>)</p>
+                    <p className="text-sm text-green-700"><strong>Solución:</strong> introduction</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4">
+                    <p className="text-zinc-700 mb-2">2. She gave a very ____________ presentation. (<strong>CONVINCE</strong>)</p>
+                    <p className="text-sm text-green-700"><strong>Solución:</strong> convincing</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4">
+                    <p className="text-zinc-700 mb-2">3. Their ____________ to finish on time was impressive. (<strong>DETERMINE</strong>)</p>
+                    <p className="text-sm text-green-700"><strong>Solución:</strong> determination</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-zinc-50 rounded-xl p-6">
+                <h3 className="font-bold text-zinc-900 mb-4">Part 2: Open Cloze</h3>
+                <p className="text-zinc-600 text-sm mb-4">Completa cada hueco con UNA sola palabra (artículos, preposiciones o verbos auxiliares).</p>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <p className="text-zinc-700 mb-2">1. She's not used ____________ getting up early.</p>
+                    <p className="text-sm text-green-700"><strong>Solución:</strong> to</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4">
+                    <p className="text-zinc-700 mb-2">2. No sooner ____________ I arrived than it started to rain.</p>
+                    <p className="text-sm text-green-700"><strong>Solución:</strong> had</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4">
+                    <p className="text-zinc-700 mb-2">3. It was such ____________ interesting film that we watched it twice.</p>
+                    <p className="text-sm text-green-700"><strong>Solución:</strong> an</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Practice Plan */}
+            <section className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 flex items-center gap-3">
+                <Clock className="w-8 h-8 text-cyan-600" />
+                Plan de práctica: cuántos ejercicios y en qué orden
+              </h2>
+              <p className="text-zinc-600 mb-6">
+                Un plan de 8 semanas partiendo de un nivel B1+ consolidado y dedicando entre 8 y 10 horas semanales.
+                Ajusta el ritmo según tu punto de partida.
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border border-zinc-200 rounded-xl overflow-hidden">
+                  <thead className="bg-blue-50">
+                    <tr>
+                      <th className="text-left p-3 font-bold text-zinc-900">Semanas</th>
+                      <th className="text-left p-3 font-bold text-zinc-900">Foco principal</th>
+                      <th className="text-left p-3 font-bold text-zinc-900">Práctica semanal</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-zinc-200">
+                    <tr><td className="p-3">1 y 2</td><td className="p-3">Use of English (Parts 1 a 4)</td><td className="p-3">15 ejercicios + 2 readings</td></tr>
+                    <tr><td className="p-3">3 y 4</td><td className="p-3">Reading y vocabulario</td><td className="p-3">4 readings + 1 writing</td></tr>
+                    <tr><td className="p-3">5 y 6</td><td className="p-3">Writing y Listening</td><td className="p-3">3 writings + 4 listenings</td></tr>
+                    <tr><td className="p-3">7</td><td className="p-3">Speaking y repaso de errores</td><td className="p-3">2 simulacros de Speaking</td></tr>
+                    <tr><td className="p-3">8</td><td className="p-3">Simulacros cronometrados completos</td><td className="p-3">2 exámenes completos</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            {/* Common Mistakes + Timing */}
+            <section className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 flex items-center gap-3">
+                <Target className="w-8 h-8 text-brand-red" />
+                Errores comunes y gestión del tiempo
+              </h2>
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="bg-red-50 rounded-xl p-5">
+                  <h4 className="font-bold text-zinc-900 mb-2">Errores que cuestan puntos</h4>
+                  <ul className="space-y-2 text-sm text-zinc-600 list-disc pl-4">
+                    <li>Escribir más de una palabra en el Open Cloze cuando solo se pide una.</li>
+                    <li>Olvidar cambiar la forma de la palabra en Word Formation (plural, negativo, sufijo).</li>
+                    <li>Pasarse del límite de palabras en el Writing y dejar tareas sin terminar.</li>
+                    <li>Parafrasear en el Listening Part 2 en lugar de escribir la palabra exacta que oyes.</li>
+                  </ul>
+                </div>
+                <div className="bg-blue-50 rounded-xl p-5">
+                  <h4 className="font-bold text-zinc-900 mb-2">Tiempo recomendado por sección</h4>
+                  <ul className="space-y-2 text-sm text-zinc-600 list-disc pl-4">
+                    <li>Reading y Use of English: 1 h 15 min (unos 9 min por parte).</li>
+                    <li>Writing: 1 h 20 min (40 min por tarea).</li>
+                    <li>Listening: 40 min, con las dos audiciones incluidas.</li>
+                    <li>Speaking: 14 min en pareja.</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="bg-amber-50 border-l-4 border-amber-400 p-4">
+                <p className="text-amber-800">
+                  <strong>Consejo:</strong> en las dos últimas semanas haz siempre los ejercicios cronometrados. Aprobar
+                  el B2 First depende tanto de tu inglés como de tu capacidad de gestionar el reloj el día del examen.
+                </p>
+              </div>
+            </section>
+
             {/* Resources Section */}
             <section className="mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6">
@@ -450,14 +601,14 @@ export default function EjerciciosB2CambridgePage() {
                       ¿Quieres prepararte para el B2 First?
                     </h3>
                     <p className="text-zinc-400">
-                      Práctica guiada con profesores expertos en exámenes Cambridge.
+                      Reserva una clase de prueba gratis y diseñamos tu plan de preparación con profesores expertos en exámenes Cambridge.
                     </p>
                   </div>
                   <a
-              href="/contacto/"
+              href="/reservar-clase"
                     className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
-                    Solicitar información
+                    Reserva tu clase gratis
                   </a>
                 </div>
 
