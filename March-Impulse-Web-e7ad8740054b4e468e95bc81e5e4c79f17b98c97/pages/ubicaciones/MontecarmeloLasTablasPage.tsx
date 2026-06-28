@@ -94,7 +94,7 @@ export default function MontecarmeloLasTablasPage() {
         <div className="relative z-10 container mx-auto px-6 md:px-12">
           <Breadcrumb
             items={[
-              { label: 'Ubicaciones', href: '/academia-ingles-barrio-del-pilar' },
+              { label: 'Ubicaciones', href: '/academias-ingles-madrid/por-barrios/' },
               { label: 'Montecarmelo y Las Tablas' }
             ]}
             variant="light"

@@ -13,7 +13,7 @@ const benefits = [
   { title: "Centro Oficial de Preparación Cambridge", desc: "Prepárate y haz el examen donde estudias. Sin sorpresas." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Todos nuestros estudiantes aprobaron sus exámenes." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada real. No 15-20 como otras \"reducidas\"." },
-  { title: "Profesionales de Cuatro Torres Business Area Confían en Nosotros", desc: "Más de 150 reseñas de 5 estrellas en Google." },
+  { title: "Profesionales de Cuatro Torres Business Area Confían en Nosotros", desc: "Más de 174 reseñas de 5 estrellas en Google." },
   { title: "Horarios Flexibles para Profesionales", desc: "Clases de mañana y tarde adaptadas a tu jornada laboral." }
 ];
 
@@ -81,7 +81,7 @@ export default function CuatroTorresPage() {
         <div className="relative z-10 container mx-auto px-6 md:px-12">
           <Breadcrumb
             items={[
-              { label: 'Ubicaciones', href: '/academia-ingles-barrio-del-pilar' },
+              { label: 'Ubicaciones', href: '/academias-ingles-madrid/por-barrios/' },
               { label: 'Cuatro Torres' }
             ]}
             variant="light"
