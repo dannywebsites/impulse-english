@@ -29,7 +29,7 @@ export default function PoliticaPrivacidadPage() {
             </h1>
             <div className="w-12 h-0.5 bg-brand-red mb-4"></div>
             <p className="font-display text-white/50 text-sm">
-              Última actualización: 23 de enero de 2024
+              Última actualización: 28 de junio de 2026
             </p>
           </div>
         </div>
@@ -94,6 +94,7 @@ export default function PoliticaPrivacidadPage() {
               <li>Atención, respuesta y gestión de las solicitudes de información o de contacto</li>
               <li>Envío de información sobre los servicios propios de la organización, jornadas y eventos</li>
               <li>Realización de estudios de mercado para medir la calidad de los servicios, a través de encuestas de satisfacción</li>
+              <li>Análisis del uso del sitio web y medición de la eficacia de nuestras campañas publicitarias mediante herramientas de analítica web (ver apartado IV.5)</li>
               <li>En el caso de compras a través de la página web, gestionar la relación contractual</li>
             </ul>
 
@@ -273,6 +274,41 @@ export default function PoliticaPrivacidadPage() {
               se tratarán con la finalidad de atender y dar respuesta a su petición de información o consulta,
               para mantener los contactos comerciales o profesionales y relaciones que se produzcan como consecuencia
               de la misma, o para el mantenimiento de una relación contractual.
+            </p>
+
+            <h3 className="text-xl font-bold text-zinc-900 mt-6 mb-3">5. Analítica Web, Publicidad y Transferencias Internacionales</h3>
+            <p className="text-zinc-600 mb-4">
+              Para comprender cómo se utiliza nuestro sitio web y medir la eficacia de nuestras campañas
+              publicitarias, utilizamos herramientas de medición de terceros que actúan como encargados del
+              tratamiento por cuenta de la organización:
+            </p>
+            <ul className="list-disc pl-6 text-zinc-600 mb-4">
+              <li>
+                <strong>Google Analytics 4, Google Tag Manager y Google Ads</strong>, de Google Ireland Ltd.
+                y Google LLC. Tratan datos de uso (páginas vistas, duración de la visita, tipo de dispositivo,
+                ubicación aproximada y origen de la visita, incluidos parámetros UTM e identificadores de clic
+                como gclid) para elaborar estadísticas de uso y medir las conversiones de nuestros anuncios.
+              </li>
+              <li>
+                <strong>Vercel Web Analytics y Speed Insights</strong>, de Vercel Inc., que miden de forma
+                agregada y sin cookies el rendimiento y el uso del sitio.
+              </li>
+            </ul>
+            <p className="text-zinc-600 mb-4">
+              La base jurídica de estos tratamientos es <strong>tu consentimiento</strong> (art. 6.1.a RGPD),
+              que solicitamos mediante el banner de cookies y gestionamos a través del Modo de Consentimiento
+              de Google (Google Consent Mode): las etiquetas analíticas y publicitarias permanecen desactivadas
+              hasta que las aceptas, y puedes retirar el consentimiento en cualquier momento. Los datos
+              analíticos se conservan durante un máximo de 14 meses.
+            </p>
+            <p className="text-zinc-600 mb-4">
+              Estos proveedores pueden tratar datos en servidores situados fuera del Espacio Económico Europeo
+              (EE. UU.). Dichas transferencias internacionales se amparan en las Cláusulas Contractuales Tipo
+              de la Comisión Europea y en el marco de privacidad de datos UE-EE. UU. (Data Privacy Framework).
+              Puedes consultar el detalle de las cookies en nuestra{' '}
+              <a href="/politica-cookies/" className="text-accent-blue hover:underline">Política de Cookies</a>{' '}
+              y la política de privacidad de Google en{' '}
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">policies.google.com/privacy</a>.
             </p>
 
             <div className="mt-12 p-6 bg-zinc-50 rounded-xl">

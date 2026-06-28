@@ -29,7 +29,7 @@ export default function PoliticaCookiesPage() {
             </h1>
             <div className="w-12 h-0.5 bg-brand-red mb-4"></div>
             <p className="font-display text-white/50 text-sm">
-              Última actualización: 23 de enero de 2024
+              Última actualización: 28 de junio de 2026
             </p>
           </div>
         </div>
@@ -141,7 +141,66 @@ export default function PoliticaCookiesPage() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">3. Revocación y Eliminación de Cookies por Tipo de Navegador</h2>
+            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">3. Cookies que Utiliza Este Sitio Web</h2>
+            <p className="text-zinc-600 mb-4">
+              A continuación detallamos las cookies y tecnologías de medición concretas que utilizamos. Las
+              cookies analíticas y publicitarias <strong>solo se activan después de que aceptes su uso</strong>{' '}
+              en el banner de cookies; hasta ese momento permanecen desactivadas mediante el Modo de
+              Consentimiento de Google (Google Consent Mode).
+            </p>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-left text-sm text-zinc-600 border-collapse">
+                <thead>
+                  <tr className="border-b border-zinc-300">
+                    <th className="py-2 pr-4 font-bold text-zinc-900 align-top">Cookie / Tecnología</th>
+                    <th className="py-2 pr-4 font-bold text-zinc-900 align-top">Proveedor</th>
+                    <th className="py-2 pr-4 font-bold text-zinc-900 align-top">Tipo y finalidad</th>
+                    <th className="py-2 font-bold text-zinc-900 align-top">Duración</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-zinc-200">
+                    <td className="py-2 pr-4 align-top"><code>_ga</code></td>
+                    <td className="py-2 pr-4 align-top">Google Analytics 4 (Google Ireland Ltd. / Google LLC)</td>
+                    <td className="py-2 pr-4 align-top">Analítica: distingue a los usuarios para medir el uso del sitio.</td>
+                    <td className="py-2 align-top">2 años</td>
+                  </tr>
+                  <tr className="border-b border-zinc-200">
+                    <td className="py-2 pr-4 align-top"><code>_ga_WN5973VY1M</code></td>
+                    <td className="py-2 pr-4 align-top">Google Analytics 4</td>
+                    <td className="py-2 pr-4 align-top">Analítica: mantiene el estado de la sesión de medición.</td>
+                    <td className="py-2 align-top">2 años</td>
+                  </tr>
+                  <tr className="border-b border-zinc-200">
+                    <td className="py-2 pr-4 align-top"><code>_gcl_au</code></td>
+                    <td className="py-2 pr-4 align-top">Google Ads (Google Ireland Ltd. / Google LLC)</td>
+                    <td className="py-2 pr-4 align-top">Publicidad: mide las conversiones procedentes de nuestros anuncios.</td>
+                    <td className="py-2 align-top">90 días</td>
+                  </tr>
+                  <tr className="border-b border-zinc-200">
+                    <td className="py-2 pr-4 align-top"><code>impulse_cookie_consent</code></td>
+                    <td className="py-2 pr-4 align-top">Impulse English (propia, almacenamiento local)</td>
+                    <td className="py-2 pr-4 align-top">Técnica: recuerda tu decisión sobre el uso de cookies.</td>
+                    <td className="py-2 align-top">Persistente (hasta que la borres)</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-4 align-top">Vercel Web Analytics</td>
+                    <td className="py-2 pr-4 align-top">Vercel Inc.</td>
+                    <td className="py-2 pr-4 align-top">Analítica de rendimiento sin cookies (no almacena identificadores en tu navegador).</td>
+                    <td className="py-2 align-top">No usa cookies</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-zinc-600 mb-4">
+              Utilizamos <strong>Google Tag Manager</strong> para cargar de forma ordenada estas etiquetas de
+              medición; Tag Manager por sí mismo no almacena cookies. Estos servicios pueden implicar la
+              transferencia de datos a Google y a Vercel Inc. (EE. UU.), amparada en las cláusulas contractuales
+              tipo y el marco de privacidad de datos UE-EE. UU. Encontrarás más información en nuestra{' '}
+              <a href="/politica-privacidad/" className="text-accent-blue hover:underline">Política de Privacidad</a>.
+            </p>
+
+            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">4. Revocación y Eliminación de Cookies por Tipo de Navegador</h2>
             <p className="text-zinc-600 mb-4">
               La instalación de ciertas cookies está sujeta a su consentimiento. Cuando visita la web por primera
               vez, mediante un banner de información, se le solicita si acepta la instalación de este tipo de cookie.
@@ -202,14 +261,14 @@ export default function PoliticaCookiesPage() {
                 </a>
               </li>
               <li>
-                <strong>Adobe Analytics:</strong>{' '}
-                <a href="https://www.adobe.com/es/privacy/opt-out.html" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
-                  https://www.adobe.com/es/privacy/opt-out.html
+                <strong>Google Ads (anuncios personalizados):</strong>{' '}
+                <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
+                  https://adssettings.google.com/
                 </a>
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">4. Administración de las Cookies y Otros Marcadores</h2>
+            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">5. Administración de las Cookies y Otros Marcadores</h2>
             <p className="text-zinc-600 mb-4">
               En cumplimiento de la normativa vigente, le informamos de que este sitio web utiliza cookies tanto
               propias como de terceros para diversas finalidades. Estos pueden instalarse en su terminal según
