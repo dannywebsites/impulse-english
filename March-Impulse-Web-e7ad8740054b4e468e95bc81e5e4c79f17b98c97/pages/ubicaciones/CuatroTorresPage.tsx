@@ -104,7 +104,7 @@ export default function CuatroTorresPage() {
             </p>
             <div className="flex items-center gap-2 text-white/60 font-display text-sm mb-2 animate-hero-fade-up animation-delay-200">
               <Train className="w-4 h-4" />
-              <span>Metro Línea 10 (Begoña) o autobuses 132, 137</span>
+              <span>Metro Línea 10 (Begoña) o autobuses 147, 42 y 83</span>
             </div>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress}
@@ -196,8 +196,8 @@ export default function CuatroTorresPage() {
                 Líneas desde CTBA (Torre de Cristal, Torre Espacio):
               </p>
               <ul className="text-zinc-600 text-sm space-y-2">
-                <li>• Línea 137 desde Campo de las Naciones + 800m (~25 min)</li>
-                <li>• Línea 132 desde Paseo de la Castellana + 800m (~20 min)</li>
+                <li>• Líneas 147, 42 y 83: parada Ginzo de Limia - Ferrol</li>
+                <li>• A 1 minuto andando de la academia</li>
               </ul>
               <p className="text-green-600 font-medium mt-4">Tiempo total: 20-25 minutos</p>
             </div>
