@@ -9,7 +9,7 @@ import { NAP } from '../../utils/napData';
 import type { FAQItem } from '../../utils/schemaData';
 
 const benefits = [
-  { title: "A Solo 9 Minutos en Coche desde Montecarmelo", desc: "Acceso rápido por Av. de la Ilustración. Aparcamiento disponible." },
+  { title: "A Solo 10-12 Minutos en Coche desde Montecarmelo", desc: "Acceso rápido por Av. de la Ilustración. Aparcamiento disponible." },
   { title: "Centro Oficial de Preparación Cambridge", desc: "Preparación y examen en el mismo lugar." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Metodología Impulse con resultados probados." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada garantizada." },
@@ -44,11 +44,11 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Cómo llego a la academia desde Montecarmelo o Las Tablas?",
-    answer: "La forma más rápida es en coche: solo 9 minutos por Av. de la Ilustración. En transporte público, la mejor opción es el autobús (líneas 712, 713, 714, 717 — 18 minutos). En metro (Línea 10 hasta Plaza Castilla, transbordo a Línea 9 hasta Barrio del Pilar) son unos 31 minutos. Nuestra dirección es Avenida de El Ferrol, 22."
+    answer: "La forma más rápida es en coche: 10 a 12 minutos por la Av. de la Ilustración hasta la Av. de El Ferrol. En transporte público, puedes tomar la Línea 9 de metro desde Montecarmelo en dirección sur y bajar en metro Barrio del Pilar (unos 8 minutos más 3 andando), o el autobús 147 con parada en Ginzo de Limia - Ferrol, a 1 minuto de la academia. Nuestra dirección es Avenida de El Ferrol, 22."
   },
   {
     question: "¿Clases inglés Montecarmelo Las Tablas zona norte?",
-    answer: "Academia Impulse es accesible desde Montecarmelo y Las Tablas: en coche solo 9 minutos, en autobús 18 minutos (líneas 712-717). Centro Oficial Cambridge, 100% aprobados, grupos máximo 10. Adultos, niños, Cambridge y Linguaskill."
+    answer: "Academia Impulse es accesible desde Montecarmelo y Las Tablas: en coche son 10 a 12 minutos, y en metro por la Línea 9 unos 8 minutos hasta Barrio del Pilar. Centro Oficial Cambridge, 100% aprobados, grupos máximo 10. Adultos, niños, Cambridge y Linguaskill."
   },
   {
     question: "¿Tenéis programas de inglés para niños pequeños?",
@@ -56,7 +56,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Hay academias de inglés para niños cerca de Montecarmelo?",
-    answer: "Sí. Al elegir academia de inglés para niños cerca de Montecarmelo, valora el método (si es lúdico y adaptado a la edad), el tamaño de los grupos, y si preparan exámenes oficiales como Cambridge Young Learners. Impulse English Academy está a solo 9 minutos en coche o 18 minutos en autobús desde Montecarmelo, ideal para familias de los colegios del PAU."
+    answer: "Sí. Al elegir academia de inglés para niños cerca de Montecarmelo, valora el método (si es lúdico y adaptado a la edad), el tamaño de los grupos, y si preparan exámenes oficiales como Cambridge Young Learners. Impulse English Academy está a 10 a 12 minutos en coche o a unos 8 minutos en metro por la Línea 9 desde Montecarmelo, ideal para familias de los colegios del PAU."
   },
   {
     question: "¿Hay academias de inglés con horario de mañana en zona norte de Madrid?",
@@ -64,7 +64,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Es fácil llegar en coche desde Las Tablas?",
-    answer: "Sí, desde Las Tablas se llega en unos 9 minutos en coche por la Av. de la Ilustración hasta Av. de El Ferrol. Hay aparcamiento en superficie disponible."
+    answer: "Sí, desde Las Tablas se llega en 10 a 12 minutos en coche por la Av. de la Ilustración hasta Av. de El Ferrol. Hay aparcamiento en superficie disponible."
   }
 ];
 
@@ -117,7 +117,7 @@ export default function MontecarmeloLasTablasPage() {
             </p>
             <div className="flex items-center gap-2 text-white/60 font-display text-sm mb-2 animate-hero-fade-up animation-delay-200">
               <Train className="w-4 h-4" />
-              <span>A 9 minutos en coche · 18 min en bus desde Montecarmelo</span>
+              <span>A 10-12 min en coche · Línea 9 de metro desde Montecarmelo</span>
             </div>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress}
@@ -153,10 +153,10 @@ export default function MontecarmeloLasTablasPage() {
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
-            Nuestra academia ofrece clases de inglés para familias de Montecarmelo y Las Tablas (28050 Madrid), dos de las zonas de mayor crecimiento de Madrid Norte. Desde Montecarmelo se llega en solo 9 minutos en coche o 18 minutos en autobús (líneas 712-717) a nuestra academia en Barrio del Pilar. Trabajamos con niños, adolescentes y adultos que buscan aprender inglés con grupos reducidos y horarios flexibles. Somos centro oficial de preparación Cambridge con 100% de aprobados.
+            Nuestra academia ofrece clases de inglés para familias de Montecarmelo y Las Tablas (28050 Madrid), dos de las zonas de mayor crecimiento de Madrid Norte. Desde Montecarmelo se llega en la Línea 9 de metro, bajando en la parada de metro Barrio del Pilar (unos 8 minutos más 3 andando), o en 10 a 12 minutos en coche a nuestra academia en Barrio del Pilar. Trabajamos con niños, adolescentes y adultos que buscan aprender inglés con grupos reducidos y horarios flexibles. Somos centro oficial de preparación Cambridge con 100% de aprobados.
           </p>
           <p className="text-lg text-zinc-700 leading-relaxed">
-            Montecarmelo y Las Tablas, en los nuevos desarrollos PAU del norte de Madrid, son barrios jóvenes con una gran cantidad de familias con niños en edad escolar. El barrio cuenta con referencias como Metro Montecarmelo, el Parque de Las Tablas y numerosos colegios. Desde Montecarmelo, llegar a nuestra academia es sencillo: 9 minutos en coche o 18 minutos en autobús con las líneas 712-717 que pasan cada 6 minutos. Muchas familias de estos desarrollos buscan una academia de inglés de calidad cerca de casa, con métodos adaptados a cada edad.
+            Montecarmelo y Las Tablas, en los nuevos desarrollos PAU del norte de Madrid, son barrios jóvenes con una gran cantidad de familias con niños en edad escolar. El barrio cuenta con referencias como Metro Montecarmelo, el Parque de Las Tablas y numerosos colegios. Desde Montecarmelo, llegar a nuestra academia es sencillo: 10 a 12 minutos en coche por la Av. de la Ilustración, o la Línea 9 de metro en dirección sur hasta Barrio del Pilar (unos 8 minutos más 3 andando). Muchas familias de estos desarrollos buscan una academia de inglés de calidad cerca de casa, con métodos adaptados a cada edad.
           </p>
         </div>
       </section>
@@ -370,29 +370,22 @@ export default function MontecarmeloLasTablasPage() {
                 <div className="flex items-start gap-4 p-4 bg-zinc-50 rounded-xl">
                   <Car className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
-                    <p className="font-bold text-zinc-900">En coche — 9 minutos</p>
-                    <p className="text-zinc-600">Por Av. de la Ilustración → Av. de El Ferrol. Aparcamiento en superficie disponible.</p>
+                    <p className="font-bold text-zinc-900">En coche - 10 a 12 minutos</p>
+                    <p className="text-zinc-600">Por la Av. de la Ilustración hasta la Av. de El Ferrol. Aparcamiento en superficie disponible.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-zinc-50 rounded-xl">
                   <Bus className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
-                    <p className="font-bold text-zinc-900">Autobús — 18 minutos (mejor opción en transporte público)</p>
-                    <p className="text-zinc-600">Líneas 712, 713, 714, 717 desde Ctra. Colmenar Viejo-Santa Ana. Frecuencia: cada 6 min.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4 p-4 bg-zinc-50 rounded-xl">
-                  <Bus className="w-6 h-6 text-accent-blue flex-shrink-0" />
-                  <div>
-                    <p className="font-bold text-zinc-900">Autobús 134 — 29 minutos</p>
-                    <p className="text-zinc-600">Alternativa directa desde Montecarmelo.</p>
+                    <p className="font-bold text-zinc-900">Autobús 147 (con metro Línea 7)</p>
+                    <p className="text-zinc-600">Línea 7 de metro hasta Av. de la Ilustración (unos 10 minutos) y después el autobús 147, que para en Ginzo de Limia - Ferrol, a 1 minuto de la academia.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-zinc-50 rounded-xl">
                   <Train className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
-                    <p className="font-bold text-zinc-900">Metro — ~31 minutos</p>
-                    <p className="text-zinc-600">Línea 10 (Montecarmelo → Plaza Castilla) + transbordo Línea 9 → Barrio del Pilar. 500 m andando.</p>
+                    <p className="font-bold text-zinc-900">Metro - Línea 9</p>
+                    <p className="text-zinc-600">Línea 9 desde Montecarmelo en dirección sur, baja en la parada de metro Barrio del Pilar. Unos 8 minutos en metro más 3 minutos andando hasta la academia.</p>
                   </div>
                 </div>
               </div>
@@ -461,7 +454,7 @@ export default function MontecarmeloLasTablasPage() {
                   ))}
                 </div>
                 <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
-                <p className="text-zinc-900 font-semibold">— {testimonial.name}</p>
+                <p className="text-zinc-900 font-semibold">- {testimonial.name}</p>
               </div>
             ))}
           </div>
