@@ -13,7 +13,7 @@ const benefits = [
   { title: "Centro Oficial de Preparación Cambridge", desc: "Prepárate y haz el examen donde estudias. Sin sorpresas." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Todos nuestros estudiantes aprobaron sus exámenes." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada real. No 15-20 como otras \"reducidas\"." },
-  { title: "Vecinos de La Ventilla Nos Eligen", desc: "Más de 150 reseñas de 5 estrellas en Google de familias de la zona." },
+  { title: "Vecinos de La Ventilla Nos Eligen", desc: "Más de 174 reseñas de 5 estrellas en Google de familias de la zona." },
   { title: "Metodología Impulse Probada", desc: "Conversación desde día 1. Resultados medibles. Aprendizaje efectivo." }
 ];
 
@@ -75,7 +75,7 @@ export default function LaVentillaPage() {
         <div className="relative z-10 container mx-auto px-6 md:px-12">
           <Breadcrumb
             items={[
-              { label: 'Ubicaciones', href: '/academia-ingles-barrio-del-pilar' },
+              { label: 'Ubicaciones', href: '/academias-ingles-madrid/por-barrios/' },
               { label: 'La Ventilla' }
             ]}
             variant="light"
@@ -414,7 +414,7 @@ export default function LaVentillaPage() {
               className="inline-flex items-center gap-2 bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-              150+ reseñas reales
+              174+ reseñas reales
             </a>
           </div>
         </div>
