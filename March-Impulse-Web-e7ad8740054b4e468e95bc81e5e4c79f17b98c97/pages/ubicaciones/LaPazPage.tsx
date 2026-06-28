@@ -13,7 +13,7 @@ const benefits = [
   { title: "Centro Oficial de Preparación Cambridge", desc: "Prepárate y haz el examen donde estudias. Sin sorpresas." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Todos nuestros estudiantes aprobaron sus exámenes." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada real. No 15-20 como otras \"reducidas\"." },
-  { title: "Familias de La Paz Confían en Nosotros", desc: "Más de 150 reseñas de 5 estrellas en Google." },
+  { title: "Familias de La Paz Confían en Nosotros", desc: "Más de 174 reseñas de 5 estrellas en Google." },
   { title: "Metodología Impulse Probada", desc: "Conversación desde día 1. Resultados medibles. Aprendizaje efectivo." }
 ];
 
@@ -75,7 +75,7 @@ export default function LaPazPage() {
         <div className="relative z-10 container mx-auto px-6 md:px-12">
           <Breadcrumb
             items={[
-              { label: 'Ubicaciones', href: '/academia-ingles-barrio-del-pilar' },
+              { label: 'Ubicaciones', href: '/academias-ingles-madrid/por-barrios/' },
               { label: 'La Paz' }
             ]}
             variant="light"
