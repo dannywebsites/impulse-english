@@ -11,7 +11,9 @@ export default function LocationsSection() {
     { name: "La Paz", href: "/academia-ingles-la-paz" },
     { name: "Plaza Castilla", href: "/academia-ingles-plaza-castilla" },
     { name: "Tetuán", href: "/academia-ingles-tetuan" },
-    { name: "Cuatro Torres", href: "/academia-ingles-cuatro-torres" }
+    { name: "Cuatro Torres", href: "/academia-ingles-cuatro-torres" },
+    { name: "Mirasierra", href: "/academia-ingles-mirasierra" },
+    { name: "Montecarmelo y Las Tablas", href: "/academia-ingles-montecarmelo-las-tablas" }
   ];
 
   return (

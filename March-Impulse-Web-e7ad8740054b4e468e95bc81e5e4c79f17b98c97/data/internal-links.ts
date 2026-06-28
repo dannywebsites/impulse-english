@@ -34,12 +34,21 @@ export const internalLinkMap: Record<string, { url: string; anchorText: string }
   'Contacto': { url: '/contacto/', anchorText: 'contactar' },
   'Home': { url: '/', anchorText: 'Impulse English Academy' },
 
-  // Location pages
-  'Location pages': { url: '/academias-ingles-madrid/', anchorText: 'nuestras ubicaciones en Madrid' },
+  // Location pages: Madrid hub + 10 barrio spokes
+  'Location pages': { url: '/academias-ingles-madrid/', anchorText: 'academias de inglés en Madrid' },
+  'Madrid Hub': { url: '/academias-ingles-madrid/', anchorText: 'academias de inglés en Madrid' },
+  'Por Barrios': { url: '/academias-ingles-madrid/por-barrios/', anchorText: 'academias de inglés por barrios' },
   'Barrio del Pilar': { url: '/academia-ingles-barrio-del-pilar/', anchorText: 'academia Barrio del Pilar' },
   'Barrio del Pilar page': { url: '/academia-ingles-barrio-del-pilar/', anchorText: 'academia Barrio del Pilar' },
   'La Vaguada page': { url: '/academia-ingles-la-vaguada/', anchorText: 'academia La Vaguada' },
   'Peñagrande page': { url: '/academia-ingles-penagrande/', anchorText: 'academia Peñagrande' },
+  'La Ventilla page': { url: '/academia-ingles-la-ventilla/', anchorText: 'academia La Ventilla' },
+  'La Paz page': { url: '/academia-ingles-la-paz/', anchorText: 'academia La Paz' },
+  'Plaza Castilla page': { url: '/academia-ingles-plaza-castilla/', anchorText: 'academia Plaza Castilla' },
+  'Tetuán page': { url: '/academia-ingles-tetuan/', anchorText: 'academia Tetuán' },
+  'Cuatro Torres page': { url: '/academia-ingles-cuatro-torres/', anchorText: 'academia Cuatro Torres' },
+  'Mirasierra page': { url: '/academia-ingles-mirasierra/', anchorText: 'academia Mirasierra' },
+  'Montecarmelo Las Tablas page': { url: '/academia-ingles-montecarmelo-las-tablas/', anchorText: 'academia Montecarmelo y Las Tablas' },
 };
 
 /**

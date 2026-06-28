@@ -123,10 +123,10 @@ export const NAP = {
     "Official Partner of ESIC Idiomas",
   ],
 
-  // Aggregate rating (Google Reviews)
+  // Aggregate rating (Google Reviews): kept in sync with the live GBP (5.0 / 174)
   aggregateRating: {
     ratingValue: 5,
-    reviewCount: 150,
+    reviewCount: 174,
     bestRating: 5,
     worstRating: 1,
   },

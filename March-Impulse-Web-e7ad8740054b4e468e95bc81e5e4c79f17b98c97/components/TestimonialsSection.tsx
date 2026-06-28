@@ -261,7 +261,7 @@ export default function TestimonialsSection() {
                 <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
               ))}
             </div>
-            <span className="text-zinc-600 text-sm font-medium">150+ reseñas reales</span>
+            <span className="text-zinc-600 text-sm font-medium">174+ reseñas reales</span>
           </a>
         </div>
       </div>
