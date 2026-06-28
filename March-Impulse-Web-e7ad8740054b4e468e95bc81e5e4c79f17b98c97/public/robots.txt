@@ -19,6 +19,5 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-# Sitemaps
-Sitemap: https://impulse-english.es/sitemap.xml
-Sitemap: https://impulse-english.es/sitemap-images.xml
+# Sitemap (Astro-generated index — single source of truth, always current)
+Sitemap: https://impulse-english.es/sitemap-index.xml
