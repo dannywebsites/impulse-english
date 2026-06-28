@@ -148,7 +148,7 @@ export default function AcademiasPorBarriosMadridPage() {
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
-              Encuentra la mejor academia de inglés cerca de ti. Guía completa por zonas con precios, transporte y recomendaciones.
+              ¿Buscas una academia de inglés cerca de ti en Madrid? Guía completa por zonas y barrios con precios, transporte y nuestras 10 sedes en el norte de la ciudad.
             </p>
           </div>
         </div>
@@ -232,10 +232,10 @@ export default function AcademiasPorBarriosMadridPage() {
                 </div>
 
                 <a
-              href="/contacto/"
+              href="/reservar-clase/"
                   className="inline-block bg-white text-violet-600 font-bold py-3 px-8 rounded-lg hover:bg-zinc-100 transition-colors"
                 >
-                  Solicitar información
+                  Reservar clase gratis
                 </a>
               </div>
             </section>
@@ -449,10 +449,10 @@ export default function AcademiasPorBarriosMadridPage() {
                     </p>
                   </div>
                   <a
-              href="/contacto/"
+              href="/reservar-clase/"
                     className="bg-violet-500 hover:bg-violet-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
-                    Contactar
+                    Reservar clase gratis
                   </a>
                 </div>
 
@@ -497,6 +497,14 @@ export default function AcademiasPorBarriosMadridPage() {
                 <a href="/academia-ingles-cuatro-torres/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Cuatro Torres</h4>
+                </a>
+                <a href="/academia-ingles-mirasierra/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                  <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
+                  <h4 className="font-bold text-zinc-900 text-sm">Mirasierra</h4>
+                </a>
+                <a href="/academia-ingles-montecarmelo-las-tablas/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                  <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
+                  <h4 className="font-bold text-zinc-900 text-sm">Montecarmelo y Las Tablas</h4>
                 </a>
               </div>
             </section>

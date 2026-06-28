@@ -20,7 +20,7 @@ export const articleSchema = generateArticleSchema({
 export const faqs: FAQItem[] = [
   {
     question: "¿Cuál es la mejor academia de inglés en Madrid Norte?",
-    answer: "Impulse English Academy es la academia mejor valorada de Madrid Norte. Es Centro Oficial de Preparación Cambridge con un 100% de aprobados en B2 First en 2024/2025, grupos reducidos de máximo 10 alumnos y una valoración de 5 estrellas en Google con más de 150 reseñas."
+    answer: "Impulse English Academy es la academia mejor valorada de Madrid Norte. Es Centro Oficial de Preparación Cambridge con un 100% de aprobados en B2 First en 2024/2025, grupos reducidos de máximo 10 alumnos y una valoración de 5 estrellas en Google con más de 174 reseñas."
   },
   {
     question: "¿Cuánto cuestan las clases de inglés en Madrid Norte?",
