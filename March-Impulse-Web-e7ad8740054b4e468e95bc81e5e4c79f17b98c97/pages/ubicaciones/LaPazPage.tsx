@@ -98,7 +98,7 @@ export default function LaPazPage() {
             </p>
             <div className="flex items-center gap-2 text-white/60 font-display text-sm mb-2 animate-hero-fade-up animation-delay-200">
               <MapPin className="w-4 h-4" />
-              <span>20 minutos caminando o 20 minutos en autobús (líneas 132, 134)</span>
+              <span>20 minutos caminando o 20 minutos en autobús (líneas 147, 42 y 83)</span>
             </div>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress}
@@ -134,7 +134,7 @@ export default function LaPazPage() {
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <p className="text-lg text-zinc-700 leading-relaxed">
-            Nuestra academia ofrece clases de inglés cerca de La Paz, una zona residencial bien comunicada con la <strong>estación de metro La Paz (Línea 9)</strong> y el centro comercial La Vaguada. Estamos ubicados en el código postal <strong>28029 Madrid</strong>, a pocos minutos del <strong>Hospital Universitario La Paz</strong> y el <strong>Parque Norte</strong>. Trabajamos con niños, adolescentes y adultos que buscan aprender inglés sin largos desplazamientos, con grupos reducidos y atención personalizada. Somos centro oficial de preparación Cambridge con 100% de aprobados.
+            Nuestra academia ofrece clases de inglés cerca de La Paz, una zona residencial bien comunicada con la <strong>estación de metro Barrio del Pilar (Línea 9)</strong> y el centro comercial La Vaguada. Estamos ubicados en el código postal <strong>28029 Madrid</strong>, a pocos minutos del <strong>Hospital Universitario La Paz</strong> y el <strong>Parque Norte</strong>. Trabajamos con niños, adolescentes y adultos que buscan aprender inglés sin largos desplazamientos, con grupos reducidos y atención personalizada. Somos centro oficial de preparación Cambridge con 100% de aprobados.
           </p>
         </div>
       </section>
@@ -187,9 +187,9 @@ export default function LaPazPage() {
                 Líneas que conectan La Paz con Barrio del Pilar (28029):
               </p>
               <ul className="text-zinc-600 text-sm space-y-2">
-                <li>• Línea 132: Conexión directa (20 minutos)</li>
-                <li>• Línea 134: Conexión directa (20 minutos)</li>
-                <li>• Metro La Paz (Línea 9) hasta Barrio del Pilar</li>
+                <li>• Líneas 147, 42 y 83: parada Ginzo de Limia - Ferrol</li>
+                <li>• A 1 minuto andando de la academia</li>
+                <li>• Metro Barrio del Pilar (Línea 9), a 3 minutos de la academia</li>
               </ul>
               <p className="text-green-600 font-medium mt-4">Tiempo total bus: 20 minutos</p>
             </div>

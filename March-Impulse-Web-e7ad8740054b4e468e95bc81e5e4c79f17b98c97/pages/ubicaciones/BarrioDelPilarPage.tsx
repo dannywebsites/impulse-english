@@ -393,7 +393,7 @@ export default function BarrioDelPilarPage() {
                   <Bus className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
                     <p className="font-bold text-zinc-900">Autobuses</p>
-                    <p className="text-zinc-600">Líneas 42, 132, 137, 147</p>
+                    <p className="text-zinc-600">Líneas 147, 42 y 83</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-zinc-50 rounded-xl">

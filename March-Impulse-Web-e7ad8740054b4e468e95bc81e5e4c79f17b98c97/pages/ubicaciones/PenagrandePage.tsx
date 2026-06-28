@@ -382,7 +382,7 @@ export default function PenagrandePage() {
                   <Bus className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
                     <p className="font-bold text-zinc-900">Autobuses</p>
-                    <p className="text-zinc-600">Líneas 42, 132, 137, 147</p>
+                    <p className="text-zinc-600">Líneas 147, 42 y 83</p>
                   </div>
                 </div>
               </div>
