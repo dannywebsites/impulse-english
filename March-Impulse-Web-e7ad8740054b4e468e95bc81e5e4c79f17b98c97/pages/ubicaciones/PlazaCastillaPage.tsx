@@ -44,7 +44,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Cómo llego a la academia desde Plaza Castilla?",
-    answer: "Desde Plaza Castilla puedes tomar la Línea 9 de metro dirección Herrera Oria y bajar en Barrio del Pilar (4 paradas). Nuestra academia está a solo 500 metros de la salida del metro."
+    answer: "Desde Plaza Castilla puedes tomar la Línea 9 de metro dirección Herrera Oria y bajar en metro Barrio del Pilar (2 paradas, unos 12 minutos). Nuestra academia está a 3 minutos andando de la salida del metro."
   }
 ];
 
@@ -55,7 +55,7 @@ export const locationMeta = {locationName: "Plaza Castilla",
 export default function PlazaCastillaPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Academia de Inglés cerca de Plaza Castilla Madrid | Impulse English Academy La Vaguada – Barrio del Pilar';
+    document.title = 'Academia de Inglés cerca de Plaza Castilla Madrid | Impulse English Academy La Vaguada - Barrio del Pilar';
   }, []);
 
   return (
@@ -98,7 +98,7 @@ export default function PlazaCastillaPage() {
             </p>
             <div className="flex items-center gap-2 text-white/60 font-display text-sm mb-2 animate-hero-fade-up animation-delay-200">
               <Train className="w-4 h-4" />
-              <span>Línea 9: Plaza Castilla → Barrio del Pilar (3 paradas)</span>
+              <span>Línea 9: Plaza Castilla → Barrio del Pilar (2 paradas)</span>
             </div>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress}
@@ -176,11 +176,11 @@ export default function PlazaCastillaPage() {
                 Desde <strong>Metro Plaza Castilla (Líneas 1, 9, 10)</strong>:
               </p>
               <ul className="text-zinc-600 text-sm space-y-2">
-                <li>• Toma la Línea 9 dirección Mirasierra</li>
-                <li>• Baja en Barrio del Pilar (3 paradas)</li>
-                <li>• Camina 500 metros hasta nuestra academia</li>
+                <li>• Toma la Línea 9 dirección Herrera Oria</li>
+                <li>• Baja en metro Barrio del Pilar (2 paradas: Ventilla y Barrio del Pilar)</li>
+                <li>• Camina 3 minutos hasta nuestra academia</li>
               </ul>
-              <p className="text-accent-blue font-medium mt-4">Tiempo total: ~8 minutos</p>
+              <p className="text-accent-blue font-medium mt-4">Tiempo total: unos 15 minutos (12 en metro más 3 andando)</p>
             </div>
             <div className="bg-white p-6 rounded-xl">
               <div className="flex items-center gap-3 mb-4">
@@ -191,11 +191,10 @@ export default function PlazaCastillaPage() {
                 Desde el Intercambiador de Plaza Castilla:
               </p>
               <ul className="text-zinc-600 text-sm space-y-2">
-                <li>• Línea 83: Parada en Barrio del Pilar</li>
-                <li>• Línea 128: Conexión directa</li>
-                <li>• Línea 134: Por Paseo de la Castellana</li>
+                <li>• Línea 49: hacia la zona norte, parada Fernández Almagro - Ferrol (~12 min)</li>
+                <li>• Línea 42: hacia Peñagrande, parada Ginzo de Limia - Ferrol (~15 min)</li>
               </ul>
-              <p className="text-green-600 font-medium mt-4">Tiempo total: ~12-15 minutos</p>
+              <p className="text-green-600 font-medium mt-4">Tiempo total: de 12 a 15 minutos según la línea</p>
             </div>
           </div>
         </div>
@@ -400,7 +399,7 @@ export default function PlazaCastillaPage() {
                   ))}
                 </div>
                 <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
-                <p className="text-zinc-900 font-semibold">— {testimonial.name}</p>
+                <p className="text-zinc-900 font-semibold">{testimonial.name}</p>
               </div>
             ))}
           </div>
@@ -528,7 +527,7 @@ export default function PlazaCastillaPage() {
             <a href={NAP.gbpUrl} target="_blank" rel="noopener noreferrer" className="text-accent-blue font-semibold hover:underline">
               Ver en Google Maps →
             </a>
-            <p className="text-zinc-500 text-sm mt-2">{NAP.name} — {NAP.fullAddress}</p>
+            <p className="text-zinc-500 text-sm mt-2">{NAP.name}, {NAP.fullAddress}</p>
           </div>
         </div>
       </section>
@@ -556,7 +555,7 @@ export default function PlazaCastillaPage() {
             ¿Trabajas en Plaza Castilla?
           </h2>
           <p className="text-zinc-400 mb-8">
-            Estamos a solo 8 minutos en metro. Aprovecha tu hora de comer o después del trabajo.
+            Estamos a solo 15 minutos en metro. Aprovecha tu hora de comer o después del trabajo.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a

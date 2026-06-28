@@ -9,7 +9,7 @@ import { NAP } from '../../utils/napData';
 import type { FAQItem } from '../../utils/schemaData';
 
 const benefits = [
-  { title: "Ubicación Premium en La Vaguada", desc: "A 8-10 minutos del Centro Comercial. Zona comercial y residencial." },
+  { title: "Ubicación Premium en La Vaguada", desc: "Junto al Centro Comercial La Vaguada, en pleno Barrio del Pilar. Zona comercial y residencial." },
   { title: "Centro Oficial de Preparación Cambridge", desc: "Prepárate y haz el examen donde estudias." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Metodología probada. Resultados garantizados." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada que marca la diferencia." },
@@ -44,7 +44,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Cómo llego a la academia desde el Centro Comercial La Vaguada?",
-    answer: "Estamos a solo 8-10 minutos caminando del Centro Comercial La Vaguada. Nuestra dirección es Avenida de El Ferrol, 22. También estamos a 500 metros de Metro Barrio del Pilar (Línea 9)."
+    answer: "Estamos junto al Centro Comercial La Vaguada, en pleno Barrio del Pilar. Nuestra dirección es Avenida de El Ferrol, 22. Metro Barrio del Pilar (Línea 9) está a 3 minutos andando."
   },
   {
     question: "¿Mejor academia para adultos Madrid norte?",
@@ -60,7 +60,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Hay academias de inglés cerca del Centro Comercial La Vaguada?",
-    answer: "Sí, hay opciones cerca de La Vaguada. Al buscar academia, fíjate en si es centro oficial de exámenes Cambridge o Linguaskill, el tamaño de los grupos, la experiencia de los profesores y las reseñas de Google. Impulse English Academy está a 8-10 minutos a pie del centro comercial, en Av. de El Ferrol, 22."
+    answer: "Sí, hay opciones cerca de La Vaguada. Al buscar academia, fíjate en si es centro oficial de exámenes Cambridge o Linguaskill, el tamaño de los grupos, la experiencia de los profesores y las reseñas de Google. Impulse English Academy está junto al centro comercial, en Av. de El Ferrol, 22."
   },
   {
     question: "¿Cuánto cuesta una academia de inglés en zona norte de Madrid?",
@@ -162,7 +162,7 @@ export default function LaVaguadaPage() {
             </p>
             <div className="flex items-center gap-2 text-white/60 font-display text-sm mb-2 animate-hero-fade-up animation-delay-200">
               <MapPin className="w-4 h-4" />
-              <span>A 8-10 minutos caminando del Centro Comercial La Vaguada</span>
+              <span>Junto al Centro Comercial La Vaguada, en pleno Barrio del Pilar</span>
             </div>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress}
@@ -201,13 +201,13 @@ export default function LaVaguadaPage() {
             ¡Bienvenido a nuestra Academia de Inglés
           </h2>
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
-            Nuestra academia de inglés en La Vaguada ofrece clases presenciales y online de inglés para todas las edades. Somos una academia con grupos reducidos, certificado oficial como Centro Cambridge ES278, y especializados en preparación de exámenes Cambridge. Ofrecemos prueba de nivel gratuita y una estrategia educativa idónea adaptada a cada alumno.
+            Nuestra academia de inglés en La Vaguada ofrece clases presenciales y online de inglés para todas las edades. Somos una academia con grupos reducidos, certificado oficial como Centro Cambridge ES278, y especializados en preparación de exámenes Cambridge. Ofrecemos prueba de nivel gratuita y una estrategia educativa idónea adaptada a cada alumno. A diferencia de otras opciones cercanas como Kids&Us La Vaguada, centrada solo en niños y adolescentes, en Impulse atendemos tanto a niños como a adultos, somos centro oficial de preparación Cambridge con 100% de aprobados y contamos con profesores nativos.
           </p>
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
-            Trabajamos con niños desde infantil, adolescentes de primaria y secundaria, y adultos que buscan aprender inglés sin largos desplazamientos. Ubicados en el corazón de La Vaguada y Barrio del Pilar (28029 Madrid), con acceso a Metro Barrio del Pilar (Línea 9), Metro Herrera Oria y Metro Peñagrande (Línea 7), y buses 42, 132, 137, 147. También nos localizan desde Peñagrande, La Ventilla, La Paz, Plaza Castilla y Tetuán.
+            Trabajamos con niños desde infantil, adolescentes de primaria y secundaria, y adultos que buscan aprender inglés sin largos desplazamientos. Estamos junto al centro comercial La Vaguada, en pleno Barrio del Pilar (28029 Madrid), con acceso a Metro Barrio del Pilar (Línea 9) a 3 minutos andando, Metro Herrera Oria y Metro Peñagrande (Línea 7), y a los buses 147, 42 y 83 (parada Ginzo de Limia - Ferrol, a 1 minuto andando). También nos localizan desde Peñagrande, La Ventilla, La Paz, Plaza Castilla y Tetuán.
           </p>
           <p className="text-lg text-zinc-700 leading-relaxed">
-            Nuestra academia se encuentra a 8-10 minutos a pie del Centro Comercial La Vaguada y del Parque de la Vaguada, en pleno código postal 28029. Familias del Colegio Ntra. Sra. Santa María y de las inmediaciones del Hospital La Paz eligen Impulse por su cercanía y resultados. Las estaciones de Metro Barrio del Pilar y Herrera Oria facilitan el acceso desde cualquier punto del norte de Madrid.
+            Nuestra academia se encuentra junto al Centro Comercial La Vaguada y al Parque de la Vaguada, en pleno código postal 28029. Familias del Colegio Ntra. Sra. Santa María y de las inmediaciones del Hospital La Paz eligen Impulse por su cercanía y resultados. Las estaciones de Metro Barrio del Pilar y Herrera Oria facilitan el acceso desde cualquier punto del norte de Madrid.
           </p>
         </div>
       </section>
@@ -323,7 +323,7 @@ export default function LaVaguadaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-accent-blue/5 p-6 rounded-xl">
               <h4 className="text-xl font-bold text-zinc-900 mb-3">Inglés general</h4>
-              <p className="text-zinc-700 text-sm mb-4">Todos los niveles A1–C2 con profesor cualificado y grupos reducidos.</p>
+              <p className="text-zinc-700 text-sm mb-4">Todos los niveles A1-C2 con profesor cualificado y grupos reducidos.</p>
             </div>
             <div className="bg-accent-blue/5 p-6 rounded-xl">
               <h4 className="text-xl font-bold text-zinc-900 mb-3">Preparación examen MOVERS</h4>
@@ -335,19 +335,19 @@ export default function LaVaguadaPage() {
             </div>
             <div className="bg-accent-blue/5 p-6 rounded-xl">
               <h4 className="text-xl font-bold text-zinc-900 mb-3">Preparación examen KET</h4>
-              <p className="text-zinc-700 text-sm mb-4">A2 Key — Nivel intermedio bajo.</p>
+              <p className="text-zinc-700 text-sm mb-4">A2 Key: Nivel intermedio bajo.</p>
             </div>
             <div className="bg-accent-blue/5 p-6 rounded-xl">
               <h4 className="text-xl font-bold text-zinc-900 mb-3">Preparación examen FLYERS</h4>
-              <p className="text-zinc-700 text-sm mb-4">A2 Flyers — Nivel intermedio para primaria.</p>
+              <p className="text-zinc-700 text-sm mb-4">A2 Flyers: Nivel intermedio para primaria.</p>
             </div>
             <div className="bg-accent-blue/5 p-6 rounded-xl">
               <h4 className="text-xl font-bold text-zinc-900 mb-3">Cambridge Extensivo</h4>
-              <p className="text-zinc-700 text-sm mb-4">B1, B2, C1 — Preparación a tu ritmo.</p>
+              <p className="text-zinc-700 text-sm mb-4">B1, B2, C1: Preparación a tu ritmo.</p>
             </div>
             <div className="bg-accent-blue/5 p-6 rounded-xl">
               <h4 className="text-xl font-bold text-zinc-900 mb-3">Preparación examen First Certificate, Advanced y Proficiency</h4>
-              <p className="text-zinc-700 text-sm mb-4">B2 First, C1 Advanced, C2 Proficiency — Máximo nivel.</p>
+              <p className="text-zinc-700 text-sm mb-4">B2 First, C1 Advanced, C2 Proficiency: Máximo nivel.</p>
             </div>
           </div>
         </div>
@@ -579,15 +579,15 @@ export default function LaVaguadaPage() {
                 <div className="flex items-start gap-4 p-4 bg-white rounded-xl">
                   <MapPin className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
-                    <p className="font-bold text-zinc-900">Desde Centro Comercial La Vaguada</p>
-                    <p className="text-zinc-600">8-10 minutos caminando</p>
+                    <p className="font-bold text-zinc-900">Junto al Centro Comercial La Vaguada</p>
+                    <p className="text-zinc-600">En pleno Barrio del Pilar</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-white rounded-xl">
                   <Train className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
                     <p className="font-bold text-zinc-900">Metro Barrio del Pilar (Línea 9)</p>
-                    <p className="text-zinc-600">500 metros caminando</p>
+                    <p className="text-zinc-600">A 3 minutos andando</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-white rounded-xl">
@@ -601,7 +601,7 @@ export default function LaVaguadaPage() {
                   <Bus className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
                     <p className="font-bold text-zinc-900">Autobuses</p>
-                    <p className="text-zinc-600">42, 132, 137, 147</p>
+                    <p className="text-zinc-600">Líneas 147, 42 y 83 (parada Ginzo de Limia - Ferrol, a 1 minuto andando)</p>
                   </div>
                 </div>
               </div>
@@ -662,7 +662,7 @@ export default function LaVaguadaPage() {
                   ))}
                 </div>
                 <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
-                <p className="text-zinc-900 font-semibold">— {testimonial.name}</p>
+                <p className="text-zinc-900 font-semibold">{testimonial.name}</p>
               </div>
             ))}
           </div>

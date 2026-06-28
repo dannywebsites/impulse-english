@@ -158,7 +158,7 @@ export default function MirasierraPage() {
             Nuestra academia ofrece clases de inglés cerca de Mirasierra (28035 Madrid), una zona residencial tranquila conocida por sus colegios y el Parque Norte. Desde Mirasierra puedes llegar en solo 4 minutos en metro (Línea 9, Mirasierra → Barrio del Pilar, directo sin transbordos). También hay conexión directa por autobús con las líneas 147, 42 y 83. Trabajamos con niños, adolescentes y adultos que buscan aprender inglés con grupos reducidos y atención personalizada. Somos centro oficial de preparación Cambridge con 100% de aprobados.
           </p>
           <p className="text-lg text-zinc-700 leading-relaxed">
-            Mirasierra, en el distrito Fuencarral-El Pardo (28035), es una de las zonas más residenciales y familiares de Madrid Norte. El barrio cuenta con referencias como el Parque Norte, el Colegio Mirasierra y numerosas zonas verdes. Desde la estación de Metro Mirasierra (Línea 9), llegar a nuestra academia es directo y rápido: solo una parada hasta Herrera Oria y dos hasta Barrio del Pilar. Muchas familias del barrio combinan las actividades de sus hijos con las clases de inglés.
+            Mirasierra, en el distrito Fuencarral-El Pardo (28035), es una de las zonas más residenciales y familiares de Madrid Norte. El barrio cuenta con referencias como el Parque Norte, el Colegio Mirasierra y numerosas zonas verdes. Desde la estación de Metro Mirasierra (Línea 9), llegar a nuestra academia es directo y rápido: solo una parada hasta Herrera Oria y dos hasta Barrio del Pilar. Muchas familias del barrio combinan las actividades de sus hijos con las clases de inglés. Además, la EOI Madrid-Valdezarza (C/ Fermín Caballero 92) cubre la zona, pero suele tener listas de espera, grupos grandes y no prepara exámenes Cambridge de forma específica, mientras que en Impulse trabajamos con grupos reducidos y somos centro oficial de preparación Cambridge.
           </p>
         </div>
       </section>
@@ -373,28 +373,28 @@ export default function MirasierraPage() {
                   <Train className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
                     <p className="font-bold text-zinc-900">Metro Mirasierra (Línea 9)</p>
-                    <p className="text-zinc-600">4 minutos hasta Barrio del Pilar (directo, sin transbordos)</p>
+                    <p className="text-zinc-600">4 minutos en metro hasta Barrio del Pilar, más 3 minutos andando hasta la academia</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-zinc-50 rounded-xl">
                   <Train className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
                     <p className="font-bold text-zinc-900">Metro Barrio del Pilar (Línea 9)</p>
-                    <p className="text-zinc-600">500 metros caminando desde la academia</p>
+                    <p className="text-zinc-600">A 3 minutos andando hasta la academia</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-zinc-50 rounded-xl">
                   <Bus className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
                     <p className="font-bold text-zinc-900">Autobuses</p>
-                    <p className="text-zinc-600">Líneas 147, 42, 83 — Parada Ginzo de Limia - Ferrol (1 min a pie)</p>
+                    <p className="text-zinc-600">Líneas 147, 42 y 83. Parada Ginzo de Limia - Ferrol, a 1 minuto andando de la academia</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-zinc-50 rounded-xl">
                   <Car className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
                     <p className="font-bold text-zinc-900">En coche</p>
-                    <p className="text-zinc-600">5-8 minutos por Fermín Caballero → Av. de El Ferrol. Aparcamiento disponible.</p>
+                    <p className="text-zinc-600">5 a 8 minutos por Fermín Caballero hasta la Av. de El Ferrol. Aparcamiento disponible.</p>
                   </div>
                 </div>
               </div>
@@ -463,7 +463,7 @@ export default function MirasierraPage() {
                   ))}
                 </div>
                 <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
-                <p className="text-zinc-900 font-semibold">— {testimonial.name}</p>
+                <p className="text-zinc-900 font-semibold">{testimonial.name}</p>
               </div>
             ))}
           </div>
