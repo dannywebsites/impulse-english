@@ -13,7 +13,7 @@ const benefits = [
   { title: "Centro Oficial de Preparación Cambridge", desc: "Preparación y examen en el mismo lugar." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Metodología Impulse con resultados probados." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada garantizada." },
-  { title: "Familias de Peñagrande Confían en Nosotros", desc: "150+ reseñas de 5 estrellas en Google." },
+  { title: "Familias de Peñagrande Confían en Nosotros", desc: "174+ reseñas de 5 estrellas en Google." },
   { title: "Metodología Probada", desc: "Conversación desde día 1. Resultados medibles." }
 ];
 
@@ -91,7 +91,7 @@ export default function PenagrandePage() {
         <div className="relative z-10 container mx-auto px-6 md:px-12">
           <Breadcrumb
             items={[
-              { label: 'Ubicaciones', href: '/academia-ingles-barrio-del-pilar' },
+              { label: 'Ubicaciones', href: '/academias-ingles-madrid/por-barrios/' },
               { label: 'Peñagrande' }
             ]}
             variant="light"
