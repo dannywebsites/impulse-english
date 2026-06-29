@@ -2,11 +2,16 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CuatroTorresPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/CuatroTorresPage';
 import CookieBanner from '../../components/CookieBanner';
-import { generateLocationPageSchema, generateFAQSchema } from '../../utils/schemaData';
+import { generateLocationPageSchema, generateFAQSchema, generateBreadcrumbSchema } from '../../utils/schemaData';
 
 const locationSchema = generateLocationPageSchema(locationMeta);
 const locationItems = locationSchema["@graph"] || [locationSchema];
-const schemas = [...locationItems, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Ubicaciones', url: 'https://impulse-english.es/academias-ingles-madrid/por-barrios/' },
+  { name: locationMeta.locationName, url: `${locationMeta.pageUrl}/` },
+]);
+const schemas = [...locationItems, breadcrumb, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
 ---
 
 <BaseLayout

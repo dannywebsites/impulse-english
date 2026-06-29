@@ -9,7 +9,7 @@ export default function CoursesSection() {
       category: "Todos los niveles",
       title: "Inglés general",
       description: "Curso de inglés general para niños y adultos, diseñado para mejorar la comprensión, la expresión oral y escrita, y el uso práctico del idioma en situaciones reales.",
-      details: ["A1–C2", "Grupos reducidos", "Niños y adultos"],
+      details: ["A1-C2", "Grupos reducidos", "Niños y adultos"],
       optimizedImage: courseImages.generalInfantil,
       link: "/cursos-ingles/infantil"
     },
@@ -52,7 +52,7 @@ export default function CoursesSection() {
       category: "Anual",
       title: "Cambridge Extensivo",
       description: "Curso extensivo de preparación para los exámenes oficiales de Cambridge, enfocado a un progreso sólido y sostenido a lo largo del curso académico.",
-      details: ["Todo el año", "Máx. 10 alumnos", "B1–C2"],
+      details: ["Todo el año", "Máx. 10 alumnos", "B1-C2"],
       optimizedImage: certificationImages.cambridgeCertificate,
       link: "/examenes-cambridge"
     },
@@ -80,7 +80,7 @@ export default function CoursesSection() {
                 </h2>
                 <div className="w-24 h-1 bg-accent-blue/20"></div>
                 <p className="text-lg text-zinc-600 mt-6 max-w-xl leading-relaxed">
-                    En nuestra escuela de idiomas en Madrid, impartimos cursos de inglés para todos los niveles, desde principiante hasta avanzado (A1–C2), con especialización en preparación de exámenes Cambridge.
+                    En nuestra escuela de idiomas en Madrid, impartimos cursos de inglés para todos los niveles, desde principiante hasta avanzado (A1-C2), con especialización en preparación de exámenes Cambridge.
                 </p>
             </div>
             <a href="/cursos-ingles/particulares/" className="text-zinc-500 hover:text-accent-blue font-medium flex items-center gap-2 transition-colors">

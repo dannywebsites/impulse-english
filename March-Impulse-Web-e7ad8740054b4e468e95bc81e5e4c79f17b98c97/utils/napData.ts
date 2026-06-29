@@ -58,12 +58,12 @@ export const NAP = {
 
   // Human-readable hours
   openingHoursText: [
-    "Lunes: 10:00 – 21:30",
-    "Martes: 15:30 – 21:30",
-    "Miércoles: 10:00 – 21:30",
-    "Jueves: 15:30 – 21:30",
-    "Viernes: 13:30 – 19:30",
-    "Sábado – Domingo: Cerrado",
+    "Lunes: 10:00 - 21:30",
+    "Martes: 15:30 - 21:30",
+    "Miércoles: 10:00 - 21:30",
+    "Jueves: 15:30 - 21:30",
+    "Viernes: 13:30 - 19:30",
+    "Sábado - Domingo: Cerrado",
   ],
 
   // Price range

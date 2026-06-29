@@ -15,7 +15,7 @@ interface SEOHeadProps {
 }
 
 const DEFAULT_OG_IMAGE = '/images/academy/logo-white-background.jpg';
-const SITE_NAME = 'Impulse English Academy La Vaguada – Barrio del Pilar';
+const SITE_NAME = 'Impulse English Academy La Vaguada, Barrio del Pilar';
 const BASE_URL = 'https://impulse-english.es';
 const DEFAULT_DESCRIPTION = 'Academia de inglés La Vaguada, Barrio del Pilar. Centro preparador Cambridge oficial 100% aprobados. Barrio del Pilar, Peñagrande. Cursos niños y adultos.';
 

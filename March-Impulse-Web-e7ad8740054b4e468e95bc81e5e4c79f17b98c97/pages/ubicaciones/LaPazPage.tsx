@@ -55,7 +55,7 @@ export const locationMeta = {locationName: "La Paz",
 export default function LaPazPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Academia de Inglés cerca de La Paz Madrid | Impulse English Academy La Vaguada – Barrio del Pilar';
+    document.title = 'Academia de Inglés cerca de La Paz Madrid | Impulse English Academy La Vaguada, Barrio del Pilar';
   }, []);
 
   return (
@@ -492,7 +492,7 @@ export default function LaPazPage() {
             <a href={NAP.gbpUrl} target="_blank" rel="noopener noreferrer" className="text-accent-blue font-semibold hover:underline">
               Ver en Google Maps →
             </a>
-            <p className="text-zinc-500 text-sm mt-2">{NAP.name} — {NAP.fullAddress}</p>
+            <p className="text-zinc-500 text-sm mt-2">{NAP.name} - {NAP.fullAddress}</p>
           </div>
         </div>
       </section>
