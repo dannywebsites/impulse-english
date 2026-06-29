@@ -61,7 +61,7 @@ export const locationMeta = {locationName: "Cuatro Torres Business Area",
 export default function CuatroTorresPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Academia de Inglés cerca de Cuatro Torres Business Area Madrid | Impulse English Academy La Vaguada – Barrio del Pilar';
+    document.title = 'Academia de Inglés cerca de Cuatro Torres Business Area Madrid | Impulse English Academy La Vaguada, Barrio del Pilar';
   }, []);
 
   return (
@@ -140,7 +140,7 @@ export default function CuatroTorresPage() {
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <p className="text-lg text-zinc-700 leading-relaxed">
-            Nuestra academia ofrece clases de inglés cerca de <strong>Cuatro Torres Business Area (CTBA)</strong> — Torre PwC, Torre Cepsa, Torre de Cristal y Torre Espacio — perfectamente conectada por metro y autobús hasta Barrio del Pilar. Ubicados en el código postal <strong>28029 Madrid</strong>, junto al <strong>Paseo de la Castellana</strong> y el <strong>Campo de las Naciones</strong>, trabajamos con niños, adolescentes y adultos que buscan aprender inglés con grupos reducidos y atención personalizada. Somos centro oficial de preparación Cambridge con 100% de aprobados.
+            Nuestra academia ofrece clases de inglés cerca de <strong>Cuatro Torres Business Area (CTBA)</strong>, con Torre PwC, Torre Cepsa, Torre de Cristal y Torre Espacio, perfectamente conectada por metro y autobús hasta Barrio del Pilar. Ubicados en el código postal <strong>28029 Madrid</strong>, junto al <strong>Paseo de la Castellana</strong> y el <strong>Campo de las Naciones</strong>, trabajamos con niños, adolescentes y adultos que buscan aprender inglés con grupos reducidos y atención personalizada. Somos centro oficial de preparación Cambridge con 100% de aprobados.
           </p>
         </div>
       </section>
@@ -523,7 +523,7 @@ export default function CuatroTorresPage() {
             <a href={NAP.gbpUrl} target="_blank" rel="noopener noreferrer" className="text-accent-blue font-semibold hover:underline">
               Ver en Google Maps →
             </a>
-            <p className="text-zinc-500 text-sm mt-2">{NAP.name} — {NAP.fullAddress}</p>
+            <p className="text-zinc-500 text-sm mt-2">{NAP.name} - {NAP.fullAddress}</p>
           </div>
         </div>
       </section>

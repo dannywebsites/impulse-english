@@ -447,7 +447,7 @@ export default function PenagrandePage() {
                   ))}
                 </div>
                 <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
-                <p className="text-zinc-900 font-semibold">— {testimonial.name}</p>
+                <p className="text-zinc-900 font-semibold">{testimonial.name}</p>
               </div>
             ))}
           </div>

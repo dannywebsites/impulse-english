@@ -55,7 +55,7 @@ export const locationMeta = {locationName: "La Ventilla",
 export default function LaVentillaPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Academia de Inglés cerca de La Ventilla | Impulse English Academy La Vaguada – Barrio del Pilar';
+    document.title = 'Academia de Inglés cerca de La Ventilla | Impulse English Academy La Vaguada, Barrio del Pilar';
   }, []);
 
   return (
@@ -399,7 +399,7 @@ export default function LaVentillaPage() {
                   ))}
                 </div>
                 <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
-                <p className="text-zinc-900 font-semibold">— {testimonial.name}</p>
+                <p className="text-zinc-900 font-semibold">{testimonial.name}</p>
               </div>
             ))}
           </div>
@@ -527,7 +527,7 @@ export default function LaVentillaPage() {
             <a href={NAP.gbpUrl} target="_blank" rel="noopener noreferrer" className="text-accent-blue font-semibold hover:underline">
               Ver en Google Maps →
             </a>
-            <p className="text-zinc-500 text-sm mt-2">{NAP.name} — {NAP.fullAddress}</p>
+            <p className="text-zinc-500 text-sm mt-2">{NAP.name} - {NAP.fullAddress}</p>
           </div>
         </div>
       </section>
