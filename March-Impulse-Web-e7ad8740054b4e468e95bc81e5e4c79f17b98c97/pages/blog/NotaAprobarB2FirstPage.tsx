@@ -11,7 +11,8 @@ export const articleSchema = generateArticleSchema({
     headline: "¿Qué Nota Necesito para Aprobar el B2 First? Puntuación y Grades",
     description: "Para aprobar el B2 First necesitas 160 puntos en la Cambridge English Scale. Conoce las calificaciones Grade A, B y C, y cómo se evalúa cada parte.",
     url: `${businessInfo.url}/blog/nota-aprobar-b2-first`,
-    datePublished: "2025-03-01"
+    datePublished: "2025-03-01",
+    dateModified: "2026-06-30"
   });
 
 export const faqItems: FAQItem[] = [
@@ -36,6 +37,18 @@ export const faqItems: FAQItem[] = [
     {
       question: "¿A qué equivale un Grade A en el B2 First?",
       answer: "Un Grade A en el B2 First (180-190 puntos) equivale al nivel C1 del MCER. Esto significa que, aunque te has presentado a un examen de nivel B2, tu puntuación demuestra competencia de nivel C1 Advanced. Recibes tanto la certificación B2 First como la acreditación de nivel C1, lo que es especialmente valioso para universidades y empleadores que requieren este nivel superior."
+    },
+    {
+      question: "¿Cuándo salen los resultados del B2 First?",
+      answer: "El Statement of Results suele estar disponible online entre 2 y 3 semanas después del examen en la versión por ordenador, y entre 4 y 6 semanas en la versión en papel. El certificado físico llega unas semanas más tarde. Accedes a tus resultados con tu número de candidato y tu Secret Number en el portal oficial de resultados de Cambridge."
+    },
+    {
+      question: "¿Caduca el certificado del B2 First?",
+      answer: "No. El certificado del B2 First no tiene fecha de caducidad: una vez aprobado, acredita tu nivel de forma permanente. A diferencia del IELTS o el TOEFL, que son válidos dos años, tu certificado Cambridge no expira. Otra cosa es que algunas instituciones prefieran una acreditación reciente, pero el título en sí sigue siendo válido siempre."
+    },
+    {
+      question: "¿Necesito una nota mínima en cada parte para aprobar el B2 First?",
+      answer: "No. El B2 First no exige una puntuación mínima por sección: lo que cuenta es la media de las cuatro partes. Puedes compensar una sección floja con otra más fuerte, siempre que la media global alcance los 160 puntos. Aun así, conviene llegar con un nivel equilibrado, porque una parte muy baja es difícil de compensar con el resto."
     }
   ];
 
@@ -427,10 +440,10 @@ export default function NotaAprobarB2FirstPage() {
                 En Impulse English Academy te preparamos con simulacros reales y feedback personalizado para maximizar tu puntuación.
               </p>
               <a
-              href="/contacto/"
+              href="/reservar-clase"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
-                Solicitar información
+                Reserva tu clase gratis
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
