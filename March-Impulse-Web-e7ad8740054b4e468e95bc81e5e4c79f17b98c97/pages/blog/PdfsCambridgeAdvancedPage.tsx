@@ -11,7 +11,8 @@ export const articleSchema = generateArticleSchema({
     headline: "PDFs Cambridge Advanced C1: Recursos Oficiales 2026",
     description: "Recursos PDF oficiales para preparar el C1 Advanced de Cambridge: sample papers, handbook, answer keys y materiales gratuitos.",
     url: `${businessInfo.url}/blog/pdfs-cambridge-advanced`,
-    datePublished: "2025-01-04"
+    datePublished: "2025-01-04",
+    dateModified: "2026-06-30"
   });
 
 export const faqs: FAQItem[] = [
@@ -36,6 +37,18 @@ export const faqs: FAQItem[] = [
     {
       question: "¿Cuánto tiempo debo estudiar con estos PDFs antes de registrarme al examen?",
       answer: "Para estudiantes con nivel B2 consolidado, Cambridge recomienda 12-18 meses de preparación dedicando 6-8 horas semanales. Si tu nivel actual es B2 inicial o intermedio, necesitarás 18-24 meses. Un indicador confiable: si completas un examen de práctica y obtienes menos de 160 puntos (de 210 totales), necesitas mínimo seis meses más de estudio intensivo con estos materiales."
+    },
+    {
+      question: "¿Es legal descargar PDFs de Cambridge Advanced gratis?",
+      answer: "Sí, siempre que uses fuentes legítimas. Los sample papers, el handbook for teachers y las hojas de respuesta del sitio oficial cambridgeenglish.org son gratuitos y de descarga libre. Archive.org presta libros digitalizados de forma legal mediante su sistema de préstamo bibliotecario con registro gratuito. Lo que no es legal es descargar libros completos con copyright desde foros o webs de terceros."
+    },
+    {
+      question: "¿Qué libro es mejor para preparar el C1 Advanced por mi cuenta?",
+      answer: "Si estudias solo, el 'Cambridge English Advanced Trainer' es la opción más completa porque incluye seis exámenes con explicaciones detalladas y consejos de examen. Para reforzar la base, añade 'Cambridge Grammar and Vocabulary for Advanced'. Si partes de un B2 justo, 'Complete Advanced' aporta más explicación teórica antes de la práctica intensiva."
+    },
+    {
+      question: "¿Hay recursos digitales gratuitos además de los PDFs?",
+      answer: "Sí. 'Write & Improve' de Cambridge corrige tus redacciones automáticamente, 'Test & Train' ofrece práctica interactiva y el canal de YouTube Cambridge English Spain publica lecciones gratuitas. Combinar los PDFs con estas herramientas digitales te permite cubrir las cuatro destrezas sin coste adicional."
     }
   ];
 
@@ -324,6 +337,65 @@ export default function PdfsCambridgeAdvancedPage() {
               </div>
             </section>
 
+            {/* Section: Books comparison */}
+            <section className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6">
+                Comparativa: mejores libros para preparar el C1 Advanced
+              </h2>
+              <p className="text-zinc-600 mb-6">
+                Si quieres ir más allá de los PDFs gratuitos, estos son los libros oficiales y de referencia más usados para preparar el C1 Advanced (CAE). Elige según tu punto de partida y el tiempo del que dispongas.
+              </p>
+              <div className="overflow-x-auto mb-6">
+                <table className="w-full text-sm border border-zinc-200 rounded-xl overflow-hidden">
+                  <thead className="bg-amber-50">
+                    <tr>
+                      <th className="text-left p-3 font-bold text-zinc-900">Libro</th>
+                      <th className="text-left p-3 font-bold text-zinc-900">Precio</th>
+                      <th className="text-left p-3 font-bold text-zinc-900">Práctica</th>
+                      <th className="text-left p-3 font-bold text-zinc-900">Ideal para</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-zinc-200">
+                    <tr><td className="p-3 font-medium text-zinc-900">Cambridge English Advanced Trainer</td><td className="p-3">~30€</td><td className="p-3">6 exámenes completos</td><td className="p-3">Autoestudio con muchas prácticas y explicaciones</td></tr>
+                    <tr><td className="p-3 font-medium text-zinc-900">Complete Advanced</td><td className="p-3">~35€</td><td className="p-3">Curso + tests</td><td className="p-3">Partir de un B2 justo y necesitar teoría</td></tr>
+                    <tr><td className="p-3 font-medium text-zinc-900">Compact Advanced</td><td className="p-3">~35€</td><td className="p-3">50-60 h + 1 test</td><td className="p-3">Preparación rápida con poco tiempo</td></tr>
+                    <tr><td className="p-3 font-medium text-zinc-900">Grammar and Vocabulary for Advanced</td><td className="p-3">~28€</td><td className="p-3">Práctica por temas</td><td className="p-3">Reforzar gramática y vocabulario de nivel C1</td></tr>
+                    <tr><td className="p-3 font-medium text-zinc-900">Objective Advanced</td><td className="p-3">~38€</td><td className="p-3">Unidades + 1 test</td><td className="p-3">Estudio progresivo en bloques cortos</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-zinc-600">
+                Sea cual sea el libro, combínalo con simulacros cronometrados. Si dudas si el C1 es realista para tu nivel, lee <a href="/blog/es-dificil-c1-advanced/" className="text-amber-600 hover:underline font-medium">si es difícil aprobar el C1 Advanced</a>; y para presupuestar la convocatoria, consulta el <a href="/blog/precio-cambridge-c1-madrid/" className="text-amber-600 hover:underline font-medium">precio del C1 Cambridge en Madrid</a>.
+              </p>
+            </section>
+
+            {/* Section: Where to download legally */}
+            <section className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6">
+                Dónde descargar PDFs del C1 Advanced legal y gratis
+              </h2>
+              <p className="text-zinc-600 mb-6">
+                Descargar material con copyright desde foros o webs de terceros es ilegal y arriesgado. Estas fuentes son gratuitas y totalmente legales:
+              </p>
+              <div className="space-y-3">
+                {[
+                  { s: "cambridgeenglish.org", d: "Sample papers completos, handbook for teachers y answer keys oficiales, de descarga libre." },
+                  { s: "Archive.org", d: "Préstamo digital legal de libros de gramática y vocabulario con registro gratuito." },
+                  { s: "Test & Train y Write & Improve (Cambridge)", d: "Práctica interactiva y corrección automática de redacciones online, sin coste." },
+                  { s: "Flo-Joe", d: "Ejercicios de Use of English y un banco de vocabulario gratuitos enfocados al examen." },
+                  { s: "YouTube: Cambridge English Spain", d: "Lecciones y explicaciones del formato del examen en vídeo, gratis." },
+                ].map((r, i) => (
+                  <div key={i} className="flex items-start gap-3 bg-zinc-50 rounded-xl p-4">
+                    <CheckCircle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-zinc-900">{r.s}</p>
+                      <p className="text-sm text-zinc-600">{r.d}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
             {/* Section 4 - Study Plan */}
             <section className="mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6">
@@ -417,10 +489,10 @@ export default function PdfsCambridgeAdvancedPage() {
                     </p>
                   </div>
                   <a
-              href="/contacto/"
+              href="/reservar-clase"
                     className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
-                    Solicitar información
+                    Reserva tu clase gratis
                   </a>
                 </div>
 
