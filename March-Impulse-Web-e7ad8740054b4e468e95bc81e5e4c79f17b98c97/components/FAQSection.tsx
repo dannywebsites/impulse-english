@@ -21,6 +21,8 @@ export default function FAQSection({ faqs, title = "Preguntas Frecuentes", class
             <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-${index}`}
                 className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-zinc-50 transition-colors"
               >
                 <h3 className="font-bold text-zinc-900 text-lg pr-4">{faq.question}</h3>
@@ -28,7 +30,7 @@ export default function FAQSection({ faqs, title = "Preguntas Frecuentes", class
                   className={`w-5 h-5 text-accent-blue flex-shrink-0 transition-transform ${openIndex === index ? 'rotate-180' : ''}`}
                 />
               </button>
-              <div className={`px-6 overflow-hidden transition-all duration-300 ${openIndex === index ? 'pb-5 max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+              <div id={`faq-answer-${index}`} role="region" className={`px-6 overflow-hidden transition-all duration-300 ${openIndex === index ? 'pb-5 max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
               </div>
             </div>

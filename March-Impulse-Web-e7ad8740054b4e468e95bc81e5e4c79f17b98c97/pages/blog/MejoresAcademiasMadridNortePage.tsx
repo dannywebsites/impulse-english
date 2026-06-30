@@ -583,8 +583,8 @@ export default function MejoresAcademiasMadridNortePage() {
                 <a href="/academia-ingles-barrio-del-pilar/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Barrio del Pilar</a>
                 <a href="/academia-ingles-la-vaguada/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">La Vaguada</a>
                 <a href="/academia-ingles-mirasierra/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Mirasierra</a>
-                <a href="/academia-ingles-montecarmelo/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Montecarmelo</a>
-                <a href="/academia-ingles-las-tablas/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Las Tablas</a>
+                <a href="/academia-ingles-montecarmelo-las-tablas/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Montecarmelo</a>
+                <a href="/academia-ingles-montecarmelo-las-tablas/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Las Tablas</a>
                 <a href="/academia-ingles-tetuan/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Tetuán</a>
                 <a href="/academia-ingles-plaza-castilla/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Plaza Castilla</a>
                 <a href="/academia-ingles-penagrande/" className="text-emerald-600 hover:underline text-sm bg-emerald-50 px-3 py-1 rounded-full">Peñagrande</a>
@@ -673,7 +673,7 @@ export default function MejoresAcademiasMadridNortePage() {
                 <p className="text-zinc-600 text-sm mt-2">Descubre por qué esta certificación impulsa tu carrera.</p>
               </a>
               <a
-                href="/blog/cursos-ingles-adultos-madrid/"
+                href="/academias-ingles-madrid/adultos/"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <span className="text-emerald-600 text-sm font-medium">Cursos</span>
