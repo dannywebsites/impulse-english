@@ -121,7 +121,8 @@ const schemaGraph = {
         var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
         if (!a) return;
         var href = a.getAttribute('href') || '';
-        if (href.indexOf('wa.me') !== -1 || href.toLowerCase().indexOf('whatsapp') !== -1) {
+        var hl = href.toLowerCase();
+        if (hl.indexOf('wa.me') !== -1 || hl.indexOf('whatsapp.com') !== -1 || hl.indexOf('whatsapp:') !== -1) {
           gtag('event', 'whatsapp_click', { link_url: href, page_path: location.pathname });
         } else if (href.indexOf('tel:') === 0) {
           gtag('event', 'phone_click', { phone_number: href.replace('tel:', ''), page_path: location.pathname });
