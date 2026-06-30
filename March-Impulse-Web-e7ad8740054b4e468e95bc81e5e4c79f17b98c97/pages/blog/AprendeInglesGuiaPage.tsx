@@ -224,7 +224,7 @@ export default function AprendeInglesGuiaPage() {
         <div className="relative -mt-8 mb-12 px-6">
           <div className="container mx-auto max-w-5xl">
             <img
-              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop"
+              src="/images/academy/classroom-facilities-main-classroom.jpg"
               alt="Aprender inglés - estudiantes internacionales"
               className="w-full h-64 md:h-96 object-cover rounded-2xl shadow-xl"
             />

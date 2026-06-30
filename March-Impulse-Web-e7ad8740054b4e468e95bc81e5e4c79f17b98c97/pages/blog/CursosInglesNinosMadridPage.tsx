@@ -533,6 +533,14 @@ export default function CursosInglesNinosMadridPage() {
         </div>
       </section>
 
+      {/* BOOKING-CTA */}
+      <section className="py-16 px-6 bg-accent-blue">
+        <div className="container mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">Reserva tu clase de prueba gratuita</h2>
+          <p className="text-white/90 mb-8">Sin compromiso. Conoce nuestra metodología y a nuestros profesores antes de decidir.</p>
+          <a href="/reservar-clase/" className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold uppercase tracking-wide px-8 py-4 rounded-lg transition-colors">Clase de prueba gratuita</a>
+        </div>
+      </section>
       <Footer />
 
       {/* Schema.org Structured Data */}

@@ -26,24 +26,21 @@ import CookieBanner from '../../components/CookieBanner';
 >
   <!-- Hero Wrapper: Full Screen 100dvh -->
   <div class="relative w-full h-[100dvh] overflow-hidden bg-accent-blue">
-    <!-- DESKTOP BACKGROUND: Video Layer (only loads iframe on xl+ screens) -->
-    <div class="hidden xl:block absolute inset-0 z-0 pointer-events-none" id="hero-video-container">
+    {/* DESKTOP BACKGROUND: static poster. The Vimeo hero video (id 1143999306)
+        returned HTTP 401 (embed not authorized for this domain) and rendered a
+        Vimeo error in the hero. Falling back to the poster image. To restore the
+        video, re-add an iframe-injection script here once the video's Vimeo
+        privacy/domain settings allow impulse-english.es. */}
+    <div class="hidden xl:block absolute inset-0 z-0 pointer-events-none">
+      <img
+        src="/images/academy/hero-poster.jpg"
+        alt="Impulse English Academy, La Vaguada, Barrio del Pilar"
+        class="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+        fetchpriority="high"
+      />
       <div class="absolute inset-0 bg-black/40 z-10"></div>
     </div>
-    <script is:inline>
-      if (window.matchMedia('(min-width: 1280px)').matches) {
-        var c = document.getElementById('hero-video-container');
-        if (c) {
-          var f = document.createElement('iframe');
-          f.src = 'https://player.vimeo.com/video/1143999306?badge=0&autopause=0&player_id=0&app_id=58479&muted=1&loop=1&autoplay=1&background=1';
-          f.className = 'w-full h-full object-cover';
-          f.style.cssText = 'min-width:100%;min-height:100%';
-          f.allow = 'autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media';
-          f.title = 'Impulse English Academy, La Vaguada, Barrio del Pilar.';
-          c.appendChild(f);
-        }
-      }
-    </script>
 
     <!-- MOBILE/TABLET BACKGROUND: Optimized Image Fallback -->
     <div class="xl:hidden absolute inset-0 z-0">
