@@ -2,6 +2,7 @@
 import '../index.css';
 import { generateOrganizationSchema, generateWebSiteSchema } from '../../utils/schemaData';
 import { buildPageTitle } from '../../utils/buildPageTitle';
+import CoursePopup from '../../components/CoursePopup';
 
 interface Props {
   title: string;
@@ -235,6 +236,8 @@ const schemaGraph = {
     <main id="main" class="min-h-screen w-full bg-white flex flex-col font-sans selection:bg-accent-blue selection:text-white">
       <slot />
     </main>
+    <!-- Time-on-page lead-capture popup (20s, page-level-aware) -->
+    <CoursePopup client:idle />
     <script>
       const loadAnalytics = () => {
         import('@vercel/analytics').then(m => m.inject());
