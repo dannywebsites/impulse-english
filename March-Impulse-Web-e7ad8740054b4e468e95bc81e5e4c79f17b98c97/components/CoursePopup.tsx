@@ -9,7 +9,19 @@ const WEBHOOK_URL =
   'https://services.leadconnectorhq.com/hooks/OAJYwGK3D8G66kUMQsht/webhook-trigger/0fe57216-4cdc-42af-b2d6-d401e9015573';
 
 const DISMISS_KEY = 'impulse_popup_dismissed';
-const DELAY_MS = 20000; // fire after 20s on page
+const DELAY_MS = 40000; // fire after 40s on page
+
+// "What are you looking for" — same offering set + values the existing LeadForm
+// uses, so the selection maps onto the same CRM `level` field.
+const COURSE_OPTIONS: { value: string; label: string }[] = [
+  { value: 'infantil', label: 'Infantil' },
+  { value: 'primaria', label: 'Primaria' },
+  { value: 'secundaria', label: 'Secundaria' },
+  { value: 'adulto', label: 'Adulto' },
+  { value: 'one-to-one', label: 'One to One' },
+  { value: 'online', label: 'Online' },
+  { value: 'no-se', label: 'No lo sé todavía' },
+];
 
 function alreadyDismissed(): boolean {
   try {
@@ -39,11 +51,13 @@ export default function CoursePopup() {
   const [variant, setVariant] = useState<PopupVariant | null>(null);
   const [visible, setVisible] = useState(false); // overlay in the DOM
   const [shown, setShown] = useState(false); // drives the enter/exit transition
+  const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [course, setCourse] = useState('');
   const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const emailRef = useRef<HTMLInputElement>(null);
+  const firstNameRef = useRef<HTMLInputElement>(null);
 
   function close() {
     markDismissed();
@@ -57,11 +71,11 @@ export default function CoursePopup() {
     setStatus('loading');
     try {
       const payload = {
-        name: '',
+        name: firstName.trim(),
         email: email.trim(),
         phone: phone.trim(),
-        level: variant.level,
-        source: variant.source,
+        level: course, // what they're looking for (infantil, primaria, ...)
+        source: variant.source, // which page/level produced the lead (popup-c1, ...)
         page_url: window.location.href,
         timestamp: new Date().toISOString(),
       };
@@ -77,7 +91,7 @@ export default function CoursePopup() {
       window.dataLayer.push({
         event: 'generate_lead',
         form_type: 'popup',
-        course_name: variant.level || 'General',
+        course_name: course || 'General',
         location_preference: 'Barrio del Pilar',
       });
 
@@ -117,7 +131,7 @@ export default function CoursePopup() {
       if (e.key === 'Escape') close();
     };
     document.addEventListener('keydown', onKey);
-    const ft = window.setTimeout(() => emailRef.current?.focus(), 80);
+    const ft = window.setTimeout(() => firstNameRef.current?.focus(), 80);
     return () => {
       document.body.style.overflow = prevOverflow;
       document.removeEventListener('keydown', onKey);
@@ -168,7 +182,16 @@ export default function CoursePopup() {
 
             <form onSubmit={handleSubmit} className="space-y-3">
               <input
-                ref={emailRef}
+                ref={firstNameRef}
+                type="text"
+                required
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                placeholder="Tu nombre"
+                aria-label="Nombre"
+                className={inputClass}
+              />
+              <input
                 type="email"
                 required
                 value={email}
@@ -186,6 +209,20 @@ export default function CoursePopup() {
                 aria-label="Teléfono"
                 className={inputClass}
               />
+              <select
+                required
+                value={course}
+                onChange={(e) => setCourse(e.target.value)}
+                aria-label="¿Qué buscas?"
+                className={inputClass}
+              >
+                <option value="">¿Qué buscas?</option>
+                {COURSE_OPTIONS.map((opt) => (
+                  <option key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </option>
+                ))}
+              </select>
 
               <label className="flex items-start gap-2 text-xs text-zinc-600">
                 <input
