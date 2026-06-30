@@ -33,13 +33,21 @@ export default function ReservarClasePage() {
         body: JSON.stringify(payload)
       });
 
-      // Push lead event to GTM dataLayer
+      // Push lead event to GTM dataLayer (GTM → Google Ads conversion)
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: 'generate_lead',
         form_type: 'enrollment',
         course_name: formData.level || 'General',
         location_preference: 'Barrio del Pilar',
+      });
+
+      // Send the same event straight to GA4. GA4 runs via the standalone
+      // gtag (not through GTM), so the dataLayer push above never reaches it.
+      window.gtag?.('event', 'generate_lead', {
+        form_type: 'enrollment',
+        course_name: formData.level || 'General',
+        source: 'reservar-clase',
       });
 
       setStatus('success');

@@ -112,6 +112,21 @@ const schemaGraph = {
       })();
     </script>
 
+    <!-- Contact-click tracking → GA4 (phone + WhatsApp). gtag() is defined above. -->
+    <script is:inline>
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!a) return;
+        var href = a.getAttribute('href') || '';
+        var hl = href.toLowerCase();
+        if (hl.indexOf('wa.me') !== -1 || hl.indexOf('whatsapp.com') !== -1 || hl.indexOf('whatsapp:') !== -1) {
+          gtag('event', 'whatsapp_click', { link_url: href, page_path: location.pathname });
+        } else if (href.indexOf('tel:') === 0) {
+          gtag('event', 'phone_click', { phone_number: href.replace('tel:', ''), page_path: location.pathname });
+        }
+      }, { passive: true });
+    </script>
+
     <!-- SEO Meta Tags (server-rendered) -->
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
