@@ -10,7 +10,8 @@ export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Tiempo se Tarda en Preparar el B1 desde Cero?",
     description: "Preparar el B1 desde cero lleva 12-18 meses con estudio regular. Desde nivel A2: 10-12 semanas. Plan detallado y horas necesarias por nivel.",
     url: `${businessInfo.url}/blog/tiempo-preparar-b1-cero`,
-    datePublished: "2025-03-01"
+    datePublished: "2025-03-01",
+    dateModified: "2026-06-30"
   });
 
 export const faqItems = [
@@ -35,6 +36,14 @@ export const faqItems = [
     {
       question: "¿A qué edad es más difícil preparar el B1 desde cero?",
       answer: "No existe una edad límite para aprender inglés. Los adultos tienen ventajas como la capacidad analítica y la motivación clara. Si bien los niños aprenden pronunciación más naturalmente, los adultos compensan con estrategias de estudio más eficientes. Estudiantes de 40, 50 y 60 años obtienen su B1 regularmente."
+    },
+    {
+      question: "¿Cuántas palabras de vocabulario necesito para aprobar el B1?",
+      answer: "El nivel B1 requiere manejar entre 2.500 y 3.500 palabras activas (las que usas al hablar y escribir) y reconocer bastantes más de forma pasiva. No necesitas memorizar listas enormes: es más efectivo aprender vocabulario por temas frecuentes como trabajo, viajes, salud o tecnología, y reforzarlo con lectura y repaso espaciado."
+    },
+    {
+      question: "¿Cuánto se tarda en pasar del B1 al B2?",
+      answer: "Desde un B1 consolidado, alcanzar el B2 lleva de media entre 6 y 9 meses con estudio regular, unas 150-200 horas de estudio guiado. Es un salto exigente porque el B2 introduce estructuras más complejas y vocabulario más matizado, así que conviene afianzar bien el B1 antes de dar el paso."
     }
   ];
 
@@ -408,7 +417,7 @@ export default function TiempoPreparaB1CeroPage() {
 
               <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Preparar el <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline font-medium">B1 Preliminary</a> desde cero requiere entre 12 y 18 meses con dedicación regular. Desde un A2 consolidado, el plazo se reduce a 10-16 semanas. La clave está en la constancia, un buen plan de estudio y la combinación de clases en academia con práctica autónoma.
+                  Preparar el <a href="/examenes-cambridge/b1-preliminary/" className="text-emerald-600 hover:underline font-medium">B1 Preliminary</a> desde cero requiere entre 12 y 18 meses con dedicación regular. Desde un A2 consolidado, el plazo se reduce a 10-16 semanas. La clave está en la constancia, un buen plan de estudio y la combinación de clases en academia con práctica autónoma. Si quieres ver el formato completo del examen, consulta nuestra <a href="/blog/cambridge-b1-guia/" className="text-emerald-600 hover:underline font-medium">guía del examen Cambridge B1</a>.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   En <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> diseñamos planes de preparación personalizados según tu nivel de partida y tu fecha objetivo. Nuestra <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">metodología</a> ha ayudado a cientos de estudiantes a alcanzar su B1 en los plazos marcados.
@@ -423,7 +432,7 @@ export default function TiempoPreparaB1CeroPage() {
                 Realiza una prueba de nivel gratuita y te diseñamos un plan personalizado para alcanzar tu B1 en el menor tiempo posible.
               </p>
               <a
-              href="/contacto/"
+              href="/reservar-clase"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Prueba de nivel gratis
