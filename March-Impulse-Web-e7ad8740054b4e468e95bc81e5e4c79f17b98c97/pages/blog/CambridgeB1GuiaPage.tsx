@@ -6,21 +6,17 @@ import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
     headline: "Examen Cambridge B1 Preliminary: Guía Completa 2026",
     description: "Guía completa del B1 Preliminary: estructura, formato del examen, precio, preparación y estrategias para aprobar con éxito.",
     url: `${businessInfo.url}/blog/cambridge-b1-guia`,
-    datePublished: "2025-01-01"
+    datePublished: "2025-01-01",
+    dateModified: "2026-06-30"
   });
 
-export default function CambridgeB1GuiaPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const newFaqItems = [
+export const faqs: FAQItem[] = [
     {
       question: "¿Cuánto cuesta inscribirse al examen Cambridge B1 en España?",
       answer: "El precio del examen Cambridge B1 Preliminary varía entre €165-185 según el centro examinador y la modalidad elegida. La versión digital suele costar aproximadamente €170, mientras la versión papel puede alcanzar €180. Inscripciones tardías tienen recargo adicional de €55, por lo que conviene registrarse 3-4 semanas antes de la fecha deseada."
@@ -40,8 +36,28 @@ export default function CambridgeB1GuiaPage() {
     {
       question: "¿El certificado B1 sirve para estudiar en universidades extranjeras?",
       answer: "El B1 Preliminary satisface requisitos de inglés para programas de formación profesional y algunos grados asociados, pero la mayoría de universidades anglófonas exigen nivel B2 (FCE) o superior para admisión a grados completos. Es excelente como paso intermedio antes de preparar B2 First, demostrando progreso documentado."
+    },
+    {
+      question: "¿El examen B1 Preliminary se hace en papel o por ordenador?",
+      answer: "Puedes elegir entre la modalidad en papel y la versión por ordenador; ambas evalúan exactamente las mismas competencias y tienen idéntico valor. La versión por ordenador suele ofrecer más fechas disponibles y resultados más rápidos (2-3 semanas frente a 4-6 de la versión en papel). Elige la modalidad con la que te sientas más cómodo escribiendo."
+    },
+    {
+      question: "¿Cuál es la diferencia entre B1 Preliminary y B1 Preliminary for Schools?",
+      answer: "El contenido y el nivel son idénticos: ambos certifican un B1 del MCER y otorgan el mismo certificado. La única diferencia es la temática de los textos y las tareas. La versión for Schools usa contextos pensados para estudiantes en edad escolar, mientras que la estándar usa situaciones más generales y profesionales."
+    },
+    {
+      question: "¿Cuántas veces puedo repetir el examen B1 si no apruebo?",
+      answer: "No hay límite de intentos. Si no alcanzas los 140 puntos, puedes volver a presentarte en cualquier convocatoria posterior tantas veces como necesites. Cada intento es un examen completo nuevo, pero la preparación previa juega a tu favor: revisa el desglose de puntuación por destreza para enfocar el repaso en tus puntos débiles."
     }
   ];
+
+export default function CambridgeB1GuiaPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const newFaqItems = faqs;
 
   const examStructure = [
     {
@@ -102,12 +118,12 @@ export default function CambridgeB1GuiaPage() {
                   <div className="w-8 h-px bg-white/40"></div>
                   <span className="text-white/50 text-xs font-display flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5" />
-                    Actualizado: Diciembre 2025
+                    Actualizado: Junio 2026
                   </span>
                 </div>
 
                 <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                  Examen Cambridge B1 Preliminary: Guía Completa 2025
+                  Examen Cambridge B1 Preliminary: Guía Completa 2026
                 </h1>
                 <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
                 <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -127,6 +143,8 @@ export default function CambridgeB1GuiaPage() {
                 <li><a href="#estructura" className="text-emerald-600 hover:text-emerald-700 transition-colors">→ Estructura y Formato del Examen</a></li>
                 <li><a href="#puntuacion" className="text-emerald-600 hover:text-emerald-700 transition-colors">→ Puntuación y Certificación</a></li>
                 <li><a href="#preparacion" className="text-emerald-600 hover:text-emerald-700 transition-colors">→ Cómo Prepararte Eficazmente</a></li>
+                <li><a href="#consejos" className="text-emerald-600 hover:text-emerald-700 transition-colors">→ 8 Consejos para Aprobar a la Primera</a></li>
+                <li><a href="#niveles" className="text-emerald-600 hover:text-emerald-700 transition-colors">→ B1 frente a A2 y B2</a></li>
                 <li><a href="#faq" className="text-emerald-600 hover:text-emerald-700 transition-colors">→ Preguntas Frecuentes</a></li>
               </ul>
             </div>
@@ -240,6 +258,22 @@ export default function CambridgeB1GuiaPage() {
                   <p className="text-gray-700 text-sm">Dos tareas obligatorias: Parte 1 es siempre un email de 100 palabras. Parte 2 ofrece elegir entre escribir un artículo o una historia de unas 100 palabras.</p>
                 </div>
 
+                <div className="bg-white border border-gray-200 rounded-xl p-6">
+                  <h3 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <BookOpen className="w-5 h-5 text-emerald-600" />
+                    Listening
+                  </h3>
+                  <p className="text-gray-700 text-sm">25 preguntas en 4 partes con anuncios, diálogos y conversaciones. Cada audio se reproduce dos veces, así que aprovecha la primera escucha para localizar la respuesta y la segunda para confirmarla.</p>
+                </div>
+
+                <div className="bg-white border border-gray-200 rounded-xl p-6">
+                  <h3 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <BookOpen className="w-5 h-5 text-emerald-600" />
+                    Speaking
+                  </h3>
+                  <p className="text-gray-700 text-sm">Se realiza en parejas y dura entre 10 y 12 minutos: entrevista personal, descripción individual de una foto, tarea colaborativa con tu compañero y conversación final sobre el mismo tema.</p>
+                </div>
+
               </div>
             </section>
 
@@ -260,11 +294,11 @@ export default function CambridgeB1GuiaPage() {
                     <div className="text-gray-600 text-sm">Nivel A2</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 text-center border-2 border-emerald-500">
-                    <div className="text-emerald-600 font-bold text-lg">140-149</div>
+                    <div className="text-emerald-600 font-bold text-lg">140-152</div>
                     <div className="text-gray-600 text-sm">Pass</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 text-center">
-                    <div className="text-emerald-600 font-bold text-lg">150-159</div>
+                    <div className="text-emerald-600 font-bold text-lg">153-159</div>
                     <div className="text-gray-600 text-sm">Pass with Merit</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 text-center">
@@ -330,6 +364,65 @@ export default function CambridgeB1GuiaPage() {
               </div>
             </section>
 
+            {/* Section 5 - Tips */}
+            <section id="consejos" className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                8 Consejos para Aprobar el B1 Preliminary a la Primera
+              </h2>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Estos son los hábitos que marcan la diferencia entre quienes aprueban a la primera y quienes tienen que repetir convocatoria:
+              </p>
+              <div className="space-y-3">
+                {[
+                  { t: "Haz exámenes completos cronometrados", d: "Reproduce las condiciones reales desde el primer mes. Acostúmbrate a los 140 minutos y a cambiar de destreza sin perder concentración." },
+                  { t: "Domina el formato de cada parte", d: "Cada parte del Reading y del Listening tiene un tipo de pregunta fijo. Saber qué esperar te ahorra minutos valiosos el día del examen." },
+                  { t: "Respeta el límite de palabras en Writing", d: "Las dos tareas piden unas 100 palabras. Escribir mucho menos o mucho más resta puntos. Practica contando palabras hasta que te salga natural." },
+                  { t: "Aprende vocabulario y conectores por temas", d: "Familia, trabajo, viajes, tecnología y ocio son recurrentes. Un banco de vocabulario por temas mejora Writing y Speaking a la vez." },
+                  { t: "Practica el Speaking en voz alta y en pareja", d: "El Speaking se hace en parejas. Graba tus respuestas, practica describir una foto en un minuto y ensaya la tarea colaborativa con un compañero." },
+                  { t: "Trabaja el Listening con audio auténtico", d: "Pódcasts como 6 Minute English de la BBC entrenan tu oído al acento y al ritmo reales. Recuerda que cada audio se reproduce dos veces." },
+                  { t: "Corrige tus errores, no solo acumules tests", d: "Lleva un registro de los fallos que repites. Media hora analizando un examen corregido vale más que dos exámenes sin revisar." },
+                  { t: "Llega descansado y gestiona los nervios", d: "Duerme bien la noche anterior, revisa la logística del centro y dedica los primeros segundos de cada parte a leer bien las instrucciones." },
+                ].map((c, i) => (
+                  <div key={i} className="flex gap-4 bg-white border border-gray-200 rounded-xl p-5">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center">{i + 1}</div>
+                    <div>
+                      <h3 className="font-bold text-gray-900 mb-1">{c.t}</h3>
+                      <p className="text-gray-700 text-sm">{c.d}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Section 6 - Levels comparison */}
+            <section id="niveles" className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                ¿Es el B1 tu Nivel? B1 frente a A2 y B2
+              </h2>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Elegir el examen correcto te ahorra tiempo y dinero. Esta comparativa rápida te ayuda a situarte antes de inscribirte:
+              </p>
+              <div className="overflow-x-auto mb-6">
+                <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-lg">
+                  <thead>
+                    <tr className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
+                      <th className="text-left p-4 font-semibold">Nivel</th>
+                      <th className="text-left p-4 font-semibold">Examen Cambridge</th>
+                      <th className="text-left p-4 font-semibold">Qué demuestra</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="bg-gray-50"><td className="p-4 font-medium text-gray-900">A2</td><td className="p-4 text-gray-700">A2 Key (KET)</td><td className="p-4 text-gray-700 text-sm">Inglés básico para situaciones sencillas y predecibles.</td></tr>
+                    <tr className="bg-white"><td className="p-4 font-medium text-gray-900">B1</td><td className="p-4 text-gray-700">B1 Preliminary (PET)</td><td className="p-4 text-gray-700 text-sm">Inglés intermedio para trabajo, estudios y viajes cotidianos.</td></tr>
+                    <tr className="bg-gray-50"><td className="p-4 font-medium text-gray-900">B2</td><td className="p-4 text-gray-700">B2 First (FCE)</td><td className="p-4 text-gray-700 text-sm">Inglés sólido exigido por la mayoría de universidades y empresas.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Si dudas entre presentarte al B1 o dar el salto al B2, te lo explicamos en detalle en <a href="/blog/b1-vs-b2-que-nivel-necesito/" className="text-emerald-600 hover:underline font-medium">B1 vs B2: qué nivel necesitas</a>. Y si quieres calcular tu inversión, consulta el <a href="/blog/precio-b1-cambridge/" className="text-emerald-600 hover:underline font-medium">precio del examen B1 Cambridge</a> actualizado.
+              </p>
+            </section>
+
             {/* FAQ Section */}
             <section id="faq" className="mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
@@ -383,10 +476,10 @@ export default function CambridgeB1GuiaPage() {
                 En Impulse English Academy te preparamos con metodología probada para aprobar el B1 Preliminary con la mejor puntuación.
               </p>
               <a
-              href="/contacto/"
+              href="/reservar-clase"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
-                Solicitar información
+                Reserva tu clase gratis
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
