@@ -2,9 +2,17 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CursosInglesNinosMadridPage from '../../../pages/blog/CursosInglesNinosMadridPage';
 import CookieBanner from '../../../components/CookieBanner';
+import { generateBreadcrumbSchema } from '../../../utils/schemaData';
+
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Academias Madrid', url: 'https://impulse-english.es/academias-ingles-madrid/' },
+  { name: 'Cursos Niños Madrid', url: 'https://impulse-english.es/academias-ingles-madrid/ninos/' },
+]);
 ---
 
 <BaseLayout
+  schemas={[breadcrumb]}
   title="Inglés para Niños en Madrid"
   description="Guía completa de cursos de inglés para niños en Madrid. Metodologías por edad, preparación Cambridge Young Learners, precios y academias especializadas desde 2 años."
   keywords="cursos inglés niños madrid, academia inglés infantil madrid, great little people madrid, cambridge young learners, inglés niños 2-17 años, metodología inglés niños"
