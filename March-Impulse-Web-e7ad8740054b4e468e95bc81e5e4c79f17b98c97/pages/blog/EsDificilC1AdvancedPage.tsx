@@ -11,7 +11,8 @@ export const articleSchema = generateArticleSchema({
     headline: "¿Es Muy Difícil el C1 Advanced? Dificultad Real del CAE",
     description: "El C1 Advanced tiene una tasa de aprobados del 55-60%. Descubre qué lo hace difícil, las partes más exigentes y cómo prepararte para aprobar.",
     url: `${businessInfo.url}/blog/es-dificil-c1-advanced`,
-    datePublished: "2025-03-01"
+    datePublished: "2025-03-01",
+    dateModified: "2026-06-30"
   });
 
 export const faqItems: FAQItem[] = [
@@ -36,6 +37,14 @@ export const faqItems: FAQItem[] = [
     {
       question: "¿El C1 Advanced es más difícil que el IELTS banda 7?",
       answer: "Son comparables en nivel pero diferentes en formato. El C1 Advanced tiene un formato más estructurado y predecible, lo que permite una preparación más específica. El IELTS es más impredecible en contenido pero potencialmente más permisivo en puntuación. Muchos candidatos consideran el Use of English del CAE la parte más difícil de ambos exámenes combinados."
+    },
+    {
+      question: "¿Cuánto se tarda en preparar el C1 Advanced desde un B2?",
+      answer: "Desde un B2 consolidado (idealmente un B2 First con Grade A), preparar el C1 Advanced lleva de media entre 5 y 8 meses con estudio regular de 6-8 horas semanales, unas 150-200 horas de estudio guiado. Partir de un B2 justo alarga el plazo, porque primero hay que afianzar la base antes de trabajar el formato específico del C1."
+    },
+    {
+      question: "¿Merece la pena sacarse el C1 Advanced?",
+      answer: "Para la mayoría de perfiles, sí. El C1 abre puertas en multinacionales, posgrados internacionales, oposiciones exigentes y universidades anglófonas, y acredita un nivel que diferencia tu CV del B2, mucho más común. Si tu objetivo profesional o académico exige inglés avanzado, el retorno compensa el esfuerzo de preparación."
     }
   ];
 
@@ -337,7 +346,7 @@ export default function EsDificilC1AdvancedPage() {
               </div>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                En <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a>, nuestros programas de preparación C1 están diseñados para maximizar tu rendimiento en cada parte del examen. Combinamos inmersión comunicativa con técnicas específicas de examen que han demostrado tasas de aprobado superiores al 75%.
+                En <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a>, nuestros programas de preparación C1 están diseñados para maximizar tu rendimiento en cada parte del examen. Combinamos inmersión comunicativa con técnicas específicas de examen que han demostrado tasas de aprobado superiores al 75%. Para empezar por tu cuenta, reúne los <a href="/blog/pdfs-cambridge-advanced/" className="text-emerald-600 hover:underline font-medium">PDFs y libros oficiales del C1</a> y consulta el <a href="/blog/precio-cambridge-c1-madrid/" className="text-emerald-600 hover:underline font-medium">precio del examen C1 en Madrid</a>.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
@@ -400,10 +409,10 @@ export default function EsDificilC1AdvancedPage() {
                 Nuestros programas de preparación C1 tienen una tasa de aprobados superior al 75%. Descubre cómo podemos ayudarte.
               </p>
               <a
-              href="/contacto/"
+              href="/reservar-clase"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
-                Solicitar información
+                Reserva tu clase gratis
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>

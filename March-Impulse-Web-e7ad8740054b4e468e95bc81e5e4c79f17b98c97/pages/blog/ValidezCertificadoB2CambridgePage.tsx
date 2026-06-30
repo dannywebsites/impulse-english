@@ -11,7 +11,8 @@ export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Dura el Certificado B2 de Cambridge? Validez y Caducidad",
     description: "El certificado B2 First de Cambridge no caduca nunca. Descubre su validez permanente, reconocimiento internacional y diferencias con IELTS y TOEFL.",
     url: `${businessInfo.url}/blog/validez-certificado-b2-cambridge`,
-    datePublished: "2025-03-01"
+    datePublished: "2025-03-01",
+    dateModified: "2026-06-30"
   });
 
 export const faqItems: FAQItem[] = [
@@ -36,6 +37,14 @@ export const faqItems: FAQItem[] = [
     {
       question: "¿Puedo volver a examinarme para mejorar mi nota del B2?",
       answer: "Sí, puedes presentarte al B2 First tantas veces como desees para mejorar tu calificación. No hay restricción de intentos. Si obtuviste un Grade C y quieres alcanzar un Grade A (que equivale al nivel C1), puedes volver a examinarte. Tu certificado anterior seguirá siendo válido, y además tendrás el nuevo con la puntuación mejorada."
+    },
+    {
+      question: "¿Necesito el certificado físico o vale el digital?",
+      answer: "Ambos formatos tienen la misma validez. Cambridge emite un certificado físico y, además, un resultado verificable online. Para la mayoría de trámites basta con el Statement of Results digital o el certificado escaneado, ya que las instituciones pueden comprobar su autenticidad con el sistema de verificación de Cambridge. Conserva el documento físico para procesos que exijan el original."
+    },
+    {
+      question: "¿Cómo se verifica que un certificado B2 First es auténtico?",
+      answer: "Cambridge ofrece un servicio de verificación de resultados online: la institución que recibe tu certificado introduce tu número de candidato y tu Secret Number y comprueba directamente con Cambridge la validez del resultado. Precisamente por eso el certificado no caduca y puede confirmarse en cualquier momento, incluso años después del examen."
     }
   ];
 
@@ -287,7 +296,7 @@ export default function ValidezCertificadoB2CambridgePage() {
                     <Target className="w-5 h-5 text-emerald-600" />
                     Para subir de nivel
                   </h3>
-                  <p className="text-gray-700">Si tu inglés ha mejorado significativamente desde que obtuviste el B2, puede ser más beneficioso presentarte directamente al <a href="/examenes-cambridge/b2-first/" className="text-emerald-600 hover:underline">C1 Advanced</a> para obtener una certificación que refleje tu nivel actual y abra más puertas profesionales.</p>
+                  <p className="text-gray-700">Si tu inglés ha mejorado significativamente desde que obtuviste el B2, puede ser más beneficioso presentarte directamente al <a href="/examenes-cambridge/c1-advanced/" className="text-emerald-600 hover:underline">C1 Advanced</a> para obtener una certificación que refleje tu nivel actual y abra más puertas profesionales.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">
@@ -401,10 +410,10 @@ export default function ValidezCertificadoB2CambridgePage() {
                 En Impulse English Academy te preparamos con metodología probada para aprobar el B2 First con la mejor puntuación posible. Un certificado para toda la vida.
               </p>
               <a
-              href="/contacto/"
+              href="/reservar-clase"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
-                Solicitar información
+                Reserva tu clase gratis
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>

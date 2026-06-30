@@ -10,7 +10,8 @@ export const articleSchema = generateArticleSchema({
     headline: "B1 vs B2 Cambridge: ¿Qué Nivel Necesitas?",
     description: "Compara B1 y B2 de Cambridge: dificultad, reconocimiento laboral, uso académico y precio. Guía para elegir el nivel que necesitas según tu situación.",
     url: `${businessInfo.url}/blog/b1-vs-b2-que-nivel-necesito`,
-    datePublished: "2025-03-01"
+    datePublished: "2025-03-01",
+    dateModified: "2026-06-30"
   });
 
 export const faqItems = [
@@ -35,6 +36,14 @@ export const faqItems = [
     {
       question: "¿Puedo presentarme directamente al B2 sin haber hecho el B1?",
       answer: "Sí, no es obligatorio hacer el B1 antes. El B2 certifica el nivel independientemente del recorrido previo."
+    },
+    {
+      question: "¿Cuántos puntos necesito para aprobar cada examen?",
+      answer: "En la Cambridge English Scale, el B1 Preliminary se aprueba con 140 puntos (rango 120-170) y el B2 First con 160 puntos (rango 140-190). En ambos, una puntuación alta puede acreditar el nivel inmediatamente superior: 160 o más en el B1 certifica un B2, y 180 o más en el B2 certifica un C1."
+    },
+    {
+      question: "¿Qué pasa si me presento al B2 First y no llego al aprobado?",
+      answer: "Si te presentas al B2 First y obtienes entre 140 y 159 puntos, no apruebas el B2 pero recibes un certificado oficial de nivel B1 como reconocimiento. Por debajo de 140 no se emite certificado. Es una red de seguridad: aun fallando el B2 puedes salir con una acreditación B1 válida y permanente."
     }
   ];
 
@@ -380,7 +389,7 @@ export default function B1VsB2QueNivelNecesitoPage() {
                 Una prueba de nivel gratuita te dirá exactamente si estás listo para B1 o B2 y cuánto tiempo necesitarías prepararte.
               </p>
               <a
-              href="/contacto/"
+              href="/reservar-clase"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Prueba de nivel gratuita
