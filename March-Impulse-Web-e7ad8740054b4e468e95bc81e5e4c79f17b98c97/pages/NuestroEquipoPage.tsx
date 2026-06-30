@@ -127,15 +127,15 @@ export default function NuestroEquipoPage() {
               </h2>
               <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
                 <p>
-                  Lorem ipsum dolor sit amet. <strong className="text-zinc-900">[PLACEHOLDER: Añadir biografía de JP aquí — cualificaciones, experiencia, especialidades, filosofía de enseñanza]</strong>
+                  JP es el director de estudios de Impulse English Academy La Vaguada y suma más de diez años de experiencia enseñando inglés. Antes de instalarse en Madrid vivió diez años en Irlanda. Es experto en exámenes Cambridge y en la adquisición temprana del idioma, y dirige el día a día académico del centro. Es, sencillamente, quien hace posible todo esto: un apasionado de la enseñanza de idiomas que se vuelca en cada alumno y en cada profesor del equipo.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
                 {[
-                  { icon: <GraduationCap className="w-6 h-6" />, text: "[PLACEHOLDER: Cualificación principal]" },
-                  { icon: <Award className="w-6 h-6" />, text: "[PLACEHOLDER: Certificación o logro]" },
-                  { icon: <Users className="w-6 h-6" />, text: "[PLACEHOLDER: Especialidad o experiencia]" }
+                  { icon: <GraduationCap className="w-6 h-6" />, text: "Más de 10 años enseñando inglés" },
+                  { icon: <Award className="w-6 h-6" />, text: "Experto en exámenes Cambridge" },
+                  { icon: <Users className="w-6 h-6" />, text: "Especialista en adquisición temprana del idioma" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3 p-4 bg-zinc-50 rounded-xl">
                     <div className="text-accent-blue flex-shrink-0 mt-0.5">{item.icon}</div>
@@ -168,15 +168,15 @@ export default function NuestroEquipoPage() {
               </h2>
               <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
                 <p>
-                  Lorem ipsum dolor sit amet. <strong className="text-zinc-900">[PLACEHOLDER: Añadir biografía de Danny aquí — cualificaciones, experiencia, especialidades, filosofía de enseñanza]</strong>
+                  Daniel Fitzpatrick es profesor titulado de educación física e idiomas y licenciado en Marketing por la University of Essex. Su especialidad es el inglés de negocios: le apasiona ayudar a los alumnos a dominar el inglés para acceder a mejores oportunidades laborales. Irlandés afincado en Madrid desde hace 12 años, une su experiencia en el mundo profesional con la enseñanza para que cada estudiante trabaje un inglés práctico y aplicable a su carrera.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
                 {[
-                  { icon: <GraduationCap className="w-6 h-6" />, text: "[PLACEHOLDER: Cualificación principal]" },
-                  { icon: <Award className="w-6 h-6" />, text: "[PLACEHOLDER: Certificación o logro]" },
-                  { icon: <Users className="w-6 h-6" />, text: "[PLACEHOLDER: Especialidad o experiencia]" }
+                  { icon: <GraduationCap className="w-6 h-6" />, text: "Profesor titulado de educación física e idiomas" },
+                  { icon: <Award className="w-6 h-6" />, text: "Licenciado en Marketing, University of Essex" },
+                  { icon: <Users className="w-6 h-6" />, text: "Especialista en inglés de negocios" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3 p-4 bg-white rounded-xl">
                     <div className="text-accent-blue flex-shrink-0 mt-0.5">{item.icon}</div>
@@ -187,7 +187,7 @@ export default function NuestroEquipoPage() {
 
               <div className="mt-6">
                 <p className="text-zinc-500 text-sm">
-                  Danny trabaja con estudiantes de <a href="/cursos-ingles/infantil/" className="text-accent-blue hover:underline">primaria y secundaria</a> y apoya la formación <a href="/cursos-ingles/adultos/" className="text-accent-blue hover:underline">de adultos</a>.
+                  Danny se especializa en <a href="/cursos-ingles/adultos/" className="text-accent-blue hover:underline">inglés para adultos</a> e inglés de negocios, y ayuda a profesionales a usar el inglés para impulsar su carrera.
                 </p>
               </div>
             </div>
