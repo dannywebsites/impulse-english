@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import CambridgeB1GuiaPage, { articleSchema } from '../../../pages/blog/CambridgeB1GuiaPage';
+import CambridgeB1GuiaPage, { articleSchema, faqs } from '../../../pages/blog/CambridgeB1GuiaPage';
 import CookieBanner from '../../../components/CookieBanner';
+import { generateFAQSchema } from '../../../utils/schemaData';
 
 const schemas = [
   articleSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
 ];
 ---
 
