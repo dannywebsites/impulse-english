@@ -2,9 +2,17 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CertificacionesInglesMadridPage from '../../../pages/blog/CertificacionesInglesMadridPage';
 import CookieBanner from '../../../components/CookieBanner';
+import { generateBreadcrumbSchema } from '../../../utils/schemaData';
+
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Academias Madrid', url: 'https://impulse-english.es/academias-ingles-madrid/' },
+  { name: 'Certificaciones Madrid', url: 'https://impulse-english.es/academias-ingles-madrid/certificaciones/' },
+]);
 ---
 
 <BaseLayout
+  schemas={[breadcrumb]}
   title="Certificaciones Inglés Madrid"
   description="Comparativa de certificaciones de inglés en Madrid: Cambridge, Linguaskill, IELTS y TOEFL. Precios, centros oficiales, fechas y cómo elegir la certificación ideal."
   keywords="certificaciones inglés madrid, cambridge madrid, linguaskill madrid, ielts madrid, toefl madrid, academias oficiales cambridge, exámenes oficiales inglés"

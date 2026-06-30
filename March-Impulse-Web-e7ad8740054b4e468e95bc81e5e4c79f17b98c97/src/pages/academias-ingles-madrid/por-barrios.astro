@@ -2,9 +2,17 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AcademiasPorBarriosMadridPage from '../../../pages/blog/AcademiasPorBarriosMadridPage';
 import CookieBanner from '../../../components/CookieBanner';
+import { generateBreadcrumbSchema } from '../../../utils/schemaData';
+
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Academias Madrid', url: 'https://impulse-english.es/academias-ingles-madrid/' },
+  { name: 'Academias por Barrios Madrid', url: 'https://impulse-english.es/academias-ingles-madrid/por-barrios/' },
+]);
 ---
 
 <BaseLayout
+  schemas={[breadcrumb]}
   title="Academias Inglés por Barrios Madrid"
   description="Encuentra las mejores academias de inglés cerca de ti en Madrid: Chamberí, Salamanca, Centro, Barrio del Pilar, La Vaguada. Comparativa de precios 55-180€/mes con transporte y recomendaciones."
   keywords="academias inglés Madrid, academias inglés barrios Madrid, mejor academia inglés Madrid norte, inglés Barrio del Pilar, academia inglés La Vaguada, clases inglés cerca, academias baratas Madrid"
