@@ -16,7 +16,7 @@ which every page routes through (directly or via `ArticleLayout` / `CourseLayout
 | Tool | ID | Where |
 |------|----|-------|
 | Google Tag Manager | `GTM-TDC7CQDD` | `src/layouts/BaseLayout.astro` (loader + `<noscript>` iframe) |
-| Google Analytics 4 | `G-WN5973VY1M` | `src/layouts/BaseLayout.astro` (standalone `gtag.js`) |
+| Google Analytics 4 | `G-KNMS5YW69T` (property 503609664, its only stream) | `src/layouts/BaseLayout.astro` (standalone `gtag.js`, `send_page_view: false`) **and** GA4 event tags inside GTM (send `page_view`, `ph_call_click`) |
 | Google Ads | `AW-11461982741` | `src/layouts/BaseLayout.astro` (`gtag('config', …)`) |
 | Vercel Web Analytics + Speed Insights | — (cookieless) | `src/layouts/BaseLayout.astro` (dynamic import) |
 | Meta Pixel | **not installed** | — (deliberately omitted) |
@@ -59,9 +59,13 @@ Keep these in sync whenever a tag is added or removed.
 
 ## How to verify
 
-1. **GA4 double-count check (do first):** in GTM container `GTM-TDC7CQDD` → Tags, confirm there
-   is **no** GA4 Configuration tag for `G-WN5973VY1M`. GA4 is loaded standalone in `BaseLayout`,
-   so a GA4 tag in GTM would double-count every pageview. Keep GA4 in exactly one place.
+1. **GA4 double-count check (do first):** GA4 stream `G-KNMS5YW69T` is fed from TWO places:
+   GA4 event tags inside GTM `GTM-TDC7CQDD` (they send `page_view` + `ph_call_click`) and the
+   standalone `gtag.js` in `BaseLayout` (sends `whatsapp_click`/`phone_click`/`generate_lead`,
+   with `send_page_view: false` so pageviews are NOT double-counted). If the GTM GA4 tags are
+   ever removed, flip `send_page_view` back to true. ⚠️ Never configure `G-WN5973VY1M` — it is
+   NOT a stream of property 503609664; events sent there vanish into an inaccessible property
+   (this was live until 2026-07-06 and silently ate all contact-click events).
 2. **Live events:** open `impulse-english.es`, click **Aceptar**, then use GA4 **Realtime** /
    **DebugView** + **Google Tag Assistant** to confirm `page_view`, `generate_lead`,
    `phone_click`, `whatsapp_click` fire.

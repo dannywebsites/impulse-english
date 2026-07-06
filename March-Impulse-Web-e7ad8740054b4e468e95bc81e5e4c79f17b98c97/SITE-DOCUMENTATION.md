@@ -1024,7 +1024,7 @@ Lines 42, 49, 67, 83, 126, 128, 132, 133, 134, 137, 147
 | Script | Purpose | Location |
 |--------|---------|---------|
 | Google Tag Manager | Tag management | BaseLayout.astro `<head>` (GTM-TDC7CQDD) |
-| Google Analytics 4 | Analytics tracking | BaseLayout.astro `<head>` (G-WN5973VY1M) |
+| Google Analytics 4 | Analytics tracking | BaseLayout.astro `<head>` (G-KNMS5YW69T) |
 | Google Ads | Conversion tracking | BaseLayout.astro `<head>` (AW-11461982741) |
 | Vercel Analytics | Performance monitoring | BaseLayout.astro `<body>` (inject()) |
 | Vercel Speed Insights | Core Web Vitals | BaseLayout.astro `<body>` (injectSpeedInsights()) |
@@ -1178,7 +1178,7 @@ Lines 42, 49, 67, 83, 126, 128, 132, 133, 134, 137, 147
 
 | Service | ID | Purpose |
 |---------|-----|---------|
-| Google Analytics 4 | G-WN5973VY1M | Web analytics |
+| Google Analytics 4 | G-KNMS5YW69T | Web analytics |
 | Google Ads | AW-11461982741 | Conversion tracking |
 | Google Tag Manager | GTM-TDC7CQDD | Tag management |
 | Vercel Analytics | (built-in) | Performance monitoring |

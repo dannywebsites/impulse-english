@@ -87,8 +87,14 @@ const schemaGraph = {
          events fired before gtag.js loads (e.g. a first-tap WhatsApp click that
          itself triggers the deferred load) are only delivered if a config
          command precedes them in the dataLayer queue. */
+      /* G-KNMS5YW69T is the ONLY data stream of GA4 property 503609664
+         ("Impulse-English" — the property all reporting reads). The GTM
+         container (GTM-TDC7CQDD) holds GA4 event tags for this same stream
+         and already sends page_view — hence send_page_view: false here.
+         G-WN5973VY1M (previously configured) is NOT a stream of that
+         property; events sent to it never reached our reports. */
       gtag('js', new Date());
-      gtag('config', 'G-WN5973VY1M');
+      gtag('config', 'G-KNMS5YW69T', { 'send_page_view': false });
       gtag('config', 'AW-11461982741');
     </script>
 
@@ -99,7 +105,7 @@ const schemaGraph = {
         function load(){
           if(loaded) return; loaded = true;
           var g = document.createElement('script');
-          g.src = 'https://www.googletagmanager.com/gtag/js?id=G-WN5973VY1M';
+          g.src = 'https://www.googletagmanager.com/gtag/js?id=G-KNMS5YW69T';
           g.async = true;
           document.head.appendChild(g);
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
