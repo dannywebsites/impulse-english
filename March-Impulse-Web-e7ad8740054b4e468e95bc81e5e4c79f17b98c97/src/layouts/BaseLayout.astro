@@ -83,6 +83,14 @@ const schemaGraph = {
         'ad_storage': 'denied',
         'wait_for_update': 500
       });
+      /* Automated tracking tests visit with ?tt=test — tag their hits as
+         internal traffic so the GA4 data filter excludes them from reports
+         (still visible in Realtime/DebugView). Persisted per session so the
+         flag survives in-site navigation. */
+      try {
+        if (location.search.indexOf('tt=test') !== -1) sessionStorage.setItem('imp_tt', 'test');
+        if (sessionStorage.getItem('imp_tt') === 'test') gtag('set', { 'traffic_type': 'internal' });
+      } catch (e) {}
       /* config MUST be queued here at parse time, not in the loader's onload:
          events fired before gtag.js loads (e.g. a first-tap WhatsApp click that
          itself triggers the deferred load) are only delivered if a config
@@ -135,6 +143,8 @@ const schemaGraph = {
           gtag('event', 'whatsapp_click', { send_to: 'G-KNMS5YW69T', link_url: href, page_path: location.pathname });
         } else if (href.indexOf('tel:') === 0) {
           gtag('event', 'phone_click', { send_to: 'G-KNMS5YW69T', phone_number: href.replace('tel:', ''), page_path: location.pathname });
+        } else if (hl.indexOf('mailto:') === 0) {
+          gtag('event', 'email_click', { send_to: 'G-KNMS5YW69T', email_address: href.replace(/^mailto:/i, ''), page_path: location.pathname });
         }
       }, { passive: true });
     </script>

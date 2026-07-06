@@ -95,6 +95,17 @@ export default function CoursePopup() {
         location_preference: 'Barrio del Pilar',
       });
 
+      // Send the same event straight to GA4 — the dataLayer push above only
+      // reaches Google Ads via GTM, never GA4. send_to is REQUIRED: GTM claims
+      // destination G-KNMS5YW69T on this page, and gtag events without an
+      // explicit send_to are silently dropped.
+      window.gtag?.('event', 'generate_lead', {
+        send_to: 'G-KNMS5YW69T',
+        form_type: 'popup',
+        course_name: course || 'General',
+        source: variant.source,
+      });
+
       markDismissed();
       setStatus('success');
       window.setTimeout(() => {
