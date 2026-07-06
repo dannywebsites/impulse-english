@@ -57,6 +57,31 @@ The tags above are disclosed in:
 
 Keep these in sync whenever a tag is added or removed.
 
+## ⚠️ THE DOUBLE-TICK VERIFICATION STANDARD (mandatory)
+
+A tracking change may only be called **verified** when the destination
+system's own data confirms receipt — never from code review or network
+captures alone:
+
+1. **Tick 1 — sent:** GA4 hit captured with `tid=G-KNMS5YW69T` + expected event name.
+2. **Tick 2 — recorded:** GA4 **Realtime API** count increases on property `503609664`.
+3. **Forms — Tick 3:** the GoHighLevel webhook answers HTTP 200 (and the marked
+   test lead is visible in the GHL CRM).
+
+Why this exists: on 2026-06-30 the conversion events were declared "verified
+live" from network captures. They were actually landing in a phantom property
+(`G-WN5973VY1M` — not a stream of ours) and being dropped by a config race +
+GTM's destination claim. The pipeline was silently dead for a week. Network
+capture alone is NOT verification: GA4 bot-filters HeadlessChrome UAs, and
+hits to a wrong/unclaimed destination leave the browser looking healthy.
+
+**Run `npm run verify:tracking` (see `scripts/verify-tracking/README.md`)
+after ANY change to:** the `BaseLayout.astro` inline scripts, `LeadForm.tsx`,
+`CoursePopup.tsx`, `ReservarClasePage.tsx`, the GTM container, or GA4 admin
+settings. A monthly scheduled run also exists as a safety net. Test sessions
+use `?tt=test` → `traffic_type=internal` (excluded from reports once the GA4
+"Internal Traffic" data filter is set to Active — UI-only toggle).
+
 ## How to verify
 
 1. **GA4 double-count check (do first):** GA4 stream `G-KNMS5YW69T` is fed from TWO places:

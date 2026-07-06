@@ -44,3 +44,4 @@ divi-legacy-redirects.csv
 wp-mcp-migration-plan.md
 PAA_DEPLOYMENT_STATUS.md
 metadata.json
+scripts/verify-tracking/logs/
