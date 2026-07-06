@@ -128,10 +128,13 @@ const schemaGraph = {
         if (!a) return;
         var href = a.getAttribute('href') || '';
         var hl = href.toLowerCase();
+        /* send_to is REQUIRED: GTM also loads destination G-KNMS5YW69T on this
+           page and claims it, so events without an explicit send_to are
+           silently dropped instead of routed (verified live 2026-07-06). */
         if (hl.indexOf('wa.me') !== -1 || hl.indexOf('whatsapp.com') !== -1 || hl.indexOf('whatsapp:') !== -1) {
-          gtag('event', 'whatsapp_click', { link_url: href, page_path: location.pathname });
+          gtag('event', 'whatsapp_click', { send_to: 'G-KNMS5YW69T', link_url: href, page_path: location.pathname });
         } else if (href.indexOf('tel:') === 0) {
-          gtag('event', 'phone_click', { phone_number: href.replace('tel:', ''), page_path: location.pathname });
+          gtag('event', 'phone_click', { send_to: 'G-KNMS5YW69T', phone_number: href.replace('tel:', ''), page_path: location.pathname });
         }
       }, { passive: true });
     </script>
