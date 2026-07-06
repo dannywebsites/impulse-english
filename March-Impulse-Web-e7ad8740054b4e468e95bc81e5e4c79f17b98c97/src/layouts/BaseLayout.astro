@@ -83,6 +83,13 @@ const schemaGraph = {
         'ad_storage': 'denied',
         'wait_for_update': 500
       });
+      /* config MUST be queued here at parse time, not in the loader's onload:
+         events fired before gtag.js loads (e.g. a first-tap WhatsApp click that
+         itself triggers the deferred load) are only delivered if a config
+         command precedes them in the dataLayer queue. */
+      gtag('js', new Date());
+      gtag('config', 'G-WN5973VY1M');
+      gtag('config', 'AW-11461982741');
     </script>
 
     <!-- Deferred GA4 + GTM: loads after 3.5s or first user interaction -->
@@ -95,11 +102,6 @@ const schemaGraph = {
           g.src = 'https://www.googletagmanager.com/gtag/js?id=G-WN5973VY1M';
           g.async = true;
           document.head.appendChild(g);
-          g.onload = function(){
-            gtag('js', new Date());
-            gtag('config', 'G-WN5973VY1M');
-            gtag('config', 'AW-11461982741');
-          };
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
