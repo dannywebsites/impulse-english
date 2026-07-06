@@ -62,7 +62,10 @@ export default function LeadForm({
 
       // Send the same event straight to GA4. GA4 runs via the standalone
       // gtag (not through GTM), so the dataLayer push above never reaches it.
+      // send_to is REQUIRED: GTM also claims destination G-KNMS5YW69T on this
+      // page, and gtag events without an explicit send_to are silently dropped.
       window.gtag?.('event', 'generate_lead', {
+        send_to: 'G-KNMS5YW69T',
         form_type: 'course_inquiry',
         course_name: formData.level || 'General',
         source,
