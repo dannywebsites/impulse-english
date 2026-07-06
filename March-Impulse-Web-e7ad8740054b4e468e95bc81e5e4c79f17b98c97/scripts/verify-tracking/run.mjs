@@ -20,6 +20,9 @@ import { SITE, MEASUREMENT_ID, PROPERTY, TEST_QUERY, MATRIX, POPUP_PAGE, TEST_LE
 
 const DO_FORMS = process.argv.includes('--forms');
 const DO_POPUP = process.argv.includes('--popup');
+// --only /path1 /path2 → run only those MATRIX pages (targeted re-runs)
+const onlyIdx = process.argv.indexOf('--only');
+const ONLY = onlyIdx === -1 ? null : process.argv.slice(onlyIdx + 1).filter((a) => a.startsWith('/'));
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 const TRACKED_EVENTS = ['whatsapp_click', 'phone_click', 'email_click', 'generate_lead'];
 
@@ -94,6 +97,7 @@ async function main() {
     }, selector);
 
   for (const spec of MATRIX) {
+    if (ONLY && !ONLY.includes(spec.path)) continue;
     const { ctx, page, hits, ghl } = await newPage();
     const url = SITE + spec.path + TEST_QUERY;
     try {
@@ -136,8 +140,25 @@ async function main() {
     if (spec.form && DO_FORMS && spec.form.submit) {
       const before = hits.length;
       const ghlBefore = ghl.length;
+      // client:visible islands hydrate only when scrolled into view, and
+      // client:idle can lag on heavy pages — filling an unhydrated form
+      // clicks into a handler-less submit. Scroll the form into view, then
+      // wait for React fiber keys to appear on the form element.
+      await page.evaluate(() => {
+        const form = [...document.querySelectorAll('form')].find((f) => f.querySelector('input[type="email"]') && f.querySelector('input[type="tel"]'));
+        form?.scrollIntoView({ block: 'center' });
+      });
+      const hydrated = await page.waitForFunction(() => {
+        const form = [...document.querySelectorAll('form')].find((f) => f.querySelector('input[type="email"]') && f.querySelector('input[type="tel"]'));
+        return form && Object.keys(form).some((k) => k.startsWith('__reactFiber') || k.startsWith('__reactProps'));
+      }, { timeout: 20000 }).then(() => true).catch(() => false);
+      if (!hydrated) {
+        results.push({ page: spec.path, label: `LeadForm submit (${spec.form.source})`, expect: 'generate_lead', status: 'FAIL', note: 'form never hydrated' });
+        await ctx.close();
+        continue;
+      }
       const filled = await page.evaluate((lead) => {
-        const form = [...document.querySelectorAll('form')].find((f) => f.querySelector('input[type="email"]'));
+        const form = [...document.querySelectorAll('form')].find((f) => f.querySelector('input[type="email"]') && f.querySelector('input[type="tel"]'));
         if (!form) return false;
         const set = (el, v) => {
           if (!el) return;
@@ -158,7 +179,7 @@ async function main() {
       }, TEST_LEAD);
       if (filled) {
         await page.evaluate(() => {
-          const form = [...document.querySelectorAll('form')].find((f) => f.querySelector('input[type="email"]'));
+          const form = [...document.querySelectorAll('form')].find((f) => f.querySelector('input[type="email"]') && f.querySelector('input[type="tel"]'));
           form.querySelector('button[type="submit"]')?.click();
         });
         await sleep(8000);
@@ -183,8 +204,8 @@ async function main() {
     console.log('popup test: waiting 42s for the time-on-page popup…');
     await page.waitForTimeout(42000);
     const popupVisible = await page.evaluate((lead) => {
-      const dialog = document.querySelector('[role="dialog"], .fixed.inset-0');
-      if (!dialog) return false;
+      const dialog = document.querySelector('[role="dialog"]');
+      if (!dialog || !dialog.querySelector('form')) return false;
       const set = (el, v) => {
         if (!el) return;
         const proto = el.tagName === 'SELECT' ? window.HTMLSelectElement.prototype : window.HTMLInputElement.prototype;
@@ -197,6 +218,8 @@ async function main() {
       set(dialog.querySelector('input[type="tel"]'), lead.phone);
       const sel = dialog.querySelector('select');
       if (sel) set(sel, sel.querySelector('option[value]:not([value=""])')?.value || '');
+      const cb = dialog.querySelector('input[type="checkbox"]');
+      if (cb && !cb.checked) cb.click(); // required privacy consent
       dialog.querySelector('button[type="submit"]')?.click();
       return true;
     }, TEST_LEAD);
