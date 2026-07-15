@@ -4,9 +4,6 @@ import { Phone } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="w-full h-full" aria-label="Hero">
-        {/* Single H1 for SEO - visually hidden but accessible */}
-        <h1 className="sr-only">Academia de Inglés en La Vaguada</h1>
-
         {/* =========================================
             DESKTOP VERSION
             Hidden on Mobile & Tablet (< XL)
@@ -26,11 +23,11 @@ export default function Hero() {
                         </span>
                     </div>
 
-                    {/* Visual Headline (not H1 - the real H1 is sr-only above) */}
-                    <div className="text-white text-left text-4xl sm:text-6xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05] mb-2 md:mb-8 animate-fade-in-up delay-100" aria-hidden="true">
+                    {/* Single H1 for SEO — the visible hero headline is the real H1 */}
+                    <h1 className="text-white text-left text-4xl sm:text-6xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05] mb-2 md:mb-8 animate-fade-in-up delay-100">
                         Academia de Inglés<br />
-                        <span className="text-white/60">en La Vaguada</span>
-                    </div>
+                        <span className="text-white/60">en La Vaguada y Barrio del Pilar</span>
+                    </h1>
 
                     {/* Subheadline */}
                     <p className="hidden xl:block text-white/80 text-lg max-w-xl leading-relaxed mb-10 font-light text-left animate-fade-in-up delay-200">
@@ -58,6 +55,11 @@ export default function Hero() {
            ========================================= */}
         <div className="xl:hidden w-full h-full flex flex-col items-center justify-center pointer-events-auto relative z-[25]">
             <div className="text-center px-6">
+                {/* The desktop H1 lives inside `hidden xl:flex`, so it is display:none here and
+                    carries little weight under mobile-first indexing. This sr-only H1 is the
+                    rendered one below xl. sr-only clips rather than display:none, so it stays in
+                    the render tree. Exactly one H1 renders per breakpoint — never both. */}
+                <h1 className="sr-only">Academia de Inglés en La Vaguada y Barrio del Pilar</h1>
                 <a
                     href="/reservar-clase/"
                     className="inline-flex items-center gap-2 text-white/90 hover:text-white text-sm font-medium tracking-[0.15em] uppercase border-b border-white/30 hover:border-white/60 pb-1 transition-all animate-hero-fade-up"
