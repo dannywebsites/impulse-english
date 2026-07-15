@@ -18,8 +18,8 @@ import CookieBanner from '../../components/CookieBanner';
 ---
 
 <BaseLayout
-  title="Impulse English Academy | academia de inglés en Barrio del Pilar, Madrid. Con profesores nativos especializados en exámenes Cambridge, ofrecemos cursos para niños, infantiles, adolescentes y adultos"
-  description="Academia de inglés en Barrio del Pilar, Madrid. Profesores nativos especializados en exámenes Cambridge. Cursos para niños, infantiles, adolescentes y adultos. 100% aprobados."
+  title="Academia de Inglés La Vaguada y Barrio del Pilar | Impulse"
+  description="Academia de inglés en La Vaguada y Barrio del Pilar, Madrid. Centro oficial Cambridge, profesores nativos y 100% aprobados. Reserva tu clase de prueba gratis."
   keywords="academia inglés barrio del pilar, academia inglés la vaguada, cambridge madrid, cursos inglés niños, clases inglés adultos, profesores nativos madrid"
   canonical="/"
   fullTitle={true}
@@ -84,17 +84,9 @@ import CookieBanner from '../../components/CookieBanner';
       <Hero />
     </div>
 
-    <!-- DESKTOP News Overlay -->
-    <div class="hidden xl:block absolute bottom-0 left-0 right-0 z-20 xl:translate-y-12 pointer-events-auto">
+    <!-- News Overlay (single render; responsive desktop grid + mobile sheet handled inside the component) -->
+    <div class="absolute bottom-0 left-0 right-0 z-20 xl:translate-y-12 pointer-events-auto">
       <NewsOverlay />
-    </div>
-
-    <!-- MOBILE/TABLET News Overlay -->
-    <div class="xl:hidden absolute bottom-0 left-0 right-0 z-20 pointer-events-auto">
-      <div class="bg-white rounded-t-3xl shadow-[0_-10px_40px_rgba(0,0,0,0.2)] pb-4 pt-2">
-        <div class="w-12 h-1.5 bg-zinc-200 rounded-full mx-auto mt-3 mb-1"></div>
-        <NewsOverlay mobile={true} />
-      </div>
     </div>
   </div>
 

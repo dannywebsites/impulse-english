@@ -10,7 +10,7 @@ export default function WelcomeSection() {
               Nuestra Academia
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-4">
-              ¡Bienvenido a nuestra Academia de Inglés
+              ¡Bienvenido a tu academia de inglés en La Vaguada!
             </h2>
             <div className="w-24 h-1 bg-accent-blue/20"></div>
           </div>
@@ -22,6 +22,17 @@ export default function WelcomeSection() {
 
             <p>
               Ofrecemos clases de inglés presenciales adaptadas a cada etapa y objetivo, desde el aprendizaje general hasta la preparación de exámenes oficiales de Cambridge. Nuestro enfoque combina método, seguimiento y motivación para que cada alumno avance con seguridad y confianza en un mundo cada vez más globalizado.
+            </p>
+
+            <p>
+              Nos encontrarás en la Av. de El Ferrol, 22, junto al Centro Comercial La Vaguada y el Parque de la Alcazaba, a pocos minutos de la estación de Metro Barrio del Pilar (Línea 9). Un entorno tranquilo, con zona verde y aparcamiento, ideal para que niños, adolescentes y adultos aprendan inglés cerca de casa. Descubre nuestras{' '}
+              <a href="/academia-ingles-la-vaguada/" className="text-accent-blue hover:text-blue-700 font-medium underline underline-offset-2">
+                clases de inglés en La Vaguada
+              </a>{' '}
+              y en{' '}
+              <a href="/academia-ingles-barrio-del-pilar/" className="text-accent-blue hover:text-blue-700 font-medium underline underline-offset-2">
+                Barrio del Pilar
+              </a>.
             </p>
           </div>
 
