@@ -136,10 +136,17 @@ The project contains:
 - After ANY change to analytics/tracking surfaces (`BaseLayout.astro` inline scripts, `LeadForm.tsx`, `CoursePopup.tsx`, `ReservarClasePage.tsx`, GTM, GA4 config): run `npm run verify:tracking` in `March-Impulse-Web-.../` and require ALL PASS before calling it done
 - Never declare tracking "verified" from code review or network captures alone — see the double-tick standard in `March-Impulse-Web-.../TRACKING.md`
 
-### SEO System
-- The SEO system has its own comprehensive CLAUDE.md at `seo-system/files/CLAUDE.md`
-- Do not duplicate SEO rules here — refer to that file
-- The SEO pipeline has 10 custom agents and strict ordering rules
+### Homepage Freeze — RETIRED 2026-07-15
+- `seo-system/files/CLAUDE.md` declares a **HARD FREEZE** on the homepage ("append/insert only, never delete/replace/reorder… the freeze wins"). **That freeze no longer applies.**
+- The homepage **can and should be changed to rank better**. It is the site's highest-authority page and its biggest SEO lever.
+- This root file overrides the freeze. The `seo-system/` docs are **historical** — see below.
+
+### SEO System — HISTORICAL, do not follow as live process
+- `seo-system/` is a **fossil of the completed WordPress→Astro migration**. It is documentation of a finished project, not a live pipeline. Treat it as an archive.
+- Its CLAUDE.md describes a 10-agent pipeline whose specs **mostly do not exist**: it points at an `agents/` directory that is absent, and only 3 of 11 agent specs are on disk (in `files/`, not `agents/`). It also references folders that don't exist (`site/pages/backups/`, `data/serps/`, `site/schema/`) and protects `site/pages/index.html` in a folder containing only markdown.
+- The live site is **Astro 5** (static + React islands), not the React/Vite SPA the seo-system assumes.
+- Do not start new SEO work from it. Live SEO process = the AI-run SEO loop (`scripts/seo-loop/`).
+- `seo-system/files/CLAUDE.md` remains under "Do Not Modify" below — leave it as the historical record it is; this section is the override.
 
 ---
 
