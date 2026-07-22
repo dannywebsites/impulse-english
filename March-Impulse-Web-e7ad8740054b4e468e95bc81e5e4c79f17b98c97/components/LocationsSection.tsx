@@ -4,16 +4,16 @@ import { NAP } from '../utils/napData';
 
 export default function LocationsSection() {
   const areas = [
-    { name: "Barrio del Pilar", href: "/academia-ingles-barrio-del-pilar" },
-    { name: "La Vaguada", href: "/academia-ingles-la-vaguada" },
-    { name: "Peñagrande", href: "/academia-ingles-penagrande" },
-    { name: "La Ventilla", href: "/academia-ingles-la-ventilla" },
-    { name: "La Paz", href: "/academia-ingles-la-paz" },
-    { name: "Plaza Castilla", href: "/academia-ingles-plaza-castilla" },
-    { name: "Tetuán", href: "/academia-ingles-tetuan" },
-    { name: "Cuatro Torres", href: "/academia-ingles-cuatro-torres" },
-    { name: "Mirasierra", href: "/academia-ingles-mirasierra" },
-    { name: "Montecarmelo y Las Tablas", href: "/academia-ingles-montecarmelo-las-tablas" }
+    { name: "Barrio del Pilar", href: "/academia-ingles-barrio-del-pilar/" },
+    { name: "La Vaguada", href: "/academia-ingles-la-vaguada/" },
+    { name: "Peñagrande", href: "/academia-ingles-penagrande/" },
+    { name: "La Ventilla", href: "/academia-ingles-la-ventilla/" },
+    { name: "La Paz", href: "/academia-ingles-la-paz/" },
+    { name: "Plaza Castilla", href: "/academia-ingles-plaza-castilla/" },
+    { name: "Tetuán", href: "/academia-ingles-tetuan/" },
+    { name: "Cuatro Torres", href: "/academia-ingles-cuatro-torres/" },
+    { name: "Mirasierra", href: "/academia-ingles-mirasierra/" },
+    { name: "Montecarmelo y Las Tablas", href: "/academia-ingles-montecarmelo-las-tablas/" }
   ];
 
   return (

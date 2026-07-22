@@ -154,7 +154,7 @@ export default function LaVaguadaPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Academia de Inglés en La Vaguada
+              Clases de Inglés en La Vaguada
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
@@ -198,10 +198,10 @@ export default function LaVaguadaPage() {
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
-            ¡Bienvenido a nuestra Academia de Inglés
+            Clases de Inglés en La Vaguada para Todas las Edades
           </h2>
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
-            Nuestra academia de inglés en La Vaguada ofrece clases presenciales y online de inglés para todas las edades. Somos una academia con grupos reducidos, certificado oficial como Centro Cambridge ES278, y especializados en preparación de exámenes Cambridge. Ofrecemos prueba de nivel gratuita y una estrategia educativa idónea adaptada a cada alumno. A diferencia de otras opciones cercanas como Kids&Us La Vaguada, centrada solo en niños y adolescentes, en Impulse atendemos tanto a niños como a adultos, somos centro oficial de preparación Cambridge con 100% de aprobados y contamos con profesores nativos.
+            Nuestras clases de inglés en La Vaguada son presenciales y online, para todas las edades. Trabajamos con grupos reducidos, contamos con certificado oficial como Centro Cambridge ES278, y estamos especializados en preparación de exámenes Cambridge. Ofrecemos prueba de nivel gratuita y una estrategia educativa idónea adaptada a cada alumno. A diferencia de otras opciones cercanas como Kids&Us La Vaguada, centrada solo en niños y adolescentes, en Impulse atendemos tanto a niños como a adultos, somos centro oficial de preparación Cambridge con 100% de aprobados y contamos con profesores nativos.
           </p>
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
             Trabajamos con niños desde infantil, adolescentes de primaria y secundaria, y adultos que buscan aprender inglés sin largos desplazamientos. Estamos junto al centro comercial La Vaguada, en pleno Barrio del Pilar (28029 Madrid), con acceso a Metro Barrio del Pilar (Línea 9) a 3 minutos andando, Metro Herrera Oria y Metro Peñagrande (Línea 7), y a los buses 147, 42 y 83 (parada Ginzo de Limia - Ferrol, a 1 minuto andando). También nos localizan desde Peñagrande, La Ventilla, La Paz, Plaza Castilla y Tetuán.
@@ -266,7 +266,7 @@ export default function LaVaguadaPage() {
       <section className="py-12 md:py-20 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-12 text-center">
-            La Academia de Inglés de Referencia en La Vaguada
+            Por Qué Elegir Nuestras Clases de Inglés en La Vaguada
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, i) => (

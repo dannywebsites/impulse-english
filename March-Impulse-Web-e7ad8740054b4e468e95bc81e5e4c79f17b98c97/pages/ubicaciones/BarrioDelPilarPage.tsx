@@ -118,7 +118,7 @@ export default function BarrioDelPilarPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Academia de Inglés en Barrio del Pilar
+              Clases de Inglés en Barrio del Pilar
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
@@ -174,7 +174,7 @@ export default function BarrioDelPilarPage() {
       <section className="py-12 md:py-20 px-6 bg-zinc-50">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-12 text-center">
-            Por Qué Somos la Mejor Academia en Barrio del Pilar
+            Por Qué Elegir Nuestras Clases de Inglés en Barrio del Pilar
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, i) => (
