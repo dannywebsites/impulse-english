@@ -15,6 +15,18 @@ import Newsletter from '../../components/Newsletter';
 import LocationsSection from '../../components/LocationsSection';
 import Footer from '../../components/Footer';
 import CookieBanner from '../../components/CookieBanner';
+import { generateVideoObjectSchema } from '../../utils/schemaData';
+
+// Self-hosted academy video, surfaced through the VideoCTA dialog. Marked up so the
+// clip is eligible for video results — a background loop on its own earns nothing.
+const videoSchema = generateVideoObjectSchema({
+  name: 'Impulse English Academy en La Vaguada y Barrio del Pilar',
+  description: 'Un recorrido por Impulse English Academy en La Vaguada, Barrio del Pilar: la entrada del centro y las clases de inglés de primaria y secundaria con nuestros profesores.',
+  contentUrl: '/media/impulse-academia-la-vaguada.v1.mp4',
+  thumbnailUrl: '/media/hero-poster.v1.jpg',
+  uploadDate: '2025-12-05',
+  duration: 'PT13S',
+});
 ---
 
 <BaseLayout
@@ -23,72 +35,90 @@ import CookieBanner from '../../components/CookieBanner';
   keywords="academia inglés barrio del pilar, academia inglés la vaguada, cambridge madrid, cursos inglés niños, clases inglés adultos, profesores nativos madrid"
   canonical="/"
   fullTitle={true}
+  schemas={[videoSchema]}
 >
-  <!-- Hero Wrapper: Full Screen 100dvh -->
-  <div class="relative w-full h-[100dvh] overflow-hidden bg-accent-blue">
-    {/* DESKTOP BACKGROUND: static poster. The Vimeo hero video (id 1143999306)
-        returned HTTP 401 (embed not authorized for this domain) and rendered a
-        Vimeo error in the hero. Falling back to the poster image. To restore the
-        video, re-add an iframe-injection script here once the video's Vimeo
-        privacy/domain settings allow impulse-english.es. */}
-    <div class="hidden xl:block absolute inset-0 z-0 pointer-events-none">
+  {/* Hero Wrapper. Whole-shot doctrine: ONE landscape edit, two presentations.
+      Mobile/tablet = full-width 16:9 band showing the entire scene (never a crop of a
+      wide shot, which always reads "zoomed"), with the copy on the solid blue panel
+      below it. Desktop (xl+) = the same edit as a full-bleed 100dvh cover with the copy
+      overlaid. The mobile top padding clears the fixed transparent navbar so the band is
+      never covered by the logo. */}
+  <div class="relative w-full bg-accent-blue flex flex-col pt-[150px] xl:pt-0 xl:block xl:h-[100dvh] xl:overflow-hidden">
+    <video
+      id="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="/media/hero-poster.v1.jpg"
+      aria-hidden="true"
+      disablepictureinpicture
+      class="relative z-0 w-full aspect-video object-cover bg-accent-blue select-none pointer-events-none motion-reduce:hidden xl:absolute xl:inset-0 xl:h-full xl:w-full xl:aspect-auto"
+    >
+      {/* Mobile source FIRST: the browser takes the first <source> whose media matches. */}
+      <source src="/media/hero-landscape-mobile.v1.mp4" type="video/mp4" media="(max-width: 1279px)" />
+      <source src="/media/hero-1080.v1.mp4" type="video/mp4" />
+    </video>
+
+    {/* Blocked-autoplay / reduced-motion fallback: the identical poster, same two presentations. */}
+    <picture class="relative z-0 hidden w-full aspect-video select-none pointer-events-none motion-reduce:block xl:absolute xl:inset-0 xl:h-full xl:w-full xl:aspect-auto">
       <img
-        src="/images/academy/hero-poster.jpg"
-        alt="Impulse English Academy, La Vaguada, Barrio del Pilar"
-        class="absolute inset-0 w-full h-full object-cover"
-        loading="eager"
+        src="/media/hero-poster.v1.jpg"
+        alt="Fachada de Impulse English Academy en La Vaguada, Barrio del Pilar, con alumnos entrando a clase"
+        class="w-full aspect-video object-cover xl:h-full xl:w-full xl:aspect-auto"
         fetchpriority="high"
       />
-      <div class="absolute inset-0 bg-black/40 z-10"></div>
-    </div>
+    </picture>
 
-    <!-- MOBILE/TABLET BACKGROUND: Optimized Image Fallback -->
-    <div class="xl:hidden absolute inset-0 z-0">
-      <div class="absolute inset-0 bg-black/30 z-10"></div>
-      <picture>
-        <source
-          media="(max-width: 640px)"
-          srcset="/images/optimized/hero-mobile-estudiantes-primaria.webp"
-          type="image/webp"
-        />
-        <source
-          media="(max-width: 640px)"
-          srcset="/images/optimized/hero-mobile-estudiantes-primaria.jpg"
-          type="image/jpeg"
-        />
-        <source
-          srcset="/images/optimized/hero-tablet-estudiantes-primaria.webp"
-          type="image/webp"
-        />
-        <source
-          srcset="/images/optimized/hero-tablet-estudiantes-primaria.jpg"
-          type="image/jpeg"
-        />
-        <img
-          src="/images/optimized/hero-tablet-estudiantes-primaria.jpg"
-          alt="Estudiantes de primaria sonriendo en clase de inglés - Impulse English Academy"
-          class="absolute inset-0 w-full h-full object-cover"
-          width="640"
-          height="960"
-          loading="eager"
-          fetchpriority="high"
-        />
-      </picture>
-    </div>
+    {/* Legibility wash belongs to the DESKTOP overlay only. On mobile the copy sits on the
+        solid blue panel and needs none. hidden xl:block is load-bearing. */}
+    <div class="hidden xl:block absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
 
     <!-- Navbar -->
     <Navbar client:load currentPath="/" />
 
     <!-- Hero Content Layer -->
-    <div class="relative z-[25] w-full h-full flex flex-col justify-center pointer-events-none">
+    <div class="relative z-[25] w-full pointer-events-none xl:absolute xl:inset-0 xl:h-full xl:flex xl:flex-col xl:justify-center">
       <Hero />
     </div>
 
     <!-- News Overlay (single render; responsive desktop grid + mobile sheet handled inside the component) -->
-    <div class="absolute bottom-0 left-0 right-0 z-20 xl:translate-y-12 pointer-events-auto">
+    <div class="relative z-20 mt-10 pointer-events-auto xl:absolute xl:bottom-0 xl:left-0 xl:right-0 xl:mt-0 xl:translate-y-12">
       <NewsOverlay />
     </div>
   </div>
+
+  <script is:inline>
+    // Hero video playback gate. Reduced-motion / data-saver: ABORT the download by
+    // removing the <source> elements and reloading; the identical poster stays. CSS
+    // display:none alone does NOT stop the fetch.
+    (function () {
+      var v = document.getElementById('hero-video');
+      if (!v) return;
+      var conn = navigator.connection || {};
+      var slow = conn.saveData === true || /^(slow-2g|2g)$/.test(conn.effectiveType || '');
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || slow) {
+        var srcs = v.querySelectorAll('source');
+        for (var i = 0; i < srcs.length; i++) srcs[i].remove();
+        v.load();
+        return;
+      }
+      // Rescue-swap: engines that ignore <source media> can pick the light mobile file on
+      // a wide viewport. Put the 1080 file back on desktop.
+      var fixDesktop = function () {
+        if (!window.matchMedia('(min-width: 1280px)').matches) return;
+        if (v.currentSrc && v.currentSrc.indexOf('hero-landscape-mobile') !== -1) {
+          v.src = '/media/hero-1080.v1.mp4';
+          v.load();
+          v.play().catch(function () {});
+        }
+      };
+      if (v.currentSrc) fixDesktop();
+      else v.addEventListener('loadedmetadata', fixDesktop, { once: true });
+      v.play().catch(function () {});
+    })();
+  </script>
 
   <WelcomeSection />
   <TeamSection />
@@ -96,7 +126,7 @@ import CookieBanner from '../../components/CookieBanner';
   <MetodoSection />
   <PartnersSection />
   <TestimonialsSection client:visible />
-  <VideoCTA />
+  <VideoCTA client:visible />
   <LocationsSection />
   <ContactSection client:visible />
   <Newsletter client:visible />

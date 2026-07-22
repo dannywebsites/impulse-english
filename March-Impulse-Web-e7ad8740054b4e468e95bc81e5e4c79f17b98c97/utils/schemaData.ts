@@ -212,6 +212,43 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
   };
 }
 
+// Generate VideoObject schema for a self-hosted video.
+// contentUrl/thumbnailUrl must be absolute — Google rejects relative media URLs.
+export interface VideoSchemaProps {
+  name: string;
+  description: string;
+  contentUrl: string;
+  thumbnailUrl: string;
+  uploadDate: string;
+  /** ISO 8601 duration, e.g. PT13S */
+  duration?: string;
+}
+
+export function generateVideoObjectSchema(props: VideoSchemaProps) {
+  const absolute = (u: string) => (u.startsWith('http') ? u : `${businessInfo.url.replace(/\/$/, '')}${u}`);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: props.name,
+    description: props.description,
+    contentUrl: absolute(props.contentUrl),
+    thumbnailUrl: absolute(props.thumbnailUrl),
+    uploadDate: props.uploadDate,
+    ...(props.duration && { duration: props.duration }),
+    publisher: {
+      "@type": "Organization",
+      name: businessInfo.name,
+      url: businessInfo.url,
+      logo: {
+        "@type": "ImageObject",
+        url: businessInfo.logo
+      }
+    },
+    inLanguage: "es"
+  };
+}
+
 // Generate FAQPage schema
 export interface FAQItem {
   question: string;

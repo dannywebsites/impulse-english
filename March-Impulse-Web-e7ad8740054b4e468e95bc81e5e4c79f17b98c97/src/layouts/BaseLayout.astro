@@ -199,14 +199,11 @@ const schemaGraph = {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"></noscript>
 
-    <!-- Vimeo preconnects + hero poster (homepage only) -->
+    <!-- Hero poster preload (homepage only). The hero video is self-hosted from /media/,
+         so there are no third-party video origins left to preconnect to. The poster is
+         what paints before playback, so it is the LCP candidate worth preloading. -->
     {Astro.url.pathname === '/' && (
-      <>
-        <link rel="preconnect" href="https://player.vimeo.com" crossorigin>
-        <link rel="preconnect" href="https://f.vimeocdn.com" crossorigin>
-        <link rel="dns-prefetch" href="https://i.vimeocdn.com">
-        <link rel="dns-prefetch" href="https://fresnel.vimeo.com">
-      </>
+      <link rel="preload" as="image" href="/media/hero-poster.v1.jpg" fetchpriority="high">
     )}
 
     <!-- Hero entrance animations -->
