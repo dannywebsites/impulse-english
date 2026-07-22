@@ -67,12 +67,16 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
           }`}
         >
           <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-            {/* Logo */}
+            {/* Logo. The homepage navbar is transparent over the blue hero panel / video,
+                and the logo wordmark is the same navy as accent-blue (#12477d), so the
+                unfiltered mark is invisible there. brightness-0 invert renders it solid
+                white, which reads on both the transparent state and the scrolled dark bar.
+                Content pages keep the full-colour logo on their white navbar. */}
             <a href="/" className="flex items-center">
               <img
                 src={LOGO_URL}
                 alt="Impulse English Academy"
-                className="h-[105px] md:h-20 lg:h-[100px] w-auto"
+                className="h-[105px] md:h-20 lg:h-[100px] w-auto brightness-0 invert"
                 width="105"
                 height="105"
               />
