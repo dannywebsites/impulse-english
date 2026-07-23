@@ -1,19 +1,37 @@
 import React from 'react';
-import { MapPin, Clock, Phone, Train, Navigation, ArrowRight } from 'lucide-react';
+import { MapPin, Clock, Phone, Train, Navigation, ArrowRight, Bus, Car } from 'lucide-react';
 import { NAP } from '../utils/napData';
+import { BARRIO_AREAS } from '../utils/barrioAreas';
 
 export default function LocationsSection() {
-  const areas = [
-    { name: "Barrio del Pilar", href: "/academia-ingles-barrio-del-pilar/" },
-    { name: "La Vaguada", href: "/academia-ingles-la-vaguada/" },
-    { name: "Peñagrande", href: "/academia-ingles-penagrande/" },
-    { name: "La Ventilla", href: "/academia-ingles-la-ventilla/" },
-    { name: "La Paz", href: "/academia-ingles-la-paz/" },
-    { name: "Plaza Castilla", href: "/academia-ingles-plaza-castilla/" },
-    { name: "Tetuán", href: "/academia-ingles-tetuan/" },
-    { name: "Cuatro Torres", href: "/academia-ingles-cuatro-torres/" },
-    { name: "Mirasierra", href: "/academia-ingles-mirasierra/" },
-    { name: "Montecarmelo y Las Tablas", href: "/academia-ingles-montecarmelo-las-tablas/" }
+  const areas = BARRIO_AREAS;
+
+  // Rutas reales hasta Av. de El Ferrol, 22. Cada barrio se enlaza una sola vez
+  // en todo el bloque para no sobrecargar de enlaces internos.
+  const metroRoutes = [
+    { from: "Peñagrande", line: "L9", time: "~3 min", href: "/academia-ingles-penagrande/" },
+    { from: "Mirasierra", line: "L9", time: "~4 min", href: "/academia-ingles-mirasierra/" },
+    { from: "Herrera Oria", line: "L9", time: "~5 min", href: null },
+    { from: "Montecarmelo", line: "L9", time: "~8 min", href: "/academia-ingles-montecarmelo-las-tablas/" },
+    { from: "Plaza Castilla", line: "L9", time: "~12 min", href: "/academia-ingles-plaza-castilla/" },
+    { from: "Av. de la Ilustración", line: "L7", time: "~10 min + bus 147", href: null }
+  ];
+
+  const busRoutes = [
+    { line: "147", from: "Tetuán y Valdeacederas", time: "~8 min", href: "/academia-ingles-tetuan/" },
+    { line: "42", from: "Plaza Castilla", time: "~15 min", href: null },
+    { line: "83", from: "Moncloa", time: "~20 min", href: null },
+    { line: "126", from: "Nuevos Ministerios", time: "~18 min", href: null },
+    { line: "N23", from: "Servicio nocturno", time: "Toda la noche", href: null }
+  ];
+
+  const carRoutes = [
+    { from: "Peñagrande", via: "Av. de Peñagrande → Av. de El Ferrol", time: "3–5 min" },
+    { from: "Mirasierra", via: "Fermín Caballero → Av. de El Ferrol", time: "5–8 min" },
+    { from: "Herrera Oria", via: "Ginzo de Limia → Av. de El Ferrol", time: "5–8 min" },
+    { from: "Montecarmelo y Las Tablas", via: "Av. de la Ilustración → Av. de El Ferrol", time: "10–12 min" },
+    { from: "Tetuán y Valdeacederas", via: "Av. de la Paz → Av. de El Ferrol", time: "8–12 min" },
+    { from: "Plaza Castilla", via: "Paseo de la Castellana → Av. de El Ferrol", time: "10–15 min" }
   ];
 
   return (
@@ -151,6 +169,101 @@ export default function LocationsSection() {
                 <div className="text-2xl font-bold text-accent-blue">100%</div>
                 <div className="text-xs text-zinc-500">Aprobados</div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Cómo llegar desde tu barrio — contenido de proximidad */}
+        <div className="mt-12">
+          <h3 className="text-2xl md:text-3xl font-semibold text-zinc-900 tracking-tight mb-3">
+            Cómo llegar desde tu barrio
+          </h3>
+          <p className="text-zinc-500 max-w-3xl mb-8">
+            Estamos en la Av. de El Ferrol, 22, a 3 minutos andando del metro de Barrio del Pilar.
+            La Línea 9 recorre todo el eje norte de Madrid (Herrera Oria → Mirasierra → Barrio del
+            Pilar → Ventilla), así que llegas desde casi cualquier barrio de la zona en menos de 15
+            minutos. Estos son los tiempos reales desde cada punto de origen:
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Metro */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center gap-2 mb-5">
+                <Train className="w-5 h-5 text-accent-blue" />
+                <h4 className="text-lg font-bold text-zinc-900">En metro</h4>
+              </div>
+              <ul className="space-y-3">
+                {metroRoutes.map((route, index) => (
+                  <li key={index} className="flex items-baseline justify-between gap-3 text-sm border-b border-zinc-100 pb-3 last:border-0 last:pb-0">
+                    <span className="text-zinc-700">
+                      {route.href ? (
+                        <a href={route.href} className="font-medium hover:text-accent-blue hover:underline transition-colors">
+                          {route.from}
+                        </a>
+                      ) : (
+                        <span className="font-medium">{route.from}</span>
+                      )}
+                      <span className="text-zinc-400 ml-2">{route.line}</span>
+                    </span>
+                    <span className="text-zinc-500 whitespace-nowrap">{route.time}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-zinc-400 mt-4">
+                Todos los tiempos hasta la estación de Barrio del Pilar, más 3 minutos andando hasta la academia.
+              </p>
+            </div>
+
+            {/* Autobús */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center gap-2 mb-5">
+                <Bus className="w-5 h-5 text-accent-blue" />
+                <h4 className="text-lg font-bold text-zinc-900">En autobús</h4>
+              </div>
+              <ul className="space-y-3">
+                {busRoutes.map((route, index) => (
+                  <li key={index} className="flex items-baseline justify-between gap-3 text-sm border-b border-zinc-100 pb-3 last:border-0 last:pb-0">
+                    <span className="text-zinc-700">
+                      <span className="inline-block bg-accent-blue/10 text-accent-blue font-bold rounded px-1.5 py-0.5 mr-2 text-xs">
+                        {route.line}
+                      </span>
+                      {route.href ? (
+                        <a href={route.href} className="font-medium hover:text-accent-blue hover:underline transition-colors">
+                          {route.from}
+                        </a>
+                      ) : (
+                        <span className="font-medium">{route.from}</span>
+                      )}
+                    </span>
+                    <span className="text-zinc-500 whitespace-nowrap">{route.time}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-zinc-400 mt-4">
+                Parada Ginzo de Limia – Ferrol, a 1 minuto andando de la academia.
+              </p>
+            </div>
+
+            {/* Coche */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center gap-2 mb-5">
+                <Car className="w-5 h-5 text-accent-blue" />
+                <h4 className="text-lg font-bold text-zinc-900">En coche</h4>
+              </div>
+              <ul className="space-y-3">
+                {carRoutes.map((route, index) => (
+                  <li key={index} className="text-sm border-b border-zinc-100 pb-3 last:border-0 last:pb-0">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="text-zinc-700 font-medium">{route.from}</span>
+                      <span className="text-zinc-500 whitespace-nowrap">{route.time}</span>
+                    </div>
+                    <p className="text-xs text-zinc-400 mt-1">{route.via}</p>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-zinc-400 mt-4">
+                Aparcamiento en superficie en la propia Av. de El Ferrol y calles adyacentes. Acceso directo desde la M-30.
+              </p>
             </div>
           </div>
         </div>

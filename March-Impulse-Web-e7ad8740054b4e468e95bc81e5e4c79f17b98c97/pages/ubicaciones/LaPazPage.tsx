@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { MapPin, Clock, Phone, Train, Bus, CheckCircle, Star, ArrowRight, MessageCircle } from 'lucide-react';
+import NearbyAreas from '../../components/NearbyAreas';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -516,29 +517,7 @@ export default function LaPazPage() {
       {/* Nearby Locations */}
       <section className="py-12 px-6 bg-zinc-50">
         <div className="container mx-auto max-w-4xl">
-          <div className="p-6 bg-white rounded-xl border border-zinc-200">
-            <p className="text-zinc-900 font-medium mb-4">
-              <strong>Servimos también zonas cercanas:</strong>
-            </p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              <a href="/academia-ingles-barrio-del-pilar/" className="text-accent-blue hover:underline text-sm">Barrio del Pilar</a>
-              <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-la-vaguada/" className="text-accent-blue hover:underline text-sm">La Vaguada</a>
-              <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-penagrande/" className="text-accent-blue hover:underline text-sm">Peñagrande</a>
-              <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-la-ventilla/" className="text-accent-blue hover:underline text-sm">La Ventilla</a>
-              <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-plaza-castilla/" className="text-accent-blue hover:underline text-sm">Plaza Castilla</a>
-              <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-tetuan/" className="text-accent-blue hover:underline text-sm">Tetuán</a>
-              <span className="text-zinc-400">•</span>
-              <a href="/academia-ingles-cuatro-torres/" className="text-accent-blue hover:underline text-sm">Cuatro Torres</a>
-            </div>
-            <a href="/academias-ingles-madrid/por-barrios/" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
-              Ver todas las ubicaciones en Madrid <ArrowRight className="w-4 h-4" />
-            </a>
-          </div>
+          <NearbyAreas currentHref="/academia-ingles-la-paz/" variant="plain" />
         </div>
       </section>
 

@@ -30,6 +30,7 @@ const navItems: NavItem[] = [
       { label: "Linguaskill", href: "/linguaskill/", description: "Certificación rápida de Cambridge" },
     ]
   },
+  { label: "Zonas", href: "/academias-ingles-madrid/por-barrios/" },
   { label: "Sobre Nosotros", href: "/sobre-nosotros/" },
   { label: "Testimonios", href: "/testimonios/" },
   { label: "Blog", href: "/blog/" },
