@@ -1,6 +1,6 @@
-# Tracking audit — 2026-07-23T21:38:58.358Z
+# Tracking audit — 2026-07-23T21:49:36.300Z
 
-Site: https://impulse-english.es · property properties/503609664 · stream G-KNMS5YW69T
+Site: http://localhost:3000 · property properties/503609664 · stream G-KNMS5YW69T
 Modes: forms=false popup=false. Test traffic tagged internal via ?tt=test.
 
 | Page | CTA | Event | Tick1 sent (tid) | GHL | Verdict |
@@ -33,4 +33,4 @@ Modes: forms=false popup=false. Test traffic tagged internal via ?tt=test.
 | /linguaskill/ | WhatsApp (linguaskill) | whatsapp_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /linguaskill/ | Phone (linguaskill) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 
-Tick 2 (GA4 Realtime recorded deltas vs baseline): `{"whatsapp_click":11,"phone_click":13,"email_click":3}` vs needed `{"whatsapp_click":12,"phone_click":12,"email_click":3}`
+Tick 2 (GA4 Realtime recorded deltas vs baseline): `{"whatsapp_click":10,"phone_click":11,"email_click":3}` vs needed `{"whatsapp_click":12,"phone_click":12,"email_click":3}`

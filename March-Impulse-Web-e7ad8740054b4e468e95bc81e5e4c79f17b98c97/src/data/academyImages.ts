@@ -9,6 +9,8 @@
  * - Aspect ratio hints for proper display (portrait, square, landscape)
  */
 
+import { NAP } from '../../utils/napData';
+
 export interface AcademyImage {
   url: string;
   alt: string;
@@ -594,8 +596,8 @@ export function generateImageSchema(image: AcademyImage, pageUrl: string) {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 40.4789,
-        "longitude": -3.7114
+        "latitude": NAP.geo.latitude,
+        "longitude": NAP.geo.longitude
       }
     },
     "keywords": image.keywords.join(", ")
@@ -648,8 +650,8 @@ export function generateImageGallerySchema(images: AcademyImage[], pageUrl: stri
       "name": "Impulse English Academy - La Vaguada, Barrio del Pilar",
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 40.4789,
-        "longitude": -3.7114
+        "latitude": NAP.geo.latitude,
+        "longitude": NAP.geo.longitude
       }
     }
   };
