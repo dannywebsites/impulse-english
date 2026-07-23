@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, CheckCircle, Award, GraduationCap, Briefcase, MessageCircle, ChevronRight, Users, FileText, Target, Lightbulb, Globe, Headphones, Mic, PenTool, ExternalLink } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import FAQSection from '../../components/FAQSection';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
@@ -1124,15 +1125,7 @@ export default function ExamenesCambridgeGuiaPage() {
 
               </div>
               <div>
-                <LeadForm
-                  title="Empieza tu transformación"
-                  subtitle="Te contactamos en menos de 24h"
-                  ctaText="Quiero mi certificado"
-                  source="blog-cambridge-guia"
-                  showPhone={true}
-                  showAge={true}
-                  showLevel={true}
-                />
+                <OneToOneCTA pathname="/blog/examenes-cambridge-guia" source="blog-cambridge-guia" />
               </div>
 
             </div>

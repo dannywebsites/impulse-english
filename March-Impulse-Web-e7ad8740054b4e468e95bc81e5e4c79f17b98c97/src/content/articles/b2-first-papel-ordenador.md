@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>Es fundamental que tengáis claro que el contenido, la dificultad y la certificación son exactamente iguales en ambos formatos. Las preguntas siguen la misma estructura, los criterios de evaluación son idénticos y el certificado que recibís tiene el mismo valor y reconocimiento internacional.</p><p>La prueba de Speaking es presencial en ambos casos: os sentaréis frente a dos examinadores con otro candidato, independientemente de si habéis realizado el resto del examen en papel o en ordenador. Elegid el formato en función de vuestra comodidad personal y de los plazos que necesitéis para recibir los resultados, no por diferencias de contenido o dificultad.</p>
 impulseSection:
-  heading: Te preparamos para el B2 First en cualquier formato
-  content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, os preparamos tanto para el formato papel como para el ordenador. Nuestros simulacros mensuales replican ambas modalidades para que el día del examen no tengáis sorpresas. Con grupos reducidos de máximo 10 alumnos, profesores certificados TEFL/CELTA y un 100% de aprobados en 2024-2025, os asesoramos sobre qué formato se ajusta mejor a vuestro perfil."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación B2 First
-      href: /examenes-cambridge/b2-first
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Cuántas veces puedo presentarme al B2 First?"
     answer: "Puedes presentarte al B2 First tantas veces como desees sin límite establecido por Cambridge English, pero solo una vez por convocatoria oficial."

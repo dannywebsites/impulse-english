@@ -30,13 +30,11 @@ contextSections:
   - heading: "Más allá de la academia: recursos complementarios"
     content: <p>Una buena academia es fundamental, pero no suficiente. Complementad las clases con:</p><ul><li>Series animadas en versión original (Bluey, Peppa Pig para pequeños; Avatar o Gravity Falls para mayores)</li><li>Apps como Duolingo Kids o Lingokids</li><li>Cuentos bilingües de la biblioteca municipal de Fuencaral-El Pardo</li></ul><ul><li>Podcasts específicos para vuestro nivel (ESL Pod, BBC Learning English)</li><li>Cambiar el idioma del móvil y redes sociales a inglés</li><li>Intercambios de idiomas en La Vaguada o grupos de conversación en Meetup</li></ul><ul><li>Cine en versión original en los Cinesa de La Vaguada</li><li>Librerías con sección en inglés (Casa del Libro en Plaza Norte 2)</li><li>Encuentros de intercambio de idiomas que se organizan periódicamente en el barrio</li></ul>
 impulseSection:
-  heading: Impulse English Academy te ayuda con el ingles en Madrid
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Nuestros cursos
-      href: /cursos-ingles/adultos
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Cuánto cuesta de media una academia de inglés en el Barrio del Pilar?
     answer: El precio medio mensual oscila entre 65€ y 95€ para clases en grupo de dos horas semanales. Kids & Us y academias premium pueden llegar a 110-120€, mientras que opciones más económicas como The English Way rondan los 55-70€. Debéis sumar el coste del material didáctico (entre 40-80€ anuales) y la matrícula inicial (30-60€). Las clases particulares cuestan entre 25-40€ la hora dependiendo de si el profesor es nativo y sus certificaciones.

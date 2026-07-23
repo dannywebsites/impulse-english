@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, FileText, CheckCircle, AlertTriangle, ArrowRight, UserCheck } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
@@ -384,20 +385,7 @@ export default function RegistroCambridgePage() {
               </div>
             </section>
 
-            {/* CTA */}
-            <div className="bg-gradient-to-r from-sky-600 to-blue-600 rounded-2xl p-8 text-center text-white">
-              <h3 className="text-2xl font-bold mb-4">¿Necesitas ayuda con tu registro?</h3>
-              <p className="text-sky-100 mb-6 max-w-2xl mx-auto">
-                En Impulse English Academy te ayudamos con todo el proceso de registro y te preparamos para tu examen Cambridge.
-              </p>
-              <a
-              href="/contacto/"
-                className="inline-flex items-center gap-2 bg-white text-sky-600 px-8 py-4 rounded-xl font-semibold hover:bg-sky-50 transition-colors"
-              >
-                Contactar ahora
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </div>
+            <InlineOneToOneCTA pathname="/blog/registro-cambridge" />
 
             {/* Related Articles */}
             <section className="mt-16">
@@ -422,7 +410,7 @@ export default function RegistroCambridgePage() {
           {/* Lead Form */}
           <section className="bg-gray-50 py-16">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <LeadForm />
+              <OneToOneCTA pathname="/blog/registro-cambridge" />
             </div>
           </section>
         </main>

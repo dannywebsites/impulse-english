@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
@@ -433,20 +434,7 @@ export default function LinguaskillCasaFiablePage() {
               </div>
             </section>
 
-            {/* CTA */}
-            <div className="bg-gradient-to-r from-amber-500 to-amber-700 rounded-2xl p-8 text-center text-white">
-              <h3 className="text-2xl font-bold mb-4">¿Quieres preparar Linguaskill desde casa?</h3>
-              <p className="text-amber-100 mb-6 max-w-2xl mx-auto">
-                Te ayudamos a prepararte y te asesoramos sobre la modalidad que mejor se adapta a ti: en centro o desde casa.
-              </p>
-              <a
-              href="/contacto/"
-                className="inline-flex items-center gap-2 bg-white text-amber-600 px-8 py-4 rounded-xl font-semibold hover:bg-amber-50 transition-colors"
-              >
-                Solicitar información
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </div>
+            <InlineOneToOneCTA pathname="/blog/linguaskill-casa-fiable" />
 
             {/* Related Articles */}
             <section className="mt-16">
@@ -477,7 +465,7 @@ export default function LinguaskillCasaFiablePage() {
           {/* Lead Form */}
           <section className="bg-gray-50 py-16">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <LeadForm />
+              <OneToOneCTA pathname="/blog/linguaskill-casa-fiable" />
             </div>
           </section>
         </main>

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { FileText, Download, Clock, ChevronDown, ChevronUp, CheckCircle, ExternalLink, AlertCircle, BookOpen } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
@@ -476,28 +477,7 @@ export default function PdfsCambridgeAdvancedPage() {
               </div>
             </section>
 
-            {/* CTA */}
-            <section className="mb-12">
-              <div className="bg-zinc-900 rounded-2xl p-8">
-                <div className="flex flex-col md:flex-row items-center gap-6">
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2">
-                      ¿Preparando el C1 Advanced?
-                    </h3>
-                    <p className="text-zinc-400">
-                      Te ayudamos a sacar el máximo partido a los recursos oficiales con preparación guiada.
-                    </p>
-                  </div>
-                  <a
-              href="/reservar-clase"
-                    className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
-                  >
-                    Reserva tu clase gratis
-                  </a>
-                </div>
-
-              </div>
-            </section>
+            <InlineOneToOneCTA pathname="/blog/pdfs-cambridge-advanced" />
 
             {/* Related Articles */}
             <section>
@@ -518,7 +498,7 @@ export default function PdfsCambridgeAdvancedPage() {
         </div>
       </article>
 
-      <LeadForm />
+      <OneToOneCTA pathname="/blog/pdfs-cambridge-advanced" />
 
       {/* External Authority Link */}
       <section className="py-8 px-6 bg-white border-t border-zinc-100">

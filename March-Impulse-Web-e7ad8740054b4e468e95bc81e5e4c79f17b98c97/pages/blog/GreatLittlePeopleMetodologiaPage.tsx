@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
@@ -342,20 +343,7 @@ export default function GreatLittlePeopleMetodologiaPage() {
               </div>
             </section>
 
-            {/* CTA */}
-            <div className="bg-gradient-to-r from-purple-600 to-purple-800 rounded-2xl p-8 text-center text-white">
-              <h3 className="text-2xl font-bold mb-4">Somos centro oficial Great Little People en Madrid</h3>
-              <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
-                Primera sesión gratuita. Ven a conocer cómo funciona el método en la práctica con tu hijo.
-              </p>
-              <a
-              href="/cursos-ingles/infantil/"
-                className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
-              >
-                Reservar sesión gratuita
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </div>
+            <InlineOneToOneCTA pathname="/blog/great-little-people-metodologia" />
 
             {/* Related Articles */}
             <section className="mt-16">
@@ -386,7 +374,7 @@ export default function GreatLittlePeopleMetodologiaPage() {
           {/* Lead Form */}
           <section className="bg-gray-50 py-16">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <LeadForm />
+              <OneToOneCTA pathname="/blog/great-little-people-metodologia" />
             </div>
           </section>
         </main>

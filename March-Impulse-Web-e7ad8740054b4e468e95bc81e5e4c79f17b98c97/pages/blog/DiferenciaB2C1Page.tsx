@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
@@ -432,20 +433,7 @@ export default function DiferenciaB2C1Page() {
               </div>
             </section>
 
-            {/* CTA */}
-            <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl p-8 text-center text-white">
-              <h3 className="text-2xl font-bold mb-4">¿B2 o C1? Te ayudamos a decidir</h3>
-              <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
-                Realizamos una evaluación de nivel gratuita para recomendarte el camino más eficiente hacia tu objetivo.
-              </p>
-              <a
-              href="/contacto/"
-                className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
-              >
-                Solicitar evaluación gratuita
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </div>
+            <InlineOneToOneCTA pathname="/blog/diferencia-b2-c1" />
 
             {/* Related Articles */}
             <section className="mt-16">
@@ -482,7 +470,7 @@ export default function DiferenciaB2C1Page() {
           {/* Lead Form */}
           <section className="bg-gray-50 py-16">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <LeadForm />
+              <OneToOneCTA pathname="/blog/diferencia-b2-c1" />
             </div>
           </section>
         </main>

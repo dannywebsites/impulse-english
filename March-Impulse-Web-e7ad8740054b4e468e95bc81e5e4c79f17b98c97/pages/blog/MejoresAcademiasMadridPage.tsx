@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { Calendar, Clock, ArrowLeft, FileText, Euro, MapPin, ExternalLink, CheckCircle, Star, Users, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import FAQSection from '../../components/FAQSection';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
@@ -472,7 +473,7 @@ export default function MejoresAcademiasMadridPage() {
                 </p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-xl">
-                <LeadForm />
+                <OneToOneCTA pathname="/blog/mejores-academias-madrid" />
               </div>
             </div>
           </div>

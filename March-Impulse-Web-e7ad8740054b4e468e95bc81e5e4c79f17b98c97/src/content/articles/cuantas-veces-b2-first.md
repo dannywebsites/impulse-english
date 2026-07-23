@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>Los resultados del B2 First en formato ordenador se publican en un plazo de 5 a 10 días laborables, lo que os permite tomar decisiones rápidamente sobre una posible reinscripción. En cambio, el formato papel tarda entre 4 y 6 semanas, así que tened esto en cuenta a la hora de elegir la modalidad.</p><p>Si tenéis una fecha límite para presentar el certificado (una solicitud universitaria, un proceso de selección laboral, etc.), es recomendable inscribiros con suficiente antelación y contemplar la posibilidad de un segundo intento. De esta forma, dispondréis de tiempo para repetir el examen si fuese necesario.</p>
 impulseSection:
-  heading: Preparamos el B2 First en Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, os acompañamos en cada intento hasta que obtengáis vuestro certificado. Nuestro ratio de aprobados en 2024-2025 es del 100%, gracias a grupos reducidos de máximo 10 alumnos, simulacros mensuales en condiciones reales y profesores certificados TEFL/CELTA que conocen el examen a la perfección. Si necesitáis repetir, diseñamos un plan personalizado centrado en vuestras áreas de mejora."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación B2 First
-      href: /examenes-cambridge/b2-first
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Qué pasa si suspendo el B2 First?"
     answer: "Al suspender el B2 First sin alcanzar 160 puntos en la Cambridge English Scale, el candidato no recibe certificado B2 pero obtiene un Informe de Resultados (Statement of Results) con puntuaciones individuales por destreza. Puntuaciones entre 140-159 certifican nivel B1."

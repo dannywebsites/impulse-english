@@ -22,13 +22,11 @@ contextSections:
   - heading: "Comparativa: ¿Qué Modalidad os Conviene Según Vuestro Perfil?"
     content: "<p>Para facilitar la decisión final, aquí tenéis una guía según situaciones específicas:</p><ul><li>Opción ideal: Academia grupal de barrio (65€-90€/mes)</li><li>Razón: Socialización, método lúdico, precio contenido</li><li>Priorizar: Centro preparador Young Learners oficial</li></ul><ul><li>Opción ideal: Curso intensivo presencial (300€-450€/mes durante 2-3 meses)</li><li>Razón: Inmersión total, preparación específica de examen</li><li>Priorizar: Centros con alta tasa de aprobados en Cambridge</li></ul><ul><li>Opción ideal: Clases particulares online (15€-20€/hora, 2 veces por semana = 120€-160€/mes)</li><li>Razón: Flexibilidad horaria, precio reducido, personalización</li><li>Priorizar: Profesor especializado en examen objetivo (IELTS, TOEFL)</li></ul><ul><li>Opción ideal: Clases particulares presenciales con nativo (30€-40€/hora, 1-2 veces por semana)</li><li>Razón: Vocabulario especializado, práctica de presentaciones, networking</li><li>Priorizar: Profesor con experiencia empresarial real</li></ul><ul><li>Opción ideal: Academia con descuento hermanos (150€-200€/mes total)</li><li>Razón: Economía de escala, seguimiento compartido, desplazamiento único</li><li>Priorizar: Centro con grupos por edad y nivel separados</li></ul>"
 impulseSection:
-  heading: Impulse English Academy te ayuda con tu preparacion
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Nuestros cursos
-      href: /cursos-ingles/adultos
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Es más barato el inglés online en 2026?
     answer: "Sí, las clases online continúan siendo aproximadamente un 20-30% más económicas que las presenciales. Un profesor particular online cobra entre 15€ y 25€ por hora, mientras que presencialmente el rango sube a 22€-35€. Las academias online también ofrecen cursos grupales desde 50€-70€ mensuales. Sin embargo, la modalidad presencial aporta ventajas como la interacción directa, mayor disciplina y prácticas de conversación más naturales. La opción ideal depende de vuestro estilo de aprendizaje: los estudiantes autodisciplinados obtienen excelentes resultados online con notable ahorro."

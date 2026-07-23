@@ -22,13 +22,11 @@ contextSections:
   - heading: "La decisión estratégica: inversión vs. coste de oportunidad"
     content: "<p>Al final, sacarse el C1 Advanced no debería verse como un gasto educativo, sino como una inversión financiera con uno de los retornos más altos disponibles en el mercado.</p><p>Comparadlo con otras inversiones comunes:</p><ul><li><strong>Máster profesional</strong>: 6.000-15.000€, retorno incierto, saturación en algunos sectores</li><li><strong>Carnet de conducir</strong>: 800-1.200€, necesario pero sin retorno salarial directo</li><li><strong>Certificaciones técnicas (PMP, AWS, etc.)</strong>: 1.500-3.000€, retorno alto pero limitado a sectores específicos</li></ul><p>El C1 Advanced por 1.500-2.200€ os genera retorno mensurable en 4 meses y es transferible a cualquier sector con dimensión internacional. Pocas inversiones ofrecen esa combinación de bajo coste, alto retorno y aplicabilidad universal.</p>"
 impulseSection:
-  heading: Impulse English Academy te ayuda con el C1 Advanced
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación C1 Advanced
-      href: /examenes-cambridge/c1-advanced
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Cuánto tiempo se tarda en preparar el C1 Advanced desde un B2?
     answer: "Un estudiante con B2 consolidado necesita entre 6 y 9 meses de preparación intensiva (4-6 horas semanales de clase más estudio personal) para alcanzar el nivel C1 y aprobar el examen con seguridad. Este plazo puede reducirse a 4-5 meses si ya tenéis un B2 alto (puntuación superior a 170 en el examen First) y dedicáis más horas semanales. Lo importante es la constancia: es mejor estudiar 1 hora diaria que 7 horas un solo día a la semana."

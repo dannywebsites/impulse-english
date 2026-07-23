@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>En las oposiciones en España, un certificado C1 de Cambridge puede sumar puntos decisivos en el baremo de méritos. Cuerpos como diplomáticos, técnicos de la Unión Europea, profesorado de idiomas y funcionarios de organismos internacionales requieren o valoran especialmente este nivel. Además, en comunidades autónomas como Madrid, el C1 es requisito para programas bilingües en educación. Obtener el Cambridge C1 Advanced no solo mejora vuestra empleabilidad sino que os abre puertas a carreras públicas de alto nivel.</p>
 impulseSection:
-  heading: Impulsad vuestra carrera con el C1 de Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, os preparamos para obtener el C1 Advanced y dar un salto en vuestra carrera profesional. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos y un enfoque práctico orientado al mundo laboral. Con un historial del 100% de aprobados, nuestra preparación está diseñada para que alcancéis vuestro objetivo con la máxima eficacia y confianza."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación C1 Advanced
-      href: /examenes-cambridge/c1-advanced
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Merece la pena el C1 en España?"
     answer: "El certificado Cambridge C1 Advanced es muy valorado en España en 2025/26 por certificar un nivel alto de inglés, reconocido en universidades, empresas multinacionales y para trámites oficiales. Facilita el acceso a estudios superiores, mejora la empleabilidad y aporta un valor estable sin caducidad."

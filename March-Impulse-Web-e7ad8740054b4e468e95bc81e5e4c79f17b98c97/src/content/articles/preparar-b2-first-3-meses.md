@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>Uno de los errores más frecuentes en las preparaciones de tres meses es dedicar todo el tiempo a Reading & Use of English y descuidar Writing y Speaking. Estas dos destrezas requieren práctica activa y retroalimentación regular, no basta con estudiar teoría gramatical.</p><p>Otro error habitual es no cronometrar los ejercicios durante la preparación. Si practicáis sin límite de tiempo, el día del examen os encontraréis con una presión inesperada que puede afectar a vuestro rendimiento. Desde la primera semana, acostumbraos a trabajar con el reloj en marcha y aprended a gestionar el tiempo de cada sección.</p>
 impulseSection:
-  heading: Preparación intensiva B2 First en Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, ofrecemos programas intensivos diseñados para preparar el B2 First en plazos reducidos. Con un 100% de aprobados en 2024-2025, nuestros profesores certificados TEFL/CELTA crean planes personalizados con simulacros mensuales y grupos reducidos de máximo 10 alumnos. Optimizamos cada hora de clase para que avancéis al máximo ritmo posible."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación B2 First
-      href: /examenes-cambridge/b2-first
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Cuánto tiempo se tarda en preparar el B2 First?"
     answer: La preparación para el examen Cambridge B2 First dura entre 3 y 9 meses según el nivel inicial y dedicación. Estudiantes con base B1 pueden alcanzar el nivel en 3-6 meses con estudio regular.

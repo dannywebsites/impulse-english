@@ -2,10 +2,12 @@ import React, { useEffect } from 'react';
 import { Clock, Calendar, ArrowRight, BookOpen } from 'lucide-react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import LeadForm from './LeadForm';
+import OneToOneCTA from './OneToOneCTA';
+import InlineOneToOneCTA from './InlineOneToOneCTA';
 import FAQSection from './FAQSection';
 import Breadcrumb from './Breadcrumb';
 import RelatedArticles from './RelatedArticles';
+import { offerForCategory } from '../utils/popupVariants';
 import { categoryConfig } from '../data/category-config';
 import { resolveInternalLinks } from '../data/internal-links';
 import type { PAAArticle, ArticleCard, ArticleImage } from '../data/articles/types';
@@ -55,6 +57,10 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
   // Fallback to Cambridge B2 First config if article category is invalid/missing,
   // so a bad category in content can't crash the entire build.
   const config = categoryConfig[article.category] ?? categoryConfig['Cambridge B2 First'];
+
+  // One-to-one offer matched to this article's exam/topic. Group classes aren't
+  // running, so the CTAs pitch personalised one-to-one (see popupVariants.ts).
+  const offer = offerForCategory(article.category);
 
   // Resolve images: prefer articleImages array, fall back to legacy imageKey
   const heroImage: { url: string; alt: string } = (() => {
@@ -148,6 +154,10 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
           ? inlineImages[inlineImageIndex]
           : null;
 
+        // Mid-article one-to-one CTA: after the 2nd section, or after the last
+        // one on short articles, so every article gets exactly one inline nudge.
+        const inlineCtaIndex = Math.min(1, article.contextSections.length - 1);
+
         return (
           <React.Fragment key={index}>
             <section
@@ -173,6 +183,7 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
                 </div>
               </div>
             )}
+            {index === inlineCtaIndex && <InlineOneToOneCTA offer={offer} />}
           </React.Fragment>
         );
       })}
@@ -200,46 +211,8 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
         </section>
       )}
 
-      {/* Impulse CTA Section */}
-      <section className="py-12 px-6 bg-accent-blue">
-        <div className="container mx-auto max-w-4xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                {article.impulseSection.heading}
-              </h2>
-              <p className="text-white/85 leading-relaxed mb-6">
-                {article.impulseSection.content}
-              </p>
-              <div className="flex flex-wrap gap-3">
-                {article.impulseSection.ctaLinks.map((cta, i) => (
-                  <a
-                    key={i}
-                    href={cta.href}
-                    className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm transition-all ${
-                      i === 0
-                        ? 'bg-white text-accent-blue hover:bg-zinc-100'
-                        : 'bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm'
-                    }`}
-                  >
-                    {cta.text}
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                ))}
-              </div>
-            </div>
-            <div>
-              <LeadForm
-                source={config.leadFormSource}
-                compact
-                title="¿Quieres más información?"
-                subtitle="Te contactamos en menos de 24 horas"
-                ctaText="Solicitar información"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* One-to-one CTA (topic-matched, tú voice, WhatsApp + lead form) */}
+      <OneToOneCTA offer={offer} source={`paa-1to1-${offer.key}`} />
 
       {/* FAQ Section */}
       {article.faqItems.length > 0 && (

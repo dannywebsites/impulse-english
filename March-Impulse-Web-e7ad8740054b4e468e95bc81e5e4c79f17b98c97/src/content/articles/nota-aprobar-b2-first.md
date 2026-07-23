@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>Si vuestra puntuación media se sitúa entre 140 y 159 puntos, no obtendréis el certificado B2, pero Cambridge os reconocerá el nivel B1. Recibiréis un certificado de B1 junto con vuestro Statement of Results, algo que puede resultar útil si necesitáis acreditar al menos ese nivel.</p><p>Si la puntuación es inferior a 140 (entre 122 y 139), constará en el informe de resultados pero sin certificación de ningún nivel. En este caso, os recomendamos valorar si es más adecuado prepararos primero para el B1 Preliminary y consolidar una base sólida antes de volver a intentar el B2 First.</p>
 impulseSection:
-  heading: Alcanza la nota que necesitas con Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, nuestros alumnos no solo aprueban: muchos alcanzan Grade A. Con un 100% de aprobados en 2024-2025, simulacros mensuales con corrección detallada y grupos reducidos de máximo 10 alumnos, nuestros profesores certificados TEFL/CELTA os preparan para superar ampliamente los 160 puntos."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación B2 First
-      href: /examenes-cambridge/b2-first
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Cuánto dura el certificado B2 de Cambridge?"
     answer: "El certificado Cambridge B2 First posee validez permanente sin fecha de caducidad, siendo reconocido de por vida por instituciones educativas y empleadores globalmente."

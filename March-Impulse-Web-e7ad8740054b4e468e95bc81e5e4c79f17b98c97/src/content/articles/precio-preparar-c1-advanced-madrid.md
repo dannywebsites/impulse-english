@@ -24,13 +24,11 @@ contextSections:
   - heading: "8. Retorno de Inversión: ¿Cuánto Vale Realmente el C1 Advanced?"
     content: <p>Aunque esta guía se centra en los costes, es importante contextualizar el valor que obtenéis a cambio de vuestra inversión de 700-1.200€.</p><h3>En el Mercado Laboral Español</h3><p>Según datos de InfoJobs y LinkedIn de 2024, los profesionales con certificación C1 en inglés ganan de media entre 3.000€ y 5.000€ más al año que sus equivalentes con B2 o sin certificación oficial. En sectores como tecnología, consultoría o finanzas, esta diferencia puede ser aún mayor.</p><p>El C1 Advanced es requisito obligatorio o altamente valorado en:</p><ul><li>Oposiciones al cuerpo de profesores (vale 1 punto)</li><li>Posiciones multinacionales en Madrid (Telefónica, Accenture, Amazon)</li><li>Programas de MBA y másteres internacionales</li><li>Traslados internacionales dentro de empresas</li></ul><h3>Para Acceso a la Universidad y Másteres</h3><p>Muchas universidades públicas y privadas de España están empezando a exigir B2 como mínimo para graduarse, y C1 para acceder a ciertos másteres oficiales. Obtener el certificado antes os ahorra problemas de última hora y os abre puertas a programas más competitivos.</p><h3>Como Inversión Personal</h3><p>A diferencia de otros gastos formativos, el C1 Advanced es un certificado vitalicio reconocido en más de 20.000 instituciones mundialmente. No caduca, no necesita renovación y representa vuestro nivel de inglés de manera objetiva y universalmente reconocida.</p><p>Si lo veis desde esta perspectiva, incluso la opción premium de 1.200€ representa menos de 0,10€ al día durante 30 años de vida laboral. El retorno de inversión es incuestionable si lo aprobáis a la primera.</p>
 impulseSection:
-  heading: Impulse English Academy te ayuda con el C1 Advanced
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación C1 Advanced
-      href: /examenes-cambridge/c1-advanced
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Caduca el certificado C1 Advanced de Cambridge?
     answer: No, el certificado C1 Advanced no tiene fecha de caducidad. Una vez que lo obtenéis, es válido de por vida. Sin embargo, algunas instituciones (especialmente universidades extranjeras o determinadas empresas) pueden solicitar que el certificado tenga una antigüedad máxima de 2-3 años para asegurar que vuestro nivel sigue siendo actual. Esto no significa que el certificado caduque oficialmente, sino que esa institución particular tiene sus propios criterios internos. Para el 95% de los usos (oposiciones, empresas españolas, universidades nacionales), vuestro C1 será válido siempre.

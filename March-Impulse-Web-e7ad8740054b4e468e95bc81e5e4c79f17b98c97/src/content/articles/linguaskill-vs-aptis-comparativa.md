@@ -22,13 +22,11 @@ contextSections:
   - heading: "Conclusión: tu decisión en dos minutos"
     content: <p>No existe un examen universalmente "mejor". Existe el examen que mejor se adapta a tu situación específica en 2026.</p><ul><li>Buscas prestigio de marca Cambridge para tu CV profesional</li><li>Necesitas flexibilidad modular para certificar competencias específicas</li><li>Trabajas o aspiras a trabajar en multinacionales o empresas tecnológicas</li><li>Valoras un sistema adaptativo que refleje con precisión tu nivel real</li></ul><ul><li>Necesitas cumplir requisitos universitarios en instituciones públicas madrileñas</li><li>Buscas la habilitación lingüística como docente</li><li>Prefieres un formato predecible que puedas entrenar específicamente</li><li>Preparas oposiciones de enseñanza en la Comunidad de Madrid</li><li>Buscas certificación para tu hijo adolescente (APTIS for Teens)</li></ul><p>Recuerda que, más allá del examen que elijas, lo fundamental es prepararte adecuadamente. Un mes de preparación específica con materiales oficiales y, si es posible, en un centro especializado, puede marcar la diferencia entre aprobar justamente y obtener una puntuación que realmente destaque en tu currículum.</p><p>La certificación de inglés que elijas hoy puede abrir puertas importantes en tu futuro profesional o académico en Madrid. Tómate el tiempo necesario para evaluar tu situación específica, elige el examen que mejor responda a tus necesidades reales, y prepárate con seriedad. El mercado laboral madrileño valora cada vez más las competencias lingüísticas certificadas, y tanto Linguaskill como APTIS pueden ser tu pasaporte hacia nuevas oportunidades.</p>
 impulseSection:
-  heading: Impulse English Academy te ayuda con el Linguaskill
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación Linguaskill
-      href: /linguaskill
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Cuánto duran los resultados de Linguaskill y APTIS?
     answer: Los certificados de ambos exámenes no caducan oficialmente, son válidos de por vida. Sin embargo, la mayoría de instituciones (universidades, administraciones públicas, empresas) solicitan certificaciones obtenidas en los últimos 2 años. Esto se debe a que quieren evidencia de tu nivel actual de inglés, no el de hace varios años. Si necesitas usar tu certificado para trámites oficiales o procesos de selección, planifica renovarlo si tiene más de 2 años de antigüedad.

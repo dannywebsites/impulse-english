@@ -26,13 +26,11 @@ contextSections:
   - heading: "Conclusión: Tu decisión informada"
     content: "<p>Llegados a este punto, deberías tener todos los elementos para tomar una decisión fundamentada. No existe un examen superior al otro en términos absolutos, pero sí existe uno mejor para tu circunstancia concreta.</p><p>Si tu objetivo principal es <strong>proyección internacional, sector privado o urgencia temporal</strong>, Cambridge B2 First es tu mejor aliado. Si buscas <strong>reconocimiento en el sistema público español, especialmente en Madrid, con presupuesto ajustado</strong>, la EOI es una inversión muy rentable.</p><p>Lo que sí es universal es esto: independientemente del examen que elijas, necesitarás <strong>preparación seria, constante y específica</strong> para ese formato concreto. Un B2 no se regala en ninguno de los dos sistemas. Ambos exámenes son exigentes y requieren dominio real del idioma, no solo trucos de examen.</p><p>Elige con la cabeza, prepárate con disciplina, y ese título B2 que hoy parece una montaña, dentro de unos meses será una realidad en tu currículum.</p><p>¿Necesitas ayuda personalizada para decidir cuál es tu mejor opción? En Impulse English Academy llevamos años preparando a estudiantes de Madrid para ambos exámenes con resultados contrastados. Nuestro equipo de profesores nativos certificados puede ayudarte a evaluar tu nivel actual y diseñar un plan de estudio realista para tu objetivo. Estamos en La Vaguada y nuestros grupos reducidos nos permiten ofrecer atención totalmente personalizada. Vale la pena invertir bien tu tiempo y dinero desde el principio.</p>"
 impulseSection:
-  heading: Impulse English Academy te ayuda con el B2 First
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación B2 First
-      href: /examenes-cambridge/b2-first
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Puedo presentarme al examen de la EOI sin haber asistido a clase?
     answer: Sí, es el examen llamado "That's Free" (candidato libre). Pagas únicamente la tasa de examen (40-60€) y te presentas en junio o septiembre. No tienes acceso a las clases ni a los profesores de la EOI, pero puedes examinarte. La tasa de aprobados en candidatos libres es significativamente menor que en alumnos oficiales.

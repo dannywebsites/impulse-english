@@ -14,13 +14,11 @@ contextSections:
     content: |
       <p>Si vuestro objetivo es certificar un nivel alto de inglés para el mercado laboral europeo, oposiciones en España o estudios universitarios dentro de la UE, el C1 Advanced es generalmente la mejor opción por su prestigio y validez permanente. El IELTS suele ser preferido para procesos de migración a países anglosajones como Australia, Canadá o Nueva Zelanda, y para admisión en universidades del Reino Unido y EE.UU. que lo solicitan específicamente. Evaluad vuestras necesidades concretas antes de decidir.</p>
 impulseSection:
-  heading: Preparaos para el C1 Advanced en Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, os orientamos sobre qué examen se adapta mejor a vuestros objetivos y os preparamos específicamente para el C1 Advanced. Nuestros profesores especializados trabajan con grupos reducidos, ofreciendo simulacros reales y estrategias probadas. Con un 100% de aprobados, os garantizamos una preparación de calidad que os llevará al éxito en el examen."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación C1 Advanced
-      href: /examenes-cambridge/c1-advanced
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿El C1 caduca?"
     answer: "El certificado Cambridge C1 Advanced no caduca oficialmente y es válido de por vida. No obstante, muchas universidades y empleadores requieren que la certificación tenga menos de 2-3 años para considerarla vigente, garantizando así la actualización del nivel de inglés del candidato."

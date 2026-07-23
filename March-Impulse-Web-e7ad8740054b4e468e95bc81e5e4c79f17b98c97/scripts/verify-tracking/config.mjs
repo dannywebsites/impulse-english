@@ -42,9 +42,12 @@ export const MATRIX = [
     form: { source: 'exam', submit: false },
   },
   {
+    // Legacy blog page (EsDificilB2FirstPage). Since the one-to-one CTA rollout,
+    // every blog page carries a WhatsApp link (OneToOneCTA + popup), so this is
+    // now required, not best-effort.
     path: '/blog/es-dificil-b2-first/',
     tests: [
-      { label: 'WhatsApp (blog CTA)', find: WA, expect: 'whatsapp_click' },
+      { label: 'WhatsApp (blog CTA)', find: WA, expect: 'whatsapp_click', required: true },
       { label: 'Phone (blog)', find: TEL, expect: 'phone_click' },
     ],
     form: { source: 'general', submit: false },
@@ -52,7 +55,7 @@ export const MATRIX = [
   {
     path: '/blog/academia-cambridge-vs-academia-generica/', // PAA dynamic [slug] template
     tests: [
-      { label: 'WhatsApp (PAA)', find: WA, expect: 'whatsapp_click' },
+      { label: 'WhatsApp (PAA)', find: WA, expect: 'whatsapp_click', required: true },
       { label: 'Phone (PAA)', find: TEL, expect: 'phone_click' },
     ],
     form: { source: 'paa', submit: false },

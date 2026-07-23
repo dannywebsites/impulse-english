@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
@@ -335,20 +336,7 @@ export default function HijoPrepararCambridgePage() {
               </div>
             </section>
 
-            {/* CTA */}
-            <div className="bg-gradient-to-r from-purple-600 to-purple-800 rounded-2xl p-8 text-center text-white">
-              <h3 className="text-2xl font-bold mb-4">Preparamos a tu hijo para Cambridge con metodología probada</h3>
-              <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
-                Evaluamos el nivel de tu hijo y diseñamos el plan de preparación Cambridge más adecuado para su edad y momento.
-              </p>
-              <a
-              href="/cursos-ingles/primaria/"
-                className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors"
-              >
-                Ver cursos de primaria
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </div>
+            <InlineOneToOneCTA pathname="/blog/hijo-preparar-cambridge" />
 
             {/* Related Articles */}
             <section className="mt-16">
@@ -379,7 +367,7 @@ export default function HijoPrepararCambridgePage() {
           {/* Lead Form */}
           <section className="bg-gray-50 py-16">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <LeadForm />
+              <OneToOneCTA pathname="/blog/hijo-preparar-cambridge" />
             </div>
           </section>
         </main>

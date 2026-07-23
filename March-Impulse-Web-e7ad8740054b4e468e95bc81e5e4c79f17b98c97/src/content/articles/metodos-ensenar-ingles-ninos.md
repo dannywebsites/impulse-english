@@ -26,13 +26,11 @@ contextSections:
   - heading: "Planificación anual: Cómo estructurar el año académico"
     content: '<p>Para familias organizadas que queréis maximizar resultados, esta estructura por trimestres funciona eficazmente:</p><p><strong>Septiembre-Diciembre (Trimestre 1):</strong> Establecimiento de rutinas. Enfoque en comprensión auditiva y vocabulario básico. No exijáis producción oral. Prioridad: que vuestro hijo disfrute y asocie inglés con momentos positivos.</p><p><strong>Enero-Marzo (Trimestre 2):</strong> Introducción gradual de phonics si tiene 5 años, o refuerzo de vocabulario temático (animales, comida, ropa) si es más pequeño. Comenzar cuentos interactivos en casa donde vuestro hijo complete frases predecibles.</p><p><strong>Abril-Junio (Trimestre 3):</strong> Consolidación y primeras producciones espontáneas. Buscad oportunidades de "uso real" del inglés: visitar un museo con audioguía infantil en inglés, participar en talleres bilingües en centros culturales madrileños.</p><p><strong>Verano:</strong> Campamentos urbanos en inglés (muchas academias los ofrecen en julio) o intercambio de juegos con apps educativas. Evitad el "verano en blanco" donde se pierde parte de lo adquirido.</p>'
 impulseSection:
-  heading: Impulse English Academy te ayuda con el ingles para ninos
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Nuestros cursos
-      href: /cursos-ingles/adultos
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Es demasiado tarde empezar con inglés si mi hijo ya tiene 6 años?
     answer: En absoluto. Aunque la plasticidad neuronal máxima se da entre 0-3 años, el periodo hasta los 7 años sigue siendo excepcionalmente receptivo. Un niño de 6 años que comienza con metodología adecuada alcanza niveles de fluidez excelentes, especialmente si el entorno familiar refuerza el aprendizaje. La diferencia principal respecto a empezar a los 3 años es que necesitará exposición algo más intensiva (5-6 horas semanales frente a 4) para compensar el tiempo perdido, pero los resultados a medio plazo son comparables.

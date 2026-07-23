@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>Independientemente de la validez del certificado, lo más importante es mantener vuestro nivel de inglés activo. El idioma se puede perder si no se practica con regularidad. Leed prensa internacional, mantened conversaciones en inglés, consumid contenido audiovisual sin subtítulos y, si es posible, utilizad el inglés en vuestro entorno laboral. De esta forma, aunque vuestro certificado tenga varios años, vuestro nivel real seguirá siendo C1 y podréis demostrarlo en cualquier entrevista o prueba que os soliciten.</p>
 impulseSection:
-  heading: Certificad vuestro C1 con Impulse English Academy
-  content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, os ayudamos a obtener el C1 Advanced con una preparación completa y eficaz. Nuestros profesores especializados trabajan con grupos reducidos y materiales oficiales actualizados. Con un historial del 100% de aprobados, os garantizamos una formación de calidad que os permitirá conseguir un certificado válido de por vida y de reconocimiento internacional."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación C1 Advanced
-      href: /examenes-cambridge/c1-advanced
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Merece la pena el C1 en España?"
     answer: "El certificado Cambridge C1 Advanced es muy valorado en España en 2025/26 por certificar un nivel alto de inglés, reconocido en universidades, empresas multinacionales y para trámites oficiales. Facilita el acceso a estudios superiores, mejora la empleabilidad y aporta un valor estable sin caducidad."

@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>Practicad el Speaking con un compañero siempre que sea posible. Grabad vuestras respuestas y escuchadlas después para identificar muletillas, pausas excesivas o errores recurrentes. Para la Parte 2, practicad describiendo y comparando fotografías en un minuto exacto: ni más, ni menos.</p><p>Para la Parte 3, aprended expresiones útiles para mostrar acuerdo y desacuerdo, pedir opiniones y negociar: "I see your point, but...", "What do you think about...?", "Shall we agree on...?". No dominéis la conversación ni dejéis que vuestro compañero hable solo. La interacción equilibrada es clave para obtener una buena puntuación en comunicación interactiva.</p>
 impulseSection:
-  heading: Practica el Speaking del B2 First en Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, dedicamos sesiones completas a la práctica del Speaking en condiciones reales de examen. Con grupos reducidos de máximo 10 alumnos, cada estudiante tiene oportunidades constantes para hablar. Nuestros profesores certificados TEFL/CELTA os dan retroalimentación individualizada sobre pronunciación, fluidez e interacción. El 100% de aprobados en 2024-2025 avala nuestra metodología."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación B2 First
-      href: /examenes-cambridge/b2-first
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Qué parte del B2 First es más difícil?"
     answer: "La parte más difícil del B2 First suele ser Use of English dentro de Reading & Use of English, especialmente los ejercicios de transformación de palabras y completación sin opciones."

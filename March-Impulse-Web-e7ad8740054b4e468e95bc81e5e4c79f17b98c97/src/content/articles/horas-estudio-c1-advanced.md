@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>Aunque el estudio autónomo es importante, las clases guiadas con profesores especializados aceleran significativamente la preparación. Un profesor experimentado os corrige errores que no detectaríais por vuestra cuenta, os enseña técnicas de examen específicas y os proporciona práctica de Speaking real con feedback inmediato. La combinación ideal es complementar las horas de clase con trabajo individual: lectura extensiva, series y podcasts en inglés, y práctica con exámenes oficiales pasados. Este enfoque mixto maximiza el rendimiento de cada hora invertida.</p>
 impulseSection:
-  heading: Optimizad vuestra preparación C1 con Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, diseñamos planes de estudio personalizados para que aprovechéis al máximo cada hora de preparación. Nuestros profesores especializados en el C1 Advanced trabajan con grupos reducidos y os guían con materiales actualizados y simulacros reales. Con un 100% de aprobados, nuestra metodología está probada para llevaros al éxito de la forma más eficiente posible."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación C1 Advanced
-      href: /examenes-cambridge/c1-advanced
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Cuánto tiempo se tarda en pasar de B2 a C1?"
     answer: "Pasar del nivel B2 al C1 en inglés requiere entre 200 y 300 horas de estudio guiado y práctica intensiva. El progreso depende de la frecuencia, método de aprendizaje y motivación. La certificación Cambridge C1 Advanced valida este nivel avanzado, esencial para contextos académicos y profesionales."

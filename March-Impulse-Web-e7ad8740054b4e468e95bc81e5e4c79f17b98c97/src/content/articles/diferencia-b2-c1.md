@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>El momento ideal para dar el salto depende de vuestros objetivos. Si necesitáis el inglés para trabajar en entornos internacionales, acceder a másteres en universidades de prestigio o destacar en oposiciones, el C1 os abrirá puertas que el B2 no puede. También es recomendable si os sentís estancados en el B2 y queréis un reto que os obligue a profundizar en el idioma. Lo importante es que tengáis un B2 sólido antes de empezar la preparación del C1, ya que intentar el salto sin una base firme puede resultar frustrante y contraproducente.</p>
 impulseSection:
-  heading: Dad el salto de B2 a C1 con Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, os acompañamos en la transición de B2 a C1 con un programa diseñado para maximizar vuestro progreso. Nuestros profesores especializados trabajan con grupos reducidos y una metodología centrada en las competencias que marcan la diferencia en el C1 Advanced. Con un 100% de aprobados, tenemos la experiencia para llevaros al siguiente nivel con seguridad y eficacia."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación C1 Advanced
-      href: /examenes-cambridge/c1-advanced
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Cuánto tiempo se tarda en pasar de B2 a C1?"
     answer: "Pasar del nivel B2 al C1 en inglés requiere entre 200 y 300 horas de estudio guiado y práctica intensiva. El progreso depende de la frecuencia, método de aprendizaje y motivación. La certificación Cambridge C1 Advanced valida este nivel avanzado, esencial para contextos académicos y profesionales."

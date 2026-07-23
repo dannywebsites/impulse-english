@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>Para volver a presentaros, tendréis que abonar la inscripción completa nuevamente, ya que Cambridge no ofrece descuentos ni exenciones por repetición. Los precios pueden variar según el centro examinador y la convocatoria, así que consultad las tarifas actualizadas con antelación.</p><p>Os recomendamos no precipitaros en la reinscripción. Dejad al menos un mes de preparación intensiva focalizada antes de fijar una nueva fecha. Si optáis por el formato ordenador, tendréis más flexibilidad con las fechas disponibles y recibiréis los resultados mucho antes, lo que os permite organizar mejor vuestros plazos.</p>
 impulseSection:
-  heading: En Impulse te ayudamos a aprobar el B2 First
-  content: "Como Centro Preparador Oficial Cambridge, en Impulse English Academy hemos conseguido un 100% de aprobados en la temporada 2024-2025. Nuestros profesores certificados TEFL/CELTA analizan vuestro Statement of Results y diseñan un plan de recuperación personalizado. Con grupos reducidos de máximo 10 alumnos y simulacros mensuales, identificamos vuestros puntos débiles y los convertimos en fortalezas."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación B2 First
-      href: /examenes-cambridge/b2-first
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Cuántas veces puedo presentarme al B2 First?"
     answer: "Puedes presentarte al B2 First tantas veces como desees sin límite establecido por Cambridge English, pero solo una vez por convocatoria oficial."

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Award, Clock, ChevronDown, ChevronUp, CheckCircle, Target, FileText, Headphones, MessageSquare } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
@@ -417,28 +418,7 @@ export default function ExamenCaeCambridgePage() {
               </div>
             </section>
 
-            {/* CTA */}
-            <section className="mb-12">
-              <div className="bg-zinc-900 rounded-2xl p-8">
-                <div className="flex flex-col md:flex-row items-center gap-6">
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2">
-                      ¿Listo para preparar tu CAE?
-                    </h3>
-                    <p className="text-zinc-400">
-                      Consigue tu certificado C1 con nuestra preparación especializada.
-                    </p>
-                  </div>
-                  <a
-              href="/contacto/"
-                    className="bg-rose-500 hover:bg-rose-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
-                  >
-                    Empezar ahora
-                  </a>
-                </div>
-
-              </div>
-            </section>
+            <InlineOneToOneCTA pathname="/blog/examen-cae-cambridge" />
 
             {/* Related Articles */}
             <section>
@@ -459,7 +439,7 @@ export default function ExamenCaeCambridgePage() {
         </div>
       </article>
 
-      <LeadForm />
+      <OneToOneCTA pathname="/blog/examen-cae-cambridge" />
 
       {/* External Authority Link */}
       <section className="py-8 px-6 bg-white border-t border-zinc-100">

@@ -24,13 +24,11 @@ contextSections:
   - heading: "El veredicto final: para quién SÍ merece absolutamente la pena"
     content: '<p>Después de analizar costes, alternativas y contexto del mercado madrileño en 2026, la inversión en un curso de preparación Cambridge es <strong>altamente recomendable</strong> para:</p><p><strong>Estudiantes universitarios en últimos años de carrera</strong>: El B2 es un requisito de graduación, y necesitas aprobarlo antes de la defensa del TFG. Un suspenso implica retrasar tu graduación. No es momento para experimentos: ve a una academia con historial probado.</p><p><strong>Profesionales que buscan promoción o cambio de empleo</strong>: El C1 abre puertas que el B2 mantiene cerradas, especialmente en multinacionales y startups tecnológicas. Si llevas años con inglés "de supervivencia", un curso intensivo de 3 meses puede ser el empujón definitivo.</p><p><strong>Padres de niños entre 7-12 años que quieren crear ventaja competitiva temprana</strong>: Los Young Learners bien planteados (lúdicos, sin presión) establecen bases sólidas. Eso sí: elegir academia especializada en infantil, no centros generalistas.</p><p><strong>Profesionales mayores de 35 años que nunca han certificado su nivel</strong>: Aquí no hay más vueltas: necesitas el papel. Tu experiencia laboral importa, pero HR filtra por certificación antes de leerte.</p><p>La inversión <strong>puede esperar</strong> para:</p><p><strong>Adolescentes de 13-15 años sin objetivo inmediato</strong>: Si tienen buen nivel conversacional pero aún les faltan 3 años para necesitar el B2, quizás es prematuro invertir 1.000€. Mejor mantener el idioma con clases conversacionales más económicas y reservar la preparación intensiva para 4º de ESO o 1º de Bachillerato.</p><p><strong>Personas con nivel realmente avanzado (C1 real) que solo necesitan el papel</strong>: Si has vivido años en el extranjero y tu inglés es fluido, quizás un par de clases particulares para familiarizarte con el formato del examen sean suficientes. No necesitas 9 meses de curso estándar.</p>'
 impulseSection:
-  heading: Impulse English Academy te ayuda con tu preparacion
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Nuestros cursos
-      href: /cursos-ingles/adultos
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Cuánto tiempo necesito para prepararme para el B2 First?
     answer: Depende de tu nivel inicial. Si partes de un B1 sólido (puedes mantener conversaciones sobre temas cotidianos y entender textos generales), necesitarás entre 6-9 meses con un curso de 3 horas semanales. Si tu nivel es A2, la preparación realista es de 12-18 meses. Los cursos intensivos de verano (4-6 semanas) funcionan solo si ya tienes B1+ y necesitas pulir técnica de examen.

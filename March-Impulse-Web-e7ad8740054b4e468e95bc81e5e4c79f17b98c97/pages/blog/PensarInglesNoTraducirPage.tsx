@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, BookOpen, CheckCircle, Target, ArrowRight, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
@@ -265,20 +266,7 @@ export default function PensarInglesNoTraducirPage() {
               </div>
             </section>
 
-            {/* CTA */}
-            <div className="bg-gradient-to-r from-emerald-600 to-emerald-800 rounded-2xl p-8 text-center text-white">
-              <h3 className="text-2xl font-bold mb-4">Metodología de inmersión para pensar en inglés desde el primer día</h3>
-              <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
-                Nuestra metodología está diseñada para crear conexiones directas en inglés, sin el paso intermediario de la traducción.
-              </p>
-              <a
-              href="/metodologia/"
-                className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
-              >
-                Conocer nuestra metodología
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </div>
+            <InlineOneToOneCTA pathname="/blog/pensar-ingles-no-traducir" />
 
             {/* Related Articles */}
             <section className="mt-16">
@@ -303,7 +291,7 @@ export default function PensarInglesNoTraducirPage() {
           {/* Lead Form */}
           <section className="bg-gray-50 py-16">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <LeadForm />
+              <OneToOneCTA pathname="/blog/pensar-ingles-no-traducir" />
             </div>
           </section>
         </main>
