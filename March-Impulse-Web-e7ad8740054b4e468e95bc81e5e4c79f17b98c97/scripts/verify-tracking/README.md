@@ -60,5 +60,27 @@ Exit code 0 = all PASS (usable in CI/cron).
   the harness clicks visible elements only.
 - Realtime deltas use a pre-run baseline; a real visitor clicking during the
   run can only over-count (never false-FAIL), which is acceptable.
+- **GA4 sends `/g/collect` to a REGIONAL host** (`region1.analytics.google.com`,
+  EU data residency) as well as the legacy `www.google-analytics.com`. Match
+  both `analytics.google.com` and `google-analytics.com` or Tick 1 silently
+  misses every hit → all-FAIL (bit us 2026-07-23).
+- **Tick 2 confirms the count INCREASED, not exact parity.** GA4 Realtime is a
+  rolling ~30-min window and undercounts at volume, so `now − baseline` shrinks
+  (even goes negative) over a long run. Track the PEAK delta and pass on a
+  positive peak; demanding `recorded >= sent` false-failed a fully-working run.
+
+## Verifying a changeset BEFORE it's live
+
+Set `VERIFY_SITE` to point the harness anywhere — no deploy needed:
+
+```bash
+npm run build && npm run preview            # serves the prod build on localhost
+VERIFY_SITE=http://localhost:3001 npm run verify:tracking -- --forms --popup
+```
+
+Events record to the same GA4 property regardless of origin (Tick 2 works from
+localhost), consent is pre-seeded per-origin, and `?tt=test` still tags them
+internal. Vercel preview URLs sit behind SSO auth, so localhost is the path of
+least resistance for pre-merge verification.
 
 Adding a CTA to the matrix = one entry in `config.mjs`.
