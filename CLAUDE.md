@@ -136,6 +136,11 @@ The project contains:
 - After ANY change to analytics/tracking surfaces (`BaseLayout.astro` inline scripts, `LeadForm.tsx`, `CoursePopup.tsx`, `ReservarClasePage.tsx`, GTM, GA4 config): run `npm run verify:tracking` in `March-Impulse-Web-.../` and require ALL PASS before calling it done
 - Never declare tracking "verified" from code review or network captures alone — see the double-tick standard in `March-Impulse-Web-.../TRACKING.md`
 
+### SEO Planning — consult the reference FIRST (MANDATORY)
+- Before ANY SEO planning (keyword targeting, page structure, on-page copy, internal linking, which page should rank for a term): **first read `seo references and book/SEO-Master-Class-Reference.md`** — the distilled "Maverick Method" playbook. It is the standing first consultation for all SEO decisions.
+- Log every SEO decision (with the book principle cited) in `seo references and book/SEO-Decisions-Log.md`.
+- Book scope caveat: it covers **on-page + content architecture only** — no GBP/map-pack/NAP-citations/"near me" chapter. Pair it with an external local-SEO source for the proximity/citations half.
+
 ### Homepage Freeze — RETIRED 2026-07-15
 - `seo-system/files/CLAUDE.md` declares a **HARD FREEZE** on the homepage ("append/insert only, never delete/replace/reorder… the freeze wins"). **That freeze no longer applies.**
 - The homepage **can and should be changed to rank better**. It is the site's highest-authority page and its biggest SEO lever.
