@@ -13,8 +13,42 @@ import ContactSection from '../../components/ContactSection';
 import VideoCTA from '../../components/VideoCTA';
 import Newsletter from '../../components/Newsletter';
 import LocationsSection from '../../components/LocationsSection';
+import FAQSection from '../../components/FAQSection';
 import Footer from '../../components/Footer';
 import CookieBanner from '../../components/CookieBanner';
+import { generateFAQSchema } from '../../utils/schemaData';
+import type { FAQItem } from '../../utils/schemaData';
+
+// Preguntas de proximidad ("academia de inglés cerca de mí"). Respuestas
+// de menos de 300 caracteres, nunca de sí/no, para optar a fragmento destacado.
+const faqs: FAQItem[] = [
+  {
+    question: "¿Dónde está la academia de inglés más cercana en el norte de Madrid?",
+    answer: "Impulse English Academy está en la Av. de El Ferrol, 22, en pleno Barrio del Pilar, a 3 minutos andando del metro de Barrio del Pilar (Línea 9). Es el punto más céntrico para las familias de La Vaguada, Peñagrande, Mirasierra y Herrera Oria."
+  },
+  {
+    question: "¿Desde qué barrios se llega fácil a la academia?",
+    answer: "Desde Peñagrande llegas en unos 3 minutos de metro, desde Mirasierra en 4 y desde Herrera Oria en 5, todos por la Línea 9. Plaza Castilla queda a unos 12 minutos en metro y Tetuán a 8 en el autobús 147."
+  },
+  {
+    question: "¿Qué metro me deja más cerca de la academia?",
+    answer: "La estación de Barrio del Pilar, en la Línea 9, queda a 3 minutos andando de la academia. La Línea 7, en Av. de la Ilustración, está a 10-14 minutos a pie o a un trayecto corto en el autobús 147."
+  },
+  {
+    question: "¿Qué líneas de autobús paran al lado de la academia?",
+    answer: "Los autobuses 147, 42 y 83 paran en Ginzo de Limia - Ferrol, a 1 minuto andando. El 147 conecta con Tetuán y Valdeacederas, el 42 con Plaza Castilla y el 83 con Moncloa. Por la noche funciona el búho N23."
+  },
+  {
+    question: "¿Hay aparcamiento cerca si vengo en coche?",
+    answer: "Tienes aparcamiento en superficie en la propia Av. de El Ferrol y en las calles adyacentes. El acceso desde la M-30 es directo: desde Peñagrande llegas en 3-5 minutos, desde Mirasierra en 5-8 y desde Plaza Castilla en 10-15."
+  },
+  {
+    question: "¿Y si vivo fuera del norte de Madrid?",
+    answer: "Damos clases online en directo por videoconferencia para toda España, con el mismo profesorado y la misma preparación Cambridge que en el aula. Escríbenos y miramos juntos qué horarios te encajan mejor."
+  }
+];
+
+const schemas = [generateFAQSchema(faqs)];
 ---
 
 <BaseLayout
@@ -23,6 +57,7 @@ import CookieBanner from '../../components/CookieBanner';
   keywords="academia inglés barrio del pilar, academia inglés la vaguada, cambridge madrid, cursos inglés niños, clases inglés adultos, profesores nativos madrid"
   canonical="/"
   fullTitle={true}
+  schemas={schemas}
 >
   <!-- Hero Wrapper: Full Screen 100dvh -->
   <div class="relative w-full h-[100dvh] overflow-hidden bg-accent-blue">
@@ -98,6 +133,7 @@ import CookieBanner from '../../components/CookieBanner';
   <TestimonialsSection client:visible />
   <VideoCTA />
   <LocationsSection />
+  <FAQSection client:visible faqs={faqs} title="Academia de inglés cerca de ti: preguntas frecuentes" />
   <ContactSection client:visible />
   <Newsletter client:visible />
   <Footer />

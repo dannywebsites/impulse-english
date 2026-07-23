@@ -35,15 +35,17 @@ export const NAP = {
   logo: "https://impulse-english.es/images/optimized/impulse-logo-400.webp",
   image: "https://impulse-english.es/images/optimized/impulse-logo-400.webp",
 
-  // Geo coordinates
+  // Geo coordinates — the real Google Business Profile pin.
+  // Source of truth: the place-ID map embed rendered in LocationsSection
+  // (place ID 0xd422909a0b6b11b:0xbe6ef3e2ba8bb87b).
   geo: {
-    latitude: 40.4789,
-    longitude: -3.7114,
+    latitude: 40.4743948,
+    longitude: -3.7084812,
   },
 
-  // Google Maps embed (based on address coordinates)
+  // Google Maps embed (real place ID, same pin as `geo` above)
   mapsEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.0!2d-3.7136!3d40.4789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229b1c1a2b3c5%3A0x1234567890abcdef!2sAv.+de+El+Ferrol%2C+22%2C+28029+Madrid!5e0!3m2!1ses!2ses!4v1709900000000",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.0!2d-3.7084812!3d40.4743948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422909a0b6b11b%3A0xbe6ef3e2ba8bb87b!2sImpulse%20English%20Academy!5e0!3m2!1ses!2ses!4v1701964800000!5m2!1ses!2ses",
   mapsDirectionsUrl:
     "https://www.google.com/maps/dir/?api=1&destination=Av.+de+El+Ferrol+22+28029+Madrid+Spain",
 
