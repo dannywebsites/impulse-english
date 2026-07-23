@@ -5,7 +5,12 @@
 // required: true. `race: true` pages get their FIRST wa-click dispatched
 // ~2.5s after load, before the deferred gtag.js has loaded — the regression
 // case that silently ate events until 2026-07-06.
-export const SITE = 'https://impulse-english.es';
+// Target site. Defaults to live prod; override with VERIFY_SITE to point the
+// harness at a local `astro preview` (http://localhost:4321) or any deploy —
+// lets a changeset be double-tick verified BEFORE it reaches prod. Events
+// record to the same GA4 property regardless of origin, so Realtime (Tick 2)
+// works from localhost; ?tt=test still tags them traffic_type=internal.
+export const SITE = process.env.VERIFY_SITE || 'https://impulse-english.es';
 export const MEASUREMENT_ID = 'G-KNMS5YW69T';
 export const PROPERTY = 'properties/503609664';
 export const TEST_QUERY = '?tt=test'; // tags hits traffic_type=internal
