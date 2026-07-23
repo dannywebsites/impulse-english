@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { MapPin, Clock, Phone, Train, Bus, CheckCircle, Star, ArrowRight, MessageCircle } from 'lucide-react';
+import NearbyAreas from '../../components/NearbyAreas';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -605,31 +606,7 @@ export default function LaVaguadaPage() {
                   </div>
                 </div>
               </div>
-              <div className="mt-8 p-4 bg-accent-blue/5 rounded-xl border border-accent-blue/10">
-                <p className="text-accent-blue font-medium text-sm mb-3">
-                  <strong>Servimos también zonas cercanas:</strong>
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <a href="/academia-ingles-barrio-del-pilar/" className="text-accent-blue hover:underline text-sm">Barrio del Pilar</a>
-                  <span className="text-accent-blue/50">•</span>
-                  <a href="/academia-ingles-penagrande/" className="text-accent-blue hover:underline text-sm">Peñagrande</a>
-                  <span className="text-accent-blue/50">•</span>
-                  <a href="/academia-ingles-la-ventilla/" className="text-accent-blue hover:underline text-sm">La Ventilla</a>
-                  <span className="text-accent-blue/50">•</span>
-                  <a href="/academia-ingles-la-paz/" className="text-accent-blue hover:underline text-sm">La Paz</a>
-                  <span className="text-accent-blue/50">•</span>
-                  <a href="/academia-ingles-plaza-castilla/" className="text-accent-blue hover:underline text-sm">Plaza Castilla</a>
-                  <span className="text-accent-blue/50">•</span>
-                  <a href="/academia-ingles-tetuan/" className="text-accent-blue hover:underline text-sm">Tetuán</a>
-                  <span className="text-accent-blue/50">•</span>
-                  <a href="/academia-ingles-cuatro-torres/" className="text-accent-blue hover:underline text-sm">Cuatro Torres</a>
-                </div>
-                <div className="mt-4 pt-4 border-t border-accent-blue/10">
-                  <a href="/academias-ingles-madrid/por-barrios/" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
-                    Ver todas las ubicaciones en Madrid <ArrowRight className="w-4 h-4" />
-                  </a>
-                </div>
-              </div>
+              <NearbyAreas currentHref="/academia-ingles-la-vaguada/" variant="accent" />
             </div>
             <div className="bg-zinc-100 rounded-xl overflow-hidden">
               <iframe
