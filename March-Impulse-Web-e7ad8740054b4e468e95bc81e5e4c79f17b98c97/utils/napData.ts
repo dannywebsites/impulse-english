@@ -3,7 +3,7 @@
 
 export const NAP = {
   // Business identity
-  name: "Impulse English Academy La Vaguada",
+  name: "Impulse English Academy",
   shortName: "Impulse English",
   legalName: "Impulse English Academy La Vaguada",
 
@@ -81,6 +81,7 @@ export const NAP = {
 
   // All sameAs URLs for schema
   sameAs: [
+    "https://www.google.com/maps?cid=13722173269762357371",
     "https://share.google/GuRfJ3TjrnIIUhrdk",
     "https://www.instagram.com/impulse_english_lavaguada/",
     "https://www.facebook.com/impulseenglishlavaguada/",
@@ -123,10 +124,10 @@ export const NAP = {
     "Official Partner of ESIC Idiomas",
   ],
 
-  // Aggregate rating (Google Reviews): kept in sync with the live GBP (5.0 / 174)
+  // Aggregate rating (Google Reviews): kept in sync with the live GBP (5.0 / 178)
   aggregateRating: {
     ratingValue: 5,
-    reviewCount: 174,
+    reviewCount: 178,
     bestRating: 5,
     worstRating: 1,
   },
