@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ChevronRight, Clock, Calendar, ChevronDown, ChevronUp, Scale, CheckCircle, ArrowRight } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
@@ -396,20 +397,7 @@ export default function LinguaskillVsAptisPage() {
               </div>
             </section>
 
-            {/* CTA */}
-            <div className="bg-gradient-to-r from-orange-600 to-amber-600 rounded-2xl p-8 text-center text-white">
-              <h3 className="text-2xl font-bold mb-4">¿Necesitas ayuda para decidir?</h3>
-              <p className="text-orange-100 mb-6 max-w-2xl mx-auto">
-                En Impulse English Academy te orientamos sobre qué examen es mejor para tu situación y te preparamos con metodología especializada.
-              </p>
-              <a
-              href="/contacto/"
-                className="inline-flex items-center gap-2 bg-white text-orange-600 px-8 py-4 rounded-xl font-semibold hover:bg-orange-50 transition-colors"
-              >
-                Solicitar asesoramiento gratuito
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </div>
+            <InlineOneToOneCTA pathname="/blog/linguaskill-vs-aptis" />
 
             {/* Related Articles */}
             <section className="mt-16">
@@ -434,7 +422,7 @@ export default function LinguaskillVsAptisPage() {
           {/* Lead Form */}
           <section className="bg-gray-50 py-16">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <LeadForm />
+              <OneToOneCTA pathname="/blog/linguaskill-vs-aptis" />
             </div>
           </section>
         </main>

@@ -22,13 +22,11 @@ contextSections:
   - heading: La inversión que se multiplica con el tiempo
     content: "<p>Vamos a poner cifras concretas a largo plazo. Un profesional madrileño con nivel C1 certificado gana de media 6.400 euros más al año que uno con nivel B1, según datos del portal de empleo InfoJobs para 2024.</p><p>Si certificáis vuestro C1 a los 25 años y trabajáis hasta los 65, estamos hablando de una diferencia salarial acumulada de 256.000 euros durante vuestra vida laboral. Incluso aplicando un descuento conservador del 50% para otros factores (experiencia, sector, etc.), seguimos hablando de más de 120.000 euros de diferencia atribuibles directamente a vuestra certificación de inglés.</p><p>Comparado con una inversión de 3.000-4.000 euros en prepararos adecuadamente en una academia oficial Cambridge, el retorno de la inversión (ROI) es astronómico: más de 3.000% en el escenario conservador.</p><p>Para vuestros hijos, el impacto es aún mayor. Un título Cambridge obtenido en la adolescencia les abrirá puertas durante toda su vida académica y profesional sin necesidad de volver a examinarse jamás.</p>"
 impulseSection:
-  heading: Impulse English Academy te ayuda con tu aprendizaje de ingles
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Nuestros cursos
-      href: /cursos-ingles/adultos
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Qué diferencia hay entre un Centro Preparador y un Centro Examinador Cambridge?
     answer: "Un Centro Preparador Oficial Cambridge está autorizado para impartir cursos específicos de preparación para los exámenes Cambridge utilizando materiales oficiales y profesorado certificado. Un Centro Examinador, además de preparar, está autorizado para administrar los exámenes oficiales en sus propias instalaciones. Los centros que tienen ambas acreditaciones ofrecen la máxima comodidad: os preparáis y os examináis en el mismo lugar, con profesores que conocéis y en un entorno familiar que reduce significativamente el estrés el día del examen."

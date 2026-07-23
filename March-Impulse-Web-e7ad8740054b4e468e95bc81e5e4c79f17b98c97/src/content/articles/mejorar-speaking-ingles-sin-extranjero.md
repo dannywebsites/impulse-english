@@ -30,13 +30,11 @@ contextSections:
   - heading: "El factor motivación: Cómo no abandonar en la semana 3"
     content: '<p>Seamos realistas: el 90% de la gente que empieza a "mejorar su inglés" lo deja en menos de un mes. No por falta de recursos, sino por falta de motivación sostenible.</p><p><strong>Estrategias que funcionan:</strong></p><p><strong>Accountability partner:</strong> Búscate a alguien con el mismo objetivo y haceos responsables mutuamente. Cada semana os contáis qué habéis hecho. Suena tonto, pero funciona.</p><p><strong>Recompensas tangibles:</strong> Asocia objetivos de inglés con algo que te guste. "Si hago shadowing 5 días esta semana, me compro ese libro/juego/etc que quiero".</p><p><strong>Progreso visible:</strong> Ten un Excel o nota donde apuntes cada actividad. Ver que llevas 30 días seguidos practicando te motiva a no romper la racha.</p><p><strong>Vincula inglés con algo que ya disfrutas:</strong> Si te encanta cocinar, sigue canales de cocina en inglés. Si eres friki de la tecnología, podcasts de tech en inglés. No tiene por qué ser aburrido.</p><p><strong>Fechas límite reales:</strong> Inscríbete a un examen oficial (Cambridge, IELTS) dentro de 6 meses. Tener una fecha en el calendario donde tienes que estar listo cambia radicalmente tu compromiso.</p>'
 impulseSection:
-  heading: Impulse English Academy te ayuda con tu aprendizaje de ingles
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Nuestros cursos
-      href: /cursos-ingles/adultos
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Cuánto tiempo necesito para mejorar mi speaking de forma notable?
     answer: Con práctica diaria de 15-30 minutos, notarás cambios significativos en 3 meses y resultados realmente sólidos en 6 meses. La clave está en la consistencia. Practicar 20 minutos cada día es infinitamente mejor que 5 horas una vez a la semana. Tu cerebro necesita exposición frecuente para automatizar estructuras y pronunciación. Si combinas práctica autodidacta con conversaciones reales semanales, los resultados se aceleran considerablemente.

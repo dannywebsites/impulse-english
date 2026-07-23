@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Euro, Clock, ChevronDown, ChevronUp, CheckCircle, Globe, Calculator, CreditCard } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
@@ -346,28 +347,7 @@ export default function PrecioLinguaskillOnlinePage() {
               </div>
             </section>
 
-            {/* CTA */}
-            <section className="mb-12">
-              <div className="bg-zinc-900 rounded-2xl p-8">
-                <div className="flex flex-col md:flex-row items-center gap-6">
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2">
-                      Prepárate para Linguaskill con nosotros
-                    </h3>
-                    <p className="text-zinc-400">
-                      Cursos de preparación desde 79€/mes con profesores expertos en certificaciones Cambridge.
-                    </p>
-                  </div>
-                  <a
-              href="/contacto/"
-                    className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
-                  >
-                    Solicitar información
-                  </a>
-                </div>
-
-              </div>
-            </section>
+            <InlineOneToOneCTA pathname="/blog/precio-linguaskill-online" />
 
             {/* Related Articles */}
             <section>
@@ -388,7 +368,7 @@ export default function PrecioLinguaskillOnlinePage() {
         </div>
       </article>
 
-      <LeadForm />
+      <OneToOneCTA pathname="/blog/precio-linguaskill-online" />
 
       {/* External Authority Link */}
       <section className="py-8 px-6 bg-white border-t border-zinc-100">

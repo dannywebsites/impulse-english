@@ -36,13 +36,11 @@ contextSections:
   - heading: Mentalidad el día del examen
     content: <p>El Writing suele ser la segunda o tercera prueba del día, por lo que llegarás ya con cierto cansancio mental. Algunas recomendaciones para mantener el rendimiento:</p><p><strong>Llega descansado:</strong> Dormir bien la noche anterior es más importante que estudiar hasta tarde.</p><p><strong>Desayuna adecuadamente:</strong> Tu cerebro necesita glucosa para funcionar. Evita llegar con el estómago vacío.</p><p><strong>Lee todas las opciones de la Parte 2 antes de decidir:</strong> No te quedes con la primera que veas. Invierte esos 4 minutos iniciales en leer las cuatro opciones.</p><p><strong>No te bloquees con la perfección:</strong> Si no recuerdas una palabra específica, utiliza un sinónimo o parafrasea. Lo importante es comunicar la idea, no usar exactamente el término que tenías en mente.</p><p><strong>Confía en tu preparación:</strong> Si has practicado regularmente durante semanas, tu cerebro conoce las estructuras y el vocabulario. Relájate y deja que fluya.</p>
 impulseSection:
-  heading: Impulse English Academy te ayuda con el B2 First
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación B2 First
-      href: /examenes-cambridge/b2-first
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Cuántas palabras debo escribir exactamente en cada texto del Writing B2 First?
     answer: "El rango oficial es 140-190 palabras por texto. Escribir menos de 140 penaliza significativamente tu puntuación porque los examinadores interpretan que no has desarrollado suficientemente las ideas. Pasarte ligeramente (hasta 200-210 palabras) no es problemático si mantienes calidad, pero textos excesivamente largos (250+ palabras) demuestran falta de capacidad de síntesis, que es una competencia evaluada. El punto ideal está entre 160-180 palabras: suficiente para desarrollar ideas con ejemplos concretos sin irte por las ramas."

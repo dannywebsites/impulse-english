@@ -24,13 +24,11 @@ contextSections:
   - heading: "Conclusión: la mejor edad es ahora (sea cual sea)"
     content: '<p>Si vuestro hijo tiene 2 años, empezad con canciones y dibujos. Si tiene 5, es el momento perfecto para clases orientadas al juego. Si tiene 10, todavía estáis dentro de esa ventana privilegiada. Y si tiene 14 y apenas ha tenido contacto con el inglés, todavía puede alcanzar un nivel excelente con la metodología y compromiso adecuados.</p><p>Lo único que NO deberíais hacer es esperar "al momento perfecto" que nunca llegará. Ni sentiros culpables por no haber empezado antes. El mejor momento para plantar un árbol fue hace veinte años. El segundo mejor momento es ahora.</p><p>En Madrid tenéis todas las herramientas: colegios bilingües, academias especializadas, centros oficiales de exámenes, bibliotecas con recursos en inglés, eventos en inglés para familias... Solo necesitáis dar el primer paso.</p><p>Y recordad: no se trata de crear presión ni de robarles la infancia. Se trata de integrar el inglés de forma natural en su día a día, como una ventana más al mundo que se abre ante ellos. El cerebro de vuestros hijos está listo. La pregunta es: ¿lo estáis vosotros?</p>'
 impulseSection:
-  heading: Impulse English Academy te ayuda con el ingles para ninos
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Nuestros cursos
-      href: /cursos-ingles/adultos
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Es cierto que los niños bilingües empiezan a hablar más tarde?
     answer: No necesariamente. Algunos estudios han mostrado un ligero retraso (de apenas unos meses) en niños bilingües simultáneos, pero este retraso desaparece completamente antes de los 3 años y no indica ningún problema cognitivo. De hecho, una vez superada esa fase inicial, los niños bilingües suelen tener un vocabulario combinado mucho mayor que los monolingües. Lo que puede ocurrir es que el vocabulario en cada idioma individual sea ligeramente menor al principio, pero el vocabulario total (sumando ambos idiomas) es superior. Además, las ventajas cognitivas a largo plazo compensan con creces cualquier pequeño retraso inicial.

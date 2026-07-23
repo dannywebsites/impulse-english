@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useId, useState } from 'react';
 import { Send, CheckCircle, Loader2 } from 'lucide-react';
 
 interface LeadFormProps {
@@ -11,6 +11,12 @@ interface LeadFormProps {
   showPhone?: boolean;
   showAge?: boolean;
   showLevel?: boolean;
+  /**
+   * When set, the level <select> is hidden and this value is sent as `level`.
+   * Used by the blog one-to-one CTA (fixedLevel="one-to-one") so the reader
+   * doesn't have to pick a level for an offer that's already about one thing.
+   */
+  fixedLevel?: string;
 }
 
 export default function LeadForm({
@@ -22,16 +28,22 @@ export default function LeadForm({
   compact = false,
   showPhone = true,
   showAge: _showAge = false,
-  showLevel = true
+  showLevel = true,
+  fixedLevel
 }: LeadFormProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    level: ''
+    level: fixedLevel ?? ''
   });
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  // Unique per instance so two LeadForms on one page can't share a DOM id
+  // (a duplicate id breaks the second checkbox's <label htmlFor> association).
+  const privacyId = useId();
+  // A fixed level overrides the select entirely; the dropdown is hidden.
+  const levelShown = showLevel && !fixedLevel;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -72,7 +84,7 @@ export default function LeadForm({
       });
 
       setStatus('success');
-      setFormData({ name: '', email: '', phone: '', level: '' });
+      setFormData({ name: '', email: '', phone: '', level: fixedLevel ?? '' });
       setPrivacyAccepted(false);
 
       // Redirect to thank you page
@@ -144,7 +156,7 @@ export default function LeadForm({
         )}
 
         {/* Nivel */}
-        {showLevel && (
+        {levelShown && (
         <div>
           <label className="block text-sm font-semibold text-zinc-700 mb-2">Nivel *</label>
           <select
@@ -172,9 +184,9 @@ export default function LeadForm({
             checked={privacyAccepted}
             onChange={(e) => setPrivacyAccepted(e.target.checked)}
             className="mt-1 w-4 h-4 border-zinc-300 rounded text-accent-blue focus:ring-accent-blue"
-            id="privacy-lead"
+            id={privacyId}
           />
-          <label htmlFor="privacy-lead" className="text-sm text-zinc-600">
+          <label htmlFor={privacyId} className="text-sm text-zinc-600">
             He leído la Política de Privacidad y acepto ser contactado/a por teléfono o WhatsApp. *
           </label>
         </div>

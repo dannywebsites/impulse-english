@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>La mejor forma de evaluar vuestra preparación es realizar simulacros completos en condiciones reales: sin diccionario, con el tiempo exacto de cada sección y en un entorno silencioso. Si obtenéis de forma consistente puntuaciones superiores a 165 en vuestros simulacros, es probable que estéis listos para presentaros con garantías.</p><p>Otro indicador fiable es vuestra comodidad con el formato del examen. Si sabéis exactamente qué esperar en cada parte, cuántas preguntas tiene cada sección y cuánto tiempo dedicar a cada una, habéis alcanzado un nivel de preparación técnica adecuado. Combinad esta seguridad con una puntuación de simulacro estable y estaréis en condiciones óptimas para afrontar el examen real.</p>
 impulseSection:
-  heading: Preparamos el B2 First a tu ritmo en Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, adaptamos la duración del curso a vuestro nivel de partida y vuestros objetivos. Con un 100% de aprobados en 2024-2025, grupos reducidos de máximo 10 alumnos y simulacros mensuales, nuestros profesores certificados TEFL/CELTA diseñan un plan de estudio personalizado para que alcancéis el B2 First en el tiempo óptimo, sin prisas innecesarias ni demoras evitables."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación B2 First
-      href: /examenes-cambridge/b2-first
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Puedo preparar el B2 First en 3 meses?"
     answer: "Preparar el B2 First en 3 meses es factible para candidatos con nivel intermedio previo (aproximadamente B1), dedicando 1,5-2 horas diarias de estudio estructurado."

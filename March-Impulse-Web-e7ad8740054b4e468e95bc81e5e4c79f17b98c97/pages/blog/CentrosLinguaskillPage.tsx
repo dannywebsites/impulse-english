@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, FileText, HelpCircle, ChevronDown, MapPin, Building } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
@@ -329,7 +330,7 @@ export default function CentrosLinguaskillPage() {
                 </p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-xl">
-                <LeadForm />
+                <OneToOneCTA pathname="/blog/centros-linguaskill" />
               </div>
 
             </div>

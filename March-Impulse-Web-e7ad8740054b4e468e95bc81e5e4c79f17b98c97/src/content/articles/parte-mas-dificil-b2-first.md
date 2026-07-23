@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>La mejora en Use of English no se consigue de un día para otro: requiere estudio constante y acumulativo. Dedicad al menos 20 minutos diarios a ejercicios específicos de esta sección, alternando entre los distintos tipos de tareas. Llevad un registro de vuestros errores recurrentes y repasadlos semanalmente.</p><p>Leer en inglés de forma habitual (artículos, novelas adaptadas al nivel B2, noticias) os ayudará a interiorizar colocaciones y estructuras de forma natural. Complementad la lectura con ejercicios de vocabulario en contexto y no os limitéis a memorizar listas de palabras aisladas. La comprensión de cómo se usan las palabras en contexto es lo que realmente marca la diferencia.</p>
 impulseSection:
-  heading: Domina Use of English con Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, dedicamos sesiones específicas a Use of English, la sección que más preocupa a los candidatos. Con grupos reducidos de máximo 10 alumnos y profesores certificados TEFL/CELTA, trabajamos cada tipo de ejercicio con material actualizado y técnicas probadas. Nuestro 100% de aprobados en 2024-2025 demuestra que nuestra preparación funciona."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación B2 First
-      href: /examenes-cambridge/b2-first
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Es difícil el B2 First?"
     answer: "El B2 First presenta una dificultad moderada, requiriendo dominio intermedio-alto del inglés (nivel B2 del MCER). Aprobar exige vocabulario amplio, gramática compleja y gestión eficaz del tiempo."

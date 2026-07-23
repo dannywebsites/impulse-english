@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, FileText, HelpCircle, ChevronDown, Award, Globe, Briefcase } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
@@ -419,7 +420,7 @@ export default function CambridgeB2BeneficiosPage() {
                 </p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-xl">
-                <LeadForm />
+                <OneToOneCTA pathname="/blog/cambridge-b2-beneficios" />
               </div>
 
             </div>

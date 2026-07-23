@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>Si tenéis un nivel alto de inglés pero no habéis hecho el B2 First, vuestra preparación para el C1 Advanced debe incluir una fase inicial de familiarización con el formato de exámenes Cambridge. Dedicad las primeras semanas a conocer los tipos de tareas, los criterios de evaluación y las estrategias específicas de cada sección. Es especialmente importante trabajar el Use of English, que es la parte más técnica y específica del examen. Un curso de preparación con profesores especializados os ahorrará tiempo y os proporcionará la orientación necesaria para abordar el examen con garantías.</p>
 impulseSection:
-  heading: Preparad el C1 Advanced desde cualquier punto de partida
-  content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, evaluamos vuestro nivel real con una prueba de nivel gratuita y diseñamos el plan de preparación más adecuado para vosotros. Nuestros profesores especializados trabajan con grupos reducidos, adaptándose a las necesidades de cada alumno. Con un 100% de aprobados en el C1 Advanced, os garantizamos una preparación rigurosa y eficaz, tengáis o no un certificado B2 previo."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación C1 Advanced
-      href: /examenes-cambridge/c1-advanced
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Qué diferencia hay entre B2 y C1?"
     answer: "La diferencia principal entre B2 y C1 radica en el dominio y profundidad del inglés: B2 permite comunicarse con fluidez en temas cotidianos y laborales, mientras C1 implica un uso avanzado, flexible y matizado, adecuado para contextos académicos y profesionales exigentes, con comprensión de expresiones idiomáticas y textos complejos."

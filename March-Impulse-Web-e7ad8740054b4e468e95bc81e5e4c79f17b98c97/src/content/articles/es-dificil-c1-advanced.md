@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>Según la experiencia de nuestros alumnos, las secciones que más cuestan son el Use of English, por la precisión gramatical y léxica requerida, y el Writing, por la necesidad de producir textos bien estructurados bajo presión de tiempo. El Speaking también genera ansiedad, aunque con práctica regular y simulacros se puede dominar. Es importante que dediquéis tiempo a cada sección de forma proporcional a vuestra dificultad personal, sin descuidar ninguna destreza.</p>
 impulseSection:
-  heading: Superad el C1 Advanced con la preparación de Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, sabemos lo que el C1 Advanced exige y os preparamos para afrontarlo con seguridad. Nuestros profesores especializados conocen cada parte del examen y trabajan con grupos reducidos para garantizar atención individualizada. Con un 100% de aprobados en nuestros cursos de preparación, tenemos la experiencia para llevaros al éxito. Realizamos simulacros reales y os enseñamos las estrategias que marcan la diferencia el día del examen."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación C1 Advanced
-      href: /examenes-cambridge/c1-advanced
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Cuánto tiempo se tarda en pasar de B2 a C1?"
     answer: "Pasar del nivel B2 al C1 en inglés requiere entre 200 y 300 horas de estudio guiado y práctica intensiva. El progreso depende de la frecuencia, método de aprendizaje y motivación. La certificación Cambridge C1 Advanced valida este nivel avanzado, esencial para contextos académicos y profesionales."

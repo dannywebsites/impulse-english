@@ -34,13 +34,11 @@ contextSections:
   - heading: El momento de decidir es ahora
     content: <p>Madrid sigue creciendo como ciudad internacional. Cada mes, nuevas empresas extranjeras abren oficinas en las Cuatro Torres, en Chamberí, en Méndez Álvaro. Cada mes, las ofertas de empleo exigen certificaciones de inglés. Cada mes que postpones tu aprendizaje es un mes donde otros avanzan y tú te quedas atrás.</p><p>Las excusas son cómodas porque nos protegen del esfuerzo y del posible fracaso. Pero también nos roban oportunidades, crecimiento profesional y experiencias enriquecedoras. Ya conoces las diez barreras más comunes y, lo más importante, sabes cómo superarlas con acciones concretas adaptadas a la vida en Madrid.</p><p>La pregunta ya no es "¿por qué no aprendes inglés?" sino "¿qué vas a hacer esta semana para empezar?". Porque al final, la única excusa que no tiene solución es la de no intentarlo.</p>
 impulseSection:
-  heading: Impulse English Academy te ayuda con tu aprendizaje de ingles
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Nuestros cursos
-      href: /cursos-ingles/adultos
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: ¿Cuánto tiempo se tarda realmente en aprender inglés desde cero?
     answer: 'Depende de tu definición de "aprender" y la intensidad de tu práctica. Para alcanzar un nivel B1 conversacional desde cero, con dedicación constante de 5-7 horas semanales, necesitas entre 12 y 18 meses. Para un B2 que te permita trabajar en inglés, calcula entre 24 y 30 meses. Sin embargo, notarás progresos significativos desde el tercer mes: serás capaz de mantener conversaciones básicas, entender películas sencillas y manejarte en viajes. La clave no es la velocidad, sino la constancia. Es mejor 20 minutos diarios durante un año que sesiones maratonianas esporádicas.'

@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>No necesitáis comprar todos los libros: elegid uno como manual principal (Complete First u Objective First) y añadid First Trainer para los simulacros finales. Si tenéis poco tiempo, Compact First puede ser vuestro único libro de referencia, complementado con las herramientas digitales.</p><p>Organizad vuestro estudio alternando entre el manual principal y la práctica de exámenes. Reservad el First Trainer para las últimas semanas, cuando ya tengáis una base sólida. Utilizad Test & Train para sesiones cortas de 15-20 minutos cuando no dispongáis de tiempo para una sesión completa. La combinación de material impreso y digital os dará la preparación más completa.</p>
 impulseSection:
-  heading: Material oficial incluido en los cursos Impulse
-  content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, proporcionamos a nuestros alumnos acceso al material más actualizado y eficaz. Nuestros profesores certificados TEFL/CELTA seleccionan los recursos más adecuados para cada alumno, complementados con simulacros mensuales y corrección detallada en grupos reducidos de máximo 10 estudiantes. El 100% de aprobados en 2024-2025 refleja la calidad de nuestra preparación."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación B2 First
-      href: /examenes-cambridge/b2-first
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Puedo preparar el B2 First en 3 meses?"
     answer: "Preparar el B2 First en 3 meses es factible para candidatos con nivel intermedio previo (aproximadamente B1), dedicando 1,5-2 horas diarias de estudio estructurado."

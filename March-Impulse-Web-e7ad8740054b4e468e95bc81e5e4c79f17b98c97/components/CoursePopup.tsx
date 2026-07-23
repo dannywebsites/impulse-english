@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { X, Send, CheckCircle, Loader2 } from 'lucide-react';
-import { resolveVariant, isSuppressed, type PopupVariant } from '../utils/popupVariants';
+import { X, Send, CheckCircle, Loader2, MessageCircle } from 'lucide-react';
+import { resolveVariant, isSuppressed, waLink, type PopupVariant } from '../utils/popupVariants';
+import { NAP } from '../utils/napData';
 
 // Same GoHighLevel inbound hook the existing LeadForm / reservar-clase forms use,
 // so popup leads land in the exact same CRM workflow. The per-variant `source`
@@ -44,8 +45,9 @@ const inputClass =
 
 /**
  * Time-on-page lead-capture popup. Mounted once in BaseLayout.astro (client:idle)
- * so it covers every page. Shows after 20s with content matched to the page's
- * exam level, once per visitor (localStorage), and never on form/legal pages.
+ * so it covers every page. Shows after DELAY_MS with the one-to-one offer matched
+ * to the page's exam level, once per visitor (localStorage), and never on
+ * form/legal pages.
  */
 export default function CoursePopup() {
   const [variant, setVariant] = useState<PopupVariant | null>(null);
@@ -117,7 +119,7 @@ export default function CoursePopup() {
     }
   }
 
-  // Arm the 20s timer once on mount (skips dismissed visitors and suppressed pages).
+  // Arm the DELAY_MS timer once on mount (skips dismissed visitors and suppressed pages).
   useEffect(() => {
     if (typeof window === 'undefined') return;
     if (alreadyDismissed()) return;
@@ -278,6 +280,22 @@ export default function CoursePopup() {
                   </>
                 )}
               </button>
+
+              <div className="flex items-center gap-3 py-0.5">
+                <span className="h-px flex-1 bg-zinc-200" />
+                <span className="text-xs text-zinc-400">o</span>
+                <span className="h-px flex-1 bg-zinc-200" />
+              </div>
+
+              <a
+                href={waLink(NAP.whatsappUrl, variant)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#25D366] px-6 py-3 font-bold text-white transition-all hover:bg-[#1ebe5b]"
+              >
+                <MessageCircle className="h-5 w-5" />
+                Hablar por WhatsApp ahora
+              </a>
             </form>
           </>
         )}

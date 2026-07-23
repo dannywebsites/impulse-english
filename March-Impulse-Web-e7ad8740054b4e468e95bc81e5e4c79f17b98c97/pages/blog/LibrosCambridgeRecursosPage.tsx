@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { Calendar, Clock, ArrowLeft, BookOpen, CheckCircle, Star, Download, Laptop, MessageCircle, ExternalLink, Users, GraduationCap, Target, Lightbulb, HelpCircle, Globe, FileText, Monitor, Headphones, PenTool, Smartphone, BookMarked, Brain, Timer, TrendingUp } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
@@ -933,15 +934,7 @@ export default function LibrosCambridgeRecursosPage() {
 
               </div>
               <div>
-                <LeadForm
-                  title="Asesoramiento gratuito"
-                  subtitle="Te ayudamos a elegir los mejores recursos"
-                  ctaText="Solicitar información"
-                  source="blog-libros-cambridge"
-                  showPhone={true}
-                  showAge={true}
-                  showLevel={true}
-                />
+                <OneToOneCTA pathname="/blog/libros-cambridge-recursos" source="blog-libros-cambridge" />
               </div>
 
             </div>

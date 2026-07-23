@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { PenTool, Clock, ChevronDown, ChevronUp, CheckCircle, BookOpen, Target, FileText, Headphones } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LeadForm from '../../components/LeadForm';
+import OneToOneCTA from '../../components/OneToOneCTA';
+import InlineOneToOneCTA from '../../components/InlineOneToOneCTA';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
@@ -592,28 +593,7 @@ export default function EjerciciosB2CambridgePage() {
               </div>
             </section>
 
-            {/* CTA */}
-            <section className="mb-12">
-              <div className="bg-zinc-900 rounded-2xl p-8">
-                <div className="flex flex-col md:flex-row items-center gap-6">
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2">
-                      ¿Quieres prepararte para el B2 First?
-                    </h3>
-                    <p className="text-zinc-400">
-                      Reserva una clase de prueba gratis y diseñamos tu plan de preparación con profesores expertos en exámenes Cambridge.
-                    </p>
-                  </div>
-                  <a
-              href="/reservar-clase"
-                    className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
-                  >
-                    Reserva tu clase gratis
-                  </a>
-                </div>
-
-              </div>
-            </section>
+            <InlineOneToOneCTA pathname="/blog/ejercicios-b2-cambridge" />
 
             {/* Related Articles */}
             <section>
@@ -634,7 +614,7 @@ export default function EjerciciosB2CambridgePage() {
         </div>
       </article>
 
-      <LeadForm />
+      <OneToOneCTA pathname="/blog/ejercicios-b2-cambridge" />
 
       {/* External Authority Link */}
       <section className="py-8 px-6 bg-white border-t border-zinc-100">

@@ -17,13 +17,11 @@ contextSections:
     content: |
       <p>Contar con un plan de estudio bien organizado es fundamental para aprovechar al máximo las horas de preparación. Dividid vuestro tiempo entre las cuatro secciones del examen: Reading and Use of English, Writing, Listening y Speaking. Realizad simulacros de examen completos al menos una vez al mes para evaluar vuestro progreso y detectar áreas de mejora. Un buen plan incluye también revisión de vocabulario avanzado, expresiones idiomáticas y collocations que son habituales en el C1 Advanced.</p>
 impulseSection:
-  heading: Preparad el C1 Advanced con Impulse English Academy
-  content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, os ayudamos a dar el salto de B2 a C1 de forma eficaz. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos para garantizar atención personalizada. Contamos con un historial del 100% de aprobados en nuestros cursos de preparación C1 Advanced. Realizamos simulacros de examen periódicos y os proporcionamos materiales actualizados para que lleguéis al examen con total confianza."
+  heading: Aprueba con clases one-to-one en Impulse
+  content: "En Impulse English Academy preparamos tu certificado con clases one-to-one: avanzas al ritmo que tú necesitas y trabajas justo lo que se te atraganta. Déjanos tu nombre, tu teléfono y tu email y te llamamos en menos de 24h para organizar tu prueba de nivel y tu plan de estudio personalizado. Sin compromiso."
   ctaLinks:
-    - text: Prueba de nivel gratis
-      href: /reservar-clase
-    - text: Preparación C1 Advanced
-      href: /examenes-cambridge/c1-advanced
+    - text: Quiero mi plan one-to-one
+      href: "#hablamos"
 faqItems:
   - question: "¿Es muy difícil el C1 Advanced?"
     answer: "El Cambridge C1 Advanced es un examen exigente que certifica un nivel alto de inglés (C1 MCER), evaluando reading, writing, listening y speaking con énfasis en comunicación efectiva. Su dificultad radica en la duración, variedad de tareas y dominio avanzado de vocabulario y gramática."
