@@ -6,7 +6,7 @@ import { NAP, getSchemaAddress } from './napData';
 
 export const businessInfo = {
   name: NAP.name,
-  alternateName: NAP.shortName,
+  alternateName: [NAP.legalName, NAP.shortName],
   description: "Academia de inglés en Madrid especializada en preparación de exámenes Cambridge, Linguaskill y clases para todas las edades. Centro oficial Cambridge con 100% de aprobados.",
   url: NAP.website,
   logo: NAP.logo,
