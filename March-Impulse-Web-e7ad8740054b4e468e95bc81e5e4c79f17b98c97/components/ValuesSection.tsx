@@ -9,7 +9,7 @@ const valueCards = [
     title: "100% Aprobados Cambridge",
     description: "Todos nuestros estudiantes aprobaron sus exámenes Cambridge 2024-2025. Centro Oficial de Preparación. Haz el examen donde te preparas.",
     link: "Ver Exámenes",
-    href: "/examenes-cambridge"
+    href: "/examenes-cambridge/"
   },
   {
     imageUrl: '/images/academy/infants-class.jpg',
@@ -17,7 +17,7 @@ const valueCards = [
     title: "Una academia familiar, cercana y única",
     description: "No somos franquicia. Somos una academia familiar con atención personalizada real en grupos de máximo 7-10 alumnos.",
     link: "Conocer más",
-    href: "/sobre-nosotros"
+    href: "/sobre-nosotros/"
   },
   {
     imageUrl: '/images/academy/escuela-gonzalo-18.jpeg',

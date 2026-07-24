@@ -107,7 +107,7 @@ export default function FechasExamenesCambridgePage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Breadcrumb
             items={[
-            { label: 'Blog', href: '/blog' },
+            { label: 'Blog', href: '/blog/' },
             { label: 'Fechas Cambridge 2026' }
             ]}
             variant="light"

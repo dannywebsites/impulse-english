@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Cómo Pensar en Inglés y Dejar de Traducir Mentalmente",
     description: "Aprende a pensar directamente en inglés sin traducir del español. 8 técnicas para desarrollar el pensamiento en inglés y hablar con más fluidez.",
@@ -64,7 +66,7 @@ export default function PensarInglesNoTraducirPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Pensar en Inglés' }
                 ]}
                 variant="light"
@@ -322,6 +324,7 @@ export default function PensarInglesNoTraducirPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('pensar-ingles-no-traducir')} />
         <Footer />
       </div>
 

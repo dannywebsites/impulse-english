@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 const tableOfContents = [
   { id: 'que-es', title: '¿Qué es Linguaskill Online y Cómo Funciona?' },
   { id: 'requisitos', title: 'Requisitos Técnicos y Logísticos' },
@@ -68,7 +70,7 @@ export default function LinguaskillOnlineCasaPage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Breadcrumb
             items={[
-            { label: 'Blog', href: '/blog' },
+            { label: 'Blog', href: '/blog/' },
             { label: 'Linguaskill Online' }
             ]}
             variant="light"
@@ -404,6 +406,7 @@ export default function LinguaskillOnlineCasaPage() {
         </div>
       </section>
 
+      <RelatedArticles articles={getBlogSiblingCards('linguaskill-online-casa')} />
       <Footer />
 
 </>

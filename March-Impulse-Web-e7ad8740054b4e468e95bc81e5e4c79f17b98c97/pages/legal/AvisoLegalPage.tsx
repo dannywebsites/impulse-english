@@ -18,7 +18,7 @@ export default function AvisoLegalPage() {
         <div className="relative z-10 container mx-auto px-6 md:px-12">
           <Breadcrumb
             items={[
-              { label: 'Legal', href: '/aviso-legal' },
+              { label: 'Legal', href: '/aviso-legal/' },
               { label: 'Aviso Legal' }
             ]}
             variant="light"

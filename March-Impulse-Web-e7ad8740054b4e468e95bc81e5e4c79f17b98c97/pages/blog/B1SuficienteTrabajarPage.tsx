@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Es Suficiente el B1 para Trabajar? Realidad del Mercado Laboral",
     description: "El B1 es suficiente para trabajos en atención al cliente, turismo y administración. Conoce qué empleos lo aceptan y cuándo necesitas B2 o superior.",
@@ -102,7 +104,7 @@ export default function B1SuficienteTrabajarPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'B1 Suficiente para Trabajar' }
                 ]}
                 variant="light"
@@ -474,6 +476,7 @@ export default function B1SuficienteTrabajarPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('b1-suficiente-trabajar')} />
         <Footer />
       </div>
 

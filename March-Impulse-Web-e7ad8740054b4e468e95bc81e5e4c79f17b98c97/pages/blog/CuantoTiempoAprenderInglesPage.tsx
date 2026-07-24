@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Tiempo se Tarda en Aprender Inglés? Plazos Reales",
     description: "Aprender inglés lleva de 6 meses a 3 años según tu nivel objetivo. De cero a B1: 6-12 meses. A B2: 18-24 meses. Plazos reales y factores clave.",
@@ -63,7 +65,7 @@ export default function CuantoTiempoAprenderInglesPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Cuánto Tiempo Aprender Inglés' }
                 ]}
                 variant="light"
@@ -456,6 +458,7 @@ export default function CuantoTiempoAprenderInglesPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('cuanto-tiempo-aprender-ingles')} />
         <Footer />
       </div>
 

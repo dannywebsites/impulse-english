@@ -5,7 +5,28 @@ Every SEO decision is logged here, grounded in [`SEO-Master-Class-Reference.md`]
 
 ---
 
-## 2026-07-23 — Target keyword: "academia de inglés cerca de mí" (6,600/mo, ~#22)
+## 2026-07-24 — Top-50 video-able query shortlist for the YouTube + blog pairing programme
+
+**Context:** Danny will record one video per query (Shorts ~90s + some long-form) and pair each with a
+blog post. Deliverable: `video-queries-top50.md` (project root). Data: GSC 28-day queries (to 2026-07-20),
+fresh DataForSEO SERP/PAA pulls (18 seeds, Spain/es, `live/advanced` — note: `live/regular` returns NO
+PAA/related blocks), DataForSEO Google Ads volumes, on-disk PAA harvests (`data/paas/*.csv`).
+
+### Decision — Select 50 queries by consolidated intent, ranked volume+GSC first, PAA-only allowed; exclude branded/navigational/PDF-download terms.
+**Why (book):**
+- **DEEPR:** all 50 are Education/Problem-solving motivations — "local businesses should produce educational content."
+- **PAA mining is the prescribed market-gap finder** (§1) — 23 of 50 come primarily from PAA.
+- **Tier 3–4 long-tail** for a low-DA site (§2): navigational giants ("academia inglés madrid", 2.858 imp
+  at pos ~38) were *excluded* as video topics — wrong intent for video and covered by the local pillar work.
+- **One intent = one page:** GSC variants consolidated (e.g. ~15 "caduca" phrasings → 2 queries, B2/C1);
+  25 queries map onto EXISTING articles (video embeds there — no new cannibalizing page), 25 marked NUEVA.
+- **"No volume ≠ no search"** (§2, Level 5): strong recurring PAA questions kept despite null Google Ads
+  volume (Google Ads also nulls all "ñ" keywords — verified; don't trust null for niños/españoles terms).
+- Excluded PDF-download cluster ("exámenes C1 PDF con soluciones", top GSC clicks) — download intent,
+  a video answers the wrong job; that cluster is a separate lead-magnet play, not a video topic.
+
+**Data mechanics learned (for reuse):** PAA/related requires SERP `live/advanced` (+`people_also_ask_click_depth: 2`);
+Labs `keyword_ideas` on broad seeds returns off-topic noise (DGT/RAE) — use curated `search_volume` batches instead.
 
 **Context:** biggest generic local term in the niche; a proximity/"near-me" query. No page currently
 targets it; homepage is anchored to "La Vaguada y Barrio del Pilar."
@@ -44,3 +65,159 @@ attack is a separate, off-repo workstream (GBP category, NAP consistency vs `uti
 **Implementation plan:** `~/.claude/plans/handoff-saved-vectorized-ullman.md` (approved and executed
 2026-07-23). Supersedes the earlier draft `twinkly-popping-gosling.md`, whose Deliverable B1
 (homepage copy rewrite) is deferred by Decision 3.
+
+---
+
+## 2026-07-24 — GSC indexing audit: why 196 pages are "not indexed" + the fix plan
+
+**Context:** GSC Pages report shows 196 not indexed vs 119 indexed (coverage export 2026-07-22).
+Audit ran: live crawl of all 145 sitemap URLs, fresh 28-day + 3-month Search Analytics API pulls,
+legacy-URL status from `impulse-seo-ops/`, source-code link scan. Headline finding: the live site is
+technically clean (145/145 return 200 with self-canonicals); the "not indexed" mass is legacy
+WordPress debris + self-inflicted redirect noise.
+
+### Decision 1 — Normalize ALL internal links to trailing-slash canonicals (≈327 refs across ~60 files) in one PR.
+**Why (book §4 Interlinking):** internal links are the **authority engine**; every internal href
+currently points at the slashless variant and eats a 308 hop, so link equity flows through redirects.
+Google has even *selected slashless variants as canonicals* for ~10 pages (e.g.
+`/examenes-cambridge/fechas-precios` — 261 impressions on the redirect URL) and keeps 32 URLs in the
+"Page with redirect" bucket. The April Redirect-Pages-Fix-Plan prescribed this and it was never implemented.
+
+### Decision 2 — Request Indexing on the homepage only; let everything else consolidate on its own.
+**Why (book §5 Validation):** "Request Indexing sparingly (only major updates) or you look spammy."
+Google's selected homepage canonical is still `http://www.impulse-english.es/` (26k impressions / 3 mo
+vs the real homepage at pos ~42). The homepage had a major update (barrio consolidation + cerca-de-mí
+pillar). One manual Request Indexing + the redirect chain does the rest. Everything links back to the
+homepage (§4), so the trailing-slash PR also feeds this.
+
+### Decision 3 — Keep letting dead WordPress URLs 404. No new redirects.
+**Why:** standing project rule (prefer honest 404s over weak topical 301s) + book's content-first
+pyramid — the 29 404s / most of the 109 "Crawled – currently not indexed" are `/dipl-testimonial/*`,
+`/qsm_quiz/*`, `/blog-N/`, `/hola-mundo/`, author/category archives. They have no successor page and
+will fall out of the report on their own. Not a problem to fix; a graveyard to ignore.
+
+### Decision 4 — Remove `/gracias/` from the sitemap; noindex the `lp.` subdomain.
+**Why:** `/gracias/` is noindexed AND robots-disallowed AND in the sitemap — three contradictory
+signals on one URL (it is the "Excluded by noindex" row and part of the robots bucket).
+`lp.impulse-english.es` serves 200, indexable, inside the domain property (45 impressions / 3 mo) —
+an ads LP competing with the site. One intent = one page (§2).
+
+**Deferred:** content/interlinking rescue of the 17 zero-impression sitemap pages (mostly weaker blog
+posts + `/blog/todos/`) — fold into the Validation→Expansion loop after the trailing-slash PR ships,
+per §6 (expand around winners, don't polish losers first).
+
+**Blocked/manual (GSC UI):** bump `impulse-gsc-reporter` SA to Full (URL Inspection API returns 403 for
+Restricted users); submit `sitemap-index.xml` directly; export drill-down URL lists for the
+"Crawled – currently not indexed" (109) and 403 (5) buckets to confirm Decision 3's assumption.
+
+### 2026-07-24 addendum — deep pass (link graph + query-level cannibalization, 28d API data)
+
+**New findings that upgrade the plan:**
+1. **Homepage split is a live ranking loss, not just a canonical untidiness.** The stale
+   `http://www.impulse-english.es/` document ranks **pos 3.4** for "academia ingles madrid" while the
+   real homepage sits at pos 41.4 *on the same query* (28d). Same pattern on ~15 local queries
+   (vaguada pos 1.0 vs 4.1; peñagrande 1.3 vs 9.1). Consolidation (Request Indexing + existing 301s)
+   inherits that authority — highest-upside single action available.
+2. **The blog has no authority engine (§4).** Full link-graph crawl: nearly every article's in-degree
+   is exactly 1 (its card on the index). Zero article-to-article linking across 97 articles. Worse,
+   `/blog/` lists only 67/97 and `/blog/todos/` only 40/97 — ~29 articles are one stale index
+   generation from orphanhood. §4 prescribes: every article links ≥2 siblings + upline, circular.
+3. **Linguaskill cluster self-cannibalizes** — "diferencias entre linguaskill y cambridge" splits over
+   4 posts (pos 17/35/58/78). Winner: `/blog/cambridge-vs-linguaskill-diferencias/`. Crown it with
+   anchors from the other three (§2 consolidate synonyms; one intent = one page). 76 split queries total.
+4. Slash/slashless splits are **absent at query level in the 28d window** — the trailing-slash issue is
+   crawl-waste + equity-through-redirects, not an active ranking split. Priority stays but below 1–3.
+
+### 2026-07-24 addendum 2 — max-effort census (full URL universe reconstructed + live-probed)
+
+Universe rebuilt from sitemap + 16-month GSC pages + April redirect CSV + legacy audit +
+vercel.json redirect sources = 339 URLs (Google's own count: 315). Hard facts settled:
+- **403 bucket = WordPress machinery**: `/wp-json/*`, `/wp-login.php`, `/xmlrpc.php` serve 403 live.
+  Harmless scanner/crawler leftovers; will decay; no action.
+- **404 bucket = the intentional graveyard, verified live** (author/category/dipl-testimonial/qsm_quiz
+  families + pagination). No successor pages exist; standing 404 policy holds.
+- **Zero real pages hidden outside the sitemap** — every 200-serving page Google knows is either in
+  the sitemap or is `lp.impulse-english.es` / the redirecting host variants.
+- **Zero-impression sitemap pages split (16 mo history)**: 6 never earned an impression ever
+  (all are index-orphaned newer articles → discovery starvation) vs 10 that earned then dropped to
+  zero (quality demotion; incl. `/linguaskill/precios-fechas/` at 522 lifetime imp). Arithmetic bound:
+  ~25–30 of 144 indexable pages are unindexed.
+- **Barrio-template similarity is moderate, not fatal**: 8 pairs at Jaccard 0.35–0.45 (all location
+  pages, worst La Paz↔La Ventilla). Secondary index-risk factor; blog articles are unique.
+- **Latent landmine defused-but-present**: `vercel.json` has an `X-Robots-Tag: noindex, nofollow`
+  header rule on source `/blog` (and `/gracias`) that never fires today because it matches only the
+  slashless path, which 308s first. DELETE the `/blog` rule (and re-source `/gracias` → `/gracias/`)
+  before any header-matching change arms it against the blog hub.
+- **Method note**: `site:` SERP checks via DataForSEO are unreliable for per-URL index state (18/19
+  queries return empty, including the homepage) — per-URL verdicts require the URL Inspection API
+  (blocked on SA Restricted→Full). `inspect_index.py` is staged in `impulse-seo-ops/` for the moment
+  the permission lands; wire it into the monthly cron as the continuous index monitor.
+
+### 2026-07-24 addendum 3 — final verification pass (adversarial re-check of own findings)
+
+- **Ghost-homepage evidence hardened**: the uniform "mejor academia de inglés para niños en
+  {barrio}, madrid" queries (~100 imp each/28d) are NOT our rank tracker (basket mismatch; tracker ran
+  only Jun 28–29). Likely synthetic/AI-assistant fan-out queries — but in those same SERPs BOTH
+  homepage documents rank simultaneously (http://www pos ~1, https pos 4–9), which proves the double
+  listing independently of query source. Brand + head-term rows are real-user evidence.
+- **Cloaking ruled out**: Googlebot UA vs normal UA → byte-identical 200s (219,054 B).
+- **NEW — schema contradicts canonicals on 117 pages**: JSON-LD `url`/`@id`/breadcrumb `item` values
+  are slashless while rel=canonical carries the slash. `schemaData.ts` generators must emit
+  trailing-slash URLs — folded into the trailing-slash PR (it's links + schema, one normalization).
+- Blog listings: `/blog/` has NO pagination; union of `/blog/` (67) + `/todos/` (40) covers 96/97
+  articles; only `/blog/mejores-academias-madrid/` is in neither. Titles: zero duplicates across 145.
+  JSON-LD: 145/145 parseable, zero www references.
+- `lp.impulse-english.es` title = homepage title verbatim ("Impulse English Academy La Vaguada ·
+  Cambridge Centre Oficial") — brand-duplicate; noindex decision confirmed.
+- **Backlink equity = the one remaining blind spot**: DataForSEO backlinks API not subscribed (June
+  pull was an auth error, file is empty). Free replacement: GSC UI → Links → Export (top linked pages
+  + top linking sites) — added as manual ask #5. Decision: no redirect-policy changes until that
+  export shows whether any dead URL holds real external links.
+- PSI keyless quota exhausted — mobile perf unverified today (last verified 85+ in March; the
+  perf-harness gap memory stands).
+
+## 2026-07-24 (evening) — PR 1 built + URL Inspection API results (SA now Full)
+
+**Inspection API (145 sitemap URLs + variants, archived `inspection-2026-07-24.json`):**
+- **Ghost homepage is RESOLVED**: all three stale variants (`http://www`, `https://www`, `http://`)
+  now report `googleCanonical = https://impulse-english.es/`; the real homepage is PASS /
+  "Submitted and indexed", crawled 2026-07-24 13:55 UTC. Danny's Request Indexing + the 301s landed.
+- **134/145 sitemap URLs indexed** — far better than the ≤119 the coverage report implied. The
+  entire not-indexed remainder is 10 starved pages + `/gracias/` (intentional):
+  9 "Crawled – currently not indexed" (incl. `mejores-academias-madrid`, `linguaskill/precios-fechas`)
+  and 2 "Discovered – never crawled" (`linguaskill-oposiciones-merece-la-pena`, `/blog/todos/` itself).
+  Every one is a blog/long-tail page → confirms the authority-starvation diagnosis; PR 1 targets them.
+- `lp.impulse-english.es` = "Crawled – currently not indexed" → not actively competing today; PR 2
+  (noindex) stays queued but is less urgent.
+
+**PR 1 implementation decisions (branch `seo/trailing-slash-authority-engine`):**
+1. **Trailing-slash normalization done at three layers** (§4 — internal links are the authority
+   engine; no equity through 308s): 518 source literals across 233 files; `schemaData.ts` now has
+   `toCanonicalPageUrl()` applied inside every generator (url/@id/breadcrumb item) so ALL current and
+   future callers emit canonical URLs; `[slug].astro` normalizes md-frontmatter URLs (auto-publish
+   pipeline keeps writing slashless — normalized at the consumer, pipeline untouched).
+   Excluded on purpose: `utils/popupVariants.ts` (strip-slash compare list) and vercel.json redirect
+   sources. Result in dist: **0 slashless internal hrefs, 0 slashless schema URLs** (was 327 / 117 pages).
+2. **Blog index unification via full hub directory instead of pagination** (deviation from the
+   original "97 + pagination" sketch, same §4 goal, better shape): `/blog/` now server-renders an
+   "Índice completo del blog" section linking ALL 96 articles grouped by category (1 hop from the
+   hub, no thin paginated pages splitting authority); `/blog/todos/` extended from 40→96 via the same
+   registry. Both auto-list future collection articles not yet in the registry ("Novedades" group).
+3. **Master registry** `data/blog-directory.ts` generated by `scripts/seo/gen_blog_directory.py`
+   (rerun after adding a static article): 96 entries = 71 static wrappers + 25 collection-only
+   (12 md shadowed by static twins).
+4. **Sibling interlinking rings** (§4 — every article links ≥2 siblings, circular): every one of the
+   71 static article components + all collection pages now render a server-rendered "Artículos
+   relacionados" block; siblings come from an alphabetical ring within 9 topic groups so in-links
+   distribute evenly instead of piling on 3 favourites.
+5. **Crown links** (§2 — one intent = one page; consolidate synonyms with anchors): computed from the
+   archived 28d query-page data — 109 split queries found (audit said 76; threshold ≥15 imp applied),
+   33 loser articles now link their winner FIRST with the split query as anchor text. Worst cluster
+   crowned exactly as diagnosed: 3 Linguaskill losers → `/blog/cambridge-vs-linguaskill-diferencias/`
+   with anchor "Diferencias entre linguaskill y cambridge".
+6. **Landmines defused**: vercel.json `/blog` X-Robots-Tag rule DELETED; `/gracias` header re-sourced
+   to `/gracias/` (now actually fires on the live path); `/gracias/` filtered out of the sitemap
+   (144 URLs, all trailing-slash).
+7. **`astro check` now a real gate** (standing feedback): `@astrojs/check` + `typescript` added to
+   devDeps, tsconfig excludes the `seo-system/` fossil + migration script, 3 live-code type errors
+   fixed → 0 errors. Build 146 pages OK. `verify:tracking` ALL PASS (double-tick, G-KNMS5YW69T).

@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿A Qué Edad Deben Empezar los Bebés con el Inglés?",
     description: "Los bebés pueden empezar con el inglés desde los 6 meses mediante exposición musical y juego. La edad ideal para clases estructuradas es 2-3 años.",
@@ -63,7 +65,7 @@ export default function EdadEmpezarInglesBebesPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Edad Empezar Inglés Bebés' }
                 ]}
                 variant="light"
@@ -441,6 +443,7 @@ export default function EdadEmpezarInglesBebesPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('edad-empezar-ingles-bebes')} />
         <Footer />
       </div>
 

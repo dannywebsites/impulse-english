@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Aprender Inglés con Podcasts: Los Mejores por Nivel (2026)",
     description: "Descubre los mejores podcasts para aprender inglés en 2026 por nivel (A2-C1). Guía con rutina semanal, técnicas de escucha activa y recursos gratuitos.",
@@ -65,7 +67,7 @@ export default function AprenderInglesPodcastsPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Aprender Inglés con Podcasts' }
                 ]}
                 variant="light"
@@ -382,6 +384,7 @@ export default function AprenderInglesPodcastsPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('aprender-ingles-podcasts')} />
         <Footer />
       </div>
 

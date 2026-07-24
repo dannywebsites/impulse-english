@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Precio Linguaskill Online 2026: Costes del Examen",
     description: "Precio actualizado del examen Linguaskill online: 130€ completo o modalidad modular. Descuentos para estudiantes universitarios.",
@@ -77,7 +79,7 @@ export default function PrecioLinguaskillOnlinePage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb
           items={[
-          { label: 'Blog', href: '/blog' },
+          { label: 'Blog', href: '/blog/' },
           { label: 'Precio Linguaskill Online' }
           ]}
           variant="light"
@@ -404,6 +406,7 @@ export default function PrecioLinguaskillOnlinePage() {
         </div>
       </section>
 
+      <RelatedArticles articles={getBlogSiblingCards('precio-linguaskill-online')} />
       <Footer />
 
 </>

@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Recursos PDF Examen Linguaskill: Materiales Oficiales 2026",
     description: "Materiales PDF oficiales para preparar Linguaskill: guías, ejemplos de ejercicios, consejos y recursos gratuitos de Cambridge.",
@@ -76,7 +78,7 @@ export default function RecursosPdfLinguaskillPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb
           items={[
-          { label: 'Blog', href: '/blog' },
+          { label: 'Blog', href: '/blog/' },
           { label: 'Recursos PDF Linguaskill' }
           ]}
           variant="light"
@@ -442,6 +444,7 @@ export default function RecursosPdfLinguaskillPage() {
         </div>
       </section>
 
+      <RelatedArticles articles={getBlogSiblingCards('recursos-pdf-linguaskill')} />
       <Footer />
 
 </>

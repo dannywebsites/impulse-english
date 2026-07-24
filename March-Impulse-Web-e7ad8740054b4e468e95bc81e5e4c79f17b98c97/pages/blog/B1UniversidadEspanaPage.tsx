@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿El B1 Sirve para la Universidad en España?",
     description: "El B1 es el nivel mínimo de inglés exigido por muchas universidades españolas para graduación. Conoce requisitos por comunidad y cómo certificarlo.",
@@ -72,7 +74,7 @@ export default function B1UniversidadEspanaPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'B1 Universidad España' }
                 ]}
                 variant="light"
@@ -444,6 +446,7 @@ export default function B1UniversidadEspanaPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('b1-universidad-espana')} />
         <Footer />
       </div>
 

@@ -139,7 +139,7 @@ export default function PreparacionB2FirstMadridPage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Breadcrumb
             items={[
-            { label: 'Exámenes Cambridge', href: '/examenes-cambridge' },
+            { label: 'Exámenes Cambridge', href: '/examenes-cambridge/' },
             { label: 'Preparación B2 First Madrid' }
             ]}
             variant="light"

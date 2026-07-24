@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Qué Trabajos Piden C1 de Inglés? Sectores y Puestos",
     description: "El C1 de inglés es esencial en consultoría, banca, IT, docencia universitaria y multinacionales. Descubre qué puestos lo exigen y cómo mejora tu salario.",
@@ -60,7 +62,7 @@ export default function TrabajosPidenC1InglesPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Trabajos que Piden C1' }
                 ]}
                 variant="light"
@@ -500,6 +502,7 @@ export default function TrabajosPidenC1InglesPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('trabajos-piden-c1-ingles')} />
         <Footer />
       </div>
 

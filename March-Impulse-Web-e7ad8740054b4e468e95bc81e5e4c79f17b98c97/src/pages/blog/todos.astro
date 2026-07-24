@@ -2,65 +2,50 @@
 /**
  * Blog archive / HTML sitemap of every article.
  *
- * SEO purpose: the visual blog index (pages/BlogPage.tsx) only links a curated,
- * hardcoded subset of articles, so auto-published Content Collection posts land
- * orphaned (crawled, not indexed). This page server-renders a crawlable <a> link
- * to EVERY collection article (grouped by category) plus a few hand-built pages
- * that live outside the collection. It is linked sitewide from the footer, giving
- * every article at least one internal inbound link. New auto-published posts appear
- * here automatically — no manual upkeep.
+ * SEO purpose: server-render a crawlable <a> link to EVERY article on the site —
+ * the full registry (data/blog-directory.ts: static wrappers + content collection)
+ * plus any auto-published collection article not yet in the generated registry,
+ * plus a few hand-built guide pages that live outside /blog/. Linked sitewide from
+ * the footer, so every article keeps at least one internal inbound link with zero
+ * manual upkeep.
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
 import CookieBanner from '../../../components/CookieBanner';
 import { getCollection } from 'astro:content';
-
-const articles = await getCollection('articles');
-
-// Display order + Spanish labels for the collection's category keys.
-const CATEGORY_ORDER: { key: string; label: string }[] = [
-  { key: 'Local Madrid', label: 'Academias de inglés en Madrid' },
-  { key: 'Cambridge B2 First', label: 'Cambridge B2 First' },
-  { key: 'Cambridge C1 Advanced', label: 'Cambridge C1 Advanced' },
-  { key: 'Linguaskill', label: 'Linguaskill' },
-  { key: 'Price', label: 'Precios' },
-  { key: 'Learning Methods', label: 'Métodos de aprendizaje' },
-  { key: 'Kids Early Childhood', label: 'Inglés para niños' },
-];
+import { BLOG_DIRECTORY, getDirectoryByCategory } from '../../../data/blog-directory';
 
 // trailingSlash is 'always' — normalize so internal links don't take a 308 hop.
 const withSlash = (u: string) => (u.endsWith('/') ? u : `${u}/`);
 
-const byCategory = new Map<string, { url: string; title: string }[]>();
-for (const a of articles) {
-  const cat = a.data.category || 'Otros';
-  const list = byCategory.get(cat) ?? [];
-  list.push({ url: withSlash(a.data.url), title: a.data.seoTitle || a.data.question });
-  byCategory.set(cat, list);
+// Auto-published newcomers not yet in the generated registry still get listed.
+const known = new Set(BLOG_DIRECTORY.map((e) => e.slug));
+const newcomers = (await getCollection('articles'))
+  .filter((a) => !known.has(a.id.replace(/\.md$/, '')))
+  .map((a) => ({ url: withSlash(a.data.url), title: a.data.seoTitle || a.data.question }));
+
+const groups = getDirectoryByCategory().map((g) => ({
+  label: g.category,
+  entries: g.entries.map((e) => ({ url: e.url, title: e.title })),
+}));
+if (newcomers.length > 0) {
+  groups.push({ label: 'Novedades', entries: newcomers });
 }
-for (const list of byCategory.values()) list.sort((x, y) => x.title.localeCompare(y.title, 'es'));
 
-// Ordered categories first, then any leftover categories not in CATEGORY_ORDER.
-const orderedKeys = CATEGORY_ORDER.map((c) => c.key).filter((k) => byCategory.has(k));
-const leftoverKeys = [...byCategory.keys()].filter((k) => !orderedKeys.includes(k)).sort();
-const labelFor = (k: string) => CATEGORY_ORDER.find((c) => c.key === k)?.label ?? k;
+const totalArticles = BLOG_DIRECTORY.length + newcomers.length;
 
-// Hand-built pages that live outside the Content Collection (static .astro / top-level
-// routes) and would otherwise stay orphaned.
+// Hand-built pages that live outside /blog/ and would otherwise stay orphaned.
 const guiasDestacadas = [
   { url: '/academias-ingles-madrid/', title: 'Academias de inglés en Madrid (guía)' },
-  { url: '/blog/mejores-academias-madrid-norte/', title: 'Las mejores academias de inglés del norte de Madrid' },
   { url: '/preparacion-b2-first-madrid/', title: 'Preparación del B2 First en Madrid' },
-  { url: '/blog/aprender-ingles-podcasts/', title: 'Aprender inglés con podcasts' },
-  { url: '/blog/precio-linguaskill-reservar/', title: 'Precio del Linguaskill y cómo reservar' },
 ];
 ---
 
 <BaseLayout
   title="Todos los artículos del blog | Impulse English Academy"
   description="Índice completo del blog de Impulse English Academy: guías de exámenes Cambridge B2 First y C1 Advanced, Linguaskill, precios, métodos y academias de inglés en Madrid."
-  canonical="/blog/todos"
+  canonical="/blog/todos/"
 >
   <Navbar client:load currentPath="/blog/todos/" />
 
@@ -78,7 +63,7 @@ const guiasDestacadas = [
       <div class="w-16 h-0.5 bg-brand-red mb-6"></div>
       <p class="text-zinc-600 mb-12 max-w-2xl">
         Índice completo de nuestras guías sobre exámenes Cambridge, Linguaskill, precios y
-        cómo aprender inglés en Madrid. {articles.length + guiasDestacadas.length} recursos y contando.
+        cómo aprender inglés en Madrid. {totalArticles + guiasDestacadas.length} recursos y contando.
       </p>
 
       <section class="mb-12">
@@ -94,11 +79,11 @@ const guiasDestacadas = [
         </ul>
       </section>
 
-      {[...orderedKeys, ...leftoverKeys].map((key) => (
+      {groups.map((group) => (
         <section class="mb-12">
-          <h2 class="text-xl font-bold text-zinc-900 mb-4">{labelFor(key)}</h2>
+          <h2 class="text-xl font-bold text-zinc-900 mb-4">{group.label}</h2>
           <ul class="space-y-2">
-            {byCategory.get(key)!.map((a) => (
+            {group.entries.map((a) => (
               <li>
                 <a href={a.url} class="text-accent-blue hover:text-brand-red hover:underline transition-colors">
                   {a.title}

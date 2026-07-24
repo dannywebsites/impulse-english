@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Por Qué Me Da Vergüenza Hablar Inglés? Supera la Barrera",
     description: "La vergüenza al hablar inglés afecta al 70% de estudiantes adultos. Descubre las causas psicológicas y 6 técnicas probadas para superarla.",
@@ -63,7 +65,7 @@ export default function VerguenzaHablarInglesPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Vergüenza Hablar Inglés' }
                 ]}
                 variant="light"
@@ -439,6 +441,7 @@ export default function VerguenzaHablarInglesPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('verguenza-hablar-ingles')} />
         <Footer />
       </div>
 

@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Academia o Profesor Particular de Inglés? Pros y Contras",
     description: "Compara academia y profesor particular de inglés: precios, metodología, resultados y flexibilidad. Descubre cuál se adapta mejor a tus necesidades.",
@@ -74,7 +76,7 @@ export default function AcademiaVsProfesorParticularPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Academia vs Profesor Particular' }
                 ]}
                 variant="light"
@@ -455,6 +457,7 @@ export default function AcademiaVsProfesorParticularPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('academia-vs-profesor-particular')} />
         <Footer />
       </div>
 

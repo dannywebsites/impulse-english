@@ -19,11 +19,11 @@ const benefits = [
 ];
 
 const courses = [
-  { name: "Infantil (2-5 años)", method: "Great Little People", href: "/cursos-ingles/infantil" },
-  { name: "Primaria (6-12 años)", method: "Young Learners + Cambridge", href: "/cursos-ingles/primaria" },
-  { name: "Secundaria (13-17 años)", method: "EBAU + Cambridge B1/B2/C1", href: "/cursos-ingles/secundaria" },
-  { name: "Adultos", method: "Todos niveles + Cambridge + Linguaskill", href: "/cursos-ingles/adultos" },
-  { name: "Clases Particulares", method: "Presencial u online", href: "/cursos-ingles/particulares" }
+  { name: "Infantil (2-5 años)", method: "Great Little People", href: "/cursos-ingles/infantil/" },
+  { name: "Primaria (6-12 años)", method: "Young Learners + Cambridge", href: "/cursos-ingles/primaria/" },
+  { name: "Secundaria (13-17 años)", method: "EBAU + Cambridge B1/B2/C1", href: "/cursos-ingles/secundaria/" },
+  { name: "Adultos", method: "Todos niveles + Cambridge + Linguaskill", href: "/cursos-ingles/adultos/" },
+  { name: "Clases Particulares", method: "Presencial u online", href: "/cursos-ingles/particulares/" }
 ];
 
 export const localFaqs: FAQItem[] = [

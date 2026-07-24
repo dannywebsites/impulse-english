@@ -76,7 +76,7 @@ export default function LeadForm({
       setPrivacyAccepted(false);
 
       // Redirect to thank you page
-      window.location.href = '/gracias';
+      window.location.href = '/gracias/';
     } catch (error) {
       setStatus('error');
     }

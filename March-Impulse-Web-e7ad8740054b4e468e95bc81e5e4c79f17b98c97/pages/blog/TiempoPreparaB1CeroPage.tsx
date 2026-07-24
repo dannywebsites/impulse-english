@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Tiempo se Tarda en Preparar el B1 desde Cero?",
     description: "Preparar el B1 desde cero lleva 12-18 meses con estudio regular. Desde nivel A2: 10-12 semanas. Plan detallado y horas necesarias por nivel.",
@@ -79,7 +81,7 @@ export default function TiempoPreparaB1CeroPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Tiempo Preparar B1 desde Cero' }
                 ]}
                 variant="light"
@@ -432,7 +434,7 @@ export default function TiempoPreparaB1CeroPage() {
                 Realiza una prueba de nivel gratuita y te diseñamos un plan personalizado para alcanzar tu B1 en el menor tiempo posible.
               </p>
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Prueba de nivel gratis
@@ -482,6 +484,7 @@ export default function TiempoPreparaB1CeroPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('tiempo-preparar-b1-cero')} />
         <Footer />
       </div>
 

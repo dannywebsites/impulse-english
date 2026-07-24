@@ -2,14 +2,32 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BlogPage from '../../../pages/BlogPage';
 import CookieBanner from '../../../components/CookieBanner';
+import { getCollection } from 'astro:content';
+import { BLOG_DIRECTORY, getDirectoryByCategory } from '../../../data/blog-directory';
+
+// Full article directory (registry) + any collection article not yet in the
+// generated registry (auto-published newcomers), so no article is ever orphaned.
+const known = new Set(BLOG_DIRECTORY.map((e) => e.slug));
+const withSlash = (u: string) => (u.endsWith('/') ? u : `${u}/`);
+const newcomers = (await getCollection('articles'))
+  .filter((a) => !known.has(a.id.replace(/\.md$/, '')))
+  .map((a) => ({ url: withSlash(a.data.url), title: a.data.seoTitle || a.data.question }));
+
+const directory = getDirectoryByCategory().map((g) => ({
+  category: g.category,
+  entries: g.entries.map((e) => ({ url: e.url, title: e.title })),
+}));
+if (newcomers.length > 0) {
+  directory.push({ category: 'Novedades', entries: newcomers });
+}
 ---
 
 <BaseLayout
   title="Blog Inglés"
   description="Blog de Impulse English Academy. Guías sobre exámenes Cambridge, Linguaskill, consejos para aprender inglés y recursos educativos. Academia Madrid."
   keywords="blog inglés, artículos cambridge, guía linguaskill, aprender inglés tips, recursos inglés madrid"
-  canonical="/blog"
+  canonical="/blog/"
 >
-  <BlogPage client:idle />
+  <BlogPage directory={directory} client:idle />
   <CookieBanner client:idle />
 </BaseLayout>

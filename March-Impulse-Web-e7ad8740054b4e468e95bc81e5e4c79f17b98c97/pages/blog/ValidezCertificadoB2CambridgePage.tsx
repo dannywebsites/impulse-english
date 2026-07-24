@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Dura el Certificado B2 de Cambridge? Validez y Caducidad",
     description: "El certificado B2 First de Cambridge no caduca nunca. Descubre su validez permanente, reconocimiento internacional y diferencias con IELTS y TOEFL.",
@@ -73,7 +75,7 @@ export default function ValidezCertificadoB2CambridgePage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Validez Certificado B2 Cambridge' }
                 ]}
                 variant="light"
@@ -410,7 +412,7 @@ export default function ValidezCertificadoB2CambridgePage() {
                 En Impulse English Academy te preparamos con metodología probada para aprobar el B2 First con la mejor puntuación posible. Un certificado para toda la vida.
               </p>
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reserva tu clase gratis
@@ -466,6 +468,7 @@ export default function ValidezCertificadoB2CambridgePage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('validez-certificado-b2-cambridge')} />
         <Footer />
       </div>
 
