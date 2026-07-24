@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: '¿Mi Hijo Debería Preparar Cambridge? Guía para Padres',
     description: 'Preparar Cambridge da ventaja académica y motivación. Descubre a qué edad empezar, qué examen elegir (Young Learners, B1, B2) y cómo preparar sin presión.',
@@ -68,7 +70,7 @@ export default function HijoPrepararCambridgePage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Cambridge para Niños' }
                 ]}
                 variant="light"
@@ -398,6 +400,7 @@ export default function HijoPrepararCambridgePage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('hijo-preparar-cambridge')} />
         <Footer />
       </div>
 

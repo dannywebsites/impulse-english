@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Cómo Mejorar el Listening en Inglés: 10 Técnicas Efectivas",
     description: "Mejora tu listening en inglés con 10 técnicas: podcasts, dictados, shadowing y más. Guía detallada por nivel desde A2 hasta C1 con recursos gratuitos.",
@@ -68,7 +70,7 @@ export default function MejorarListeningInglesPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Mejorar Listening' }
                 ]}
                 variant="light"
@@ -344,6 +346,7 @@ export default function MejorarListeningInglesPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('mejorar-listening-ingles')} />
         <Footer />
       </div>
 

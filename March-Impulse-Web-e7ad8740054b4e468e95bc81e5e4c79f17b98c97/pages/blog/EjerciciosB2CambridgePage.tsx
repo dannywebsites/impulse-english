@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Ejercicios B2 Cambridge: Guía Práctica First 2026",
     description: "Ejercicios prácticos para preparar el B2 First de Cambridge. Reading, Writing, Listening y Speaking con recursos gratuitos.",
@@ -132,7 +134,7 @@ export default function EjerciciosB2CambridgePage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb
           items={[
-          { label: 'Blog', href: '/blog' },
+          { label: 'Blog', href: '/blog/' },
           { label: 'Ejercicios B2 Cambridge' }
           ]}
           variant="light"
@@ -605,7 +607,7 @@ export default function EjerciciosB2CambridgePage() {
                     </p>
                   </div>
                   <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                     className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Reserva tu clase gratis
@@ -650,6 +652,7 @@ export default function EjerciciosB2CambridgePage() {
         </div>
       </section>
 
+      <RelatedArticles articles={getBlogSiblingCards('ejercicios-b2-cambridge')} />
       <Footer />
 
 </>

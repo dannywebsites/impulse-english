@@ -73,46 +73,46 @@ export default function Breadcrumb({
 // Pre-configured breadcrumb paths for common page types
 export const breadcrumbPaths = {
   // Cursos
-  cursos: { label: 'Cursos', href: '/cursos-ingles/infantil' },
-  infantil: { label: 'Infantil', href: '/cursos-ingles/infantil' },
-  primaria: { label: 'Primaria', href: '/cursos-ingles/primaria' },
-  secundaria: { label: 'Secundaria', href: '/cursos-ingles/secundaria' },
-  adultos: { label: 'Adultos', href: '/cursos-ingles/adultos' },
-  particulares: { label: 'Particulares', href: '/cursos-ingles/particulares' },
+  cursos: { label: 'Cursos', href: '/cursos-ingles/infantil/' },
+  infantil: { label: 'Infantil', href: '/cursos-ingles/infantil/' },
+  primaria: { label: 'Primaria', href: '/cursos-ingles/primaria/' },
+  secundaria: { label: 'Secundaria', href: '/cursos-ingles/secundaria/' },
+  adultos: { label: 'Adultos', href: '/cursos-ingles/adultos/' },
+  particulares: { label: 'Particulares', href: '/cursos-ingles/particulares/' },
 
   // Cambridge
-  examenesCambridge: { label: 'Exámenes Cambridge', href: '/examenes-cambridge' },
-  b1Preliminary: { label: 'B1 Preliminary', href: '/examenes-cambridge/b1-preliminary' },
-  b2First: { label: 'B2 First', href: '/examenes-cambridge/b2-first' },
-  linguaskill: { label: 'Linguaskill', href: '/linguaskill' },
+  examenesCambridge: { label: 'Exámenes Cambridge', href: '/examenes-cambridge/' },
+  b1Preliminary: { label: 'B1 Preliminary', href: '/examenes-cambridge/b1-preliminary/' },
+  b2First: { label: 'B2 First', href: '/examenes-cambridge/b2-first/' },
+  linguaskill: { label: 'Linguaskill', href: '/linguaskill/' },
 
   // Blog & Content
-  blog: { label: 'Blog', href: '/blog' },
+  blog: { label: 'Blog', href: '/blog/' },
 
   // Locations
-  ubicaciones: { label: 'Ubicaciones', href: '/academia-ingles-barrio-del-pilar' },
-  barrioDelPilar: { label: 'Barrio del Pilar', href: '/academia-ingles-barrio-del-pilar' },
-  laVaguada: { label: 'La Vaguada', href: '/academia-ingles-la-vaguada' },
-  penagrande: { label: 'Peñagrande', href: '/academia-ingles-penagrande' },
-  laVentilla: { label: 'La Ventilla', href: '/academia-ingles-la-ventilla' },
-  laPaz: { label: 'La Paz', href: '/academia-ingles-la-paz' },
-  plazaCastilla: { label: 'Plaza Castilla', href: '/academia-ingles-plaza-castilla' },
-  tetuan: { label: 'Tetuán', href: '/academia-ingles-tetuan' },
-  cuatroTorres: { label: 'Cuatro Torres', href: '/academia-ingles-cuatro-torres' },
+  ubicaciones: { label: 'Ubicaciones', href: '/academia-ingles-barrio-del-pilar/' },
+  barrioDelPilar: { label: 'Barrio del Pilar', href: '/academia-ingles-barrio-del-pilar/' },
+  laVaguada: { label: 'La Vaguada', href: '/academia-ingles-la-vaguada/' },
+  penagrande: { label: 'Peñagrande', href: '/academia-ingles-penagrande/' },
+  laVentilla: { label: 'La Ventilla', href: '/academia-ingles-la-ventilla/' },
+  laPaz: { label: 'La Paz', href: '/academia-ingles-la-paz/' },
+  plazaCastilla: { label: 'Plaza Castilla', href: '/academia-ingles-plaza-castilla/' },
+  tetuan: { label: 'Tetuán', href: '/academia-ingles-tetuan/' },
+  cuatroTorres: { label: 'Cuatro Torres', href: '/academia-ingles-cuatro-torres/' },
 
   // Academia
-  sobreNosotros: { label: 'Sobre Nosotros', href: '/sobre-nosotros' },
-  metodologia: { label: 'Metodología', href: '/metodologia' },
-  testimonios: { label: 'Testimonios', href: '/testimonios' },
-  preguntasFrecuentes: { label: 'Preguntas Frecuentes', href: '/preguntas-frecuentes' },
-  contacto: { label: 'Contacto', href: '/contacto' },
+  sobreNosotros: { label: 'Sobre Nosotros', href: '/sobre-nosotros/' },
+  metodologia: { label: 'Metodología', href: '/metodologia/' },
+  testimonios: { label: 'Testimonios', href: '/testimonios/' },
+  preguntasFrecuentes: { label: 'Preguntas Frecuentes', href: '/preguntas-frecuentes/' },
+  contacto: { label: 'Contacto', href: '/contacto/' },
 
   // Legal
-  legal: { label: 'Legal', href: '/aviso-legal' },
-  avisoLegal: { label: 'Aviso Legal', href: '/aviso-legal' },
-  politicaPrivacidad: { label: 'Política de Privacidad', href: '/politica-privacidad' },
-  politicaCookies: { label: 'Política de Cookies', href: '/politica-cookies' },
+  legal: { label: 'Legal', href: '/aviso-legal/' },
+  avisoLegal: { label: 'Aviso Legal', href: '/aviso-legal/' },
+  politicaPrivacidad: { label: 'Política de Privacidad', href: '/politica-privacidad/' },
+  politicaCookies: { label: 'Política de Cookies', href: '/politica-cookies/' },
 
   // Academias Madrid
-  academiasMadrid: { label: 'Academias Madrid', href: '/academias-ingles-madrid' },
+  academiasMadrid: { label: 'Academias Madrid', href: '/academias-ingles-madrid/' },
 };

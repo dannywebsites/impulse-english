@@ -8,6 +8,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 const escalaFaqs: FAQItem[] = [
   {
     question: "¿Cuáles son los niveles de idioma A1, A2, B1, B2, C1 y C2?",
@@ -118,7 +120,7 @@ export default function EscalaCambridgePage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb
           items={[
-          { label: 'Blog', href: '/blog' },
+          { label: 'Blog', href: '/blog/' },
           { label: 'Escala Cambridge' }
           ]}
           variant="light"
@@ -484,6 +486,7 @@ export default function EscalaCambridgePage() {
         </div>
       </section>
 
+      <RelatedArticles articles={getBlogSiblingCards('escala-cambridge')} />
       <Footer />
 
 </>

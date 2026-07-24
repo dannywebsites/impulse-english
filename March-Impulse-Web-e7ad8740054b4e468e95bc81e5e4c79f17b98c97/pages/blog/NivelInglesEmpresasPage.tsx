@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Qué Nivel de Inglés Piden las Empresas en España?",
     description: "El 85% de ofertas cualificadas piden inglés. B2 es el mínimo para multinacionales, C1 para directivos. Descubre requisitos por sector y puesto.",
@@ -70,7 +72,7 @@ export default function NivelInglesEmpresasPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Nivel Inglés Empresas' }
                 ]}
                 variant="light"
@@ -452,6 +454,7 @@ export default function NivelInglesEmpresasPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('nivel-ingles-empresas')} />
         <Footer />
       </div>
 

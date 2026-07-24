@@ -7,6 +7,8 @@ import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Precio Cambridge C1 Madrid 2026: Costes y Registro Completo",
     description: "Precios actualizados del examen Cambridge C1 Advanced en Madrid. Costes de inscripción, descuentos y proceso de registro paso a paso.",
@@ -82,7 +84,7 @@ export default function PrecioCambridgeC1MadridPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
               items={[
-              { label: 'Blog', href: '/blog' },
+              { label: 'Blog', href: '/blog/' },
               { label: 'Precio Cambridge C1 Madrid' }
               ]}
               variant="light"
@@ -465,6 +467,7 @@ export default function PrecioCambridgeC1MadridPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('precio-cambridge-c1-madrid')} />
         <Footer />
       </div>
 

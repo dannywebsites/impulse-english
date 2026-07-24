@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Linguaskill es Reconocido Internacionalmente? Validez Global",
     description: "Linguaskill es reconocido en más de 60 países por universidades, empresas y gobiernos. Descubre su validez internacional y dónde es aceptado.",
@@ -60,7 +62,7 @@ export default function LinguaskillReconocimientoInternacionalPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Linguaskill Reconocimiento Internacional' }
                 ]}
                 variant="light"
@@ -537,6 +539,7 @@ export default function LinguaskillReconocimientoInternacionalPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('linguaskill-reconocimiento-internacional')} />
         <Footer />
       </div>
 

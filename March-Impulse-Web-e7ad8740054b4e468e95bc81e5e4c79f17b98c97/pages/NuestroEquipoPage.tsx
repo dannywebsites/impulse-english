@@ -65,7 +65,7 @@ export default function NuestroEquipoPage() {
         <div className="relative z-10 container mx-auto px-6 md:px-12">
           <Breadcrumb
             items={[
-              { label: 'Sobre Nosotros', href: '/sobre-nosotros' },
+              { label: 'Sobre Nosotros', href: '/sobre-nosotros/' },
               { label: 'Nuestro Equipo' }
             ]}
             variant="light"

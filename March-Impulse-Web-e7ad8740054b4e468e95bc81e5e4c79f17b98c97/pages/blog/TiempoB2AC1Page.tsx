@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Tiempo se Tarda en Pasar de B2 a C1?",
     description: "Pasar de B2 a C1 requiere 200-300 horas de estudio guiado. Conoce el plan de transición, duración según dedicación y estrategias para acelerar el proceso.",
@@ -60,7 +62,7 @@ export default function TiempoB2AC1Page() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'De B2 a C1: Tiempo Necesario' }
                 ]}
                 variant="light"
@@ -455,6 +457,7 @@ export default function TiempoB2AC1Page() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('tiempo-b2-a-c1')} />
         <Footer />
       </div>
 

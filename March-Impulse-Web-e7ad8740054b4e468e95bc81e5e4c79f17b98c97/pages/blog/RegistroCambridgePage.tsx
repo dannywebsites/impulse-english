@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Cómo Registrarse en Exámenes Cambridge 2025: Guía Paso a Paso",
     description: "Guía completa para registrarse en exámenes Cambridge en España. Proceso de inscripción, documentos necesarios y plazos importantes.",
@@ -91,7 +93,7 @@ export default function RegistroCambridgePage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
               items={[
-              { label: 'Blog', href: '/blog' },
+              { label: 'Blog', href: '/blog/' },
               { label: 'Registro Cambridge' }
               ]}
               variant="light"
@@ -441,6 +443,7 @@ export default function RegistroCambridgePage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('registro-cambridge')} />
         <Footer />
       </div>
 

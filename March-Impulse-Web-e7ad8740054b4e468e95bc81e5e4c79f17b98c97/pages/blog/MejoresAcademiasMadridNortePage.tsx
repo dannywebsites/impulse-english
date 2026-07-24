@@ -9,6 +9,8 @@ import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import { NAP } from '../../utils/napData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
   headline: "Las 8 Mejores Academias de Inglés en Madrid Norte (2026)",
   description: "Guía actualizada de las mejores academias de inglés en Madrid Norte 2026. Comparativa de precios, metodologías, opiniones y ubicaciones en Barrio del Pilar, Montecarmelo, Las Tablas y Mirasierra.",
@@ -217,7 +219,7 @@ export default function MejoresAcademiasMadridNortePage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Breadcrumb
               items={[
-                { label: 'Blog', href: '/blog' },
+                { label: 'Blog', href: '/blog/' },
                 { label: 'Mejores Academias Madrid Norte' }
               ]}
               variant="light"
@@ -685,6 +687,7 @@ export default function MejoresAcademiasMadridNortePage() {
         </section>
       </article>
 
+      <RelatedArticles articles={getBlogSiblingCards('mejores-academias-madrid-norte')} />
       <Footer />
     </>
   );

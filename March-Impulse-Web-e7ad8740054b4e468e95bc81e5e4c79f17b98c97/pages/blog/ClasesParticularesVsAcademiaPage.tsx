@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Clases Particulares vs Academia de Inglés: ¿Qué Elegir?",
     description: "Compara clases particulares y academia de inglés: precio (30-50€/h vs 64-79€/mes), método, resultados y flexibilidad. Descubre cuál se adapta a tu perfil.",
@@ -64,7 +66,7 @@ export default function ClasesParticularesVsAcademiaPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Particular vs Academia' }
                 ]}
                 variant="light"
@@ -393,6 +395,7 @@ export default function ClasesParticularesVsAcademiaPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('clases-particulares-vs-academia')} />
         <Footer />
       </div>
 

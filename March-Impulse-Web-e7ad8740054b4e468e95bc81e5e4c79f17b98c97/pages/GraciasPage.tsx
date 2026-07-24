@@ -27,12 +27,12 @@ const nextSteps = [
 ];
 
 const courses = [
-  { name: "Infantil (2-5 años)", description: "Great Little People. Música, movimiento, diversión.", href: "/cursos-ingles/infantil" },
-  { name: "Primaria (6-12 años)", description: "A1-A2. Cambridge Young Learners.", href: "/cursos-ingles/primaria" },
-  { name: "Secundaria (13-17 años)", description: "EBAU, Cambridge B1/B2/C1. 100% aprobados.", href: "/cursos-ingles/secundaria" },
-  { name: "Adultos", description: "Expertos en principiantes absolutos. Cambridge, Linguaskill.", href: "/cursos-ingles/adultos" },
-  { name: "Clases Particulares", description: "Presencial u online. Horarios flexibles.", href: "/cursos-ingles/particulares" },
-  { name: "Exámenes Cambridge", description: "Centro Oficial. Todos los niveles Pre-A1 hasta C2.", href: "/examenes-cambridge" }
+  { name: "Infantil (2-5 años)", description: "Great Little People. Música, movimiento, diversión.", href: "/cursos-ingles/infantil/" },
+  { name: "Primaria (6-12 años)", description: "A1-A2. Cambridge Young Learners.", href: "/cursos-ingles/primaria/" },
+  { name: "Secundaria (13-17 años)", description: "EBAU, Cambridge B1/B2/C1. 100% aprobados.", href: "/cursos-ingles/secundaria/" },
+  { name: "Adultos", description: "Expertos en principiantes absolutos. Cambridge, Linguaskill.", href: "/cursos-ingles/adultos/" },
+  { name: "Clases Particulares", description: "Presencial u online. Horarios flexibles.", href: "/cursos-ingles/particulares/" },
+  { name: "Exámenes Cambridge", description: "Centro Oficial. Todos los niveles Pre-A1 hasta C2.", href: "/examenes-cambridge/" }
 ];
 
 export default function GraciasPage() {

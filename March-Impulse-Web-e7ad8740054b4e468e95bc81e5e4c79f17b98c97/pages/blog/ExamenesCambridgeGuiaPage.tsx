@@ -7,6 +7,8 @@ import FAQSection from '../../components/FAQSection';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
   headline: "Guía Completa de Exámenes Cambridge 2026: Niveles, Estructura y Preparación",
   description: "Guía definitiva de exámenes Cambridge: B1 Preliminary, B2 First, C1 Advanced y C2 Proficiency. Estructura, preparación, fechas y consejos de expertos.",
@@ -132,7 +134,7 @@ export default function ExamenesCambridgeGuiaPage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Breadcrumb
             items={[
-            { label: 'Blog', href: '/blog' },
+            { label: 'Blog', href: '/blog/' },
             { label: 'Guía Cambridge' }
             ]}
             variant="light"
@@ -1289,6 +1291,7 @@ export default function ExamenesCambridgeGuiaPage() {
         </section>
       </article>
 
+      <RelatedArticles articles={getBlogSiblingCards('examenes-cambridge-guia')} />
       <Footer />
 
       {/* Schema.org Structured Data */}

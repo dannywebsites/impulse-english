@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Inglés para Entrevistas de Trabajo: Guía Completa",
     description: "Prepara tu entrevista de trabajo en inglés: frases clave, preguntas frecuentes, vocabulario específico y técnicas de confianza. Guía práctica.",
@@ -75,7 +77,7 @@ export default function InglesEntrevistasTrabajoPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Inglés Entrevistas Trabajo' }
                 ]}
                 variant="light"
@@ -548,6 +550,7 @@ export default function InglesEntrevistasTrabajoPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('ingles-entrevistas-trabajo')} />
         <Footer />
       </div>
 

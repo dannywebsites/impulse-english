@@ -8,6 +8,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 const b2FirstFaqs = [
   {
     question: "¿Cuántas veces puedo presentarme al B2 First?",
@@ -148,7 +150,7 @@ export default function CambridgeB2BeneficiosPage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Breadcrumb
             items={[
-            { label: 'Blog', href: '/blog' },
+            { label: 'Blog', href: '/blog/' },
             { label: 'Beneficios Cambridge B2' }
             ]}
             variant="light"
@@ -474,6 +476,7 @@ export default function CambridgeB2BeneficiosPage() {
         </section>
       </article>
 
+      <RelatedArticles articles={getBlogSiblingCards('cambridge-b2-beneficios')} />
       <Footer />
 
       {/* Schema.org Structured Data */}

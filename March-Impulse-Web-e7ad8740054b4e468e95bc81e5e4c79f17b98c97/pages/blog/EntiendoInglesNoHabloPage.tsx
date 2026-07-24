@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Por Qué Entiendo Inglés Pero No Puedo Hablarlo?",
     description: "Es normal entender inglés pero no hablarlo. Se debe al desequilibrio entre habilidades pasivas y activas. Descubre 5 estrategias para empezar a hablar.",
@@ -59,7 +61,7 @@ export default function EntiendoInglesNoHabloPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Entiendo Inglés Pero No Hablo' }
                 ]}
                 variant="light"
@@ -436,6 +438,7 @@ export default function EntiendoInglesNoHabloPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('entiendo-ingles-no-hablo')} />
         <Footer />
       </div>
 

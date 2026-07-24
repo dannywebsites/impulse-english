@@ -114,7 +114,7 @@ export default function SecundariaPage() {
         <div className="relative z-10 container mx-auto px-6 md:px-12">
           <Breadcrumb
             items={[
-              { label: 'Cursos', href: '/cursos-ingles/infantil' },
+              { label: 'Cursos', href: '/cursos-ingles/infantil/' },
               { label: 'Secundaria (13-17 años)' }
             ]}
             variant="light"

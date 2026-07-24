@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: '¿Inglés Jugando Funciona? Metodología y Resultados Reales',
     description: 'Sí, aprender inglés jugando funciona y está respaldado por la neurociencia. Descubre cómo el juego acelera el aprendizaje en niños y qué metodologías lo aplican.',
@@ -64,7 +66,7 @@ export default function InglesJugandoFuncionaPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: '¿Inglés Jugando Funciona?' }
                 ]}
                 variant="light"
@@ -431,6 +433,7 @@ export default function InglesJugandoFuncionaPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('ingles-jugando-funciona')} />
         <Footer />
       </div>
 

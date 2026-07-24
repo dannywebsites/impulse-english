@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: 'Cómo Motivar a tu Hijo con el Inglés: 10 Estrategias que Funcionan',
     description: 'Motiva a tu hijo con el inglés usando estas 10 estrategias probadas: videojuegos, series, recompensas por hitos y más. Guía práctica para padres con niños 6-14 años.',
@@ -117,7 +119,7 @@ export default function MotivarHijoInglesPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Motivar Hijo Inglés' }
                 ]}
                 variant="light"
@@ -401,6 +403,7 @@ export default function MotivarHijoInglesPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('motivar-hijo-ingles')} />
         <Footer />
       </div>
 
