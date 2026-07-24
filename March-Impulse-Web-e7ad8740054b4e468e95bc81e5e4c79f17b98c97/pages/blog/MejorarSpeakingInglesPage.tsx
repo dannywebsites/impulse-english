@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Cómo Mejorar el Speaking en Inglés: Guía Práctica",
     description: "Mejora tu speaking en inglés: técnicas de fluidez, pronunciación y confianza. Ejercicios prácticos para hacer solo o en grupo con resultados en 4 semanas.",
@@ -64,7 +66,7 @@ export default function MejorarSpeakingInglesPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Mejorar Speaking' }
                 ]}
                 variant="light"
@@ -346,6 +348,7 @@ export default function MejorarSpeakingInglesPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('mejorar-speaking-ingles')} />
         <Footer />
       </div>
 

@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Cuántas Veces Puedo Presentarme al B2 First?",
     description: "No hay límite de intentos para el B2 First. Puedes presentarte tantas veces como quieras. Conoce los plazos, costes y estrategias para el segundo intento.",
@@ -64,7 +66,7 @@ export default function CuantasVecesB2FirstPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Cuántas Veces B2 First' }
                 ]}
                 variant="light"
@@ -455,6 +457,7 @@ export default function CuantasVecesB2FirstPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('cuantas-veces-b2-first')} />
         <Footer />
       </div>
 

@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Diferencia entre B2 y C1: ¿Qué Nivel Necesitas?",
     description: "La diferencia entre B2 y C1 radica en profundidad y fluidez. Compara ambos niveles en gramática, vocabulario, examen y valor profesional.",
@@ -64,7 +66,7 @@ export default function DiferenciaB2C1Page() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Diferencia entre B2 y C1' }
                 ]}
                 variant="light"
@@ -501,6 +503,7 @@ export default function DiferenciaB2C1Page() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('diferencia-b2-c1')} />
         <Footer />
       </div>
 

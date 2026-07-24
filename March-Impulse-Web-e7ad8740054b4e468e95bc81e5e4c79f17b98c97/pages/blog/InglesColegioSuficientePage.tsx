@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: '¿El Inglés del Colegio es Suficiente? Lo que los Padres Deben Saber',
     description: 'El inglés del colegio suele ser insuficiente: solo 2-3 horas semanales con grupos de 25 alumnos. Descubre por qué y cómo complementar la formación de tu hijo.',
@@ -64,7 +66,7 @@ export default function InglesColegioSuficientePage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: '¿El Inglés del Colegio es Suficiente?' }
                 ]}
                 variant="light"
@@ -370,6 +372,7 @@ export default function InglesColegioSuficientePage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('ingles-colegio-suficiente')} />
         <Footer />
       </div>
 

@@ -74,21 +74,21 @@ const examLevels = [
     level: "A2 Key",
     cefr: "A2",
     description: "Primer paso en tu camino hacia el dominio del inglés. Demuestra que puedes comunicarte en situaciones cotidianas.",
-    href: "/examenes-cambridge",
+    href: "/examenes-cambridge/",
     color: "from-green-500 to-green-600"
   },
   {
     level: "B1 Preliminary",
     cefr: "B1",
     description: "Certifica que puedes comunicarte en inglés en situaciones prácticas y cotidianas.",
-    href: "/examenes-cambridge/b1-preliminary",
+    href: "/examenes-cambridge/b1-preliminary/",
     color: "from-blue-500 to-blue-600"
   },
   {
     level: "B2 First",
     cefr: "B2",
     description: "El certificado más demandado. Demuestra que puedes trabajar y estudiar en inglés.",
-    href: "/examenes-cambridge/b2-first",
+    href: "/examenes-cambridge/b2-first/",
     color: "from-purple-500 to-purple-600",
     popular: true
   },
@@ -96,14 +96,14 @@ const examLevels = [
     level: "C1 Advanced",
     cefr: "C1",
     description: "Nivel avanzado reconocido por universidades y empresas de todo el mundo.",
-    href: "/examenes-cambridge/c1-advanced",
+    href: "/examenes-cambridge/c1-advanced/",
     color: "from-orange-500 to-orange-600"
   },
   {
     level: "Linguaskill",
     cefr: "Multinivel",
     description: "Examen online adaptativo con resultados en 48h. Ideal para empresas y universidades.",
-    href: "/linguaskill",
+    href: "/linguaskill/",
     color: "from-red-500 to-red-600"
   }
 ];

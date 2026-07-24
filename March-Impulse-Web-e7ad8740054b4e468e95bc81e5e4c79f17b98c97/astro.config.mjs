@@ -15,6 +15,9 @@ export default defineConfig({
     react(),
     tailwind({ configFile: './tailwind.config.ts' }),
     sitemap({
+      // /gracias/ is noindexed + robots-disallowed; listing it in the sitemap was a
+      // third, contradictory signal on the same URL. Keep it out.
+      filter: (page) => !page.includes('/gracias/'),
       serialize(item) {
         item.lastmod = BUILD_ISO;
         return item;

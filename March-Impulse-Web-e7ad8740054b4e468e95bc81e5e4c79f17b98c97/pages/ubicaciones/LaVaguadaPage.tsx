@@ -19,11 +19,11 @@ const benefits = [
 ];
 
 const courses = [
-  { name: "Infantil (2-5 años)", method: "Great Little People", desc: "Música, movimiento, diversión. Plataforma online para casa.", href: "/cursos-ingles/infantil" },
-  { name: "Primaria (6-12 años)", method: "Young Learners + Cambridge", desc: "Preparación A1 Movers, A2 Flyers, A2 Key.", href: "/cursos-ingles/primaria" },
-  { name: "Secundaria (13-17 años)", method: "EBAU + Cambridge", desc: "B1 Preliminary, B2 First, C1 Advanced. 100% aprobados.", href: "/cursos-ingles/secundaria" },
-  { name: "Adultos", method: "Todos los niveles", desc: "Principiantes absolutos hasta C2. Cambridge y Linguaskill.", href: "/cursos-ingles/adultos" },
-  { name: "Clases Particulares", method: "Flexible", desc: "Presencial u online. Horarios adaptados a ti.", href: "/cursos-ingles/particulares" }
+  { name: "Infantil (2-5 años)", method: "Great Little People", desc: "Música, movimiento, diversión. Plataforma online para casa.", href: "/cursos-ingles/infantil/" },
+  { name: "Primaria (6-12 años)", method: "Young Learners + Cambridge", desc: "Preparación A1 Movers, A2 Flyers, A2 Key.", href: "/cursos-ingles/primaria/" },
+  { name: "Secundaria (13-17 años)", method: "EBAU + Cambridge", desc: "B1 Preliminary, B2 First, C1 Advanced. 100% aprobados.", href: "/cursos-ingles/secundaria/" },
+  { name: "Adultos", method: "Todos los niveles", desc: "Principiantes absolutos hasta C2. Cambridge y Linguaskill.", href: "/cursos-ingles/adultos/" },
+  { name: "Clases Particulares", method: "Flexible", desc: "Presencial u online. Horarios adaptados a ti.", href: "/cursos-ingles/particulares/" }
 ];
 
 export const localFaqs: FAQItem[] = [

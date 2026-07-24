@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Qué Nota Necesito para Aprobar el B2 First? Puntuación y Grades",
     description: "Para aprobar el B2 First necesitas 160 puntos en la Cambridge English Scale. Conoce las calificaciones Grade A, B y C, y cómo se evalúa cada parte.",
@@ -85,7 +87,7 @@ export default function NotaAprobarB2FirstPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Nota Aprobar B2 First' }
                 ]}
                 variant="light"
@@ -440,7 +442,7 @@ export default function NotaAprobarB2FirstPage() {
                 En Impulse English Academy te preparamos con simulacros reales y feedback personalizado para maximizar tu puntuación.
               </p>
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reserva tu clase gratis
@@ -496,6 +498,7 @@ export default function NotaAprobarB2FirstPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('nota-aprobar-b2-first')} />
         <Footer />
       </div>
 

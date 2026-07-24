@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 const tableOfContents = [
   { id: 'por-que-eligen', title: '¿Por Qué los Usuarios Eligen Linguaskill?' },
   { id: 'formato-adaptativo', title: 'La Experiencia del Formato Adaptativo' },
@@ -68,7 +70,7 @@ export default function OpinionesLinguaskillPage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Breadcrumb
             items={[
-            { label: 'Blog', href: '/blog' },
+            { label: 'Blog', href: '/blog/' },
             { label: 'Opiniones Linguaskill' }
             ]}
             variant="light"
@@ -420,6 +422,7 @@ export default function OpinionesLinguaskillPage() {
         </section>
       </article>
 
+      <RelatedArticles articles={getBlogSiblingCards('opiniones-linguaskill')} />
       <Footer />
 
       {/* Schema.org Structured Data */}

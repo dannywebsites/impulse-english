@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Cambridge vs Linguaskill: Diferencias, Precio y ¿Cuál Elegir?",
     description: "Compara Cambridge y Linguaskill: formato, precio, validez, dificultad y reconocimiento. Guía para elegir el examen que más te conviene.",
@@ -74,7 +76,7 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Cambridge vs Linguaskill' }
                 ]}
                 variant="light"
@@ -432,6 +434,7 @@ export default function CambridgeVsLinguaskillDiferenciasPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('cambridge-vs-linguaskill-diferencias')} />
         <Footer />
       </div>
 

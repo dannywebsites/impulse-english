@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Examen CAE Cambridge C1 Advanced: Guía Completa 2026",
     description: "Guía completa del examen CAE C1 Advanced de Cambridge: estructura, partes, puntuación, precio y cómo prepararte.",
@@ -100,7 +102,7 @@ export default function ExamenCaeCambridgePage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb
           items={[
-          { label: 'Blog', href: '/blog' },
+          { label: 'Blog', href: '/blog/' },
           { label: 'Examen CAE Cambridge' }
           ]}
           variant="light"
@@ -475,6 +477,7 @@ export default function ExamenCaeCambridgePage() {
         </div>
       </section>
 
+      <RelatedArticles articles={getBlogSiblingCards('examen-cae-cambridge')} />
       <Footer />
 
 </>

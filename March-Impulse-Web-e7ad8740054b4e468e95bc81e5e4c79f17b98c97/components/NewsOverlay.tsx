@@ -15,19 +15,19 @@ export default function NewsOverlay(_props: NewsOverlayProps = {}) {
       label: "Cambridge",
       title: "100% de aprobados en exámenes Cambridge 2024-2025.",
       action: "Ver Exámenes",
-      href: "/examenes-cambridge"
+      href: "/examenes-cambridge/"
     },
     {
       label: "Linguaskill",
       title: "Certificado oficial en 48 horas. Centro autorizado.",
       action: "Más Info",
-      href: "/linguaskill"
+      href: "/linguaskill/"
     },
     {
       label: "Prueba Gratis",
       title: "Reserva tu clase de prueba gratuita y sin compromiso.",
       action: "Reservar",
-      href: "/reservar-clase"
+      href: "/reservar-clase/"
     }
   ];
 

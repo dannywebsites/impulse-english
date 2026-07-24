@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Por Qué No Avanzo en Inglés? 8 Razones y Soluciones",
     description: "Si llevas tiempo estudiando y no avanzas, probablemente cometes uno de estos 8 errores. Descubre las causas del estancamiento y soluciones prácticas.",
@@ -64,7 +66,7 @@ export default function PorQueNoAvanzoInglesPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'No Avanzo en Inglés' }
                 ]}
                 variant="light"
@@ -355,6 +357,7 @@ export default function PorQueNoAvanzoInglesPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('por-que-no-avanzo-ingles')} />
         <Footer />
       </div>
 

@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: '¿Cuál es el Mejor Método de Inglés para Niños? Comparativa',
     description: 'Compara los mejores métodos de inglés para niños: inmersión total, CLIL, TPR, juego y Great Little People. Descubre cuál es más efectivo según la edad.',
@@ -64,7 +66,7 @@ export default function MejorMetodoInglesNinosPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Mejor Método Inglés Niños' }
                 ]}
                 variant="light"
@@ -389,6 +391,7 @@ export default function MejorMetodoInglesNinosPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('mejor-metodo-ingles-ninos')} />
         <Footer />
       </div>
 

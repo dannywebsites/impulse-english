@@ -27,14 +27,20 @@ export default function RelatedArticles({ articles, title = "Artículos relacion
               <h3 className="text-base font-bold text-zinc-900 mt-2 mb-2 group-hover:text-accent-blue transition-colors line-clamp-2">
                 {article.title}
               </h3>
-              <p className="text-zinc-500 text-sm mb-3 line-clamp-2">
-                {article.excerpt}
-              </p>
+              {article.excerpt && (
+                <p className="text-zinc-500 text-sm mb-3 line-clamp-2">
+                  {article.excerpt}
+                </p>
+              )}
               <div className="flex items-center justify-between">
-                <span className="text-xs text-zinc-400 flex items-center gap-1">
-                  <Clock className="w-3 h-3" />
-                  {article.readTime}
-                </span>
+                {article.readTime ? (
+                  <span className="text-xs text-zinc-400 flex items-center gap-1">
+                    <Clock className="w-3 h-3" />
+                    {article.readTime}
+                  </span>
+                ) : (
+                  <span />
+                )}
                 <ArrowRight className="w-4 h-4 text-accent-blue opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
             </a>

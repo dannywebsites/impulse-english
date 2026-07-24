@@ -18,7 +18,7 @@ export default function PoliticaCookiesPage() {
         <div className="relative z-10 container mx-auto px-6 md:px-12">
           <Breadcrumb
             items={[
-              { label: 'Legal', href: '/aviso-legal' },
+              { label: 'Legal', href: '/aviso-legal/' },
               { label: 'Política de Cookies' }
             ]}
             variant="light"

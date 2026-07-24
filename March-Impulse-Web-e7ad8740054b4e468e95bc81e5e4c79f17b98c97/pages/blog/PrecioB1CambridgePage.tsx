@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Cuánto Cuesta el Examen B1 Cambridge? Precios 2026",
     description: "El examen B1 Cambridge cuesta entre 115€ y 140€ según el centro y modalidad. Precios actualizados, descuentos y cómo inscribirse paso a paso.",
@@ -72,7 +74,7 @@ export default function PrecioB1CambridgePage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Precio B1 Cambridge' }
                 ]}
                 variant="light"
@@ -429,6 +431,7 @@ export default function PrecioB1CambridgePage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('precio-b1-cambridge')} />
         <Footer />
       </div>
 

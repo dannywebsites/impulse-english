@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: '¿Por Qué Mi Hijo No Avanza en Inglés? Causas y Soluciones',
     description: 'Si tu hijo no avanza en inglés puede ser por método inadecuado, falta de exposición o desmotivación. Descubre 7 causas y soluciones para cada una.',
@@ -109,7 +111,7 @@ export default function HijoNoAvanzaInglesPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Hijo No Avanza en Inglés' }
                 ]}
                 variant="light"
@@ -376,6 +378,7 @@ export default function HijoNoAvanzaInglesPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('hijo-no-avanza-ingles')} />
         <Footer />
       </div>
 

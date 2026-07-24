@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿El C1 Advanced Caduca? Validez del Certificado Cambridge",
     description: "El certificado C1 Advanced no caduca nunca. Descubre su validez permanente, cuándo las instituciones piden certificados recientes y diferencias con IELTS.",
@@ -64,7 +66,7 @@ export default function C1AdvancedCaducaPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: '¿El C1 Advanced Caduca?' }
                 ]}
                 variant="light"
@@ -455,6 +457,7 @@ export default function C1AdvancedCaducaPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('c1-advanced-caduca')} />
         <Footer />
       </div>
 

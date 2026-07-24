@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 const tableOfContents = [
   { id: 'que-incluye', title: '¿Qué Incluye el Precio del Examen Linguaskill?' },
   { id: 'descuentos', title: 'Descuentos y Tarifas Especiales para Estudiantes' },
@@ -68,7 +70,7 @@ export default function PrecioLinguaskillReservarPage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Breadcrumb
             items={[
-            { label: 'Blog', href: '/blog' },
+            { label: 'Blog', href: '/blog/' },
             { label: 'Precio Linguaskill' }
             ]}
             variant="light"
@@ -400,6 +402,7 @@ export default function PrecioLinguaskillReservarPage() {
         </div>
       </section>
 
+      <RelatedArticles articles={getBlogSiblingCards('precio-linguaskill-reservar')} />
       <Footer />
 
       {/* Schema.org Structured Data */}

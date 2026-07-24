@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Qué Universidades Aceptan Linguaskill? Lista Completa 2026",
     description: "Más de 80 universidades españolas aceptan Linguaskill, incluidas UNED, UOC y universidades públicas de Madrid, Andalucía y Cataluña. Lista completa.",
@@ -63,7 +65,7 @@ export default function UniversidadesAceptanLinguaskillPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Universidades Aceptan Linguaskill' }
                 ]}
                 variant="light"
@@ -545,6 +547,7 @@ export default function UniversidadesAceptanLinguaskillPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('universidades-aceptan-linguaskill')} />
         <Footer />
       </div>
 

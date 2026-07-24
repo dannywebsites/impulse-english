@@ -8,6 +8,8 @@ import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
   headline: "Mejores Academias de Inglés en Madrid 2026: Guía Comparativa",
   description: "Guía comparativa de las mejores academias de inglés en Madrid 2026. Precios, metodologías, ubicaciones y opiniones. Encuentra la academia perfecta para ti.",
@@ -80,7 +82,7 @@ export default function MejoresAcademiasMadridPage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Breadcrumb
             items={[
-            { label: 'Blog', href: '/blog' },
+            { label: 'Blog', href: '/blog/' },
             { label: 'Mejores Academias Madrid' }
             ]}
             variant="light"
@@ -570,6 +572,7 @@ export default function MejoresAcademiasMadridPage() {
         </section>
       </article>
 
+      <RelatedArticles articles={getBlogSiblingCards('mejores-academias-madrid')} />
       <Footer />
 
       {/* Schema.org Structured Data */}

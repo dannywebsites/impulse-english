@@ -8,6 +8,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 const vsAptisFaqs = [
   {
     question: "¿Linguaskill o APTIS?",
@@ -106,7 +108,7 @@ export default function LinguaskillVsAptisPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
               items={[
-              { label: 'Blog', href: '/blog' },
+              { label: 'Blog', href: '/blog/' },
               { label: 'Linguaskill vs Aptis' }
               ]}
               variant="light"
@@ -453,6 +455,7 @@ export default function LinguaskillVsAptisPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('linguaskill-vs-aptis')} />
         <Footer />
       </div>
 

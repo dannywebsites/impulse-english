@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Se Confunden los Niños con Dos Idiomas? Mitos y Realidad",
     description: "No, los niños no se confunden con dos idiomas. El bilingüismo mejora la cognición. Desmontamos los 5 mitos más comunes sobre niños bilingües.",
@@ -82,7 +84,7 @@ export default function NinosConfusionDosIdiomasPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Confusión Dos Idiomas' }
                 ]}
                 variant="light"
@@ -419,6 +421,7 @@ export default function NinosConfusionDosIdiomasPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('ninos-confusion-dos-idiomas')} />
         <Footer />
       </div>
 
