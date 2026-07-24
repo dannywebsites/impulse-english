@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "B1 vs B2 Cambridge: ¿Qué Nivel Necesitas?",
     description: "Compara B1 y B2 de Cambridge: dificultad, reconocimiento laboral, uso académico y precio. Guía para elegir el nivel que necesitas según tu situación.",
@@ -77,7 +79,7 @@ export default function B1VsB2QueNivelNecesitoPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'B1 vs B2' }
                 ]}
                 variant="light"
@@ -389,7 +391,7 @@ export default function B1VsB2QueNivelNecesitoPage() {
                 Una prueba de nivel gratuita te dirá exactamente si estás listo para B1 o B2 y cuánto tiempo necesitarías prepararte.
               </p>
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Prueba de nivel gratuita
@@ -445,6 +447,7 @@ export default function B1VsB2QueNivelNecesitoPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('b1-vs-b2-que-nivel-necesito')} />
         <Footer />
       </div>
 

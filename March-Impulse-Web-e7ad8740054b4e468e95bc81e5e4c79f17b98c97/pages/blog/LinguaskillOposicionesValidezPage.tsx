@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Linguaskill Tiene Validez para Oposiciones? Guía Oficial",
     description: "Linguaskill es aceptado en oposiciones públicas en España con reconocimiento creciente. Descubre qué convocatorias lo aceptan y requisitos de nivel.",
@@ -63,7 +65,7 @@ export default function LinguaskillOposicionesValidezPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Linguaskill Oposiciones Validez' }
                 ]}
                 variant="light"
@@ -526,6 +528,7 @@ export default function LinguaskillOposicionesValidezPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('linguaskill-oposiciones-validez')} />
         <Footer />
       </div>
 

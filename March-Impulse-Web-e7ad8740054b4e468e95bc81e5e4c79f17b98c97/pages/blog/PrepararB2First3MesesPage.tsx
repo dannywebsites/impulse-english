@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Puedo Preparar el B2 First en 3 Meses? Plan Realista",
     description: "Sí, puedes preparar el B2 First en 3 meses si tienes nivel B1+. Plan de estudio mes a mes, horas semanales necesarias y estrategias probadas.",
@@ -64,7 +66,7 @@ export default function PrepararB2First3MesesPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Preparar B2 First en 3 Meses' }
                 ]}
                 variant="light"
@@ -450,6 +452,7 @@ export default function PrepararB2First3MesesPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('preparar-b2-first-3-meses')} />
         <Footer />
       </div>
 

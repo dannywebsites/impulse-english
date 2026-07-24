@@ -4,6 +4,20 @@
 
 import { NAP, getSchemaAddress } from './napData';
 
+// The site serves every page at a trailing-slash canonical (trailingSlash: 'always').
+// Any slashless page URL emitted into JSON-LD (url/@id/breadcrumb item) contradicts
+// rel=canonical, so every generator below routes page URLs through this normalizer.
+// File assets (.webp, .xml…), fragments and external hosts pass through untouched.
+export function toCanonicalPageUrl(url: string): string {
+  if (!url) return url;
+  const isOwnPage = url.startsWith('/') || url.startsWith(NAP.website);
+  if (!isOwnPage || url.includes('#') || url.includes('?')) return url;
+  if (url.endsWith('/')) return url;
+  const lastSegment = url.slice(url.lastIndexOf('/') + 1);
+  if (lastSegment.includes('.')) return url;
+  return `${url}/`;
+}
+
 export const businessInfo = {
   name: NAP.name,
   alternateName: NAP.shortName,
@@ -56,7 +70,7 @@ export function generateOrganizationSchema() {
     name: businessInfo.name,
     alternateName: businessInfo.alternateName,
     description: businessInfo.description,
-    url: businessInfo.url,
+    url: `${businessInfo.url}/`,
     logo: {
       "@type": "ImageObject",
       url: businessInfo.logo
@@ -137,12 +151,12 @@ export function generateCourseSchema(props: CourseSchemaProps) {
     "@type": "Course",
     name: props.name,
     description: props.description,
-    url: props.url,
+    url: toCanonicalPageUrl(props.url),
     provider: {
       "@type": "EducationalOrganization",
       "@id": `${businessInfo.url}/#organization`,
       name: props.provider || businessInfo.name,
-      url: businessInfo.url
+      url: `${businessInfo.url}/`
     },
     ...(props.courseCode && { courseCode: props.courseCode }),
     ...(props.educationalLevel && { educationalLevel: props.educationalLevel }),
@@ -180,14 +194,14 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
     "@type": "Article",
     headline: props.headline,
     description: props.description,
-    url: props.url,
+    url: toCanonicalPageUrl(props.url),
     image: props.image || businessInfo.image,
     datePublished: props.datePublished || `${new Date().getFullYear()}-01-01`,
     dateModified: props.dateModified || props.datePublished || `${new Date().getFullYear()}-01-01`,
     author: {
       "@type": "Organization",
       name: props.author || businessInfo.name,
-      url: businessInfo.url,
+      url: `${businessInfo.url}/`,
       sameAs: businessInfo.sameAs,
       hasCredential: businessInfo.credentials.map(cred => ({
         "@type": "EducationalOccupationalCredential",
@@ -197,7 +211,7 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
     publisher: {
       "@type": "Organization",
       name: businessInfo.name,
-      url: businessInfo.url,
+      url: `${businessInfo.url}/`,
       logo: {
         "@type": "ImageObject",
         url: businessInfo.logo
@@ -205,7 +219,7 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": props.url
+      "@id": toCanonicalPageUrl(props.url)
     },
     ...(props.wordCount && { wordCount: props.wordCount }),
     inLanguage: "es"
@@ -257,7 +271,7 @@ export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: item.url
+      item: toCanonicalPageUrl(item.url)
     }))
   };
 }
@@ -269,7 +283,7 @@ export function generateWebSiteSchema() {
     "@type": "WebSite",
     name: businessInfo.name,
     alternateName: businessInfo.alternateName,
-    url: businessInfo.url,
+    url: `${businessInfo.url}/`,
     publisher: {
       "@type": "EducationalOrganization",
       "@id": `${businessInfo.url}/#organization`
@@ -288,7 +302,7 @@ export function generateDefinedTermSchema(name: string, description: string) {
     inDefinedTermSet: {
       "@type": "DefinedTermSet",
       name: "Terminología de Certificaciones de Inglés",
-      url: `${businessInfo.url}/preguntas-frecuentes`
+      url: `${businessInfo.url}/preguntas-frecuentes/`
     }
   };
 }
@@ -307,11 +321,11 @@ export function generateWebPageSchema(props: WebPageSchemaProps) {
     "@type": "WebPage",
     name: props.name,
     description: props.description,
-    url: props.url,
+    url: toCanonicalPageUrl(props.url),
     isPartOf: {
       "@type": "WebSite",
       name: businessInfo.name,
-      url: businessInfo.url
+      url: `${businessInfo.url}/`
     },
     ...(props.breadcrumb && {
       breadcrumb: generateBreadcrumbSchema(props.breadcrumb)
@@ -335,12 +349,12 @@ export function generateServiceSchema(props: ServiceSchemaProps) {
     "@type": "Service",
     name: props.name,
     description: props.description,
-    url: props.url,
+    url: toCanonicalPageUrl(props.url),
     serviceType: props.serviceType,
     provider: {
       "@type": "EducationalOrganization",
       name: businessInfo.name,
-      url: businessInfo.url
+      url: `${businessInfo.url}/`
     },
     areaServed: {
       "@type": "City",
@@ -451,7 +465,7 @@ export function generateLocationPageSchema(props: LocationPageSchemaProps) {
     "@graph": [
       {
         "@type": ["LocalBusiness", "EducationalOrganization"],
-        "@id": `${props.pageUrl}#localbusiness`,
+        "@id": `${toCanonicalPageUrl(props.pageUrl)}#localbusiness`,
         parentOrganization: {
           "@type": "EducationalOrganization",
           "@id": `${businessInfo.url}/#organization`
@@ -459,7 +473,7 @@ export function generateLocationPageSchema(props: LocationPageSchemaProps) {
         name: businessInfo.name,
         alternateName: businessInfo.alternateName,
         description: `Academia de inglés cerca de ${props.locationName}, Madrid. Centro oficial Cambridge y Linguaskill con 100% de aprobados. Clases para todas las edades.`,
-        url: props.pageUrl,
+        url: toCanonicalPageUrl(props.pageUrl),
         logo: {
           "@type": "ImageObject",
           url: businessInfo.logo
@@ -514,7 +528,7 @@ export function generateLocationPageSchema(props: LocationPageSchemaProps) {
         provider: {
           "@type": "EducationalOrganization",
           name: businessInfo.name,
-          url: businessInfo.url
+          url: `${businessInfo.url}/`
         },
         areaServed: {
           "@type": "Place",

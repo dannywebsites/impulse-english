@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Es Bueno que los Niños Aprendan Inglés desde Pequeños?",
     description: "La ciencia confirma que aprender inglés antes de los 6 años aprovecha la plasticidad cerebral. Beneficios cognitivos, sociales y académicos demostrados.",
@@ -59,7 +61,7 @@ export default function NinosAprenderInglesPequenosPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Inglés desde Pequeños' }
                 ]}
                 variant="light"
@@ -450,6 +452,7 @@ export default function NinosAprenderInglesPequenosPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('ninos-aprender-ingles-pequenos')} />
         <Footer />
       </div>
 

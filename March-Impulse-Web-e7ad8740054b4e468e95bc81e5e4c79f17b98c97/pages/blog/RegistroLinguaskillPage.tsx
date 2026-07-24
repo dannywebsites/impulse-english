@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Registro Linguaskill 2025: Guía Completa de Matrícula",
     description: "Cómo registrarse en el examen Linguaskill: proceso de inscripción, requisitos, costes y plazos para matricularte en España.",
@@ -91,7 +93,7 @@ export default function RegistroLinguaskillPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
               items={[
-              { label: 'Blog', href: '/blog' },
+              { label: 'Blog', href: '/blog/' },
               { label: 'Registro Linguaskill' }
               ]}
               variant="light"
@@ -384,6 +386,7 @@ export default function RegistroLinguaskillPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('registro-linguaskill')} />
         <Footer />
       </div>
 

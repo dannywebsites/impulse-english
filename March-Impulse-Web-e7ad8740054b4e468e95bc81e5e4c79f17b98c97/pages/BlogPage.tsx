@@ -60,7 +60,7 @@ const hubArticles = [
     category: "Linguaskill",
     readTime: "25 min",
     imageKey: "technology",
-    href: "/linguaskill",
+    href: "/linguaskill/",
     featured: true,
   },
   {
@@ -70,7 +70,7 @@ const hubArticles = [
     category: "Linguaskill",
     readTime: "20 min",
     imageKey: "reception",
-    href: "/linguaskill/precios-fechas",
+    href: "/linguaskill/precios-fechas/",
     featured: false,
   },
   {
@@ -80,7 +80,7 @@ const hubArticles = [
     category: "Exámenes Cambridge",
     readTime: "30 min",
     imageKey: "cambridgeLogo",
-    href: "/blog/examenes-cambridge-guia",
+    href: "/blog/examenes-cambridge-guia/",
     featured: true,
   },
   {
@@ -90,7 +90,7 @@ const hubArticles = [
     category: "Calendario",
     readTime: "15 min",
     imageKey: "cambridge",
-    href: "/examenes-cambridge/fechas-precios",
+    href: "/examenes-cambridge/fechas-precios/",
     featured: false,
   },
   {
@@ -100,7 +100,7 @@ const hubArticles = [
     category: "Recursos",
     readTime: "18 min",
     imageKey: "students",
-    href: "/blog/libros-cambridge-recursos",
+    href: "/blog/libros-cambridge-recursos/",
     featured: false,
   },
 ];
@@ -114,7 +114,7 @@ const spokeArticles = [
     excerpt: "Formato completo del examen con ejemplos de cada módulo: Reading, Listening, Writing y Speaking.",
     category: "Linguaskill",
     readTime: "7 min",
-    href: "/linguaskill/ejemplo-examen",
+    href: "/linguaskill/ejemplo-examen/",
     hub: "linguaskill-guia-completa",
   },
   {
@@ -123,7 +123,7 @@ const spokeArticles = [
     excerpt: "Tarifas actualizadas (130€), descuentos universitarios y proceso de inscripción paso a paso.",
     category: "Linguaskill",
     readTime: "6 min",
-    href: "/linguaskill/precios-fechas",
+    href: "/linguaskill/precios-fechas/",
     hub: "linguaskill-precios-sedes",
   },
   {
@@ -132,7 +132,7 @@ const spokeArticles = [
     excerpt: "Requisitos técnicos, supervisión remota y cómo hacer el examen desde tu hogar.",
     category: "Linguaskill",
     readTime: "7 min",
-    href: "/blog/linguaskill-online-casa",
+    href: "/blog/linguaskill-online-casa/",
     hub: "linguaskill-guia-completa",
   },
   {
@@ -141,7 +141,7 @@ const spokeArticles = [
     excerpt: "Centros autorizados, precios por ciudad y cómo reservar tu plaza.",
     category: "Linguaskill",
     readTime: "8 min",
-    href: "/blog/centros-linguaskill",
+    href: "/blog/centros-linguaskill/",
     hub: "linguaskill-precios-sedes",
   },
   {
@@ -150,7 +150,7 @@ const spokeArticles = [
     excerpt: "Qué opinan los usuarios sobre el formato, la corrección y la modalidad online.",
     category: "Linguaskill",
     readTime: "8 min",
-    href: "/blog/opiniones-linguaskill",
+    href: "/blog/opiniones-linguaskill/",
     hub: "linguaskill-guia-completa",
   },
   // Cambridge Spokes
@@ -160,7 +160,7 @@ const spokeArticles = [
     excerpt: "Reconocimiento internacional, validez ilimitada y ventajas profesionales del B2 First.",
     category: "Exámenes Cambridge",
     readTime: "7 min",
-    href: "/blog/cambridge-b2-beneficios",
+    href: "/blog/cambridge-b2-beneficios/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -169,7 +169,7 @@ const spokeArticles = [
     excerpt: "Estructura, puntuación, calificaciones y estrategias de preparación para el C1.",
     category: "Exámenes Cambridge",
     readTime: "8 min",
-    href: "/examenes-cambridge/c1-advanced",
+    href: "/examenes-cambridge/c1-advanced/",
     hub: "examenes-cambridge-guia",
   },
   // Linguaskill Spokes - Additional
@@ -179,7 +179,7 @@ const spokeArticles = [
     excerpt: "Análisis detallado de ambos exámenes: formato, precio, validez y cuál te conviene más según tus necesidades.",
     category: "Linguaskill",
     readTime: "12 min",
-    href: "/blog/linguaskill-vs-aptis",
+    href: "/blog/linguaskill-vs-aptis/",
     hub: "linguaskill-guia-completa",
   },
   {
@@ -188,7 +188,7 @@ const spokeArticles = [
     excerpt: "Guía paso a paso para registrarte al examen Linguaskill: requisitos, proceso de inscripción y documentación necesaria.",
     category: "Linguaskill",
     readTime: "8 min",
-    href: "/blog/registro-linguaskill",
+    href: "/blog/registro-linguaskill/",
     hub: "linguaskill-precios-sedes",
   },
   {
@@ -197,7 +197,7 @@ const spokeArticles = [
     excerpt: "Todo sobre el certificado Linguaskill: validez internacional, reconocimiento oficial y dónde es aceptado.",
     category: "Linguaskill",
     readTime: "10 min",
-    href: "/blog/certificado-linguaskill",
+    href: "/blog/certificado-linguaskill/",
     hub: "linguaskill-guia-completa",
   },
   // Cambridge Spokes - Additional
@@ -207,7 +207,7 @@ const spokeArticles = [
     excerpt: "Todo sobre el B1 Preliminary: estructura, partes del examen, puntuación y estrategias de preparación.",
     category: "Exámenes Cambridge",
     readTime: "15 min",
-    href: "/blog/cambridge-b1-guia",
+    href: "/blog/cambridge-b1-guia/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -216,7 +216,7 @@ const spokeArticles = [
     excerpt: "Lista completa de centros autorizados Cambridge en Madrid y Barcelona: ubicaciones, horarios y contacto.",
     category: "Exámenes Cambridge",
     readTime: "10 min",
-    href: "/examenes-cambridge/centros-madrid",
+    href: "/examenes-cambridge/centros-madrid/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -225,7 +225,7 @@ const spokeArticles = [
     excerpt: "Precios actualizados del C1 Advanced en Madrid: tasas de examen, fechas disponibles y proceso de registro.",
     category: "Exámenes Cambridge",
     readTime: "8 min",
-    href: "/blog/precio-cambridge-c1-madrid",
+    href: "/blog/precio-cambridge-c1-madrid/",
     hub: "fechas-examenes-cambridge",
   },
   {
@@ -234,7 +234,7 @@ const spokeArticles = [
     excerpt: "Guía completa de registro para exámenes Cambridge: pasos, documentación y plazos de inscripción.",
     category: "Exámenes Cambridge",
     readTime: "9 min",
-    href: "/blog/registro-cambridge",
+    href: "/blog/registro-cambridge/",
     hub: "fechas-examenes-cambridge",
   },
   // Linguaskill Spokes - More
@@ -244,7 +244,7 @@ const spokeArticles = [
     excerpt: "Descarga gratuita de guías oficiales Cambridge, ejemplos de tareas y materiales de preparación en formato PDF.",
     category: "Linguaskill",
     readTime: "12 min",
-    href: "/blog/recursos-pdf-linguaskill",
+    href: "/blog/recursos-pdf-linguaskill/",
     hub: "linguaskill-guia-completa",
   },
   {
@@ -253,7 +253,7 @@ const spokeArticles = [
     excerpt: "Costes detallados del examen Linguaskill online: precio por módulo, descuentos y comparativa internacional.",
     category: "Linguaskill",
     readTime: "10 min",
-    href: "/blog/precio-linguaskill-online",
+    href: "/blog/precio-linguaskill-online/",
     hub: "linguaskill-precios-sedes",
   },
   {
@@ -262,7 +262,7 @@ const spokeArticles = [
     excerpt: "Prepárate para el examen Linguaskill en pocas semanas con cursos intensivos online efectivos.",
     category: "Linguaskill",
     readTime: "10 min",
-    href: "/linguaskill/curso-intensivo",
+    href: "/linguaskill/curso-intensivo/",
     hub: "linguaskill-guia-completa",
   },
   // Cambridge Spokes - More
@@ -272,7 +272,7 @@ const spokeArticles = [
     excerpt: "Entiende cómo funciona la Cambridge English Scale, qué significan los Grades A, B y C, y su relación con CEFR.",
     category: "Exámenes Cambridge",
     readTime: "10 min",
-    href: "/blog/escala-cambridge",
+    href: "/blog/escala-cambridge/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -281,7 +281,7 @@ const spokeArticles = [
     excerpt: "Tipos de ejercicios, estrategias por sección y recursos gratuitos para practicar el B2 First Certificate.",
     category: "Exámenes Cambridge",
     readTime: "15 min",
-    href: "/blog/ejercicios-b2-cambridge",
+    href: "/blog/ejercicios-b2-cambridge/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -290,7 +290,7 @@ const spokeArticles = [
     excerpt: "Descarga gratuita de sample papers, handbooks y materiales oficiales para preparar el C1 Advanced (CAE).",
     category: "Exámenes Cambridge",
     readTime: "12 min",
-    href: "/blog/pdfs-cambridge-advanced",
+    href: "/blog/pdfs-cambridge-advanced/",
     hub: "libros-cambridge-recursos",
   },
   {
@@ -299,7 +299,7 @@ const spokeArticles = [
     excerpt: "Todo sobre el Certificate in Advanced English: estructura, puntuación, preparación y consejos para aprobar.",
     category: "Exámenes Cambridge",
     readTime: "15 min",
-    href: "/blog/examen-cae-cambridge",
+    href: "/blog/examen-cae-cambridge/",
     hub: "examenes-cambridge-guia",
   },
   // PAA - Cambridge B2 First
@@ -309,7 +309,7 @@ const spokeArticles = [
     excerpt: "El certificado B2 First no caduca nunca. Validez permanente, reconocimiento internacional y diferencias con IELTS.",
     category: "Exámenes Cambridge",
     readTime: "8 min",
-    href: "/blog/validez-certificado-b2-cambridge",
+    href: "/blog/validez-certificado-b2-cambridge/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -318,7 +318,7 @@ const spokeArticles = [
     excerpt: "Para aprobar necesitas 160 puntos. Conoce los Grades A, B y C y cómo se evalúa cada parte del examen.",
     category: "Exámenes Cambridge",
     readTime: "7 min",
-    href: "/blog/nota-aprobar-b2-first",
+    href: "/blog/nota-aprobar-b2-first/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -327,7 +327,7 @@ const spokeArticles = [
     excerpt: "Tasa de aprobados del 65-70%. Descubre qué lo hace difícil y cómo prepararte eficazmente.",
     category: "Exámenes Cambridge",
     readTime: "8 min",
-    href: "/blog/es-dificil-b2-first",
+    href: "/blog/es-dificil-b2-first/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -336,7 +336,7 @@ const spokeArticles = [
     excerpt: "Plan de estudio mes a mes para preparar el B2 First en 3 meses si tienes nivel B1+.",
     category: "Exámenes Cambridge",
     readTime: "9 min",
-    href: "/blog/preparar-b2-first-3-meses",
+    href: "/blog/preparar-b2-first-3-meses/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -345,7 +345,7 @@ const spokeArticles = [
     excerpt: "No hay límite de intentos. Costes, plazos y estrategias para el segundo intento.",
     category: "Exámenes Cambridge",
     readTime: "6 min",
-    href: "/blog/cuantas-veces-b2-first",
+    href: "/blog/cuantas-veces-b2-first/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -354,7 +354,7 @@ const spokeArticles = [
     excerpt: "De 3 a 12 meses según tu nivel actual. Plan detallado por nivel de partida.",
     category: "Exámenes Cambridge",
     readTime: "8 min",
-    href: "/blog/tiempo-preparacion-b2-first",
+    href: "/blog/tiempo-preparacion-b2-first/",
     hub: "examenes-cambridge-guia",
   },
   // PAA - Cambridge C1 Advanced
@@ -364,7 +364,7 @@ const spokeArticles = [
     excerpt: "200-300 horas de estudio guiado. Plan de transición y estrategias para acelerar.",
     category: "Exámenes Cambridge",
     readTime: "8 min",
-    href: "/blog/tiempo-b2-a-c1",
+    href: "/blog/tiempo-b2-a-c1/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -373,7 +373,7 @@ const spokeArticles = [
     excerpt: "Tasa de aprobados del 55-60%. Partes más exigentes y cómo prepararse.",
     category: "Exámenes Cambridge",
     readTime: "8 min",
-    href: "/blog/es-dificil-c1-advanced",
+    href: "/blog/es-dificil-c1-advanced/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -382,7 +382,7 @@ const spokeArticles = [
     excerpt: "Sectores y puestos que exigen C1: consultoría, banca, IT, docencia y más.",
     category: "Carrera Profesional",
     readTime: "9 min",
-    href: "/blog/trabajos-piden-c1-ingles",
+    href: "/blog/trabajos-piden-c1-ingles/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -391,7 +391,7 @@ const spokeArticles = [
     excerpt: "No caduca nunca. Validez permanente vs requisitos de instituciones específicas.",
     category: "Exámenes Cambridge",
     readTime: "7 min",
-    href: "/blog/c1-advanced-caduca",
+    href: "/blog/c1-advanced-caduca/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -400,7 +400,7 @@ const spokeArticles = [
     excerpt: "Compara gramática, vocabulario, examen y valor profesional de ambos niveles.",
     category: "Comparativas",
     readTime: "9 min",
-    href: "/blog/diferencia-b2-c1",
+    href: "/blog/diferencia-b2-c1/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -409,7 +409,7 @@ const spokeArticles = [
     excerpt: "Beneficios laborales, académicos y para oposiciones del C1 en el mercado español.",
     category: "Carrera Profesional",
     readTime: "8 min",
-    href: "/blog/vale-pena-c1-espana",
+    href: "/blog/vale-pena-c1-espana/",
     hub: "examenes-cambridge-guia",
   },
   // PAA - Linguaskill
@@ -419,7 +419,7 @@ const spokeArticles = [
     excerpt: "No es más fácil, sino diferente. Comparativa real de dificultad y formato.",
     category: "Linguaskill",
     readTime: "8 min",
-    href: "/blog/linguaskill-vs-cambridge-dificultad",
+    href: "/blog/linguaskill-vs-cambridge-dificultad/",
     hub: "linguaskill-guia-completa",
   },
   {
@@ -428,7 +428,7 @@ const spokeArticles = [
     excerpt: "100% fiable gracias a supervisión remota, IA y tecnología anti-fraude.",
     category: "Linguaskill",
     readTime: "7 min",
-    href: "/blog/linguaskill-casa-fiable",
+    href: "/blog/linguaskill-casa-fiable/",
     hub: "linguaskill-guia-completa",
   },
   {
@@ -437,7 +437,7 @@ const spokeArticles = [
     excerpt: "Más de 80 universidades españolas incluidas UNED, UOC y universidades públicas.",
     category: "Linguaskill",
     readTime: "9 min",
-    href: "/blog/universidades-aceptan-linguaskill",
+    href: "/blog/universidades-aceptan-linguaskill/",
     hub: "linguaskill-guia-completa",
   },
   {
@@ -446,7 +446,7 @@ const spokeArticles = [
     excerpt: "Reconocido en más de 60 países por universidades, empresas y gobiernos.",
     category: "Linguaskill",
     readTime: "8 min",
-    href: "/blog/linguaskill-reconocimiento-internacional",
+    href: "/blog/linguaskill-reconocimiento-internacional/",
     hub: "linguaskill-guia-completa",
   },
   {
@@ -455,7 +455,7 @@ const spokeArticles = [
     excerpt: "Aceptado en oposiciones públicas con reconocimiento creciente en España.",
     category: "Linguaskill",
     readTime: "8 min",
-    href: "/blog/linguaskill-oposiciones-validez",
+    href: "/blog/linguaskill-oposiciones-validez/",
     hub: "linguaskill-guia-completa",
   },
   // PAA - Cambridge B1
@@ -465,7 +465,7 @@ const spokeArticles = [
     excerpt: "Suficiente para turismo, atención al cliente y administración. Cuándo necesitas más.",
     category: "Carrera Profesional",
     readTime: "7 min",
-    href: "/blog/b1-suficiente-trabajar",
+    href: "/blog/b1-suficiente-trabajar/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -474,7 +474,7 @@ const spokeArticles = [
     excerpt: "Precios 2026: entre 115€ y 140€. Diferencias papel vs digital y dónde inscribirse.",
     category: "Exámenes Cambridge",
     readTime: "6 min",
-    href: "/blog/precio-b1-cambridge",
+    href: "/blog/precio-b1-cambridge/",
     hub: "fechas-examenes-cambridge",
   },
   {
@@ -483,7 +483,7 @@ const spokeArticles = [
     excerpt: "12-18 meses desde cero, 10-12 semanas desde A2. Plan detallado por nivel.",
     category: "Exámenes Cambridge",
     readTime: "8 min",
-    href: "/blog/tiempo-preparar-b1-cero",
+    href: "/blog/tiempo-preparar-b1-cero/",
     hub: "examenes-cambridge-guia",
   },
   {
@@ -492,7 +492,7 @@ const spokeArticles = [
     excerpt: "B1 es el nivel mínimo exigido para graduación en muchas universidades españolas.",
     category: "Exámenes Cambridge",
     readTime: "7 min",
-    href: "/blog/b1-universidad-espana",
+    href: "/blog/b1-universidad-espana/",
     hub: "examenes-cambridge-guia",
   },
   // PAA - Comparisons
@@ -502,7 +502,7 @@ const spokeArticles = [
     excerpt: "Compara formato, precio, validez y dificultad. Guía para elegir tu examen.",
     category: "Comparativas",
     readTime: "10 min",
-    href: "/blog/cambridge-vs-linguaskill-diferencias",
+    href: "/blog/cambridge-vs-linguaskill-diferencias/",
     hub: null,
   },
   {
@@ -511,7 +511,7 @@ const spokeArticles = [
     excerpt: "Cambridge no caduca, IELTS sí. Comparativa de validez, precio y reconocimiento.",
     category: "Comparativas",
     readTime: "9 min",
-    href: "/blog/cambridge-vs-ielts-espana",
+    href: "/blog/cambridge-vs-ielts-espana/",
     hub: null,
   },
   {
@@ -520,7 +520,7 @@ const spokeArticles = [
     excerpt: "Pros y contras de cada opción: precio, método, resultados y flexibilidad.",
     category: "Comparativas",
     readTime: "8 min",
-    href: "/blog/academia-vs-profesor-particular",
+    href: "/blog/academia-vs-profesor-particular/",
     hub: null,
   },
   {
@@ -529,7 +529,7 @@ const spokeArticles = [
     excerpt: "Efectividad, precio y flexibilidad de cada modalidad. Cuál es mejor para ti.",
     category: "Comparativas",
     readTime: "8 min",
-    href: "/blog/ingles-presencial-vs-online",
+    href: "/blog/ingles-presencial-vs-online/",
     hub: null,
   },
   {
@@ -538,7 +538,7 @@ const spokeArticles = [
     excerpt: "Diferencias en dificultad, reconocimiento laboral y uso académico de cada nivel.",
     category: "Comparativas",
     readTime: "8 min",
-    href: "/blog/b1-vs-b2-que-nivel-necesito",
+    href: "/blog/b1-vs-b2-que-nivel-necesito/",
     hub: null,
   },
   // PAA - Learning Methods
@@ -548,7 +548,7 @@ const spokeArticles = [
     excerpt: "De 6 meses a 3 años según tu objetivo. Plazos reales por nivel MCER.",
     category: "Aprender Inglés",
     readTime: "9 min",
-    href: "/blog/cuanto-tiempo-aprender-ingles",
+    href: "/blog/cuanto-tiempo-aprender-ingles/",
     hub: null,
   },
   {
@@ -557,7 +557,7 @@ const spokeArticles = [
     excerpt: "Desequilibrio entre habilidades pasivas y activas. 5 estrategias para hablar.",
     category: "Aprender Inglés",
     readTime: "8 min",
-    href: "/blog/entiendo-ingles-no-hablo",
+    href: "/blog/entiendo-ingles-no-hablo/",
     hub: null,
   },
   {
@@ -566,7 +566,7 @@ const spokeArticles = [
     excerpt: "Afecta al 70% de adultos. Causas psicológicas y 6 técnicas para superarla.",
     category: "Aprender Inglés",
     readTime: "8 min",
-    href: "/blog/verguenza-hablar-ingles",
+    href: "/blog/verguenza-hablar-ingles/",
     hub: null,
   },
   {
@@ -575,7 +575,7 @@ const spokeArticles = [
     excerpt: "7 estrategias probadas: exposición gradual, grupos pequeños y más.",
     category: "Aprender Inglés",
     readTime: "8 min",
-    href: "/blog/perder-miedo-hablar-ingles",
+    href: "/blog/perder-miedo-hablar-ingles/",
     hub: null,
   },
   {
@@ -584,7 +584,7 @@ const spokeArticles = [
     excerpt: "Compara precio, método, resultados y flexibilidad de cada formato.",
     category: "Comparativas",
     readTime: "8 min",
-    href: "/blog/clases-particulares-vs-academia",
+    href: "/blog/clases-particulares-vs-academia/",
     hub: null,
   },
   {
@@ -593,7 +593,7 @@ const spokeArticles = [
     excerpt: "Datos reales de efectividad, precio y para quién es mejor cada formato.",
     category: "Comparativas",
     readTime: "8 min",
-    href: "/blog/ingles-online-vs-presencial",
+    href: "/blog/ingles-online-vs-presencial/",
     hub: null,
   },
   {
@@ -602,7 +602,7 @@ const spokeArticles = [
     excerpt: "8 razones comunes y soluciones prácticas para superar el estancamiento.",
     category: "Aprender Inglés",
     readTime: "9 min",
-    href: "/blog/por-que-no-avanzo-ingles",
+    href: "/blog/por-que-no-avanzo-ingles/",
     hub: null,
   },
   // PAA - Skills
@@ -612,7 +612,7 @@ const spokeArticles = [
     excerpt: "10 técnicas efectivas: podcasts, dictados, shadowing y más. Por nivel.",
     category: "Habilidades",
     readTime: "9 min",
-    href: "/blog/mejorar-listening-ingles",
+    href: "/blog/mejorar-listening-ingles/",
     hub: null,
   },
   {
@@ -621,7 +621,7 @@ const spokeArticles = [
     excerpt: "Técnicas de fluidez, pronunciación y confianza. Ejercicios prácticos.",
     category: "Habilidades",
     readTime: "9 min",
-    href: "/blog/mejorar-speaking-ingles",
+    href: "/blog/mejorar-speaking-ingles/",
     hub: null,
   },
   {
@@ -630,7 +630,7 @@ const spokeArticles = [
     excerpt: "8 técnicas probadas para desarrollar el pensamiento directo en inglés.",
     category: "Habilidades",
     readTime: "8 min",
-    href: "/blog/pensar-ingles-no-traducir",
+    href: "/blog/pensar-ingles-no-traducir/",
     hub: null,
   },
   {
@@ -639,7 +639,7 @@ const spokeArticles = [
     excerpt: "Causas: velocidad, acentos y connected speech. Plan de mejora progresiva.",
     category: "Habilidades",
     readTime: "8 min",
-    href: "/blog/no-entiendo-ingles-hablado",
+    href: "/blog/no-entiendo-ingles-hablado/",
     hub: null,
   },
   // PAA - Kids Early Childhood
@@ -649,7 +649,7 @@ const spokeArticles = [
     excerpt: "La ciencia confirma los beneficios del inglés antes de los 6 años.",
     category: "Inglés para Niños",
     readTime: "8 min",
-    href: "/blog/ninos-aprender-ingles-pequenos",
+    href: "/blog/ninos-aprender-ingles-pequenos/",
     hub: null,
   },
   {
@@ -658,7 +658,7 @@ const spokeArticles = [
     excerpt: "Desde los 6 meses con exposición musical. Clases estructuradas desde 2-3 años.",
     category: "Inglés para Niños",
     readTime: "8 min",
-    href: "/blog/edad-empezar-ingles-bebes",
+    href: "/blog/edad-empezar-ingles-bebes/",
     hub: null,
   },
   {
@@ -667,7 +667,7 @@ const spokeArticles = [
     excerpt: "No: el bilingüismo mejora la cognición. 5 mitos desmontados con ciencia.",
     category: "Inglés para Niños",
     readTime: "8 min",
-    href: "/blog/ninos-confusion-dos-idiomas",
+    href: "/blog/ninos-confusion-dos-idiomas/",
     hub: null,
   },
   {
@@ -676,7 +676,7 @@ const spokeArticles = [
     excerpt: "Sí, respaldado por neurociencia. Cómo el juego acelera el aprendizaje.",
     category: "Inglés para Niños",
     readTime: "8 min",
-    href: "/blog/ingles-jugando-funciona",
+    href: "/blog/ingles-jugando-funciona/",
     hub: null,
   },
   {
@@ -685,7 +685,7 @@ const spokeArticles = [
     excerpt: "Compara inmersión, CLIL, TPR y Great Little People según la edad.",
     category: "Inglés para Niños",
     readTime: "9 min",
-    href: "/blog/mejor-metodo-ingles-ninos",
+    href: "/blog/mejor-metodo-ingles-ninos/",
     hub: null,
   },
   {
@@ -694,7 +694,7 @@ const spokeArticles = [
     excerpt: "Método de inmersión total para niños de 1-7 años basado en juego y tecnología.",
     category: "Inglés para Niños",
     readTime: "8 min",
-    href: "/blog/great-little-people-metodologia",
+    href: "/blog/great-little-people-metodologia/",
     hub: null,
   },
   {
@@ -703,7 +703,7 @@ const spokeArticles = [
     excerpt: "Ventajas de Cambridge para niños: edad recomendada y cómo preparar sin presión.",
     category: "Inglés para Niños",
     readTime: "8 min",
-    href: "/blog/hijo-preparar-cambridge",
+    href: "/blog/hijo-preparar-cambridge/",
     hub: null,
   },
   {
@@ -712,7 +712,7 @@ const spokeArticles = [
     excerpt: "10 estrategias probadas: juegos, series, recompensas y rol de los padres.",
     category: "Inglés para Niños",
     readTime: "8 min",
-    href: "/blog/motivar-hijo-ingles",
+    href: "/blog/motivar-hijo-ingles/",
     hub: null,
   },
   {
@@ -721,7 +721,7 @@ const spokeArticles = [
     excerpt: "7 causas comunes: método inadecuado, falta de exposición o desmotivación.",
     category: "Inglés para Niños",
     readTime: "8 min",
-    href: "/blog/hijo-no-avanza-ingles",
+    href: "/blog/hijo-no-avanza-ingles/",
     hub: null,
   },
   {
@@ -730,7 +730,7 @@ const spokeArticles = [
     excerpt: "Generalmente no: 2-3 horas semanales con grupos grandes. Cómo complementar.",
     category: "Inglés para Niños",
     readTime: "8 min",
-    href: "/blog/ingles-colegio-suficiente",
+    href: "/blog/ingles-colegio-suficiente/",
     hub: null,
   },
   // PAA - Career
@@ -740,7 +740,7 @@ const spokeArticles = [
     excerpt: "El 85% de ofertas cualificadas piden inglés. Requisitos por sector y puesto.",
     category: "Carrera Profesional",
     readTime: "9 min",
-    href: "/blog/nivel-ingles-empresas",
+    href: "/blog/nivel-ingles-empresas/",
     hub: null,
   },
   {
@@ -749,7 +749,7 @@ const spokeArticles = [
     excerpt: "Frases clave, preguntas frecuentes y técnicas de confianza para tu entrevista.",
     category: "Carrera Profesional",
     readTime: "9 min",
-    href: "/blog/ingles-entrevistas-trabajo",
+    href: "/blog/ingles-entrevistas-trabajo/",
     hub: null,
   },
   // Madrid Academias
@@ -759,7 +759,7 @@ const spokeArticles = [
     excerpt: "Las 7 academias más económicas de Madrid con profesores cualificados y preparación Cambridge.",
     category: "Academias Madrid",
     readTime: "8 min",
-    href: "/academias-ingles-madrid",
+    href: "/academias-ingles-madrid/",
     hub: null,
   },
   {
@@ -768,7 +768,7 @@ const spokeArticles = [
     excerpt: "Las mejores opciones de cursos de inglés para adultos en Madrid: horarios flexibles, metodologías y precios.",
     category: "Academias Madrid",
     readTime: "12 min",
-    href: "/academias-ingles-madrid/adultos",
+    href: "/academias-ingles-madrid/adultos/",
     hub: null,
   },
   {
@@ -777,7 +777,7 @@ const spokeArticles = [
     excerpt: "Comparativa de certificaciones Cambridge, Linguaskill, IELTS y TOEFL. Dónde prepararte en Madrid.",
     category: "Academias Madrid",
     readTime: "12 min",
-    href: "/academias-ingles-madrid/certificaciones",
+    href: "/academias-ingles-madrid/certificaciones/",
     hub: null,
   },
   {
@@ -786,7 +786,7 @@ const spokeArticles = [
     excerpt: "Encuentra la mejor academia de inglés cerca de ti. Guía por zonas con precios y transporte.",
     category: "Academias Madrid",
     readTime: "12 min",
-    href: "/academias-ingles-madrid/por-barrios",
+    href: "/academias-ingles-madrid/por-barrios/",
     hub: null,
   },
   {
@@ -795,7 +795,7 @@ const spokeArticles = [
     excerpt: "Guía completa de metodologías, edades y academias para que tus hijos aprendan inglés.",
     category: "Academias Madrid",
     readTime: "15 min",
-    href: "/academias-ingles-madrid/ninos",
+    href: "/academias-ingles-madrid/ninos/",
     hub: null,
   },
 ];
@@ -808,7 +808,7 @@ const additionalArticles = [
     excerpt: "Estrategias probadas, recursos y metodologías para dominar el inglés según tu nivel y objetivos.",
     category: "Consejos",
     readTime: "15 min",
-    href: "/aprende-ingles",
+    href: "/aprende-ingles/",
     image: "classroom" // Will use facilityImages.classroom
   },
   {
@@ -817,7 +817,7 @@ const additionalArticles = [
     excerpt: "Descubre cómo nuestro método exclusivo para niños de 2-5 años hace que aprender inglés sea una aventura divertida.",
     category: "Metodología",
     readTime: "8 min",
-    href: "/cursos-ingles/infantil",
+    href: "/cursos-ingles/infantil/",
     image: "infantil" // Will use infantilImages.greatLittlePeople
   },
   {
@@ -826,7 +826,7 @@ const additionalArticles = [
     excerpt: "Consejos prácticos y recursos para superar tu examen Cambridge: B1, B2, C1 y C2.",
     category: "Exámenes Cambridge",
     readTime: "10 min",
-    href: "/examenes-cambridge",
+    href: "/examenes-cambridge/",
     image: "certificate" // Will use certificationImages.studentC1
   },
   {
@@ -835,14 +835,19 @@ const additionalArticles = [
     excerpt: "Cursos adaptados a profesionales y adultos. Horarios flexibles y metodología práctica para resultados rápidos.",
     category: "Academias Madrid",
     readTime: "7 min",
-    href: "/cursos-ingles/adultos",
+    href: "/cursos-ingles/adultos/",
     image: "adults" // Will use facilityImages.interiorBarrioPilar
   }
 ];
 
 const categories = ["Todos", "Exámenes Cambridge", "Linguaskill", "Academias Madrid", "Comparativas", "Aprender Inglés", "Habilidades", "Inglés para Niños", "Carrera Profesional", "Consejos", "Metodología", "Recursos", "Calendario"];
 
-export default function BlogPage() {
+export interface BlogDirectoryGroup {
+  category: string;
+  entries: { url: string; title: string }[];
+}
+
+export default function BlogPage({ directory = [] }: { directory?: BlogDirectoryGroup[] }) {
   const [selectedCategory, setSelectedCategory] = React.useState("Todos");
 
   useEffect(() => {
@@ -1100,6 +1105,45 @@ export default function BlogPage() {
         <section className="py-16 px-6 bg-zinc-50">
           <div className="container mx-auto max-w-6xl text-center">
             <p className="text-zinc-500 text-lg">No hay artículos en esta categoría todavía.</p>
+          </div>
+        </section>
+      )}
+
+      {/* Complete article directory: server-rendered link to EVERY article so none
+          stays orphaned (the curated cards above only cover a subset). */}
+      {directory.length > 0 && (
+        <section className="py-16 px-6 bg-white border-t border-zinc-100">
+          <div className="container mx-auto max-w-6xl">
+            <h2 className="font-serif text-2xl md:text-3xl text-zinc-900 tracking-tight mb-2">
+              Índice completo del blog
+            </h2>
+            <p className="text-zinc-500 mb-10">
+              Todos nuestros artículos y guías, organizados por tema.{' '}
+              <a href="/blog/todos/" className="text-accent-blue hover:underline">
+                Ver el archivo completo
+              </a>
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+              {directory.map((group) => (
+                <div key={group.category}>
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-zinc-900 mb-3">
+                    {group.category}
+                  </h3>
+                  <ul className="space-y-2">
+                    {group.entries.map((entry) => (
+                      <li key={entry.url}>
+                        <a
+                          href={entry.url}
+                          className="text-sm text-zinc-600 hover:text-accent-blue transition-colors"
+                        >
+                          {entry.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       )}

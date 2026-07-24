@@ -106,7 +106,7 @@ export default function ExamPageLayout({
         <div className="relative z-10 container mx-auto px-6 md:px-12">
           <Breadcrumb
             items={[
-              { label: 'Exámenes Cambridge', href: '/examenes-cambridge' },
+              { label: 'Exámenes Cambridge', href: '/examenes-cambridge/' },
               { label: examName }
             ]}
             variant="light"

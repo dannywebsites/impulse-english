@@ -15,7 +15,7 @@ export interface CategoryConfig {
 export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   'Cambridge B2 First': {
     displayName: 'Cambridge B2 First',
-    hubPath: '/examenes-cambridge/b2-first',
+    hubPath: '/examenes-cambridge/b2-first/',
     hubLabel: 'B2 First',
     blogFilterName: 'Exámenes Cambridge',
     imageKey: 'cambridge',
@@ -24,7 +24,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Cambridge C1 Advanced': {
     displayName: 'Cambridge C1 Advanced',
-    hubPath: '/examenes-cambridge/c1-advanced',
+    hubPath: '/examenes-cambridge/c1-advanced/',
     hubLabel: 'C1 Advanced',
     blogFilterName: 'Exámenes Cambridge',
     imageKey: 'cambridge',
@@ -33,7 +33,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Cambridge B1 Preliminary': {
     displayName: 'Cambridge B1 Preliminary',
-    hubPath: '/examenes-cambridge/b1-preliminary',
+    hubPath: '/examenes-cambridge/b1-preliminary/',
     hubLabel: 'B1 Preliminary',
     blogFilterName: 'Exámenes Cambridge',
     imageKey: 'cambridge',
@@ -42,7 +42,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Cambridge A2 Key': {
     displayName: 'Cambridge A2 Key',
-    hubPath: '/examenes-cambridge',
+    hubPath: '/examenes-cambridge/',
     hubLabel: 'Exámenes Cambridge',
     blogFilterName: 'Exámenes Cambridge',
     imageKey: 'cambridge',
@@ -51,7 +51,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Linguaskill': {
     displayName: 'Linguaskill',
-    hubPath: '/linguaskill',
+    hubPath: '/linguaskill/',
     hubLabel: 'Linguaskill',
     blogFilterName: 'Linguaskill',
     imageKey: 'technology',
@@ -60,7 +60,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Comparison': {
     displayName: 'Comparativas',
-    hubPath: '/blog',
+    hubPath: '/blog/',
     hubLabel: 'Blog',
     blogFilterName: 'Comparativas',
     imageKey: 'classroom',
@@ -69,7 +69,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Learning Methods': {
     displayName: 'Métodos de Aprendizaje',
-    hubPath: '/metodologia',
+    hubPath: '/metodologia/',
     hubLabel: 'Metodología',
     blogFilterName: 'Metodología',
     imageKey: 'classroom',
@@ -78,7 +78,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Skills': {
     displayName: 'Destrezas',
-    hubPath: '/metodologia',
+    hubPath: '/metodologia/',
     hubLabel: 'Metodología',
     blogFilterName: 'Destrezas',
     imageKey: 'adults',
@@ -87,7 +87,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Kids Early Childhood': {
     displayName: 'Inglés Infantil',
-    hubPath: '/cursos-ingles/infantil',
+    hubPath: '/cursos-ingles/infantil/',
     hubLabel: 'Infantil',
     blogFilterName: 'Niños',
     imageKey: 'infantil',
@@ -96,7 +96,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Kids Primary': {
     displayName: 'Inglés Primaria',
-    hubPath: '/cursos-ingles/primaria',
+    hubPath: '/cursos-ingles/primaria/',
     hubLabel: 'Primaria',
     blogFilterName: 'Niños',
     imageKey: 'students',
@@ -105,7 +105,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Kids Secondary': {
     displayName: 'Inglés Secundaria',
-    hubPath: '/cursos-ingles/secundaria',
+    hubPath: '/cursos-ingles/secundaria/',
     hubLabel: 'Secundaria',
     blogFilterName: 'Adolescentes',
     imageKey: 'teenagers',
@@ -114,7 +114,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Career': {
     displayName: 'Inglés Profesional',
-    hubPath: '/cursos-ingles/adultos',
+    hubPath: '/cursos-ingles/adultos/',
     hubLabel: 'Adultos',
     blogFilterName: 'Carrera Profesional',
     imageKey: 'adults',
@@ -123,7 +123,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Local Madrid': {
     displayName: 'Academias Madrid',
-    hubPath: '/academias-ingles-madrid',
+    hubPath: '/academias-ingles-madrid/',
     hubLabel: 'Academias Madrid',
     blogFilterName: 'Academias Madrid',
     imageKey: 'reception',
@@ -132,7 +132,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Price': {
     displayName: 'Precios',
-    hubPath: '/contacto',
+    hubPath: '/contacto/',
     hubLabel: 'Contacto',
     blogFilterName: 'Precios',
     imageKey: 'reception',
@@ -141,7 +141,7 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
   },
   'Definitions': {
     displayName: 'Conceptos',
-    hubPath: '/blog',
+    hubPath: '/blog/',
     hubLabel: 'Blog',
     blogFilterName: 'Conceptos',
     imageKey: 'classroom',

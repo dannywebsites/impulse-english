@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Por Qué No Entiendo el Inglés Hablado? Causas y Soluciones",
     description: "No entender inglés hablado se debe a velocidad, acentos y connected speech. Descubre las causas científicas y un plan de mejora paso a paso por nivel.",
@@ -64,7 +66,7 @@ export default function NoEntiendoInglesHabladoPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'No Entiendo Inglés Hablado' }
                 ]}
                 variant="light"
@@ -404,6 +406,7 @@ export default function NoEntiendoInglesHabladoPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('no-entiendo-ingles-hablado')} />
         <Footer />
       </div>
 

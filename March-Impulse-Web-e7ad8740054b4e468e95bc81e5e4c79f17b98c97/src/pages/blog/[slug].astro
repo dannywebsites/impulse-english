@@ -12,8 +12,9 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PAAArticlePage from '../../../components/PAAArticlePage';
 import CookieBanner from '../../../components/CookieBanner';
-import { getSiblingArticles } from '../../../data/articles';
-import { generateArticleSchema, generateFAQSchema, businessInfo } from '../../../utils/schemaData';
+import { getBlogSiblingCards } from '../../../data/blog-directory';
+import { generateArticleSchema, generateFAQSchema, businessInfo, toCanonicalPageUrl } from '../../../utils/schemaData';
+import type { PAAArticle } from '../../../data/articles/types';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -28,11 +29,26 @@ const { entry } = Astro.props;
 const slug = entry.id.replace(/\.md$/, '');
 const data = entry.data;
 
-// Reconstruct the article object with slug for PAAArticlePage compatibility
-const article = { slug, ...data };
+// The auto-publish pipeline writes slashless URLs in frontmatter; the site canonical
+// is trailing-slash, so normalize every rendered link (article URL, breadcrumbs, CTAs)
+// or they all eat a 308 hop.
+const normalizedData = {
+  ...data,
+  url: toCanonicalPageUrl(data.url),
+  breadcrumbs: data.breadcrumbs.map((b) => (b.href ? { ...b, href: toCanonicalPageUrl(b.href) } : b)),
+  impulseSection: {
+    ...data.impulseSection,
+    ctaLinks: data.impulseSection.ctaLinks.map((c) => ({ ...c, href: toCanonicalPageUrl(c.href) })),
+  },
+};
 
-const siblings = getSiblingArticles(slug, 3);
-const fullUrl = `${businessInfo.url}${data.url}`;
+// Reconstruct the article object with slug for PAAArticlePage compatibility.
+// Frontmatter category is a free string (zod); PAAArticlePage falls back safely
+// for unknown values, so the cast is sound.
+const article = { slug, ...normalizedData, category: normalizedData.category as PAAArticle['category'] };
+
+const siblings = getBlogSiblingCards(slug, 3);
+const fullUrl = `${businessInfo.url}${normalizedData.url}`;
 
 // Build schemas for BaseLayout server-side rendering
 const schemaImage = data.articleImages?.[0]?.url
@@ -48,7 +64,7 @@ const articleSchema = generateArticleSchema({
   wordCount: 1500,
 });
 
-const schemas = [articleSchema];
+const schemas: object[] = [articleSchema];
 if (data.faqItems.length > 0) {
   schemas.push(generateFAQSchema(data.faqItems));
 }

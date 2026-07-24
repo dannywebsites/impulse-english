@@ -13,7 +13,7 @@ const courses = [
     name: "Infantil (2-5 años)",
     method: "Great Little People",
     description: "Aprendizaje natural del inglés a través del juego y la inmersión. Grupos de máximo 8 niños con profesores especializados en primera infancia.",
-    href: "/cursos-ingles/infantil",
+    href: "/cursos-ingles/infantil/",
     image: "/images/academy/infantil-classes.jpg",
     age: "2-5 años"
   },
@@ -21,7 +21,7 @@ const courses = [
     name: "Primaria (6-12 años)",
     method: "Cambridge Young Learners",
     description: "Refuerzo del inglés escolar con metodología comunicativa. Preparación para exámenes Cambridge Young Learners (Starters, Movers, Flyers).",
-    href: "/cursos-ingles/primaria",
+    href: "/cursos-ingles/primaria/",
     image: "/images/academy/primary-classes-students-smiling.jpg",
     age: "6-12 años"
   },
@@ -29,7 +29,7 @@ const courses = [
     name: "Secundaria (13-17 años)",
     method: "Cambridge B1/B2/C1 + EBAU",
     description: "Preparación para selectividad y certificaciones Cambridge. Enfoque en speaking y writing para destacar en la EBAU.",
-    href: "/cursos-ingles/secundaria",
+    href: "/cursos-ingles/secundaria/",
     image: "/images/academy/secondary-classes-student-happy.jpg",
     age: "13-17 años"
   },
@@ -37,7 +37,7 @@ const courses = [
     name: "Adultos",
     method: "Todos los niveles (A1-C2)",
     description: "Clases de inglés para profesionales y adultos. Conversación, inglés para trabajo, viajes y preparación de certificaciones oficiales.",
-    href: "/cursos-ingles/adultos",
+    href: "/cursos-ingles/adultos/",
     image: "/images/academy/adult-one-to-one-classes.jpg",
     age: "18+ años"
   },
@@ -45,7 +45,7 @@ const courses = [
     name: "Clases Particulares",
     method: "Presencial u online",
     description: "Atención 100% personalizada. Ritmo adaptado a tus objetivos: exámenes, trabajo, viajes o refuerzo escolar.",
-    href: "/cursos-ingles/particulares",
+    href: "/cursos-ingles/particulares/",
     image: "/images/academy/daniel-helping-secondary-school-students.jpg",
     age: "Todas las edades"
   },
@@ -53,7 +53,7 @@ const courses = [
     name: "Online",
     method: "Clases en directo por videollamada",
     description: "La misma calidad que nuestras clases presenciales, desde cualquier lugar. Grupos reducidos e interacción real con el profesor.",
-    href: "/cursos-ingles/online",
+    href: "/cursos-ingles/online/",
     image: "/images/academy/technology-based-classroom-photo.jpg",
     age: "Todas las edades"
   }

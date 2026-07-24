@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "¿Es Muy Difícil el C1 Advanced? Dificultad Real del CAE",
     description: "El C1 Advanced tiene una tasa de aprobados del 55-60%. Descubre qué lo hace difícil, las partes más exigentes y cómo prepararte para aprobar.",
@@ -73,7 +75,7 @@ export default function EsDificilC1AdvancedPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: '¿Es Difícil el C1 Advanced?' }
                 ]}
                 variant="light"
@@ -409,7 +411,7 @@ export default function EsDificilC1AdvancedPage() {
                 Nuestros programas de preparación C1 tienen una tasa de aprobados superior al 75%. Descubre cómo podemos ayudarte.
               </p>
               <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reserva tu clase gratis
@@ -471,6 +473,7 @@ export default function EsDificilC1AdvancedPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('es-dificil-c1-advanced')} />
         <Footer />
       </div>
 

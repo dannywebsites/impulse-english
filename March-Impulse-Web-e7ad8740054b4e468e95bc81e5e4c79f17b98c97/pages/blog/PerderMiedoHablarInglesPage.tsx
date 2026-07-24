@@ -6,6 +6,8 @@ import LeadForm from '../../components/LeadForm';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Cómo Perder el Miedo a Hablar Inglés: 7 Estrategias",
     description: "Pierde el miedo a hablar inglés con 7 estrategias: exposición gradual, grupos pequeños, grabarte a ti mismo y más. Guía práctica para adultos.",
@@ -68,7 +70,7 @@ export default function PerderMiedoHablarInglesPage() {
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <Breadcrumb
                 items={[
-                  { label: 'Blog', href: '/blog' },
+                  { label: 'Blog', href: '/blog/' },
                   { label: 'Miedo a Hablar Inglés' }
                 ]}
                 variant="light"
@@ -407,6 +409,7 @@ export default function PerderMiedoHablarInglesPage() {
           </div>
         </section>
 
+        <RelatedArticles articles={getBlogSiblingCards('perder-miedo-hablar-ingles')} />
         <Footer />
       </div>
 

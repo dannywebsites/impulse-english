@@ -7,6 +7,8 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
+import RelatedArticles from '../../components/RelatedArticles';
+import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "PDFs Cambridge Advanced C1: Recursos Oficiales 2026",
     description: "Recursos PDF oficiales para preparar el C1 Advanced de Cambridge: sample papers, handbook, answer keys y materiales gratuitos.",
@@ -122,7 +124,7 @@ export default function PdfsCambridgeAdvancedPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb
           items={[
-          { label: 'Blog', href: '/blog' },
+          { label: 'Blog', href: '/blog/' },
           { label: 'PDFs Cambridge Advanced' }
           ]}
           variant="light"
@@ -489,7 +491,7 @@ export default function PdfsCambridgeAdvancedPage() {
                     </p>
                   </div>
                   <a
-              href="/reservar-clase"
+              href="/reservar-clase/"
                     className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Reserva tu clase gratis
@@ -552,6 +554,7 @@ export default function PdfsCambridgeAdvancedPage() {
         </div>
       </section>
 
+      <RelatedArticles articles={getBlogSiblingCards('pdfs-cambridge-advanced')} />
       <Footer />
 
 </>

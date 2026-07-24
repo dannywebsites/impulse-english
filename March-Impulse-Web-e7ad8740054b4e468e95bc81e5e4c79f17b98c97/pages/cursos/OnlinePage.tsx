@@ -72,7 +72,7 @@ export default function OnlinePage() {
         <div className="relative z-10 container mx-auto px-6 md:px-12">
           <Breadcrumb
             items={[
-              { label: 'Cursos', href: '/cursos-ingles/infantil' },
+              { label: 'Cursos', href: '/cursos-ingles/infantil/' },
               { label: 'Clases Online' }
             ]}
             variant="light"
@@ -306,12 +306,12 @@ export default function OnlinePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { name: "Primaria (6-12 años)", href: "/cursos-ingles/primaria" },
-              { name: "Secundaria (13-17 años)", href: "/cursos-ingles/secundaria" },
-              { name: "Adultos (18+ años)", href: "/cursos-ingles/adultos" },
-              { name: "Clases Particulares", href: "/cursos-ingles/particulares" },
-              { name: "Cambridge B1/B2/C1", href: "/examenes-cambridge" },
-              { name: "Linguaskill", href: "/linguaskill" }
+              { name: "Primaria (6-12 años)", href: "/cursos-ingles/primaria/" },
+              { name: "Secundaria (13-17 años)", href: "/cursos-ingles/secundaria/" },
+              { name: "Adultos (18+ años)", href: "/cursos-ingles/adultos/" },
+              { name: "Clases Particulares", href: "/cursos-ingles/particulares/" },
+              { name: "Cambridge B1/B2/C1", href: "/examenes-cambridge/" },
+              { name: "Linguaskill", href: "/linguaskill/" }
             ].map((course, index) => (
               <a
                 key={index}

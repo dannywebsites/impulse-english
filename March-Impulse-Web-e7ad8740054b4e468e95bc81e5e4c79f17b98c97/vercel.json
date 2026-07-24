@@ -11,14 +11,7 @@
       ]
     },
     {
-      "source": "/gracias",
-      "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
-      ]
-    },
-    {
-      "source": "/blog",
-      "has": [{ "type": "query", "key": "q" }],
+      "source": "/gracias/",
       "headers": [
         { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
       ]
