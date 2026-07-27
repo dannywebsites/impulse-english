@@ -221,3 +221,74 @@ vercel.json redirect sources = 339 URLs (Google's own count: 315). Hard facts se
 7. **`astro check` now a real gate** (standing feedback): `@astrojs/check` + `typescript` added to
    devDeps, tsconfig excludes the `seo-system/` fossil + migration script, 3 live-code type errors
    fixed → 0 errors. Build 146 pages OK. `verify:tracking` ALL PASS (double-tick, G-KNMS5YW69T).
+
+**PR 1 MERGED** (commit `f1c73c6` → main → Vercel production). Live-verified on impulse-english.es:
+sitemap = 144 URLs all trailing-slash / no `/gracias/`; `/blog/` lists 96 articles; `/gracias/`
+X-Robots-Tag noindex now fires; crown anchors + trailing-slash JSON-LD live. Sitemap `sitemap-index.xml`
+submitted + **API-confirmed processed (errors=0, warnings=0)**; old `sitemap.xml`/`sitemap-images.xml`
+now 301 to it and will consolidate.
+
+### 2026-07-24 (evening) — backlink blind spot RESOLVED (GSC Links export)
+
+The one remaining unknown, and the decision it gated ("no redirect-policy changes until we see whether
+any dead URL holds real external links"). Export archived in `impulse-seo-ops/data/gsc/audit-2026-07-24/`
+(4 CSVs: Top target pages / linking sites / linking text / Latest links).
+
+**Verdict: NO dead or legacy URL holds a single external link. Decision closed — the standing
+"let dead WordPress URLs 404" policy is confirmed safe; no equity-preservation redirects are needed.**
+
+- **Top target pages = only TWO URLs get external links, both live/indexed:** `/` (18 links / 13 sites)
+  and `/aviso-legal/` (1 link / 1 site). None of the graveyard 404s, none of the 80+ WP redirect
+  sources, none of the split/slashless variants appear. The entire external-authority mass sits on
+  the homepage — which is exactly why PR 1's internal-link overhaul is the load-bearing lever: the
+  sibling rings + crown links are the *only* mechanism distributing authority to blog/exam/location
+  pages, all of which have zero external links (§4 internal links = the authority engine, empirically).
+- **Profile is thin + citation-shaped:** ~19 links from ~14 sites — Reddit r/Madrid recommendation
+  threads (the strongest, genuinely relevant), Danny's LinkedIn/BNI post, and directory citations
+  (Glassdoor ×3 TLDs, ZoomInfo, ProvenExpert, barriodelpilar.es, inglify, etc.). Anchor text is 100%
+  brand/URL/navigational ("impulse english es", "view site", "visitar web") — zero keyword anchors.
+- **Note for a future off-page track (NOT this audit):** biggest untapped lever is local link building
+  (Madrid / Barrio del Pilar directories, education sites). `impulse-english.com` also links in — a
+  .com variant worth checking (owned? redirect candidate?).
+- Method caveat retired: DataForSEO backlinks stays unsubscribed; GSC Links export is the free
+  substitute and is now the standing source. Re-export quarterly.
+
+### 2026-07-24 (evening) — Madrid Norte client-acquisition / local-link plan (off-page track)
+
+The Links export proved the whole external profile is ~19 links to the homepage — so off-page is the
+biggest untapped lever. Ran a 6-lane deep web research pass (lead-gen portals, directories/citations,
+family/education portals, sponsorship, local press/networking, competitor mining), every org
+live-verified with a real contact. This is the **proximity/citations half the Maverick book explicitly
+doesn't cover** — pairs with the on-page work, not a substitute.
+
+Full plan (tiered, contactable): `impulse-seo-ops/data/madrid-norte-acquisition-plan-2026-07-24.md`
++ artifact https://claude.ai/code/artifact/1855d679-cdce-4bf0-a26c-cbc731faf7cc
+
+Key decisions/corrections logged there: (1) **NAP-identical everywhere, GBP = source of truth**;
+(2) **highest free lever = close the Google-review gap** (rivals Cambridge House 51, English Connection
+115+); (3) Cambridge public finder = exam centres only, prep-centre reg is credibility not a lead
+listing; (4) paid channels judged on CPL vs student LTV (tracking now measures it) — Educaweb Educalead
+(pay-per-valid-lead) first; (5) AMPA route (become the school's English provider) beats logo sponsorship.
+Already live (optimise, don't recreate): GBP, tusclasesparticulares, academiaaldea.es.
+
+### 2026-07-27 — "Zonas" out of the header nav (brand call) + founder bios inlined on Sobre Nosotros
+
+**Context:** Danny wants "Zonas" removed from the header ("looks very poor, not what we're about")
+and moved to the footer, and founder info (Danny + JP) visible under `/sobre-nosotros/`.
+Branch `feat/nav-zonas-footer-founder-bios`.
+
+### Decision 1 — Remove the "Zonas" nav item; compensate with a footer hub link. Brand-driven, SEO-neutral.
+**Why (book §4 interlinking):** the nav link (added in the cerca-de-mí PR) was never load-bearing
+for the moat. The `por-barrios` hub keeps its full inlink set without it: breadcrumb up-links from
+all 10 barrio pages, homepage `LocationsSection`, Cambridge/Linguaskill pages, blog pillar — plus a
+**new sitewide footer link "Ver todas las zonas"** (both footer variants, next to the existing
+10-barrio "Servimos:" row) and a new `Nuestro Equipo` footer link. Net sitewide inlinks to the hub:
+unchanged (nav → footer swap). Tier structure intact; anchor text still descriptive.
+
+### Decision 2 — Inline JP + Danny bios on `/sobre-nosotros/`; keep `/nuestro-equipo/` live. One intent = one page holds.
+**Why (book §2):** `/sobre-nosotros/` = brand/about intent, `/nuestro-equipo/` = team/teacher intent —
+different queries, no new page spun up, no cannibalization. The bios strengthen E-E-A-T on the about
+page (real people, verifiable credentials — book §3 E-E-A-T). Role labels unified to the
+`seo-system/brand/team.md` co-founder framing on BOTH pages ("Director de Estudios y Cofundador" /
+"Cofundador") so the site tells one consistent entity story. The previously orphan-ish
+`/nuestro-equipo/` (single inlink) gains a sitewide footer link.
