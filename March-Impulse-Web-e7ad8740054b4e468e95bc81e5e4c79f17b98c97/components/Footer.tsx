@@ -1,6 +1,7 @@
 import React from 'react';
 import { Instagram, Facebook, Phone, Mail, MapPin, Linkedin, Youtube } from 'lucide-react';
 import { NAP, getAddressLines } from '../utils/napData';
+import { BARRIOS_HUB_HREF } from '../utils/barrioAreas';
 
 const LOGO_URL = NAP.logo;
 
@@ -55,6 +56,8 @@ export default function Footer({ variant = 'full' }: FooterProps) {
                   {i < serviceAreas.length - 1 && ' | '}
                 </span>
               ))}
+              {' | '}
+              <a href={BARRIOS_HUB_HREF} className="text-zinc-400 font-medium hover:text-white transition-colors">Ver todas las zonas</a>
             </p>
           </div>
 
@@ -167,6 +170,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
             <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-6">Academia</h3>
             <ul className="space-y-4 text-zinc-400 text-sm">
               <li><a href="/sobre-nosotros/" className="hover:text-white transition-colors">Sobre Nosotros</a></li>
+              <li><a href="/nuestro-equipo/" className="hover:text-white transition-colors">Nuestro Equipo</a></li>
               <li><a href="/metodologia/" className="hover:text-white transition-colors">Metodología</a></li>
               <li><a href="/preguntas-frecuentes/" className="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
               <li><a href="/blog/" className="hover:text-white transition-colors">Blog</a></li>
@@ -250,6 +254,8 @@ export default function Footer({ variant = 'full' }: FooterProps) {
                 {i < serviceAreas.length - 1 && ' | '}
               </span>
             ))}
+            {' | '}
+            <a href={BARRIOS_HUB_HREF} className="text-zinc-400 font-medium hover:text-white transition-colors">Ver todas las zonas</a>
           </p>
         </div>
 
