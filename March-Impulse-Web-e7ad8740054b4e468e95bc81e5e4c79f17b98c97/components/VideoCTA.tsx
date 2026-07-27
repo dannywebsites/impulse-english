@@ -1,13 +1,65 @@
-import React from 'react';
-import { Play, ArrowRight } from 'lucide-react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { Play, ArrowRight, X } from 'lucide-react';
 import { teamImages } from '../src/data/images';
 
+export const VIDEO_SRC = '/media/impulse-academia-la-vaguada.v1.mp4';
+export const VIDEO_POSTER = '/media/hero-poster.v1.jpg';
+
 export default function VideoCTA() {
+  const [open, setOpen] = useState(false);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const close = useCallback(() => setOpen(false), []);
+
+  useEffect(() => {
+    if (!open) {
+      // Return focus to the button that opened the dialog.
+      triggerRef.current?.focus();
+      return;
+    }
+
+    // Lock background scroll while the dialog is up.
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    closeRef.current?.focus();
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        close();
+        return;
+      }
+      // Minimal focus trap: only the close button and the video are focusable in here,
+      // so keep Tab cycling between them rather than escaping to the page behind.
+      if (e.key === 'Tab') {
+        const focusable = [closeRef.current, videoRef.current].filter(Boolean) as HTMLElement[];
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    };
+
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('keydown', onKeyDown);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [open, close]);
+
   const img = teamImages.estudiantesSonriendo;
   const webpSrcSet = `${img.sizes.sm.webp} 400w, ${img.sizes.md.webp} 800w, ${img.sizes.lg.webp} 1200w, ${img.sizes.xl.webp} 1920w`;
   const jpegSrcSet = `${img.sizes.sm.jpg} 400w, ${img.sizes.md.jpg} 800w, ${img.sizes.lg.jpg} 1200w, ${img.sizes.xl.jpg} 1920w`;
 
   return (
+    <>
     <section id="vision" className="relative w-full h-[600px] flex items-center justify-center overflow-hidden bg-zinc-900">
       {/* Background Image/Video representation */}
       <div className="absolute inset-0 z-0">
@@ -29,8 +81,15 @@ export default function VideoCTA() {
       </div>
 
       <div className="relative z-10 container mx-auto px-6 text-left md:pl-24">
-        {/* Play Button Style Graphic */}
-        <button className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-12 hover:scale-110 transition-transform duration-300 shadow-lg group">
+        {/* Play Button — opens the self-hosted video in a dialog */}
+        <button
+          ref={triggerRef}
+          type="button"
+          onClick={() => setOpen(true)}
+          aria-haspopup="dialog"
+          aria-label="Ver el vídeo de Impulse English Academy"
+          className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-12 hover:scale-110 transition-transform duration-300 shadow-lg group focus:outline-none focus-visible:ring-4 focus-visible:ring-white/70"
+        >
             <Play className="w-8 h-8 text-accent-blue ml-1 group-hover:text-zinc-900 transition-colors" fill="currentColor" />
         </button>
 
@@ -82,5 +141,41 @@ export default function VideoCTA() {
         </div>
       </div>
     </section>
+
+    {open && (
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-label="Vídeo de Impulse English Academy"
+        className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 sm:p-8"
+        onClick={close}
+      >
+        <button
+          ref={closeRef}
+          type="button"
+          onClick={close}
+          aria-label="Cerrar el vídeo"
+          className="absolute top-4 right-4 sm:top-6 sm:right-6 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/30 text-white flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-4 focus-visible:ring-white/70"
+        >
+          <X className="w-5 h-5" />
+        </button>
+
+        {/* Stop clicks on the player itself from closing the dialog. */}
+        <video
+          ref={videoRef}
+          controls
+          autoPlay
+          playsInline
+          preload="none"
+          poster={VIDEO_POSTER}
+          onClick={(e) => e.stopPropagation()}
+          className="w-full max-w-5xl aspect-video rounded-lg shadow-2xl bg-black outline-none"
+        >
+          <source src={VIDEO_SRC} type="video/mp4" />
+          Tu navegador no puede reproducir este vídeo.
+        </video>
+      </div>
+    )}
+    </>
   );
 }
