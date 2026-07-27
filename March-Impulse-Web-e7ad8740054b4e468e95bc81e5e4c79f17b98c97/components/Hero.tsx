@@ -3,28 +3,30 @@ import { Phone } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="w-full h-full" aria-label="Hero">
-        {/* =========================================
-            DESKTOP VERSION
-            Hidden on Mobile & Tablet (< XL)
-           ========================================= */}
-        <div className="hidden xl:flex flex-col justify-center h-full">
+    <section className="w-full xl:h-full" aria-label="Hero">
+        {/* ONE hero block for every breakpoint. Below xl the copy sits on the solid blue
+            panel under the 16:9 video band, centred; at xl+ it is overlaid on the
+            full-bleed cover, left aligned. Previously the visible H1 lived inside
+            `hidden xl:flex` and mobile got an sr-only duplicate, so the rendered mobile
+            H1 was invisible to layout and weak under mobile-first indexing. Now exactly
+            one H1 exists in the DOM and it renders visibly at every width. */}
+        <div className="xl:flex xl:flex-col xl:justify-center xl:h-full">
             {/* Main Container - Matches NewsOverlay max-w-7xl and centering */}
-            <div className="container mx-auto max-w-7xl px-0 xl:px-0">
+            <div className="container mx-auto max-w-7xl px-0">
 
-                {/* Content Wrapper - Aligns strictly left with NewsOverlay padding (pl-8/12) */}
-                <div className="w-full flex flex-col items-start px-6 xl:px-0 xl:pl-12 pointer-events-auto">
+                {/* Content Wrapper - centred on the mobile panel, strictly left aligned at xl+ */}
+                <div className="w-full flex flex-col items-center text-center px-6 xl:items-start xl:text-left xl:px-0 xl:pl-12 pointer-events-auto">
 
-                    {/* Decoration Line */}
-                    <div className="hidden xl:flex items-center gap-4 mb-8 justify-start w-full animate-fade-in-up">
-                        <span className="h-px w-12 bg-white/60"></span>
-                        <span className="text-white/90 font-medium tracking-[0.2em] text-sm uppercase">
+                    {/* Eyebrow. The rule is a desktop flourish; the label itself shows everywhere. */}
+                    <div className="flex items-center gap-4 mb-5 xl:mb-8 animate-fade-in-up">
+                        <span className="hidden xl:block h-px w-12 bg-white/60"></span>
+                        <span className="text-white/90 font-medium tracking-[0.2em] text-xs xl:text-sm uppercase">
                             Centro Oficial Cambridge
                         </span>
                     </div>
 
                     {/* Single H1 for SEO — the visible hero headline is the real H1 */}
-                    <h1 className="text-white text-left text-4xl sm:text-6xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05] mb-2 md:mb-8 animate-fade-in-up delay-100">
+                    <h1 className="text-white text-3xl sm:text-5xl xl:text-7xl font-semibold tracking-tight leading-[1.1] xl:leading-[1.05] mb-6 xl:mb-8 animate-fade-in-up delay-100">
                         Academia de Inglés<br />
                         <span className="text-white/60">en La Vaguada y Barrio del Pilar</span>
                     </h1>
@@ -35,7 +37,7 @@ export default function Hero() {
                     </p>
 
                     {/* CTAs */}
-                    <div className="flex flex-col w-full xl:flex-row xl:w-auto gap-4 animate-fade-in-up delay-300">
+                    <div className="flex flex-col w-full xl:flex-row xl:w-auto gap-3 xl:gap-4 animate-fade-in-up delay-300">
                         <a href="/reservar-clase/" className="w-full xl:w-auto bg-red-600 text-white px-8 py-4 rounded-lg md:rounded-md font-semibold text-sm uppercase tracking-widest hover:bg-red-700 transition-colors shadow-lg active:scale-[0.98] text-center">
                             Clase de Prueba Gratuita
                         </a>
@@ -46,29 +48,6 @@ export default function Hero() {
                     </div>
 
                 </div>
-            </div>
-        </div>
-
-        {/* =========================================
-            MOBILE & TABLET VERSION (LOYOLA SHIELD STYLE)
-            Hidden on Desktop (XL+)
-           ========================================= */}
-        <div className="xl:hidden w-full h-full flex flex-col items-center justify-center pointer-events-auto relative z-[25]">
-            <div className="text-center px-6">
-                {/* The desktop H1 lives inside `hidden xl:flex`, so it is display:none here and
-                    carries little weight under mobile-first indexing. This sr-only H1 is the
-                    rendered one below xl. sr-only clips rather than display:none, so it stays in
-                    the render tree. Exactly one H1 renders per breakpoint — never both. */}
-                <h1 className="sr-only">Academia de Inglés en La Vaguada y Barrio del Pilar</h1>
-                <a
-                    href="/reservar-clase/"
-                    className="inline-flex items-center gap-2 text-white/90 hover:text-white text-sm font-medium tracking-[0.15em] uppercase border-b border-white/30 hover:border-white/60 pb-1 transition-all animate-hero-fade-up"
-                >
-                    Reservar clase de prueba
-                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                </a>
             </div>
         </div>
 
