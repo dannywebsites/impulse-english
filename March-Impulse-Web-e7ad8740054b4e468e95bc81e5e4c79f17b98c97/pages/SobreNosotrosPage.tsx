@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Award, Users, Target, Heart, CheckCircle, Home, UserCheck, Eye, ArrowRight } from 'lucide-react';
+import { Award, Users, Target, Heart, CheckCircle, Home, UserCheck, Eye, ArrowRight, GraduationCap } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
@@ -166,10 +166,117 @@ export default function SobreNosotrosPage() {
         </div>
       </section>
 
-      {/* Meet Our Team CTA */}
-      <div className="py-8 px-6 bg-zinc-50">
+      {/* Founders: JP Bio */}
+      <section className="py-16 md:py-24 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center">
+          <div className="text-center mb-16 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
+            <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
+              Nuestro Equipo
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              Conoce a los Fundadores
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/images/academy/jp-with-students.jpg"
+                  alt="JP, Director de Estudios y cofundador de Impulse English Academy"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+
+            {/* Text */}
+            <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-100">
+              <span className="inline-block bg-accent-blue/10 text-accent-blue text-sm font-bold px-4 py-1.5 rounded-full mb-4">
+                Director de Estudios y Cofundador
+              </span>
+              <h3 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+                JP
+              </h3>
+              <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
+                <p>
+                  JP es el director de estudios y cofundador de Impulse English Academy La Vaguada, y suma más de diez años de experiencia enseñando inglés. Antes de instalarse en Madrid vivió diez años en Irlanda. Es experto en exámenes Cambridge y en la adquisición temprana del idioma, y dirige el día a día académico del centro. Es, sencillamente, quien hace posible todo esto: un apasionado de la enseñanza de idiomas que se vuelca en cada alumno y en cada profesor del equipo.
+                </p>
+                <p>
+                  Bajo su dirección académica, Impulse ha alcanzado un 100% de aprobados en los exámenes Cambridge en el curso 2024–25.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+                {[
+                  { icon: <GraduationCap className="w-6 h-6" />, text: "Más de 10 años enseñando inglés" },
+                  { icon: <Award className="w-6 h-6" />, text: "Experto en exámenes Cambridge" },
+                  { icon: <Users className="w-6 h-6" />, text: "Especialista en adquisición temprana del idioma" }
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-3 p-4 bg-zinc-50 rounded-xl">
+                    <div className="text-accent-blue flex-shrink-0 mt-0.5">{item.icon}</div>
+                    <span className="text-sm text-zinc-700">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founders: Danny Bio (reversed layout) */}
+      <section className="py-16 md:py-24 px-6 bg-zinc-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Text (left on desktop) */}
+            <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 order-2 lg:order-1">
+              <span className="inline-block bg-accent-blue/10 text-accent-blue text-sm font-bold px-4 py-1.5 rounded-full mb-4">
+                Cofundador
+              </span>
+              <h3 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+                Danny Fitzpatrick
+              </h3>
+              <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
+                <p>
+                  Danny es cofundador de Impulse English Academy La Vaguada. Junto a JP, construyó la academia desde sus cimientos en el Barrio del Pilar con la convicción de que el método con el que los españoles aprenden inglés estaba roto — y de que existía una forma mejor, más científica y más humana de hacerlo.
+                </p>
+                <p>
+                  Profesor titulado de educación física e idiomas y licenciado en Marketing por la University of Essex, su especialidad es el inglés de negocios: le apasiona ayudar a los alumnos a dominar el inglés para acceder a mejores oportunidades laborales. Irlandés afincado en Madrid desde hace 12 años, une su experiencia en marketing y estrategia de negocio con la enseñanza para impulsar el crecimiento de la academia.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+                {[
+                  { icon: <Users className="w-6 h-6" />, text: "Cofundador de la academia" },
+                  { icon: <GraduationCap className="w-6 h-6" />, text: "Licenciado en Marketing, University of Essex" },
+                  { icon: <Award className="w-6 h-6" />, text: "Especialista en inglés de negocios" }
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-3 p-4 bg-white rounded-xl">
+                    <div className="text-accent-blue flex-shrink-0 mt-0.5">{item.icon}</div>
+                    <span className="text-sm text-zinc-700">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Image (right on desktop) */}
+            <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-100 order-1 lg:order-2">
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/images/academy/daniel-helping-secondary-school-students.jpg"
+                  alt="Danny Fitzpatrick, cofundador de Impulse English Academy"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Full team CTA */}
+          <div className="text-center mt-14">
             <a
               href="/nuestro-equipo/"
               className="inline-flex items-center gap-2 bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition-colors"
@@ -179,7 +286,7 @@ export default function SobreNosotrosPage() {
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* What Makes Us Different */}
       <section className="py-12 md:py-20 px-6 bg-white">
