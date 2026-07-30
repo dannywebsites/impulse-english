@@ -12,6 +12,7 @@ import type { FAQItem } from '../../utils/schemaData';
 import FullPhotoGallery from '../../components/FullPhotoGallery';
 import { primariaImages as galleryImages } from '../../src/data/academyImages';
 import { studentImages } from '../../src/data/images';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Primaria (6-12 años)",
@@ -22,7 +23,6 @@ export const courseSchema = generateCourseSchema({
   timeRequired: "PT2H",
   image: "/images/academy/img-4117.png"
 });
-
 
 export const faqs: FAQItem[] = [
   {
@@ -54,7 +54,7 @@ export const faqs: FAQItem[] = [
     answer: "Con evaluación continua: pequeñas pruebas, tareas de comprensión, lectura y participación oral. También observación en clase y objetivos por trimestre. Así evitamos \"sorpresas\" y se ve el avance real. Si el alumno prepara Cambridge, añadimos simulacros específicos."
   },
   {
-    question: "¿Hay clase de prueba?",
+    question: "¿Hay prueba de nivel gratuita?",
     answer: "Sí. Ofrecemos clase/prueba de nivel para ubicar al alumno en su grupo ideal. Así puedes ver el ambiente, el método y cómo trabajamos. Sin compromiso."
   },
   // Kids Primary PAAs (8)
@@ -158,7 +158,7 @@ export default function PrimariaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-white text-blue-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-amber-50 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
@@ -423,7 +423,7 @@ export default function PrimariaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-blue-600 hover:bg-accent-blue-800 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Solicitar prueba de nivel
@@ -434,7 +434,7 @@ export default function PrimariaPage() {
                 rel="noopener noreferrer"
                 className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
-                <Phone className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5" />
                 WhatsApp
               </a>
             </div>

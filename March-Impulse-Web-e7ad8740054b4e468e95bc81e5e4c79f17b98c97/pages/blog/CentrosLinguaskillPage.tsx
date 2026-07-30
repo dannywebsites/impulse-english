@@ -327,7 +327,7 @@ export default function CentrosLinguaskillPage() {
                   ¿Listo para certificar tu inglés?
                 </h2>
                 <p className="text-xl text-white/80">
-                  Reserva tu clase gratuita y prepárate con expertos en Linguaskill.
+                  Pide tu prueba de nivel gratuita y prepárate con expertos en Linguaskill.
                 </p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-xl">

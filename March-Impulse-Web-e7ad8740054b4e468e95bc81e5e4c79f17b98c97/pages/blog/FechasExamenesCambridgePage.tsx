@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { Calendar, Clock, ArrowLeft, BookOpen, CheckCircle, AlertCircle, Bell, MessageCircle, MapPin, Monitor, FileText, Target, HelpCircle, Globe, Users, Building } from 'lucide-react';
+import { Calendar, Clock, ArrowLeft, BookOpen, CheckCircle, AlertCircle, Bell, MapPin, Monitor, FileText, Target, HelpCircle, Globe, Users, Building } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 const tableOfContents = [
   { id: 'que-son-fechas', title: '¿Qué son las fechas de exámenes Cambridge y por qué son importantes?' },
   { id: 'calendario-completo-2026', title: 'Calendario completo 2026: fechas por nivel (B1, B2, C1, C2)' },
@@ -885,7 +886,6 @@ export default function FechasExamenesCambridgePage() {
 
           </div>
 
-
         </div>
 
         {/* CTA Section */}
@@ -924,7 +924,7 @@ export default function FechasExamenesCambridgePage() {
                     rel="noopener noreferrer"
                     className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
                   >
-                    <MessageCircle className="w-5 h-5" />
+                    <WhatsAppIcon className="w-5 h-5" />
                     Consultar por WhatsApp
                   </a>
                   <a

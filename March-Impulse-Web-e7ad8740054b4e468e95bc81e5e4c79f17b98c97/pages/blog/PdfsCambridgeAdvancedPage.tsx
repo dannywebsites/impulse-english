@@ -491,7 +491,7 @@ export default function PdfsCambridgeAdvancedPage() {
                     </p>
                   </div>
                   <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                     className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Reserva tu clase gratis

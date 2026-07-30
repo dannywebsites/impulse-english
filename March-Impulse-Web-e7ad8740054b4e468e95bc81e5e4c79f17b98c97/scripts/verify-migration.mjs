@@ -47,7 +47,7 @@ const LIVE_ROUTES = [
   '/testimonios',
   '/blog',
   '/contacto',
-  '/reservar-clase',
+  '/prueba-de-nivel-ingles',
   '/gracias',
   '/aprende-ingles',
   '/preparacion-b2-first-madrid',
@@ -98,7 +98,7 @@ const LIVE_ROUTES = [
 
 // Redirects that should return 301
 const REDIRECTS = [
-  ['/exam-impulse', '/reservar-clase'],
+  ['/exam-impulse', '/prueba-de-nivel-ingles'],
   ['/blogs-impulse', '/blog'],
   ['/ingles-la-vaguada/infantil', '/cursos-ingles/infantil'],
   ['/examenes-cambridge/linguaskill', '/linguaskill'],

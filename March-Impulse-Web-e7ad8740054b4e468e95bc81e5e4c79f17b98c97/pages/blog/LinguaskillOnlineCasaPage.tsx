@@ -346,7 +346,7 @@ export default function LinguaskillOnlineCasaPage() {
                   ¿Preparado para tu examen Linguaskill online?
                 </h2>
                 <p className="text-xl text-white/80">
-                  Reserva tu clase gratuita y prepárate con expertos en certificaciones Cambridge.
+                  Pide tu prueba de nivel gratuita y prepárate con expertos en certificaciones Cambridge.
                 </p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-xl">

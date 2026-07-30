@@ -21,7 +21,7 @@ impulseSection:
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, nuestros alumnos no solo aprueban: muchos alcanzan Grade A. Con un 100% de aprobados en 2024-2025, simulacros mensuales con corrección detallada y grupos reducidos de máximo 10 alumnos, nuestros profesores certificados TEFL/CELTA os preparan para superar ampliamente los 160 puntos."
   ctaLinks:
     - text: Prueba de nivel gratis
-      href: /reservar-clase
+      href: /prueba-de-nivel-ingles
     - text: Preparación B2 First
       href: /examenes-cambridge/b2-first
 faqItems:

@@ -412,7 +412,7 @@ export default function ValidezCertificadoB2CambridgePage() {
                 En Impulse English Academy te preparamos con metodología probada para aprobar el B2 First con la mejor puntuación posible. Un certificado para toda la vida.
               </p>
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reserva tu clase gratis

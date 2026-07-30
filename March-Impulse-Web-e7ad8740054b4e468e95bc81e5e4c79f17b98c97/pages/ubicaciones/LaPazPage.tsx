@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { MapPin, Clock, Phone, Train, Bus, CheckCircle, Star, ArrowRight, MessageCircle } from 'lucide-react';
+import { MapPin, Clock, Train, Bus, CheckCircle, Star, ArrowRight } from 'lucide-react';
 import NearbyAreas from '../../components/NearbyAreas';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -8,6 +8,7 @@ import LazyVideo from '../../components/LazyVideo';
 import Breadcrumb from '../../components/Breadcrumb';
 import { NAP } from '../../utils/napData';
 import type { FAQItem } from '../../utils/schemaData';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 const benefits = [
   { title: "A 20 Minutos de La Paz", desc: "20 minutos caminando o 20 minutos en autobús. Conexión fácil desde La Paz." },
@@ -32,7 +33,7 @@ export const localFaqs: FAQItem[] = [
     answer: "Ofrecemos todos los niveles desde principiante (A1) hasta avanzado (C2). Realizamos una prueba de nivel gratuita para ubicarte en el grupo adecuado. Preparamos exámenes Cambridge (Pre-A1 Starters hasta C2 Proficiency) y Linguaskill."
   },
   {
-    question: "¿Hay clase de prueba gratuita en vuestra academia cerca de La Paz?",
+    question: "¿Hay prueba de nivel gratuita en vuestra academia cerca de La Paz?",
     answer: "Sí, ofrecemos una prueba de nivel gratuita de 25 minutos donde evaluamos tu nivel actual y te recomendamos el curso más adecuado. Puedes reservarla por WhatsApp o a través de nuestra web."
   },
   {
@@ -48,7 +49,6 @@ export const localFaqs: FAQItem[] = [
     answer: "Desde La Paz puedes llegar fácilmente en metro hasta Barrio del Pilar (Línea 9), que está a solo 500 metros de nuestra academia. También hay varias líneas de autobús que conectan las zonas."
   }
 ];
-
 
 export const locationMeta = {locationName: "La Paz",
         pageUrl: "https://impulse-english.es/academia-ingles-la-paz"};
@@ -111,7 +111,7 @@ export default function LaPazPage() {
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-brand-red hover:bg-brand-red-600 text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba de Nivel Gratuita
@@ -123,7 +123,7 @@ export default function LaPazPage() {
                 rel="noopener noreferrer"
                 className="bg-white/10 backdrop-blur-sm border border-white/20 text-white font-display font-medium py-3 px-6 rounded-lg flex items-center gap-2 hover:bg-white/15 transition-all duration-300"
               >
-                <MessageCircle className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 WhatsApp
               </a>
             </div>
@@ -505,10 +505,10 @@ export default function LaPazPage() {
             Si buscas una academia de inglés cerca de La Paz, solicita ahora tu prueba de nivel gratuita y empieza a aprender inglés cerca de casa.
           </p>
           <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
             className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-4 px-8 rounded-lg hover:bg-amber-400 hover:text-accent-blue-900 transition-colors"
           >
-            Reserva tu prueba gratuita
+            Pide tu prueba de nivel gratuita
             <ArrowRight className="w-5 h-5" />
           </a>
         </div>
@@ -532,10 +532,10 @@ export default function LaPazPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
               className="btn-primary btn-lg"
             >
-              Reservar Clase de Prueba
+              Pedir Prueba de Nivel
             </a>
             <a
               href="/contacto/"

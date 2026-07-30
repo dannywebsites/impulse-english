@@ -271,6 +271,22 @@ listing; (4) paid channels judged on CPL vs student LTV (tracking now measures i
 (pay-per-valid-lead) first; (5) AMPA route (become the school's English provider) beats logo sponsorship.
 Already live (optimise, don't recreate): GBP, tusclasesparticulares, academiaaldea.es.
 
+### 2026-07-30 — Review-generation keyword targets (GBP reviews — book-gap territory)
+
+**Context:** first analysed real review (JP/A2→B1, glowing) contains **zero** geo, category, or
+Cambridge terms. Google matches review text for local relevance + map-pack justifications.
+
+**Decision:** shape future review ASKS (never the reviews) with nudge questions so reviews naturally
+include, in priority order: (1) "academia de inglés", (2) barrio/geo (Barrio del Pilar, La Vaguada,
+Madrid, or the student's origin barrio), (3) Cambridge/exam terms (B2 First, preparación),
+(4) course type (adultos/niños/particulares), (5) full brand name, (6) proximity/metro phrasing,
+(7) outcome phrasing ("aprobé el B2"). Owner replies also indexed → each reply naturally carries
+category + geo + brand. No scripting/incentives (Google policy + filter risk).
+**Why (book):** review text = user-generated **n-grams** (§5) feeding the same local terms the
+homepage pillar owns; but reviews/GBP are the book's declared gap — external local-SEO practice
+(review justifications, review velocity per the Madrid Norte plan) supplies the mechanism.
+Ties to: review-gap = top free lever (madrid-norte-acquisition-plan-2026-07-24).
+
 ### 2026-07-27 — "Zonas" out of the header nav (brand call) + founder bios inlined on Sobre Nosotros
 
 **Context:** Danny wants "Zonas" removed from the header ("looks very poor, not what we're about")
@@ -292,3 +308,57 @@ page (real people, verifiable credentials — book §3 E-E-A-T). Role labels uni
 `seo-system/brand/team.md` co-founder framing on BOTH pages ("Director de Estudios y Cofundador" /
 "Cofundador") so the site tells one consistent entity story. The previously orphan-ish
 `/nuestro-equipo/` (single inlink) gains a sitewide footer link.
+
+---
+
+### 2026-07-30 — Offer pivot: "clase de prueba" → "prueba de nivel" + new `/prueba-de-nivel-ingles/`
+
+**Context:** Danny's call — the site is selling a *clase de prueba*, but the actual product is a
+free 25-minute personalised level test plus a 100% personalised plan de estudios with JP, the
+Director de Estudios. Branch `offer/prueba-de-nivel`.
+
+### Decision 1 — Lead with "prueba de nivel", not "clase de prueba". Demand-driven.
+**Why (book §1 MOTIVATION + §2 keyword levels):** Google Ads volume, Spain, pulled 2026-07-30:
+`prueba de nivel de inglés` **1,300/mo** (Sept peak 3,600), `test de nivel de inglés` **1,300/mo**,
+`prueba de nivel inglés gratis` 720/mo, `qué nivel de inglés tengo` 390/mo — against
+`clase de prueba inglés` = **0 (no recorded volume)**. The site was headlining a zero-demand term
+while the real offer, already documented in FAQ answers sitewide, was buried in the fine print.
+Motivation is **P**roblem-solving ("I don't know my level") — the book's low-competition sweet spot.
+
+### Decision 2 — Repurpose `/reservar-clase/` → `/prueba-de-nivel-ingles/` with a 1:1 301. One intent = one page.
+**Why (book §2 anti-cannibalization + §3 slug rule):** no new page spun up — the conversion page
+*becomes* the level-test page, so there is no second page chasing the same intent. Slug shortened to
+the base keyword. GSC evidence that the old URL had nothing to protect (audit-2026-07-24):
+`/reservar-clase/` earned **1 click in 16 months** (491 impressions, avg pos 15.6) and **0 clicks in
+the last 28 days**; its only queries were brand terms. A true successor exists, so the 301 is a
+genuine consolidation, not a weak topical redirect (contrast the standing "let dead URLs 404" rule).
+All ~84 internal-link files repointed directly at the new URL — no redirect hops.
+
+### Decision 3 — Do NOT bet on ranking the bare national head term. Local + conversion is the play.
+**Why (book §1 landmine test):** page 1 for `prueba de nivel de inglés` nationally is owned by free
+CEFR testing tools (British Council, Cambridge, EF) — a landmine for a single-location academy.
+The page targets the head term in H1/title for visibility, but its job is converting existing
+traffic, with geo long-tail (`prueba de nivel de inglés Madrid / La Vaguada / Barrio del Pilar`,
+Level 5 "no volume ≠ no search") as the winnable ranking upside.
+
+### Decision 4 — Interlink from the already-ranking "qué nivel necesito" blog cluster.
+**Why (book §4 authority engine + §6 expand around winners):** `/blog/b1-universidad-espana/` and
+`/blog/escala-cambridge/` already earn ~250 impressions/mo at positions 8–10 for
+"qué nivel de inglés necesito/piden…" queries. Those pages answer *what level do I need*; the new
+page answers *what level do I have* — the natural downline click. Expansion is tactical, around
+pages already proven in GSC, not speculative.
+
+### Decision 5 — Keep the Infantil (2–5) clase de prueba. Different product, not stale copy.
+**Why:** a 1-hour trial class (Mon–Fri 17:30) is the age-appropriate assessment for 2–5 year olds;
+a 25-minute level test is not. Retiring it would have replaced a real offer with an unusable one.
+Competitor/market commentary in blog posts ("many academies offer trial classes") also kept — it is
+factual reporting, not our CTA.
+
+### Compliance note (not a book point)
+`MetodologiaPage.tsx` carried an unqualified **"100% aprobados garantizado"** — a *guarantee* claim
+rather than a historical result. Aligned to the phrasing used everywhere else on the site:
+"100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados)".
+
+**Validation plan:** GSC — filter "URLs containing `prueba-de-nivel`" plus queries containing
+"nivel"; watch impressions/position through the September peak (3,600/mo on the head term).
+Baseline is zero. Ship before mid-August so the page is indexed before the spike.

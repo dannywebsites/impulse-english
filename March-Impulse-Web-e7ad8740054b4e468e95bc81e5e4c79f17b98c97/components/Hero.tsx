@@ -38,8 +38,8 @@ export default function Hero() {
 
                     {/* CTAs */}
                     <div className="flex flex-col w-full xl:flex-row xl:w-auto gap-3 xl:gap-4 animate-fade-in-up delay-300">
-                        <a href="/reservar-clase/" className="w-full xl:w-auto bg-brand-red text-white px-8 py-4 rounded-lg md:rounded-md font-semibold text-sm uppercase tracking-widest hover:bg-brand-red-600 transition-colors shadow-cta active:scale-[0.98] text-center">
-                            Clase de Prueba Gratuita
+                        <a href="/prueba-de-nivel-ingles/" className="w-full xl:w-auto bg-brand-red text-white px-8 py-4 rounded-lg md:rounded-md font-semibold text-sm uppercase tracking-widest hover:bg-brand-red-600 transition-colors shadow-cta active:scale-[0.98] text-center">
+                            Prueba de Nivel Gratuita
                         </a>
                         <a href="tel:+34604910611" className="w-full xl:w-auto bg-white/10 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded-lg md:rounded-md font-semibold text-sm uppercase tracking-widest hover:bg-white hover:text-accent-blue transition-colors active:scale-[0.98] text-center flex items-center justify-center gap-2">
                             <Phone className="w-5 h-5" />

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { ChevronDown, MessageCircle, Phone, Mail } from 'lucide-react';
+import { ChevronDown, Phone, Mail } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import FAQSection from '../components/FAQSection';
 import Breadcrumb from '../components/Breadcrumb';
+import WhatsAppIcon from '../components/icons/WhatsAppIcon';
 
 import type { FAQItem } from '../utils/schemaData';
 
@@ -473,7 +474,7 @@ export default function PreguntasFrecuentesPage() {
               rel="noopener noreferrer"
               className="flex flex-col items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white p-6 rounded-xl transition-colors"
             >
-              <MessageCircle className="w-8 h-8" />
+              <WhatsAppIcon className="w-8 h-8" />
               <span className="font-bold">WhatsApp</span>
               <span className="text-green-100 text-sm">+34 604 910 611</span>
             </a>
@@ -488,7 +489,7 @@ export default function PreguntasFrecuentesPage() {
             </a>
 
             <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
               className="flex flex-col items-center gap-2 bg-brand-red hover:bg-brand-red-600 text-white p-6 rounded-xl transition-colors"
             >
               <Mail className="w-8 h-8" />

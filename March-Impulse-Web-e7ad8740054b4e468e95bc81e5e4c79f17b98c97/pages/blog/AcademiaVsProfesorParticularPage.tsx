@@ -410,7 +410,7 @@ export default function AcademiaVsProfesorParticularPage() {
               href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
-                Solicitar clase de prueba
+                Solicitar prueba de nivel
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
