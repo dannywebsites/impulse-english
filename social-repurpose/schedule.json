@@ -1,0 +1,6521 @@
+{
+  "generated_start": "2026-07-31",
+  "timezone": "Europe/Madrid",
+  "totals": {
+    "archive_total": 261,
+    "excluded_duets_replies": 40,
+    "excluded_photo_posts": 6,
+    "scheduled_videos": 215,
+    "youtube_x_entries": 215,
+    "youtube_x_days": 72,
+    "instagram_entries": 215,
+    "instagram_days": 215
+  },
+  "lanes": {
+    "brand": 82,
+    "proven": 66,
+    "mid": 67
+  },
+  "youtube_x": [
+    {
+      "video_id": "7277085546701278496",
+      "url": "https://www.tiktok.com/@impulse_english/video/7277085546701278496",
+      "lane": "brand",
+      "date": "2026-07-31",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-07-31T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 27500,
+      "upload_date": "20230910",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6838978909803973893",
+      "url": "https://www.tiktok.com/@impulse_english/video/6838978909803973893",
+      "lane": "proven",
+      "date": "2026-07-31",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-07-31T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1000000,
+      "upload_date": "20200616",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6824201794923629830",
+      "url": "https://www.tiktok.com/@impulse_english/video/6824201794923629830",
+      "lane": "mid",
+      "date": "2026-07-31",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-07-31T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 22600,
+      "upload_date": "20200507",
+      "duration_s": 48
+    },
+    {
+      "video_id": "6825325962662661382",
+      "url": "https://www.tiktok.com/@impulse_english/video/6825325962662661382",
+      "lane": "mid",
+      "date": "2026-08-01",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-01T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 21100,
+      "upload_date": "20200510",
+      "duration_s": 36
+    },
+    {
+      "video_id": "6852368693230423302",
+      "url": "https://www.tiktok.com/@impulse_english/video/6852368693230423302",
+      "lane": "proven",
+      "date": "2026-08-01",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-01T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 864000,
+      "upload_date": "20200722",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7140188470764440837",
+      "url": "https://www.tiktok.com/@impulse_english/video/7140188470764440837",
+      "lane": "brand",
+      "date": "2026-08-01",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-01T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 14400,
+      "upload_date": "20220906",
+      "duration_s": 24
+    },
+    {
+      "video_id": "6864316482348731654",
+      "url": "https://www.tiktok.com/@impulse_english/video/6864316482348731654",
+      "lane": "mid",
+      "date": "2026-08-02",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-02T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 21100,
+      "upload_date": "20200823",
+      "duration_s": 29
+    },
+    {
+      "video_id": "7147707589143383297",
+      "url": "https://www.tiktok.com/@impulse_english/video/7147707589143383297",
+      "lane": "brand",
+      "date": "2026-08-02",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-02T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 13500,
+      "upload_date": "20220926",
+      "duration_s": 11
+    },
+    {
+      "video_id": "6832202330478316806",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832202330478316806",
+      "lane": "proven",
+      "date": "2026-08-02",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-02T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 534700,
+      "upload_date": "20200529",
+      "duration_s": 12
+    },
+    {
+      "video_id": "7142960275048664325",
+      "url": "https://www.tiktok.com/@impulse_english/video/7142960275048664325",
+      "lane": "brand",
+      "date": "2026-08-03",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-03T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 9266,
+      "upload_date": "20220913",
+      "duration_s": 26
+    },
+    {
+      "video_id": "6832706722390510854",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832706722390510854",
+      "lane": "mid",
+      "date": "2026-08-03",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-03T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 21000,
+      "upload_date": "20200530",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6828523492527361286",
+      "url": "https://www.tiktok.com/@impulse_english/video/6828523492527361286",
+      "lane": "proven",
+      "date": "2026-08-03",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-03T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 414100,
+      "upload_date": "20200519",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6845294580129139973",
+      "url": "https://www.tiktok.com/@impulse_english/video/6845294580129139973",
+      "lane": "proven",
+      "date": "2026-08-04",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-04T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 406300,
+      "upload_date": "20200703",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6852767129939250438",
+      "url": "https://www.tiktok.com/@impulse_english/video/6852767129939250438",
+      "lane": "mid",
+      "date": "2026-08-04",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-04T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 20800,
+      "upload_date": "20200723",
+      "duration_s": 22
+    },
+    {
+      "video_id": "7137286902620671237",
+      "url": "https://www.tiktok.com/@impulse_english/video/7137286902620671237",
+      "lane": "brand",
+      "date": "2026-08-04",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-04T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 3360,
+      "upload_date": "20220829",
+      "duration_s": 23
+    },
+    {
+      "video_id": "6819208402993024261",
+      "url": "https://www.tiktok.com/@impulse_english/video/6819208402993024261",
+      "lane": "proven",
+      "date": "2026-08-05",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-05T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 260600,
+      "upload_date": "20200424",
+      "duration_s": 14
+    },
+    {
+      "video_id": "7145562862839237893",
+      "url": "https://www.tiktok.com/@impulse_english/video/7145562862839237893",
+      "lane": "brand",
+      "date": "2026-08-05",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-05T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 2970,
+      "upload_date": "20220920",
+      "duration_s": 35
+    },
+    {
+      "video_id": "6835733148647591173",
+      "url": "https://www.tiktok.com/@impulse_english/video/6835733148647591173",
+      "lane": "mid",
+      "date": "2026-08-05",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-05T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 20700,
+      "upload_date": "20200607",
+      "duration_s": 16
+    },
+    {
+      "video_id": "7133930699945479430",
+      "url": "https://www.tiktok.com/@impulse_english/video/7133930699945479430",
+      "lane": "brand",
+      "date": "2026-08-06",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-06T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 2940,
+      "upload_date": "20220820",
+      "duration_s": 26
+    },
+    {
+      "video_id": "6831206739459804421",
+      "url": "https://www.tiktok.com/@impulse_english/video/6831206739459804421",
+      "lane": "proven",
+      "date": "2026-08-06",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-06T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 236400,
+      "upload_date": "20200526",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6841261219773484294",
+      "url": "https://www.tiktok.com/@impulse_english/video/6841261219773484294",
+      "lane": "mid",
+      "date": "2026-08-06",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-06T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 20500,
+      "upload_date": "20200622",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6843492870167547141",
+      "url": "https://www.tiktok.com/@impulse_english/video/6843492870167547141",
+      "lane": "mid",
+      "date": "2026-08-07",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-07T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 20500,
+      "upload_date": "20200628",
+      "duration_s": 18
+    },
+    {
+      "video_id": "6845357470341188869",
+      "url": "https://www.tiktok.com/@impulse_english/video/6845357470341188869",
+      "lane": "proven",
+      "date": "2026-08-07",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-07T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 196200,
+      "upload_date": "20200703",
+      "duration_s": 25
+    },
+    {
+      "video_id": "7133626130950638854",
+      "url": "https://www.tiktok.com/@impulse_english/video/7133626130950638854",
+      "lane": "brand",
+      "date": "2026-08-07",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-07T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 2480,
+      "upload_date": "20220819",
+      "duration_s": 21
+    },
+    {
+      "video_id": "6837251816917421317",
+      "url": "https://www.tiktok.com/@impulse_english/video/6837251816917421317",
+      "lane": "mid",
+      "date": "2026-08-08",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-08T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 20300,
+      "upload_date": "20200612",
+      "duration_s": 24
+    },
+    {
+      "video_id": "7147611781010181381",
+      "url": "https://www.tiktok.com/@impulse_english/video/7147611781010181381",
+      "lane": "brand",
+      "date": "2026-08-08",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-08T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 2408,
+      "upload_date": "20220926",
+      "duration_s": 47
+    },
+    {
+      "video_id": "6821924723031543045",
+      "url": "https://www.tiktok.com/@impulse_english/video/6821924723031543045",
+      "lane": "proven",
+      "date": "2026-08-08",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-08T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 170500,
+      "upload_date": "20200501",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7145774438846418182",
+      "url": "https://www.tiktok.com/@impulse_english/video/7145774438846418182",
+      "lane": "brand",
+      "date": "2026-08-09",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-09T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1962,
+      "upload_date": "20220921",
+      "duration_s": 22
+    },
+    {
+      "video_id": "6846842668622810373",
+      "url": "https://www.tiktok.com/@impulse_english/video/6846842668622810373",
+      "lane": "mid",
+      "date": "2026-08-09",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-09T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 19700,
+      "upload_date": "20200707",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6834229949457583365",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834229949457583365",
+      "lane": "proven",
+      "date": "2026-08-09",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-09T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 159300,
+      "upload_date": "20200603",
+      "duration_s": 12
+    },
+    {
+      "video_id": "6852023036007304454",
+      "url": "https://www.tiktok.com/@impulse_english/video/6852023036007304454",
+      "lane": "proven",
+      "date": "2026-08-10",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-10T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 144300,
+      "upload_date": "20200721",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6825483388607106310",
+      "url": "https://www.tiktok.com/@impulse_english/video/6825483388607106310",
+      "lane": "mid",
+      "date": "2026-08-10",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-10T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 19400,
+      "upload_date": "20200511",
+      "duration_s": 33
+    },
+    {
+      "video_id": "7146233445176413445",
+      "url": "https://www.tiktok.com/@impulse_english/video/7146233445176413445",
+      "lane": "brand",
+      "date": "2026-08-10",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-10T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1681,
+      "upload_date": "20220922",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6822203475800182021",
+      "url": "https://www.tiktok.com/@impulse_english/video/6822203475800182021",
+      "lane": "proven",
+      "date": "2026-08-11",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-11T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 124300,
+      "upload_date": "20200502",
+      "duration_s": 39
+    },
+    {
+      "video_id": "7143564325247126789",
+      "url": "https://www.tiktok.com/@impulse_english/video/7143564325247126789",
+      "lane": "brand",
+      "date": "2026-08-11",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-11T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1467,
+      "upload_date": "20220915",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6847364394611985670",
+      "url": "https://www.tiktok.com/@impulse_english/video/6847364394611985670",
+      "lane": "mid",
+      "date": "2026-08-11",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-11T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 19300,
+      "upload_date": "20200709",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7427502351826685217",
+      "url": "https://www.tiktok.com/@impulse_english/video/7427502351826685217",
+      "lane": "brand",
+      "date": "2026-08-12",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-12T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1440,
+      "upload_date": "20241019",
+      "duration_s": 11
+    },
+    {
+      "video_id": "6829194426888293638",
+      "url": "https://www.tiktok.com/@impulse_english/video/6829194426888293638",
+      "lane": "proven",
+      "date": "2026-08-12",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-12T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 116000,
+      "upload_date": "20200521",
+      "duration_s": 17
+    },
+    {
+      "video_id": "6846447349410090245",
+      "url": "https://www.tiktok.com/@impulse_english/video/6846447349410090245",
+      "lane": "mid",
+      "date": "2026-08-12",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-12T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 19200,
+      "upload_date": "20200706",
+      "duration_s": 24
+    },
+    {
+      "video_id": "6846419386488737030",
+      "url": "https://www.tiktok.com/@impulse_english/video/6846419386488737030",
+      "lane": "mid",
+      "date": "2026-08-13",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-13T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 17600,
+      "upload_date": "20200706",
+      "duration_s": 30
+    },
+    {
+      "video_id": "6840726948860251397",
+      "url": "https://www.tiktok.com/@impulse_english/video/6840726948860251397",
+      "lane": "proven",
+      "date": "2026-08-13",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-13T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 108200,
+      "upload_date": "20200621",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7142869525942291718",
+      "url": "https://www.tiktok.com/@impulse_english/video/7142869525942291718",
+      "lane": "brand",
+      "date": "2026-08-13",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-13T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1393,
+      "upload_date": "20220913",
+      "duration_s": 21
+    },
+    {
+      "video_id": "6834168035423587590",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834168035423587590",
+      "lane": "mid",
+      "date": "2026-08-14",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-14T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 17500,
+      "upload_date": "20200603",
+      "duration_s": 30
+    },
+    {
+      "video_id": "7451267533627198752",
+      "url": "https://www.tiktok.com/@impulse_english/video/7451267533627198752",
+      "lane": "brand",
+      "date": "2026-08-14",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-14T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1328,
+      "upload_date": "20241222",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6832039005983411462",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832039005983411462",
+      "lane": "proven",
+      "date": "2026-08-14",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-14T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 95600,
+      "upload_date": "20200528",
+      "duration_s": 24
+    },
+    {
+      "video_id": "7133287946014231813",
+      "url": "https://www.tiktok.com/@impulse_english/video/7133287946014231813",
+      "lane": "brand",
+      "date": "2026-08-15",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-15T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1228,
+      "upload_date": "20220818",
+      "duration_s": 22
+    },
+    {
+      "video_id": "6843832575107058950",
+      "url": "https://www.tiktok.com/@impulse_english/video/6843832575107058950",
+      "lane": "mid",
+      "date": "2026-08-15",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-15T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 16800,
+      "upload_date": "20200629",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6832395878905548038",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832395878905548038",
+      "lane": "proven",
+      "date": "2026-08-15",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-15T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 89800,
+      "upload_date": "20200529",
+      "duration_s": 12
+    },
+    {
+      "video_id": "6837351792414559493",
+      "url": "https://www.tiktok.com/@impulse_english/video/6837351792414559493",
+      "lane": "proven",
+      "date": "2026-08-16",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-16T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 87300,
+      "upload_date": "20200612",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6832305242713902341",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832305242713902341",
+      "lane": "mid",
+      "date": "2026-08-16",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-16T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 16700,
+      "upload_date": "20200529",
+      "duration_s": 22
+    },
+    {
+      "video_id": "7404780829148220704",
+      "url": "https://www.tiktok.com/@impulse_english/video/7404780829148220704",
+      "lane": "brand",
+      "date": "2026-08-16",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-16T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1223,
+      "upload_date": "20240819",
+      "duration_s": 9
+    },
+    {
+      "video_id": "6818935442969349382",
+      "url": "https://www.tiktok.com/@impulse_english/video/6818935442969349382",
+      "lane": "proven",
+      "date": "2026-08-17",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-17T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 84800,
+      "upload_date": "20200423",
+      "duration_s": 36
+    },
+    {
+      "video_id": "7409350142161210656",
+      "url": "https://www.tiktok.com/@impulse_english/video/7409350142161210656",
+      "lane": "brand",
+      "date": "2026-08-17",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-17T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1183,
+      "upload_date": "20240831",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6839458350392954117",
+      "url": "https://www.tiktok.com/@impulse_english/video/6839458350392954117",
+      "lane": "mid",
+      "date": "2026-08-17",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-17T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 16600,
+      "upload_date": "20200617",
+      "duration_s": 17
+    },
+    {
+      "video_id": "7134992197602135302",
+      "url": "https://www.tiktok.com/@impulse_english/video/7134992197602135302",
+      "lane": "brand",
+      "date": "2026-08-18",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-18T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1148,
+      "upload_date": "20220823",
+      "duration_s": 208
+    },
+    {
+      "video_id": "6840849286188535046",
+      "url": "https://www.tiktok.com/@impulse_english/video/6840849286188535046",
+      "lane": "proven",
+      "date": "2026-08-18",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-18T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 81100,
+      "upload_date": "20200621",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6834472909508005125",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834472909508005125",
+      "lane": "mid",
+      "date": "2026-08-18",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-18T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 16000,
+      "upload_date": "20200604",
+      "duration_s": 27
+    },
+    {
+      "video_id": "6837531759744240901",
+      "url": "https://www.tiktok.com/@impulse_english/video/6837531759744240901",
+      "lane": "mid",
+      "date": "2026-08-19",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-19T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 16000,
+      "upload_date": "20200612",
+      "duration_s": 27
+    },
+    {
+      "video_id": "6824751518638427398",
+      "url": "https://www.tiktok.com/@impulse_english/video/6824751518638427398",
+      "lane": "proven",
+      "date": "2026-08-19",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-19T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 79800,
+      "upload_date": "20200509",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7447905724836908320",
+      "url": "https://www.tiktok.com/@impulse_english/video/7447905724836908320",
+      "lane": "brand",
+      "date": "2026-08-19",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-19T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1129,
+      "upload_date": "20241213",
+      "duration_s": 16
+    },
+    {
+      "video_id": "6830675720126123269",
+      "url": "https://www.tiktok.com/@impulse_english/video/6830675720126123269",
+      "lane": "mid",
+      "date": "2026-08-20",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-20T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 15900,
+      "upload_date": "20200525",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7145394549907524870",
+      "url": "https://www.tiktok.com/@impulse_english/video/7145394549907524870",
+      "lane": "brand",
+      "date": "2026-08-20",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-20T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1104,
+      "upload_date": "20220920",
+      "duration_s": 18
+    },
+    {
+      "video_id": "6821974331724205317",
+      "url": "https://www.tiktok.com/@impulse_english/video/6821974331724205317",
+      "lane": "proven",
+      "date": "2026-08-20",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-20T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 77700,
+      "upload_date": "20200501",
+      "duration_s": 14
+    },
+    {
+      "video_id": "7143173358828391686",
+      "url": "https://www.tiktok.com/@impulse_english/video/7143173358828391686",
+      "lane": "brand",
+      "date": "2026-08-21",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-21T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1045,
+      "upload_date": "20220914",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6839403315340610822",
+      "url": "https://www.tiktok.com/@impulse_english/video/6839403315340610822",
+      "lane": "mid",
+      "date": "2026-08-21",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-21T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 15900,
+      "upload_date": "20200617",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6864987152757968134",
+      "url": "https://www.tiktok.com/@impulse_english/video/6864987152757968134",
+      "lane": "proven",
+      "date": "2026-08-21",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-21T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 70700,
+      "upload_date": "20200825",
+      "duration_s": 50
+    },
+    {
+      "video_id": "6823851557289725190",
+      "url": "https://www.tiktok.com/@impulse_english/video/6823851557289725190",
+      "lane": "proven",
+      "date": "2026-08-22",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-22T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 68900,
+      "upload_date": "20200506",
+      "duration_s": 55
+    },
+    {
+      "video_id": "6838709353923497222",
+      "url": "https://www.tiktok.com/@impulse_english/video/6838709353923497222",
+      "lane": "mid",
+      "date": "2026-08-22",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-22T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 15500,
+      "upload_date": "20200615",
+      "duration_s": 27
+    },
+    {
+      "video_id": "7133512915335843077",
+      "url": "https://www.tiktok.com/@impulse_english/video/7133512915335843077",
+      "lane": "brand",
+      "date": "2026-08-22",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-22T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1033,
+      "upload_date": "20220819",
+      "duration_s": 22
+    },
+    {
+      "video_id": "6841994968609967365",
+      "url": "https://www.tiktok.com/@impulse_english/video/6841994968609967365",
+      "lane": "proven",
+      "date": "2026-08-23",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-23T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 65600,
+      "upload_date": "20200624",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7134338777404689669",
+      "url": "https://www.tiktok.com/@impulse_english/video/7134338777404689669",
+      "lane": "brand",
+      "date": "2026-08-23",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-23T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 1014,
+      "upload_date": "20220821",
+      "duration_s": 33
+    },
+    {
+      "video_id": "6842002282729475334",
+      "url": "https://www.tiktok.com/@impulse_english/video/6842002282729475334",
+      "lane": "mid",
+      "date": "2026-08-23",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-23T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 15500,
+      "upload_date": "20200624",
+      "duration_s": 14
+    },
+    {
+      "video_id": "7359972412181597473",
+      "url": "https://www.tiktok.com/@impulse_english/video/7359972412181597473",
+      "lane": "brand",
+      "date": "2026-08-24",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-24T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 994,
+      "upload_date": "20240420",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6831574146514767110",
+      "url": "https://www.tiktok.com/@impulse_english/video/6831574146514767110",
+      "lane": "proven",
+      "date": "2026-08-24",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-24T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 64900,
+      "upload_date": "20200527",
+      "duration_s": 28
+    },
+    {
+      "video_id": "6870561305481252097",
+      "url": "https://www.tiktok.com/@impulse_english/video/6870561305481252097",
+      "lane": "mid",
+      "date": "2026-08-24",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-24T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 14200,
+      "upload_date": "20200909",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6817512130640645381",
+      "url": "https://www.tiktok.com/@impulse_english/video/6817512130640645381",
+      "lane": "mid",
+      "date": "2026-08-25",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-25T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 14100,
+      "upload_date": "20200419",
+      "duration_s": 36
+    },
+    {
+      "video_id": "6832609004678679814",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832609004678679814",
+      "lane": "proven",
+      "date": "2026-08-25",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-25T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 57000,
+      "upload_date": "20200530",
+      "duration_s": 14
+    },
+    {
+      "video_id": "7140316313196432646",
+      "url": "https://www.tiktok.com/@impulse_english/video/7140316313196432646",
+      "lane": "brand",
+      "date": "2026-08-25",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-25T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 960,
+      "upload_date": "20220906",
+      "duration_s": 22
+    },
+    {
+      "video_id": "6867610698189409542",
+      "url": "https://www.tiktok.com/@impulse_english/video/6867610698189409542",
+      "lane": "mid",
+      "date": "2026-08-26",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-26T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 14000,
+      "upload_date": "20200901",
+      "duration_s": 31
+    },
+    {
+      "video_id": "7144757833098136838",
+      "url": "https://www.tiktok.com/@impulse_english/video/7144757833098136838",
+      "lane": "brand",
+      "date": "2026-08-26",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-26T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 959,
+      "upload_date": "20220918",
+      "duration_s": 10
+    },
+    {
+      "video_id": "6817855333537565957",
+      "url": "https://www.tiktok.com/@impulse_english/video/6817855333537565957",
+      "lane": "proven",
+      "date": "2026-08-26",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-26T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 54300,
+      "upload_date": "20200420",
+      "duration_s": 30
+    },
+    {
+      "video_id": "7143274439847775493",
+      "url": "https://www.tiktok.com/@impulse_english/video/7143274439847775493",
+      "lane": "brand",
+      "date": "2026-08-27",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-27T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 943,
+      "upload_date": "20220914",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6843860344167730437",
+      "url": "https://www.tiktok.com/@impulse_english/video/6843860344167730437",
+      "lane": "mid",
+      "date": "2026-08-27",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-27T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 13900,
+      "upload_date": "20200629",
+      "duration_s": 29
+    },
+    {
+      "video_id": "6841640370867031301",
+      "url": "https://www.tiktok.com/@impulse_english/video/6841640370867031301",
+      "lane": "proven",
+      "date": "2026-08-27",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-27T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 53700,
+      "upload_date": "20200623",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6846813659885260037",
+      "url": "https://www.tiktok.com/@impulse_english/video/6846813659885260037",
+      "lane": "proven",
+      "date": "2026-08-28",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-28T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 51700,
+      "upload_date": "20200707",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6867959233065880838",
+      "url": "https://www.tiktok.com/@impulse_english/video/6867959233065880838",
+      "lane": "mid",
+      "date": "2026-08-28",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-28T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 13700,
+      "upload_date": "20200902",
+      "duration_s": 25
+    },
+    {
+      "video_id": "7450927178922970401",
+      "url": "https://www.tiktok.com/@impulse_english/video/7450927178922970401",
+      "lane": "brand",
+      "date": "2026-08-28",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-28T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 909,
+      "upload_date": "20241221",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6839802776722148613",
+      "url": "https://www.tiktok.com/@impulse_english/video/6839802776722148613",
+      "lane": "proven",
+      "date": "2026-08-29",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-29T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 49500,
+      "upload_date": "20200618",
+      "duration_s": 19
+    },
+    {
+      "video_id": "7398557808515386657",
+      "url": "https://www.tiktok.com/@impulse_english/video/7398557808515386657",
+      "lane": "brand",
+      "date": "2026-08-29",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-29T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 900,
+      "upload_date": "20240802",
+      "duration_s": 17
+    },
+    {
+      "video_id": "6869793562507185414",
+      "url": "https://www.tiktok.com/@impulse_english/video/6869793562507185414",
+      "lane": "mid",
+      "date": "2026-08-29",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-29T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 13700,
+      "upload_date": "20200907",
+      "duration_s": 22
+    },
+    {
+      "video_id": "7359632275715181857",
+      "url": "https://www.tiktok.com/@impulse_english/video/7359632275715181857",
+      "lane": "brand",
+      "date": "2026-08-30",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-30T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 856,
+      "upload_date": "20240419",
+      "duration_s": 6
+    },
+    {
+      "video_id": "6833448723759090950",
+      "url": "https://www.tiktok.com/@impulse_english/video/6833448723759090950",
+      "lane": "proven",
+      "date": "2026-08-30",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-30T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 47700,
+      "upload_date": "20200601",
+      "duration_s": 21
+    },
+    {
+      "video_id": "6829020482260438277",
+      "url": "https://www.tiktok.com/@impulse_english/video/6829020482260438277",
+      "lane": "mid",
+      "date": "2026-08-30",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-30T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 13500,
+      "upload_date": "20200520",
+      "duration_s": 37
+    },
+    {
+      "video_id": "6835557066082471173",
+      "url": "https://www.tiktok.com/@impulse_english/video/6835557066082471173",
+      "lane": "mid",
+      "date": "2026-08-31",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-31T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 13500,
+      "upload_date": "20200607",
+      "duration_s": 24
+    },
+    {
+      "video_id": "6841646252229135621",
+      "url": "https://www.tiktok.com/@impulse_english/video/6841646252229135621",
+      "lane": "proven",
+      "date": "2026-08-31",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-31T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 46100,
+      "upload_date": "20200623",
+      "duration_s": 26
+    },
+    {
+      "video_id": "7449805914170772768",
+      "url": "https://www.tiktok.com/@impulse_english/video/7449805914170772768",
+      "lane": "brand",
+      "date": "2026-08-31",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-31T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 846,
+      "upload_date": "20241218",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6838077093767695622",
+      "url": "https://www.tiktok.com/@impulse_english/video/6838077093767695622",
+      "lane": "mid",
+      "date": "2026-09-01",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-01T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 13300,
+      "upload_date": "20200614",
+      "duration_s": 28
+    },
+    {
+      "video_id": "7333965395977669920",
+      "url": "https://www.tiktok.com/@impulse_english/video/7333965395977669920",
+      "lane": "brand",
+      "date": "2026-09-01",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-01T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 845,
+      "upload_date": "20240210",
+      "duration_s": 12
+    },
+    {
+      "video_id": "6841209937939467526",
+      "url": "https://www.tiktok.com/@impulse_english/video/6841209937939467526",
+      "lane": "proven",
+      "date": "2026-09-01",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-01T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 44300,
+      "upload_date": "20200622",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7339624599782575392",
+      "url": "https://www.tiktok.com/@impulse_english/video/7339624599782575392",
+      "lane": "brand",
+      "date": "2026-09-02",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-02T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 824,
+      "upload_date": "20240225",
+      "duration_s": 12
+    },
+    {
+      "video_id": "6868693895094521094",
+      "url": "https://www.tiktok.com/@impulse_english/video/6868693895094521094",
+      "lane": "mid",
+      "date": "2026-09-02",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-02T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 13000,
+      "upload_date": "20200904",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6820113311451843846",
+      "url": "https://www.tiktok.com/@impulse_english/video/6820113311451843846",
+      "lane": "proven",
+      "date": "2026-09-02",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-02T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 43900,
+      "upload_date": "20200426",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6853912570718440710",
+      "url": "https://www.tiktok.com/@impulse_english/video/6853912570718440710",
+      "lane": "proven",
+      "date": "2026-09-03",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-03T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 43800,
+      "upload_date": "20200726",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6824548377976458502",
+      "url": "https://www.tiktok.com/@impulse_english/video/6824548377976458502",
+      "lane": "mid",
+      "date": "2026-09-03",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-03T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 12800,
+      "upload_date": "20200508",
+      "duration_s": 27
+    },
+    {
+      "video_id": "7352195189974355232",
+      "url": "https://www.tiktok.com/@impulse_english/video/7352195189974355232",
+      "lane": "brand",
+      "date": "2026-09-03",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-03T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 782,
+      "upload_date": "20240330",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6827358568828783878",
+      "url": "https://www.tiktok.com/@impulse_english/video/6827358568828783878",
+      "lane": "proven",
+      "date": "2026-09-04",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-04T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 43200,
+      "upload_date": "20200516",
+      "duration_s": 34
+    },
+    {
+      "video_id": "7445708494751157537",
+      "url": "https://www.tiktok.com/@impulse_english/video/7445708494751157537",
+      "lane": "brand",
+      "date": "2026-09-04",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-04T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 774,
+      "upload_date": "20241207",
+      "duration_s": 18
+    },
+    {
+      "video_id": "6863174509747391750",
+      "url": "https://www.tiktok.com/@impulse_english/video/6863174509747391750",
+      "lane": "mid",
+      "date": "2026-09-04",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-04T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 12400,
+      "upload_date": "20200820",
+      "duration_s": 30
+    },
+    {
+      "video_id": "7442409202980572448",
+      "url": "https://www.tiktok.com/@impulse_english/video/7442409202980572448",
+      "lane": "brand",
+      "date": "2026-09-05",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-05T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 769,
+      "upload_date": "20241128",
+      "duration_s": 31
+    },
+    {
+      "video_id": "6822734777846697221",
+      "url": "https://www.tiktok.com/@impulse_english/video/6822734777846697221",
+      "lane": "proven",
+      "date": "2026-09-05",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-05T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 43100,
+      "upload_date": "20200503",
+      "duration_s": 33
+    },
+    {
+      "video_id": "6821523653117758726",
+      "url": "https://www.tiktok.com/@impulse_english/video/6821523653117758726",
+      "lane": "mid",
+      "date": "2026-09-05",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-05T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 12000,
+      "upload_date": "20200430",
+      "duration_s": 4
+    },
+    {
+      "video_id": "6863722157462048005",
+      "url": "https://www.tiktok.com/@impulse_english/video/6863722157462048005",
+      "lane": "mid",
+      "date": "2026-09-06",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-06T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 11700,
+      "upload_date": "20200822",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6844971334418697478",
+      "url": "https://www.tiktok.com/@impulse_english/video/6844971334418697478",
+      "lane": "proven",
+      "date": "2026-09-06",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-06T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 42500,
+      "upload_date": "20200702",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7425647030254439713",
+      "url": "https://www.tiktok.com/@impulse_english/video/7425647030254439713",
+      "lane": "brand",
+      "date": "2026-09-06",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-06T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 744,
+      "upload_date": "20241014",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6820740375603350790",
+      "url": "https://www.tiktok.com/@impulse_english/video/6820740375603350790",
+      "lane": "mid",
+      "date": "2026-09-07",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-07T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 11600,
+      "upload_date": "20200428",
+      "duration_s": 36
+    },
+    {
+      "video_id": "7331766464594201889",
+      "url": "https://www.tiktok.com/@impulse_english/video/7331766464594201889",
+      "lane": "brand",
+      "date": "2026-09-07",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-07T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 719,
+      "upload_date": "20240204",
+      "duration_s": 12
+    },
+    {
+      "video_id": "6842396286021422341",
+      "url": "https://www.tiktok.com/@impulse_english/video/6842396286021422341",
+      "lane": "proven",
+      "date": "2026-09-07",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-07T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 41000,
+      "upload_date": "20200625",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7413424105862548768",
+      "url": "https://www.tiktok.com/@impulse_english/video/7413424105862548768",
+      "lane": "brand",
+      "date": "2026-09-08",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-08T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 698,
+      "upload_date": "20240911",
+      "duration_s": 17
+    },
+    {
+      "video_id": "6864653402459098374",
+      "url": "https://www.tiktok.com/@impulse_english/video/6864653402459098374",
+      "lane": "mid",
+      "date": "2026-09-08",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-08T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 9911,
+      "upload_date": "20200824",
+      "duration_s": 24
+    },
+    {
+      "video_id": "6845138632521616646",
+      "url": "https://www.tiktok.com/@impulse_english/video/6845138632521616646",
+      "lane": "proven",
+      "date": "2026-09-08",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-08T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 40300,
+      "upload_date": "20200703",
+      "duration_s": 25
+    },
+    {
+      "video_id": "6862802358942878982",
+      "url": "https://www.tiktok.com/@impulse_english/video/6862802358942878982",
+      "lane": "proven",
+      "date": "2026-09-09",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-09T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 39400,
+      "upload_date": "20200819",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6819941017563745542",
+      "url": "https://www.tiktok.com/@impulse_english/video/6819941017563745542",
+      "lane": "mid",
+      "date": "2026-09-09",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-09T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 9882,
+      "upload_date": "20200426",
+      "duration_s": 26
+    },
+    {
+      "video_id": "7407131194694896929",
+      "url": "https://www.tiktok.com/@impulse_english/video/7407131194694896929",
+      "lane": "brand",
+      "date": "2026-09-09",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-09T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 694,
+      "upload_date": "20240825",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6814578808633462021",
+      "url": "https://www.tiktok.com/@impulse_english/video/6814578808633462021",
+      "lane": "proven",
+      "date": "2026-09-10",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-10T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 39300,
+      "upload_date": "20200411",
+      "duration_s": 58
+    },
+    {
+      "video_id": "7353285975642066209",
+      "url": "https://www.tiktok.com/@impulse_english/video/7353285975642066209",
+      "lane": "brand",
+      "date": "2026-09-10",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-10T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 690,
+      "upload_date": "20240402",
+      "duration_s": 9
+    },
+    {
+      "video_id": "6866495045550279942",
+      "url": "https://www.tiktok.com/@impulse_english/video/6866495045550279942",
+      "lane": "mid",
+      "date": "2026-09-10",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-10T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 9685,
+      "upload_date": "20200829",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7399013683587812641",
+      "url": "https://www.tiktok.com/@impulse_english/video/7399013683587812641",
+      "lane": "brand",
+      "date": "2026-09-11",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-11T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 689,
+      "upload_date": "20240803",
+      "duration_s": 10
+    },
+    {
+      "video_id": "6834024112357133574",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834024112357133574",
+      "lane": "proven",
+      "date": "2026-09-11",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-11T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 38400,
+      "upload_date": "20200603",
+      "duration_s": 18
+    },
+    {
+      "video_id": "6813026977373752582",
+      "url": "https://www.tiktok.com/@impulse_english/video/6813026977373752582",
+      "lane": "mid",
+      "date": "2026-09-11",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-11T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 9682,
+      "upload_date": "20200407",
+      "duration_s": 46
+    },
+    {
+      "video_id": "6829640174796819717",
+      "url": "https://www.tiktok.com/@impulse_english/video/6829640174796819717",
+      "lane": "mid",
+      "date": "2026-09-12",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-12T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 9128,
+      "upload_date": "20200522",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6834403087667498245",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834403087667498245",
+      "lane": "proven",
+      "date": "2026-09-12",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-12T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 38200,
+      "upload_date": "20200604",
+      "duration_s": 29
+    },
+    {
+      "video_id": "7335122695333498145",
+      "url": "https://www.tiktok.com/@impulse_english/video/7335122695333498145",
+      "lane": "brand",
+      "date": "2026-09-12",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-12T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 671,
+      "upload_date": "20240213",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6867369600263277829",
+      "url": "https://www.tiktok.com/@impulse_english/video/6867369600263277829",
+      "lane": "mid",
+      "date": "2026-09-13",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-13T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 9030,
+      "upload_date": "20200901",
+      "duration_s": 14
+    },
+    {
+      "video_id": "7408236862860578081",
+      "url": "https://www.tiktok.com/@impulse_english/video/7408236862860578081",
+      "lane": "brand",
+      "date": "2026-09-13",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-13T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 666,
+      "upload_date": "20240828",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6830828291172125957",
+      "url": "https://www.tiktok.com/@impulse_english/video/6830828291172125957",
+      "lane": "proven",
+      "date": "2026-09-13",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-13T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 35700,
+      "upload_date": "20200525",
+      "duration_s": 14
+    },
+    {
+      "video_id": "7342299407221558560",
+      "url": "https://www.tiktok.com/@impulse_english/video/7342299407221558560",
+      "lane": "brand",
+      "date": "2026-09-14",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-14T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 654,
+      "upload_date": "20240304",
+      "duration_s": 7
+    },
+    {
+      "video_id": "6866813418813279494",
+      "url": "https://www.tiktok.com/@impulse_english/video/6866813418813279494",
+      "lane": "mid",
+      "date": "2026-09-14",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-14T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 8920,
+      "upload_date": "20200830",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6826824462604766470",
+      "url": "https://www.tiktok.com/@impulse_english/video/6826824462604766470",
+      "lane": "proven",
+      "date": "2026-09-14",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-14T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 34400,
+      "upload_date": "20200514",
+      "duration_s": 30
+    },
+    {
+      "video_id": "6834930509844385030",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834930509844385030",
+      "lane": "proven",
+      "date": "2026-09-15",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-15T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 34000,
+      "upload_date": "20200605",
+      "duration_s": 21
+    },
+    {
+      "video_id": "6821213278543301894",
+      "url": "https://www.tiktok.com/@impulse_english/video/6821213278543301894",
+      "lane": "mid",
+      "date": "2026-09-15",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-15T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 8765,
+      "upload_date": "20200429",
+      "duration_s": 28
+    },
+    {
+      "video_id": "7434916200674512161",
+      "url": "https://www.tiktok.com/@impulse_english/video/7434916200674512161",
+      "lane": "brand",
+      "date": "2026-09-15",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-15T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 636,
+      "upload_date": "20241108",
+      "duration_s": 25
+    },
+    {
+      "video_id": "6844250136206396678",
+      "url": "https://www.tiktok.com/@impulse_english/video/6844250136206396678",
+      "lane": "proven",
+      "date": "2026-09-16",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-16T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 33600,
+      "upload_date": "20200630",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7333241495945809185",
+      "url": "https://www.tiktok.com/@impulse_english/video/7333241495945809185",
+      "lane": "brand",
+      "date": "2026-09-16",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-16T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 619,
+      "upload_date": "20240208",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6816743486654598405",
+      "url": "https://www.tiktok.com/@impulse_english/video/6816743486654598405",
+      "lane": "mid",
+      "date": "2026-09-16",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-16T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 8731,
+      "upload_date": "20200417",
+      "duration_s": 42
+    },
+    {
+      "video_id": "7338509611269410080",
+      "url": "https://www.tiktok.com/@impulse_english/video/7338509611269410080",
+      "lane": "brand",
+      "date": "2026-09-17",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-17T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 607,
+      "upload_date": "20240222",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6839356084004719877",
+      "url": "https://www.tiktok.com/@impulse_english/video/6839356084004719877",
+      "lane": "proven",
+      "date": "2026-09-17",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-17T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 31500,
+      "upload_date": "20200617",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6866113892087516421",
+      "url": "https://www.tiktok.com/@impulse_english/video/6866113892087516421",
+      "lane": "mid",
+      "date": "2026-09-17",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-17T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 8591,
+      "upload_date": "20200828",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6863896067197390086",
+      "url": "https://www.tiktok.com/@impulse_english/video/6863896067197390086",
+      "lane": "mid",
+      "date": "2026-09-18",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-18T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 8562,
+      "upload_date": "20200822",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6829235401807449350",
+      "url": "https://www.tiktok.com/@impulse_english/video/6829235401807449350",
+      "lane": "proven",
+      "date": "2026-09-18",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-18T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 31200,
+      "upload_date": "20200521",
+      "duration_s": 29
+    },
+    {
+      "video_id": "7349606207952276769",
+      "url": "https://www.tiktok.com/@impulse_english/video/7349606207952276769",
+      "lane": "brand",
+      "date": "2026-09-18",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-18T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 599,
+      "upload_date": "20240323",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6868342950154341638",
+      "url": "https://www.tiktok.com/@impulse_english/video/6868342950154341638",
+      "lane": "mid",
+      "date": "2026-09-19",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-19T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 8387,
+      "upload_date": "20200903",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7448654228542803233",
+      "url": "https://www.tiktok.com/@impulse_english/video/7448654228542803233",
+      "lane": "brand",
+      "date": "2026-09-19",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-19T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 595,
+      "upload_date": "20241215",
+      "duration_s": 12
+    },
+    {
+      "video_id": "6820506671727611142",
+      "url": "https://www.tiktok.com/@impulse_english/video/6820506671727611142",
+      "lane": "proven",
+      "date": "2026-09-19",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-19T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 31000,
+      "upload_date": "20200427",
+      "duration_s": 11
+    },
+    {
+      "video_id": "7332539519096343841",
+      "url": "https://www.tiktok.com/@impulse_english/video/7332539519096343841",
+      "lane": "brand",
+      "date": "2026-09-20",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-20T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 592,
+      "upload_date": "20240206",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6822956381528657157",
+      "url": "https://www.tiktok.com/@impulse_english/video/6822956381528657157",
+      "lane": "mid",
+      "date": "2026-09-20",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-20T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 8301,
+      "upload_date": "20200504",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6825984424564264197",
+      "url": "https://www.tiktok.com/@impulse_english/video/6825984424564264197",
+      "lane": "proven",
+      "date": "2026-09-20",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-20T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 30300,
+      "upload_date": "20200512",
+      "duration_s": 30
+    },
+    {
+      "video_id": "6836981641370553606",
+      "url": "https://www.tiktok.com/@impulse_english/video/6836981641370553606",
+      "lane": "proven",
+      "date": "2026-09-21",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-21T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 30000,
+      "upload_date": "20200611",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6830010460792704262",
+      "url": "https://www.tiktok.com/@impulse_english/video/6830010460792704262",
+      "lane": "mid",
+      "date": "2026-09-21",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-21T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 8208,
+      "upload_date": "20200523",
+      "duration_s": 30
+    },
+    {
+      "video_id": "7434630988380065057",
+      "url": "https://www.tiktok.com/@impulse_english/video/7434630988380065057",
+      "lane": "brand",
+      "date": "2026-09-21",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-21T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 591,
+      "upload_date": "20241107",
+      "duration_s": 21
+    },
+    {
+      "video_id": "6840956466283728133",
+      "url": "https://www.tiktok.com/@impulse_english/video/6840956466283728133",
+      "lane": "proven",
+      "date": "2026-09-22",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-22T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 29500,
+      "upload_date": "20200622",
+      "duration_s": 20
+    },
+    {
+      "video_id": "7343644631608970529",
+      "url": "https://www.tiktok.com/@impulse_english/video/7343644631608970529",
+      "lane": "brand",
+      "date": "2026-09-22",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-22T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 588,
+      "upload_date": "20240307",
+      "duration_s": 12
+    },
+    {
+      "video_id": "6812665726806084870",
+      "url": "https://www.tiktok.com/@impulse_english/video/6812665726806084870",
+      "lane": "mid",
+      "date": "2026-09-22",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-22T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 8106,
+      "upload_date": "20200406",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7346613291172597025",
+      "url": "https://www.tiktok.com/@impulse_english/video/7346613291172597025",
+      "lane": "brand",
+      "date": "2026-09-23",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-23T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 586,
+      "upload_date": "20240315",
+      "duration_s": 7
+    },
+    {
+      "video_id": "6814917697051102469",
+      "url": "https://www.tiktok.com/@impulse_english/video/6814917697051102469",
+      "lane": "proven",
+      "date": "2026-09-23",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-23T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 28900,
+      "upload_date": "20200412",
+      "duration_s": 22
+    },
+    {
+      "video_id": "6826439289476320517",
+      "url": "https://www.tiktok.com/@impulse_english/video/6826439289476320517",
+      "lane": "mid",
+      "date": "2026-09-23",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-23T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 7644,
+      "upload_date": "20200513",
+      "duration_s": 32
+    },
+    {
+      "video_id": "6830064979811503365",
+      "url": "https://www.tiktok.com/@impulse_english/video/6830064979811503365",
+      "lane": "mid",
+      "date": "2026-09-24",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-24T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 7495,
+      "upload_date": "20200523",
+      "duration_s": 40
+    },
+    {
+      "video_id": "6833440934139677958",
+      "url": "https://www.tiktok.com/@impulse_english/video/6833440934139677958",
+      "lane": "proven",
+      "date": "2026-09-24",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-24T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 28600,
+      "upload_date": "20200601",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7355890393432476960",
+      "url": "https://www.tiktok.com/@impulse_english/video/7355890393432476960",
+      "lane": "brand",
+      "date": "2026-09-24",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-24T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 578,
+      "upload_date": "20240409",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6815922092114988294",
+      "url": "https://www.tiktok.com/@impulse_english/video/6815922092114988294",
+      "lane": "mid",
+      "date": "2026-09-25",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-25T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 7158,
+      "upload_date": "20200415",
+      "duration_s": 11
+    },
+    {
+      "video_id": "7424185620731366688",
+      "url": "https://www.tiktok.com/@impulse_english/video/7424185620731366688",
+      "lane": "brand",
+      "date": "2026-09-25",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-25T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 578,
+      "upload_date": "20241010",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6854237059796847878",
+      "url": "https://www.tiktok.com/@impulse_english/video/6854237059796847878",
+      "lane": "proven",
+      "date": "2026-09-25",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-25T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 27400,
+      "upload_date": "20200727",
+      "duration_s": 19
+    },
+    {
+      "video_id": "7444959071284858145",
+      "url": "https://www.tiktok.com/@impulse_english/video/7444959071284858145",
+      "lane": "brand",
+      "date": "2026-09-26",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-26T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 568,
+      "upload_date": "20241205",
+      "duration_s": 23
+    },
+    {
+      "video_id": "6866885054279257349",
+      "url": "https://www.tiktok.com/@impulse_english/video/6866885054279257349",
+      "lane": "mid",
+      "date": "2026-09-26",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-26T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 6871,
+      "upload_date": "20200830",
+      "duration_s": 27
+    },
+    {
+      "video_id": "6813808765415083270",
+      "url": "https://www.tiktok.com/@impulse_english/video/6813808765415083270",
+      "lane": "proven",
+      "date": "2026-09-26",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-26T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 27200,
+      "upload_date": "20200409",
+      "duration_s": 22
+    },
+    {
+      "video_id": "6822351792005827845",
+      "url": "https://www.tiktok.com/@impulse_english/video/6822351792005827845",
+      "lane": "proven",
+      "date": "2026-09-27",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-27T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 26600,
+      "upload_date": "20200502",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6819361463208086790",
+      "url": "https://www.tiktok.com/@impulse_english/video/6819361463208086790",
+      "lane": "mid",
+      "date": "2026-09-27",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-27T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 6321,
+      "upload_date": "20200424",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7440552225820151073",
+      "url": "https://www.tiktok.com/@impulse_english/video/7440552225820151073",
+      "lane": "brand",
+      "date": "2026-09-27",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-27T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 558,
+      "upload_date": "20241123",
+      "duration_s": 11
+    },
+    {
+      "video_id": "6854637544383073542",
+      "url": "https://www.tiktok.com/@impulse_english/video/6854637544383073542",
+      "lane": "proven",
+      "date": "2026-09-28",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-28T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 26200,
+      "upload_date": "20200728",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7341808721028222240",
+      "url": "https://www.tiktok.com/@impulse_english/video/7341808721028222240",
+      "lane": "brand",
+      "date": "2026-09-28",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-28T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 552,
+      "upload_date": "20240302",
+      "duration_s": 11
+    },
+    {
+      "video_id": "6823107739133168901",
+      "url": "https://www.tiktok.com/@impulse_english/video/6823107739133168901",
+      "lane": "mid",
+      "date": "2026-09-28",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-28T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 6269,
+      "upload_date": "20200504",
+      "duration_s": 27
+    },
+    {
+      "video_id": "7346999799566060832",
+      "url": "https://www.tiktok.com/@impulse_english/video/7346999799566060832",
+      "lane": "brand",
+      "date": "2026-09-29",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-29T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 551,
+      "upload_date": "20240316",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7336231919266303265",
+      "url": "https://www.tiktok.com/@impulse_english/video/7336231919266303265",
+      "lane": "brand",
+      "date": "2026-09-29",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-29T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 535,
+      "upload_date": "20240216",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6844394821470178565",
+      "url": "https://www.tiktok.com/@impulse_english/video/6844394821470178565",
+      "lane": "proven",
+      "date": "2026-09-29",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-29T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 25900,
+      "upload_date": "20200701",
+      "duration_s": 21
+    },
+    {
+      "video_id": "7446072119609298209",
+      "url": "https://www.tiktok.com/@impulse_english/video/7446072119609298209",
+      "lane": "brand",
+      "date": "2026-09-30",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-30T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 535,
+      "upload_date": "20241208",
+      "duration_s": 21
+    },
+    {
+      "video_id": "6865357538913783045",
+      "url": "https://www.tiktok.com/@impulse_english/video/6865357538913783045",
+      "lane": "mid",
+      "date": "2026-09-30",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-30T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 5658,
+      "upload_date": "20200826",
+      "duration_s": 19
+    },
+    {
+      "video_id": "7420823264861113633",
+      "url": "https://www.tiktok.com/@impulse_english/video/7420823264861113633",
+      "lane": "brand",
+      "date": "2026-09-30",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-30T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 535,
+      "upload_date": "20241001",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6836051788508974341",
+      "url": "https://www.tiktok.com/@impulse_english/video/6836051788508974341",
+      "lane": "proven",
+      "date": "2026-10-01",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-01T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 24700,
+      "upload_date": "20200608",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7357011785330855201",
+      "url": "https://www.tiktok.com/@impulse_english/video/7357011785330855201",
+      "lane": "brand",
+      "date": "2026-10-01",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-01T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 533,
+      "upload_date": "20240412",
+      "duration_s": 9
+    },
+    {
+      "video_id": "7341426858963078433",
+      "url": "https://www.tiktok.com/@impulse_english/video/7341426858963078433",
+      "lane": "brand",
+      "date": "2026-10-01",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-01T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 531,
+      "upload_date": "20240301",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7410798690773781792",
+      "url": "https://www.tiktok.com/@impulse_english/video/7410798690773781792",
+      "lane": "brand",
+      "date": "2026-10-02",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-02T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 521,
+      "upload_date": "20240904",
+      "duration_s": 29
+    },
+    {
+      "video_id": "7350756756164726049",
+      "url": "https://www.tiktok.com/@impulse_english/video/7350756756164726049",
+      "lane": "brand",
+      "date": "2026-10-02",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-02T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 520,
+      "upload_date": "20240326",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6814153213479062789",
+      "url": "https://www.tiktok.com/@impulse_english/video/6814153213479062789",
+      "lane": "mid",
+      "date": "2026-10-02",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-02T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 5056,
+      "upload_date": "20200410",
+      "duration_s": 47
+    },
+    {
+      "video_id": "7354754177379159328",
+      "url": "https://www.tiktok.com/@impulse_english/video/7354754177379159328",
+      "lane": "brand",
+      "date": "2026-10-03",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-03T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 515,
+      "upload_date": "20240406",
+      "duration_s": 9
+    },
+    {
+      "video_id": "6842400647552175366",
+      "url": "https://www.tiktok.com/@impulse_english/video/6842400647552175366",
+      "lane": "proven",
+      "date": "2026-10-03",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-03T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 24400,
+      "upload_date": "20200625",
+      "duration_s": 39
+    },
+    {
+      "video_id": "7349227359985339680",
+      "url": "https://www.tiktok.com/@impulse_english/video/7349227359985339680",
+      "lane": "brand",
+      "date": "2026-10-03",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-03T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 519,
+      "upload_date": "20240322",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6812947848544505093",
+      "url": "https://www.tiktok.com/@impulse_english/video/6812947848544505093",
+      "lane": "mid",
+      "date": "2026-10-04",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-04T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 4885,
+      "upload_date": "20200407",
+      "duration_s": 36
+    },
+    {
+      "video_id": "7354383257745575201",
+      "url": "https://www.tiktok.com/@impulse_english/video/7354383257745575201",
+      "lane": "brand",
+      "date": "2026-10-04",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-04T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 509,
+      "upload_date": "20240405",
+      "duration_s": 9
+    },
+    {
+      "video_id": "7344024488230522144",
+      "url": "https://www.tiktok.com/@impulse_english/video/7344024488230522144",
+      "lane": "brand",
+      "date": "2026-10-04",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-04T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 507,
+      "upload_date": "20240308",
+      "duration_s": 9
+    },
+    {
+      "video_id": "7344301929612266785",
+      "url": "https://www.tiktok.com/@impulse_english/video/7344301929612266785",
+      "lane": "brand",
+      "date": "2026-10-05",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-05T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 503,
+      "upload_date": "20240309",
+      "duration_s": 10
+    },
+    {
+      "video_id": "7351817001792212257",
+      "url": "https://www.tiktok.com/@impulse_english/video/7351817001792212257",
+      "lane": "brand",
+      "date": "2026-10-05",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-05T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 495,
+      "upload_date": "20240329",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6853851065746509061",
+      "url": "https://www.tiktok.com/@impulse_english/video/6853851065746509061",
+      "lane": "proven",
+      "date": "2026-10-05",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-05T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 24300,
+      "upload_date": "20200726",
+      "duration_s": 12
+    },
+    {
+      "video_id": "7348144053562641697",
+      "url": "https://www.tiktok.com/@impulse_english/video/7348144053562641697",
+      "lane": "brand",
+      "date": "2026-10-06",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-06T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 486,
+      "upload_date": "20240319",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6813389162562047238",
+      "url": "https://www.tiktok.com/@impulse_english/video/6813389162562047238",
+      "lane": "mid",
+      "date": "2026-10-06",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-06T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 4544,
+      "upload_date": "20200408",
+      "duration_s": 38
+    },
+    {
+      "video_id": "7443126573127028001",
+      "url": "https://www.tiktok.com/@impulse_english/video/7443126573127028001",
+      "lane": "brand",
+      "date": "2026-10-06",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-06T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 488,
+      "upload_date": "20241130",
+      "duration_s": 25
+    },
+    {
+      "video_id": "6836055701362609414",
+      "url": "https://www.tiktok.com/@impulse_english/video/6836055701362609414",
+      "lane": "proven",
+      "date": "2026-10-07",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-07T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 23900,
+      "upload_date": "20200608",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7341055028104301856",
+      "url": "https://www.tiktok.com/@impulse_english/video/7341055028104301856",
+      "lane": "brand",
+      "date": "2026-10-07",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-07T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 485,
+      "upload_date": "20240229",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7357398219984309537",
+      "url": "https://www.tiktok.com/@impulse_english/video/7357398219984309537",
+      "lane": "brand",
+      "date": "2026-10-07",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-07T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 472,
+      "upload_date": "20240413",
+      "duration_s": 10
+    },
+    {
+      "video_id": "7338828666987711776",
+      "url": "https://www.tiktok.com/@impulse_english/video/7338828666987711776",
+      "lane": "brand",
+      "date": "2026-10-08",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-08T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 468,
+      "upload_date": "20240223",
+      "duration_s": 11
+    },
+    {
+      "video_id": "7345565210289163552",
+      "url": "https://www.tiktok.com/@impulse_english/video/7345565210289163552",
+      "lane": "brand",
+      "date": "2026-10-08",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-08T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 405,
+      "upload_date": "20240312",
+      "duration_s": 9
+    },
+    {
+      "video_id": "6813270510873365766",
+      "url": "https://www.tiktok.com/@impulse_english/video/6813270510873365766",
+      "lane": "mid",
+      "date": "2026-10-08",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-08T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 4300,
+      "upload_date": "20200408",
+      "duration_s": 59
+    },
+    {
+      "video_id": "7358509586212539680",
+      "url": "https://www.tiktok.com/@impulse_english/video/7358509586212539680",
+      "lane": "brand",
+      "date": "2026-10-09",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-09T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 217,
+      "upload_date": "20240416",
+      "duration_s": 10
+    },
+    {
+      "video_id": "6835883337123368197",
+      "url": "https://www.tiktok.com/@impulse_english/video/6835883337123368197",
+      "lane": "proven",
+      "date": "2026-10-09",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-09T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 23000,
+      "upload_date": "20200608",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7358509588989103393",
+      "url": "https://www.tiktok.com/@impulse_english/video/7358509588989103393",
+      "lane": "brand",
+      "date": "2026-10-09",
+      "time": "20:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-09T20:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 246,
+      "upload_date": "20240416",
+      "duration_s": 10
+    },
+    {
+      "video_id": "6815520964067986694",
+      "url": "https://www.tiktok.com/@impulse_english/video/6815520964067986694",
+      "lane": "mid",
+      "date": "2026-10-10",
+      "time": "07:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-10T07:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 3906,
+      "upload_date": "20200414",
+      "duration_s": 29
+    },
+    {
+      "video_id": "6823288329425997061",
+      "url": "https://www.tiktok.com/@impulse_english/video/6823288329425997061",
+      "lane": "mid",
+      "date": "2026-10-10",
+      "time": "14:30",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-10T14:30:00+02:00",
+      "platforms": [
+        "youtube",
+        "x"
+      ],
+      "tiktok_views": 2748,
+      "upload_date": "20200505",
+      "duration_s": 26
+    }
+  ],
+  "instagram": [
+    {
+      "video_id": "6838978909803973893",
+      "url": "https://www.tiktok.com/@impulse_english/video/6838978909803973893",
+      "date": "2026-07-31",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-07-31T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1000000,
+      "upload_date": "20200616",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6852368693230423302",
+      "url": "https://www.tiktok.com/@impulse_english/video/6852368693230423302",
+      "date": "2026-08-01",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-01T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 864000,
+      "upload_date": "20200722",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6832202330478316806",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832202330478316806",
+      "date": "2026-08-02",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-02T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 534700,
+      "upload_date": "20200529",
+      "duration_s": 12
+    },
+    {
+      "video_id": "6828523492527361286",
+      "url": "https://www.tiktok.com/@impulse_english/video/6828523492527361286",
+      "date": "2026-08-03",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-03T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 414100,
+      "upload_date": "20200519",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6845294580129139973",
+      "url": "https://www.tiktok.com/@impulse_english/video/6845294580129139973",
+      "date": "2026-08-04",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-04T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 406300,
+      "upload_date": "20200703",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6819208402993024261",
+      "url": "https://www.tiktok.com/@impulse_english/video/6819208402993024261",
+      "date": "2026-08-05",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-05T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 260600,
+      "upload_date": "20200424",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6831206739459804421",
+      "url": "https://www.tiktok.com/@impulse_english/video/6831206739459804421",
+      "date": "2026-08-06",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-06T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 236400,
+      "upload_date": "20200526",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6845357470341188869",
+      "url": "https://www.tiktok.com/@impulse_english/video/6845357470341188869",
+      "date": "2026-08-07",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-07T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 196200,
+      "upload_date": "20200703",
+      "duration_s": 25
+    },
+    {
+      "video_id": "6821924723031543045",
+      "url": "https://www.tiktok.com/@impulse_english/video/6821924723031543045",
+      "date": "2026-08-08",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-08T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 170500,
+      "upload_date": "20200501",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6834229949457583365",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834229949457583365",
+      "date": "2026-08-09",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-09T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 159300,
+      "upload_date": "20200603",
+      "duration_s": 12
+    },
+    {
+      "video_id": "6852023036007304454",
+      "url": "https://www.tiktok.com/@impulse_english/video/6852023036007304454",
+      "date": "2026-08-10",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-10T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 144300,
+      "upload_date": "20200721",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6822203475800182021",
+      "url": "https://www.tiktok.com/@impulse_english/video/6822203475800182021",
+      "date": "2026-08-11",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-11T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 124300,
+      "upload_date": "20200502",
+      "duration_s": 39
+    },
+    {
+      "video_id": "6829194426888293638",
+      "url": "https://www.tiktok.com/@impulse_english/video/6829194426888293638",
+      "date": "2026-08-12",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-12T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 116000,
+      "upload_date": "20200521",
+      "duration_s": 17
+    },
+    {
+      "video_id": "6840726948860251397",
+      "url": "https://www.tiktok.com/@impulse_english/video/6840726948860251397",
+      "date": "2026-08-13",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-13T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 108200,
+      "upload_date": "20200621",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6832039005983411462",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832039005983411462",
+      "date": "2026-08-14",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-14T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 95600,
+      "upload_date": "20200528",
+      "duration_s": 24
+    },
+    {
+      "video_id": "6832395878905548038",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832395878905548038",
+      "date": "2026-08-15",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-15T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 89800,
+      "upload_date": "20200529",
+      "duration_s": 12
+    },
+    {
+      "video_id": "6837351792414559493",
+      "url": "https://www.tiktok.com/@impulse_english/video/6837351792414559493",
+      "date": "2026-08-16",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-16T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 87300,
+      "upload_date": "20200612",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6818935442969349382",
+      "url": "https://www.tiktok.com/@impulse_english/video/6818935442969349382",
+      "date": "2026-08-17",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-17T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 84800,
+      "upload_date": "20200423",
+      "duration_s": 36
+    },
+    {
+      "video_id": "6840849286188535046",
+      "url": "https://www.tiktok.com/@impulse_english/video/6840849286188535046",
+      "date": "2026-08-18",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-18T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 81100,
+      "upload_date": "20200621",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6824751518638427398",
+      "url": "https://www.tiktok.com/@impulse_english/video/6824751518638427398",
+      "date": "2026-08-19",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-19T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 79800,
+      "upload_date": "20200509",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6821974331724205317",
+      "url": "https://www.tiktok.com/@impulse_english/video/6821974331724205317",
+      "date": "2026-08-20",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-20T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 77700,
+      "upload_date": "20200501",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6864987152757968134",
+      "url": "https://www.tiktok.com/@impulse_english/video/6864987152757968134",
+      "date": "2026-08-21",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-21T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 70700,
+      "upload_date": "20200825",
+      "duration_s": 50
+    },
+    {
+      "video_id": "6823851557289725190",
+      "url": "https://www.tiktok.com/@impulse_english/video/6823851557289725190",
+      "date": "2026-08-22",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-22T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 68900,
+      "upload_date": "20200506",
+      "duration_s": 55
+    },
+    {
+      "video_id": "6841994968609967365",
+      "url": "https://www.tiktok.com/@impulse_english/video/6841994968609967365",
+      "date": "2026-08-23",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-23T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 65600,
+      "upload_date": "20200624",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6831574146514767110",
+      "url": "https://www.tiktok.com/@impulse_english/video/6831574146514767110",
+      "date": "2026-08-24",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-24T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 64900,
+      "upload_date": "20200527",
+      "duration_s": 28
+    },
+    {
+      "video_id": "6832609004678679814",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832609004678679814",
+      "date": "2026-08-25",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-25T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 57000,
+      "upload_date": "20200530",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6817855333537565957",
+      "url": "https://www.tiktok.com/@impulse_english/video/6817855333537565957",
+      "date": "2026-08-26",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-26T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 54300,
+      "upload_date": "20200420",
+      "duration_s": 30
+    },
+    {
+      "video_id": "6841640370867031301",
+      "url": "https://www.tiktok.com/@impulse_english/video/6841640370867031301",
+      "date": "2026-08-27",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-27T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 53700,
+      "upload_date": "20200623",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6846813659885260037",
+      "url": "https://www.tiktok.com/@impulse_english/video/6846813659885260037",
+      "date": "2026-08-28",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-28T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 51700,
+      "upload_date": "20200707",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6839802776722148613",
+      "url": "https://www.tiktok.com/@impulse_english/video/6839802776722148613",
+      "date": "2026-08-29",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-29T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 49500,
+      "upload_date": "20200618",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6833448723759090950",
+      "url": "https://www.tiktok.com/@impulse_english/video/6833448723759090950",
+      "date": "2026-08-30",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-30T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 47700,
+      "upload_date": "20200601",
+      "duration_s": 21
+    },
+    {
+      "video_id": "6841646252229135621",
+      "url": "https://www.tiktok.com/@impulse_english/video/6841646252229135621",
+      "date": "2026-08-31",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-08-31T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 46100,
+      "upload_date": "20200623",
+      "duration_s": 26
+    },
+    {
+      "video_id": "6841209937939467526",
+      "url": "https://www.tiktok.com/@impulse_english/video/6841209937939467526",
+      "date": "2026-09-01",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-01T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 44300,
+      "upload_date": "20200622",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6820113311451843846",
+      "url": "https://www.tiktok.com/@impulse_english/video/6820113311451843846",
+      "date": "2026-09-02",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-02T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 43900,
+      "upload_date": "20200426",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6853912570718440710",
+      "url": "https://www.tiktok.com/@impulse_english/video/6853912570718440710",
+      "date": "2026-09-03",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-03T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 43800,
+      "upload_date": "20200726",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6827358568828783878",
+      "url": "https://www.tiktok.com/@impulse_english/video/6827358568828783878",
+      "date": "2026-09-04",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-04T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 43200,
+      "upload_date": "20200516",
+      "duration_s": 34
+    },
+    {
+      "video_id": "6822734777846697221",
+      "url": "https://www.tiktok.com/@impulse_english/video/6822734777846697221",
+      "date": "2026-09-05",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-05T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 43100,
+      "upload_date": "20200503",
+      "duration_s": 33
+    },
+    {
+      "video_id": "6844971334418697478",
+      "url": "https://www.tiktok.com/@impulse_english/video/6844971334418697478",
+      "date": "2026-09-06",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-06T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 42500,
+      "upload_date": "20200702",
+      "duration_s": 8
+    },
+    {
+      "video_id": "6842396286021422341",
+      "url": "https://www.tiktok.com/@impulse_english/video/6842396286021422341",
+      "date": "2026-09-07",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-07T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 41000,
+      "upload_date": "20200625",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6845138632521616646",
+      "url": "https://www.tiktok.com/@impulse_english/video/6845138632521616646",
+      "date": "2026-09-08",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-08T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 40300,
+      "upload_date": "20200703",
+      "duration_s": 25
+    },
+    {
+      "video_id": "6862802358942878982",
+      "url": "https://www.tiktok.com/@impulse_english/video/6862802358942878982",
+      "date": "2026-09-09",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-09T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 39400,
+      "upload_date": "20200819",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6814578808633462021",
+      "url": "https://www.tiktok.com/@impulse_english/video/6814578808633462021",
+      "date": "2026-09-10",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-10T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 39300,
+      "upload_date": "20200411",
+      "duration_s": 58
+    },
+    {
+      "video_id": "6834024112357133574",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834024112357133574",
+      "date": "2026-09-11",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-11T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 38400,
+      "upload_date": "20200603",
+      "duration_s": 18
+    },
+    {
+      "video_id": "6834403087667498245",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834403087667498245",
+      "date": "2026-09-12",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-12T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 38200,
+      "upload_date": "20200604",
+      "duration_s": 29
+    },
+    {
+      "video_id": "6830828291172125957",
+      "url": "https://www.tiktok.com/@impulse_english/video/6830828291172125957",
+      "date": "2026-09-13",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-13T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 35700,
+      "upload_date": "20200525",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6826824462604766470",
+      "url": "https://www.tiktok.com/@impulse_english/video/6826824462604766470",
+      "date": "2026-09-14",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-14T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 34400,
+      "upload_date": "20200514",
+      "duration_s": 30
+    },
+    {
+      "video_id": "6834930509844385030",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834930509844385030",
+      "date": "2026-09-15",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-15T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 34000,
+      "upload_date": "20200605",
+      "duration_s": 21
+    },
+    {
+      "video_id": "6844250136206396678",
+      "url": "https://www.tiktok.com/@impulse_english/video/6844250136206396678",
+      "date": "2026-09-16",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-16T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 33600,
+      "upload_date": "20200630",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6839356084004719877",
+      "url": "https://www.tiktok.com/@impulse_english/video/6839356084004719877",
+      "date": "2026-09-17",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-17T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 31500,
+      "upload_date": "20200617",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6829235401807449350",
+      "url": "https://www.tiktok.com/@impulse_english/video/6829235401807449350",
+      "date": "2026-09-18",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-18T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 31200,
+      "upload_date": "20200521",
+      "duration_s": 29
+    },
+    {
+      "video_id": "6820506671727611142",
+      "url": "https://www.tiktok.com/@impulse_english/video/6820506671727611142",
+      "date": "2026-09-19",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-19T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 31000,
+      "upload_date": "20200427",
+      "duration_s": 11
+    },
+    {
+      "video_id": "6825984424564264197",
+      "url": "https://www.tiktok.com/@impulse_english/video/6825984424564264197",
+      "date": "2026-09-20",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-20T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 30300,
+      "upload_date": "20200512",
+      "duration_s": 30
+    },
+    {
+      "video_id": "6836981641370553606",
+      "url": "https://www.tiktok.com/@impulse_english/video/6836981641370553606",
+      "date": "2026-09-21",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-21T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 30000,
+      "upload_date": "20200611",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6840956466283728133",
+      "url": "https://www.tiktok.com/@impulse_english/video/6840956466283728133",
+      "date": "2026-09-22",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-22T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 29500,
+      "upload_date": "20200622",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6814917697051102469",
+      "url": "https://www.tiktok.com/@impulse_english/video/6814917697051102469",
+      "date": "2026-09-23",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-23T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 28900,
+      "upload_date": "20200412",
+      "duration_s": 22
+    },
+    {
+      "video_id": "6833440934139677958",
+      "url": "https://www.tiktok.com/@impulse_english/video/6833440934139677958",
+      "date": "2026-09-24",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-24T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 28600,
+      "upload_date": "20200601",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7277085546701278496",
+      "url": "https://www.tiktok.com/@impulse_english/video/7277085546701278496",
+      "date": "2026-09-25",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-25T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 27500,
+      "upload_date": "20230910",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6854237059796847878",
+      "url": "https://www.tiktok.com/@impulse_english/video/6854237059796847878",
+      "date": "2026-09-26",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-26T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 27400,
+      "upload_date": "20200727",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6813808765415083270",
+      "url": "https://www.tiktok.com/@impulse_english/video/6813808765415083270",
+      "date": "2026-09-27",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-27T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 27200,
+      "upload_date": "20200409",
+      "duration_s": 22
+    },
+    {
+      "video_id": "6822351792005827845",
+      "url": "https://www.tiktok.com/@impulse_english/video/6822351792005827845",
+      "date": "2026-09-28",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-28T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 26600,
+      "upload_date": "20200502",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6854637544383073542",
+      "url": "https://www.tiktok.com/@impulse_english/video/6854637544383073542",
+      "date": "2026-09-29",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-29T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 26200,
+      "upload_date": "20200728",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6844394821470178565",
+      "url": "https://www.tiktok.com/@impulse_english/video/6844394821470178565",
+      "date": "2026-09-30",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-09-30T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 25900,
+      "upload_date": "20200701",
+      "duration_s": 21
+    },
+    {
+      "video_id": "6836051788508974341",
+      "url": "https://www.tiktok.com/@impulse_english/video/6836051788508974341",
+      "date": "2026-10-01",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-01T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 24700,
+      "upload_date": "20200608",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6842400647552175366",
+      "url": "https://www.tiktok.com/@impulse_english/video/6842400647552175366",
+      "date": "2026-10-02",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-02T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 24400,
+      "upload_date": "20200625",
+      "duration_s": 39
+    },
+    {
+      "video_id": "6853851065746509061",
+      "url": "https://www.tiktok.com/@impulse_english/video/6853851065746509061",
+      "date": "2026-10-03",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-03T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 24300,
+      "upload_date": "20200726",
+      "duration_s": 12
+    },
+    {
+      "video_id": "6836055701362609414",
+      "url": "https://www.tiktok.com/@impulse_english/video/6836055701362609414",
+      "date": "2026-10-04",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-04T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 23900,
+      "upload_date": "20200608",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6835883337123368197",
+      "url": "https://www.tiktok.com/@impulse_english/video/6835883337123368197",
+      "date": "2026-10-05",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-05T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 23000,
+      "upload_date": "20200608",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6824201794923629830",
+      "url": "https://www.tiktok.com/@impulse_english/video/6824201794923629830",
+      "date": "2026-10-06",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-06T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 22600,
+      "upload_date": "20200507",
+      "duration_s": 48
+    },
+    {
+      "video_id": "6825325962662661382",
+      "url": "https://www.tiktok.com/@impulse_english/video/6825325962662661382",
+      "date": "2026-10-07",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-07T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 21100,
+      "upload_date": "20200510",
+      "duration_s": 36
+    },
+    {
+      "video_id": "6864316482348731654",
+      "url": "https://www.tiktok.com/@impulse_english/video/6864316482348731654",
+      "date": "2026-10-08",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-08T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 21100,
+      "upload_date": "20200823",
+      "duration_s": 29
+    },
+    {
+      "video_id": "6832706722390510854",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832706722390510854",
+      "date": "2026-10-09",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-09T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 21000,
+      "upload_date": "20200530",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6852767129939250438",
+      "url": "https://www.tiktok.com/@impulse_english/video/6852767129939250438",
+      "date": "2026-10-10",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-10T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 20800,
+      "upload_date": "20200723",
+      "duration_s": 22
+    },
+    {
+      "video_id": "6835733148647591173",
+      "url": "https://www.tiktok.com/@impulse_english/video/6835733148647591173",
+      "date": "2026-10-11",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-11T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 20700,
+      "upload_date": "20200607",
+      "duration_s": 16
+    },
+    {
+      "video_id": "6841261219773484294",
+      "url": "https://www.tiktok.com/@impulse_english/video/6841261219773484294",
+      "date": "2026-10-12",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-12T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 20500,
+      "upload_date": "20200622",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6843492870167547141",
+      "url": "https://www.tiktok.com/@impulse_english/video/6843492870167547141",
+      "date": "2026-10-13",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-13T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 20500,
+      "upload_date": "20200628",
+      "duration_s": 18
+    },
+    {
+      "video_id": "6837251816917421317",
+      "url": "https://www.tiktok.com/@impulse_english/video/6837251816917421317",
+      "date": "2026-10-14",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-14T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 20300,
+      "upload_date": "20200612",
+      "duration_s": 24
+    },
+    {
+      "video_id": "6846842668622810373",
+      "url": "https://www.tiktok.com/@impulse_english/video/6846842668622810373",
+      "date": "2026-10-15",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-15T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 19700,
+      "upload_date": "20200707",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6825483388607106310",
+      "url": "https://www.tiktok.com/@impulse_english/video/6825483388607106310",
+      "date": "2026-10-16",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-16T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 19400,
+      "upload_date": "20200511",
+      "duration_s": 33
+    },
+    {
+      "video_id": "6847364394611985670",
+      "url": "https://www.tiktok.com/@impulse_english/video/6847364394611985670",
+      "date": "2026-10-17",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-17T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 19300,
+      "upload_date": "20200709",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6846447349410090245",
+      "url": "https://www.tiktok.com/@impulse_english/video/6846447349410090245",
+      "date": "2026-10-18",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-18T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 19200,
+      "upload_date": "20200706",
+      "duration_s": 24
+    },
+    {
+      "video_id": "6846419386488737030",
+      "url": "https://www.tiktok.com/@impulse_english/video/6846419386488737030",
+      "date": "2026-10-19",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-19T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 17600,
+      "upload_date": "20200706",
+      "duration_s": 30
+    },
+    {
+      "video_id": "6834168035423587590",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834168035423587590",
+      "date": "2026-10-20",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-20T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 17500,
+      "upload_date": "20200603",
+      "duration_s": 30
+    },
+    {
+      "video_id": "6843832575107058950",
+      "url": "https://www.tiktok.com/@impulse_english/video/6843832575107058950",
+      "date": "2026-10-21",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-21T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 16800,
+      "upload_date": "20200629",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6832305242713902341",
+      "url": "https://www.tiktok.com/@impulse_english/video/6832305242713902341",
+      "date": "2026-10-22",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-22T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 16700,
+      "upload_date": "20200529",
+      "duration_s": 22
+    },
+    {
+      "video_id": "6839458350392954117",
+      "url": "https://www.tiktok.com/@impulse_english/video/6839458350392954117",
+      "date": "2026-10-23",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-23T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 16600,
+      "upload_date": "20200617",
+      "duration_s": 17
+    },
+    {
+      "video_id": "6834472909508005125",
+      "url": "https://www.tiktok.com/@impulse_english/video/6834472909508005125",
+      "date": "2026-10-24",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-24T18:00:00+02:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 16000,
+      "upload_date": "20200604",
+      "duration_s": 27
+    },
+    {
+      "video_id": "6837531759744240901",
+      "url": "https://www.tiktok.com/@impulse_english/video/6837531759744240901",
+      "date": "2026-10-25",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-25T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 16000,
+      "upload_date": "20200612",
+      "duration_s": 27
+    },
+    {
+      "video_id": "6830675720126123269",
+      "url": "https://www.tiktok.com/@impulse_english/video/6830675720126123269",
+      "date": "2026-10-26",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-26T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 15900,
+      "upload_date": "20200525",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6839403315340610822",
+      "url": "https://www.tiktok.com/@impulse_english/video/6839403315340610822",
+      "date": "2026-10-27",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-27T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 15900,
+      "upload_date": "20200617",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6838709353923497222",
+      "url": "https://www.tiktok.com/@impulse_english/video/6838709353923497222",
+      "date": "2026-10-28",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-28T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 15500,
+      "upload_date": "20200615",
+      "duration_s": 27
+    },
+    {
+      "video_id": "6842002282729475334",
+      "url": "https://www.tiktok.com/@impulse_english/video/6842002282729475334",
+      "date": "2026-10-29",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-29T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 15500,
+      "upload_date": "20200624",
+      "duration_s": 14
+    },
+    {
+      "video_id": "7140188470764440837",
+      "url": "https://www.tiktok.com/@impulse_english/video/7140188470764440837",
+      "date": "2026-10-30",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-30T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 14400,
+      "upload_date": "20220906",
+      "duration_s": 24
+    },
+    {
+      "video_id": "6870561305481252097",
+      "url": "https://www.tiktok.com/@impulse_english/video/6870561305481252097",
+      "date": "2026-10-31",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-10-31T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 14200,
+      "upload_date": "20200909",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6817512130640645381",
+      "url": "https://www.tiktok.com/@impulse_english/video/6817512130640645381",
+      "date": "2026-11-01",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-01T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 14100,
+      "upload_date": "20200419",
+      "duration_s": 36
+    },
+    {
+      "video_id": "6867610698189409542",
+      "url": "https://www.tiktok.com/@impulse_english/video/6867610698189409542",
+      "date": "2026-11-02",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-02T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 14000,
+      "upload_date": "20200901",
+      "duration_s": 31
+    },
+    {
+      "video_id": "6843860344167730437",
+      "url": "https://www.tiktok.com/@impulse_english/video/6843860344167730437",
+      "date": "2026-11-03",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-03T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 13900,
+      "upload_date": "20200629",
+      "duration_s": 29
+    },
+    {
+      "video_id": "6867959233065880838",
+      "url": "https://www.tiktok.com/@impulse_english/video/6867959233065880838",
+      "date": "2026-11-04",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-04T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 13700,
+      "upload_date": "20200902",
+      "duration_s": 25
+    },
+    {
+      "video_id": "6869793562507185414",
+      "url": "https://www.tiktok.com/@impulse_english/video/6869793562507185414",
+      "date": "2026-11-05",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-05T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 13700,
+      "upload_date": "20200907",
+      "duration_s": 22
+    },
+    {
+      "video_id": "6829020482260438277",
+      "url": "https://www.tiktok.com/@impulse_english/video/6829020482260438277",
+      "date": "2026-11-06",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-06T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 13500,
+      "upload_date": "20200520",
+      "duration_s": 37
+    },
+    {
+      "video_id": "6835557066082471173",
+      "url": "https://www.tiktok.com/@impulse_english/video/6835557066082471173",
+      "date": "2026-11-07",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-07T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 13500,
+      "upload_date": "20200607",
+      "duration_s": 24
+    },
+    {
+      "video_id": "7147707589143383297",
+      "url": "https://www.tiktok.com/@impulse_english/video/7147707589143383297",
+      "date": "2026-11-08",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-08T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 13500,
+      "upload_date": "20220926",
+      "duration_s": 11
+    },
+    {
+      "video_id": "6838077093767695622",
+      "url": "https://www.tiktok.com/@impulse_english/video/6838077093767695622",
+      "date": "2026-11-09",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-09T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 13300,
+      "upload_date": "20200614",
+      "duration_s": 28
+    },
+    {
+      "video_id": "6868693895094521094",
+      "url": "https://www.tiktok.com/@impulse_english/video/6868693895094521094",
+      "date": "2026-11-10",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-10T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 13000,
+      "upload_date": "20200904",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6824548377976458502",
+      "url": "https://www.tiktok.com/@impulse_english/video/6824548377976458502",
+      "date": "2026-11-11",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-11T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 12800,
+      "upload_date": "20200508",
+      "duration_s": 27
+    },
+    {
+      "video_id": "6863174509747391750",
+      "url": "https://www.tiktok.com/@impulse_english/video/6863174509747391750",
+      "date": "2026-11-12",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-12T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 12400,
+      "upload_date": "20200820",
+      "duration_s": 30
+    },
+    {
+      "video_id": "6821523653117758726",
+      "url": "https://www.tiktok.com/@impulse_english/video/6821523653117758726",
+      "date": "2026-11-13",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-13T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 12000,
+      "upload_date": "20200430",
+      "duration_s": 4
+    },
+    {
+      "video_id": "6863722157462048005",
+      "url": "https://www.tiktok.com/@impulse_english/video/6863722157462048005",
+      "date": "2026-11-14",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-14T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 11700,
+      "upload_date": "20200822",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6820740375603350790",
+      "url": "https://www.tiktok.com/@impulse_english/video/6820740375603350790",
+      "date": "2026-11-15",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-15T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 11600,
+      "upload_date": "20200428",
+      "duration_s": 36
+    },
+    {
+      "video_id": "6864653402459098374",
+      "url": "https://www.tiktok.com/@impulse_english/video/6864653402459098374",
+      "date": "2026-11-16",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-16T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 9911,
+      "upload_date": "20200824",
+      "duration_s": 24
+    },
+    {
+      "video_id": "6819941017563745542",
+      "url": "https://www.tiktok.com/@impulse_english/video/6819941017563745542",
+      "date": "2026-11-17",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-17T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 9882,
+      "upload_date": "20200426",
+      "duration_s": 26
+    },
+    {
+      "video_id": "6866495045550279942",
+      "url": "https://www.tiktok.com/@impulse_english/video/6866495045550279942",
+      "date": "2026-11-18",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-18T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 9685,
+      "upload_date": "20200829",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6813026977373752582",
+      "url": "https://www.tiktok.com/@impulse_english/video/6813026977373752582",
+      "date": "2026-11-19",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-19T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 9682,
+      "upload_date": "20200407",
+      "duration_s": 46
+    },
+    {
+      "video_id": "7142960275048664325",
+      "url": "https://www.tiktok.com/@impulse_english/video/7142960275048664325",
+      "date": "2026-11-20",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-20T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 9266,
+      "upload_date": "20220913",
+      "duration_s": 26
+    },
+    {
+      "video_id": "6829640174796819717",
+      "url": "https://www.tiktok.com/@impulse_english/video/6829640174796819717",
+      "date": "2026-11-21",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-21T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 9128,
+      "upload_date": "20200522",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6867369600263277829",
+      "url": "https://www.tiktok.com/@impulse_english/video/6867369600263277829",
+      "date": "2026-11-22",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-22T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 9030,
+      "upload_date": "20200901",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6866813418813279494",
+      "url": "https://www.tiktok.com/@impulse_english/video/6866813418813279494",
+      "date": "2026-11-23",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-23T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 8920,
+      "upload_date": "20200830",
+      "duration_s": 20
+    },
+    {
+      "video_id": "6821213278543301894",
+      "url": "https://www.tiktok.com/@impulse_english/video/6821213278543301894",
+      "date": "2026-11-24",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-24T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 8765,
+      "upload_date": "20200429",
+      "duration_s": 28
+    },
+    {
+      "video_id": "6816743486654598405",
+      "url": "https://www.tiktok.com/@impulse_english/video/6816743486654598405",
+      "date": "2026-11-25",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-25T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 8731,
+      "upload_date": "20200417",
+      "duration_s": 42
+    },
+    {
+      "video_id": "6866113892087516421",
+      "url": "https://www.tiktok.com/@impulse_english/video/6866113892087516421",
+      "date": "2026-11-26",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-26T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 8591,
+      "upload_date": "20200828",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6863896067197390086",
+      "url": "https://www.tiktok.com/@impulse_english/video/6863896067197390086",
+      "date": "2026-11-27",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-27T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 8562,
+      "upload_date": "20200822",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6868342950154341638",
+      "url": "https://www.tiktok.com/@impulse_english/video/6868342950154341638",
+      "date": "2026-11-28",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-28T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 8387,
+      "upload_date": "20200903",
+      "duration_s": 13
+    },
+    {
+      "video_id": "6822956381528657157",
+      "url": "https://www.tiktok.com/@impulse_english/video/6822956381528657157",
+      "date": "2026-11-29",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-29T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 8301,
+      "upload_date": "20200504",
+      "duration_s": 14
+    },
+    {
+      "video_id": "6830010460792704262",
+      "url": "https://www.tiktok.com/@impulse_english/video/6830010460792704262",
+      "date": "2026-11-30",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-11-30T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 8208,
+      "upload_date": "20200523",
+      "duration_s": 30
+    },
+    {
+      "video_id": "6812665726806084870",
+      "url": "https://www.tiktok.com/@impulse_english/video/6812665726806084870",
+      "date": "2026-12-01",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-01T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 8106,
+      "upload_date": "20200406",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6826439289476320517",
+      "url": "https://www.tiktok.com/@impulse_english/video/6826439289476320517",
+      "date": "2026-12-02",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-02T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 7644,
+      "upload_date": "20200513",
+      "duration_s": 32
+    },
+    {
+      "video_id": "6830064979811503365",
+      "url": "https://www.tiktok.com/@impulse_english/video/6830064979811503365",
+      "date": "2026-12-03",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-03T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 7495,
+      "upload_date": "20200523",
+      "duration_s": 40
+    },
+    {
+      "video_id": "6815922092114988294",
+      "url": "https://www.tiktok.com/@impulse_english/video/6815922092114988294",
+      "date": "2026-12-04",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-04T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 7158,
+      "upload_date": "20200415",
+      "duration_s": 11
+    },
+    {
+      "video_id": "6866885054279257349",
+      "url": "https://www.tiktok.com/@impulse_english/video/6866885054279257349",
+      "date": "2026-12-05",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-05T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 6871,
+      "upload_date": "20200830",
+      "duration_s": 27
+    },
+    {
+      "video_id": "6819361463208086790",
+      "url": "https://www.tiktok.com/@impulse_english/video/6819361463208086790",
+      "date": "2026-12-06",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-06T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 6321,
+      "upload_date": "20200424",
+      "duration_s": 15
+    },
+    {
+      "video_id": "6823107739133168901",
+      "url": "https://www.tiktok.com/@impulse_english/video/6823107739133168901",
+      "date": "2026-12-07",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-07T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 6269,
+      "upload_date": "20200504",
+      "duration_s": 27
+    },
+    {
+      "video_id": "6865357538913783045",
+      "url": "https://www.tiktok.com/@impulse_english/video/6865357538913783045",
+      "date": "2026-12-08",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-08T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 5658,
+      "upload_date": "20200826",
+      "duration_s": 19
+    },
+    {
+      "video_id": "6814153213479062789",
+      "url": "https://www.tiktok.com/@impulse_english/video/6814153213479062789",
+      "date": "2026-12-09",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-09T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 5056,
+      "upload_date": "20200410",
+      "duration_s": 47
+    },
+    {
+      "video_id": "6812947848544505093",
+      "url": "https://www.tiktok.com/@impulse_english/video/6812947848544505093",
+      "date": "2026-12-10",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-10T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 4885,
+      "upload_date": "20200407",
+      "duration_s": 36
+    },
+    {
+      "video_id": "6813389162562047238",
+      "url": "https://www.tiktok.com/@impulse_english/video/6813389162562047238",
+      "date": "2026-12-11",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-11T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 4544,
+      "upload_date": "20200408",
+      "duration_s": 38
+    },
+    {
+      "video_id": "6813270510873365766",
+      "url": "https://www.tiktok.com/@impulse_english/video/6813270510873365766",
+      "date": "2026-12-12",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-12T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 4300,
+      "upload_date": "20200408",
+      "duration_s": 59
+    },
+    {
+      "video_id": "6815520964067986694",
+      "url": "https://www.tiktok.com/@impulse_english/video/6815520964067986694",
+      "date": "2026-12-13",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-13T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 3906,
+      "upload_date": "20200414",
+      "duration_s": 29
+    },
+    {
+      "video_id": "7137286902620671237",
+      "url": "https://www.tiktok.com/@impulse_english/video/7137286902620671237",
+      "date": "2026-12-14",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-14T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 3360,
+      "upload_date": "20220829",
+      "duration_s": 23
+    },
+    {
+      "video_id": "7145562862839237893",
+      "url": "https://www.tiktok.com/@impulse_english/video/7145562862839237893",
+      "date": "2026-12-15",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-15T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 2970,
+      "upload_date": "20220920",
+      "duration_s": 35
+    },
+    {
+      "video_id": "7133930699945479430",
+      "url": "https://www.tiktok.com/@impulse_english/video/7133930699945479430",
+      "date": "2026-12-16",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-16T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 2940,
+      "upload_date": "20220820",
+      "duration_s": 26
+    },
+    {
+      "video_id": "6823288329425997061",
+      "url": "https://www.tiktok.com/@impulse_english/video/6823288329425997061",
+      "date": "2026-12-17",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-17T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 2748,
+      "upload_date": "20200505",
+      "duration_s": 26
+    },
+    {
+      "video_id": "7133626130950638854",
+      "url": "https://www.tiktok.com/@impulse_english/video/7133626130950638854",
+      "date": "2026-12-18",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-18T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 2480,
+      "upload_date": "20220819",
+      "duration_s": 21
+    },
+    {
+      "video_id": "7147611781010181381",
+      "url": "https://www.tiktok.com/@impulse_english/video/7147611781010181381",
+      "date": "2026-12-19",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-19T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 2408,
+      "upload_date": "20220926",
+      "duration_s": 47
+    },
+    {
+      "video_id": "7145774438846418182",
+      "url": "https://www.tiktok.com/@impulse_english/video/7145774438846418182",
+      "date": "2026-12-20",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-20T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1962,
+      "upload_date": "20220921",
+      "duration_s": 22
+    },
+    {
+      "video_id": "7146233445176413445",
+      "url": "https://www.tiktok.com/@impulse_english/video/7146233445176413445",
+      "date": "2026-12-21",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-21T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1681,
+      "upload_date": "20220922",
+      "duration_s": 20
+    },
+    {
+      "video_id": "7143564325247126789",
+      "url": "https://www.tiktok.com/@impulse_english/video/7143564325247126789",
+      "date": "2026-12-22",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-22T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1467,
+      "upload_date": "20220915",
+      "duration_s": 19
+    },
+    {
+      "video_id": "7427502351826685217",
+      "url": "https://www.tiktok.com/@impulse_english/video/7427502351826685217",
+      "date": "2026-12-23",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-23T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1440,
+      "upload_date": "20241019",
+      "duration_s": 11
+    },
+    {
+      "video_id": "7142869525942291718",
+      "url": "https://www.tiktok.com/@impulse_english/video/7142869525942291718",
+      "date": "2026-12-24",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-24T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1393,
+      "upload_date": "20220913",
+      "duration_s": 21
+    },
+    {
+      "video_id": "7451267533627198752",
+      "url": "https://www.tiktok.com/@impulse_english/video/7451267533627198752",
+      "date": "2026-12-25",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-25T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1328,
+      "upload_date": "20241222",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7133287946014231813",
+      "url": "https://www.tiktok.com/@impulse_english/video/7133287946014231813",
+      "date": "2026-12-26",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-26T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1228,
+      "upload_date": "20220818",
+      "duration_s": 22
+    },
+    {
+      "video_id": "7404780829148220704",
+      "url": "https://www.tiktok.com/@impulse_english/video/7404780829148220704",
+      "date": "2026-12-27",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-27T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1223,
+      "upload_date": "20240819",
+      "duration_s": 9
+    },
+    {
+      "video_id": "7409350142161210656",
+      "url": "https://www.tiktok.com/@impulse_english/video/7409350142161210656",
+      "date": "2026-12-28",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-28T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1183,
+      "upload_date": "20240831",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7134992197602135302",
+      "url": "https://www.tiktok.com/@impulse_english/video/7134992197602135302",
+      "date": "2026-12-29",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-29T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1148,
+      "upload_date": "20220823",
+      "duration_s": 208
+    },
+    {
+      "video_id": "7447905724836908320",
+      "url": "https://www.tiktok.com/@impulse_english/video/7447905724836908320",
+      "date": "2026-12-30",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-30T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1129,
+      "upload_date": "20241213",
+      "duration_s": 16
+    },
+    {
+      "video_id": "7145394549907524870",
+      "url": "https://www.tiktok.com/@impulse_english/video/7145394549907524870",
+      "date": "2026-12-31",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2026-12-31T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1104,
+      "upload_date": "20220920",
+      "duration_s": 18
+    },
+    {
+      "video_id": "7143173358828391686",
+      "url": "https://www.tiktok.com/@impulse_english/video/7143173358828391686",
+      "date": "2027-01-01",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-01T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1045,
+      "upload_date": "20220914",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7133512915335843077",
+      "url": "https://www.tiktok.com/@impulse_english/video/7133512915335843077",
+      "date": "2027-01-02",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-02T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1033,
+      "upload_date": "20220819",
+      "duration_s": 22
+    },
+    {
+      "video_id": "7134338777404689669",
+      "url": "https://www.tiktok.com/@impulse_english/video/7134338777404689669",
+      "date": "2027-01-03",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-03T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 1014,
+      "upload_date": "20220821",
+      "duration_s": 33
+    },
+    {
+      "video_id": "7359972412181597473",
+      "url": "https://www.tiktok.com/@impulse_english/video/7359972412181597473",
+      "date": "2027-01-04",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-04T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 994,
+      "upload_date": "20240420",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7140316313196432646",
+      "url": "https://www.tiktok.com/@impulse_english/video/7140316313196432646",
+      "date": "2027-01-05",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-05T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 960,
+      "upload_date": "20220906",
+      "duration_s": 22
+    },
+    {
+      "video_id": "7144757833098136838",
+      "url": "https://www.tiktok.com/@impulse_english/video/7144757833098136838",
+      "date": "2027-01-06",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-06T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 959,
+      "upload_date": "20220918",
+      "duration_s": 10
+    },
+    {
+      "video_id": "7143274439847775493",
+      "url": "https://www.tiktok.com/@impulse_english/video/7143274439847775493",
+      "date": "2027-01-07",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-07T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 943,
+      "upload_date": "20220914",
+      "duration_s": 20
+    },
+    {
+      "video_id": "7450927178922970401",
+      "url": "https://www.tiktok.com/@impulse_english/video/7450927178922970401",
+      "date": "2027-01-08",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-08T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 909,
+      "upload_date": "20241221",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7398557808515386657",
+      "url": "https://www.tiktok.com/@impulse_english/video/7398557808515386657",
+      "date": "2027-01-09",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-09T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 900,
+      "upload_date": "20240802",
+      "duration_s": 17
+    },
+    {
+      "video_id": "7359632275715181857",
+      "url": "https://www.tiktok.com/@impulse_english/video/7359632275715181857",
+      "date": "2027-01-10",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-10T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 856,
+      "upload_date": "20240419",
+      "duration_s": 6
+    },
+    {
+      "video_id": "7449805914170772768",
+      "url": "https://www.tiktok.com/@impulse_english/video/7449805914170772768",
+      "date": "2027-01-11",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-11T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 846,
+      "upload_date": "20241218",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7333965395977669920",
+      "url": "https://www.tiktok.com/@impulse_english/video/7333965395977669920",
+      "date": "2027-01-12",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-12T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 845,
+      "upload_date": "20240210",
+      "duration_s": 12
+    },
+    {
+      "video_id": "7339624599782575392",
+      "url": "https://www.tiktok.com/@impulse_english/video/7339624599782575392",
+      "date": "2027-01-13",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-13T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 824,
+      "upload_date": "20240225",
+      "duration_s": 12
+    },
+    {
+      "video_id": "7352195189974355232",
+      "url": "https://www.tiktok.com/@impulse_english/video/7352195189974355232",
+      "date": "2027-01-14",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-14T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 782,
+      "upload_date": "20240330",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7445708494751157537",
+      "url": "https://www.tiktok.com/@impulse_english/video/7445708494751157537",
+      "date": "2027-01-15",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-15T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 774,
+      "upload_date": "20241207",
+      "duration_s": 18
+    },
+    {
+      "video_id": "7442409202980572448",
+      "url": "https://www.tiktok.com/@impulse_english/video/7442409202980572448",
+      "date": "2027-01-16",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-16T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 769,
+      "upload_date": "20241128",
+      "duration_s": 31
+    },
+    {
+      "video_id": "7425647030254439713",
+      "url": "https://www.tiktok.com/@impulse_english/video/7425647030254439713",
+      "date": "2027-01-17",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-17T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 744,
+      "upload_date": "20241014",
+      "duration_s": 20
+    },
+    {
+      "video_id": "7331766464594201889",
+      "url": "https://www.tiktok.com/@impulse_english/video/7331766464594201889",
+      "date": "2027-01-18",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-18T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 719,
+      "upload_date": "20240204",
+      "duration_s": 12
+    },
+    {
+      "video_id": "7413424105862548768",
+      "url": "https://www.tiktok.com/@impulse_english/video/7413424105862548768",
+      "date": "2027-01-19",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-19T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 698,
+      "upload_date": "20240911",
+      "duration_s": 17
+    },
+    {
+      "video_id": "7407131194694896929",
+      "url": "https://www.tiktok.com/@impulse_english/video/7407131194694896929",
+      "date": "2027-01-20",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-20T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 694,
+      "upload_date": "20240825",
+      "duration_s": 19
+    },
+    {
+      "video_id": "7353285975642066209",
+      "url": "https://www.tiktok.com/@impulse_english/video/7353285975642066209",
+      "date": "2027-01-21",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-21T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 690,
+      "upload_date": "20240402",
+      "duration_s": 9
+    },
+    {
+      "video_id": "7399013683587812641",
+      "url": "https://www.tiktok.com/@impulse_english/video/7399013683587812641",
+      "date": "2027-01-22",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-22T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 689,
+      "upload_date": "20240803",
+      "duration_s": 10
+    },
+    {
+      "video_id": "7335122695333498145",
+      "url": "https://www.tiktok.com/@impulse_english/video/7335122695333498145",
+      "date": "2027-01-23",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-23T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 671,
+      "upload_date": "20240213",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7408236862860578081",
+      "url": "https://www.tiktok.com/@impulse_english/video/7408236862860578081",
+      "date": "2027-01-24",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-24T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 666,
+      "upload_date": "20240828",
+      "duration_s": 20
+    },
+    {
+      "video_id": "7342299407221558560",
+      "url": "https://www.tiktok.com/@impulse_english/video/7342299407221558560",
+      "date": "2027-01-25",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-25T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 654,
+      "upload_date": "20240304",
+      "duration_s": 7
+    },
+    {
+      "video_id": "7434916200674512161",
+      "url": "https://www.tiktok.com/@impulse_english/video/7434916200674512161",
+      "date": "2027-01-26",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-26T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 636,
+      "upload_date": "20241108",
+      "duration_s": 25
+    },
+    {
+      "video_id": "7333241495945809185",
+      "url": "https://www.tiktok.com/@impulse_english/video/7333241495945809185",
+      "date": "2027-01-27",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-27T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 619,
+      "upload_date": "20240208",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7338509611269410080",
+      "url": "https://www.tiktok.com/@impulse_english/video/7338509611269410080",
+      "date": "2027-01-28",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-28T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 607,
+      "upload_date": "20240222",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7349606207952276769",
+      "url": "https://www.tiktok.com/@impulse_english/video/7349606207952276769",
+      "date": "2027-01-29",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-29T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 599,
+      "upload_date": "20240323",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7448654228542803233",
+      "url": "https://www.tiktok.com/@impulse_english/video/7448654228542803233",
+      "date": "2027-01-30",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-30T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 595,
+      "upload_date": "20241215",
+      "duration_s": 12
+    },
+    {
+      "video_id": "7332539519096343841",
+      "url": "https://www.tiktok.com/@impulse_english/video/7332539519096343841",
+      "date": "2027-01-31",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-01-31T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 592,
+      "upload_date": "20240206",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7434630988380065057",
+      "url": "https://www.tiktok.com/@impulse_english/video/7434630988380065057",
+      "date": "2027-02-01",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-01T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 591,
+      "upload_date": "20241107",
+      "duration_s": 21
+    },
+    {
+      "video_id": "7343644631608970529",
+      "url": "https://www.tiktok.com/@impulse_english/video/7343644631608970529",
+      "date": "2027-02-02",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-02T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 588,
+      "upload_date": "20240307",
+      "duration_s": 12
+    },
+    {
+      "video_id": "7346613291172597025",
+      "url": "https://www.tiktok.com/@impulse_english/video/7346613291172597025",
+      "date": "2027-02-03",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-03T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 586,
+      "upload_date": "20240315",
+      "duration_s": 7
+    },
+    {
+      "video_id": "7355890393432476960",
+      "url": "https://www.tiktok.com/@impulse_english/video/7355890393432476960",
+      "date": "2027-02-04",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-04T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 578,
+      "upload_date": "20240409",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7424185620731366688",
+      "url": "https://www.tiktok.com/@impulse_english/video/7424185620731366688",
+      "date": "2027-02-05",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-05T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 578,
+      "upload_date": "20241010",
+      "duration_s": 20
+    },
+    {
+      "video_id": "7444959071284858145",
+      "url": "https://www.tiktok.com/@impulse_english/video/7444959071284858145",
+      "date": "2027-02-06",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-06T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 568,
+      "upload_date": "20241205",
+      "duration_s": 23
+    },
+    {
+      "video_id": "7440552225820151073",
+      "url": "https://www.tiktok.com/@impulse_english/video/7440552225820151073",
+      "date": "2027-02-07",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-07T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 558,
+      "upload_date": "20241123",
+      "duration_s": 11
+    },
+    {
+      "video_id": "7341808721028222240",
+      "url": "https://www.tiktok.com/@impulse_english/video/7341808721028222240",
+      "date": "2027-02-08",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-08T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 552,
+      "upload_date": "20240302",
+      "duration_s": 11
+    },
+    {
+      "video_id": "7346999799566060832",
+      "url": "https://www.tiktok.com/@impulse_english/video/7346999799566060832",
+      "date": "2027-02-09",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-09T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 551,
+      "upload_date": "20240316",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7336231919266303265",
+      "url": "https://www.tiktok.com/@impulse_english/video/7336231919266303265",
+      "date": "2027-02-10",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-10T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 535,
+      "upload_date": "20240216",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7420823264861113633",
+      "url": "https://www.tiktok.com/@impulse_english/video/7420823264861113633",
+      "date": "2027-02-11",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-11T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 535,
+      "upload_date": "20241001",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7446072119609298209",
+      "url": "https://www.tiktok.com/@impulse_english/video/7446072119609298209",
+      "date": "2027-02-12",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-12T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 535,
+      "upload_date": "20241208",
+      "duration_s": 21
+    },
+    {
+      "video_id": "7357011785330855201",
+      "url": "https://www.tiktok.com/@impulse_english/video/7357011785330855201",
+      "date": "2027-02-13",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-13T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 533,
+      "upload_date": "20240412",
+      "duration_s": 9
+    },
+    {
+      "video_id": "7341426858963078433",
+      "url": "https://www.tiktok.com/@impulse_english/video/7341426858963078433",
+      "date": "2027-02-14",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-14T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 531,
+      "upload_date": "20240301",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7410798690773781792",
+      "url": "https://www.tiktok.com/@impulse_english/video/7410798690773781792",
+      "date": "2027-02-15",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-15T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 521,
+      "upload_date": "20240904",
+      "duration_s": 29
+    },
+    {
+      "video_id": "7350756756164726049",
+      "url": "https://www.tiktok.com/@impulse_english/video/7350756756164726049",
+      "date": "2027-02-16",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-16T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 520,
+      "upload_date": "20240326",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7349227359985339680",
+      "url": "https://www.tiktok.com/@impulse_english/video/7349227359985339680",
+      "date": "2027-02-17",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-17T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 519,
+      "upload_date": "20240322",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7354754177379159328",
+      "url": "https://www.tiktok.com/@impulse_english/video/7354754177379159328",
+      "date": "2027-02-18",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-18T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 515,
+      "upload_date": "20240406",
+      "duration_s": 9
+    },
+    {
+      "video_id": "7354383257745575201",
+      "url": "https://www.tiktok.com/@impulse_english/video/7354383257745575201",
+      "date": "2027-02-19",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-19T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 509,
+      "upload_date": "20240405",
+      "duration_s": 9
+    },
+    {
+      "video_id": "7344024488230522144",
+      "url": "https://www.tiktok.com/@impulse_english/video/7344024488230522144",
+      "date": "2027-02-20",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-20T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 507,
+      "upload_date": "20240308",
+      "duration_s": 9
+    },
+    {
+      "video_id": "7344301929612266785",
+      "url": "https://www.tiktok.com/@impulse_english/video/7344301929612266785",
+      "date": "2027-02-21",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-21T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 503,
+      "upload_date": "20240309",
+      "duration_s": 10
+    },
+    {
+      "video_id": "7351817001792212257",
+      "url": "https://www.tiktok.com/@impulse_english/video/7351817001792212257",
+      "date": "2027-02-22",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-22T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 495,
+      "upload_date": "20240329",
+      "duration_s": 15
+    },
+    {
+      "video_id": "7443126573127028001",
+      "url": "https://www.tiktok.com/@impulse_english/video/7443126573127028001",
+      "date": "2027-02-23",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-23T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 488,
+      "upload_date": "20241130",
+      "duration_s": 25
+    },
+    {
+      "video_id": "7348144053562641697",
+      "url": "https://www.tiktok.com/@impulse_english/video/7348144053562641697",
+      "date": "2027-02-24",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-24T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 486,
+      "upload_date": "20240319",
+      "duration_s": 13
+    },
+    {
+      "video_id": "7341055028104301856",
+      "url": "https://www.tiktok.com/@impulse_english/video/7341055028104301856",
+      "date": "2027-02-25",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-25T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 485,
+      "upload_date": "20240229",
+      "duration_s": 8
+    },
+    {
+      "video_id": "7357398219984309537",
+      "url": "https://www.tiktok.com/@impulse_english/video/7357398219984309537",
+      "date": "2027-02-26",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-26T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 472,
+      "upload_date": "20240413",
+      "duration_s": 10
+    },
+    {
+      "video_id": "7338828666987711776",
+      "url": "https://www.tiktok.com/@impulse_english/video/7338828666987711776",
+      "date": "2027-02-27",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-27T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 468,
+      "upload_date": "20240223",
+      "duration_s": 11
+    },
+    {
+      "video_id": "7345565210289163552",
+      "url": "https://www.tiktok.com/@impulse_english/video/7345565210289163552",
+      "date": "2027-02-28",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-02-28T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 405,
+      "upload_date": "20240312",
+      "duration_s": 9
+    },
+    {
+      "video_id": "7358509588989103393",
+      "url": "https://www.tiktok.com/@impulse_english/video/7358509588989103393",
+      "date": "2027-03-01",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-03-01T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 246,
+      "upload_date": "20240416",
+      "duration_s": 10
+    },
+    {
+      "video_id": "7358509586212539680",
+      "url": "https://www.tiktok.com/@impulse_english/video/7358509586212539680",
+      "date": "2027-03-02",
+      "time": "18:00",
+      "timezone": "Europe/Madrid",
+      "scheduled_at": "2027-03-02T18:00:00+01:00",
+      "platforms": [
+        "instagram"
+      ],
+      "tiktok_views": 217,
+      "upload_date": "20240416",
+      "duration_s": 10
+    }
+  ],
+  "excluded_video_ids": [
+    "6870731007927045378",
+    "6869415080681852161",
+    "6869051291486686470",
+    "6866425595379584262",
+    "6863493630989012230",
+    "6852764496159722757",
+    "6847198561914948870",
+    "6845745001813658886",
+    "6845723277080497413",
+    "6844949812576570630",
+    "6844174660205022469",
+    "6843490329681841414",
+    "6842742739826658565",
+    "6842727188542885126",
+    "6841935016776224006",
+    "6840859072267406598",
+    "6840147397427940614",
+    "6839735101228715270",
+    "6838702085081419013",
+    "6838327947309468933",
+    "6837910654259694854",
+    "6836236407845981446",
+    "6835739646199074054",
+    "6835569255946226949",
+    "6834765769520336134",
+    "6834105255655902470",
+    "6833684936550042885",
+    "6833452235985407238",
+    "6832614221205802246",
+    "6832191415737502981",
+    "6831996638081420549",
+    "6831946745388256517",
+    "6831605228060560646",
+    "6831139242219949318",
+    "6830485084672363782",
+    "6830424814742703365",
+    "6829585341767257349",
+    "6826363674681183493",
+    "6825889856904760581",
+    "6824839422924639493",
+    "7446808304036220193",
+    "7442763169707150625",
+    "7426388947632213280",
+    "7425283088143420705",
+    "7422322418351426849",
+    "7421943426289012000"
+  ]
+}
