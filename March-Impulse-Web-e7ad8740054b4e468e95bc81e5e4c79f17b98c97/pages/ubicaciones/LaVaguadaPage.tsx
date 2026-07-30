@@ -176,7 +176,7 @@ export default function LaVaguadaPage() {
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
               href="/reservar-clase/"
-                className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
+                className="bg-brand-red hover:bg-brand-red-600 text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba de Nivel Gratuita
                 <ArrowRight className="w-5 h-5" />
@@ -527,7 +527,7 @@ export default function LaVaguadaPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="/examenes-cambridge/"
-              className="bg-white text-accent-blue font-bold py-3 px-6 rounded-lg hover:bg-amber-400 hover:text-blue-900 transition-colors"
+              className="bg-white text-accent-blue font-bold py-3 px-6 rounded-lg hover:bg-amber-400 hover:text-accent-blue-900 transition-colors"
             >
               Ver todos los exámenes Cambridge
             </a>
@@ -685,7 +685,7 @@ export default function LaVaguadaPage() {
           </p>
           <a
               href="/reservar-clase/"
-            className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-4 px-8 rounded-lg hover:bg-amber-400 hover:text-blue-900 transition-colors"
+            className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-4 px-8 rounded-lg hover:bg-amber-400 hover:text-accent-blue-900 transition-colors"
           >
             Reserva tu prueba gratuita
             <ArrowRight className="w-5 h-5" />

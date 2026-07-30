@@ -75,21 +75,21 @@ const examLevels = [
     cefr: "A2",
     description: "Primer paso en tu camino hacia el dominio del inglés. Demuestra que puedes comunicarte en situaciones cotidianas.",
     href: "/examenes-cambridge/",
-    color: "from-green-500 to-green-600"
+    color: "bg-emerald-600"
   },
   {
     level: "B1 Preliminary",
     cefr: "B1",
     description: "Certifica que puedes comunicarte en inglés en situaciones prácticas y cotidianas.",
     href: "/examenes-cambridge/b1-preliminary/",
-    color: "from-blue-500 to-blue-600"
+    color: "bg-accent-blue"
   },
   {
     level: "B2 First",
     cefr: "B2",
     description: "El certificado más demandado. Demuestra que puedes trabajar y estudiar en inglés.",
     href: "/examenes-cambridge/b2-first/",
-    color: "from-purple-500 to-purple-600",
+    color: "bg-purple-600",
     popular: true
   },
   {
@@ -97,14 +97,14 @@ const examLevels = [
     cefr: "C1",
     description: "Nivel avanzado reconocido por universidades y empresas de todo el mundo.",
     href: "/examenes-cambridge/c1-advanced/",
-    color: "from-orange-500 to-orange-600"
+    color: "bg-orange-600"
   },
   {
     level: "Linguaskill",
     cefr: "Multinivel",
     description: "Examen online adaptativo con resultados en 48h. Ideal para empresas y universidades.",
     href: "/linguaskill/",
-    color: "from-red-500 to-red-600"
+    color: "bg-brand-red-600"
   }
 ];
 
@@ -159,7 +159,7 @@ export default function CambridgeHubPage() {
               fetchPriority="high"
             />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
+          <div className="absolute inset-0 bg-accent-blue/85"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-36 -right-36 w-[500px] h-[500px] rounded-full bg-brand-red/[0.05]"></div>
@@ -203,10 +203,10 @@ export default function CambridgeHubPage() {
       </section>
 
       {/* Why Cambridge */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               ¿Por qué elegir Cambridge?
             </h2>
             <p className="text-zinc-500 text-lg max-w-2xl mx-auto">
@@ -238,10 +238,10 @@ export default function CambridgeHubPage() {
       </section>
 
       {/* Exam Levels */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Elige tu nivel
             </h2>
             <p className="text-zinc-500 text-lg max-w-2xl mx-auto">
@@ -254,7 +254,7 @@ export default function CambridgeHubPage() {
               <a
                 key={index}
                 href={exam.href}
-                className={`relative bg-white rounded-xl shadow-sm border border-zinc-100 p-6 hover:shadow-xl transition-all duration-300 group reveal-on-scroll opacity-0 translate-y-8 ${exam.popular ? 'ring-2 ring-accent-blue' : ''}`}
+                className={`relative card-interactive p-6 group reveal-on-scroll opacity-0 translate-y-8 ${exam.popular ? 'ring-2 ring-accent-blue' : ''}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 {exam.popular && (
@@ -263,7 +263,7 @@ export default function CambridgeHubPage() {
                   </span>
                 )}
 
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${exam.color} flex items-center justify-center text-white font-bold text-lg mb-4`}>
+                <div className={`w-14 h-14 rounded-xl ${exam.color} flex items-center justify-center text-white font-bold text-lg mb-4`}>
                   {exam.cefr}
                 </div>
 
@@ -286,11 +286,11 @@ export default function CambridgeHubPage() {
       </section>
 
       {/* 100% Pass Rate */}
-      <section className="py-12 md:py-20 px-6 bg-accent-blue">
+      <section className="section-lead px-6 bg-accent-blue">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <Trophy className="w-20 h-20 text-yellow-400 mx-auto mb-8" />
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <Trophy className="w-20 h-20 text-amber-400 mx-auto mb-8" />
+            <h2 className="t-h1 text-white mb-6">
               100% Tasa de Aprobados
             </h2>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
@@ -311,7 +311,7 @@ export default function CambridgeHubPage() {
       </section>
 
       {/* Location Section */}
-      <section className="py-12 px-6 bg-white border-b border-zinc-100">
+      <section className="section-tight px-6 bg-white border-b border-zinc-100">
         <div className="container mx-auto max-w-4xl">
           <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
             <h3 className="font-bold text-zinc-900 mb-4 text-lg">¿Dónde preparar tu examen Cambridge?</h3>
@@ -332,10 +332,10 @@ export default function CambridgeHubPage() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Nuestra academia
             </h2>
             <p className="text-zinc-600 text-lg">
@@ -343,7 +343,7 @@ export default function CambridgeHubPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
+            <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-lift reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
               <img
                 src={pageImages.classroom}
                 alt="Estudiante de Impulse English Academy"
@@ -351,7 +351,7 @@ export default function CambridgeHubPage() {
                 loading="lazy"
               />
             </div>
-            <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-100">
+            <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-lift reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-100">
               <img
                 src={pageImages.certificate}
                 alt="Certificado Cambridge C1"
@@ -364,10 +364,10 @@ export default function CambridgeHubPage() {
       </section>
 
       {/* Video Section - Below the fold for performance */}
-      <section className="py-16 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h3 text-zinc-900 mb-4">
               Prepara tu examen Cambridge con nosotros
             </h2>
             <p className="text-zinc-600">
@@ -378,17 +378,17 @@ export default function CambridgeHubPage() {
             <LazyVideo
               videoId="Fdso-d9_F20"
               title="Preparación exámenes Cambridge"
-              className="shadow-xl"
+              className="shadow-panel"
             />
           </div>
         </div>
       </section>
 
       {/* Comparison Table - Optimized for AI Citation */}
-      <section className="py-16 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Comparativa de Exámenes Cambridge 2025
             </h2>
             <p className="text-zinc-600 max-w-2xl mx-auto">
@@ -409,9 +409,9 @@ export default function CambridgeHubPage() {
 
           {/* Comparison Table */}
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-lg">
+            <table className="w-full border-collapse card overflow-hidden">
               <thead>
-                <tr className="bg-gradient-to-r from-accent-blue to-blue-700 text-white">
+                <tr className="bg-accent-blue text-white">
                   <th className="text-left p-4 font-semibold">Examen</th>
                   <th className="text-left p-4 font-semibold">Nivel MCER</th>
                   <th className="text-left p-4 font-semibold">Duración</th>
@@ -429,7 +429,7 @@ export default function CambridgeHubPage() {
                     <td className="p-4 text-zinc-700">{row.duration}</td>
                     <td className="p-4 text-zinc-700">{row.parts}</td>
                     <td className="p-4 text-zinc-700 font-medium">{row.price}</td>
-                    <td className="p-4 text-green-600 font-medium">{row.validity}</td>
+                    <td className="p-4 text-emerald-600 font-medium">{row.validity}</td>
                     <td className="p-4 text-zinc-700">{row.recognition}</td>
                   </tr>
                 ))}
@@ -444,7 +444,7 @@ export default function CambridgeHubPage() {
               <p className="text-zinc-600 text-sm">Instituciones reconocen Cambridge en todo el mundo</p>
             </div>
             <div className="bg-zinc-50 p-6 rounded-xl text-center">
-              <div className="text-3xl font-bold text-green-600 mb-2">De por vida</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-2">De por vida</div>
               <p className="text-zinc-600 text-sm">Validez de los certificados Cambridge (no caducan)</p>
             </div>
             <div className="bg-zinc-50 p-6 rounded-xl text-center">
@@ -511,10 +511,11 @@ export default function CambridgeHubPage() {
       <FAQSection
         faqs={cambridgeFAQs}
         title="Preguntas frecuentes sobre exámenes Cambridge"
+        variant="refresh"
       />
 
       {/* Lead Form */}
-      <section id="formulario" className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section id="formulario" className="section px-6 surface-alt">
         <div className="container mx-auto max-w-3xl">
           <LeadForm
             title="Prepárate para Cambridge"
@@ -523,16 +524,17 @@ export default function CambridgeHubPage() {
             source="cambridge-hub"
             showPhone={true}
             showLevel={true}
+            variant="refresh"
           />
         </div>
       </section>
 
       {/* BOOKING-CTA */}
-      <section className="py-16 px-6 bg-accent-blue">
+      <section className="section-lead px-6 bg-accent-blue">
         <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Reserva tu clase de prueba gratuita</h2>
+          <h2 className="t-h2 text-white mb-4">Reserva tu clase de prueba gratuita</h2>
           <p className="text-white/90 mb-8">Sin compromiso. Conoce nuestra metodología y a nuestros profesores antes de decidir.</p>
-          <a href="/reservar-clase/" className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold uppercase tracking-wide px-8 py-4 rounded-lg transition-colors">Clase de prueba gratuita</a>
+          <a href="/reservar-clase/" className="inline-block bg-brand-red hover:bg-brand-red-600 text-white font-bold uppercase tracking-wide px-8 py-4 rounded-lg transition-colors">Clase de prueba gratuita</a>
         </div>
       </section>
       <Footer />

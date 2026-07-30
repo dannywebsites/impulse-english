@@ -53,7 +53,7 @@ export default function B1PreliminaryPage() {
       cefrLevel="Nivel B1"
       tagline="Demuestra que dominas los fundamentos del inglés para situaciones cotidianas"
       description="El B1 Preliminary, antes conocido como PET (Preliminary English Test), es un examen de nivel intermedio que certifica que puedes comunicarte en inglés en situaciones cotidianas con hablantes nativos. Es el paso perfecto antes del B2 First y muy valorado para trabajos que requieren contacto con el público internacional."
-      heroColor="from-blue-600 to-blue-800"
+      heroColor="bg-blue-800"
       faqs={b1Faqs}
       examParts={[
         {

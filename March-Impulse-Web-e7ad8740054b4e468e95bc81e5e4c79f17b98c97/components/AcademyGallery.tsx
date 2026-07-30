@@ -28,11 +28,11 @@ export default function AcademyGallery({
   const displayImages = images.slice(0, maxImages);
 
   return (
-    <section className={`py-16 md:py-20 px-6 bg-white ${className}`}>
+    <section className={`section px-6 bg-white ${className}`}>
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+          <h2 className="t-h2 text-zinc-900 mb-4">
             {title}
           </h2>
           {subtitle && (
@@ -45,7 +45,7 @@ export default function AcademyGallery({
           {displayImages.map((image, index) => (
             <figure
               key={index}
-              className="rounded-xl overflow-hidden shadow-lg bg-zinc-100 group"
+              className="overflow-hidden rounded-2xl shadow-lift bg-zinc-100 group"
             >
               <div className="relative overflow-hidden aspect-[4/3]">
                 <img
@@ -57,7 +57,7 @@ export default function AcademyGallery({
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 {/* Hover overlay with title */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="absolute inset-0 bg-accent-blue-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <p className="text-white text-sm font-medium p-4 line-clamp-2">
                     {image.title}
                   </p>
@@ -87,7 +87,7 @@ export function CompactGallery({
   return (
     <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 ${className}`}>
       {images.slice(0, 4).map((image, index) => (
-        <figure key={index} className="relative rounded-lg overflow-hidden shadow-md">
+        <figure key={index} className="relative overflow-hidden rounded-xl shadow-card">
           <div className="aspect-square bg-zinc-100">
             <img
               src={image.url}
@@ -123,7 +123,7 @@ export function HeroGallery({
   return (
     <div className={`grid grid-cols-2 md:grid-cols-3 gap-4 ${className}`}>
       {/* Featured large image */}
-      <figure className="col-span-2 md:row-span-2 rounded-xl overflow-hidden shadow-lg">
+      <figure className="col-span-2 md:row-span-2 overflow-hidden rounded-2xl shadow-lift">
         <div className="relative h-full min-h-[300px] md:min-h-[400px] bg-zinc-100">
           <img
             src={featured.url}
@@ -139,7 +139,7 @@ export function HeroGallery({
 
       {/* Smaller images */}
       {rest.slice(0, 3).map((image, index) => (
-        <figure key={index} className="rounded-xl overflow-hidden shadow-lg">
+        <figure key={index} className="overflow-hidden rounded-2xl shadow-lift">
           <div
             className={`
               relative bg-zinc-100

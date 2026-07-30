@@ -52,7 +52,7 @@ export default function GraciasPage() {
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/jp-with-students-mobile.jpg" type="image/jpeg" />
             <img src="/images/academy/jp-with-students.jpg" alt="Estudiantes con profesor Impulse English Academy" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/90 via-green-950/80 to-emerald-900/70"></div>
+          <div className="absolute inset-0 bg-emerald-950/80"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-emerald-400/[0.05]"></div>
@@ -83,9 +83,9 @@ export default function GraciasPage() {
       </section>
 
       {/* Next Steps */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-12 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
             Próximos Pasos
           </h2>
 
@@ -106,9 +106,9 @@ export default function GraciasPage() {
       </section>
 
       {/* Contact Options */}
-      <section className="py-16 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-zinc-900 mb-8 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-8 text-center">
             ¿Necesitas Ayuda Ahora?
           </h2>
           <p className="text-zinc-600 text-center mb-8">
@@ -120,7 +120,7 @@ export default function GraciasPage() {
               href="https://wa.me/34604910611"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white p-6 rounded-xl text-center transition-colors"
+              className="bg-whatsapp hover:bg-whatsapp-dark text-white p-6 rounded-xl text-center transition-colors"
             >
               <Phone className="w-8 h-8 mx-auto mb-3" />
               <div className="font-bold mb-1">WhatsApp (Más Rápido)</div>
@@ -129,7 +129,7 @@ export default function GraciasPage() {
 
             <a
               href="tel:+34604910611"
-              className="bg-accent-blue hover:bg-blue-900 text-white p-6 rounded-xl text-center transition-colors"
+              className="bg-accent-blue hover:bg-accent-blue-800 text-white p-6 rounded-xl text-center transition-colors"
             >
               <Phone className="w-8 h-8 mx-auto mb-3" />
               <div className="font-bold mb-1">Teléfono</div>
@@ -153,20 +153,20 @@ export default function GraciasPage() {
               <h3 className="font-bold text-zinc-900">Horario de Atención</h3>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-sm text-zinc-600">
-              <div><span className="font-semibold">Lunes:</span> 10:00–21:30</div>
-              <div><span className="font-semibold">Martes:</span> 15:30–21:30</div>
-              <div><span className="font-semibold">Miércoles:</span> 10:00–21:30</div>
-              <div><span className="font-semibold">Jueves:</span> 15:30–21:30</div>
-              <div><span className="font-semibold">Viernes:</span> 15:30–19:30</div>
+              <div><span className="font-semibold">Lunes:</span> 10:00-21:30</div>
+              <div><span className="font-semibold">Martes:</span> 15:30-21:30</div>
+              <div><span className="font-semibold">Miércoles:</span> 10:00-21:30</div>
+              <div><span className="font-semibold">Jueves:</span> 15:30-21:30</div>
+              <div><span className="font-semibold">Viernes:</span> 15:30-19:30</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Social Media */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-zinc-900 mb-4">
+          <h2 className="t-h2 text-zinc-900 mb-4">
             Mientras Esperas, Síguenos
           </h2>
           <p className="text-zinc-600 mb-8">
@@ -178,7 +178,7 @@ export default function GraciasPage() {
               href="https://www.instagram.com/impulse_english_academy/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
+              className="flex items-center gap-2 bg-purple-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
             >
               <Instagram className="w-5 h-5" />
               @impulse_english_academy
@@ -208,9 +208,9 @@ export default function GraciasPage() {
       </section>
 
       {/* Location */}
-      <section className="py-16 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-zinc-900 mb-8 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-8 text-center">
             Nuestra Ubicación
           </h2>
 
@@ -227,10 +227,10 @@ export default function GraciasPage() {
               <div>
                 <h3 className="font-bold text-zinc-900 mb-3">Cómo Llegar:</h3>
                 <ul className="space-y-2 text-zinc-600 text-sm">
-                  <li><strong>Metro:</strong> Línea 9 – Barrio del Pilar (4 min caminando)</li>
-                  <li><strong>Metro:</strong> Línea 7 – Peñagrande (12-15 min caminando)</li>
+                  <li><strong>Metro:</strong> Línea 9, Barrio del Pilar (4 min caminando)</li>
+                  <li><strong>Metro:</strong> Línea 7, Peñagrande (12-15 min caminando)</li>
                   <li><strong>Autobús:</strong> Líneas 42, 132, 137, 147</li>
-                  <li><strong>A pie:</strong> 8–10 minutos desde La Vaguada</li>
+                  <li><strong>A pie:</strong> 8-10 minutos desde La Vaguada</li>
                 </ul>
               </div>
               <div>
@@ -245,9 +245,9 @@ export default function GraciasPage() {
       </section>
 
       {/* Explore Courses */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-zinc-900 mb-8 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-8 text-center">
             Mientras Esperas, Conoce Nuestros Cursos
           </h2>
 
@@ -270,7 +270,7 @@ export default function GraciasPage() {
       </section>
 
       {/* Final Message */}
-      <section className="py-16 px-6 bg-accent-blue text-white text-center">
+      <section className="section-lead px-6 bg-accent-blue text-white text-center">
         <div className="container mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold mb-4">
             Gracias por Confiar en Impulse English Academy

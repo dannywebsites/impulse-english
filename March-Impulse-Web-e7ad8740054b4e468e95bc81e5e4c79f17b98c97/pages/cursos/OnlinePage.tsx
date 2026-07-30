@@ -64,7 +64,7 @@ export default function OnlinePage() {
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/95 via-violet-950/90 to-indigo-900/85"></div>
+        <div className="absolute inset-0 bg-indigo-950/90"></div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-36 -right-36 w-[480px] h-[480px] rounded-full bg-violet-400/[0.06]"></div>
         <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-indigo-400/[0.05]"></div>
@@ -130,7 +130,7 @@ export default function OnlinePage() {
               <span className="text-zinc-700 font-medium">Desde cualquier lugar</span>
             </div>
             <div className="flex items-center gap-2">
-              <Award className="w-5 h-5 text-yellow-500" />
+              <Award className="w-5 h-5 text-amber-500" />
               <span className="text-zinc-700 font-medium">Centro Oficial Cambridge</span>
             </div>
           </div>
@@ -138,9 +138,9 @@ export default function OnlinePage() {
       </section>
 
       {/* Who is this for */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+          <h2 className="t-h2 text-zinc-900 mb-4">
             ¿Para quién son las clases online?
           </h2>
           <p className="text-zinc-600 text-lg mb-10">
@@ -170,7 +170,7 @@ export default function OnlinePage() {
                 description: "Practica speaking real en grupos reducidos. Simulamos reuniones, entrevistas y presentaciones para que pierdas el miedo y ganes seguridad."
               }
             ].map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-zinc-100 flex items-start gap-4">
+              <div key={index} className="card p-6 flex items-start gap-4">
                 <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 flex-shrink-0">
                   {item.icon}
                 </div>
@@ -185,9 +185,9 @@ export default function OnlinePage() {
       </section>
 
       {/* How it works */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-10 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-10 text-center">
             Cómo funcionan las clases online
           </h2>
 
@@ -222,14 +222,14 @@ export default function OnlinePage() {
       </section>
 
       {/* Modalities */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-10 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-10 text-center">
             Elige tu modalidad
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-zinc-100 text-center">
+            <div className="card p-8 text-center">
               <div className="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mx-auto mb-4">
                 <Wifi className="w-7 h-7" />
               </div>
@@ -239,7 +239,7 @@ export default function OnlinePage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm border-2 border-indigo-500 text-center relative">
+            <div className="card p-8 border-2 border-indigo-500 text-center relative">
               <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full">
                 Popular
               </span>
@@ -252,7 +252,7 @@ export default function OnlinePage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-zinc-100 text-center">
+            <div className="card p-8 text-center">
               <div className="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mx-auto mb-4">
                 <Users className="w-7 h-7" />
               </div>
@@ -266,9 +266,9 @@ export default function OnlinePage() {
       </section>
 
       {/* What you get */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-10">
+          <h2 className="t-h2 text-zinc-900 mb-10">
             Lo que incluyen las clases online
           </h2>
 
@@ -286,7 +286,7 @@ export default function OnlinePage() {
               "Acceso a simulacros de examen"
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-3 p-3">
-                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                 <span className="text-zinc-700">{item}</span>
               </div>
             ))}
@@ -295,9 +295,9 @@ export default function OnlinePage() {
       </section>
 
       {/* Courses available online */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-4 text-center">
             Cursos disponibles online
           </h2>
           <p className="text-zinc-600 text-center mb-10">
@@ -316,7 +316,7 @@ export default function OnlinePage() {
               <a
                 key={index}
                 href={course.href}
-                className="bg-white p-5 rounded-xl border border-zinc-100 hover:border-indigo-300 hover:shadow-md transition-all group"
+                className="card-interactive group p-5 hover:border-indigo-300"
               >
                 <h3 className="font-bold text-zinc-900 group-hover:text-indigo-600 transition-colors">{course.name}</h3>
                 <span className="text-zinc-400 text-xs mt-2 flex items-center gap-1 group-hover:text-indigo-400">
@@ -329,7 +329,7 @@ export default function OnlinePage() {
       </section>
 
       {/* CTA + Lead Form */}
-      <section className="py-12 md:py-20 px-6 bg-indigo-600">
+      <section className="section-lead px-6 bg-indigo-600">
         <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
@@ -347,14 +347,14 @@ export default function OnlinePage() {
                   "Empieza en cualquier momento del año"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-yellow-400 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-amber-400 flex-shrink-0" />
                     <span className="text-white/90">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="card p-8">
               <LeadForm
                 title="Prueba una clase online sin compromiso"
                 subtitle="Misma calidad que en clase presencial. Te contactamos en menos de 24 horas"
@@ -363,6 +363,7 @@ export default function OnlinePage() {
                 showPhone={true}
                 showAge={true}
                 showLevel={true}
+                variant="refresh"
               />
             </div>
           </div>
@@ -370,9 +371,9 @@ export default function OnlinePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-10 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-10 text-center">
             Preguntas frecuentes sobre las clases online
           </h2>
           <div className="space-y-4">
@@ -392,7 +393,7 @@ export default function OnlinePage() {
       </section>
 
       {/* Links */}
-      <section className="py-8 px-6 bg-zinc-50 border-t border-zinc-100">
+      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
         <div className="container mx-auto max-w-4xl">
           <p className="text-zinc-500 text-sm text-center">
             <strong className="text-zinc-600">También disponible presencial:</strong>{' '}

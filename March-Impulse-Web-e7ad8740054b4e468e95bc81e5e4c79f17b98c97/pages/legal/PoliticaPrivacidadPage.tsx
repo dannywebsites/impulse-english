@@ -36,7 +36,7 @@ export default function PoliticaPrivacidadPage() {
       </section>
 
       {/* Content */}
-      <section className="py-12 md:py-16 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="prose prose-zinc max-w-none">
 
@@ -54,7 +54,7 @@ export default function PoliticaPrivacidadPage() {
               en la Ley Orgánica 3/2018 (LOPDGDD) y en la Ley 34/2002 (LSSI).
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">I. Introducción</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">I. Introducción</h2>
             <p className="text-zinc-600 mb-4">
               Daniel John Fitzpatrick (en adelante, la organización) se reserva la facultad de modificar
               esta Política con el objeto de adaptarla a novedades legislativas, criterios jurisprudenciales,
@@ -68,7 +68,7 @@ export default function PoliticaPrivacidadPage() {
               del Consejo (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD).
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">II. Información General</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">II. Información General</h2>
 
             <h3 className="text-xl font-bold text-zinc-900 mt-6 mb-3">1. ¿Quién es el Responsable del tratamiento de sus datos personales?</h3>
             <p className="text-zinc-600 mb-4">
@@ -154,7 +154,7 @@ export default function PoliticaPrivacidadPage() {
               interponer una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">III. Información Complementaria sobre Derechos</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">III. Información Complementaria sobre Derechos</h2>
 
             <h3 className="text-xl font-bold text-zinc-900 mt-6 mb-3">a) ¿Cuáles son mis derechos?</h3>
 
@@ -230,7 +230,7 @@ export default function PoliticaPrivacidadPage() {
               documento identificativo equivalente.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">IV. Información Adicional sobre Protección de Datos</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">IV. Información Adicional sobre Protección de Datos</h2>
 
             <h3 className="text-xl font-bold text-zinc-900 mt-6 mb-3">1. Clientes</h3>
             <p className="text-zinc-600 mb-4">

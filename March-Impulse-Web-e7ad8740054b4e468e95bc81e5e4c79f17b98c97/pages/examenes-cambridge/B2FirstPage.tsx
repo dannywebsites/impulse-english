@@ -101,7 +101,7 @@ export default function B2FirstPage() {
       cefrLevel="Nivel B2"
       tagline="El certificado más demandado: demuestra que puedes trabajar y estudiar en inglés"
       description="El B2 First, antes conocido como FCE (First Certificate in English), es el examen Cambridge más popular. Certifica que tienes un nivel de inglés suficiente para trabajar en un entorno internacional, estudiar en universidades de habla inglesa, o vivir de forma independiente en un país angloparlante. Es el nivel mínimo exigido por muchas empresas y universidades."
-      heroColor="from-purple-600 to-purple-800"
+      heroColor="bg-purple-800"
       faqs={b2Faqs}
       examParts={[
         {

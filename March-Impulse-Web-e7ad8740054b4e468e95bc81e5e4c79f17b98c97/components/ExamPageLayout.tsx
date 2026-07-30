@@ -97,8 +97,7 @@ export default function ExamPageLayout({
             )}
           </div>
         )}
-        <div className={`absolute inset-0 bg-gradient-to-br ${heroColor}`} style={{opacity: 0.88}}></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
+        <div className={`absolute inset-0 ${heroColor}`} style={{opacity: 0.88}}></div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-36 -right-36 w-[480px] h-[480px] rounded-full bg-white/[0.04]"></div>
         <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-brand-red/[0.05]"></div>
@@ -142,18 +141,18 @@ export default function ExamPageLayout({
       </section>
 
       {/* About the exam */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-              <h2 className="text-3xl md:text-4xl font-bold text-accent-blue mb-6">
+              <h2 className="t-h2 text-accent-blue mb-6">
                 Sobre el examen
               </h2>
               <p className="text-lg text-zinc-600 leading-relaxed mb-8">
                 {description}
               </p>
 
-              <div className="bg-zinc-50 p-6 rounded-xl">
+              <div className="card-quiet p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock className="w-6 h-6 text-accent-blue" />
                   <span className="text-lg font-bold text-zinc-900">
@@ -182,10 +181,10 @@ export default function ExamPageLayout({
       </section>
 
       {/* Exam Structure */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Estructura del examen
             </h2>
             <p className="text-zinc-500 text-lg max-w-2xl mx-auto">
@@ -221,10 +220,10 @@ export default function ExamPageLayout({
       </section>
 
       {/* Our Approach */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+            <h2 className="t-h2 text-zinc-900 mb-6">
               Nuestra preparación
             </h2>
             <p className="text-lg text-zinc-600 leading-relaxed mb-12">
@@ -248,10 +247,10 @@ export default function ExamPageLayout({
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Ambiente de aprendizaje
             </h2>
             <p className="text-zinc-600 text-lg">
@@ -262,7 +261,7 @@ export default function ExamPageLayout({
             {galleryImages.map((image, index) => (
               <div
                 key={index}
-                className={`aspect-[4/3] rounded-xl overflow-hidden shadow-lg reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ${index > 0 ? 'delay-100' : ''}`}
+                className={`aspect-[4/3] overflow-hidden rounded-2xl shadow-lift reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ${index > 0 ? 'delay-100' : ''}`}
               >
                 <img
                   src={image.url}
@@ -278,14 +277,14 @@ export default function ExamPageLayout({
 
       {/* FAQ Section */}
       {faqs && faqs.length > 0 && (
-        <FAQSection faqs={faqs} title={`Preguntas frecuentes sobre ${examName}`} />
+        <FAQSection faqs={faqs} title={`Preguntas frecuentes sobre ${examName}`} variant="refresh" />
       )}
 
       {/* Video Section - Below the fold for performance */}
-      <section className="py-16 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h3 text-zinc-900 mb-4">
               Cómo preparamos el {examName}
             </h2>
             <p className="text-zinc-600">
@@ -296,14 +295,14 @@ export default function ExamPageLayout({
             <LazyVideo
               videoId="Fdso-d9_F20"
               title={`Preparación ${examName}`}
-              className="shadow-xl"
+              className="shadow-panel"
             />
           </div>
         </div>
       </section>
 
       {/* Location & Related Links Section */}
-      <section className="py-12 px-6 bg-white border-t border-zinc-100">
+      <section className="section-tight px-6 bg-white border-t border-zinc-100">
         <div className="container mx-auto max-w-4xl">
           <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-8">
             <h3 className="font-bold text-zinc-900 mb-4 text-lg">¿Dónde preparar tu examen {examName}?</h3>
@@ -366,7 +365,7 @@ export default function ExamPageLayout({
       </section>
 
       {/* Lead Form */}
-      <section id="formulario" className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section id="formulario" className="section-lead px-6 surface-alt">
         <div className="container mx-auto max-w-3xl">
           <LeadForm
             title={`Prepárate para ${examName}`}
@@ -375,6 +374,7 @@ export default function ExamPageLayout({
             source={formSource}
             showPhone={true}
             showLevel={true}
+            variant="refresh"
           />
         </div>
       </section>

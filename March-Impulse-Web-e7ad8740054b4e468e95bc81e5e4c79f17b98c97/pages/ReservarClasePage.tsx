@@ -65,7 +65,7 @@ export default function ReservarClasePage() {
     return (
       <>
         <Navbar />
-        <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 pt-24 pb-16 px-6 flex items-center justify-center">
+        <div className="min-h-screen bg-green-50 pt-24 pb-16 px-6 flex items-center justify-center">
           <div className="max-w-lg mx-auto text-center">
             <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-8">
               <CheckCircle className="w-12 h-12 text-white" />
@@ -77,7 +77,7 @@ export default function ReservarClasePage() {
               Hemos recibido tu solicitud. Te contactaremos en menos de 24 horas para confirmar tu clase de prueba gratuita.
             </p>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm mb-8">
+            <div className="card p-6 mb-8">
               <h3 className="font-bold text-zinc-900 mb-4">Próximos pasos:</h3>
               <ol className="text-left space-y-3 text-zinc-600">
                 <li className="flex items-start gap-3">
@@ -98,7 +98,7 @@ export default function ReservarClasePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
               href="/"
-                className="bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                className="bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-colors"
               >
                 Volver al inicio
               </a>
@@ -128,7 +128,7 @@ export default function ReservarClasePage() {
               <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/primary-students-mobile.jpg" type="image/jpeg" />
               <img src="/images/academy/primary-classes-students-smiling.jpg" alt="Estudiantes felices Impulse English Academy La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
             </picture>
-            <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
+            <div className="absolute inset-0 bg-accent-blue/85"></div>
           </div>
           <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
           <div className="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-brand-red/[0.05]"></div>
@@ -154,7 +154,7 @@ export default function ReservarClasePage() {
         </section>
 
         {/* Main Content */}
-        <section className="py-12 md:py-16 px-6">
+        <section className="section-lead px-6">
           <div className="container mx-auto max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
               {/* Benefits Sidebar */}
@@ -172,7 +172,7 @@ export default function ReservarClasePage() {
                       { icon: <CheckCircle className="w-5 h-5" />, text: "Sin compromiso de matrícula" }
                     ].map((item, index) => (
                       <div key={index} className="flex items-center gap-4 p-4 bg-white rounded-lg border border-zinc-100">
-                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-600">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-emerald-600">
                           {item.icon}
                         </div>
                         <span className="text-zinc-700 font-medium">{item.text}</span>
@@ -197,11 +197,11 @@ export default function ReservarClasePage() {
                   {/* Trust Badges */}
                   <div className="mt-8 flex flex-wrap gap-4">
                     <div className="flex items-center gap-2 text-sm text-zinc-500">
-                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <CheckCircle className="w-4 h-4 text-emerald-600" />
                       100% tasa de aprobados
                     </div>
                     <div className="flex items-center gap-2 text-sm text-zinc-500">
-                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <CheckCircle className="w-4 h-4 text-emerald-600" />
                       Centro Cambridge oficial
                     </div>
                   </div>
@@ -210,8 +210,8 @@ export default function ReservarClasePage() {
 
               {/* Form */}
               <div className="lg:col-span-3 order-1 lg:order-2">
-                <div className="bg-white p-6 md:p-10 rounded-2xl shadow-xl border border-zinc-100">
-                  <h2 className="text-2xl font-bold text-zinc-900 mb-2">
+                <div className="card p-6 md:p-10">
+                  <h2 className="t-h3 text-zinc-900 mb-2">
                     Completa tu reserva
                   </h2>
                   <p className="text-zinc-500 mb-8">
@@ -304,7 +304,7 @@ export default function ReservarClasePage() {
                     <button
                       type="submit"
                       disabled={status === 'loading'}
-                      className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-lg transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full bg-brand-red hover:bg-brand-red-600 text-white font-bold py-4 px-6 rounded-lg transition-all flex items-center justify-center gap-2 shadow-cta hover:shadow-cta-lift disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {status === 'loading' ? (
                         <>

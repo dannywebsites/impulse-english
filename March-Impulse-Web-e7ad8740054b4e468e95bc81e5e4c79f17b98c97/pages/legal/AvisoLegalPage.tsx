@@ -36,7 +36,7 @@ export default function AvisoLegalPage() {
       </section>
 
       {/* Content */}
-      <section className="py-12 md:py-16 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="prose prose-zinc max-w-none">
 
@@ -54,7 +54,7 @@ export default function AvisoLegalPage() {
               en la Ley Orgánica 3/2018 (LOPDGDD) y en la Ley 34/2002 (LSSI).
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">1. Información General</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">1. Información General</h2>
             <p className="text-zinc-600 mb-4">
               En cumplimiento del deber de información establecido en el artículo 10 de la Ley 34/2002,
               de Servicios de la Sociedad de la Información y de Comercio Electrónico, le comunicamos que
@@ -74,7 +74,7 @@ export default function AvisoLegalPage() {
               <li><strong>E-mail:</strong> info@impulse-english.es</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">2. Objeto y Ámbito de Aplicación</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">2. Objeto y Ámbito de Aplicación</h2>
             <p className="text-zinc-600 mb-4">
               2.1. Mediante este Aviso Legal se establecen las condiciones generales de uso que regulan el acceso,
               navegación y uso del sitio web https://impulse-english.es/ (en adelante, Sitio Web), así como las
@@ -95,7 +95,7 @@ export default function AvisoLegalPage() {
               aplicables, la buena fe, el orden público, los usos del tráfico y el presente Aviso Legal.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">3. Acceso y Utilización del Sitio Web</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">3. Acceso y Utilización del Sitio Web</h2>
             <p className="text-zinc-600 mb-4">
               3.1. El acceso a este Sitio Web es libre y gratuito, salvo en lo relativo al coste de conexión
               de la red de telecomunicaciones suministrada por el operador contratado por cada USUARIO.
@@ -117,7 +117,7 @@ export default function AvisoLegalPage() {
               el acceso al Sitio Web, ya sea por motivos técnicos, de seguridad, o por cualquier otra causa.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">4. Protección de Datos Personales</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">4. Protección de Datos Personales</h2>
             <p className="text-zinc-600 mb-4">
               4.1. LA ORGANIZACIÓN se compromete al tratamiento de los datos personales de manera respetuosa
               con los derechos de sus titulares, y de conformidad a la normativa de protección de datos vigente.
@@ -135,7 +135,7 @@ export default function AvisoLegalPage() {
               siendo necesaria la previa autorización expresa de sus padres o tutores.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">5. Propiedad Intelectual e Industrial</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">5. Propiedad Intelectual e Industrial</h2>
             <p className="text-zinc-600 mb-4">
               5.1. Todos los elementos del Portal (códigos fuente, bases de datos, diseño, imágenes, fotografías,
               dibujos, gráficos, animaciones, aplicativos, motores de búsqueda, páginas, logotipos, marcas y nombres
@@ -151,14 +151,14 @@ export default function AvisoLegalPage() {
               quedan prohibidos.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">6. Marcas Registradas</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">6. Marcas Registradas</h2>
             <p className="text-zinc-600 mb-4">
               Todas las marcas, logotipos y anagramas mostrados en este sitio son propiedad de LA ORGANIZACIÓN
               o de terceras empresas. Queda expresamente prohibida la utilización, sin previo consentimiento,
               de cualquier elemento de esta página web que sea objeto de protección.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">7. Exclusión de Garantías y Responsabilidad</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">7. Exclusión de Garantías y Responsabilidad</h2>
             <p className="text-zinc-600 mb-4">
               7.1. El contenido de este Sitio Web tiene finalidad informativa y de creación de un canal de
               comunicación con los USUARIOS, sin que sus contenidos puedan considerarse como asesoramiento exhaustivo.
@@ -169,7 +169,7 @@ export default function AvisoLegalPage() {
               o la transmisión de virus o programas maliciosos.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">8. Enlaces</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">8. Enlaces</h2>
             <p className="text-zinc-600 mb-4">
               8.1. En el caso de que en el Sitio Web se dispusiesen enlaces o hipervínculos hacia otros sitios
               de Internet, LA ORGANIZACIÓN no ejercerá ningún control sobre dichos sitios y contenidos.
@@ -179,14 +179,14 @@ export default function AvisoLegalPage() {
               Internet no implica que exista ningún tipo de relación, asociación, colaboración o dependencia.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">9. Derecho de Exclusión</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">9. Derecho de Exclusión</h2>
             <p className="text-zinc-600 mb-4">
               LA ORGANIZACIÓN se reserva el derecho a denegar o retirar el acceso a este Sitio Web y/o a los
               contenidos y servicios ofrecidos, sin necesidad de preaviso, a aquellos USUARIOS que incumplan
               las presentes condiciones generales de uso.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">10. Generalidades</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">10. Generalidades</h2>
             <p className="text-zinc-600 mb-4">
               10.1. En caso de existir discrepancia entre lo establecido en estas condiciones generales de uso
               y las condiciones particulares de cada servicio específico, prevalecerá lo dispuesto en éstas últimas.
@@ -200,21 +200,21 @@ export default function AvisoLegalPage() {
               aquí determinadas, y dichas modificaciones tendrán vigencia desde el mismo momento de su publicación.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">11. Espacios con Acceso Restringido</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">11. Espacios con Acceso Restringido</h2>
             <p className="text-zinc-600 mb-4">
               El acceso a ciertos apartados de este Sitio Web está protegido por código de usuario y contraseña.
               Las credenciales de acceso son personales e intransferibles, siendo responsabilidad del usuario
               mantenerlas en secreto.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">12. Redes Sociales</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">12. Redes Sociales</h2>
             <p className="text-zinc-600 mb-4">
               LA ORGANIZACIÓN puede estar presente en redes sociales de Internet. Estos espacios se considerarán
               oficiales, no asumiendo responsabilidad por el uso o contenidos dispuestos en cualesquiera otras
               cuentas o espacios abiertos por parte de terceros.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">13. Ley Aplicable y Jurisdicción</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">13. Ley Aplicable y Jurisdicción</h2>
             <p className="text-zinc-600 mb-4">
               Las relaciones establecidas entre LA ORGANIZACIÓN, como titular de este Sitio Web, y el USUARIO,
               se regirán por lo dispuesto en la normativa vigente. Para los casos en que la normativa prevea

@@ -144,7 +144,7 @@ export default function InfantilPage() {
               fetchPriority="high"
             />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-900/80 via-purple-900/70 to-violet-800/55"></div>
+          <div className="absolute inset-0 bg-fuchsia-900/70"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-white/[0.04]"></div>
@@ -163,7 +163,7 @@ export default function InfantilPage() {
             <div className="flex items-center gap-4 mb-6 animate-hero-fade-up">
               <div className="w-8 h-px bg-white/40"></div>
               <span className="font-display text-white/70 text-xs uppercase tracking-[0.2em]">
-                2–5 años · Great Little People
+                2-5 años · Great Little People
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
@@ -206,10 +206,10 @@ export default function InfantilPage() {
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-5 h-5 text-purple-500" />
-              <span className="text-zinc-700 font-medium">1 hora/día (L–J 17:30)</span>
+              <span className="text-zinc-700 font-medium">1 hora/día (L-J 17:30)</span>
             </div>
             <div className="flex items-center gap-2">
-              <Star className="w-5 h-5 text-yellow-500" />
+              <Star className="w-5 h-5 text-amber-500" />
               <span className="text-zinc-700 font-medium">Clase de prueba GRATIS</span>
             </div>
           </div>
@@ -217,10 +217,10 @@ export default function InfantilPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+            <h2 className="t-h2 text-zinc-900 mb-6">
               ¿Por qué empezar tan pronto?
             </h2>
 
@@ -231,13 +231,13 @@ export default function InfantilPage() {
             </div>
 
             {/* Great Little People Methodology Box */}
-            <div className="mt-8 p-6 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl border border-yellow-200">
+            <div className="mt-8 p-6 bg-yellow-50 rounded-xl border border-yellow-200">
               <div className="flex items-start gap-4">
-                <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center flex-shrink-0">
                   <Sparkles className="w-8 h-8 text-yellow-900" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-zinc-900 text-lg mb-2">Centro Oficial Great Little People – Centre of Excellence</h3>
+                  <h3 className="font-bold text-zinc-900 text-lg mb-2">Centro Oficial Great Little People, Centre of Excellence</h3>
                   <p className="text-zinc-600 text-sm mb-3">
                     No es una clase tradicional: es una experiencia completa que combina música, movimiento, juego guiado y aprendizaje multisensorial, con participación familiar y seguimiento.
                   </p>
@@ -259,7 +259,7 @@ export default function InfantilPage() {
                 <strong>¿Dónde estamos?</strong> Estamos en Barrio del Pilar, junto a La Vaguada (Madrid 28029), con acceso cómodo desde metro y zonas cercanas.
               </p>
               <p className="text-zinc-600 text-sm">
-                Cuando crezcan, pueden continuar en <a href="/cursos-ingles/primaria/" className="text-purple-600 hover:underline font-medium">Primaria (6–12)</a> y empezar con sus primeros <a href="/examenes-cambridge/" className="text-purple-600 hover:underline font-medium">exámenes Cambridge Young Learners</a>.
+                Cuando crezcan, pueden continuar en <a href="/cursos-ingles/primaria/" className="text-purple-600 hover:underline font-medium">Primaria (6-12)</a> y empezar con sus primeros <a href="/examenes-cambridge/" className="text-purple-600 hover:underline font-medium">exámenes Cambridge Young Learners</a>.
               </p>
             </div>
           </div>
@@ -298,7 +298,7 @@ export default function InfantilPage() {
                   description: "Inmersión total desde el primer día. Los niños se adaptan sorprendentemente rápido."
                 }
               ].map((feature, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-zinc-100 flex items-start gap-4">
+                <div key={index} className="card p-6 flex items-start gap-4">
                   <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 flex-shrink-0">
                     {feature.icon}
                   </div>
@@ -313,10 +313,10 @@ export default function InfantilPage() {
       </section>
 
       {/* Video Section - Above Levels */}
-      <section className="py-16 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h3 text-zinc-900 mb-4">
               Descubre Great Little People en acción
             </h2>
             <p className="text-zinc-600">
@@ -326,16 +326,16 @@ export default function InfantilPage() {
           <LazyVideo
             videoId="G_fFoyb8sdc"
             title="Great Little People - Metodología para niños de 2 a 5 años"
-            className="shadow-xl"
+            className="shadow-panel"
           />
         </div>
       </section>
 
       {/* Schedule & Pricing Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Horarios y grupos
             </h2>
             <p className="text-zinc-500 text-lg">
@@ -344,41 +344,41 @@ export default function InfantilPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl border border-purple-100">
+            <div className="bg-purple-50 p-8 rounded-2xl border border-purple-100">
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Grupos por edad</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">2-3 años: Iniciación al inglés</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">3-4 años: Desarrollo lingüístico</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">4-5 años: Preparación pre-primaria</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-2xl border border-yellow-100">
+            <div className="bg-yellow-50 p-8 rounded-2xl border border-yellow-100">
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Lo que incluye</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Material Great Little People incluido</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Seguimiento personalizado</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Eventos especiales (Halloween, Navidad…)</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Rutinas para reforzar en casa (sin presión)</span>
                 </li>
               </ul>
@@ -404,7 +404,7 @@ export default function InfantilPage() {
                 href="https://wa.me/34604910611?text=Hola,%20me%20gustaría%20información%20sobre%20inglés%20para%20infantil"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
+                className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 WhatsApp
@@ -427,10 +427,11 @@ export default function InfantilPage() {
       <FAQSection
         faqs={faqs}
         title="Preguntas frecuentes sobre inglés infantil"
+        variant="refresh"
       />
 
       {/* Lead Form */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-3xl">
           <LeadForm
             title="Solicita información sobre nuestras clases infantiles"
@@ -440,6 +441,7 @@ export default function InfantilPage() {
             showPhone={true}
             showAge={true}
             showLevel={false}
+            variant="refresh"
           />
         </div>
       </section>
