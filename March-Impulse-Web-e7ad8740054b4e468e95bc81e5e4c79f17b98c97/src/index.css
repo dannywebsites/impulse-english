@@ -2,14 +2,247 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---------------------------------------------------------------------------
+   Impulse English Academy — design system
+   ---------------------------------------------------------------------------
+   Direction: "Editorial-Confident". Typography-led, generous whitespace,
+   asymmetry over symmetric grids, brand-tinted depth instead of flat grey
+   shadows. Motion is CSS transform/opacity only, so nothing here costs JS.
+
+   Everything below is either a base default (element selectors, zero
+   specificity fights) or a `components` layer class. Tailwind utilities live in
+   a later layer, so any page can still override a primitive inline.
+--------------------------------------------------------------------------- */
+
 @layer base {
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', Georgia, serif;
     line-height: 1.1;
+    text-wrap: balance;
   }
 
   body {
     font-family: 'Inter', system-ui, sans-serif;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Long-form paragraphs read better without ragged single-word last lines. */
+  p {
+    text-wrap: pretty;
+  }
+
+  /* A visible keyboard focus state everywhere. Before this, only the skip link
+     had one. `:where()` keeps specificity at 0 so components can restyle it. */
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline: 2px solid theme('colors.brand-red.DEFAULT');
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  /* -----------------------------------------------------------------------
+     Vertical rhythm — 3 steps, assigned by section role.
+     Replaces `py-16` repeated 168 times, `py-12` 163 times, `py-20` 137 times.
+     Uniform padding on every band is what makes a page read as a template.
+  ----------------------------------------------------------------------- */
+  .section-lead {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .section {
+    @apply py-14 md:py-20;
+  }
+
+  .section-tight {
+    @apply py-10 md:py-14;
+  }
+
+  /* Horizontal container. Pages currently re-declare `max-w-7xl mx-auto px-6`
+     by hand in dozens of places. */
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-6 lg:px-8;
+  }
+
+  .container-narrow {
+    @apply mx-auto w-full max-w-4xl px-6 lg:px-8;
+  }
+
+  /* -----------------------------------------------------------------------
+     Surfaces — alternation instead of gradient washes or <hr> dividers.
+  ----------------------------------------------------------------------- */
+  .surface-alt {
+    @apply bg-zinc-surface;
+  }
+
+  .surface-deep {
+    @apply bg-accent-blue-800 text-white;
+  }
+
+  .surface-ink {
+    @apply bg-accent-blue-950 text-white;
+  }
+
+  /* -----------------------------------------------------------------------
+     Typography scale. Fluid, so it never needs a `md:` / `lg:` size ladder
+     hand-written per heading. Weight and tracking step down with size, which
+     is what gives H1 > H2 > H3 a hierarchy you can read at a glance.
+  ----------------------------------------------------------------------- */
+  .t-display {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.5rem, 1.55rem + 4.2vw, 4.75rem);
+    line-height: 0.98;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  .t-h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 1.4rem + 2.7vw, 3.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  .t-h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.625rem, 1.28rem + 1.55vw, 2.5rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  .t-h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.25rem, 1.13rem + 0.6vw, 1.625rem);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  /* Sub-headline under a hero or section title. Inter, not the serif. */
+  .t-lede {
+    font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+    line-height: 1.65;
+    letter-spacing: -0.005em;
+  }
+
+  .t-body {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  .t-small {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  /* Reading measure for prose columns. */
+  .measure {
+    @apply max-w-measure;
+  }
+
+  /* -----------------------------------------------------------------------
+     Eyebrow + hairline rule — the label pattern already used across the site,
+     currently with a different colour, size and tracking on every page.
+  ----------------------------------------------------------------------- */
+  .eyebrow {
+    @apply block text-xs font-semibold uppercase tracking-[0.18em] text-brand-red;
+  }
+
+  .eyebrow-light {
+    @apply block text-xs font-semibold uppercase tracking-[0.18em] text-white/80;
+  }
+
+  .rule {
+    @apply block h-px w-16 bg-accent-blue/25;
+  }
+
+  .rule-light {
+    @apply block h-px w-16 bg-white/40;
+  }
+
+  /* -----------------------------------------------------------------------
+     Cards — hairline border + brand-tinted shadow. No `min-h` height forcing,
+     no uniform `shadow-md`. Hover lifts via transform only (compositor-safe).
+  ----------------------------------------------------------------------- */
+  .card {
+    @apply rounded-2xl border border-zinc-200/80 bg-white shadow-card;
+  }
+
+  .card-interactive {
+    @apply card transition-[transform,box-shadow] duration-200 ease-out
+           hover:-translate-y-0.5 hover:shadow-lift
+           motion-reduce:transition-none motion-reduce:hover:translate-y-0;
+  }
+
+  .card-quiet {
+    @apply rounded-2xl border border-zinc-200/70 bg-zinc-surface;
+  }
+
+  /* On a dark surface. */
+  .card-inverse {
+    @apply rounded-2xl border border-white/15 bg-white/5;
+  }
+
+  /* -----------------------------------------------------------------------
+     Buttons — one system. Replaces the ad-hoc mix of `bg-red-600`,
+     `bg-accent-blue hover:bg-blue-700` and bare anchors.
+  ----------------------------------------------------------------------- */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg
+           px-6 py-3.5 text-sm font-semibold tracking-wide
+           transition-[background-color,color,box-shadow,transform] duration-200
+           active:scale-[0.98] motion-reduce:transition-none motion-reduce:active:scale-100;
+  }
+
+  .btn-lg {
+    @apply px-8 py-4 text-base;
+  }
+
+  .btn-sm {
+    @apply px-4 py-2.5 text-sm;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-red text-white shadow-cta
+           hover:bg-brand-red-600 hover:shadow-cta-lift;
+  }
+
+  .btn-secondary {
+    @apply btn bg-accent-blue text-white
+           hover:bg-accent-blue-800;
+  }
+
+  .btn-outline {
+    @apply btn border border-accent-blue/25 bg-white text-accent-blue
+           hover:border-accent-blue hover:bg-accent-blue hover:text-white;
+  }
+
+  /* For use on photography or a dark brand panel. */
+  .btn-on-dark {
+    @apply btn border border-white/30 bg-white/10 text-white backdrop-blur-sm
+           hover:bg-white hover:text-accent-blue;
+  }
+
+  /* Edge fade for the marquee rows. PartnersSection already referenced this
+     class but it was never defined, so the marquees ran hard into the section
+     edges. A mask does the job without the two absolutely-positioned
+     gradient overlay divs it was using elsewhere. */
+  .mask-linear-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .link-inline {
+    @apply font-medium text-accent-blue underline decoration-accent-blue/30
+           underline-offset-2 transition-colors
+           hover:text-accent-blue-800 hover:decoration-accent-blue;
   }
 }

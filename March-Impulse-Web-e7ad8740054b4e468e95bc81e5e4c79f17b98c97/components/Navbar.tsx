@@ -62,7 +62,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
         <nav
           className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b ${
             scrolled
-              ? 'bg-zinc-900/95 backdrop-blur-md py-3 border-white/10'
+              ? 'bg-accent-blue-950/95 backdrop-blur-md py-3 border-white/10'
               : 'bg-transparent py-5 border-transparent'
           }`}
         >
@@ -88,7 +88,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
                 href={NAP.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 bg-green-500 hover:bg-green-600 text-white font-semibold text-xs px-2.5 py-1.5 rounded-md transition-all"
+                className="flex items-center gap-1 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold text-xs px-2.5 py-1.5 rounded-md transition-all"
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="w-4 h-4" />
@@ -117,11 +117,18 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
                   {item.children ? (
                     <button
                       className="text-white/90 font-medium text-sm tracking-wide hover:text-white transition-colors px-4 py-2 flex items-center gap-1"
+                      aria-haspopup="true"
+                      aria-expanded={openDropdown === item.label}
+                      onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
                       onMouseEnter={() => setOpenDropdown(item.label)}
                       onMouseLeave={() => setOpenDropdown(null)}
                     >
                       {item.label}
-                      <ChevronDown className="w-4 h-4" />
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-200 ${
+                          openDropdown === item.label ? 'rotate-180' : ''
+                        }`}
+                      />
                     </button>
                   ) : (
                     <a
@@ -135,7 +142,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
                   {/* Dropdown */}
                   {item.children && (
                     <div
-                      className={`absolute top-full left-0 w-72 bg-white rounded-lg shadow-2xl border border-zinc-100 py-2 transition-all duration-200 ${
+                      className={`absolute top-full left-0 w-72 bg-white rounded-xl shadow-panel border border-zinc-200/80 p-2 transition-all duration-200 ${
                         openDropdown === item.label ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
                       }`}
                       onMouseEnter={() => setOpenDropdown(item.label)}
@@ -145,7 +152,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
                         <a
                           key={child.href}
                           href={child.href}
-                          className="block px-4 py-3 hover:bg-zinc-50 transition-colors"
+                          className="block rounded-lg px-3 py-2.5 transition-colors hover:bg-accent-blue-50"
                         >
                           <span className="block text-zinc-900 font-semibold text-sm">{child.label}</span>
                           {child.description && (
@@ -165,7 +172,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
                 href={NAP.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 border border-green-500 text-white font-semibold py-2.5 px-4 rounded-md flex items-center gap-2 transition-all text-sm"
+                className="bg-whatsapp hover:bg-whatsapp-dark border border-transparent text-white font-semibold py-2.5 px-4 rounded-md flex items-center gap-2 transition-all text-sm"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp
@@ -213,7 +220,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
               href={NAP.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 bg-green-500 hover:bg-green-600 text-white font-semibold text-xs px-2.5 py-1.5 rounded-md transition-all"
+              className="flex items-center gap-1 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold text-xs px-2.5 py-1.5 rounded-md transition-all"
               aria-label="WhatsApp"
             >
               <MessageCircle className="w-4 h-4" />
@@ -242,11 +249,18 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
                 {item.children ? (
                   <button
                     className="text-zinc-700 font-medium text-sm tracking-wide hover:text-accent-blue transition-colors px-4 py-2 flex items-center gap-1"
+                    aria-haspopup="true"
+                    aria-expanded={openDropdown === item.label}
+                    onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
                     onMouseEnter={() => setOpenDropdown(item.label)}
                     onMouseLeave={() => setOpenDropdown(null)}
                   >
                     {item.label}
-                    <ChevronDown className="w-4 h-4" />
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform duration-200 ${
+                        openDropdown === item.label ? 'rotate-180' : ''
+                      }`}
+                    />
                   </button>
                 ) : (
                   <a
@@ -264,7 +278,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
                 {/* Dropdown */}
                 {item.children && (
                   <div
-                    className={`absolute top-full left-0 w-72 bg-white rounded-lg shadow-2xl border border-zinc-100 py-2 transition-all duration-200 ${
+                    className={`absolute top-full left-0 w-72 bg-white rounded-xl shadow-panel border border-zinc-200/80 p-2 transition-all duration-200 ${
                       openDropdown === item.label ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
                     }`}
                     onMouseEnter={() => setOpenDropdown(item.label)}
@@ -274,7 +288,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
                       <a
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-3 hover:bg-zinc-50 transition-colors"
+                        className="block rounded-lg px-3 py-2.5 transition-colors hover:bg-accent-blue-50"
                       >
                         <span className="block text-zinc-900 font-semibold text-sm">{child.label}</span>
                         {child.description && (
@@ -294,7 +308,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
               href={NAP.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 border border-green-500 text-white font-semibold py-2.5 px-4 rounded-md flex items-center gap-2 transition-all text-sm"
+              className="bg-whatsapp hover:bg-whatsapp-dark border border-transparent text-white font-semibold py-2.5 px-4 rounded-md flex items-center gap-2 transition-all text-sm"
             >
               <MessageCircle className="w-4 h-4" />
               WhatsApp
@@ -322,7 +336,7 @@ function MobileMenu({ isOpen, onClose, isHomePage }: { isOpen: boolean; onClose:
   if (!isOpen) return null;
 
   return (
-    <div className={`fixed inset-0 z-40 ${isHomePage ? 'bg-zinc-900' : 'bg-white'}`}>
+    <div className={`fixed inset-0 z-40 ${isHomePage ? 'bg-accent-blue-950' : 'bg-white'}`}>
       <div className="pt-20 px-6 pb-6 h-full overflow-y-auto">
         <div className="space-y-2">
           {navItems.map((item) => (
@@ -373,7 +387,7 @@ function MobileMenu({ isOpen, onClose, isHomePage }: { isOpen: boolean; onClose:
             href={NAP.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-lg transition-colors"
+            className="flex items-center justify-center gap-2 w-full bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 rounded-lg transition-colors"
           >
             <MessageCircle className="w-5 h-5" />
             WhatsApp

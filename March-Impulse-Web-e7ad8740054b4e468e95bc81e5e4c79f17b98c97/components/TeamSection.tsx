@@ -4,35 +4,37 @@ import OptimizedImage from './OptimizedImage';
 
 export default function TeamSection() {
   return (
-    <section className="w-full bg-zinc-50 py-16 md:py-24 px-6 border-t border-zinc-100">
+    <section className="section surface-alt w-full px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* 7/5 split rather than a 50/50 mirror: the photograph carries more
+            weight than the copy beside it. */}
+        <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-12">
 
           {/* Image Side */}
-          <div className="relative order-2 lg:order-1">
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative order-2 lg:order-1 lg:col-span-7">
+            <div className="overflow-hidden rounded-2xl shadow-lift">
               <OptimizedImage
                 image={teamImages.estudiantesSonriendo}
                 className="w-full h-auto object-cover"
                 loading="lazy"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                sizes="(max-width: 1024px) 100vw, 58vw"
               />
             </div>
           </div>
 
           {/* Text Side */}
-          <div className="space-y-6 order-1 lg:order-2">
+          <div className="space-y-6 order-1 lg:order-2 lg:col-span-5">
             <div>
-              <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
+              <span className="eyebrow mb-4">
                 Nuestro Equipo
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-4">
+              <h2 className="t-h2 text-zinc-900 mb-5">
                 Un equipo apasionado por formarte
               </h2>
-              <div className="w-24 h-1 bg-accent-blue/20"></div>
+              <div className="rule"></div>
             </div>
 
-            <div className="space-y-6 text-lg text-zinc-600 leading-relaxed">
+            <div className="space-y-5 t-body text-zinc-600">
               <p>
                 Nuestro equipo docente está formado por profesores cualificados, con experiencia en la enseñanza del inglés a niños, adolescentes y adultos.
               </p>

@@ -340,7 +340,7 @@ export default function MetodologiaPage() {
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-300">
               <a
               href="/reservar-clase/"
-                className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
+                className="bg-brand-red hover:bg-brand-red-600 text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Experimenta la Metodología
                 <ArrowRight className="w-5 h-5" />
@@ -354,13 +354,14 @@ export default function MetodologiaPage() {
       <FAQSection
         faqs={metodologiaFAQs}
         title="Preguntas Frecuentes sobre Metodología de Inglés"
+        variant="refresh"
       />
 
       {/* Problem Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               ¿Por Qué Tantos Estudiantes "No Pueden" con el Inglés?
             </h2>
             <p className="text-zinc-600 max-w-2xl mx-auto">
@@ -420,13 +421,13 @@ export default function MetodologiaPage() {
       </section>
 
       {/* 7 Pillars Section */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <span className="text-accent-blue font-bold tracking-widest text-xs uppercase mb-4 block">
               Los 7 Pilares
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Los 7 Pilares Que Transforman Tu Aprendizaje
             </h2>
           </div>
@@ -446,7 +447,7 @@ export default function MetodologiaPage() {
                       <ul className="space-y-2 mb-4">
                         {pillar.points.map((point, i) => (
                           <li key={i} className="flex items-start gap-2 text-zinc-600 text-sm">
-                            <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                            <CheckCircle className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                             {point}
                           </li>
                         ))}
@@ -466,10 +467,10 @@ export default function MetodologiaPage() {
       </section>
 
       {/* Science Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               La Ciencia Detrás del Método
             </h2>
             <p className="text-zinc-600 max-w-2xl mx-auto">
@@ -497,15 +498,15 @@ export default function MetodologiaPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 px-6 bg-accent-blue">
+      <section className="section-lead px-6 bg-accent-blue">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">
+          <h2 className="t-h2 text-white text-center mb-12">
             Los Números No Mienten
           </h2>
           <dl className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((stat, i) => (
               <div key={i} className="text-center">
-                <dt className="text-4xl md:text-5xl font-bold text-white mb-2">{stat.value}</dt>
+                <dt className="t-h1 text-white mb-2">{stat.value}</dt>
                 <dd className="text-white/70 text-sm">{stat.label}</dd>
               </div>
             ))}
@@ -514,9 +515,9 @@ export default function MetodologiaPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-zinc-900 text-center mb-12">
+          <h2 className="t-h2 text-zinc-900 text-center mb-12">
             Lo Que Dicen Nuestros Estudiantes
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -529,7 +530,7 @@ export default function MetodologiaPage() {
               <div key={i} className="bg-white p-6 rounded-xl">
                 <div className="flex gap-1 mb-4">
                   {[1,2,3,4,5].map(s => (
-                    <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                    <Star key={s} className="w-4 h-4 text-amber-400 fill-amber-400" />
                   ))}
                 </div>
                 <p className="text-zinc-600 mb-4">"{item.quote}"</p>
@@ -544,11 +545,11 @@ export default function MetodologiaPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 Prueba la Metodología Impulse Tú Mismo
               </h2>
               <p className="text-zinc-600 mb-6">
@@ -556,19 +557,19 @@ export default function MetodologiaPage() {
               </p>
               <div className="space-y-3 mb-8">
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Evaluamos tu nivel actual</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Identificamos tu estilo de aprendizaje</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Creamos plan personalizado</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Experimentas el método en acción</span>
                 </div>
               </div>
@@ -582,6 +583,7 @@ export default function MetodologiaPage() {
                 showPhone={true}
                 showAge={true}
                 showLevel={true}
+                variant="refresh"
               />
             </div>
           </div>

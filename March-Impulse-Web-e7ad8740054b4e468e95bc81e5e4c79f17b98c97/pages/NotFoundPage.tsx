@@ -11,10 +11,10 @@ export default function NotFoundPage() {
     <>
       <Navbar />
 
-      <section className="min-h-[60vh] flex items-center justify-center py-24 px-6">
+      <section className="section-lead min-h-[60vh] flex items-center justify-center px-6">
         <div className="text-center max-w-lg">
           <div className="font-serif text-8xl font-bold text-accent-blue mb-4">404</div>
-          <h1 className="font-serif text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+          <h1 className="font-serif t-h2 text-zinc-900 mb-4">
             Página No Encontrada
           </h1>
           <p className="font-display text-zinc-600 mb-8">

@@ -1,6 +1,6 @@
-# Tracking audit — 2026-07-27T09:46:05.962Z
+# Tracking audit — 2026-07-30T20:18:12.361Z
 
-Site: https://impulse-english.es · property properties/503609664 · stream G-KNMS5YW69T
+Site: http://localhost:3000 · property properties/503609664 · stream G-KNMS5YW69T
 Modes: forms=false popup=false. Test traffic tagged internal via ?tt=test.
 
 | Page | CTA | Event | Tick1 sent (tid) | GHL | Verdict |

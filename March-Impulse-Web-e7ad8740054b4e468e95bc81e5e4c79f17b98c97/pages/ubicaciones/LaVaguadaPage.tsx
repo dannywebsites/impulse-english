@@ -131,7 +131,7 @@ export default function LaVaguadaPage() {
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/images/academy/outside-academy.jpg" alt="Academia de inglés Impulse English La Vaguada Barrio del Pilar Madrid" title="Academia de inglés Impulse English La Vaguada Barrio del Pilar Madrid" className="w-full h-full object-cover" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
+          <div className="absolute inset-0 bg-accent-blue/90"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-brand-red/[0.05]"></div>
@@ -176,7 +176,7 @@ export default function LaVaguadaPage() {
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
               href="/reservar-clase/"
-                className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
+                className="bg-brand-red hover:bg-brand-red-600 text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba de Nivel Gratuita
                 <ArrowRight className="w-5 h-5" />
@@ -196,9 +196,9 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Bienvenido Section */}
-      <section className="py-12 md:py-16 px-6 bg-white">
+      <section className="section-tight px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+          <h2 className="t-h2 text-zinc-900 mb-6">
             Clases de Inglés en La Vaguada para Todas las Edades
           </h2>
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
@@ -214,11 +214,11 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Un equipo apasionado section */}
-      <section id="about" className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section id="about" className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 Un equipo apasionado por formarte
               </h2>
               <p className="text-zinc-700 leading-relaxed mb-6">
@@ -250,7 +250,7 @@ export default function LaVaguadaPage() {
                 </div>
               </div>
             </div>
-            <div className="rounded-xl overflow-hidden shadow-lg">
+            <div className="overflow-hidden rounded-2xl shadow-lift">
               <img
                 src="/images/academy/primary-classes-students-smiling.jpg"
                 alt="Equipo de profesores nativos Impulse English Academy Madrid"
@@ -264,15 +264,15 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-12 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-12">
             Por Qué Elegir Nuestras Clases de Inglés en La Vaguada
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, i) => (
               <div key={i} className="p-6 bg-zinc-50 rounded-xl">
-                <CheckCircle className="w-8 h-8 text-green-500 mb-4" />
+                <CheckCircle className="w-8 h-8 text-emerald-600 mb-4" />
                 <h3 className="font-bold text-zinc-900 mb-2">{benefit.title}</h3>
                 <p className="text-zinc-600 text-sm">{benefit.desc}</p>
               </div>
@@ -282,10 +282,10 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Video Section */}
-      <section className="py-16 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h3 text-zinc-900 mb-4">
               Conoce nuestra academia
             </h2>
             <p className="text-zinc-600">
@@ -295,15 +295,15 @@ export default function LaVaguadaPage() {
           <LazyVideo
             videoId="Fdso-d9_F20"
             title="Impulse English Academy - Tu academia de inglés en La Vaguada"
-            className="shadow-xl"
+            className="shadow-panel"
           />
         </div>
       </section>
 
       {/* Courses Section */}
-      <section id="courses" className="py-12 md:py-20 px-6 bg-white">
+      <section id="courses" className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-12 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-12">
             Aprende inglés en todos los niveles: ¡Tu primera opción!
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -311,7 +311,7 @@ export default function LaVaguadaPage() {
               <a
                 key={i}
                 href={course.href}
-                className="bg-zinc-50 p-6 rounded-xl hover:shadow-lg transition-shadow group"
+                className="card-interactive group p-6"
               >
                 <h3 className="font-bold text-zinc-900 mb-1 group-hover:text-accent-blue transition-colors">{course.name}</h3>
                 <p className="text-accent-blue font-medium text-sm mb-2">{course.method}</p>
@@ -355,14 +355,14 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Método Impulse Section */}
-      <section id="method" className="py-16 md:py-20 px-6 bg-zinc-50">
+      <section id="method" className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-12 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-12">
             El Método Impulse
           </h2>
           <div className="space-y-4">
             {methodSteps.map((step, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-xl shadow-sm">
+              <div key={idx} className="card p-6">
                 <h3 className="font-semibold text-zinc-900 mb-2">
                   {idx + 1}. {step}
                 </h3>
@@ -372,23 +372,23 @@ export default function LaVaguadaPage() {
 
           {/* Method Sub-labels */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="card p-6">
               <h4 className="font-semibold text-zinc-900">Nivel y grupos</h4>
               <p className="text-zinc-600 text-sm mt-2">Evaluación inicial gratuita para colocación correcta.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="card p-6">
               <h4 className="font-semibold text-zinc-900">Certificación oficial</h4>
               <p className="text-zinc-600 text-sm mt-2">Preparamos para Cambridge, Linguaskill y EBAU.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="card p-6">
               <h4 className="font-semibold text-zinc-900">Horarios disponibles</h4>
               <p className="text-zinc-600 text-sm mt-2">Mañana, tarde y extensivos fin de semana.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="card p-6">
               <h4 className="font-semibold text-zinc-900">Resultados Cambridge</h4>
               <p className="text-zinc-600 text-sm mt-2">100% de aprobados en exámenes Cambridge 24/25.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm col-span-1 md:col-span-2">
+            <div className="card p-6 col-span-1 md:col-span-2">
               <h4 className="font-semibold text-zinc-900">Alumnos por grupo</h4>
               <p className="text-zinc-600 text-sm mt-2">Máximo 7-10 alumnos garantiza atención personalizada real.</p>
             </div>
@@ -397,11 +397,11 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Inglés para niños en La Vaguada */}
-      <section className="py-12 md:py-16 px-6 bg-white">
+      <section className="section-tight px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 Inglés para niños en La Vaguada
               </h2>
               <p className="text-zinc-600 mb-6">
@@ -409,19 +409,19 @@ export default function LaVaguadaPage() {
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Apoyo escolar</strong> para colegios de la zona: refuerzo del inglés curricular</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Aprendizaje progresivo:</strong> metodología Great Little People para infantil, Cambridge Young Learners para primaria</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Horarios adaptados</strong> a familias de La Vaguada: tardes después del colegio</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Grupos reducidos:</strong> máximo 7-10 niños para atención personalizada</span>
                 </li>
               </ul>
@@ -434,7 +434,7 @@ export default function LaVaguadaPage() {
                 </a>
               </div>
             </div>
-            <div className="rounded-xl overflow-hidden shadow-lg">
+            <div className="overflow-hidden rounded-2xl shadow-lift">
               <img
                 src="/images/academy/primary-classes-students-smiling.jpg"
                 alt="Alumnos aprendiendo inglés en academia de inglés Madrid"
@@ -448,10 +448,10 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Clases de inglés para adultos en La Vaguada */}
-      <section className="py-12 md:py-16 px-6 bg-zinc-50">
+      <section className="section-tight px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 rounded-xl overflow-hidden shadow-lg">
+            <div className="order-2 lg:order-1 overflow-hidden rounded-2xl shadow-lift">
               <img
                 src="/images/academy/adult-one-to-one-classes.jpg"
                 alt="Clases de inglés para adultos en La Vaguada Barrio del Pilar Madrid"
@@ -461,7 +461,7 @@ export default function LaVaguadaPage() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 Clases de inglés para adultos en La Vaguada
               </h2>
               <p className="text-zinc-600 mb-6">
@@ -469,19 +469,19 @@ export default function LaVaguadaPage() {
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Clases de conversación:</strong> practica speaking desde el primer día con profesores altamente cualificados</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Inglés para trabajo o viajes:</strong> enfoque práctico y comunicativo</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Grupos reducidos</strong> cerca de casa: máximo 7-10 alumnos</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Preparación Cambridge y Linguaskill:</strong> certificaciones oficiales reconocidas</span>
                 </li>
               </ul>
@@ -499,14 +499,14 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Cambridge & Linguaskill */}
-      <section className="py-16 px-6 bg-accent-blue">
+      <section className="section-lead px-6 bg-accent-blue">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="t-h2 text-white mb-6">
             Preparación Cambridge y Linguaskill
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <a href="/examenes-cambridge/" className="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-colors group">
-              <h3 className="font-bold text-white mb-3 group-hover:text-yellow-300">Exámenes Cambridge</h3>
+              <h3 className="font-bold text-white mb-3 group-hover:text-amber-300">Exámenes Cambridge</h3>
               <p className="text-white/80 text-sm">Pre-A1 hasta C2 Proficiency</p>
               <div className="flex flex-wrap gap-2 mt-3">
                 <span className="text-xs text-white/60">B1 Preliminary</span>
@@ -517,7 +517,7 @@ export default function LaVaguadaPage() {
               </div>
             </a>
             <a href="/linguaskill/" className="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-colors group">
-              <h3 className="font-bold text-white mb-3 group-hover:text-yellow-300">Linguaskill</h3>
+              <h3 className="font-bold text-white mb-3 group-hover:text-amber-300">Linguaskill</h3>
               <p className="text-white/80 text-sm">Certificado en 48 horas. Expertos 2024-2025.</p>
             </a>
           </div>
@@ -527,7 +527,7 @@ export default function LaVaguadaPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="/examenes-cambridge/"
-              className="bg-white text-accent-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
+              className="bg-white text-accent-blue font-bold py-3 px-6 rounded-lg hover:bg-amber-400 hover:text-accent-blue-900 transition-colors"
             >
               Ver todos los exámenes Cambridge
             </a>
@@ -542,10 +542,10 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Nuestras Instalaciones
             </h2>
             <p className="text-zinc-600 text-lg">
@@ -554,7 +554,7 @@ export default function LaVaguadaPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages.map((img, idx) => (
-              <div key={idx} className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+              <div key={idx} className="aspect-[4/3] overflow-hidden rounded-2xl shadow-lift">
                 <img
                   src={img.url}
                   alt={img.alt}
@@ -569,11 +569,11 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Location / How to Get There */}
-      <section id="contact" className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section id="contact" className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-zinc-900 mb-8">
+              <h2 className="t-h2 text-zinc-900 mb-8">
                 Dónde encontrarnos
               </h2>
               <div className="space-y-4">
@@ -625,9 +625,9 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-16 px-6 bg-white">
+      <section id="testimonials" className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-zinc-900 mb-12 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-12">
             Lo que dicen nuestros estudiantes…
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -635,7 +635,7 @@ export default function LaVaguadaPage() {
               <div key={idx} className="bg-zinc-50 p-6 rounded-xl border border-zinc-200">
                 <div className="flex gap-1 mb-3">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-amber-400" />
                   ))}
                 </div>
                 <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
@@ -651,9 +651,9 @@ export default function LaVaguadaPage() {
               href={NAP.gbpUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
-              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+              <Star className="w-5 h-5 fill-yellow-400 text-amber-400" />
               174+ reseñas reales
             </a>
           </div>
@@ -661,14 +661,14 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Local FAQs Section */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-12 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-12">
             Preguntas frecuentes sobre clases de inglés en La Vaguada
           </h2>
           <div className="space-y-6">
             {localFaqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
+              <div key={index} className="card p-6">
                 <h3 className="font-bold text-zinc-900 mb-3">{faq.question}</h3>
                 <p className="text-zinc-600">{faq.answer}</p>
               </div>
@@ -678,14 +678,14 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Final Local CTA */}
-      <section className="py-12 md:py-16 px-6 bg-accent-blue">
+      <section className="section-tight px-6 bg-accent-blue">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-xl md:text-2xl text-white mb-8">
             Si buscas una academia de inglés cerca de La Vaguada, solicita ahora tu prueba de nivel gratuita y empieza a aprender inglés cerca de casa.
           </p>
           <a
               href="/reservar-clase/"
-            className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
+            className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-4 px-8 rounded-lg hover:bg-amber-400 hover:text-accent-blue-900 transition-colors"
           >
             Reserva tu prueba gratuita
             <ArrowRight className="w-5 h-5" />
@@ -694,11 +694,11 @@ export default function LaVaguadaPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 Contacta con nosotros
               </h2>
               <p className="text-zinc-600 mb-8">
@@ -709,21 +709,21 @@ export default function LaVaguadaPage() {
                   href={NAP.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
+                  className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
                 >
                   <MessageCircle className="w-5 h-5" />
                   WhatsApp {NAP.phone}
                 </a>
                 <a
                   href={NAP.phoneTel}
-                  className="bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
+                  className="bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
                   Llamar Ahora
                 </a>
                 <a
                   href={`mailto:${NAP.email}`}
-                  className="bg-zinc-900 hover:bg-zinc-800 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
+                  className="btn-secondary"
                 >
                   Email
                 </a>
@@ -741,6 +741,7 @@ export default function LaVaguadaPage() {
                 showPhone={true}
                 showAge={true}
                 showLevel={true}
+                variant="refresh"
               />
             </div>
           </div>

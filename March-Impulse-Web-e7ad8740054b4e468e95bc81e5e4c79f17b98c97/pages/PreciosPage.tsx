@@ -37,21 +37,21 @@ export const faqs: FAQItem[] = [
 const courses = [
   {
     name: "Infantil",
-    ages: "2–5 años",
+    ages: "2-5 años",
     price: "Desde 64€/mes",
     desc: "Metodología Great Little People. Aprenden jugando desde los 2 años.",
     href: "/cursos-ingles/infantil/"
   },
   {
     name: "Primaria",
-    ages: "6–12 años",
+    ages: "6-12 años",
     price: "71€/mes",
     desc: "Cambridge Young Learners. Refuerzo escolar y preparación de exámenes.",
     href: "/cursos-ingles/primaria/"
   },
   {
     name: "Secundaria",
-    ages: "13–17 años",
+    ages: "13-17 años",
     price: "Desde 75€/mes",
     desc: "Preparación Cambridge B1/B2/C1 y EBAU. Grupos reducidos.",
     href: "/cursos-ingles/secundaria/"
@@ -99,7 +99,7 @@ export default function PreciosPage() {
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent-blue via-accent-blue/95 to-[#0a3560]"></div>
+        <div className="absolute inset-0 bg-accent-blue/95"></div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-brand-red/[0.05]"></div>
         <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-white/[0.03]"></div>
@@ -133,7 +133,7 @@ export default function PreciosPage() {
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
                 href="/reservar-clase/"
-                className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
+                className="bg-brand-red hover:bg-brand-red-600 text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba Gratuita
                 <ArrowRight className="w-5 h-5" />
@@ -153,7 +153,7 @@ export default function PreciosPage() {
       </section>
 
       {/* Price Range Section */}
-      <section className="py-16 md:py-24 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-3 bg-accent-blue/5 border border-accent-blue/10 rounded-full px-6 py-3 mb-8">
@@ -171,7 +171,7 @@ export default function PreciosPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {included.map((item, i) => (
               <div key={i} className="flex items-start gap-3 p-4 bg-zinc-50 rounded-xl">
-                <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                 <span className="text-zinc-700 font-medium">{item}</span>
               </div>
             ))}
@@ -180,10 +180,10 @@ export default function PreciosPage() {
       </section>
 
       {/* Course Pricing Overview */}
-      <section className="py-16 md:py-24 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Tarifas por Tipo de Curso
             </h2>
             <p className="text-zinc-600 text-lg">
@@ -193,7 +193,7 @@ export default function PreciosPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {courses.map((course, i) => (
-              <div key={i} className="bg-white p-6 rounded-xl border border-zinc-200 hover:shadow-lg transition-shadow flex flex-col">
+              <div key={i} className="card-interactive flex flex-col p-6">
                 <div className="flex items-center gap-3 mb-3">
                   {i === 0 && <Users className="w-6 h-6 text-accent-blue" />}
                   {i === 1 && <BookOpen className="w-6 h-6 text-accent-blue" />}
@@ -213,7 +213,7 @@ export default function PreciosPage() {
                     href={`${NAP.whatsappUrl}?text=Hola,%20me%20gustaría%20conocer%20el%20precio%20del%20curso%20de%20${encodeURIComponent(course.name)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-green-600 font-medium text-sm hover:underline inline-flex items-center gap-1"
+                    className="text-emerald-600 font-medium text-sm hover:underline inline-flex items-center gap-1"
                   >
                     <MessageCircle className="w-4 h-4" />
                     Consultar precio exacto
@@ -232,9 +232,9 @@ export default function PreciosPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 px-6 bg-accent-blue">
+      <section className="section-lead px-6 bg-accent-blue">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 className="t-h2 text-white mb-6">
             ¿Quieres conocer el precio exacto para tu caso?
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
@@ -245,14 +245,14 @@ export default function PreciosPage() {
               href={`${NAP.whatsappUrl}?text=Hola,%20me%20gustaría%20conocer%20los%20precios%20de%20los%20cursos`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg flex items-center gap-2 transition-colors"
+              className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-3 px-8 rounded-lg flex items-center gap-2 transition-colors"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp
             </a>
             <a
               href="/reservar-clase/"
-              className="bg-white text-accent-blue font-bold py-3 px-8 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors flex items-center gap-2"
+              className="bg-white text-accent-blue font-bold py-3 px-8 rounded-lg hover:bg-amber-400 hover:text-accent-blue-900 transition-colors flex items-center gap-2"
             >
               Reservar Prueba Gratuita
               <ArrowRight className="w-5 h-5" />
@@ -262,9 +262,9 @@ export default function PreciosPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-12 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
             Preguntas frecuentes sobre precios
           </h2>
           <div className="space-y-6">
@@ -279,9 +279,9 @@ export default function PreciosPage() {
       </section>
 
       {/* Exam Pricing Info */}
-      <section className="py-12 md:py-16 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-6 text-center">
             Precios de Exámenes Oficiales
           </h2>
           <p className="text-zinc-600 text-center mb-8 max-w-2xl mx-auto">
@@ -290,7 +290,7 @@ export default function PreciosPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <a
               href="/examenes-cambridge/fechas-precios/"
-              className="bg-white p-6 rounded-xl border border-zinc-200 hover:shadow-lg transition-shadow group"
+              className="card-interactive group p-6"
             >
               <h3 className="font-bold text-zinc-900 mb-2 group-hover:text-accent-blue transition-colors">
                 Exámenes Cambridge
@@ -304,7 +304,7 @@ export default function PreciosPage() {
             </a>
             <a
               href="/linguaskill/precios-fechas/"
-              className="bg-white p-6 rounded-xl border border-zinc-200 hover:shadow-lg transition-shadow group"
+              className="card-interactive group p-6"
             >
               <h3 className="font-bold text-zinc-900 mb-2 group-hover:text-accent-blue transition-colors">
                 Linguaskill
@@ -321,11 +321,11 @@ export default function PreciosPage() {
       </section>
 
       {/* LeadForm Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 Solicita Tu Presupuesto
               </h2>
               <p className="text-zinc-600 mb-8">
@@ -336,14 +336,14 @@ export default function PreciosPage() {
                   href={NAP.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
+                  className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
                 >
                   <MessageCircle className="w-5 h-5" />
                   WhatsApp {NAP.phone}
                 </a>
                 <a
                   href={NAP.phoneTel}
-                  className="bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
+                  className="bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
                   Llamar Ahora
@@ -362,6 +362,7 @@ export default function PreciosPage() {
                 showPhone={true}
                 showAge={true}
                 showLevel={true}
+                variant="refresh"
               />
             </div>
           </div>

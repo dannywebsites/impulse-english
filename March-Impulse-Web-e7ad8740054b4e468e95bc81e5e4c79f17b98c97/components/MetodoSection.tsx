@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const metodoItems = [
   {
@@ -40,74 +40,74 @@ const metodoItems = [
   }
 ];
 
+/* The step number is rendered as a display numeral, so it is stripped from the
+   heading text to avoid printing "1." twice. Wording is otherwise untouched. */
+const stripOrdinal = (title: string) => title.replace(/^\d+\.\s*/, '');
+
 export default function MetodoSection() {
   return (
-    <section className="w-full bg-white py-16 md:py-24 px-6 border-t border-zinc-100">
+    <section className="section-lead w-full bg-white px-6">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="mb-16">
-          <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
-            Nuestra Metodología
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-4">
-            El Método Impulse
-          </h2>
-          <div className="w-24 h-1 bg-accent-blue/20 mb-6"></div>
-          <p className="text-lg text-zinc-600 max-w-2xl leading-relaxed">
-            Nuestro método propio se basa en una enseñanza estructurada, cercana y eficaz, adaptada a cada alumno y a sus objetivos.
-          </p>
-        </div>
+        <div className="grid grid-cols-1 gap-x-16 gap-y-12 lg:grid-cols-12">
 
-        {/* Method Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {metodoItems.map((item, index) => (
-            <div
-              key={index}
-              className="bg-zinc-50 p-6 rounded-lg border border-zinc-100 hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent-blue/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <CheckCircle className="w-5 h-5 text-accent-blue" />
-                </div>
+          {/* Header rail — stays with the reader while the nine steps scroll. */}
+          <div className="lg:col-span-4">
+            <div className="lg:sticky lg:top-32">
+              <span className="eyebrow mb-4">
+                Nuestra Metodología
+              </span>
+              <h2 className="t-h2 text-zinc-900 mb-5">
+                El Método Impulse
+              </h2>
+              <div className="rule mb-6"></div>
+              <p className="t-lede measure text-zinc-600">
+                Nuestro método propio se basa en una enseñanza estructurada, cercana y eficaz, adaptada a cada alumno y a sus objetivos.
+              </p>
+            </div>
+          </div>
+
+          {/* Nine steps as a numbered editorial list. A 3x3 grid of identical
+              cards flattened them into interchangeable tiles; a list keeps the
+              sequence legible, which is the whole point of a method. */}
+          <ol className="divide-y divide-zinc-200 border-t border-zinc-200 lg:col-span-8">
+            {metodoItems.map((item, index) => (
+              <li key={index} className="group flex gap-6 py-7 md:gap-8">
+                <span
+                  aria-hidden="true"
+                  className="font-serif text-3xl leading-none text-accent-blue/25 transition-colors group-hover:text-accent-blue/50 md:text-4xl"
+                >
+                  {String(index + 1).padStart(2, '0')}
+                </span>
                 <div>
-                  <h3 className="text-base font-bold text-zinc-900 mb-2 leading-tight">
-                    {item.title}
+                  <h3 className="mb-2 text-lg font-semibold leading-snug text-zinc-900">
+                    {stripOrdinal(item.title)}
                   </h3>
-                  <p className="text-sm text-zinc-600 leading-relaxed">
+                  <p className="measure t-small text-zinc-600">
                     {item.description}
                   </p>
                 </div>
-              </div>
-            </div>
-          ))}
+              </li>
+            ))}
+          </ol>
         </div>
 
         {/* Exam Hub Links — crawl path from home page */}
-        <div className="mt-16 text-center border-t border-zinc-100 pt-12">
-          <p className="text-lg text-zinc-600 mb-6">
+        <div className="mt-16 border-t border-zinc-200 pt-12">
+          <p className="t-lede measure text-zinc-600">
             Nuestro método te prepara para obtener las certificaciones más reconocidas a nivel mundial.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="/examenes-cambridge/"
-              className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 text-zinc-800 font-medium py-3 px-6 rounded-lg hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
-            >
+          <div className="mt-7 flex flex-wrap gap-3">
+            <a href="/examenes-cambridge/" className="btn-outline btn-sm group">
               Exámenes Cambridge
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
             </a>
-            <a
-              href="/linguaskill/"
-              className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 text-zinc-800 font-medium py-3 px-6 rounded-lg hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
-            >
+            <a href="/linguaskill/" className="btn-outline btn-sm group">
               Linguaskill
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
             </a>
-            <a
-              href="/examenes-cambridge/fechas-precios/"
-              className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 text-zinc-800 font-medium py-3 px-6 rounded-lg hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
-            >
+            <a href="/examenes-cambridge/fechas-precios/" className="btn-outline btn-sm group">
               Fechas y Precios
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
             </a>
           </div>
         </div>

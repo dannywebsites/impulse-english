@@ -4,15 +4,15 @@ import { NAP } from '../utils/napData';
 
 export default function Newsletter() {
   return (
-    <section id="contact" className="w-full bg-zinc-50 py-12 md:py-20 px-6 border-t border-zinc-200">
-      <div className="container mx-auto max-w-7xl bg-white rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 border border-zinc-100 shadow-sm">
+    <section id="contact" className="section w-full bg-white px-6">
+      <div className="container-page card flex flex-col items-center justify-between gap-10 p-8 md:flex-row md:p-12">
 
         {/* Left Copy */}
         <div className="max-w-lg text-center md:text-left">
-            <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 tracking-tight mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
                 ¡Mantente en contacto!
             </h2>
-            <p className="text-zinc-500 text-base md:text-lg">
+            <p className="t-lede text-zinc-500">
                 Síguenos en redes sociales para consejos de inglés, noticias y contenido educativo.
             </p>
         </div>
@@ -62,14 +62,14 @@ function AnimatedButtons() {
         <div ref={containerRef} className="flex flex-col sm:flex-row gap-4 w-full">
             <a
                 href="/reservar-clase/"
-                className={`bg-accent-blue text-white font-bold py-4 px-8 rounded-md hover:bg-blue-900 transition-all duration-400 ease-out transform w-full sm:w-auto text-center
+                className={`btn-secondary btn-lg w-full transition-all duration-400 ease-out sm:w-auto motion-reduce:transition-none
                 ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-5 scale-95'}`}
             >
                 Solicitar Información
             </a>
             <a
                 href={NAP.phoneTel}
-                className={`bg-white border border-zinc-200 text-zinc-900 font-bold py-4 px-8 rounded-md hover:bg-zinc-50 transition-all duration-400 ease-out delay-100 transform w-full sm:w-auto text-center
+                className={`btn-outline btn-lg w-full transition-all duration-400 ease-out delay-100 sm:w-auto motion-reduce:transition-none
                 ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-5 scale-95'}`}
             >
                 Llamar: {NAP.phone}

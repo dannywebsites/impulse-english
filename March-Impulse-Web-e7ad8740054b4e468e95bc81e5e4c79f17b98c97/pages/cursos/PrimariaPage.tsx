@@ -127,7 +127,7 @@ export default function PrimariaPage() {
               fetchPriority="high"
             />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-950/80 via-blue-900/70 to-cyan-900/55"></div>
+          <div className="absolute inset-0 bg-blue-950/70"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-40 -right-40 w-[480px] h-[480px] rounded-full bg-cyan-400/[0.05]"></div>
@@ -146,7 +146,7 @@ export default function PrimariaPage() {
             <div className="flex items-center gap-4 mb-6 animate-hero-fade-up">
               <div className="w-8 h-px bg-white/40"></div>
               <span className="font-display text-white/70 text-xs uppercase tracking-[0.2em]">
-                6–12 años · Cambridge Young Learners
+                6-12 años · Cambridge Young Learners
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
@@ -192,7 +192,7 @@ export default function PrimariaPage() {
               <span className="text-zinc-700 font-medium">L/M o M/J</span>
             </div>
             <div className="flex items-center gap-2">
-              <Award className="w-5 h-5 text-yellow-500" />
+              <Award className="w-5 h-5 text-amber-500" />
               <span className="text-zinc-700 font-medium">100% aprobados Cambridge</span>
             </div>
           </div>
@@ -200,10 +200,10 @@ export default function PrimariaPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+            <h2 className="t-h2 text-zinc-900 mb-6">
               Cambridge Young Learners
             </h2>
 
@@ -213,7 +213,7 @@ export default function PrimariaPage() {
               </p>
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mt-8 mb-4">
+            <h3 className="t-h3 text-zinc-900 mt-8 mb-4">
               Grupos por nivel real
             </h3>
 
@@ -223,7 +223,7 @@ export default function PrimariaPage() {
               </p>
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mt-8 mb-4">
+            <h3 className="t-h3 text-zinc-900 mt-8 mb-4">
               Seguimiento y comunicación con familias
             </h3>
 
@@ -234,7 +234,7 @@ export default function PrimariaPage() {
             </div>
 
             {/* Cambridge Badge */}
-            <div className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl border border-blue-200">
+            <div className="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-200">
               <div className="flex items-start gap-4">
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
                   <Award className="w-8 h-8 text-white" />
@@ -293,7 +293,7 @@ export default function PrimariaPage() {
                 description: "Docentes con experiencia en educación primaria y certificados Cambridge."
               }
             ].map((feature, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-zinc-100 flex items-start gap-4">
+              <div key={index} className="card p-6 flex items-start gap-4">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 flex-shrink-0">
                   {feature.icon}
                 </div>
@@ -308,10 +308,10 @@ export default function PrimariaPage() {
       </section>
 
       {/* Video Section - Above Levels */}
-      <section className="py-16 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h3 text-zinc-900 mb-4">
               Preparación Cambridge para Primaria
             </h2>
             <p className="text-zinc-600">
@@ -321,15 +321,15 @@ export default function PrimariaPage() {
           <LazyVideo
             videoId="G_fFoyb8sdc"
             title="Cambridge Young Learners - Starters, Movers y Flyers"
-            className="shadow-xl"
+            className="shadow-panel"
           />
         </div>
       </section>
 
       {/* Cambridge Young Learners Section */}
-      <section className="py-16 px-6 bg-blue-600">
+      <section className="section-lead px-6 bg-blue-600">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="t-h2 text-white mb-4">
             Certificaciones Cambridge Young Learners
           </h2>
           <p className="text-white/80 mb-8">
@@ -344,7 +344,7 @@ export default function PrimariaPage() {
           </div>
           <a
               href="/examenes-cambridge/"
-            className="inline-block bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
+            className="inline-block bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-amber-400 hover:text-accent-blue-900 transition-colors"
           >
             Ver todos los exámenes Cambridge
           </a>
@@ -352,10 +352,10 @@ export default function PrimariaPage() {
       </section>
 
       {/* Schedule & Levels Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Niveles y horarios
             </h2>
             <p className="text-zinc-500 text-lg">
@@ -364,49 +364,49 @@ export default function PrimariaPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl border border-blue-100">
+            <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Niveles disponibles</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>Pre-A1 Starters:</strong> Primeros pasos</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>A1 Movers:</strong> Base sólida</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>A2 Flyers:</strong> Comunicación fluida</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>A2 Key:</strong> Primera certificación oficial</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100">
+            <div className="bg-green-50 p-8 rounded-2xl border border-green-100">
               <h3 className="text-xl font-bold text-zinc-900 mb-4">¿Qué incluye?</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">2 horas semanales (L/M o M/J)</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Material Cambridge incluido</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Simulacros de examen</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Informes de progreso</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Plataforma online complementaria</span>
                 </li>
               </ul>
@@ -424,7 +424,7 @@ export default function PrimariaPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
               href="/reservar-clase/"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
+                className="bg-blue-600 hover:bg-accent-blue-800 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Solicitar prueba de nivel
               </a>
@@ -432,7 +432,7 @@ export default function PrimariaPage() {
                 href="https://wa.me/34604910611?text=Hola,%20me%20gustaría%20información%20sobre%20inglés%20para%20primaria"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
+                className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 WhatsApp
@@ -454,10 +454,11 @@ export default function PrimariaPage() {
       <FAQSection
         faqs={faqs}
         title="Preguntas frecuentes sobre inglés para primaria"
+        variant="refresh"
       />
 
       {/* Lead Form */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-3xl">
           <LeadForm
             title="Consulta disponibilidad para tu hijo"
@@ -467,6 +468,7 @@ export default function PrimariaPage() {
             showPhone={true}
             showAge={true}
             showLevel={true}
+            variant="refresh"
           />
         </div>
       </section>

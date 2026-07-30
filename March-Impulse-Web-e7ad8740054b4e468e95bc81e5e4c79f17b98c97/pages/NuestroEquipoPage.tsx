@@ -57,7 +57,7 @@ export default function NuestroEquipoPage() {
 
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent-blue via-accent-blue/95 to-[#0a3560]"></div>
+        <div className="absolute inset-0 bg-accent-blue/95"></div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-brand-red/[0.05]"></div>
         <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-white/[0.03]"></div>
@@ -101,12 +101,12 @@ export default function NuestroEquipoPage() {
       </section>
 
       {/* JP Bio Section */}
-      <section className="py-16 md:py-24 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-panel">
                 <img
                   src="/images/academy/jp-with-students.jpg"
                   alt="JP, Director de Estudios y cofundador de Impulse English Academy"
@@ -122,7 +122,7 @@ export default function NuestroEquipoPage() {
               <span className="inline-block bg-accent-blue/10 text-accent-blue text-sm font-bold px-4 py-1.5 rounded-full mb-4">
                 Director de Estudios y Cofundador
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 JP
               </h2>
               <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
@@ -155,7 +155,7 @@ export default function NuestroEquipoPage() {
       </section>
 
       {/* Danny Fitzpatrick Bio Section (reversed layout) */}
-      <section className="py-16 md:py-24 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text (left on desktop) */}
@@ -163,22 +163,22 @@ export default function NuestroEquipoPage() {
               <span className="inline-block bg-accent-blue/10 text-accent-blue text-sm font-bold px-4 py-1.5 rounded-full mb-4">
                 Cofundador
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 Danny Fitzpatrick
               </h2>
               <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
                 <p>
-                  Danny es cofundador de Impulse English Academy La Vaguada. Junto a JP, construyó la academia desde sus cimientos en el Barrio del Pilar con la convicción de que el método con el que los españoles aprenden inglés estaba roto — y de que existía una forma mejor, más científica y más humana de hacerlo.
+                  Danny es cofundador de Impulse English Academy La Vaguada. Junto a JP, construyó la academia desde sus cimientos en el Barrio del Pilar con la convicción de que el método con el que los españoles aprenden inglés estaba roto, y de que existía una forma mejor, más científica y más humana de hacerlo.
                 </p>
                 <p>
-                  Profesor titulado de educación física e idiomas y licenciado en Marketing por la University of Essex, su especialidad es el inglés de negocios: le apasiona ayudar a los alumnos a dominar el inglés para acceder a mejores oportunidades laborales. Irlandés afincado en Madrid desde hace 12 años, une su experiencia en el mundo profesional con la enseñanza para que cada estudiante trabaje un inglés práctico y aplicable a su carrera.
+                  Profesor titulado de educación física e idiomas y licenciado en Marketing por ESIC University, Madrid, su especialidad es el inglés de negocios: le apasiona ayudar a los alumnos a dominar el inglés para acceder a mejores oportunidades laborales. Irlandés afincado en Madrid desde hace 12 años, une su experiencia en el mundo profesional con la enseñanza para que cada estudiante trabaje un inglés práctico y aplicable a su carrera.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
                 {[
                   { icon: <Users className="w-6 h-6" />, text: "Cofundador de la academia" },
-                  { icon: <GraduationCap className="w-6 h-6" />, text: "Licenciado en Marketing, University of Essex" },
+                  { icon: <GraduationCap className="w-6 h-6" />, text: "Licenciado en Marketing, ESIC University, Madrid" },
                   { icon: <Award className="w-6 h-6" />, text: "Especialista en inglés de negocios" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3 p-4 bg-white rounded-xl">
@@ -197,7 +197,7 @@ export default function NuestroEquipoPage() {
 
             {/* Image (right on desktop) */}
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-100 order-1 lg:order-2">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-panel">
                 <img
                   src="/images/academy/daniel-helping-secondary-school-students.jpg"
                   alt="Danny Fitzpatrick, cofundador de Impulse English Academy"
@@ -212,7 +212,7 @@ export default function NuestroEquipoPage() {
       </section>
 
       {/* Teaching Philosophy Section */}
-      <section className="py-16 md:py-24 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
             <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
@@ -263,10 +263,10 @@ export default function NuestroEquipoPage() {
       </section>
 
       {/* FAQ Section */}
-      <FAQSection faqs={faqs} title="Preguntas Frecuentes sobre Nuestro Equipo" />
+      <FAQSection faqs={faqs} title="Preguntas Frecuentes sobre Nuestro Equipo" variant="refresh" />
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 px-6 bg-accent-blue">
+      <section className="section-lead px-6 bg-accent-blue">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
@@ -287,7 +287,7 @@ export default function NuestroEquipoPage() {
                 href={NAP.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors inline-flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 WhatsApp
@@ -298,7 +298,7 @@ export default function NuestroEquipoPage() {
       </section>
 
       {/* Lead Form */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-3xl">
           <LeadForm
             title="¿Quieres saber más sobre nuestro equipo?"
@@ -306,6 +306,7 @@ export default function NuestroEquipoPage() {
             ctaText="Solicitar información"
             source="nuestro-equipo"
             showPhone={true}
+            variant="refresh"
           />
         </div>
       </section>
