@@ -24,10 +24,10 @@ export default function NewsOverlay(_props: NewsOverlayProps = {}) {
       href: "/linguaskill/"
     },
     {
-      label: "Prueba Gratis",
-      title: "Reserva tu clase de prueba gratuita y sin compromiso.",
-      action: "Reservar",
-      href: "/reservar-clase/"
+      label: "Prueba de Nivel",
+      title: "Tu nivel exacto y un plan personalizado, en 25 minutos. Gratis.",
+      action: "Pedir cita",
+      href: "/prueba-de-nivel-ingles/"
     }
   ];
 

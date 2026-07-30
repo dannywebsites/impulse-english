@@ -1,7 +1,8 @@
 import React from 'react';
-import { Instagram, Facebook, Phone, Mail, MapPin, Linkedin, Youtube } from 'lucide-react';
+import { Instagram, Facebook, Mail, MapPin, Linkedin, Youtube } from 'lucide-react';
 import { NAP, getAddressLines } from '../utils/napData';
 import { BARRIOS_HUB_HREF } from '../utils/barrioAreas';
+import WhatsAppIcon from './icons/WhatsAppIcon';
 
 const LOGO_URL = NAP.logo;
 
@@ -197,7 +198,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
                   rel="noopener noreferrer"
                   className={`flex items-center gap-2.5 ${FOOTER_LINK}`}
                 >
-                  <Phone className="w-4 h-4 shrink-0 text-white/40" />
+                  <WhatsAppIcon className="w-4 h-4 shrink-0 text-white/40" />
                   {NAP.phone}
                 </a>
               </li>

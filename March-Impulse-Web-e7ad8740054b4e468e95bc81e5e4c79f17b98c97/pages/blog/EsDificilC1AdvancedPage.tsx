@@ -411,7 +411,7 @@ export default function EsDificilC1AdvancedPage() {
                 Nuestros programas de preparación C1 tienen una tasa de aprobados superior al 75%. Descubre cómo podemos ayudarte.
               </p>
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reserva tu clase gratis

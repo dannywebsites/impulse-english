@@ -370,7 +370,7 @@ export default function EntiendoInglesNoHabloPage() {
                   Entender inglés sin poder hablarlo no es un defecto: es una fase normal del aprendizaje. Tu comprensión es una base sólida sobre la que construir tu producción oral. Con las estrategias correctas y práctica constante, puedes activar todo ese conocimiento pasivo y empezar a hablar con confianza.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Si sientes que necesitas apoyo profesional, en <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te ayudamos a romper el bloqueo con <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">clases diseñadas para hablar desde el primer día</a>. <a href="/contacto/" className="text-emerald-600 hover:underline font-medium">Contacta con nosotros</a> para una clase de prueba gratuita.
+                  Si sientes que necesitas apoyo profesional, en <a href="/metodologia/" className="text-emerald-600 hover:underline font-medium">Impulse English Academy</a> te ayudamos a romper el bloqueo con <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline font-medium">clases diseñadas para hablar desde el primer día</a>. <a href="/contacto/" className="text-emerald-600 hover:underline font-medium">Contacta con nosotros</a> para una prueba de nivel gratuita.
                 </p>
               </div>
             </section>
@@ -385,7 +385,7 @@ export default function EntiendoInglesNoHabloPage() {
               href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
-                Reservar clase de prueba
+                Pedir prueba de nivel
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>

@@ -23,57 +23,62 @@ export interface PopupVariant {
   ctaText: string;
 }
 
+/* Every variant now sells the same thing — the free 25-minute prueba de nivel
+   with the Director de Estudios — and only the *hook* changes by page. The old
+   variants asked for "info", which is a weaker ask than a concrete appointment
+   and gave the visitor nothing in return for their details. The level targeting
+   is kept because it's what makes the hook feel written for the page. */
 const VARIANTS: Record<PopupKey, PopupVariant> = {
   c1: {
     key: 'c1',
     level: 'c1',
     source: 'popup-c1',
-    title: '¿Vas a por el C1 Advanced?',
+    title: '¿Estás listo de verdad para el C1 Advanced?',
     subtitle:
-      'Te montamos un plan para conseguirlo en tiempo récord. Déjanos tu email y teléfono y te llamamos para contarte cómo.',
-    ctaText: 'Quiero mi plan C1',
+      'Averígualo antes de pagar la tasa. Prueba de nivel gratuita de 25 minutos con nuestro Director de Estudios: tu nivel exacto y un plan para llegar al C1. Sin ningún tipo de compromiso.',
+    ctaText: 'Pide tu prueba de nivel',
   },
   b2: {
     key: 'b2',
     level: 'b2',
     source: 'popup-b2',
-    title: 'Prepara tu B2 First con un plan claro',
+    title: '¿Cuánto te falta de verdad para el B2 First?',
     subtitle:
-      'Grupos reducidos y simulacros reales hasta aprobar. Déjanos tus datos y te contamos cómo lo hacemos.',
-    ctaText: 'Quiero info del B2',
+      'En 25 minutos te decimos tu nivel exacto, qué destrezas te están frenando y en cuánto tiempo puedes presentarte. Gratis y sin compromiso.',
+    ctaText: 'Pide tu prueba de nivel',
   },
   b1: {
     key: 'b1',
     level: 'b1',
     source: 'popup-b1',
-    title: 'Aprueba tu B1 Preliminary a la primera',
+    title: '¿Ya llegas al B1 Preliminary?',
     subtitle:
-      'Te decimos exactamente qué necesitas para certificarte. Déjanos tu email y teléfono y te ayudamos.',
-    ctaText: 'Quiero info del B1',
+      'Descúbrelo en una prueba de nivel gratuita de 25 minutos. Te llevas tu nivel MCER exacto y un plan de estudios personalizado. Sin compromiso.',
+    ctaText: 'Pide tu prueba de nivel',
   },
   linguaskill: {
     key: 'linguaskill',
     level: 'linguaskill',
     source: 'popup-linguaskill',
-    title: 'Certifícate con Linguaskill',
+    title: '¿Sacarás la nota de Linguaskill que te piden?',
     subtitle:
-      'Centro autorizado, con resultados oficiales rápido. Déjanos tu email y teléfono y resolvemos tus dudas.',
-    ctaText: 'Quiero info Linguaskill',
+      'Compruébalo antes de examinarte. Prueba de nivel gratuita de 25 minutos con nuestro Director de Estudios, con tu nivel real y los plazos para llegar. Sin compromiso.',
+    ctaText: 'Pide tu prueba de nivel',
   },
   general: {
     key: 'general',
     level: '',
     source: 'popup-general',
-    title: '¿Cursos online o presenciales?',
+    title: '¿Sabes cuál es tu nivel real de inglés?',
     subtitle:
-      'Tenemos ambos. Déjanos tu email y teléfono y te decimos cuál encaja mejor con tu nivel y tus horarios.',
-    ctaText: 'Solicita información',
+      'Pide tu prueba de nivel gratuita: 25 minutos con nuestro Director de Estudios y te llevas tu nivel MCER exacto, tus puntos débiles y un plan de estudios personalizado. Sin ningún tipo de compromiso.',
+    ctaText: 'Pide tu prueba de nivel',
   },
 };
 
 /** Pages where the popup must never appear (already forms / thank-you / legal). */
 const SUPPRESSED = new Set<string>([
-  '/reservar-clase',
+  '/prueba-de-nivel-ingles',
   '/contacto',
   '/gracias',
   '/politica-privacidad',

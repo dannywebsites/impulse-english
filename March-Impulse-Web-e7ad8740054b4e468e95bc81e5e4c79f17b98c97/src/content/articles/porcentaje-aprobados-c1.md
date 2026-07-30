@@ -21,7 +21,7 @@ impulseSection:
   content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge, superamos ampliamente la media de aprobados: nuestro historial es del 100% de aprobados en el C1 Advanced. Nuestros profesores especializados trabajan con grupos reducidos, realizan simulacros en condiciones reales de examen y proporcionan correcciones detalladas de cada destreza. Con nuestra preparación, no solo aprobaréis, sino que lo haréis con la mejor calificación posible."
   ctaLinks:
     - text: Prueba de nivel gratis
-      href: /reservar-clase
+      href: /prueba-de-nivel-ingles
     - text: Preparación C1 Advanced
       href: /examenes-cambridge/c1-advanced
 faqItems:

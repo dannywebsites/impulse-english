@@ -1,6 +1,6 @@
-# Tracking audit — 2026-07-30T21:37:57.416Z
+# Tracking audit — 2026-07-30T22:38:35.196Z
 
-Site: https://impulse-english.es · property properties/503609664 · stream G-KNMS5YW69T
+Site: http://localhost:3000 · property properties/503609664 · stream G-KNMS5YW69T
 Modes: forms=true popup=true. Test traffic tagged internal via ?tt=test.
 
 | Page | CTA | Event | Tick1 sent (tid) | GHL | Verdict |
@@ -28,13 +28,13 @@ Modes: forms=true popup=true. Test traffic tagged internal via ?tt=test.
 | /contacto/ | WhatsApp (contact) | whatsapp_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /contacto/ | Email (contact) | email_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /contacto/ | LeadForm submit (contacto) | generate_lead | ✓ (G-KNMS5YW69T) | 200✓ | **PASS** |
-| /reservar-clase/ | Phone (sidebar) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
-| /reservar-clase/ | LeadForm submit (reservar-clase) | generate_lead | ✓ (G-KNMS5YW69T) | 200✓ | **PASS** |
+| /prueba-de-nivel-ingles/ | Phone (sidebar) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
+| /prueba-de-nivel-ingles/ | LeadForm submit (reservar-clase) | generate_lead | ✓ (G-KNMS5YW69T) | 200✓ | **PASS** |
 | /gracias/ | WhatsApp (thanks) | whatsapp_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /gracias/ | Phone (thanks) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /gracias/ | Email (thanks) | email_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /linguaskill/ | WhatsApp (linguaskill) | whatsapp_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /linguaskill/ | Phone (linguaskill) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
-| /cursos-ingles/primaria/ | CoursePopup submit (41s) | generate_lead | ✓ (G-KNMS5YW69T) | 200✓ | **PASS** |
+| /cursos-ingles/primaria/ | CoursePopup submit (31s) | generate_lead | ✓ (G-KNMS5YW69T) | 200✓ | **PASS** |
 
-Tick 2 (GA4 Realtime recorded deltas vs baseline): `{"whatsapp_click":12,"phone_click":12,"email_click":3,"generate_lead":4}` vs needed `{"whatsapp_click":12,"phone_click":12,"email_click":3,"generate_lead":4}`
+Tick 2 (GA4 Realtime recorded deltas vs baseline): `{"whatsapp_click":12,"phone_click":12,"email_click":3,"generate_lead":5}` vs needed `{"whatsapp_click":12,"phone_click":12,"email_click":3,"generate_lead":4}`

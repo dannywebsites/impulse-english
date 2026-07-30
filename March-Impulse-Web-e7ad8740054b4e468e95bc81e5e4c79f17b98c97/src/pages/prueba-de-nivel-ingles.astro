@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PruebaNivelPage, { faqs } from '../../pages/PruebaNivelPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateFAQSchema } from '../../utils/schemaData';
+
+const schemas = faqs?.length > 0 ? [generateFAQSchema(faqs)] : [];
+---
+
+<BaseLayout
+  title="Prueba de Nivel de Inglés Gratis en Madrid | Impulse"
+  description="Prueba de nivel de inglés gratuita en Madrid. 25 minutos con nuestro Director de Estudios: tu nivel MCER exacto y un plan de estudios personalizado. Sin compromiso."
+  keywords="prueba de nivel de inglés, test de nivel de inglés, prueba de nivel inglés gratis, qué nivel de inglés tengo, prueba nivel inglés madrid"
+  canonical="/prueba-de-nivel-ingles/"
+  schemas={schemas}
+>
+  <PruebaNivelPage client:load />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -6,6 +6,7 @@ import LeadForm from '../components/LeadForm';
 import Breadcrumb from '../components/Breadcrumb';
 import { NAP } from '../utils/napData';
 import type { FAQItem } from '../utils/schemaData';
+import WhatsAppIcon from '../components/icons/WhatsAppIcon';
 
 export const faqs: FAQItem[] = [
   {
@@ -132,7 +133,7 @@ export default function PreciosPage() {
             </p>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
-                href="/reservar-clase/"
+                href="/prueba-de-nivel-ingles/"
                 className="bg-brand-red hover:bg-brand-red-600 text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba Gratuita
@@ -144,7 +145,7 @@ export default function PreciosPage() {
                 rel="noopener noreferrer"
                 className="bg-white/10 backdrop-blur-sm border border-white/20 text-white font-display font-medium py-3 px-6 rounded-lg flex items-center gap-2 hover:bg-white/15 transition-all duration-300"
               >
-                <MessageCircle className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 WhatsApp
               </a>
             </div>
@@ -215,7 +216,7 @@ export default function PreciosPage() {
                     rel="noopener noreferrer"
                     className="text-emerald-600 font-medium text-sm hover:underline inline-flex items-center gap-1"
                   >
-                    <MessageCircle className="w-4 h-4" />
+                    <WhatsAppIcon className="w-4 h-4" />
                     Consultar precio exacto
                   </a>
                   <a
@@ -247,11 +248,11 @@ export default function PreciosPage() {
               rel="noopener noreferrer"
               className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-3 px-8 rounded-lg flex items-center gap-2 transition-colors"
             >
-              <MessageCircle className="w-5 h-5" />
+              <WhatsAppIcon className="w-5 h-5" />
               WhatsApp
             </a>
             <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
               className="bg-white text-accent-blue font-bold py-3 px-8 rounded-lg hover:bg-amber-400 hover:text-accent-blue-900 transition-colors flex items-center gap-2"
             >
               Reservar Prueba Gratuita
@@ -338,7 +339,7 @@ export default function PreciosPage() {
                   rel="noopener noreferrer"
                   className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
                 >
-                  <MessageCircle className="w-5 h-5" />
+                  <WhatsAppIcon className="w-5 h-5" />
                   WhatsApp {NAP.phone}
                 </a>
                 <a

@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { Calendar, Clock, ArrowLeft, BookOpen, CheckCircle, Euro, MapPin, FileText, Award, MessageCircle, ChevronRight, Building2, Globe, Users } from 'lucide-react';
+import { Calendar, Clock, ArrowLeft, BookOpen, CheckCircle, Euro, MapPin, FileText, Award, ChevronRight, Building2, Globe, Users } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import Breadcrumb from '../../components/Breadcrumb';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 const preciosFaqs = [
   {
@@ -807,7 +808,6 @@ export default function LinguaskillPreciosSedesPage() {
 
           </div>
 
-
         </div>
 
         {/* CTA Section */}
@@ -842,7 +842,7 @@ export default function LinguaskillPreciosSedesPage() {
                     rel="noopener noreferrer"
                     className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
                   >
-                    <MessageCircle className="w-5 h-5" />
+                    <WhatsAppIcon className="w-5 h-5" />
                     Consultar por WhatsApp
                   </a>
                   <a

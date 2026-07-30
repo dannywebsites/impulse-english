@@ -92,7 +92,7 @@ const ROUTE_MAP = {
     { route: '/testimonios', slug: 'testimonios' },
     { route: '/blog', slug: 'blog' },
     { route: '/contacto', slug: 'contacto' },
-    { route: '/reservar-clase', slug: 'reservar-clase' },
+    { route: '/prueba-de-nivel-ingles', slug: 'reservar-clase' },
     { route: '/gracias', slug: 'gracias' },
     { route: '/aprende-ingles', slug: 'aprende-ingles' },
     { route: '/preparacion-b2-first-madrid', slug: 'preparacion-b2-first-madrid' },
@@ -644,8 +644,8 @@ function exportRedirects() {
   console.log('"source","target","type"');
 
   const redirects = [
-    ['/exam-impulse', '/reservar-clase'],
-    ['/exam-impulse/', '/reservar-clase'],
+    ['/exam-impulse', '/prueba-de-nivel-ingles'],
+    ['/exam-impulse/', '/prueba-de-nivel-ingles'],
     ['/blogs-impulse', '/blog'],
     ['/blogs-impulse/', '/blog'],
     ['/ingles-la-vaguada/infantil', '/cursos-ingles/infantil'],

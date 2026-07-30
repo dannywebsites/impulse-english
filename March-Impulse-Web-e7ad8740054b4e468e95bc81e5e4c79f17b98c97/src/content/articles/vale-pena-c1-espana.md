@@ -21,7 +21,7 @@ impulseSection:
   content: "En Impulse English Academy, Centro Preparador Oficial de Cambridge en Madrid, os preparamos para obtener el C1 Advanced con la máxima garantía de éxito. Nuestros profesores especializados en exámenes Cambridge trabajan con grupos reducidos, materiales oficiales y simulacros reales. Con un historial del 100% de aprobados, somos la academia de confianza para dar el paso definitivo en vuestro nivel de inglés. Reservad vuestra prueba de nivel gratuita y empezad a preparar vuestro futuro."
   ctaLinks:
     - text: Prueba de nivel gratis
-      href: /reservar-clase
+      href: /prueba-de-nivel-ingles
     - text: Preparación C1 Advanced
       href: /examenes-cambridge/c1-advanced
 faqItems:

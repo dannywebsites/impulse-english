@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { MapPin, Clock, Phone, Train, Bus, Car, CheckCircle, Star, ArrowRight, MessageCircle } from 'lucide-react';
+import { MapPin, Clock, Phone, Train, Bus, Car, CheckCircle, Star, ArrowRight } from 'lucide-react';
 import NearbyAreas from '../../components/NearbyAreas';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -8,6 +8,7 @@ import LazyVideo from '../../components/LazyVideo';
 import Breadcrumb from '../../components/Breadcrumb';
 import { NAP } from '../../utils/napData';
 import type { FAQItem } from '../../utils/schemaData';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 const benefits = [
   { title: "A Solo 4 Minutos en Metro desde Mirasierra (Línea 9)", desc: "Mirasierra → Barrio del Pilar, directo sin transbordos." },
@@ -32,7 +33,7 @@ export const localFaqs: FAQItem[] = [
     answer: "Ofrecemos todos los niveles desde principiante (A1) hasta avanzado (C2). Realizamos una prueba de nivel gratuita para ubicarte en el grupo adecuado. Preparamos exámenes Cambridge (Pre-A1 Starters hasta C2 Proficiency) y Linguaskill."
   },
   {
-    question: "¿Hay clase de prueba gratuita en vuestra academia cerca de Mirasierra?",
+    question: "¿Hay prueba de nivel gratuita en vuestra academia cerca de Mirasierra?",
     answer: "Sí, ofrecemos una prueba de nivel gratuita de 25 minutos donde evaluamos tu nivel actual y te recomendamos el curso más adecuado. Puedes reservarla por WhatsApp o a través de nuestra web."
   },
   {
@@ -68,7 +69,6 @@ export const localFaqs: FAQItem[] = [
     answer: "Sí, hay aparcamiento en superficie disponible en la propia Av. de El Ferrol y en las calles adyacentes. El acceso desde Mirasierra es directo por Fermín Caballero."
   }
 ];
-
 
 export const locationMeta = {
   locationName: "Mirasierra",
@@ -132,7 +132,7 @@ export default function MirasierraPage() {
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-brand-red hover:bg-brand-red-600 text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba de Nivel Gratuita
@@ -144,7 +144,7 @@ export default function MirasierraPage() {
                 rel="noopener noreferrer"
                 className="bg-white/10 backdrop-blur-sm border border-white/20 text-white font-display font-medium py-3 px-6 rounded-lg flex items-center gap-2 hover:bg-white/15 transition-all duration-300"
               >
-                <MessageCircle className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 WhatsApp
               </a>
             </div>
@@ -517,10 +517,10 @@ export default function MirasierraPage() {
             Si buscas una academia de inglés cerca de Mirasierra, solicita ahora tu prueba de nivel gratuita y empieza a aprender inglés cerca de casa.
           </p>
           <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
             className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-4 px-8 rounded-lg hover:bg-amber-400 hover:text-accent-blue-900 transition-colors"
           >
-            Reserva tu prueba gratuita
+            Pide tu prueba de nivel gratuita
             <ArrowRight className="w-5 h-5" />
           </a>
         </div>
@@ -544,7 +544,7 @@ export default function MirasierraPage() {
                   rel="noopener noreferrer"
                   className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
                 >
-                  <MessageCircle className="w-5 h-5" />
+                  <WhatsAppIcon className="w-5 h-5" />
                   WhatsApp {NAP.phone}
                 </a>
                 <a

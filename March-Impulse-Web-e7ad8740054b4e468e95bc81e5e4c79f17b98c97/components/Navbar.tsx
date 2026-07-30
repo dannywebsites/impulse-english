@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, MessageCircle, Phone } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone } from 'lucide-react';
 import { NAP } from '../utils/napData';
+import WhatsAppIcon from './icons/WhatsAppIcon';
 
 const LOGO_URL = NAP.logo;
 
@@ -91,7 +92,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
                 className="flex items-center gap-1 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold text-xs px-2.5 py-1.5 rounded-md transition-all"
                 aria-label="WhatsApp"
               >
-                <MessageCircle className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 <span className="hidden sm:inline">WhatsApp</span>
               </a>
               <a
@@ -174,7 +175,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
                 rel="noopener noreferrer"
                 className="bg-whatsapp hover:bg-whatsapp-dark border border-transparent text-white font-semibold py-2.5 px-4 rounded-md flex items-center gap-2 transition-all text-sm"
               >
-                <MessageCircle className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 WhatsApp
               </a>
               <a
@@ -223,7 +224,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
               className="flex items-center gap-1 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold text-xs px-2.5 py-1.5 rounded-md transition-all"
               aria-label="WhatsApp"
             >
-              <MessageCircle className="w-4 h-4" />
+              <WhatsAppIcon className="w-4 h-4" />
               <span className="hidden sm:inline">WhatsApp</span>
             </a>
             <a
@@ -310,7 +311,7 @@ export default function Navbar({ currentPath = '/' }: { currentPath?: string }) 
               rel="noopener noreferrer"
               className="bg-whatsapp hover:bg-whatsapp-dark border border-transparent text-white font-semibold py-2.5 px-4 rounded-md flex items-center gap-2 transition-all text-sm"
             >
-              <MessageCircle className="w-4 h-4" />
+              <WhatsAppIcon className="w-4 h-4" />
               WhatsApp
             </a>
             <a
@@ -389,7 +390,7 @@ function MobileMenu({ isOpen, onClose, isHomePage }: { isOpen: boolean; onClose:
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 w-full bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 rounded-lg transition-colors"
           >
-            <MessageCircle className="w-5 h-5" />
+            <WhatsAppIcon className="w-5 h-5" />
             WhatsApp
           </a>
           <a

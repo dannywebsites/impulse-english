@@ -434,7 +434,7 @@ export default function TiempoPreparaB1CeroPage() {
                 Realiza una prueba de nivel gratuita y te diseñamos un plan personalizado para alcanzar tu B1 en el menor tiempo posible.
               </p>
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Prueba de nivel gratis

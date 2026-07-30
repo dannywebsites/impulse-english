@@ -133,7 +133,7 @@ The project contains:
 - SEO system auto-backs up to `/site/pages/backups/`
 
 ### Tracking Changes (MANDATORY)
-- After ANY change to analytics/tracking surfaces (`BaseLayout.astro` inline scripts, `LeadForm.tsx`, `CoursePopup.tsx`, `ReservarClasePage.tsx`, GTM, GA4 config): run `npm run verify:tracking` in `March-Impulse-Web-.../` and require ALL PASS before calling it done
+- After ANY change to analytics/tracking surfaces (`BaseLayout.astro` inline scripts, `LeadForm.tsx`, `CoursePopup.tsx`, `PruebaNivelPage.tsx`, GTM, GA4 config): run `npm run verify:tracking` in `March-Impulse-Web-.../` and require ALL PASS before calling it done
 - Never declare tracking "verified" from code review or network captures alone — see the double-tick standard in `March-Impulse-Web-.../TRACKING.md`
 
 ### SEO Planning — consult the reference FIRST (MANDATORY)

@@ -61,7 +61,7 @@ function AnimatedButtons() {
     return (
         <div ref={containerRef} className="flex flex-col sm:flex-row gap-4 w-full">
             <a
-                href="/reservar-clase/"
+                href="/prueba-de-nivel-ingles/"
                 className={`btn-secondary btn-lg w-full transition-all duration-400 ease-out sm:w-auto motion-reduce:transition-none
                 ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-5 scale-95'}`}
             >

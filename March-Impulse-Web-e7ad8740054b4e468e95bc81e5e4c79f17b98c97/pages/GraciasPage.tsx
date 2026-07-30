@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { CheckCircle, Phone, Clock, MapPin, Instagram, Facebook, ArrowRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import WhatsAppIcon from '../components/icons/WhatsAppIcon';
 
 const nextSteps = [
   {
@@ -17,7 +18,7 @@ const nextSteps = [
   {
     number: "3",
     title: "Vienes a Conocernos",
-    description: "Infantil: Clase de prueba gratuita de 1 hora. Primaria/Secundaria/Adultos: Prueba de nivel de 25 minutos."
+    description: "Infantil: Prueba de nivel gratuita de 1 hora. Primaria/Secundaria/Adultos: Prueba de nivel de 25 minutos."
   },
   {
     number: "4",
@@ -72,7 +73,7 @@ export default function GraciasPage() {
           </p>
 
           <p className="font-display text-lg text-white/70 max-w-xl mx-auto animate-hero-fade-up animation-delay-300">
-            Nuestro equipo revisará tu información y te contactaremos en menos de 24 horas para agendar tu clase de prueba o prueba de nivel.
+            Nuestro equipo revisará tu información y te llamará en menos de 24 horas para darte cita para tu prueba de nivel gratuita.
           </p>
 
           <div className="mt-8 inline-flex items-center gap-2 border border-white/20 backdrop-blur-sm px-6 py-3 rounded-full animate-hero-fade-up animation-delay-400">
@@ -122,7 +123,7 @@ export default function GraciasPage() {
               rel="noopener noreferrer"
               className="bg-whatsapp hover:bg-whatsapp-dark text-white p-6 rounded-xl text-center transition-colors"
             >
-              <Phone className="w-8 h-8 mx-auto mb-3" />
+              <WhatsAppIcon className="w-8 h-8 mx-auto mb-3" />
               <div className="font-bold mb-1">WhatsApp (Más Rápido)</div>
               <div className="text-green-100">+34 604 910 611</div>
             </a>

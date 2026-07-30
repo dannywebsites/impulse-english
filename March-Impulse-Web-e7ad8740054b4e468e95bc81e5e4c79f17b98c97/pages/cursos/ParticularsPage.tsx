@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { User, Video, MapPin, Calendar, Target, Clock, CheckCircle, Phone, Briefcase, FileText, Award } from 'lucide-react';
+import { User, Video, MapPin, Calendar, Target, Clock, CheckCircle, Briefcase, FileText, Award } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -9,6 +9,7 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import { facilityImages, brandingImages, s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 export const courseSchema = generateCourseSchema({
   name: "Clases Particulares de Inglés (1:1)",
@@ -165,7 +166,7 @@ export default function ParticularesPage() {
                 rel="noopener noreferrer"
                 className="bg-white text-accent-blue font-display font-semibold py-4 px-8 rounded-lg hover:bg-zinc-100 transition-all duration-300 text-center flex items-center justify-center gap-2"
               >
-                <Phone className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 Contactar por WhatsApp
               </a>
               <a
@@ -382,7 +383,7 @@ export default function ParticularesPage() {
                 rel="noopener noreferrer"
                 className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
-                <Phone className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5" />
                 Contactar por WhatsApp
               </a>
               <a

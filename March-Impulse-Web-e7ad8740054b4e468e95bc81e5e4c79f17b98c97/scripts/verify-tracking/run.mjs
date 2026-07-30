@@ -8,7 +8,7 @@
 // Usage:
 //   node scripts/verify-tracking/run.mjs              # clicks only (no CRM writes)
 //   node scripts/verify-tracking/run.mjs --forms      # + real marked test-lead submits
-//   node scripts/verify-tracking/run.mjs --popup      # + 41s CoursePopup submit test
+//   node scripts/verify-tracking/run.mjs --popup      # + 31s CoursePopup submit test
 //
 // Requirements: Google Chrome installed; GA4 service-account env at
 // ~/.config/gcloud/impulse-ga4-reporter.env (see README). Test sessions carry
@@ -220,8 +220,8 @@ async function main() {
   if (DO_POPUP) {
     const { ctx, page, hits, ghl } = await newPage();
     await page.goto(SITE + POPUP_PAGE + TEST_QUERY, { waitUntil: 'domcontentloaded' });
-    console.log('popup test: waiting 42s for the time-on-page popup…');
-    await page.waitForTimeout(42000);
+    console.log('popup test: waiting 32s for the time-on-page popup…');
+    await page.waitForTimeout(32000);
     const popupVisible = await page.evaluate((lead) => {
       const dialog = document.querySelector('[role="dialog"]');
       if (!dialog || !dialog.querySelector('form')) return false;
@@ -247,7 +247,7 @@ async function main() {
     if (sent) sentTotals.generate_lead++;
     const ghlOk = ghl.some((s) => s === 200);
     results.push({
-      page: POPUP_PAGE, label: 'CoursePopup submit (41s)', expect: 'generate_lead',
+      page: POPUP_PAGE, label: 'CoursePopup submit (31s)', expect: 'generate_lead',
       sent: !!sent, tid: sent?.tid || '-', ghl: ghlOk ? '200✓' : 'FAIL',
       status: popupVisible && sent && sent.tid === MEASUREMENT_ID && ghlOk ? 'sent✓' : 'FAIL',
       note: popupVisible ? '' : 'popup never appeared',
