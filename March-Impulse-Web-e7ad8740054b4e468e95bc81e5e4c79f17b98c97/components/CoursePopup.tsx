@@ -165,7 +165,7 @@ export default function CoursePopup() {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`relative w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl transition-all duration-200 md:p-8 ${
+        className={`relative w-full max-w-md rounded-2xl bg-white p-6 shadow-panel transition-all duration-200 md:p-8 ${
           shown
             ? 'translate-y-0 scale-100 opacity-100'
             : 'translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95'
@@ -264,7 +264,7 @@ export default function CoursePopup() {
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="flex w-full items-center justify-center gap-2 rounded-lg bg-red-600 px-6 py-3 font-bold text-white shadow-lg transition-all hover:bg-red-700 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-50"
+                className="btn-primary w-full disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {status === 'loading' ? (
                   <>
