@@ -67,29 +67,29 @@ export default function CoursesSection() {
   ];
 
   return (
-    <section id="courses" className="w-full bg-white py-12 px-6 border-t border-zinc-100">
+    <section id="courses" className="section w-full bg-white px-6">
       <div className="max-w-7xl mx-auto">
 
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
             <div className="max-w-2xl">
-                <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
+                <span className="eyebrow mb-4">
                     ¡Tu primera opción!
                 </span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-4">
+                <h2 className="t-h2 text-zinc-900 mb-5">
                     Aprende inglés en todos los niveles:
                 </h2>
-                <div className="w-24 h-1 bg-accent-blue/20"></div>
-                <p className="text-lg text-zinc-600 mt-6 max-w-xl leading-relaxed">
+                <div className="rule"></div>
+                <p className="t-lede text-zinc-600 mt-6 max-w-xl">
                     En nuestra escuela de idiomas en Madrid, impartimos cursos de inglés para todos los niveles, desde principiante hasta avanzado (A1-C2), con especialización en preparación de exámenes Cambridge.
                 </p>
             </div>
-            <a href="/cursos-ingles/particulares/" className="text-zinc-500 hover:text-accent-blue font-medium flex items-center gap-2 transition-colors">
-                Clases Particulares <ArrowRight className="w-4 h-4" />
+            <a href="/cursos-ingles/particulares/" className="group flex shrink-0 items-center gap-2 font-medium text-zinc-500 transition-colors hover:text-accent-blue">
+                Clases Particulares <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
             </a>
         </div>
 
         {/* Intro text */}
-        <div className="mb-10 max-w-3xl">
+        <div className="mb-12 measure">
           <p className="text-zinc-600 leading-relaxed">
             Ofrecemos: <strong>Inglés general para niños, jóvenes y adultos</strong> · Cursos presenciales adaptados al ritmo de cada alumno · Preparación de exámenes oficiales de Cambridge · Clases orientadas a objetivos académicos y profesionales.
           </p>
@@ -141,7 +141,7 @@ function CourseCard({ course, index }: { course: { title: string; category: stri
   }, []);
 
   return (
-    <div className="group relative flex flex-col bg-zinc-50 rounded-sm overflow-hidden hover:shadow-xl transition-all duration-300 border border-zinc-100">
+    <div className="card-interactive group relative flex flex-col overflow-hidden">
 
       {/* Image Container */}
       <div className="aspect-[16/10] w-full overflow-hidden">
@@ -171,12 +171,12 @@ function CourseCard({ course, index }: { course: { title: string; category: stri
       {/* Content */}
       <div className="p-6 flex flex-col flex-grow">
         <div className="mb-3">
-            <span className="inline-block px-3 py-1 bg-white border border-zinc-200 text-xs font-bold text-zinc-500 uppercase tracking-wider rounded-sm">
+            <span className="eyebrow text-accent-blue">
                 {course.category}
             </span>
         </div>
 
-        <h3 className="text-xl font-bold text-zinc-900 mb-2 group-hover:text-accent-blue transition-colors">
+        <h3 className="t-h3 text-zinc-900 mb-2 transition-colors group-hover:text-accent-blue">
             {course.title}
         </h3>
 
@@ -184,19 +184,20 @@ function CourseCard({ course, index }: { course: { title: string; category: stri
             {course.description}
         </p>
 
-        {/* Details Grid */}
-        <div className="grid grid-cols-3 gap-1 border-t border-zinc-200 pt-4 mb-4">
+        {/* Detail pills. Three centred micro-labels in an equal grid read as
+            filler; inline chips read as facts. */}
+        <div className="mb-5 flex flex-wrap gap-1.5 border-t border-zinc-200/80 pt-4">
             {course.details.map((detail: string, i: number) => (
-                <div key={i} className="text-center">
-                    <span className="block text-[10px] font-semibold text-zinc-900">{detail}</span>
-                </div>
+                <span key={i} className="rounded-full bg-accent-blue-50 px-2.5 py-1 text-[11px] font-medium text-accent-blue-800">
+                    {detail}
+                </span>
             ))}
         </div>
 
         <a
             ref={buttonRef}
             href={course.link}
-            className={`w-full py-3 bg-white border border-zinc-200 text-zinc-900 font-bold text-xs uppercase tracking-widest hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-all duration-400 ease-out transform text-center block
+            className={`block w-full rounded-lg border border-zinc-200 bg-white py-3 text-center text-xs font-bold uppercase tracking-widest text-zinc-900 transition-all duration-400 ease-out hover:border-accent-blue hover:bg-accent-blue hover:text-white motion-reduce:transition-none
                 ${isVisible
                     ? 'opacity-100 translate-y-0 scale-100'
                     : 'opacity-0 translate-y-5 scale-95'
