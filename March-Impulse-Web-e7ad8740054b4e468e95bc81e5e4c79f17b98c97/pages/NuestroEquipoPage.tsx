@@ -171,14 +171,14 @@ export default function NuestroEquipoPage() {
                   Danny es cofundador de Impulse English Academy La Vaguada. Junto a JP, construyó la academia desde sus cimientos en el Barrio del Pilar con la convicción de que el método con el que los españoles aprenden inglés estaba roto — y de que existía una forma mejor, más científica y más humana de hacerlo.
                 </p>
                 <p>
-                  Profesor titulado de educación física e idiomas y licenciado en Marketing por la University of Essex, su especialidad es el inglés de negocios: le apasiona ayudar a los alumnos a dominar el inglés para acceder a mejores oportunidades laborales. Irlandés afincado en Madrid desde hace 12 años, une su experiencia en el mundo profesional con la enseñanza para que cada estudiante trabaje un inglés práctico y aplicable a su carrera.
+                  Profesor titulado de educación física e idiomas y licenciado en Marketing por ESIC University, Madrid, su especialidad es el inglés de negocios: le apasiona ayudar a los alumnos a dominar el inglés para acceder a mejores oportunidades laborales. Irlandés afincado en Madrid desde hace 12 años, une su experiencia en el mundo profesional con la enseñanza para que cada estudiante trabaje un inglés práctico y aplicable a su carrera.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
                 {[
                   { icon: <Users className="w-6 h-6" />, text: "Cofundador de la academia" },
-                  { icon: <GraduationCap className="w-6 h-6" />, text: "Licenciado en Marketing, University of Essex" },
+                  { icon: <GraduationCap className="w-6 h-6" />, text: "Licenciado en Marketing, ESIC University, Madrid" },
                   { icon: <Award className="w-6 h-6" />, text: "Especialista en inglés de negocios" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3 p-4 bg-white rounded-xl">
