@@ -2,7 +2,7 @@
 // This file contains reusable schema data that can be imported across components
 // All NAP data is imported from napData.ts — the single source of truth
 
-import { NAP, getSchemaAddress } from './napData';
+import { NAP, getSchemaAddress, FOUNDERS } from './napData';
 
 // The site serves every page at a trailing-slash canonical (trailingSlash: 'always').
 // Any slashless page URL emitted into JSON-LD (url/@id/breadcrumb item) contradicts
@@ -79,6 +79,17 @@ export function generateOrganizationSchema() {
     telephone: businessInfo.telephone,
     email: businessInfo.email,
     foundingDate: businessInfo.foundingDate,
+    // Founder Person nodes. Only emitted on the canonical #organization node —
+    // the per-location #localbusiness nodes point here via parentOrganization,
+    // so repeating founders there would duplicate the same people 10 times.
+    founder: FOUNDERS.map(f => ({
+      "@type": "Person",
+      name: f.name,
+      ...(f.alternateName ? { alternateName: f.alternateName } : {}),
+      jobTitle: f.jobTitle,
+      worksFor: { "@id": `${businessInfo.url}/#organization` },
+      ...(f.sameAs?.length ? { sameAs: f.sameAs } : {})
+    })),
     address: {
       "@type": "PostalAddress",
       streetAddress: businessInfo.address.streetAddress,

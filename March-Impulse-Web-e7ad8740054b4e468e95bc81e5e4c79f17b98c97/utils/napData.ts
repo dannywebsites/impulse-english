@@ -140,6 +140,32 @@ export const NAP = {
   foundingDate: "2022",
 } as const;
 
+// Founders — feeds the Person nodes on the organisation schema.
+// Kept here (not inline in schemaData.ts) so founder identity has one source,
+// same rule as NAP. JP goes by his initials publicly and the site copy keeps
+// "JP"; the full name is carried in schema only, with "JP" as alternateName.
+// sameAs is omitted where there is no verified profile to point at — an empty
+// or guessed URL is worse than none, it asserts an identity we can't corroborate.
+export interface Founder {
+  name: string;
+  alternateName?: string;
+  jobTitle: string;
+  sameAs?: string[];
+}
+
+export const FOUNDERS: Founder[] = [
+  {
+    name: "JP Paul",
+    alternateName: "JP",
+    jobTitle: "Director de Estudios y Cofundador",
+  },
+  {
+    name: "Danny Fitzpatrick",
+    jobTitle: "Cofundador",
+    sameAs: ["https://www.linkedin.com/in/danieljohnfitzpatrick/"],
+  },
+];
+
 // Helper: Schema.org PostalAddress object
 export function getSchemaAddress() {
   return {
