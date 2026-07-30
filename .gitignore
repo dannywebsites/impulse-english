@@ -1,1 +1,20 @@
 *.zip
+
+# social-repurpose: the TikTok archive rail.
+# 262 clips must never enter the repo — this root IS the git repo.
+# Scoped to this folder on purpose: a blanket *.mp4 would silently swallow
+# future site videos in March-Impulse-Web-.../public/media/ (3 are tracked today).
+social-repurpose/clips/
+social-repurpose/clips-normalised/
+social-repurpose/out/
+social-repurpose/**/*.mp4
+social-repurpose/**/*.mov
+social-repurpose/**/*.info.json
+
+# API keys live in ~/.ai-os/postforme.env (mode 600), never in the repo.
+social-repurpose/*.env
+social-repurpose/archive.jsonl
+social-repurpose/*.log
+social-repurpose/keepers.txt
+social-repurpose/accounts.json
+social-repurpose/media_cache.json
