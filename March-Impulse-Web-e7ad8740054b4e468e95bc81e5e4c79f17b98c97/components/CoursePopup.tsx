@@ -12,7 +12,7 @@ const WEBHOOK_URL =
 // "solicita información" popup had it suppressed forever, so without a new key
 // they would never be shown the new offer.
 const DISMISS_KEY = 'impulse_popup_dismissed_v2';
-const DELAY_MS = 30000; // fire after 30s on page
+const DELAY_MS = 45000; // fire after 45s on page
 
 // "What are you looking for" — same offering set + values the existing LeadForm
 // uses, so the selection maps onto the same CRM `level` field.
@@ -56,8 +56,9 @@ const inputClass =
 
 /**
  * Time-on-page lead-capture popup. Mounted once in BaseLayout.astro (client:idle)
- * so it covers every page. Shows after 30s with content matched to the page's
- * exam level, once per visitor (localStorage), and never on form/legal pages.
+ * so it covers every page. Shows after 45s with content matched to the page's
+ * exam level, once per visitor (localStorage), and never on the blog or on
+ * form/legal pages.
  */
 export default function CoursePopup() {
   const [variant, setVariant] = useState<PopupVariant | null>(null);
@@ -129,7 +130,7 @@ export default function CoursePopup() {
     }
   }
 
-  // Arm the 30s timer once on mount (skips dismissed visitors and suppressed pages).
+  // Arm the 45s timer once on mount (skips dismissed visitors and suppressed pages).
   useEffect(() => {
     if (typeof window === 'undefined') return;
     if (alreadyDismissed()) return;

@@ -25,7 +25,7 @@ measurement ID that isn't a stream of the property vanish without any error.
 ```bash
 npm run verify:tracking            # all click CTAs on 12 page templates
 npm run verify:tracking -- --forms # + 3 real form submits (marked test leads in GHL — delete after)
-npm run verify:tracking -- --popup # + the 30s CoursePopup submit test
+npm run verify:tracking -- --popup # + the 45s CoursePopup submit test
 ```
 
 Requirements (Danny's Mac): Google Chrome, `gcloud`, and the GA4 service

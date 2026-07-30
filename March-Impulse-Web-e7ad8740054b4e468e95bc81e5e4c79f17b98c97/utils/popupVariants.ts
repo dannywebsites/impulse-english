@@ -86,6 +86,17 @@ const SUPPRESSED = new Set<string>([
   '/aviso-legal',
 ]);
 
+/**
+ * Whole sections where the popup must never appear. The popup is for the main
+ * site pages only: blog traffic arrives from search mid-question and is reading,
+ * not shopping, so an overlay there interrupts the answer it came for. The blog
+ * already converts through its own in-article CTAs.
+ *
+ * Matches the section root and everything beneath it ('/blog', '/blog/',
+ * '/blog/<slug>') without catching an unrelated sibling like '/blogueros'.
+ */
+const SUPPRESSED_PREFIXES: readonly string[] = ['/blog'];
+
 function normalize(pathname: string): string {
   // Strip a single trailing slash so '/contacto' and '/contacto/' match.
   if (pathname.length > 1 && pathname.endsWith('/')) return pathname.slice(0, -1);
@@ -93,13 +104,19 @@ function normalize(pathname: string): string {
 }
 
 export function isSuppressed(pathname: string): boolean {
-  return SUPPRESSED.has(normalize(pathname).toLowerCase());
+  const p = normalize(pathname).toLowerCase();
+  if (SUPPRESSED.has(p)) return true;
+  return SUPPRESSED_PREFIXES.some((prefix) => p === prefix || p.startsWith(`${prefix}/`));
 }
 
 /**
  * Resolve the popup variant for a pathname. First-match-wins ordering handles
- * pages that mention multiple levels (e.g. `/blog/diferencia-b2-c1` -> C1,
- * `/blog/b1-vs-b2-...` -> B2), biasing toward the higher / more specific target.
+ * pages that mention multiple levels (e.g. `/examenes-cambridge/c1-advanced/`
+ * -> C1, `/preparacion-b2-first-madrid/` -> B2), biasing toward the higher /
+ * more specific target.
+ *
+ * Only ever called for pages that survived `isSuppressed`, so blog paths never
+ * reach it — the level matching now serves the exam and course pages.
  */
 export function resolveVariant(pathname: string): PopupVariant {
   const p = normalize(pathname).toLowerCase();

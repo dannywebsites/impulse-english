@@ -119,7 +119,9 @@ export const MATRIX = [
   },
 ];
 
-// Popup test (run with --popup): waits 41s on this page, fills the popup, submits.
+// Popup test (run with --popup): waits 47s on this page, fills the popup, submits.
+// Must be a page the popup actually fires on — not the blog, and not one of the
+// SUPPRESSED paths in utils/popupVariants.ts.
 export const POPUP_PAGE = '/cursos-ingles/primaria/';
 
 export const TEST_LEAD = {
