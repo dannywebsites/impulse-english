@@ -80,7 +80,7 @@ export const NAP = {
     tiktok: "https://www.tiktok.com/@impulse_english_lavaguada",
     x: "https://x.com/impulse_vaguada",
     linkedin: "https://www.linkedin.com/company/101859096/",
-    youtube: "https://www.youtube.com/@Impulse-English",
+    youtube: "https://www.youtube.com/@Impulse_English_lavaguada",
   },
 
   // All sameAs URLs for schema
@@ -92,7 +92,7 @@ export const NAP = {
     "https://www.tiktok.com/@impulse_english_lavaguada",
     "https://x.com/impulse_vaguada",
     "https://www.linkedin.com/company/101859096/",
-    "https://www.youtube.com/@Impulse-English",
+    "https://www.youtube.com/@Impulse_English_lavaguada",
   ],
 
   // Areas served

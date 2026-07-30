@@ -714,7 +714,7 @@ Example: `academia-cambridge-madrid-aula-md.webp`
     "https://www.tiktok.com/@impulse_english_lavaguada",
     "https://x.com/impulse_vaguada",
     "https://www.linkedin.com/company/101859096/",
-    "https://www.youtube.com/@Impulse-English"
+    "https://www.youtube.com/@Impulse_English_lavaguada"
   ],
   "areaServed": [
     { "@type": "Neighborhood", "name": "Barrio del Pilar" },
@@ -962,7 +962,7 @@ Lines 42, 49, 67, 83, 126, 128, 132, 133, 134, 137, 147
 - [TikTok](https://www.tiktok.com/@impulse_english_lavaguada)
 - [X (Twitter)](https://x.com/impulse_vaguada)
 - [LinkedIn](https://www.linkedin.com/company/101859096/)
-- [YouTube](https://www.youtube.com/@Impulse-English)
+- [YouTube](https://www.youtube.com/@Impulse_English_lavaguada)
 
 ## Key Pages
 - [Home](https://impulse-english.es/)
@@ -1258,7 +1258,7 @@ Social:
 - TikTok: https://www.tiktok.com/@impulse_english_lavaguada
 - X: https://x.com/impulse_vaguada
 - LinkedIn: https://www.linkedin.com/company/101859096/
-- YouTube: https://www.youtube.com/@Impulse-English
+- YouTube: https://www.youtube.com/@Impulse_English_lavaguada
 ```
 
 ---
