@@ -187,7 +187,7 @@ const metodologiaFAQs = [
   },
   {
     question: "¿Academia vs profesor particular para Cambridge?",
-    answer: "Academia: Simulacros regulares, metodología estructurada, ambiente competitivo, 100% aprobados garantizado. Profesor particular: Atención total, adaptación a tu ritmo, flexibilidad. Para Cambridge, academia ofrece mayor éxito estadístico (85-95%) vs particular (70-80%), pero un buen particular supera cualquier academia."
+    answer: "Academia: Simulacros regulares, metodología estructurada, ambiente competitivo y un 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados). Profesor particular: Atención total, adaptación a tu ritmo, flexibilidad. Para Cambridge, academia ofrece mayor éxito estadístico (85-95%) vs particular (70-80%), pero un buen particular supera cualquier academia."
   },
   {
     question: "¿Curso intensivo o por semana?",
@@ -339,7 +339,7 @@ export default function MetodologiaPage() {
             </p>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-brand-red hover:bg-brand-red-600 text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Experimenta la Metodología

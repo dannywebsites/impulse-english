@@ -95,7 +95,7 @@ export const MATRIX = [
     form: { source: 'contacto', submit: true },
   },
   {
-    path: '/reservar-clase/',
+    path: '/prueba-de-nivel-ingles/',
     tests: [
       { label: 'Phone (sidebar)', find: TEL, expect: 'phone_click', required: true },
     ],

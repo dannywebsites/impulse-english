@@ -356,7 +356,7 @@ export default function PerderMiedoHablarInglesPage() {
               href="/contacto/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
-                Reservar clase de prueba
+                Pedir prueba de nivel
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>

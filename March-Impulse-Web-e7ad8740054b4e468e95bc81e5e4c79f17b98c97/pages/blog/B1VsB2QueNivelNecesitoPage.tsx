@@ -391,7 +391,7 @@ export default function B1VsB2QueNivelNecesitoPage() {
                 Una prueba de nivel gratuita te dirá exactamente si estás listo para B1 o B2 y cuánto tiempo necesitarías prepararte.
               </p>
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Prueba de nivel gratuita

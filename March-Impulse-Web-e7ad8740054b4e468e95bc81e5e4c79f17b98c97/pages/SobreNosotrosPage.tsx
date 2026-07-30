@@ -455,10 +455,10 @@ export default function SobreNosotrosPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-brand-red hover:bg-brand-red-600 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
-                Reservar Clase de Prueba
+                Pedir Prueba de Nivel
               </a>
               <a
               href="/contacto/"

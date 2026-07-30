@@ -342,7 +342,7 @@ export default function PrecioLinguaskillReservarPage() {
                   ¿Necesitas preparar tu examen Linguaskill?
                 </h2>
                 <p className="text-xl text-white/80">
-                  Reserva tu clase gratuita y maximiza tu inversión con preparación especializada.
+                  Pide tu prueba de nivel gratuita y maximiza tu inversión con preparación especializada.
                 </p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-xl">

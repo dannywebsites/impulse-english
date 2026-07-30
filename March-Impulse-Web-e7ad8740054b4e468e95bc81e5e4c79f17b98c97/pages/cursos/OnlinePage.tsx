@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Wifi, Users, Target, Award, Clock, CheckCircle, Phone, Globe, Video, Laptop, Calendar, ArrowRight } from 'lucide-react';
+import { Wifi, Users, Target, Award, Clock, CheckCircle, Globe, Video, Laptop, Calendar, ArrowRight } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -7,6 +7,7 @@ import Breadcrumb from '../../components/Breadcrumb';
 import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 export const courseSchema = generateCourseSchema({
   name: "Clases de Inglés Online",
@@ -94,7 +95,7 @@ export default function OnlinePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-white text-indigo-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-zinc-100 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
@@ -105,7 +106,7 @@ export default function OnlinePage() {
                 rel="noopener noreferrer"
                 className="backdrop-blur-sm text-white border border-white/25 font-display font-medium py-4 px-8 rounded-lg hover:bg-white/10 transition-all duration-300 text-center flex items-center justify-center gap-2"
               >
-                <Phone className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 WhatsApp
               </a>
             </div>
@@ -334,10 +335,11 @@ export default function OnlinePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Empieza con una clase de prueba gratuita
+                Empieza con una prueba de nivel gratuita
               </h2>
               <p className="text-white/80 text-lg mb-8">
-                Evaluamos tu nivel online, te ubicamos en el grupo adecuado y empiezas. Sin compromiso.
+                Evaluamos tu nivel online, te decimos tu nivel MCER exacto y te damos un plan
+                de estudios personalizado. Sin compromiso.
               </p>
               <ul className="space-y-4">
                 {[
@@ -356,9 +358,9 @@ export default function OnlinePage() {
 
             <div className="card p-8">
               <LeadForm
-                title="Prueba una clase online sin compromiso"
+                title="Pide tu prueba de nivel online sin compromiso"
                 subtitle="Misma calidad que en clase presencial. Te contactamos en menos de 24 horas"
-                ctaText="Solicitar clase de prueba"
+                ctaText="Solicitar prueba de nivel"
                 source="online-courses-page"
                 showPhone={true}
                 showAge={true}

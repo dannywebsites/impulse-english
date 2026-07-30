@@ -21,7 +21,7 @@ impulseSection:
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, os preparamos para obtener un certificado que os acompañará toda la vida. Con un 100% de aprobados en 2024-2025, grupos reducidos de máximo 10 alumnos y simulacros mensuales en condiciones reales de examen, nuestros profesores certificados TEFL/CELTA os garantizan la mejor preparación posible para el B2 First."
   ctaLinks:
     - text: Prueba de nivel gratis
-      href: /reservar-clase
+      href: /prueba-de-nivel-ingles
     - text: Preparación B2 First
       href: /examenes-cambridge/b2-first
 faqItems:

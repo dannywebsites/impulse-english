@@ -77,7 +77,7 @@ hits to a wrong/unclaimed destination leave the browser looking healthy.
 
 **Run `npm run verify:tracking` (see `scripts/verify-tracking/README.md`)
 after ANY change to:** the `BaseLayout.astro` inline scripts, `LeadForm.tsx`,
-`CoursePopup.tsx`, `ReservarClasePage.tsx`, the GTM container, or GA4 admin
+`CoursePopup.tsx`, `PruebaNivelPage.tsx`, the GTM container, or GA4 admin
 settings. A monthly scheduled run also exists as a safety net. Test sessions
 use `?tt=test` → `traffic_type=internal` (excluded from reports once the GA4
 "Internal Traffic" data filter is set to Active — UI-only toggle).

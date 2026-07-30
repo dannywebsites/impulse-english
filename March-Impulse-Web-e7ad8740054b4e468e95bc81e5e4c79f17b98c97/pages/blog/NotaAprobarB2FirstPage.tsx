@@ -442,7 +442,7 @@ export default function NotaAprobarB2FirstPage() {
                 En Impulse English Academy te preparamos con simulacros reales y feedback personalizado para maximizar tu puntuación.
               </p>
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Reserva tu clase gratis

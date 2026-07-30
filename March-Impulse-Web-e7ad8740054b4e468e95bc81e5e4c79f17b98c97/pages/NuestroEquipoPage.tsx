@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Award, BookOpen, Users, ArrowRight, CheckCircle, Star, MessageCircle, Phone, GraduationCap } from 'lucide-react';
+import { Award, BookOpen, Users, ArrowRight, CheckCircle, Star, MessageCircle, GraduationCap } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
@@ -7,6 +7,7 @@ import FAQSection from '../components/FAQSection';
 import Breadcrumb from '../components/Breadcrumb';
 import { NAP } from '../utils/napData';
 import type { FAQItem } from '../utils/schemaData';
+import WhatsAppIcon from '../components/icons/WhatsAppIcon';
 
 export const faqs: FAQItem[] = [
   {
@@ -277,7 +278,7 @@ export default function NuestroEquipoPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/reservar-clase/"
+                href="/prueba-de-nivel-ingles/"
                 className="bg-white text-accent-blue hover:bg-zinc-100 font-bold py-4 px-8 rounded-lg transition-colors inline-flex items-center justify-center gap-2"
               >
                 Reservar Prueba
@@ -289,7 +290,7 @@ export default function NuestroEquipoPage() {
                 rel="noopener noreferrer"
                 className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors inline-flex items-center justify-center gap-2"
               >
-                <Phone className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5" />
                 WhatsApp
               </a>
             </div>

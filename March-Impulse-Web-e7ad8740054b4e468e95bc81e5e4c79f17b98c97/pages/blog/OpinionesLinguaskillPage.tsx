@@ -363,7 +363,7 @@ export default function OpinionesLinguaskillPage() {
                   ¿Listo para tu examen Linguaskill?
                 </h2>
                 <p className="text-xl text-white/80">
-                  Reserva tu clase gratuita y únete al 87% de usuarios satisfechos.
+                  Pide tu prueba de nivel gratuita y únete al 87% de usuarios satisfechos.
                 </p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-xl">

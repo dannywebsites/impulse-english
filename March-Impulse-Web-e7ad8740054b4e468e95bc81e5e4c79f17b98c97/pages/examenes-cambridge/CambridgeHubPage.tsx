@@ -532,9 +532,9 @@ export default function CambridgeHubPage() {
       {/* BOOKING-CTA */}
       <section className="section-lead px-6 bg-accent-blue">
         <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="t-h2 text-white mb-4">Reserva tu clase de prueba gratuita</h2>
+          <h2 className="t-h2 text-white mb-4">Pide tu prueba de nivel gratuita</h2>
           <p className="text-white/90 mb-8">Sin compromiso. Conoce nuestra metodología y a nuestros profesores antes de decidir.</p>
-          <a href="/reservar-clase/" className="inline-block bg-brand-red hover:bg-brand-red-600 text-white font-bold uppercase tracking-wide px-8 py-4 rounded-lg transition-colors">Clase de prueba gratuita</a>
+          <a href="/prueba-de-nivel-ingles/" className="inline-block bg-brand-red hover:bg-brand-red-600 text-white font-bold uppercase tracking-wide px-8 py-4 rounded-lg transition-colors">Prueba de nivel gratuita</a>
         </div>
       </section>
       <Footer />

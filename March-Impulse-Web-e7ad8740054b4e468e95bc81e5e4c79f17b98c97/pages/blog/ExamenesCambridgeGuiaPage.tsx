@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm';
 import FAQSection from '../../components/FAQSection';
 import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 import RelatedArticles from '../../components/RelatedArticles';
 import { getBlogSiblingCards } from '../../data/blog-directory';
@@ -1061,7 +1062,6 @@ export default function ExamenesCambridgeGuiaPage() {
 
           </div>
 
-
         </div>
 
         {/* CTA Section */}
@@ -1113,7 +1113,7 @@ export default function ExamenesCambridgeGuiaPage() {
                     rel="noopener noreferrer"
                     className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
                   >
-                    <MessageCircle className="w-5 h-5" />
+                    <WhatsAppIcon className="w-5 h-5" />
                     Consultar por WhatsApp
                   </a>
                   <a

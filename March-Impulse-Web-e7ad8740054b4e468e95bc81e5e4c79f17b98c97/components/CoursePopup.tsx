@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { X, Send, CheckCircle, Loader2 } from 'lucide-react';
+import { X, Send, CheckCircle, Check, Loader2 } from 'lucide-react';
 import { resolveVariant, isSuppressed, type PopupVariant } from '../utils/popupVariants';
 
 // Same GoHighLevel inbound hook the existing LeadForm / reservar-clase forms use,
@@ -8,8 +8,11 @@ import { resolveVariant, isSuppressed, type PopupVariant } from '../utils/popupV
 const WEBHOOK_URL =
   'https://services.leadconnectorhq.com/hooks/OAJYwGK3D8G66kUMQsht/webhook-trigger/0fe57216-4cdc-42af-b2d6-d401e9015573';
 
-const DISMISS_KEY = 'impulse_popup_dismissed';
-const DELAY_MS = 40000; // fire after 40s on page
+// Bumped to _v2 with the prueba-de-nivel rewrite: visitors who dismissed the old
+// "solicita información" popup had it suppressed forever, so without a new key
+// they would never be shown the new offer.
+const DISMISS_KEY = 'impulse_popup_dismissed_v2';
+const DELAY_MS = 30000; // fire after 30s on page
 
 // "What are you looking for" — same offering set + values the existing LeadForm
 // uses, so the selection maps onto the same CRM `level` field.
@@ -39,12 +42,21 @@ function markDismissed(): void {
   }
 }
 
+// What the visitor actually gets for their details. Identical across variants:
+// the offer is the same everywhere, only the page-matched hook changes.
+const POPUP_BENEFITS: string[] = [
+  'Tu nivel MCER exacto (A1-C2), no un "nivel medio"',
+  'En qué destrezas estás fuerte y cuáles te frenan',
+  'Un plan de estudios personalizado y plazos reales',
+  'Con JP, nuestro Director de Estudios y experto Cambridge',
+];
+
 const inputClass =
   'w-full px-4 py-3 border border-zinc-200 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all';
 
 /**
  * Time-on-page lead-capture popup. Mounted once in BaseLayout.astro (client:idle)
- * so it covers every page. Shows after 20s with content matched to the page's
+ * so it covers every page. Shows after 30s with content matched to the page's
  * exam level, once per visitor (localStorage), and never on form/legal pages.
  */
 export default function CoursePopup() {
@@ -117,7 +129,7 @@ export default function CoursePopup() {
     }
   }
 
-  // Arm the 20s timer once on mount (skips dismissed visitors and suppressed pages).
+  // Arm the 30s timer once on mount (skips dismissed visitors and suppressed pages).
   useEffect(() => {
     if (typeof window === 'undefined') return;
     if (alreadyDismissed()) return;
@@ -184,12 +196,26 @@ export default function CoursePopup() {
           <div className="py-6 text-center">
             <CheckCircle className="mx-auto mb-4 h-14 w-14 text-green-500" />
             <h3 className="mb-1 text-xl font-bold text-green-800">¡Gracias!</h3>
-            <p className="text-zinc-600">Te contactamos en menos de 24 horas.</p>
+            <p className="text-zinc-600">
+              Te llamamos en menos de 24 horas para darte cita para tu prueba de nivel gratuita.
+            </p>
           </div>
         ) : (
           <>
             <h3 className="mb-2 pr-6 text-2xl font-bold text-accent-blue">{variant.title}</h3>
-            <p className="mb-5 text-zinc-500">{variant.subtitle}</p>
+            <p className="mb-4 text-zinc-500">{variant.subtitle}</p>
+
+            {/* The benefits are what make the ask worth answering — without them
+                this is just another form demanding a phone number. Same four on
+                every variant: the offer doesn't change, only the hook above does. */}
+            <ul className="mb-5 space-y-2 rounded-xl bg-accent-blue/5 p-4">
+              {POPUP_BENEFITS.map((benefit) => (
+                <li key={benefit} className="flex items-start gap-2 text-sm text-zinc-700">
+                  <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" />
+                  <span>{benefit}</span>
+                </li>
+              ))}
+            </ul>
 
             <form onSubmit={handleSubmit} className="space-y-3">
               <input

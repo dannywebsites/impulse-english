@@ -149,7 +149,7 @@ const routes = [
   // Other
   '/aprende-ingles',
   '/contacto',
-  '/reservar-clase',
+  '/prueba-de-nivel-ingles',
   '/gracias',
   // Legal
   '/aviso-legal',
