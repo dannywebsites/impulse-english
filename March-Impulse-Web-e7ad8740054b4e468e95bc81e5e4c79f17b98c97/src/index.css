@@ -231,6 +231,15 @@
            hover:bg-white hover:text-accent-blue;
   }
 
+  /* Edge fade for the marquee rows. PartnersSection already referenced this
+     class but it was never defined, so the marquees ran hard into the section
+     edges. A mask does the job without the two absolutely-positioned
+     gradient overlay divs it was using elsewhere. */
+  .mask-linear-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
   .link-inline {
     @apply font-medium text-accent-blue underline decoration-accent-blue/30
            underline-offset-2 transition-colors

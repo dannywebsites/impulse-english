@@ -35,14 +35,14 @@ export default function NewsOverlay(_props: NewsOverlayProps = {}) {
     <>
       {/* MOBILE & TABLET: condensed sheet (hidden on XL+) */}
       <div className="xl:hidden">
-        <div className="bg-white rounded-t-3xl shadow-[0_-10px_40px_rgba(0,0,0,0.2)] pb-4 pt-2">
+        <div className="bg-white rounded-t-3xl shadow-[0_-10px_40px_rgb(13_32_56_/_0.22)] pb-4 pt-2">
           <div className="w-12 h-1.5 bg-zinc-200 rounded-full mx-auto mt-3 mb-1"></div>
           <section className="w-full px-6 py-2">
             <div className="flex flex-col gap-6">
               {items.slice(0, 2).map((item, index) => (
                 <a key={index} href={item.href} className="group cursor-pointer">
                   <div className="flex justify-between items-start mb-1">
-                    <span className="text-accent-blue text-[10px] font-bold tracking-widest uppercase bg-blue-50 px-2 py-0.5 rounded-sm">
+                    <span className="text-accent-blue text-[10px] font-bold tracking-widest uppercase bg-accent-blue-50 px-2 py-0.5 rounded-sm">
                       {item.label}
                     </span>
                     {index === 0 && <ArrowUpRight className="w-4 h-4 text-zinc-300" />}
@@ -65,9 +65,9 @@ export default function NewsOverlay(_props: NewsOverlayProps = {}) {
         <section className="w-full bg-white border-b border-zinc-100">
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-zinc-100 container mx-auto border-x border-zinc-100 max-w-7xl">
             {items.map((item, index) => (
-              <a key={index} href={item.href} className="p-8 md:p-12 group cursor-pointer hover:bg-zinc-50 transition-colors">
+              <a key={index} href={item.href} className="p-8 md:p-12 group cursor-pointer transition-colors hover:bg-accent-blue-50/40">
                 <div className="flex justify-between items-start mb-4">
-                  <span className="text-accent-blue text-xs font-bold tracking-widest uppercase bg-blue-50 px-2 py-1 rounded-sm">
+                  <span className="text-accent-blue text-xs font-bold tracking-widest uppercase bg-accent-blue-50 px-2 py-1 rounded-sm">
                     {item.label}
                   </span>
                   <ArrowUpRight className="w-5 h-5 text-zinc-300 group-hover:text-accent-blue transition-colors" />
