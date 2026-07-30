@@ -5,6 +5,48 @@ Every SEO decision is logged here, grounded in [`SEO-Master-Class-Reference.md`]
 
 ---
 
+## 2026-07-31 — Founder `Person` nodes on the organisation schema
+
+**Context:** follow-up to the 2026-07-30 entry below, which flagged that the site had no `Person`
+or `founder` schema at all. Danny supplied JP's full name: **JP Paul** (confirmed 2026-07-31 —
+"JP Paul is his full name"; there is no surname beyond it). Only Danny has a LinkedIn to point at.
+
+### Decision 1 — `founder` → two `Person` nodes on the canonical `#organization` node only.
+**Why (book §4 authority / E-E-A-T, plus the entity half the book skips):** named, corroborated
+people behind a local business is the strongest E-E-A-T signal a small site can emit cheaply, and
+it gives Google something to attach the founders to as entities rather than as page text. Each
+node carries `worksFor` → `#organization`, closing the loop back to the business entity.
+
+Deliberately **not** added to the per-location `#localbusiness` nodes (`generateLocationPageSchema`):
+those already declare `parentOrganization` → `#organization`, so repeating the founders there would
+restate the same two people on 10 pages for no additional signal.
+
+### Decision 2 — `sameAs` only where a real profile exists. JP's node ships without one.
+**Why:** `sameAs` is a corroboration claim — it asserts "this is the same person as that profile."
+With no verified profile for JP, the honest options are omit it or invent one, and inventing it
+would be a false claim on the exact signal the property exists to carry. Danny's node gets
+`sameAs` → his LinkedIn. JP's node is name + `jobTitle` + `worksFor` until a profile URL exists.
+Same reasoning as the standing "let dead URLs 404" rule: no signal beats a wrong one.
+
+### Decision 3 — Visible site copy keeps "JP". Full name lives in schema only.
+**Why:** per Danny, the displayed name stays as-is. Schema carries `name: "JP Paul"` with
+`alternateName: "JP"`, which is exactly what `alternateName` is for — the machine-readable record
+is complete without changing what visitors read.
+
+**Implementation:** `FOUNDERS` array added to `utils/napData.ts` (founder identity gets one source,
+same rule as NAP) and consumed by `generateOrganizationSchema()` in `utils/schemaData.ts`.
+
+**Verification:** `npx astro check` 0 errors · clean `npm run build` 146 pages · `founder` array
+present in the emitted JSON-LD on all 146 pages, with `sameAs` on Danny's node only.
+
+**Build-integrity finding (not SEO):** `components/icons/WhatsAppIcon.tsx`, imported by 14 pages,
+is committed on `main` only (`c371672`) and is absent from `design/ui-refresh-non-blog`,
+`offer/prueba-de-nivel` and `fix/youtube-handle-founder-linkedin`. Those branches do **not** build
+standalone; earlier green checks on them passed only because the file was sitting on disk untracked.
+Restored from `main` to verify this work. Needs resolving before any of those branches is built in CI.
+
+---
+
 ## 2026-07-30 — Corrected a dead YouTube handle in `sameAs`, added founder LinkedIn to /sobre-nosotros/
 
 **Context:** Danny supplied the real channel, `https://www.youtube.com/@Impulse_English_lavaguada`,
