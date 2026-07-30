@@ -31,7 +31,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿B1 o B2 para Bachillerato y universidad?",
-    answer: "Muchas universidades piden B1–B2, y en la práctica B2 abre más puertas. Recomendamos definir el objetivo según plazos: si hay urgencia, se planifica certificación; si hay margen, se construye nivel para que el examen no sea un \"milagro\", sino consecuencia."
+    answer: "Muchas universidades piden B1-B2, y en la práctica B2 abre más puertas. Recomendamos definir el objetivo según plazos: si hay urgencia, se planifica certificación; si hay margen, se construye nivel para que el examen no sea un \"milagro\", sino consecuencia."
   },
   {
     question: "¿Preparáis EBAU/Selectividad?",
@@ -105,7 +105,7 @@ export default function SecundariaPage() {
             className="w-full h-full object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/80 via-indigo-900/70 to-purple-900/55"></div>
+          <div className="absolute inset-0 bg-indigo-950/70"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-36 -right-36 w-[460px] h-[460px] rounded-full bg-indigo-400/[0.05]"></div>
@@ -124,7 +124,7 @@ export default function SecundariaPage() {
             <div className="flex items-center gap-4 mb-6 animate-hero-fade-up">
               <div className="w-8 h-px bg-white/40"></div>
               <span className="font-display text-white/70 text-xs uppercase tracking-[0.2em]">
-                13–17 años · EBAU + Cambridge B1–C1
+                13-17 años · EBAU + Cambridge B1-C1
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
@@ -170,7 +170,7 @@ export default function SecundariaPage() {
               <span className="text-zinc-700 font-medium">Grupos por nivel real, no por curso</span>
             </div>
             <div className="flex items-center gap-2">
-              <Award className="w-5 h-5 text-yellow-500" />
+              <Award className="w-5 h-5 text-amber-500" />
               <span className="text-zinc-700 font-medium">100% aprobados Cambridge 2024/2025 (alumnos presentados)</span>
             </div>
           </div>
@@ -178,10 +178,10 @@ export default function SecundariaPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+            <h2 className="t-h2 text-zinc-900 mb-6">
               Preparados para todo
             </h2>
 
@@ -192,7 +192,7 @@ export default function SecundariaPage() {
             </div>
 
             {/* Cambridge Badge */}
-            <div className="mt-8 p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl border border-indigo-200">
+            <div className="mt-8 p-6 bg-indigo-50 rounded-xl border border-indigo-200">
               <div className="flex items-start gap-4">
                 <div className="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center flex-shrink-0">
                   <Award className="w-8 h-8 text-white" />
@@ -251,7 +251,7 @@ export default function SecundariaPage() {
                 description: "Adaptados al horario escolar. Grupos de tarde y posibilidad de intensivos."
               }
             ].map((feature, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-zinc-100 flex items-start gap-4">
+              <div key={index} className="card p-6 flex items-start gap-4">
                 <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 flex-shrink-0">
                   {feature.icon}
                 </div>
@@ -266,10 +266,10 @@ export default function SecundariaPage() {
       </section>
 
       {/* Video Section - Above Levels */}
-      <section className="py-16 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h3 text-zinc-900 mb-4">
               Preparación EBAU y Cambridge B1-C1
             </h2>
             <p className="text-zinc-600">
@@ -279,15 +279,15 @@ export default function SecundariaPage() {
           <LazyVideo
             videoId="yYf0hsBtd14"
             title="Inglés para ESO y Bachillerato - EBAU y Cambridge"
-            className="shadow-xl"
+            className="shadow-panel"
           />
         </div>
       </section>
 
       {/* Certifications Section */}
-      <section className="py-16 px-6 bg-indigo-600">
+      <section className="section-lead px-6 bg-indigo-600">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="t-h2 text-white mb-4">
             Certifica tu nivel antes de la universidad
           </h2>
           <p className="text-white/80 mb-8">
@@ -299,7 +299,7 @@ export default function SecundariaPage() {
               <p className="text-white/70 text-sm mb-4">B1 Preliminary, B2 First, C1 Advanced</p>
               <a
               href="/examenes-cambridge/"
-                className="inline-block bg-white text-indigo-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-indigo-900 transition-colors text-sm"
+                className="inline-block bg-white text-indigo-600 font-bold py-2 px-4 rounded-lg hover:bg-amber-400 hover:text-indigo-900 transition-colors text-sm"
               >
                 Ver exámenes Cambridge
               </a>
@@ -309,7 +309,7 @@ export default function SecundariaPage() {
               <p className="text-white/70 text-sm mb-4">Certificado en 48h. Ideal para requisitos universitarios urgentes</p>
               <a
               href="/linguaskill/"
-                className="inline-block bg-white text-indigo-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-indigo-900 transition-colors text-sm"
+                className="inline-block bg-white text-indigo-600 font-bold py-2 px-4 rounded-lg hover:bg-amber-400 hover:text-indigo-900 transition-colors text-sm"
               >
                 Conocer Linguaskill
               </a>
@@ -322,10 +322,10 @@ export default function SecundariaPage() {
       </section>
 
       {/* Levels & Pricing Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Niveles disponibles
             </h2>
             <p className="text-zinc-500 text-lg">
@@ -334,49 +334,49 @@ export default function SecundariaPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-2xl border border-indigo-100">
+            <div className="bg-indigo-50 p-8 rounded-2xl border border-indigo-100">
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Niveles disponibles</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>A2-B1:</strong> Base sólida para ESO</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>B1 Preliminary:</strong> Nivel intermedio certificado</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>B2 First:</strong> El estándar universitario</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>C1 Advanced:</strong> Nivel profesional</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100">
+            <div className="bg-green-50 p-8 rounded-2xl border border-green-100">
               <h3 className="text-xl font-bold text-zinc-900 mb-4">¿Qué incluye?</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">2 horas semanales en grupo</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Material Cambridge oficial</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Simulacros de examen periódicos</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Seguimiento personalizado</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Preparación EBAU incluida</span>
                 </li>
               </ul>
@@ -402,7 +402,7 @@ export default function SecundariaPage() {
                 href="https://wa.me/34604910611?text=Hola,%20me%20gustaría%20información%20sobre%20inglés%20para%20secundaria"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
+                className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 WhatsApp
@@ -425,10 +425,11 @@ export default function SecundariaPage() {
       <FAQSection
         faqs={faqs}
         title="Preguntas frecuentes sobre inglés para secundaria"
+        variant="refresh"
       />
 
       {/* Lead Form */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-3xl">
           <LeadForm
             title="Reserva una clase de prueba para tu hijo/a"
@@ -438,6 +439,7 @@ export default function SecundariaPage() {
             showPhone={true}
             showAge={true}
             showLevel={true}
+            variant="refresh"
           />
         </div>
       </section>

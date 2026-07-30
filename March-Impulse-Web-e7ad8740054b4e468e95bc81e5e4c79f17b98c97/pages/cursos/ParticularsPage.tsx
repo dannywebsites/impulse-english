@@ -129,7 +129,7 @@ export default function ParticularesPage() {
               fetchPriority="high"
             />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/80 via-accent-blue/70 to-[#0a3560]/60"></div>
+          <div className="absolute inset-0 bg-accent-blue/70"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-36 -right-36 w-[480px] h-[480px] rounded-full bg-brand-red/[0.06]"></div>
@@ -180,10 +180,10 @@ export default function ParticularesPage() {
       </section>
 
       {/* Video Section - Moved to Top */}
-      <section className="py-16 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h3 text-zinc-900 mb-4">
               Clases particulares 100% personalizadas
             </h2>
             <p className="text-zinc-600">
@@ -193,7 +193,7 @@ export default function ParticularesPage() {
           <LazyVideo
             videoId="Fdso-d9_F20"
             title="Clases particulares de inglés - Online y presencial"
-            className="shadow-xl"
+            className="shadow-panel"
           />
         </div>
       </section>
@@ -227,10 +227,10 @@ export default function ParticularesPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+            <h2 className="t-h2 text-zinc-900 mb-6">
               Centro Oficial de Preparación Cambridge y Centro Oficial de Preparación Linguaskill
             </h2>
 
@@ -298,7 +298,7 @@ export default function ParticularesPage() {
                 description: "Clases presenciales en nuestra academia o desde cualquier lugar online."
               }
             ].map((feature, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-zinc-100 flex items-start gap-4">
+              <div key={index} className="card p-6 flex items-start gap-4">
                 <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 flex-shrink-0">
                   {feature.icon}
                 </div>
@@ -313,10 +313,10 @@ export default function ParticularesPage() {
       </section>
 
       {/* What We Offer Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               ¿Qué podemos trabajar?
             </h2>
             <p className="text-zinc-500 text-lg">
@@ -325,45 +325,45 @@ export default function ParticularesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-2xl border border-orange-100">
+            <div className="bg-orange-50 p-8 rounded-2xl border border-orange-100">
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Preparación de exámenes</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Cambridge: B1, B2, C1, C2</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Linguaskill (empresas)</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">IELTS / TOEFL</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">EBAU / Selectividad</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100">
+            <div className="bg-green-50 p-8 rounded-2xl border border-green-100">
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Objetivos profesionales</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Entrevistas de trabajo</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Presentaciones en inglés</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Reuniones y negociaciones</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Emails y comunicación escrita</span>
                 </li>
               </ul>
@@ -380,7 +380,7 @@ export default function ParticularesPage() {
                 href="https://wa.me/34604910611?text=Hola,%20me%20gustaría%20información%20sobre%20clases%20particulares"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
+                className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 Contactar por WhatsApp
@@ -397,10 +397,10 @@ export default function ParticularesPage() {
       </section>
 
       {/* Gallery Section - Photos above FAQs */}
-      <section className="py-16 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Nuestros alumnos
             </h2>
             <p className="text-zinc-600 text-lg">
@@ -409,7 +409,7 @@ export default function ParticularesPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {courseGalleryImages.map((image, index) => (
-              <div key={index} className="rounded-xl overflow-hidden shadow-lg">
+              <div key={index} className="overflow-hidden rounded-2xl shadow-lift">
                 <div className="aspect-[4/3]">
                   <img
                     src={image.url}
@@ -425,14 +425,14 @@ export default function ParticularesPage() {
       </section>
 
       {/* FAQ Section - At bottom */}
-      <section className="py-16 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold text-zinc-900 mb-8 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-8 text-center">
             Preguntas frecuentes
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-zinc-100">
+              <div key={index} className="card p-6">
                 <h3 className="font-bold text-zinc-900 mb-2">{faq.question}</h3>
                 <p className="text-zinc-600">{faq.answer}</p>
               </div>
@@ -442,7 +442,7 @@ export default function ParticularesPage() {
       </section>
 
       {/* Lead Form */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-3xl">
           <LeadForm
             title="Reserva tu primera clase particular"
@@ -452,6 +452,7 @@ export default function ParticularesPage() {
             showPhone={true}
             showAge={true}
             showLevel={true}
+            variant="refresh"
           />
         </div>
       </section>

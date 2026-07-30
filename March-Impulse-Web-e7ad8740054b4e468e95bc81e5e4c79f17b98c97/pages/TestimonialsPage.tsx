@@ -114,7 +114,7 @@ export default function TestimonialsPage() {
             className="w-full h-full object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
+          <div className="absolute inset-0 bg-accent-blue/85"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-36 -right-36 w-[480px] h-[480px] rounded-full bg-brand-red/[0.05]"></div>
@@ -147,9 +147,9 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Our Philosophy Section */}
-      <section className="py-12 md:py-16 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-8">
+          <h2 className="t-h2 text-zinc-900 mb-8">
             El Inglés Puede Cambiar Tu Vida
           </h2>
           <div className="space-y-6 text-lg text-zinc-600 leading-relaxed">
@@ -170,7 +170,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Video Testimonials Section */}
-      <section className="py-12 md:py-16 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
@@ -186,7 +186,7 @@ export default function TestimonialsPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {videoTestimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col">
+              <div key={index} className="card flex flex-col overflow-hidden">
                 <div className="aspect-video">
                   <LazyVideo
                     videoId={testimonial.videoId}
@@ -211,7 +211,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Google Reviews Grid */}
-      <section className="py-12 md:py-16 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <div className="flex justify-center items-center gap-2 mb-4">
@@ -221,11 +221,11 @@ export default function TestimonialsPage() {
                 <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
                 <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
               </svg>
-              <span className="text-2xl font-bold text-zinc-900">Google Reviews</span>
+              <span className="t-h3 text-zinc-900">Google Reviews</span>
             </div>
             <div className="flex justify-center gap-1 mb-4">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />
+                <Star key={i} className="w-6 h-6 text-amber-400 fill-amber-400" />
               ))}
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 mb-4">
@@ -241,11 +241,11 @@ export default function TestimonialsPage() {
             {googleReviews.map((review, index) => (
               <div
                 key={index}
-                className="bg-zinc-50 p-6 rounded-xl border border-zinc-100 hover:shadow-lg transition-shadow"
+                className="card-interactive p-6"
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                    <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
                   ))}
                 </div>
                 <Quote className="w-8 h-8 text-accent-blue/20 mb-3" />
@@ -271,7 +271,7 @@ export default function TestimonialsPage() {
               href="https://share.google/GuRfJ3TjrnIIUhrdk"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-accent-blue text-white font-bold py-4 px-8 rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center gap-2 bg-accent-blue text-white font-bold py-4 px-8 rounded-lg hover:bg-accent-blue-800 transition-colors"
             >
               Ver Todas las Reseñas en Google
             </a>
@@ -280,7 +280,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-accent-blue to-blue-900 text-white">
+      <section className="section-lead px-6 bg-accent-blue text-white">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Tu Historia Puede Ser la Siguiente
@@ -292,7 +292,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Lead Form */}
-      <section className="py-12 md:py-16 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-3xl">
           <LeadForm
             title="Empieza Tu Transformación"
@@ -300,6 +300,7 @@ export default function TestimonialsPage() {
             ctaText="Reservar clase gratuita"
             source="testimonials"
             showPhone={true}
+            variant="refresh"
           />
         </div>
       </section>

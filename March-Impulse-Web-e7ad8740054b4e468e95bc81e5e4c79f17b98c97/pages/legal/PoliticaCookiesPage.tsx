@@ -36,7 +36,7 @@ export default function PoliticaCookiesPage() {
       </section>
 
       {/* Content */}
-      <section className="py-12 md:py-16 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="prose prose-zinc max-w-none">
 
@@ -54,7 +54,7 @@ export default function PoliticaCookiesPage() {
               en la Ley Orgánica 3/2018 (LOPDGDD) y en la Ley 34/2002 (LSSI).
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">1. Aviso de Cookies</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">1. Aviso de Cookies</h2>
             <p className="text-zinc-600 mb-4">
               Usamos cookies propias y de terceros para mejorar nuestros servicios, elaborar información
               estadística, analizar la navegación de los usuarios y poder ofrecer contenidos de su interés.
@@ -64,7 +64,7 @@ export default function PoliticaCookiesPage() {
               por medio de un botón como medio válido.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">2. Definición y Función de las Cookies</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">2. Definición y Función de las Cookies</h2>
             <p className="text-zinc-600 mb-4">
               Las cookies, o trazadores similares, son datos utilizados por un servidor para enviar información
               de estado al navegador de un usuario, y por ese navegador para enviar información de estado al
@@ -141,7 +141,7 @@ export default function PoliticaCookiesPage() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">3. Cookies que Utiliza Este Sitio Web</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">3. Cookies que Utiliza Este Sitio Web</h2>
             <p className="text-zinc-600 mb-4">
               A continuación detallamos las cookies y tecnologías de medición concretas que utilizamos. Las
               cookies analíticas y publicitarias <strong>solo se activan después de que aceptes su uso</strong>{' '}
@@ -200,7 +200,7 @@ export default function PoliticaCookiesPage() {
               <a href="/politica-privacidad/" className="text-accent-blue hover:underline">Política de Privacidad</a>.
             </p>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">4. Revocación y Eliminación de Cookies por Tipo de Navegador</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">4. Revocación y Eliminación de Cookies por Tipo de Navegador</h2>
             <p className="text-zinc-600 mb-4">
               La instalación de ciertas cookies está sujeta a su consentimiento. Cuando visita la web por primera
               vez, mediante un banner de información, se le solicita si acepta la instalación de este tipo de cookie.
@@ -268,7 +268,7 @@ export default function PoliticaCookiesPage() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-zinc-900 mt-8 mb-4">5. Administración de las Cookies y Otros Marcadores</h2>
+            <h2 className="t-h3 text-zinc-900 mt-8 mb-4">5. Administración de las Cookies y Otros Marcadores</h2>
             <p className="text-zinc-600 mb-4">
               En cumplimiento de la normativa vigente, le informamos de que este sitio web utiliza cookies tanto
               propias como de terceros para diversas finalidades. Estos pueden instalarse en su terminal según

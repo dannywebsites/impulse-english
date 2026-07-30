@@ -89,7 +89,7 @@ export default function ContactoPage() {
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/outside-academy-mobile.jpg" type="image/jpeg" />
             <img src="/images/academy/outside-academy.jpg" alt="Fachada exterior Impulse English Academy La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
+          <div className="absolute inset-0 bg-accent-blue/85"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-white/[0.03]"></div>
@@ -121,12 +121,12 @@ export default function ContactoPage() {
       </section>
 
       {/* Contact Info + Form Grid */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-8">
+              <h2 className="t-h3 text-zinc-900 mb-8">
                 Información de Contacto
               </h2>
 
@@ -166,7 +166,7 @@ export default function ContactoPage() {
 
                 {/* How to get there - Bus */}
                 <div className="flex items-start gap-4 p-6 bg-zinc-50 rounded-xl">
-                  <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center text-green-600 flex-shrink-0">
+                  <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center text-emerald-600 flex-shrink-0">
                     <Bus className="w-6 h-6" />
                   </div>
                   <div>
@@ -226,7 +226,7 @@ export default function ContactoPage() {
                   href={`${NAP.whatsappUrl}?text=Hola,%20me%20gustaría%20información%20sobre%20los%20cursos%20de%20inglés`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3 w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-xl transition-colors"
+                  className="flex items-center justify-center gap-3 w-full bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-6 rounded-xl transition-colors"
                 >
                   <MessageCircle className="w-6 h-6" />
                   Contactar por WhatsApp
@@ -236,7 +236,7 @@ export default function ContactoPage() {
                 <div className="flex items-center justify-center gap-2 p-4 bg-zinc-50 rounded-xl">
                   <div className="flex gap-1">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                      <Star key={i} className="w-5 h-5 text-amber-400 fill-amber-400" />
                     ))}
                   </div>
                   <span className="text-zinc-600 font-medium">174+ reseñas en Google</span>
@@ -254,6 +254,7 @@ export default function ContactoPage() {
                 showPhone={true}
                 showAge={true}
                 showLevel={true}
+                variant="refresh"
               />
             </div>
           </div>
@@ -277,9 +278,9 @@ export default function ContactoPage() {
       </section>
 
       {/* Academy Photos Section */}
-      <section className="py-16 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-8 text-center">
+          <h2 className="t-h3 text-zinc-900 mb-8 text-center">
             Nuestras Instalaciones
           </h2>
 
@@ -295,14 +296,14 @@ export default function ContactoPage() {
               { url: "/images/academy/primary-classes-students-smiling.jpg", alt: "Estudiantes felices clase inglés La Vaguada Barrio del Pilar Madrid", caption: "Ambiente positivo" },
               { url: "/images/academy/outside-academy.jpg", alt: "Fachada exterior Impulse English Academy La Vaguada Barrio del Pilar Madrid", caption: "Nuestra academia en La Vaguada" }
             ].map((photo, index) => (
-              <div key={index} className="group relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+              <div key={index} className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lift">
                 <img
                   src={photo.url}
                   alt={photo.alt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="absolute bottom-4 left-4 right-4 text-white font-medium text-sm">
                     {photo.caption}
                   </p>
@@ -314,10 +315,10 @@ export default function ContactoPage() {
       </section>
 
       {/* Video Section - Below the fold */}
-      <section className="py-16 md:py-20 px-6 bg-zinc-50">
+      <section className="section-lead px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h3 text-zinc-900 mb-4">
               Cómo llegar a {NAP.name}
             </h2>
             <p className="text-zinc-600">
@@ -328,7 +329,7 @@ export default function ContactoPage() {
           <LazyVideo
             videoId="Fdso-d9_F20"
             title={`Cómo llegar a ${NAP.name} desde Metro Barrio del Pilar`}
-            className="shadow-xl"
+            className="shadow-panel"
           />
         </div>
       </section>
@@ -337,6 +338,7 @@ export default function ContactoPage() {
       <FAQSection
         faqs={faqs}
         title="Preguntas frecuentes"
+        variant="refresh"
       />
 
       <Footer variant="simple" />
