@@ -175,7 +175,7 @@
 │   ├── BlogPage.tsx
 │   ├── TestimonialsPage.tsx
 │   ├── PreguntasFrecuentesPage.tsx
-│   ├── ReservarClasePage.tsx
+│   ├── PruebaNivelPage.tsx
 │   ├── GraciasPage.tsx
 │   ├── NotFoundPage.tsx
 │   ├── cursos/                     # 6 course page components
@@ -409,7 +409,7 @@ Keywords: preguntas frecuentes academia inglés, faq clases inglés madrid, duda
 
 ---
 
-### Page: Reservar Clase — `/reservar-clase`
+### Page: Reservar Clase — `/prueba-de-nivel-ingles`
 
 **Purpose:** Trial class booking (primary conversion page)
 **Target Keyword:** reservar clase inglés madrid
@@ -419,7 +419,7 @@ Keywords: preguntas frecuentes academia inglés, faq clases inglés madrid, duda
 ```
 Title: Reservar Clase | Impulse English Academy La Vaguada | Barrio del Pilar
 Meta Description: Reserva tu clase de prueba gratuita en Impulse English Academy. Sin compromiso. Te contactamos en menos de 24 horas. La Vaguada, Barrio del Pilar.
-Canonical: https://impulse-english.es/reservar-clase/
+Canonical: https://impulse-english.es/prueba-de-nivel-ingles/
 Keywords: reservar clase inglés, prueba gratis inglés madrid, clase prueba academia inglés, inscripción cursos inglés
 ```
 
@@ -969,7 +969,7 @@ Lines 42, 49, 67, 83, 126, 128, 132, 133, 134, 137, 147
 - [About Us](https://impulse-english.es/sobre-nosotros)
 - [Methodology](https://impulse-english.es/metodologia)
 - [Blog](https://impulse-english.es/blog)
-- [Book a Class](https://impulse-english.es/reservar-clase)
+- [Book a Class](https://impulse-english.es/prueba-de-nivel-ingles)
 - [FAQ](https://impulse-english.es/preguntas-frecuentes)
 - [Sitemap](https://impulse-english.es/sitemap.xml)
 ```
@@ -1096,14 +1096,14 @@ Lines 42, 49, 67, 83, 126, 128, 132, 133, 134, 137, 147
 
 | CTA Element | Text Used | Location | Action |
 |------------|-----------|----------|--------|
-| Primary hero button | "Clase de Prueba Gratuita" | Homepage hero | → /reservar-clase |
+| Primary hero button | "Clase de Prueba Gratuita" | Homepage hero | → /prueba-de-nivel-ingles |
 | Secondary hero button | "Llamar" | Homepage hero | → tel:+34604910611 |
 | Navbar CTA | WhatsApp icon + Phone icon | All pages navbar | → wa.me + tel: |
 | LeadForm submit | "Enviar solicitud" | Multiple pages | Webhook POST |
-| Course CTA | "Prueba de nivel GRATIS" | Course pages | → /reservar-clase |
-| Blog CTA | "Prueba de nivel gratis" / "Preparación [Exam]" | Blog articles | → /reservar-clase / exam page |
+| Course CTA | "Prueba de nivel GRATIS" | Course pages | → /prueba-de-nivel-ingles |
+| Blog CTA | "Prueba de nivel gratis" / "Preparación [Exam]" | Blog articles | → /prueba-de-nivel-ingles / exam page |
 | Footer CTA | Contact links | All pages | → /contacto |
-| Newsletter CTA | "Solicita información" / "Llámanos" | Near footer | → /reservar-clase / tel: |
+| Newsletter CTA | "Solicita información" / "Llámanos" | Near footer | → /prueba-de-nivel-ingles / tel: |
 
 ### 8.2 Lead Capture Form
 
@@ -1144,7 +1144,7 @@ Lines 42, 49, 67, 83, 126, 128, 132, 133, 134, 137, 147
 
 1. User lands on page (homepage, blog article, or location page)
 2. Sees "Clase de Prueba Gratuita" / "Prueba de nivel GRATIS" CTA above fold
-3. Clicks → redirected to `/reservar-clase`
+3. Clicks → redirected to `/prueba-de-nivel-ingles`
 4. Fills form: name, email, phone, level, privacy consent
 5. Submits → webhook POST to GoHighLevel + GTM event
 6. Redirected to `/gracias` — sees 4-step next process + course links

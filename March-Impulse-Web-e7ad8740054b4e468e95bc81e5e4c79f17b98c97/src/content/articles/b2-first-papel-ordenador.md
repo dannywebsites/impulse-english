@@ -21,7 +21,7 @@ impulseSection:
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, os preparamos tanto para el formato papel como para el ordenador. Nuestros simulacros mensuales replican ambas modalidades para que el día del examen no tengáis sorpresas. Con grupos reducidos de máximo 10 alumnos, profesores certificados TEFL/CELTA y un 100% de aprobados en 2024-2025, os asesoramos sobre qué formato se ajusta mejor a vuestro perfil."
   ctaLinks:
     - text: Prueba de nivel gratis
-      href: /reservar-clase
+      href: /prueba-de-nivel-ingles
     - text: Preparación B2 First
       href: /examenes-cambridge/b2-first
 faqItems:

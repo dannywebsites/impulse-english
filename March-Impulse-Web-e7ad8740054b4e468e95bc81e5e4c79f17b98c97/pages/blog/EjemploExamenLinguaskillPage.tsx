@@ -331,7 +331,7 @@ export default function EjemploExamenLinguaskillPage() {
                   ¿Listo para preparar tu examen Linguaskill?
                 </h2>
                 <p className="text-xl text-white/80">
-                  Reserva tu clase gratuita y descubre cómo podemos ayudarte a conseguir tu certificación.
+                  Pide tu prueba de nivel gratuita y descubre cómo podemos ayudarte a conseguir tu certificación.
                 </p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-xl">

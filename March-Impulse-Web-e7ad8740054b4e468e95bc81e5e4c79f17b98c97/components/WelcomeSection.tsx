@@ -39,7 +39,7 @@ export default function WelcomeSection() {
           </div>
 
           <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center lg:col-span-7 lg:col-start-6">
-            <a href="/reservar-clase/" className="btn-secondary btn-lg group">
+            <a href="/prueba-de-nivel-ingles/" className="btn-secondary btn-lg group">
               Haz tu prueba de nivel
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5" />
             </a>

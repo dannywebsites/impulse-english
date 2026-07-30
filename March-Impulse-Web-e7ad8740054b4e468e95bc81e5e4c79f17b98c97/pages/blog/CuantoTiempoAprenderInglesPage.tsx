@@ -399,7 +399,7 @@ export default function CuantoTiempoAprenderInglesPage() {
             <div className="bg-gradient-to-r from-emerald-600 to-emerald-800 rounded-2xl p-8 text-center text-white">
               <h3 className="text-2xl font-bold mb-4">¿Quieres saber cuánto tardarás tú?</h3>
               <p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
-                Evaluamos tu nivel actual y te damos un plan con plazos realistas para alcanzar tu objetivo. Primera clase de prueba gratuita.
+                Evaluamos tu nivel actual y te damos un plan con plazos realistas para alcanzar tu objetivo. Prueba de nivel gratuita, sin compromiso.
               </p>
               <a
               href="/contacto/"

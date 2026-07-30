@@ -100,7 +100,7 @@ const academies = [
     rating: "—",
     reviewCount: "",
     price: "Accesible",
-    highlights: ["Profesores nativos", "Clase de prueba gratuita", "Niños y adultos"],
+    highlights: ["Profesores nativos", "Prueba de nivel gratuita", "Niños y adultos"],
     website: "https://helloacademy.es",
     isInternal: false,
     description: "Academia de inglés con profesores nativos para niños y adultos. Ofrecen clases presenciales en grupos reducidos y clases online. Su presencia digital es limitada y no cuentan con certificación Cambridge oficial."

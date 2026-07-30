@@ -296,8 +296,8 @@ export default function TestimonialsPage() {
         <div className="container mx-auto max-w-3xl">
           <LeadForm
             title="Empieza Tu Transformación"
-            subtitle="Reserva una clase de prueba gratuita y descubre cómo podemos ayudarte"
-            ctaText="Reservar clase gratuita"
+            subtitle="Pide tu prueba de nivel gratuita y descubre cómo podemos ayudarte"
+            ctaText="Pedir prueba de nivel"
             source="testimonials"
             showPhone={true}
             variant="refresh"

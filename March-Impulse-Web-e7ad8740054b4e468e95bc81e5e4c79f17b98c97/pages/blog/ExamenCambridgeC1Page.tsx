@@ -461,7 +461,7 @@ export default function ExamenCambridgeC1Page() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Si buscas preparación estructurada con metodología probada, <a href="/academia-ingles-barrio-del-pilar/" className="text-indigo-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-indigo-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline font-medium">clases particulares</a> específicos de preparación C1 Advanced con profesores certificados y tasas de éxito excepcionales. Reserva tu clase gratuita para comenzar tu camino hacia la certificación avanzada.
+                Si buscas preparación estructurada con metodología probada, <a href="/academia-ingles-barrio-del-pilar/" className="text-indigo-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-indigo-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline font-medium">clases particulares</a> específicos de preparación C1 Advanced con profesores certificados y tasas de éxito excepcionales. Pide tu prueba de nivel gratuita para comenzar tu camino hacia la certificación avanzada.
               </p>
             </section>
 
@@ -479,7 +479,7 @@ export default function ExamenCambridgeC1Page() {
                   ¿Listo para obtener tu Cambridge C1?
                 </h2>
                 <p className="text-xl text-white/80">
-                  Reserva tu clase gratuita y prepárate con expertos certificados.
+                  Pide tu prueba de nivel gratuita y prepárate con expertos certificados.
                 </p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-xl">

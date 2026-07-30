@@ -12,6 +12,7 @@ import type { FAQItem } from '../../utils/schemaData';
 import AcademyGallery from '../../components/AcademyGallery';
 import { secundariaImages as galleryImages } from '../../src/data/academyImages';
 import { studentImages } from '../../src/data/images';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Secundaria (13-17 años)",
@@ -22,7 +23,6 @@ export const courseSchema = generateCourseSchema({
   timeRequired: "PT2H",
   image: "/images/academy/img-4117.png"
 });
-
 
 export const faqs: FAQItem[] = [
   {
@@ -136,7 +136,7 @@ export default function SecundariaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-white text-indigo-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-amber-50 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
@@ -393,7 +393,7 @@ export default function SecundariaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Solicitar prueba de nivel
@@ -404,7 +404,7 @@ export default function SecundariaPage() {
                 rel="noopener noreferrer"
                 className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
-                <Phone className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5" />
                 WhatsApp
               </a>
             </div>
@@ -432,9 +432,9 @@ export default function SecundariaPage() {
       <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-3xl">
           <LeadForm
-            title="Reserva una clase de prueba para tu hijo/a"
+            title="Pide la prueba de nivel de tu hijo/a"
             subtitle="Evaluamos su nivel y le ubicamos en el grupo adecuado. Sin compromiso"
-            ctaText="Reservar clase de prueba"
+            ctaText="Pedir prueba de nivel"
             source="curso-secundaria"
             showPhone={true}
             showAge={true}

@@ -39,7 +39,7 @@ export default function CoursePageLayout({
   methodologyDescription,
   features,
   highlights,
-  ctaText = "Reservar clase de prueba",
+  ctaText = "Pedir prueba de nivel",
   formSource,
   showAgeInForm = false,
   showLevelInForm = true

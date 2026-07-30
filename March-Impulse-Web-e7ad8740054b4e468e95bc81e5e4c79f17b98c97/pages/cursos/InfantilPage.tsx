@@ -12,6 +12,7 @@ import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import { infantilImages as galleryImages } from '../../src/data/academyImages';
 import { infantilImages as heroImages } from '../../src/data/images';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Infantil (2-5 años)",
@@ -22,7 +23,6 @@ export const courseSchema = generateCourseSchema({
   timeRequired: "PT1H",
   image: "/images/academy/img-4117.png"
 });
-
 
 // FAQs for Infantil page
 export const faqs: FAQItem[] = [
@@ -175,7 +175,7 @@ export default function InfantilPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-white text-fuchsia-900 font-display font-semibold py-4 px-8 rounded-lg hover:bg-amber-50 transition-all duration-300 text-center"
               >
                 Clase de prueba GRATIS
@@ -395,7 +395,7 @@ export default function InfantilPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Reservar clase gratuita
@@ -406,7 +406,7 @@ export default function InfantilPage() {
                 rel="noopener noreferrer"
                 className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
-                <Phone className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5" />
                 WhatsApp
               </a>
             </div>

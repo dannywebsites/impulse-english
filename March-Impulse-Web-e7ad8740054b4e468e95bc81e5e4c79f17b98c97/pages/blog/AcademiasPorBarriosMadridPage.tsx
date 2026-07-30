@@ -232,7 +232,7 @@ export default function AcademiasPorBarriosMadridPage() {
                 </div>
 
                 <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                   className="inline-block bg-white text-violet-600 font-bold py-3 px-8 rounded-lg hover:bg-zinc-100 transition-colors"
                 >
                   Reservar clase gratis
@@ -449,7 +449,7 @@ export default function AcademiasPorBarriosMadridPage() {
                     </p>
                   </div>
                   <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                     className="bg-violet-500 hover:bg-violet-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Reservar clase gratis

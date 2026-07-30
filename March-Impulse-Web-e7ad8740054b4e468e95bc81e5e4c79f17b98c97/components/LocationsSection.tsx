@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPin, Clock, Phone, Train, Navigation, ArrowRight, Bus, Car } from 'lucide-react';
 import { NAP } from '../utils/napData';
 import { BARRIO_AREAS } from '../utils/barrioAreas';
+import WhatsAppIcon from './icons/WhatsAppIcon';
 
 export default function LocationsSection() {
   const areas = BARRIO_AREAS;
@@ -115,7 +116,7 @@ export default function LocationsSection() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-whatsapp text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-whatsapp-dark transition-colors"
                 >
-                  <Phone className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4" />
                   WhatsApp
                 </a>
               </div>

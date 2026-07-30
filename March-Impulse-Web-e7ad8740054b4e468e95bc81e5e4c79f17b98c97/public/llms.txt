@@ -88,6 +88,6 @@ Lines 42, 49, 67, 83, 126, 128, 132, 133, 134, 137, 147
 - [About Us](https://impulse-english.es/sobre-nosotros)
 - [Methodology](https://impulse-english.es/metodologia)
 - [Blog](https://impulse-english.es/blog)
-- [Book a Class](https://impulse-english.es/reservar-clase)
+- [Free English Level Test](https://impulse-english.es/prueba-de-nivel-ingles)
 - [FAQ](https://impulse-english.es/preguntas-frecuentes)
 - [Sitemap](https://impulse-english.es/sitemap.xml)

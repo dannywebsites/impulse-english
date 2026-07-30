@@ -252,7 +252,7 @@ export default function CursosInglesNinosMadridPage() {
               href="/contacto/"
                     className="bg-white text-pink-600 font-bold py-3 px-8 rounded-lg hover:bg-zinc-100 transition-colors"
                   >
-                    Reservar clase de prueba
+                    Pedir prueba de nivel
                   </a>
                 </div>
 
@@ -462,7 +462,7 @@ export default function CursosInglesNinosMadridPage() {
                 </p>
                 <p className="text-white/90">
                   En <strong>Impulse English Academy</strong>, con sede <a href="/academia-ingles-la-vaguada/" className="text-white underline hover:text-pink-200">junto a La Vaguada</a> en <a href="/academia-ingles-la-ventilla/" className="text-white underline hover:text-pink-200">La Ventilla</a>, ofrecemos el método <strong>Great Little People</strong>
-                  para los más pequeños, con preparación Cambridge para todas las edades. ¡Reserva una clase de prueba gratuita!
+                  para los más pequeños, con preparación Cambridge para todas las edades. ¡Pide tu prueba de nivel gratuita!
                 </p>
               </div>
             </section>
@@ -476,14 +476,14 @@ export default function CursosInglesNinosMadridPage() {
                       ¿Quieres que tu hijo aprenda inglés?
                     </h3>
                     <p className="text-zinc-400">
-                      Reserva una clase de prueba gratuita y descubre nuestra metodología.
+                      Pide tu prueba de nivel gratuita y descubre nuestra metodología.
                     </p>
                   </div>
                   <a
               href="/contacto/"
                     className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
-                    Clase de prueba gratis
+                    Prueba de nivel gratis
                   </a>
                 </div>
 
@@ -536,9 +536,9 @@ export default function CursosInglesNinosMadridPage() {
       {/* BOOKING-CTA */}
       <section className="py-16 px-6 bg-accent-blue">
         <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Reserva tu clase de prueba gratuita</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Pide tu prueba de nivel gratuita</h2>
           <p className="text-white/90 mb-8">Sin compromiso. Conoce nuestra metodología y a nuestros profesores antes de decidir.</p>
-          <a href="/reservar-clase/" className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold uppercase tracking-wide px-8 py-4 rounded-lg transition-colors">Clase de prueba gratuita</a>
+          <a href="/prueba-de-nivel-ingles/" className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold uppercase tracking-wide px-8 py-4 rounded-lg transition-colors">Prueba de nivel gratuita</a>
         </div>
       </section>
       <Footer />

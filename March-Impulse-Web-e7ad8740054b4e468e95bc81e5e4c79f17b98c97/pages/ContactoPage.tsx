@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { MapPin, Phone, Mail, Clock, MessageCircle, Train, Bus, Star } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Train, Bus, Star } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
@@ -7,6 +7,7 @@ import LazyVideo from '../components/LazyVideo';
 import Breadcrumb from '../components/Breadcrumb';
 import FAQSection from '../components/FAQSection';
 import { NAP } from '../utils/napData';
+import WhatsAppIcon from '../components/icons/WhatsAppIcon';
 
 const faqs = [
   {
@@ -228,7 +229,7 @@ export default function ContactoPage() {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-3 w-full bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-6 rounded-xl transition-colors"
                 >
-                  <MessageCircle className="w-6 h-6" />
+                  <WhatsAppIcon className="w-6 h-6" />
                   Contactar por WhatsApp
                 </a>
 

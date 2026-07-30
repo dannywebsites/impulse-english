@@ -10,6 +10,7 @@ import FAQSection from '../../components/FAQSection';
 import { generateCourseSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 import { facilityImages } from '../../src/data/images';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés para Adultos",
@@ -20,7 +21,6 @@ export const courseSchema = generateCourseSchema({
   timeRequired: "PT2H",
   image: "/images/academy/img-4117.png"
 });
-
 
 export const faqs: FAQItem[] = [
   {
@@ -191,7 +191,7 @@ export default function AdultosPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-white text-teal-950 font-display font-semibold py-4 px-8 rounded-lg hover:bg-zinc-100 transition-all duration-300 text-center"
               >
                 Prueba de nivel GRATIS
@@ -454,7 +454,7 @@ export default function AdultosPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                 className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Solicitar prueba de nivel
@@ -465,7 +465,7 @@ export default function AdultosPage() {
                 rel="noopener noreferrer"
                 className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
-                <Phone className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5" />
                 WhatsApp
               </a>
             </div>

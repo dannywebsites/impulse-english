@@ -417,7 +417,7 @@ export default function CambridgeB2BeneficiosPage() {
                   ¿Listo para obtener tu Cambridge B2?
                 </h2>
                 <p className="text-xl text-white/80">
-                  Reserva tu clase gratuita y comienza tu preparación con expertos.
+                  Pide tu prueba de nivel gratuita y comienza tu preparación con expertos.
                 </p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-xl">

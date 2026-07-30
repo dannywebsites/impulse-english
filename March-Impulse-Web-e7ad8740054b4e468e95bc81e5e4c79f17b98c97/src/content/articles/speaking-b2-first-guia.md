@@ -21,7 +21,7 @@ impulseSection:
   content: "En Impulse English Academy, Centro Preparador Oficial Cambridge, dedicamos sesiones completas a la práctica del Speaking en condiciones reales de examen. Con grupos reducidos de máximo 10 alumnos, cada estudiante tiene oportunidades constantes para hablar. Nuestros profesores certificados TEFL/CELTA os dan retroalimentación individualizada sobre pronunciación, fluidez e interacción. El 100% de aprobados en 2024-2025 avala nuestra metodología."
   ctaLinks:
     - text: Prueba de nivel gratis
-      href: /reservar-clase
+      href: /prueba-de-nivel-ingles
     - text: Preparación B2 First
       href: /examenes-cambridge/b2-first
 faqItems:

@@ -34,8 +34,10 @@
     { "source": "/wp-includes/:path*", "destination": "/", "permanent": true },
     { "source": "/wp-admin/:path*", "destination": "/", "permanent": true },
 
-    { "source": "/exam-impulse/", "destination": "/reservar-clase/", "permanent": true },
+    { "source": "/exam-impulse/", "destination": "/prueba-de-nivel-ingles/", "permanent": true },
     { "source": "/blogs-impulse/", "destination": "/blog/", "permanent": true },
+
+    { "source": "/reservar-clase/", "destination": "/prueba-de-nivel-ingles/", "permanent": true },
 
     { "source": "/ingles-la-vaguada/infantil/", "destination": "/cursos-ingles/infantil/", "permanent": true },
     { "source": "/ingles-la-vaguada/primaria/", "destination": "/cursos-ingles/primaria/", "permanent": true },

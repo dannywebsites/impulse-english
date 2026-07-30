@@ -380,7 +380,7 @@ export default function InglesOnlineVsPresencialPage() {
             <div className="bg-gradient-to-r from-purple-600 to-purple-800 rounded-2xl p-8 text-center text-white">
               <h3 className="text-2xl font-bold mb-4">Clases presenciales para niños en Madrid con opción híbrida disponible</h3>
               <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
-                El mejor de los dos mundos: presencial de calidad con recursos digitales integrados. Primera clase gratuita.
+                El mejor de los dos mundos: presencial de calidad con recursos digitales integrados. Prueba de nivel gratuita, sin compromiso.
               </p>
               <a
               href="/cursos-ingles/infantil/"

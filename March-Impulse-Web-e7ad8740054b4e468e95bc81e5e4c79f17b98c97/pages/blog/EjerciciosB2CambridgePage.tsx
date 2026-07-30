@@ -603,11 +603,11 @@ export default function EjerciciosB2CambridgePage() {
                       ¿Quieres prepararte para el B2 First?
                     </h3>
                     <p className="text-zinc-400">
-                      Reserva una clase de prueba gratis y diseñamos tu plan de preparación con profesores expertos en exámenes Cambridge.
+                      Pide tu prueba de nivel gratuita y diseñamos tu plan de preparación con profesores expertos en exámenes Cambridge.
                     </p>
                   </div>
                   <a
-              href="/reservar-clase/"
+              href="/prueba-de-nivel-ingles/"
                     className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Reserva tu clase gratis
