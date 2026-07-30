@@ -11,6 +11,15 @@ interface LeadFormProps {
   showPhone?: boolean;
   showAge?: boolean;
   showLevel?: boolean;
+  /**
+   * `legacy` (default) renders the original markup byte-for-byte, so the 85
+   * blog articles that mount this form are unaffected by the non-blog design
+   * pass. Non-blog pages opt in with `variant="refresh"`.
+   *
+   * Presentation only — the submit handler, webhook, dataLayer push and gtag
+   * call below are identical in both variants and must stay that way.
+   */
+  variant?: 'legacy' | 'refresh';
 }
 
 export default function LeadForm({
@@ -22,7 +31,8 @@ export default function LeadForm({
   compact = false,
   showPhone = true,
   showAge: _showAge = false,
-  showLevel = true
+  showLevel = true,
+  variant = 'legacy'
 }: LeadFormProps) {
   const [formData, setFormData] = useState({
     name: '',
@@ -32,6 +42,29 @@ export default function LeadForm({
   });
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const refresh = variant === 'refresh';
+  const pad = compact ? 'p-6' : 'p-8 md:p-12';
+
+  const wrapperClass = refresh
+    ? `card ${compact ? 'p-6' : 'p-8 md:p-10'}`
+    : `bg-white rounded-xl shadow-lg border border-zinc-100 ${pad}`;
+
+  const successClass = refresh
+    ? `rounded-2xl border border-emerald-200 bg-emerald-50 ${compact ? 'p-6' : 'p-8 md:p-10'}`
+    : `bg-green-50 border border-green-200 rounded-lg ${pad} text-center`;
+
+  const labelClass = refresh
+    ? "mb-2 block text-sm font-medium text-zinc-700"
+    : "block text-sm font-semibold text-zinc-700 mb-2";
+
+  const fieldClass = refresh
+    ? "w-full rounded-lg border border-zinc-300 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 transition-[border-color,box-shadow] focus:border-accent-blue focus:outline-none focus:ring-4 focus:ring-accent-blue/15"
+    : "w-full px-4 py-3 border border-zinc-200 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all";
+
+  const buttonClass = refresh
+    ? "btn-primary btn-lg w-full disabled:cursor-not-allowed disabled:opacity-50"
+    : "w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -84,46 +117,54 @@ export default function LeadForm({
 
   if (status === 'success') {
     return (
-      <div className={`bg-green-50 border border-green-200 rounded-lg ${compact ? 'p-6' : 'p-8 md:p-12'} text-center`}>
-        <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-        <h3 className="text-2xl font-bold text-green-800 mb-2">¡Gracias por contactarnos!</h3>
-        <p className="text-green-700">Te contactaremos en menos de 24 horas.</p>
+      <div className={successClass}>
+        <CheckCircle className={refresh ? "mb-4 h-12 w-12 text-emerald-600" : "w-16 h-16 text-green-500 mx-auto mb-4"} />
+        <h3 className={refresh ? "t-h3 mb-2 text-emerald-900" : "text-2xl font-bold text-green-800 mb-2"}>¡Gracias por contactarnos!</h3>
+        <p className={refresh ? "text-emerald-800" : "text-green-700"}>Te contactaremos en menos de 24 horas.</p>
       </div>
     );
   }
 
   return (
-    <div className={`bg-white rounded-xl shadow-lg border border-zinc-100 ${compact ? 'p-6' : 'p-8 md:p-12'}`}>
+    <div className={wrapperClass}>
       {!compact && (
-        <div className="text-center mb-8">
-          <h3 className="text-2xl md:text-3xl font-bold text-accent-blue mb-2">{title}</h3>
-          <p className="text-zinc-500">{subtitle}</p>
-        </div>
+        refresh ? (
+          <div className="mb-8">
+            <h3 className="t-h3 text-accent-blue">{title}</h3>
+            <p className="mt-2 text-zinc-500">{subtitle}</p>
+            <span className="rule mt-5" />
+          </div>
+        ) : (
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-accent-blue mb-2">{title}</h3>
+            <p className="text-zinc-500">{subtitle}</p>
+          </div>
+        )
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className={refresh ? "space-y-5" : "space-y-4"}>
         {/* Nombre */}
         <div>
-          <label className="block text-sm font-semibold text-zinc-700 mb-2">Nombre completo *</label>
+          <label className={labelClass}>Nombre completo *</label>
           <input
             type="text"
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full px-4 py-3 border border-zinc-200 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all"
+            className={fieldClass}
             placeholder="Tu nombre"
           />
         </div>
 
         {/* Email */}
         <div>
-          <label className="block text-sm font-semibold text-zinc-700 mb-2">Email *</label>
+          <label className={labelClass}>Email *</label>
           <input
             type="email"
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-3 border border-zinc-200 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all"
+            className={fieldClass}
             placeholder="tu@email.com"
           />
         </div>
@@ -131,13 +172,13 @@ export default function LeadForm({
         {/* Teléfono */}
         {showPhone && (
         <div>
-          <label className="block text-sm font-semibold text-zinc-700 mb-2">Teléfono *</label>
+          <label className={labelClass}>Teléfono *</label>
           <input
             type="tel"
             required
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="w-full px-4 py-3 border border-zinc-200 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all"
+            className={fieldClass}
             placeholder="+34 600 000 000"
           />
         </div>
@@ -146,12 +187,12 @@ export default function LeadForm({
         {/* Nivel */}
         {showLevel && (
         <div>
-          <label className="block text-sm font-semibold text-zinc-700 mb-2">Nivel *</label>
+          <label className={labelClass}>Nivel *</label>
           <select
             required
             value={formData.level}
             onChange={(e) => setFormData({ ...formData, level: e.target.value })}
-            className="w-full px-4 py-3 border border-zinc-200 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all"
+            className={fieldClass}
           >
             <option value="">Seleccionar</option>
             <option value="infantil">Infantil</option>
@@ -171,7 +212,9 @@ export default function LeadForm({
             required
             checked={privacyAccepted}
             onChange={(e) => setPrivacyAccepted(e.target.checked)}
-            className="mt-1 w-4 h-4 border-zinc-300 rounded text-accent-blue focus:ring-accent-blue"
+            className={refresh
+              ? "mt-1 h-4 w-4 rounded border-zinc-300 text-accent-blue focus:ring-accent-blue"
+              : "mt-1 w-4 h-4 border-zinc-300 rounded text-accent-blue focus:ring-accent-blue"}
             id="privacy-lead"
           />
           <label htmlFor="privacy-lead" className="text-sm text-zinc-600">
@@ -182,7 +225,7 @@ export default function LeadForm({
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+          className={buttonClass}
         >
           {status === 'loading' ? (
             <>
