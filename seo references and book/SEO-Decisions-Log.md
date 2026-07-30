@@ -5,6 +5,50 @@ Every SEO decision is logged here, grounded in [`SEO-Master-Class-Reference.md`]
 
 ---
 
+## 2026-07-30 — Corrected a dead YouTube handle in `sameAs`, added founder LinkedIn to /sobre-nosotros/
+
+**Context:** Danny supplied the real channel, `https://www.youtube.com/@Impulse_English_lavaguada`,
+and his personal profile, `https://www.linkedin.com/in/danieljohnfitzpatrick/`.
+
+### Decision 1 — Repoint the YouTube URL sitewide. The one in the code was a 404.
+**Why (not a book point — this is the off-page/entity half the reference explicitly skips):**
+`utils/napData.ts` carried `https://www.youtube.com/@Impulse-English`, which returns **404**
+(verified by curl; the real handle returns 200). That URL was emitted in the LocalBusiness
+`sameAs` array on **all 146 pages**, so the site was asserting entity-sameness with a channel
+that does not exist — a broken corroboration signal on the highest-value structured data,
+on exactly the local/entity surface the "cerca de mí" pillar and GBP work depend on. The real
+handle also matches the naming of every other profile in NAP (`impulse_english_lavaguada` on
+Instagram, Facebook, TikTok), confirming `@Impulse-English` was an uncorrected placeholder.
+
+Changed in `utils/napData.ts` (`social.youtube` + `sameAs`), `public/llms.txt`, and
+`SITE-DOCUMENTATION.md`. Footer and Newsletter inherit from NAP, so their icons follow automatically.
+Deliberately **not** changed: `seo-system/` (historical fossil per root CLAUDE.md) and
+`scratch.html` (stale untracked build dump).
+
+### Decision 2 — Founder LinkedIn as a visible link only, not yet as schema.
+**Why (book §4 authority/E-E-A-T, applied conservatively):** a real, verifiable founder profile
+strengthens the about page's expertise signal. Added under Danny's bio on `/sobre-nosotros/`
+("Conecta con Danny en LinkedIn"). Not added to structured data because the site currently has
+**no `Person` or `founder` schema at all** — `utils/schemaData.ts` has no Person type. Inventing
+one as a side effect of a link request would be scope creep; logged below as a follow-up instead.
+
+**Follow-up (not done):** add `founder` → `Person` nodes (JP + Danny) to the organisation schema
+with `sameAs` pointing at the LinkedIn profiles. That is the change that would actually let Google
+disambiguate the founders as entities. Needs a decision on JP's surname/profile first.
+
+**Incident note (build hygiene, not SEO):** the mandated pre-edit backup of `public/llms.txt`
+was written *inside* `public/`, which Astro copies verbatim — `llms.txt.bak-…` shipped into `dist/`.
+Caught by the dist grep, moved out, rebuilt clean. **Never write `.bak-*` files under `public/`.**
+
+**Verification:** `npx astro check` 0 errors · clean `npm run build` 146 pages ·
+`dist/` grep: 0 occurrences of the dead handle, new handle on 148 files, present in the homepage
+`sameAs` array, founder LinkedIn present on `/sobre-nosotros/`. No tracking surfaces touched.
+
+**Validation plan:** re-run a Rich Results / schema check on the homepage after deploy to confirm
+the `sameAs` set is clean; the YouTube profile should stop being a dangling reference.
+
+---
+
 ## 2026-07-24 — Top-50 video-able query shortlist for the YouTube + blog pairing programme
 
 **Context:** Danny will record one video per query (Shorts ~90s + some long-form) and pair each with a

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Award, Users, Target, Heart, CheckCircle, Home, UserCheck, Eye, ArrowRight, GraduationCap } from 'lucide-react';
+import { Award, Users, Target, Heart, CheckCircle, Home, UserCheck, Eye, ArrowRight, GraduationCap, Linkedin } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
@@ -246,6 +246,16 @@ export default function SobreNosotrosPage() {
                   Profesor titulado de educación física e idiomas y licenciado en Marketing por ESIC University, Madrid, su especialidad es el inglés de negocios: le apasiona ayudar a los alumnos a dominar el inglés para acceder a mejores oportunidades laborales. Irlandés afincado en Madrid desde hace 12 años, une su experiencia en marketing y estrategia de negocio con la enseñanza para impulsar el crecimiento de la academia.
                 </p>
               </div>
+
+              <a
+                href="https://www.linkedin.com/in/danieljohnfitzpatrick/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-6 text-accent-blue font-semibold hover:underline"
+              >
+                <Linkedin className="w-5 h-5" />
+                Conecta con Danny en LinkedIn
+              </a>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
                 {[
