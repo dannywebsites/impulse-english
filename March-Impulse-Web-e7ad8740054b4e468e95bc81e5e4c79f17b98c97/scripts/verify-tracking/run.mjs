@@ -149,9 +149,23 @@ async function main() {
       // client:idle can lag on heavy pages — filling an unhydrated form
       // clicks into a handler-less submit. Scroll the form into view, then
       // wait for React fiber keys to appear on the form element.
+      //
+      // The scroll MUST be instant. The site sets `scroll-behavior: smooth`
+      // globally, and a smooth scroll is driven by requestAnimationFrame,
+      // which Chrome throttles to a standstill in a headless/occluded tab.
+      // A plain scrollIntoView therefore never actually moved the viewport,
+      // so `client:visible` never intersected, and the homepage LeadForm was
+      // reported as "never hydrated" on a page where it works fine for real
+      // visitors. Confirmed 2026-07-30: scrollY stayed 0 across the full 20s
+      // wait. Force `behavior: 'instant'` and verify the viewport really moved.
       await page.evaluate(() => {
         const form = [...document.querySelectorAll('form')].find((f) => f.querySelector('input[type="email"]') && f.querySelector('input[type="tel"]'));
-        form?.scrollIntoView({ block: 'center' });
+        if (!form) return;
+        const y = form.getBoundingClientRect().top + window.scrollY
+                - (window.innerHeight / 2) + (form.offsetHeight / 2);
+        window.scrollTo({ top: Math.max(0, y), behavior: 'instant' });
+        // Belt and braces: if a UA ignores `instant`, assign scrollTop directly.
+        if (window.scrollY === 0 && y > 0) document.documentElement.scrollTop = y;
       });
       const hydrated = await page.waitForFunction(() => {
         const form = [...document.querySelectorAll('form')].find((f) => f.querySelector('input[type="email"]') && f.querySelector('input[type="tel"]'));
