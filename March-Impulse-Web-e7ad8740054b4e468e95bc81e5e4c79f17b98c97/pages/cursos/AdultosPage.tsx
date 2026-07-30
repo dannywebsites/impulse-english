@@ -160,7 +160,7 @@ export default function AdultosPage() {
               fetchPriority="high"
             />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-br from-teal-950/80 via-emerald-950/70 to-teal-900/55"></div>
+          <div className="absolute inset-0 bg-teal-950/75"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-36 -right-36 w-[480px] h-[480px] rounded-full bg-emerald-400/[0.05]"></div>
@@ -225,7 +225,7 @@ export default function AdultosPage() {
               <span className="text-zinc-700 font-medium">Enfoque práctico: trabajo, viajes y vida real</span>
             </div>
             <div className="flex items-center gap-2">
-              <Award className="w-5 h-5 text-yellow-500" />
+              <Award className="w-5 h-5 text-amber-500" />
               <span className="text-zinc-700 font-medium">Centro Oficial Cambridge y Linguaskill</span>
             </div>
           </div>
@@ -233,10 +233,10 @@ export default function AdultosPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+            <h2 className="t-h2 text-zinc-900 mb-6">
               Nunca es tarde
             </h2>
 
@@ -312,7 +312,7 @@ export default function AdultosPage() {
                 description: "Debates, role-plays, situaciones cotidianas. El objetivo es que hables con confianza."
               }
             ].map((feature, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-zinc-100 flex items-start gap-4">
+              <div key={index} className="card flex items-start gap-4 p-6">
                 <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 flex-shrink-0">
                   {feature.icon}
                 </div>
@@ -327,10 +327,10 @@ export default function AdultosPage() {
       </section>
 
       {/* Video Section - Above Levels */}
-      <section className="py-16 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h3 text-zinc-900 mb-4">
               Inglés para adultos que funciona
             </h2>
             <p className="text-zinc-600">
@@ -340,15 +340,15 @@ export default function AdultosPage() {
           <LazyVideo
             videoId="Fdso-d9_F20"
             title="Cursos de inglés para adultos - Cambridge y Linguaskill"
-            className="shadow-xl"
+            className="shadow-panel"
           />
         </div>
       </section>
 
       {/* Certifications Section */}
-      <section className="py-16 px-6 bg-teal-600">
+      <section className="section-lead px-6 bg-teal-600">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="t-h2 text-white mb-4">
             Certifica tu nivel de inglés
           </h2>
           <p className="text-white/80 mb-8">
@@ -360,7 +360,7 @@ export default function AdultosPage() {
               <p className="text-white/70 text-sm mb-4">B1 Preliminary, B2 First, C1 Advanced</p>
               <a
               href="/examenes-cambridge/"
-                className="inline-block bg-white text-teal-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-teal-900 transition-colors text-sm"
+                className="inline-block bg-white text-teal-600 font-bold py-2 px-4 rounded-lg hover:bg-amber-400 hover:text-teal-900 transition-colors text-sm"
               >
                 Ver exámenes Cambridge
               </a>
@@ -370,7 +370,7 @@ export default function AdultosPage() {
               <p className="text-white/70 text-sm mb-4">Certificado en 48h. Ideal para requisitos laborales</p>
               <a
               href="/linguaskill/"
-                className="inline-block bg-white text-teal-600 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 hover:text-teal-900 transition-colors text-sm"
+                className="inline-block bg-white text-teal-600 font-bold py-2 px-4 rounded-lg hover:bg-amber-400 hover:text-teal-900 transition-colors text-sm"
               >
                 Conocer Linguaskill
               </a>
@@ -383,10 +383,10 @@ export default function AdultosPage() {
       </section>
 
       {/* Levels Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Niveles disponibles
             </h2>
             <p className="text-zinc-500 text-lg">
@@ -395,49 +395,49 @@ export default function AdultosPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-teal-50 to-emerald-50 p-8 rounded-2xl border border-teal-100">
+            <div className="bg-teal-50 p-8 rounded-2xl border border-teal-100">
               <h3 className="text-xl font-bold text-zinc-900 mb-4">Niveles</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>A1-A2:</strong> Principiante e inicial</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>B1:</strong> Intermedio (PET)</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>B2:</strong> Intermedio-alto (First)</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700"><strong>C1:</strong> Avanzado (Advanced)</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100">
+            <div className="bg-green-50 p-8 rounded-2xl border border-green-100">
               <h3 className="text-xl font-bold text-zinc-900 mb-4">¿Qué incluye?</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">2 horas semanales en grupo</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Material didáctico incluido</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Acceso a plataforma online</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Seguimiento personalizado</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
                   <span className="text-zinc-700">Simulacros Cambridge si preparas examen</span>
                 </li>
               </ul>
@@ -463,7 +463,7 @@ export default function AdultosPage() {
                 href="https://wa.me/34604910611?text=Hola,%20me%20gustaría%20información%20sobre%20inglés%20para%20adultos"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
+                className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 WhatsApp
@@ -474,10 +474,10 @@ export default function AdultosPage() {
       </section>
 
       {/* Gallery Section - Photos above FAQs */}
-      <section className="py-16 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Nuestros alumnos adultos
             </h2>
             <p className="text-zinc-600 text-lg">Certificaciones Cambridge y Linguaskill con 100% de aprobados</p>
@@ -489,13 +489,13 @@ export default function AdultosPage() {
               { url: "/images/academy/adult-one-to-one-classes.jpg", alt: "Clases inglés adultos one-to-one La Vaguada Barrio del Pilar Madrid" },
               { url: "/images/academy/jp-with-students.jpg", alt: "Profesor JP con estudiantes adultos certificados Cambridge La Vaguada" },
             ].map((img, idx) => (
-              <div key={idx} className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+              <div key={idx} className="aspect-[4/3] overflow-hidden rounded-2xl shadow-lift">
                 <img src={img.url} alt={img.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
               </div>
             ))}
 
             {/* Lara C1 Certificate - Portrait image spanning 2 rows */}
-            <div className="row-span-2 rounded-xl overflow-hidden shadow-lg">
+            <div className="row-span-2 overflow-hidden rounded-2xl shadow-lift">
               <img
                 src="/images/academy/lara-c1-cert.jpeg"
                 alt="Lara con certificado Cambridge C1 Advanced La Vaguada Madrid"
@@ -512,7 +512,7 @@ export default function AdultosPage() {
               { url: "/images/academy/technology-based-classroom-photo.jpg", alt: "Aula tecnológica academia inglés La Vaguada Madrid" },
               { url: "/images/academy/outside-academy.jpg", alt: "Fachada exterior Impulse English Academy La Vaguada Madrid" },
             ].map((img, idx) => (
-              <div key={`landscape-${idx}`} className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+              <div key={`landscape-${idx}`} className="aspect-[4/3] overflow-hidden rounded-2xl shadow-lift">
                 <img src={img.url} alt={img.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
               </div>
             ))}
@@ -544,16 +544,19 @@ export default function AdultosPage() {
       <FAQSection
         faqs={faqs}
         title="Preguntas frecuentes sobre inglés para adultos"
+        eyebrow="Dudas habituales"
+        variant="refresh"
       />
 
       {/* Lead Form */}
-      <section className="py-16 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-3xl">
           <LeadForm
-            title="Empieza tu camino — solicita tu prueba de nivel"
+            title="Empieza tu camino: solicita tu prueba de nivel"
             subtitle="Grupos reducidos de máximo 8 adultos. Horarios de mañana y tarde"
             ctaText="Solicitar prueba de nivel"
             source="curso-adultos"
+            variant="refresh"
             showPhone={true}
             showAge={false}
             showLevel={true}

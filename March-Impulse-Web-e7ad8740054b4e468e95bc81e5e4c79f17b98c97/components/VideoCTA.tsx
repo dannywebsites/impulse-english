@@ -60,7 +60,7 @@ export default function VideoCTA() {
 
   return (
     <>
-    <section id="vision" className="relative w-full h-[600px] flex items-center justify-center overflow-hidden bg-zinc-900">
+    <section id="vision" className="relative w-full h-[600px] flex items-center justify-center overflow-hidden bg-accent-blue-950">
       {/* Background Image/Video representation */}
       <div className="absolute inset-0 z-0">
         <picture>
@@ -76,8 +76,10 @@ export default function VideoCTA() {
             decoding="async"
           />
         </picture>
-        <div className="absolute inset-0 bg-gradient-to-r from-accent-blue/80 to-transparent mix-blend-multiply"></div>
-        <div className="absolute inset-0 bg-black/20"></div>
+        {/* Brand lock bans gradients: a flat brand wash plus a legibility scrim
+            does the same job with solid colour and opacity layering. */}
+        <div className="absolute inset-0 bg-accent-blue/70 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-accent-blue-950/30"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-6 text-left md:pl-24">
@@ -88,7 +90,7 @@ export default function VideoCTA() {
           onClick={() => setOpen(true)}
           aria-haspopup="dialog"
           aria-label="Ver el vídeo de Impulse English Academy"
-          className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-12 hover:scale-110 transition-transform duration-300 shadow-lg group focus:outline-none focus-visible:ring-4 focus-visible:ring-white/70"
+          className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-12 hover:scale-110 transition-transform duration-300 shadow-panel group focus:outline-none focus-visible:ring-4 focus-visible:ring-white/70"
         >
             <Play className="w-8 h-8 text-accent-blue ml-1 group-hover:text-zinc-900 transition-colors" fill="currentColor" />
         </button>
@@ -101,7 +103,7 @@ export default function VideoCTA() {
                 ))}
              </div>
 
-            <h2 className="text-5xl md:text-7xl font-bold text-white uppercase leading-[0.9] tracking-tight mb-8">
+            <h2 className="t-display text-white uppercase mb-8">
                 Listos para<br/>
                 aprender, crecer<br/>
                 y abrir puertas
@@ -169,7 +171,7 @@ export default function VideoCTA() {
           preload="none"
           poster={VIDEO_POSTER}
           onClick={(e) => e.stopPropagation()}
-          className="w-full max-w-5xl aspect-video rounded-lg shadow-2xl bg-black outline-none"
+          className="w-full max-w-5xl aspect-video rounded-xl shadow-panel bg-accent-blue-950 outline-none"
         >
           <source src={VIDEO_SRC} type="video/mp4" />
           Tu navegador no puede reproducir este vídeo.

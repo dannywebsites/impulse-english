@@ -22,19 +22,25 @@ const serviceAreas = [
   { name: "Montecarmelo / Las Tablas", href: "/academia-ingles-montecarmelo-las-tablas/" }
 ];
 
+/* Small uppercase headings set in Playfair are hard to read; the column titles
+   stay in Inter. Colours are white-alpha rather than the zinc ramp, which was
+   built for a neutral background and goes muddy on the brand navy. */
+const COLUMN_HEADING = "font-sans text-xs font-semibold uppercase tracking-[0.18em] text-white mb-5";
+const FOOTER_LINK = "text-white/65 transition-colors hover:text-white";
+
 export default function Footer({ variant = 'full' }: FooterProps) {
   if (variant === 'simple') {
     return (
-      <footer className="bg-zinc-900 text-white py-12 border-t border-zinc-800">
-        <div className="container mx-auto px-6 md:px-12">
+      <footer className="surface-ink border-t border-white/10 py-14">
+        <div className="container-page">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <div className="flex flex-wrap justify-center gap-6 md:gap-12">
-              <a href="/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Inicio</a>
-              <a href="/cursos-ingles/infantil/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Cursos</a>
-              <a href="/examenes-cambridge/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Cambridge</a>
-              <a href="/sobre-nosotros/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Nosotros</a>
-              <a href="/blog/todos/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Artículos</a>
-              <a href="/contacto/" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors">Contacto</a>
+            <div className="flex flex-wrap justify-center gap-6 md:gap-10">
+              <a href="/" className={`${FOOTER_LINK} text-sm font-medium`}>Inicio</a>
+              <a href="/cursos-ingles/infantil/" className={`${FOOTER_LINK} text-sm font-medium`}>Cursos</a>
+              <a href="/examenes-cambridge/" className={`${FOOTER_LINK} text-sm font-medium`}>Cambridge</a>
+              <a href="/sobre-nosotros/" className={`${FOOTER_LINK} text-sm font-medium`}>Nosotros</a>
+              <a href="/blog/todos/" className={`${FOOTER_LINK} text-sm font-medium`}>Artículos</a>
+              <a href="/contacto/" className={`${FOOTER_LINK} text-sm font-medium`}>Contacto</a>
             </div>
 
             <div className="flex items-center gap-6">
@@ -43,32 +49,31 @@ export default function Footer({ variant = 'full' }: FooterProps) {
           </div>
 
           {/* Service Areas */}
-          <div className="mt-8 pt-8 border-t border-white/5 text-center">
-            <p className="text-zinc-500 text-sm mb-4">
-              <strong className="text-zinc-400">Servimos:</strong>{' '}
+          <div className="mt-10 pt-8 border-t border-white/10">
+            <p className="t-small text-white/55">
+              <strong className="font-semibold text-white/80">Servimos:</strong>{' '}
               {serviceAreas.map((area, i) => (
                 <span key={area.name}>
                   {area.href ? (
-                    <a href={area.href} className="hover:text-white transition-colors">{area.name}</a>
+                    <a href={area.href} className="transition-colors hover:text-white">{area.name}</a>
                   ) : (
                     <span>{area.name}</span>
                   )}
-                  {i < serviceAreas.length - 1 && ' | '}
+                  {i < serviceAreas.length - 1 && ' · '}
                 </span>
               ))}
-              {' | '}
-              <a href={BARRIOS_HUB_HREF} className="text-zinc-400 font-medium hover:text-white transition-colors">Ver todas las zonas</a>
+              {' · '}
+              <a href={BARRIOS_HUB_HREF} className="font-medium text-white/80 transition-colors hover:text-white">Ver todas las zonas</a>
             </p>
           </div>
 
-          <div className="mt-6 flex flex-wrap justify-center gap-4 md:gap-8">
-            <a href="/aviso-legal/" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Aviso Legal</a>
-            <a href="/politica-privacidad/" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Privacidad</a>
-            <a href="/politica-cookies/" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Cookies</a>
-          </div>
-
-          <div className="mt-4 text-center">
-            <p className="text-zinc-600 text-xs uppercase tracking-widest">&copy; 2025 {NAP.name}. Todos los derechos reservados.</p>
+          <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-xs uppercase tracking-[0.14em] text-white/40">&copy; 2025 {NAP.name}. Todos los derechos reservados.</p>
+            <div className="flex flex-wrap gap-4 md:gap-7">
+              <a href="/aviso-legal/" className="text-xs uppercase tracking-[0.14em] text-white/40 transition-colors hover:text-white/80">Aviso Legal</a>
+              <a href="/politica-privacidad/" className="text-xs uppercase tracking-[0.14em] text-white/40 transition-colors hover:text-white/80">Política de Privacidad</a>
+              <a href="/politica-cookies/" className="text-xs uppercase tracking-[0.14em] text-white/40 transition-colors hover:text-white/80">Política de Cookies</a>
+            </div>
           </div>
         </div>
       </footer>
@@ -76,25 +81,26 @@ export default function Footer({ variant = 'full' }: FooterProps) {
   }
 
   return (
-    <footer className="bg-zinc-900 text-white pt-16 pb-12 border-t border-zinc-800">
-      <div className="container mx-auto px-6 md:px-12">
-        {/* Logo and Partner Logos Section */}
-        <div className="flex flex-col items-center mb-12">
-          <a href="/" className="mb-8">
+    <footer className="surface-ink border-t border-white/10 pt-20 pb-12">
+      <div className="container-page">
+        {/* Brand rail + partners. Left-aligned on desktop rather than a centred
+            stack, which is the default every template arrives with. */}
+        <div className="flex flex-col gap-10 border-b border-white/10 pb-12 lg:flex-row lg:items-end lg:justify-between">
+          <a href="/" className="shrink-0">
             <img
               src={LOGO_URL}
               alt="Impulse English Academy"
-              className="h-20 md:h-24 lg:h-28 w-auto"
+              className="h-20 md:h-24 w-auto"
               width="80"
               height="80"
             />
           </a>
 
           {/* Partner Logos */}
-          <div className="flex flex-col items-center">
-            <p className="text-zinc-500 text-xs uppercase tracking-widest mb-6">Colaboradores Oficiales</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-              <a href="https://www.cambridgeenglish.org" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+          <div className="lg:text-right">
+            <p className="mb-5 text-xs uppercase tracking-[0.18em] text-white/45">Colaboradores Oficiales</p>
+            <div className="flex flex-wrap items-center gap-8 md:gap-10 lg:justify-end">
+              <a href="https://www.cambridgeenglish.org" target="_blank" rel="noopener noreferrer" className="opacity-80 transition-opacity hover:opacity-100">
                 <img
                   src="/images/academy/cambridge-logo-edited.png"
                   alt="Cambridge English"
@@ -102,7 +108,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
                   loading="lazy"
                 />
               </a>
-              <a href="https://www.cambridgeenglish.org/es/exams-and-tests/linguaskill/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+              <a href="https://www.cambridgeenglish.org/es/exams-and-tests/linguaskill/" target="_blank" rel="noopener noreferrer" className="opacity-80 transition-opacity hover:opacity-100">
                 <img
                   src="/images/academy/linguaskill-logo-blanco.png"
                   alt="Linguaskill"
@@ -110,7 +116,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
                   loading="lazy"
                 />
               </a>
-              <a href="https://www.greatlittlepeople.com/en" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+              <a href="https://www.greatlittlepeople.com/en" target="_blank" rel="noopener noreferrer" className="opacity-80 transition-opacity hover:opacity-100">
                 <img
                   src="/images/academy/great-little-people-white.png"
                   alt="Great Little People"
@@ -118,46 +124,48 @@ export default function Footer({ variant = 'full' }: FooterProps) {
                   loading="lazy"
                 />
               </a>
-              <a href="https://www.esic.edu/idiomas" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity flex flex-col items-center">
+              <a href="https://www.esic.edu/idiomas" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center opacity-80 transition-opacity hover:opacity-100">
                 <img
                   src="/images/academy/esic-idiomas.jpg"
                   alt="ESIC Idiomas - Cambridge English Exam Centre ES278"
                   className="h-10 md:h-12 w-auto"
                   loading="lazy"
                 />
-                <span className="text-[10px] text-zinc-500 mt-1">Cambridge Exam Centre ES278</span>
+                <span className="mt-1 text-[10px] text-white/45">Cambridge Exam Centre ES278</span>
               </a>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        {/* Link columns. Deliberately uneven: Contacto carries an address block
+            and six social buttons, so it gets the room it actually needs. */}
+        <div className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           {/* Column 1: Cursos */}
-          <div>
-            <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-6">Cursos</h3>
-            <ul className="space-y-4 text-zinc-400 text-sm">
-              <li><a href="/cursos-ingles/infantil/" className="hover:text-white transition-colors">Infantil (2-5 años)</a></li>
-              <li><a href="/cursos-ingles/primaria/" className="hover:text-white transition-colors">Primaria (6-12 años)</a></li>
-              <li><a href="/cursos-ingles/secundaria/" className="hover:text-white transition-colors">Secundaria (13-17 años)</a></li>
-              <li><a href="/cursos-ingles/adultos/" className="hover:text-white transition-colors">Adultos</a></li>
-              <li><a href="/cursos-ingles/particulares/" className="hover:text-white transition-colors">Clases Particulares</a></li>
+          <div className="lg:col-span-2">
+            <h3 className={COLUMN_HEADING}>Cursos</h3>
+            <ul className="space-y-3.5 text-sm">
+              <li><a href="/cursos-ingles/infantil/" className={FOOTER_LINK}>Infantil (2-5 años)</a></li>
+              <li><a href="/cursos-ingles/primaria/" className={FOOTER_LINK}>Primaria (6-12 años)</a></li>
+              <li><a href="/cursos-ingles/secundaria/" className={FOOTER_LINK}>Secundaria (13-17 años)</a></li>
+              <li><a href="/cursos-ingles/adultos/" className={FOOTER_LINK}>Adultos</a></li>
+              <li><a href="/cursos-ingles/particulares/" className={FOOTER_LINK}>Clases Particulares</a></li>
             </ul>
           </div>
 
           {/* Column 2: Exámenes */}
-          <div>
-            <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-6">Exámenes</h3>
-            <ul className="space-y-4 text-zinc-400 text-sm">
-              <li><a href="/examenes-cambridge/" className="hover:text-white transition-colors">Exámenes Cambridge</a></li>
-              <li><a href="/examenes-cambridge/b2-first/" className="hover:text-white transition-colors">B2 First</a></li>
-              <li><a href="/examenes-cambridge/b1-preliminary/" className="hover:text-white transition-colors">B1 Preliminary</a></li>
-              <li><a href="/linguaskill/" className="hover:text-white transition-colors">Linguaskill</a></li>
+          <div className="lg:col-span-3">
+            <h3 className={COLUMN_HEADING}>Exámenes</h3>
+            <ul className="space-y-3.5 text-sm">
+              <li><a href="/examenes-cambridge/" className={FOOTER_LINK}>Exámenes Cambridge</a></li>
+              <li><a href="/examenes-cambridge/b2-first/" className={FOOTER_LINK}>B2 First</a></li>
+              <li><a href="/examenes-cambridge/b1-preliminary/" className={FOOTER_LINK}>B1 Preliminary</a></li>
+              <li><a href="/linguaskill/" className={FOOTER_LINK}>Linguaskill</a></li>
               <li>
                 <a
                   href="https://www.cambridgeenglish.org/exams-and-tests/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
+                  className={FOOTER_LINK}
                 >
                   Cambridge English (Oficial)
                 </a>
@@ -166,106 +174,112 @@ export default function Footer({ variant = 'full' }: FooterProps) {
           </div>
 
           {/* Column 3: Academia */}
-          <div>
-            <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-6">Academia</h3>
-            <ul className="space-y-4 text-zinc-400 text-sm">
-              <li><a href="/sobre-nosotros/" className="hover:text-white transition-colors">Sobre Nosotros</a></li>
-              <li><a href="/nuestro-equipo/" className="hover:text-white transition-colors">Nuestro Equipo</a></li>
-              <li><a href="/metodologia/" className="hover:text-white transition-colors">Metodología</a></li>
-              <li><a href="/preguntas-frecuentes/" className="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
-              <li><a href="/blog/" className="hover:text-white transition-colors">Blog</a></li>
-              <li><a href="/blog/todos/" className="hover:text-white transition-colors">Todos los artículos</a></li>
+          <div className="lg:col-span-3">
+            <h3 className={COLUMN_HEADING}>Academia</h3>
+            <ul className="space-y-3.5 text-sm">
+              <li><a href="/sobre-nosotros/" className={FOOTER_LINK}>Sobre Nosotros</a></li>
+              <li><a href="/nuestro-equipo/" className={FOOTER_LINK}>Nuestro Equipo</a></li>
+              <li><a href="/metodologia/" className={FOOTER_LINK}>Metodología</a></li>
+              <li><a href="/preguntas-frecuentes/" className={FOOTER_LINK}>Preguntas Frecuentes</a></li>
+              <li><a href="/blog/" className={FOOTER_LINK}>Blog</a></li>
+              <li><a href="/blog/todos/" className={FOOTER_LINK}>Todos los artículos</a></li>
             </ul>
           </div>
 
           {/* Column 4: Contacto */}
-          <div>
-            <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-6">Contacto</h3>
-            <ul className="space-y-4 text-zinc-400 text-sm">
+          <div className="lg:col-span-4">
+            <h3 className={COLUMN_HEADING}>Contacto</h3>
+            <ul className="space-y-3.5 text-sm">
               <li>
                 <a
                   href={NAP.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 hover:text-white transition-colors"
+                  className={`flex items-center gap-2.5 ${FOOTER_LINK}`}
                 >
-                  <Phone className="w-4 h-4" />
+                  <Phone className="w-4 h-4 shrink-0 text-white/40" />
                   {NAP.phone}
                 </a>
               </li>
               <li>
                 <a
                   href={`mailto:${NAP.email}`}
-                  className="flex items-center gap-2 hover:text-white transition-colors"
+                  className={`flex items-center gap-2.5 ${FOOTER_LINK}`}
                 >
-                  <Mail className="w-4 h-4" />
+                  <Mail className="w-4 h-4 shrink-0 text-white/40" />
                   {NAP.email}
                 </a>
               </li>
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <div>
+              <li className="flex items-start gap-2.5 text-white/65">
+                <MapPin className="w-4 h-4 mt-1 shrink-0 text-white/40" />
+                <div className="not-italic leading-relaxed">
                   {getAddressLines().map((line, i) => (
                     <p key={i}>{line}</p>
                   ))}
                 </div>
               </li>
             </ul>
-            <div className="flex flex-wrap gap-3 mt-6">
+            <div className="mt-7 flex flex-wrap gap-2.5">
               <SocialIconButton
                 icon={<Instagram size={18} />}
                 href={NAP.social.instagram}
+                label="Instagram"
               />
               <SocialIconButton
                 icon={<Facebook size={18} />}
                 href={NAP.social.facebook}
+                label="Facebook"
               />
               <SocialIconButton
                 icon={<TikTokIcon />}
                 href={NAP.social.tiktok}
+                label="TikTok"
               />
               <SocialIconButton
                 icon={<XIcon />}
                 href={NAP.social.x}
+                label="X"
               />
               <SocialIconButton
                 icon={<Linkedin size={18} />}
                 href={NAP.social.linkedin}
+                label="LinkedIn"
               />
               <SocialIconButton
                 icon={<Youtube size={18} />}
                 href={NAP.social.youtube}
+                label="YouTube"
               />
             </div>
           </div>
         </div>
 
         {/* Service Areas Row */}
-        <div className="border-t border-zinc-800 pt-6 pb-6">
-          <p className="text-zinc-500 text-sm text-center">
-            <strong className="text-zinc-400">Servimos:</strong>{' '}
+        <div className="border-t border-white/10 py-7">
+          <p className="t-small text-white/55">
+            <strong className="font-semibold text-white/80">Servimos:</strong>{' '}
             {serviceAreas.map((area, i) => (
               <span key={area.name}>
                 {area.href ? (
-                  <a href={area.href} className="hover:text-white transition-colors">{area.name}</a>
+                  <a href={area.href} className="transition-colors hover:text-white">{area.name}</a>
                 ) : (
                   <span>{area.name}</span>
                 )}
-                {i < serviceAreas.length - 1 && ' | '}
+                {i < serviceAreas.length - 1 && ' · '}
               </span>
             ))}
-            {' | '}
-            <a href={BARRIOS_HUB_HREF} className="text-zinc-400 font-medium hover:text-white transition-colors">Ver todas las zonas</a>
+            {' · '}
+            <a href={BARRIOS_HUB_HREF} className="font-medium text-white/80 transition-colors hover:text-white">Ver todas las zonas</a>
           </p>
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-zinc-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-zinc-600 text-xs uppercase tracking-widest">&copy; 2025 {NAP.name}. Todos los derechos reservados.</p>
-          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-            <a href="/aviso-legal/" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Aviso Legal</a>
-            <a href="/politica-privacidad/" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Privacidad</a>
-            <a href="/politica-cookies/" className="text-zinc-600 hover:text-zinc-400 text-xs uppercase tracking-widest transition-colors">Política de Cookies</a>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-white/10 pt-8">
+          <p className="text-xs uppercase tracking-[0.14em] text-white/40">&copy; 2025 {NAP.name}. Todos los derechos reservados.</p>
+          <div className="flex flex-wrap justify-center gap-4 md:gap-7">
+            <a href="/aviso-legal/" className="text-xs uppercase tracking-[0.14em] text-white/40 transition-colors hover:text-white/80">Aviso Legal</a>
+            <a href="/politica-privacidad/" className="text-xs uppercase tracking-[0.14em] text-white/40 transition-colors hover:text-white/80">Política de Privacidad</a>
+            <a href="/politica-cookies/" className="text-xs uppercase tracking-[0.14em] text-white/40 transition-colors hover:text-white/80">Política de Cookies</a>
           </div>
         </div>
       </div>
@@ -276,22 +290,22 @@ export default function Footer({ variant = 'full' }: FooterProps) {
 function SocialIcons() {
   return (
     <>
-      <a href={NAP.social.instagram} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors" aria-label="Instagram">
+      <a href={NAP.social.instagram} target="_blank" rel="noopener noreferrer" className="text-white/50 transition-colors hover:text-white" aria-label="Instagram">
         <Instagram size={20} />
       </a>
-      <a href={NAP.social.facebook} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors" aria-label="Facebook">
+      <a href={NAP.social.facebook} target="_blank" rel="noopener noreferrer" className="text-white/50 transition-colors hover:text-white" aria-label="Facebook">
         <Facebook size={20} />
       </a>
-      <a href={NAP.social.tiktok} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors" aria-label="TikTok">
+      <a href={NAP.social.tiktok} target="_blank" rel="noopener noreferrer" className="text-white/50 transition-colors hover:text-white" aria-label="TikTok">
         <TikTokIcon />
       </a>
-      <a href={NAP.social.x} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors" aria-label="X">
+      <a href={NAP.social.x} target="_blank" rel="noopener noreferrer" className="text-white/50 transition-colors hover:text-white" aria-label="X">
         <XIcon />
       </a>
-      <a href={NAP.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors" aria-label="LinkedIn">
+      <a href={NAP.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-white/50 transition-colors hover:text-white" aria-label="LinkedIn">
         <Linkedin size={20} />
       </a>
-      <a href={NAP.social.youtube} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors" aria-label="YouTube">
+      <a href={NAP.social.youtube} target="_blank" rel="noopener noreferrer" className="text-white/50 transition-colors hover:text-white" aria-label="YouTube">
         <Youtube size={20} />
       </a>
     </>
@@ -314,13 +328,15 @@ function XIcon() {
   );
 }
 
-function SocialIconButton({ icon, href }: { icon: React.ReactNode; href: string }) {
+function SocialIconButton({ icon, href, label }: { icon: React.ReactNode; href: string; label?: string }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-zinc-900 transition-all"
+      aria-label={label}
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/70
+                 transition-colors hover:border-white hover:bg-white hover:text-accent-blue-950"
     >
       {icon}
     </a>

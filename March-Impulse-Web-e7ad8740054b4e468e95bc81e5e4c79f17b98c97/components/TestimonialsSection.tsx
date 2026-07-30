@@ -175,33 +175,36 @@ export default function TestimonialsSection() {
   const current = testimonials[currentIndex];
 
   return (
-    <section id="testimonios" className="w-full bg-white py-12 md:py-20 px-6 relative overflow-hidden border-t border-zinc-100 scroll-mt-20">
+    <section id="testimonios" className="section surface-alt w-full px-6 relative overflow-hidden scroll-mt-20">
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* 5/7 split — the quote card is the subject here, not the heading. */}
+        <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-12">
 
             {/* Left: Heading */}
-            <div>
-                <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 md:mb-6 block">
+            <div className="lg:col-span-5">
+                <span className="eyebrow mb-4 md:mb-6">
                     Opiniones reales de Google
                 </span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight leading-[1.1] mb-4">
+                <h2 className="t-h2 text-zinc-900 mb-4">
                     Lo que dicen nuestros estudiantes…
                 </h2>
-                <div className="w-24 h-1 bg-accent-blue/20 mb-6 md:mb-8"></div>
-                <p className="text-base md:text-lg text-zinc-600 max-w-md mb-8 leading-relaxed">
+                <div className="rule mb-6 md:mb-8"></div>
+                <p className="t-lede text-zinc-600 max-w-md mb-8">
                     Nuestros alumnos y familias destacan la calidad del profesorado, el ambiente cercano y los resultados obtenidos a lo largo del curso. Sus testimonios reflejan nuestro compromiso con una enseñanza de calidad y un aprendizaje significativo.
                 </p>
                 <div className="flex gap-4 items-center">
                     <button
                       onClick={prevTestimonial}
-                      className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-zinc-200 text-zinc-900 flex items-center justify-center hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
+                      aria-label="Testimonio anterior"
+                      className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-zinc-300 bg-white text-zinc-900 flex items-center justify-center hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
                     >
                         <ChevronLeft className="w-5 h-5" />
                     </button>
                     <button
                       onClick={nextTestimonial}
-                      className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-zinc-200 text-zinc-900 flex items-center justify-center hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
+                      aria-label="Siguiente testimonio"
+                      className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-zinc-300 bg-white text-zinc-900 flex items-center justify-center hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors"
                     >
                         <ChevronRight className="w-5 h-5" />
                     </button>
@@ -212,19 +215,19 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Right: Testimonial Card */}
-            <div className="bg-zinc-50 p-8 md:p-12 rounded-sm border border-zinc-100 relative shadow-sm min-h-[320px] flex flex-col justify-between">
+            <div className="card relative flex flex-col justify-between p-8 md:p-12 lg:col-span-7">
                 <Quote className="absolute top-8 right-8 md:top-10 md:right-10 w-8 h-8 md:w-12 md:h-12 text-accent-blue/10" />
 
                 <div>
                     <div className="mb-6">
                         <div className="flex gap-1 mb-2">
                             {[...Array(current.stars)].map((_, i) => (
-                                <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                                <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
                             ))}
                         </div>
                     </div>
 
-                    <blockquote className="text-lg md:text-xl font-light leading-relaxed mb-8 text-zinc-800">
+                    <blockquote className="mb-8 font-serif text-xl leading-snug text-zinc-800 md:text-2xl">
                         "{current.quote}"
                     </blockquote>
                 </div>
@@ -248,7 +251,7 @@ export default function TestimonialsSection() {
             href={NAP.gbpUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-sm border border-zinc-100 hover:shadow-md transition-shadow"
+            className="flex items-center gap-3 rounded-full border border-zinc-200/80 bg-white px-6 py-3 shadow-card transition-shadow hover:shadow-lift"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
@@ -258,7 +261,7 @@ export default function TestimonialsSection() {
             </svg>
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
               ))}
             </div>
             <span className="text-zinc-600 text-sm font-medium">174+ reseñas reales</span>

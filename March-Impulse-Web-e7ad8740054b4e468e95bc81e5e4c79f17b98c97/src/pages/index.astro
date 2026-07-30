@@ -161,7 +161,13 @@ const schemas = [generateFAQSchema(faqs), videoSchema];
   <TestimonialsSection client:visible />
   <VideoCTA client:visible />
   <LocationsSection />
-  <FAQSection client:visible faqs={faqs} title="Academia de inglés cerca de ti: preguntas frecuentes" />
+  <FAQSection
+    client:visible
+    faqs={faqs}
+    title="Academia de inglés cerca de ti: preguntas frecuentes"
+    eyebrow="Preguntas frecuentes"
+    variant="refresh"
+  />
   <ContactSection client:visible />
   <Newsletter client:visible />
   <Footer />

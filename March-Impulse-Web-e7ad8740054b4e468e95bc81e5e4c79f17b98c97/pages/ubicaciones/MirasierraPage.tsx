@@ -88,7 +88,7 @@ export default function MirasierraPage() {
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/images/academy/outside-academy.jpg" alt="Impulse English Academy fachada exterior La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
+          <div className="absolute inset-0 bg-accent-blue/90"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-brand-red/[0.05]"></div>
@@ -133,7 +133,7 @@ export default function MirasierraPage() {
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
               href="/reservar-clase/"
-                className="bg-brand-red hover:bg-[#d4444e] text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
+                className="bg-brand-red hover:bg-brand-red-600 text-white font-display font-semibold py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300"
               >
                 Reservar Prueba de Nivel Gratuita
                 <ArrowRight className="w-5 h-5" />
@@ -153,7 +153,7 @@ export default function MirasierraPage() {
       </section>
 
       {/* Local Intro Section */}
-      <section className="py-12 md:py-16 px-6 bg-white">
+      <section className="section-tight px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
             Nuestra academia ofrece clases de inglés cerca de Mirasierra (28035 Madrid), una zona residencial tranquila conocida por sus colegios y el Parque Norte. Desde Mirasierra puedes llegar en solo 4 minutos en metro (Línea 9, Mirasierra → Barrio del Pilar, directo sin transbordos). También hay conexión directa por autobús con las líneas 147, 42 y 83. Trabajamos con niños, adolescentes y adultos que buscan aprender inglés con grupos reducidos y atención personalizada. Somos centro oficial de preparación Cambridge con 100% de aprobados.
@@ -165,15 +165,15 @@ export default function MirasierraPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-12 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
             Tu Academia de Inglés Cerca de Mirasierra
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, i) => (
               <div key={i} className="p-6 bg-zinc-50 rounded-xl">
-                <CheckCircle className="w-8 h-8 text-green-500 mb-4" />
+                <CheckCircle className="w-8 h-8 text-emerald-600 mb-4" />
                 <h3 className="font-bold text-zinc-900 mb-2">{benefit.title}</h3>
                 <p className="text-zinc-600 text-sm">{benefit.desc}</p>
               </div>
@@ -183,10 +183,10 @@ export default function MirasierraPage() {
       </section>
 
       {/* Video Section - Above Courses */}
-      <section className="py-16 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h3 text-zinc-900 mb-4">
               Conoce nuestra academia
             </h2>
             <p className="text-zinc-600">
@@ -196,15 +196,15 @@ export default function MirasierraPage() {
           <LazyVideo
             videoId="Fdso-d9_F20"
             title="Impulse English Academy - Tu academia de inglés cerca de Mirasierra"
-            className="shadow-xl"
+            className="shadow-panel"
           />
         </div>
       </section>
 
       {/* Courses Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-4 text-center">
             Cursos en Mirasierra
           </h2>
           <p className="text-zinc-600 text-center mb-12">Descuento trimestral disponible</p>
@@ -213,7 +213,7 @@ export default function MirasierraPage() {
               <a
                 key={i}
                 href={course.href}
-                className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+                className="card-interactive p-6 group"
               >
                 <h3 className="font-bold text-zinc-900 mb-2 group-hover:text-accent-blue transition-colors">{course.name}</h3>
                 <p className="text-zinc-600 text-sm mb-3">{course.method}</p>
@@ -224,11 +224,11 @@ export default function MirasierraPage() {
       </section>
 
       {/* Inglés para niños en Mirasierra */}
-      <section className="py-12 md:py-16 px-6 bg-zinc-50">
+      <section className="section-tight px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 Inglés para niños en Mirasierra
               </h2>
               <p className="text-zinc-600 mb-6">
@@ -236,19 +236,19 @@ export default function MirasierraPage() {
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Apoyo escolar</strong> para colegios de la zona: refuerzo del inglés curricular</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Aprendizaje progresivo:</strong> metodología Great Little People para infantil, Cambridge Young Learners para primaria</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Horarios adaptados</strong> a familias de Mirasierra: tardes después del colegio</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Grupos reducidos:</strong> máximo 7-10 niños para atención personalizada</span>
                 </li>
               </ul>
@@ -261,7 +261,7 @@ export default function MirasierraPage() {
                 </a>
               </div>
             </div>
-            <div className="rounded-xl overflow-hidden shadow-lg">
+            <div className="overflow-hidden rounded-2xl shadow-lift">
               <img
                 src="/images/academy/primary-classes-students-smiling.jpg"
                 alt="Clases de inglés para niños cerca de Mirasierra Madrid"
@@ -274,10 +274,10 @@ export default function MirasierraPage() {
       </section>
 
       {/* Clases de inglés para adultos en Mirasierra */}
-      <section className="py-12 md:py-16 px-6 bg-white">
+      <section className="section-tight px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 rounded-xl overflow-hidden shadow-lg">
+            <div className="order-2 lg:order-1 overflow-hidden rounded-2xl shadow-lift">
               <img
                 src="/images/academy/adult-one-to-one-classes.jpg"
                 alt="Clases de inglés para adultos cerca de Mirasierra Madrid"
@@ -286,7 +286,7 @@ export default function MirasierraPage() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 Clases de inglés para adultos en Mirasierra
               </h2>
               <p className="text-zinc-600 mb-6">
@@ -294,19 +294,19 @@ export default function MirasierraPage() {
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Clases de conversación:</strong> practica speaking desde el primer día con profesores altamente cualificados</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Inglés para trabajo o viajes:</strong> enfoque práctico y comunicativo</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Grupos reducidos</strong> cerca de casa: máximo 7-10 alumnos</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span className="text-zinc-700"><strong>Preparación Cambridge y Linguaskill:</strong> certificaciones oficiales reconocidas</span>
                 </li>
               </ul>
@@ -324,9 +324,9 @@ export default function MirasierraPage() {
       </section>
 
       {/* Cambridge Exams */}
-      <section className="py-16 px-6 bg-accent-blue">
+      <section className="section-lead px-6 bg-accent-blue">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="t-h2 text-white mb-6">
             Preparación Cambridge Todos los Niveles
           </h2>
           <div className="flex flex-wrap justify-center gap-3 mb-8">
@@ -335,7 +335,7 @@ export default function MirasierraPage() {
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">A2 Flyers</span>
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">A2 Key</span>
             <a href="/examenes-cambridge/b1-preliminary/" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">B1 Preliminary</a>
-            <a href="/examenes-cambridge/b2-first/" className="px-4 py-2 rounded-full text-sm font-medium bg-white text-accent-blue hover:bg-yellow-400 hover:text-blue-900 transition-colors">B2 First</a>
+            <a href="/examenes-cambridge/b2-first/" className="px-4 py-2 rounded-full text-sm font-medium bg-white text-accent-blue hover:bg-amber-400 hover:text-accent-blue-900 transition-colors">B2 First</a>
             <a href="/examenes-cambridge/c1-advanced/" className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors">C1 Advanced</a>
             <span className="px-4 py-2 rounded-full text-sm font-medium bg-white/20 text-white">C2 Proficiency</span>
           </div>
@@ -347,7 +347,7 @@ export default function MirasierraPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="/examenes-cambridge/"
-              className="bg-white text-accent-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
+              className="bg-white text-accent-blue font-bold py-3 px-6 rounded-lg hover:bg-amber-400 hover:text-accent-blue-900 transition-colors"
             >
               Ver todos los exámenes Cambridge
             </a>
@@ -362,11 +362,11 @@ export default function MirasierraPage() {
       </section>
 
       {/* How to Get There */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-zinc-900 mb-8">
+              <h2 className="t-h2 text-zinc-900 mb-8">
                 Cómo Llegar desde Mirasierra
               </h2>
               <div className="space-y-4">
@@ -418,9 +418,9 @@ export default function MirasierraPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 px-6 bg-zinc-50">
+      <section className="section-lead px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-zinc-900 mb-12 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
             Lo Que Dicen las Familias de Mirasierra
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -429,10 +429,10 @@ export default function MirasierraPage() {
               { name: "Miguel Fernández", text: "Preparé el B2 First aquí y lo aprobé a la primera. Desde Mirasierra se llega en nada con la Línea 9." },
               { name: "Cristina López M.", text: "Muy contenta con la academia. Mis hijos van encantados y los grupos pequeños hacen que progresen rápido." }
             ].map((testimonial, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-xl border border-zinc-200">
+              <div key={idx} className="card p-6">
                 <div className="flex gap-1 mb-3">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
                 <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
@@ -445,9 +445,9 @@ export default function MirasierraPage() {
               href={NAP.gbpUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
-              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+              <Star className="w-5 h-5 fill-amber-400 text-amber-400" />
               Ver todas las reseñas en Google
             </a>
           </div>
@@ -455,10 +455,10 @@ export default function MirasierraPage() {
       </section>
 
       {/* Gallery Section - Photos at Bottom */}
-      <section className="py-16 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Nuestras Instalaciones
             </h2>
             <p className="text-zinc-600 text-lg">
@@ -480,7 +480,7 @@ export default function MirasierraPage() {
               { url: "/images/academy/photos-of-facilities.jpg", alt: "Instalaciones academia inglés cerca Mirasierra Madrid" },
               { url: "/images/academy/cambridge-logo-edited.png", alt: "Centro Preparador Cambridge cerca Mirasierra Madrid" }
             ].map((img, idx) => (
-              <div key={idx} className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+              <div key={idx} className="aspect-[4/3] overflow-hidden rounded-2xl shadow-lift">
                 <img
                   src={img.url}
                   alt={img.alt}
@@ -494,14 +494,14 @@ export default function MirasierraPage() {
       </section>
 
       {/* Local FAQs Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-12 text-center">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
             Preguntas frecuentes sobre clases de inglés cerca de Mirasierra
           </h2>
           <div className="space-y-6">
             {localFaqs.map((faq, index) => (
-              <div key={index} className="bg-zinc-50 rounded-xl p-6">
+              <div key={index} className="card p-6">
                 <h3 className="font-bold text-zinc-900 mb-3">{faq.question}</h3>
                 <p className="text-zinc-600">{faq.answer}</p>
               </div>
@@ -511,14 +511,14 @@ export default function MirasierraPage() {
       </section>
 
       {/* Final Local CTA */}
-      <section className="py-12 md:py-16 px-6 bg-accent-blue">
+      <section className="section-tight px-6 bg-accent-blue">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-xl md:text-2xl text-white mb-8">
             Si buscas una academia de inglés cerca de Mirasierra, solicita ahora tu prueba de nivel gratuita y empieza a aprender inglés cerca de casa.
           </p>
           <a
               href="/reservar-clase/"
-            className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 hover:text-blue-900 transition-colors"
+            className="inline-flex items-center gap-2 bg-white text-accent-blue font-bold py-4 px-8 rounded-lg hover:bg-amber-400 hover:text-accent-blue-900 transition-colors"
           >
             Reserva tu prueba gratuita
             <ArrowRight className="w-5 h-5" />
@@ -527,11 +527,11 @@ export default function MirasierraPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 Reserva Tu Prueba de Nivel
               </h2>
               <p className="text-zinc-600 mb-8">
@@ -542,14 +542,14 @@ export default function MirasierraPage() {
                   href={NAP.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
+                  className="bg-whatsapp hover:bg-whatsapp-dark text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
                 >
                   <MessageCircle className="w-5 h-5" />
                   WhatsApp {NAP.phone}
                 </a>
                 <a
                   href={NAP.phoneTel}
-                  className="bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
+                  className="bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
                   Llamar Ahora
@@ -568,6 +568,7 @@ export default function MirasierraPage() {
                 showPhone={true}
                 showAge={true}
                 showLevel={true}
+                variant="refresh"
               />
             </div>
           </div>

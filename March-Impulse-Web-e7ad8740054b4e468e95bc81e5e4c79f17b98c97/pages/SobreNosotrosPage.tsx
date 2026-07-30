@@ -73,7 +73,7 @@ export default function SobreNosotrosPage() {
               fetchPriority="high"
             />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
+          <div className="absolute inset-0 bg-accent-blue/85"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-brand-red/[0.05]"></div>
@@ -106,10 +106,10 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Video Section - Close to top but below fold */}
-      <section className="py-16 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-10 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Conoce Nuestra Historia
             </h2>
             <p className="text-zinc-600 text-lg max-w-2xl mx-auto">
@@ -121,21 +121,21 @@ export default function SobreNosotrosPage() {
             <LazyVideo
               videoId="Fdso-d9_F20"
               title="Impulse English Academy - Nuestra historia y misión"
-              className="shadow-2xl"
+              className="shadow-panel"
             />
           </div>
         </div>
       </section>
 
       {/* Our Story - Rewritten */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
               <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
                 Nuestra Historia
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h2 className="t-h2 text-zinc-900 mb-6">
                 Más Que Una Academia, Una Familia
               </h2>
               <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
@@ -143,16 +143,16 @@ export default function SobreNosotrosPage() {
                   Impulse English Academy nació de un sueño compartido: <strong className="text-zinc-900">ayudar a las personas a dominar el inglés en su día a día</strong>, no solo aprenderlo, sino vivirlo y utilizarlo con confianza.
                 </p>
                 <p>
-                  Somos una empresa familiar que comenzó este viaje con la convicción de que el aprendizaje de idiomas va mucho más allá de memorizar gramática o vocabulario—se trata de crear conexiones reales y comunicación auténtica.
+                  Somos una empresa familiar que comenzó este viaje con la convicción de que el aprendizaje de idiomas va mucho más allá de memorizar gramática o vocabulario: se trata de crear conexiones reales y comunicación auténtica.
                 </p>
                 <p>
-                  Desde nuestros inicios, hemos construido algo especial en La Vaguada, Madrid: una comunidad de personas unidas por el deseo común de mejorar su inglés y expandir sus horizontes. <strong className="text-zinc-900">No somos una academia más en el barrio—somos tu familia de inglés.</strong>
+                  Desde nuestros inicios, hemos construido algo especial en La Vaguada, Madrid: una comunidad de personas unidas por el deseo común de mejorar su inglés y expandir sus horizontes. <strong className="text-zinc-900">No somos una academia más en el barrio: somos tu familia de inglés.</strong>
                 </p>
               </div>
             </div>
 
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-100">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-panel">
                 <img
                   src="/images/academy/primary-classes-students-smiling.jpg"
                   alt="Estudiantes de inglés primaria y secundaria - Impulse English Academy La Vaguada Barrio del Pilar Madrid"
@@ -167,13 +167,13 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Founders: JP Bio */}
-      <section className="py-16 md:py-24 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
             <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
               Nuestro Equipo
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+            <h2 className="t-h2 text-zinc-900 mb-6">
               Conoce a los Fundadores
             </h2>
           </div>
@@ -181,7 +181,7 @@ export default function SobreNosotrosPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-panel">
                 <img
                   src="/images/academy/jp-with-students.jpg"
                   alt="JP, Director de Estudios y cofundador de Impulse English Academy"
@@ -197,7 +197,7 @@ export default function SobreNosotrosPage() {
               <span className="inline-block bg-accent-blue/10 text-accent-blue text-sm font-bold px-4 py-1.5 rounded-full mb-4">
                 Director de Estudios y Cofundador
               </span>
-              <h3 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h3 className="t-h2 text-zinc-900 mb-6">
                 JP
               </h3>
               <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
@@ -205,7 +205,7 @@ export default function SobreNosotrosPage() {
                   JP es el director de estudios y cofundador de Impulse English Academy La Vaguada, y suma más de diez años de experiencia enseñando inglés. Antes de instalarse en Madrid vivió diez años en Irlanda. Es experto en exámenes Cambridge y en la adquisición temprana del idioma, y dirige el día a día académico del centro. Es, sencillamente, quien hace posible todo esto: un apasionado de la enseñanza de idiomas que se vuelca en cada alumno y en cada profesor del equipo.
                 </p>
                 <p>
-                  Bajo su dirección académica, Impulse ha alcanzado un 100% de aprobados en los exámenes Cambridge en el curso 2024–25.
+                  Bajo su dirección académica, Impulse ha alcanzado un 100% de aprobados en los exámenes Cambridge en el curso 2024-25.
                 </p>
               </div>
 
@@ -227,7 +227,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Founders: Danny Bio (reversed layout) */}
-      <section className="py-16 md:py-24 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text (left on desktop) */}
@@ -235,22 +235,22 @@ export default function SobreNosotrosPage() {
               <span className="inline-block bg-accent-blue/10 text-accent-blue text-sm font-bold px-4 py-1.5 rounded-full mb-4">
                 Cofundador
               </span>
-              <h3 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6">
+              <h3 className="t-h2 text-zinc-900 mb-6">
                 Danny Fitzpatrick
               </h3>
               <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
                 <p>
-                  Danny es cofundador de Impulse English Academy La Vaguada. Junto a JP, construyó la academia desde sus cimientos en el Barrio del Pilar con la convicción de que el método con el que los españoles aprenden inglés estaba roto — y de que existía una forma mejor, más científica y más humana de hacerlo.
+                  Danny es cofundador de Impulse English Academy La Vaguada. Junto a JP, construyó la academia desde sus cimientos en el Barrio del Pilar con la convicción de que el método con el que los españoles aprenden inglés estaba roto, y de que existía una forma mejor, más científica y más humana de hacerlo.
                 </p>
                 <p>
-                  Profesor titulado de educación física e idiomas y licenciado en Marketing por la University of Essex, su especialidad es el inglés de negocios: le apasiona ayudar a los alumnos a dominar el inglés para acceder a mejores oportunidades laborales. Irlandés afincado en Madrid desde hace 12 años, une su experiencia en marketing y estrategia de negocio con la enseñanza para impulsar el crecimiento de la academia.
+                  Profesor titulado de educación física e idiomas y licenciado en Marketing por ESIC University, Madrid, su especialidad es el inglés de negocios: le apasiona ayudar a los alumnos a dominar el inglés para acceder a mejores oportunidades laborales. Irlandés afincado en Madrid desde hace 12 años, une su experiencia en marketing y estrategia de negocio con la enseñanza para impulsar el crecimiento de la academia.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
                 {[
                   { icon: <Users className="w-6 h-6" />, text: "Cofundador de la academia" },
-                  { icon: <GraduationCap className="w-6 h-6" />, text: "Licenciado en Marketing, University of Essex" },
+                  { icon: <GraduationCap className="w-6 h-6" />, text: "Licenciado en Marketing, ESIC University, Madrid" },
                   { icon: <Award className="w-6 h-6" />, text: "Especialista en inglés de negocios" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3 p-4 bg-white rounded-xl">
@@ -263,7 +263,7 @@ export default function SobreNosotrosPage() {
 
             {/* Image (right on desktop) */}
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-100 order-1 lg:order-2">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-panel">
                 <img
                   src="/images/academy/daniel-helping-secondary-school-students.jpg"
                   alt="Danny Fitzpatrick, cofundador de Impulse English Academy"
@@ -279,7 +279,7 @@ export default function SobreNosotrosPage() {
           <div className="text-center mt-14">
             <a
               href="/nuestro-equipo/"
-              className="inline-flex items-center gap-2 bg-accent-blue hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               Conoce a nuestro equipo
               <ArrowRight className="w-5 h-5" />
@@ -289,7 +289,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
             <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
@@ -305,7 +305,7 @@ export default function SobreNosotrosPage() {
               {
                 icon: <Home className="w-8 h-8" />,
                 title: "Somos Familia",
-                description: "Más que una academia, somos una comunidad de personas. Y esto no es solo un eslogan—es nuestra forma de trabajar cada día. Lo que verdaderamente nos diferencia es nuestro enfoque en estar siempre cerca de nuestra comunidad."
+                description: "Más que una academia, somos una comunidad de personas. Y esto no es solo un eslogan: es nuestra forma de trabajar cada día. Lo que verdaderamente nos diferencia es nuestro enfoque en estar siempre cerca de nuestra comunidad."
               },
               {
                 icon: <UserCheck className="w-8 h-8" />,
@@ -335,7 +335,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Our Vision */}
-      <section className="py-12 md:py-20 px-6 bg-accent-blue">
+      <section className="section-lead px-6 bg-accent-blue">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
             <Eye className="w-12 h-12 text-white/80 mx-auto mb-6" />
@@ -361,10 +361,10 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Nuestras Instalaciones
             </h2>
             <p className="text-zinc-600 text-lg">
@@ -385,7 +385,7 @@ export default function SobreNosotrosPage() {
               { url: "/images/academy/toilet-facilities.jpg", alt: "Aseos instalaciones academia La Vaguada Barrio del Pilar Madrid", caption: "Instalaciones completas" }
             ].map((image, index) => (
               <div key={index} className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000" style={{ transitionDelay: `${index * 50}ms` }}>
-                <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg bg-zinc-100">
+                <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-lift bg-zinc-100">
                   <img
                     src={image.url}
                     alt={image.alt}
@@ -402,10 +402,10 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Certifications */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
+            <h2 className="t-h2 text-zinc-900 mb-4">
               Certificaciones y Reconocimientos
             </h2>
           </div>
@@ -413,7 +413,7 @@ export default function SobreNosotrosPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* JP with Students and Certificates Image */}
             <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
-              <div className="rounded-xl overflow-hidden shadow-lg">
+              <div className="overflow-hidden rounded-2xl shadow-lift">
                 <img
                   src="/images/academy/jp-with-students.jpg"
                   alt="JP con estudiantes y certificados Cambridge - Impulse English Academy"
@@ -431,7 +431,7 @@ export default function SobreNosotrosPage() {
                   className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000"
                   style={{ transitionDelay: `${index * 50}ms` }}
                 >
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
+                  <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0" />
                   <span className="text-zinc-700">{cert}</span>
                 </div>
               ))}
@@ -441,22 +441,22 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* FAQ Section - For SEO */}
-      <FAQSection faqs={faqs} title="Preguntas Frecuentes" />
+      <FAQSection faqs={faqs} title="Preguntas Frecuentes" variant="refresh" />
 
       {/* CTA Section */}
-      <section className="py-12 md:py-20 px-6 bg-gradient-to-br from-zinc-900 to-zinc-800">
+      <section className="section-lead px-6 surface-ink">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
               Únete a Nuestra Comunidad
             </h2>
             <p className="text-xl text-zinc-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Te invitamos a conocernos, a formar parte de esta comunidad especial que hemos construido en el corazón de La Vaguada, Madrid. Aquí encontrarás más que clases de inglés—encontrarás un espacio donde los errores se celebran, donde el aprendizaje es colaborativo, y donde cada persona importa.
+              Te invitamos a conocernos, a formar parte de esta comunidad especial que hemos construido en el corazón de La Vaguada, Madrid. Aquí encontrarás más que clases de inglés: encontrarás un espacio donde los errores se celebran, donde el aprendizaje es colaborativo, y donde cada persona importa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
               href="/reservar-clase/"
-                className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
+                className="bg-brand-red hover:bg-brand-red-600 text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
                 Reservar Clase de Prueba
               </a>
@@ -472,7 +472,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Lead Form */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section className="section-lead px-6 bg-white">
         <div className="container mx-auto max-w-3xl">
           <LeadForm
             title="¿Listo para mejorar tu inglés?"
@@ -480,6 +480,7 @@ export default function SobreNosotrosPage() {
             ctaText="Solicitar información"
             source="sobre-nosotros"
             showPhone={true}
+            variant="refresh"
           />
         </div>
       </section>

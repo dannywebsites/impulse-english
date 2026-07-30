@@ -315,7 +315,7 @@ function FAQAccordion({ section }: { section: FAQSection }) {
 
   return (
     <div className="mb-12">
-      <h2 className="text-2xl font-bold text-zinc-900 mb-6">{section.title}</h2>
+      <h2 className="t-h3 text-zinc-900 mb-6">{section.title}</h2>
       <div className="space-y-3">
         {section.items.map((item, index) => (
           <div key={index} className="bg-white rounded-xl border border-zinc-100 overflow-hidden">
@@ -359,7 +359,7 @@ export default function PreguntasFrecuentesPage() {
             <source media="(max-width: 640px)" srcSet="/images/optimized/heroes-mobile/facilities-mobile.jpg" type="image/jpeg" />
             <img src="/images/academy/photos-of-facilities.jpg" alt="Instalaciones Impulse English Academy La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/95 via-accent-blue/85 to-[#0a3560]/75"></div>
+          <div className="absolute inset-0 bg-accent-blue/85"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
         <div className="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-white/[0.03]"></div>
@@ -395,10 +395,11 @@ export default function PreguntasFrecuentesPage() {
         faqs={seoFAQs}
         title="Preguntas Frecuentes sobre Elegir un Curso de Inglés"
         className="bg-white"
+        variant="refresh"
       />
 
       {/* FAQ Content */}
-      <section className="py-12 md:py-20 px-6 bg-zinc-50">
+      <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           {faqSections.map((section, index) => (
             <FAQAccordion key={index} section={section} />
@@ -407,7 +408,7 @@ export default function PreguntasFrecuentesPage() {
       </section>
 
       {/* External Authority Links */}
-      <section className="py-12 px-6 bg-white border-t border-zinc-100">
+      <section className="section-tight px-6 bg-white border-t border-zinc-100">
         <div className="container mx-auto max-w-4xl">
           <h3 className="font-bold text-zinc-900 mb-4">Recursos oficiales y referencias</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
@@ -456,9 +457,9 @@ export default function PreguntasFrecuentesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-6 bg-zinc-50">
+      <section className="section-lead px-6 surface-alt">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-zinc-900 mb-4">
+          <h2 className="t-h2 text-zinc-900 mb-4">
             ¿No encontraste tu respuesta?
           </h2>
           <p className="text-zinc-600 mb-8">
@@ -470,7 +471,7 @@ export default function PreguntasFrecuentesPage() {
               href="https://wa.me/34604910611"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-2 bg-green-500 hover:bg-green-600 text-white p-6 rounded-xl transition-colors"
+              className="flex flex-col items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white p-6 rounded-xl transition-colors"
             >
               <MessageCircle className="w-8 h-8" />
               <span className="font-bold">WhatsApp</span>
@@ -479,7 +480,7 @@ export default function PreguntasFrecuentesPage() {
 
             <a
               href="tel:+34604910611"
-              className="flex flex-col items-center gap-2 bg-accent-blue hover:bg-blue-900 text-white p-6 rounded-xl transition-colors"
+              className="flex flex-col items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white p-6 rounded-xl transition-colors"
             >
               <Phone className="w-8 h-8" />
               <span className="font-bold">Llamar</span>
@@ -488,7 +489,7 @@ export default function PreguntasFrecuentesPage() {
 
             <a
               href="/reservar-clase/"
-              className="flex flex-col items-center gap-2 bg-red-600 hover:bg-red-700 text-white p-6 rounded-xl transition-colors"
+              className="flex flex-col items-center gap-2 bg-brand-red hover:bg-brand-red-600 text-white p-6 rounded-xl transition-colors"
             >
               <Mail className="w-8 h-8" />
               <span className="font-bold">Reservar</span>

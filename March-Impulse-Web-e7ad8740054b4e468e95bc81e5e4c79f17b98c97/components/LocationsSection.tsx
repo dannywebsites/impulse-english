@@ -26,25 +26,25 @@ export default function LocationsSection() {
   ];
 
   const carRoutes = [
-    { from: "Peñagrande", via: "Av. de Peñagrande → Av. de El Ferrol", time: "3–5 min" },
-    { from: "Mirasierra", via: "Fermín Caballero → Av. de El Ferrol", time: "5–8 min" },
-    { from: "Herrera Oria", via: "Ginzo de Limia → Av. de El Ferrol", time: "5–8 min" },
-    { from: "Montecarmelo y Las Tablas", via: "Av. de la Ilustración → Av. de El Ferrol", time: "10–12 min" },
-    { from: "Tetuán y Valdeacederas", via: "Av. de la Paz → Av. de El Ferrol", time: "8–12 min" },
-    { from: "Plaza Castilla", via: "Paseo de la Castellana → Av. de El Ferrol", time: "10–15 min" }
+    { from: "Peñagrande", via: "Av. de Peñagrande → Av. de El Ferrol", time: "3-5 min" },
+    { from: "Mirasierra", via: "Fermín Caballero → Av. de El Ferrol", time: "5-8 min" },
+    { from: "Herrera Oria", via: "Ginzo de Limia → Av. de El Ferrol", time: "5-8 min" },
+    { from: "Montecarmelo y Las Tablas", via: "Av. de la Ilustración → Av. de El Ferrol", time: "10-12 min" },
+    { from: "Tetuán y Valdeacederas", via: "Av. de la Paz → Av. de El Ferrol", time: "8-12 min" },
+    { from: "Plaza Castilla", via: "Paseo de la Castellana → Av. de El Ferrol", time: "10-15 min" }
   ];
 
   return (
     <section className="w-full bg-zinc-50 py-12 md:py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <span className="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">
+          <span className="eyebrow mb-4">
             Ubicación
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight mb-4">
+          <h2 className="t-h2 text-zinc-900 mb-5">
             Dónde encontrarnos
           </h2>
-          <div className="w-24 h-1 bg-accent-blue/20 mb-6"></div>
+          <div className="rule mb-6"></div>
           <p className="text-zinc-500 text-lg max-w-2xl">
             En el corazón del Barrio del Pilar, a 4 minutos andando del Metro
           </p>
@@ -52,7 +52,7 @@ export default function LocationsSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Main Location Card */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div className="card overflow-hidden">
             <div className="aspect-video w-full overflow-hidden">
               <img
                 src="/images/academy/outside-academy.jpg"
@@ -104,7 +104,7 @@ export default function LocationsSection() {
                   href={NAP.gbpUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-accent-blue text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-900 transition-colors"
+                  className="flex items-center gap-2 bg-accent-blue text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent-blue-800 transition-colors"
                 >
                   <Navigation className="w-4 h-4" />
                   Cómo llegar
@@ -113,7 +113,7 @@ export default function LocationsSection() {
                   href={`${NAP.whatsappUrl}?text=Hola,%20me%20gustaría%20información%20sobre%20los%20cursos%20de%20inglés`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-600 transition-colors"
+                  className="flex items-center gap-2 bg-whatsapp text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-whatsapp-dark transition-colors"
                 >
                   <Phone className="w-4 h-4" />
                   WhatsApp
@@ -123,9 +123,9 @@ export default function LocationsSection() {
           </div>
 
           {/* Areas Served Card */}
-          <div className="bg-white rounded-xl shadow-lg p-8">
+          <div className="card p-8">
             <h3 className="text-2xl font-bold text-zinc-900 mb-6">
-              <MapPin className="inline w-6 h-6 text-red-500 mr-2" />
+              <MapPin className="inline w-6 h-6 text-brand-red mr-2" />
               Zonas que servimos
             </h3>
             <p className="text-zinc-500 mb-6">
@@ -187,7 +187,7 @@ export default function LocationsSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Metro */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="card p-6">
               <div className="flex items-center gap-2 mb-5">
                 <Train className="w-5 h-5 text-accent-blue" />
                 <h4 className="text-lg font-bold text-zinc-900">En metro</h4>
@@ -215,7 +215,7 @@ export default function LocationsSection() {
             </div>
 
             {/* Autobús */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="card p-6">
               <div className="flex items-center gap-2 mb-5">
                 <Bus className="w-5 h-5 text-accent-blue" />
                 <h4 className="text-lg font-bold text-zinc-900">En autobús</h4>
@@ -240,12 +240,12 @@ export default function LocationsSection() {
                 ))}
               </ul>
               <p className="text-xs text-zinc-400 mt-4">
-                Parada Ginzo de Limia – Ferrol, a 1 minuto andando de la academia.
+                Parada Ginzo de Limia - Ferrol, a 1 minuto andando de la academia.
               </p>
             </div>
 
             {/* Coche */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="card p-6">
               <div className="flex items-center gap-2 mb-5">
                 <Car className="w-5 h-5 text-accent-blue" />
                 <h4 className="text-lg font-bold text-zinc-900">En coche</h4>
@@ -269,7 +269,7 @@ export default function LocationsSection() {
         </div>
 
         {/* Map Embed */}
-        <div className="mt-12 bg-white rounded-xl shadow-lg overflow-hidden">
+        <div className="mt-12 card overflow-hidden">
           <div className="aspect-[21/9] w-full bg-zinc-200">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.0!2d-3.7084812!3d40.4743948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422909a0b6b11b%3A0xbe6ef3e2ba8bb87b!2sImpulse%20English%20Academy!5e0!3m2!1ses!2ses!4v1701964800000!5m2!1ses!2ses"
