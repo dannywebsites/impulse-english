@@ -1,4 +1,4 @@
-# Tracking audit — 2026-07-30T17:09:16.476Z
+# Tracking audit — 2026-07-30T20:00:12.069Z
 
 Site: http://localhost:3000 · property properties/503609664 · stream G-KNMS5YW69T
 Modes: forms=false popup=false. Test traffic tagged internal via ?tt=test.
@@ -33,4 +33,4 @@ Modes: forms=false popup=false. Test traffic tagged internal via ?tt=test.
 | /linguaskill/ | WhatsApp (linguaskill) | whatsapp_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /linguaskill/ | Phone (linguaskill) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 
-Tick 2 (GA4 Realtime recorded deltas vs baseline): `{"whatsapp_click":7,"phone_click":3,"email_click":1}` vs needed `{"whatsapp_click":12,"phone_click":12,"email_click":3}`
+Tick 2 (GA4 Realtime recorded deltas vs baseline): `{"whatsapp_click":12,"phone_click":12,"email_click":5}` vs needed `{"whatsapp_click":12,"phone_click":12,"email_click":3}`
