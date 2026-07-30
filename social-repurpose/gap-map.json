@@ -1,0 +1,648 @@
+{
+  "generated_from": "/Users/danny/Desktop/impulse-seo-ops/data/gsc/2026-07-28",
+  "target_position": 3,
+  "window_total_impressions": 28474,
+  "seasonality_caveat": "Jul-Aug is the Spanish academy seasonal trough. This window carries 28,474 impressions, so per-barrio impression counts are thin and positions are averaged over few queries. The RANKING is driven by Google Ads volume (a 12-month average) and is stable; the impression columns are not. Re-run in September before treating any of this as a trend.",
+  "anchor": {
+    "note": "Every caption carries this. The only high-volume term that is intrinsically radius-bound.",
+    "keywords": [
+      {
+        "keyword": "academia de ingles cerca de mi",
+        "volume_per_month": 6600,
+        "position": 14.7,
+        "impressions": 67,
+        "clicks": 0,
+        "est_monthly_clicks_left": 660.0
+      },
+      {
+        "keyword": "clases de ingles cerca de mi",
+        "volume_per_month": 720,
+        "position": 14.6,
+        "impressions": 50,
+        "clicks": 0,
+        "est_monthly_clicks_left": 72.0
+      }
+    ]
+  },
+  "rotation": [
+    {
+      "barrio": "Las Tablas",
+      "keyword": "academia ingles las tablas",
+      "volume_per_month": 50,
+      "has_page": "academia-ingles-montecarmelo-las-tablas",
+      "position": 12.9,
+      "real_impressions": 207,
+      "real_clicks": 0,
+      "synthetic_impressions": 85,
+      "est_monthly_clicks_left": 5.0,
+      "verdict": "PRIORITY — real volume, stuck on page 2",
+      "top_real_queries": [
+        "academia ingles las tablas",
+        "academia de ingles en madrid las tablas sanchinarro",
+        "academia de idiomas en las tablas",
+        "academia de ingles las tablas",
+        "escuela infantil ingles las tablas"
+      ]
+    },
+    {
+      "barrio": "Sanchinarro",
+      "keyword": "academia ingles sanchinarro",
+      "volume_per_month": 30,
+      "has_page": null,
+      "position": 29.7,
+      "real_impressions": 116,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 3.21,
+      "verdict": "PRIORITY — real volume, effectively unranked",
+      "top_real_queries": [
+        "academia de ingles en madrid las tablas sanchinarro",
+        "academia ingles sanchinarro",
+        "up level sanchinarro"
+      ]
+    },
+    {
+      "barrio": "Barrio del Pilar",
+      "keyword": "academia ingles barrio del pilar",
+      "volume_per_month": 30,
+      "has_page": "academia-ingles-barrio-del-pilar",
+      "position": 9.7,
+      "real_impressions": 102,
+      "real_clicks": 3,
+      "synthetic_impressions": 42,
+      "est_monthly_clicks_left": 2.55,
+      "verdict": "improve — page 1, below target",
+      "top_real_queries": [
+        "academia de ingles barrio del pilar",
+        "academias de ingles barrio del pilar",
+        "escuela de idiomas barrio del pilar",
+        "academia ingles barrio del pilar",
+        "escuela infantil bilingüe en el barrio del pilar"
+      ]
+    },
+    {
+      "barrio": "Montecarmelo",
+      "keyword": "academia ingles montecarmelo",
+      "volume_per_month": 30,
+      "has_page": "academia-ingles-montecarmelo-las-tablas",
+      "position": 9.7,
+      "real_impressions": 58,
+      "real_clicks": 0,
+      "synthetic_impressions": 48,
+      "est_monthly_clicks_left": 2.55,
+      "verdict": "improve — page 1, below target",
+      "top_real_queries": [
+        "academia de idiomas en montecarmelo",
+        "academia ingles montecarmelo",
+        "academia de ingles montecarmelo",
+        "guarderia ingles montecarmelo",
+        "escueña infantil ingles montecarmelo"
+      ]
+    },
+    {
+      "barrio": "Tetuán",
+      "keyword": "academia ingles tetuan",
+      "volume_per_month": 10,
+      "has_page": "academia-ingles-tetuan",
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 45,
+      "est_monthly_clicks_left": 1.09,
+      "verdict": "PRIORITY — real volume, effectively unranked",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Peñagrande",
+      "keyword": "academia ingles penagrande",
+      "volume_per_month": 10,
+      "has_page": "academia-ingles-penagrande",
+      "position": 37.0,
+      "real_impressions": 2,
+      "real_clicks": 0,
+      "synthetic_impressions": 44,
+      "est_monthly_clicks_left": 1.07,
+      "verdict": "PRIORITY — real volume, effectively unranked",
+      "top_real_queries": [
+        "autoescuela peñagrande"
+      ]
+    },
+    {
+      "barrio": "La Vaguada",
+      "keyword": "academia ingles la vaguada",
+      "volume_per_month": 10,
+      "has_page": "academia-ingles-la-vaguada",
+      "position": 11.9,
+      "real_impressions": 121,
+      "real_clicks": 0,
+      "synthetic_impressions": 50,
+      "est_monthly_clicks_left": 1.0,
+      "verdict": "PRIORITY — real volume, stuck on page 2",
+      "top_real_queries": [
+        "cambridge house la vaguada",
+        "guardería bilingüe en la vaguada",
+        "código postal de la vaguada",
+        "codigo postal de la vaguada",
+        "codigo postal de la vaguada madrid"
+      ]
+    },
+    {
+      "barrio": "Mirasierra",
+      "keyword": "academia ingles mirasierra",
+      "volume_per_month": 10,
+      "has_page": "academia-ingles-mirasierra",
+      "position": 8.2,
+      "real_impressions": 128,
+      "real_clicks": 0,
+      "synthetic_impressions": 44,
+      "est_monthly_clicks_left": 0.77,
+      "verdict": "improve — page 1, below target",
+      "top_real_queries": [
+        "clases de inglés mirasierra",
+        "academia de inglés mirasierra",
+        "ashton campion mirasierra",
+        "academia mirasierra",
+        "academia ingles mirasierra"
+      ]
+    },
+    {
+      "barrio": "Plaza de Castilla",
+      "keyword": "academia ingles plaza castilla",
+      "volume_per_month": 10,
+      "has_page": "academia-ingles-plaza-castilla",
+      "position": 7.8,
+      "real_impressions": 73,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 0.77,
+      "verdict": "improve — page 1, below target",
+      "top_real_queries": [
+        "academia inglés plaza de castilla",
+        "código postal de plaza castilla",
+        "academia plaza castilla",
+        "campus training plaza castilla",
+        "código postal plaza castilla"
+      ]
+    }
+  ],
+  "defend": [],
+  "excluded": [
+    {
+      "barrio": "La Paz",
+      "keyword": "academia ingles la paz",
+      "volume_per_month": 0,
+      "has_page": "academia-ingles-la-paz",
+      "position": 10.2,
+      "real_impressions": 5,
+      "real_clicks": 0,
+      "synthetic_impressions": 43,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": [
+        "academia la paz",
+        "centro de enseñanza la paz"
+      ]
+    },
+    {
+      "barrio": "La Ventilla",
+      "keyword": "academia ingles la ventilla",
+      "volume_per_month": 0,
+      "has_page": "academia-ingles-la-ventilla",
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Cuatro Torres",
+      "keyword": "academia ingles cuatro torres",
+      "volume_per_month": 0,
+      "has_page": "academia-ingles-cuatro-torres",
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Valdeacederas",
+      "keyword": "academia ingles valdeacederas",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": 6.3,
+      "real_impressions": 30,
+      "real_clicks": 0,
+      "synthetic_impressions": 43,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": [
+        "acadeamia de inglés valdeacederas"
+      ]
+    },
+    {
+      "barrio": "Valverde",
+      "keyword": "academia ingles valverde madrid",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 43,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Castillejos",
+      "keyword": "academia ingles castillejos",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 43,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Berruguete",
+      "keyword": "academia ingles berruguete",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 42,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Bellas Vistas",
+      "keyword": "academia ingles bellas vistas",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 39,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Cuatro Caminos",
+      "keyword": "academia ingles cuatro caminos",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 18,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Arroyo del Fresno",
+      "keyword": "academia ingles arroyo del fresno",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Valdezarza",
+      "keyword": "academia ingles valdezarza",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    }
+  ],
+  "all_targets": [
+    {
+      "barrio": "Las Tablas",
+      "keyword": "academia ingles las tablas",
+      "volume_per_month": 50,
+      "has_page": "academia-ingles-montecarmelo-las-tablas",
+      "position": 12.9,
+      "real_impressions": 207,
+      "real_clicks": 0,
+      "synthetic_impressions": 85,
+      "est_monthly_clicks_left": 5.0,
+      "verdict": "PRIORITY — real volume, stuck on page 2",
+      "top_real_queries": [
+        "academia ingles las tablas",
+        "academia de ingles en madrid las tablas sanchinarro",
+        "academia de idiomas en las tablas",
+        "academia de ingles las tablas",
+        "escuela infantil ingles las tablas"
+      ]
+    },
+    {
+      "barrio": "Sanchinarro",
+      "keyword": "academia ingles sanchinarro",
+      "volume_per_month": 30,
+      "has_page": null,
+      "position": 29.7,
+      "real_impressions": 116,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 3.21,
+      "verdict": "PRIORITY — real volume, effectively unranked",
+      "top_real_queries": [
+        "academia de ingles en madrid las tablas sanchinarro",
+        "academia ingles sanchinarro",
+        "up level sanchinarro"
+      ]
+    },
+    {
+      "barrio": "Barrio del Pilar",
+      "keyword": "academia ingles barrio del pilar",
+      "volume_per_month": 30,
+      "has_page": "academia-ingles-barrio-del-pilar",
+      "position": 9.7,
+      "real_impressions": 102,
+      "real_clicks": 3,
+      "synthetic_impressions": 42,
+      "est_monthly_clicks_left": 2.55,
+      "verdict": "improve — page 1, below target",
+      "top_real_queries": [
+        "academia de ingles barrio del pilar",
+        "academias de ingles barrio del pilar",
+        "escuela de idiomas barrio del pilar",
+        "academia ingles barrio del pilar",
+        "escuela infantil bilingüe en el barrio del pilar"
+      ]
+    },
+    {
+      "barrio": "Montecarmelo",
+      "keyword": "academia ingles montecarmelo",
+      "volume_per_month": 30,
+      "has_page": "academia-ingles-montecarmelo-las-tablas",
+      "position": 9.7,
+      "real_impressions": 58,
+      "real_clicks": 0,
+      "synthetic_impressions": 48,
+      "est_monthly_clicks_left": 2.55,
+      "verdict": "improve — page 1, below target",
+      "top_real_queries": [
+        "academia de idiomas en montecarmelo",
+        "academia ingles montecarmelo",
+        "academia de ingles montecarmelo",
+        "guarderia ingles montecarmelo",
+        "escueña infantil ingles montecarmelo"
+      ]
+    },
+    {
+      "barrio": "Tetuán",
+      "keyword": "academia ingles tetuan",
+      "volume_per_month": 10,
+      "has_page": "academia-ingles-tetuan",
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 45,
+      "est_monthly_clicks_left": 1.09,
+      "verdict": "PRIORITY — real volume, effectively unranked",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Peñagrande",
+      "keyword": "academia ingles penagrande",
+      "volume_per_month": 10,
+      "has_page": "academia-ingles-penagrande",
+      "position": 37.0,
+      "real_impressions": 2,
+      "real_clicks": 0,
+      "synthetic_impressions": 44,
+      "est_monthly_clicks_left": 1.07,
+      "verdict": "PRIORITY — real volume, effectively unranked",
+      "top_real_queries": [
+        "autoescuela peñagrande"
+      ]
+    },
+    {
+      "barrio": "La Vaguada",
+      "keyword": "academia ingles la vaguada",
+      "volume_per_month": 10,
+      "has_page": "academia-ingles-la-vaguada",
+      "position": 11.9,
+      "real_impressions": 121,
+      "real_clicks": 0,
+      "synthetic_impressions": 50,
+      "est_monthly_clicks_left": 1.0,
+      "verdict": "PRIORITY — real volume, stuck on page 2",
+      "top_real_queries": [
+        "cambridge house la vaguada",
+        "guardería bilingüe en la vaguada",
+        "código postal de la vaguada",
+        "codigo postal de la vaguada",
+        "codigo postal de la vaguada madrid"
+      ]
+    },
+    {
+      "barrio": "Mirasierra",
+      "keyword": "academia ingles mirasierra",
+      "volume_per_month": 10,
+      "has_page": "academia-ingles-mirasierra",
+      "position": 8.2,
+      "real_impressions": 128,
+      "real_clicks": 0,
+      "synthetic_impressions": 44,
+      "est_monthly_clicks_left": 0.77,
+      "verdict": "improve — page 1, below target",
+      "top_real_queries": [
+        "clases de inglés mirasierra",
+        "academia de inglés mirasierra",
+        "ashton campion mirasierra",
+        "academia mirasierra",
+        "academia ingles mirasierra"
+      ]
+    },
+    {
+      "barrio": "Plaza de Castilla",
+      "keyword": "academia ingles plaza castilla",
+      "volume_per_month": 10,
+      "has_page": "academia-ingles-plaza-castilla",
+      "position": 7.8,
+      "real_impressions": 73,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 0.77,
+      "verdict": "improve — page 1, below target",
+      "top_real_queries": [
+        "academia inglés plaza de castilla",
+        "código postal de plaza castilla",
+        "academia plaza castilla",
+        "campus training plaza castilla",
+        "código postal plaza castilla"
+      ]
+    },
+    {
+      "barrio": "La Paz",
+      "keyword": "academia ingles la paz",
+      "volume_per_month": 0,
+      "has_page": "academia-ingles-la-paz",
+      "position": 10.2,
+      "real_impressions": 5,
+      "real_clicks": 0,
+      "synthetic_impressions": 43,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": [
+        "academia la paz",
+        "centro de enseñanza la paz"
+      ]
+    },
+    {
+      "barrio": "La Ventilla",
+      "keyword": "academia ingles la ventilla",
+      "volume_per_month": 0,
+      "has_page": "academia-ingles-la-ventilla",
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Cuatro Torres",
+      "keyword": "academia ingles cuatro torres",
+      "volume_per_month": 0,
+      "has_page": "academia-ingles-cuatro-torres",
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Valdeacederas",
+      "keyword": "academia ingles valdeacederas",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": 6.3,
+      "real_impressions": 30,
+      "real_clicks": 0,
+      "synthetic_impressions": 43,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": [
+        "acadeamia de inglés valdeacederas"
+      ]
+    },
+    {
+      "barrio": "Valverde",
+      "keyword": "academia ingles valverde madrid",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 43,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Castillejos",
+      "keyword": "academia ingles castillejos",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 43,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Berruguete",
+      "keyword": "academia ingles berruguete",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 42,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Bellas Vistas",
+      "keyword": "academia ingles bellas vistas",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 39,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Cuatro Caminos",
+      "keyword": "academia ingles cuatro caminos",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 18,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Arroyo del Fresno",
+      "keyword": "academia ingles arroyo del fresno",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    },
+    {
+      "barrio": "Valdezarza",
+      "keyword": "academia ingles valdezarza",
+      "volume_per_month": 0,
+      "has_page": null,
+      "position": null,
+      "real_impressions": 0,
+      "real_clicks": 0,
+      "synthetic_impressions": 0,
+      "est_monthly_clicks_left": 0.0,
+      "verdict": "skip — no registered search volume",
+      "top_real_queries": []
+    }
+  ]
+}

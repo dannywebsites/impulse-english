@@ -1,0 +1,72 @@
+{
+  "clips_dir": "/Users/danny/Desktop/backup website Impuls Englisch /social-repurpose/clips",
+  "count": 3,
+  "flags": {
+    "watermarked": [],
+    "not_vertical": [],
+    "too_long": [],
+    "no_metadata": []
+  },
+  "clips": [
+    {
+      "file": "20241218_7449805914170772768.mp4",
+      "path": "/Users/danny/Desktop/backup website Impuls Englisch /social-repurpose/clips/20241218_7449805914170772768.mp4",
+      "width": 576,
+      "height": 1024,
+      "aspect_ratio": 0.5625,
+      "duration_s": 8.48,
+      "codec": "h264",
+      "pix_fmt": "yuv420p",
+      "size_mb": 1.07,
+      "format_id": "h264_540p_1055855-1",
+      "watermarked": false,
+      "needs_upscale": true,
+      "tiktok_id": "7449805914170772768",
+      "tiktok_title": "¡Con este frío que hace ahora, es el momento perfecto para ampliar tu...",
+      "tiktok_description": "¡Con este frío que hace ahora, es el momento perfecto para ampliar tu vocabulario en inglés! ❄️🗣️ En nuestro nuevo episodio de Inglés en Acción, te enseñamos formas creativas y comunes de describir el frío en inglés, ¡para que suenes como un verdadero nativo! 📚 Aprende expresiones que van más allá de \"cold\" y sorprende a todos con tu fluidez. 📲 Mira el video completo en nuestro perfil y mejora tu inglés en este invierno helado. #InglésEnAcción #FríoEnInglés #AprenderInglés #InglésFácil #VocabularioDeInvierno #Idiomas #ExpresionesCreativas #ClimaEnInglés",
+      "upload_date": "20241218",
+      "view_count": 846,
+      "like_count": 12
+    },
+    {
+      "file": "20241221_7450927178922970401.mp4",
+      "path": "/Users/danny/Desktop/backup website Impuls Englisch /social-repurpose/clips/20241221_7450927178922970401.mp4",
+      "width": 576,
+      "height": 1024,
+      "aspect_ratio": 0.5625,
+      "duration_s": 13.47,
+      "codec": "h264",
+      "pix_fmt": "yuv420p",
+      "size_mb": 1.36,
+      "format_id": "h264_540p_844827-1",
+      "watermarked": false,
+      "needs_upscale": true,
+      "tiktok_id": "7450927178922970401",
+      "tiktok_title": "¿Listo para hablar de todo lo relacionado con la Navidad en inglés? 🎅...",
+      "tiktok_description": "¿Listo para hablar de todo lo relacionado con la Navidad en inglés? 🎅✨ En nuestro nuevo episodio, te enseñamos cómo describir tus decoraciones, tradiciones y todo lo que hace mágica esta época del año. 📚 Aprende palabras y frases para hablar de árboles de Navidad, luces, regalos, y mucho más. ¡Exprésate como un nativo estas fiestas! 📲 Mira el video completo en nuestro perfil y lleva tu inglés a otro nivel esta Navidad. #InglésEnAcción #CosasDeNavidad #AprenderInglés #NavidadEnInglés #InglésFácil #Idiomas #VocabularioNavideño #FestividadesEnInglés",
+      "upload_date": "20241221",
+      "view_count": 909,
+      "like_count": 17
+    },
+    {
+      "file": "20241222_7451267533627198752.mp4",
+      "path": "/Users/danny/Desktop/backup website Impuls Englisch /social-repurpose/clips/20241222_7451267533627198752.mp4",
+      "width": 576,
+      "height": 1024,
+      "aspect_ratio": 0.5625,
+      "duration_s": 13.63,
+      "codec": "h264",
+      "pix_fmt": "yuv420p",
+      "size_mb": 1.1,
+      "format_id": "h264_540p_679011-1",
+      "watermarked": false,
+      "needs_upscale": true,
+      "tiktok_id": "7451267533627198752",
+      "tiktok_title": "¿Sabes cómo hablar de tus tradiciones navideñas en inglés? ✨ En nuest...",
+      "tiktok_description": "¿Sabes cómo hablar de tus tradiciones navideñas en inglés? ✨ En nuestro nuevo episodio de Inglés en Acción, te enseñamos frases y vocabulario esenciales para describir cómo celebras la Navidad y compartir el espíritu festivo con confianza. 📚 Aprende a hablar sobre tus decoraciones, comidas y momentos especiales de estas fechas. ¡Impresiona a todos con tu inglés esta Navidad! 📲 Mira el video completo en nuestro perfil y celebra la Navidad mientras mejoras tu inglés. #InglésEnAcción #NavidadEnInglés #AprenderInglés #VocabularioNavideño #EspírituNavideño #InglésFácil #Idiomas #FestividadesEnInglés",
+      "upload_date": "20241222",
+      "view_count": 1328,
+      "like_count": 15
+    }
+  ]
+}
