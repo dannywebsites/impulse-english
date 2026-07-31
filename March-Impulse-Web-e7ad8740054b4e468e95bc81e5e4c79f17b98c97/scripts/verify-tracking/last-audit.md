@@ -1,7 +1,7 @@
-# Tracking audit — 2026-07-30T22:38:35.196Z
+# Tracking audit — 2026-07-31T08:38:34.978Z
 
-Site: http://localhost:3000 · property properties/503609664 · stream G-KNMS5YW69T
-Modes: forms=true popup=true. Test traffic tagged internal via ?tt=test.
+Site: https://impulse-english.es · property properties/503609664 · stream G-KNMS5YW69T
+Modes: forms=false popup=false. Test traffic tagged internal via ?tt=test.
 
 | Page | CTA | Event | Tick1 sent (tid) | GHL | Verdict |
 |---|---|---|---|---|---|
@@ -9,7 +9,6 @@ Modes: forms=true popup=true. Test traffic tagged internal via ?tt=test.
 | / | Phone (hero/body) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | / | WhatsApp (footer) | whatsapp_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | / | Email (footer) | email_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
-| / | LeadForm submit (homepage-contact) | generate_lead | ✓ (G-KNMS5YW69T) | 200✓ | **PASS** |
 | /cursos-ingles/adultos/ | WhatsApp (body) | whatsapp_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /cursos-ingles/adultos/ | Phone (body) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /examenes-cambridge/b2-first/ | Phone (exam layout) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
@@ -27,14 +26,11 @@ Modes: forms=true popup=true. Test traffic tagged internal via ?tt=test.
 | /contacto/ | Phone (contact) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /contacto/ | WhatsApp (contact) | whatsapp_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /contacto/ | Email (contact) | email_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
-| /contacto/ | LeadForm submit (contacto) | generate_lead | ✓ (G-KNMS5YW69T) | 200✓ | **PASS** |
 | /prueba-de-nivel-ingles/ | Phone (sidebar) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
-| /prueba-de-nivel-ingles/ | LeadForm submit (reservar-clase) | generate_lead | ✓ (G-KNMS5YW69T) | 200✓ | **PASS** |
 | /gracias/ | WhatsApp (thanks) | whatsapp_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /gracias/ | Phone (thanks) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /gracias/ | Email (thanks) | email_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /linguaskill/ | WhatsApp (linguaskill) | whatsapp_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
 | /linguaskill/ | Phone (linguaskill) | phone_click | ✓ (G-KNMS5YW69T) | - | **PASS** |
-| /cursos-ingles/primaria/ | CoursePopup submit (31s) | generate_lead | ✓ (G-KNMS5YW69T) | 200✓ | **PASS** |
 
-Tick 2 (GA4 Realtime recorded deltas vs baseline): `{"whatsapp_click":12,"phone_click":12,"email_click":3,"generate_lead":5}` vs needed `{"whatsapp_click":12,"phone_click":12,"email_click":3,"generate_lead":4}`
+Tick 2 (GA4 Realtime recorded deltas vs baseline): `{"whatsapp_click":11,"phone_click":12,"email_click":3}` vs needed `{"whatsapp_click":12,"phone_click":12,"email_click":3}`
