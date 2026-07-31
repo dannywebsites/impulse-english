@@ -26,9 +26,15 @@ export default function Hero() {
                     </div>
 
                     {/* Single H1 for SEO — the visible hero headline is the real H1 */}
-                    <h1 className="hero-h1 text-white text-3xl sm:text-5xl xl:text-7xl font-semibold tracking-tight leading-[1.1] xl:leading-[1.05] mb-6 xl:mb-8 animate-fade-in-up delay-100">
+                    <h1 className="hero-h1 text-white text-3xl sm:text-5xl xl:text-7xl xl:max-w-[700px] font-semibold tracking-tight leading-[1.1] xl:leading-[1.05] mb-6 xl:mb-8 animate-fade-in-up delay-100">
                         Academia de Inglés<br />
-                        <span className="text-white/60">en La Vaguada y Barrio del Pilar</span>
+                        {/* "Barrio del Pilar" is held together so the 700px cap breaks the
+                            line before it, not mid-place-name — otherwise the wrap orphans
+                            "Pilar" on a line of its own. */}
+                        <span className="text-white/60">
+                            en La Vaguada y{' '}
+                            <span className="whitespace-nowrap">Barrio del Pilar</span>
+                        </span>
                     </h1>
 
                     {/* Subheadline */}
@@ -62,6 +68,18 @@ export default function Hero() {
             .hero-eyebrow { margin-bottom: 1rem; }
             .hero-h1 { font-size: 3.75rem; margin-bottom: 1.25rem; }
             .hero-sub { font-size: 1rem; margin-bottom: 1.5rem; }
+          }
+
+          /* The headline is capped at 700px (xl:max-w) so it wraps before reaching the
+             director in the doorway, who stands at ~59-63% of the frame: the old
+             single-line "en La Vaguada y Barrio del Pilar" ran 820-984px wide and put
+             the word "Pilar" straight across his face. The source video is 16:9 and so
+             are most laptops, so there is no pan room to move him instead.
+             The cap costs a third headline line. Below 780px tall there is no room for
+             both that line and the location paragraph, so the paragraph gives way -
+             the headline and the two CTAs are what the hero has to deliver. */
+          @media (min-width: 1280px) and (max-height: 780px) {
+            .hero-sub { display: none; }
           }
 
           .animate-fade-in-up {
