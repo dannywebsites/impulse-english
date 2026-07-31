@@ -6,6 +6,8 @@ interface LazyVideoProps {
   title: string;
   thumbnailUrl?: string;
   className?: string;
+  /** 9:16 framing for YouTube Shorts — a vertical clip letterboxes badly in a 16:9 box. */
+  vertical?: boolean;
 }
 
 /**
@@ -20,13 +22,17 @@ interface LazyVideoProps {
  *
  * Usage: Place videos below the fold (after first viewport) for best performance
  */
-export default function LazyVideo({ videoId, title, thumbnailUrl, className = '' }: LazyVideoProps) {
+export default function LazyVideo({ videoId, title, thumbnailUrl, className = '', vertical = false }: LazyVideoProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Use custom thumbnail or YouTube's default high-quality thumbnail
-  const thumbnail = thumbnailUrl || `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  // Use custom thumbnail or YouTube's default high-quality thumbnail. Shorts need
+  // oardefault (the 1080x1920 original-aspect frame) — maxresdefault is a 16:9
+  // centre-crop of the vertical frame and cuts heads off inside a 9:16 box.
+  const thumbnail =
+    thumbnailUrl ||
+    `https://img.youtube.com/vi/${videoId}/${vertical ? 'oardefault' : 'maxresdefault'}.jpg`;
 
   // Intersection Observer for lazy initialization
   useEffect(() => {
@@ -59,7 +65,7 @@ export default function LazyVideo({ videoId, title, thumbnailUrl, className = ''
   return (
     <div
       ref={containerRef}
-      className={`relative aspect-video bg-zinc-900 rounded-xl overflow-hidden ${className}`}
+      className={`relative ${vertical ? 'aspect-[9/16]' : 'aspect-video'} bg-zinc-900 rounded-xl overflow-hidden ${className}`}
     >
       {!isLoaded ? (
         // Thumbnail placeholder with play button

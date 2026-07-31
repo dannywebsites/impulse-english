@@ -23,6 +23,17 @@ const videoTestimonials = [
   }
 ];
 
+// Vertical testimonials (YouTube Shorts). Kept apart from the 16:9 list because a 9:16
+// clip pillarboxes inside the landscape cards — these get their own portrait layout.
+const shortTestimonials = [
+  {
+    videoId: "ZK1UjWaghu0",
+    name: "Josh Mary",
+    title: "De la inseguridad a la confianza",
+    description: "Josh Mary llegó en septiembre hablando algo de inglés, pero con muchos vacíos de gramática y vocabulario y sin saber en qué punto estaba. En las clases nocturnas de B1 con JP ha encontrado un plan claro, las herramientas para mejorar y, sobre todo, la confianza para equivocarse y aprender."
+  }
+];
+
 const googleReviews = [
   {
     quote: "Luego de pasar por varias academias en toda Madrid esta fue la única que dio con el método y el contenido perfecto para aprender, tengo un C1 y es todo gracias a ellos.",
@@ -207,6 +218,33 @@ export default function TestimonialsPage() {
               </div>
             ))}
           </div>
+
+          {/* Vertical (Shorts) testimonials */}
+          {shortTestimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="card overflow-hidden mt-8 max-w-2xl mx-auto flex flex-col md:flex-row md:items-center"
+            >
+              <div className="w-full max-w-[280px] mx-auto p-6 md:mx-0 md:shrink-0">
+                <LazyVideo
+                  videoId={testimonial.videoId}
+                  title={`Testimonio de ${testimonial.name}`}
+                  vertical
+                />
+              </div>
+              <div className="px-6 pb-6 md:px-2 md:py-8 md:pr-8 flex-1">
+                <h3 className="text-xl font-bold text-zinc-900 mb-2 text-left">
+                  {testimonial.name}
+                </h3>
+                <p className="text-accent-blue font-medium text-sm mb-3 text-left">
+                  {testimonial.title}
+                </p>
+                <p className="text-zinc-600 text-left leading-relaxed">
+                  {testimonial.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
