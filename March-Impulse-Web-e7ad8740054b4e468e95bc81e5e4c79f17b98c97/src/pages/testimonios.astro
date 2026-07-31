@@ -2,6 +2,20 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TestimonialsPage from '../../pages/TestimonialsPage';
 import CookieBanner from '../../components/CookieBanner';
+import { generateVideoObjectSchema } from '../../utils/schemaData';
+
+// Student testimonial Short, embedded in the video section. Marked up so the clip is
+// eligible for video results — an embed on its own earns nothing.
+const schemas = [
+  generateVideoObjectSchema({
+    name: 'De la Inseguridad a la Confianza: La Historia de Josh Mary',
+    description: 'Josh Mary cuenta cómo pasó de tener vacíos de gramática y vocabulario a sentirse con confianza en inglés en las clases nocturnas de B1 con JP en Impulse English Academy, La Vaguada.',
+    embedUrl: 'https://www.youtube.com/embed/ZK1UjWaghu0',
+    thumbnailUrl: 'https://i.ytimg.com/vi/ZK1UjWaghu0/oardefault.jpg',
+    uploadDate: '2026-01-04',
+    duration: 'PT2M7S',
+  }),
+];
 ---
 
 <BaseLayout
@@ -9,6 +23,7 @@ import CookieBanner from '../../components/CookieBanner';
   description="Opiniones reales de alumnos de Impulse English Academy. 174+ reseñas 5 estrellas en Google. Testimonios de éxito con Cambridge y Linguaskill."
   keywords="opiniones academia inglés madrid, reseñas impulse english, testimonios alumnos cambridge, valoraciones clases inglés"
   canonical="/testimonios/"
+  schemas={schemas}
 >
   <TestimonialsPage client:idle />
   <CookieBanner client:idle />
