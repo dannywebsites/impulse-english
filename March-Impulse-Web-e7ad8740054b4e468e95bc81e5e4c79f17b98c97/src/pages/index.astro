@@ -111,8 +111,21 @@ const schemas = [generateFAQSchema(faqs), videoSchema];
     <!-- Navbar -->
     <Navbar client:load currentPath="/" />
 
-    <!-- Hero Content Layer -->
-    <div class="relative z-[25] w-full pointer-events-none xl:absolute xl:inset-0 xl:h-full xl:flex xl:flex-col xl:justify-center">
+    <!-- Hero Content Layer.
+         At xl+ the copy is centred inside the 100dvh cover, but the transparent navbar
+         sits over the top of that box and the NewsOverlay is absolutely pinned to the
+         bottom of it. Centring against the FULL height ignored both, so the copy grew
+         into the cards: on every common laptop height (720/768/800/810) the CTA row
+         overlapped the card strip and read as having fallen out of the video.
+         The box is now inset by the two fixed bands it must not touch — the navbar
+         (--hero-nav) and the card strip (--hero-cards) — so the copy centres in the
+         space that is genuinely free. Both are measured, not guessed; keep them in
+         sync if the navbar or the NewsOverlay card height changes. Hero.tsx tightens
+         the type below 860px tall, where even this free space is too small. -->
+    <div
+      class="relative z-[25] w-full pointer-events-none xl:absolute xl:inset-x-0 xl:top-[var(--hero-nav)] xl:bottom-[var(--hero-cards)] xl:flex xl:flex-col xl:justify-center"
+      style="--hero-nav: 141px; --hero-cards: 218px"
+    >
       <Hero />
     </div>
 

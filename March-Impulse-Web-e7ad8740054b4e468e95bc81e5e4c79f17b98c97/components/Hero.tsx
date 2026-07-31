@@ -18,7 +18,7 @@ export default function Hero() {
                 <div className="w-full flex flex-col items-center text-center px-6 xl:items-start xl:text-left xl:px-0 xl:pl-12 pointer-events-auto">
 
                     {/* Eyebrow. The rule is a desktop flourish; the label itself shows everywhere. */}
-                    <div className="flex items-center gap-4 mb-5 xl:mb-8 animate-fade-in-up">
+                    <div className="hero-eyebrow flex items-center gap-4 mb-5 xl:mb-8 animate-fade-in-up">
                         <span className="hidden xl:block h-px w-12 bg-white/60"></span>
                         <span className="text-white/90 font-medium tracking-[0.2em] text-xs xl:text-sm uppercase">
                             Centro Oficial Cambridge
@@ -26,13 +26,13 @@ export default function Hero() {
                     </div>
 
                     {/* Single H1 for SEO — the visible hero headline is the real H1 */}
-                    <h1 className="text-white text-3xl sm:text-5xl xl:text-7xl font-semibold tracking-tight leading-[1.1] xl:leading-[1.05] mb-6 xl:mb-8 animate-fade-in-up delay-100">
+                    <h1 className="hero-h1 text-white text-3xl sm:text-5xl xl:text-7xl font-semibold tracking-tight leading-[1.1] xl:leading-[1.05] mb-6 xl:mb-8 animate-fade-in-up delay-100">
                         Academia de Inglés<br />
                         <span className="text-white/60">en La Vaguada y Barrio del Pilar</span>
                     </h1>
 
                     {/* Subheadline */}
-                    <p className="hidden xl:block text-white/80 text-lg max-w-xl leading-relaxed mb-10 font-light text-left animate-fade-in-up delay-200">
+                    <p className="hero-sub hidden xl:block text-white/80 text-lg max-w-xl leading-relaxed mb-10 font-light text-left animate-fade-in-up delay-200">
                         A 6 minutos de Línea 9 (Barrio del Pilar), en el tranquilo Parque de la Alcazaba. Zona verde, parque infantil y aparcamiento. El entorno perfecto para aprender inglés.
                     </p>
 
@@ -52,6 +52,18 @@ export default function Hero() {
         </div>
 
         <style>{`
+          /* Short desktop viewports. At xl the hero must fit three fixed things into
+             100dvh: the transparent navbar (141px), this copy block (417px at full
+             size) and the NewsOverlay card band (218px) — 776px in total. A 1280x720
+             or 1366x768 laptop cannot hold all three, which is what pushed the CTA row
+             out of the video. Rather than let them collide, the copy tightens until it
+             fits: ~81px comes off, which clears every laptop height down to 720. */
+          @media (min-width: 1280px) and (max-height: 860px) {
+            .hero-eyebrow { margin-bottom: 1rem; }
+            .hero-h1 { font-size: 3.75rem; margin-bottom: 1.25rem; }
+            .hero-sub { font-size: 1rem; margin-bottom: 1.5rem; }
+          }
+
           .animate-fade-in-up {
             animation: fadeInUp 0.8s ease-out forwards;
             opacity: 0;
