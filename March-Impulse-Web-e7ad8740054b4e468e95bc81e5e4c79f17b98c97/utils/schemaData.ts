@@ -237,12 +237,15 @@ export function generateArticleSchema(props: ArticleSchemaProps) {
   };
 }
 
-// Generate VideoObject schema for a self-hosted video.
-// contentUrl/thumbnailUrl must be absolute — Google rejects relative media URLs.
+// Generate VideoObject schema for a self-hosted or YouTube-hosted video.
+// contentUrl/embedUrl/thumbnailUrl must be absolute — Google rejects relative media URLs.
 export interface VideoSchemaProps {
   name: string;
   description: string;
-  contentUrl: string;
+  /** Link to the media file itself. Self-hosted clips — omit for YouTube. */
+  contentUrl?: string;
+  /** Player URL, e.g. https://www.youtube.com/embed/ID. Use this for YouTube-hosted clips. */
+  embedUrl?: string;
   thumbnailUrl: string;
   uploadDate: string;
   /** ISO 8601 duration, e.g. PT13S */
@@ -252,12 +255,18 @@ export interface VideoSchemaProps {
 export function generateVideoObjectSchema(props: VideoSchemaProps) {
   const absolute = (u: string) => (u.startsWith('http') ? u : `${businessInfo.url.replace(/\/$/, '')}${u}`);
 
+  // Validate at build time — a VideoObject with neither URL is invisible to Google
+  if (!props.contentUrl && !props.embedUrl) {
+    throw new Error(`VideoObject "${props.name}": needs contentUrl (self-hosted) or embedUrl (YouTube).`);
+  }
+
   return {
     "@context": "https://schema.org",
     "@type": "VideoObject",
     name: props.name,
     description: props.description,
-    contentUrl: absolute(props.contentUrl),
+    ...(props.contentUrl && { contentUrl: absolute(props.contentUrl) }),
+    ...(props.embedUrl && { embedUrl: absolute(props.embedUrl) }),
     thumbnailUrl: absolute(props.thumbnailUrl),
     uploadDate: props.uploadDate,
     ...(props.duration && { duration: props.duration }),
