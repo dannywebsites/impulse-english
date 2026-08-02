@@ -115,7 +115,7 @@ export default function ExamPageLayout({
             <div className="flex items-center gap-4 mb-6 animate-hero-fade-up">
               <div className="w-8 h-px bg-white/40"></div>
               <span className="font-display text-white/70 text-xs uppercase tracking-[0.2em]">
-                {cefrLevel} · 100% aprobados
+                {cefrLevel} · 100% aprobados 24/25 (presentados)
               </span>
             </div>
 
