@@ -1,0 +1,210 @@
+# PROMPT 16: PAGE LAYOUT CONTRACT (Impulse English / barrio pages)
+## Presentation rules. The other prompts say WHAT to write; this says HOW it sits on the page.
+
+---
+
+## WHY THIS FILE EXISTS
+
+Prompts 1-10 specify word counts, required facts and tone. None of them say anything about
+layout. On the first rebuilt page (La Ventilla) that gap produced factually correct content
+in three dense paragraphs that nobody would read. Danny flagged it on review.
+
+Fifteen barrio pages are queued. A layout decided ad hoc gets repeated fifteen times, so it
+is specified here once.
+
+Reference implementation: `pages/ubicaciones/LaVentillaPage.tsx` (live 2026-08-02).
+
+---
+
+## RULE 0: THE DESIGN REFERENCE IS `/prueba-de-nivel-ingles/`
+
+Danny's chosen reference. Every barrio page uses its tokens. Do not invent new ones:
+small-caps labels, `<hr>`, dot lists and `font-light text-2xl` were tried on La Ventilla
+and read as foreign, because nothing else on the site uses them.
+
+**Section header block** (this exact three-part stack, every section):
+```jsx
+<div className="max-w-2xl mb-10">
+  <span className="eyebrow mb-4">[ETIQUETA CORTA]</span>
+  <h2 className="t-h2 text-zinc-900 mb-5">[TITULAR]</h2>
+  <div className="rule"></div>
+</div>
+```
+
+**The type scale** (defined in `src/index.css`, never hand-rolled):
+| Token | What it is |
+|---|---|
+| `t-display` | Playfair Display, clamp 2.5-4.75rem, -0.03em. H1 only. |
+| `t-h2` | Playfair Display, clamp 1.625-2.5rem, -0.02em, 600. |
+| `t-h3` | Playfair Display, clamp 1.25-1.625rem, -0.01em, 600. |
+| `t-lede` | clamp 1.06-1.25rem, 1.65 line-height. Lead paragraphs. |
+| `t-small` | Footnotes, card bodies. |
+| `eyebrow` | brand-red, uppercase, 0.18em tracking, 12px semibold. |
+| `eyebrow-light` | Same on dark surfaces. |
+| `rule` | `h-px w-16 bg-accent-blue/25`. Sits under every h2. |
+
+**Colours** (`tailwind.config.ts`): `accent-blue` #12477d, `brand-red` #ea4e59,
+`zinc-surface` #F4F4F5. Body copy `text-zinc-600`/`700`, headings `text-zinc-900`,
+footnotes `text-zinc-500`.
+
+**Fonts:** Playfair Display for headings via `font-serif` and the `t-*` tokens.
+Inter for everything else (`font-sans`, `font-display`). Never repoint `font-display`
+at Playfair: it is applied to ~355 elements and would reflow the whole site.
+
+**Cards:** `card p-7` (hairline border + brand-tinted `shadow-card`), `card-interactive`
+for hover lift, `card-quiet` on `zinc-surface`, `card-inverse` on dark. Never a flat grey
+`shadow-md`, which is the loudest generic-template tell.
+
+**Numbered steps** (reuse verbatim for routes and processes):
+```jsx
+<div className="card p-7">
+  <span className="inline-flex w-9 h-9 rounded-full bg-brand-red text-white
+                   items-center justify-center font-display font-bold mb-5">{n}</span>
+  <h3 className="t-h3 text-zinc-900 mb-2">{title}</h3>
+  <p className="t-small text-zinc-600">{body}</p>
+</div>
+```
+
+**NO SCROLL ANIMATION.** `/prueba-de-nivel-ingles/` contains zero `reveal-on-scroll`.
+`/sobre-nosotros/` animates nearly every block and Danny explicitly rejected that feel.
+Barrio pages carry none.
+
+---
+
+## RULE 1: THE ANSWER CAPSULE STAYS A PLAIN PARAGRAPH
+
+**Non-negotiable.** The 40-60 word answer capsule is rendered as a single `<p>`.
+
+- NOT inside a card, callout, box, list, table, accordion or `<blockquote>`.
+- NOT split across two paragraphs.
+- NO icon, badge or coloured background attached to it.
+
+Why: it is the block generative engines extract, Prompt-2 requires it to read naturally when
+spoken aloud, and wrapping it in decorative markup risks it not being crawled as prose.
+
+Styling that IS allowed, because it changes weight not structure:
+- Larger type (`text-xl md:text-2xl`), light weight, relaxed leading.
+- ONE `<strong>` around the single most citable fact (the distance, the price).
+- The phone number as an `<a href={NAP.phoneTel}>` with `whitespace-nowrap`.
+
+```jsx
+<p className="text-xl md:text-2xl text-zinc-800 leading-relaxed font-light">
+  ¿Buscas academia de inglés cerca de [BARRIO]? [Business] está{' '}
+  <strong className="font-semibold text-zinc-900">[LA CIFRA MÁS CITABLE]</strong>: [detalle].
+  [Credencial] desde [año], [diferenciador] y clases desde [precio].
+  Reserva tu prueba de nivel gratuita con JP:{' '}
+  <a href={NAP.phoneTel} className="text-accent-blue font-semibold hover:underline whitespace-nowrap">604 910 611</a>.
+</p>
+```
+
+---
+
+## RULE 2: EVERYTHING AFTER THE CAPSULE BREAKS INTO STRUCTURE
+
+Prose after the capsule is capped at **three sentences per block**. Beyond that it becomes a
+list, a grid or a table.
+
+Standard shape: `<hr />`, then a two-column grid.
+
+**Left column - the route.** Transport as a stop-by-stop list, not a sentence. Mark the stop
+where the reader gets off. A filled dot for the relevant stops, grey for the rest.
+
+**Right column - who comes from here.** Named colegios / IES as a checked list, then one
+short paragraph on opening hours framed around fitting after school or work.
+
+Both columns end with at most three sentences of supporting prose. Facts identical to the
+prose version; only the shape changes.
+
+---
+
+## RULE 3: EVERY PAGE ENDS WITH THE CONVERSION BLOCK
+
+Copied from the Barrio del Pilar pattern. Two columns, steps left, form right.
+
+```jsx
+<section className="section-lead px-6 surface-alt">
+  <div className="container mx-auto max-w-6xl">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 className="t-h2 text-zinc-900 mb-6">Pide Tu Prueba de Nivel</h2>
+        {/* 3 numbered steps: contacto -> prueba de nivel 25 min con JP -> empieza */}
+        <p className="text-zinc-900 font-bold text-lg mb-4">[PROXIMIDAD ESPECÍFICA]. Sin excusas.</p>
+        <p className="text-zinc-600">{NAP.fullAddress}</p>
+      </div>
+      <div>
+        <LeadForm
+          title="Reserva Tu Prueba Gratuita"
+          subtitle="Te contactamos en menos de 24h"
+          ctaText="Reservar Ahora"
+          source="[BARRIO-SLUG]"
+          showPhone={true} showAge={true} showLevel={true}
+          variant="refresh"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+### The one line that varies per barrio
+`[PROXIMIDAD ESPECÍFICA]` must be the page's own distance fact, never a generic line:
+- La Ventilla: "A una parada de metro desde Ventilla"
+- Barrio del Pilar: "Academia a 500 metros de Metro Barrio del Pilar"
+- Montecarmelo: "A 8 minutos en la L9 desde Montecarmelo"
+
+### `source` is mandatory and barrio-specific
+`source="la-ventilla"`, not `"barrio"` or the default. A generic source loses barrio
+attribution in GHL, which is the only way to tell which pages convert.
+
+⚠️ **Changing LeadForm props is a tracking-surface change.** Run `npm run verify:tracking`
+and require ALL PASS before shipping. This applies to every barrio page, not just the ones
+that touch analytics directly.
+
+---
+
+## RULE 4: NO EM DASHES OR EN DASHES
+
+No U+2014, no U+2013. Anywhere: body copy, headings, FAQ answers, alt text, code comments.
+Use a comma, a colon, a full stop, or restructure.
+
+Standing constraint, decision 2026-05-29. It was already on the books when the first La
+Ventilla build shipped with five of them, so check mechanically rather than by memory:
+
+```bash
+grep -n $'[—–]' pages/ubicaciones/[Page].tsx
+```
+
+Arrows (→) and middots (·) are fine. Hyphens in compounds are fine.
+
+---
+
+## RULE 5: IMAGE ORIENTATION MUST MATCH ITS CONTAINER
+
+18 of the 21 photos in `new fotos/` are portrait (3024x4032). Barrio pages use a full-bleed
+landscape hero.
+
+- Heroes come ONLY from landscape or square sources.
+- Portraits go in portrait or square containers (`aspect-[3/4]`, side-by-side splits, 3-up
+  grids). Never a full-width band: `object-cover` crops ~60% out and reads as "zoomed",
+  `object-fill` distorts faces.
+- Set `object-position` deliberately where faces sit near the frame edge.
+
+**Weight budget.** The hero is the LCP element and the site's 0.81s LCP is its single
+clearest advantage over Cambridge House (5.58s). Keep hero images near the existing ~70 KB.
+A 173 KB replacement was rejected on the La Ventilla build for exactly this reason: a better
+photo is not worth losing the one board we win outright.
+
+---
+
+## PRE-DELIVERY CHECKLIST
+
+- [ ] Answer capsule is a plain `<p>`, 40-60 words, one `<strong>`, phone linked
+- [ ] No prose block after it runs past three sentences
+- [ ] Route rendered as a list with the alighting stop marked
+- [ ] Local colegios / IES as a checked list, named
+- [ ] Conversion block present, with the barrio-specific proximity line
+- [ ] `source="<barrio-slug>"` on LeadForm
+- [ ] `verify:tracking` ALL PASS
+- [ ] Zero U+2014 / U+2013 in the file
+- [ ] Hero is landscape and near 70 KB; portraits in portrait containers
+- [ ] `geo-audit.py` scores the page >= 90 with every element >= 9
