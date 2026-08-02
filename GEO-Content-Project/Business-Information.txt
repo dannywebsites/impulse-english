@@ -1,0 +1,784 @@
+# BUSINESS INFORMATION — IMPULSE ENGLISH ACADEMY
+## Filled from the live site + repo sources, 2 August 2026
+## STATUS: DRAFT FOR DANNY'S REVIEW — do not generate content until approved.
+##
+## Provenance legend:
+##   [SITE]   = pulled from the repo / live site (verifiable today)
+##   [DANNY]  = supplied by Danny in session, 2 Aug 2026
+##   [DFSEO]  = DataForSEO competitor report, pulled 2 Aug 2026
+##   [GAP]    = missing, needs Danny
+##   [CONFLICT] = two sources disagree, needs a ruling
+
+---
+
+# SECTION 1: BUSINESS FUNDAMENTALS
+
+## Basic Information
+- Business Name (exact legal name): Impulse English Academy La Vaguada  [SITE: utils/napData.ts]
+- Business Name (local/casual version): Impulse English / Impulse English Academy  [SITE]
+- Website URL: https://impulse-english.es  [SITE]
+- Primary Phone Number: +34 604 910 611  [SITE]
+- WhatsApp: https://wa.me/34604910611  [SITE]
+- Email Address: info@impulse-english.es  [SITE]
+- Year Business Established: 2022  [SITE: NAP.foundingDate]
+- Years Serving Current Area: 4 (2022–2026, same La Vaguada address)  [SITE, derived]
+- Google Business Profile: https://share.google/GuRfJ3TjrnIIUhrdk  [SITE]
+- Google Maps CID: 13722173269762357371  [SITE]
+
+## Business Type
+- Industry/Category: Language education / English academy
+- Specific Business Type: Academia de inglés (English language school)
+- Schema.org Type: LanguageSchool / EducationalOrganization + LocalBusiness  [SITE: utils/schemaData.ts]
+
+## Primary Service (what the location pages sell)
+- Service Name: Clases de inglés presenciales en grupos reducidos + clases particulares
+- Problem it solves: Spanish students who "understand English but can't speak it", and
+  families/professionals who need a certified Cambridge or Linguaskill level for school,
+  university (EBAU), oposiciones or work.
+- Ideal customer: families in Fuencarral-El Pardo / Madrid Norte with children 2–17, and
+  adults 18+ needing B1/B2/C1 certification or business English.
+- Differentiator: 100% Cambridge pass rate, groups capped at 7–10, two named owner-teachers
+  who teach in person, methodology built on named research (Krashen, Ebbinghaus, Vygotsky,
+  Canale & Swain).
+
+## Credentials & Trust Signals  [SITE: NAP.credentials]
+- Official Cambridge Preparation Centre (Centro Preparador Oficial Cambridge)
+- Official Linguaskill Centre
+- Official Great Little People Centre (infantil methodology, ages 2–5)
+- Official Partner of ESIC Idiomas
+- Business licence number: [GAP — Spain doesn't require a trade licence number the way US
+  states do; if there's a CIF/registro you want published, give it. Otherwise we omit
+  rather than invent.]
+- Insurance: [GAP]
+- Awards/recognition: [GAP]
+
+## Service Guarantees
+- 100% pass rate, Cambridge B2 First, 2024/25 and 2025/26  [SITE + DANNY]
+- Free 25-minute prueba de nivel with JP  [SITE: /prueba-de-nivel-ingles/]
+- Trial class (1h) retained for Infantil only  [SITE]
+- Satisfaction guarantee / refund policy: [GAP]
+- Warranty equivalent: [N/A for this industry]
+
+---
+
+# SECTION 2: LOCATIONS & SERVICE AREAS
+
+## Primary Location (single physical centre)  [SITE: utils/napData.ts]
+- Street Address: Av. de El Ferrol, 22
+- Neighborhood: La Vaguada, Barrio del Pilar
+- District: Fuencarral-El Pardo
+- Postal Code: 28029
+- City: Madrid
+- Region: Comunidad de Madrid
+- Country: ES
+- Latitude: 40.4743948   ← real GBP pin, verified 2026-07-23
+- Longitude: -3.7059009  ← real GBP pin. NOTE: the map EMBED centre (-3.7084812) is the
+  viewport centre, NOT the pin. Never copy the embed value into schema.
+- Phone: +34 604 910 611
+- Email: info@impulse-english.es
+
+## Hours of Operation  [SITE: NAP.openingHours]
+- Monday:    10:00 – 21:30
+- Tuesday:   15:30 – 21:30
+- Wednesday: 10:00 – 21:30
+- Thursday:  15:30 – 21:30
+- Friday:    13:30 – 19:30
+- Saturday:  Cerrado
+- Sunday:    Cerrado
+- Holiday hours: [GAP]
+- 24/7 emergency: N/A
+
+## Transit  [SITE: NAP.metro / NAP.busLines]
+- Metro: Herrera Oria (L9), Barrio del Pilar (L9), Peñagrande (L7)
+- Bus lines: 42, 49, 67, 83, 126, 128, 132, 133, 134, 137, 147
+- Night bus: N23
+
+## Service Area Details — the 10 barrio pages
+Real travel data already on the site (components/LocationsSection.tsx). This is the
+strongest local signal we own and it is currently under-used on the individual pages.
+
+### 1. Barrio del Pilar
+- Page: /academia-ingles-barrio-del-pilar/
+- Relationship: the academy IS in Barrio del Pilar. Walking distance.
+- Metro: Barrio del Pilar (L9)
+- Local anchors: [GAP — need named colegios/IES, streets, landmarks]
+
+### 2. La Vaguada
+- Page: /academia-ingles-la-vaguada/
+- Relationship: the academy IS at La Vaguada. Walking distance from the centro comercial.
+- Local anchors: Centro Comercial La Vaguada (Madrid-2)
+- Longest/most-developed page on the site (757 lines vs ~560 for the others)
+
+### 3. Peñagrande
+- Page: /academia-ingles-penagrande/
+- Metro: L9, ~3 min · Car: Av. de Peñagrande → Av. de El Ferrol, 3–5 min
+- Also on L7 (Peñagrande station, 8 min per LocationsSection)
+
+### 4. Mirasierra
+- Page: /academia-ingles-mirasierra/
+- Metro: L9, ~4 min · Car: Fermín Caballero → Av. de El Ferrol, 5–8 min
+
+### 5. Montecarmelo y Las Tablas
+- Page: /academia-ingles-montecarmelo-las-tablas/
+- Metro: L9, ~8 min · Car: Av. de la Ilustración → Av. de El Ferrol, 10–12 min
+
+### 6. Plaza Castilla
+- Page: /academia-ingles-plaza-castilla/
+- Metro: L9, ~12 min · Bus 42, ~15 min · Car: Paseo de la Castellana, 10–15 min
+
+### 7. Tetuán
+- Page: /academia-ingles-tetuan/
+- Bus 147 from Tetuán y Valdeacederas, ~8 min · Car: Av. de la Paz, 8–12 min
+
+### 8. La Ventilla
+- Page: /academia-ingles-la-ventilla/
+- Current live claim: "A 15 min de La Ventilla" — [GAP: unsourced, no route given.
+  Needs a real metro/bus/car route like the others.]
+
+### 9. La Paz
+- Page: /academia-ingles-la-paz/
+- Route data: [GAP — not in LocationsSection]
+
+### 10. Cuatro Torres
+- Page: /academia-ingles-cuatro-torres/
+- Route data: [GAP — not in LocationsSection]
+
+### Missing per barrio for ALL TEN — the research job
+- Named colegios / IES / guarderías in each barrio (biggest local signal for a school)
+- Named streets, plazas, parks, landmarks
+- Local character (which barrios are families vs young professionals vs new-build)
+- Students currently attending from that barrio (count, even approximate)
+- [GAP] Any barrio-specific pricing, timetable or group differences — probably none,
+  but confirm, because "same price everywhere" is itself a fact worth stating.
+
+### Barrios with NO page yet (phase 2, per Danny)
+Fuencarral, Chamartín, Valdezarza, Arroyo del Fresno, Herrera Oria, Begoña,
+Valdeacederas, Sanchinarro  — [GAP: which of these do you actually draw students from?]
+
+---
+
+# SECTION 3: TEAM MEMBERS
+
+## Team Member 1 — JP  [SITE: pages/NuestroEquipoPage.tsx + utils/napData.ts]
+- Full Name: JP Paul (goes by "JP" publicly; full name carried in schema only)
+- Job Title: Director de Estudios y Cofundador
+- Years of Experience: 10+ teaching English
+- Background: lived 10 years in Ireland before moving to Madrid
+- Specialisation: Cambridge exams + early language acquisition (adquisición temprana)
+- Responsibilities: runs the day-to-day academic operation; directs the Infantil
+  programme; supervises adult Cambridge prep; delivers the free prueba de nivel
+- Named in reviews by: Lidia Ramirez, Lucia Salmerón, María Comas, Jorge Martinez,
+  Clara Sánchez, Yurisbeth Rivero, Karina Garcia, Rosa E., Víctor RC, Josh Mary
+- Photo available: Yes  [SITE]
+- Formal teaching qualification: **DO NOT PUBLISH ANY QUALIFICATION FOR JP**
+  [DANNY, 2 Aug 2026 — explicit instruction]
+  → JP's authority on the pages is built from what we CAN say: 10+ years teaching, 10 years
+    in Ireland, Director de Estudios, Cambridge exam specialist, early-acquisition
+    specialist, he personally answers the WhatsApp and runs the prueba de nivel, and he is
+    named by name in a large share of the 180 five-star reviews. That is plenty — named
+    person + verifiable behaviour beats a certificate acronym anyway.
+  → The generic site line "certificaciones Cambridge" stays as-is; do not make it specific.
+
+## Team Member 2 — Danny Fitzpatrick  [SITE]
+- Full Name: Danny Fitzpatrick
+- Job Title: Cofundador
+- Qualifications: profesor titulado de educación física e idiomas; licenciado en
+  Marketing por ESIC University, Madrid
+- Specialisation: inglés de negocios / business English, adults, conversación
+- Background: Irish, living in Madrid 12 years
+- LinkedIn: https://www.linkedin.com/in/danieljohnfitzpatrick/
+- Named in reviews by: Lidia Ramirez, Jorge Martinez, Karina Garcia, Gloria RM,
+  Mª Del Espino Monedero García, Anna Farney
+- Photo available: Yes  [SITE]
+
+## Team Member 3 — EXCLUDED
+[DANNY, 2 Aug 2026: "Do not mention a who. Keep her out."]
+→ No third teacher is named, profiled, or referenced anywhere in generated content.
+→ The named-teacher set is exactly **JP and Danny Fitzpatrick**. Nobody else.
+→ ONE CONSEQUENCE TO HANDLE: the Khadija Ziyati review currently on the site names
+  "la profesora Ahu" in its quote. Under the review-allocation rule that review would
+  otherwise be eligible for a barrio page. **Exclude it from the allocation pool** — do not
+  edit a customer's words, just don't place that review. Same treatment for any other
+  review naming a teacher outside the approved set.
+  → This drops the usable pool from 20 to 19. Still comfortably 2 per page across ten.
+
+---
+
+# SECTION 4: PRICING & TRANSACTIONAL DETAILS
+## [DANNY: approved for publication on barrio pages AND for mirroring into Service schema]
+
+Source: pages/PreciosPage.tsx (rolled to 2026 in commit fd79385)
+
+| Course      | Ages         | Price          | Detail                                                        |
+|-------------|--------------|----------------|---------------------------------------------------------------|
+| Infantil    | 2–5 años     | Desde 64 €/mes | 1×60 min/sem: 64 €/mes · 2×60 min/sem: 99 €/mes               |
+| Primaria    | 6–12 años    | 83 €/mes       | o 239 €/trimestre con descuento por pago trimestral           |
+| Secundaria  | 13–17 años   | Desde 87 €/mes | S1–S3: 87 €/mes o 251 €/tri · S4–S6: 91 €/263 € · S7–S8: 93 €/269 € |
+| Adultos     | Todos niveles| 94 €/mes       | —                                                              |
+| Particulares| Todas edades | **Desde 29 €/hora** | [DANNY 2 Aug — one-to-one, per HOUR]                    |
+| Online      | Todas edades | **Desde 29 €/hora** | [DANNY 2 Aug — same rate as presencial]                 |
+
+→ Both go into `Service` schema `offers` with `priceCurrency: "EUR"` and
+  `unitText: "HOUR"`. "Clases particulares de inglés desde 29 €/hora" is now a real,
+  citable answer to "¿cuánto cuesta una clase particular de inglés en Madrid?" — a query
+  no local competitor answers with a number.
+→ NOTE: the overall `priceRange` in napData.ts is "€64 - €99/mes", which no longer covers
+  the whole offer now that per-hour pricing is published. Needs widening.
+
+- Overall monthly price range: **64 – 99 €/mes** — CONFIRMED CORRECT [DANNY, 2 Aug 2026]
+  - 99 €/mes = **Infantil, 2 clases de 60 min/semana** (the overall ceiling)
+  - 94 €/mes = **Adultos** (the ceiling for adult courses specifically)
+  → napData.ts `priceRange: "€64 - €99/mes"` is right and stays. But it no longer covers
+    the whole offer now that per-hour pricing is published — widen it to span both the
+    monthly and hourly bands, e.g. "€29/hora – €99/mes".
+  → When writing, never blur these: "desde 64 € al mes" for the overall entry point,
+    "94 € al mes" when the sentence is about adult courses. Quoting 99 € on an adults
+    page would be wrong.
+- What the monthly fee includes: weekly classes in small groups, teaching material,
+  Cambridge mock exams (simulacros), personalised progress tracking, online resources
+- What costs extra: matrícula (enrolment) and the textbook; official Cambridge/Linguaskill
+  exam fees are separate
+- Discounts: quarterly-payment discount; family discount for more than one child enrolled
+- Matrícula: 45 €  [DANNY — APPROVED FOR PUBLICATION]
+- Textbook: máximo 40 €  [DANNY — APPROVED FOR PUBLICATION]
+  → Publishing these is a genuine differentiator: no local competitor states either.
+    It also lets us answer "¿cuánto cuesta en total el primer mes?" with a real number
+    (e.g. Primaria: 83 € + 45 € matrícula + hasta 40 € de libro = 168 € el primer mes,
+    83 €/mes después). That total-cost answer capsule is a strong AI-citation play.
+- Free level test: yes — 25-minute prueba de nivel with JP, free, no obligation
+- Response time to enquiries: under 24 hours  [SITE: PreciosPage copy]
+- Preferred contact: WhatsApp (+34 604 910 611), then form, then phone
+- Group size: máximo 7–10 alumnos por clase (adults capped at 10)  [SITE]
+
+---
+
+# SECTION 5: TESTIMONIALS & REVIEWS
+
+## Overall Review Profile  [RESOLVED — pulled live 2026-08-02]
+- Google Rating: 5.0
+- Google Review Count: **180**  ← VERIFIED from the live Google knowledge panel
+  ("180 reseñas", place_id ChIJG7G2oAkpQg0Re7iLuuLzbr4, DataForSEO SERP 2026-08-02).
+  Danny was right; napData.ts's 178 is stale and must be updated to 180.
+- Rating distribution: 100% five-star (DataForSEO business listing showed 174/174 at its
+  25 June crawl — zero 1–4 star reviews ever). "180 reseñas, todas de 5 estrellas" is
+  therefore a true and unusually strong claim.
+- Facebook: 5.0 from 24 votes — a SECOND review platform, currently absent from schema.
+  Adding it is free E-E-A-T.
+- Yelp: none.
+- Total GBP photos: 68
+
+## Local competitor ratings — the citable comparison  [DataForSEO, 2026-08-02]
+| Academy | Rating | Reviews |
+|---|---|---|
+| **Impulse English Academy** | **5.0** | **180** |
+| Cambridge House | 4.9 | 119 |
+| Cambridge English | 4.9 | 59 |
+| English Academy IberEnglish | 4.9 | 36 |
+| Eurolenguas Academia de Idiomas | 5.0 | 22 |
+→ Impulse leads the local set on BOTH rating and volume. "La academia de inglés mejor
+  valorada de la zona: 5,0 sobre 180 reseñas" is defensible and no competitor can match it.
+
+## What reviewers actually talk about  [GBP place_topics, real review text]
+fun classes (15) · methodology (13) · improving english (10) · grammar (4) ·
+dynamic classes (4) · easy-to-follow classes (3) · intensive course (3) ·
+conversation classes (2) · adapted course (2) · pleasant teachers (2)
+→ Per the GEO consensus principle, this IS the vocabulary AI uses to describe you.
+  Page copy should echo these words — "dinámicas", "método", "divertidas" — because they
+  are corroborated by 180 independent reviews, not marketing claims.
+- Consent: [DANNY] FULL consent to use full names in testimonials.
+- Recurring themes in reviews: named teachers (JP, Danny) by name; children *wanting* to
+  go; adaptation to the individual student; "ambiente familiar"; conversation-led classes;
+  Cambridge exam results; "probé varias academias y ésta es la única que…".
+
+## Written testimonials on file (20, all with full names, all Google reviews)  [SITE]
+1.  Cesar Seneca Tellechea Corral — Local Guide — got a C1, tried several Madrid academies first
+2.  Lidia Ramirez — madre de alumnos — children passing English, names Danny and J.P.
+3.  Lucia Salmerón — alumna since age 8, now 17 — taught by JP and Dani, Cambridge prep
+4.  María Comas — Local Guide — intensivo with JP, had "un poquito de trauma" with English
+5.  Jorge Martinez — padre de alumna — praises Danny and JP, timetable availability
+6.  Khadija Ziyati — alumna adulta — names profesora Ahu
+7.  Clara Sánchez — alumna — under a year, credits JP for final exam
+8.  Yurisbeth Rivero Chirinos — madre — JP supported her daughter through emigration
+9.  Anna Farney — alumna — English-language review
+10. Karina Garcia — alumna adulta — names Philippe and Danny
+11. María Jesús Zuazo Sahagún — madre — daughter's spoken + written English improved
+12. Rosa E. — madre — son now attends willingly after several other academies
+13. Mª Del Espino Monedero García — Local Guide — conversation classes with Danny
+14. Felix Maria — alumno
+15. Pepi Moral Ventura — madre de alumnos
+16. Lorena AP — Local Guide
+17. Gonzalo Tarascón — Local Guide — got his C1, opened job doors
+18. Víctor RC — Local Guide — thanks JP for exam help
+19. Marina Penerbosa — Local Guide — son progressed, play-plus-academics method
+20. Gloria RM — madre de alumnas — found the academy "en el barrio", names Philip and Dani
+
+## Review-to-page allocation strategy  [DANNY, 2 Aug 2026]
+Danny: "There's no barrio that each testimonial customer lives in. They're from all over.
+Most of them don't mention any barrio, but you can put different reviews on each page."
+
+→ RULE: 20 named reviews ÷ 10 barrio pages = 2 unique reviews per page, zero repeats.
+   No review may appear on two barrio pages. No review gets a barrio attributed to it
+   that the customer didn't state — we differentiate by ALLOCATION, not by invention.
+→ Allocate by fit, not at random: parent-of-primary-child reviews to the family barrios
+   (Montecarmelo/Las Tablas, Mirasierra), adult/career reviews to the commuter barrios
+   (Plaza Castilla, Cuatro Torres, Tetuán), Cambridge-result reviews to the pages that
+   lead on certification.
+→ This alone moves the Testimonials row of the scorecard from ~4 to ~8: full names,
+   specific problems, specific results, and no duplication across pages.
+
+---
+
+# SECTION 6: CASE STUDIES  [DANNY: approved · TRANSCRIBED 2 Aug 2026]
+
+Transcripts pulled from YouTube captions via DataForSEO. Facts below are the student's
+own words — nothing inferred.
+
+## Case Study 1 — Sergio  [video: yMLWvuW5hOQ]
+- Age: 30
+- Outcome: living in DUBLIN for 2 years, working as an insurance policy analyst and
+  administrator at a Dublin company
+- Starting point: "Como todos los españoles, el inglés siempre ha sido una gran parte de
+  nuestra educación. Sin embargo, siempre he tenido una gran carencia de confianza para
+  hablar en inglés." — school English, no speaking confidence
+- The block: "la barrera del idioma siempre me había impedido dar este paso" — the
+  language barrier stopped him emigrating for years
+- Impulse's role: "tanto Dani como JP han sido un gran apoyo para mí, guiándome y
+  asesorándome en cada momento. Gracias a ellos, he podido ganar la confianza que
+  realmente necesitaba"
+- HARD NUMBER: "En los primeros meses tuve cuatro entrevistas con diferentes empresas"
+  — 4 job interviews in his first months in Dublin
+- Closing: "ha sido una de las mejores decisiones de mi vida y realmente ha cambiado mi vida"
+- ANGLE: adults / career / moving abroad. Best fit for Adultos and the commuter barrios.
+- [GAP] No CEFR level or certificate named. Do NOT claim one.
+
+## Case Study 2 — Daniel de la Peña  [video: ZiEizGt2DkI]
+- Duration with the academy: "cerca de un año y medio" (~18 months) — HARD NUMBER
+- Goal: "acceder a oportunidades laborales en el extranjero y en países de habla inglesa"
+- Outcome, his words: "es algo que conseguí… cumplió con mis expectativas"
+- What he valued: "trato personalizado y sobre todo profesionalidad y compromiso para con
+  tu proceso de aprendizaje y tu situación de partida"
+- Names Danny Fitzpatrick and JP directly
+- OUTCOME CONFIRMED [DANNY, 2 Aug 2026]: **"He is now a qualified teacher and teaching
+  full-time primary school English."**
+  → The existing site blurb is accurate, not overstated. It can be SHARPENED with the
+    detail Danny just supplied: not merely "profesor cualificado" but teaching primary
+    school English full-time — a concrete, verifiable outcome.
+  → Strongest available framing: 18 months at the academy → now teaching primary school
+    English full-time. Duration + outcome, both from named sources. This is the best
+    case study in the set and should anchor the pages that lead on adult/career results.
+- [GAP] Still no CEFR level or certificate named by Daniel himself. Do not claim one —
+  the career outcome is the proof, and it is stronger than a certificate acronym.
+
+## Case Study 3 — Josmary  [video: ZK1UjWaghu0, 9:16 Short]
+- [NAME RESOLVED — Danny, 2 Aug 2026] Her name is **Josmary**, not "Josh Mary".
+  She is a WOMAN and speaks in the feminine throughout the video ("soy muy afortunada",
+  "siempre da su mejor versión a nosotras").
+  → FIX REQUIRED on the live site before we build on it: `pages/TestimonialsPage.tsx`
+    currently has `name: "Josh Mary"` and a description written as though she were male
+    ("Josh Mary llegó en septiembre hablando algo de inglés…"). Both the spelling and the
+    gendered wording need correcting. This is a real person on a public page, so it gets
+    fixed first, independently of the GEO work.
+- Started: September (of the current academic year)
+- Level: B1, evening classes, with JP — HARD FACTS
+- Starting point, her words: "yo hablaba el inglés, lo entendía y escribía un poco, pero
+  tenía muchísimos vacíos de gramática, de vocabulario y de no saber en qué punto estaba"
+- What she values: JP's "creatividad infinita", interactive and dynamic teaching, being
+  challenged to apply what she knows, and "la confianza de equivocarnos"
+- Outcome: "he conseguido sentirme con más confianza en tener un plan claro de qué es lo
+  que necesito mejorar, cómo hacerlo, las herramientas para hacerlo, y el apoyo de JP"
+- Notable: the goal itself shifted — "la meta a la que quería llegar inicialmente ha
+  perdido importancia y le he dado más importancia al proceso y al camino"
+- "Sí recomendaría a Impulse English 100%, no tengo duda de eso."
+- ANGLE: adult B1, evening classes, confidence. Best fit for the working-adult barrios.
+- [GAP] Has she sat the B1 exam yet?
+
+---
+
+# SECTION 7: FAQs
+The site already carries FAQ blocks on /precios/, /preguntas-frecuentes/, every course
+page, every exam page, and every barrio page (wired through generateFAQSchema()).
+
+Confirmed answers usable as source material  [SITE: PreciosPage]:
+- Cost: 64–99 €/month depending on course, weekly frequency and modality; quarterly
+  discount available.
+- Matrícula and textbook are extra, on top of the monthly fee.
+- Fee includes: weekly classes, exam simulacros, personalised tracking, online resources.
+- Discounts: quarterly payment; families with more than one child enrolled.
+- Cambridge preparation is included in the regular courses — only the official exam fee
+  is separate, varying by level.
+- Free 25-minute prueba de nivel available before enrolling.
+- Teachers: all have specific EFL training, Cambridge certifications, demonstrated
+  experience across all ages.
+
+- [GAP] Every current barrio FAQ is a general FAQ with a barrio name pasted in. The
+  research job is to produce genuinely barrio-specific Q&As — e.g. "¿Cuánto se tarda desde
+  Montecarmelo a la academia?" answered with the real L9 8-minute route.
+
+---
+
+# SECTION 8: COMPETITIVE LANDSCAPE  [DFSEO, pulled 2 Aug 2026]
+
+## Competitor 1 — Cambridge House (cambridge-house.com) — THE REAL THREAT
+- Est. organic traffic: 7,674/mo (Impulse: 230)
+- Top-10 keywords: 139 (Impulse: 7)
+- Referring domains: 520 — but 437 are nofollow (Impulse: 9)
+- Domain rank: 304/1000 (Impulse: 70)
+- Ranks #4 for "academias de ingles madrid" (1,300/mo) where Impulse sits at #27
+- Runs a content subdomain, talking.cambridge-house.com, that out-earns its own homepage.
+  One page on gerunds vs infinitives pulls 1,044 est. visits/month — 4.5× Impulse's
+  entire site.
+- Has a La Vaguada page: /academia-de-ingles-la-vaguada/ — leads with a five-star quote
+- WEAKNESS: LCP 5.58s, Lighthouse 65. Impulse LCP 0.81s, Lighthouse 100.
+- What we do better: speed, real named owner-teachers, 100% pass rate, small groups.
+
+## Competitor 2 — Kids&Us (kidsandus.es) — BIG, BUT NOT BEATING US ON SEARCH
+- Est. traffic 15,944/mo — but it's brand demand, not search craft ("kids and us" 22,200/mo
+  at #1, a student login screen, a merch shop)
+- Referring domains 1,528, spam score 7 — the cleanest link profile of the four
+- Has a La Vaguada page: /es/academias-ingles/la-vaguada
+- Domain rank 397/1000. LCP 1.36s, Lighthouse 81.
+- What we do better: exam certification outcomes, adults (they're a children's franchise).
+
+## Competitor 3 — Junior English (juniorenglish.net) — NOT A COMPETITOR
+- 11 ranked keywords, 28 est. visits. Sells school years in Ireland (Waterford, Tramore),
+  not Madrid classes. Spam score 36. Impulse already outranks it ~8×.
+
+## Where Impulse actually stands  [DFSEO]
+- Est. traffic: 230/mo, up from 109 in February — quadrupled in six months
+- Top-10 keywords: 7 (11 by the July trend line), from 1 in February
+- Referring domains: 9 — the hard ceiling on everything else
+- Lighthouse 100, LCP 0.81s, CLS 0.001, TBT 0 — the one board Impulse wins outright
+- Top page is the homepage at 109 est. visits; #2 is /blog/recursos-pdf-linguaskill/ at 43
+
+## Highest-opportunity gap keywords  [DFSEO — OpportunityScore = Vol × PosGap ÷ KD]
+| Keyword                       | Vol    | KD  | Impulse | Best rival        |
+|-------------------------------|--------|-----|---------|-------------------|
+| academia ingles               | 8,100  | 11  | —       | Cambridge House 13|
+| juegos de ingles              | 2,400  | 14  | —       | Kids&Us 8         |
+| escuelas de ingles            | 1,300  | 7   | —       | Cambridge House 18|
+| inglés cerca de mí            | 3,600  | 12  | 53      | none rank         |
+| clases de ingles              | 3,600  | 26  | 56      | Cambridge House 15|
+| clase de ingles madrid        | 480    | 4   | 52      | none rank         |
+| campamento en ingles          | 720    | 12  | —       | Kids&Us 17        |
+| curso de ingles madrid        | 880    | 11  | 44      | none rank         |
+| cursos de ingles madrid       | 880    | 31  | 52      | Cambridge House 8 |
+| academias de ingles madrid    | 1,300  | 26  | 27      | Cambridge House 4 |
+| escuelas de ingles en madrid  | 210    | 8   | 50      | none rank         |
+| academia ingles madrid        | 720    | 45  | 45      | none rank         |
+| academias de idiomas madrid   | 210    | 26  | 58      | none rank         |
+| condicionales en ingles       | 14,800 | n/a | —       | Cambridge House 12|
+| present perfect continuous    | 8,100  | n/a | —       | Cambridge House 7 |
+
+- [NOTE] "inglés cerca de mí" sits at #53 despite the cerca-de-mí pillar shipping
+  2026-07-23. Either it hasn't matured yet or the pillar isn't the page Google picked.
+  Worth checking in GSC before we build anything new for that term.
+
+## Your Unique Differentiators
+1. 100% Cambridge B2 First pass rate, 2024/25 and 2025/26 — [GAP: cohort size? "100% of 3"
+   and "100% of 40" are very different claims. AI systems reward the number.]
+2. Groups capped at 7–10 (adults max 10)
+3. The two founders teach in person — named, photographed, reviewed by name
+4. Official Cambridge + Linguaskill + Great Little People centre, ESIC Idiomas partner
+5. 5.0 stars across 178 Google reviews — no other local academy comes close on rating
+6. Methodology grounded in named research (Krashen, Ebbinghaus, Vygotsky, Canale & Swain)
+7. Site loads in 0.81s vs Cambridge House's 5.58s
+
+---
+
+# SECTION 9: BRAND VOICE & STYLE
+- Language: Peninsular Spanish (Spain)
+- Address form: TÚ  [DANNY, 2 Aug 2026]
+  [CONFLICT] Root CLAUDE.md mandates vosotros. Danny's ruling in session is "tú".
+  Live pages are currently mixed (10 "vuestra" vs 9 "puedes" across the barrio pages).
+  → Proposal: tú wins, CLAUDE.md gets updated, and the mixed pages get normalised.
+- Tone: warm, close, plain-spoken, confident; no corporate padding
+- Words to avoid (Spanish anti-pattern blacklist, to be finalised):
+  "tu academia de confianza", "líderes en", "amplia experiencia", "profesionales
+  cualificados", "la mejor academia", "atención personalizada" as an empty claim,
+  "no dudes en contactarnos", "estamos aquí para ayudarte"
+- Code/paths/schema keys stay in English.
+
+---
+
+# SECTION 10: ADDITIONAL INFORMATION
+
+## Social Proof  [SITE: NAP.social]
+- Instagram: @impulse_english_lavaguada
+- Facebook: /impulseenglishlavaguada
+- TikTok: @impulse_english_lavaguada
+- X: @impulse_vaguada
+- LinkedIn: company/101859096
+- YouTube: @Impulse_English_lavaguada
+
+## Community Involvement
+- [GAP] Local sponsorships, AMPA relationships, colegio partnerships, barrio events.
+  The competitor report flags AMPA newsletters and Barrio del Pilar business associations
+  as the top referring-domain opportunity — and any of it is also page content.
+
+## Media & Press
+- [GAP]
+
+---
+
+# SECTION 11: HOW WE WORK / SERVICE PROCESS
+
+- First contact: WhatsApp (+34 604 910 611) is the primary channel; also web form and phone
+- Who answers: JP  [DANNY, 2 Aug 2026]
+  → This is a citable GEO fact and beats every competitor's contact form. Usable as:
+    "Escribes al WhatsApp y te contesta JP, el director de estudios — no un formulario
+    ni un centro de llamadas." Put it in the How We Work section of every barrio page.
+- Response time: under 24 hours  [SITE]
+- Next step: free 25-minute prueba de nivel with JP  [SITE]
+- Infantil keeps a separate 1-hour trial class  [SITE]
+- Level placement: [GAP — what happens in the 25 minutes? What does the student get at the
+  end — a CEFR level, a written plan, a recommended course?]
+- Group assignment: [GAP — how do you place a student into a group mid-year?]
+- Progress tracking: personalised progress tracking + Cambridge simulacros  [SITE]
+- Enrolment: matrícula + textbook payable separately  [SITE]
+- Lead source tag for the CRM: 'reservar-clase' (kept for continuity)  [SITE/memory]
+
+---
+
+# SECTION 12: WHY CHOOSE US (with proof)
+
+| Claim | Proof | Status |
+|---|---|---|
+| 100 alumnos aprobados en Cambridge | Danny, 2 Aug 2026 | [DANNY — publishable] |
+| Todos partían de un nivel muy básico | Danny, 2 Aug 2026 | [DANNY — publishable] |
+| +1.000 alumnos formados desde 2023 | Danny, 2 Aug 2026 | [DANNY — publishable] |
+| 100% Cambridge B2 First pass rate | 2024/25 and 2025/26 | [cohort size unknown] |
+| 5.0 stars, 178 Google reviews | live GBP | [CONFLICT: 178 vs Danny's 180] |
+| Groups of 7–10 max | published policy | [SITE] |
+| Founders teach in person | JP + Danny bios, named in ~15 reviews | [SITE] |
+| Official Cambridge centre | Centro Preparador Oficial | [SITE] |
+| Official Linguaskill centre | | [SITE] |
+| Great Little People centre | infantil 2–5 | [SITE] |
+| ESIC Idiomas partner | | [SITE] |
+| Since 2022 in Barrio del Pilar | 4 years, same address | [SITE] |
+| Transparent pricing | 64–99 €/mes published | [SITE] |
+| Fastest local site | LCP 0.81s vs 5.58s | [DFSEO] |
+| Matrícula 45 € y libro máx. 40 € | published, transparent | [DANNY] |
+| JP contesta el WhatsApp en persona | | [DANNY] |
+
+## Track record — the numbers Danny approved  [DANNY, 2 Aug 2026]
+- **Over 960 students** have passed through the academy  ← use this figure
+  (Danny first said "over 1,000", then corrected to "over 960". 960 is the conservative,
+  defensible number, so it is the one we publish. "Más de 960 alumnos" also reads as a
+  real counted figure rather than a rounded marketing number — which is the point.)
+- 100 students have passed their Cambridge exam
+- All of them started from a very basic level of English
+
+CAREFUL — these are three separate claims and must not be merged into one:
+  ✓ "Más de 1.000 alumnos formados desde 2023"
+  ✓ "100 alumnos han aprobado su examen de Cambridge con nosotros"
+  ✓ "100% de aprobados en Cambridge B2 First (2024/25 y 2025/26)"
+  ✗ NOT "100% de 1.000 alumnos" — the cohort size behind the 100% is not known, and
+    inventing a denominator is exactly the kind of unverifiable claim that costs
+    citations. Where a denominator is needed, use the 100 passes, which is a real count.
+
+---
+
+# SECTION 13: EDUCATION INDUSTRY PACK (replaces the US prompts 11–15)
+Fields the generic template has no slot for, but which are the local-signal equivalent of
+the plumber's "1880s brownstones":
+
+- CEFR levels offered: A1 → C2
+- Exam boards: Cambridge (A2 Key, B1 Preliminary, B2 First, C1 Advanced), Linguaskill
+- Cambridge exam dates & fees: [SITE: /examenes-cambridge/fechas-precios/]
+- Linguaskill dates & fees: [SITE: /linguaskill/precios-fechas/]
+- Spanish school-year rhythm: enrolment spike in September (3× per Danny), EBAU pressure
+  in spring for S7–S8, oposiciones cycle for adults
+- Named colegios / IES per barrio: [GAP — the research job]
+- Great Little People methodology (ages 2–5): [SITE]
+- EBAU / selectividad relevance for Secundaria: [SITE]
+- Oposiciones + university validity for Linguaskill: [SITE, covered in blog]
+
+---
+
+# SECTION 14: BARRIO SEARCH-VOLUME RESEARCH  [DFSEO, Madrid, es, pulled 2 Aug 2026]
+
+Danny asked which neighbourhoods we should publish next. Google Ads exact volumes,
+Madrid location, Spanish. "—" means DataForSEO returned no volume at all.
+
+## Barrios that already have a page
+| Term                                  | Vol/mo | Sept peak | Verdict |
+|---------------------------------------|--------|-----------|---------|
+| academia de ingles barrio del pilar   | 40     | 90        | Best barrio term we own |
+| academia de ingles montecarmelo       | 20     | 30        | Real |
+| academia de ingles las tablas         | 20     | 70        | Real |
+| academia de ingles tetuan             | 10     | 10        | Thin |
+| academia de ingles mirasierra         | 10     | 10        | Thin |
+| academia de ingles la vaguada         | —      | —         | ZERO volume |
+| academia de ingles peñagrande         | —      | —         | ZERO volume |
+| clases de ingles tetuan               | —      | —         | ZERO volume |
+
+## Candidate barrios with NO page
+| Term                                       | Vol/mo | Sept peak | Verdict |
+|--------------------------------------------|--------|-----------|---------|
+| academia de ingles san sebastian de los reyes | 90  | 210       | BIGGEST GAP |
+| academia de ingles alcobendas              | 70     | 170       | STRONG GAP |
+| academia de ingles sanchinarro             | 20     | 50        | Worth it |
+| academia de ingles hortaleza               | 20     | 50        | Worth it |
+| academia de ingles tres cantos             | 20     | 40        | Worth it |
+| academia de ingles chamartin               | 10     | 10        | Marginal |
+| academia de ingles fuencarral              | —      | —         | ZERO VOLUME |
+| academia de ingles herrera oria            | —      | —         | ZERO |
+| academia de ingles valdezarza              | —      | —         | ZERO |
+| academia de ingles arroyo del fresno        | —      | —         | ZERO |
+| academia de ingles valdeacederas            | —      | —         | ZERO |
+| academia de ingles madrid norte            | —      | —         | ZERO |
+| academia de ingles zona norte madrid       | —      | —         | ZERO |
+
+## The term that dwarfs every barrio  [the real prize]
+| Term                          | Vol/mo | Sept peak |
+|-------------------------------|--------|-----------|
+| academia ingles cerca de mi   | 1,600  | 4,400     |
+| academia de ingles cerca de mi| 1,600  | 4,400     |
+| ingles cerca de mi            | 720    | 1,600     |
+| clases de ingles cerca de mi  | 210    | 390       |
+
+Plus, from the competitor report (national/Spain figures): "academia ingles" 8,100 (KD 11,
+Impulse not ranking), "clases de ingles" 3,600, "inglés cerca de mí" 3,600 (Impulse #53),
+"academias de ingles madrid" 1,300 (Impulse #27, Cambridge House #4).
+
+## What this means — read before planning
+1. FUENCARRAL HAS ZERO SEARCH VOLUME, despite being the district the academy sits in and
+   one of the three Danny named. Tetuán and Mirasierra, also named, already have pages and
+   only carry 10/mo each. Building for these terms on volume grounds would be a mistake.
+2. The barrio pages are NOT a volume play. All ten barrio terms combined are worth roughly
+   100 searches/month — less than one twelfth of "academia ingles cerca de mi" alone.
+   Their real job is (a) local-pack and proximity relevance, (b) long-tail capture, and
+   (c) feeding topical authority to the pages that DO carry volume.
+   → So the goal for the ten existing pages is to make them genuinely distinct and
+     citation-worthy, not to chase volume that isn't there.
+3. The biggest untapped LOCAL geography is not a Madrid barrio at all — it's the adjacent
+   municipalities: San Sebastián de los Reyes (90) and Alcobendas (70) together carry more
+   volume than all ten current barrio pages combined, and both spike hard in September.
+   RESOLVED — Danny, 2 Aug 2026, on both counts:
+   - **Alcobendas and San Sebastián de los Reyes: NOT BUILT.** "We don't get anyone from
+     Alcobendas. No one from Sanse." No students = no authentic local signal, no travel
+     story, no testimonial. Volume you cannot serve authentically is not an opportunity.
+   - **The zero-volume Madrid barrios ARE BUILT anyway.** Danny: "I don't care if they
+     return zero search volume. We want them in there to be showing up number one."
+     → PHASE 2 BUILD LIST: Fuencarral, Herrera Oria, Valdezarza, Arroyo del Fresno,
+       Valdeacederas. Total after phase 2: 15 barrio pages.
+
+   ## Why this is a sound call, and how it changes the writing brief
+   Search volume is the wrong yardstick for these pages. Their job is:
+   (a) **Proximity / local-pack relevance** — reinforcing to Google that the academy serves
+       the whole Fuencarral-El Pardo district, which feeds the "cerca de mí" cluster where
+       the 1,600/mo actually sits.
+   (b) **AI citation on unserved queries** — an LLM asked "academia de inglés en Arroyo del
+       Fresno" has to answer from something. With 2–7 domains cited per response and no
+       competitor bothering, being the only substantive answer is a free win. Keyword
+       planners report zero for terms that still get asked in conversation.
+   (c) **Topical completeness** — full district coverage strengthens the parent hub.
+   → BUT the duplicate-content risk is HIGHER here, not lower: five more pages about places
+     with no search demand is precisely the pattern that gets a page-set collapsed into one
+     representative URL. So the ≥9-per-element bar applies to these pages MORE strictly
+     than to the existing ten. Each one needs its own real travel route, its own two
+     reviews, its own photos, its own FAQs. No new page ships that scores below the gate.
+   → Every one of these five is inside Fuencarral-El Pardo or Tetuán, i.e. genuinely local
+     to Av. de El Ferrol — so the local signal is real and available. That is what
+     separates this from the Sanse/Alcobendas case.
+4. Everything peaks in September at 2–3× the annual average, which matches Danny's "Sept
+   is a 3× spike". Pages need to be indexed and matured BEFORE late August.
+
+---
+
+# OPEN ITEMS FOR DANNY (blocking content generation)
+
+RESOLVED 2 Aug 2026: matrícula 45 €, libro máx 40 €, particulares desde 29 €, 960+ alumnos,
+100 Cambridge passes from very basic starting levels, review count VERIFIED at 180,
+Josmary's name, testimonial allocation strategy, JP answers WhatsApp, tú throughout,
+all three video transcripts, barrio volume research.
+
+ALSO RESOLVED: particulares AND online 29 €/hora · price range 64–99 €/mes confirmed
+(99 = Infantil 2×/sem, 94 = adultos) · no third teacher, ever · no qualification published
+for JP · Daniel de la Peña now a qualified teacher teaching primary school English
+full-time · TikTok = @impulse_english · LinkedIn = /company/impulseenglishlavaguada/ ·
+site hours are correct, GBP is the one to fix · five zero-volume barrios ARE built.
+
+STILL OPEN (none blocking the audit — these block final copy only):
+1. Any AMPA / colegio / sponsorship relationships we can name? (Also the top
+   referring-domain lever in the competitor report — 9 domains vs Cambridge House's 520.)
+2. Has Josmary sat her B1 yet? A start-level → certificate → timeframe on any of the three
+   case studies would lift that scorecard row from 8 to 10.
+3. Named colegios / IES / landmarks per barrio — I can research these with Firecrawl +
+   DataForSEO, but if you already know which schools your students come from, that beats
+   anything I can scrape.
+4. CONFIRM: the five new barrios are Fuencarral, Herrera Oria, Valdezarza, Arroyo del
+   Fresno and Valdeacederas — all inside Fuencarral-El Pardo / Tetuán. Sanse and
+   Alcobendas stay excluded (no students). Is that the right five?
+
+---
+
+# SECTION 15: NAP / CONSENSUS AUDIT  [live GBP vs repo, 2026-08-02]
+
+The GEO consensus principle: if the site and the GBP disagree, AI may trust neither.
+Six live mismatches, all fixable, all currently costing citation confidence.
+
+| # | Field | Live Google Business Profile | Repo (`utils/napData.ts`) | Fix |
+|---|---|---|---|---|
+| 1 | Review count | **180** | 178 | Update repo → 180 |
+| 2 | Address | Av. de El Ferrol, 22, **Loc 1** | Av. de El Ferrol, 22 | Add "Loc 1" |
+| 3 | Mon/Wed/Fri hours | split hours, Fri 14:30–20:00 | site hours | **SITE WINS** — Danny 2 Aug: "the website hours are correct". Update the GBP, not the repo. Out of scope for this project. |
+| 4 | LinkedIn | /company/impulseenglishlavaguada/ | /company/**101859096**/ | Use the SLUG form (see below) |
+| 5 | TikTok | @impulse_english | @impulse_english_lavaguada | **GBP WINS** — the repo handle is wrong, fix napData.ts |
+
+### Social handles — resolved 2 Aug 2026
+- LinkedIn: **https://www.linkedin.com/company/impulseenglishlavaguada/**
+  Danny supplied the `es.` localised form; `www.` is the canonical. Both the numeric ID
+  (101859096) and the slug resolve to the same page (verified, both HTTP 200), but the slug
+  is what Google's knowledge panel already associates with the business — so the slug is
+  what goes in `sameAs`, for entity-matching consistency.
+- TikTok: **https://www.tiktok.com/@impulse_english**
+  [DANNY, 2 Aug 2026 — corrected]. The GBP/knowledge-panel handle was RIGHT and the repo
+  is wrong: `utils/napData.ts` carries `@impulse_english_lavaguada` in both `social.tiktok`
+  and `sameAs`, and the Footer renders it from there — so the live site currently links a
+  TikTok that is not the business's account. Fix napData.ts → @impulse_english.
+  (Could not verify externally: TikTok returns HTTP 200 for non-existent handles and blocks
+  Firecrawl, so both URLs looked identical from outside. Danny owns the account; his word
+  is the source of truth here.)
+- [DANNY TODO, on the GBP not the site] update the description ("más de 155 reseñas" →
+  180), repoint the appointments link off /reservar-clase/ to /prueba-de-nivel-ingles/,
+  and replace the "Clase de prueba gratuita" service with the prueba de nivel.
+
+Plus two stale items ON the GBP itself:
+- The GBP description still says "**más de 155 reseñas**". It's 180. Update it.
+- The GBP "Citas" link points to **impulse-english.es/reservar-clase/**, which now
+  308-redirects to /prueba-de-nivel-ingles/. Point it at the live URL directly.
+- The GBP still lists "**Clase de prueba gratuita**" as a service, but the site pivoted to
+  the free 25-minute *prueba de nivel* (trial class retained for Infantil only). The GBP
+  service listings need to match the current offer.
+
+[DANNY TO CONFIRM] Which hours are actually correct — the GBP or the website? Whichever
+it is, the other must change. This is a 20-minute fix that lifts the trust signal on
+every single page at once.
+
+---
+
+# SECTION 16: COMPETITOR ON YOUR OWN BRAND TERM  [SERP, 2026-08-02]
+
+Searching "Impulse English Academy La Vaguada" in Madrid:
+1. impulse-english.es (homepage) ← you hold #1, good
+2. tusclasesparticulares.com (a directory listing of you)
+3. facebook.com/impulseenglishlavaguada
+4. infobel.com
+5. **cambridge-house.com/academia-de-ingles-la-vaguada/** ← a competitor ranking on page
+   one of YOUR brand query
+7. idiomasseif.com (Seif English Academy)
+
+Cambridge House is intercepting your brand search with their own La Vaguada page. Your
+/academia-ingles-la-vaguada/ page appears only as a sitelink under the homepage, not as an
+independent result. Strengthening that page is therefore both a GEO job and a brand-defence
+job.
+
+---
+
+Document Version: 0.1 DRAFT
+Last Updated: 2026-08-02
+Sources: repo (utils/napData.ts, pages/PreciosPage.tsx, pages/NuestroEquipoPage.tsx,
+components/TestimonialsSection.tsx, pages/TestimonialsPage.tsx,
+components/LocationsSection.tsx, utils/barrioAreas.ts), DataForSEO competitor report
+2026-08-02, and Danny's session answers 2026-08-02.

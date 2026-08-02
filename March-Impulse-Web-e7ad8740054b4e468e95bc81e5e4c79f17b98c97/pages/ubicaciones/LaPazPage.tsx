@@ -11,12 +11,12 @@ import type { FAQItem } from '../../utils/schemaData';
 import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 const benefits = [
-  { title: "A 20 Minutos de La Paz", desc: "20 minutos caminando o 20 minutos en autobús. Conexión fácil desde La Paz." },
-  { title: "Centro Oficial de Preparación Cambridge", desc: "Prepárate y haz el examen donde estudias. Sin sorpresas." },
-  { title: "100% de Aprobados Cambridge 24/25", desc: "Todos nuestros estudiantes aprobaron sus exámenes." },
-  { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada real. No 15-20 como otras \"reducidas\"." },
-  { title: "Familias de La Paz Confían en Nosotros", desc: "Más de 174 reseñas de 5 estrellas en Google." },
-  { title: "Metodología Impulse Probada", desc: "Conversación desde día 1. Resultados medibles. Aprendizaje efectivo." }
+  { title: "Tu mismo código postal: 28029", desc: "La Paz y la academia estamos en el mismo distrito, Fuencarral-El Pardo, y en el mismo código postal. No cruzas Madrid: cruzas el barrio." },
+  { title: "Ginzo de Limia va directa a la puerta", desc: "La calle del CP Breogán desemboca en Av. de El Ferrol. Muchas familias vienen andando desde el colegio." },
+  { title: "Centro oficial Cambridge y Linguaskill", desc: "Te preparas y te examinas en el mismo sitio. No tienes que cruzar Madrid el día del examen." },
+  { title: "100 alumnos aprobados en Cambridge", desc: "100% de aprobados en B2 First en 2024/25 y 2025/26. Casi todos empezaron desde un nivel muy básico." },
+  { title: "Horario que encaja con turnos", desc: "Abrimos hasta las 21:30 de lunes a jueves. Trabajamos con familias del entorno del Hospital La Paz que hacen turnos." },
+  { title: "Desde 64 €/mes, matrícula 45 €", desc: "Precios publicados. Clase particular 29 €/hora. Libro hasta 40 €. Sin cuotas de mantenimiento ni permanencia." }
 ];
 
 const courses = [
@@ -27,26 +27,49 @@ const courses = [
   { name: "Clases Particulares", method: "Presencial u online", href: "/cursos-ingles/particulares/" }
 ];
 
+// Reseñas reales de Google, verificadas contra el perfil el 02/08/2026.
+// Asignacion en GEO-Content-Project/review-allocation.md: ninguna se repite en el sitio.
+const localReviews = [
+  {
+    name: "Lidia Ramirez",
+    role: "Madre de alumnos",
+    text: "Excelente academia!!! No he podido elegir mejor. Desde que llevo a mis hijos están aprobando inglés y sobre todo que van encantados. Hay varios niveles. El trato es excepcional. Son profesionales que les gusta su trabajo, cercanos y hay muy bien ambiente. Gracias a todos los profes (Danny, J.P...)."
+  },
+  {
+    name: "Clara Sánchez",
+    role: "Alumna · preparación de examen",
+    text: "He tenido el gusto de poder asistir a esta academia durante menos de un año y sin duda ha sido una de las mejores ayudas que he podido tener, sobretodo por JP. Me ha dado muchos consejos que sin duda me ayudaron para el examen final, y el trato que han tenido en todo momento es súper gratificante y acogedor."
+  }
+];
+
 export const localFaqs: FAQItem[] = [
   {
-    question: "¿Qué niveles de inglés ofrecéis cerca de La Paz?",
-    answer: "Ofrecemos todos los niveles desde principiante (A1) hasta avanzado (C2). Realizamos una prueba de nivel gratuita para ubicarte en el grupo adecuado. Preparamos exámenes Cambridge (Pre-A1 Starters hasta C2 Proficiency) y Linguaskill."
+    question: "¿Cuánto se tarda desde La Paz hasta la academia?",
+    answer: "Menos de lo que parece: compartimos distrito y código postal, el 28029. Desde el entorno del Hospital La Paz son unos 12 minutos en coche por Ginzo de Limia hasta Av. de El Ferrol, 22. En metro, línea 10 desde Begoña hasta Plaza de Castilla y línea 9 hasta Barrio del Pilar."
   },
   {
-    question: "¿Hay prueba de nivel gratuita en vuestra academia cerca de La Paz?",
-    answer: "Sí, ofrecemos una prueba de nivel gratuita de 25 minutos donde evaluamos tu nivel actual y te recomendamos el curso más adecuado. Puedes reservarla por WhatsApp o a través de nuestra web."
+    question: "¿Cuánto cuestan las clases de inglés cerca de La Paz?",
+    answer: "Infantil desde 64 €/mes, Primaria 83 €/mes, Secundaria desde 87 €/mes y Adultos 94 €/mes. Las clases particulares cuestan 29 €/hora, presenciales u online. La matrícula son 45 € y el libro un máximo de 40 €. No hay más costes."
   },
   {
-    question: "¿Cuántos alumnos hay por grupo en las clases de inglés?",
-    answer: "Nuestros grupos son reducidos: máximo 7-10 alumnos por clase. Esto garantiza atención personalizada real, no como otras academias que dicen tener grupos reducidos con 15-20 estudiantes."
+    question: "¿La prueba de nivel es gratis y quién la hace?",
+    answer: "Es gratuita y dura 25 minutos. La hace JP, el director de estudios, que también es quien contesta el WhatsApp: escribes al 604 910 611 y hablas directamente con él, no con un formulario. Sales con tu nivel MCER y el grupo recomendado."
   },
   {
-    question: "¿Qué horarios hay disponibles para clases de inglés cerca de La Paz?",
-    answer: "Tenemos horarios de mañana y tarde: lunes y miércoles de 10:00 a 21:30, martes y jueves de 15:30 a 21:30, y viernes de 13:30 a 19:30. Adaptamos los horarios a familias y profesionales de la zona."
+    question: "Mi hijo va al Breogán o al Tagore. ¿Le da tiempo a llegar?",
+    answer: "Sí, y es de los trayectos más cómodos que tenemos. El CP Breogán está en Calle Ginzo de Limia, que desemboca en Av. de El Ferrol. Muchas familias de La Paz vienen andando desde el propio colegio. Abrimos hasta las 21:30 de lunes a jueves."
   },
   {
-    question: "¿Cómo llego a la academia desde La Paz?",
-    answer: "Desde La Paz puedes llegar fácilmente en metro hasta Barrio del Pilar (Línea 9), que está a solo 500 metros de nuestra academia. También hay varias líneas de autobús que conectan las zonas."
+    question: "Trabajo por turnos en el Hospital La Paz. ¿Hay horarios compatibles?",
+    answer: "Sí. Tenemos grupos de mañana y de tarde: lunes y miércoles desde las 10:00, martes y jueves desde las 15:30, y hasta las 21:30. Si tu turno rota, la opción más flexible son las clases particulares a 29 €/hora, presenciales u online."
+  },
+  {
+    question: "¿Cuántos alumnos hay por clase?",
+    answer: "Entre 7 y 10, con un máximo de 10 en adultos. Tenemos dos aulas, London y Manchester, y ese aforo es deliberado: en un grupo de 10 hablas en todas las clases. En uno de 20, hablas una vez cada tres semanas."
+  },
+  {
+    question: "¿Sois centro oficial de Cambridge o solo preparáis el examen?",
+    answer: "Somos centro preparador oficial de Cambridge y centro oficial de Linguaskill. Te preparas y te examinas en el mismo sitio, sin cruzar Madrid el día del examen. Llevamos 100 alumnos aprobados y un 100% de aprobados en B2 First en 2024/25 y 2025/26."
   }
 ];
 
@@ -66,7 +89,7 @@ export default function LaPazPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/academy/outside-academy.jpg" alt="Impulse English Academy fachada exterior La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" />
+          <img src="/images/academy/outside-academy.jpg" alt="Fachada de Impulse English Academy en Av. de El Ferrol 22, en el mismo distrito que el barrio de La Paz" className="w-full h-full object-cover" loading="eager" />
           <div className="absolute inset-0 bg-accent-blue/90"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
@@ -91,23 +114,24 @@ export default function LaPazPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Academia de Inglés cerca de La Paz
+              Academia de inglés a un paseo de La Paz
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
-              Centro Oficial Cambridge a 20 minutos de La Paz
+              Centro oficial Cambridge en el 28029, desde 64 €/mes
             </p>
             <div className="flex items-center gap-2 text-white/60 font-display text-sm mb-2 animate-hero-fade-up animation-delay-200">
               <MapPin className="w-4 h-4" />
               <span>20 minutos caminando o 20 minutos en autobús (líneas 147, 42 y 83)</span>
             </div>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
-              {NAP.fullAddress}
+              {NAP.fullAddress} · <a href={NAP.phoneTel} className="underline hover:text-white/80">{NAP.phone}</a>
             </p>
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro Oficial Cambridge</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">100% Aprobados 24/25</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos Reducidos</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro oficial Cambridge</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">100 aprobados en Cambridge</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 180 reseñas</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos de 7 a 10</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
@@ -131,11 +155,45 @@ export default function LaPazPage() {
         </div>
       </section>
 
-      {/* Local Intro Section */}
-      <section className="section-tight px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <p className="text-lg text-zinc-700 leading-relaxed">
-            Nuestra academia ofrece clases de inglés cerca de La Paz, una zona residencial bien comunicada con la <strong>estación de metro Barrio del Pilar (Línea 9)</strong> y el centro comercial La Vaguada. Estamos ubicados en el código postal <strong>28029 Madrid</strong>, a pocos minutos del <strong>Hospital Universitario La Paz</strong> y el <strong>Parque Norte</strong>. Trabajamos con niños, adolescentes y adultos que buscan aprender inglés sin largos desplazamientos, con grupos reducidos y atención personalizada. Somos centro oficial de preparación Cambridge con 100% de aprobados.
+      {/* Local Intro Section. Sistema de /prueba-de-nivel-ingles/. Sin reveal-on-scroll. */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">La Paz</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">El mismo barrio, no el otro lado de Madrid</h2>
+            <div className="rule"></div>
+          </div>
+
+          <p className="t-lede text-zinc-700 max-w-3xl mb-12">
+            ¿Buscas academia de inglés cerca de La Paz? Impulse English Academy está en{' '}
+            <strong className="text-zinc-900 font-semibold">tu mismo código postal, el 28029</strong>,
+            y en tu mismo distrito, Fuencarral-El Pardo. Centro oficial Cambridge desde 2022,
+            grupos de 7 a 10 alumnos y clases desde 64 €/mes. Reserva tu prueba de nivel gratuita
+            con JP:{' '}
+            <a href={NAP.phoneTel} className="text-accent-blue font-semibold hover:underline whitespace-nowrap">604 910 611</a>.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { n: 1, title: "Andando por Ginzo de Limia", body: "La calle del CP Breogán desemboca en Av. de El Ferrol. Es el trayecto que hacen muchas familias de La Paz al salir del colegio." },
+              { n: 2, title: "En coche, unos 12 minutos", body: "Desde el entorno del Hospital Universitario La Paz, por Ginzo de Limia hasta el número 22. Aparcamiento libre en la zona." },
+              { n: 3, title: "En metro, con un cambio", body: "Línea 10 desde Begoña hasta Plaza de Castilla, y allí línea 9 hasta Barrio del Pilar. Dos paradas más y 500 metros a pie." }
+            ].map((step) => (
+              <div key={step.n} className="card p-7">
+                <span className="inline-flex w-9 h-9 rounded-full bg-brand-red text-white items-center justify-center font-display font-bold mb-5">
+                  {step.n}
+                </span>
+                <h3 className="t-h3 text-zinc-900 mb-2">{step.title}</h3>
+                <p className="t-small text-zinc-600">{step.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="t-small text-zinc-500 mt-8 flex items-start gap-2">
+            <MapPin className="w-4 h-4 text-accent-blue flex-shrink-0 mt-0.5" />
+            Vienen alumnos del CP Breogán, del CP Rabindranath Tagore y del CP Lorenzo Luzuriaga.
+            Y bastantes familias que trabajan por turnos en el Hospital La Paz: por eso abrimos
+            de 10:00 a 21:30 lunes y miércoles, y hasta las 21:30 martes y jueves.
           </p>
         </div>
       </section>
@@ -385,19 +443,15 @@ export default function LaPazPage() {
             Lo Que Dicen Nuestros Alumnos cerca de La Paz
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { name: "Elena Mart\u00edn", text: "Llevamos tres a\u00f1os con Impulse y estamos encantados. Los profesores son incre\u00edbles y el m\u00e9todo funciona de verdad." },
-              { name: "Javier Rodr\u00edguez", text: "Mi hija aprob\u00f3 el B2 First con un 180. La preparaci\u00f3n de ex\u00e1menes Cambridge es excelente." },
-              { name: "Marta D\u00edaz", text: "La mejor inversi\u00f3n para el futuro de mis hijos. Aprenden ingl\u00e9s de forma natural y divertida." }
-            ].map((t, i) => (
-              <div key={i} className="card p-6">
+            {localReviews.map((review, idx) => (
+              <div key={idx} className="card p-6">
                 <div className="flex gap-1 mb-4">
                   {[1,2,3,4,5].map(star => (
                     <Star key={star} className="w-5 h-5 text-amber-400 fill-amber-400" />
                   ))}
                 </div>
-                <p className="text-zinc-600 italic mb-4">"{t.text}"</p>
-                <p className="font-bold text-zinc-900">{t.name}</p>
+                <p className="text-zinc-600 italic mb-4">"{review.text}"</p>
+                <p className="font-bold text-zinc-900">{review.name}</p>
                 <p className="text-zinc-500 text-sm">Google Reviews</p>
               </div>
             ))}
@@ -415,6 +469,111 @@ export default function LaPazPage() {
         </div>
       </section>
 
+
+      {/* Quien da la clase. Senal E-E-A-T: persona con nombre, no "nuestro equipo". */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-6xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Quién te la da</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">La clase te la da JP, no "nuestro equipo"</h2>
+            <div className="rule"></div>
+          </div>
+          <div className="grid md:grid-cols-[300px_1fr] gap-10 items-start">
+            <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-panel">
+              <img
+                src="/images/academy/jp-director-estudios.webp"
+                alt="JP, director de estudios de Impulse English Academy, la academia de inglés más cercana a La Paz"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                width={900}
+                height={1200}
+              />
+            </div>
+            <div className="space-y-4 text-zinc-600 leading-relaxed">
+              <p>Desde La Paz vienen sobre todo familias del Breogán y del Tagore, y adultos que trabajan por turnos en el hospital. A todos les hace la prueba de nivel la misma persona.</p>
+              <p>
+                <strong className="text-zinc-900">JP</strong> es director de estudios y cofundador.
+                Lleva <strong className="text-zinc-900">más de 10 años enseñando inglés</strong> y
+                vivió 10 años en Irlanda antes de instalarse en Madrid.
+              </p>
+              <p>
+                Es quien dirige el día a día académico, quien hace tu prueba de nivel gratuita de
+                25 minutos y quien contesta el WhatsApp: cuando escribes al 604 910 611, te
+                responde él. No un formulario ni un centro de llamadas.
+              </p>
+              <p>
+                Está especializado en exámenes Cambridge y en adquisición temprana del idioma, y
+                aparece por su nombre en buena parte de nuestras 180 reseñas. Junto a Danny
+                Fitzpatrick, cofundador, da clase en persona.
+              </p>
+              <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+                Conoce al equipo completo <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Caso real: resultado concreto, con nombre y desenlace verificable. */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Un caso real</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Josmary</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 leading-relaxed mb-6 max-w-3xl">Josmary va a clase por la noche, que es justo lo que necesita quien sale tarde del hospital o del trabajo y quiere seguir avanzando.</p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">Desde septiembre</p><p className="t-small text-zinc-600">en clases de noche</p></div>
+              <div><p className="t-h3 text-accent-blue">Nivel B1</p><p className="t-small text-zinc-600">con JP</p></div>
+              <div><p className="t-h3 text-emerald-600">Un plan claro</p><p className="t-small text-zinc-600">y la confianza para equivocarse</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed mb-4">Josmary entró, en sus palabras, <em>"con una situación un poco cacao"</em>: hablaba y entendía algo de inglés, pero tenía <em>"muchísimos vacíos de gramática, de vocabulario y de no saber en qué punto estaba"</em>. Va a clase por la noche, en el grupo de B1 con JP.</p>
+            <p className="text-zinc-600 leading-relaxed mb-6">Lo que más valora es la creatividad de su profesor y <em>"la confianza de equivocarnos"</em>. Lo que se lleva: <em>"he conseguido sentirme con más confianza, tener un plan claro de qué es lo que necesito mejorar, cómo hacerlo, las herramientas para hacerlo, y el apoyo de JP para ese camino"</em>.</p>
+            <a href="/testimonios/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+              Ver el vídeo y otros casos <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Precios visibles en pagina, no solo en schema. */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Precios</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta, sin letra pequeña</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 mb-8">Estos son los precios reales, y no cambian por vivir a cinco minutos o a media hora. No hay cuota de mantenimiento, ni permanencia, ni coste de examen escondido.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b-2 border-zinc-200">
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Curso</th>
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Edad</th>
+                  <th className="py-3 font-display text-xs uppercase tracking-wider text-zinc-500">Precio</th>
+                </tr>
+              </thead>
+              <tbody className="text-zinc-700">
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Infantil</td><td className="py-3 pr-4">2-5 años</td><td className="py-3">desde 64 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Primaria</td><td className="py-3 pr-4">6-12 años</td><td className="py-3">83 €/mes · 239 €/trimestre</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Secundaria</td><td className="py-3 pr-4">13-17 años</td><td className="py-3">desde 87 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Adultos</td><td className="py-3 pr-4">todos los niveles</td><td className="py-3">94 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Clases particulares</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+                <tr><td className="py-3 pr-4 font-medium">Clases online</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="t-small text-zinc-500 mt-6">
+            Aparte: <strong>matrícula 45 €</strong> y <strong>libro hasta 40 €</strong>, una sola
+            vez. La cuota incluye las clases semanales, los simulacros Cambridge, el seguimiento
+            personalizado y los recursos online. Hay descuento por pago trimestral y por familias
+            con más de un hijo matriculado. Las tasas del examen oficial las fija Cambridge.
+          </p>
+        </div>
+      </section>
       {/* Gallery Section - Photos at Bottom */}
       <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
@@ -528,7 +687,7 @@ export default function LaPazPage() {
             ¿Vives en La Paz?
           </h2>
           <p className="text-white/70 mb-8">
-            Estamos a solo 20 minutos. Ven a conocernos y prueba una clase gratis.
+            Estamos a solo 20 minutos. Ven a conocernos y reserva tu prueba de nivel gratuita de 25 minutos.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -547,7 +706,43 @@ export default function LaPazPage() {
         </div>
       </section>
 
-      <LeadForm variant="refresh" />
+
+      {/* CTA: patron de conversion de Barrio del Pilar. `source` por barrio para GHL. */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="t-h2 text-zinc-900 mb-6">Pide Tu Prueba de Nivel</h2>
+              <div className="space-y-4 mb-8">
+                {[
+                  "Contáctanos por WhatsApp o teléfono",
+                  "Prueba de nivel gratuita (25 minutos) con JP",
+                  "Empieza tu transformación con el inglés"
+                ].map((step, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-accent-blue text-white rounded-full flex items-center justify-center font-bold shrink-0">{i + 1}</div>
+                    <span className="text-zinc-700">{step}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-zinc-900 font-bold text-lg mb-4">En tu mismo código postal, el 28029. Sin excusas.</p>
+              <p className="text-zinc-600">{NAP.fullAddress}</p>
+            </div>
+            <div>
+              <LeadForm
+                title="Reserva Tu Prueba Gratuita"
+                subtitle="Te contactamos en menos de 24h"
+                ctaText="Reservar Ahora"
+                source="la-paz"
+                showPhone={true}
+                showAge={true}
+                showLevel={true}
+                variant="refresh"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
 
       {/* Schema.org Structured Data */}
