@@ -158,16 +158,70 @@ export default function LaVentillaPage() {
       {/* Local Intro Section */}
       <section className="section-tight px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
-          {/* Answer capsule: 53 palabras, autocontenida, con cifra, lugar y CTA. */}
-          <p className="text-lg text-zinc-700 leading-relaxed">
-            ¿Buscas academia de inglés cerca de La Ventilla? Impulse English Academy está a una parada en la línea 9: Ventilla → Barrio del Pilar, unos 2 minutos. Centro oficial Cambridge desde 2022, grupos de 7 a 10 alumnos y clases desde 64 €/mes. Reserva tu prueba de nivel gratuita con JP: <a href={NAP.phoneTel} className="text-accent-blue font-semibold hover:underline">604 910 611</a>.
+          {/* Answer capsule: 53 palabras, autocontenida, con cifra, lugar y CTA.
+              Va en párrafo normal, sin caja ni lista: es el bloque que extraen
+              los buscadores generativos y tiene que poder leerse en voz alta. */}
+          <p className="text-xl md:text-2xl text-zinc-800 leading-relaxed font-light">
+            ¿Buscas academia de inglés cerca de La Ventilla? Impulse English Academy está{' '}
+            <strong className="font-semibold text-zinc-900">a una parada en la línea 9</strong>: Ventilla a Barrio del Pilar, unos 2 minutos.
+            Centro oficial Cambridge desde 2022, grupos de 7 a 10 alumnos y clases desde 64 €/mes.
+            Reserva tu prueba de nivel gratuita con JP:{' '}
+            <a href={NAP.phoneTel} className="text-accent-blue font-semibold hover:underline whitespace-nowrap">604 910 611</a>.
           </p>
-          <p className="text-zinc-600 mt-4 leading-relaxed">
-            La Ventilla pertenece al distrito de <strong>Tetuán</strong>, y su estación de metro es vecina directa de la nuestra: en la <strong>línea 9</strong> el orden es Herrera Oria — Barrio del Pilar — Ventilla, así que no hay transbordos ni rodeos. Desde <strong>Calle Mártires de la Ventilla</strong> bajas al andén, una parada, y 500 metros a pie por <strong>Av. de El Ferrol</strong> hasta el número 22.
-          </p>
-          <p className="text-zinc-600 mt-4 leading-relaxed">
-            Damos clase a familias de toda la zona: alumnos del <strong>CP Juan Ramón Jiménez</strong>, del <strong>IES Jaime Vera</strong> y del <strong>CP Doctor Federico Rubio</strong> vienen andando o en una parada de metro. Abrimos hasta las <strong>21:30</strong> de lunes a jueves, precisamente para que se pueda encajar después del colegio o del trabajo.
-          </p>
+
+          <hr className="my-10 border-zinc-200" />
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* Ruta */}
+            <div>
+              <h3 className="font-display text-xs uppercase tracking-[0.18em] text-zinc-500 mb-4">
+                La ruta, parada a parada
+              </h3>
+              <ol className="space-y-3 mb-5">
+                {[
+                  { stop: "Herrera Oria", note: null },
+                  { stop: "Barrio del Pilar", note: "aquí te bajas" },
+                  { stop: "Ventilla", note: "tu parada" }
+                ].map((s, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className={`mt-1.5 w-2.5 h-2.5 rounded-full shrink-0 ${s.note ? 'bg-accent-blue' : 'bg-zinc-300'}`} />
+                    <span className="text-zinc-700">
+                      <strong className="font-semibold">{s.stop}</strong>
+                      {s.note && <span className="text-accent-blue text-sm"> · {s.note}</span>}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+              <p className="text-zinc-600 leading-relaxed">
+                Son estaciones vecinas en la <strong>línea 9</strong>. Sin transbordos y sin rodeos:
+                bajas al andén en <strong>Calle Mártires de la Ventilla</strong>, una parada, y
+                500 metros a pie por <strong>Av. de El Ferrol</strong> hasta el número 22.
+              </p>
+            </div>
+
+            {/* Quién viene */}
+            <div>
+              <h3 className="font-display text-xs uppercase tracking-[0.18em] text-zinc-500 mb-4">
+                Quién viene desde La Ventilla
+              </h3>
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                La Ventilla pertenece al distrito de <strong>Tetuán</strong>. Damos clase a familias
+                de toda la zona, y estos alumnos llegan andando o en una parada de metro:
+              </p>
+              <ul className="space-y-2 mb-5">
+                {["CP Juan Ramón Jiménez", "IES Jaime Vera", "CP Doctor Federico Rubio"].map((c, i) => (
+                  <li key={i} className="flex items-center gap-2.5 text-zinc-700">
+                    <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0" />
+                    {c}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-zinc-600 leading-relaxed">
+                Abrimos hasta las <strong>21:30</strong> de lunes a jueves, precisamente para que
+                entre después del colegio o del trabajo.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -447,7 +501,7 @@ export default function LaVentillaPage() {
         </div>
       </section>
 
-      {/* Quién da la clase — señal E-E-A-T: persona con nombre, no "nuestro equipo" */}
+      {/* Quien da la clase. Senal E-E-A-T: persona con nombre, no "nuestro equipo". */}
       <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
           <h2 className="t-h2 text-zinc-900 mb-8">
@@ -482,7 +536,7 @@ export default function LaVentillaPage() {
         </div>
       </section>
 
-      {/* Caso real — resultado concreto, con nombre, duración y desenlace verificable */}
+      {/* Caso real: resultado concreto, con nombre, duracion y desenlace verificable. */}
       <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           <h2 className="t-h2 text-zinc-900 mb-8">
@@ -519,7 +573,7 @@ export default function LaVentillaPage() {
         </div>
       </section>
 
-      {/* Precios — visibles en página, no solo en schema */}
+      {/* Precios visibles en pagina, no solo en schema. */}
       <section className="section px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <h2 className="t-h2 text-zinc-900 mb-4">
@@ -685,7 +739,51 @@ export default function LaVentillaPage() {
         </div>
       </section>
 
-      <LeadForm variant="refresh" />
+      {/* CTA Section: mismo patron de conversion que Barrio del Pilar.
+          3 pasos a la izquierda, formulario configurado a la derecha.
+          El prop `source` alimenta GHL y va por barrio, no generico. */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="t-h2 text-zinc-900 mb-6">
+                Pide Tu Prueba de Nivel
+              </h2>
+              <div className="space-y-4 mb-8">
+                {[
+                  "Contáctanos por WhatsApp o teléfono",
+                  "Prueba de nivel gratuita (25 minutos) con JP",
+                  "Empieza tu transformación con el inglés"
+                ].map((step, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-accent-blue text-white rounded-full flex items-center justify-center font-bold shrink-0">{i + 1}</div>
+                    <span className="text-zinc-700">{step}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-zinc-900 font-bold text-lg mb-4">
+                A una parada de metro desde Ventilla. Sin excusas.
+              </p>
+              <p className="text-zinc-600">
+                {NAP.fullAddress}
+              </p>
+            </div>
+            <div>
+              <LeadForm
+                title="Reserva Tu Prueba Gratuita"
+                subtitle="Te contactamos en menos de 24h"
+                ctaText="Reservar Ahora"
+                source="la-ventilla"
+                showPhone={true}
+                showAge={true}
+                showLevel={true}
+                variant="refresh"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
 
 </>
