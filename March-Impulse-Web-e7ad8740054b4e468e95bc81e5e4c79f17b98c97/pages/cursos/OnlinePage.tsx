@@ -34,7 +34,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Preparáis exámenes Cambridge y Linguaskill online?",
-    answer: "Sí. Preparamos B1 Preliminary, B2 First, C1 Advanced y Linguaskill en modalidad online con la misma metodología y resultados que en presencial. Nuestro 100% de aprobados incluye alumnos online."
+    answer: "Sí. Preparamos B1 Preliminary, B2 First, C1 Advanced y Linguaskill en modalidad online con la misma metodología y resultados que en presencial. Nuestro 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados) incluye alumnos online."
   },
   {
     question: "¿Las clases online son igual de efectivas?",
@@ -153,7 +153,7 @@ export default function OnlinePage() {
               {
                 icon: <Target className="w-6 h-6" />,
                 title: "Necesitas una certificación",
-                description: "B2 para tu máster, B1 para la universidad de tu hijo, Linguaskill para tu empresa. Preparamos todos los exámenes Cambridge online con 100% de aprobados."
+                description: "B2 para tu máster, B1 para la universidad de tu hijo, Linguaskill para tu empresa. Preparamos todos los exámenes Cambridge online, con un 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados)."
               },
               {
                 icon: <Laptop className="w-6 h-6" />,

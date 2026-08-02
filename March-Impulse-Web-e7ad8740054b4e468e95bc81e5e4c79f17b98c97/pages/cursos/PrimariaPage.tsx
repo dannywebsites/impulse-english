@@ -193,7 +193,7 @@ export default function PrimariaPage() {
             </div>
             <div className="flex items-center gap-2">
               <Award className="w-5 h-5 text-amber-500" />
-              <span className="text-zinc-700 font-medium">100% aprobados Cambridge</span>
+              <span className="text-zinc-700 font-medium">100% aprobados Cambridge 24/25 (presentados)</span>
             </div>
           </div>
         </div>
@@ -240,7 +240,7 @@ export default function PrimariaPage() {
                   <Award className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-zinc-900 text-lg mb-2">100% Aprobados Cambridge 24/25</h3>
+                  <h3 className="font-bold text-zinc-900 text-lg mb-2">100% aprobados Cambridge 24/25 (alumnos presentados)</h3>
                   <p className="text-zinc-600 text-sm">
                     Todos nuestros alumnos que se presentaron a exámenes Cambridge Young Learners en 24/25 aprobaron. Preparamos con material oficial y simulacros de examen.
                   </p>

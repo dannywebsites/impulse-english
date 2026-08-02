@@ -37,7 +37,7 @@ export const b1Faqs: FAQItem[] = [
 
 export const courseSchema = generateCourseSchema({
       name: "Curso de Preparación Cambridge B1 Preliminary (PET)",
-      description: "Prepara el examen Cambridge B1 Preliminary (PET) con clases en Madrid en grupos reducidos. Centro oficial Cambridge con 100% de aprobados. Ideal para estudiantes hispanohablantes que quieren certificar su nivel de inglés.",
+      description: "Prepara el examen Cambridge B1 Preliminary (PET) con clases en Madrid en grupos reducidos. Centro oficial Cambridge con 100% de aprobados en el curso 2024/25 (alumnos presentados). Ideal para estudiantes hispanohablantes que quieren certificar su nivel de inglés.",
       url: `${businessInfo.url}/examenes-cambridge/b1-preliminary`,
       courseCode: "CAM-B1-PET",
       educationalLevel: "B1 — Nivel Intermedio",

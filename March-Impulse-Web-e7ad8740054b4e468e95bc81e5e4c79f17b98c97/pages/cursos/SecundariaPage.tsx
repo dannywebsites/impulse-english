@@ -16,7 +16,7 @@ import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Secundaria (13-17 años)",
-  description: "Clases de inglés para secundaria en La Vaguada / Barrio del Pilar. Preparación EBAU y Cambridge B1, B2, C1 con grupos reducidos y seguimiento. 100% aprobados 2025-2026.",
+  description: "Clases de inglés para secundaria en La Vaguada / Barrio del Pilar. Preparación EBAU y Cambridge B1, B2, C1 con grupos reducidos y seguimiento. 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados).",
   url: `${businessInfo.url}/cursos-ingles/secundaria`,
   courseCode: "SEC-CAM",
   educationalLevel: "Secondary",
@@ -132,7 +132,7 @@ export default function SecundariaPage() {
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              Preparación EBAU y Cambridge B1, B2, C1 en La Vaguada. Grupos por nivel real, seguimiento continuo y 100% de aprobados.
+              Preparación EBAU y Cambridge B1, B2, C1 en La Vaguada. Grupos por nivel real, seguimiento continuo y un 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados).
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
@@ -171,7 +171,7 @@ export default function SecundariaPage() {
             </div>
             <div className="flex items-center gap-2">
               <Award className="w-5 h-5 text-amber-500" />
-              <span className="text-zinc-700 font-medium">100% aprobados Cambridge 2025-2026 (alumnos presentados)</span>
+              <span className="text-zinc-700 font-medium">100% aprobados Cambridge 2024/25 (alumnos presentados)</span>
             </div>
           </div>
         </div>
@@ -316,7 +316,7 @@ export default function SecundariaPage() {
             </div>
           </div>
           <p className="text-white/90 font-medium">
-            100% de aprobados en exámenes Cambridge 2025-2026
+            100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados)
           </p>
         </div>
       </section>
