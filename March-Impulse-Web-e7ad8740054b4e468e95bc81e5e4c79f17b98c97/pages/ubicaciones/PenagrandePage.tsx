@@ -413,9 +413,9 @@ export default function PenagrandePage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             {[
-              { name: "Rosa María V.", text: "Estamos muy contentos con Impulse. Mi hijo empezó tímido y ahora participa en todas las actividades en inglés." },
-              { name: "Jesús Hernández", text: "Preparé el C1 aquí y lo aprobé a la primera. Los profesores saben motivarte y el material es muy completo." },
-              { name: "Lucía Gómez", text: "Muy buena academia. Los grupos son realmente pequeños y la atención es personalizada de verdad." }
+              { name: "María Jesús Zuazo Sahagún", text: "Solo puedo decir cosas positivas de la experiencia que tiene mi hija con sus profesores. Lo más importante es que le gusta mucho ir a las clases. Ha notado que su evolución, tanto en el lenguaje hablado como en el escrito, ha mejorado mucho, y esto hace que esté muy motivada y con ganas de continuar aprendiendo. En resumen, son grandes profesionales y saben trabajar con sus alumnos. Lo recomiendo 100%." },
+              { name: "Oscar Bonilla Mansilla", text: "Para mi, las clases fueron eficaces, y muy efectivas. Me ayudaron muchisimo a avanzar en mi inglés de una manera muy entretenida. Recomiendo que les deis una oportunidad, por que sin duda merece la pena." },
+              { name: "Miguel Garcia", text: "Experiencia muy buena de los niños de 10 y 12 años. Muy atento en su evolución con las familias y siempre disponibles para cualquier cosa. Lo recomiendo." }
             ].map((testimonial, idx) => (
               <div key={idx} className="card p-6">
                 <div className="flex gap-1 mb-3">

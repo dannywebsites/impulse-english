@@ -36,64 +36,64 @@ const shortTestimonials = [
 
 const googleReviews = [
   {
-    quote: "Luego de pasar por varias academias en toda Madrid esta fue la única que dio con el método y el contenido perfecto para aprender, tengo un C1 y es todo gracias a ellos.",
-    name: "Cesar Seneca Tellechea Corral",
-    role: "Local Guide"
+    name: "Ylich Layana",
+    role: "Reseña verificada en Google",
+    quote: "Es una académica con la que estoy muy a gusto siento que mi nivel de ingles va mejorando con cada clase."
   },
   {
-    quote: "Excelente academia!!! No he podido elegir mejor. Desde que llevo a mis hijos están aprobando inglés y sobre todo que van encantados. Hay varios niveles. El trato es excepcional. Son profesionales que les gusta su trabajo, cercanos y hay muy bien ambiente.",
-    name: "Lidia Ramirez",
-    role: "Madre de alumnos"
+    name: "Javier Sanz Lázaro",
+    role: "Madre/padre de alumno",
+    quote: "Es una academia muy buena. Mis hijas van muy contentas a la clase de inglés."
   },
   {
-    quote: "Yo he tenido a dos de los profesores que están en la academia, JP y Dani desde que era pequeña y estoy encantada con ellos. Los tengo desde que tenía 8 años y ahora tengo 17 y mi evolución en inglés ha sido gracias a ellos totalmente.",
-    name: "Lucia Salmerón",
-    role: "Alumna desde los 8 años"
+    name: "Maru Teran",
+    role: "Madre/padre de alumno",
+    quote: "Recomiendo la  Academia, mi hijo ha aprendido mucho, les agradezco la atención y la dedicación.  Muchas gracias!"
   },
   {
-    quote: "Hacer el intensivo de inglés con JP ha sido un acierto total. Tiene una forma de enseñar súper original, mezcla las explicaciones con historias que te atrapan y hacen que te rías mientras aprendes.",
-    name: "María Comas",
-    role: "Local Guide"
+    name: "Samuel Bryan",
+    role: "Reseña verificada en Google",
+    quote: "¡La mejor academia de inglés! Los profesores son super divertidos y amables. Lo recomiendo 100%"
   },
   {
-    quote: "Impulse Academy es y será la mejor academia para aprender inglés! Los mejores maestros, atención de la mejor calidad y la disponibilidad de horarios que tienen son muy buenos!",
-    name: "Jorge Martinez",
-    role: "Padre de alumna"
+    name: "Roberto Herrero",
+    role: "Reseña verificada en Google",
+    quote: "Solo tengo palabras de agradecimiento para Impulse English Academy y muy en particular a mi profesor Daniel. Gracias de nuevo por que este aprendizaje haya sido tan fácil y rápido. Os deseo lo mejor."
   },
   {
-    quote: "Mi hija estudia en Impulse English Academy y estoy muy contenta con los resultados. JP no solo enseña inglés, también ha acompañado a mi hija en un momento difícil de adaptación como emigrante.",
-    name: "Yurisbeth Rivero Chirinos",
-    role: "Madre de alumna"
+    name: "Toña Agüero",
+    role: "Reseña verificada en Google",
+    quote: "Los profesores son todos muy agradables y muy atentos, se adaptan rápido y siempre sacan una sonrisa mientras que aprendes con facilidad y eficacia el inglés. Saludos"
   },
   {
-    quote: "Gracias a Impulse logré obtener mi certificado C1 de inglés. Esto me ha abierto muchas puertas en el mercado laboral. El ambiente es familiar y cercano.",
-    name: "Gonzalo Tarascón",
-    role: "Local Guide"
+    name: "Maria Jose Navarredonda",
+    role: "Reseña verificada en Google",
+    quote: "Los profes son fantástico y con gran experiencia. Aprender inglés adquiere otro sentido, os lo dice alguien para la que aprender inglés era difícil.  Se aprende con ganas e ilusión. Gracias"
   },
   {
-    quote: "Después de pasar por otros centros con poco éxito, he encontrado la academia ideal para mi. Estoy muy satisfecha con el método, mi profesor y mi progreso con el idioma.",
-    name: "Aurora Jimenez Solano",
-    role: "Local Guide"
+    name: "Marco Garcia",
+    role: "Reseña verificada en Google",
+    quote: "Buscaba una escuela con quien conectará y entendieran mi necesidades de aprendizaje y siento que en Impulse estoy muy contento."
   },
   {
-    quote: "Fue una suerte encontrar esta academia con tan grandes profesionales. Gracias a ellos he conseguido el B2, la metodología hace que aprendas rápido y no olvides.",
-    name: "Laura García Lomas",
-    role: "Alumna"
+    name: "Alicia Fernandez",
+    role: "Reseña verificada en Google",
+    quote: "Una gran academia con buenos profesores y la implicación de JP es maravillosa (es uno de los dueños) Recomiendo la academia 100%"
   },
   {
-    quote: "Muy recomendable. Se adaptan al perfil de cada alumno adaptando las clases según las necesidades. Tras probar varias academias, éste es el único lugar en el que han conseguido que mi hijo acuda contento y motivado.",
-    name: "Rosa E.",
-    role: "Madre de alumno"
+    name: "Isabella Giron Iglesias",
+    role: "Reseña verificada en Google",
+    quote: "Jp es mi profesor..el mejor profesor y la mejor academia en el barrio!! Muchas gracias por todo"
   },
   {
-    quote: "Es una academia de inglés excepcional donde la calidad de la enseñanza y la atención personalizada se combinan para ofrecer una experiencia educativa única.",
-    name: "Felix Maria",
-    role: "Alumno"
+    name: "Mariela Ruiz",
+    role: "Reseña verificada en Google",
+    quote: "Muy contenta por recibirme en vuestra academia y muy contenta con lo que voy aprendiendo 😊"
   },
   {
-    quote: "Estoy muy contenta con las clases de inglés con la profesora Ahu. Es una excelente profesional: explica con claridad, tiene mucha paciencia y hace que las clases sean dinámicas.",
-    name: "Khadija Ziyati",
-    role: "Alumna adulta"
+    name: "Mariana Arias",
+    role: "Reseña verificada en Google",
+    quote: "Excelente atención, el profe JP es muy majo, siempre dispuesto a enseñarnos.!"
   }
 ];
 

@@ -431,10 +431,10 @@ export default function BarrioDelPilarPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             {[
-              { name: "María José L.", text: "Mis dos hijos llevan tres años en Impulse y el progreso es increíble. Los profesores son muy profesionales y cariñosos." },
-              { name: "Alejandro Ruiz", text: "Aprobé el B2 First con nota después de prepararme aquí. La metodología es excelente y los grupos pequeños marcan la diferencia." },
-              { name: "Inmaculada Soto", text: "La mejor academia del Barrio del Pilar sin duda. Trato familiar, resultados reales y un equipo fantástico." },
-              { name: "David Fernández", text: "Llevamos a nuestra hija desde los 3 años con Great Little People y ahora con 6 ya habla inglés de forma natural." }
+              { name: "Marta Ferrer", text: "Que gran suerte tuvimos de encontrar a Daniel y su equipo. Grandes profesionales y cercanos con sus alumnos. Gracias a ellos mis hijos han mejorado su inglés y pasado unos maravillosos veranos en Irlanda" },
+              { name: "Pepi Moral Ventura", text: "El ambiente, los profesores, una academia excelente para todos los públicos. Mis hijos están encantados de ir son muy profesionales. Se nota que tienen experiencia en formación." },
+              { name: "Salvador Muñoz-Perea", text: "Una verdadera academia de inglés, donde mis hijas van felices y aprendan inglés de verdad. Pero sobretodo hay destacar el trato cercano y familiar" },
+              { name: "Rodrigo Sanz", text: "Muy buen profesor, muy cercano y asequible. Realmente contento con esta academia del barrio. Los chicos van felices a clase. Gran tranquilidad para los padres." }
             ].map((testimonial, idx) => (
               <div key={idx} className="card p-6">
                 <div className="flex gap-1 mb-3">

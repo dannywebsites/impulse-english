@@ -522,10 +522,10 @@ export default function MetodologiaPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { quote: "El método de Impulse es diferente. No memorizas, aprendes de verdad. Ahora puedo mantener conversaciones que antes me daban pánico.", author: "Aurora Jiménez Solano", role: "Estudiante Adulta" },
-              { quote: "Mi hija aprobó B2 First con distinción. El método funciona. Los profesores saben exactamente cómo enseñar.", author: "Carmen L.", role: "Madre de Alumna" },
-              { quote: "Después de años intentando con otras academias, Impulse es donde finalmente 'click'. El ambiente sin miedo a equivocarse es clave.", author: "Alejandro M.", role: "Estudiante, 17 años" },
-              { quote: "Las clases son divertidas y efectivas. Mi hijo va encantado y está aprobando todo.", author: "Lidia Ramirez", role: "Madre" }
+              { author: "Elga Quintans", role: "Curso intensivo", quote: "Me encantó las clases intensivas con J.P muy didácticas y amenas, Gracias" },
+              { author: "Ludmyla Severino Anjos", role: "Curso intensivo", quote: "Muy buen profesiones, este verano estube con un curso intensivo, la verdad me ayudó un montón para entender mucha de las cosas de la gramática de inglés que no entendía. Di clases con el profesor JP explica la gramática de una manera más fácil, y hace un plan de estudio para cada dificultad que tenga cada uno. Recomiendo un montón 👍" },
+              { author: "Alfonso Navarro", role: "Reseña verificada en Google", quote: "La academia merece la pena totalmente. He podido mejorar mi inglés mucho gracias a los profesores que hacen las clases muy amenas." },
+              { author: "Judit Navarro Oriola", role: "Reseña verificada en Google", quote: "Estoy muy contenta con el inglés que he aprendido aquí. Los profesores son muy atentos y promueven a mejorar tu inglés cada día." }
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl">
                 <div className="flex gap-1 mb-4">

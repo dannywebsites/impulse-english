@@ -4,159 +4,159 @@ import { NAP } from '../utils/napData';
 
 const testimonials = [
   {
-    quote: "Luego de pasar por varias academias en toda Madrid esta fue la única que dio con el método y el contenido perfecto para aprender, tengo un C1 y es todo gracias a ellos.",
+    name: "Alberto Rueda Rodriguez",
+    role: "Clases de conversación",
+    quote: "Las clases y los profesores son de 10. Me ayudaron a mejorar mi nivel de inglés muchísimo para superar mi examen de Cambridge. Te ayudan a soltarte en la conversación reconociendo donde tienes más dificultad y dándote los consejos necesarios para superarlos. Academia recomendada 100%",
+    stars: 5
+  },
+  {
+    name: "Ilias Frafer Afif",
+    role: "Reseña verificada en Google",
+    quote: "JP es un profesor increíble,convierte cualquier clase de gramática aburrida en una clase divertidísima, he pasado de un A2 a un B1 en tan solo unos meses.",
+    stars: 5
+  },
+  {
     name: "Cesar Seneca Tellechea Corral",
-    role: "Local Guide",
+    role: "Alumno/a · preparación C1",
+    quote: "Luego de pasar por varias academias en toda Madrid está fue la única que dio con el método y el contenido perfecto para aprender, tengo un C1 y es todo gracias a ellos.",
     stars: 5
   },
   {
-    quote: "Excelente academia!!! No he podido elegir mejor. Desde que llevo a mis hijos están aprobando inglés y sobre todo que van encantados. Hay varios niveles. El trato es excepcional. Son profesionales que les gusta su trabajo, cercanos y hay muy bien ambiente. Gracias a todos los profes (Danny, J.P...).",
-    name: "Lidia Ramirez",
-    role: "Madre de alumnos",
-    stars: 5
-  },
-  {
-    quote: "Yo he tenido a dos de los profesores que están en la academia, JP y Dani desde que era pequeña y estoy encantada con ellos. Los tengo desde que tenía 8 años y ahora tengo 17 y mi evolución en inglés ha sido gracias a ellos totalmente. Las clases son muy didácticas, se hacen muy amenas y se aprende mucho. Preparan genial para los exámenes de Cambridge.",
-    name: "Lucia Salmerón",
-    role: "Alumna desde los 8 años",
-    stars: 5
-  },
-  {
-    quote: "Hacer el intensivo de inglés con JP ha sido un acierto total. Tiene una forma de enseñar súper original, mezcla las explicaciones con historias que te atrapan y hacen que te rías mientras aprendes. ¡Las clases se pasan volando! He mejorado muchísimo en mi relación con el inglés (tenía un poquito de trauma). ¡Ojalá todos los profes fueran así!",
-    name: "María Comas",
-    role: "Local Guide",
-    stars: 5
-  },
-  {
-    quote: "Impulse Academy es y será la mejor academia para aprender inglés! Los mejores maestros, atención de la mejor calidad y la disponibilidad de horarios que tienen son muy buenos! Danny y JP son grandes profesionales, mi hija está encantada con ellos y sus clases. Más que Recomendados al 100%.",
-    name: "Jorge Martinez",
-    role: "Padre de alumna",
-    stars: 5
-  },
-  {
-    quote: "Estoy muy contenta con las clases de inglés con la profesora Ahu. Es una excelente profesional: explica con claridad, tiene mucha paciencia y hace que las clases sean dinámicas y fáciles de seguir. Gracias a ella he notado una gran mejora en mi nivel. ¡Totalmente recomendable!",
-    name: "Khadija Ziyati",
-    role: "Alumna adulta",
-    stars: 5
-  },
-  {
-    quote: "He tenido el gusto de poder asistir a esta academia durante menos de un año y sin duda ha sido una de las mejores ayudas que he podido tener, sobretodo por JP. Me ha dado muchos consejos que sin duda me ayudaron para el examen final, y el trato que han tenido en todo momento es súper gratificante y acogedor.",
-    name: "Clara Sánchez",
-    role: "Alumna",
-    stars: 5
-  },
-  {
-    quote: "Mi hija estudia en Impulse English Academy y estoy muy contenta con los resultados. JP no solo enseña inglés, también ha acompañado a mi hija en un momento difícil de adaptación como emigrante, haciéndola sentir vista, apoyada y parte de una pequeña comunidad que se siente como familia.",
-    name: "Yurisbeth Rivero Chirinos",
-    role: "Madre de alumna",
-    stars: 5
-  },
-  {
-    quote: "If you are looking to learn English in a fun, innovative and effective way, then look no further! I couldn't recommend Daniel and his team highly enough!",
-    name: "Anna Farney",
-    role: "Alumna",
-    stars: 5
-  },
-  {
-    quote: "Completamente agradecida con las facilidades y la atención, tanto de Philippe como de Danny. La idea de ir a una academia siempre me había parecido aburrida, pero definitivamente JP, Danny y el resto del equipo han conseguido hacerlo muy ameno. No tengo dudas que es el mejor lugar donde pueden estudiar y aprender inglés.",
-    name: "Karina Garcia",
-    role: "Alumna adulta",
-    stars: 5
-  },
-  {
-    quote: "Solo puedo decir cosas positivas de la experiencia que tiene mi hija con sus profesores. Lo más importante es que le gusta mucho ir a las clases. Ha notado que su evolución, tanto en el lenguaje hablado como en el escrito, ha mejorado mucho. En resumen, son grandes profesionales. Lo recomiendo 100%.",
-    name: "María Jesús Zuazo Sahagún",
-    role: "Madre de alumna",
-    stars: 5
-  },
-  {
-    quote: "Muy recomendable. Se adaptan al perfil de cada alumno adaptando las clases según las necesidades. Tras probar varias academias, éste es el único lugar en el que han conseguido que mi hijo acuda contento y motivado a sus clases de apoyo. JP es un gran profesional que sabe ganarse a los niños.",
-    name: "Rosa E.",
-    role: "Madre de alumno",
-    stars: 5
-  },
-  {
-    quote: "Algo fundamental para mi, es que no miran el reloj en sus clases, priman la calidad y miran por el alumno. Danny es mi profesor ahora, estoy encantada con sus clases de conversación. Las clases son muy entretenidas, siempre se adaptan a ti y a tus necesidades. Recomendable 100%.",
-    name: "Mª Del Espino Monedero García",
-    role: "Local Guide",
-    stars: 5
-  },
-  {
-    quote: "Es una academia de inglés excepcional donde la calidad de la enseñanza y la atención personalizada se combinan para ofrecer una experiencia educativa única. Las clases son divertidas y dinámicas, diseñadas para mantener la motivación y el interés del alumno. Es el lugar ideal para aprender inglés con excelencia y apoyo.",
-    name: "Felix Maria",
-    role: "Alumno",
-    stars: 5
-  },
-  {
-    quote: "El ambiente, los profesores, una academia excelente para todos los públicos. Mis hijos están encantados de ir.",
-    name: "Pepi Moral Ventura",
-    role: "Madre de alumnos",
-    stars: 5
-  },
-  {
-    quote: "Si quieres tener resultados, este es el sitio ideal para mejorar tu inglés! Súper profesionales y a la vez un ambiente cercano. Consiguen mantenerte motivado y que ganes confianza y fluidez con clases dinámicas y variadas. Se adaptan a las necesidades de los estudiantes.",
-    name: "Lorena AP",
-    role: "Local Guide",
-    stars: 5
-  },
-  {
-    quote: "Gracias a Impulse logré obtener mi certificado C1 de inglés. Esto me ha abierto muchas puertas en el mercado laboral. El ambiente es familiar y cercano, y siempre me sentí apoyado en todo el proceso. ¡Muchas gracias por todo!",
-    name: "Gonzalo Tarascón",
-    role: "Local Guide",
-    stars: 5
-  },
-  {
-    quote: "Thanks JP for your help with my exam. I highly recommend this academy for anyone looking to improve and getting their certification.",
-    name: "Víctor RC",
-    role: "Local Guide",
-    stars: 5
-  },
-  {
-    quote: "Muy contenta con haber encontrado esta academia para mi hijo. Todo el staff es MUY amable, dedicado y profesional. Mi hijo ha progresado muchísimo en su comprensión y desempeño en inglés. La metodología que usan mezcla el juego con los contenidos académicos. Recomiendo sinceramente Impulse English Academy.",
-    name: "Marina Penerbosa",
-    role: "Local Guide",
-    stars: 5
-  },
-  {
-    quote: "Hace un año encontré por casualidad la academia en el barrio. La experiencia... Increíble! Desde el primer momento Philip y Dani transmiten una confianza que los niños y padres percibimos. El trato es personalizado y se adaptan a cada niño según sus necesidades. Los profesores son nativos y te reciben cada día con una sonrisa. Recomiendo 100%!",
-    name: "Gloria RM",
-    role: "Madre de alumnas",
-    stars: 5
-  },
-  {
-    quote: "Después de pasar por otros centros con poco éxito, he encontrado la academia ideal para mi. Estoy muy satisfecha con el método, mi profesor y mi progreso con el idioma.",
-    name: "Aurora Jimenez Solano",
-    role: "Local Guide",
-    stars: 5
-  },
-  {
-    quote: "Fue una suerte encontrar esta academia con tan grandes profesionales. Gracias a ellos he conseguido el B2, la metodología hace que aprendas rápido y no olvides.",
-    name: "Laura García Lomas",
-    role: "Alumna",
-    stars: 5
-  },
-  {
-    quote: "Mi inglés ha mejorado, son buenísimos profesionales, buen método, mucha paciencia por su parte. Volveré para seguir mejorando.",
     name: "Paula Cuadrado",
-    role: "Alumna",
+    role: "Reseña verificada en Google",
+    quote: "Mi inglés ha mejorado, son buenisimos profesionales, buen método, mucha paciencia por su parte. Volveré para seguir mejorando",
     stars: 5
   },
   {
-    quote: "Estoy encantada con esta academia, los profesores excelentes, y muy buen trato y excelente ambiente. Desde luego si tienes pensado mejorar tu inglés, este es el mejor lugar!",
-    name: "Laura Cid Moreno",
-    role: "Alumna",
+    name: "CJ Martos",
+    role: "Reseña verificada en Google",
+    quote: "Muy profesionales. Se adaptan a tu nivel y están muy pendientes de tu progreso. Danny y JP tienen mucha experiencia y trabajan genial",
     stars: 5
   },
   {
-    quote: "Es genial, profesores amables y clases divertidas. He estado en el curso intensivo de verano y valió total la pena. Además J.P hace las clases super fácil de entender.",
-    name: "Stefany Jiménez Espitia",
-    role: "Alumna intensivo",
+    name: "Antonio Del Pozo",
+    role: "Alumno/a · preparación C1",
+    quote: "Clases perfectas, totalmente adaptadas a mi objetivo de conseguir el C1 de inglés. JP es un profesor extraordinario, siempre dispuesto para ayudarte en todo lo que necesites. Sabe como transmitir lo que necesitas aprender, además de hacer la clases divertidas. Es un motivador nato. No podría haber tenido un profesor mejor. Thanks for everything JP!",
     stars: 5
   },
   {
-    quote: "Me ha gustado mucho el trato que brinda el director de esta academia, es muy amable y excelente profesional. Como profesor muy bueno en explicar y se deja entender. Mi hija Ainhoa está encantada con él, le ha brindado la confianza necesaria para que ella se sienta en confianza.",
-    name: "Margarita Sánchez",
-    role: "Madre de alumna",
+    name: "Clara Sánchez",
+    role: "Reseña verificada en Google",
+    quote: "He tenido el gusto de poder asistir a esta academia durante menos de un año y sin duda a sido una de las mejores ayudas que he podido tener, sobretodo por JP, me ha dado muchos consejos que sin duda me ayudaron para el examen final, y el trato que han tenido en todo  momento es súper gratificante y acogedor, muy atentos a las dudas personales y siempre con buenas intenciones. Gracias por todo el apoyo!",
+    stars: 5
+  },
+  {
+    name: "Laia Lubillo Solsona",
+    role: "Reseña verificada en Google",
+    quote: "Las clases en Impulse son muy entretenidas y divertidas, aprendes inglés sin darte cuenta. Los profesores se adaptan a ti, por lo que el trato es muy personalizado. Danny siempre está dispuesto a ayudarte y resolver cualquier duda.",
+    stars: 5
+  },
+  {
+    name: "Carmen Moreno",
+    role: "Reseña verificada en Google",
+    quote: "Grandes profesionales que facilitan el aprendizaje desde el primer día! Metodologías y dinámicas divertidas!",
+    stars: 5
+  },
+  {
+    name: "Leticia Ramos Setim",
+    role: "Madre/padre de alumno",
+    quote: "Una academia totalmente recomendable, mi hijo está encantado con las clases, son divertidas y variadas.",
+    stars: 5
+  },
+  {
+    name: "Dámaris Valentín-Fernández Gómez",
+    role: "Reseña verificada en Google",
+    quote: "Mi nivel de inglés ha mejorado muchísimo! La calidad del profesorado es excelente. Recomiendo sin duda esta gran academia de inglés.",
+    stars: 5
+  },
+  {
+    name: "Ana Torrado",
+    role: "Reseña verificada en Google",
+    quote: "Impulse English Academy ha sido la mejor academia en la que he estado. Gracias a JP aprobé la asignatura. Lo que más me gusta es que se adaptan a tus necesidades y se centran donde ven más dificultades. ¡Muchas gracias! 😊",
+    stars: 5
+  },
+  {
+    name: "Mª Del Espino Monedero García",
+    role: "Clases de conversación",
+    quote: "Es una buena academia, profesionales y con ganas de enseñar. Además,  algo fundamental para mi,  es que no miran el reloj en sus clases, priman la calidad y miran por el alumno. Danny es mi profesor ahora, estoy encantada con sus clases de conversación. Recomendable 100%.",
+    stars: 5
+  },
+  {
+    name: "Edixon Muñoz",
+    role: "Alumno/a adulto",
+    quote: "He tenido un par de clases particulares  con Jp para prepaprar  un curso para el trabajo. El curso fue adaptado  a lo que necesitaba  y Jp fue .... AMAZING 🥳",
+    stars: 5
+  },
+  {
+    name: "Javier Salmeron",
+    role: "Reseña verificada en Google",
+    quote: "Dani es encantador y muy profesional. Aprendes sin darte cuenta por lo ameno del sistema. Muchas gracias de verdad por vuestra ayuda y buen hacer. Un placer haberos conocido.",
+    stars: 5
+  },
+  {
+    name: "Manuel Casas Herrero",
+    role: "Reseña verificada en Google",
+    quote: "Danny es un excelente profesional que vive con pasion su labor didactica. Nuestros hijos son biligues gracias a sus enseñazas en Madrid e Irlanda. Sin lugar a duda Impulse English Academy sera nuestro centro de referencia en la capital",
+    stars: 5
+  },
+  {
+    name: "Paloma Canalda",
+    role: "Alumno/a adulto",
+    quote: "Profesores súper profesionales que son ,además, muy creativos y les gusta su trabajo porque buscan la manera de conseguir el objetivo con cada alumno .",
+    stars: 5
+  },
+  {
+    name: "Víctor RC",
+    role: "Reseña verificada en Google",
+    quote: "Gracias, Jp, por tu ayuda con mi examen. Recomiendo ampliamente esta academia a cualquiera que busque mejorar y obtener su certificación.",
+    stars: 5
+  },
+  {
+    name: "Ramon Pico",
+    role: "Reseña verificada en Google",
+    quote: "Profesores muy profesionales, trato excelente y me sirvió para mejorar mi nivel rápidamente",
+    stars: 5
+  },
+  {
+    name: "Patricia Gallardo",
+    role: "Reseña verificada en Google",
+    quote: "Muy majetes y muy flexibles. Yo he ido todo el año con mi bebé. Su método para aprender mediante app, el mejor que he visto (a parte de los libros).",
+    stars: 5
+  },
+  {
+    name: "Lucía Moreno Zubiaur",
+    role: "Alumno/a · preparación C1",
+    quote: "He estado solo un año en la academia, y puedo asegurar con certeza que es una experiencia increíble. Aprendes sin darte cuenta, llegué con un nivel B1-B2 y en menos de un año me había sacado el C1 alto. No se siente como una rutina, tenía ganas de ir todos los días porque los profesores hablaban contigo en vez de enseñar y copiar apuntes, practicaban y te sentías bien. Recomiendo esta academia para sacarte cualquier titulación sin duda. Especial gracias a JP, un excelente profesor y persona. Gracias sinceras.",
+    stars: 5
+  },
+  {
+    name: "David Garcia",
+    role: "Reseña verificada en Google",
+    quote: "DANI ES UN GRAN PROFESIONAL ME GUSTA MUCHO EL SER HUMANO Q ES LE ENCANTA AYUDAR ENSEÑAR",
+    stars: 5
+  },
+  {
+    name: "Anna Farney",
+    role: "Reseña verificada en Google",
+    quote: "Si buscas aprender inglés de una manera divertida, innovadora y eficaz, ¡no busques más! ¡Recomiendo encarecidamente a Daniel y a su equipo!",
+    stars: 5
+  },
+  {
+    name: "Alba Garrido Iglesias",
+    role: "Reseña verificada en Google",
+    quote: "¡¡ME ENCANTA LA ACADEMIA!! Las clases son muy divertidas y se esfuerzan en ayudarnos a aprender. Las clases a las que acudo son completamente en inglés, no obstante, si pides al profesor que explique en castellano alguna cosa que no haya quedado clara, lo hará y te ayudará a comprenderlo. JP es un gran profesor. Muy contenta y totalmente recomendado.👏",
+    stars: 5
+  },
+  {
+    name: "Gloria Ruiz García",
+    role: "Reseña verificada en Google",
+    quote: "Una absoluta maravilla! Danny es un gran profesional que cuenta con muchísimos años de experiencia. Serio, empático y trabajador.",
+    stars: 5
+  },
+  {
+    name: "Hugo G",
+    role: "Reseña verificada en Google",
+    quote: "Jp es muy majo y divertido además de aprender un montón es sus clases y no se hacen pesadas, la recomiendo mucho.",
     stars: 5
   }
 ];

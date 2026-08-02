@@ -10,12 +10,12 @@ export default function PartnersSection() {
   ];
 
   const reviews = [
-    { text: "Luego de pasar por varias academias en toda Madrid esta fue la única que dio con el método y el contenido perfecto para aprender.", author: "Cesar S.", role: "Local Guide" },
-    { text: "Desde que llevo a mis hijos están aprobando inglés y sobre todo que van encantados. El trato es excepcional.", author: "Lidia R.", role: "Madre de alumnos" },
-    { text: "Mi evolución en inglés ha sido gracias a ellos totalmente. Las clases son muy didácticas y se aprende mucho.", author: "Lucia S.", role: "Alumna desde los 8 años" },
-    { text: "Gracias a Impulse logré obtener mi certificado C1 de inglés. Esto me ha abierto muchas puertas en el mercado laboral.", author: "Gonzalo T.", role: "Local Guide" },
-    { text: "Impulse Academy es y será la mejor academia para aprender inglés! Los mejores maestros y atención de la mejor calidad.", author: "Jorge M.", role: "Padre de alumna" },
-    { text: "100% recomendado, vale la pena. Mi hijo ahora continúa con JP para hacer sus exámenes de cualificación.", author: "Luis M.", role: "Padre de alumno" },
+    { author: "Carlos Javier Ayllón Gordillo", role: "Reseña verificada en Google", text: "Excelente ambiente, profesores muy amables y muy cercanos a los estudiantes. Definitivamente recomiendo esta academia para aprender inglés." },
+    { author: "Alejandro Carre", role: "Reseña verificada en Google", text: "Academia muy recomendable! Profesores muy cualificados y un ambiente estupendo" },
+    { author: "Yosmari A. Diaz O.", role: "Reseña verificada en Google", text: "No puedo estar mas contenta con mi profesor, JP, y la facilidad para todo en general en la academia, que mas que un lugar donde ir a aprender, es un espacio donde soy muy feliz cada vez que voy! :) 100% recomendado" },
+    { author: "Carmen Suarez", role: "Reseña verificada en Google", text: "Academia totalmente recomendable para mejorar tu inglés, buenos profesores y mejores personas aún, si estás buscando una academia de calidad, este es tu sitio." },
+    { author: "Natalia López Casado", role: "Reseña verificada en Google", text: "Llevo 2 meses dando clase con Danny y estoy encantada. Clases muy amenas y en las que conversamos todo el rato. Me hace correcciones y me da tips para mejorar. Además, agradezco de ellos su disponibilidad y adaptación a mis complicados horarios. La recomiendo 100 %" },
+    { author: "Laura Garcia", role: "Reseña verificada en Google", text: "Recomendable 100%!! He coincidido tanto con Danny como con JP y transmiten de maravilla. Gracias a ellos conseguí mis objetivos y mejoré mucho con el idioma. Sin duda seguiré contando con ellos" },
   ];
 
   return (

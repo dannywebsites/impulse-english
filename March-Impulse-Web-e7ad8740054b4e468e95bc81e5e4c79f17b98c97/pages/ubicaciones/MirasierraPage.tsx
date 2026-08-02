@@ -425,9 +425,9 @@ export default function MirasierraPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             {[
-              { name: "Ana García R.", text: "Llegamos a Impulse porque un vecino de Mirasierra nos lo recomendó. El metro directo hace que sea super cómodo llevar a los niños." },
-              { name: "Miguel Fernández", text: "Preparé el B2 First aquí y lo aprobé a la primera. Desde Mirasierra se llega en nada con la Línea 9." },
-              { name: "Cristina López M.", text: "Muy contenta con la academia. Mis hijos van encantados y los grupos pequeños hacen que progresen rápido." }
+              { name: "Aurora Jimenez Solano", text: "Tras varios intentos de retomar mi formación en inglés, en otros centros con poco éxito, he encontrado la academia ideal para mi. Estoy muy satisfecha con el método, mi profesor y mi progreso con el idioma." },
+              { name: "Irene C", text: "Una gran academia, ha sido clave en el avance de mi hijo en Inglés, buena comunicación y buena enseñanza. Realmente contentos y repetiremos este curso escolar!!!" },
+              { name: "Rosangel Bandres", text: "Profesores super cheveres ,  buena ubicación  , y muy profesionales  , mi hija está feliz  de ir a esta academia  , aparte de que aprende la pasa muy  bien ...   doy 5 estrella  porque no hay más, merecen  un 10 ..." }
             ].map((testimonial, idx) => (
               <div key={idx} className="card p-6">
                 <div className="flex gap-1 mb-3">
