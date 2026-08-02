@@ -183,7 +183,9 @@ def score_intro(text):
     words = text.split()[:120]
     intro = " ".join(words)
     hits = len(re.findall("|".join(LOCAL_SIGNALS), intro, re.I))
-    nums = len(re.findall(r"\d+\s?(?:€|min|a[ñn]os|alumnos|%)", intro))
+    # Case-insensitive: headings and card titles are title-cased ("7-10 Alumnos",
+    # "15 Minutos"), and a matched-case scan silently skipped every one of them.
+    nums = len(re.findall(r"\d+\s?(?:€|min|a[ñn]os|alumnos|%)", intro, re.I))
     black = [b for b in BLACKLIST if re.search(b, intro, re.I)]
     s = 3
     s += min(hits, 3)

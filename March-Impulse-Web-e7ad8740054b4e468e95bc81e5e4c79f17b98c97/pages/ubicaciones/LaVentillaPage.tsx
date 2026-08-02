@@ -12,11 +12,11 @@ import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 const benefits = [
   { title: "Una parada de metro desde Ventilla", desc: "Ventilla → Barrio del Pilar, línea 9, sin transbordos. Unos 2 minutos de trayecto y 500 m a pie hasta la puerta." },
-  { title: "Centro oficial Cambridge y Linguaskill", desc: "Te preparas y te examinas en el mismo sitio. No tienes que cruzar Madrid el día del examen." },
-  { title: "100 alumnos aprobados en Cambridge", desc: "100% de aprobados en B2 First en 2024/25 y 2025/26. Casi todos empezaron desde un nivel muy básico." },
-  { title: "Grupos de 7 a 10 alumnos", desc: "Máximo 10 en adultos. Suficientemente pequeño para que hables en todas las clases, no una vez al mes." },
-  { title: "5,0 sobre 180 reseñas en Google", desc: "Las 180 son de 5 estrellas. Ninguna academia de la zona norte tiene esa combinación de nota y volumen." },
-  { title: "Precios publicados, sin letra pequeña", desc: "Desde 64 €/mes en grupo o 29 €/hora en clase particular. Matrícula 45 € y libro hasta 40 €. Eso es todo." }
+  { title: "Centro oficial Cambridge y Linguaskill", desc: "Estudias y te examinas bajo el mismo techo. El día del examen no tienes que plantarte en la otra punta de Madrid." },
+  { title: "100 alumnos aprobados en Cambridge", desc: "Con un 100% de aprobados en B2 First en los cursos 2024/25 y 2025/26. La mayoría arrancó prácticamente desde cero." },
+  { title: "Grupos de 7 a 10 alumnos", desc: "Tope de 10 en los grupos de adultos. Con ese aforo te toca hablar cada sesión, no una vez cada tres semanas." },
+  { title: "5,0 sobre 180 reseñas en Google", desc: "Las 180 puntúan 5 estrellas. Esa mezcla de nota y cantidad no la reúne ningún centro del norte de Madrid." },
+  { title: "Precios publicados, sin letra pequeña", desc: "En grupo arranca en 64 €/mes; la clase individual sale a 29 €/hora. Súmale 45 € de matrícula y como mucho 40 € de libro. Nada más." }
 ];
 
 const courses = [
@@ -79,7 +79,6 @@ export const locationMeta = {locationName: "La Ventilla",
 export default function LaVentillaPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Academia de Inglés cerca de La Ventilla | Impulse English Academy La Vaguada, Barrio del Pilar';
   }, []);
 
   return (
@@ -501,10 +500,10 @@ export default function LaVentillaPage() {
               <h3 className="font-bold text-xl text-zinc-900 mb-1">JP</h3>
               <p className="text-accent-blue font-medium mb-4">Director de estudios y cofundador</p>
               <p className="text-zinc-700 leading-relaxed mb-4">
-                JP lleva <strong>más de 10 años enseñando inglés</strong> y vivió 10 años en Irlanda antes de instalarse en Madrid. Es quien dirige el día a día académico del centro, quien hace tu <strong>prueba de nivel gratuita de 25 minutos</strong> y quien contesta el WhatsApp: cuando escribes al 604 910 611, te responde él.
+                Acumula <strong>más de 10 años dando clase de inglés</strong>, precedidos de 10 años viviendo en Irlanda. Dirige la parte académica del centro, se sienta contigo en la <strong>prueba de nivel gratuita de 25 minutos</strong> y atiende personalmente el WhatsApp del 604 910 611.
               </p>
               <p className="text-zinc-700 leading-relaxed mb-4">
-                Está especializado en <strong>exámenes Cambridge</strong> y en adquisición temprana del idioma, y aparece por su nombre en buena parte de nuestras 180 reseñas. Junto a Danny Fitzpatrick, cofundador, dan clase en persona: no somos una franquicia con profesores rotatorios.
+                Sus áreas son la preparación de <strong>exámenes Cambridge</strong> y la adquisición temprana del idioma. Lo verás nombrado, alumno tras alumno, en las 180 reseñas de Google. Con Danny Fitzpatrick, el otro cofundador, se reparten las clases: aquí no rotan profesores cada trimestre como en una franquicia.
               </p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
                 Conoce al equipo completo <ArrowRight className="w-4 h-4" />
@@ -536,10 +535,10 @@ export default function LaVentillaPage() {
               </div>
             </div>
             <p className="text-zinc-700 leading-relaxed mb-4">
-              Daniel llegó con un objetivo concreto: acceder a oportunidades laborales en el extranjero, en países de habla inglesa. Estuvo con nosotros cerca de año y medio. En sus palabras, <em>"es algo que conseguí, así que desde ese punto de vista cumplió con mis expectativas"</em>.
+              Lo que Daniel quería era salir de España a trabajar: <em>"acceder a oportunidades laborales en el extranjero y en países de habla inglesa"</em>. Le llevó cerca de año y medio de clases. Su veredicto, literal: <em>"es algo que conseguí… cumplió con mis expectativas"</em>.
             </p>
             <p className="text-zinc-700 leading-relaxed mb-6">
-              Lo que más valoró no fue el temario: <em>"cuando acudimos a una academia es encontrar un trato personalizado y sobre todo profesionalidad y compromiso para con tu proceso de aprendizaje y tu situación de partida"</em>. Hoy es profesor cualificado y enseña inglés en primaria a jornada completa.
+              Cuando explica por qué le sirvió, no menciona ni el temario ni la metodología: habla del <em>"trato personalizado y sobre todo profesionalidad y compromiso para con tu proceso de aprendizaje y tu situación de partida"</em>. Y el final de la historia es mejor que el objetivo inicial: hoy es profesor titulado y enseña inglés en primaria a jornada completa.
             </p>
             <a
               href="/testimonios/"

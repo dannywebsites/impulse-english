@@ -110,7 +110,7 @@ export default function MontecarmeloLasTablasPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Inglés en Montecarmelo y Las Tablas
+              Inglés a 8 minutos de Montecarmelo y Las Tablas
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
@@ -154,7 +154,7 @@ export default function MontecarmeloLasTablasPage() {
       <section className="section-tight px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
-            Nuestra academia ofrece clases de inglés para familias de Montecarmelo y Las Tablas (28050 Madrid), dos de las zonas de mayor crecimiento de Madrid Norte. Desde Montecarmelo se llega en la Línea 9 de metro, bajando en la parada de metro Barrio del Pilar (unos 8 minutos más 3 andando), o en 10 a 12 minutos en coche a nuestra academia en Barrio del Pilar. Trabajamos con niños, adolescentes y adultos que buscan aprender inglés con grupos reducidos y horarios flexibles. Somos centro oficial de preparación Cambridge con 100% de aprobados.
+            ¿Academia de inglés cerca de Montecarmelo o Las Tablas? La línea 9 baja directa hasta Barrio del Pilar en unos 8 minutos, más 3 andando hasta Av. de El Ferrol 22. En coche son 10 a 12 minutos por la Av. de la Ilustración. Grupos de 7 a 10 alumnos, desde 64 €/mes, matrícula de 45 € y prueba de nivel gratuita de 25 minutos.
           </p>
           <p className="text-lg text-zinc-700 leading-relaxed">
             Montecarmelo y Las Tablas, en los nuevos desarrollos PAU del norte de Madrid, son barrios jóvenes con una gran cantidad de familias con niños en edad escolar. El barrio cuenta con referencias como Metro Montecarmelo, el Parque de Las Tablas y numerosos colegios. Desde Montecarmelo, llegar a nuestra academia es sencillo: 10 a 12 minutos en coche por la Av. de la Ilustración, o la Línea 9 de metro en dirección sur hasta Barrio del Pilar (unos 8 minutos más 3 andando). Muchas familias de estos desarrollos buscan una academia de inglés de calidad cerca de casa, con métodos adaptados a cada edad.
@@ -442,6 +442,115 @@ export default function MontecarmeloLasTablasPage() {
               Ver todas las reseñas en Google
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Quien da la clase. Senal E-E-A-T: persona con nombre, no "nuestro equipo". */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Quién te la da</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Si vas a hacer el trayecto, mereces saber quién enseña</h2>
+            <div className="rule"></div>
+          </div>
+          <div className="grid md:grid-cols-[300px_1fr] gap-10 items-start">
+            <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-panel">
+              <img
+                src="/images/academy/jp-director-estudios.webp"
+                alt="JP, director de estudios de Impulse English Academy, a 8 minutos de Montecarmelo por la línea 9"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                width={900}
+                height={1200}
+              />
+            </div>
+            <div className="space-y-4 text-zinc-600 leading-relaxed">
+              <p>Desde Montecarmelo y Las Tablas hay que bajar hasta Barrio del Pilar. Ocho minutos no son nada, pero solo si al llegar hay alguien que sabe lo que hace.</p>
+              <p>
+                Ese alguien es <strong className="text-zinc-900">JP</strong>, cofundador y director
+                de estudios, con <strong className="text-zinc-900">más de 10 años</strong> dando
+                clase de inglés y 10 años de vida en Irlanda a la espalda.
+              </p>
+              <p>
+                Lleva la parte académica del centro, hace personalmente las pruebas de nivel de 25
+                minutos y responde el WhatsApp del 604 910 611. Escribes y te contesta él, no un
+                comercial.
+              </p>
+              <p>
+                Se ha especializado en exámenes Cambridge y en adquisición temprana del idioma
+                (útil en dos barrios llenos de familias con niños pequeños). Su nombre aparece
+                repetido en las 180 reseñas de Google. Danny Fitzpatrick, cofundador, lleva adultos
+                e inglés de negocios.
+              </p>
+              <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+                Conoce al equipo completo <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Caso real: resultado concreto, con nombre y desenlace verificable. */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Un caso real</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Sergio</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 leading-relaxed mb-6 max-w-3xl">Los PAU del norte están llenos de gente joven con la carrera por delante. La historia de Sergio va exactamente de eso: del inglés como requisito de trabajo, no como asignatura.</p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">30 años</p><p className="t-small text-zinc-600">al empezar</p></div>
+              <div><p className="t-h3 text-accent-blue">4 entrevistas</p><p className="t-small text-zinc-600">en sus primeros meses en Dublín</p></div>
+              <div><p className="t-h3 text-emerald-600">2 años después</p><p className="t-small text-zinc-600">analista de pólizas en una empresa irlandesa</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed mb-4">Sergio tenía el inglés de cualquiera que ha pasado por el sistema educativo español y no lo ha usado nunca en serio: <em>"siempre he tenido una gran carencia de confianza para hablar en inglés"</em>. No era falta de gramática. Era no atreverse.</p>
+            <p className="text-zinc-600 leading-relaxed mb-4">Y le estaba costando una decisión: <em>"la barrera del idioma siempre me había impedido dar este paso"</em>, el de irse a trabajar fuera. Sobre cómo se desbloqueó: <em>"tanto Dani como JP han sido un gran apoyo para mí, guiándome y asesorándome en cada momento. Gracias a ellos, he podido ganar la confianza que realmente necesitaba"</em>.</p>
+            <p className="text-zinc-600 leading-relaxed mb-6">Hoy vive en Dublín y trabaja de analista de pólizas y administrativo. Lo cuenta así: <em>"ha sido una de las mejores decisiones de mi vida y realmente ha cambiado mi vida"</em>.</p>
+            <a href="/testimonios/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+              Ver el vídeo y otros casos <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Precios visibles en pagina, no solo en schema. */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Precios</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Cuánto vale cada curso, en una tabla</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 mb-8">En barrios nuevos casi todo se cotiza a la carta. Esto no: la tarifa es pública, idéntica para Montecarmelo, para Las Tablas y para quien vive enfrente de la academia.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b-2 border-zinc-200">
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Curso</th>
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Edad</th>
+                  <th className="py-3 font-display text-xs uppercase tracking-wider text-zinc-500">Precio</th>
+                </tr>
+              </thead>
+              <tbody className="text-zinc-700">
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Infantil</td><td className="py-3 pr-4">2-5 años</td><td className="py-3">desde 64 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Primaria</td><td className="py-3 pr-4">6-12 años</td><td className="py-3">83 €/mes · 239 €/trimestre</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Secundaria</td><td className="py-3 pr-4">13-17 años</td><td className="py-3">desde 87 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Adultos</td><td className="py-3 pr-4">todos los niveles</td><td className="py-3">94 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Clases particulares</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+                <tr><td className="py-3 pr-4 font-medium">Clases online</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="t-small text-zinc-500 mt-6">
+            A eso se suman <strong>45 € de matrícula</strong> y un <strong>libro de 40 € como
+            máximo</strong>, ambos de una sola vez. Ejemplo con todo incluido: un niño de Primaria
+            son 168 € el primer mes y 83 € a partir del segundo. La cuota cubre las clases
+            semanales, los simulacros de Cambridge, el seguimiento y los recursos online, con
+            descuento por trimestre y por hermanos matriculados. Las tasas oficiales del examen las
+            cobra Cambridge, no la academia.
+          </p>
         </div>
       </section>
 

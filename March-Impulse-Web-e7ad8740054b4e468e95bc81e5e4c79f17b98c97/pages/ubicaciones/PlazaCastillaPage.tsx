@@ -79,7 +79,6 @@ export const locationMeta = {locationName: "Plaza Castilla",
 export default function PlazaCastillaPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Academia de Inglés cerca de Plaza Castilla Madrid | Impulse English Academy La Vaguada - Barrio del Pilar';
   }, []);
 
   return (

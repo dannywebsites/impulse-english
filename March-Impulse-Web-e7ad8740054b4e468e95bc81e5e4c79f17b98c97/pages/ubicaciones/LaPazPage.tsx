@@ -56,7 +56,7 @@ export const localFaqs: FAQItem[] = [
     answer: "Es gratuita y dura 25 minutos. La hace JP, el director de estudios, que también es quien contesta el WhatsApp: escribes al 604 910 611 y hablas directamente con él, no con un formulario. Sales con tu nivel MCER y el grupo recomendado."
   },
   {
-    question: "Mi hijo va al Breogán o al Tagore. ¿Le da tiempo a llegar?",
+    question: "Mi hijo va al Breogán o al Tagore. ¿Le da tiempo a llegar desde el colegio?",
     answer: "Sí, y es de los trayectos más cómodos que tenemos. El CP Breogán está en Calle Ginzo de Limia, que desemboca en Av. de El Ferrol. Muchas familias de La Paz vienen andando desde el propio colegio. Abrimos hasta las 21:30 de lunes a jueves."
   },
   {
@@ -79,7 +79,6 @@ export const locationMeta = {locationName: "La Paz",
 export default function LaPazPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Academia de Inglés cerca de La Paz Madrid | Impulse English Academy La Vaguada, Barrio del Pilar';
   }, []);
 
   return (
