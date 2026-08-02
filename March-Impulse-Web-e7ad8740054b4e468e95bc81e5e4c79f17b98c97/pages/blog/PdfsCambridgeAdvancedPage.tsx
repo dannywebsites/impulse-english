@@ -427,7 +427,7 @@ export default function PdfsCambridgeAdvancedPage() {
                 <p className="text-zinc-700">
                   En <a href="/academia-ingles-barrio-del-pilar/" className="text-amber-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-amber-600 hover:underline font-medium">junto a La Vaguada</a>, complementamos estos recursos PDF con clases guiadas,
                   corrección personalizada de Writing y práctica de Speaking con feedback en tiempo real.
-                  Ofrecemos <a href="/cursos-ingles/adultos/" className="text-amber-600 hover:underline font-medium">cursos de inglés para adultos</a> y preparación para <a href="/examenes-cambridge/" className="text-amber-600 hover:underline font-medium">exámenes Cambridge</a> desde <strong>79€/mes</strong>.
+                  Ofrecemos <a href="/cursos-ingles/adultos/" className="text-amber-600 hover:underline font-medium">cursos de inglés para adultos</a> y preparación para <a href="/examenes-cambridge/" className="text-amber-600 hover:underline font-medium">exámenes Cambridge</a> desde <strong>94€/mes</strong>.
                 </p>
               </div>
             </section>
@@ -473,7 +473,7 @@ export default function PdfsCambridgeAdvancedPage() {
                 </p>
                 <p className="text-white/90">
                   En <a href="/academia-ingles-barrio-del-pilar/" className="text-white hover:underline font-semibold">nuestra academia</a> integramos estos recursos en nuestros cursos de
-                  preparación por solo <strong>79€/mes</strong>, con profesores especializados en exámenes Cambridge.
+                  preparación por solo <strong>94€/mes</strong>, con profesores especializados en exámenes Cambridge.
                 </p>
               </div>
             </section>

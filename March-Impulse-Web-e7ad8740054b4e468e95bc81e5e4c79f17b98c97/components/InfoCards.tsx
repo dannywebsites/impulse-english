@@ -61,7 +61,7 @@ export default function InfoCards() {
                 <div>
                   <h3 className="text-xl font-bold text-zinc-900 mb-2">100% Aprobados Cambridge</h3>
                   <p className="text-zinc-500 leading-relaxed">
-                    Tasa de aprobados del 100% en exámenes Cambridge 2024-2025. Preparamos a nuestros alumnos para el éxito.
+                    Tasa de aprobados del 100% en exámenes Cambridge 2025-2026. Preparamos a nuestros alumnos para el éxito.
                   </p>
                 </div>
               </div>

@@ -13,7 +13,7 @@ const certifications = [
   "Partner de Great Little People (metodología infantil)",
   "Partner school de ESIC Idiomas (Cambridge Exam Centre ES278)",
   "174+ reseñas de 5 estrellas en Google",
-  "100% de aprobados Cambridge 2024/2025"
+  "100% de aprobados Cambridge 2025-2026"
 ];
 
 const faqs = [
@@ -23,11 +23,11 @@ const faqs = [
   },
   {
     question: "¿Academia o profesor particular?",
-    answer: "La elección entre academia y profesor particular en 2025/26 depende del perfil y objetivos del alumno. La academia ofrece aprendizaje estructurado, socialización y grupos reducidos, ideal para interacción grupal. El profesor particular brinda atención personalizada, flexibilidad horaria y adaptación al ritmo individual, siendo óptimo para refuerzos específicos o ambientes sin distracciones."
+    answer: "La elección entre academia y profesor particular en 2026/27 depende del perfil y objetivos del alumno. La academia ofrece aprendizaje estructurado, socialización y grupos reducidos, ideal para interacción grupal. El profesor particular brinda atención personalizada, flexibilidad horaria y adaptación al ritmo individual, siendo óptimo para refuerzos específicos o ambientes sin distracciones."
   },
   {
     question: "¿Presencial o online para aprender inglés?",
-    answer: "La elección entre clases presenciales y online para aprender inglés en 2025/26 depende de estilo de vida y objetivos. Presencial ofrece estructura, concentración e interacción directa; online aporta flexibilidad, accesibilidad y menor coste. Ambas modalidades igualan calidad gracias a avances tecnológicos, pero exigen compromiso y organización para ser efectivas."
+    answer: "La elección entre clases presenciales y online para aprender inglés en 2026/27 depende de estilo de vida y objetivos. Presencial ofrece estructura, concentración e interacción directa; online aporta flexibilidad, accesibilidad y menor coste. Ambas modalidades igualan calidad gracias a avances tecnológicos, pero exigen compromiso y organización para ser efectivas."
   },
   {
     question: "¿Grupo o individual clases inglés?",

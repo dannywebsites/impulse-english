@@ -19,7 +19,7 @@ const c1AdvancedFaqs = [
   },
   {
     question: "¿Qué trabajos piden C1 de inglés?",
-    answer: "El nivel C1 de inglés, certificado por el Cambridge C1 Advanced, es esencial en puestos directivos, técnicos, académicos, turísticos y legales que requieren comunicación fluida y precisa en entornos internacionales. Es valorado para negociación, presentaciones, docencia, atención al cliente y trámites migratorios en 2025/26."
+    answer: "El nivel C1 de inglés, certificado por el Cambridge C1 Advanced, es esencial en puestos directivos, técnicos, académicos, turísticos y legales que requieren comunicación fluida y precisa en entornos internacionales. Es valorado para negociación, presentaciones, docencia, atención al cliente y trámites migratorios en 2026/27."
   },
   {
     question: "¿Cuántas horas de estudio para C1?",
@@ -43,7 +43,7 @@ const c1AdvancedFaqs = [
   },
   {
     question: "¿Merece la pena el C1 en España?",
-    answer: "El certificado Cambridge C1 Advanced es muy valorado en España en 2025/26 por certificar un nivel alto de inglés, reconocido en universidades, empresas multinacionales y para trámites oficiales. Facilita el acceso a estudios superiores, mejora la empleabilidad y aporta un valor estable sin caducidad."
+    answer: "El certificado Cambridge C1 Advanced es muy valorado en España en 2026/27 por certificar un nivel alto de inglés, reconocido en universidades, empresas multinacionales y para trámites oficiales. Facilita el acceso a estudios superiores, mejora la empleabilidad y aporta un valor estable sin caducidad."
   },
   {
     question: "¿C1 Advanced o C1 IELTS?",
@@ -127,7 +127,7 @@ export const faqs: FAQItem[] = [
 ];
 
 export const articleSchema = generateArticleSchema({
-    headline: "Examen Cambridge C1 Advanced: Guía Completa 2025",
+    headline: "Examen Cambridge C1 Advanced: Guía Completa 2026",
     description: "Guía completa del C1 Advanced: estructura del examen, sistema de puntuación, estrategias de preparación y requisitos para aprobar.",
     url: `${businessInfo.url}/examenes-cambridge/c1-advanced`,
     datePublished: "2025-01-01"
@@ -175,11 +175,11 @@ export default function ExamenCambridgeC1Page() {
               </div>
 
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                Examen Cambridge C1 Advanced: Guía Completa 2025
+                Examen Cambridge C1 Advanced: Guía Completa 2026
               </h1>
               <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
               <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
-                Descubre todo sobre el examen Cambridge C1 Advanced: estructura, puntuación, beneficios y preparación. Guía actualizada 2025 para aprobar el C1.
+                Descubre todo sobre el examen Cambridge C1 Advanced: estructura, puntuación, beneficios y preparación. Guía actualizada 2026 para aprobar el C1.
               </p>
             </div>
           </div>
@@ -246,7 +246,7 @@ export default function ExamenCambridgeC1Page() {
             {/* Introduction */}
             <section className="mb-16">
               <p className="text-xl text-zinc-600 leading-relaxed">
-                El examen Cambridge C1 Advanced (antes CAE) es la segunda certificación más avanzada de Cambridge English, diseñada para acreditar un dominio profesional y académico del inglés. Más de 9.000 organizaciones en 130 países reconocen este certificado como prueba de competencia lingüística avanzada. Esta guía completa detalla la estructura, puntuación, beneficios y estrategias de preparación para el C1 Advanced en 2025, con datos actualizados sobre las últimas modificaciones del examen y requisitos de centros oficiales.
+                El examen Cambridge C1 Advanced (antes CAE) es la segunda certificación más avanzada de Cambridge English, diseñada para acreditar un dominio profesional y académico del inglés. Más de 9.000 organizaciones en 130 países reconocen este certificado como prueba de competencia lingüística avanzada. Esta guía completa detalla la estructura, puntuación, beneficios y estrategias de preparación para el C1 Advanced en 2026, con datos actualizados sobre las últimas modificaciones del examen y requisitos de centros oficiales.
               </p>
             </section>
 

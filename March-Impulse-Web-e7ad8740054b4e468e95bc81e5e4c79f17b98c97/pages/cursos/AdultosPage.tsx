@@ -377,7 +377,7 @@ export default function AdultosPage() {
             </div>
           </div>
           <p className="text-white/90 font-medium">
-            100% de aprobados en exámenes Cambridge 2024/2025
+            100% de aprobados en exámenes Cambridge 2025-2026
           </p>
         </div>
       </section>

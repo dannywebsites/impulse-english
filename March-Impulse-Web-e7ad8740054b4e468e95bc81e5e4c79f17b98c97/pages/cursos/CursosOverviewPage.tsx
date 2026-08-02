@@ -83,7 +83,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Cuáles son los precios de los cursos de inglés?",
-    answer: "Nuestros precios van desde 64€ hasta 79€ al mes, dependiendo del curso y la modalidad. No cobramos matrícula y el material didáctico está incluido. Ofrecemos descuento por pago trimestral. Consulta todos los detalles en nuestra página de precios o solicita información sin compromiso."
+    answer: "Nuestros precios van desde 64€ hasta 99€ al mes, dependiendo del curso y la modalidad. No cobramos matrícula y el material didáctico está incluido. Ofrecemos descuento por pago trimestral. Consulta todos los detalles en nuestra página de precios o solicita información sin compromiso."
   }
 ];
 

@@ -13,7 +13,7 @@ import { getBlogSiblingCards } from '../../data/blog-directory';
 const vsAptisFaqs = [
   {
     question: "¿Linguaskill o APTIS?",
-    answer: "Linguaskill destaca por su evaluación adaptativa con IA, resultados en 48 horas y amplia aceptación en universidades y empleos globales. APTIS ofrece diagnóstico detallado y es ideal para evaluaciones masivas organizacionales. Ambos miden niveles A1-C2 según el MCER, pero Linguaskill ofrece mayor flexibilidad modular y online en 2025/26."
+    answer: "Linguaskill destaca por su evaluación adaptativa con IA, resultados en 48 horas y amplia aceptación en universidades y empleos globales. APTIS ofrece diagnóstico detallado y es ideal para evaluaciones masivas organizacionales. Ambos miden niveles A1-C2 según el MCER, pero Linguaskill ofrece mayor flexibilidad modular y online en 2026/27."
   },
   {
     question: "¿Cambridge o Linguaskill cuál es mejor?",
@@ -42,7 +42,7 @@ const vsAptisFaqs = [
 ];
 
 export const articleSchema = generateArticleSchema({
-    headline: "Linguaskill vs Aptis: ¿Cuál Elegir? Comparativa Completa 2025",
+    headline: "Linguaskill vs Aptis: ¿Cuál Elegir? Comparativa Completa 2026",
     description: "Comparativa detallada entre Linguaskill y Aptis: formato adaptativo vs estructurado, resultados en 48 vs 72 horas, reconocimiento internacional y flexibilidad.",
     url: `${businessInfo.url}/blog/linguaskill-vs-aptis`,
     datePublished: "2025-12-10"
@@ -60,7 +60,7 @@ export const faqs: FAQItem[] = [
       answer: "Sí, parcialmente. Ambos evalúan las cuatro destrezas con tareas similares (redacciones, comprensión auditiva, expresión oral), por lo que mejorar tu inglés general beneficia ambos exámenes. Sin embargo, familiarizarse con el formato específico es crucial: Linguaskill utiliza interfaces digitales únicas con tecnología de reconocimiento de voz, mientras que Aptis tiene secciones particulares de Grammar y Vocabulary. Dedica al menos 10-15 horas a practicar con simulacros del examen específico que elijas."
     },
     {
-      question: "¿Cuánto cuestan Linguaskill y Aptis en 2025?",
+      question: "¿Cuánto cuestan Linguaskill y Aptis en 2026?",
       answer: "En España, Linguaskill completo (cuatro destrezas) cuesta aproximadamente 130€ (120€ para estudiantes universitarios), con módulos individuales entre 48-75€ cada uno. Aptis General ronda los 130-150€ completo, mientras que Aptis Advanced alcanza 160-180€. Los precios varían según el centro examinador y ubicación geográfica. Algunos centros ofrecen descuentos para grupos o estudiantes matriculados en programas específicos de preparación."
     },
     {
@@ -119,12 +119,12 @@ export default function LinguaskillVsAptisPage() {
                   <div className="w-8 h-px bg-white/40"></div>
                   <span className="text-white/50 text-xs font-display flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5" />
-                    Actualizado: Diciembre 2025
+                    Actualizado: Agosto 2026
                   </span>
                 </div>
 
                 <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                  Linguaskill vs Aptis: ¿Cuál Elegir? Comparativa Completa 2025
+                  Linguaskill vs Aptis: ¿Cuál Elegir? Comparativa Completa 2026
                 </h1>
                 <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
                 <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -419,13 +419,13 @@ export default function LinguaskillVsAptisPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-orange-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors mb-2">
-                    Linguaskill: Guía Completa 2025
+                    Linguaskill: Guía Completa 2026
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre el examen Linguaskill de Cambridge.</p>
                 </a>
                 <a href="/linguaskill/precios-fechas/" className="group bg-gray-50 rounded-xl p-6 hover:bg-orange-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors mb-2">
-                    Precio Linguaskill 2025
+                    Precio Linguaskill 2026
                   </h3>
                   <p className="text-gray-600 text-sm">Descubre los precios actualizados y cómo reservar tu examen.</p>
                 </a>

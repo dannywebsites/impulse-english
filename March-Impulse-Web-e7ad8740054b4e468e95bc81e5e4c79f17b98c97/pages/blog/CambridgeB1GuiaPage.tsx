@@ -492,7 +492,7 @@ export default function CambridgeB1GuiaPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-emerald-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">
-                    Guía de Exámenes Cambridge 2025
+                    Guía de Exámenes Cambridge 2026
                   </h3>
                   <p className="text-gray-600 text-sm">Comparativa completa de todos los niveles Cambridge.</p>
                 </a>

@@ -19,7 +19,7 @@ const preciosFaqs = [
   },
   {
     question: "¿Linguaskill es reconocido internacionalmente?",
-    answer: "Linguaskill de Cambridge es un examen multinivel, 100 % online y reconocido internacionalmente por más de 25,000 instituciones, universidades y empresas. Alineado con el MCER, certifica niveles de inglés desde A1 hasta C2, siendo válido para admisiones académicas, oposiciones y procesos laborales en 2025."
+    answer: "Linguaskill de Cambridge es un examen multinivel, 100 % online y reconocido internacionalmente por más de 25,000 instituciones, universidades y empresas. Alineado con el MCER, certifica niveles de inglés desde A1 hasta C2, siendo válido para admisiones académicas, oposiciones y procesos laborales en 2026."
   },
   {
     question: "¿Cuántas veces puedo hacer Linguaskill?",
@@ -563,7 +563,7 @@ export default function LinguaskillPreciosSedesPage() {
                   <ul className="space-y-3 text-zinc-600">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span><strong>Linguaskill Preparation Course</strong> - 79€</span>
+                      <span><strong>Linguaskill Preparation Course</strong> - 94€</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />

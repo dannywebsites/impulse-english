@@ -13,11 +13,11 @@ export default function FAQ() {
     },
     {
       question: "¿Clases particulares o academia de inglés?",
-      answer: "La elección entre clases particulares y academias de inglés en 2025/26 depende de necesidades, presupuesto y objetivos. Las clases particulares ofrecen personalización, flexibilidad y enfoque específico, ideales para dificultades o inseguridad. Las academias aportan entorno social, metodologías estandarizadas y evaluación continua, siendo más económicas y motivadoras en grupo."
+      answer: "La elección entre clases particulares y academias de inglés en 2026/27 depende de necesidades, presupuesto y objetivos. Las clases particulares ofrecen personalización, flexibilidad y enfoque específico, ideales para dificultades o inseguridad. Las academias aportan entorno social, metodologías estandarizadas y evaluación continua, siendo más económicas y motivadoras en grupo."
     },
     {
       question: "¿Inglés online o presencial es mejor?",
-      answer: "La elección entre inglés online y presencial en 2025/26 depende de la flexibilidad, costo, estilo y objetivos personales. El online ofrece acceso remoto y recursos digitales con menor costo, mientras el presencial aporta interacción directa y ambiente estructurado. Combinar ambos métodos potencia fluidez y motivación."
+      answer: "La elección entre inglés online y presencial en 2026/27 depende de la flexibilidad, costo, estilo y objetivos personales. El online ofrece acceso remoto y recursos digitales con menor costo, mientras el presencial aporta interacción directa y ambiente estructurado. Combinar ambos métodos potencia fluidez y motivación."
     },
     {
       question: "¿Cuántas clases de inglés a la semana?",

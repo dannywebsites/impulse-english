@@ -67,7 +67,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Centro Cambridge oficial en Barrio del Pilar?",
-    answer: "Sí, somos Centro Oficial de Preparación de Exámenes Cambridge. Puedes preparar y hacer el examen en el mismo lugar (Barrio del Pilar). 100% aprobados en 2024-2025. Todos los niveles: Pre-A1 Starters, A1 Movers, A2 Flyers, A2 Key, B1 Preliminary, B2 First, C1 Advanced, C2 Proficiency."
+    answer: "Sí, somos Centro Oficial de Preparación de Exámenes Cambridge. Puedes preparar y hacer el examen en el mismo lugar (Barrio del Pilar). 100% aprobados en 2025-2026. Todos los niveles: Pre-A1 Starters, A1 Movers, A2 Flyers, A2 Key, B1 Preliminary, B2 First, C1 Advanced, C2 Proficiency."
   },
   {
     question: "¿Dónde hacer Linguaskill en Madrid zona norte?",

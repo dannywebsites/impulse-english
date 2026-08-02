@@ -30,7 +30,7 @@ export const b2Faqs: FAQItem[] = [
     answer: "Sí. Cambridge ofrece B2 First Digital (computer-delivered), que puedes realizar en un centro oficial bajo supervisión invigilada. No puedes hacerlo completamente desde casa sin supervisión oficial, pero el formato digital reduce el tiempo de espera para resultados (5-10 días vs 4-6 semanas)."
   },
   {
-    question: "¿Vale la pena certificarse en B2 First en 2025?",
+    question: "¿Vale la pena certificarse en B2 First en 2026?",
     answer: "Sí, el B2 First sigue siendo el certificado Cambridge más valorado por empresas y universidades. Es requisito para muchos másters, oposiciones, becas Erasmus+ y trabajos en multinacionales. La inversión de 3-4 meses compensa con oportunidades profesionales académicas a largo plazo."
   },
   {
@@ -46,7 +46,7 @@ export const b2Faqs: FAQItem[] = [
     answer: "Depende de tus objetivos. Si buscas trabajar en empresas multinacionales, estudiar en universidades UK, o acceder a becas, el certificado oficial B2 First es obligatorio. Si solo quieres mejorar tu inglés para comunicarte, un curso sin examen es suficiente y más económico."
   },
   {
-    question: "¿Cuánto cuesta el B2 First en Madrid 2025?",
+    question: "¿Cuánto cuesta el B2 First en Madrid 2026?",
     answer: "El examen oficial B2 First cuesta entre 120-150€. El curso de preparación en una academia intensiva: 500-1000€ (8-12 semanas). Libros y materiales: 50-100€. Total estimado: 700-1250€. En Impulse English Academy, preparación incluida + examen = presupuesto personalizado según necesidades."
   },
   {

@@ -27,7 +27,7 @@ faqItems:
   - question: "¿Es muy difícil el C1 Advanced?"
     answer: "El Cambridge C1 Advanced es un examen exigente que certifica un nivel alto de inglés (C1 MCER), evaluando reading, writing, listening y speaking con énfasis en comunicación efectiva. Su dificultad radica en la duración, variedad de tareas y dominio avanzado de vocabulario y gramática."
   - question: "¿Merece la pena el C1 en España?"
-    answer: "El certificado Cambridge C1 Advanced es muy valorado en España en 2025/26 por certificar un nivel alto de inglés, reconocido en universidades, empresas multinacionales y para trámites oficiales. Facilita el acceso a estudios superiores, mejora la empleabilidad y aporta un valor estable sin caducidad."
+    answer: "El certificado Cambridge C1 Advanced es muy valorado en España en 2026/27 por certificar un nivel alto de inglés, reconocido en universidades, empresas multinacionales y para trámites oficiales. Facilita el acceso a estudios superiores, mejora la empleabilidad y aporta un valor estable sin caducidad."
 internalLinkRefs:
   - C1 Guide
   - Cambridge Hub

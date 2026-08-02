@@ -10,7 +10,7 @@ import RelatedArticles from '../../components/RelatedArticles';
 import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
     headline: "Clases Particulares vs Academia de Inglés: ¿Qué Elegir?",
-    description: "Compara clases particulares y academia de inglés: precio (30-50€/h vs 64-79€/mes), método, resultados y flexibilidad. Descubre cuál se adapta a tu perfil.",
+    description: "Compara clases particulares y academia de inglés: precio (30-50€/h vs 64-99€/mes), método, resultados y flexibilidad. Descubre cuál se adapta a tu perfil.",
     url: `${businessInfo.url}/blog/clases-particulares-vs-academia`,
     datePublished: "2025-03-01"
   });
@@ -24,7 +24,7 @@ export const faqItems = [
   ,
     {
       question: "¿Cuánto cuesta un profesor particular de inglés?",
-      answer: "Un profesor particular en Madrid cobra entre 25-50€/hora según experiencia y titulación. Una academia cuesta 64-79€/mes por varias sesiones, resultando más económica."
+      answer: "Un profesor particular en Madrid cobra entre 25-50€/hora según experiencia y titulación. Una academia cuesta 64-99€/mes por varias sesiones, resultando más económica."
     },
     {
       question: "¿Puedo preparar Cambridge con un particular?",
@@ -131,7 +131,7 @@ export default function ClasesParticularesVsAcademiaPage() {
                     <tr className="bg-gray-50">
                       <td className="p-4 font-medium text-gray-900">Precio</td>
                       <td className="p-4 text-gray-700">25-50€/hora</td>
-                      <td className="p-4 text-green-600 font-medium">64-79€/mes (varias sesiones)</td>
+                      <td className="p-4 text-green-600 font-medium">64-99€/mes (varias sesiones)</td>
                     </tr>
                     <tr className="bg-white">
                       <td className="p-4 font-medium text-gray-900">Personalización</td>
@@ -213,7 +213,7 @@ export default function ClasesParticularesVsAcademiaPage() {
                     <CheckCircle className="w-5 h-5 text-blue-600" />
                     Precio significativamente más económico
                   </h3>
-                  <p className="text-gray-700">Con academias a 64-79€/mes por varias sesiones semanales, el coste por hora de aprendizaje es 3-5 veces menor que con un particular. Para estudios prolongados de 6-12 meses, el ahorro es muy significativo.</p>
+                  <p className="text-gray-700">Con academias a 64-99€/mes por varias sesiones semanales, el coste por hora de aprendizaje es 3-5 veces menor que con un particular. Para estudios prolongados de 6-12 meses, el ahorro es muy significativo.</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-xl p-6">

@@ -9,12 +9,12 @@ import type { FAQItem } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
 
 export const articleSchema = generateArticleSchema({
-  headline: "Academias de Inglés Baratas en Madrid: Guía Completa 2025",
+  headline: "Academias de Inglés Baratas en Madrid: Guía Completa 2026",
   description: "Compara las academias de inglés más económicas de Madrid. Precios desde 45€/mes, certificaciones oficiales Cambridge y metodologías probadas.",
   url: `${businessInfo.url}/academias-ingles-madrid`,
   image: "/images/academy/classroom-facilities-main-classroom.jpg",
   datePublished: "2025-01-01",
-  dateModified: "2025-01-01"
+  dateModified: "2026-01-01"
 });
 
 const tableOfContents = [
@@ -36,7 +36,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Puedo probar clases antes de contratar?",
-    answer: "Your Language Club, The Bridge y Cambridge House ofrecen clase de prueba gratuita sin compromiso. Eco Idiomas permite asistir a primera sesión por 15€ descontables del primer mes. Esta práctica se ha generalizado en 2025 como estrategia para captar alumnos indecisos entre múltiples opciones."
+    answer: "Your Language Club, The Bridge y Cambridge House ofrecen clase de prueba gratuita sin compromiso. Eco Idiomas permite asistir a primera sesión por 15€ descontables del primer mes. Esta práctica se ha generalizado en 2026 como estrategia para captar alumnos indecisos entre múltiples opciones."
   },
   {
     question: "¿Existen descuentos por contratar varios meses?",
@@ -51,7 +51,7 @@ export const faqs: FAQItem[] = [
 const academias = [
   { name: 'Papora', price: '8,30€/mes', type: 'Online', description: 'Plataforma digital con lecciones interactivas' },
   { name: 'Eco Idiomas', price: '45€/mes', type: 'Presencial', description: 'Grupos de 8 alumnos en Chamartín' },
-  { name: 'Impulse English Academy', price: '64€/mes', type: 'Presencial/Online', description: 'Infantil desde 64€, Primaria 71€, Adultos 79€. La Vaguada, Barrio del Pilar. 100% aprobados Cambridge', featured: true },
+  { name: 'Impulse English Academy', price: '64€/mes', type: 'Presencial/Online', description: 'Infantil desde 64€, Primaria 83€, Adultos 94€. La Vaguada, Barrio del Pilar. 100% aprobados Cambridge', featured: true },
   { name: 'That\'s Fun', price: '69€/mes', type: 'Presencial', description: 'Metodología comunicativa en Carabanchel' },
   { name: 'Your Language Club', price: '80€/mes', type: 'Presencial', description: '94% éxito en Cambridge, Salamanca' },
   { name: 'Cambridge House Atocha', price: '95€/mes', type: 'Presencial', description: 'Grupos max 9 alumnos, pizarras digitales' },
@@ -97,7 +97,7 @@ export default function AcademiasBaratasMadridPage() {
               </div>
 
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                Academias Baratas Madrid: 7 Opciones desde 45€/Mes [2025]
+                Academias Baratas Madrid: 7 Opciones desde 45€/Mes [2026]
               </h1>
               <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
               <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -156,7 +156,7 @@ export default function AcademiasBaratasMadridPage() {
             {/* Introduction */}
             <section className="mb-16">
               <p className="text-xl text-zinc-600 leading-relaxed">
-                El mercado de academias de inglés en Madrid ofrece opciones desde 45€ mensuales sin comprometer la calidad educativa. En 2025, la competencia entre centros ha generado promociones que permiten acceder a profesores certificados, grupos reducidos y metodologías comunicativas a precios antes impensables. Este artículo analiza las siete academias más económicas de Madrid, compara rangos de precios entre 45€ y 250€ mensuales, y proporciona estrategias concretas para maximizar tu inversión en formación lingüística. Si buscas opciones en zonas específicas como <a href="/academia-ingles-barrio-del-pilar/" className="text-emerald-600 hover:underline">Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-emerald-600 hover:underline">La Vaguada</a> o <a href="/academia-ingles-tetuan/" className="text-emerald-600 hover:underline">Tetuán</a>, tenemos academias en el norte de Madrid.
+                El mercado de academias de inglés en Madrid ofrece opciones desde 45€ mensuales sin comprometer la calidad educativa. En 2026, la competencia entre centros ha generado promociones que permiten acceder a profesores certificados, grupos reducidos y metodologías comunicativas a precios antes impensables. Este artículo analiza las siete academias más económicas de Madrid, compara rangos de precios entre 45€ y 250€ mensuales, y proporciona estrategias concretas para maximizar tu inversión en formación lingüística. Si buscas opciones en zonas específicas como <a href="/academia-ingles-barrio-del-pilar/" className="text-emerald-600 hover:underline">Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-emerald-600 hover:underline">La Vaguada</a> o <a href="/academia-ingles-tetuan/" className="text-emerald-600 hover:underline">Tetuán</a>, tenemos academias en el norte de Madrid.
               </p>
             </section>
 
@@ -213,7 +213,7 @@ export default function AcademiasBaratasMadridPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed mb-6">
-                <strong>Academias económicas tradicionales (64-250€/mes):</strong> Representan el equilibrio óptimo entre precio y servicios completos. Impulse English Academy comienza en 64€/mes (<a href="/cursos-ingles/infantil/" className="text-emerald-600 hover:underline">inglés para niños</a>), 71€/mes (primaria) y 79€/mes (<a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">cursos de inglés para adultos</a>) con clases presenciales y online en nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-emerald-600 hover:underline">academia en Barrio del Pilar</a>. That's Fun parte de 69€ mensuales con dos sesiones semanales grupales, mientras Your Language Club desde 80€ con profesores certificados. Este rango incluye material didáctico, acceso a plataformas digitales complementarias y grupos reducidos de 6-10 estudiantes.
+                <strong>Academias económicas tradicionales (64-250€/mes):</strong> Representan el equilibrio óptimo entre precio y servicios completos. Impulse English Academy comienza en 64€/mes (<a href="/cursos-ingles/infantil/" className="text-emerald-600 hover:underline">inglés para niños</a>), 83€/mes (primaria) y 94€/mes (<a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">cursos de inglés para adultos</a>) con clases presenciales y online en nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-emerald-600 hover:underline">academia en Barrio del Pilar</a>. That's Fun parte de 69€ mensuales con dos sesiones semanales grupales, mientras Your Language Club desde 80€ con profesores certificados. Este rango incluye material didáctico, acceso a plataformas digitales complementarias y grupos reducidos de 6-10 estudiantes.
               </p>
 
               <p className="text-zinc-600 leading-relaxed mb-6">
@@ -229,7 +229,7 @@ export default function AcademiasBaratasMadridPage() {
             <section id="academias" className="mb-16 scroll-mt-24">
               <h2 className="text-3xl font-bold text-zinc-900 mb-6 flex items-center gap-3">
                 <MapPin className="w-8 h-8 text-emerald-600" />
-                Las 7 Academias Más Baratas de Madrid: Comparativa 2025
+                Las 7 Academias Más Baratas de Madrid: Comparativa 2026
               </h2>
 
               <div className="grid grid-cols-1 gap-4 my-8">
@@ -291,7 +291,7 @@ export default function AcademiasBaratasMadridPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Contactar directamente vía teléfono revela promociones no publicadas y descuentos por contratación múltiple que reducen costes reales un 10-15%. Para quienes buscan flexibilidad total combinada con interacción real, las opciones híbridas representan alternativas cada vez más competitivas en 2025. Si necesitas <a href="/academias-ingles-madrid/certificaciones/" className="text-emerald-600 hover:underline">certificaciones oficiales de inglés</a>, asegúrate de que la academia prepare para exámenes reconocidos.
+                Contactar directamente vía teléfono revela promociones no publicadas y descuentos por contratación múltiple que reducen costes reales un 10-15%. Para quienes buscan flexibilidad total combinada con interacción real, las opciones híbridas representan alternativas cada vez más competitivas en 2026. Si necesitas <a href="/academias-ingles-madrid/certificaciones/" className="text-emerald-600 hover:underline">certificaciones oficiales de inglés</a>, asegúrate de que la academia prepare para exámenes reconocidos.
               </p>
             </section>
 

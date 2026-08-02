@@ -8,17 +8,17 @@ import type { FAQItem } from '../../utils/schemaData';
 import Breadcrumb from '../../components/Breadcrumb';
 
 export const articleSchema = generateArticleSchema({
-  headline: "Cursos de Inglés para Adultos en Madrid: Guía Completa 2025",
+  headline: "Cursos de Inglés para Adultos en Madrid: Guía Completa 2026",
   description: "Guía completa de cursos de inglés para adultos en Madrid. Compara EOI, academias privadas y clases particulares. Precios, horarios y certificaciones.",
   url: `${businessInfo.url}/academias-ingles-madrid/adultos`,
   image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600",
   datePublished: "2025-01-01",
-  dateModified: "2025-01-01"
+  dateModified: "2026-01-01"
 });
 
 export const faqs: FAQItem[] = [
     {
-      question: "¿Cuánto cuesta un curso de inglés para adultos en Madrid en 2025?",
+      question: "¿Cuánto cuesta un curso de inglés para adultos en Madrid en 2026?",
       answer: "Los precios varían según modalidad: cursos grupales regulares cuestan 60-120€/mes (8 horas mensuales), intensivos 300-600€/mes (40-60 horas), y clases particulares 25-45€/hora. Los paquetes anuales con descuento promedian 750-1.200€ completos incluyendo materiales y plataforma digital. Las opciones online son 20-30% más económicas."
     }
 
@@ -57,7 +57,7 @@ export default function CursosInglesAdultosMadridPage() {
     },
     {
       type: "Impulse English Academy",
-      price: "Desde 79€/mes",
+      price: "Desde 94€/mes",
       pros: ["Grupos reducidos (7-10 alumnos)", "Centro oficial Cambridge", "100% aprobados 24/25", "Presencial y online"],
       cons: ["Solo zona norte Madrid"]
     },
@@ -103,12 +103,12 @@ export default function CursosInglesAdultosMadridPage() {
                   <div className="w-8 h-px bg-white/40"></div>
                   <span className="text-white/50 text-xs font-display flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5" />
-                    Actualizado: Diciembre 2025
+                    Actualizado: Agosto 2026
                   </span>
                 </div>
 
                 <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                  Cursos de Inglés para Adultos en Madrid: Guía Completa 2025
+                  Cursos de Inglés para Adultos en Madrid: Guía Completa 2026
                 </h1>
                 <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
                 <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -218,7 +218,7 @@ export default function CursosInglesAdultosMadridPage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900">Impulse English Academy - Barrio del Pilar</h3>
-                      <p className="text-blue-700 font-medium">Curso Adultos: 79€/mes</p>
+                      <p className="text-blue-700 font-medium">Curso Adultos: 94€/mes</p>
                     </div>
 
                   </div>
@@ -264,7 +264,7 @@ export default function CursosInglesAdultosMadridPage() {
                     </tr>
                     <tr className="bg-blue-50 border-l-4 border-blue-500">
                       <td className="p-4 font-medium text-blue-900">Impulse English Academy</td>
-                      <td className="p-4 text-blue-700 font-semibold">Desde 79€/mes</td>
+                      <td className="p-4 text-blue-700 font-semibold">Desde 94€/mes</td>
                       <td className="p-4 text-blue-700">7-10 alumnos</td>
                       <td className="p-4 text-blue-700">Alta (presencial + online)</td>
                     </tr>

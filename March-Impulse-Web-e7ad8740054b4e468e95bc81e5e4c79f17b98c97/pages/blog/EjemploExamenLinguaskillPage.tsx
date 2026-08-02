@@ -39,7 +39,7 @@ export const faqs: FAQItem[] = [
 ];
 
 export const articleSchema = generateArticleSchema({
-    headline: "Ejemplo Examen Linguaskill: Estructura y Tipos de Preguntas 2025",
+    headline: "Ejemplo Examen Linguaskill: Estructura y Tipos de Preguntas 2026",
     description: "Ejemplos reales del examen Linguaskill: estructura de Reading, Listening, Writing y Speaking con tipos de preguntas y sistema adaptativo.",
     url: `${businessInfo.url}/linguaskill/ejemplo-examen`,
     datePublished: "2025-01-01"
@@ -87,7 +87,7 @@ export default function EjemploExamenLinguaskillPage() {
               </div>
 
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                Ejemplo Examen Linguaskill: Formato y Estructura del Test 2025
+                Ejemplo Examen Linguaskill: Formato y Estructura del Test 2026
               </h1>
               <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
               <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">

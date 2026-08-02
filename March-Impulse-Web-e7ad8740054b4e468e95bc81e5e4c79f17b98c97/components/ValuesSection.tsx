@@ -7,7 +7,7 @@ const valueCards = [
     imageUrl: '/images/academy/jp-with-students.jpg',
     imageAlt: 'Estudiantes con certificados Cambridge en Impulse English Academy',
     title: "100% Aprobados Cambridge",
-    description: "Todos nuestros estudiantes aprobaron sus exámenes Cambridge 2024-2025. Centro Oficial de Preparación. Haz el examen donde te preparas.",
+    description: "Todos nuestros estudiantes aprobaron sus exámenes Cambridge 2025-2026. Centro Oficial de Preparación. Haz el examen donde te preparas.",
     link: "Ver Exámenes",
     href: "/examenes-cambridge/"
   },

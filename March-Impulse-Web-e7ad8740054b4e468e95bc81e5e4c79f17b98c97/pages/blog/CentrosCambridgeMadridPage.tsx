@@ -8,7 +8,7 @@ import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 import type { FAQItem } from '../../utils/schemaData';
 
 export const articleSchema = generateArticleSchema({
-    headline: "Centros Cambridge en Madrid y Barcelona: Guía Completa 2025",
+    headline: "Centros Cambridge en Madrid y Barcelona: Guía Completa 2026",
     description: "Guía completa de centros Cambridge en Madrid y Barcelona. Dónde examinarte, precios, diferencias entre centros Platino y regulares.",
     url: `${businessInfo.url}/examenes-cambridge/centros-madrid/`,
     datePublished: "2025-01-15"
@@ -75,12 +75,12 @@ export default function CentrosCambridgeMadridPage() {
                   <div className="w-8 h-px bg-white/40"></div>
                   <span className="text-white/50 text-xs font-display flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5" />
-                    Actualizado: Diciembre 2025
+                    Actualizado: Agosto 2026
                   </span>
                 </div>
 
                 <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                  Centros Cambridge en Madrid y Barcelona: Guía Completa 2025
+                  Centros Cambridge en Madrid y Barcelona: Guía Completa 2026
                 </h1>
                 <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
                 <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -117,7 +117,7 @@ export default function CentrosCambridgeMadridPage() {
               </h2>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Los centros Cambridge son instituciones autorizadas oficialmente por Cambridge Assessment English para organizar y administrar exámenes de certificación. En 2025, España cuenta con aproximadamente <strong>180 centros activos</strong>, de los cuales 67 tienen la distinción de <strong>Centro Platino</strong> por cumplir estándares excepcionales de calidad.
+                Los centros Cambridge son instituciones autorizadas oficialmente por Cambridge Assessment English para organizar y administrar exámenes de certificación. En 2026, España cuenta con aproximadamente <strong>180 centros activos</strong>, de los cuales 67 tienen la distinción de <strong>Centro Platino</strong> por cumplir estándares excepcionales de calidad.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -404,7 +404,7 @@ export default function CentrosCambridgeMadridPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-red-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors mb-2">
-                    Guía de Exámenes Cambridge 2025
+                    Guía de Exámenes Cambridge 2026
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre certificaciones Cambridge.</p>
                 </a>

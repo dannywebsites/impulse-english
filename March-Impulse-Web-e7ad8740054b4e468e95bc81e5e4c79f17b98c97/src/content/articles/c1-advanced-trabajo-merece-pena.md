@@ -23,7 +23,7 @@ contextSections:
     content: "<p>Al final, sacarse el C1 Advanced no debería verse como un gasto educativo, sino como una inversión financiera con uno de los retornos más altos disponibles en el mercado.</p><p>Comparadlo con otras inversiones comunes:</p><ul><li><strong>Máster profesional</strong>: 6.000-15.000€, retorno incierto, saturación en algunos sectores</li><li><strong>Carnet de conducir</strong>: 800-1.200€, necesario pero sin retorno salarial directo</li><li><strong>Certificaciones técnicas (PMP, AWS, etc.)</strong>: 1.500-3.000€, retorno alto pero limitado a sectores específicos</li></ul><p>El C1 Advanced por 1.500-2.200€ os genera retorno mensurable en 4 meses y es transferible a cualquier sector con dimensión internacional. Pocas inversiones ofrecen esa combinación de bajo coste, alto retorno y aplicabilidad universal.</p>"
 impulseSection:
   heading: Impulse English Academy te ayuda con el C1 Advanced
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2024-2025, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2025-2026, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
   ctaLinks:
     - text: Prueba de nivel gratis
       href: /prueba-de-nivel-ingles

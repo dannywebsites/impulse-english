@@ -560,7 +560,7 @@ export function generateImageSchema(image: AcademyImage, pageUrl: string) {
     "encodingFormat": image.url.toLowerCase().endsWith('.png') ? "image/png" : "image/jpeg",
     "inLanguage": "es",
     "datePublished": "2024-01-15",
-    "dateModified": "2025-01-01",
+    "dateModified": "2026-01-01",
     "author": {
       "@type": "Organization",
       "@id": "https://impulse-english.es/#organization",
@@ -624,7 +624,7 @@ export function generateImageGallerySchema(images: AcademyImage[], pageUrl: stri
     "url": `https://impulse-english.es${pageUrl}`,
     "inLanguage": "es",
     "datePublished": "2024-01-15",
-    "dateModified": "2025-01-01",
+    "dateModified": "2026-01-01",
     "publisher": {
       "@type": "Organization",
       "@id": "https://impulse-english.es/#organization",

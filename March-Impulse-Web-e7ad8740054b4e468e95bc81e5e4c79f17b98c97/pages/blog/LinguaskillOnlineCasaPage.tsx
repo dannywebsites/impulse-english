@@ -19,7 +19,7 @@ const tableOfContents = [
 
 export const faqs: FAQItem[] = [
   {
-    question: '¿Cuánto cuesta hacer Linguaskill online desde casa en 2025?',
+    question: '¿Cuánto cuesta hacer Linguaskill online desde casa en 2026?',
     answer: 'El precio varía según el centro examinador y módulos seleccionados, oscilando entre 75€ para un módulo único y 180€ para el examen completo de cuatro destrezas. Los centros españoles oficiales suelen cobrar 90-110€ por Reading & Listening, 50-60€ por Speaking y 40-50€ por Writing. Es posible realizar únicamente los módulos que necesitas certificar según requisitos específicos de tu institución.'
   },
   {
@@ -41,7 +41,7 @@ export const faqs: FAQItem[] = [
 ];
 
 export const articleSchema = generateArticleSchema({
-    headline: "Linguaskill Online desde Casa: Guía Completa 2025",
+    headline: "Linguaskill Online desde Casa: Guía Completa 2026",
     description: "Todo sobre el examen Linguaskill online desde casa: requisitos técnicos, estructura, precio y ventajas de la modalidad remota.",
     url: `${businessInfo.url}/blog/linguaskill-online-casa`,
     datePublished: "2025-01-14"
@@ -89,7 +89,7 @@ export default function LinguaskillOnlineCasaPage() {
               </div>
 
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                Linguaskill Online desde Casa: Cómo Hacer el Examen 2025
+                Linguaskill Online desde Casa: Cómo Hacer el Examen 2026
               </h1>
               <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
               <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -154,7 +154,7 @@ export default function LinguaskillOnlineCasaPage() {
             {/* Introduction */}
             <section className="mb-16">
               <p className="text-xl text-zinc-600 leading-relaxed">
-                ¿Necesitas certificar tu nivel de inglés pero no puedes desplazarte a un centro de examen? Linguaskill online desde casa es la solución flexible de Cambridge que permite realizar el examen completo con supervisión remota desde cualquier ubicación. Este artículo explica exactamente cómo funciona esta modalidad, qué necesitas para hacerlo correctamente y cómo garantizar que tu experiencia sea exitosa. Con más de 40,000 organizaciones reconociendo este examen globalmente, entender la modalidad online es fundamental para planificar tu certificación en 2025.
+                ¿Necesitas certificar tu nivel de inglés pero no puedes desplazarte a un centro de examen? Linguaskill online desde casa es la solución flexible de Cambridge que permite realizar el examen completo con supervisión remota desde cualquier ubicación. Este artículo explica exactamente cómo funciona esta modalidad, qué necesitas para hacerlo correctamente y cómo garantizar que tu experiencia sea exitosa. Con más de 40,000 organizaciones reconociendo este examen globalmente, entender la modalidad online es fundamental para planificar tu certificación en 2026.
               </p>
             </section>
 

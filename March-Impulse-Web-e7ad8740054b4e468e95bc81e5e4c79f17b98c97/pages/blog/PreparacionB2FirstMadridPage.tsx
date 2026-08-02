@@ -10,7 +10,7 @@ import { generateArticleSchema, businessInfo } from '../../utils/schemaData';
 const preparacionB2Faqs = [
   {
     question: "¿Cuánto cuesta preparar el B2 First en Impulse?",
-    answer: "Desde 75€/mes para adolescentes y 79€/mes para adultos. Incluye clases, simulacros mensuales y feedback personalizado. No incluye libro oficial (35-45€) ni tasa de examen (160-180€)."
+    answer: "Desde 87€/mes para adolescentes y 94€/mes para adultos. Incluye clases, simulacros mensuales y feedback personalizado. No incluye libro oficial (35-45€) ni tasa de examen (160-180€)."
   },
   {
     question: "¿Cuánto tiempo necesito para preparar el B2 First?",
@@ -26,14 +26,14 @@ const preparacionB2Faqs = [
   },
   {
     question: "¿Qué tasa de aprobados tenéis?",
-    answer: "100% de aprobados en 2024-2025. Nuestra metodología incluye simulacros mensuales en condiciones reales y feedback personalizado continuo."
+    answer: "100% de aprobados en 2025-2026. Nuestra metodología incluye simulacros mensuales en condiciones reales y feedback personalizado continuo."
   }
 ];
 
 const whyChooseUs = [
   {
     icon: <Award className="w-8 h-8 text-red-600" />,
-    title: "100% de Aprobados B2 First 2024-2025",
+    title: "100% de Aprobados B2 First 2025-2026",
     description: "Todos nuestros estudiantes aprobaron. Metodología probada."
   },
   {
@@ -110,8 +110,8 @@ const tableOfContents = [
 ];
 
 export const articleSchema = generateArticleSchema({
-    headline: "Preparación B2 First Madrid | 100% Aprobados 2024-2025",
-    description: "Preparación B2 First en Madrid, Centro Oficial Cambridge. 100% aprobados 2024-2025. Grupos reducidos, simulacros mensuales. La Vaguada, Barrio del Pilar. Desde 75€/mes.",
+    headline: "Preparación B2 First Madrid | 100% Aprobados 2025-2026",
+    description: "Preparación B2 First en Madrid, Centro Oficial Cambridge. 100% aprobados 2025-2026. Grupos reducidos, simulacros mensuales. La Vaguada, Barrio del Pilar. Desde 87€/mes.",
     url: `${businessInfo.url}/preparacion-b2-first-madrid`,
     datePublished: "2025-01-15"
   });
@@ -153,16 +153,16 @@ export default function PreparacionB2FirstMadridPage() {
                 </span>
                 <span className="text-white/50 text-xs font-display flex items-center gap-1.5">
                   <Calendar className="w-3.5 h-3.5" />
-                  Actualizado Enero 2025
+                  Actualizado Agosto 2026
                 </span>
               </div>
 
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                Preparación B2 First en Madrid - 100% Aprobados 2024-2025
+                Preparación B2 First en Madrid - 100% Aprobados 2025-2026
               </h1>
               <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
               <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
-                Centro Oficial Cambridge en Madrid. Todos nuestros estudiantes aprobaron B2 First en 2024-2025. No es suerte. Es metodología.
+                Centro Oficial Cambridge en Madrid. Todos nuestros estudiantes aprobaron B2 First en 2025-2026. No es suerte. Es metodología.
               </p>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function PreparacionB2FirstMadridPage() {
               />
               <div>
                 <p className="text-lg font-bold text-zinc-900">Centro Oficial de Preparación Cambridge</p>
-                <p className="text-zinc-600">Prepárate y examínate en el mismo centro. 100% aprobados 2024-2025.</p>
+                <p className="text-zinc-600">Prepárate y examínate en el mismo centro. 100% aprobados 2025-2026.</p>
               </div>
             </div>
           </div>
@@ -229,14 +229,14 @@ export default function PreparacionB2FirstMadridPage() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 my-8">
               <div className="bg-gradient-to-br from-red-500 to-red-600 p-6 rounded-xl text-white text-center">
                 <div className="text-4xl font-bold mb-2">100%</div>
-                <div className="text-white/80">Aprobados 2024-2025</div>
+                <div className="text-white/80">Aprobados 2025-2026</div>
               </div>
               <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-6 rounded-xl text-white text-center">
                 <div className="text-4xl font-bold mb-2">10</div>
                 <div className="text-white/80">Máx. alumnos/grupo</div>
               </div>
               <div className="bg-gradient-to-br from-green-500 to-green-600 p-6 rounded-xl text-white text-center">
-                <div className="text-4xl font-bold mb-2">75€</div>
+                <div className="text-4xl font-bold mb-2">87€</div>
                 <div className="text-white/80">Desde /mes</div>
               </div>
               <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-6 rounded-xl text-white text-center">
@@ -385,7 +385,7 @@ export default function PreparacionB2FirstMadridPage() {
                           <p className="text-zinc-500 text-sm">2 horas semanales</p>
                         </div>
                         <div className="text-right">
-                          <p className="text-2xl font-bold text-red-600">Desde 75€</p>
+                          <p className="text-2xl font-bold text-red-600">Desde 87€</p>
                           <p className="text-zinc-500 text-sm">/mes</p>
                         </div>
                       </div>
@@ -397,7 +397,7 @@ export default function PreparacionB2FirstMadridPage() {
                           <p className="text-zinc-500 text-sm">2 horas semanales</p>
                         </div>
                         <div className="text-right">
-                          <p className="text-2xl font-bold text-red-600">79€</p>
+                          <p className="text-2xl font-bold text-red-600">94€</p>
                           <p className="text-zinc-500 text-sm">/mes</p>
                         </div>
                       </div>

@@ -376,7 +376,7 @@ export default function EscalaCambridgePage() {
               <div className="bg-indigo-100 rounded-xl p-6">
                 <p className="text-indigo-800">
                   En <a href="/academia-ingles-barrio-del-pilar/" className="text-indigo-900 hover:underline font-semibold">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-indigo-900 hover:underline font-semibold">junto a La Vaguada</a>, analizamos tu puntuación por habilidad para crear un plan
-                  de mejora personalizado. Nuestros <a href="/cursos-ingles/adultos/" className="text-indigo-900 hover:underline font-semibold">cursos de inglés para adultos</a> y preparación para <a href="/examenes-cambridge/b2-first/" className="text-indigo-900 hover:underline font-semibold">B2 First</a> desde <strong>79€/mes</strong> te ayudan
+                  de mejora personalizado. Nuestros <a href="/cursos-ingles/adultos/" className="text-indigo-900 hover:underline font-semibold">cursos de inglés para adultos</a> y preparación para <a href="/examenes-cambridge/b2-first/" className="text-indigo-900 hover:underline font-semibold">B2 First</a> desde <strong>94€/mes</strong> te ayudan
                   a subir en la escala de forma eficiente.
                 </p>
               </div>
@@ -423,7 +423,7 @@ export default function EscalaCambridgePage() {
                 </p>
                 <p className="text-white/90">
                   En <a href="/academia-ingles-barrio-del-pilar/" className="text-white hover:underline font-semibold">nuestra academia</a> te preparamos para alcanzar tu puntuación objetivo con
-                  metodología probada y seguimiento personalizado por solo <strong>79€/mes</strong>.
+                  metodología probada y seguimiento personalizado por solo <strong>94€/mes</strong>.
                 </p>
               </div>
             </section>

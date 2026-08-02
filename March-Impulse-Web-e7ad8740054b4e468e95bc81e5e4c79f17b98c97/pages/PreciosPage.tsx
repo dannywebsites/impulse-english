@@ -11,7 +11,7 @@ import WhatsAppIcon from '../components/icons/WhatsAppIcon';
 export const faqs: FAQItem[] = [
   {
     question: "¿Cuánto cuestan las clases de inglés en Impulse?",
-    answer: "Nuestros precios van desde 64€ hasta 79€ al mes, dependiendo del curso y la modalidad. Ofrecemos descuento trimestral. Contacta con nosotros para conocer la tarifa exacta para tu caso."
+    answer: "Nuestros precios van desde 64€ hasta 99€ al mes, dependiendo del curso, el número de clases semanales y la modalidad. Ofrecemos descuento por pago trimestral. Contacta con nosotros para conocer la tarifa exacta para tu caso."
   },
   {
     question: "¿Hay matrícula o coste de inscripción?",
@@ -35,32 +35,45 @@ export const faqs: FAQItem[] = [
   }
 ];
 
-const courses = [
+interface CoursePrice {
+  name: string;
+  ages: string;
+  price: string;
+  /** Optional breakdown shown under the headline price (bandas, tarifa trimestral). */
+  detail?: string;
+  desc: string;
+  href: string;
+}
+
+const courses: CoursePrice[] = [
   {
     name: "Infantil",
     ages: "2-5 años",
     price: "Desde 64€/mes",
+    detail: "1 clase de 60 min/semana: 64€/mes · 2 clases de 60 min/semana: 99€/mes",
     desc: "Metodología Great Little People. Aprenden jugando desde los 2 años.",
     href: "/cursos-ingles/infantil/"
   },
   {
     name: "Primaria",
     ages: "6-12 años",
-    price: "71€/mes",
+    price: "83€/mes",
+    detail: "O 239€/trimestre con el descuento por pago trimestral",
     desc: "Cambridge Young Learners. Refuerzo escolar y preparación de exámenes.",
     href: "/cursos-ingles/primaria/"
   },
   {
     name: "Secundaria",
     ages: "13-17 años",
-    price: "Desde 75€/mes",
+    price: "Desde 87€/mes",
+    detail: "S1-S3: 87€/mes o 251€/trimestre · S4-S6: 91€/mes o 263€/trimestre · S7-S8: 93€/mes o 269€/trimestre",
     desc: "Preparación Cambridge B1/B2/C1 y EBAU. Grupos reducidos.",
     href: "/cursos-ingles/secundaria/"
   },
   {
     name: "Adultos",
     ages: "Todos los niveles",
-    price: "79€/mes",
+    price: "94€/mes",
     desc: "Desde principiante hasta C2. Conversación, Cambridge y Linguaskill.",
     href: "/cursos-ingles/adultos/"
   },
@@ -162,7 +175,7 @@ export default function PreciosPage() {
               <span className="text-accent-blue font-display font-medium">Precios mensuales</span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 mb-4">
-              Desde 64€ hasta 79€<span className="text-accent-blue">/mes</span>
+              Desde 64€ hasta 99€<span className="text-accent-blue">/mes</span>
             </h2>
             <p className="text-lg text-zinc-600 font-display">
               Dependiendo del curso y la modalidad
@@ -208,6 +221,9 @@ export default function PreciosPage() {
                   </div>
                 </div>
                 <p className="text-accent-blue font-bold text-xl mb-2">{course.price}</p>
+                {course.detail && (
+                  <p className="text-zinc-500 text-xs mb-2 leading-relaxed">{course.detail}</p>
+                )}
                 <p className="text-zinc-600 text-sm mb-4 flex-grow">{course.desc}</p>
                 <div className="flex flex-col gap-2 mt-auto">
                   <a

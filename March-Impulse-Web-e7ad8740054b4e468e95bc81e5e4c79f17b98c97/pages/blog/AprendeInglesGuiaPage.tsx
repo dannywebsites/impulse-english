@@ -152,7 +152,7 @@ const cursosOnline = [
   { name: 'Duolingo', price: 'Gratis / Premium', features: ['Gamificado', '5 min/día', 'Todos los niveles'] },
   { name: 'That\'s English', price: 'Oficial', features: ['Ministerio Educación', 'Certificación', 'Tutorías'] },
   { name: 'Udemy', price: 'Desde 9,99€', features: ['155.000 cursos', 'Certificados', 'Ritmo propio'] },
-  { name: 'Impulse English', price: 'Desde 79€/mes', features: ['Grupos reducidos', 'Cambridge', 'Seguimiento'] },
+  { name: 'Impulse English', price: 'Desde 94€/mes', features: ['Grupos reducidos', 'Cambridge', 'Seguimiento'] },
 ];
 
 const paises = [
@@ -164,7 +164,7 @@ const paises = [
 ];
 
 export const articleSchema = generateArticleSchema({
-    headline: "Aprende Inglés: Guía Completa 2025",
+    headline: "Aprende Inglés: Guía Completa 2026",
     description: "Guía definitiva para aprender inglés: mejores cursos online, plataformas, países para estudiar y opciones en España. Métodos efectivos y recursos.",
     url: `${businessInfo.url}/blog/aprende-ingles-guia`,
     datePublished: "2025-01-01"
@@ -210,7 +210,7 @@ export default function AprendeInglesGuiaPage() {
               </div>
 
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                Dónde y Cómo Aprender Inglés: Guía Definitiva 2025
+                Dónde y Cómo Aprender Inglés: Guía Definitiva 2026
               </h1>
               <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
               <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -309,7 +309,7 @@ export default function AprendeInglesGuiaPage() {
             <section id="mejores-cursos" className="scroll-mt-24 mb-16">
               <h2 className="text-3xl font-bold text-zinc-900 mb-6 flex items-center gap-3">
                 <Laptop className="w-8 h-8 text-purple-600" />
-                Mejores Cursos de Inglés Online 2025
+                Mejores Cursos de Inglés Online 2026
               </h2>
 
               <div className="grid gap-4 mb-8">
@@ -425,7 +425,7 @@ export default function AprendeInglesGuiaPage() {
                     <ul className="text-zinc-600 space-y-1">
                       <li>• British Council (desde 519€/trimestre)</li>
                       <li>• International House (desde 172€/mes)</li>
-                      <li>• <a href="/academia-ingles-barrio-del-pilar/" className="text-purple-600 hover:underline font-medium">Academia en Barrio del Pilar</a> (desde 79€/mes)</li>
+                      <li>• <a href="/academia-ingles-barrio-del-pilar/" className="text-purple-600 hover:underline font-medium">Academia en Barrio del Pilar</a> (desde 94€/mes)</li>
                     </ul>
                   </div>
                   <div>

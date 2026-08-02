@@ -30,7 +30,7 @@ faqItems:
   - question: "¿Cuántas horas de estudio para C1?"
     answer: "La preparación para el Cambridge C1 Advanced requiere unas 200 horas de estudio guiado. Este tiempo incluye práctica intensiva en comprensión lectora, gramática, vocabulario, escritura, escucha y expresión oral, distribuidas en cuatro secciones evaluadas en un examen de aproximadamente 4 horas."
   - question: "¿Merece la pena el C1 en España?"
-    answer: "El certificado Cambridge C1 Advanced es muy valorado en España en 2025/26 por certificar un nivel alto de inglés, reconocido en universidades, empresas multinacionales y para trámites oficiales. Facilita el acceso a estudios superiores, mejora la empleabilidad y aporta un valor estable sin caducidad."
+    answer: "El certificado Cambridge C1 Advanced es muy valorado en España en 2026/27 por certificar un nivel alto de inglés, reconocido en universidades, empresas multinacionales y para trámites oficiales. Facilita el acceso a estudios superiores, mejora la empleabilidad y aporta un valor estable sin caducidad."
 internalLinkRefs:
   - C1 Guide
   - Metodología
