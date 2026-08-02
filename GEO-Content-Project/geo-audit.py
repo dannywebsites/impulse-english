@@ -187,6 +187,14 @@ def score_team(text):
 # The 19 usable real Google reviewers (Khadija Ziyati excluded: her review names a
 # teacher outside the approved set). A testimonial whose name is not on this list is
 # either fabricated or unverified — both are disqualifying, so the gate hard-fails.
+APPROVED_REVIEWERS_DISPLAY = [
+    "Cesar Seneca Tellechea Corral", "Lidia Ramirez", "Lucia Salmerón", "María Comas",
+    "Jorge Martinez", "Clara Sánchez", "Yurisbeth Rivero Chirinos", "Anna Farney",
+    "Karina Garcia", "María Jesús Zuazo Sahagún", "Rosa E.", "Mª Del Espino Monedero García",
+    "Felix Maria", "Pepi Moral Ventura", "Lorena AP", "Gonzalo Tarascón", "Víctor RC",
+    "Marina Penerbosa", "Gloria RM",
+]
+
 APPROVED_REVIEWERS = {
     "cesar seneca tellechea corral", "lidia ramirez", "lucia salmerón", "maría comas",
     "jorge martinez", "clara sánchez", "yurisbeth rivero chirinos", "anna farney",
@@ -196,7 +204,32 @@ APPROVED_REVIEWERS = {
 }
 
 
-def score_testimonials(text, src):
+# Names that appeared in the fabricated testimonial blocks. None trace to a real
+# Google review. If any is still being RENDERED the page fails outright, however
+# the source happens to be structured.
+FABRICATED = [
+    "Sandra Moreno", "Fernando Torres", "Cristina R.", "Rosa María V.", "Roberto Sánchez",
+    "Patricia López", "Miguel Ángel R.", "Miguel Fernández", "María Marcos", "María José L.",
+    "Marta Díaz", "Lucía Gómez", "Laura Martín P.", "Laura García", "Jesús Hernández",
+    "Javier Rodríguez", "Inmaculada Soto", "Elena Sánchez R.", "Elena Martín",
+    "David Fernández", "Cristina López M.", "Carlos Ruiz", "Carlos M.", "Antonio Castillo",
+    "Ana García R.", "Ana Belén P.", "Alejandro Ruiz",
+]
+
+
+def score_testimonials(text, src, dist_html=None):
+    # Ground truth is the RENDERED page. Source-only checks missed a variant where
+    # the fabricated array used author/quote/location field names, so `name:` never
+    # matched and the page passed with invented reviews live.
+    if dist_html:
+        live = [n for n in FABRICATED if n in dist_html]
+        if live:
+            return 0, "FABRICATED TESTIMONIALS RENDERED: " + ", ".join(live[:3])
+        shown = [n for n in APPROVED_REVIEWERS_DISPLAY if n in dist_html]
+        if len(shown) < 2:
+            return 3, "only %d verified review(s) rendered on the page" % len(shown)
+
+
     # Pages use either `quote:` or `text:` for the body — check both.
     quotes = len(re.findall(r"\b(?:quote|text):\s*\"", src))
     # Only names that sit in the SAME object literal as a quote/text body are
@@ -354,6 +387,16 @@ def barrio_of(path):
     return parts[0] if parts else None
 
 
+def dist_of(page_path, root):
+    """Read the built HTML for this page, if a dist/ exists."""
+    stem = os.path.basename(page_path).replace("Page.tsx", "")
+    slug = re.sub(r"(?<!^)(?=[A-Z])", "-", stem).lower()
+    for cand in glob.glob(os.path.join(root, "dist", "academia-ingles-*", "index.html")):
+        if slug.replace("-", "") in cand.replace("-", "").lower():
+            return read(cand)
+    return None
+
+
 def grade(score):
     if score >= 90: return "A"
     if score >= 80: return "B"
@@ -400,7 +443,7 @@ def main():
             score_intro(text),
             score_uniqueness(f, sets),
             score_team(text),
-            score_testimonials(text, src),
+            score_testimonials(text, src, dist_of(f, root)),
             score_case_study(text, src),
             score_area(text),
             score_cta(src),
