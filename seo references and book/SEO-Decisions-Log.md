@@ -59,9 +59,29 @@ several of which were wrong.
 **Result:** all ten pages **grade A**, **zero elements below 9**, site-wide baseline **85 → 96**.
 Gates: `astro check` 0 errors · build 146 pages · quote gate 0 fail in source and dist.
 
-**Still open (not fixed here):** "100% aprobados" appears unqualified in ~16 meta descriptions,
-while the approved phrasing in this log is the qualified "100% de aprobados Cambridge en el curso
-2024/25 (alumnos presentados)". Flagged for Danny rather than rewritten unilaterally.
+**Follow-up, same night — RESOLVED for the service pages.** Danny confirmed the phrasing:
+*"100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados)"*, scoped to the service
+pages. A full sweep found the claim in **104 places**, not the ~16 metas first flagged.
+
+Why the qualifier matters: `Business-Information.txt` §12 records the proof as "100% Cambridge
+**B2 First** pass rate, 2024/25 **and** 2025/26", marked `[cohort size unknown]`. A bare "100%
+aprobados" therefore over-claims twice — it implies every Cambridge exam, and a denominator nobody
+has. §12 is explicit: *"inventing a denominator is exactly the kind of unverifiable claim that
+costs citations."*
+
+Applied to **21 occurrences** across `pages/cursos/*`, `pages/examenes-cambridge/*`, their `.astro`
+wrappers and `ExamPageLayout` (used only by the two exam pages, so a service-page surface despite
+living in `components/`): schema `Course` descriptions, meta descriptions, hero badges, section
+headings, body copy. Secundaria already carried the qualifier on one line citing 2025-2026 —
+normalised to 2024/25 so one page doesn't cite two cohorts. All four rewritten meta descriptions
+stay inside the book's 160-char ceiling (146–158). Verified against the live pages, not just source.
+
+**Still unqualified, deliberately out of scope** (~83 places): the blog posts, the location pages,
+shared components (`ValuesSection`, `InfoCards`, `SEOHead`), several top-level pages, and two
+site-wide sources that surface on *every* page including the service ones —
+`utils/schemaData.ts` (the Organization schema `description`, which is the entity description
+Google reads) and `src/data/academyImages.ts` (image alt text). The Organization schema is the
+highest-value of these and the one to do next.
 
 **Validation plan:** book §5 — these five had no differentiator in the SERP at all, so watch
 impressions first (they should broaden on barrio + price/transit long-tail), then CTR. Filter GSC by
