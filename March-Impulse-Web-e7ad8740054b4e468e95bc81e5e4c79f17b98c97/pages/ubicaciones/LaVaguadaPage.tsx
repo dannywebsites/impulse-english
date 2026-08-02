@@ -519,7 +519,7 @@ export default function LaVaguadaPage() {
             </a>
             <a href="/linguaskill/" className="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-colors group">
               <h3 className="font-bold text-white mb-3 group-hover:text-amber-300">Linguaskill</h3>
-              <p className="text-white/80 text-sm">Certificado en 48 horas. Expertos 2024-2025.</p>
+              <p className="text-white/80 text-sm">Certificado en 48 horas. Expertos 2025-2026.</p>
             </a>
           </div>
           <p className="text-white/90 font-medium mb-8">

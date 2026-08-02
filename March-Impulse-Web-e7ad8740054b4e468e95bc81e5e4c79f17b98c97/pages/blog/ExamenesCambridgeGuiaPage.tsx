@@ -16,7 +16,7 @@ export const articleSchema = generateArticleSchema({
   url: `${businessInfo.url}/blog/examenes-cambridge-guia`,
   image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1600",
   datePublished: "2025-01-01",
-  dateModified: "2025-01-01"
+  dateModified: "2026-01-01"
 });
 
 const tableOfContents = [
@@ -47,7 +47,7 @@ const newFaqItems = [
   },
   {
     question: "¿Cuánto cuesta el A2 Cambridge?",
-    answer: "El precio del examen A2 Key de Cambridge en 2025/26 varía entre 110€ y 130€ según el centro examinador autorizado. La versión for Schools tiene el mismo coste. Estudiantes de universidades públicas pueden acceder a descuentos University Project."
+    answer: "El precio del examen A2 Key de Cambridge en 2026/27 varía entre 110€ y 130€ según el centro examinador autorizado. La versión for Schools tiene el mismo coste. Estudiantes de universidades públicas pueden acceder a descuentos University Project."
   },
   {
     question: "¿Qué edad mínima para A2 Key?",

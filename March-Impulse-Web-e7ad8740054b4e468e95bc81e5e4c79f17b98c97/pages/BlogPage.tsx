@@ -119,7 +119,7 @@ const spokeArticles = [
   },
   {
     id: 'precio-linguaskill',
-    title: "Precio Linguaskill y Cómo Reservar 2025",
+    title: "Precio Linguaskill y Cómo Reservar 2026",
     excerpt: "Tarifas actualizadas (130€), descuentos universitarios y proceso de inscripción paso a paso.",
     category: "Linguaskill",
     readTime: "6 min",

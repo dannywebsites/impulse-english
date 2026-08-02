@@ -13,7 +13,7 @@ export default function NewsOverlay(_props: NewsOverlayProps = {}) {
   const items = [
     {
       label: "Cambridge",
-      title: "100% de aprobados en exámenes Cambridge 2024-2025.",
+      title: "100% de aprobados en exámenes Cambridge 2025-2026.",
       action: "Ver Exámenes",
       href: "/examenes-cambridge/"
     },

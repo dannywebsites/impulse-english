@@ -381,7 +381,7 @@ export default function RecursosPdfLinguaskillPage() {
                 <p className="text-white/90">
                   Si buscas preparación estructurada con metodología probada, en nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-white hover:underline font-bold">junto a La Vaguada</a>, ofrecemos
                   cursos específicos para <a href="/linguaskill/" className="text-white hover:underline font-bold">Linguaskill</a> que integran estos recursos PDF con práctica guiada y feedback personalizado
-                  por solo <strong>79€/mes</strong>. También preparamos otros <a href="/examenes-cambridge/" className="text-white hover:underline font-bold">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos/" className="text-white hover:underline font-bold">cursos de inglés para adultos</a>.
+                  por solo <strong>94€/mes</strong>. También preparamos otros <a href="/examenes-cambridge/" className="text-white hover:underline font-bold">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos/" className="text-white hover:underline font-bold">cursos de inglés para adultos</a>.
                 </p>
               </div>
             </section>

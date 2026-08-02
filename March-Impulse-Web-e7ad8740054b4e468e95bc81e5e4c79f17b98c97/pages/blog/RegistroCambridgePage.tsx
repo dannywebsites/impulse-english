@@ -10,7 +10,7 @@ import type { FAQItem } from '../../utils/schemaData';
 import RelatedArticles from '../../components/RelatedArticles';
 import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
-    headline: "Cómo Registrarse en Exámenes Cambridge 2025: Guía Paso a Paso",
+    headline: "Cómo Registrarse en Exámenes Cambridge 2026: Guía Paso a Paso",
     description: "Guía completa para registrarse en exámenes Cambridge en España. Proceso de inscripción, documentos necesarios y plazos importantes.",
     url: `${businessInfo.url}/blog/registro-cambridge`,
     datePublished: "2025-01-02"
@@ -57,7 +57,7 @@ export default function RegistroCambridgePage() {
     {
       step: 2,
       title: "Contactar con el centro",
-      description: "Pregunta por fechas disponibles para 2025, precios exactos según certificación, y si ofrecen modalidad papel o digital. No todos los centros ofrecen todas las opciones."
+      description: "Pregunta por fechas disponibles para 2026, precios exactos según certificación, y si ofrecen modalidad papel o digital. No todos los centros ofrecen todas las opciones."
     },
     {
       step: 3,
@@ -105,12 +105,12 @@ export default function RegistroCambridgePage() {
                   <div className="w-8 h-px bg-white/40"></div>
                   <span className="text-white/50 text-xs font-display flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5" />
-                    Actualizado: Diciembre 2025
+                    Actualizado: Agosto 2026
                   </span>
                 </div>
 
                 <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                  Cómo Registrarse en Exámenes Cambridge: Guía Completa 2025
+                  Cómo Registrarse en Exámenes Cambridge: Guía Completa 2026
                 </h1>
                 <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
                 <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -299,7 +299,7 @@ export default function RegistroCambridgePage() {
 
               <div className="bg-white border border-gray-200 rounded-xl overflow-hidden mb-6">
                 <div className="bg-sky-600 text-white p-4">
-                  <h3 className="font-bold">Precios aproximados en España 2025</h3>
+                  <h3 className="font-bold">Precios aproximados en España 2026</h3>
                 </div>
                 <div className="p-4">
                   <div className="space-y-2">
@@ -407,7 +407,7 @@ export default function RegistroCambridgePage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <a href="/examenes-cambridge/" className="group bg-gray-50 rounded-xl p-6 hover:bg-sky-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-sky-600 transition-colors mb-2">
-                    Guía de Exámenes Cambridge 2025
+                    Guía de Exámenes Cambridge 2026
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre certificaciones Cambridge.</p>
                 </a>

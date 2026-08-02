@@ -289,7 +289,7 @@ export default function PrecioLinguaskillOnlinePage() {
                 <div className="bg-green-50 rounded-xl p-5 border-2 border-green-200">
                   <CheckCircle className="w-8 h-8 text-green-600 mb-3" />
                   <h4 className="font-bold text-zinc-900">Cursos Presenciales</h4>
-                  <p className="text-2xl font-bold text-green-600 my-2">79€/mes</p>
+                  <p className="text-2xl font-bold text-green-600 my-2">94€/mes</p>
                   <p className="text-sm text-zinc-500">Preparación con profesor en Impulse English Academy</p>
                 </div>
 
@@ -342,7 +342,7 @@ export default function PrecioLinguaskillOnlinePage() {
                   preparación adecuada, es una inversión que puede abrirte puertas académicas y profesionales.
                 </p>
                 <p className="text-white/90">
-                  En nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-white hover:underline font-bold">junto a La Vaguada</a>, te preparamos para el <a href="/linguaskill/" className="text-white hover:underline font-bold">Linguaskill</a> por solo <strong>79€/mes</strong>,
+                  En nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-white hover:underline font-bold">junto a La Vaguada</a>, te preparamos para el <a href="/linguaskill/" className="text-white hover:underline font-bold">Linguaskill</a> por solo <strong>94€/mes</strong>,
                   con profesores especializados y materiales actualizados. También ofrecemos <a href="/cursos-ingles/adultos/" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> y preparación para otros <a href="/examenes-cambridge/" className="text-white hover:underline font-bold">exámenes Cambridge</a>.
                 </p>
               </div>
@@ -357,7 +357,7 @@ export default function PrecioLinguaskillOnlinePage() {
                       Prepárate para Linguaskill con nosotros
                     </h3>
                     <p className="text-zinc-400">
-                      Cursos de preparación desde 79€/mes con profesores expertos en certificaciones Cambridge.
+                      Cursos de preparación desde 94€/mes con profesores expertos en certificaciones Cambridge.
                     </p>
                   </div>
                   <a

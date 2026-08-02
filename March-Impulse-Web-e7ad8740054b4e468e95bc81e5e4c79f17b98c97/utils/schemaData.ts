@@ -459,11 +459,11 @@ export function generateLocationPageSchema(props: LocationPageSchemaProps) {
       serviceType: "English Classes for Primary School",
       offers: {
         "@type": "Offer",
-        price: "71",
+        price: "83",
         priceCurrency: "EUR",
         priceSpecification: {
           "@type": "UnitPriceSpecification",
-          price: "71",
+          price: "83",
           priceCurrency: "EUR",
           unitText: "mes"
         }
@@ -476,11 +476,11 @@ export function generateLocationPageSchema(props: LocationPageSchemaProps) {
       serviceType: "English Classes for Secondary School",
       offers: {
         "@type": "Offer",
-        price: "75",
+        price: "87",
         priceCurrency: "EUR",
         priceSpecification: {
           "@type": "UnitPriceSpecification",
-          price: "75",
+          price: "87",
           priceCurrency: "EUR",
           unitText: "mes"
         }
@@ -493,11 +493,11 @@ export function generateLocationPageSchema(props: LocationPageSchemaProps) {
       serviceType: "English Classes for Adults",
       offers: {
         "@type": "Offer",
-        price: "79",
+        price: "94",
         priceCurrency: "EUR",
         priceSpecification: {
           "@type": "UnitPriceSpecification",
-          price: "79",
+          price: "94",
           priceCurrency: "EUR",
           unitText: "mes"
         }

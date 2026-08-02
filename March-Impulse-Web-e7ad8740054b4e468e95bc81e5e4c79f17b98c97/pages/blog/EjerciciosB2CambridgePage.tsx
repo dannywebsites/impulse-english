@@ -543,7 +543,7 @@ export default function EjerciciosB2CambridgePage() {
               <div className="bg-blue-100 rounded-xl p-6">
                 <p className="text-blue-800">
                   En nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-blue-600 hover:underline font-bold">academia en Barrio del Pilar</a> complementamos estos recursos con práctica guiada,
-                  corrección personalizada de Writing y Speaking en vivo con feedback inmediato. Ofrecemos <a href="/examenes-cambridge/b2-first/" className="text-blue-600 hover:underline font-bold">preparación B2 First</a> con <a href="/cursos-ingles/particulares/" className="text-blue-600 hover:underline font-bold">clases particulares</a> o grupales desde <strong>79€/mes</strong>. También preparamos <a href="/examenes-cambridge/b1-preliminary/" className="text-blue-600 hover:underline font-bold">B1 Preliminary</a> y otros <a href="/examenes-cambridge/" className="text-blue-600 hover:underline font-bold">exámenes Cambridge</a>.
+                  corrección personalizada de Writing y Speaking en vivo con feedback inmediato. Ofrecemos <a href="/examenes-cambridge/b2-first/" className="text-blue-600 hover:underline font-bold">preparación B2 First</a> con <a href="/cursos-ingles/particulares/" className="text-blue-600 hover:underline font-bold">clases particulares</a> o grupales desde <strong>94€/mes</strong>. También preparamos <a href="/examenes-cambridge/b1-preliminary/" className="text-blue-600 hover:underline font-bold">B1 Preliminary</a> y otros <a href="/examenes-cambridge/" className="text-blue-600 hover:underline font-bold">exámenes Cambridge</a>.
                 </p>
               </div>
             </section>
@@ -589,7 +589,7 @@ export default function EjerciciosB2CambridgePage() {
                 </p>
                 <p className="text-white/90">
                   En <strong>Impulse English Academy</strong> te preparamos con ejercicios reales, simulacros
-                  cronometrados y feedback personalizado por solo <strong>79€/mes</strong>.
+                  cronometrados y feedback personalizado por solo <strong>94€/mes</strong>.
                 </p>
               </div>
             </section>

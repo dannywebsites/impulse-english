@@ -49,7 +49,7 @@ export const faqs: FAQItem[] = [
 ];
 
 export const articleSchema = generateArticleSchema({
-    headline: "Centros Linguaskill en España: Dónde Realizar el Examen 2025",
+    headline: "Centros Linguaskill en España: Dónde Realizar el Examen 2026",
     description: "Guía completa de centros autorizados Linguaskill en Madrid, Valencia, Zaragoza y otras ciudades españolas donde realizar el examen oficial.",
     url: `${businessInfo.url}/blog/centros-linguaskill`,
     datePublished: "2025-01-01"
@@ -97,11 +97,11 @@ export default function CentrosLinguaskillPage() {
               </div>
 
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                Centros Linguaskill Madrid, Valencia, Zaragoza | Guía 2025
+                Centros Linguaskill Madrid, Valencia, Zaragoza | Guía 2026
               </h1>
               <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
               <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
-                Descubre los centros autorizados Linguaskill en Madrid, Valencia y Zaragoza. Reserva tu examen oficial Cambridge con resultados en 48 horas. Guía actualizada 2025.
+                Descubre los centros autorizados Linguaskill en Madrid, Valencia y Zaragoza. Reserva tu examen oficial Cambridge con resultados en 48 horas. Guía actualizada 2026.
               </p>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function CentrosLinguaskillPage() {
             {/* Section 1 */}
             <section id="que-es" className="mb-16 scroll-mt-24">
               <h2 className="text-3xl font-bold text-zinc-900 mb-6">
-                Qué es Linguaskill y Por Qué Elegirlo en 2025
+                Qué es Linguaskill y Por Qué Elegirlo en 2026
               </h2>
 
               <p className="text-zinc-600 leading-relaxed mb-6">

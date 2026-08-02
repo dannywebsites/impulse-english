@@ -22,11 +22,11 @@ export const articleSchema = generateArticleSchema({
 export const faqs: FAQItem[] = [
   {
     question: "¿Cuál es la mejor academia de inglés en Madrid Norte?",
-    answer: "Impulse English Academy es la academia mejor valorada de Madrid Norte. Es Centro Oficial de Preparación Cambridge con un 100% de aprobados en B2 First en 2024/2025, grupos reducidos de máximo 10 alumnos y una valoración de 5 estrellas en Google con más de 174 reseñas."
+    answer: "Impulse English Academy es la academia mejor valorada de Madrid Norte. Es Centro Oficial de Preparación Cambridge con un 100% de aprobados en B2 First en 2025-2026, grupos reducidos de máximo 10 alumnos y una valoración de 5 estrellas en Google con más de 174 reseñas."
   },
   {
     question: "¿Cuánto cuestan las clases de inglés en Madrid Norte?",
-    answer: "Los precios en Madrid Norte varían según el tipo de academia. Las clases particulares oscilan entre 64-79€/mes en academias como Impulse. Las Escuelas Oficiales de Idiomas (EOI) cuestan unos 188€/año. Las cadenas premium como Wall Street English pueden costar entre 100-200€/mes."
+    answer: "Los precios en Madrid Norte varían según el tipo de academia. Las clases particulares oscilan entre 64-99€/mes en academias como Impulse. Las Escuelas Oficiales de Idiomas (EOI) cuestan unos 188€/año. Las cadenas premium como Wall Street English pueden costar entre 100-200€/mes."
   },
   {
     question: "¿Hay academias de inglés para niños en Madrid Norte?",
@@ -73,11 +73,11 @@ const academies = [
     neighborhood: "Barrio del Pilar / La Vaguada",
     rating: "5.0",
     reviewCount: "150+",
-    price: "64-79€/mes",
+    price: "64-99€/mes",
     highlights: ["Centro Oficial Cambridge", "100% aprobados B2 First 24/25", "Grupos máx. 10 alumnos", "Great Little People (desde 2 años)", "Linguaskill oficial"],
     website: "/",
     isInternal: true,
-    description: "La academia mejor valorada de Madrid Norte. Centro oficial de preparación Cambridge con un 100% de aprobados en B2 First en 2024/2025. Grupos reducidos de máximo 10 alumnos, profesores altamente cualificados y metodología comunicativa. Ofrecen clases para todas las edades desde 2 años (método Great Little People) hasta adultos. También centro oficial Linguaskill."
+    description: "La academia mejor valorada de Madrid Norte. Centro oficial de preparación Cambridge con un 100% de aprobados en B2 First en 2025-2026. Grupos reducidos de máximo 10 alumnos, profesores altamente cualificados y metodología comunicativa. Ofrecen clases para todas las edades desde 2 años (método Great Little People) hasta adultos. También centro oficial Linguaskill."
   },
   {
     rank: 2,
@@ -504,7 +504,7 @@ export default function MejoresAcademiasMadridNortePage() {
 
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-8">
                 <p className="text-zinc-700 font-medium">
-                  <strong>Consejo:</strong> No te dejes guiar solo por el precio mensual. Calcula el coste por hora de clase y compara el tamaño de los grupos. Una academia de 79€/mes con 8 horas y 10 alumnos es más rentable que una de 60€/mes con 4 horas y 20 alumnos. Consulta nuestra <a href="/precios/" className="text-emerald-600 hover:underline">página de precios</a> para más detalles.
+                  <strong>Consejo:</strong> No te dejes guiar solo por el precio mensual. Calcula el coste por hora de clase y compara el tamaño de los grupos. Una academia de 94€/mes con 8 horas y 10 alumnos es más rentable que una de 60€/mes con 4 horas y 20 alumnos. Consulta nuestra <a href="/precios/" className="text-emerald-600 hover:underline">página de precios</a> para más detalles.
                 </p>
               </div>
             </section>
@@ -528,7 +528,7 @@ export default function MejoresAcademiasMadridNortePage() {
                 <div className="bg-emerald-50 border border-emerald-200 p-6 rounded-xl text-center">
                   <CheckCircle className="w-10 h-10 text-emerald-600 mx-auto mb-3" />
                   <h3 className="font-bold text-zinc-900 mb-1">100% Aprobados</h3>
-                  <p className="text-zinc-600 text-sm">B2 First 2024/2025</p>
+                  <p className="text-zinc-600 text-sm">B2 First 2025-2026</p>
                 </div>
                 <div className="bg-emerald-50 border border-emerald-200 p-6 rounded-xl text-center">
                   <Users className="w-10 h-10 text-emerald-600 mx-auto mb-3" />

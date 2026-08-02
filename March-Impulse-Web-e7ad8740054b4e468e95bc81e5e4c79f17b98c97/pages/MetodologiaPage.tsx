@@ -105,7 +105,7 @@ const pillars = [
 ];
 
 const stats = [
-  { value: "100%", label: "Aprobados Cambridge 2024-2025" },
+  { value: "100%", label: "Aprobados Cambridge 2025-2026" },
   { value: "40-60%", label: "Mejor retención de vocabulario" },
   { value: "70%", label: "Tiempo hablando en clase" },
   { value: "7-10", label: "Máximo alumnos por grupo" }
@@ -122,7 +122,7 @@ const metodologiaFAQs = [
   },
   {
     question: "¿Cómo ampliar vocabulario en inglés rápido?",
-    answer: "Ampliar vocabulario en inglés rápido en 2025/26 requiere repetición espaciada con apps como Anki, aprendizaje contextual mediante podcasts y series, y práctica activa escribiendo y hablando. Técnicas emergentes incluyen shadowing y chunking, junto con inmersión digital para fijar y usar palabras eficazmente en comunicación real."
+    answer: "Ampliar vocabulario en inglés rápido en 2026/27 requiere repetición espaciada con apps como Anki, aprendizaje contextual mediante podcasts y series, y práctica activa escribiendo y hablando. Técnicas emergentes incluyen shadowing y chunking, junto con inmersión digital para fijar y usar palabras eficazmente en comunicación real."
   },
   {
     question: "¿Cómo mejorar la pronunciación en inglés?",
@@ -203,7 +203,7 @@ const metodologiaFAQs = [
   },
   {
     question: "¿IELTS o Cambridge?",
-    answer: "IELTS: Preferido en Reino Unido, Australia, inmigración. Cambridge: Más aceptado en empresas, universidades españolas, oposiciones. Ambos miden C1/C2. En España 2025, Cambridge es más reconocido. Elige Cambridge si postulas universidades/oposiciones españolas; IELTS si tu destino es UK/Australia."
+    answer: "IELTS: Preferido en Reino Unido, Australia, inmigración. Cambridge: Más aceptado en empresas, universidades españolas, oposiciones. Ambos miden C1/C2. En España 2026, Cambridge es más reconocido. Elige Cambridge si postulas universidades/oposiciones españolas; IELTS si tu destino es UK/Australia."
   },
   {
     question: "¿Academia cara o barata?",
@@ -332,7 +332,7 @@ export default function MetodologiaPage() {
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-xl text-white/80 font-light mb-4 animate-hero-fade-up animation-delay-200">
-              El método que llevó a 100% de nuestros estudiantes a aprobar Cambridge 2024-2025.
+              El método que llevó a 100% de nuestros estudiantes a aprobar Cambridge 2025-2026.
             </p>
             <p className="font-display text-white/60 leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
               No es magia. Es ciencia del aprendizaje aplicada con pasión. La Metodología Impulse es nuestro sistema propietario desarrollado en el aula con cientos de estudiantes.

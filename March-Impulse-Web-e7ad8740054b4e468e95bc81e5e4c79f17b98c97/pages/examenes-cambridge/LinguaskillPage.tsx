@@ -11,7 +11,7 @@ import { s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
 
 // Article Schema for AI citation
 export const articleSchema = generateArticleSchema({
-  headline: "Linguaskill: Guía Completa del Examen Online de Cambridge 2025",
+  headline: "Linguaskill: Guía Completa del Examen Online de Cambridge 2026",
   description: "Todo sobre Linguaskill: el examen adaptativo online de Cambridge con resultados en 48 horas. Diferencias con otros exámenes, precios, módulos y preparación.",
   url: `${businessInfo.url}/linguaskill`,
   datePublished: "2025-01-01"
@@ -538,7 +538,7 @@ export default function LinguaskillPage() {
             </a>
             <a href="/linguaskill/precios-fechas/" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
               <h3 className="font-semibold text-zinc-900 mb-1">Precios y cómo reservar</h3>
-              <p className="text-zinc-600 text-sm">Información actualizada de precios 2025</p>
+              <p className="text-zinc-600 text-sm">Información actualizada de precios 2026</p>
             </a>
             <a href="/linguaskill/ejemplo-examen/" className="bg-white p-4 rounded-lg border border-zinc-200 hover:border-red-300 hover:shadow-md transition-all">
               <h3 className="font-semibold text-zinc-900 mb-1">Ejemplos de examen</h3>

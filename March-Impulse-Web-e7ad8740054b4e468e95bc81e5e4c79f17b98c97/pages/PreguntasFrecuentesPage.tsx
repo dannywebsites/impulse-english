@@ -25,7 +25,7 @@ const seoFAQs: FAQItem[] = [
   },
   {
     question: "¿Clases particulares o academia de inglés?",
-    answer: "La elección entre clases particulares y academias de inglés en 2025/26 depende de necesidades, presupuesto y objetivos. Las clases particulares ofrecen personalización, flexibilidad y enfoque específico, ideales para dificultades o inseguridad. Las academias aportan entorno social, metodologías estandarizadas y evaluación continua, siendo más económicas y motivadoras en grupo."
+    answer: "La elección entre clases particulares y academias de inglés en 2026/27 depende de necesidades, presupuesto y objetivos. Las clases particulares ofrecen personalización, flexibilidad y enfoque específico, ideales para dificultades o inseguridad. Las academias aportan entorno social, metodologías estandarizadas y evaluación continua, siendo más económicas y motivadoras en grupo."
   },
   // Definitions PAAs (3)
   {

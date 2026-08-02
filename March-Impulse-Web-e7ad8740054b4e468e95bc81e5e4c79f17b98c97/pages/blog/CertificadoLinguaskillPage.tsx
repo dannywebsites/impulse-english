@@ -50,7 +50,7 @@ const certificadoFaqs = [
 ];
 
 export const articleSchema = generateArticleSchema({
-    headline: "Certificado Linguaskill y su Validez: Guía Completa 2025",
+    headline: "Certificado Linguaskill y su Validez: Guía Completa 2026",
     description: "Todo sobre el certificado Linguaskill: validez internacional, reconocimiento en España, caducidad y dónde es aceptado.",
     url: `${businessInfo.url}/blog/certificado-linguaskill`,
     datePublished: "2025-01-10"
@@ -125,12 +125,12 @@ export default function CertificadoLinguaskillPage() {
                   <div className="w-8 h-px bg-white/40"></div>
                   <span className="text-white/50 text-xs font-display flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5" />
-                    Actualizado: Diciembre 2025
+                    Actualizado: Agosto 2026
                   </span>
                 </div>
 
                 <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                  Certificado Linguaskill y su Validez: Todo lo que Necesitas Saber en 2025
+                  Certificado Linguaskill y su Validez: Todo lo que Necesitas Saber en 2026
                 </h1>
                 <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
                 <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -149,7 +149,7 @@ export default function CertificadoLinguaskillPage() {
                 <li><a href="#que-es" className="text-violet-600 hover:text-violet-700 transition-colors">→ ¿Qué es el Certificado Linguaskill?</a></li>
                 <li><a href="#validez" className="text-violet-600 hover:text-violet-700 transition-colors">→ Validez Oficial y Reconocimiento Internacional</a></li>
                 <li><a href="#caducidad" className="text-violet-600 hover:text-violet-700 transition-colors">→ ¿Tiene Fecha de Caducidad?</a></li>
-                <li><a href="#novedades" className="text-violet-600 hover:text-violet-700 transition-colors">→ Novedades del Certificado en 2025</a></li>
+                <li><a href="#novedades" className="text-violet-600 hover:text-violet-700 transition-colors">→ Novedades del Certificado en 2026</a></li>
                 <li><a href="#faq" className="text-violet-600 hover:text-violet-700 transition-colors">→ Preguntas Frecuentes</a></li>
               </ul>
             </div>
@@ -314,7 +314,7 @@ export default function CertificadoLinguaskillPage() {
             {/* Section 4 */}
             <section id="novedades" className="mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                Novedades y Mejoras del Certificado en 2025
+                Novedades y Mejoras del Certificado en 2026
               </h2>
 
               <div className="space-y-4">
@@ -374,7 +374,7 @@ export default function CertificadoLinguaskillPage() {
 
               <div className="bg-gradient-to-r from-violet-50 to-purple-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  El certificado Linguaskill representa en 2025 una de las opciones más flexibles, rápidas y reconocidas internacionalmente para acreditar tu nivel de inglés sin fecha de caducidad oficial.
+                  El certificado Linguaskill representa en 2026 una de las opciones más flexibles, rápidas y reconocidas internacionalmente para acreditar tu nivel de inglés sin fecha de caducidad oficial.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Si buscas preparación especializada para alcanzar la certificación que necesitas, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-violet-600 hover:underline font-medium">academia en Barrio del Pilar</a>, junto a <a href="/academia-ingles-la-vaguada/" className="text-violet-600 hover:underline font-medium">La Vaguada</a>, ofrece <a href="/cursos-ingles/adultos/" className="text-violet-600 hover:underline font-medium">cursos específicos de inglés para adultos</a> con metodología probada y tasas de éxito del 100% en <a href="/examenes-cambridge/" className="text-violet-600 hover:underline font-medium">exámenes Cambridge</a>.
@@ -403,7 +403,7 @@ export default function CertificadoLinguaskillPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-violet-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-violet-600 transition-colors mb-2">
-                    Linguaskill: Guía Completa 2025
+                    Linguaskill: Guía Completa 2026
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre el examen Linguaskill de Cambridge.</p>
                 </a>

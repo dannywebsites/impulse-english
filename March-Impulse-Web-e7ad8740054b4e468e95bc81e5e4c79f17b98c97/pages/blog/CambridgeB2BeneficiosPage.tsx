@@ -121,8 +121,8 @@ export const faqs: FAQItem[] = [
 ];
 
 export const articleSchema = generateArticleSchema({
-    headline: "Cambridge B2: 7 Beneficios Clave del Examen First en 2025",
-    description: "Descubre los beneficios reales del Cambridge B2: reconocimiento internacional, validez ilimitada, mejora profesional y académica. Guía completa 2025.",
+    headline: "Cambridge B2: 7 Beneficios Clave del Examen First en 2026",
+    description: "Descubre los beneficios reales del Cambridge B2: reconocimiento internacional, validez ilimitada, mejora profesional y académica. Guía completa 2026.",
     url: `${businessInfo.url}/blog/cambridge-b2-beneficios`,
     datePublished: "2024-12-01"
   });
@@ -169,11 +169,11 @@ export default function CambridgeB2BeneficiosPage() {
               </div>
 
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                Cambridge B2: 7 Beneficios Clave del Examen First en 2025
+                Cambridge B2: 7 Beneficios Clave del Examen First en 2026
               </h1>
               <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
               <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
-                Descubre los beneficios reales del Cambridge B2: reconocimiento internacional, validez ilimitada, mejora profesional y académica. Guía completa 2025.
+                Descubre los beneficios reales del Cambridge B2: reconocimiento internacional, validez ilimitada, mejora profesional y académica. Guía completa 2026.
               </p>
             </div>
           </div>
@@ -237,7 +237,7 @@ export default function CambridgeB2BeneficiosPage() {
             {/* Introduction */}
             <section className="mb-16">
               <p className="text-xl text-zinc-600 leading-relaxed">
-                El certificado Cambridge B2 First es considerado el título de inglés más popular del mundo, con más de 20.000 organizaciones que lo reconocen globalmente. A diferencia de otras certificaciones que caducan cada dos o tres años, el Cambridge B2 tiene validez ilimitada y demuestra competencia real en inglés para trabajar, estudiar y vivir en entornos anglófonos. En 2025, más de 5 millones de personas realizan anualmente exámenes Cambridge, consolidando el B2 First como el estándar internacional para el nivel intermedio-alto. Este artículo explora los beneficios concretos que ofrece esta certificación tanto en el ámbito profesional como académico.
+                El certificado Cambridge B2 First es considerado el título de inglés más popular del mundo, con más de 20.000 organizaciones que lo reconocen globalmente. A diferencia de otras certificaciones que caducan cada dos o tres años, el Cambridge B2 tiene validez ilimitada y demuestra competencia real en inglés para trabajar, estudiar y vivir en entornos anglófonos. En 2026, más de 5 millones de personas realizan anualmente exámenes Cambridge, consolidando el B2 First como el estándar internacional para el nivel intermedio-alto. Este artículo explora los beneficios concretos que ofrece esta certificación tanto en el ámbito profesional como académico.
               </p>
             </section>
 
@@ -399,7 +399,7 @@ export default function CambridgeB2BeneficiosPage() {
               </p>
 
               <p className="text-zinc-600 leading-relaxed">
-                Ya sea para acceder a educación superior internacional, mejorar tu empleabilidad en mercados globalizados o cumplir requisitos académicos, el <a href="/examenes-cambridge/b2-first/" className="text-red-600 hover:underline font-medium">B2 First</a> abre puertas tangibles. Si buscas preparación estructurada con metodología probada, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-red-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos específicos de preparación con tasas de éxito del 100% en 2024-2025. Preparamos todos los <a href="/examenes-cambridge/" className="text-red-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos/" className="text-red-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-red-600 hover:underline font-medium">clases particulares</a>.
+                Ya sea para acceder a educación superior internacional, mejorar tu empleabilidad en mercados globalizados o cumplir requisitos académicos, el <a href="/examenes-cambridge/b2-first/" className="text-red-600 hover:underline font-medium">B2 First</a> abre puertas tangibles. Si buscas preparación estructurada con metodología probada, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-red-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-red-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos específicos de preparación con tasas de éxito del 100% en 2025-2026. Preparamos todos los <a href="/examenes-cambridge/" className="text-red-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos/" className="text-red-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-red-600 hover:underline font-medium">clases particulares</a>.
               </p>
             </section>
 

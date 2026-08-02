@@ -335,7 +335,7 @@ export default function ExamenCaeCambridgePage() {
               </h2>
 
               <div className="bg-gradient-to-r from-rose-500 to-pink-500 rounded-2xl p-8 text-white mb-6">
-                <h3 className="text-xl font-bold mb-4">Preparación CAE en Impulse English Academy - 79€/mes</h3>
+                <h3 className="text-xl font-bold mb-4">Preparación CAE en Impulse English Academy - 94€/mes</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-bold mb-2">Nuestro programa incluye:</h4>
@@ -414,7 +414,7 @@ export default function ExamenCaeCambridgePage() {
                 </p>
                 <p className="text-white/90">
                   En nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-white hover:underline font-bold">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-white hover:underline font-bold">junto a La Vaguada</a>, te preparamos con metodología probada y profesores
-                  expertos por solo <strong>79€/mes</strong>. Ofrecemos <a href="/cursos-ingles/adultos/" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-white hover:underline font-bold">clases particulares</a> para preparar todos los <a href="/examenes-cambridge/" className="text-white hover:underline font-bold">exámenes Cambridge</a>. ¡Da el paso hacia tu certificación C1!
+                  expertos por solo <strong>94€/mes</strong>. Ofrecemos <a href="/cursos-ingles/adultos/" className="text-white hover:underline font-bold">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-white hover:underline font-bold">clases particulares</a> para preparar todos los <a href="/examenes-cambridge/" className="text-white hover:underline font-bold">exámenes Cambridge</a>. ¡Da el paso hacia tu certificación C1!
                 </p>
               </div>
             </section>

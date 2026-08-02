@@ -41,7 +41,7 @@ export const faqs: FAQItem[] = [
 ];
 
 export const articleSchema = generateArticleSchema({
-    headline: "Opiniones Linguaskill: Experiencias Reales de Candidatos 2025",
+    headline: "Opiniones Linguaskill: Experiencias Reales de Candidatos 2026",
     description: "Opiniones reales sobre el examen Linguaskill: experiencias con el formato adaptativo, modalidad online, corrección automatizada y comparativa con otros exámenes.",
     url: `${businessInfo.url}/blog/opiniones-linguaskill`,
     datePublished: "2025-01-01"
@@ -89,7 +89,7 @@ export default function OpinionesLinguaskillPage() {
               </div>
 
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                Opiniones Linguaskill 2025: Experiencias Reales del Examen
+                Opiniones Linguaskill 2026: Experiencias Reales del Examen
               </h1>
               <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
               <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -178,7 +178,7 @@ export default function OpinionesLinguaskillPage() {
             {/* Section 1 */}
             <section id="por-que-eligen" className="mb-16 scroll-mt-24">
               <h2 className="text-3xl font-bold text-zinc-900 mb-6">
-                ¿Por Qué los Usuarios Eligen Linguaskill en 2025?
+                ¿Por Qué los Usuarios Eligen Linguaskill en 2026?
               </h2>
 
               <p className="text-zinc-600 leading-relaxed mb-6">

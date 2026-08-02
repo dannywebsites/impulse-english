@@ -22,7 +22,7 @@ export const faqs: FAQItem[] = [
 
   ,
     {
-      question: "¿Qué precio medio tienen las academias de oposiciones en Madrid en 2025?",
+      question: "¿Qué precio medio tienen las academias de oposiciones en Madrid en 2026?",
       answer: "Las academias presenciales cobran entre 129€ y 280€ mensuales según especialidad y servicios incluidos. Los paquetes completos que incluyen temario físico, plataforma online, simulacros y tutorías personalizadas oscilan entre 1.850€ y 3.200€ anuales. Las modalidades 100% online reducen costes un 35-40%, pero sacrifican interacción presencial que mejora resultados según el 78% de opositores exitosos encuestados."
     },
     {

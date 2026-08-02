@@ -24,7 +24,7 @@ const tableOfContents = [
 export const faqItems = [
   {
     question: '¿Qué libros usar para preparar B2 First?',
-    answer: 'Los libros recomendados para preparar el examen Cambridge B2 First en 2025/26 incluyen First Expert Coursebook y First Masterclass para competencias B2, FCE Result y Compact First adaptados al formato actual, First Trainer Second Edition con simulacros oficiales, y Oxford Practice Grammar para gramática práctica. Combínelos con recursos digitales para optimizar la preparación.'
+    answer: 'Los libros recomendados para preparar el examen Cambridge B2 First en 2026/27 incluyen First Expert Coursebook y First Masterclass para competencias B2, FCE Result y Compact First adaptados al formato actual, First Trainer Second Edition con simulacros oficiales, y Oxford Practice Grammar para gramática práctica. Combínelos con recursos digitales para optimizar la preparación.'
   },
   {
     question: '¿Cuánto tiempo se tarda en preparar el B2 First?',
@@ -60,7 +60,7 @@ export const faqItems = [
   },
   {
     question: '¿Clases particulares o academia de inglés?',
-    answer: 'La elección entre clases particulares y academias de inglés en 2025/26 depende de necesidades, presupuesto y objetivos. Las clases particulares ofrecen personalización, flexibilidad y enfoque específico, ideales para dificultades o inseguridad. Las academias aportan entorno social, metodologías estandarizadas y evaluación continua, siendo más económicas y motivadoras en grupo.'
+    answer: 'La elección entre clases particulares y academias de inglés en 2026/27 depende de necesidades, presupuesto y objetivos. Las clases particulares ofrecen personalización, flexibilidad y enfoque específico, ideales para dificultades o inseguridad. Las academias aportan entorno social, metodologías estandarizadas y evaluación continua, siendo más económicas y motivadoras en grupo.'
   }
 ];
 
@@ -537,7 +537,7 @@ export default function LibrosCambridgeRecursosPage() {
                     <div className="text-zinc-400 text-sm">Clases individuales</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-orange-400">75€/mes</div>
+                    <div className="text-2xl font-bold text-orange-400">87€/mes</div>
                     <div className="text-zinc-400 text-sm">Grupos reducidos (8h/mes)</div>
                   </div>
 

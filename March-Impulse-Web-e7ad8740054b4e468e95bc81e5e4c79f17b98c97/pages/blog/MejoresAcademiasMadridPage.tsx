@@ -386,7 +386,7 @@ export default function MejoresAcademiasMadridPage() {
                 <div className="bg-emerald-50 border border-emerald-200 p-6 rounded-xl text-center">
                   <CheckCircle className="w-10 h-10 text-emerald-600 mx-auto mb-3" />
                   <h3 className="font-bold text-zinc-900 mb-1">100% Aprobados</h3>
-                  <p className="text-zinc-600 text-sm">B2 First 2024-2025</p>
+                  <p className="text-zinc-600 text-sm">B2 First 2025-2026</p>
                 </div>
                 <div className="bg-emerald-50 border border-emerald-200 p-6 rounded-xl text-center">
                   <Users className="w-10 h-10 text-emerald-600 mx-auto mb-3" />
@@ -408,7 +408,7 @@ export default function MejoresAcademiasMadridPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-zinc-600"><strong>Desde 75€/mes</strong> con cursos para <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">adultos</a>, <a href="/cursos-ingles/infantil/" className="text-emerald-600 hover:underline">niños</a>, <a href="/cursos-ingles/primaria/" className="text-emerald-600 hover:underline">primaria</a> y <a href="/cursos-ingles/secundaria/" className="text-emerald-600 hover:underline">secundaria</a></span>
+                    <span className="text-zinc-600"><strong>Desde 94€/mes</strong> con cursos para <a href="/cursos-ingles/adultos/" className="text-emerald-600 hover:underline">adultos</a>, <a href="/cursos-ingles/infantil/" className="text-emerald-600 hover:underline">niños</a>, <a href="/cursos-ingles/primaria/" className="text-emerald-600 hover:underline">primaria</a> y <a href="/cursos-ingles/secundaria/" className="text-emerald-600 hover:underline">secundaria</a></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />

@@ -119,7 +119,7 @@ export default function CursoIntensivoLinguaskillPage() {
                 <p className="text-sm text-zinc-600">nivel CEFR</p>
               </div>
               <div className="bg-white rounded-xl p-4 text-center">
-                <p className="text-3xl font-bold text-orange-600">79€</p>
+                <p className="text-3xl font-bold text-orange-600">94€</p>
                 <p className="text-sm text-zinc-600">desde/mes</p>
               </div>
 
@@ -255,7 +255,7 @@ export default function CursoIntensivoLinguaskillPage() {
                 <p className="text-zinc-700">
                   <strong>Nuestra recomendación:</strong> En <a href="/academia-ingles-barrio-del-pilar/" className="text-orange-600 hover:underline font-medium">nuestra academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-orange-600 hover:underline font-medium">junto a La Vaguada</a>, ofrecemos un formato híbrido que combina
                   clases presenciales para Speaking con recursos online para práctica autónoma en nuestros <a href="/cursos-ingles/adultos/" className="text-orange-600 hover:underline font-medium">cursos de inglés para adultos</a>. Esto te da lo mejor de ambos mundos
-                  por solo 79€/mes.
+                  por solo 94€/mes.
                 </p>
               </div>
             </section>
@@ -267,7 +267,7 @@ export default function CursoIntensivoLinguaskillPage() {
               </h2>
 
               <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white mb-6">
-                <h3 className="text-2xl font-bold mb-4">Curso Intensivo Linguaskill - 79€/mes</h3>
+                <h3 className="text-2xl font-bold mb-4">Curso Intensivo Linguaskill - 94€/mes</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-bold mb-2">Incluye:</h4>
@@ -344,7 +344,7 @@ export default function CursoIntensivoLinguaskillPage() {
                   especialmente en Speaking y Writing donde más diferencia marca la preparación guiada.
                 </p>
                 <p className="text-white/90">
-                  En <strong>Impulse English Academy</strong> ofrecemos preparación intensiva de <a href="/linguaskill/" className="text-white hover:underline font-medium">Linguaskill</a> y otros <a href="/examenes-cambridge/" className="text-white hover:underline font-medium">exámenes Cambridge</a> desde <strong>79€/mes</strong>,
+                  En <strong>Impulse English Academy</strong> ofrecemos preparación intensiva de <a href="/linguaskill/" className="text-white hover:underline font-medium">Linguaskill</a> y otros <a href="/examenes-cambridge/" className="text-white hover:underline font-medium">exámenes Cambridge</a> desde <strong>94€/mes</strong>,
                   con profesores especializados en certificaciones Cambridge, <a href="/cursos-ingles/particulares/" className="text-white hover:underline font-medium">clases particulares</a> disponibles y grupos reducidos para máxima atención.
                 </p>
               </div>

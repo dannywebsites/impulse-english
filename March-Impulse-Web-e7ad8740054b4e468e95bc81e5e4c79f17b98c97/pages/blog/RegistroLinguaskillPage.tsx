@@ -10,7 +10,7 @@ import type { FAQItem } from '../../utils/schemaData';
 import RelatedArticles from '../../components/RelatedArticles';
 import { getBlogSiblingCards } from '../../data/blog-directory';
 export const articleSchema = generateArticleSchema({
-    headline: "Registro Linguaskill 2025: Guía Completa de Matrícula",
+    headline: "Registro Linguaskill 2026: Guía Completa de Matrícula",
     description: "Cómo registrarse en el examen Linguaskill: proceso de inscripción, requisitos, costes y plazos para matricularte en España.",
     url: `${businessInfo.url}/blog/registro-linguaskill`,
     datePublished: "2025-01-16"
@@ -104,12 +104,12 @@ export default function RegistroLinguaskillPage() {
                   <div className="w-8 h-px bg-white/40"></div>
                   <span className="text-white/50 text-xs font-display flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5" />
-                    Actualizado: Diciembre 2025
+                    Actualizado: Agosto 2026
                   </span>
                 </div>
 
                 <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                  Cómo Registrarse en el Examen Linguaskill: Guía Paso a Paso 2025
+                  Cómo Registrarse en el Examen Linguaskill: Guía Paso a Paso 2026
                 </h1>
                 <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
                 <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -350,13 +350,13 @@ export default function RegistroLinguaskillPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <a href="/linguaskill/" className="group bg-gray-50 rounded-xl p-6 hover:bg-cyan-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors mb-2">
-                    Linguaskill: Guía Completa 2025
+                    Linguaskill: Guía Completa 2026
                   </h3>
                   <p className="text-gray-600 text-sm">Todo lo que necesitas saber sobre el examen Linguaskill de Cambridge.</p>
                 </a>
                 <a href="/linguaskill/precios-fechas/" className="group bg-gray-50 rounded-xl p-6 hover:bg-cyan-50 transition-colors">
                   <h3 className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors mb-2">
-                    Precio Linguaskill 2025
+                    Precio Linguaskill 2026
                   </h3>
                   <p className="text-gray-600 text-sm">Descubre los precios actualizados y cómo reservar tu examen.</p>
                 </a>

@@ -11,7 +11,7 @@ import { s3CambridgeImages, s3SecondaryImages } from '../../src/data/images';
 
 // Article Schema for SEO
 export const articleSchema = generateArticleSchema({
-  headline: "Exámenes Cambridge: Guía Completa de Certificaciones de Inglés 2025",
+  headline: "Exámenes Cambridge: Guía Completa de Certificaciones de Inglés 2026",
   description: "Todo sobre los exámenes Cambridge: niveles A2 Key, B1 Preliminary, B2 First, C1 Advanced y Linguaskill. Comparativa, precios, validez y preparación.",
   url: `${businessInfo.url}/examenes-cambridge`,
   datePublished: "2025-01-01"
@@ -389,7 +389,7 @@ export default function CambridgeHubPage() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="t-h2 text-zinc-900 mb-4">
-              Comparativa de Exámenes Cambridge 2025
+              Comparativa de Exámenes Cambridge 2026
             </h2>
             <p className="text-zinc-600 max-w-2xl mx-auto">
               Tabla comparativa con precios, duración y reconocimiento de cada certificación Cambridge
@@ -416,7 +416,7 @@ export default function CambridgeHubPage() {
                   <th className="text-left p-4 font-semibold">Nivel MCER</th>
                   <th className="text-left p-4 font-semibold">Duración</th>
                   <th className="text-left p-4 font-semibold">Partes</th>
-                  <th className="text-left p-4 font-semibold">Precio 2025</th>
+                  <th className="text-left p-4 font-semibold">Precio 2026</th>
                   <th className="text-left p-4 font-semibold">Validez</th>
                   <th className="text-left p-4 font-semibold">Reconocimiento</th>
                 </tr>

@@ -32,7 +32,7 @@ export const faqItems = [
     },
     {
       question: '¿Cuánto cuesta preparar Cambridge para niños?',
-      answer: 'La preparación en academia: 64-79€/mes. El examen Young Learners: 80-120€. B1: 120-140€. Es una inversión con retorno en motivación y certificación permanente.'
+      answer: 'La preparación en academia: 64-99€/mes. El examen Young Learners: 80-120€. B1: 120-140€. Es una inversión con retorno en motivación y certificación permanente.'
     },
     {
       question: '¿Qué examen hacer primero, Starters o Movers?',

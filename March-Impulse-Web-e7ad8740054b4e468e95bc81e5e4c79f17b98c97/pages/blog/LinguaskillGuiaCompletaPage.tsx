@@ -14,7 +14,7 @@ export const articleSchema = generateArticleSchema({
   url: `${businessInfo.url}/linguaskill`,
   image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1600",
   datePublished: "2025-01-01",
-  dateModified: "2025-01-01"
+  dateModified: "2026-01-01"
 });
 
 const linguaskillFaqs = [
@@ -44,7 +44,7 @@ const linguaskillFaqs = [
   },
   {
     question: "¿Linguaskill es reconocido internacionalmente?",
-    answer: "Linguaskill de Cambridge es un examen multinivel, 100 % online y reconocido internacionalmente por más de 25,000 instituciones, universidades y empresas. Alineado con el MCER, certifica niveles de inglés desde A1 hasta C2, siendo válido para admisiones académicas, oposiciones y procesos laborales en 2025."
+    answer: "Linguaskill de Cambridge es un examen multinivel, 100 % online y reconocido internacionalmente por más de 25,000 instituciones, universidades y empresas. Alineado con el MCER, certifica niveles de inglés desde A1 hasta C2, siendo válido para admisiones académicas, oposiciones y procesos laborales en 2026."
   },
   {
     question: "¿Qué puntuación es B2 en Linguaskill?",
@@ -56,7 +56,7 @@ const linguaskillFaqs = [
   },
   {
     question: "¿Linguaskill tiene validez para oposiciones?",
-    answer: "Linguaskill es un examen multinivel online de Cambridge con certificación oficial reconocida por universidades e instituciones públicas. Su validez para oposiciones en 2025/26 crece gracias a resultados en 48 horas, evaluación precisa y aceptación creciente en procesos selectivos oficiales y laborales."
+    answer: "Linguaskill es un examen multinivel online de Cambridge con certificación oficial reconocida por universidades e instituciones públicas. Su validez para oposiciones en 2026/27 crece gracias a resultados en 48 horas, evaluación precisa y aceptación creciente en procesos selectivos oficiales y laborales."
   },
   {
     question: "¿Vale la pena Linguaskill?",

@@ -71,7 +71,7 @@ export const NAP = {
   ],
 
   // Price range
-  priceRange: "€64 - €79/mes",
+  priceRange: "€64 - €99/mes",
 
   // Social profiles
   social: {

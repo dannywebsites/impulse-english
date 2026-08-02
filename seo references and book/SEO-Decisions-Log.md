@@ -5,6 +5,59 @@ Every SEO decision is logged here, grounded in [`SEO-Master-Class-Reference.md`]
 
 ---
 
+## 2026-08-02 — Annual year roll 2025 → 2026, plus the 2026 course-price refresh
+
+**Context:** the site still read as a 2025 site — 649 source occurrences of "2025", ~620 of them
+reaching production HTML, in title tags, H1s, meta descriptions, freshness badges and the sitewide
+pass-rate claim. Danny asked for a blanket 2025 → 2026 change; a blanket change would have published
+falsehoods, so the occurrences were split by what the year actually *means*.
+
+### Decision 1 — Roll the year everywhere it means "now"; never where it means "when".
+**Why (book §Title Tag, line 77):** the reference names the year as a recurring SERP modifier worth
+mining from competitor titles, and warns against changing titles more than once a quarter. An annual
+roll is exactly the once-a-year change that modifier is for — a stale year in the title is a direct
+CTR loss on queries where competitors show the current one.
+
+Rolled: all "Guía Completa 2025" / "Comparativa 2025" style titles, headlines, H1s and meta
+descriptions; the "en 2025/26" boilerplate (→ 2026/27); the 8 hardcoded "Actualizado: Diciembre 2025"
+badges (→ Agosto 2026, the month actually edited, not a fabricated one).
+
+### Decision 2 — `datePublished` is never rolled; `dateModified` is.
+**Why:** backdating publication is a misrepresentation to both readers and Google, and it destroys
+the only honest freshness signal the site has. All 126 `datePublished` values were left untouched;
+`dateModified` was rolled to 2026 instead. Freshness now comes from a true "updated" date.
+
+### Decision 3 — Nine 2025s deliberately preserved as historical fact.
+Linguaskill "My Best Score" *implementada en 2025* and certificates *emitidos desde 2025* (real
+feature-launch dates); the *EF EPI 2025* ranking and *LinkedIn España 2025* salary data (named
+sources with a publication year); and three unsourced percentage statistics framed as 2025 data
+("datos actualizados de 2025, el 87%…", "el 89%…", "En 2025, más del 80% de las universidades…").
+Rolling a statistic's year restates it as a newer finding that was never made.
+
+### Decision 4 — Pass-rate claim rolled to 2025-2026 on Danny's confirmation only.
+~28 instances of "100% aprobados 2024-2025" (three separator variants, now normalised to one form).
+This asserts a result about the just-finished academic year, so it was rolled **only** after Danny
+confirmed the 100% pass rate held for 2025/26 — not inferred.
+
+### Decision 5 — Course prices refreshed to the 2026 table; exam fees left alone.
+Impulse's own tiers moved Primaria 71 → 83 €, Secundaria 75 → **desde 87 €** (bands S1–S3 87 /
+S4–S6 91 / S7–S8 93), Adultos 79 → 94 €; Infantil stays at 64 € with a second weekly class at 99 €.
+Trimestral rates (239 / 251 / 263 / 269 €) are now published on `/precios/` for the first time.
+Headline range and `priceRange` are **64 – 99 €/mes** — 99 €, not 94 €, because Infantil-2-clases is
+the true monthly ceiling.
+
+Third-party figures were left untouched throughout: Cambridge and Linguaskill exam fees (233 €,
+130 €, 120 €, 210 €, confirmed unchanged for 2026), Linguaskill per-module prices (48–75 €), TKT
+(75 €/module), and the competitor/market-rate tables in the comparison articles. Each price hit was
+read in context — no find-and-replace.
+
+**Validation plan:** GSC — watch CTR on the pages whose title tag gained the 2026 modifier
+(Linguaskill guides, Cambridge centre/registration guides, precio pages) over the next 28-day window
+against the same pages' pre-change CTR. Confirm the Offer/priceRange changes re-crawl cleanly in the
+Rich Results Test.
+
+---
+
 ## 2026-07-31 — Founder `Person` nodes on the organisation schema
 
 **Context:** follow-up to the 2026-07-30 entry below, which flagged that the site had no `Person`

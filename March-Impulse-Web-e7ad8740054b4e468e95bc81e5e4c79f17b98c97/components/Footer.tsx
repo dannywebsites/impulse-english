@@ -69,7 +69,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
           </div>
 
           <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-xs uppercase tracking-[0.14em] text-white/40">&copy; 2025 {NAP.name}. Todos los derechos reservados.</p>
+            <p className="text-xs uppercase tracking-[0.14em] text-white/40">&copy; {new Date().getFullYear()} {NAP.name}. Todos los derechos reservados.</p>
             <div className="flex flex-wrap gap-4 md:gap-7">
               <a href="/aviso-legal/" className="text-xs uppercase tracking-[0.14em] text-white/40 transition-colors hover:text-white/80">Aviso Legal</a>
               <a href="/politica-privacidad/" className="text-xs uppercase tracking-[0.14em] text-white/40 transition-colors hover:text-white/80">Política de Privacidad</a>
@@ -276,7 +276,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
 
         {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-white/10 pt-8">
-          <p className="text-xs uppercase tracking-[0.14em] text-white/40">&copy; 2025 {NAP.name}. Todos los derechos reservados.</p>
+          <p className="text-xs uppercase tracking-[0.14em] text-white/40">&copy; {new Date().getFullYear()} {NAP.name}. Todos los derechos reservados.</p>
           <div className="flex flex-wrap justify-center gap-4 md:gap-7">
             <a href="/aviso-legal/" className="text-xs uppercase tracking-[0.14em] text-white/40 transition-colors hover:text-white/80">Aviso Legal</a>
             <a href="/politica-privacidad/" className="text-xs uppercase tracking-[0.14em] text-white/40 transition-colors hover:text-white/80">Política de Privacidad</a>

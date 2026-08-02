@@ -85,7 +85,7 @@ export default function LinguaskillOposicionesValidezPage() {
                 </h1>
                 <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
                 <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
-                  Linguaskill es un examen multinivel online de Cambridge con certificación oficial reconocida. Su validez para oposiciones en 2025/26 crece gracias a resultados en 48 horas.
+                  Linguaskill es un examen multinivel online de Cambridge con certificación oficial reconocida. Su validez para oposiciones en 2026/27 crece gracias a resultados en 48 horas.
                 </p>
               </div>
             </div>
@@ -223,7 +223,7 @@ export default function LinguaskillOposicionesValidezPage() {
 
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">
                 <p className="text-gray-800 font-medium">
-                  <strong>Tendencia al alza:</strong> En las últimas convocatorias de 2024/2025, se ha observado un incremento significativo en el número de procesos selectivos que incluyen Linguaskill entre las certificaciones aceptadas. La tendencia para 2026 es de mayor aceptación aún.
+                  <strong>Tendencia al alza:</strong> En las últimas convocatorias de 2025-2026, se ha observado un incremento significativo en el número de procesos selectivos que incluyen Linguaskill entre las certificaciones aceptadas. La tendencia para 2026 es de mayor aceptación aún.
                 </p>
               </div>
             </section>
@@ -457,7 +457,7 @@ export default function LinguaskillOposicionesValidezPage() {
 
               <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8">
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  <strong>Linguaskill es una opción cada vez más válida y popular para acreditar idiomas en oposiciones públicas en España.</strong> Su rapidez de resultados, formato flexible, precio accesible y el respaldo de Cambridge lo convierten en una herramienta estratégica para opositores que necesitan certificar su nivel de inglés de forma eficiente. La tendencia en 2025/26 es de mayor aceptación por parte de las administraciones públicas.
+                  <strong>Linguaskill es una opción cada vez más válida y popular para acreditar idiomas en oposiciones públicas en España.</strong> Su rapidez de resultados, formato flexible, precio accesible y el respaldo de Cambridge lo convierten en una herramienta estratégica para opositores que necesitan certificar su nivel de inglés de forma eficiente. La tendencia en 2026/27 es de mayor aceptación por parte de las administraciones públicas.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   En <a href="/linguaskill/" className="text-amber-600 hover:underline font-medium">Impulse English Academy</a> te preparamos específicamente para Linguaskill con simulacros reales y estrategias probadas. Consulta nuestra información sobre el <a href="/blog/certificado-linguaskill/" className="text-amber-600 hover:underline font-medium">certificado Linguaskill</a> y los <a href="/linguaskill/precios-fechas/" className="text-amber-600 hover:underline font-medium">precios y fechas disponibles</a> para planificar tu certificación. No dejes que la acreditación de idiomas sea un obstáculo en tu camino hacia la plaza.

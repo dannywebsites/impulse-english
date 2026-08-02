@@ -41,8 +41,8 @@ export const faqs: FAQItem[] = [
 ];
 
 export const articleSchema = generateArticleSchema({
-    headline: "Precio Linguaskill 2025: Tarifas y Reserva del Examen",
-    description: "Descubre el precio del examen Linguaskill en 2025 (130€), descuentos universitarios (120€) y cómo reservar tu plaza paso a paso en centros oficiales.",
+    headline: "Precio Linguaskill 2026: Tarifas y Reserva del Examen",
+    description: "Descubre el precio del examen Linguaskill en 2026 (130€), descuentos universitarios (120€) y cómo reservar tu plaza paso a paso en centros oficiales.",
     url: `${businessInfo.url}/blog/precio-linguaskill-reservar`,
     datePublished: "2024-12-01"
   });
@@ -89,11 +89,11 @@ export default function PrecioLinguaskillReservarPage() {
               </div>
 
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                Precio Linguaskill 2025: Tarifas y Reserva del Examen
+                Precio Linguaskill 2026: Tarifas y Reserva del Examen
               </h1>
               <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
               <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
-                Descubre el precio del examen Linguaskill en 2025 (130€), descuentos universitarios (120€) y cómo reservar tu plaza paso a paso en centros oficiales.
+                Descubre el precio del examen Linguaskill en 2026 (130€), descuentos universitarios (120€) y cómo reservar tu plaza paso a paso en centros oficiales.
               </p>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function PrecioLinguaskillReservarPage() {
             {/* Introduction */}
             <section className="mb-16">
               <p className="text-xl text-zinc-600 leading-relaxed">
-                El precio del examen Linguaskill es una pregunta frecuente entre estudiantes y profesionales que necesitan certificar su nivel de inglés rápidamente. En 2025, el coste estándar del examen completo es de <strong>130 euros</strong>, con tarifas reducidas de 120 euros para estudiantes de universidades públicas bajo el Proyecto Universitario. Este artículo responde específicamente cuánto cuesta Linguaskill, qué incluye ese precio y cómo reservar tu examen de forma eficaz. A diferencia de otros certificados tradicionales, Linguaskill ofrece resultados en menos de una semana y flexibilidad de fechas, factores que justifican su inversión.
+                El precio del examen Linguaskill es una pregunta frecuente entre estudiantes y profesionales que necesitan certificar su nivel de inglés rápidamente. En 2026, el coste estándar del examen completo es de <strong>130 euros</strong>, con tarifas reducidas de 120 euros para estudiantes de universidades públicas bajo el Proyecto Universitario. Este artículo responde específicamente cuánto cuesta Linguaskill, qué incluye ese precio y cómo reservar tu examen de forma eficaz. A diferencia de otros certificados tradicionales, Linguaskill ofrece resultados en menos de una semana y flexibilidad de fechas, factores que justifican su inversión.
               </p>
             </section>
 

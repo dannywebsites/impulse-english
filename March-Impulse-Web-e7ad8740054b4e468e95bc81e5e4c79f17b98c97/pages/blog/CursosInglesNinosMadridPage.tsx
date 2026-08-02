@@ -12,7 +12,7 @@ export const articleSchema = generateArticleSchema({
   url: `${businessInfo.url}/academias-ingles-madrid/ninos`,
   image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1600",
   datePublished: "2025-01-01",
-  dateModified: "2025-01-01"
+  dateModified: "2026-01-01"
 });
 
 export const faqs: FAQItem[] = [

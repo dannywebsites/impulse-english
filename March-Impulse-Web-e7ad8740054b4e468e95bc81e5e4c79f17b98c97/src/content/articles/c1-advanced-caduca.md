@@ -26,11 +26,11 @@ impulseSection:
       href: /examenes-cambridge/c1-advanced
 faqItems:
   - question: "¿Merece la pena el C1 en España?"
-    answer: "El certificado Cambridge C1 Advanced es muy valorado en España en 2025/26 por certificar un nivel alto de inglés, reconocido en universidades, empresas multinacionales y para trámites oficiales. Facilita el acceso a estudios superiores, mejora la empleabilidad y aporta un valor estable sin caducidad."
+    answer: "El certificado Cambridge C1 Advanced es muy valorado en España en 2026/27 por certificar un nivel alto de inglés, reconocido en universidades, empresas multinacionales y para trámites oficiales. Facilita el acceso a estudios superiores, mejora la empleabilidad y aporta un valor estable sin caducidad."
   - question: "¿C1 Advanced o C1 IELTS?"
     answer: "El Cambridge C1 Advanced certifica un nivel C1 CEFR con enfoque académico y profesional, evaluando lectura, escritura, comprensión y expresión oral en un formato modular. IELTS es más general, usado para migración y admisión universitaria. C1 Advanced ofrece reconocimiento sólido en Europa y no caduca."
   - question: "¿Qué trabajos piden C1 de inglés?"
-    answer: "El nivel C1 de inglés, certificado por el Cambridge C1 Advanced, es esencial en puestos directivos, técnicos, académicos, turísticos y legales que requieren comunicación fluida y precisa en entornos internacionales. Es valorado para negociación, presentaciones, docencia, atención al cliente y trámites migratorios en 2025/26."
+    answer: "El nivel C1 de inglés, certificado por el Cambridge C1 Advanced, es esencial en puestos directivos, técnicos, académicos, turísticos y legales que requieren comunicación fluida y precisa en entornos internacionales. Es valorado para negociación, presentaciones, docencia, atención al cliente y trámites migratorios en 2026/27."
 internalLinkRefs:
   - C1 Guide
   - Cambridge Hub

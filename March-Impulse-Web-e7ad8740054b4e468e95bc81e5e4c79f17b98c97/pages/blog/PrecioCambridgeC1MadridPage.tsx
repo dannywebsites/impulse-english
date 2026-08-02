@@ -95,12 +95,12 @@ export default function PrecioCambridgeC1MadridPage() {
                   <div className="w-8 h-px bg-white/40"></div>
                   <span className="text-white/50 text-xs font-display flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5" />
-                    Actualizado: Diciembre 2025
+                    Actualizado: Agosto 2026
                   </span>
                 </div>
 
                 <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-                  Precio Cambridge C1 Advanced en Madrid: Guía Completa 2025
+                  Precio Cambridge C1 Advanced en Madrid: Guía Completa 2026
                 </h1>
                 <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
                 <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl animate-hero-fade-up animation-delay-200">
@@ -116,7 +116,7 @@ export default function PrecioCambridgeC1MadridPage() {
             <div className="bg-gradient-to-r from-indigo-50 to-violet-50 rounded-2xl p-8 mb-12 text-center border border-indigo-100">
               <div className="inline-flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
                 <Euro className="w-4 h-4" />
-                Precio oficial 2025
+                Precio oficial 2026
               </div>
               <div className="text-5xl font-bold text-indigo-900 mb-2">233€</div>
               <p className="text-gray-600">Precio estándar para candidatos particulares</p>
@@ -144,7 +144,7 @@ export default function PrecioCambridgeC1MadridPage() {
 
             {/* Introduction */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              El precio del examen <a href="https://www.cambridgeenglish.org/es/exams-and-tests/advanced/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Cambridge C1 Advanced</a> en Madrid es de <strong>233 euros en 2025</strong>, aunque los estudiantes de universidades públicas pueden acceder a una tarifa reducida de 223,50 euros. Esta certificación internacional requiere planificación cuidadosa, ya que los plazos de inscripción cierran entre 4 y 6 semanas antes de cada convocatoria. Conocer los costes exactos, opciones de descuento y procedimientos de registro resulta fundamental para quienes buscan obtener este certificado reconocido mundialmente.
+              El precio del examen <a href="https://www.cambridgeenglish.org/es/exams-and-tests/advanced/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Cambridge C1 Advanced</a> en Madrid es de <strong>233 euros en 2026</strong>, aunque los estudiantes de universidades públicas pueden acceder a una tarifa reducida de 223,50 euros. Esta certificación internacional requiere planificación cuidadosa, ya que los plazos de inscripción cierran entre 4 y 6 semanas antes de cada convocatoria. Conocer los costes exactos, opciones de descuento y procedimientos de registro resulta fundamental para quienes buscan obtener este certificado reconocido mundialmente.
             </p>
 
             {/* Section 1 */}
@@ -154,7 +154,7 @@ export default function PrecioCambridgeC1MadridPage() {
               </h2>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                El coste estándar del examen Cambridge C1 Advanced en Madrid es de <strong>233 euros para candidatos particulares</strong> en 2025. Esta tarifa incluye la inscripción al examen completo de aproximadamente 4 horas de duración, que evalúa las cinco competencias lingüísticas: Reading, Writing, Use of English, Listening y Speaking.
+                El coste estándar del examen Cambridge C1 Advanced en Madrid es de <strong>233 euros para candidatos particulares</strong> en 2026. Esta tarifa incluye la inscripción al examen completo de aproximadamente 4 horas de duración, que evalúa las cinco competencias lingüísticas: Reading, Writing, Use of English, Listening y Speaking.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -405,7 +405,7 @@ export default function PrecioCambridgeC1MadridPage() {
                   El precio del examen Cambridge C1 Advanced en Madrid (<strong>233 euros</strong>, o 223,50€ con descuento universitario) representa una inversión accesible para obtener una certificación de inglés avanzado reconocida internacionalmente.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Planificar el registro con 6-8 semanas de antelación garantiza acceso a la fecha y formato preferidos. Para quienes buscan preparación adicional, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-indigo-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-indigo-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos especializados con metodologías específicas para maximizar las posibilidades de éxito. Preparamos <a href="/examenes-cambridge/" className="text-indigo-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline font-medium">clases particulares</a> desde 79€/mes.
+                  Planificar el registro con 6-8 semanas de antelación garantiza acceso a la fecha y formato preferidos. Para quienes buscan preparación adicional, nuestra <a href="/academia-ingles-barrio-del-pilar/" className="text-indigo-600 hover:underline font-medium">academia en Barrio del Pilar</a>, <a href="/academia-ingles-la-vaguada/" className="text-indigo-600 hover:underline font-medium">junto a La Vaguada</a>, ofrece cursos especializados con metodologías específicas para maximizar las posibilidades de éxito. Preparamos <a href="/examenes-cambridge/" className="text-indigo-600 hover:underline font-medium">exámenes Cambridge</a> con <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline font-medium">cursos de inglés para adultos</a> y <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline font-medium">clases particulares</a> desde 94€/mes.
                 </p>
               </div>
             </section>
