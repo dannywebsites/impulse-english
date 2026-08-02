@@ -15,7 +15,7 @@ const benefits = [
   { title: "Centro Oficial de Preparación Cambridge", desc: "Preparación y examen en el mismo lugar." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Metodología Impulse con resultados probados." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada garantizada." },
-  { title: "Familias de Mirasierra Confían en Nosotros", desc: "174+ reseñas de 5 estrellas en Google." },
+  { title: "Familias de Mirasierra Confían en Nosotros", desc: "180 reseñas de 5 estrellas en Google, con una media de 5,0." },
   { title: "Metodología Probada", desc: "Conversación desde día 1. Resultados medibles." }
 ];
 
@@ -112,7 +112,7 @@ export default function MirasierraPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Academia de Inglés en Mirasierra
+              Academia de inglés a 4 minutos de Mirasierra
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
@@ -156,7 +156,7 @@ export default function MirasierraPage() {
       <section className="section-tight px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
-            Nuestra academia ofrece clases de inglés cerca de Mirasierra (28035 Madrid), una zona residencial tranquila conocida por sus colegios y el Parque Norte. Desde Mirasierra puedes llegar en solo 4 minutos en metro (Línea 9, Mirasierra → Barrio del Pilar, directo sin transbordos). También hay conexión directa por autobús con las líneas 147, 42 y 83. Trabajamos con niños, adolescentes y adultos que buscan aprender inglés con grupos reducidos y atención personalizada. Somos centro oficial de preparación Cambridge con 100% de aprobados.
+            ¿Buscas academia de inglés cerca de Mirasierra? Son 4 minutos de metro en la línea 9, sin transbordos, y otros 3 andando hasta Av. de El Ferrol 22. En coche, de 5 a 8 minutos por Fermín Caballero. Grupos de 7 a 10 alumnos, desde 64 €/mes, matrícula de 45 € y prueba de nivel gratuita de 25 minutos.
           </p>
           <p className="text-lg text-zinc-700 leading-relaxed">
             Mirasierra, en el distrito Fuencarral-El Pardo (28035), es una de las zonas más residenciales y familiares de Madrid Norte. El barrio cuenta con referencias como el Parque Norte, el Colegio Mirasierra y numerosas zonas verdes. Desde la estación de Metro Mirasierra (Línea 9), llegar a nuestra academia es directo y rápido: solo una parada hasta Herrera Oria y dos hasta Barrio del Pilar. Muchas familias del barrio combinan las actividades de sus hijos con las clases de inglés. Además, la EOI Madrid-Valdezarza (C/ Fermín Caballero 92) cubre la zona, pero suele tener listas de espera, grupos grandes y no prepara exámenes Cambridge de forma específica, mientras que en Impulse trabajamos con grupos reducidos y somos centro oficial de preparación Cambridge.
@@ -451,6 +451,115 @@ export default function MirasierraPage() {
               Ver todas las reseñas en Google
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Quien da la clase. Senal E-E-A-T: persona con nombre, no "nuestro equipo". */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Quién te la da</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">El profesor tiene nombre y lo puedes comprobar</h2>
+            <div className="rule"></div>
+          </div>
+          <div className="grid md:grid-cols-[300px_1fr] gap-10 items-start">
+            <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-panel">
+              <img
+                src="/images/academy/jp-director-estudios.webp"
+                alt="JP, director de estudios de Impulse English Academy, a cuatro minutos de Mirasierra en la línea 9"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                width={900}
+                height={1200}
+              />
+            </div>
+            <div className="space-y-4 text-zinc-600 leading-relaxed">
+              <p>En Mirasierra las familias eligen colegio con cuidado. La misma pregunta vale para una academia: ¿quién va a estar delante de la clase, exactamente?</p>
+              <p>
+                <strong className="text-zinc-900">JP</strong>, cofundador y director de estudios.
+                <strong className="text-zinc-900"> Más de 10 años</strong> dando clase de inglés, y
+                10 años viviendo en Irlanda antes de eso.
+              </p>
+              <p>
+                Dirige el día a día académico, y es quien se sienta contigo en la prueba de nivel
+                gratuita de 25 minutos. Si escribes al WhatsApp 604 910 611 te contesta él en
+                persona.
+              </p>
+              <p>
+                Está especializado en preparación de exámenes Cambridge y en adquisición temprana
+                del idioma, lo que importa si el alumno tiene 4 años y no 40. Aparece con nombre
+                propio en buena parte de las 180 reseñas de Google. El otro cofundador es Danny
+                Fitzpatrick, y también da clase.
+              </p>
+              <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+                Conoce al equipo completo <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Caso real: resultado concreto, con nombre y desenlace verificable. */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Un caso real</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Josmary</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 leading-relaxed mb-6 max-w-3xl">El caso de Josmary responde a la duda de casi todo adulto que se plantea volver: llevo años dando inglés, lo entiendo a medias, y no sé por dónde retomarlo.</p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">Septiembre</p><p className="t-small text-zinc-600">cuando empezó el curso</p></div>
+              <div><p className="t-h3 text-accent-blue">Grupo de B1</p><p className="t-small text-zinc-600">en horario de noche, con JP</p></div>
+              <div><p className="t-h3 text-emerald-600">Lo que se lleva</p><p className="t-small text-zinc-600">saber qué mejorar y cómo hacerlo</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed mb-4">Su diagnóstico de partida lo describe ella mejor que nosotros: <em>"yo hablaba el inglés, lo entendía y escribía un poco, pero tenía muchísimos vacíos de gramática, de vocabulario y de no saber en qué punto estaba"</em>. Esa última parte, no saber en qué punto estás, es justo lo que resuelve una prueba de nivel.</p>
+            <p className="text-zinc-600 leading-relaxed mb-4">De las clases destaca la <em>"creatividad infinita"</em> de JP, que se le exija aplicar lo que ya sabe, y algo que no suele aparecer en los folletos: <em>"la confianza de equivocarnos"</em>.</p>
+            <p className="text-zinc-600 leading-relaxed mb-6">Lo más interesante es cómo le cambió el objetivo por el camino: <em>"la meta a la que quería llegar inicialmente ha perdido importancia y le he dado más importancia al proceso y al camino"</em>. Su conclusión: <em>"sí recomendaría a Impulse English 100%, no tengo duda de eso"</em>.</p>
+            <a href="/testimonios/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+              Ver el vídeo y otros casos <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Precios visibles en pagina, no solo en schema. */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Precios</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">La tarifa completa, sin pedir presupuesto</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 mb-8">Ninguna de estas cifras cambia por vivir en Mirasierra, ni por venir en coche desde Fermín Caballero. Es la misma tarifa para todo el mundo y está publicada para que puedas compararla con la de al lado.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b-2 border-zinc-200">
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Curso</th>
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Edad</th>
+                  <th className="py-3 font-display text-xs uppercase tracking-wider text-zinc-500">Precio</th>
+                </tr>
+              </thead>
+              <tbody className="text-zinc-700">
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Infantil</td><td className="py-3 pr-4">2-5 años</td><td className="py-3">desde 64 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Primaria</td><td className="py-3 pr-4">6-12 años</td><td className="py-3">83 €/mes · 239 €/trimestre</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Secundaria</td><td className="py-3 pr-4">13-17 años</td><td className="py-3">desde 87 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Adultos</td><td className="py-3 pr-4">todos los niveles</td><td className="py-3">94 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Clases particulares</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+                <tr><td className="py-3 pr-4 font-medium">Clases online</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="t-small text-zinc-500 mt-6">
+            Se pagan una sola vez, al entrar: <strong>45 € de matrícula</strong> y el
+            <strong> libro, 40 € como máximo</strong>. No hay cuota de mantenimiento, ni
+            permanencia, ni sorpresas a mitad de curso. La mensualidad incluye las clases
+            semanales, los simulacros de Cambridge, el seguimiento personalizado y los recursos
+            online, y baja si pagas por trimestre o si matriculas a más de un hijo. El examen
+            oficial se paga aparte, con la tarifa que fija Cambridge.
+          </p>
         </div>
       </section>
 

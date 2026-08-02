@@ -15,7 +15,7 @@ const benefits = [
   { title: "Centro Oficial de Preparación Cambridge", desc: "Prepárate y haz el examen donde estudias." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Metodología probada. Resultados garantizados." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada que marca la diferencia." },
-  { title: "Más de 4 Años Sirviendo a Familias de La Vaguada", desc: "174+ reseñas de 5 estrellas en Google." },
+  { title: "Más de 4 Años Sirviendo a Familias de La Vaguada", desc: "180 reseñas de 5 estrellas en Google, con una media de 5,0." },
   { title: "Expertos en Principiantes Absolutos", desc: "\"¿Lo intentaste antes y no pudiste?\" Te ayudamos." }
 ];
 
@@ -156,7 +156,7 @@ export default function LaVaguadaPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Impulse English Academy, La Vaguada
+              Clases de inglés en La Vaguada, a 1 minuto del bus
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
@@ -655,9 +655,116 @@ export default function LaVaguadaPage() {
               className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               <Star className="w-5 h-5 fill-yellow-400 text-amber-400" />
-              174+ reseñas reales
+              180 reseñas reales
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Quien da la clase. Senal E-E-A-T: persona con nombre, no "nuestro equipo". */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Quién te la da</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Detrás del mostrador hay dos personas, no una marca</h2>
+            <div className="rule"></div>
+          </div>
+          <div className="grid md:grid-cols-[300px_1fr] gap-10 items-start">
+            <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-panel">
+              <img
+                src="/images/academy/jp-director-estudios.webp"
+                alt="JP, director de estudios de Impulse English Academy, junto al Centro Comercial La Vaguada"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                width={900}
+                height={1200}
+              />
+            </div>
+            <div className="space-y-4 text-zinc-600 leading-relaxed">
+              <p>Al lado de La Vaguada hay cadenas de academias con el mismo cartel en veinte ciudades. Nosotros somos un centro único, y la persona que lo dirige da clase.</p>
+              <p>
+                <strong className="text-zinc-900">JP</strong>, cofundador y director de estudios,
+                lleva <strong className="text-zinc-900">más de 10 años</strong> enseñando inglés,
+                con 10 años previos viviendo en Irlanda.
+              </p>
+              <p>
+                Diseña los grupos, hace en persona la prueba de nivel gratuita de 25 minutos y
+                contesta el WhatsApp del 604 910 611. La respuesta que recibes es suya.
+              </p>
+              <p>
+                Es especialista en exámenes Cambridge y en adquisición temprana del idioma, y su
+                nombre se repite en las 180 reseñas de Google del centro. El segundo cofundador es
+                Danny Fitzpatrick, que se ocupa de adultos y de inglés de negocios.
+              </p>
+              <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+                Conoce al equipo completo <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Caso real: resultado concreto, con nombre y desenlace verificable. */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Un caso real</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Daniel de la Peña</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 leading-relaxed mb-6 max-w-3xl">Si quieres saber hasta dónde llega esto, el caso de Daniel es el más largo que tenemos documentado: año y medio de clases y un cambio de profesión al final.</p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">18 meses</p><p className="t-small text-zinc-600">cerca de año y medio con nosotros</p></div>
+              <div><p className="t-h3 text-accent-blue">Su objetivo</p><p className="t-small text-zinc-600">trabajar en países de habla inglesa</p></div>
+              <div><p className="t-h3 text-emerald-600">Hoy</p><p className="t-small text-zinc-600">profesor titulado, da inglés en primaria a jornada completa</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed mb-4">Daniel vino con un objetivo profesional concreto: <em>"acceder a oportunidades laborales en el extranjero y en países de habla inglesa"</em>. Estuvo cerca de año y medio en el centro. Sobre si funcionó, sus palabras: <em>"es algo que conseguí… cumplió con mis expectativas"</em>.</p>
+            <p className="text-zinc-600 leading-relaxed mb-4">Lo que valora no es una metodología con nombre comercial, sino el <em>"trato personalizado y sobre todo profesionalidad y compromiso para con tu proceso de aprendizaje y tu situación de partida"</em>. Esa última parte, la situación de partida, es la razón por la que empezamos siempre con una prueba de nivel.</p>
+            <p className="text-zinc-600 leading-relaxed mb-6">Hoy es profesor titulado y enseña inglés en primaria a jornada completa. Pasó de necesitar el idioma a vivir de él.</p>
+            <a href="/testimonios/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+              Ver el vídeo y otros casos <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Precios visibles en pagina, no solo en schema. */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Precios</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Qué cuesta cada curso</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 mb-8">Estás a un minuto andando del centro comercial, así que probablemente puedas pasarte a preguntar. No hace falta: la tarifa completa está aquí.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b-2 border-zinc-200">
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Curso</th>
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Edad</th>
+                  <th className="py-3 font-display text-xs uppercase tracking-wider text-zinc-500">Precio</th>
+                </tr>
+              </thead>
+              <tbody className="text-zinc-700">
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Infantil</td><td className="py-3 pr-4">2-5 años</td><td className="py-3">desde 64 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Primaria</td><td className="py-3 pr-4">6-12 años</td><td className="py-3">83 €/mes · 239 €/trimestre</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Secundaria</td><td className="py-3 pr-4">13-17 años</td><td className="py-3">desde 87 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Adultos</td><td className="py-3 pr-4">todos los niveles</td><td className="py-3">94 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Clases particulares</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+                <tr><td className="py-3 pr-4 font-medium">Clases online</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="t-small text-zinc-500 mt-6">
+            Sumado a la cuota, y una única vez: <strong>45 € de matrícula</strong> y un
+            <strong> libro de 40 € como máximo</strong>. Sin cuota de mantenimiento ni permanencia.
+            En la mensualidad entran las clases semanales, los simulacros de Cambridge, el
+            seguimiento personalizado y los recursos online. Hay descuento por pago trimestral y
+            para familias con más de un hijo matriculado. Las tasas del examen oficial las fija
+            Cambridge y van aparte.
+          </p>
         </div>
       </section>
 

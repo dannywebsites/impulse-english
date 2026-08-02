@@ -11,11 +11,11 @@ import type { FAQItem } from '../../utils/schemaData';
 import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 const benefits = [
-  { title: "A 15 Minutos Caminando de Metro Peñagrande (Línea 7)", desc: "Fácil acceso desde todo Peñagrande." },
+  { title: "A 3 Minutos en Metro desde Peñagrande (Línea 9)", desc: "O de 3 a 5 en coche por la Av. de Peñagrande." },
   { title: "Centro Oficial de Preparación Cambridge", desc: "Preparación y examen en el mismo lugar." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Metodología Impulse con resultados probados." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada garantizada." },
-  { title: "Familias de Peñagrande Confían en Nosotros", desc: "174+ reseñas de 5 estrellas en Google." },
+  { title: "Familias de Peñagrande Confían en Nosotros", desc: "180 reseñas de 5 estrellas en Google, con una media de 5,0." },
   { title: "Metodología Probada", desc: "Conversación desde día 1. Resultados medibles." }
 ];
 
@@ -46,12 +46,12 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Cómo llego a la academia desde Peñagrande?",
-    answer: "Estamos a 12-15 minutos caminando desde Metro Peñagrande (Línea 7) y a solo 500 metros de Metro Barrio del Pilar (Línea 9). Nuestra dirección es Avenida de El Ferrol, 22."
+    answer: "Unos 3 minutos en la línea 9 hasta Barrio del Pilar, más 3 andando: son 500 metros por la Av. de El Ferrol hasta el número 22. Desde la estación de Peñagrande (línea 7) se llega andando en unos 8 minutos. En coche, de 3 a 5 minutos por la Av. de Peñagrande."
   },
   // Local Madrid PAAs (2)
   {
     question: "¿Clases inglés Peñagrande zona Fuencarral?",
-    answer: "Academia Impulse es accesible desde Peñagrande y Fuencarral: Metro Peñagrande (Línea 7) 12-15 min, Metro Barrio del Pilar (Línea 9) 5 min. Centro Oficial Cambridge, 100% aprobados, grupos máximo 10. Adultos, niños, Cambridge y Linguaskill."
+    answer: "Academia Impulse es accesible desde Peñagrande y Fuencarral: unos 3 minutos en la línea 9 hasta Barrio del Pilar, u 8 minutos andando desde la estación de Peñagrande (línea 7). Centro Oficial Cambridge y Linguaskill, grupos de 7 a 10 alumnos, para adultos y niños."
   },
   {
     question: "¿Academia inglés Peñagrande con buena relación calidad-precio?",
@@ -59,7 +59,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Hay academias de inglés para niños cerca de Peñagrande?",
-    answer: "Sí. Al elegir academia de inglés para niños cerca de Peñagrande, valora el método (si es lúdico y adaptado a la edad), el tamaño de los grupos, y si preparan exámenes oficiales como Cambridge Young Learners. Impulse English Academy es accesible desde Metro Peñagrande (Línea 7) en 12-15 minutos."
+    answer: "Sí. Al elegir academia de inglés para niños cerca de Peñagrande, valora el método (si es lúdico y adaptado a la edad), el tamaño de los grupos, y si preparan exámenes oficiales como Cambridge Young Learners. Impulse English Academy queda a unos 3 minutos en la línea 9, u 8 andando desde la estación de Peñagrande (línea 7)."
   },
   {
     question: "¿Hay academias de inglés con horario de mañana en zona norte de Madrid?",
@@ -107,7 +107,7 @@ export default function PenagrandePage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Academia de Inglés en Peñagrande
+              Academia de inglés a 3 minutos de Peñagrande
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
@@ -115,7 +115,7 @@ export default function PenagrandePage() {
             </p>
             <div className="flex items-center gap-2 text-white/60 font-display text-sm mb-2 animate-hero-fade-up animation-delay-200">
               <Train className="w-4 h-4" />
-              <span>A 15 minutos caminando de Metro Peñagrande (Línea 7)</span>
+              <span>Línea 9 · unos 3 minutos · o 3-5 en coche</span>
             </div>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress}
@@ -151,10 +151,10 @@ export default function PenagrandePage() {
       <section className="section-tight px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
-            Nuestra academia ofrece clases de inglés cerca de Peñagrande (28029 Madrid), una zona residencial bien comunicada con Metro Peñagrande (Línea 7) y Metro Barrio del Pilar (Línea 9). Trabajamos con niños, adolescentes y adultos que buscan aprender inglés sin largos desplazamientos, con grupos reducidos y atención personalizada. Somos centro oficial de preparación Cambridge con 100% de aprobados.
+            ¿Buscas una academia de inglés cerca de Peñagrande? Estamos en Av. de El Ferrol 22, a unos 3 minutos en la línea 9 y otros 3 andando, o de 3 a 5 minutos en coche por la Av. de Peñagrande. Grupos de 7 a 10 alumnos, desde 64 €/mes, y una prueba de nivel gratuita de 25 minutos con el director de estudios.
           </p>
           <p className="text-lg text-zinc-700 leading-relaxed">
-            Peñagrande, en el distrito Fuencarral-El Pardo (28029), cuenta con referencias como el Parque de Peñagrande, el IES Peñagrande y el Centro de Salud Peñagrande. Desde cualquiera de estos puntos, llegar a nuestra academia es sencillo: Metro Peñagrande (Línea 7) conecta en pocos minutos con Barrio del Pilar, donde nos ubicamos. Muchas familias de la zona combinan la visita al Centro de Salud Peñagrande o la recogida del cole con las clases de inglés de sus hijos.
+            Es la distancia corta la que hace que el inglés dure todo el curso. Peñagrande está en Fuencarral-El Pardo (28029) y para muchas familias de la zona la academia queda de camino, no en un viaje aparte: se deja al niño en clase y se vuelve sin cruzar Madrid. Somos centro preparador oficial de Cambridge y centro oficial de Linguaskill, así que se prepara y se examina en el mismo sitio.
           </p>
         </div>
       </section>
@@ -439,6 +439,114 @@ export default function PenagrandePage() {
               Ver todas las reseñas en Google
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Quien da la clase. Senal E-E-A-T: persona con nombre, no "nuestro equipo". */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-6xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Quién te la da</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Aquí sabes de antemano quién entra en el aula</h2>
+            <div className="rule"></div>
+          </div>
+          <div className="grid md:grid-cols-[300px_1fr] gap-10 items-start">
+            <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-panel">
+              <img
+                src="/images/academy/jp-director-estudios.webp"
+                alt="JP, director de estudios de Impulse English Academy, a tres minutos de Peñagrande"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                width={900}
+                height={1200}
+              />
+            </div>
+            <div className="space-y-4 text-zinc-600 leading-relaxed">
+              <p>Una academia a tres minutos de casa solo compensa si la clase merece el paseo. Por eso preferimos decirte quién la da antes de que vengas.</p>
+              <p>
+                <strong className="text-zinc-900">JP</strong> es cofundador y director de estudios.
+                Enseña inglés desde hace <strong className="text-zinc-900">más de 10 años</strong> y
+                pasó otros 10 viviendo en Irlanda antes de venirse a Madrid.
+              </p>
+              <p>
+                La prueba de nivel de 25 minutos te la hace él. El WhatsApp del 604 910 611 también
+                lo contesta él. No hay formulario de por medio ni centralita que te devuelva la
+                llamada otro día.
+              </p>
+              <p>
+                Su especialidad son los exámenes Cambridge y la adquisición temprana del idioma, y
+                su nombre sale una y otra vez en las 180 reseñas del perfil de Google. Danny
+                Fitzpatrick, el otro cofundador, lleva la parte de inglés de negocios y adultos.
+              </p>
+              <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+                Conoce al equipo completo <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Caso real: resultado concreto, con nombre y desenlace verificable. */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Un caso real</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Sergio</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 leading-relaxed mb-6 max-w-3xl">Sergio no venía a sacarse un título. Venía porque el inglés le estaba cerrando una puerta que llevaba años queriendo abrir.</p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">30 años</p><p className="t-small text-zinc-600">cuando dio el paso</p></div>
+              <div><p className="t-h3 text-accent-blue">Su objetivo</p><p className="t-small text-zinc-600">poder trabajar fuera de España</p></div>
+              <div><p className="t-h3 text-emerald-600">Hoy</p><p className="t-small text-zinc-600">2 años en Dublín, analista en una aseguradora</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed mb-4">Su punto de partida es el de casi todo el mundo: <em>"como todos los españoles, el inglés siempre ha sido una gran parte de nuestra educación. Sin embargo, siempre he tenido una gran carencia de confianza para hablar en inglés"</em>. Años de clases, y aun así no se atrevía a hablar.</p>
+            <p className="text-zinc-600 leading-relaxed mb-4">Eso tenía un coste concreto: <em>"la barrera del idioma siempre me había impedido dar este paso"</em>. Lo que cambió, en sus palabras, fue el acompañamiento: <em>"tanto Dani como JP han sido un gran apoyo para mí, guiándome y asesorándome en cada momento. Gracias a ellos, he podido ganar la confianza que realmente necesitaba"</em>.</p>
+            <p className="text-zinc-600 leading-relaxed mb-6">Hoy lleva dos años en Dublín trabajando como analista de pólizas. En sus primeros meses allí hizo <strong className="text-zinc-900">cuatro entrevistas</strong> con empresas distintas. Su resumen: <em>"ha sido una de las mejores decisiones de mi vida y realmente ha cambiado mi vida"</em>.</p>
+            <a href="/testimonios/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+              Ver el vídeo y otros casos <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Precios visibles en pagina, no solo en schema. */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Precios</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Lo que cuesta, escrito antes de que preguntes</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 mb-8">La tarifa es la misma vengas de Peñagrande, de Herrera Oria o de la puerta de al lado. Publicamos la tabla entera porque comparar precios por teléfono, academia por academia, es una pérdida de tiempo para todos.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b-2 border-zinc-200">
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Curso</th>
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Edad</th>
+                  <th className="py-3 font-display text-xs uppercase tracking-wider text-zinc-500">Precio</th>
+                </tr>
+              </thead>
+              <tbody className="text-zinc-700">
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Infantil</td><td className="py-3 pr-4">2-5 años</td><td className="py-3">desde 64 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Primaria</td><td className="py-3 pr-4">6-12 años</td><td className="py-3">83 €/mes · 239 €/trimestre</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Secundaria</td><td className="py-3 pr-4">13-17 años</td><td className="py-3">desde 87 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Adultos</td><td className="py-3 pr-4">todos los niveles</td><td className="py-3">94 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Clases particulares</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+                <tr><td className="py-3 pr-4 font-medium">Clases online</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="t-small text-zinc-500 mt-6">
+            Fuera de la cuota solo hay dos cosas, y las dos se pagan una vez:
+            <strong> matrícula 45 €</strong> y <strong>libro, como mucho 40 €</strong>. Un primer mes
+            de Primaria sale por 168 € contándolo todo, y 83 € los meses siguientes. Dentro de la
+            cuota entran las clases semanales, los simulacros de Cambridge, el seguimiento y los
+            recursos online. Hay descuento por pago trimestral y por hermanos. Las tasas del examen
+            oficial no las ponemos nosotros, las fija Cambridge.
+          </p>
         </div>
       </section>
 

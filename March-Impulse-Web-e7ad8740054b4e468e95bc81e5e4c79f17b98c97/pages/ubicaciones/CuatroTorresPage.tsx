@@ -48,11 +48,11 @@ export const localFaqs: FAQItem[] = [
     answer: "Por el mismo corredor que ya conoces: línea 10 desde Begoña hasta Plaza de Castilla, y allí línea 9 hasta Barrio del Pilar. Después, 500 metros a pie por Av. de El Ferrol hasta el número 22. En coche, por la Castellana, entre 10 y 15 minutos."
   },
   {
-    question: "¿Dais inglés de negocios para profesionales?",
+    question: "¿Dais inglés de negocios para profesionales de la zona?",
     answer: "Sí, y es la especialidad de Danny Fitzpatrick, cofundador y licenciado en Marketing por ESIC University. Irlandés afincado en Madrid desde hace 12 años, une su experiencia profesional con la enseñanza para que trabajes un inglés aplicable a tu carrera."
   },
   {
-    question: "Trabajo en una de las torres y salgo tarde. ¿Hay horarios compatibles?",
+    question: "Trabajo en una de las torres y salgo tarde. ¿Hay grupos a última hora cerca?",
     answer: "Abrimos hasta las 21:30 de lunes a jueves, así que hay grupos que empiezan después de la jornada. Si tu agenda cambia cada semana, la opción más flexible son las clases particulares a 29 €/hora, presenciales u online."
   },
   {
@@ -60,7 +60,7 @@ export const localFaqs: FAQItem[] = [
     answer: "Linguaskill es la vía rápida: somos centro oficial y tienes el certificado de Cambridge en 48 horas, presencial u online desde casa. Si prefieres una titulación permanente, preparamos B2 First y C1 Advanced, con 100 alumnos aprobados hasta la fecha."
   },
   {
-    question: "¿Cuánto cuestan las clases?",
+    question: "¿Cuánto cuestan las clases de inglés cerca de las Cuatro Torres?",
     answer: "Adultos 94 €/mes en grupo. Clases particulares 29 €/hora, presenciales u online. La matrícula son 45 € y el libro un máximo de 40 €. No hay cuota de mantenimiento ni permanencia, y los precios están publicados."
   },
   {
@@ -80,7 +80,6 @@ export const locationMeta = {locationName: "Cuatro Torres Business Area",
 export default function CuatroTorresPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Academia de Inglés cerca de Cuatro Torres Business Area Madrid | Impulse English Academy La Vaguada, Barrio del Pilar';
   }, []);
 
   return (

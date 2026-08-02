@@ -5,6 +5,71 @@ Every SEO decision is logged here, grounded in [`SEO-Master-Class-Reference.md`]
 
 ---
 
+## 2026-08-02 (late, part 2) — The last five barrio pages rebuilt for GEO. All ten now grade A, every element ≥ 9.
+
+**Context:** Barrio del Pilar, La Vaguada, Mirasierra, Montecarmelo/Las Tablas and Peñagrande had
+never been through the GEO rebuild: no named teacher, no case study, no published prices
+(Case Studies 0, Pricing 0–2, Team 2). Site-wide baseline was 85.
+
+### Decision 1 — Hand-write each page's blocks instead of running `apply-geo-blocks.py`.
+**Why (book §2 anti-cannibalization + the scorecard's Overall Uniqueness row):** the tool exists and
+would have been faster, but it pastes an identical JP bio, price table and case study into every
+page. The evidence that this is costly was already in the audit: the three pages sharing the
+templated Daniel de la Peña block (La Ventilla, Plaza Castilla, Tetuán) were *exactly* the three
+worst on uniqueness (7, 8, 7) while Cuatro Torres and La Paz, on different case studies, scored 10
+and 9. Pasting the same blocks onto five more pages would have dragged the whole cluster under the
+gate. Every block was written per page — different angle, different quotes pulled from the same
+transcript, different price lead-in. Uniqueness on the five new pages came out 9–10.
+
+Two of the tool's steps were also stale and would have broken these pages: it rewires inline review
+arrays to a `localReviews` const these five don't define, and its "kill fabricated claims" cleanup
+predates the current copy.
+
+### Decision 2 — Case studies distributed, not repeated: Sergio ×2, Josmary ×2, Daniel ×1 (new pages).
+All three are real, transcribed from video, and recorded in `Business-Information.txt` §6 with
+explicit `[GAP]` markers. Those were respected: **no CEFR level or certificate is claimed for Sergio
+or Daniel**, because neither names one. Daniel's proof is the career outcome (18 months → teaching
+primary school English full-time), which is stronger than an acronym anyway.
+
+### Decision 3 — Titles and H1s carry a real number, per page.
+Every H1 now pairs the barrio name with a sourced figure (`a 3 minutos de Peñagrande`,
+`a 4 minutos de Mirasierra`, `a 1 minuto del bus`). Travel figures come from
+`components/LocationsSection.tsx`, the canonical route data — not from the pages' own prior claims,
+several of which were wrong.
+
+### Defects found and fixed along the way (none of these were in the brief)
+- **Five pages overrode their own title after hydration.** Cuatro Torres, La Paz, Plaza Castilla,
+  Tetuán and La Ventilla each ran `document.title = '…'` in a `useEffect`, replacing the SSR title
+  with a 100+ char generic one the moment the island hydrated — silently undoing the title fixes
+  made earlier the same day. Removed from all five.
+- **"174+ reseñas" was still live in 10 places** (4 barrio pages, `SobreNosotrosPage`,
+  `ContactoPage`, `ValuesSection`, `TestimonialsSection`, the Madrid-Norte blog post and
+  `testimonios.astro`'s meta). The real count is 180. Corrected everywhere; verified absent from
+  `dist/`.
+- **Josmary was published as "Josh Mary"** — in `TestimonialsPage.tsx` *and* in the `VideoObject`
+  schema on `testimonios.astro`, i.e. shipped to Google as structured data under the wrong name for
+  a real person. `Business-Information.txt` §6 flagged this as "fixed first, independently of the
+  GEO work"; it hadn't been. Both corrected.
+- **Peñagrande contradicted itself on distance** — hero said 3 minutes, benefits and two FAQs said
+  12–15. Reconciled to the canonical figures (L9 ~3 min + 3 walking; 8 min on foot from the L7
+  station; 3–5 by car).
+- **Audit bug: `score_intro` matched number units case-sensitively**, so title-cased copy
+  ("7-10 Alumnos", "15 Minutos") never counted. Fixed with `re.I`.
+
+**Result:** all ten pages **grade A**, **zero elements below 9**, site-wide baseline **85 → 96**.
+Gates: `astro check` 0 errors · build 146 pages · quote gate 0 fail in source and dist.
+
+**Still open (not fixed here):** "100% aprobados" appears unqualified in ~16 meta descriptions,
+while the approved phrasing in this log is the qualified "100% de aprobados Cambridge en el curso
+2024/25 (alumnos presentados)". Flagged for Danny rather than rewritten unilaterally.
+
+**Validation plan:** book §5 — these five had no differentiator in the SERP at all, so watch
+impressions first (they should broaden on barrio + price/transit long-tail), then CTR. Filter GSC by
+"URLs containing `academia-ingles-`" and judge the cluster as a whole. Seasonal caveat: August is
+the trough, September is the 3× spike, so compare against the control cohort, not month-on-month.
+
+---
+
 ## 2026-08-02 (late) — Five barrio pages were shipping truncated title tags. Fixed, and the audit now scores the composed title.
 
 **Context:** finishing Plaza Castilla's meta (Title Tag scored 3/10, page grade B) surfaced a

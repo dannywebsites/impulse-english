@@ -28,9 +28,11 @@ const videoTestimonials = [
 const shortTestimonials = [
   {
     videoId: "ZK1UjWaghu0",
-    name: "Josh Mary",
+    // Her name is Josmary, not "Josh Mary" — she speaks in the feminine throughout
+    // the video. Corrected 2026-08-02 per Business-Information.txt §6.
+    name: "Josmary",
     title: "De la inseguridad a la confianza",
-    description: "Josh Mary llegó en septiembre hablando algo de inglés, pero con muchos vacíos de gramática y vocabulario y sin saber en qué punto estaba. En las clases nocturnas de B1 con JP ha encontrado un plan claro, las herramientas para mejorar y, sobre todo, la confianza para equivocarse y aprender."
+    description: "Josmary llegó en septiembre hablando algo de inglés, pero con muchos vacíos de gramática y vocabulario y sin saber en qué punto estaba. En las clases nocturnas de B1 con JP ha encontrado un plan claro, las herramientas para mejorar y, sobre todo, la confianza para equivocarse y aprender."
   }
 ];
 

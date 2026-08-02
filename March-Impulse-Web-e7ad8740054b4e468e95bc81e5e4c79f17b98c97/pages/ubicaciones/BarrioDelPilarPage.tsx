@@ -15,7 +15,7 @@ const benefits = [
   { title: "Centro Oficial de Preparación Cambridge", desc: "Prepárate y haz el examen donde estudias. Sin sorpresas." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Todos nuestros estudiantes aprobaron sus exámenes." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada real. No 15-20 como otras \"reducidas\"." },
-  { title: "150+ Familias de Barrio del Pilar Nos Eligen", desc: "Más de 174 reseñas de 5 estrellas en Google." },
+  { title: "180 Reseñas de 5 Estrellas en Google", desc: "Vecinos del barrio que ya han pasado por aquí, con nombre y apellidos." },
   { title: "Metodología Impulse Probada", desc: "Conversación desde día 1. Resultados medibles. Aprendizaje efectivo." }
 ];
 
@@ -59,7 +59,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Mejor academia inglés Madrid norte?",
-    answer: "Impulse English Academy en Barrio del Pilar destaca por: Centro Oficial Cambridge, 100% aprobados, grupos máximo 10 alumnos, metodología conversacional, ubicación accesible (Metro Barrio del Pilar + parking). 150+ familias del norte nos recomiendan en Google con 5 estrellas."
+    answer: "Impulse English Academy en Barrio del Pilar destaca por: Centro Oficial Cambridge, grupos de 7 a 10 alumnos, metodología conversacional y una ubicación accesible (Metro Barrio del Pilar + parking). Tenemos 180 reseñas de 5 estrellas en Google, con una media de 5,0."
   },
   {
     question: "¿Inglés para niños en Barrio del Pilar?",
@@ -119,7 +119,7 @@ export default function BarrioDelPilarPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Impulse English Academy, Barrio del Pilar
+              Academia de inglés en Barrio del Pilar, a 3 minutos del metro
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
@@ -135,7 +135,7 @@ export default function BarrioDelPilarPage() {
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro Oficial Cambridge</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">100% Aprobados 24/25</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos Reducidos</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos de 7 a 10 alumnos</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
@@ -163,7 +163,7 @@ export default function BarrioDelPilarPage() {
       <section className="section-tight px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
-            Nuestra academia ofrece clases de inglés en Barrio del Pilar (28029 Madrid), una zona bien comunicada y cercana al Centro Comercial La Vaguada y la estación de Metro Barrio del Pilar (Línea 9). Trabajamos con niños, adolescentes y adultos que buscan aprender inglés sin largos desplazamientos, con grupos reducidos y atención personalizada. Somos centro oficial de preparación Cambridge con 100% de aprobados.
+            Este no es un barrio al que nos acerquemos: es donde está la academia. Av. de El Ferrol 22, a 3 minutos andando del metro de Barrio del Pilar (línea 9) y a un paso de La Vaguada. Grupos de 7 a 10 alumnos, desde 64 €/mes, matrícula de 45 €, y una prueba de nivel gratuita de 25 minutos con el director de estudios. Abrimos hasta las 21:30 de lunes a jueves.
           </p>
           <p className="text-lg text-zinc-700 leading-relaxed">
             Nos encontramos en el corazón del distrito Fuencarral-El Pardo, código postal 28029, a pocos minutos del Parque Huerta del Obispo y del Colegio San José. Familias que llevan a sus hijos a colegios de la zona combinan las clases extraescolares con las compras en el Centro Comercial La Vaguada. También recibimos alumnos de las inmediaciones del Hospital La Paz y de las paradas de Metro Barrio del Pilar (Línea 9) y Herrera Oria.
@@ -458,6 +458,114 @@ export default function BarrioDelPilarPage() {
               Ver todas las reseñas en Google
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Quien da la clase. Senal E-E-A-T: persona con nombre, no "nuestro equipo". */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Quién te la da</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Somos los vecinos, no una franquicia</h2>
+            <div className="rule"></div>
+          </div>
+          <div className="grid md:grid-cols-[300px_1fr] gap-10 items-start">
+            <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-panel">
+              <img
+                src="/images/academy/jp-director-estudios.webp"
+                alt="JP, director de estudios de Impulse English Academy en Av. de El Ferrol 22, Barrio del Pilar"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                width={900}
+                height={1200}
+              />
+            </div>
+            <div className="space-y-4 text-zinc-600 leading-relaxed">
+              <p>Una academia de barrio se juzga distinto: aquí te cruzas con el profesor de tu hijo en La Vaguada un sábado. Así que conviene saber quién es.</p>
+              <p>
+                <strong className="text-zinc-900">JP</strong> es cofundador y director de estudios
+                del centro. Enseña inglés desde hace <strong className="text-zinc-900">más de 10
+                años</strong> y vivió otros 10 en Irlanda antes de establecerse en Madrid.
+              </p>
+              <p>
+                Es quien organiza los grupos, quien hace la prueba de nivel gratuita de 25 minutos
+                y quien está al otro lado del WhatsApp en el 604 910 611. Escribe y te responde él.
+              </p>
+              <p>
+                Su terreno son los exámenes Cambridge y la adquisición temprana del idioma. Su
+                nombre sale citado, una y otra vez, en las 180 reseñas del perfil de Google del
+                centro. Junto a él está Danny Fitzpatrick, el otro cofundador, especializado en
+                adultos e inglés de negocios.
+              </p>
+              <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+                Conoce al equipo completo <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Caso real: resultado concreto, con nombre y desenlace verificable. */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Un caso real</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Josmary</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 leading-relaxed mb-6 max-w-3xl">Muchos de los adultos que entran por la puerta no vienen a empezar de cero. Vienen a arreglar un inglés a medias que arrastran desde el colegio. Ese era el punto de partida de Josmary.</p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">Desde septiembre</p><p className="t-small text-zinc-600">en el grupo de B1</p></div>
+              <div><p className="t-h3 text-accent-blue">Clases de noche</p><p className="t-small text-zinc-600">compatibles con la jornada</p></div>
+              <div><p className="t-h3 text-emerald-600">Resultado</p><p className="t-small text-zinc-600">un plan claro y confianza para hablar</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed mb-4">Empezó en septiembre, en el grupo de B1 de la tarde-noche con JP. Su punto de partida, contado por ella: <em>"yo hablaba el inglés, lo entendía y escribía un poco, pero tenía muchísimos vacíos de gramática, de vocabulario y de no saber en qué punto estaba"</em>.</p>
+            <p className="text-zinc-600 leading-relaxed mb-4">Lo que hizo que se quedara no fue el temario, sino el clima de la clase: la <em>"creatividad infinita"</em> del profesor y <em>"la confianza de equivocarnos"</em>, que para un adulto que lleva años callado en inglés es la mitad del trabajo.</p>
+            <p className="text-zinc-600 leading-relaxed mb-6">Su balance: <em>"he conseguido sentirme con más confianza en tener un plan claro de qué es lo que necesito mejorar, cómo hacerlo, las herramientas para hacerlo, y el apoyo de JP"</em>.</p>
+            <a href="/testimonios/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+              Ver el vídeo y otros casos <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Precios visibles en pagina, no solo en schema. */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">Precios</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Los precios, puestos por escrito</h2>
+            <div className="rule"></div>
+          </div>
+          <p className="text-zinc-600 mb-8">Puedes venir a preguntarlos en persona, estamos en el número 22 de la Av. de El Ferrol. Pero preferimos que los tengas antes de moverte de casa.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b-2 border-zinc-200">
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Curso</th>
+                  <th className="py-3 pr-4 font-display text-xs uppercase tracking-wider text-zinc-500">Edad</th>
+                  <th className="py-3 font-display text-xs uppercase tracking-wider text-zinc-500">Precio</th>
+                </tr>
+              </thead>
+              <tbody className="text-zinc-700">
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Infantil</td><td className="py-3 pr-4">2-5 años</td><td className="py-3">desde 64 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Primaria</td><td className="py-3 pr-4">6-12 años</td><td className="py-3">83 €/mes · 239 €/trimestre</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Secundaria</td><td className="py-3 pr-4">13-17 años</td><td className="py-3">desde 87 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Adultos</td><td className="py-3 pr-4">todos los niveles</td><td className="py-3">94 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Clases particulares</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+                <tr><td className="py-3 pr-4 font-medium">Clases online</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="t-small text-zinc-500 mt-6">
+            Al margen de la cuota hay dos pagos únicos: <strong>matrícula, 45 €</strong>, y
+            <strong> libro, 40 € como tope</strong>. Nada de cuotas de mantenimiento ni de
+            permanencia. Dentro van las clases semanales, los simulacros de Cambridge, el
+            seguimiento personalizado y los recursos online. Se aplica descuento si pagas por
+            trimestre y si matriculas a más de un hijo. Las tasas del examen oficial las fija
+            Cambridge y se abonan aparte.
+          </p>
         </div>
       </section>
 

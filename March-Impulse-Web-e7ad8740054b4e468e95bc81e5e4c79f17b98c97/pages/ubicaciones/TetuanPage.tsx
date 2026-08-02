@@ -79,7 +79,6 @@ export const locationMeta = {locationName: "Tetuán",
 export default function TetuanPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Academia de Inglés cerca de Tetuán Madrid | Impulse English Academy La Vaguada, Barrio del Pilar';
   }, []);
 
   return (
@@ -509,19 +508,19 @@ export default function TetuanPage() {
                 de partida es la misma persona.
               </p>
               <p>
-                <strong className="text-zinc-900">JP</strong> es director de estudios y cofundador.
-                Lleva <strong className="text-zinc-900">más de 10 años enseñando inglés</strong> y
-                vivió 10 años en Irlanda antes de instalarse en Madrid.
+                Se llama <strong className="text-zinc-900">JP</strong>. Cofundador del centro y
+                director de estudios, con <strong className="text-zinc-900">más de 10 años</strong>
+                {' '}de docencia y una década previa viviendo en Irlanda.
               </p>
               <p>
-                Es quien dirige el día a día académico, quien hace tu prueba de nivel gratuita de
-                25 minutos y quien contesta el WhatsApp: cuando escribes al 604 910 611, te
-                responde él. No un formulario ni un centro de llamadas.
+                Además de llevar la parte académica, hace él mismo las pruebas de nivel de 25
+                minutos y responde el WhatsApp del 604 910 611. Lo que recibas cuando escribas lo
+                habrá escrito él.
               </p>
               <p>
-                Está especializado en exámenes Cambridge y en adquisición temprana del idioma, y
-                aparece por su nombre en buena parte de nuestras 180 reseñas. Junto a Danny
-                Fitzpatrick, cofundador, da clase en persona.
+                Trabaja sobre todo preparación Cambridge y adquisición temprana del idioma, y su
+                nombre aparece citado en buena parte de las 180 reseñas de Google. La otra mitad
+                del proyecto es Danny Fitzpatrick, cofundador, que lleva adultos y negocios.
               </p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
                 Conoce al equipo completo <ArrowRight className="w-4 h-4" />
@@ -549,8 +548,8 @@ export default function TetuanPage() {
               <div><p className="t-h3 text-accent-blue">Su objetivo</p><p className="t-small text-zinc-600">trabajar en un país de habla inglesa</p></div>
               <div><p className="t-h3 text-emerald-600">Conseguido</p><p className="t-small text-zinc-600">hoy es profesor y da inglés en primaria a jornada completa</p></div>
             </div>
-            <p className="text-zinc-600 leading-relaxed mb-4">Daniel llegó con un objetivo concreto: acceder a oportunidades laborales en el extranjero, en países de habla inglesa. Estuvo con nosotros cerca de año y medio. En sus palabras, <em>"es algo que conseguí, así que desde ese punto de vista cumplió con mis expectativas"</em>.</p>
-            <p className="text-zinc-600 leading-relaxed mb-6">Lo que más valoró no fue el temario: <em>"cuando acudimos a una academia es encontrar un trato personalizado y sobre todo profesionalidad y compromiso para con tu proceso de aprendizaje y tu situación de partida"</em>. Hoy es profesor cualificado y enseña inglés en primaria a jornada completa.</p>
+            <p className="text-zinc-600 leading-relaxed mb-4">El objetivo con el que entró era laboral, no académico: quería <em>"acceder a oportunidades laborales en el extranjero y en países de habla inglesa"</em>. Se quedó cerca de año y medio. ¿Salió como esperaba? <em>"Es algo que conseguí… cumplió con mis expectativas"</em>.</p>
+            <p className="text-zinc-600 leading-relaxed mb-6">Preguntado por qué se quedó tanto tiempo, no habla de método ni de libros, sino del <em>"trato personalizado y sobre todo profesionalidad y compromiso para con tu proceso de aprendizaje y tu situación de partida"</em>. El desenlace: hoy es profesor titulado y da clase de inglés en primaria a jornada completa.</p>
             <a href="/testimonios/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
               Ver el vídeo y otros casos <ArrowRight className="w-4 h-4" />
             </a>
