@@ -31,14 +31,14 @@ const courses = [
 // Asignacion en GEO-Content-Project/review-allocation.md: ninguna se repite en el sitio.
 const localReviews = [
   {
-    name: "Cesar Seneca Tellechea Corral",
-    role: "Alumno adulto · Local Guide",
-    text: "Luego de pasar por varias academias en toda Madrid esta fue la única que dio con el método y el contenido perfecto para aprender, tengo un C1 y es todo gracias a ellos."
+    name: "Eva Liarte",
+    role: "Reseña verificada en Google",
+    text: "El director de la academia es un gran profesional. Además de ser muy amable y atento, te brinda su ayuda de forma muy dinámica para que tengas más confianza en ti mismo a la hora de aprender y expresarte en inglés. Gracias JP. ✨"
   },
   {
-    name: "Mª Del Espino Monedero García",
-    role: "Clases de conversación · Local Guide",
-    text: "Algo fundamental para mi, es que no miran el reloj en sus clases, priman la calidad y miran por el alumno. Danny es mi profesor ahora, estoy encantada con sus clases de conversación. Las clases son muy entretenidas, siempre se adaptan a ti y a tus necesidades."
+    name: "Laura García Lomas",
+    role: "Alumno/a · preparación B2",
+    text: "Una suerte encontrar esta academia con tan grandes profesionales. Gracias a ellos he conseguido el B2, la metodología hace que aprendas rápido y no olvides"
   }
 ];
 

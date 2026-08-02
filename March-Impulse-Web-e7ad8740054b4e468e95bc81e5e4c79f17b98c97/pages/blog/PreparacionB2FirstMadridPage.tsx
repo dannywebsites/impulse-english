@@ -83,19 +83,19 @@ const examParts = [
 
 const testimonials = [
   {
-    quote: "Después de suspender dos veces en otra academia, vine a Impulse y aprobé B2 a la primera con Grade B.",
-    name: "Alejandro M.",
-    detail: "17 años"
+    name: "Yan Yang Wang",
+    detail: "Reseña verificada en Google",
+    quote: "Es una de las mejores academias de inglés que he ido. Los profes son muy majos,  enseñan muy bien y tienen mucha paciencia."
   },
   {
-    quote: "Mi hija aprobó B2 First con distinción (Grade A). Muy contentos.",
-    name: "Carmen L.",
-    detail: "Madre de Alumna"
+    name: "Miguel Gallego Gracia",
+    detail: "Reseña verificada en Google",
+    quote: "Gran academia. Profesorado muy atento,ny se adapta a tu nivel. Muy recomendable!"
   },
   {
-    quote: "Gracias JP por tu ayuda. Recomiendo enormemente esta academia para B2 First.",
-    name: "Víctor RC",
-    detail: "Estudiante"
+    name: "Anabel Munoz",
+    detail: "Reseña verificada en Google",
+    quote: "Con  Danny y JP mejoré mi inglés y he conseguido hablar muy fluido. Gracias"
   }
 ];
 

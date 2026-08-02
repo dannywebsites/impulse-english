@@ -31,14 +31,14 @@ const courses = [
 // Asignacion en GEO-Content-Project/review-allocation.md: ninguna se repite en el sitio.
 const localReviews = [
   {
-    name: "Karina Garcia",
-    role: "Alumna adulta",
-    text: "Completamente agradecida con las facilidades y la atención, tanto de Philippe como de Danny. La idea de ir a una academia siempre me había parecido aburrida, pero definitivamente JP, Danny y el resto del equipo han conseguido hacerlo muy ameno. No tengo dudas que es el mejor lugar donde pueden estudiar y aprender inglés."
+    name: "Gonzalo Tarascón",
+    role: "Alumno/a · preparación C1",
+    text: "¡Recomiendo 100% esta academia! Gracias a sus clases y al excelente equipo de profesores, logré obtener mi certificado C1 de inglés. Esto me ha abierto muchas puertas en el mercado laboral. El ambiente es familiar y cercano, y siempre me sentí apoyado en todo el proceso. ¡Muchas gracias por todo!"
   },
   {
-    name: "Víctor RC",
-    role: "Alumno adulto · certificación",
-    text: "Thanks JP for your help with my exam. I highly recommend this academy for anyone looking to improve and getting their certification."
+    name: "Hugo Antonio",
+    role: "Alumno/a · preparación B2",
+    text: "Grandes profesionales, acudí a ellos con la finalidad de sacarme el B2, con un nivel de inglés muy bajo y gracias a ellos he conseguido el título."
   }
 ];
 

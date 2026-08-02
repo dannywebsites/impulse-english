@@ -71,10 +71,10 @@ export const localFaqs: FAQItem[] = [
 ];
 
 const testimonials = [
-  { name: "Pati", text: "La mejor forma de aprender inglés!!! Una organización excelente y muy recomendable!!" },
-  { name: "Antonio Castillo", text: "Recomiendo Impulse English porque llevo 4 años trabajando con ellos y ofrecen un sistema de aprendizaje muy efectivo." },
-  { name: "María Marcos", text: "Recomendaría Impulse academy a tod@s mis amigos. El equipo es excepcional y muy profesional." },
-  { name: "Chus Zuazo", text: "Tengo una niña de 12 años y vino encantada de las clases de inglés intensivas. ¡Volveremos el año que viene!" }
+  { name: "Michelle Correa Sánchez", text: "Una academia con profesores muy amables y cercanos, te enseñan acorde a tus capacidades y se adaptan a las necesidades del alumno. Especial mención a Danny y JP, que hace las clases divertidas, entretenidas y aprendes mucho de ellos. La recomiendo al 100%." },
+  { name: "Esther Valencia", text: "Súper recomendable!! Sus métodos me han ayudado a avanzar rápidamente de nivel y mejorar profesionalmente. Se nota su pasión por la enseñanza, el trato es personalizado y de calidad. Son un 10!!" },
+  { name: "Luis Martin Gonzalez", text: "100% recomendable, merece la pena. De echo mi hijo ahora sigue con JP, para prestarse sus exámenes de titulación Gran persona JP y su método" },
+  { name: "Yurisbeth Rivero Chirinos", text: "Mi hija estudia en Impulse English Academy y estoy muy contenta con los resultados, su método de enseñanza es excelente, la atención es cercana, los profesores son dedicados y  atentos. Quiero agradecer especialmente a JP, su profesor, por su enorme calidad humana. Él no solo enseña inglés, también ha acompañado a mi hija en un momento difícil de adaptación como emigrante, haciéndola sentir vista, apoyada y parte de una pequeña comunidad que se siente como familia. Gracias por todo lo que aportan, no solo en conocimiento, sino también en humanidad." }
 ];
 
 const galleryImages = [

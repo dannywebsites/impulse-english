@@ -416,9 +416,9 @@ export default function MontecarmeloLasTablasPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             {[
-              { name: "Laura Martín P.", text: "Nos mudamos a Montecarmelo hace dos años y buscábamos una academia seria. Impulse superó nuestras expectativas, mis dos hijos van encantados." },
-              { name: "Carlos Ruiz", text: "La conexión por metro desde Montecarmelo es perfecta. Aprobé el B2 First a la primera gracias a los profes de Impulse." },
-              { name: "Elena Sánchez R.", text: "Muy buena academia. Los grupos pequeños y el trato cercano la hacen diferente a las grandes cadenas." }
+              { name: "Débora Azevedo", text: "Muy contenta con las clases impartidas a mi hijo. Todo los profisionales son muy comprometidos, siempre muy amables y con una gran sonrisa. Hay que decir que esa academia ha sido la unica que mi hijo entró sin llorar y aceptó finalmente asistir, eso porque han tenido todo el cuidado en conectarse con él, además son muy divertidos y veo que me hijo esta aprendiendo." },
+              { name: "Lorena Jiménez", text: "Fantástica academia donde realmente se aprende inglés. La atención de los profesores es increible y son todos encantadores. Especial gracias a Jp por la atención personalizada a mi hijo. Es una gran academia, no dudéis en apuntaros." },
+              { name: "Antonio Pérez Blázquez", text: "Danny se ha encargado de gestionar la estancia de mi hija con una familia durante tres semanas en un campamento de verano en Irlanda. Ha identificado a las familias, ha acompañados a los chavales, ha estado pendiente de ellos durante su estancia. Ni un sólo pero. Perfecto. Totalmente recomendable." }
             ].map((testimonial, idx) => (
               <div key={idx} className="card p-6">
                 <div className="flex gap-1 mb-3">

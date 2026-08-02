@@ -1,0 +1,7 @@
+# Real reviews we will not publish, because the byline would not read as a real
+# customer. The review stays on Google; it just doesn't go on the site.
+# One name per line, matched case- and accent-insensitively.
+
+KOJI KABUTO          # anime alias, not a name
+FRiJoLiTo O.o        # alias
+Chus Zuazo           # no review under this name on the profile — kept here so it is never re-added

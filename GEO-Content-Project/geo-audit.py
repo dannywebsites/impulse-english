@@ -184,77 +184,41 @@ def score_team(text):
     return min(s, 10), f"named={named}"
 
 
-# The 19 usable real Google reviewers (Khadija Ziyati excluded: her review names a
-# teacher outside the approved set). A testimonial whose name is not on this list is
-# either fabricated or unverified — both are disqualifying, so the gate hard-fails.
-APPROVED_REVIEWERS_DISPLAY = [
-    "Cesar Seneca Tellechea Corral", "Lidia Ramirez", "Lucia Salmerón", "María Comas",
-    "Jorge Martinez", "Clara Sánchez", "Yurisbeth Rivero Chirinos", "Anna Farney",
-    "Karina Garcia", "María Jesús Zuazo Sahagún", "Rosa E.", "Mª Del Espino Monedero García",
-    "Felix Maria", "Pepi Moral Ventura", "Lorena AP", "Gonzalo Tarascón", "Víctor RC",
-    "Marina Penerbosa", "Gloria RM",
-]
+# Testimonials are checked against the live Google Business Profile, not against a
+# list maintained by hand. `reviews/reviews.json` holds all 180 reviews as pulled
+# from the profile; a name that isn't in it is invented, and words that aren't in
+# that person's review are invented too - which a name allowlist can never catch,
+# and which is how paraphrased quotes stayed live under real customers' names.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "reviews"))
+import verify_quotes as VQ   # noqa: E402
 
-APPROVED_REVIEWERS = {
-    "cesar seneca tellechea corral", "lidia ramirez", "lucia salmerón", "maría comas",
-    "jorge martinez", "clara sánchez", "yurisbeth rivero chirinos", "anna farney",
-    "karina garcia", "maría jesús zuazo sahagún", "rosa e.", "mª del espino monedero garcía",
-    "felix maria", "pepi moral ventura", "lorena ap", "gonzalo tarascón", "víctor rc",
-    "marina penerbosa", "gloria rm",
-}
-
-
-# Names that appeared in the fabricated testimonial blocks. None trace to a real
-# Google review. If any is still being RENDERED the page fails outright, however
-# the source happens to be structured.
-FABRICATED = [
-    "Sandra Moreno", "Fernando Torres", "Cristina R.", "Rosa María V.", "Roberto Sánchez",
-    "Patricia López", "Miguel Ángel R.", "Miguel Fernández", "María Marcos", "María José L.",
-    "Marta Díaz", "Lucía Gómez", "Laura Martín P.", "Laura García", "Jesús Hernández",
-    "Javier Rodríguez", "Inmaculada Soto", "Elena Sánchez R.", "Elena Martín",
-    "David Fernández", "Cristina López M.", "Carlos Ruiz", "Carlos M.", "Antonio Castillo",
-    "Ana García R.", "Ana Belén P.", "Alejandro Ruiz",
-]
+_REVIEWS, _BY_AUTHOR = VQ.load_reviews()
 
 
 def score_testimonials(text, src, dist_html=None):
-    # Ground truth is the RENDERED page. Source-only checks missed a variant where
-    # the fabricated array used author/quote/location field names, so `name:` never
-    # matched and the page passed with invented reviews live.
-    if dist_html:
-        live = [n for n in FABRICATED if n in dist_html]
-        if live:
-            return 0, "FABRICATED TESTIMONIALS RENDERED: " + ", ".join(live[:3])
-        shown = [n for n in APPROVED_REVIEWERS_DISPLAY if n in dist_html]
-        if len(shown) < 2:
-            return 3, "only %d verified review(s) rendered on the page" % len(shown)
-
-
-    # Pages use either `quote:` or `text:` for the body — check both.
-    quotes = len(re.findall(r"\b(?:quote|text):\s*\"", src))
-    # Only names that sit in the SAME object literal as a quote/text body are
-    # testimonials. A bare `name:` scan also swallows the courses array
-    # (`name: "Infantil (2-5 años)"`) and reports real reviews as fabricated.
-    names = re.findall(
-        r"name:\s*\"([^\"]+)\"(?=(?:[^{}]|\{[^{}]*\})*?\b(?:quote|text):)", src)
-    names += re.findall(
-        r"\b(?:quote|text):\s*\"(?:[^\"\\]|\\.)*\"[^{}]*?name:\s*\"([^\"]+)\"", src)
-    names = list(dict.fromkeys(names))
-    if quotes == 0 or not names:
+    quotes = VQ.extract(src)
+    if not quotes:
         return 0, "no testimonials on page"
 
-    unverified = [n for n in names if n.strip().lower() not in APPROVED_REVIEWERS]
-    if unverified:
-        # Publishing testimonials that don't trace to a real review is a trust failure
-        # and, in Spain, a consumer-law problem. No partial credit.
-        return 1, ("UNVERIFIED TESTIMONIALS — not in the approved review list: "
-                   + ", ".join(unverified[:4]))
+    results = [(n, ) + VQ.check(n, t, _BY_AUTHOR) for n, t in quotes]
+    bad = [(n, status, why) for n, status, why in results if status != "OK"]
+    if bad:
+        # Publishing words a customer did not write - under their name - is a trust
+        # failure and, in Spain, a consumer-law problem. No partial credit.
+        return 0, "; ".join("%s: %s" % (s, n) for n, s, _ in bad[:3])
 
+    # The rendered page is the ground truth for whether it actually shipped.
+    if dist_html:
+        shown = [n for n, _, _ in results if n in dist_html]
+        if len(shown) < min(2, len(results)):
+            return 3, "only %d verified review(s) rendered on the page" % len(shown)
+
+    names = [n for n, _, _ in results]
     s = 5
     if len(names) >= 2: s += 2
     if len(names) >= 3: s += 1
     if all(" " in n for n in names): s += 2   # full names, not "Cristina R."
-    return min(s, 10), f"verified testimonials={len(names)}"
+    return min(s, 10), "verbatim Google reviews=%d" % len(names)
 
 
 def score_case_study(text, src):

@@ -1,0 +1,3676 @@
+{
+  "meta": {
+    "place_id": "ChIJG7G2oAkpQg0Re7iLuuLzbr4",
+    "cid": "13722173269762357371",
+    "pulled_at": "2026-08-02 21:05:11 +00:00",
+    "rating": 5,
+    "reviews_count": 180,
+    "pulled_count": 180,
+    "source": "DataForSEO business_data/google/reviews",
+    "eligible": 79,
+    "rules": {
+      "min_chars": 70,
+      "max_chars": 600,
+      "approved_teachers": [
+        "dani",
+        "daniel",
+        "danny",
+        "jp"
+      ]
+    }
+  },
+  "reviews": [
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21wc2FXcFFTRTVQYkMxaFZXNDRSVlkyVVd0Q0xVRRAB",
+      "author": "Virginia Toledo",
+      "author_url": "https://www.google.com/maps/contrib/112795340178443663927/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Mi hija tuvo unas clases particulares con JP para terminar de prepararse para el examen Advanced y estaba muy contenta con la dinámica de las clases. Además ha aprobado!!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-07-31 06:55:58 +00:00",
+      "time_ago": "hace 2 días",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wc2FXcFFTRTVQYkMxaFZXNDRSVlkyVVd0Q0xVRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmpsaWpQSE5PbC1hVW44RVY2UWtCLUE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "parent",
+        "method"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pKWk1rZ3hPRU53TVMxQ1VEQTJWbWRUVDJoNFRXYxAB",
+      "author": "César Cadenillas Medina",
+      "author_url": "https://www.google.com/maps/contrib/113279630078055352669/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Empecé mis clases con JP en Impulse English teniendo un nivel A2 e integrándome en un grupo B1. Aunque al principio sentía que me faltaba fluidez al hablar y me ponía nervioso, la paciencia de JP marca totalmente la diferencia. Te apoya para que logres completar cada frase y te da toda la confianza que necesitas para soltarte. ​Sus clases son súper dinámicas, mantiene la curiosidad todo el tiempo y hace que sea imposible aburrirse. Se nota a leguas su pasión por enseñar y, además, es nativo de inglés y francés (viene de Isla Mauricio), por lo que domina el idioma a la perfección. Pero lo mejor de todo es su cercanía: realmente se preocupa por saber cómo le va al alumno y se nota que le importa tu progreso. ¡Un verdadero crack! Llevo dos meses aquí y la recomiendo a cualquiera que quiera perder el miedo a hablar.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-07-29 21:40:14 +00:00",
+      "time_ago": "hace 3 días",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKWk1rZ3hPRU53TVMxQ1VEQTJWbWRUVDJoNFRXYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjJZMkgxOENwMS1CUDA2VmdTT2h4TWc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "teens",
+        "method",
+        "atmosphere",
+        "progress",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too long to quote whole (823 chars)",
+        "names a teacher outside the approved set: Isla, Mauricio, Sus"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21KdFRYZHhZVzV2YmpoTlNYSk1PVFJoV1RGaFJuYxAB",
+      "author": "FRiJoLiTo O.o",
+      "author_url": "https://www.google.com/maps/contrib/106949574309069173311/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Un gran hallazgo JP una persona con la cual se me ha Hecho sencillo los estudios. Gracias.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-07-17 21:31:53 +00:00",
+      "time_ago": "Hace 2 semanas",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KdFRYZHhZVzV2YmpoTlNYSk1PVFJoV1RGaFJuYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmJtTXdxYW5vbjhNSXJMOTRhWTFhRnc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "on excluded-names.txt",
+        "names a teacher outside the approved set: Hecho"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21sTlRFSktYMEZXYVRSRVFWQTNTRlYwTkhaMFkyYxAB",
+      "author": "Lucia Eugenia Lorenzo Serrano",
+      "author_url": "https://www.google.com/maps/contrib/107726954722916801173/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Estoy encantada con mi experiencia en esta academia y, especialmente, con JP como profesor. Sus clases son muy dinámicas, entretenidas y hacen que aprender inglés sea mucho más fácil y ameno. Además de explicar muy bien, consigue mantener la motivación y adaptar las clases a las necesidades de cada alumno. Gracias a su ayuda y a su forma de enseñar, he conseguido aprobar mi examen en muy poco tiempo, algo que no habría imaginado al principio. Ha sido un proceso muy positivo y realmente he disfrutado aprendiendo. Sin duda, JP es el mejor profesor que he tenido y recomendaría tanto sus clases como la academia a cualquiera que quiera mejorar su inglés o preparar un examen con éxito.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-07-14 16:24:09 +00:00",
+      "time_ago": "Hace 2 semanas",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sTlRFSktYMEZXYVRSRVFWQTNTRlYwTkhaMFkyYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmlNTEJKX0FWaTREQVA3SFV0NHZ0Y2c%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "teens",
+        "method",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too long to quote whole (688 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2tGcFdYUkZiMEYzTFcxa1YxbFVVVkZCTjB0Qk4wRRAB",
+      "author": "Reuben Hutton",
+      "author_url": "https://www.google.com/maps/contrib/112487604926764116441/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2026-07-11 16:47:25 +00:00",
+      "time_ago": "Hace 3 semanas",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGcFdYUkZiMEYzTFcxa1YxbFVVVkZCTjB0Qk4wRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOkFpWXRFb0F3LW1kV1lUUVFBN0tBN0E%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xaSmFraGFNRkV6YVRoRGRXRnlObkZ5YzI5eFlWRRAB",
+      "author": "Josué Botero",
+      "author_url": "https://www.google.com/maps/contrib/101379602391119191477/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "JP es EL HOMBRE",
+      "original_text": "JP is THE MAN",
+      "language": "en",
+      "timestamp": "2026-07-05 08:32:13 +00:00",
+      "time_ago": "Hace 4 semanas",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaSmFraGFNRkV6YVRoRGRXRnlObkZ5YzI5eFlWRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlZJakhaMFEzaThDdWFyNnFyc29xYVE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (15 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pndFFWUldRV1ZLZW1SNlluSlBTMHRuUjFSU09WRRAB",
+      "author": "Cosme González",
+      "author_url": "https://www.google.com/maps/contrib/115181035218155777259/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Grandes profesores, magnífico ambiente y ganas de agradar.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-06-23 13:53:54 +00:00",
+      "time_ago": "Hace un mes",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pndFFWUldRV1ZLZW1SNlluSlBTMHRuUjFSU09WRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjgtQVRWQWVKemR6YnJPS0tnR1RSOVE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "atmosphere"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (58 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2sxSGNrUk9jRTFsWkhaS1VGVXdRV3huVTFwQ2FHYxAB",
+      "author": "Alidauz Uzcategui",
+      "author_url": "https://www.google.com/maps/contrib/100126571644830478380/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2026-06-23 13:22:06 +00:00",
+      "time_ago": "Hace un mes",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxSGNrUk9jRTFsWkhaS1VGVXdRV3huVTFwQ2FHYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOk1HckROcE1lZHZKUFUwQWxnU1pCaGc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT25jeGNsUnNkbmRrVlc4elMwRm9hWGRxYlZKa1pXYxAB",
+      "author": "Mely Alferes",
+      "author_url": "https://www.google.com/maps/contrib/105616126626991137896/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Excelente experiencia en Impulse English Academy. Los profesores son muy profesionales, cercanos y hacen que las clases sean dinámicas y entretenidas. Me gustó mucho la metodología porque realmente te ayuda a ganar confianza y mejorar de forma natural. Las clases estan bien organizadas y se adaptan muy bien a las necesidades de cada alumno. Sin duda, recomendaría esta academia a cualquiera que quiera aprender o mejorar su inglés en un entorno profesional y motivador. Gracias a esta academia logré mi certificado!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-11 20:58:38 +00:00",
+      "time_ago": "Hace 2 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25jeGNsUnNkbmRrVlc4elMwRm9hWGRxYlZKa1pXYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOncxclRsdndkVW8zS0FoaXdqbVJkZWc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "adult",
+        "method",
+        "atmosphere",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21kdFlrOHRaMnA1UW05MWFWaHNjRTQzTlhreWRsRRAB",
+      "author": "Arturo Larena",
+      "author_url": "https://www.google.com/maps/contrib/102277598412125543956/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2026-05-07 16:33:09 +00:00",
+      "time_ago": "Hace 2 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kdFlrOHRaMnA1UW05MWFWaHNjRTQzTlhreWRsRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmdtYk8tZ2p5Qm91aVhscE43NXkydlE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21ZeFYwUk5TSFpJY3pKdlJtSlJRbDgwTlhJMVZtYxAB",
+      "author": "Isabella Giron iglesias",
+      "author_url": "https://www.google.com/maps/contrib/101597710295736911625/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Jp es mi profesor..el mejor profesor y la mejor academia en el barrio!! Muchas gracias por todo",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-07 14:37:32 +00:00",
+      "time_ago": "Hace 2 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ZeFYwUk5TSFpJY3pKdlJtSlJRbDgwTlhJMVZtYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmYxV0RNSHZIczJvRmJRQl80NXI1Vmc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xsdGNGRTNabXB3ZVdoamVYWk5XRUU0UlY5WllVRRAB",
+      "author": "Marta Sancho",
+      "author_url": "https://www.google.com/maps/contrib/102266354982951534346/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Mi hijo va contentísimo! Grandes profesionales y buenas personas!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-06 16:36:20 +00:00",
+      "time_ago": "Hace 2 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsdGNGRTNabXB3ZVdoamVYWk5XRUU0UlY5WllVRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlltcFE3ZmpweWhjeXZNWEE4RV9ZYUE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "adult"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (65 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT25KTVpsUkxjV2s1V0dFeVkyNXZjWEJuTFVoT1NGRRAB",
+      "author": "Montse Guardiola KBLanguage",
+      "author_url": "https://www.google.com/maps/contrib/116843090411429268962/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "La mejor escuela en el barrio del Pilar y de Madrid !!!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-03 23:23:36 +00:00",
+      "time_ago": "Hace 2 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KTVpsUkxjV2s1V0dFeVkyNXZjWEJuTFVoT1NGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOnJMZlRLcWk5WGEyY25vcXBnLUhOSFE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (55 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT25KWFpFOVJVVTQwYUhnMGMwVnlRVTVoTWpka2RVRRAB",
+      "author": "Sandra dos Anjos Costa",
+      "author_url": "https://www.google.com/maps/contrib/116839983506552623623/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Mis hijos van a la academia Impulse y están encantados. Los profesores son muy profesionales y hacen que los niños se sientan como en casa.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-02 11:14:01 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KWFpFOVJVVTQwYUhnMGMwVnlRVTVoTWpka2RVRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOnJXZE9RUU40aHg0c0VyQU5hMjdkdUE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "kids",
+        "adult",
+        "atmosphere"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2s1eVJDMWhkbkl5UkZkbmJFWkRVVEl5Y1VjM1IxRRAB",
+      "author": "Samuel Bryan",
+      "author_url": "https://www.google.com/maps/contrib/114419284428197313355/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "¡La mejor academia de inglés! Los profesores son super divertidos y amables. Lo recomiendo 100%",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-02 11:06:47 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1eVJDMWhkbkl5UkZkbmJFWkRVVEl5Y1VjM1IxRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOk5yRC1hdnIyRFdnbEZDUTIycUc3R1E%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2w4MFVXUmZNMEZEYkZNMGQyMXRhMFJUWTNWbVUwRRAB",
+      "author": "Alina Sirbu",
+      "author_url": "https://www.google.com/maps/contrib/117730814135735346535/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2026-05-02 08:42:55 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w4MFVXUmZNMEZEYkZNMGQyMXRhMFJUWTNWbVUwRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOl80UWRfM0FDbFM0d21ta0RTY3VmU0E%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xaTFQxQkpaWHBDUWtwcVJXcE9jbXB4ZFhGb1NHYxAB",
+      "author": "Tatiana hernandez mendez",
+      "author_url": "https://www.google.com/maps/contrib/107914479495574446160/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Mi experiencia ha sido muy positiva en esta academia de inglés. Sin duda, lo mejor que tienen son sus docentes: son profesionales, cercanos y realmente se preocupan por el progreso de cada alumno. Las clases son dinámicas y bien organizadas, lo que hace que aprender sea mucho más fácil y motivador. Además, los profesores explican de forma clara, tienen mucha paciencia y siempre están dispuestos a resolver dudas. También se nota que cuentan con experiencia y formación, ya que adaptan las clases según el nivel de cada estudiante y buscan incluir el Inglés en actividades cotidianas, que nos permiten  crear confianza para adaptarlo a una situación real. Recomiendo esta academia a cualquiera que busque aprender con buenos profesores y en un ambiente agradable.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-01 20:44:33 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaTFQxQkpaWHBDUWtwcVJXcE9jbXB4ZFhGb1NHYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlZLT1BJZXpCQkpqRWpOcmpxdXFoSGc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "teens",
+        "method",
+        "atmosphere",
+        "progress",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too long to quote whole (765 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pGc2NUWktabEZPVkY5R1MwbEJiamR0YkdOa09GRRAB",
+      "author": "Mariana Arias",
+      "author_url": "https://www.google.com/maps/contrib/107474169960526675897/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Excelente atención, el profe JP es muy majo, siempre dispuesto a enseñarnos.!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-01 13:51:08 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGc2NUWktabEZPVkY5R1MwbEJiamR0YkdOa09GRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjFscTZKZlFOVF9GS0lBbjdtbGNkOFE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2tOaGFuQmhTazVGTkhaelRISnpVak0xUmpCM1NsRRAB",
+      "author": "ilias frafer afif",
+      "author_url": "https://www.google.com/maps/contrib/110958983546853832759/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "JP es un profesor increíble,convierte cualquier clase de gramática aburrida en una clase divertidísima, he pasado de un A2 a un B1 en tan solo unos meses.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-01 13:50:29 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOaGFuQmhTazVGTkhaelRISnpVak0xUmpCM1NsRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOkNhanBhSk5FNHZzTHJzUjM1RjB3SlE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "method"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2toTGFHdFVURTlEY3pCdGJFRXlZV0o0WjBab1pVRRAB",
+      "author": "Leonardo Coraspe",
+      "author_url": "https://www.google.com/maps/contrib/100669045899468799356/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "El Profesor JP es lo máximo, su profesionalidad es única",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-01 13:31:21 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toTGFHdFVURTlEY3pCdGJFRXlZV0o0WjBab1pVRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOkhLaGtUTE9DczBtbEEyYWJ4Z0ZoZUE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (56 chars)",
+        "names a teacher outside the approved set: Profesor"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xKMWJUUjBWVXRaWlRZMVFqWnZaREJrTkUxbk5tYxAB",
+      "author": "Carolina Lopez",
+      "author_url": "https://www.google.com/maps/contrib/100936979320873333562/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Lo más profesional y especial del curso de inglés",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-01 13:30:55 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKMWJUUjBWVXRaWlRZMVFqWnZaREJrTkUxbk5tYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlJ1bTR0VUtZZTY1QjZvZDBkNE1nNmc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (49 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21KRmNtNVJWM2xST1ZGUWMyMWxaMGhsVkVoZmIxRRAB",
+      "author": "A Verguizas",
+      "author_url": "https://www.google.com/maps/contrib/115653297941857128408/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Llevo un par de meses con clases particulares con Katie y la mejora ha sido notable. Siempre me había defendido leyendo y escribiendo en inglés, pero a la hora de hablar me bloqueaba. Katie se centra mucho en la conversación y en corregirte sobre la marcha, que es justo lo que necesitaba. Me está preparando el B2 y lo que más me gusta es que adapta todo a lo que me cuesta a mí",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-01 11:37:28 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KRmNtNVJWM2xST1ZGUWMyMWxaMGhsVkVoZmIxRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmJFcm5RV3lROVFQc21lZ0hlVEhfb1E%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Katie"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2t0NVFUZDVhV2RvU1ZBNWFIWjZWMjFtWkdoSFlrRRAB",
+      "author": "Ana Zalazar",
+      "author_url": "https://www.google.com/maps/contrib/105956501465738142094/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Llevo 4 meses en Impulse English y la verdad es que estoy encantada. Mi profesor Thomas es genial. Se nota que le importa que avances de verdad. Lo que más valoro es que en clase hablas. Nada de estar sentado rellenando huecos una hora. Te corrige, te hace pensar, y sales sintiendo que has aprovechado el tiempo. Como adulto, eso para mí es clave. Si andas por la zona de La Vaguada, merece la pena",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-05-01 11:35:46 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0NVFUZDVhV2RvU1ZBNWFIWjZWMjFtWkdoSFlrRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOkt5QTd5aWdoSVA5aHZ6V21mZGhHYkE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "teens"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Thomas"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xwWlVYSjFaV2xLU1RkeWVGSTBRM1poWTJSbWFIYxAB",
+      "author": "Leonor Alcelay",
+      "author_url": "https://www.google.com/maps/contrib/110227087075740549703/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "¡JP es el mejor profesor!",
+      "original_text": "Jp is the best teacher!!",
+      "language": "en",
+      "timestamp": "2026-05-01 09:48:29 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwWlVYSjFaV2xLU1RkeWVGSTBRM1poWTJSbWFIYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlpZUXJ1ZWlKSTdyeFI0Q3ZhY2RmaHc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (25 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21KaFlsRktlVmd6WmsxWldHVnljRmhGUTBSeFpIYxAB",
+      "author": "Cris",
+      "author_url": "https://www.google.com/maps/contrib/114261844790907725220/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2026-04-23 13:07:29 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KaFlsRktlVmd6WmsxWldHVnljRmhGUTBSeFpIYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmJhYlFKeVgzZk1ZWGVycFhFQ0RxZHc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)",
+        "no full name"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT20xU2FHVkJXVEZrU21sUllsQmZaREJ5TW1WdlVsRRAB",
+      "author": "A",
+      "author_url": "https://www.google.com/maps/contrib/111936214033282694504/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2026-04-23 12:09:01 +00:00",
+      "time_ago": "Hace 3 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xU2FHVkJXVEZrU21sUllsQmZaREJ5TW1WdlVsRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOm1SaGVBWTFkSmlRYlBfZDByMmVvUlE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)",
+        "no full name"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xOSFkwNHdSbmR4WkZrM1JreHFYMnd3YjA1UGVGRRAB",
+      "author": "carmen suarez",
+      "author_url": "https://www.google.com/maps/contrib/105828083488712011773/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Academia totalmente recomendable para mejorar tu inglés, buenos profesores y mejores personas aún, si estás buscando una academia de calidad, este es tu sitio.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-01-31 09:42:33 +00:00",
+      "time_ago": "Hace 6 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOSFkwNHdSbmR4WkZrM1JreHFYMnd3YjA1UGVGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlNHY04wRndxZFk3RkxqX2wwb05PeFE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xScFMwUk9kVlEzUkRkNU5HVTFVMUJRVDBsRVRuYxAB",
+      "author": "Matilde Ramírez",
+      "author_url": "https://www.google.com/maps/contrib/102658374640579164433/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Es la mejor academia donde he estado",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-01-30 10:03:40 +00:00",
+      "time_ago": "Hace 6 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xScFMwUk9kVlEzUkRkNU5HVTFVMUJRVDBsRVRuYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlRpS0ROdVQ3RDd5NGU1U1BQT0lETnc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (36 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pFdGIzaEhhbTR0ZEV0b2FqaFViMUU1WDFSa1ltYxAB",
+      "author": "Oscar Mateos Lopez",
+      "author_url": "https://www.google.com/maps/contrib/112020498962359216706/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Las clases son muy divertidas",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-01-29 15:05:45 +00:00",
+      "time_ago": "Hace 6 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pFdGIzaEhhbTR0ZEV0b2FqaFViMUU1WDFSa1ltYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjEtb3hHam4tdEtoajhUb1E5X1RkYmc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (29 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNJd0tIVEFnEAE",
+      "author": "alba garrido iglesias",
+      "author_url": "https://www.google.com/maps/contrib/117311754309121301469/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "¡¡ME ENCANTA LA ACADEMIA!! Las clases son muy divertidas y se esfuerzan en ayudarnos a aprender. Las clases a las que acudo son completamente en inglés, no obstante, si pides al profesor que explique en castellano alguna cosa que no haya quedado clara, lo hará y te ayudará a comprenderlo. JP es un gran profesor. Muy contenta y totalmente recomendado.👏",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-01-28 22:24:51 +00:00",
+      "time_ago": "Fecha de edición: Hace 6 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNJd0tIVEFnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCIwKHTAg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2tselpHOTVTMEYzUlZsaE5FTXpaRFpVV21ab1kxRRAB",
+      "author": "Yosmari A. Diaz O.",
+      "author_url": "https://www.google.com/maps/contrib/101631912823318395103/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2026-01-28 21:30:00 +00:00",
+      "time_ago": "Hace 6 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tselpHOTVTMEYzUlZsaE5FTXpaRFpVV21ab1kxRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOklzZG95S0F3RVlhNEMzZDZUWmZoY1E%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xKMk0xVnJRM1kyWTFZeWVFTnhNVzkwV1V4T1ozYxAB",
+      "author": "marco garcia",
+      "author_url": "https://www.google.com/maps/contrib/110959517535617603555/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Buscaba una escuela con quien conectará y entendieran mi necesidades de aprendizaje y siento que en Impulse estoy muy contento.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-01-28 20:09:55 +00:00",
+      "time_ago": "Hace 6 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKMk0xVnJRM1kyWTFZeWVFTnhNVzkwV1V4T1ozYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlJ2M1VrQ3Y2Y1YyeENxMW90WUxOZ3c%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pFd2VVaEZOMVpJZEVZeWMwWlBRVlpmV2sxMlNGRRAB",
+      "author": "Mariela Ruiz",
+      "author_url": "https://www.google.com/maps/contrib/116063680857057372366/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Muy contenta por recibirme en vuestra academia y muy contenta con lo que voy aprendiendo 😊",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-01-28 19:42:30 +00:00",
+      "time_ago": "Hace 6 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pFd2VVaEZOMVpJZEVZeWMwWlBRVlpmV2sxMlNGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjEweUhFN1ZIdEYyc0ZPQVZfWk12SFE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pObGRqRjZVV1YwVm5aUVlYQnlaMnhrY2xOUU1GRRAB",
+      "author": "Eduyn José Rafael Mendoza Contreras",
+      "author_url": "https://www.google.com/maps/contrib/103809303874182139540/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2026-01-28 19:28:32 +00:00",
+      "time_ago": "Hace 6 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pObGRqRjZVV1YwVm5aUVlYQnlaMnhrY2xOUU1GRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjNldjF6UWV0VnZQYXByZ2xkclNQMFE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xCMlNGQmtRVFp3UjB4NldtTklWV3h1Ylc5alMyYxAB",
+      "author": "Edualyz Medina",
+      "author_url": "https://www.google.com/maps/contrib/111041497706852908571/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Conozco a las personas que están detrás de esta academia y puedo decir que le ponen mucho esfuerzo y corazón a lo que hacen. Las clases son dinámicas ,El trato es cercano. Gracias a JP, Danny y ahu! Que son unos profesores excepcionales",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-01-02 17:07:45 +00:00",
+      "time_ago": "Hace 7 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCMlNGQmtRVFp3UjB4NldtTklWV3h1Ylc5alMyYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlB2SFBkQTZwR0x6WmNIVWxubW9jS2c%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method",
+        "atmosphere"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Ahu"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pOc2RFcFpOblUyTFdKQmVuRmFiMEZWWmxCNlNGRRAB",
+      "author": "Yosmari A. Diaz O.",
+      "author_url": "https://www.google.com/maps/contrib/111363498954224317812/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "No puedo estar mas contenta con mi profesor, JP, y la facilidad para todo en general en la academia, que mas que un lugar donde ir a aprender, es un espacio donde soy muy feliz cada vez que voy! :) 100% recomendado",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-12-15 09:29:13 +00:00",
+      "time_ago": "Hace 7 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOc2RFcFpOblUyTFdKQmVuRmFiMEZWWmxCNlNGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjNsdEpZNnU2LWJBenFab0FVZlB6SFE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT25rdFFWQXdYM053UVVVd1gzUjJVbVUxWnpseGVuYxAB",
+      "author": "Yurisbeth Rivero Chirinos",
+      "author_url": "https://www.google.com/maps/contrib/105242360172556676610/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Mi hija estudia en Impulse English Academy y estoy muy contenta con los resultados, su método de enseñanza es excelente, la atención es cercana, los profesores son dedicados y  atentos. Quiero agradecer especialmente a JP, su profesor, por su enorme calidad humana. Él no solo enseña inglés, también ha acompañado a mi hija en un momento difícil de adaptación como emigrante, haciéndola sentir vista, apoyada y parte de una pequeña comunidad que se siente como familia. Gracias por todo lo que aportan, no solo en conocimiento, sino también en humanidad.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-11-26 14:43:16 +00:00",
+      "time_ago": "Hace 8 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25rdFFWQXdYM053UVVVd1gzUjJVbVUxWnpseGVuYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOnktQVAwX3NwQUUwX3R2UmU1Zzlxenc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "method",
+        "atmosphere"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21wSmJuSmxkMEpZZEVKWmEwVkZkekJxYW1aNlZWRRAB",
+      "author": "Clara Sánchez",
+      "author_url": "https://www.google.com/maps/contrib/108250840419567711431/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "He tenido el gusto de poder asistir a esta academia durante menos de un año y sin duda a sido una de las mejores ayudas que he podido tener, sobretodo por JP, me ha dado muchos consejos que sin duda me ayudaron para el examen final, y el trato que han tenido en todo  momento es súper gratificante y acogedor, muy atentos a las dudas personales y siempre con buenas intenciones. Gracias por todo el apoyo!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-09-30 15:18:42 +00:00",
+      "time_ago": "Hace 10 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wSmJuSmxkMEpZZEVKWmEwVkZkekJxYW1aNlZWRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmpJbnJld0JYdEJZa0VFdzBqamZ6VVE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "atmosphere",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pGWWRsUkJTemhNYzJaTlJ6RTJXR04xVWs5cmRuYxAB",
+      "author": "Lucía Moreno Zubiaur",
+      "author_url": "https://www.google.com/maps/contrib/117373388263640711628/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "He estado solo un año en la academia, y puedo asegurar con certeza que es una experiencia increíble. Aprendes sin darte cuenta, llegué con un nivel B1-B2 y en menos de un año me había sacado el C1 alto. No se siente como una rutina, tenía ganas de ir todos los días porque los profesores hablaban contigo en vez de enseñar y copiar apuntes, practicaban y te sentías bien. Recomiendo esta academia para sacarte cualquier titulación sin duda. Especial gracias a JP, un excelente profesor y persona. Gracias sinceras.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-09-11 16:05:04 +00:00",
+      "time_ago": "Hace 10 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGWWRsUkJTemhNYzJaTlJ6RTJXR04xVWs5cmRuYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjFYdlRBSzhMc2ZNRzE2WGN1Uk9rdnc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2tkUFJURkZVM2hZUlhoV00xUjNVVVZvVGxoVFltYxAB",
+      "author": "Elga Quintans",
+      "author_url": "https://www.google.com/maps/contrib/116019585552571885696/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Me encantó las clases intensivas con J.P muy didácticas y amenas, Gracias",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-08-13 18:36:33 +00:00",
+      "time_ago": "Hace 11 meses",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkUFJURkZVM2hZUlhoV00xUjNVVVZvVGxoVFltYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOkdPRTFFU3hYRXhWM1R3UUVoTlhTYmc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2toNVNtSkVTMmh3VEdFd2VVeHRTR3N0UkVSUWRWRRAB",
+      "author": "Concep R. H",
+      "author_url": "https://www.google.com/maps/contrib/114900744399319768250/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Muy contenta con el aprendizaje y la dinámica de clases en inglés gracias a mis profesoras Ahu y Chesca. Nos vemos el próximo curso!!!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-07-27 08:05:10 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toNVNtSkVTMmh3VEdFd2VVeHRTR3N0UkVSUWRWRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOkh5SmJES2hwTGEweUxtSGstRERQdVE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Ahu, Chesca"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21KUmJFUm5XVTlhZFhRdGRFWjNURU5GZGpsTmNIYxAB",
+      "author": "María Comas",
+      "author_url": "https://www.google.com/maps/contrib/107960537549537631964/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Hacer el intensivo de inglés con JP ha sido un acierto total. Tiene una forma de enseñar súper original, mezcla las explicaciones con historias que te atrapan y hacen que te rías mientras aprendes. ¡Las clases se pasan volando! Es divertido, claro al explicar y siempre tiene buena energía. He mejorado muchísimo en mi relación con el inglés (tenía un poquito de trauma). ¡Ojalá todos los profes fueran así!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-07-17 22:37:58 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KUmJFUm5XVTlhZFhRdGRFWjNURU5GZGpsTmNIYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmJRbERnWU9adXQtdEZ3TENFdjlNcHc%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method",
+        "progress"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Las, Ojalá"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21SVE5HbEtUekZITTBoWFEwZHZlVFU0UVMxUWQwRRAB",
+      "author": "Stefany Jiménez Espitia",
+      "author_url": "https://www.google.com/maps/contrib/110810700802520790363/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Es genial, profesores amables y clases divertidas,e estado en el curso intensivo de verano y valió total la pena. (Además J.P hace las clases super fácil de entender 🫂✨)",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-07-17 09:07:07 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SVE5HbEtUekZITTBoWFEwZHZlVFU0UVMxUWQwRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmRTNGlKTzFHM0hXQ0dveTU4QS1Qd0E%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Además"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pkQlRXVnNhV05LZWtWd1FVTXROblJ4VDFSRFIxRRAB",
+      "author": "Jaqueline Juarez Ormeño",
+      "author_url": "https://www.google.com/maps/contrib/116954992763777190221/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "En la academia la manera de inducirte al ingles es muy única y si la suerte te acompaña llevar clases con la profe Ahu a sido y está siendo la manera más dinámica y divertida de aprender , ella es 10/10 ( la manera de explicar , su metodologia y carisma hace de las clases  una experiencia fresca .",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-07-15 00:23:57 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkQlRXVnNhV05LZWtWd1FVTXROblJ4VDFSRFIxRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjdBTWVsaWNKekVwQUMtNnRxT1RDR1E%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Ahu"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2w5VGVuSllUM1JJWlc5VlZrNXJaMjVaWVVScVozYxAB",
+      "author": "khadija ziyati bensarghin",
+      "author_url": "https://www.google.com/maps/contrib/104031896500886758151/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Estoy muy contenta con las clases de inglés con la profesora Ahu. Es una excelente profesional: explica con claridad, tiene mucha paciencia y hace que las clases sean dinámicas y fáciles de seguir. Gracias a ella he notado una gran mejora en mi nivel. Además, la academia en general también es muy buena, con un ambiente cercano y organizado. ¡Totalmente recomendable!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-07-09 09:27:30 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5VGVuSllUM1JJWlc5VlZrNXJaMjVaWVVScVozYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOl9TenJYT3RIZW9VVk5rZ25ZYURqZ3c%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "method",
+        "atmosphere",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Ahu, Totalmente"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnTUNJZ3BlZzVBRRAB",
+      "author": "Alicia Fernandez",
+      "author_url": "https://www.google.com/maps/contrib/107218425967251915947/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Una gran academia con buenos profesores y la implicación de JP es maravillosa (es uno de los dueños) Recomiendo la academia 100%",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-03-31 11:59:58 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNJZ3BlZzVBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCIgpeg5AE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqNS1QcEtBEAE",
+      "author": "Laura",
+      "author_url": "https://www.google.com/maps/contrib/111830249601893489312/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Súper buena academia!! Llevo 5 meses y estoy encantada con esta academia, los profesores excelentes, y muy buen trato y excelente ambiente. Desde luego si tienes pensado mejorar tu inglés, este es el mejor lugar!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-03-31 11:10:19 +00:00",
+      "time_ago": "Fecha de edición: Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqNS1QcEtBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDj5-PpKA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "atmosphere"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "no full name"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNJOE82Nlh3EAE",
+      "author": "alvaro garcia",
+      "author_url": "https://www.google.com/maps/contrib/108721985499249076372/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2025-03-29 18:15:02 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNJOE82Nlh3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCI8O66Xw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNJb0wySkxBEAE",
+      "author": "Pilar Chonate Asto",
+      "author_url": "https://www.google.com/maps/contrib/116591655434622604548/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2025-03-29 13:24:43 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNJb0wySkxBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCIoL2JLA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNJd0xiM0pnEAE",
+      "author": "Gloria Arroyo",
+      "author_url": "https://www.google.com/maps/contrib/107569921900960468405/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Nos gusta mucho esta Academia, grandes profesionales.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-03-29 11:52:06 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNJd0xiM0pnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCIwLb3Jg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (53 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNJZ05xZVp3EAE",
+      "author": "KOJI KABUTO",
+      "author_url": "https://www.google.com/maps/contrib/101566173897954634214/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Buenos profesores, profesionales y metódicos. Para seguir aprendiendo y evolucionando con este bello idioma.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-03-29 10:33:18 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNJZ05xZVp3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCIgNqeZw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "progress"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "on excluded-names.txt"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNJZ09xMkhREAE",
+      "author": "eva prados hijon",
+      "author_url": "https://www.google.com/maps/contrib/108165542719808455237/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2025-03-29 10:32:02 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNJZ09xMkhREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCIgOq2HQ%7C%7C?hl=es",
+      "owner_answered": false,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNBOWZmT0lREAE",
+      "author": "Madalina Rusanu",
+      "author_url": "https://www.google.com/maps/contrib/117197552753884753077/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Me voy a sacar el Advanced aqui! Es mi plan ☺️",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-02-03 01:57:32 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNBOWZmT0lREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCA9ffOIQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (46 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNfc282ZjV3RRAB",
+      "author": "Víctor RC",
+      "author_url": "https://www.google.com/maps/contrib/103055762344662630567/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Gracias, Jp, por tu ayuda con mi examen. Recomiendo ampliamente esta academia a cualquiera que busque mejorar y obtener su certificación.",
+      "original_text": "Thanks Jp for your help with my exam. I highly recommend this academy for anyone looking to improve an getting their certification.",
+      "language": "en",
+      "timestamp": "2025-01-14 17:49:20 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfc282ZjV3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIC_so6f5wE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURmbGJhaHhRRRAB",
+      "author": "Hugo G",
+      "author_url": "https://www.google.com/maps/contrib/103632970778180962651/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Jp es muy majo y divertido además de aprender un montón es sus clases y no se hacen pesadas, la recomiendo mucho.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-01-08 19:00:12 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmbGJhaHhRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDflbahxQE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURmeVpyTWtRRRAB",
+      "author": "Lara OM",
+      "author_url": "https://www.google.com/maps/contrib/103877132160850764511/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Academia increíble para mejorar el nivel de inglés. Siempre cercanos y atentos al seguimiento de los estudiantes. Un gran trato personalizado y cercano con el que he podido sacarme el C1 de inglés en tiempo récord. Siempre estaré agradecida ❤️",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2025-01-07 20:51:22 +00:00",
+      "time_ago": "Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmeVpyTWtRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDfyZrMkQE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "atmosphere"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURick5LXzJ3RRAB",
+      "author": "Gloria RM",
+      "author_url": "https://www.google.com/maps/contrib/115020649560289385013/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Hace un año encontré por casualidad la academia en el barrio. La experiencia... Increíble!. Desde el primer momento Philip y Dani transmiten una confianza que los niños y padres percibimos y eso hace que sea especial.  El trato es personalizado y se adaptan a cada niño según sus necesidades.  Los profesores son nativos y te reciben cada día con una sonrisa. Llevo a mis dos hijas y están muy contentas, además el método que aplican con juegos ayudan a que vayan más felices a su clase. Y también tienen clases para adultos. Recomiendo 100%!!!!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-09-17 06:52:03 +00:00",
+      "time_ago": "Fecha de edición: Hace un año",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURick5LXzJ3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDbrNK_2wE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "kids",
+        "adult",
+        "teens",
+        "method",
+        "atmosphere",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Los, Philip"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURickt5V1dnEAE",
+      "author": "Elena Mayor",
+      "author_url": "https://www.google.com/maps/contrib/114738694901987156783/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "He tenido una experiencia maravillosa en Impulse English Academy. Los profesionales que trabajan aquí son excepcionales. Quiero destacar especialmente a JP. Gracias a su guía y dedicación, he logrado hacer grandes progresos en mi aprendizaje del inglés. Sin duda, recomiendo esta academia a cualquier persona que quiera mejorar sus habilidades en el idioma. ¡Cinco estrellas merecidas!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-08-02 18:45:12 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURickt5V1dnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDbrKyWWg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "progress",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Cinco"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiMDVDR0x3EAE",
+      "author": "Patricia Gallardo",
+      "author_url": "https://www.google.com/maps/contrib/107203524985107042643/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Muy majetes y muy flexibles. Yo he ido todo el año con mi bebé. Su método para aprender mediante app, el mejor que he visto (a parte de los libros).",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-07-29 15:49:18 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiMDVDR0x3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICb05CGLw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNieWJpbmdnRRAB",
+      "author": "Lorena Jiménez",
+      "author_url": "https://www.google.com/maps/contrib/107181124447183760786/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Fantástica academia donde realmente se aprende inglés. La atención de los profesores es increible y son todos encantadores. Especial gracias a Jp por la atención personalizada a mi hijo. Es una gran academia, no dudéis en apuntaros.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-07-28 15:11:05 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNieWJpbmdnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICbybinggE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiMGRPOVB3EAE",
+      "author": "Yan Yang Wang",
+      "author_url": "https://www.google.com/maps/contrib/104562985047728226911/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Es una de las mejores academias de inglés que he ido. Los profes son muy majos,  enseñan muy bien y tienen mucha paciencia.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-07-28 08:21:51 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiMGRPOVB3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICb0dO9Pw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNicnI2anRnRRAB",
+      "author": "Lorena AP",
+      "author_url": "https://www.google.com/maps/contrib/105766324546809836285/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Si quieres tener resultados, este es el sitio ideal para mejorar tu inglés! Súper profesionales y a la vez un ambiente cercano. Consiguen mantenerte motivado y que ganes confianza y fluidez con clases dinámicas y variadas. Se adaptan a las necesidades de los estudiantes. Gracias! 😊 Nos vemos en septiembre",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-07-27 08:20:44 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNicnI2anRnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICbrr6jtgE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "method",
+        "atmosphere"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Nos"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNianV1RDNBRRAB",
+      "author": "Ana Torrado",
+      "author_url": "https://www.google.com/maps/contrib/108807718453074547422/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Impulse English Academy ha sido la mejor academia en la que he estado. Gracias a JP aprobé la asignatura. Lo que más me gusta es que se adaptan a tus necesidades y se centran donde ven más dificultades. ¡Muchas gracias! 😊",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-07-27 04:31:17 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNianV1RDNBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICbjuuD3AE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiNXBIQXZ3RRAB",
+      "author": "Irene C",
+      "author_url": "https://www.google.com/maps/contrib/118168427045956023360/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Una gran academia, ha sido clave en el avance de mi hijo en Inglés, buena comunicación y buena enseñanza. Realmente contentos y repetiremos este curso escolar!!!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-07-26 16:47:42 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiNXBIQXZ3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICb5pHAvwE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiNXJ5NXJBRRAB",
+      "author": "Ale Vázquez",
+      "author_url": "https://www.google.com/maps/contrib/111686006650233588097/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Muy buen ambiente, los profesores muy agradables y haciendo lo posible para sentirnos a gusto y aprender cada vez más Es una academia 100% recomendable Nos vemos el próximo cursooo!!!♥️",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-07-26 16:10:57 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiNXJ5NXJBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICb5ry5rAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "atmosphere",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Nos"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiNXFUMHFBRRAB",
+      "author": "Marina Penerbosa",
+      "author_url": "https://www.google.com/maps/contrib/104674535657511339326/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Muy contenta con haber encontrado esta academia para mi hijo. Todo el staff es MUY amable, dedicado y profesional. Mi hijo ha progresado muchísimo en su comprensión y desempeño en ingles. La metodología que usan mezcla el juego con los contenidos académicos y eso hace que las clases sean divertidas y loe niños se animen a participar. Recomiendo sinceramente Impulse English Academy",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-07-26 15:58:38 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiNXFUMHFBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICb5qT0qAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "kids",
+        "adult",
+        "teens",
+        "method",
+        "progress",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiaHV2U0l3EAE",
+      "author": "Maru Teran",
+      "author_url": "https://www.google.com/maps/contrib/114123703902621749598/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Recomiendo la  Academia, mi hijo ha aprendido mucho, les agradezco la atención y la dedicación.  Muchas gracias!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-07-26 11:37:59 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiaHV2U0l3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICbhuvSIw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiaHJQM2RBEAE",
+      "author": "Fátima Ziyati",
+      "author_url": "https://www.google.com/maps/contrib/112300650296873404127/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2024-07-26 11:33:08 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiaHJQM2RBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICbhrP3dA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURybzlIYlBREAE",
+      "author": "Antonio Pérez Blázquez",
+      "author_url": "https://www.google.com/maps/contrib/102653259235125540334/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Danny se ha encargado de gestionar la estancia de mi hija con una familia durante tres semanas en un campamento de verano en Irlanda. Ha identificado a las familias, ha acompañados a los chavales, ha estado pendiente de ellos durante su estancia. Ni un sólo pero. Perfecto. Totalmente recomendable.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-07-19 19:24:17 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURybzlIYlBREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDro9HbPQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyM29TbkhREAE",
+      "author": "M P",
+      "author_url": "https://www.google.com/maps/contrib/108729322674822577837/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2024-07-17 19:11:58 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyM29TbkhREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDr3oSnHQ%7C%7C?hl=es",
+      "owner_answered": false,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURyMXB1UnhnRRAB",
+      "author": "jorge vila prieto",
+      "author_url": "https://www.google.com/maps/contrib/112736657576211324574/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Una experiencia inigualable . La tranquilidad q transmite Danny Fitzpatrick no tiene precio . Las familias de acogida son encantadoras . El ambiente no puede ser más sano . No habla nadie español y éramos los únicos en el campamento . Mi hija quiere repetir el año q viene . Enhorabuena y gracias",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-07-17 11:04:38 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURyMXB1UnhnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDr1puRxgE%7C%7C?hl=es",
+      "owner_answered": false,
+      "themes": [
+        "parent",
+        "atmosphere"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Fitzpatrick"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMa0t6UVl3EAE",
+      "author": "Gonzalo Tarascón",
+      "author_url": "https://www.google.com/maps/contrib/116533007697094199911/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "¡Recomiendo 100% esta academia! Gracias a sus clases y al excelente equipo de profesores, logré obtener mi certificado C1 de inglés. Esto me ha abierto muchas puertas en el mercado laboral. El ambiente es familiar y cercano, y siempre me sentí apoyado en todo el proceso. ¡Muchas gracias por todo!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-06-24 17:41:12 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMa0t6UVl3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDLkKzQYw%7C%7C?hl=es",
+      "owner_answered": false,
+      "themes": [
+        "cambridge",
+        "adult",
+        "teens",
+        "atmosphere",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6cktlQ2ZREAE",
+      "author": "Daniela janet Luna rodriguez",
+      "author_url": "https://www.google.com/maps/contrib/110957988179675037861/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Es una buena academia para aprender y mejorar tu inglés.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-05-31 14:09:57 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6cktlQ2ZREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICzrKeCfQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (56 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUbFpHOGlnRRAB",
+      "author": "Salvador Muñoz-Perea",
+      "author_url": "https://www.google.com/maps/contrib/100659993703244191665/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Una verdadera academia de inglés, donde mis hijas van felices y aprendan inglés de verdad. Pero sobretodo hay destacar el trato cercano y familiar",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-05-17 10:16:21 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUbFpHOGlnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICTlZG8igE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "atmosphere"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUNmJ6Y1NnEAE",
+      "author": "Roberto Herrero",
+      "author_url": "https://www.google.com/maps/contrib/118410947355921646435/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Solo tengo palabras de agradecimiento para Impulse English Academy y muy en particular a mi profesor Daniel. Gracias de nuevo por que este aprendizaje haya sido tan fácil y rápido. Os deseo lo mejor.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-05-16 13:23:44 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUNmJ6Y1NnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICT6bzcSg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqNTRfRlZnEAE",
+      "author": "Luis Martin Gonzalez",
+      "author_url": "https://www.google.com/maps/contrib/100402507120014155047/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "100% recomendable, merece la pena. De echo mi hijo ahora sigue con JP, para prestarse sus exámenes de titulación Gran persona JP y su método",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-05-08 12:01:37 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqNTRfRlZnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDj54_FVg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "parent",
+        "method",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5amNiNHB3RRAB",
+      "author": "felix maria",
+      "author_url": "https://www.google.com/maps/contrib/112287438029741290056/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Es una academia de inglés excepcional donde la calidad de la enseñanza y la atención personalizada se combinan para ofrecer una experiencia educativa única. Con profesionales dedicados como Danny, JP y mi profe Stephan esta academia se destaca por su enfoque en la calidad sobre la cantidad, adaptándose a las necesidades individuales de cada estudiante sin importar el tiempo que requiera. Las clases son divertidas y dinámicas, diseñadas para mantener la motivación y el interés del alumno. Además, prepara a los estudiantes para exámenes de certificación con confianza y éxito. En resumen, es el lugar ideal para aprender inglés con excelencia y apoyo.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-03-19 17:45:09 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5amNiNHB3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgID9jcb4pwE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "adult",
+        "method"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too long to quote whole (655 chars)",
+        "names a teacher outside the approved set: Stephan"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5d1pUZVFREAE",
+      "author": "Silvia Llamazares Rol",
+      "author_url": "https://www.google.com/maps/contrib/101675640921681068924/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "¡No soy más estrellas porque no puedo! En mi caso personal, ya tenía una base de inglés pero tenía muchos fallos, especialmente de gramática. La idea de ir a una academia siempre me había parecido aburrida ya que no me gusta \"estudiar\" un idioma, pero definitivamente JP, Danny y el resto del equipo de Impulse English Academy han conseguido hacerlo muy ameno. Las clases son muy entretenidas, siempre se adaptan a ti y a tus necesidades y además son las personas más chulas del planeta. A día de hoy me estoy preparando para el examen de C1 de Cambridge que tanto miedo me ha dado desde hace mucho tiempo, pero ellos han conseguido la confianza y el \"impulso\" que necesitaba para afrontarlo. ¡Muchas gracias! :) I don't give more stars because I literally can't! In my case, I had some knowledge but I had a lot of mistakes, especially in the grammar part. The idea of going to an academy always sounded boring to me as I don't like \"to study\" a language\", but JP, Danny and the rest of the team definitely make it extremely fun. The classes are entertaining, they always adapt to you and your needs and, moreover, they are the coolest people in the world. I am currently preparing for the C1 Cambridge exam that always scares me, but they have given me the \"impulse\" and trust that I needed to deal with it. Cheers for that mates! :)",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-03-17 12:14:23 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5d1pUZVFREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgID9wZTeQQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too long to quote whole (1335 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5b3RIMjZRRRAB",
+      "author": "Mª Del Espino Monedero García",
+      "author_url": "https://www.google.com/maps/contrib/102022603557549510461/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Es una buena academia, profesionales y con ganas de enseñar. Además,  algo fundamental para mi,  es que no miran el reloj en sus clases, priman la calidad y miran por el alumno. Danny es mi profesor ahora, estoy encantada con sus clases de conversación. Recomendable 100%.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-03-14 19:11:06 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5b3RIMjZRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgID9otH26QE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM5dUo2eXN3RRAB",
+      "author": "Daniel de la Peña de Alaiz",
+      "author_url": "https://www.google.com/maps/contrib/105784817770844387033/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Muy buena experiencia con ellos. Se preocupan por tu proceso de aprendizaje e intentan ser siempre profesionales dándote mucha participación en las clases.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-03-01 16:09:01 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM5dUo2eXN3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIC9uJ6yswE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "teens"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "duplicated name token (auto-generated handle)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkcHZydnB3RRAB",
+      "author": "Karina Garcia",
+      "author_url": "https://www.google.com/maps/contrib/116441881610612758618/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Completamente agradecida con las facilidades y la atención, tanto de Philippe como de Danny, ambos saben escuchar las necesidades de los estudiantes y siempre buscan un punto medio para poder satisfacer nuestros requerimientos. No tengo dudas que es el mejor lugar donde pueden estudiar y aprender inglés. Vamos que tú puedes! 😁",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-02-29 09:05:12 +00:00",
+      "time_ago": "Fecha de edición: Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkcHZydnB3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICdpvrvpwE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Philippe"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQxM2FDc0JBEAE",
+      "author": "Jorge Martinez",
+      "author_url": "https://www.google.com/maps/contrib/104269822312712553662/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Impulse Academy es y será la mejor academia para aprender inglés! Los mejores maestros, atención de la mejor calidad y la disponibilidad de horarios que tienen son muy buenos! Danny y JP son grandes profesionales mi hija está encantada con ellos y sus clases. Más que Recomendados al 100% Sigan asi.!💯👌🏻",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-02-05 17:27:45 +00:00",
+      "time_ago": "Fecha de edición: Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQxM2FDc0JBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgID13aCsBA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "adult",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Recomendados, Sigan"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN0NDQtMWJBEAE",
+      "author": "Débora Azevedo",
+      "author_url": "https://www.google.com/maps/contrib/105027137852780261171/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Muy contenta con las clases impartidas a mi hijo. Todo los profisionales son muy comprometidos, siempre muy amables y con una gran sonrisa. Hay que decir que esa academia ha sido la unica que mi hijo entró sin llorar y aceptó finalmente asistir, eso porque han tenido todo el cuidado en conectarse con él, además son muy divertidos y veo que me hijo esta aprendiendo.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-01-31 19:05:06 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0NDQtMWJBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICt44-1bA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "teens",
+        "method"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQxbl95YlBnEAE",
+      "author": "Alejandra Cuaran",
+      "author_url": "https://www.google.com/maps/contrib/101205960830083702764/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2024-01-11 13:43:14 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQxbl95YlBnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgID1n_ybPg%7C%7C?hl=es",
+      "owner_answered": false,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQxclliYXZBRRAB",
+      "author": "Rosangel Bandres",
+      "author_url": "https://www.google.com/maps/contrib/100926280214274434581/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Profesores super cheveres ,  buena ubicación  , y muy profesionales  , mi hija está feliz  de ir a esta academia  , aparte de que aprende la pasa muy  bien ...   doy 5 estrella  porque no hay más, merecen  un 10 ...",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2024-01-09 08:38:14 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQxclliYXZBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgID1rYbavAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "adult"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWOTlLdU93EAE",
+      "author": "Rosmery Cepeda",
+      "author_url": "https://www.google.com/maps/contrib/115833062046552108165/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Los profesores son excelentes  Stephen, PJ y Danny se preocupan mucho por tu avance y tienen mucho profesionalismo, las clases son muy buenas y siento que estoy avanzando.  Excelente academia muy recomendable.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-12-18 12:44:19 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWOTlLdU93EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDV99KuOw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "progress",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Excelente, Stephen"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWOGFxRkt3EAE",
+      "author": "Lucía Fernández Casanova",
+      "author_url": "https://www.google.com/maps/contrib/106174443249487532927/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Excelentes profesionales y un trato inmejorable. Recomendable 100%",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-12-13 17:34:05 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWOGFxRkt3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDV8aqFKw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "atmosphere",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (66 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWd2JxRlBnEAE",
+      "author": "Jesus Angel",
+      "author_url": "https://www.google.com/maps/contrib/101709161763016537993/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Muy amenas e  instructivas sus clases",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-12-13 11:05:38 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWd2JxRlBnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDVwbqFPg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (37 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWbHJieWdBRRAB",
+      "author": "Ylich Layana",
+      "author_url": "https://www.google.com/maps/contrib/100022907305853631616/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Es una académica con la que estoy muy a gusto siento que mi nivel de ingles va mejorando con cada clase.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-12-12 19:55:40 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWbHJieWdBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDVlrbygAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWejV6OWhRRRAB",
+      "author": "Natalia López Casado",
+      "author_url": "https://www.google.com/maps/contrib/110647932474444675294/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Llevo 2 meses dando clase con Danny y estoy encantada. Clases muy amenas y en las que conversamos todo el rato. Me hace correcciones y me da tips para mejorar. Además, agradezco de ellos su disponibilidad y adaptación a mis complicados horarios. La recomiendo 100 %",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-12-09 21:59:46 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWejV6OWhRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICVz5z9hQE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWNHJPSWZ3EAE",
+      "author": "Leticia Ramos Setim",
+      "author_url": "https://www.google.com/maps/contrib/111130852542438182153/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Una academia totalmente recomendable, mi hijo está encantado con las clases, son divertidas y variadas.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-12-06 09:24:17 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWNHJPSWZ3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICV4rOIfw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "method",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWdExTZVh3EAE",
+      "author": "Javier Sanz Lázaro",
+      "author_url": "https://www.google.com/maps/contrib/103889700138703278713/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Es una academia muy buena. Mis hijas van muy contentas a la clase de inglés.",
+      "original_text": "It's a very good academy. My daughters go very happy to the english class.",
+      "language": "en",
+      "timestamp": "2023-12-05 18:31:18 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWdExTZVh3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICVtLSeXw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNscmJTOVp3EAE",
+      "author": "Michelle Correa Sánchez",
+      "author_url": "https://www.google.com/maps/contrib/102952267925126063842/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Una academia con profesores muy amables y cercanos, te enseñan acorde a tus capacidades y se adaptan a las necesidades del alumno. Especial mención a Danny y JP, que hace las clases divertidas, entretenidas y aprendes mucho de ellos. La recomiendo al 100%.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-11-24 10:49:48 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNscmJTOVp3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIClrbS9Zw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method",
+        "atmosphere",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsOWJDZGhRRRAB",
+      "author": "Lidia Ramirez",
+      "author_url": "https://www.google.com/maps/contrib/106889067682568014669/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Excelente academia!!!. No he podido elegir mejor. Desde que llevo a mis hijos están aprobando inglés y sobre todo que van encantados. Hay varios niveles. El trato es excepcional. Son profesionales que les gusta su trabajo, cercanos y hay muy bien ambiente. Gracias a todos los profes ( Danny, J.P, Stephan...).",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-11-23 19:05:32 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsOWJDZGhRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICl9bCdhQE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "parent",
+        "adult",
+        "atmosphere"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Stephan"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsdFpfWXdBRRAB",
+      "author": "Toña Agüero",
+      "author_url": "https://www.google.com/maps/contrib/116166488751304049460/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Los profesores son todos muy agradables y muy atentos, se adaptan rápido y siempre sacan una sonrisa mientras que aprendes con facilidad y eficacia el inglés. Saludos",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-11-23 18:38:05 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsdFpfWXdBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICltZ_YwAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsdGNfdF9nRRAB",
+      "author": "abel piñate",
+      "author_url": "https://www.google.com/maps/contrib/111985646866022520417/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-11-23 18:29:10 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsdGNfdF9nRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICltc_t_gE%7C%7C?hl=es",
+      "owner_answered": false,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGa18zRjRBRRAB",
+      "author": "VMA MA",
+      "author_url": "https://www.google.com/maps/contrib/114357623950817482645/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-11-09 23:24:31 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGa18zRjRBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDFk_3F4AE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGeHVEY0dBEAE",
+      "author": "Brian Carey",
+      "author_url": "https://www.google.com/maps/contrib/108270755360091725131/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Una academia de barrio muy eficaz, buenos profesionales con una metodología dinámica. Preparación para exámenes oficiales.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-11-06 15:28:19 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGeHVEY0dBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDFxuDcGA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "adult",
+        "method"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaNUpQaHRBRRAB",
+      "author": "Miguel Garcia",
+      "author_url": "https://www.google.com/maps/contrib/109079519533176507211/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Experiencia muy buena de los niños de 10 y 12 años. Muy atento en su evolución con las familias y siempre disponibles para cualquier cosa. Lo recomiendo.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-09-04 19:09:18 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaNUpQaHRBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICZ5JPhtAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "kids",
+        "progress",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaNUp5TG5RRRAB",
+      "author": "Rodrigo Sanz",
+      "author_url": "https://www.google.com/maps/contrib/109248579089871093238/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Muy buen profesor, muy cercano y asequible. Realmente contento con esta academia del barrio. Los chicos van felices a clase. Gran tranquilidad para los padres.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-09-04 17:11:19 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaNUp5TG5RRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICZ5JyLnQE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "atmosphere"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNac0ktUTJRRRAB",
+      "author": "Adrian",
+      "author_url": "https://www.google.com/maps/contrib/108055287427382464269/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-09-02 18:08:24 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNac0ktUTJRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICZsI-Q2QE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)",
+        "no full name"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNad0piSDFnRRAB",
+      "author": "Maria Dolores Muñoz",
+      "author_url": "https://www.google.com/maps/contrib/109728041406348513166/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Un profesorado con un gran nivel y calidad humana",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-09-01 20:22:35 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNad0piSDFnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICZwJbH1gE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (49 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwdjlDaHNBRRAB",
+      "author": "Martin García Valle",
+      "author_url": "https://www.google.com/maps/contrib/116629452929621058241/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Excelente academia! Muy recomendable!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-09-01 10:00:19 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdjlDaHNBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpv9ChsAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (37 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjZUTTBnRRAB",
+      "author": "María Jesús Zuazo Sahagún",
+      "author_url": "https://www.google.com/maps/contrib/114974424485171933566/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Solo puedo decir cosas positivas de la experiencia que tiene mi hija con sus profesores. Lo más importante es que le gusta mucho ir a las clases. Ha notado que su evolución, tanto en el lenguaje hablado como en el escrito, ha mejorado mucho, y esto hace que esté muy motivada y con ganas de continuar aprendiendo. En resumen, son grandes profesionales y saben trabajar con sus alumnos. Lo recomiendo 100%.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-09-01 09:41:52 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjZUTTBnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr6TM0gE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "adult",
+        "progress",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjl2MFpREAE",
+      "author": "almudena vaquero",
+      "author_url": "https://www.google.com/maps/contrib/104929419906589184540/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Fantástico",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 20:03:14 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjl2MFpREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr9v0ZQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (10 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjhXbHBRRRAB",
+      "author": "Marta Rubio",
+      "author_url": "https://www.google.com/maps/contrib/102810521223101797850/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-31 19:20:32 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjhXbHBRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr8WlpQE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjluZkpnEAE",
+      "author": "Carmen Magán Carretón",
+      "author_url": "https://www.google.com/maps/contrib/104381795370790647039/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-31 19:14:57 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjluZkpnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr9nfJg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcl9hNVVnEAE",
+      "author": "Ana Pérez",
+      "author_url": "https://www.google.com/maps/contrib/117183020550592660181/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-31 18:41:04 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcl9hNVVnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr_a5Ug%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjlxdEV3EAE",
+      "author": "JOSE ENRIQUE HERNAN",
+      "author_url": "https://www.google.com/maps/contrib/107708422518594781133/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Excelente trato.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 18:25:53 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjlxdEV3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr9qtEw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "atmosphere"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (16 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjhqZFNBEAE",
+      "author": "amalia Maque",
+      "author_url": "https://www.google.com/maps/contrib/117572986655130091087/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Muy competentes",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 18:24:50 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjhqZFNBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr8jdSA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (15 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjVLczZRRRAB",
+      "author": "gondumi",
+      "author_url": "https://www.google.com/maps/contrib/110530949581925551365/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Una academia perfecta para mejorar nuestro inglés. Clases amenas muy bien explicadas.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 18:15:08 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjVLczZRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr5Ks6QE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "no full name"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjRLazV3RRAB",
+      "author": "Carlos Grande",
+      "author_url": "https://www.google.com/maps/contrib/108618079336451304200/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Una calidad y un trato excelentes.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 18:10:30 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjRLazV3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr4Kk5wE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "atmosphere"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (34 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjRMeklnEAE",
+      "author": "edu edu",
+      "author_url": "https://www.google.com/maps/contrib/106478651845652238515/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-31 18:06:25 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjRMeklnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr4LzIg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)",
+        "duplicated name token (auto-generated handle)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcl95QktBEAE",
+      "author": "Maria jose Navarredonda",
+      "author_url": "https://www.google.com/maps/contrib/114808676743902559358/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Los profes son fantástico y con gran experiencia. Aprender inglés adquiere otro sentido, os lo dice alguien para la que aprender inglés era difícil.  Se aprende con ganas e ilusión. Gracias",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 18:04:34 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcl95QktBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr_yBKA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjZ6M0dnEAE",
+      "author": "anabel munoz",
+      "author_url": "https://www.google.com/maps/contrib/105156564382176521116/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Con  Danny y JP mejoré mi inglés y he conseguido hablar muy fluido. Gracias",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 18:00:31 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjZ6M0dnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr6z3Gg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjR6N21BRRAB",
+      "author": "fernando garcia",
+      "author_url": "https://www.google.com/maps/contrib/117730293062615406846/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Buenos profesores, me han ayudado mucho. Gracias.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 17:55:43 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjR6N21BRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr4z7mAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (49 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjdUc1RBEAE",
+      "author": "Aurora Jimenez Solano",
+      "author_url": "https://www.google.com/maps/contrib/113758598814428538854/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Tras varios intentos de retomar mi formación en inglés, en otros centros con poco éxito, he encontrado la academia ideal para mi. Estoy muy satisfecha con el método, mi profesor y mi progreso con el idioma.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 17:51:28 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjdUc1RBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr7TsTA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "teens",
+        "method",
+        "progress"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwci1UQzl3RRAB",
+      "author": "Enrique Villar Ropero",
+      "author_url": "https://www.google.com/maps/contrib/118025294246022730015/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Son muy buenos profesionales que te ayudan en todo",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 17:47:03 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwci1UQzl3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr-TC9wE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (50 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjdqdjJ3RRAB",
+      "author": "Leandro Montalban",
+      "author_url": "https://www.google.com/maps/contrib/101412180492087122215/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Buen lugar para aprender inglés.",
+      "original_text": "Good place for learn English",
+      "language": "en",
+      "timestamp": "2023-08-31 17:40:52 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjdqdjJ3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr7jv2wE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (32 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjdpVU13EAE",
+      "author": "Luis Jimenez",
+      "author_url": "https://www.google.com/maps/contrib/114729768955964026871/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Son muy profesionales y te hacen fácil el aprendizaje",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 17:39:43 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjdpVU13EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr7iUMw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (53 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjlpLVpBEAE",
+      "author": "Paula Cuadrado",
+      "author_url": "https://www.google.com/maps/contrib/114575174723736316307/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Mi inglés ha mejorado, son buenisimos profesionales, buen método, mucha paciencia por su parte. Volveré para seguir mejorando",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 17:39:31 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjlpLVpBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr9i-ZA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "method",
+        "progress"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwci1qSUxBEAE",
+      "author": "Begoña Carnicero",
+      "author_url": "https://www.google.com/maps/contrib/111936756168528272846/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Gracias a la gran experiencia y paciencia de Danny y JP he mejorado muchísimo en muy poco tiempo.  Sobre todo a la hora de lanzarme para hablar, me han quitado por completo el miedo. Agradecidisima",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 17:37:21 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwci1qSUxBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr-jILA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "progress"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Sobre"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjZpdDZRRRAB",
+      "author": "María José Barrado",
+      "author_url": "https://www.google.com/maps/contrib/103524383808654055633/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-31 17:34:49 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjZpdDZRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr6it6QE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjZqcTB3RRAB",
+      "author": "Carmen Moreno",
+      "author_url": "https://www.google.com/maps/contrib/111566846471315518951/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Grandes profesionales que facilitan el aprendizaje desde el primer día! Metodologías y dinámicas divertidas!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 17:34:20 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjZqcTB3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr6jq0wE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "method"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwejVtQ1dnEAE",
+      "author": "Eva Liarte",
+      "author_url": "https://www.google.com/maps/contrib/101179169370787548770/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "El director de la academia es un gran profesional. Además de ser muy amable y atento, te brinda su ayuda de forma muy dinámica para que tengas más confianza en ti mismo a la hora de aprender y expresarte en inglés. Gracias JP. ✨",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 16:07:33 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwejVtQ1dnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpz5mCWg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "method"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwOTlQbVJBEAE",
+      "author": "enriquebeatomartinez14 enriquebeatomartinez14",
+      "author_url": "https://www.google.com/maps/contrib/113030021484396393473/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Excelente academia que recomiendo. Buenos profesores, atentos , cercanos , se adaptan a tu nivel y ritmo , las clases las hacen amenas, gracias a esto se avanza rápido, Gracias!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 11:01:00 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwOTlQbVJBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp99PmRA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "atmosphere",
+        "progress",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "username, not a name",
+        "duplicated name token (auto-generated handle)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwOV9XOENnEAE",
+      "author": "Carlos Javier Ayllón Gordillo",
+      "author_url": "https://www.google.com/maps/contrib/113562589952991181825/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Excelente ambiente, profesores muy amables y muy cercanos a los estudiantes. Definitivamente recomiendo esta academia para aprender inglés.",
+      "original_text": "Excellent environment, very nice teachers and close to the students. I definitely recommend this academy to learn english.",
+      "language": "en",
+      "timestamp": "2023-08-31 10:38:27 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwOV9XOENnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp9_W8Cg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "atmosphere",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwOThLWkhREAE",
+      "author": "CJ Martos",
+      "author_url": "https://www.google.com/maps/contrib/117305030777832665887/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Muy profesionales. Se adaptan a tu nivel y están muy pendientes de tu progreso. Danny y JP tienen mucha experiencia y trabajan genial",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-31 09:18:02 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwOThLWkhREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp98KZHQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "teens",
+        "progress"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwMDZmQklnEAE",
+      "author": "Joaquín",
+      "author_url": "https://www.google.com/maps/contrib/105092279218316448327/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Tanto la academia como los profesores son de lo mejor que me he encontrado. La gente que quiera aprender bien Inglés, es la academia perfecta y además te lo hacen muy fácil y cómodo. Recomendado 100%.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-28 16:26:56 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwMDZmQklnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp06fBIg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "no full name"
+      ]
+    },
+    {
+      "review_id": "ChRDSUhNMG9nS0VJQ0FnSURwMVpnaBAB",
+      "author": "Gaby s",
+      "author_url": "https://www.google.com/maps/contrib/105810409622688536007/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Excelente academia para aprender o mejorar tu inglés gracias a Danny y JP",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-26 05:33:06 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSURwMVpnaBAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp1Zgh%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwNWJTdUlREAE",
+      "author": "Sara Encinar Cebolla",
+      "author_url": "https://www.google.com/maps/contrib/100626792564788300017/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-25 20:13:05 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwNWJTdUlREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp5bSuIQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLWN2QjRRRRAB",
+      "author": "Ramon Pico",
+      "author_url": "https://www.google.com/maps/contrib/100088422961411805261/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Profesores muy profesionales, trato excelente y me sirvió para mejorar mi nivel rápidamente",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 17:14:18 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLWN2QjRRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-cvB4QE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "atmosphere"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURweFlmQlN3EAE",
+      "author": "hugo antonio",
+      "author_url": "https://www.google.com/maps/contrib/105411136568379754930/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Grandes profesionales, acudí a ellos con la finalidad de sacarme el B2, con un nivel de inglés muy bajo y gracias a ellos he conseguido el título.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 16:17:20 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURweFlmQlN3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpxYfBSw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "adult"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURweGFtSW53RRAB",
+      "author": "Alejandro Carre",
+      "author_url": "https://www.google.com/maps/contrib/112072107189127878802/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Academia muy recomendable! Profesores muy cualificados y un ambiente estupendo",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 15:27:28 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURweGFtSW53RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpxamInwE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "atmosphere",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwaGV1SU9BEAE",
+      "author": "A Piece of Cake English",
+      "author_url": "https://www.google.com/maps/contrib/113054954388024770215/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Excelentes profesores...muy contenta con sus métodos didácticos... nada que ver con las rutinas típicas de la mayoría de las academias. Totalmente adaptados a tus necesidades, cercanos y motivadores.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 13:28:41 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwaGV1SU9BEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpheuIOA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method",
+        "atmosphere"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "business account, not a person"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwaGJ6eUNREAE",
+      "author": "Manuel Garcia Rodriguez",
+      "author_url": "https://www.google.com/maps/contrib/117491359946707972190/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-25 11:51:01 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwaGJ6eUNREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDphbzyCQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwaGV6eXdnRRAB",
+      "author": "laura garcia",
+      "author_url": "https://www.google.com/maps/contrib/116590872401182088499/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Recomendable 100%!! He coincidido tanto con Danny como con JP y transmiten de maravilla. Gracias a ellos conseguí mis objetivos y mejoré mucho con el idioma. Sin duda seguiré contando con ellos",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 11:47:05 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwaGV6eXdnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDphezywgE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwaFlTT0pREAE",
+      "author": "juan carlos Martin",
+      "author_url": "https://www.google.com/maps/contrib/112982328272896239920/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-25 11:31:24 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwaFlTT0pREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDphYSOJQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwLWYtSU1nEAE",
+      "author": "Alonso Pita Da Veiga Palomino",
+      "author_url": "https://www.google.com/maps/contrib/113787393660488917749/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-25 11:06:07 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwLWYtSU1nEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-f-IMg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLVotYnlBRRAB",
+      "author": "Luis Carrizosa",
+      "author_url": "https://www.google.com/maps/contrib/113028040808097079405/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-25 11:02:45 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLVotYnlBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-Z-byAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLWR1THh3RRAB",
+      "author": "Inés I",
+      "author_url": "https://www.google.com/maps/contrib/111612434953332219421/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Con ellos es facilísimo aprender inglés....",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 10:40:21 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLWR1THh3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-duLxwE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (43 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwLVp1Zkp3EAE",
+      "author": "nines v",
+      "author_url": "https://www.google.com/maps/contrib/100447347967327578423/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-25 10:39:03 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwLVp1Zkp3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-ZufJw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLWV1X3JnRRAB",
+      "author": "Vanessa",
+      "author_url": "https://www.google.com/maps/contrib/114766244021814344775/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Muy recomendable. Tanto Danny cómo JP tienen una gran experiencia, con lo cual es todo más fácil y ameno",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 10:38:34 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLWV1X3JnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-eu_rgE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "no full name"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLWFPOG1RRRAB",
+      "author": "Juan Sáenz de Buruaga García",
+      "author_url": "https://www.google.com/maps/contrib/107590898890175633643/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Profesionales desde el primer minuto. Increíble trato y desempeño!!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 10:22:27 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLWFPOG1RRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-aO8mQE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "atmosphere"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (67 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLWNQSW13RRAB",
+      "author": "Matilde ventosa",
+      "author_url": "https://www.google.com/maps/contrib/118420055878750524235/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-25 10:20:33 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLWNQSW13RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-cPImwE%7C%7C?hl=es",
+      "owner_answered": false,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLVlPM3F3RRAB",
+      "author": "RulesDaleAlPlay",
+      "author_url": "https://www.google.com/maps/contrib/112237141187652653926/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-25 10:20:20 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLVlPM3F3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-YO3qwE%7C%7C?hl=es",
+      "owner_answered": false,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)",
+        "no full name"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLWYybXVRRRAB",
+      "author": "maudy ventosa",
+      "author_url": "https://www.google.com/maps/contrib/117929020492521402245/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Excelente academia para aprender inglés!  Profesionales con mucha ilusión y ganas de hacerlo bien!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 10:17:48 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLWYybXVRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-f2muQE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Profesionales"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwLWIzd0JREAE",
+      "author": "Maria Llave",
+      "author_url": "https://www.google.com/maps/contrib/116057371489868916006/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-25 10:15:38 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwLWIzd0JREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-b3wBQ%7C%7C?hl=es",
+      "owner_answered": false,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwLWVETEZREAE",
+      "author": "Pepi Moral ventura",
+      "author_url": "https://www.google.com/maps/contrib/104773855923985665934/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "El ambiente, los profesores, una academia excelente para todos los públicos. Mis hijos están encantados de ir son muy profesionales. Se nota que tienen experiencia en formación.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 08:53:19 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwLWVETEZREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-eDLFQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "adult",
+        "atmosphere"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwdWM2VTNnRRAB",
+      "author": "ALFONSO NAVARRO",
+      "author_url": "https://www.google.com/maps/contrib/116623156189590770678/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "La academia merece la pena totalmente. He podido mejorar mi inglés mucho gracias a los profesores que hacen las clases muy amenas.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 06:45:10 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdWM2VTNnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpuc6U3gE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwdVliWnpnRRAB",
+      "author": "paloma canalda",
+      "author_url": "https://www.google.com/maps/contrib/105366884266449321028/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Profesores súper profesionales que son ,además, muy creativos y les gusta su trabajo porque buscan la manera de conseguir el objetivo con cada alumno .",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-25 06:29:46 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdVliWnpnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpuYbZzgE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwbVpqUTh3RRAB",
+      "author": "Marina Escandell",
+      "author_url": "https://www.google.com/maps/contrib/111271729924837891869/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-24 19:57:05 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwbVpqUTh3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpmZjQ8wE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwd2RHcEJREAE",
+      "author": "RAUL SAN SEGUNDO",
+      "author_url": "https://www.google.com/maps/contrib/106472638201711512858/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Me ayudó muchísimo a mejorar mi inglés y poder dar un curso en Canadá. Gracias a Danny pude estar dos semanas hablando en inglés para Osteópatas canadienses con excelentes resultados. Totalmente recomendable y sigo manteniendo mi inglés gracias a él. 👏👏👏👏",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-23 08:34:10 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwd2RHcEJREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpwdGpBQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Canadá, Osteópatas"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwdm9XdGF3EAE",
+      "author": "javier salmeron",
+      "author_url": "https://www.google.com/maps/contrib/112792288668794379851/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Dani es encantador y muy profesional. Aprendes sin darte cuenta por lo ameno del sistema. Muchas gracias de verdad por vuestra ayuda y buen hacer. Un placer haberos conocido.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-22 20:04:14 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwdm9XdGF3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpvoWtaw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcnIzYnZnRRAB",
+      "author": "LUCIA SALMERÓN",
+      "author_url": "https://www.google.com/maps/contrib/111431334867824680218/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Yo he tenido a dos d los profesores que están en la academia, JP y Dani desde que era pequeña y estoy encantada con ellos. Los dos son graciosos, se llevan genial tanto con niños pequeños como con mayores y son muy personales con sus alumnos. Los tengo desde que tenia 8 años y ahora tengo 17 y mi evolución en ingles ha sido gracias a ellos totalmente. Las clases son muy didácticas, se hacen muy amenas y se aprende mucho tanto d gramática como vocabulario etc. Preparan genial para los exámenes de Cambridge y hacerlos con seguridad. De verdad que son unos profesores impresionantes que no os podéis perder.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-22 10:05:33 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcnIzYnZnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDprr3bvgE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "kids",
+        "progress"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too long to quote whole (610 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwMXE2eDFnRRAB",
+      "author": "Laura García Lomas",
+      "author_url": "https://www.google.com/maps/contrib/103012832045425391279/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Una suerte encontrar esta academia con tan grandes profesionales. Gracias a ellos he conseguido el B2, la metodología hace que aprendas rápido y no olvides",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-21 14:32:10 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwMXE2eDFnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp1q6x1gE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "adult",
+        "method"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcHB6aTNnRRAB",
+      "author": "Cesar Seneca Tellechea Corral",
+      "author_url": "https://www.google.com/maps/contrib/109171018349090069706/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Luego de pasar por varias academias en toda Madrid está fue la única que dio con el método y el contenido perfecto para aprender, tengo un C1 y es todo gracias a ellos.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-21 04:11:20 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcHB6aTNnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpppzi3gE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "method"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwaHFYR1JBEAE",
+      "author": "Pablo Sánchez",
+      "author_url": "https://www.google.com/maps/contrib/112715417173251143833/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-20 20:45:16 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwaHFYR1JBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDphqXGRA%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwaHNtNGlBRRAB",
+      "author": "Alberto Rueda Rodriguez",
+      "author_url": "https://www.google.com/maps/contrib/104518110481307952474/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Las clases y los profesores son de 10. Me ayudaron a mejorar mi nivel de inglés muchísimo para superar mi examen de Cambridge. Te ayudan a soltarte en la conversación reconociendo donde tienes más dificultad y dándote los consejos necesarios para superarlos. Academia recomendada 100%",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-20 20:34:32 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwaHNtNGlBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDphsm4iAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "adult",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwNHVueVFREAE",
+      "author": "Margarita Sánchez",
+      "author_url": "https://www.google.com/maps/contrib/105708096589108862916/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Me ha gustado mucho el trato que brinda el director de esta academia es muy amable  y excelente  profesional  . Como profesor muy bueno en explicar  y se deja entender mi hija ainhoa esta encantada con Él , le ha brindado la confianza necesaria para que ella se sienta en confianza en preguntar sus dudas ya que ella es muy tímida para hablar .",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-18 21:25:26 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwNHVueVFREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp4unyQQ%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "adult",
+        "atmosphere"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Él"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwb3B1cm53RRAB",
+      "author": "Ludmyla Severino Anjos",
+      "author_url": "https://www.google.com/maps/contrib/116416833409769329990/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Muy buen profesiones, este verano estube con un curso intensivo, la verdad me ayudó un montón para entender mucha de las cosas de la gramática de inglés que no entendía. Di clases con el profesor JP explica la gramática de una manera más fácil, y hace un plan de estudio para cada dificultad que tenga cada uno. Recomiendo un montón 👍",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-18 19:03:30 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwb3B1cm53RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpopurnwE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwb3ZQQlhnEAE",
+      "author": "F.",
+      "author_url": "https://www.google.com/maps/contrib/116744832064705621522/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Son unos profes fantásticos. Deseando siempre que llegue la siguiente clase. He mejorado un montón y he renovado mi ilusión y mis ganas de aprender inglés.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-18 18:56:05 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwb3ZQQlhnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpovPBXg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "progress"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "no full name"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwZ3ZETFV3EAE",
+      "author": "Edixon MUÑOZ",
+      "author_url": "https://www.google.com/maps/contrib/110920916331021144708/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "He tenido un par de clases particulares  con Jp para prepaprar  un curso para el trabajo. El curso fue adaptado  a lo que necesitaba  y Jp fue .... AMAZING 🥳",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-18 11:28:44 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwZ3ZETFV3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpgvDLUw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwX05mZUV3EAE",
+      "author": "rorik09",
+      "author_url": "https://www.google.com/maps/contrib/100374958377823314582/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Fui alumno del director de esta academia, J.P.,  y gracias a él puede sacarme mi nivel de C1. Es más, gracias al increíble empujón que me dio, he llegado a ser profe de inglés y llevo ya un año y medio en ello. La implicación en esta academia va a ser clave para su éxito.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-18 11:02:34 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwX05mZUV3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp_NfeEw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "adult"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "no full name",
+        "username, not a name"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwX1B1d3lRRRAB",
+      "author": "Antonio del Pozo",
+      "author_url": "https://www.google.com/maps/contrib/101704131951888319462/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Clases perfectas, totalmente adaptadas a mi objetivo de conseguir el C1 de inglés. JP es un profesor extraordinario, siempre dispuesto para ayudarte en todo lo que necesites. Sabe como transmitir lo que necesitas aprender, además de hacer la clases divertidas. Es un motivador nato. No podría haber tenido un profesor mejor. Thanks for everything JP!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-18 10:53:41 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwX1B1d3lRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp_PuwyQE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "method"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwX01QZGFnEAE",
+      "author": "Oscar Bonilla Mansilla",
+      "author_url": "https://www.google.com/maps/contrib/101919366091442232938/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Para mi, las clases fueron eficaces, y muy efectivas. Me ayudaron muchisimo a avanzar en mi inglés de una manera muy entretenida. Recomiendo que les deis una oportunidad, por que sin duda merece la pena.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-18 10:33:48 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwX01QZGFnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp_MPdag%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "progress",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwMU15dU13EAE",
+      "author": "Iosef",
+      "author_url": "https://www.google.com/maps/contrib/105072604559188525358/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Una experiencia satisfactoria, totalmente recomendable para cualquier persona interesada.",
+      "original_text": "A satisfactory experience, totally recommended for anyone interested",
+      "language": "en",
+      "timestamp": "2023-08-16 19:38:43 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwMU15dU13EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp1MyuMw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "no full name"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURweE51NFp3EAE",
+      "author": "Anna Farney",
+      "author_url": "https://www.google.com/maps/contrib/116546136899510686143/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Si buscas aprender inglés de una manera divertida, innovadora y eficaz, ¡no busques más! ¡Recomiendo encarecidamente a Daniel y a su equipo!",
+      "original_text": "If you are looking to learn English in a fun, innovative and effective way, then look no further! I couldn’t recommend Daniel and his team highly enough!",
+      "language": "en",
+      "timestamp": "2023-08-16 10:53:04 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURweE51NFp3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpxNu4Zw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURweExxWFJnEAE",
+      "author": "Gloria Ruiz García",
+      "author_url": "https://www.google.com/maps/contrib/113168013355686003150/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Una absoluta maravilla! Danny es un gran profesional que cuenta con muchísimos años de experiencia. Serio, empático y trabajador.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-16 09:12:23 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURweExxWFJnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpxLqXRg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwaE9HeWVnEAE",
+      "author": "Judit Navarro Oriola",
+      "author_url": "https://www.google.com/maps/contrib/115014871866969781748/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Estoy muy contenta con el inglés que he aprendido aquí. Los profesores son muy atentos y promueven a mejorar tu inglés cada día.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-16 06:12:05 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwaE9HeWVnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDphOGyeg%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcUt6elN3EAE",
+      "author": "Esther Valencia",
+      "author_url": "https://www.google.com/maps/contrib/104520364024743020566/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Súper recomendable!! Sus métodos me han ayudado a avanzar rápidamente de nivel y mejorar profesionalmente. Se nota su pasión por la enseñanza, el trato es personalizado y de calidad. Son un 10!!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-15 09:43:35 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcUt6elN3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpqKzzSw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "method",
+        "atmosphere",
+        "progress",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURweU9fQjVnRRAB",
+      "author": "Jairoljai *",
+      "author_url": "https://www.google.com/maps/contrib/108776808809785935138/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "",
+      "original_text": null,
+      "language": null,
+      "timestamp": "2023-08-15 08:51:23 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURweU9fQjVnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpyO_B5gE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": false,
+      "blocked_by": [
+        "too short (0 chars)"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwbThqdThnRRAB",
+      "author": "Laia Lubillo Solsona",
+      "author_url": "https://www.google.com/maps/contrib/105513819795945658120/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Las clases en Impulse son muy entretenidas y divertidas, aprendes inglés sin darte cuenta. Los profesores se adaptan a ti, por lo que el trato es muy personalizado. Danny siempre está dispuesto a ayudarte y resolver cualquier duda.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-14 21:02:04 +00:00",
+      "time_ago": "Fecha de edición: Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwbThqdThnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpm8ju8gE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "method",
+        "atmosphere"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwXzVQQ21BRRAB",
+      "author": "Álvaro Buñuel Plana",
+      "author_url": "https://www.google.com/maps/contrib/106265174995501837868/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "First aprobado a la primera",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-13 18:53:06 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwXzVQQ21BRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICp_5PCmAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "too short (27 chars)"
+      ]
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwMzdMak93EAE",
+      "author": "Paloma aranda",
+      "author_url": "https://www.google.com/maps/contrib/111811788910803180051/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Advanced aprobado a la primera gracias a Dani y JP.  Trato y metodología inmejorables. 100% recomendable.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-13 11:41:17 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwMzdMak93EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICp37LjOw%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge",
+        "method",
+        "atmosphere",
+        "recommend"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "names a teacher outside the approved set: Trato"
+      ]
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwajlESzRRRRAB",
+      "author": "Miguel Gallego Gracia",
+      "author_url": "https://www.google.com/maps/contrib/105540210467767639383/reviews?hl=es-ES",
+      "local_guide": true,
+      "rating": 5,
+      "text": "Gran academia. Profesorado muy atento,ny se adapta a tu nivel. Muy recomendable!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-12 15:19:15 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwajlESzRRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpj9DK4QE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNweThxNm5nRRAB",
+      "author": "Dámaris Valentín-Fernández Gómez",
+      "author_url": "https://www.google.com/maps/contrib/101913688963346790691/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Mi nivel de inglés ha mejorado muchísimo! La calidad del profesorado es excelente. Recomiendo sin duda esta gran academia de inglés.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-12 13:43:02 +00:00",
+      "time_ago": "Fecha de edición: Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNweThxNm5nRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpy8q6ngE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult",
+        "progress",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwdTYyRnlRRRAB",
+      "author": "Marta Ferrer",
+      "author_url": "https://www.google.com/maps/contrib/103075966933785505861/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Que gran suerte tuvimos de encontrar a Daniel y su equipo. Grandes profesionales y cercanos con sus alumnos. Gracias a ellos mis hijos han mejorado su inglés y pasado unos maravillosos veranos en Irlanda",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-11 08:17:17 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwdTYyRnlRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpu62FyQE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "parent",
+        "adult",
+        "atmosphere",
+        "progress"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwaTlPejRnRRAB",
+      "author": "David Garcia",
+      "author_url": "https://www.google.com/maps/contrib/116775419412341076704/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "DANI ES UN GRAN PROFESIONAL ME GUSTA MUCHO EL SER HUMANO Q ES LE ENCANTA AYUDAR ENSEÑAR",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-10 11:52:13 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwaTlPejRnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpi9Oz4gE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "kids",
+        "adult"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwaTlyZXJBRRAB",
+      "author": "Manuel Casas Herrero",
+      "author_url": "https://www.google.com/maps/contrib/115187080015535306966/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Danny es un excelente profesional que vive con pasion su labor didactica. Nuestros hijos son biligues gracias a sus enseñazas en Madrid e Irlanda. Sin lugar a duda Impulse English Academy sera nuestro centro de referencia en la capital",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2023-08-10 10:31:55 +00:00",
+      "time_ago": "Hace 2 años",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwaTlyZXJBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpi9rerAE%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "adult"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    }
+  ]
+}

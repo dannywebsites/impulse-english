@@ -31,14 +31,14 @@ const courses = [
 // Cada página de barrio usa dos distintas: ninguna reseña se repite en el sitio.
 const localReviews = [
   {
-    name: "Lucia Salmerón",
-    role: "Alumna desde los 8 años",
-    text: "Yo he tenido a dos de los profesores que están en la academia, JP y Dani desde que era pequeña y estoy encantada con ellos. Los tengo desde que tenía 8 años y ahora tengo 17 y mi evolución en inglés ha sido gracias a ellos totalmente. Preparan genial para los exámenes de Cambridge."
+    name: "Lara OM",
+    role: "Alumno/a · preparación C1",
+    text: "Academia increíble para mejorar el nivel de inglés. Siempre cercanos y atentos al seguimiento de los estudiantes. Un gran trato personalizado y cercano con el que he podido sacarme el C1 de inglés en tiempo récord. Siempre estaré agradecida ❤️"
   },
   {
-    name: "Gonzalo Tarascón",
-    role: "Alumno adulto · certificado C1",
-    text: "Gracias a Impulse logré obtener mi certificado C1 de inglés. Esto me ha abierto muchas puertas en el mercado laboral. El ambiente es familiar y cercano, y siempre me sentí apoyado en todo el proceso."
+    name: "Virginia Toledo",
+    role: "Madre/padre de alumno",
+    text: "Mi hija tuvo unas clases particulares con JP para terminar de prepararse para el examen Advanced y estaba muy contenta con la dinámica de las clases. Además ha aprobado!!"
   }
 ];
 

@@ -31,14 +31,14 @@ const courses = [
 // Asignacion en GEO-Content-Project/review-allocation.md: ninguna se repite en el sitio.
 const localReviews = [
   {
-    name: "Lidia Ramirez",
-    role: "Madre de alumnos",
-    text: "Excelente academia!!! No he podido elegir mejor. Desde que llevo a mis hijos están aprobando inglés y sobre todo que van encantados. Hay varios niveles. El trato es excepcional. Son profesionales que les gusta su trabajo, cercanos y hay muy bien ambiente. Gracias a todos los profes (Danny, J.P...)."
+    name: "Sandra Dos Anjos Costa",
+    role: "Madre/padre de alumno",
+    text: "Mis hijos van a la academia Impulse y están encantados. Los profesores son muy profesionales y hacen que los niños se sientan como en casa."
   },
   {
-    name: "Clara Sánchez",
-    role: "Alumna · preparación de examen",
-    text: "He tenido el gusto de poder asistir a esta academia durante menos de un año y sin duda ha sido una de las mejores ayudas que he podido tener, sobretodo por JP. Me ha dado muchos consejos que sin duda me ayudaron para el examen final, y el trato que han tenido en todo momento es súper gratificante y acogedor."
+    name: "Marina Penerbosa",
+    role: "Madre/padre de alumno",
+    text: "Muy contenta con haber encontrado esta academia para mi hijo. Todo el staff es MUY amable, dedicado y profesional. Mi hijo ha progresado muchísimo en su comprensión y desempeño en ingles. La metodología que usan mezcla el juego con los contenidos académicos y eso hace que las clases sean divertidas y loe niños se animen a participar. Recomiendo sinceramente Impulse English Academy"
   }
 ];
 
