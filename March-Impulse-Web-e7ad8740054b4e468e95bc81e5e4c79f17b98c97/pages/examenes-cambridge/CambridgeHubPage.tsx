@@ -115,7 +115,7 @@ const stats = [
 
 export const courseSchema = generateCourseSchema({
         name: "Preparación Oficial de Exámenes Cambridge en Madrid",
-        description: "Cursos de preparación para exámenes Cambridge en Madrid: B1 Preliminary (PET), B2 First (FCE) y C1 Advanced (CAE). Centro oficial Cambridge con 100% de aprobados. Clases para hispanohablantes con metodología probada, grupos reducidos y material incluido.",
+        description: "Cursos de preparación para exámenes Cambridge en Madrid: B1 Preliminary (PET), B2 First (FCE) y C1 Advanced (CAE). Centro oficial Cambridge con 100% de aprobados en el curso 2024/25 (alumnos presentados). Clases para hispanohablantes con metodología probada, grupos reducidos y material incluido.",
         url: `${businessInfo.url}/examenes-cambridge`,
         courseCode: "CAM-HUB",
         educationalLevel: "B1, B2 y C1 — Todos los niveles Cambridge",
@@ -371,7 +371,7 @@ export default function CambridgeHubPage() {
               Prepara tu examen Cambridge con nosotros
             </h2>
             <p className="text-zinc-600">
-              Descubre nuestro método de preparación con 100% de aprobados
+              Descubre nuestro método de preparación, con un 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados)
             </p>
           </div>
           <div className="reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-100">

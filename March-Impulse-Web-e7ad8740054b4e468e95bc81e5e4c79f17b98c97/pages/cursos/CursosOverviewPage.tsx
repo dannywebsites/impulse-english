@@ -79,7 +79,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Qué certificaciones oficiales puedo obtener?",
-    answer: "Somos Centro Oficial de Preparación Cambridge. Preparamos todos los niveles: Pre-A1 Starters, A1 Movers, A2 Flyers, A2 Key, B1 Preliminary, B2 First, C1 Advanced y C2 Proficiency. También ofrecemos preparación para Linguaskill, con certificado en 48 horas. En el curso 24/25 tenemos un 100% de aprobados."
+    answer: "Somos Centro Oficial de Preparación Cambridge. Preparamos todos los niveles: Pre-A1 Starters, A1 Movers, A2 Flyers, A2 Key, B1 Preliminary, B2 First, C1 Advanced y C2 Proficiency. También ofrecemos preparación para Linguaskill, con certificado en 48 horas. En el curso 2024/25 tuvimos un 100% de aprobados Cambridge (alumnos presentados)."
   },
   {
     question: "¿Cuáles son los precios de los cursos de inglés?",
@@ -139,7 +139,7 @@ export default function CursosOverviewPage() {
             </p>
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro Oficial Cambridge</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">100% Aprobados 24/25</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">100% aprobados 24/25 (presentados)</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos Reducidos</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
@@ -242,7 +242,7 @@ export default function CursosOverviewPage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-8 h-8 text-emerald-600" />
               </div>
-              <h3 className="font-bold text-zinc-900 text-lg mb-3">100% Aprobados 24/25</h3>
+              <h3 className="font-bold text-zinc-900 text-lg mb-3">100% aprobados Cambridge 24/25 (alumnos presentados)</h3>
               <p className="text-zinc-600 text-sm">
                 Todos nuestros alumnos presentados a exámenes Cambridge en el curso 24/25 han aprobado.
               </p>

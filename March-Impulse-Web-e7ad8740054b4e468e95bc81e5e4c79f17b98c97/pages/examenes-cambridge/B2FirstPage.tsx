@@ -85,7 +85,7 @@ export const b2Faqs: FAQItem[] = [
 
 export const courseSchema = generateCourseSchema({
       name: "Curso de Preparación Cambridge B2 First (FCE)",
-      description: "Prepara el examen Cambridge B2 First (FCE) con clases en Madrid en grupos reducidos. Centro oficial Cambridge con 100% de aprobados. Perfecto para estudiantes hispanohablantes que necesitan el B2 para la universidad, oposiciones o trabajo.",
+      description: "Prepara el examen Cambridge B2 First (FCE) con clases en Madrid en grupos reducidos. Centro oficial Cambridge con 100% de aprobados en el curso 2024/25 (alumnos presentados). Perfecto para estudiantes hispanohablantes que necesitan el B2 para la universidad, oposiciones o trabajo.",
       url: `${businessInfo.url}/examenes-cambridge/b2-first`,
       courseCode: "CAM-B2-FCE",
       educationalLevel: "B2 — Nivel Intermedio Alto",
