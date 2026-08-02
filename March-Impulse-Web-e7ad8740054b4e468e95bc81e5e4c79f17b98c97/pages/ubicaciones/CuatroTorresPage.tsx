@@ -73,12 +73,6 @@ export const localFaqs: FAQItem[] = [
   }
 ];
 
-const testimonials = [
-  { quote: "Desde que llevo a mis hijos están aprobando inglés y sobre todo que van encantados.", author: "Lidia Ramirez", location: "Google Reviews" },
-  { quote: "100% recomendado, vale la pena. Mi hijo continúa para exámenes de cualificación.", author: "Luis Martín González", location: "Google Reviews" },
-  { quote: "Necesitaba el Linguaskill para mi empresa y lo saqué en tiempo récord. Profesionales de verdad.", author: "David Hernández", location: "Google Reviews" },
-  { quote: "Excelente trato y muy buenos resultados. Recomendado para profesionales que necesitan certificar su nivel.", author: "Carmen Vega", location: "Google Reviews" }
-];
 
 export const locationMeta = {locationName: "Cuatro Torres Business Area",
         pageUrl: "https://impulse-english.es/academia-ingles-cuatro-torres"};
@@ -449,16 +443,16 @@ export default function CuatroTorresPage() {
             Lo Que Dicen Nuestros Alumnos
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {testimonials.map((t, i) => (
-              <div key={i} className="card p-6">
+            {localReviews.map((review, idx) => (
+              <div key={idx} className="card p-6">
                 <div className="flex gap-1 mb-4">
                   {[1,2,3,4,5].map(star => (
                     <Star key={star} className="w-5 h-5 text-amber-400 fill-amber-400" />
                   ))}
                 </div>
-                <p className="text-zinc-600 italic mb-4">"{t.quote}"</p>
-                <p className="font-bold text-zinc-900">{t.author}</p>
-                <p className="text-zinc-500 text-sm">{t.location}</p>
+                <p className="text-zinc-600 italic mb-4">"{review.text}"</p>
+                <p className="font-bold text-zinc-900">{review.name}</p>
+                <p className="text-zinc-500 text-sm">{review.role}</p>
               </div>
             ))}
           </div>
