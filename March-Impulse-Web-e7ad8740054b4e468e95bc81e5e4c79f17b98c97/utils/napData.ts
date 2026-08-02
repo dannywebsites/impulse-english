@@ -113,9 +113,11 @@ export const NAP = {
   ],
 
   // Transit info
+  // Ordered nearest-first. Barrio del Pilar is the academy's station and the barrio term
+  // we rank for — anything that takes metro[0] as "the" station must get that one.
   metro: [
-    "Herrera Oria (Línea 9)",
     "Barrio del Pilar (Línea 9)",
+    "Herrera Oria (Línea 9)",
     "Peñagrande (Línea 7)",
   ],
   busLines: ["42", "49", "67", "83", "126", "128", "132", "133", "134", "137", "147"],
@@ -128,10 +130,13 @@ export const NAP = {
     "Official Partner of ESIC Idiomas",
   ],
 
-  // Aggregate rating (Google Reviews): kept in sync with the live GBP (5.0 / 178)
+  // Aggregate rating (Google Reviews): kept in sync with the live GBP.
+  // Verified 2026-08-02 against the Google knowledge panel ("180 reseñas",
+  // place_id ChIJG7G2oAkpQg0Re7iLuuLzbr4). All 180 are 5-star — the rating
+  // distribution showed zero reviews at 1-4 stars.
   aggregateRating: {
     ratingValue: 5,
-    reviewCount: 178,
+    reviewCount: 180,
     bestRating: 5,
     worstRating: 1,
   },

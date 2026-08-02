@@ -11,42 +11,65 @@ import type { FAQItem } from '../../utils/schemaData';
 import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 const benefits = [
-  { title: "A 15 Minutos de La Ventilla", desc: "15 minutos caminando o 15 minutos en metro. Excelente conexión desde La Ventilla." },
-  { title: "Centro Oficial de Preparación Cambridge", desc: "Prepárate y haz el examen donde estudias. Sin sorpresas." },
-  { title: "100% de Aprobados Cambridge 24/25", desc: "Todos nuestros estudiantes aprobaron sus exámenes." },
-  { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada real. No 15-20 como otras \"reducidas\"." },
-  { title: "Vecinos de La Ventilla Nos Eligen", desc: "Más de 174 reseñas de 5 estrellas en Google de familias de la zona." },
-  { title: "Metodología Impulse Probada", desc: "Conversación desde día 1. Resultados medibles. Aprendizaje efectivo." }
+  { title: "Una parada de metro desde Ventilla", desc: "Ventilla → Barrio del Pilar, línea 9, sin transbordos. Unos 2 minutos de trayecto y 500 m a pie hasta la puerta." },
+  { title: "Centro oficial Cambridge y Linguaskill", desc: "Te preparas y te examinas en el mismo sitio. No tienes que cruzar Madrid el día del examen." },
+  { title: "100 alumnos aprobados en Cambridge", desc: "100% de aprobados en B2 First en 2024/25 y 2025/26. Casi todos empezaron desde un nivel muy básico." },
+  { title: "Grupos de 7 a 10 alumnos", desc: "Máximo 10 en adultos. Suficientemente pequeño para que hables en todas las clases, no una vez al mes." },
+  { title: "5,0 sobre 180 reseñas en Google", desc: "Las 180 son de 5 estrellas. Ninguna academia de la zona norte tiene esa combinación de nota y volumen." },
+  { title: "Precios publicados, sin letra pequeña", desc: "Desde 64 €/mes en grupo o 29 €/hora en clase particular. Matrícula 45 € y libro hasta 40 €. Eso es todo." }
 ];
 
 const courses = [
-  { name: "Infantil (2-5 años)", method: "Great Little People", href: "/cursos-ingles/infantil/" },
-  { name: "Primaria (6-12 años)", method: "Young Learners + Cambridge", href: "/cursos-ingles/primaria/" },
-  { name: "Secundaria (13-17 años)", method: "EBAU + Cambridge B1/B2/C1", href: "/cursos-ingles/secundaria/" },
-  { name: "Adultos", method: "Todos niveles + Cambridge + Linguaskill", href: "/cursos-ingles/adultos/" },
-  { name: "Clases Particulares", method: "Presencial u online", href: "/cursos-ingles/particulares/" }
+  { name: "Infantil (2-5 años)", method: "Great Little People · desde 64 €/mes", href: "/cursos-ingles/infantil/" },
+  { name: "Primaria (6-12 años)", method: "Young Learners + Cambridge · 83 €/mes", href: "/cursos-ingles/primaria/" },
+  { name: "Secundaria (13-17 años)", method: "EBAU + Cambridge B1/B2/C1 · desde 87 €/mes", href: "/cursos-ingles/secundaria/" },
+  { name: "Adultos", method: "Todos los niveles + Cambridge + Linguaskill · 94 €/mes", href: "/cursos-ingles/adultos/" },
+  { name: "Clases particulares", method: "Presencial u online · desde 29 €/hora", href: "/cursos-ingles/particulares/" }
+];
+
+// Reseñas reales de Google, verificadas contra el perfil el 02/08/2026.
+// Cada página de barrio usa dos distintas: ninguna reseña se repite en el sitio.
+const localReviews = [
+  {
+    name: "Lucia Salmerón",
+    role: "Alumna desde los 8 años",
+    text: "Yo he tenido a dos de los profesores que están en la academia, JP y Dani desde que era pequeña y estoy encantada con ellos. Los tengo desde que tenía 8 años y ahora tengo 17 y mi evolución en inglés ha sido gracias a ellos totalmente. Preparan genial para los exámenes de Cambridge."
+  },
+  {
+    name: "Gonzalo Tarascón",
+    role: "Alumno adulto · certificado C1",
+    text: "Gracias a Impulse logré obtener mi certificado C1 de inglés. Esto me ha abierto muchas puertas en el mercado laboral. El ambiente es familiar y cercano, y siempre me sentí apoyado en todo el proceso."
+  }
 ];
 
 export const localFaqs: FAQItem[] = [
   {
-    question: "¿Qué niveles de inglés ofrecéis cerca de La Ventilla?",
-    answer: "Ofrecemos todos los niveles desde principiante (A1) hasta avanzado (C2). Realizamos una prueba de nivel gratuita para ubicarte en el grupo adecuado. Preparamos exámenes Cambridge (Pre-A1 Starters hasta C2 Proficiency) y Linguaskill."
+    question: "¿Cuánto se tarda desde La Ventilla hasta la academia?",
+    answer: "Una parada de metro. Coges la línea 9 en Ventilla dirección Paco de Lucía y te bajas en Barrio del Pilar: son unos 2 minutos de trayecto y 500 metros a pie hasta Av. de El Ferrol, 22. Puerta a puerta, unos 12 minutos."
   },
   {
-    question: "¿Hay prueba de nivel gratuita en vuestra academia cerca de La Ventilla?",
-    answer: "Sí, ofrecemos una prueba de nivel gratuita de 25 minutos donde evaluamos tu nivel actual y te recomendamos el curso más adecuado. Puedes reservarla por WhatsApp o a través de nuestra web."
+    question: "¿Cuánto cuestan las clases de inglés cerca de La Ventilla?",
+    answer: "Infantil desde 64 €/mes, Primaria 83 €/mes, Secundaria desde 87 €/mes y Adultos 94 €/mes. Las clases particulares cuestan 29 €/hora, presenciales u online. La matrícula son 45 € y el libro un máximo de 40 €. No hay más costes."
   },
   {
-    question: "¿Cuántos alumnos hay por grupo en las clases de inglés?",
-    answer: "Nuestros grupos son reducidos: máximo 7-10 alumnos por clase. Esto garantiza atención personalizada real, no como otras academias que dicen tener grupos reducidos con 15-20 estudiantes."
+    question: "¿La prueba de nivel es gratis y quién la hace?",
+    answer: "Es gratuita y dura 25 minutos. La hace JP, el director de estudios, que también es quien contesta el WhatsApp: escribes al 604 910 611 y hablas directamente con él, no con un formulario. Salís con tu nivel MCER y el grupo recomendado."
   },
   {
-    question: "¿Qué horarios hay disponibles para clases de inglés cerca de La Ventilla?",
-    answer: "Tenemos horarios de mañana y tarde: lunes y miércoles de 10:00 a 21:30, martes y jueves de 15:30 a 21:30, y viernes de 13:30 a 19:30. Adaptamos los horarios a familias y profesionales de la zona."
+    question: "Vivo en La Ventilla pero mi hijo estudia en un colegio de Tetuán. ¿Os da tiempo?",
+    answer: "Sí. La Ventilla pertenece al distrito de Tetuán y muchas familias vienen desde colegios como el CP Juan Ramón Jiménez o el IES Jaime Vera. Abrimos hasta las 21:30 de lunes a jueves, así que hay margen de sobra después de clase."
   },
   {
-    question: "¿Cómo llego a la academia desde La Ventilla?",
-    answer: "Estamos muy bien comunicados. Desde La Ventilla puedes llegar en metro hasta Barrio del Pilar (Línea 9), que está a solo 500 metros de nuestra academia. También hay varias líneas de autobús."
+    question: "¿Cuántos alumnos hay por clase?",
+    answer: "Entre 7 y 10, con un máximo de 10 en adultos. Tenemos dos aulas, London y Manchester, y ese aforo es deliberado: en un grupo de 10 hablas en todas las clases. En uno de 20, hablas una vez cada tres semanas."
+  },
+  {
+    question: "¿Sois centro oficial de Cambridge o solo preparáis el examen?",
+    answer: "Somos centro preparador oficial de Cambridge y centro oficial de Linguaskill. Te preparas y te examinas en el mismo sitio, sin cruzar Madrid el día del examen. Llevamos 100 alumnos aprobados y un 100% de aprobados en B2 First en 2024/25 y 2025/26."
+  },
+  {
+    question: "¿Por qué elegiros y no otra academia de la zona norte?",
+    answer: "Por tres cosas comprobables: 5,0 sobre 180 reseñas en Google, todas de 5 estrellas; precios publicados desde 64 €/mes sin letra pequeña; y que los dos fundadores, JP y Danny, dan clase en persona. Puedes verificar las tres antes de venir."
   }
 ];
 
@@ -66,7 +89,7 @@ export default function LaVentillaPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/academy/outside-academy.jpg" alt="Impulse English Academy fachada exterior La Vaguada Madrid" className="w-full h-full object-cover" loading="eager" />
+          <img src="/images/academy/outside-academy.jpg" alt="Fachada de Impulse English Academy en Av. de El Ferrol 22, a una parada de metro de La Ventilla" className="w-full h-full object-cover" loading="eager" />
           <div className="absolute inset-0 bg-accent-blue/90"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
@@ -91,23 +114,24 @@ export default function LaVentillaPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Academia de Inglés cerca de La Ventilla
+              Academia de inglés a una parada de La Ventilla
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
-              Centro Oficial Cambridge a 15 minutos de La Ventilla
+              Centro oficial Cambridge en Barrio del Pilar, desde 64 €/mes
             </p>
             <div className="flex items-center gap-2 text-white/60 font-display text-sm mb-2 animate-hero-fade-up animation-delay-200">
               <Train className="w-4 h-4" />
-              <span>15 minutos caminando o 15 minutos en metro (Línea 9)</span>
+              <span>Línea 9: Ventilla → Barrio del Pilar, 1 parada · 500 m a pie</span>
             </div>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
-              {NAP.fullAddress}
+              {NAP.fullAddress} · <a href={NAP.phoneTel} className="underline hover:text-white/80">{NAP.phone}</a>
             </p>
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro Oficial Cambridge</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">100% Aprobados 24/25</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos Reducidos</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro oficial Cambridge</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">100 aprobados en Cambridge</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 180 reseñas</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos de 7 a 10</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
               <a
@@ -134,11 +158,15 @@ export default function LaVentillaPage() {
       {/* Local Intro Section */}
       <section className="section-tight px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
+          {/* Answer capsule: 53 palabras, autocontenida, con cifra, lugar y CTA. */}
           <p className="text-lg text-zinc-700 leading-relaxed">
-            Nuestra academia ofrece clases de inglés cerca de La Ventilla, una zona residencial bien comunicada con Metro Ventilla y Metro Barrio del Pilar (Línea 9). Trabajamos con niños, adolescentes y adultos que buscan aprender inglés sin largos desplazamientos, con grupos reducidos y atención personalizada. Somos centro oficial de preparación Cambridge con 100% de aprobados.
+            ¿Buscas academia de inglés cerca de La Ventilla? Impulse English Academy está a una parada en la línea 9: Ventilla → Barrio del Pilar, unos 2 minutos. Centro oficial Cambridge desde 2022, grupos de 7 a 10 alumnos y clases desde 64 €/mes. Reserva tu prueba de nivel gratuita con JP: <a href={NAP.phoneTel} className="text-accent-blue font-semibold hover:underline">604 910 611</a>.
           </p>
           <p className="text-zinc-600 mt-4 leading-relaxed">
-            Desde el <strong>Parque de La Ventilla</strong> y el <strong>Mercado de La Ventilla</strong>, nuestra academia está a un corto paseo siguiendo el <strong>Paseo de la Castellana</strong> hacia el norte. También puedes llegar fácilmente desde la <strong>estación de Cercanías Fuencarral</strong>. Nos encontramos en el código postal <strong>28029 Madrid</strong>, en pleno corazón de la zona norte.
+            La Ventilla pertenece al distrito de <strong>Tetuán</strong>, y su estación de metro es vecina directa de la nuestra: en la <strong>línea 9</strong> el orden es Herrera Oria — Barrio del Pilar — Ventilla, así que no hay transbordos ni rodeos. Desde <strong>Calle Mártires de la Ventilla</strong> bajas al andén, una parada, y 500 metros a pie por <strong>Av. de El Ferrol</strong> hasta el número 22.
+          </p>
+          <p className="text-zinc-600 mt-4 leading-relaxed">
+            Damos clase a familias de toda la zona: alumnos del <strong>CP Juan Ramón Jiménez</strong>, del <strong>IES Jaime Vera</strong> y del <strong>CP Doctor Federico Rubio</strong> vienen andando o en una parada de metro. Abrimos hasta las <strong>21:30</strong> de lunes a jueves, precisamente para que se pueda encajar después del colegio o del trabajo.
           </p>
         </div>
       </section>
@@ -174,13 +202,14 @@ export default function LaVentillaPage() {
                 <h3 className="font-bold text-zinc-900">Caminando</h3>
               </div>
               <p className="text-zinc-600 mb-3">
-                Desde <strong>La Ventilla</strong>:
+                Desde <strong>Calle Mártires de la Ventilla</strong>:
               </p>
               <ul className="text-zinc-600 text-sm space-y-2">
-                <li>• Dirección Barrio del Pilar</li>
-                <li>• Camina 500 metros hasta nuestra academia</li>
+                <li>• Dirección norte hacia Barrio del Pilar</li>
+                <li>• Cruzas hacia Av. de El Ferrol</li>
+                <li>• Hasta el número 22, junto a La Vaguada</li>
               </ul>
-              <p className="text-accent-blue font-medium mt-4">Tiempo total: 15 minutos</p>
+              <p className="text-accent-blue font-medium mt-4">Unos 25 minutos andando</p>
             </div>
             <div className="card p-6">
               <div className="flex items-center gap-3 mb-4">
@@ -188,14 +217,14 @@ export default function LaVentillaPage() {
                 <h3 className="font-bold text-zinc-900">En Metro</h3>
               </div>
               <p className="text-zinc-600 mb-3">
-                Desde <strong>Metro Ventilla (Línea 9)</strong>:
+                Desde <strong>Metro Ventilla (línea 9)</strong>:
               </p>
               <ul className="text-zinc-600 text-sm space-y-2">
-                <li>• Toma la Línea 9 dirección Mirasierra</li>
-                <li>• Baja en Barrio del Pilar (1 parada - 15 minutos)</li>
-                <li>• Camina 500 metros hasta nuestra academia</li>
+                <li>• Línea 9 dirección Paco de Lucía</li>
+                <li>• Bajas en Barrio del Pilar: <strong>1 parada, unos 2 minutos</strong></li>
+                <li>• 500 metros a pie por Av. de El Ferrol</li>
               </ul>
-              <p className="text-emerald-600 font-medium mt-4">Tiempo total metro: 15 minutos</p>
+              <p className="text-emerald-600 font-medium mt-4">Puerta a puerta: unos 12 minutos</p>
             </div>
           </div>
         </div>
@@ -387,26 +416,23 @@ export default function LaVentillaPage() {
           <h2 className="t-h2 text-zinc-900 mb-12 text-center">
             Lo que dicen nuestros estudiantes...
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            {[
-              { name: "Sandra Moreno", text: "Increíble academia. Mis hijos llevan un año y el avance es impresionante. Profesores nativos muy dedicados." },
-              { name: "Fernando Torres", text: "Empecé de cero y en menos de un año ya puedo mantener conversaciones en inglés. Muy contento con Impulse." },
-              { name: "Cristina R.", text: "La relación calidad-precio es inmejorable. Grupos pequeños, material incluido y resultados garantizados." }
-            ].map((testimonial, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {localReviews.map((review, idx) => (
               <div key={idx} className="card p-6">
                 <div className="flex gap-1 mb-3">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
-                <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
-                <p className="text-zinc-900 font-semibold">{testimonial.name}</p>
+                <p className="text-zinc-700 mb-4 italic">"{review.text}"</p>
+                <p className="text-zinc-900 font-semibold">{review.name}</p>
+                <p className="text-zinc-500 text-sm">{review.role}</p>
               </div>
             ))}
           </div>
           <div className="text-center">
             <p className="text-zinc-600 mb-6">
-              Más de 150 familias de La Ventilla confían en nosotros. Lee sus experiencias reales en Google.
+              Son dos de las <strong>180 reseñas</strong> que tenemos en Google. Las 180 son de 5 estrellas: ni una sola de 4, 3, 2 o 1. Puedes leerlas todas antes de escribirnos.
             </p>
             <a
               href={NAP.gbpUrl}
@@ -415,9 +441,115 @@ export default function LaVentillaPage() {
               className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               <Star className="w-5 h-5 fill-amber-400 text-amber-400" />
-              174+ reseñas reales
+              Ver las 180 reseñas en Google
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Quién da la clase — señal E-E-A-T: persona con nombre, no "nuestro equipo" */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="t-h2 text-zinc-900 mb-8">
+            Quién te va a dar clase
+          </h2>
+          <div className="grid md:grid-cols-[320px_1fr] gap-8 items-start">
+            {/* Contenedor vertical: la foto es retrato, así que va en caja retrato. */}
+            <div className="aspect-[3/4] overflow-hidden rounded-xl bg-zinc-100">
+              <img
+                src="/images/academy/jp-director-estudios.webp"
+                alt="JP, director de estudios de Impulse English Academy, en el aula London de la academia de Barrio del Pilar"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                width={600}
+                height={800}
+              />
+            </div>
+            <div>
+              <h3 className="font-bold text-xl text-zinc-900 mb-1">JP</h3>
+              <p className="text-accent-blue font-medium mb-4">Director de estudios y cofundador</p>
+              <p className="text-zinc-700 leading-relaxed mb-4">
+                JP lleva <strong>más de 10 años enseñando inglés</strong> y vivió 10 años en Irlanda antes de instalarse en Madrid. Es quien dirige el día a día académico del centro, quien hace tu <strong>prueba de nivel gratuita de 25 minutos</strong> y quien contesta el WhatsApp: cuando escribes al 604 910 611, te responde él.
+              </p>
+              <p className="text-zinc-700 leading-relaxed mb-4">
+                Está especializado en <strong>exámenes Cambridge</strong> y en adquisición temprana del idioma, y aparece por su nombre en buena parte de nuestras 180 reseñas. Junto a Danny Fitzpatrick, cofundador, dan clase en persona: no somos una franquicia con profesores rotatorios.
+              </p>
+              <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
+                Conoce al equipo completo <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Caso real — resultado concreto, con nombre, duración y desenlace verificable */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-8">
+            Un caso real: Daniel de la Peña
+          </h2>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div>
+                <p className="text-3xl font-bold text-accent-blue">18 meses</p>
+                <p className="text-zinc-600 text-sm">con nosotros</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold text-accent-blue">Su objetivo</p>
+                <p className="text-zinc-600 text-sm">trabajar en un país de habla inglesa</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold text-emerald-600">Conseguido</p>
+                <p className="text-zinc-600 text-sm">hoy es profesor y da inglés en primaria a jornada completa</p>
+              </div>
+            </div>
+            <p className="text-zinc-700 leading-relaxed mb-4">
+              Daniel llegó con un objetivo concreto: acceder a oportunidades laborales en el extranjero, en países de habla inglesa. Estuvo con nosotros cerca de año y medio. En sus palabras, <em>"es algo que conseguí, así que desde ese punto de vista cumplió con mis expectativas"</em>.
+            </p>
+            <p className="text-zinc-700 leading-relaxed mb-6">
+              Lo que más valoró no fue el temario: <em>"cuando acudimos a una academia es encontrar un trato personalizado y sobre todo profesionalidad y compromiso para con tu proceso de aprendizaje y tu situación de partida"</em>. Hoy es profesor cualificado y enseña inglés en primaria a jornada completa.
+            </p>
+            <a
+              href="/testimonios/"
+              className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1"
+            >
+              Ver el vídeo de Daniel y otros casos <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Precios — visibles en página, no solo en schema */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-4">
+            Cuánto cuesta, sin letra pequeña
+          </h2>
+          <p className="text-zinc-600 mb-8">
+            Estos son los precios reales. No hay cuota de mantenimiento, ni permanencia, ni coste de examen escondido.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b-2 border-zinc-200">
+                  <th className="py-3 pr-4 font-display text-sm uppercase tracking-wider text-zinc-500">Curso</th>
+                  <th className="py-3 pr-4 font-display text-sm uppercase tracking-wider text-zinc-500">Edad</th>
+                  <th className="py-3 font-display text-sm uppercase tracking-wider text-zinc-500">Precio</th>
+                </tr>
+              </thead>
+              <tbody className="text-zinc-700">
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Infantil</td><td className="py-3 pr-4">2-5 años</td><td className="py-3">desde 64 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Primaria</td><td className="py-3 pr-4">6-12 años</td><td className="py-3">83 €/mes · 239 €/trimestre</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Secundaria</td><td className="py-3 pr-4">13-17 años</td><td className="py-3">desde 87 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Adultos</td><td className="py-3 pr-4">todos los niveles</td><td className="py-3">94 €/mes</td></tr>
+                <tr className="border-b border-zinc-100"><td className="py-3 pr-4 font-medium">Clases particulares</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+                <tr><td className="py-3 pr-4 font-medium">Clases online</td><td className="py-3 pr-4">todas las edades</td><td className="py-3">29 €/hora</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-zinc-600 text-sm mt-6">
+            Aparte: <strong>matrícula 45 €</strong> y <strong>libro hasta 40 €</strong>, una sola vez. La cuota incluye las clases semanales, los simulacros de examen Cambridge, el seguimiento personalizado y los recursos online. Hay descuento por pago trimestral y por familias con más de un hijo matriculado. Las tasas del examen oficial de Cambridge o Linguaskill van aparte y las fija Cambridge, no nosotros.
+          </p>
         </div>
       </section>
 
@@ -534,7 +666,7 @@ export default function LaVentillaPage() {
             ¿Vives en La Ventilla?
           </h2>
           <p className="text-white/70 mb-8">
-            Estamos a solo 15 minutos. Ven a conocernos y prueba una clase gratis.
+            Estamos a una parada de metro. Reserva tu prueba de nivel gratuita de 25 minutos con JP y sal sabiendo tu nivel exacto y qué grupo te toca.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
