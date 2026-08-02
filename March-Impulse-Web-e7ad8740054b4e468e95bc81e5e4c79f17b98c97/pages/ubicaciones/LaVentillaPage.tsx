@@ -156,72 +156,50 @@ export default function LaVentillaPage() {
       </section>
 
       {/* Local Intro Section */}
-      <section className="section-tight px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          {/* Answer capsule: 53 palabras, autocontenida, con cifra, lugar y CTA.
-              Va en párrafo normal, sin caja ni lista: es el bloque que extraen
-              los buscadores generativos y tiene que poder leerse en voz alta. */}
-          <p className="text-xl md:text-2xl text-zinc-800 leading-relaxed font-light">
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          {/* Mismo sistema que /prueba-de-nivel-ingles/: cabecera eyebrow +
+              t-h2 + .rule, lede en t-lede, y el patron de tarjetas numeradas de
+              "Como funciona". Sin reveal-on-scroll: esa pagina no lleva ninguno.
+              El answer capsule es un <p> normal, sin caja ni lista, porque es el
+              bloque que extraen los buscadores generativos. */}
+          <div className="max-w-2xl mb-10">
+            <span className="eyebrow mb-4">La Ventilla</span>
+            <h2 className="t-h2 text-zinc-900 mb-5">Cerca de casa, sin transbordos</h2>
+            <div className="rule"></div>
+          </div>
+
+          <p className="t-lede text-zinc-700 max-w-3xl mb-12">
             ¿Buscas academia de inglés cerca de La Ventilla? Impulse English Academy está{' '}
-            <strong className="font-semibold text-zinc-900">a una parada en la línea 9</strong>: Ventilla a Barrio del Pilar, unos 2 minutos.
-            Centro oficial Cambridge desde 2022, grupos de 7 a 10 alumnos y clases desde 64 €/mes.
-            Reserva tu prueba de nivel gratuita con JP:{' '}
+            <strong className="text-zinc-900 font-semibold">a una parada en la línea 9</strong>:
+            Ventilla a Barrio del Pilar, unos 2 minutos. Centro oficial Cambridge desde 2022,
+            grupos de 7 a 10 alumnos y clases desde 64 €/mes. Reserva tu prueba de nivel gratuita
+            con JP:{' '}
             <a href={NAP.phoneTel} className="text-accent-blue font-semibold hover:underline whitespace-nowrap">604 910 611</a>.
           </p>
 
-          <hr className="my-10 border-zinc-200" />
-
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Ruta */}
-            <div>
-              <h3 className="font-display text-xs uppercase tracking-[0.18em] text-zinc-500 mb-4">
-                La ruta, parada a parada
-              </h3>
-              <ol className="space-y-3 mb-5">
-                {[
-                  { stop: "Herrera Oria", note: null },
-                  { stop: "Barrio del Pilar", note: "aquí te bajas" },
-                  { stop: "Ventilla", note: "tu parada" }
-                ].map((s, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className={`mt-1.5 w-2.5 h-2.5 rounded-full shrink-0 ${s.note ? 'bg-accent-blue' : 'bg-zinc-300'}`} />
-                    <span className="text-zinc-700">
-                      <strong className="font-semibold">{s.stop}</strong>
-                      {s.note && <span className="text-accent-blue text-sm"> · {s.note}</span>}
-                    </span>
-                  </li>
-                ))}
-              </ol>
-              <p className="text-zinc-600 leading-relaxed">
-                Son estaciones vecinas en la <strong>línea 9</strong>. Sin transbordos y sin rodeos:
-                bajas al andén en <strong>Calle Mártires de la Ventilla</strong>, una parada, y
-                500 metros a pie por <strong>Av. de El Ferrol</strong> hasta el número 22.
-              </p>
-            </div>
-
-            {/* Quién viene */}
-            <div>
-              <h3 className="font-display text-xs uppercase tracking-[0.18em] text-zinc-500 mb-4">
-                Quién viene desde La Ventilla
-              </h3>
-              <p className="text-zinc-600 leading-relaxed mb-4">
-                La Ventilla pertenece al distrito de <strong>Tetuán</strong>. Damos clase a familias
-                de toda la zona, y estos alumnos llegan andando o en una parada de metro:
-              </p>
-              <ul className="space-y-2 mb-5">
-                {["CP Juan Ramón Jiménez", "IES Jaime Vera", "CP Doctor Federico Rubio"].map((c, i) => (
-                  <li key={i} className="flex items-center gap-2.5 text-zinc-700">
-                    <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0" />
-                    {c}
-                  </li>
-                ))}
-              </ul>
-              <p className="text-zinc-600 leading-relaxed">
-                Abrimos hasta las <strong>21:30</strong> de lunes a jueves, precisamente para que
-                entre después del colegio o del trabajo.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { n: 1, title: "Metro Ventilla", body: "Coges la línea 9 dirección Paco de Lucía. Tu andén está en Calle Mártires de la Ventilla." },
+              { n: 2, title: "Una parada", body: "Ventilla y Barrio del Pilar son estaciones vecinas. Unos 2 minutos, sin transbordos ni rodeos." },
+              { n: 3, title: "500 metros a pie", body: "Sales en Barrio del Pilar y bajas por Av. de El Ferrol hasta el número 22, junto a La Vaguada." }
+            ].map((step) => (
+              <div key={step.n} className="card p-7">
+                <span className="inline-flex w-9 h-9 rounded-full bg-brand-red text-white items-center justify-center font-display font-bold mb-5">
+                  {step.n}
+                </span>
+                <h3 className="t-h3 text-zinc-900 mb-2">{step.title}</h3>
+                <p className="t-small text-zinc-600">{step.body}</p>
+              </div>
+            ))}
           </div>
+
+          <p className="t-small text-zinc-500 mt-8 flex items-start gap-2">
+            <MapPin className="w-4 h-4 text-accent-blue flex-shrink-0 mt-0.5" />
+            La Ventilla pertenece al distrito de Tetuán. Alumnos del CP Juan Ramón Jiménez, del
+            IES Jaime Vera y del CP Doctor Federico Rubio llegan andando o en una parada de metro.
+            Abrimos hasta las 21:30 de lunes a jueves, para que entre después del colegio o del trabajo.
+          </p>
         </div>
       </section>
 
