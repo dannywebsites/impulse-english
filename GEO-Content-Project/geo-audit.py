@@ -17,6 +17,19 @@ import re, os, sys, json, glob, itertools, argparse, unicodedata
 DEFAULT_DIR = ("/Users/danny/Desktop/backup website Impuls Englisch /"
                "March-Impulse-Web-e7ad8740054b4e468e95bc81e5e4c79f17b98c97")
 
+HERE = os.path.dirname(os.path.abspath(__file__))
+# Ground truth for the review count, pulled live from the Google profile by
+# reviews/pull_reviews.py. The shipped AggregateRating is scored against this
+# rather than against a number typed into the audit, so the check can't go stale.
+REVIEWS_JSON = os.path.join(HERE, "reviews", "reviews.json")
+
+
+def live_review_count():
+    try:
+        return json.load(open(REVIEWS_JSON))["meta"]["reviews_count"]
+    except Exception:
+        return None
+
 ELEMENTS = [
     ("CONTENT UNIQUENESS", "Title Tag"),
     ("CONTENT UNIQUENESS", "H1 Heading"),
@@ -81,12 +94,46 @@ def find_astro_for(page_name, root):
     return None
 
 
-def score_title(astro_src, all_titles, title):
+# Mirrors utils/buildPageTitle.ts. The .astro `title=` prop is a THEME, not the
+# finished title: unless the page passes fullTitle, BaseLayout appends the brand
+# chain and hard-truncates to 70 chars. Scoring the prop instead of the composed
+# string is how four pages scored 9-10 here while shipping titles that read
+# "Inglés a una parada de La Ventilla | Camb | Impulse English La Vaguada".
+CORE_BRAND = "Impulse English Academy La Vaguada"
+BARRIO_SUFFIX = "Barrio del Pilar"
+SHORT_BRAND = "Impulse English La Vaguada"
+SEP = " | "
+
+
+def compose_title(theme, full_title):
+    """Return (the title Google actually sees, whether the theme got cut)."""
+    if full_title:
+        return theme, False
+    barrio_bonus = theme + SEP + CORE_BRAND + SEP + BARRIO_SUFFIX
+    standard = theme + SEP + CORE_BRAND
+    emergency = theme + SEP + SHORT_BRAND
+    if len(theme) < 15 and len(barrio_bonus) <= 70:
+        return barrio_bonus, False
+    if len(standard) <= 70:
+        return standard, False
+    if len(emergency) <= 70:
+        return emergency, False
+    max_theme = 70 - len(SEP) - len(SHORT_BRAND)
+    return theme[:max_theme] + SEP + SHORT_BRAND, True
+
+
+def score_title(astro_src, all_titles, title, truncated=False, theme=None):
+    """Scored against `title` — the composed string Google renders, not the prop."""
     if not title:
         return 0, "no title found"
+    if truncated:
+        # Chopped mid-word is worse than generic: it ships visibly broken.
+        return 2, "theme too long, BaseLayout truncated it to %r" % title
     t = title.lower()
-    # Pure template "[service] [barrio]" with nothing else.
-    generic = bool(re.fullmatch(r"academia (de )?ingl[eé]s [\w\s]+", t.strip()))
+    # Pure template "[service] [barrio]" with nothing else. Judged on the theme,
+    # since the appended brand chain would mask it in the composed title.
+    probe = (theme if theme is not None else title).lower().strip()
+    generic = bool(re.fullmatch(r"academia (de )?ingl[eé]s [\w\s]+", probe))
     has_brand = "impulse" in t
     has_differentiator = bool(re.search(
         r"cambridge|100%|gratis|gratuita|\d+\s?€|grupos reducidos|desde|min|oficial", t))
@@ -98,6 +145,7 @@ def score_title(astro_src, all_titles, title):
     s = 4
     if has_differentiator: s += 3
     if has_brand: s += 2
+    # The book's rule: <=60 chars or Google truncates it in the SERP.
     if len(title) <= 60: s += 1
     return min(s, 10), f"len={len(title)} brand={has_brand} diff={has_differentiator}"
 
@@ -306,7 +354,15 @@ def resolve_schema_helper(root):
             if depth <= 0 and len(body) > 1:
                 break
     b = "\n".join(body)
+    # The rating VALUES live in napData, not in the helper that emits the node.
+    nap = os.path.join(root, "utils/napData.ts")
+    shipped_count = None
+    if os.path.exists(nap):
+        m = re.search(r"reviewCount:\s*(\d+)", read(nap))
+        if m:
+            shipped_count = int(m.group(1))
     return {
+        "reviewCount": shipped_count,
         "service": bool(re.search(r'"@type":\s*"Service"', b)),
         "offers": bool(re.search(r'"@type":\s*"Offer"', b)),
         "prices": sorted(set(re.findall(r'price:\s*"(\d+)"', b))),
@@ -338,9 +394,17 @@ def score_schema(astro_src, kind, helper):
             return 0, "no FAQPage schema"
         return 9, "generateFAQSchema wired"
     if kind == "rating":
-        if calls_location and helper.get("rating"):
-            return 8, "AggregateRating via helper (reviewCount from napData — currently 178, must be 180)"
-        return 0, "no AggregateRating on page"
+        if not (calls_location and helper.get("rating")):
+            return 0, "no AggregateRating on page"
+        shipped, live = helper.get("reviewCount"), live_review_count()
+        if live is None:
+            return 8, ("AggregateRating via helper, reviewCount=%s — no reviews.json "
+                       "to check it against (run reviews/pull_reviews.py)" % shipped)
+        if shipped == live:
+            return 10, ("AggregateRating via helper, reviewCount=%d — in sync with the "
+                        "live Google profile" % shipped)
+        return 6, ("AggregateRating reviewCount=%s but the profile has %d — re-run "
+                   "reviews/pull_reviews.py and update napData" % (shipped, live))
     return 0, "?"
 
 
@@ -390,11 +454,14 @@ def main():
     astros = {f: find_astro_for(f, root) for f in files}
     astro_srcs = {f: (read(a) if a else None) for f, a in astros.items()}
 
-    titles, h1s = {}, {}
+    titles, themes, truncs, h1s = {}, {}, {}, {}
     for f in files:
         a = astro_srcs[f]
         m = re.search(r'title="([^"]+)"', a) if a else None
-        titles[f] = m.group(1) if m else None
+        theme = m.group(1) if m else None
+        themes[f] = theme
+        full = bool(a and re.search(r"fullTitle(?!\s*=\s*\{?\s*false)", a))
+        titles[f], truncs[f] = compose_title(theme, full) if theme else (None, False)
         m2 = re.search(r"<h1[^>]*>(.*?)</h1>", srcs[f], re.S)
         h1s[f] = strip_code(m2.group(1)).strip() if m2 else None
 
@@ -402,7 +469,7 @@ def main():
     for f in files:
         src, text, a = srcs[f], texts[f], astro_srcs[f]
         row = [
-            score_title(a, list(titles.values()), titles[f]),
+            score_title(a, list(titles.values()), titles[f], truncs[f], themes[f]),
             score_h1(text, h1s[f], list(h1s.values()), barrio_of(f)),
             score_intro(text),
             score_uniqueness(f, sets),
