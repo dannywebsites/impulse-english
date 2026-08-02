@@ -5,6 +5,121 @@ Every SEO decision is logged here, grounded in [`SEO-Master-Class-Reference.md`]
 
 ---
 
+## 2026-08-02 (late) — Five barrio pages were shipping truncated title tags. Fixed, and the audit now scores the composed title.
+
+**Context:** finishing Plaza Castilla's meta (Title Tag scored 3/10, page grade B) surfaced a
+bigger defect. `BaseLayout` treats the `.astro` `title=` prop as a **theme**, not a finished title:
+`utils/buildPageTitle.ts` appends the brand chain and, past 70 chars, hard-truncates the theme to
+41. Five location pages were over that line, so production was serving titles cut mid-word:
+
+```
+Inglés de negocios en Cuatro Torres | des | Impulse English La Vaguada
+Inglés cerca de La Paz | Cambridge desde  | Impulse English La Vaguada
+Inglés a una parada de La Ventilla | Camb | Impulse English La Vaguada
+Inglés a 8 min de Tetuán | Bus 147 direct | Impulse English La Vaguada
+```
+
+`geo-audit.py` scored four of those **9–10/10** because it read the source prop, never the composed
+string. Confirmed against `dist/`, not inferred.
+
+### Decision 1 — Author the full title on every location page (`fullTitle={true}`), capped at 60 chars.
+**Why (book §3 on-page cheat-sheet):** the book is prescriptive — title tag **≤55–60 chars** to
+avoid truncation. Letting a helper append a 34-char brand chain to an already-complete title
+guarantees a breach. `fullTitle={true}` was already the in-repo pattern on Barrio del Pilar and
+La Vaguada; this extends it to the other five rather than inventing a mechanism. Brand shortens to
+"| Impulse" — the same trade those two pages already made, and length beats brand-chain length here.
+
+| Page | Shipped now | Chars |
+|---|---|---|
+| Cuatro Torres | `Inglés de negocios en Cuatro Torres \| desde 29 €/h \| Impulse` | 60 |
+| La Paz | `Inglés cerca de La Paz \| Cambridge desde 64 €/mes \| Impulse` | 59 |
+| La Ventilla | `Inglés a una parada de La Ventilla \| desde 64 € \| Impulse` | 57 |
+| Plaza Castilla | `Inglés a 2 paradas de Plaza Castilla \| desde 64 € \| Impulse` | 59 |
+| Tetuán | `Inglés a 8 min de Tetuán \| Bus 147 directo \| Impulse` | 52 |
+
+Each keeps a real, page-verified differentiator (transport fact or published price) ahead of the
+brand, per the book's "mine competitor SERPs for recurring modifiers" note. Titles were not
+otherwise re-themed — the book's "don't change a title more than once a quarter" rule applies, and
+these are defect repairs, not experiments.
+
+### Decision 2 — The audit now models `buildPageTitle` and hard-fails a truncated title (2/10).
+**Why:** an audit that scores a string the user never sees will keep certifying broken pages.
+`compose_title()` in `geo-audit.py` mirrors the TS helper and was validated to reproduce all ten
+shipped `<title>` tags byte-for-byte before any page was edited.
+
+### Decision 3 — Plaza Castilla's meta description rewritten for accuracy, not just for score.
+It claimed **"A 15 min en Metro Línea 9"**. The page's own copy says 12 min on the metro plus 3 on
+foot; 15 is the door-to-door total, not the metro leg. Now: *"a dos paradas de Plaza de Castilla por
+la línea 9, sin transbordos… grupos de 7 a 10 alumnos, desde 64 €/mes"* (154 chars, inside the
+book's 155–160 ceiling).
+
+### Fixed alongside — AggregateRating scored 8/10 on all ten pages from a stale hardcode.
+The audit carried the literal note *"reviewCount from napData — currently 178, must be 180"*.
+`napData.ts` already said 180. The scorer now reads `napData.reviewCount` and compares it against
+`reviews/reviews.json` (`meta.reviews_count`, pulled live from the profile), so it tracks reality
+instead of a comment. All ten pages 8 → 10.
+
+**Result:** Plaza Castilla 89 → **95 (grade A)**; La Ventilla 93 → 94; site-wide baseline 83 → **85**.
+Gates: `astro check` 0 errors · build 146 pages · quote gate 0 fail in source and dist.
+
+**Still open:** Mirasierra, Montecarmelo and Peñagrande keep generic `Academia Inglés [barrio]`
+titles (3/10) — they are three of the six never-GEO'd pages and get their titles in that rebuild.
+
+**Validation plan:** GSC CTR on the five URLs. Book §5 — low CTR is the title-tag/meta signal, and
+four of these were previously unreadable in the SERP, so CTR is the metric that should move first.
+Compare the 28 days after the deploy against the 28 before, seasonally caveated (Aug trough).
+
+---
+
+## 2026-08-02 — Local backlink target list for Madrid Norte (off-page, book-gap territory)
+
+**Context:** Danny asked which local pages and businesses in Barrio del Pilar / Madrid Norte offer
+the highest-value backlinks. Research file:
+`impulse-seo-ops/data/madrid-norte-backlink-targets-2026-08-02.md`. Data: DataForSEO backlinks
+(rank 0–100, spam score, referring main domains) + live SERP + direct page verification.
+
+**Book position (§Prioritization Pyramid):** backlinks are the **4th and last** layer — "the cement",
+below content, keywords and technical. The book gives no off-page methodology and no GBP/citations
+chapter, so this work sits in the documented **book gap** and is scored on external local-SEO
+principles (relevance × proximity × attainability), not on a book rule. Logged here for the record,
+not because the playbook prescribed it.
+
+### Decision 1 — Score targets on relevance × attainability, not raw authority.
+**Why:** a rank-73 national directory contributes less to a map-pack query than a rank-37 district
+newspaper that names the barrio. Proximity and topical fit dominate for local intent. The one
+book-adjacent principle applied is §1's landmine test, reused as a **spam screen**: `newslandidiomas.es`
+shows rank **50** but its profile is PBN/hacked garbage (betting and adult domains), proving the
+headline number alone is not decision-grade.
+
+### Decision 2 — `empresasdelbarrio.com` is the #1 target; promoted from "Phase 1, cheap".
+**Why:** verified live — it ranks **#11 organic for "academia de ingles barrio del pilar"**,
+lists **Junior English and CECP but not Impulse**, links out with **no `rel` attribute** (dofollow),
+and scores **spam 11**. One listing yields a dofollow local link, referral traffic from a page
+already on page 1 for the money term, and closes a gap two direct rivals are using. Highest-value
+single action on the list.
+
+### Decision 3 — Treat the district link graph as an uncontested land-grab, not a grind.
+**Why:** `impulse-english.es` holds **rank 11, 8 referring main domains, zero from any Madrid
+business or institution**. But the local-pack leader `juniorenglish.net` (rank 16, 304 reviews)
+holds only **four** genuine local links, and no rival has a district link moat. ~8–12 real local
+links would lead the district outright. Sized as a Q4-2026 target.
+
+### Decision 4 — Drop `barriodelpilar.com` from the paid plan.
+**Why:** verified abandoned — newest article **2 Jan 2020**, nothing in six years, no advertising
+page, spam 44, despite a 2026 copyright footer. The 2026-07-24 plan listed it as a paid
+sponsored-content target. Corrected there.
+
+### Decision 5 — No disavow for the two spam-70 links.
+**Why:** `m98ufa.com` (spam 75) and `plumeriamarketing.com` (spam 70) hit `juniorenglish.net` on the
+same days (7–8 Jul 2026) — an indiscriminate scraper network spraying local academies, not targeted
+negative SEO. Google discounts these automatically; disavowing invites more risk than it removes.
+
+**Validation plan:** monthly `backlinks_summary` on `impulse-english.es`, tracking **referring main
+domains with spam ≤40**. Baseline 2026-08-02: **8 total, 0 local.** Fold into the monthly report.
+Judge no earlier than ~8 weeks after links land.
+
+---
+
 ## 2026-08-02 — Annual year roll 2025 → 2026, plus the 2026 course-price refresh
 
 **Context:** the site still read as a 2025 site — 649 source occurrences of "2025", ~620 of them
