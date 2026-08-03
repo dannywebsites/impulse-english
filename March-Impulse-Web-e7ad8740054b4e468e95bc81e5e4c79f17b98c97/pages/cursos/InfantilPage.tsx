@@ -28,12 +28,28 @@ export const courseSchema = generateCourseSchema({
 // FAQs for Infantil page
 export const faqs: FAQItem[] = [
   {
+    question: "¿Dónde estáis y cómo llego con el carrito desde el metro?",
+    answer: "Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) está a 3 minutos andando por acera llana."
+  },
+  {
+    question: "¿Cuánto se tarda desde La Vaguada con niños pequeños?",
+    answer: "Desde el centro comercial La Vaguada es cosa de 1 minuto, y desde el resto de Barrio del Pilar, menos de 5. Muchas familias encadenan la clase con la compra."
+  },
+  {
+    question: "¿De qué barrios son las familias de infantil?",
+    answer: "Sobre todo de Barrio del Pilar, La Vaguada, Peñagrande, Valdezarza y Mirasierra, que son las zonas desde las que se llega andando o en una parada de metro."
+  },
+  {
+    question: "¿Puedo aparcar cerca para dejar y recoger?",
+    answer: "El parking del centro comercial La Vaguada está a 1 minuto y es la opción que usan casi todas las familias que vienen en coche."
+  },
+  {
     question: "¿Es buena idea empezar inglés a los 2 años?",
-    answer: "Sí, a esta edad el aprendizaje es natural y sin bloqueo. En clase trabajamos rutinas, canciones, juego guiado y comprensión oral para que el niño se familiarice con el idioma con confianza. El objetivo no es \"memorizar\", sino crear una relación positiva y constante con el inglés."
+    answer: "A esta edad el aprendizaje es natural y sin bloqueo. En clase trabajamos rutinas, canciones, juego guiado y comprensión oral para que el niño se familiarice con el idioma con confianza. El objetivo no es \"memorizar\", sino crear una relación positiva y constante con el inglés."
   },
   {
     question: "¿Mi hijo es tímido, funcionará?",
-    answer: "Sí. En grupos reducidos y con una metodología lúdica, los niños se sueltan poco a poco. No forzamos a \"hablar\" desde el minuto uno: primero escuchan, imitan y participan con gestos y juego. La confianza aparece cuando el entorno es seguro y repetible."
+    answer: "En grupos reducidos y con una metodología lúdica, los niños se sueltan poco a poco. No forzamos a \"hablar\" desde el minuto uno: primero escuchan, imitan y participan con gestos y juego. La confianza aparece cuando el entorno es seguro y repetible."
   },
   {
     question: "¿Necesito quedarme en clase?",
@@ -49,7 +65,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay material para practicar en casa?",
-    answer: "Sí. Usamos canciones y recursos que también pueden repetirse en casa sin convertirlo en deberes. La idea es reforzar lo visto en clase con un enfoque ligero: música, frases cortas y rutinas. Te damos pautas para acompañar el proceso sin presión."
+    answer: "Usamos canciones y recursos que también pueden repetirse en casa sin convertirlo en deberes. La idea es reforzar lo visto en clase con un enfoque ligero: música, frases cortas y rutinas. Te damos pautas para acompañar el proceso sin presión."
   },
   {
     question: "¿Qué pasa si un niño no se adapta rápido?",
@@ -57,7 +73,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Puedo probar antes de apuntarme?",
-    answer: "Sí. Ofrecemos clase de prueba gratuita para que tu hijo viva una sesión real y tú veas el método en acción. Te explicamos el grupo adecuado por edad y nivel de exposición previa. Sin compromiso."
+    answer: "Ofrecemos clase de prueba gratuita para que tu hijo viva una sesión real y tú veas el método en acción. Te explicamos el grupo adecuado por edad y nivel de exposición previa. Sin compromiso."
   },
   // Kids Early Childhood PAAs (10)
   {
@@ -66,11 +82,11 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Mi hijo confunde dos idiomas si aprende inglés y español?",
-    answer: "No. Los niños bilingües no se confunden; el cerebro maneja naturalmente dos códigos lingüísticos. Es normal una fase inicial de mezcla de palabras (code-switching), pero se resuelve naturalmente antes de los 4 años. Los bilingües tienen ventajas cognitivas: flexibilidad mental, creatividad, facilidad para aprender idiomas."
+    answer: "Los niños bilingües no se confunden; el cerebro maneja naturalmente dos códigos lingüísticos. Es normal una fase inicial de mezcla de palabras (code-switching), pero se resuelve naturalmente antes de los 4 años. Los bilingües tienen ventajas cognitivas: flexibilidad mental, creatividad, facilidad para aprender idiomas."
   },
   {
     question: "¿Los niños pequeños aprenden pronunciación mejor?",
-    answer: "Sí. Hasta los 7-8 años, el sistema auditivo es plástico y capta sonidos nativos con facilidad. Después, es más costoso. Los niños en Infantil desarrollan acento nativo en inglés con exposición regular. Aprovecha esta ventana: 2-5 años es oro puro para pronunciación."
+    answer: "Hasta los 7-8 años, el sistema auditivo es plástico y capta sonidos nativos con facilidad. Después, es más costoso. Los niños en Infantil desarrollan acento nativo en inglés con exposición regular. Aprovecha esta ventana: 2-5 años es oro puro para pronunciación."
   },
   {
     question: "¿Mi hijo dirá palabras en inglés rápido?",
@@ -78,7 +94,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Canciones y juegos suficientes para aprender?",
-    answer: "Sí, para Infantil (2-5) canciones y juegos son el vehículo perfecto. Los niños aprenden por imitación, repetición y asociación emocional. Una canción repetida 10 veces = vocabulario, ritmo, pronunciación. El juego = contexto donde las palabras cobran significado."
+    answer: "Para Infantil (2-5) canciones y juegos son el vehículo perfecto. Los niños aprenden por imitación, repetición y asociación emocional. Una canción repetida 10 veces = vocabulario, ritmo, pronunciación. El juego = contexto donde las palabras cobran significado."
   },
   {
     question: "¿Debo hablar inglés en casa si no lo domino?",
@@ -90,7 +106,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Se olvida si dejamos de ir a clase?",
-    answer: "Sí, el vocabulario pasivo se olvida sin práctica. Es como cualquier habilidad: discontinuidad = retroceso. Ideal: continuidad en clase + refuerzo mínimo en casa (una canción semanal). Pero una pausa de 2-3 meses no borra todo; vuelven rápido si retoman."
+    answer: "El vocabulario pasivo se olvida sin práctica. Es como cualquier habilidad: discontinuidad = retroceso. Ideal: continuidad en clase + refuerzo mínimo en casa (una canción semanal). Pero una pausa de 2-3 meses no borra todo; vuelven rápido si retoman."
   },
   {
     question: "¿Great Little People mejor que otros métodos?",
@@ -98,7 +114,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Niños 2 años vs 5 años en la misma clase?",
-    answer: "No, dividimos por edad/nivel. 2-3 años: focus en rutinas, gestos, vocabulario pasivo. 4-5 años: frases, conversación simple, pre-lectoescritura en inglés. Aunque la metodología es la misma, el contenido y ritmo se adaptan. Grupos por edad = máxima efectividad."
+    answer: "Dividimos por edad/nivel. 2-3 años: focus en rutinas, gestos, vocabulario pasivo. 4-5 años: frases, conversación simple, pre-lectoescritura en inglés. Aunque la metodología es la misma, el contenido y ritmo se adaptan. Grupos por edad = máxima efectividad."
   },
   {
     question: "¿A qué edad puede un niño empezar clases de inglés en academia?",
@@ -114,7 +130,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Las clases de inglés para bebés realmente funcionan?",
-    answer: "Sí, la neurociencia confirma que entre los 0 y 6 años el cerebro está en su momento óptimo para adquirir idiomas. La exposición temprana al inglés a través de canciones, juegos y rutinas crea conexiones neuronales que facilitan el aprendizaje futuro. No se busca que el bebé hable, sino que absorba sonidos, ritmos y patrones del idioma."
+    answer: "La neurociencia confirma que entre los 0 y 6 años el cerebro está en su momento óptimo para adquirir idiomas. La exposición temprana al inglés a través de canciones, juegos y rutinas crea conexiones neuronales que facilitan el aprendizaje futuro. No se busca que el bebé hable, sino que absorba sonidos, ritmos y patrones del idioma."
   },
   {
     question: "¿Cómo saber si una academia de inglés es buena para mi hijo pequeño?",

@@ -25,6 +25,22 @@ export const courseSchema = generateCourseSchema({
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿Dónde está la academia y cómo llego en metro?",
+    answer: "Estamos en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) queda a 3 minutos andando, y Peñagrande y Herrera Oria (Línea 7) también dan acceso directo."
+  },
+  {
+    question: "¿Cuánto se tarda desde Barrio del Pilar o La Vaguada?",
+    answer: "Desde el propio Barrio del Pilar se tarda menos de 5 minutos andando, y desde el centro comercial La Vaguada, alrededor de 1 minuto. Es el motivo por el que muchos alumnos vienen al salir del trabajo."
+  },
+  {
+    question: "¿Desde qué barrios vienen los alumnos adultos?",
+    answer: "Sobre todo de Barrio del Pilar, La Vaguada, Peñagrande, Mirasierra, Valdezarza, La Paz y Tetuán, además de quienes trabajan en Cuatro Torres o Plaza Castilla y bajan por la Línea 9."
+  },
+  {
+    question: "¿Qué autobuses paran cerca de la academia?",
+    answer: "Los buses 147, 42 y 83 paran en Ginzo de Limia - Ferrol, a 1 minuto andando de la puerta."
+  },
+  {
     question: "¿Qué nivel de inglés piden en las empresas?",
     answer: "Depende del sector, pero B2 es el nivel más habitual para entornos profesionales y C1 se valora para roles internacionales o de liderazgo. Lo importante es que puedas comunicarte con seguridad. Te orientamos para elegir preparación Cambridge o Linguaskill según tu objetivo laboral."
   },
@@ -42,11 +58,11 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay grupos por la mañana?",
-    answer: "Sí. Ofrecemos horarios de mañana y de tarde para adaptarnos a trabajo, turnos y disponibilidad. Te ubicamos según tu nivel real para que aproveches la clase desde el primer día. Si necesitas máxima flexibilidad, también puedes combinar con clases particulares."
+    answer: "Ofrecemos horarios de mañana y de tarde para adaptarnos a trabajo, turnos y disponibilidad. Te ubicamos según tu nivel real para que aproveches la clase desde el primer día. Si necesitas máxima flexibilidad, también puedes combinar con clases particulares."
   },
   {
     question: "¿Soy principiante total, me vale el curso?",
-    answer: "Sí. Empezar desde A1 es totalmente viable si el grupo es correcto y el método es práctico. Trabajamos vocabulario funcional, comprensión y estructuras esenciales para que puedas comunicarte cuanto antes. La prioridad es que ganes confianza y avances sin bloquearte."
+    answer: "Empezar desde A1 es totalmente viable si el grupo es correcto y el método es práctico. Trabajamos vocabulario funcional, comprensión y estructuras esenciales para que puedas comunicarte cuanto antes. La prioridad es que ganes confianza y avances sin bloquearte."
   },
   {
     question: "¿Trabajáis conversación o solo gramática?",
@@ -54,7 +70,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Puedo probar antes de apuntarme?",
-    answer: "Sí. Puedes hacer una prueba de nivel gratuita para ver tu punto de partida y conocer el enfoque de la academia. Sin compromiso."
+    answer: "Puedes hacer una prueba de nivel gratuita para ver tu punto de partida y conocer el enfoque de la academia. Sin compromiso."
   },
   // Career PAAs (10)
   {
@@ -79,7 +95,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Inglés mejora salario?",
-    answer: "Sí. Estadísticas muestran 15-25% aumento salarial con B2/C1. En multinacionales, C1 es requisito para promoción. Inversión en inglés (1000-1500€) se recupera en aumento salarial en menos de 1 año. ROI clarísimo."
+    answer: "Estadísticas muestran 15-25% aumento salarial con B2/C1. En multinacionales, C1 es requisito para promoción. Inversión en inglés (1000-1500€) se recupera en aumento salarial en menos de 1 año. ROI clarísimo."
   },
   {
     question: "¿Email profesional en inglés?",
@@ -87,7 +103,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Pronunciación importante para el trabajo?",
-    answer: "Sí. Pronunciación clara mejora credibilidad profesional 40%. No necesitas acento nativo, pero sí inteligibilidad en llamadas telefónicas y reuniones. Trabajamos entonación, ritmo y sonidos clave. Grabaciones de voz personalizadas como herramienta de autoevaluación."
+    answer: "Pronunciación clara mejora credibilidad profesional 40%. No necesitas acento nativo, pero sí inteligibilidad en llamadas telefónicas y reuniones. Trabajamos entonación, ritmo y sonidos clave. Grabaciones de voz personalizadas como herramienta de autoevaluación."
   },
   {
     question: "¿Aprender inglés mientras trabajo?",
@@ -103,7 +119,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Se puede aprender inglés de adulto empezando desde cero?",
-    answer: "Sí. Los adultos tienen ventajas que los niños no tienen: capacidad de análisis gramatical, motivación clara y disciplina. El aprendizaje es diferente (más analítico, menos intuitivo), pero perfectamente viable. Con 2-4 horas semanales de clase y práctica regular, es posible alcanzar un A2 en 6 meses y un B1 en 12-18 meses."
+    answer: "Los adultos tienen ventajas que los niños no tienen: capacidad de análisis gramatical, motivación clara y disciplina. El aprendizaje es diferente (más analítico, menos intuitivo), pero perfectamente viable. Con 2-4 horas semanales de clase y práctica regular, es posible alcanzar un A2 en 6 meses y un B1 en 12-18 meses."
   },
   {
     question: "¿Cuánto cuesta al mes una academia de inglés en Madrid?",

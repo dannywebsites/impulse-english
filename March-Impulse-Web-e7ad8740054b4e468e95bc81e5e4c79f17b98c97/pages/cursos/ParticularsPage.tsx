@@ -52,16 +52,32 @@ const courseGalleryImages = [
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿Dónde se dan las clases particulares presenciales?",
+    answer: "En la academia, Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. Metro Barrio del Pilar (Línea 9) está a 3 minutos andando."
+  },
+  {
+    question: "¿Cuánto se tarda en llegar desde La Vaguada?",
+    answer: "Alrededor de 1 minuto desde el centro comercial La Vaguada y menos de 5 desde el resto de Barrio del Pilar."
+  },
+  {
+    question: "¿Dais clase a domicilio en otros barrios?",
+    answer: "Las clases se dan en la academia o por videollamada. Quien no puede desplazarse desde su barrio suele elegir el formato online, con el mismo profesor y el mismo precio."
+  },
+  {
+    question: "¿Qué transporte tengo cerca de la academia?",
+    answer: "Metro Barrio del Pilar (Línea 9) a 3 minutos, Peñagrande y Herrera Oria en la Línea 7, y los buses 147, 42 y 83 en la parada Ginzo de Limia - Ferrol."
+  },
+  {
     question: "¿Qué es mejor: clases particulares o grupo reducido?",
     answer: "Depende de tu objetivo. Si necesitas rapidez, un plan muy específico o tienes horarios variables, 1:1 suele ser más eficiente. Si buscas constancia y practicar con más interacción social, un grupo reducido funciona muy bien. Te recomendamos lo mejor tras conocerte y evaluarte."
   },
   {
     question: "¿Puedo hacer clases online y presencial combinadas?",
-    answer: "Sí. Mucha gente combina ambas modalidades: presencial para speaking y dinámica, online para flexibilidad. Diseñamos un plan único para que el progreso sea continuo independientemente del formato. Lo importante es mantener consistencia y trabajar exactamente lo que necesitas mejorar."
+    answer: "Mucha gente combina ambas modalidades: presencial para speaking y dinámica, online para flexibilidad. Diseñamos un plan único para que el progreso sea continuo independientemente del formato. Lo importante es mantener consistencia y trabajar exactamente lo que necesitas mejorar."
   },
   {
     question: "¿Preparáis entrevistas de trabajo en inglés?",
-    answer: "Sí. Trabajamos respuestas, vocabulario por sector, estructura, fluidez y seguridad. Simulamos entrevistas reales, corregimos puntos clave y preparamos preguntas típicas. También trabajamos presentaciones y reuniones si lo necesitas. El objetivo es que llegues con guion, control y soltura."
+    answer: "Trabajamos respuestas, vocabulario por sector, estructura, fluidez y seguridad. Simulamos entrevistas reales, corregimos puntos clave y preparamos preguntas típicas. También trabajamos presentaciones y reuniones si lo necesitas. El objetivo es que llegues con guion, control y soltura."
   },
   {
     question: "¿También preparáis IELTS / TOEFL?",
@@ -73,7 +89,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Puedo cambiar de horario?",
-    answer: "Sí, con aviso previo. Buscamos flexibilidad real, pero siempre sujeto a disponibilidad de agenda. Si necesitas cambios frecuentes, lo estructuramos desde el principio para evitar interrupciones. Lo importante es sostener el ritmo de aprendizaje sin perder continuidad."
+    answer: "Con aviso previo. Buscamos flexibilidad real, pero siempre sujeto a disponibilidad de agenda. Si necesitas cambios frecuentes, lo estructuramos desde el principio para evitar interrupciones. Lo importante es sostener el ritmo de aprendizaje sin perder continuidad."
   },
   {
     question: "¿Qué material usáis?",

@@ -27,6 +27,22 @@ export const courseSchema = generateCourseSchema({
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿Dónde estáis y cómo llegan los chicos en metro?",
+    answer: "Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) está a 3 minutos andando, así que vienen solos sin problema."
+  },
+  {
+    question: "¿Cuánto se tarda desde los institutos del barrio?",
+    answer: "Desde los institutos de Barrio del Pilar y La Vaguada, unos 5 a 10 minutos andando, que es lo que permite encajar las clases justo después del instituto."
+  },
+  {
+    question: "¿Desde qué barrios vienen los alumnos de secundaria?",
+    answer: "Sobre todo de Barrio del Pilar, La Vaguada, Peñagrande, Mirasierra, Montecarmelo, Las Tablas y Chamartín."
+  },
+  {
+    question: "¿Hay parada de bus cerca para volver a casa?",
+    answer: "Los buses 147, 42 y 83 paran en Ginzo de Limia - Ferrol, a 1 minuto de la academia."
+  },
+  {
     question: "¿Qué nivel suele tener un alumno de 4º ESO?",
     answer: "Suele estar alrededor de B1, aunque varía mucho. Por eso hacemos prueba de nivel y observación, para no perder tiempo. Si el alumno está en B1, trazamos un plan para consolidar base y avanzar hacia B2, que es el estándar más solicitado."
   },
@@ -36,7 +52,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Preparáis EBAU/Selectividad?",
-    answer: "Sí. Integramos preparación EBAU dentro del programa: comprensión, writing, vocabulario y estructura. Cuando el alumno alcanza nivel real B2, la EBAU se vuelve mucho más manejable. Trabajamos técnica de examen y práctica guiada sin descuidar el idioma real."
+    answer: "Integramos preparación EBAU dentro del programa: comprensión, writing, vocabulario y estructura. Cuando el alumno alcanza nivel real B2, la EBAU se vuelve mucho más manejable. Trabajamos técnica de examen y práctica guiada sin descuidar el idioma real."
   },
   {
     question: "¿Cuándo es buen momento para preparar B2 First?",
@@ -48,7 +64,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Cambridge ayuda con el instituto?",
-    answer: "Sí. Mejorar nivel real (vocabulario, comprensión y gramática funcional) impacta directamente en exámenes y tareas del instituto. Además, la práctica de writing y reading para Cambridge fortalece habilidades que se usan en clase. No es \"extra\": es el mismo idioma, mejor trabajado."
+    answer: "Mejorar nivel real (vocabulario, comprensión y gramática funcional) impacta directamente en exámenes y tareas del instituto. Además, la práctica de writing y reading para Cambridge fortalece habilidades que se usan en clase. No es \"extra\": es el mismo idioma, mejor trabajado."
   },
   {
     question: "¿Qué es mejor: Cambridge o Linguaskill?",
@@ -56,7 +72,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay prueba de nivel gratuita?",
-    answer: "Sí. Hacemos prueba de nivel gratuita para ubicar al alumno en el grupo correcto y proponer el plan más realista. Sin compromiso."
+    answer: "Hacemos prueba de nivel gratuita para ubicar al alumno en el grupo correcto y proponer el plan más realista. Sin compromiso."
   },
   // Kids Secondary PAAs (7)
   {
@@ -65,7 +81,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Speaking es lo difícil en Secundaria?",
-    answer: "Sí, speaking genera nervios. Por eso empezamos con conversación grupal sobre temas seguros, después parejas, después presentaciones. La exposición repetida reduce ansiedad exponencialmente. En 8-12 semanas bien hechas, el miedo desaparece."
+    answer: "Speaking genera nervios. Por eso empezamos con conversación grupal sobre temas seguros, después parejas, después presentaciones. La exposición repetida reduce ansiedad exponencialmente. En 8-12 semanas bien hechas, el miedo desaparece."
   },
   {
     question: "¿Preparar examen sin perder motivación?",
@@ -73,7 +89,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿C1 es realista en Secundaria?",
-    answer: "Sí, para alumnos brillantes que empezaron en Primaria. Generalmente alcanzables B2 con constancia en 3-4 años, C1 en 5-6 años. No es imposible pero requiere dedicación especial y metodología intensiva. Algunos alumnos lo alcanzan, otros necesitan más tiempo."
+    answer: "Para alumnos brillantes que empezaron en Primaria. Generalmente alcanzables B2 con constancia en 3-4 años, C1 en 5-6 años. No es imposible pero requiere dedicación especial y metodología intensiva. Algunos alumnos lo alcanzan, otros necesitan más tiempo."
   },
   {
     question: "¿Smartphones ayudan o distraen?",

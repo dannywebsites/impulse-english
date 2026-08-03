@@ -62,6 +62,22 @@ const courses = [
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿En qué zona de Madrid estáis exactamente?",
+    answer: "En Av. de El Ferrol, 22, 28029 Madrid, en pleno Barrio del Pilar y junto al centro comercial La Vaguada, dentro del distrito de Fuencarral-El Pardo."
+  },
+  {
+    question: "¿Cómo se llega en metro y cuánto se tarda?",
+    answer: "Metro Barrio del Pilar (Línea 9) está a 3 minutos andando. Peñagrande y Herrera Oria, en la Línea 7, dejan también a poca distancia."
+  },
+  {
+    question: "¿Desde qué barrios vienen las familias?",
+    answer: "La mayoría vive en Barrio del Pilar, La Vaguada, Peñagrande, Mirasierra, Montecarmelo, Las Tablas, Sanchinarro, La Paz, Valdezarza, Tetuán, Chamartín y Plaza Castilla."
+  },
+  {
+    question: "¿Hay parada de autobús cerca del centro?",
+    answer: "Los autobuses 147, 42 y 83 tienen parada en Ginzo de Limia - Ferrol, a 1 minuto de la academia."
+  },
+  {
     question: "¿Qué cursos de inglés ofrecéis?",
     answer: "Ofrecemos cursos para todas las edades y niveles: Infantil (2-5 años) con metodología Great Little People, Primaria (6-12 años) con Cambridge Young Learners, Secundaria (13-17 años) con preparación Cambridge B1/B2/C1 y EBAU, Adultos (todos los niveles A1-C2), Clases Particulares presenciales u online, y Clases Online en directo por videollamada."
   },
@@ -75,7 +91,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Ofrecéis prueba de nivel gratuita?",
-    answer: "Sí, ofrecemos una prueba de nivel gratuita de 25 minutos sin compromiso. Evaluamos tu nivel actual de inglés y te recomendamos el curso más adecuado para tus objetivos. Puedes reservarla por WhatsApp, teléfono o a través de nuestra web."
+    answer: "Ofrecemos una prueba de nivel gratuita de 25 minutos sin compromiso. Evaluamos tu nivel actual de inglés y te recomendamos el curso más adecuado para tus objetivos. Puedes reservarla por WhatsApp, teléfono o a través de nuestra web."
   },
   {
     question: "¿Qué certificaciones oficiales puedo obtener?",
