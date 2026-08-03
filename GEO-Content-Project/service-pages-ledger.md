@@ -50,7 +50,7 @@ and Pricing (1.9 avg).
 | 11 | 2026-08-03 | Decisions log + reversibility-gap correction | `SEO-Decisions-Log.md`, ledger | `3bf3c04` | 93 | Six decisions logged with the book principle cited | `git revert 3bf3c04` |
 | 12 | 2026-08-03 | Merge to `main` | — | `6febe82` | 93 | `--no-ff`; branch `geo/service-pages-round-1` kept | `git revert -m 1 6febe82` |
 | 13 | 2026-08-03 | Case studies from real parent reviews (Danny's call) | `geo-audit.py`, `InfantilPage.tsx`, `PrimariaPage.tsx`, `SecundariaPage.tsx` | `1e96d13` | **93 → 96** | Case Studies 0 → **9** on primaria and secundaria, **7** on infantil; `verify_quotes.py --dist` **110 quotes, 0 FAIL**; `astro check` clean; barrios **still 96** | `git revert 1e96d13` |
-| 14 | 2026-08-03 | Raise every page to **5 testimonials** (Danny's request) | `pages/cursos/*.tsx` (7) | `PENDING` | 96 (unchanged) | 14 quotes added, all verbatim; `verify_quotes.py --dist` **124 quotes, 0 FAIL**; **38 distinct reviewers, zero repeats** anywhere; `astro check` clean; barrios still 96 | `git revert <sha>` |
+| 14 | 2026-08-03 | Raise every page to **5 testimonials** (Danny's request) | `pages/cursos/*.tsx` (7) | `d9c4aeb` | 96 (unchanged) | 14 quotes added, all verbatim; `verify_quotes.py --dist` **124 quotes, 0 FAIL**; **38 distinct reviewers, zero repeats** anywhere; `astro check` clean; barrios still 96 | `git revert d9c4aeb` |
 
 ---
 
@@ -333,7 +333,7 @@ it loads every session, and enforced by `npm run verify:design`.
 | D1 | 2026-08-03 | Four shared components; sections rebuilt on the design system; geo-audit follows component imports | `components/{GoogleReviews,TeacherCard,PriceLocationCards,CTABand}.tsx`, `pages/cursos/*.tsx`, `geo-audit.py` | `262b0cf` | both audits **96**; 124 quotes 0 FAIL; every page renders 30 stars, the Google mark, JP's photo, 3 `btn-primary` | `git revert 262b0cf` |
 | D2 | 2026-08-03 | Price/group size/address above the fold; group-size contradiction settled | `components/QuickFacts.tsx`, `pages/cursos/*.tsx`, `Business-Information.txt` | `65f75b4` | price above the fold on 7/7; one group number per course | `git revert 65f75b4` |
 | D3 | 2026-08-03 | `npm run verify:design`; Google mark on all 14 barrio review blocks | `scripts/verify-design/*`, `package.json`, `pages/ubicaciones/*.tsx` | `03e5b89` | gate **ALL PASS**; both audits 96 | `git revert 03e5b89` |
-| D4 | 2026-08-03 | `DESIGN.md` + `CLAUDE.md` Design section + this ledger | `DESIGN.md`, `CLAUDE.md`, ledger | `PENDING` | — | `git revert <sha>` |
+| D4 | 2026-08-03 | `DESIGN.md` + `CLAUDE.md` Design section + this ledger | `DESIGN.md`, `CLAUDE.md`, ledger | `645ce65` | — | `git revert 645ce65` |
 
 ## What running the gate found beyond the service pages
 
