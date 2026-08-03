@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import { Baby, Music, Gamepad2, Heart, Users, Sparkles, Clock, CheckCircle, Star, Phone, Calendar } from 'lucide-react';
+import TeacherCard from '../../components/TeacherCard';
+import GoogleReviews from '../../components/GoogleReviews';
+import PriceLocationCards from '../../components/PriceLocationCards';
+import CTABand from '../../components/CTABand';
 import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -464,116 +468,21 @@ export default function InfantilPage() {
       </section>
 
 
-      {/* Equipo — personas con nombre y credenciales verificables */}
-      <section className="section px-6 surface-alt">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
-          <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
-            El grupo de infantil lo supervisa JP, director de estudios y cofundador del centro, con más de 10 años enseñando inglés. Danny, cofundador, es irlandés y lleva 12 años viviendo en Madrid, y es quien organiza los campamentos en Irlanda.
-          </p>
-        </div>
-      </section>
-
-      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
-      <section className="section-lead px-6 surface-alt">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
-            Lo que dicen las familias de infantil
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { name: "Patricia Gallardo", text: "Muy majetes y muy flexibles. Yo he ido todo el año con mi bebé. Su método para aprender mediante app, el mejor que he visto (a parte de los libros)." },
-              { name: "Salvador Muñoz-Perea", text: "Una verdadera academia de inglés, donde mis hijas van felices y aprendan inglés de verdad. Pero sobretodo hay destacar el trato cercano y familiar" },
-              { name: "Pepi Moral ventura", text: "El ambiente, los profesores, una academia excelente para todos los públicos. Mis hijos están encantados de ir son muy profesionales. Se nota que tienen experiencia en formación." }
-            ,
-              { name: "Sandra dos Anjos Costa", text: "Mis hijos van a la academia Impulse y están encantados. Los profesores son muy profesionales y hacen que los niños se sientan como en casa." },
-              { name: "Rosangel Bandres", text: "Profesores super cheveres ,  buena ubicación  , y muy profesionales  , mi hija está feliz  de ir a esta academia  , aparte de que aprende la pasa muy  bien ..." }
-            ].map((r) => (
-              <blockquote key={r.name} className="card p-6">
-                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
-                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
-              </blockquote>
-            ))}
-          </div>
-          <p className="t-small text-zinc-500 text-center mt-8">
-            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
-          </p>
-        </div>
-      </section>
-
-
-      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
-      <section className="section px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta el curso de infantil</h2>
-          <div className="rule"></div>
-          <div className="grid md:grid-cols-2 gap-6 mt-8">
-            <div className="card p-6">
-              <p className="text-zinc-600 leading-relaxed mb-4">
-                Infantil son <strong>64 €/mes</strong> con una clase de 60 min a la semana, o <strong>99 €/mes</strong> con dos clases semanales. Los grupos son de máximo 7 niños.
-              </p>
-              <p className="text-zinc-600 leading-relaxed">
-                El primer mes se suman la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): <strong>149 €</strong> el primer mes con una clase semanal, y desde 64 €/mes después. Hay descuento por pago trimestral y descuento familiar.
-              </p>
-              <p className="t-small text-zinc-500 mt-4">
-                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
-              </p>
-            </div>
-            <div className="card p-6">
-              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
-              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
-              <p className="text-zinc-600 leading-relaxed mb-3">
-                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
-                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
-                a 1 min · el centro comercial La Vaguada está a 1 min.
-              </p>
-              <ul className="t-small text-zinc-600 mb-3">
-                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
-              </ul>
-              <p className="text-zinc-600">
-                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
-                {' · '}
-                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
-      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
-        <div className="container mx-auto max-w-4xl">
-          <p className="text-zinc-500 text-sm text-center leading-relaxed">
-            <strong className="text-zinc-600">Otros cursos:</strong>{' '}
-            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos de inglés</a>
-            {' · '}
-            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
-            {' · '}
-            <a href="/cursos-ingles/secundaria/" className="text-indigo-600 hover:underline">Inglés para secundaria y EBAU</a>
-            {' · '}
-            <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline">Clases de inglés para adultos</a>
-            {' · '}
-            <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline">Clases particulares de inglés</a>
-            {' · '}
-            <a href="/cursos-ingles/online/" className="text-indigo-600 hover:underline">Clases de inglés online</a>
-          </p>
-          <p className="text-zinc-500 text-sm text-center mt-4">
-            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
-          </p>
-        </div>
-      </section>
-
+      <TeacherCard
+        heading="Quién está con los peques"
+        imageAlt="JP, director de estudios de Impulse English Academy, responsable de las clases de inglés infantil en La Vaguada"
+      >
+            <p>El grupo de infantil lo supervisa JP, director de estudios y cofundador del centro, con más de 10 años enseñando inglés. Danny, cofundador, es irlandés y lleva 12 años viviendo en Madrid, y es quien organiza los campamentos en Irlanda.</p>
+      </TeacherCard>
 
       {/* CASE STUDY: Débora Azevedo */}
       {/* Un caso real contado por la propia familia — cita verbatim de Google */}
-      <section className="section px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
+      <section className="section bg-white px-6">
+        <div className="container-narrow">
           <span className="eyebrow mb-4">Un caso real</span>
           <h2 className="t-h2 text-zinc-900 mb-5">Débora Azevedo</h2>
           <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+          <p className="t-body my-6 max-w-3xl text-zinc-600">
             Con niños de 2 a 5 años, el primer obstáculo no es el idioma: es entrar por la puerta. Débora lo cuenta en su reseña de Google.
           </p>
           <div className="card p-8">
@@ -586,13 +495,71 @@ export default function InfantilPage() {
               { name: "Débora Azevedo", text: "Muy contenta con las clases impartidas a mi hijo. Todo los profisionales son muy comprometidos, siempre muy amables y con una gran sonrisa. Hay que decir que esa academia ha sido la unica que mi hijo entró sin llorar y aceptó finalmente asistir, eso porque han tenido todo el cuidado en conectarse con él, además son muy divertidos y veo que me hijo esta aprendiendo." }
             ].map((r) => (
               <blockquote key={r.name}>
-                <p className="text-zinc-600 leading-relaxed mb-3">&laquo;{r.text}&raquo;</p>
+                <p className="t-body mb-3 text-zinc-600">&laquo;{r.text}&raquo;</p>
                 <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}, reseña en Google</cite>
               </blockquote>
             ))}
           </div>
         </div>
       </section>
+
+      <CTABand
+        title="Reserva una clase de prueba gratuita"
+        subtitle="Una hora real de clase, de lunes a viernes a las 17:30, para ver cómo responde tu peque."
+        ctaText="Reservar clase de prueba gratuita"
+        ctaHref="/prueba-de-nivel-ingles/"
+        whatsappText="Hola, me gustaría reservar una clase de prueba para infantil"
+      />
+
+      <PriceLocationCards heading="Cuánto cuesta el curso de infantil">
+        <p>Infantil son <strong>64 €/mes</strong> con una clase de 60 min a la semana, o <strong>99 €/mes</strong> con dos clases semanales. Los grupos son de máximo 7 niños.</p>
+        <p>El primer mes se suman la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): <strong>149 €</strong> el primer mes con una clase semanal, y desde 64 €/mes después. Hay descuento por pago trimestral y descuento familiar.</p>
+      </PriceLocationCards>
+
+      <GoogleReviews
+        heading="Lo que dicen las familias de infantil"
+        intro="Reseñas de madres y padres publicadas en nuestro perfil de Google, sin editar."
+        reviews={[
+              { name: "Patricia Gallardo", text: "Muy majetes y muy flexibles. Yo he ido todo el año con mi bebé. Su método para aprender mediante app, el mejor que he visto (a parte de los libros)." },
+              { name: "Salvador Muñoz-Perea", text: "Una verdadera academia de inglés, donde mis hijas van felices y aprendan inglés de verdad. Pero sobretodo hay destacar el trato cercano y familiar" },
+              { name: "Pepi Moral ventura", text: "El ambiente, los profesores, una academia excelente para todos los públicos. Mis hijos están encantados de ir son muy profesionales. Se nota que tienen experiencia en formación." }
+            ,
+              { name: "Sandra dos Anjos Costa", text: "Mis hijos van a la academia Impulse y están encantados. Los profesores son muy profesionales y hacen que los niños se sientan como en casa." },
+              { name: "Rosangel Bandres", text: "Profesores super cheveres ,  buena ubicación  , y muy profesionales  , mi hija está feliz  de ir a esta academia  , aparte de que aprende la pasa muy  bien ..." }
+            ]}
+      />
+
+      <CTABand
+        title="Grupos de máximo 7 niños"
+        subtitle="Las plazas de infantil se llenan pronto porque los grupos son muy pequeños. Consúltanos disponibilidad."
+        ctaText="Consultar plazas de infantil"
+        ctaHref="/prueba-de-nivel-ingles/"
+        whatsappText="Hola, ¿quedan plazas en los grupos de infantil?"
+      />
+
+      {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
+      <section className="section-tight surface-alt px-6 border-t border-zinc-200/70">
+        <div className="container-narrow">
+          <p className="t-small text-center text-zinc-500">
+            <strong className="text-zinc-600">Otros cursos:</strong>{' '}
+            <a href="/cursos-ingles/" className="font-medium text-accent-blue hover:underline">Todos los cursos de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/primaria/" className="font-medium text-accent-blue hover:underline">Inglés para primaria (6-12)</a>
+            {' · '}
+            <a href="/cursos-ingles/secundaria/" className="font-medium text-accent-blue hover:underline">Inglés para secundaria y EBAU</a>
+            {' · '}
+            <a href="/cursos-ingles/adultos/" className="font-medium text-accent-blue hover:underline">Clases de inglés para adultos</a>
+            {' · '}
+            <a href="/cursos-ingles/particulares/" className="font-medium text-accent-blue hover:underline">Clases particulares de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/online/" className="font-medium text-accent-blue hover:underline">Clases de inglés online</a>
+          </p>
+          <p className="t-small text-center text-zinc-500 mt-4">
+            <a href="/" className="font-medium text-accent-blue hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+          </p>
+        </div>
+      </section>
+
 
       <Footer />
 
