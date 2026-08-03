@@ -6,7 +6,9 @@ Branch: `geo/service-pages-round-1` (cut from `main` @ `eea3dd1`).
 **How to reverse anything here:** every row names the commit that made the change.
 `git revert <sha>` undoes that one step without disturbing the others. Rows are
 committed together with the step they describe, so the ledger and the history
-cannot drift apart.
+cannot drift apart. A row's SHA can only be known after its own commit, so the
+backfilled SHA rides along in the *next* step's commit — that one-step lag is
+expected, not drift.
 
 **Plan:** `~/.claude/plans/glittery-launching-stream.md`
 **Gate:** `python3 GEO-Content-Project/geo-audit.py --set servicios` — every element ≥9, total ≥90.
@@ -35,7 +37,8 @@ and Pricing (1.9 avg).
 
 | # | Date | Step | Files touched | Commit | GEO before → after | Gates | Reverse with |
 |---|---|---|---|---|---|---|---|
-| 01 | 2026-08-03 | Step 0 — service mode for `geo-audit.py`; freeze baseline | `GEO-Content-Project/geo-audit.py`, `service-baseline.json`, `service-pages-ledger.md` | `PENDING` | n/a (tooling) | `--set barrios` still **96/100, all A** (no regression); `--set servicios` runs clean and reports **42** | `git revert <sha>` |
+| 01 | 2026-08-03 | Step 0 — service mode for `geo-audit.py`; freeze baseline | `GEO-Content-Project/geo-audit.py`, `service-baseline.json`, `service-pages-ledger.md` | `a623c77` | n/a (tooling) | `--set barrios` still **96/100, all A** (no regression); `--set servicios` runs clean and reports **42** | `git revert a623c77` |
+| 02 | 2026-08-03 | Step 0b — page × query GSC pull, to attribute queries to URLs | `impulse-seo-ops/page_query_pull.py` (new), `data/gsc/2026-08-01/PagesXQueries.csv` | `PENDING` | n/a (measurement) | 5,488 rows, window 2026-07-05 → 2026-08-01. Overturned three targeting assumptions — see below | `git revert <sha>` |
 
 ---
 
@@ -50,6 +53,40 @@ The gap to the 90 gate is 48 points, not 43.
 `None` wrapper silently scores Title Tag and all four schema rows as **0**. The barrio pages
 all live at the top level, so the bug never showed. Any earlier service-page score produced by
 this script before row 01 is wrong and should be discarded.
+
+**2026-08-03 — row 02 overturned the plan's targeting. Three corrections.**
+
+The plan's focus-keyword table was built from *cluster totals* in `Queries.csv`, which has no page
+dimension. With `page × query` attribution (window 2026-07-05 → 2026-08-01) the picture is different:
+
+1. **`clases de inglés para niños en madrid` at position 1.6 is not a service page.** It is held by
+   `http://www.impulse-english.es/` — the homepage, on the `http://www` variant. The plan assigned
+   it to `/cursos-ingles/primaria/` and called it "a CTR fix". That was wrong; primaria has never
+   ranked for it.
+2. **`/cursos-ingles/adultos/` has almost no non-brand demand.** 63 impressions total, of which
+   **42 are brand queries** (`impulse english academy` ×37, `impulse english` ×5). The entire
+   adults cluster — **1,250 impressions at avg position 29** — belongs to
+   `/academias-ingles-madrid/adultos/`. This is not two pages splitting an intent; the guide page
+   holds it outright and the service page holds nothing.
+3. **Three service pages are effectively invisible**, so cluster-level focus terms were unsupported:
+   `/online/` 7 impressions, `/particulares/` 4, `/secundaria/` 3 — several of those being the
+   query `si` and competitor-brand lookups.
+
+**The one genuine opportunity is `/cursos-ingles/infantil/`:** 569 impressions across 94 real
+queries at positions 22–65 — `clases de ingles para bebes` (64i, pos 32), `clases de ingles para
+infantil` (43i, pos 23), `clases de ingles infantil` (39i, pos 30), plus the `niños` family.
+`/cursos-ingles/primaria/` has one real term: `clases de ingles para primaria` (55i, pos 53).
+
+**Synthetic query template confirmed.** `mejor academia de inglés para niños en {barrio}, madrid`
+accounts for **3,454 impressions (10% of the site total) and exactly 0 clicks**, spread across
+barrios the academy does not serve (Usera, Orcasur, Vallecas, Barajas). Treat those impressions as
+noise, not demand — the "4,742 kids impressions with zero clicks" headline in the plan is inflated
+by this.
+
+**Consequence for Step 8, flagged not yet decided.** Stripping commercial signals from
+`/academias-ingles-madrid/adultos/` would de-target the only page Google associates with adult
+intent, and hand that intent to a page with zero non-brand demand. Steps 1–7 should land first and
+prove the service page can hold the term before Step 8 touches the guide.
 
 Also fixed in the same commit:
 - `find_astro_for()` now matches on a word boundary; the bare substring test would match a
