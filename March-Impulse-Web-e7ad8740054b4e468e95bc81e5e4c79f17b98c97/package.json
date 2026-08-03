@@ -7,7 +7,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "verify:tracking": "node scripts/verify-tracking/run.mjs"
+    "verify:tracking": "node scripts/verify-tracking/run.mjs",
+    "verify:design": "node scripts/verify-design/run.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",

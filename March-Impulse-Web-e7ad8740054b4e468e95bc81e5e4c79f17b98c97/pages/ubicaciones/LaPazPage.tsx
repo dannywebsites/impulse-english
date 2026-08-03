@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { MapPin, Clock, Train, Bus, CheckCircle, Star, ArrowRight } from 'lucide-react';
+import { GoogleMark } from '../../components/GoogleReviews';
 import NearbyAreas from '../../components/NearbyAreas';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -444,10 +445,13 @@ export default function LaPazPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {localReviews.map((review, idx) => (
               <div key={idx} className="card p-6">
-                <div className="flex gap-1 mb-4">
+                <div className="mb-4 flex items-center justify-between">
+                  <div className="flex gap-1">
                   {[1,2,3,4,5].map(star => (
                     <Star key={star} className="w-5 h-5 text-amber-400 fill-amber-400" />
                   ))}
+                </div>
+                  <GoogleMark className="h-4 w-4 opacity-70" />
                 </div>
                 <p className="text-zinc-600 italic mb-4">"{review.text}"</p>
                 <p className="font-bold text-zinc-900">{review.name}</p>
