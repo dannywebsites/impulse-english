@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BookOpen, Users, Award, Clock, ArrowRight, CheckCircle, Star } from 'lucide-react';
+import QuickFacts from '../../components/QuickFacts';
 import TeacherCard from '../../components/TeacherCard';
 import GoogleReviews from '../../components/GoogleReviews';
 import PriceLocationCards from '../../components/PriceLocationCards';
@@ -17,7 +18,7 @@ const courses = [
   {
     name: "Infantil (2-5 años)",
     method: "Great Little People",
-    description: "Aprendizaje natural del inglés a través del juego y la inmersión. Grupos de máximo 8 niños con profesores especializados en primera infancia.",
+    description: "Aprendizaje natural del inglés a través del juego y la inmersión. Grupos de máximo 7 niños con profesores especializados en primera infancia.",
     href: "/cursos-ingles/infantil/",
     image: "/images/academy/infantil-classes.jpg",
     age: "2-5 años"
@@ -91,7 +92,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Cuántos alumnos hay por grupo en las clases de inglés?",
-    answer: "Nuestros grupos son reducidos: máximo 7-10 alumnos por clase según el curso. Esto garantiza atención personalizada real y mayor participación de cada alumno. También ofrecemos clases particulares individuales o en parejas."
+    answer: "Nuestros grupos son reducidos y el máximo depende del curso: 7 en infantil, 10 en primaria y secundaria, 8 en adultos y online. Esto garantiza atención personalizada real y mayor participación de cada alumno. También ofrecemos clases particulares individuales o en parejas."
   },
   {
     question: "¿Ofrecéis prueba de nivel gratuita?",
@@ -152,7 +153,7 @@ export default function CursosOverviewPage() {
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
-              Impulse English Academy imparte cursos de inglés en Madrid desde los 2 años hasta adultos, en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Somos centro oficial Cambridge y Linguaskill, con grupos de 7 a 8 alumnos y cuotas desde 64 €/mes.
+              Impulse English Academy imparte cursos de inglés en Madrid desde los 2 años hasta adultos, en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Somos centro oficial Cambridge y Linguaskill, con grupos de 7 a 10 alumnos según el curso y cuotas desde 64 €/mes.
             </p>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress}
@@ -183,6 +184,18 @@ export default function CursosOverviewPage() {
           </div>
         </div>
       </section>
+
+      <QuickFacts
+        price="Desde 64 €/mes"
+        facts={[
+          "Grupos de 7 a 10 alumnos",
+          "De 2 años a adultos",
+          "Centro Oficial Cambridge y Linguaskill",
+          "Prueba de nivel gratuita",
+        ]}
+        whatsappText="Hola, me gustaría saber qué curso me encaja"
+      />
+
 
       {/* Course Cards Grid */}
       <section className="section px-6 bg-white">
@@ -253,9 +266,9 @@ export default function CursosOverviewPage() {
               <div className="w-16 h-16 bg-accent-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-8 h-8 text-accent-blue" />
               </div>
-              <h3 className="font-bold text-zinc-900 text-lg mb-3">Grupos Reducidos Máx. 10</h3>
+              <h3 className="font-bold text-zinc-900 text-lg mb-3">Grupos reducidos: de 7 a 10</h3>
               <p className="text-zinc-600 text-sm">
-                Máximo 7-10 alumnos por clase para garantizar atención personalizada y participación activa.
+                Infantil máximo 7, primaria y secundaria máximo 10, adultos máximo 8. Atención personalizada real en todos los grupos.
               </p>
             </div>
             <div className="text-center p-8 bg-white rounded-xl border border-zinc-100">

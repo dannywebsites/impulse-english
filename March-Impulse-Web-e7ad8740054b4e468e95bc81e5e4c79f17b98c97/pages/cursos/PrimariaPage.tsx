@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BookOpen, Award, Target, Users, Zap, GraduationCap, Clock, CheckCircle, Star, Phone, Calendar } from 'lucide-react';
+import QuickFacts from '../../components/QuickFacts';
 import TeacherCard from '../../components/TeacherCard';
 import GoogleReviews from '../../components/GoogleReviews';
 import PriceLocationCards from '../../components/PriceLocationCards';
@@ -196,29 +197,16 @@ export default function PrimariaPage() {
         </div>
       </section>
 
-      {/* Quick Info Bar */}
-      <section className="bg-white py-6 border-b border-zinc-100">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-center">
-            <div className="flex items-center gap-2">
-              <Users className="w-5 h-5 text-blue-500" />
-              <span className="text-zinc-700 font-medium">Máx. 10 alumnos</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock className="w-5 h-5 text-blue-500" />
-              <span className="text-zinc-700 font-medium">2 horas/semana</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Calendar className="w-5 h-5 text-blue-500" />
-              <span className="text-zinc-700 font-medium">L/M o M/J</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Award className="w-5 h-5 text-amber-500" />
-              <span className="text-zinc-700 font-medium">100% aprobados Cambridge 24/25 (presentados)</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <QuickFacts
+        price="83 €/mes"
+        facts={[
+          "Máx. 10 alumnos",
+          "2 horas/semana",
+          "L/M o M/J",
+          "100% aprobados Cambridge 24/25 (presentados)",
+        ]}
+        whatsappText="Hola, me gustaría información sobre las clases de primaria"
+      />
 
       {/* Main Content */}
       <section className="section px-6 surface-alt">

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { User, Video, MapPin, Calendar, Target, Clock, CheckCircle, Briefcase, FileText, Award } from 'lucide-react';
+import QuickFacts from '../../components/QuickFacts';
 import TeacherCard from '../../components/TeacherCard';
 import GoogleReviews from '../../components/GoogleReviews';
 import PriceLocationCards from '../../components/PriceLocationCards';
@@ -220,33 +221,16 @@ export default function ParticularesPage() {
         </div>
       </section>
 
-      {/* Quick Info Bar */}
-      <section className="bg-white py-6 border-b border-zinc-100">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-center">
-            <div className="flex items-center gap-2">
-              <User className="w-5 h-5 text-orange-500" />
-              <span className="text-zinc-700 font-medium">1:1, online o presencial</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Calendar className="w-5 h-5 text-orange-500" />
-              <span className="text-zinc-700 font-medium">Horarios flexibles (según disponibilidad)</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Award className="w-5 h-5 text-orange-500" />
-              <span className="text-zinc-700 font-medium">Preparación Cambridge y Linguaskill</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Target className="w-5 h-5 text-orange-500" />
-              <span className="text-zinc-700 font-medium">Speaking, entrevistas, presentaciones, writing, Business English</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-orange-500" />
-              <span className="text-zinc-700 font-medium">Apoyo académico y objetivos específicos</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <QuickFacts
+        price="29 €/hora"
+        facts={[
+          "1:1, online o presencial",
+          "Horarios flexibles (según disponibilidad)",
+          "Preparación Cambridge y Linguaskill",
+          "Apoyo académico y objetivos específicos",
+        ]}
+        whatsappText="Hola, me gustaría información sobre las clases particulares"
+      />
 
       {/* Main Content */}
       <section className="section px-6 surface-alt">
