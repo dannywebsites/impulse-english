@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { MapPin, Clock, Phone, Train, Bus, CheckCircle, Star, ArrowRight } from 'lucide-react';
+import { GoogleMark } from '../../components/GoogleReviews';
 import NearbyAreas from '../../components/NearbyAreas';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -418,10 +419,13 @@ export default function PenagrandePage() {
               { name: "Miguel Garcia", text: "Experiencia muy buena de los niños de 10 y 12 años. Muy atento en su evolución con las familias y siempre disponibles para cualquier cosa. Lo recomiendo." }
             ].map((testimonial, idx) => (
               <div key={idx} className="card p-6">
-                <div className="flex gap-1 mb-3">
+                <div className="mb-3 flex items-center justify-between">
+                  <div className="flex gap-1">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                   ))}
+                </div>
+                  <GoogleMark className="h-4 w-4 opacity-70" />
                 </div>
                 <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
                 <p className="text-zinc-900 font-semibold">{testimonial.name}</p>

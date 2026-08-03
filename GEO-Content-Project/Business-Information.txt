@@ -281,7 +281,11 @@ Source: pages/PreciosPage.tsx (rolled to 2026 in commit fd79385)
 - Free level test: yes — 25-minute prueba de nivel with JP, free, no obligation
 - Response time to enquiries: under 24 hours  [SITE: PreciosPage copy]
 - Preferred contact: WhatsApp (+34 604 910 611), then form, then phone
-- Group size: máximo 7–10 alumnos por clase (adults capped at 10)  [SITE]
+- Group size, per course  [DANNY — CONFIRMED 2026-08-03]:
+  Infantil 7 · Primaria 10 · Secundaria 10 · Adultos 8 · Online 8 · Particulares 1:1.
+  The earlier note "7–10, adults capped at 10" was wrong about adults — the site has always
+  said 8 on the adults and online pages. Never quote a range; quote the number for the course
+  the page is about.
 
 ---
 

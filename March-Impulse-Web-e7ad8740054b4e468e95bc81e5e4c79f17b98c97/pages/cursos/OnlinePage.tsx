@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react';
 import { Wifi, Users, Target, Award, Clock, CheckCircle, Globe, Video, Laptop, Calendar, ArrowRight } from 'lucide-react';
+import QuickFacts from '../../components/QuickFacts';
+import TeacherCard from '../../components/TeacherCard';
+import GoogleReviews from '../../components/GoogleReviews';
+import PriceLocationCards from '../../components/PriceLocationCards';
+import CTABand from '../../components/CTABand';
 import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -131,29 +136,16 @@ export default function OnlinePage() {
         </div>
       </section>
 
-      {/* Quick Info Bar */}
-      <section className="bg-white py-6 border-b border-zinc-100">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-center">
-            <div className="flex items-center gap-2">
-              <Video className="w-5 h-5 text-indigo-500" />
-              <span className="text-zinc-700 font-medium">Clases en directo</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Users className="w-5 h-5 text-indigo-500" />
-              <span className="text-zinc-700 font-medium">Máx. 8 alumnos</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Globe className="w-5 h-5 text-indigo-500" />
-              <span className="text-zinc-700 font-medium">Desde cualquier lugar</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Award className="w-5 h-5 text-amber-500" />
-              <span className="text-zinc-700 font-medium">Centro Oficial Cambridge</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <QuickFacts
+        price="Desde 64 €/mes"
+        facts={[
+          "Máx. 8 alumnos",
+          "Clases en directo",
+          "Desde cualquier lugar",
+          "Centro Oficial Cambridge",
+        ]}
+        whatsappText="Hola, me gustaría información sobre las clases de inglés online"
+      />
 
       {/* Who is this for */}
       <section className="section px-6 surface-alt">
@@ -426,103 +418,62 @@ export default function OnlinePage() {
       </section>
 
 
-      {/* Equipo — personas con nombre y credenciales verificables */}
-      <section className="section px-6 surface-alt">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
-          <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
-            Las clases online las dan los mismos profesores del centro: JP, director de estudios y cofundador, con más de 10 años enseñando inglés, y Danny, cofundador, irlandés afincado en Madrid desde hace 12 años.
-          </p>
-        </div>
-      </section>
+      <TeacherCard
+        heading="Quién da las clases online"
+        imageAlt="JP, director de estudios de Impulse English Academy, impartiendo clase de inglés online desde La Vaguada"
+      >
+            <p>Las clases online las dan los mismos profesores del centro: JP, director de estudios y cofundador, con más de 10 años enseñando inglés, y Danny, cofundador, irlandés afincado en Madrid desde hace 12 años.</p>
+      </TeacherCard>
 
-      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
-      <section className="section-lead px-6 surface-alt">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
-            Lo que dicen nuestros alumnos
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
+      <CTABand
+        title="Prueba de nivel gratuita, también online"
+        subtitle="25 minutos por videollamada con JP para situar tu nivel y ver qué grupo te encaja."
+        whatsappText="Hola, me gustaría información sobre las clases de inglés online"
+      />
+
+      <PriceLocationCards heading="Cuánto cuestan las clases online">
+        <p>En grupo, los cursos online cuestan lo mismo que los presenciales: desde 64 € hasta 99 € al mes según el curso y el número de clases semanales. Uno a uno son <strong>29 €/hora</strong>.</p>
+        <p>La matrícula son <strong>45 €</strong> y el libro <strong>máximo 40 €</strong>. Las tasas de los exámenes Cambridge y Linguaskill se pagan aparte y solo si te presentas.</p>
+      </PriceLocationCards>
+
+      <GoogleReviews
+        heading="Lo que dicen nuestros alumnos"
+        intro="Reseñas publicadas en nuestro perfil de Google, reproducidas sin editar."
+        reviews={[
               { name: "Michelle Correa Sánchez", text: "Una academia con profesores muy amables y cercanos, te enseñan acorde a tus capacidades y se adaptan a las necesidades del alumno." },
               { name: "Laia Lubillo Solsona", text: "Las clases en Impulse son muy entretenidas y divertidas, aprendes inglés sin darte cuenta. Los profesores se adaptan a ti, por lo que el trato es muy personalizado." },
               { name: "Ana Torrado", text: "Impulse English Academy ha sido la mejor academia en la que he estado. Gracias a JP aprobé la asignatura. Lo que más me gusta es que se adaptan a tus necesidades y se centran donde ven más dificultades." }
             ,
               { name: "Toña Agüero", text: "Los profesores son todos muy agradables y muy atentos, se adaptan rápido y siempre sacan una sonrisa mientras que aprendes con facilidad y eficacia el inglés. Saludos" },
               { name: "Paula Cuadrado", text: "Mi inglés ha mejorado, son buenisimos profesionales, buen método, mucha paciencia por su parte. Volveré para seguir mejorando" }
-            ].map((r) => (
-              <blockquote key={r.name} className="card p-6">
-                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
-                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
-              </blockquote>
-            ))}
-          </div>
-          <p className="t-small text-zinc-500 text-center mt-8">
-            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
-          </p>
-        </div>
-      </section>
+            ]}
+      />
 
-
-      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
-      <section className="section px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuestan las clases online</h2>
-          <div className="rule"></div>
-          <div className="grid md:grid-cols-2 gap-6 mt-8">
-            <div className="card p-6">
-              <p className="text-zinc-600 leading-relaxed mb-4">
-                En grupo, los cursos online cuestan lo mismo que los presenciales: desde 64 € hasta 99 € al mes según el curso y el número de clases semanales. Uno a uno son <strong>29 €/hora</strong>.
-              </p>
-              <p className="text-zinc-600 leading-relaxed">
-                La matrícula son <strong>45 €</strong> y el libro <strong>máximo 40 €</strong>. Las tasas de los exámenes Cambridge y Linguaskill se pagan aparte y solo si te presentas.
-              </p>
-              <p className="t-small text-zinc-500 mt-4">
-                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
-              </p>
-            </div>
-            <div className="card p-6">
-              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
-              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
-              <p className="text-zinc-600 leading-relaxed mb-3">
-                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
-                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
-                a 1 min · el centro comercial La Vaguada está a 1 min.
-              </p>
-              <ul className="t-small text-zinc-600 mb-3">
-                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
-              </ul>
-              <p className="text-zinc-600">
-                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
-                {' · '}
-                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <CTABand
+        title="Mismo profesor que en clase presencial"
+        subtitle="Grupos online de máximo 8 alumnos, en directo. Escríbenos y te contamos los horarios."
+        whatsappText="Hola, ¿qué horarios tenéis en las clases online?"
+      />
 
       {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
-      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
-        <div className="container mx-auto max-w-4xl">
-          <p className="text-zinc-500 text-sm text-center leading-relaxed">
+      <section className="section-tight surface-alt px-6 border-t border-zinc-200/70">
+        <div className="container-narrow">
+          <p className="t-small text-center text-zinc-500">
             <strong className="text-zinc-600">Otros cursos:</strong>{' '}
-            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos de inglés</a>
+            <a href="/cursos-ingles/" className="font-medium text-accent-blue hover:underline">Todos los cursos de inglés</a>
             {' · '}
-            <a href="/cursos-ingles/infantil/" className="text-indigo-600 hover:underline">Inglés infantil (2-5 años)</a>
+            <a href="/cursos-ingles/infantil/" className="font-medium text-accent-blue hover:underline">Inglés infantil (2-5 años)</a>
             {' · '}
-            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
+            <a href="/cursos-ingles/primaria/" className="font-medium text-accent-blue hover:underline">Inglés para primaria (6-12)</a>
             {' · '}
-            <a href="/cursos-ingles/secundaria/" className="text-indigo-600 hover:underline">Inglés para secundaria y EBAU</a>
+            <a href="/cursos-ingles/secundaria/" className="font-medium text-accent-blue hover:underline">Inglés para secundaria y EBAU</a>
             {' · '}
-            <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline">Clases de inglés para adultos</a>
+            <a href="/cursos-ingles/adultos/" className="font-medium text-accent-blue hover:underline">Clases de inglés para adultos</a>
             {' · '}
-            <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline">Clases particulares de inglés</a>
+            <a href="/cursos-ingles/particulares/" className="font-medium text-accent-blue hover:underline">Clases particulares de inglés</a>
           </p>
-          <p className="text-zinc-500 text-sm text-center mt-4">
-            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+          <p className="t-small text-center text-zinc-500 mt-4">
+            <a href="/" className="font-medium text-accent-blue hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
           </p>
         </div>
       </section>

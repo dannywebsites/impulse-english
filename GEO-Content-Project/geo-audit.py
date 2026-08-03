@@ -393,6 +393,30 @@ def score_faq(src, text):
     return min(s, 10), f"faqs={n} location_specific={local}"
 
 
+IMPORT_RE = re.compile(r"^import\s+(?:\w+|\{[^}]*\})\s+from\s+'([^']*/components/[^']+)'", re.M)
+
+
+def imported_component_sources(page_path, root):
+    """Source of every local component the page imports.
+
+    Some elements are scored by looking for markers in the page file — NAP.phone,
+    a travel time, an address. Once shared components exist those markers move out
+    of the page, and scoring the page alone reports a page as missing a phone
+    number it plainly renders. resolve_schema_helper() already follows the same
+    principle for utils/schemaData.ts; this generalises it to components/.
+    """
+    out = []
+    for m in IMPORT_RE.finditer(read(page_path)):
+        rel = m.group(1)
+        name = rel[rel.index("/components/") + len("/components/"):]
+        for ext in (".tsx", ".ts"):
+            cand = os.path.join(root, "components", name + ext)
+            if os.path.exists(cand):
+                out.append(read(cand))
+                break
+    return "\n".join(out)
+
+
 def score_contact(text, src):
     # The pages render contact details through the NAP module, so the literal digits
     # never appear in source. Resolve through the import, not the raw string.
@@ -531,6 +555,8 @@ def main():
 
     srcs = {f: read(f) for f in files}
     texts = {f: strip_code(s) for f, s in srcs.items()}
+    comp_srcs = {f: imported_component_sources(f, root) for f in files}
+    text_plus = {f: strip_code(srcs[f] + "\n" + comp_srcs[f]) for f in files}
     def shingles(t, n=3):
         w = WORD_RE.findall(t.lower())
         return set(tuple(w[i:i + n]) for i in range(len(w) - n + 1))
@@ -562,11 +588,14 @@ def main():
             score_team(text),
             score_testimonials(text, src, dist_of(f, root, a)),
             score_case_study(text, src),
-            score_area(text),
+            # Area and contact are marker-based, so they read the page PLUS the
+            # components it renders. Uniqueness, intro and pricing stay page-only:
+            # shared component copy is identical everywhere and would flatten them.
+            score_area(text_plus[f]),
             score_cta(src),
             score_pricing(text),
             score_faq(src, text),
-            score_contact(text, src),
+            score_contact(text_plus[f], src + comp_srcs[f]),
             score_schema(a, "local", helper),
             score_schema(a, "service", helper),
             score_schema(a, "faq", helper),

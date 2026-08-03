@@ -132,6 +132,22 @@ The project contains:
 - Always back up files before editing
 - SEO system auto-backs up to `/site/pages/backups/`
 
+### Design — reuse before you write (MANDATORY)
+- **Read `March-Impulse-Web-.../DESIGN.md` before writing ANY page markup.** The site has a design
+  system (`src/index.css` `@layer components`) and shared section components. In August 2026 seven
+  pages shipped hand-written raw Tailwind that ignored both — no eyebrow/rule headers, no buttons
+  below the hero, Google reviews with no stars or Google mark, and no photo of JP **while
+  `jp-director-estudios.webp` was already in the repo**. Nothing was missing; it just wasn't reused.
+- Use the tokens: `.container-narrow` · `.section` · `.t-body` · `.eyebrow` + `.rule` · `.card` ·
+  `.btn-primary`. Never `container mx-auto max-w-4xl`, `text-zinc-600 leading-relaxed`, or a styled
+  `<a>` in place of a button.
+- Compose from `components/`: `GoogleReviews`, `TeacherCard`, `PriceLocationCards`, `QuickFacts`,
+  `CTABand`. Reference implementations: `pages/ubicaciones/MirasierraPage.tsx` and
+  `components/TestimonialsSection.tsx`.
+- **Never `dangerouslySetInnerHTML` in `pages/`** — it hides copy from `geo-audit.py`'s `strip_code`.
+- Run `npm run verify:design` before shipping. Structural errors fail; token debt ratchets against
+  `scripts/verify-design/baseline.json` and must not grow.
+
 ### Tracking Changes (MANDATORY)
 - After ANY change to analytics/tracking surfaces (`BaseLayout.astro` inline scripts, `LeadForm.tsx`, `CoursePopup.tsx`, `PruebaNivelPage.tsx`, GTM, GA4 config): run `npm run verify:tracking` in `March-Impulse-Web-.../` and require ALL PASS before calling it done
 - Never declare tracking "verified" from code review or network captures alone — see the double-tick standard in `March-Impulse-Web-.../TRACKING.md`

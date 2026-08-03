@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { MapPin, Clock, Phone, Train, Bus, CheckCircle, Star, ArrowRight } from 'lucide-react';
+import { GoogleMark } from '../../components/GoogleReviews';
 import NearbyAreas from '../../components/NearbyAreas';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -633,11 +634,14 @@ export default function LaVaguadaPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             {testimonials.map((testimonial, idx) => (
-              <div key={idx} className="bg-zinc-50 p-6 rounded-xl border border-zinc-200">
-                <div className="flex gap-1 mb-3">
+              <div key={idx} className="card p-6">
+                <div className="mb-3 flex items-center justify-between">
+                  <div className="flex gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-amber-400" />
+                    <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                   ))}
+                  </div>
+                  <GoogleMark className="h-4 w-4 opacity-70" />
                 </div>
                 <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
                 <p className="text-zinc-900 font-semibold">{testimonial.name}</p>
