@@ -564,6 +564,60 @@ export default function AdultosPage() {
         </div>
       </section>
 
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            Las clases de adultos las coordina JP, director de estudios y cofundador de Impulse English Academy, que lleva más de 10 años enseñando inglés y dirige la preparación Cambridge del centro. Danny, el otro cofundador, es irlandés y vive en Madrid desde hace 12 años.
+          </p>
+        </div>
+      </section>
+
+      {/* Un caso real — hechos aprobados, sin claims de nivel inventados */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <span className="eyebrow mb-4">Un caso real</span>
+          <h2 className="t-h2 text-zinc-900 mb-5">Sergio</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl" dangerouslySetInnerHTML={{ __html: "Sergio llegó con el inglés de cualquiera que ha pasado por el sistema educativo español sin volver a usarlo. En sus palabras: <em>&laquo;siempre he tenido una gran carencia de confianza para hablar en inglés&raquo;</em>. No era gramática, era no atreverse." }} />
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">30 años</p><p className="t-small text-zinc-600">cuando se puso en serio</p></div>
+              <div><p className="t-h3 text-accent-blue">Dublín</p><p className="t-small text-zinc-600">sus primeros meses fuera</p></div>
+              <div><p className="t-h3 text-accent-blue">2 años</p><p className="t-small text-zinc-600">viviendo y trabajando en Irlanda</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: "Hoy trabaja como analista de pólizas en una empresa irlandesa." }} />
+          </div>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen nuestros alumnos adultos
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Gonzalo Tarascón", text: "¡Recomiendo 100% esta academia! Gracias a sus clases y al excelente equipo de profesores, logré obtener mi certificado C1 de inglés. Esto me ha abierto muchas puertas en el mercado laboral." },
+              { name: "Aurora Jimenez Solano", text: "Tras varios intentos de retomar mi formación en inglés, en otros centros con poco éxito, he encontrado la academia ideal para mi. Estoy muy satisfecha con el método, mi profesor y mi progreso con el idioma." },
+              { name: "Natalia López Casado", text: "Llevo 2 meses dando clase con Danny y estoy encantada. Clases muy amenas y en las que conversamos todo el rato. Me hace correcciones y me da tips para mejorar." }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
       <Footer />
 
       {/* Schema.org Structured Data */}

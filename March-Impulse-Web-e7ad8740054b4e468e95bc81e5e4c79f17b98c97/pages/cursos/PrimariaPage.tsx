@@ -473,6 +473,42 @@ export default function PrimariaPage() {
         </div>
       </section>
 
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            Quien coloca a cada niño en su grupo es JP, director de estudios y cofundador, con más de 10 años enseñando inglés y a cargo de la preparación Cambridge Young Learners. Danny, cofundador irlandés, lleva 12 años en Madrid.
+          </p>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen las familias de primaria
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Miguel Garcia", text: "Experiencia muy buena de los niños de 10 y 12 años. Muy atento en su evolución con las familias y siempre disponibles para cualquier cosa. Lo recomiendo." },
+              { name: "María Jesús Zuazo Sahagún", text: "Solo puedo decir cosas positivas de la experiencia que tiene mi hija con sus profesores. Lo más importante es que le gusta mucho ir a las clases." },
+              { name: "Marta Ferrer", text: "Que gran suerte tuvimos de encontrar a Daniel y su equipo. Grandes profesionales y cercanos con sus alumnos. Gracias a ellos mis hijos han mejorado su inglés y pasado unos maravillosos veranos en Irlanda" }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
       <Footer />
 
       {/* Schema.org Structured Data */}

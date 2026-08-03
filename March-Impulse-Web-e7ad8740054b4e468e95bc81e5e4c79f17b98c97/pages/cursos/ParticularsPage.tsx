@@ -458,6 +458,60 @@ export default function ParticularesPage() {
         </div>
       </section>
 
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            Tu plan lo diseña JP, director de estudios y cofundador de la academia, que lleva más de 10 años enseñando inglés. Si prefieres trabajar la conversación con un nativo, Danny es irlandés y lleva 12 años dando clase en Madrid.
+          </p>
+        </div>
+      </section>
+
+      {/* Un caso real — hechos aprobados, sin claims de nivel inventados */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <span className="eyebrow mb-4">Un caso real</span>
+          <h2 className="t-h2 text-zinc-900 mb-5">Daniel de la Peña</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl" dangerouslySetInnerHTML={{ __html: "Lo que Daniel quería era salir de España a trabajar: <em>&laquo;acceder a oportunidades laborales en el extranjero y en países de habla inglesa&raquo;</em>. Le llevó cerca de año y medio de clases." }} />
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">18 meses</p><p className="t-small text-zinc-600">con nosotros</p></div>
+              <div><p className="t-h3 text-accent-blue">Su objetivo</p><p className="t-small text-zinc-600">trabajar en un país de habla inglesa</p></div>
+              <div><p className="t-h3 text-accent-blue">Conseguido</p><p className="t-small text-zinc-600">hoy da inglés en primaria a jornada completa</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: "Cuando explica por qué le sirvió no habla del temario, sino del <em>&laquo;trato personalizado y sobre todo profesionalidad y compromiso&raquo;</em>." }} />
+          </div>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen los alumnos de clases particulares
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Virginia Toledo", text: "Mi hija tuvo unas clases particulares con JP para terminar de prepararse para el examen Advanced y estaba muy contenta con la dinámica de las clases. Además ha aprobado!!" },
+              { name: "Antonio del Pozo", text: "Clases perfectas, totalmente adaptadas a mi objetivo de conseguir el C1 de inglés. JP es un profesor extraordinario, siempre dispuesto para ayudarte en todo lo que necesites." },
+              { name: "Roberto Herrero", text: "Solo tengo palabras de agradecimiento para Impulse English Academy y muy en particular a mi profesor Daniel. Gracias de nuevo por que este aprendizaje haya sido tan fácil y rápido. Os deseo lo mejor." }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
       <Footer />
 
       {/* Schema.org Structured Data */}
