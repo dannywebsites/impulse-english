@@ -183,11 +183,11 @@ export default function AdultosPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Inglés para Adultos
+              Clases de inglés para adultos en La Vaguada, grupos de 8
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              Grupos reducidos, enfoque práctico y objetivos claros. Desde A1 hasta C1/C2, con preparación Cambridge y Linguaskill en La Vaguada.
+              Damos clases de inglés para adultos en Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. Grupos de máximo 8 alumnos, de A1 a C2, por 94 €/mes, con Metro Barrio del Pilar (Línea 9) a 3 minutos andando.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a

@@ -128,11 +128,11 @@ export default function SecundariaPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Inglés para Secundaria
+              Inglés para secundaria y EBAU en La Vaguada, de 13 a 17 años
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              Preparación EBAU y Cambridge B1, B2, C1 en La Vaguada. Grupos por nivel real, seguimiento continuo y un 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados).
+              Preparamos el inglés de la ESO, Bachillerato y EBAU para alumnos de 13 a 17 años en Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. Grupos por nivel real y preparación Cambridge B1, B2 y C1 desde 87 €/mes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
