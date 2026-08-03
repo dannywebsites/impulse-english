@@ -482,8 +482,11 @@ export default function SecundariaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               { name: "Luis Martin Gonzalez", text: "100% recomendable, merece la pena. De echo mi hijo ahora sigue con JP, para prestarse sus exámenes de titulación Gran persona JP y su método" },
-              { name: "Marina Penerbosa", text: "Muy contenta con haber encontrado esta academia para mi hijo. Todo el staff es MUY amable, dedicado y profesional. Mi hijo ha progresado muchísimo en su comprensión y desempeño en ingles." },
+              { name: "Rodrigo Sanz", text: "Muy buen profesor, muy cercano y asequible. Realmente contento con esta academia del barrio. Los chicos van felices a clase. Gran tranquilidad para los padres." },
               { name: "Laura García Lomas", text: "Una suerte encontrar esta academia con tan grandes profesionales. Gracias a ellos he conseguido el B2, la metodología hace que aprendas rápido y no olvides" }
+            ,
+              { name: "Manuel Casas Herrero", text: "Danny es un excelente profesional que vive con pasion su labor didactica. Nuestros hijos son biligues gracias a sus enseñazas en Madrid e Irlanda." },
+              { name: "Lorena Jiménez", text: "Fantástica academia donde realmente se aprende inglés. La atención de los profesores es increible y son todos encantadores. Especial gracias a Jp por la atención personalizada a mi hijo." }
             ].map((r) => (
               <blockquote key={r.name} className="card p-6">
                 <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>

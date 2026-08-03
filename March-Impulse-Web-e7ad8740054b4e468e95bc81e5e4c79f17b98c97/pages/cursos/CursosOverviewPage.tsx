@@ -446,6 +446,9 @@ export default function CursosOverviewPage() {
               { name: "Cesar Seneca Tellechea Corral", text: "Luego de pasar por varias academias en toda Madrid está fue la única que dio con el método y el contenido perfecto para aprender, tengo un C1 y es todo gracias a ellos." },
               { name: "carmen suarez", text: "Academia totalmente recomendable para mejorar tu inglés, buenos profesores y mejores personas aún, si estás buscando una academia de calidad, este es tu sitio." },
               { name: "Carlos Javier Ayllón Gordillo", text: "Excelente ambiente, profesores muy amables y muy cercanos a los estudiantes. Definitivamente recomiendo esta academia para aprender inglés." }
+            ,
+              { name: "Mely Alferes", text: "Excelente experiencia en Impulse English Academy. Los profesores son muy profesionales, cercanos y hacen que las clases sean dinámicas y entretenidas." },
+              { name: "Dámaris Valentín-Fernández Gómez", text: "Mi nivel de inglés ha mejorado muchísimo! La calidad del profesorado es excelente. Recomiendo sin duda esta gran academia de inglés." }
             ].map((r) => (
               <blockquote key={r.name} className="card p-6">
                 <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>

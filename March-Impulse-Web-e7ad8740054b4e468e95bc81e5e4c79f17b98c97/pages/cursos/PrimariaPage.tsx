@@ -513,6 +513,9 @@ export default function PrimariaPage() {
               { name: "Miguel Garcia", text: "Experiencia muy buena de los niños de 10 y 12 años. Muy atento en su evolución con las familias y siempre disponibles para cualquier cosa. Lo recomiendo." },
               { name: "María Jesús Zuazo Sahagún", text: "Solo puedo decir cosas positivas de la experiencia que tiene mi hija con sus profesores. Lo más importante es que le gusta mucho ir a las clases." },
               { name: "Marta Ferrer", text: "Que gran suerte tuvimos de encontrar a Daniel y su equipo. Grandes profesionales y cercanos con sus alumnos. Gracias a ellos mis hijos han mejorado su inglés y pasado unos maravillosos veranos en Irlanda" }
+            ,
+              { name: "Leticia Ramos Setim", text: "Una academia totalmente recomendable, mi hijo está encantado con las clases, son divertidas y variadas." },
+              { name: "Irene C", text: "Una gran academia, ha sido clave en el avance de mi hijo en Inglés, buena comunicación y buena enseñanza. Realmente contentos y repetiremos este curso escolar!!!" }
             ].map((r) => (
               <blockquote key={r.name} className="card p-6">
                 <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
