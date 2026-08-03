@@ -589,6 +589,35 @@ export default function PrimariaPage() {
         </div>
       </section>
 
+
+      {/* CASE STUDY: Marina Penerbosa */}
+      {/* Un caso real contado por la propia familia — cita verbatim de Google */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <span className="eyebrow mb-4">Un caso real</span>
+          <h2 className="t-h2 text-zinc-900 mb-5">Marina Penerbosa</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+            Lo que buscan casi todas las familias de primaria es que el niño avance sin dejar de querer ir. Marina describe las dos cosas a la vez.
+          </p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">6 a 12 años</p><p className="t-small text-zinc-600">el grupo de primaria</p></div>
+              <div><p className="t-h3 text-accent-blue">Comprensión</p><p className="t-small text-zinc-600">donde nota el avance</p></div>
+              <div><p className="t-h3 text-accent-blue">Juego + contenido</p><p className="t-small text-zinc-600">la mezcla que describe</p></div>
+            </div>
+            {[
+              { name: "Marina Penerbosa", text: "Muy contenta con haber encontrado esta academia para mi hijo. Todo el staff es MUY amable, dedicado y profesional. Mi hijo ha progresado muchísimo en su comprensión y desempeño en ingles. La metodología que usan mezcla el juego con los contenidos académicos y eso hace que las clases sean divertidas y loe niños se animen a participar." }
+            ].map((r) => (
+              <blockquote key={r.name}>
+                <p className="text-zinc-600 leading-relaxed mb-3">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}, reseña en Google</cite>
+              </blockquote>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
 
       {/* Schema.org Structured Data */}

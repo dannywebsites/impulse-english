@@ -46,7 +46,10 @@ and Pricing (1.9 avg).
 | 07 | 2026-08-03 | Step 6 — LocalBusiness + Service/Offer + AggregateRating schema; qualify 3 claims | `utils/schemaData.ts`, `src/pages/cursos-ingles/*.astro` (7) | `20d4c20` | **73 → 91 (grade A)** | LocalBusiness **0 → 9**, Service **0 → 9**, AggregateRating **0 → 10** on all seven; types confirmed **in `dist/`** with `reviewCount 180`; `astro check` clean; build green; barrios **still 96** | `git revert 20d4c20` |
 | 08 | 2026-08-03 | Step 5 — 28 location FAQs added; 33 yes/no openers rewritten | `pages/cursos/*.tsx` (7) | `e92f675` | **91 → 93** | FAQ Section **5–8 → 9–10 all seven**; **0 answers** now open with "Sí."/"No."; `verify_quotes.py --dist` 107 quotes 0 FAIL; `astro check` clean; build green | `git revert e92f675` |
 | 09 | 2026-08-03 | Step 7 — interlinking: home link, hub uplink, sibling row, barrio downline | `pages/cursos/*.tsx` (7), `pages/ubicaciones/*.tsx` (14) | `8e906fd` | 93 (unchanged) | Inbound links: online **1 → 21**, hub **1 → 21**, secundaria 10 → 30, primaria 16 → 36; **all 7 now link to `/`** (was 0); barrios **still 96**, uniqueness avg 9.7 → 9.6, no element below 9 | `git revert 8e906fd` |
-| 10 | 2026-08-03 | Step 9 — final gate run (no code change) | `service-pages-ledger.md` | `PENDING` | 93 | See the gate table below. **10 of 11 gates pass; the element-level gate does not** | n/a |
+| 10 | 2026-08-03 | Step 9 — final gate run (no code change) | `service-pages-ledger.md` | `a469f39` | 93 | See the gate table below. **10 of 11 gates pass; the element-level gate does not** | n/a |
+| 11 | 2026-08-03 | Decisions log + reversibility-gap correction | `SEO-Decisions-Log.md`, ledger | `3bf3c04` | 93 | Six decisions logged with the book principle cited | `git revert 3bf3c04` |
+| 12 | 2026-08-03 | Merge to `main` | — | `6febe82` | 93 | `--no-ff`; branch `geo/service-pages-round-1` kept | `git revert -m 1 6febe82` |
+| 13 | 2026-08-03 | Case studies from real parent reviews (Danny's call) | `geo-audit.py`, `InfantilPage.tsx`, `PrimariaPage.tsx`, `SecundariaPage.tsx` | `PENDING` | **93 → 96** | Case Studies 0 → **9** on primaria and secundaria, **7** on infantil; `verify_quotes.py --dist` **110 quotes, 0 FAIL**; `astro check` clean; barrios **still 96** | `git revert <sha>` |
 
 ---
 
@@ -74,11 +77,36 @@ and Pricing (1.9 avg).
 | Before | 47 | 46 | 39 | 40 | 41 | 42 | 41 |
 | After | **97** | **97** | **89** | **91** | **96** | **91** | **91** |
 
-### The two elements still below the gate
+### Update after row 13 — case studies from parent reviews
 
-1. **Case Studies 0/10** on `/infantil/`, `/primaria/`, `/secundaria/`, `/online/`. Blocked on
-   Danny: there is no approved case study involving a child, a teenager, or an online student.
-2. **Hero CTA 7/10** on `/infantil/`. Deliberate — the scorer wants the literal phrase "prueba de
+Danny's call: use real Google reviews as the case studies rather than wait for written ones.
+Three parents now tell their own story, verbatim, on the pages that match their child's age:
+
+| Page | Parent | Why this one |
+|---|---|---|
+| `/infantil/` | **Débora Azevedo** | "esa academia ha sido la unica que mi hijo entró sin llorar y aceptó finalmente asistir" — with 2–5s the first obstacle is the door, not the language |
+| `/primaria/` | **Marina Penerbosa** | progress *and* still wanting to go: "ha progresado muchísimo en su comprensión… mezcla el juego con los contenidos académicos" |
+| `/secundaria/` | **Antonio Pérez Blázquez** | three weeks with a host family at a summer camp in Ireland, organised by Danny — a concrete, dated, verifiable outcome |
+
+`score_case_study` no longer relies on a hardcoded list of four names. A case study marked
+`{/* CASE STUDY: <name> */}` counts **only if that person's quote on the same page verifies
+verbatim against the live Google profile** — so the marker cannot smuggle in an invented story,
+which is what the name list was protecting against.
+
+**Service set 93 → 96, matching the barrio set.** Per-page: Adultos 97, Overview 97, Primaria 97,
+Secundaria 97, Particulares 96, Infantil 94, Online 91.
+
+### The elements still below the gate
+
+*(Rows 1–2 below were written before row 13; superseded where the update above says so.)*
+
+1. **Case Studies 0/10 on `/online/`** — still genuinely blocked. Of 180 Google reviews, **not one
+   mentions online classes, videollamada or distancia**. There is no honest case study to place, and
+   putting an in-person family's story there would imply something untrue.
+2. **Case Studies 7/10 on `/infantil/`** — the scorer's third criterion is a CEFR level
+   (B1/B2/C1/C2), which does not belong on a page about 2–5 year olds. Left alone rather than bent
+   to make the page pass.
+3. **Hero CTA 7/10 on `/infantil/`.** Deliberate — the scorer wants the literal phrase "prueba de
    nivel" in the hero, and Infantil's real offer is a 1-hour *clase de prueba*.
 
 Everything else is 9 or 10 on all seven pages.
