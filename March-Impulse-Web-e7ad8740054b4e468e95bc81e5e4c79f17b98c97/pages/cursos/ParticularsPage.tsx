@@ -520,6 +520,9 @@ export default function ParticularesPage() {
               { name: "Virginia Toledo", text: "Mi hija tuvo unas clases particulares con JP para terminar de prepararse para el examen Advanced y estaba muy contenta con la dinámica de las clases. Además ha aprobado!!" },
               { name: "Antonio del Pozo", text: "Clases perfectas, totalmente adaptadas a mi objetivo de conseguir el C1 de inglés. JP es un profesor extraordinario, siempre dispuesto para ayudarte en todo lo que necesites." },
               { name: "Roberto Herrero", text: "Solo tengo palabras de agradecimiento para Impulse English Academy y muy en particular a mi profesor Daniel. Gracias de nuevo por que este aprendizaje haya sido tan fácil y rápido. Os deseo lo mejor." }
+            ,
+              { name: "Edixon MUÑOZ", text: "He tenido un par de clases particulares  con Jp para prepaprar  un curso para el trabajo. El curso fue adaptado  a lo que necesitaba  y Jp fue .... AMAZING 🥳" },
+              { name: "Elga Quintans", text: "Me encantó las clases intensivas con J.P muy didácticas y amenas, Gracias" }
             ].map((r) => (
               <blockquote key={r.name} className="card p-6">
                 <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>

@@ -448,6 +448,9 @@ export default function OnlinePage() {
               { name: "Michelle Correa Sánchez", text: "Una academia con profesores muy amables y cercanos, te enseñan acorde a tus capacidades y se adaptan a las necesidades del alumno." },
               { name: "Laia Lubillo Solsona", text: "Las clases en Impulse son muy entretenidas y divertidas, aprendes inglés sin darte cuenta. Los profesores se adaptan a ti, por lo que el trato es muy personalizado." },
               { name: "Ana Torrado", text: "Impulse English Academy ha sido la mejor academia en la que he estado. Gracias a JP aprobé la asignatura. Lo que más me gusta es que se adaptan a tus necesidades y se centran donde ven más dificultades." }
+            ,
+              { name: "Toña Agüero", text: "Los profesores son todos muy agradables y muy atentos, se adaptan rápido y siempre sacan una sonrisa mientras que aprendes con facilidad y eficacia el inglés. Saludos" },
+              { name: "Paula Cuadrado", text: "Mi inglés ha mejorado, son buenisimos profesionales, buen método, mucha paciencia por su parte. Volveré para seguir mejorando" }
             ].map((r) => (
               <blockquote key={r.name} className="card p-6">
                 <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>

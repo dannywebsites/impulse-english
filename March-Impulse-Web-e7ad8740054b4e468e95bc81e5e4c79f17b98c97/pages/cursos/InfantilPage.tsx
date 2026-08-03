@@ -486,6 +486,9 @@ export default function InfantilPage() {
               { name: "Patricia Gallardo", text: "Muy majetes y muy flexibles. Yo he ido todo el año con mi bebé. Su método para aprender mediante app, el mejor que he visto (a parte de los libros)." },
               { name: "Salvador Muñoz-Perea", text: "Una verdadera academia de inglés, donde mis hijas van felices y aprendan inglés de verdad. Pero sobretodo hay destacar el trato cercano y familiar" },
               { name: "Pepi Moral ventura", text: "El ambiente, los profesores, una academia excelente para todos los públicos. Mis hijos están encantados de ir son muy profesionales. Se nota que tienen experiencia en formación." }
+            ,
+              { name: "Sandra dos Anjos Costa", text: "Mis hijos van a la academia Impulse y están encantados. Los profesores son muy profesionales y hacen que los niños se sientan como en casa." },
+              { name: "Rosangel Bandres", text: "Profesores super cheveres ,  buena ubicación  , y muy profesionales  , mi hija está feliz  de ir a esta academia  , aparte de que aprende la pasa muy  bien ..." }
             ].map((r) => (
               <blockquote key={r.name} className="card p-6">
                 <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>

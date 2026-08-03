@@ -626,6 +626,9 @@ export default function AdultosPage() {
               { name: "Gonzalo Tarascón", text: "¡Recomiendo 100% esta academia! Gracias a sus clases y al excelente equipo de profesores, logré obtener mi certificado C1 de inglés. Esto me ha abierto muchas puertas en el mercado laboral." },
               { name: "Aurora Jimenez Solano", text: "Tras varios intentos de retomar mi formación en inglés, en otros centros con poco éxito, he encontrado la academia ideal para mi. Estoy muy satisfecha con el método, mi profesor y mi progreso con el idioma." },
               { name: "Natalia López Casado", text: "Llevo 2 meses dando clase con Danny y estoy encantada. Clases muy amenas y en las que conversamos todo el rato. Me hace correcciones y me da tips para mejorar." }
+            ,
+              { name: "Esther Valencia", text: "Súper recomendable!! Sus métodos me han ayudado a avanzar rápidamente de nivel y mejorar profesionalmente. Se nota su pasión por la enseñanza, el trato es personalizado y de calidad. Son un 10!!" },
+              { name: "Alberto Rueda Rodriguez", text: "Las clases y los profesores son de 10. Me ayudaron a mejorar mi nivel de inglés muchísimo para superar mi examen de Cambridge." }
             ].map((r) => (
               <blockquote key={r.name} className="card p-6">
                 <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>

@@ -49,7 +49,8 @@ and Pricing (1.9 avg).
 | 10 | 2026-08-03 | Step 9 — final gate run (no code change) | `service-pages-ledger.md` | `a469f39` | 93 | See the gate table below. **10 of 11 gates pass; the element-level gate does not** | n/a |
 | 11 | 2026-08-03 | Decisions log + reversibility-gap correction | `SEO-Decisions-Log.md`, ledger | `3bf3c04` | 93 | Six decisions logged with the book principle cited | `git revert 3bf3c04` |
 | 12 | 2026-08-03 | Merge to `main` | — | `6febe82` | 93 | `--no-ff`; branch `geo/service-pages-round-1` kept | `git revert -m 1 6febe82` |
-| 13 | 2026-08-03 | Case studies from real parent reviews (Danny's call) | `geo-audit.py`, `InfantilPage.tsx`, `PrimariaPage.tsx`, `SecundariaPage.tsx` | `PENDING` | **93 → 96** | Case Studies 0 → **9** on primaria and secundaria, **7** on infantil; `verify_quotes.py --dist` **110 quotes, 0 FAIL**; `astro check` clean; barrios **still 96** | `git revert <sha>` |
+| 13 | 2026-08-03 | Case studies from real parent reviews (Danny's call) | `geo-audit.py`, `InfantilPage.tsx`, `PrimariaPage.tsx`, `SecundariaPage.tsx` | `1e96d13` | **93 → 96** | Case Studies 0 → **9** on primaria and secundaria, **7** on infantil; `verify_quotes.py --dist` **110 quotes, 0 FAIL**; `astro check` clean; barrios **still 96** | `git revert 1e96d13` |
+| 14 | 2026-08-03 | Raise every page to **5 testimonials** (Danny's request) | `pages/cursos/*.tsx` (7) | `PENDING` | 96 (unchanged) | 14 quotes added, all verbatim; `verify_quotes.py --dist` **124 quotes, 0 FAIL**; **38 distinct reviewers, zero repeats** anywhere; `astro check` clean; barrios still 96 | `git revert <sha>` |
 
 ---
 
@@ -95,6 +96,30 @@ which is what the name list was protecting against.
 
 **Service set 93 → 96, matching the barrio set.** Per-page: Adultos 97, Overview 97, Primaria 97,
 Secundaria 97, Particulares 96, Infantil 94, Online 91.
+
+### Update after row 14 — five reviews per page
+
+Danny asked for at least five reviews on every service page. Each now carries **5 testimonials**,
+and the three pages with a case study carry a sixth voice in it:
+
+| Page | Reviewers |
+|---|---|
+| `/cursos-ingles/` | Cesar Seneca Tellechea Corral · carmen suarez · Carlos Javier Ayllón Gordillo · Mely Alferes · Dámaris Valentín-Fernández Gómez |
+| `/adultos/` | Gonzalo Tarascón · Aurora Jimenez Solano · Natalia López Casado · Esther Valencia · Alberto Rueda Rodriguez |
+| `/infantil/` | Patricia Gallardo · Salvador Muñoz-Perea · Pepi Moral ventura · Sandra dos Anjos Costa · Rosangel Bandres · **Débora Azevedo** (caso) |
+| `/primaria/` | Miguel Garcia · María Jesús Zuazo Sahagún · Marta Ferrer · Leticia Ramos Setim · Irene C · **Marina Penerbosa** (caso) |
+| `/secundaria/` | Luis Martin Gonzalez · Rodrigo Sanz · Laura García Lomas · Manuel Casas Herrero · Lorena Jiménez · **Antonio Pérez Blázquez** (caso) |
+| `/particulares/` | Virginia Toledo · Antonio del Pozo · Roberto Herrero · Edixon MUÑOZ · Elga Quintans |
+| `/online/` | Michelle Correa Sánchez · Laia Lubillo Solsona · Ana Torrado · Toña Agüero · Paula Cuadrado |
+
+**38 distinct reviewers, no repeats anywhere** — reuse was permitted but never needed. Marina
+Penerbosa initially appeared twice (secundaria testimonial + primaria case study) and was swapped
+for Rodrigo Sanz on secundaria, whose "los chicos van felices a clase" suits the teen page better
+anyway.
+
+`review-allocation.md` was **not** regenerated. Re-running `allocate.py` would redeal the whole pool
+and change quotes on already-shipped barrio, home and testimonios pages. The service-page placements
+are recorded here instead.
 
 ### The elements still below the gate
 
