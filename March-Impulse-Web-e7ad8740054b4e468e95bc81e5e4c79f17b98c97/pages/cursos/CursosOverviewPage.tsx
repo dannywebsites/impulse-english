@@ -385,6 +385,60 @@ export default function CursosOverviewPage() {
         </div>
       </section>
 
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            Detrás de todos los cursos están JP, director de estudios y cofundador, con más de 10 años enseñando inglés y experto en exámenes Cambridge, y Danny, cofundador, irlandés afincado en Madrid desde hace 12 años.
+          </p>
+        </div>
+      </section>
+
+      {/* Un caso real — hechos aprobados, sin claims de nivel inventados */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <span className="eyebrow mb-4">Un caso real</span>
+          <h2 className="t-h2 text-zinc-900 mb-5">Josmary</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl" dangerouslySetInnerHTML={{ __html: "Josmary entró, en sus palabras, <em>&laquo;con una situación un poco cacao&raquo;</em>: hablaba y entendía algo de inglés, pero tenía <em>&laquo;muchísimos vacíos de gramática, de vocabulario y de no saber en qué punto estaba&raquo;</em>." }} />
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">Desde septiembre</p><p className="t-small text-zinc-600">en el grupo de B1</p></div>
+              <div><p className="t-h3 text-accent-blue">Clases de noche</p><p className="t-small text-zinc-600">compatibles con su trabajo</p></div>
+              <div><p className="t-h3 text-accent-blue">Un plan claro</p><p className="t-small text-zinc-600">y la confianza para equivocarse</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: "Va a clase por la noche, en el grupo de B1 con JP." }} />
+          </div>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen las familias y los alumnos
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Cesar Seneca Tellechea Corral", text: "Luego de pasar por varias academias en toda Madrid está fue la única que dio con el método y el contenido perfecto para aprender, tengo un C1 y es todo gracias a ellos." },
+              { name: "carmen suarez", text: "Academia totalmente recomendable para mejorar tu inglés, buenos profesores y mejores personas aún, si estás buscando una academia de calidad, este es tu sitio." },
+              { name: "Carlos Javier Ayllón Gordillo", text: "Excelente ambiente, profesores muy amables y muy cercanos a los estudiantes. Definitivamente recomiendo esta academia para aprender inglés." }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
       <Footer />
     </>
   );

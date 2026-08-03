@@ -40,7 +40,8 @@ and Pricing (1.9 avg).
 | 01 | 2026-08-03 | Step 0 — service mode for `geo-audit.py`; freeze baseline | `GEO-Content-Project/geo-audit.py`, `service-baseline.json`, `service-pages-ledger.md` | `a623c77` | n/a (tooling) | `--set barrios` still **96/100, all A** (no regression); `--set servicios` runs clean and reports **42** | `git revert a623c77` |
 | 02 | 2026-08-03 | Step 0b — page × query GSC pull, to attribute queries to URLs | `impulse-seo-ops/page_query_pull.py` (new), `data/gsc/2026-08-01/PagesXQueries.csv` | `465a217` | n/a (measurement) | 5,488 rows, window 2026-07-05 → 2026-08-01. Overturned three targeting assumptions — see below | `git revert 465a217` |
 | 03 | 2026-08-03 | Step 1 — titles + meta descriptions, `fullTitle` on all 7 | `src/pages/cursos-ingles/*.astro` (7) | `2907ca5` | **42 → 45** | Title Tag **6–7 → 10/10 on all seven**; build green (150 pages); all titles ≤60 and metas ≤160 **read from `dist/`**, none cut mid-word | `git revert 2907ca5` |
-| 04 | 2026-08-03 | Step 2 — H1s + answer capsules; fix the intro scorer | `GEO-Content-Project/geo-audit.py`, `pages/cursos/*.tsx` (7) | `PENDING` | **45 → 55** | H1 **5 → 9/10 all seven**; Intro **→ 10/10 all seven**; `astro check` 0 errors 0 warnings; build green; H1s verified in `dist/`; barrios re-run **still 96** | `git revert <sha>` |
+| 04 | 2026-08-03 | Step 2 — H1s + answer capsules; fix the intro scorer | `GEO-Content-Project/geo-audit.py`, `pages/cursos/*.tsx` (7) | `7c8d2a4` | **45 → 55** | H1 **5 → 9/10 all seven**; Intro **→ 10/10 all seven**; `astro check` 0 errors 0 warnings; build green; H1s verified in `dist/`; barrios re-run **still 96** | `git revert 7c8d2a4` |
+| 05 | 2026-08-03 | Step 3 — team bios, 21 verbatim reviews, 3 case studies | `pages/cursos/*.tsx` (7) | `PENDING` | **55 → 68** | Team **2–7 → 10/10 all seven**; Testimonials **0 → 10/10 all seven**; Case Studies 0 → 9 on three pages, **still 0 on four (gap, see below)**; `verify_quotes.py --dist` **107 quotes, 0 FAIL**; `astro check` clean; build green | `git revert <sha>` |
 
 ---
 
@@ -119,6 +120,27 @@ the barrio pages — address, "junto al centro comercial La Vaguada", Metro Barr
 **Backups:** no `.bak-*` twins were written. Every step is committed on the branch before the next
 one starts, so git is the backup — and untracked `.bak-*` files beside the sources are a known
 hazard in this repo (they get committed silently, and under `public/` they ship to production).
+
+**2026-08-03 — row 05: OPEN BLOCKER. There is no approved case study involving a child or teenager.**
+The three approved case studies are all adults: **Sergio** (30, no CEFR claim — the `[GAP]` marker is
+binding), **Josmary** (B1 group, evening classes), **Daniel de la Peña** (18 months, no CEFR claim).
+They were placed on `/adultos/`, `/cursos-ingles/` and `/particulares/` respectively.
+
+`/infantil/`, `/primaria/` and `/secundaria/` therefore score **0/10 on Case Studies**, and
+`/online/` does too — none of the three studied online, so putting them there would imply something
+untrue. Those four pages **cannot reach grade A** until Danny supplies a real case: a named student
+(or parent, with consent), how long they studied, and a verifiable outcome. Writing a plausible
+child's story to close the gap is not an option.
+
+`/online/` has a second, related gap: **not one of the 180 Google reviews mentions online classes,
+videollamada or distancia.** The three quotes on that page are genuine and about the academy's
+teaching, and the section is headed neutrally ("Lo que dicen nuestros alumnos") rather than implying
+they were online students.
+
+Quote selection: 21 quotes, 21 distinct reviewers, 7 distinct sets — reuse was permitted but did not
+turn out to be needed. Every quote is a contiguous verbatim excerpt (`check()` accepts a substring of
+the real review), chosen to match the page's audience: Patricia Gallardo's "he ido todo el año con mi
+bebé" on infantil, Miguel Garcia's "los niños de 10 y 12 años" on primaria, and so on.
 
 Also fixed in the same commit:
 - `find_astro_for()` now matches on a word boundary; the bare substring test would match a

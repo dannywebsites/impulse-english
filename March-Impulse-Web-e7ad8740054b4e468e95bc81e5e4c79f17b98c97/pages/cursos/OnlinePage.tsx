@@ -408,6 +408,42 @@ export default function OnlinePage() {
         </div>
       </section>
 
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            Las clases online las dan los mismos profesores del centro: JP, director de estudios y cofundador, con más de 10 años enseñando inglés, y Danny, cofundador, irlandés afincado en Madrid desde hace 12 años.
+          </p>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen nuestros alumnos
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Michelle Correa Sánchez", text: "Una academia con profesores muy amables y cercanos, te enseñan acorde a tus capacidades y se adaptan a las necesidades del alumno." },
+              { name: "Laia Lubillo Solsona", text: "Las clases en Impulse son muy entretenidas y divertidas, aprendes inglés sin darte cuenta. Los profesores se adaptan a ti, por lo que el trato es muy personalizado." },
+              { name: "Ana Torrado", text: "Impulse English Academy ha sido la mejor academia en la que he estado. Gracias a JP aprobé la asignatura. Lo que más me gusta es que se adaptan a tus necesidades y se centran donde ven más dificultades." }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
       <Footer />
     </>
   );

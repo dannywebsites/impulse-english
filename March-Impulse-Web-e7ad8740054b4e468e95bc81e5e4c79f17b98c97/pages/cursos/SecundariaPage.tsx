@@ -444,6 +444,42 @@ export default function SecundariaPage() {
         </div>
       </section>
 
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            La preparación de B1, B2, C1 y EBAU la lleva JP, director de estudios y cofundador, con más de 10 años enseñando inglés. Danny, cofundador, es irlandés y trabaja en Madrid desde hace 12 años.
+          </p>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen las familias de secundaria
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Luis Martin Gonzalez", text: "100% recomendable, merece la pena. De echo mi hijo ahora sigue con JP, para prestarse sus exámenes de titulación Gran persona JP y su método" },
+              { name: "Marina Penerbosa", text: "Muy contenta con haber encontrado esta academia para mi hijo. Todo el staff es MUY amable, dedicado y profesional. Mi hijo ha progresado muchísimo en su comprensión y desempeño en ingles." },
+              { name: "Laura García Lomas", text: "Una suerte encontrar esta academia con tan grandes profesionales. Gracias a ellos he conseguido el B2, la metodología hace que aprendas rápido y no olvides" }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
       <Footer />
 
       {/* Schema.org Structured Data */}
