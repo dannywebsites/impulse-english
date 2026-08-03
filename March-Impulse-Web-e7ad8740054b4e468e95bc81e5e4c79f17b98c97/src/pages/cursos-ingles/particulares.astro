@@ -2,12 +2,25 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ParticularesPage, { courseSchema, faqs } from '../../../pages/cursos/ParticularsPage';
 import CookieBanner from '../../../components/CookieBanner';
-import { generateFAQSchema } from '../../../utils/schemaData';
+import { generateBreadcrumbSchema, generateFAQSchema, generateLocationPageSchema } from '../../../utils/schemaData';
 
+const locationSchema = generateLocationPageSchema({
+  locationName: 'La Vaguada',
+  pageUrl: 'https://impulse-english.es/cursos-ingles/particulares',
+});
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Cursos de Inglés', url: 'https://impulse-english.es/cursos-ingles/' },
+  { name: 'Clases Particulares de Inglés', url: 'https://impulse-english.es/cursos-ingles/particulares/' },
+]);
 const schemas = [
+  ...locationItems,
+  breadcrumb,
   courseSchema,
   ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
 ];
+
 ---
 
 <BaseLayout
