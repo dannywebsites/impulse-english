@@ -42,7 +42,8 @@ and Pricing (1.9 avg).
 | 03 | 2026-08-03 | Step 1 — titles + meta descriptions, `fullTitle` on all 7 | `src/pages/cursos-ingles/*.astro` (7) | `2907ca5` | **42 → 45** | Title Tag **6–7 → 10/10 on all seven**; build green (150 pages); all titles ≤60 and metas ≤160 **read from `dist/`**, none cut mid-word | `git revert 2907ca5` |
 | 04 | 2026-08-03 | Step 2 — H1s + answer capsules; fix the intro scorer | `GEO-Content-Project/geo-audit.py`, `pages/cursos/*.tsx` (7) | `7c8d2a4` | **45 → 55** | H1 **5 → 9/10 all seven**; Intro **→ 10/10 all seven**; `astro check` 0 errors 0 warnings; build green; H1s verified in `dist/`; barrios re-run **still 96** | `git revert 7c8d2a4` |
 | 05 | 2026-08-03 | Step 3 — team bios, 21 verbatim reviews, 3 case studies | `pages/cursos/*.tsx` (7) | `c64b5c7` | **55 → 68** | Team **2–7 → 10/10 all seven**; Testimonials **0 → 10/10 all seven**; Case Studies 0 → 9 on three pages, **still 0 on four (gap, see below)**; `verify_quotes.py --dist` **107 quotes, 0 FAIL**; `astro check` clean; build green | `git revert c64b5c7` |
-| 06 | 2026-08-03 | Step 4 — real prices + NAP contact/transit block | `pages/cursos/*.tsx` (7) | `PENDING` | **68 → 73** | Pricing **0–9 → 10/10 all seven**; Contact **7–10 → 10/10**; Service Area **6–10 → 10/10**; `astro check` clean; build green | `git revert <sha>` |
+| 06 | 2026-08-03 | Step 4 — real prices + NAP contact/transit block | `pages/cursos/*.tsx` (7) | `a8cd8c4` | **68 → 73** | Pricing **0–9 → 10/10 all seven**; Contact **7–10 → 10/10**; Service Area **6–10 → 10/10**; `astro check` clean; build green | `git revert a8cd8c4` |
+| 07 | 2026-08-03 | Step 6 — LocalBusiness + Service/Offer + AggregateRating schema; qualify 3 claims | `utils/schemaData.ts`, `src/pages/cursos-ingles/*.astro` (7) | `PENDING` | **73 → 91 (grade A)** | LocalBusiness **0 → 9**, Service **0 → 9**, AggregateRating **0 → 10** on all seven; types confirmed **in `dist/`** with `reviewCount 180`; `astro check` clean; build green; barrios **still 96** | `git revert <sha>` |
 
 ---
 
@@ -168,6 +169,22 @@ wants the literal phrase "prueba de nivel" in the hero; Infantil's actual offer 
 de prueba*, kept on purpose (a 25-minute level test is not age-appropriate for 2–5s). Its hero
 button already links to `/prueba-de-nivel-ingles/` while the label says otherwise — a pre-existing
 mismatch worth a separate look.
+
+**2026-08-03 — row 07: the plan's `napData` item was already done.** The plan said to change
+`reviewCount` 178 → 180. It is **already 180** in `utils/napData.ts:139`; the "currently 178" note
+came from a stale barrio-audit comment. No change made. Verified 180 in the emitted JSON-LD.
+
+**2026-08-03 — row 07 broke the wrappers once before getting it right.** The first attempt replaced
+the `const schemas = [...]` array with the regex `\[[^\]]*\]`, which stops at the first `]` — and
+these arrays contain `[generateFAQSchema(faqs)]` inside a ternary. The result was two `const schemas`
+declarations per file. Caught immediately, the seven files were `git checkout`-ed back, and the
+replacement redone with brace counting. Nothing broken reached a commit.
+
+**Claims qualified in the same commit** (the item flagged in the previous session's handoff): three
+unqualified "100% de aprobados" strings in `utils/schemaData.ts` — the Organization description
+(line 24, which renders on **every page** and is the entity description Google reads), the Cambridge
+`Service` description, and the `LocalBusiness` description. All now read "100% de aprobados en el
+curso 2024/25 (alumnos presentados)".
 
 Also fixed in the same commit:
 - `find_astro_for()` now matches on a word boundary; the bare substring test would match a
