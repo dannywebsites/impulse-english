@@ -38,7 +38,8 @@ and Pricing (1.9 avg).
 | # | Date | Step | Files touched | Commit | GEO before → after | Gates | Reverse with |
 |---|---|---|---|---|---|---|---|
 | 01 | 2026-08-03 | Step 0 — service mode for `geo-audit.py`; freeze baseline | `GEO-Content-Project/geo-audit.py`, `service-baseline.json`, `service-pages-ledger.md` | `a623c77` | n/a (tooling) | `--set barrios` still **96/100, all A** (no regression); `--set servicios` runs clean and reports **42** | `git revert a623c77` |
-| 02 | 2026-08-03 | Step 0b — page × query GSC pull, to attribute queries to URLs | `impulse-seo-ops/page_query_pull.py` (new), `data/gsc/2026-08-01/PagesXQueries.csv` | `PENDING` | n/a (measurement) | 5,488 rows, window 2026-07-05 → 2026-08-01. Overturned three targeting assumptions — see below | `git revert <sha>` |
+| 02 | 2026-08-03 | Step 0b — page × query GSC pull, to attribute queries to URLs | `impulse-seo-ops/page_query_pull.py` (new), `data/gsc/2026-08-01/PagesXQueries.csv` | `465a217` | n/a (measurement) | 5,488 rows, window 2026-07-05 → 2026-08-01. Overturned three targeting assumptions — see below | `git revert 465a217` |
+| 03 | 2026-08-03 | Step 1 — titles + meta descriptions, `fullTitle` on all 7 | `src/pages/cursos-ingles/*.astro` (7) | `PENDING` | **42 → 45** | Title Tag **6–7 → 10/10 on all seven**; build green (150 pages); all titles ≤60 and metas ≤160 **read from `dist/`**, none cut mid-word | `git revert <sha>` |
 
 ---
 
@@ -87,6 +88,13 @@ by this.
 `/academias-ingles-madrid/adultos/` would de-target the only page Google associates with adult
 intent, and hand that intent to a page with zero non-brand demand. Steps 1–7 should land first and
 prove the service page can hold the term before Step 8 touches the guide.
+
+**2026-08-03 — row 03 nearly shipped two wrong prices.** The first draft of the meta descriptions
+put "desde 64 €/mes" on Adultos and Primaria, carried over from the barrio pages' `Offer` block.
+Checked against `pages/PreciosPage.tsx` before writing: Infantil is *desde* 64 €/mes, **Primaria is
+83 €/mes**, Secundaria *desde* 87 €/mes, **Adultos is 94 €/mes**, Particulares and Online are "a
+consultar". Corrected before anything was written to disk. The 64/83/87/94 figures the plan quoted
+are the four course tiers, not a range any single page can claim.
 
 Also fixed in the same commit:
 - `find_astro_for()` now matches on a word boundary; the bare substring test would match a
