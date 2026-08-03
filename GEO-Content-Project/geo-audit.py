@@ -49,6 +49,27 @@ ELEMENTS = [
     ("TECHNICAL & SCHEMA", "AggregateRating"),
 ]
 
+# The page sets this scorecard can be run against. Same 16 elements either way —
+# what changes is which components are peers for the uniqueness comparison, and
+# whether a page carries a place name of its own.
+#
+# `own_place_name`: barrio pages are named after a place, so score_h1 credits the
+# page's own barrio as a local signal. Service pages are named after an audience
+# ("Adultos", "Primaria"), so there is no place name to look for and the H1 has to
+# earn its local signal from the shared vocabulary like every other page.
+PAGE_SETS = {
+    "barrios": {
+        "glob": "pages/ubicaciones/*.tsx",
+        "label": "barrio pages",
+        "own_place_name": True,
+    },
+    "servicios": {
+        "glob": "pages/cursos/*.tsx",
+        "label": "service pages",
+        "own_place_name": False,
+    },
+}
+
 # Spanish generic-marketing blacklist — the anti-pattern phrases that cap a score.
 BLACKLIST = [
     r"tu academia de confianza", r"l[ií]deres en", r"amplia experiencia",
@@ -86,10 +107,21 @@ def read(path):
 
 
 def find_astro_for(page_name, root):
-    """Map LaVentillaPage.tsx -> src/pages/academia-ingles-*.astro that imports it."""
+    """Map AdultosPage.tsx -> the src/pages/**/*.astro wrapper that imports it.
+
+    The glob is RECURSIVE. It used to be `src/pages/*.astro`, which only ever sees
+    top-level routes — every page in a subdirectory (cursos-ingles/, examenes-cambridge/)
+    resolved to None, and a None wrapper silently scores Title Tag and all four schema
+    rows as 0. The barrio pages happened to live at the top level, so the bug stayed
+    invisible until this ran against the service pages.
+
+    Matched on a word boundary: the bare substring test made `ParticularsPage` match
+    any wrapper that merely mentioned it, and short stems collide easily.
+    """
     stem = os.path.basename(page_name).replace(".tsx", "")
-    for astro in glob.glob(os.path.join(root, "src/pages/*.astro")):
-        if stem in read(astro):
+    probe = re.compile(r"\b%s\b" % re.escape(stem))
+    for astro in sorted(glob.glob(os.path.join(root, "src/pages/**/*.astro"), recursive=True)):
+        if probe.search(read(astro)):
             return astro
     return None
 
@@ -417,8 +449,21 @@ def barrio_of(path):
     return parts[0] if parts else None
 
 
-def dist_of(page_path, root):
-    """Read the built HTML for this page, if a dist/ exists."""
+def dist_of(page_path, root, astro_src=None):
+    """Read the built HTML for this page, if a dist/ exists.
+
+    Prefers the wrapper's `canonical` prop, which states the built path exactly.
+    Guessing the slug from the component name works for barrios but not for
+    services: ParticularsPage.tsx serves /cursos-ingles/particulares/ and
+    CursosOverviewPage.tsx serves /cursos-ingles/ — neither is derivable from
+    the filename. Falls back to the old slug guess so barrio scoring cannot move.
+    """
+    if astro_src:
+        m = re.search(r'canonical="([^"]+)"', astro_src)
+        if m:
+            cand = os.path.join(root, "dist", m.group(1).strip("/"), "index.html")
+            if os.path.exists(cand):
+                return read(cand)
     stem = os.path.basename(page_path).replace("Page.tsx", "")
     slug = re.sub(r"(?<!^)(?=[A-Z])", "-", stem).lower()
     for cand in glob.glob(os.path.join(root, "dist", "academia-ingles-*", "index.html")):
@@ -438,13 +483,16 @@ def grade(score):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dir", default=DEFAULT_DIR)
+    ap.add_argument("--set", default="barrios", choices=sorted(PAGE_SETS),
+                    help="which page set to audit (default: barrios)")
     ap.add_argument("--json")
     args = ap.parse_args()
     root = args.dir
+    pset = PAGE_SETS[args.set]
 
-    files = sorted(glob.glob(os.path.join(root, "pages/ubicaciones/*.tsx")))
+    files = sorted(glob.glob(os.path.join(root, pset["glob"])))
     if not files:
-        sys.exit(f"no location pages under {root}/pages/ubicaciones/")
+        sys.exit(f"no {pset['label']} under {root}/{pset['glob']}")
 
     srcs = {f: read(f) for f in files}
     texts = {f: strip_code(s) for f, s in srcs.items()}
@@ -472,11 +520,12 @@ def main():
         src, text, a = srcs[f], texts[f], astro_srcs[f]
         row = [
             score_title(a, list(titles.values()), titles[f], truncs[f], themes[f]),
-            score_h1(text, h1s[f], list(h1s.values()), barrio_of(f)),
+            score_h1(text, h1s[f], list(h1s.values()),
+                     barrio_of(f) if pset["own_place_name"] else None),
             score_intro(text),
             score_uniqueness(f, sets),
             score_team(text),
-            score_testimonials(text, src, dist_of(f, root)),
+            score_testimonials(text, src, dist_of(f, root, a)),
             score_case_study(text, src),
             score_area(text),
             score_cta(src),
@@ -496,7 +545,7 @@ def main():
     w = max(len(name(f)) for f in files)
 
     print("\n" + "=" * 78)
-    print("GEO AUDIT — BASELINE, barrio pages".center(78))
+    print(("GEO AUDIT — %s" % pset["label"]).center(78))
     print("=" * 78)
     hdr = "ELEMENT".ljust(24) + "".join(name(f)[:6].rjust(8) for f in files)
     print("\n" + hdr)
