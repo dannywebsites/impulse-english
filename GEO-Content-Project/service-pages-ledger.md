@@ -45,9 +45,50 @@ and Pricing (1.9 avg).
 | 06 | 2026-08-03 | Step 4 — real prices + NAP contact/transit block | `pages/cursos/*.tsx` (7) | `a8cd8c4` | **68 → 73** | Pricing **0–9 → 10/10 all seven**; Contact **7–10 → 10/10**; Service Area **6–10 → 10/10**; `astro check` clean; build green | `git revert a8cd8c4` |
 | 07 | 2026-08-03 | Step 6 — LocalBusiness + Service/Offer + AggregateRating schema; qualify 3 claims | `utils/schemaData.ts`, `src/pages/cursos-ingles/*.astro` (7) | `20d4c20` | **73 → 91 (grade A)** | LocalBusiness **0 → 9**, Service **0 → 9**, AggregateRating **0 → 10** on all seven; types confirmed **in `dist/`** with `reviewCount 180`; `astro check` clean; build green; barrios **still 96** | `git revert 20d4c20` |
 | 08 | 2026-08-03 | Step 5 — 28 location FAQs added; 33 yes/no openers rewritten | `pages/cursos/*.tsx` (7) | `e92f675` | **91 → 93** | FAQ Section **5–8 → 9–10 all seven**; **0 answers** now open with "Sí."/"No."; `verify_quotes.py --dist` 107 quotes 0 FAIL; `astro check` clean; build green | `git revert e92f675` |
-| 09 | 2026-08-03 | Step 7 — interlinking: home link, hub uplink, sibling row, barrio downline | `pages/cursos/*.tsx` (7), `pages/ubicaciones/*.tsx` (14) | `PENDING` | 93 (unchanged) | Inbound links: online **1 → 21**, hub **1 → 21**, secundaria 10 → 30, primaria 16 → 36; **all 7 now link to `/`** (was 0); barrios **still 96**, uniqueness avg 9.7 → 9.6, no element below 9 | `git revert <sha>` |
+| 09 | 2026-08-03 | Step 7 — interlinking: home link, hub uplink, sibling row, barrio downline | `pages/cursos/*.tsx` (7), `pages/ubicaciones/*.tsx` (14) | `8e906fd` | 93 (unchanged) | Inbound links: online **1 → 21**, hub **1 → 21**, secundaria 10 → 30, primaria 16 → 36; **all 7 now link to `/`** (was 0); barrios **still 96**, uniqueness avg 9.7 → 9.6, no element below 9 | `git revert 8e906fd` |
+| 10 | 2026-08-03 | Step 9 — final gate run (no code change) | `service-pages-ledger.md` | `PENDING` | 93 | See the gate table below. **10 of 11 gates pass; the element-level gate does not** | n/a |
 
 ---
+
+## Final gate run — 2026-08-03
+
+| # | Gate | Result |
+|---|---|---|
+| 1 | `geo-audit.py --set servicios` ≥ 90 total | **PASS — 93/100, grade A** (from 42) |
+| 1b | …and every element ≥ 9 | **FAIL — see below** |
+| 2 | `--set barrios` still 96, no regression | **PASS — 96/100, grade A** |
+| 3 | `npm run build` + `astro check` | **PASS — 150 pages, 0 errors, 0 warnings** |
+| 4 | `verify_quotes.py --dist` | **PASS — 107 quotes, 0 FAIL** |
+| 5 | `dist/` titles ≤60, metas ≤160, none cut | **PASS — 7/7** |
+| 6 | Schema types + `reviewCount` in `dist/` | **PASS — LocalBusiness, Service+Offer, FAQPage, BreadcrumbList, AggregateRating 180 on all 7** |
+| 7 | No yes/no FAQ openers; all 7 link to `/` | **PASS — 0 remaining; 7/7** |
+| 8 | Lighthouse LCP < 1.2 s | **PASS — 0.57–0.68 s, perf 98–99, CLS 0.080** |
+| 9 | `rm -rf dist` before counting; no `index 2.html` | **PASS — 0 duplicates** |
+| 10 | Explicit staging only, no `.bak-*` committed | **PASS** |
+| 11 | `npm run verify:tracking` | **N/A — no tracking surface touched** (`BaseLayout` scripts, `LeadForm`, `CoursePopup`, `PruebaNivelPage`, GTM/GA4 all untouched) |
+
+### Per-page scores
+
+| | Adultos | Overview | Infantil | Online | Particulares | Primaria | Secundaria |
+|---|---|---|---|---|---|---|---|
+| Before | 47 | 46 | 39 | 40 | 41 | 42 | 41 |
+| After | **97** | **97** | **89** | **91** | **96** | **91** | **91** |
+
+### The two elements still below the gate
+
+1. **Case Studies 0/10** on `/infantil/`, `/primaria/`, `/secundaria/`, `/online/`. Blocked on
+   Danny: there is no approved case study involving a child, a teenager, or an online student.
+2. **Hero CTA 7/10** on `/infantil/`. Deliberate — the scorer wants the literal phrase "prueba de
+   nivel" in the hero, and Infantil's real offer is a 1-hour *clase de prueba*.
+
+Everything else is 9 or 10 on all seven pages.
+
+### Lighthouse note
+
+A first run reported CLS 0.154 and was nearly written up as a regression. Four repeat runs on the
+same build all returned **0.080**, against 0.091 on the pre-change build — so the page is marginally
+*better*, and the outlier was a cold start on a just-launched static server. **Never call a CLS
+regression from one Lighthouse run.**
 
 ## Notes and corrections
 
