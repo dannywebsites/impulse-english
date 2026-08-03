@@ -150,11 +150,11 @@ export default function PrimariaPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Inglés para Primaria
+              Clases de inglés para primaria, de 6 a 12 años, en La Vaguada
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              Construimos una base sólida con clases dinámicas, grupos reducidos y seguimiento personalizado. Cambridge Young Learners en La Vaguada.
+              Damos clases de inglés para primaria, de 6 a 12 años, en Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. Preparamos Cambridge Young Learners en grupos reducidos, por 83 €/mes, con Metro Barrio del Pilar (Línea 9) a 3 minutos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a

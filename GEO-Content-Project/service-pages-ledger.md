@@ -39,7 +39,8 @@ and Pricing (1.9 avg).
 |---|---|---|---|---|---|---|---|
 | 01 | 2026-08-03 | Step 0 — service mode for `geo-audit.py`; freeze baseline | `GEO-Content-Project/geo-audit.py`, `service-baseline.json`, `service-pages-ledger.md` | `a623c77` | n/a (tooling) | `--set barrios` still **96/100, all A** (no regression); `--set servicios` runs clean and reports **42** | `git revert a623c77` |
 | 02 | 2026-08-03 | Step 0b — page × query GSC pull, to attribute queries to URLs | `impulse-seo-ops/page_query_pull.py` (new), `data/gsc/2026-08-01/PagesXQueries.csv` | `465a217` | n/a (measurement) | 5,488 rows, window 2026-07-05 → 2026-08-01. Overturned three targeting assumptions — see below | `git revert 465a217` |
-| 03 | 2026-08-03 | Step 1 — titles + meta descriptions, `fullTitle` on all 7 | `src/pages/cursos-ingles/*.astro` (7) | `PENDING` | **42 → 45** | Title Tag **6–7 → 10/10 on all seven**; build green (150 pages); all titles ≤60 and metas ≤160 **read from `dist/`**, none cut mid-word | `git revert <sha>` |
+| 03 | 2026-08-03 | Step 1 — titles + meta descriptions, `fullTitle` on all 7 | `src/pages/cursos-ingles/*.astro` (7) | `2907ca5` | **42 → 45** | Title Tag **6–7 → 10/10 on all seven**; build green (150 pages); all titles ≤60 and metas ≤160 **read from `dist/`**, none cut mid-word | `git revert 2907ca5` |
+| 04 | 2026-08-03 | Step 2 — H1s + answer capsules; fix the intro scorer | `GEO-Content-Project/geo-audit.py`, `pages/cursos/*.tsx` (7) | `PENDING` | **45 → 55** | H1 **5 → 9/10 all seven**; Intro **→ 10/10 all seven**; `astro check` 0 errors 0 warnings; build green; H1s verified in `dist/`; barrios re-run **still 96** | `git revert <sha>` |
 
 ---
 
@@ -95,6 +96,29 @@ Checked against `pages/PreciosPage.tsx` before writing: Infantil is *desde* 64 �
 83 €/mes**, Secundaria *desde* 87 €/mes, **Adultos is 94 €/mes**, Particulares and Online are "a
 consultar". Corrected before anything was written to disk. The 64/83/87/94 figures the plan quoted
 are the four course tiers, not a range any single page can claim.
+
+**2026-08-03 — row 04 found a second measurement bug: "Intro Paragraph" never read the intro.**
+`score_intro` took the first 120 words of `strip_code(whole file)`. In these components the first
+thing in the file is a `generateCourseSchema({...})` config (service pages) or a `benefits` array
+(barrio pages) — so the element was scored on data structures no reader ever sees, and a page could
+score well on an intro it did not have. Fixed with `visible_intro()`, which reads from the `<h1>`
+onward. Re-baselined both sets afterwards: **barrios stayed at 96** and their Intro average rose to
+9.9, so their real intros were genuinely strong and the old number was not flattering them. Service
+intros, measured correctly for the first time, started at 7.6 avg.
+
+Same failure shape as the title-truncation incident: the audit was reading the input rather than
+the output. Worth assuming there are more of these.
+
+**2026-08-03 — row 04 nearly invented an address.** The first draft of the answer capsules placed
+the academy on "calle Ginzo de Limia". The real address in `utils/napData.ts` is **Av. de El
+Ferrol, 22, 28029 Madrid**; Ginzo de Limia is the *bus stop* (147, 42, 83), one minute away. All
+location detail in the capsules is now taken from `napData.ts` and from phrasing already shipped on
+the barrio pages — address, "junto al centro comercial La Vaguada", Metro Barrio del Pilar (Línea 9)
+3 minutes away.
+
+**Backups:** no `.bak-*` twins were written. Every step is committed on the branch before the next
+one starts, so git is the backup — and untracked `.bak-*` files beside the sources are a known
+hazard in this repo (they get committed silently, and under `public/` they ship to production).
 
 Also fixed in the same commit:
 - `find_astro_for()` now matches on a word boundary; the bare substring test would match a

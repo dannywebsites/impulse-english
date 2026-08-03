@@ -87,11 +87,11 @@ export default function OnlinePage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Clases de Inglés Online en Directo
+              Clases de inglés online en directo desde La Vaguada, grupos de 8
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              La misma metodología Impulse, los mismos profesores, los mismos resultados. Desde tu casa, tu oficina o donde estés. Grupos reducidos con preparación Cambridge y Linguaskill.
+              Damos clases de inglés online en directo desde nuestra academia de Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. El mismo profesor y el mismo método que en clase presencial, en grupos de máximo 8 alumnos y sesiones de 60 min.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a

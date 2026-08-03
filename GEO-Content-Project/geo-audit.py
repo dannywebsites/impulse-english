@@ -210,6 +210,21 @@ def score_h1(text, h1, all_h1s, barrio=None):
     return min(s, 10), f"local={has_local} number={has_number}"
 
 
+def visible_intro(src):
+    """The answer-capsule slot: visible copy from the H1 onward.
+
+    NOT the first 120 words of the flattened file. strip_code() flattens the whole
+    component, and in these files the first thing in the file is a schema config
+    object (service pages) or a `benefits` array (barrio pages) — so "Intro
+    Paragraph" was being scored on data structures no reader ever sees, and a page
+    could score well on an intro it did not have. Same class of error as scoring
+    the .astro title prop instead of the title BaseLayout actually composes.
+    """
+    m = re.search(r"<h1[^>]*>", src)
+    start = m.start() if m else 0
+    return strip_code(src[start:start + 4000])
+
+
 def score_intro(text):
     """First ~80 words of visible copy = the answer capsule slot."""
     words = text.split()[:120]
@@ -522,7 +537,7 @@ def main():
             score_title(a, list(titles.values()), titles[f], truncs[f], themes[f]),
             score_h1(text, h1s[f], list(h1s.values()),
                      barrio_of(f) if pset["own_place_name"] else None),
-            score_intro(text),
+            score_intro(visible_intro(src)),
             score_uniqueness(f, sets),
             score_team(text),
             score_testimonials(text, src, dist_of(f, root, a)),

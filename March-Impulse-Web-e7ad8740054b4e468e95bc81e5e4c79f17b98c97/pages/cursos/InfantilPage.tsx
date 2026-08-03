@@ -167,11 +167,11 @@ export default function InfantilPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Inglés para Infantil
+              Clases de inglés infantil de 2 a 5 años en La Vaguada
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              Los más pequeños aprenden jugando, cantando y explorando en un entorno seguro y positivo. Metodología Great Little People en La Vaguada, Barrio del Pilar.
+              Enseñamos inglés a niños de 2 a 5 años en Barrio del Pilar, en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Trabajamos con el método Great Little People, 100% en inglés, en grupos de máximo 7 alumnos y desde 64 €/mes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a

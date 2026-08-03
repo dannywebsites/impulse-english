@@ -128,11 +128,11 @@ export default function CursosOverviewPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Cursos de Inglés en Madrid Norte
+              Cursos de inglés en Madrid, en La Vaguada, desde los 2 años
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
-              Programas para todas las edades, desde 2 años hasta adultos
+              Impulse English Academy imparte cursos de inglés en Madrid desde los 2 años hasta adultos, en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Somos centro oficial Cambridge y Linguaskill, con grupos de 7 a 8 alumnos y cuotas desde 64 €/mes.
             </p>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress}
