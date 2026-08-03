@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { User, Video, MapPin, Calendar, Target, Clock, CheckCircle, Briefcase, FileText, Award } from 'lucide-react';
+import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -51,16 +52,32 @@ const courseGalleryImages = [
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿Dónde se dan las clases particulares presenciales?",
+    answer: "En la academia, Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. Metro Barrio del Pilar (Línea 9) está a 3 minutos andando."
+  },
+  {
+    question: "¿Cuánto se tarda en llegar desde La Vaguada?",
+    answer: "Alrededor de 1 minuto desde el centro comercial La Vaguada y menos de 5 desde el resto de Barrio del Pilar."
+  },
+  {
+    question: "¿Dais clase a domicilio en otros barrios?",
+    answer: "Las clases se dan en la academia o por videollamada. Quien no puede desplazarse desde su barrio suele elegir el formato online, con el mismo profesor y el mismo precio."
+  },
+  {
+    question: "¿Qué transporte tengo cerca de la academia?",
+    answer: "Metro Barrio del Pilar (Línea 9) a 3 minutos, Peñagrande y Herrera Oria en la Línea 7, y los buses 147, 42 y 83 en la parada Ginzo de Limia - Ferrol."
+  },
+  {
     question: "¿Qué es mejor: clases particulares o grupo reducido?",
     answer: "Depende de tu objetivo. Si necesitas rapidez, un plan muy específico o tienes horarios variables, 1:1 suele ser más eficiente. Si buscas constancia y practicar con más interacción social, un grupo reducido funciona muy bien. Te recomendamos lo mejor tras conocerte y evaluarte."
   },
   {
     question: "¿Puedo hacer clases online y presencial combinadas?",
-    answer: "Sí. Mucha gente combina ambas modalidades: presencial para speaking y dinámica, online para flexibilidad. Diseñamos un plan único para que el progreso sea continuo independientemente del formato. Lo importante es mantener consistencia y trabajar exactamente lo que necesitas mejorar."
+    answer: "Mucha gente combina ambas modalidades: presencial para speaking y dinámica, online para flexibilidad. Diseñamos un plan único para que el progreso sea continuo independientemente del formato. Lo importante es mantener consistencia y trabajar exactamente lo que necesitas mejorar."
   },
   {
     question: "¿Preparáis entrevistas de trabajo en inglés?",
-    answer: "Sí. Trabajamos respuestas, vocabulario por sector, estructura, fluidez y seguridad. Simulamos entrevistas reales, corregimos puntos clave y preparamos preguntas típicas. También trabajamos presentaciones y reuniones si lo necesitas. El objetivo es que llegues con guion, control y soltura."
+    answer: "Trabajamos respuestas, vocabulario por sector, estructura, fluidez y seguridad. Simulamos entrevistas reales, corregimos puntos clave y preparamos preguntas típicas. También trabajamos presentaciones y reuniones si lo necesitas. El objetivo es que llegues con guion, control y soltura."
   },
   {
     question: "¿También preparáis IELTS / TOEFL?",
@@ -72,7 +89,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Puedo cambiar de horario?",
-    answer: "Sí, con aviso previo. Buscamos flexibilidad real, pero siempre sujeto a disponibilidad de agenda. Si necesitas cambios frecuentes, lo estructuramos desde el principio para evitar interrupciones. Lo importante es sostener el ritmo de aprendizaje sin perder continuidad."
+    answer: "Con aviso previo. Buscamos flexibilidad real, pero siempre sujeto a disponibilidad de agenda. Si necesitas cambios frecuentes, lo estructuramos desde el principio para evitar interrupciones. Lo importante es sostener el ritmo de aprendizaje sin perder continuidad."
   },
   {
     question: "¿Qué material usáis?",
@@ -153,11 +170,11 @@ export default function ParticularesPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Clases Particulares de Inglés
+              Clases particulares de inglés 1:1 en La Vaguada, Madrid
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              Un profesor dedicado a ti, a tu ritmo y con un plan diseñado para tu meta. Online o presencial en La Vaguada, Barrio del Pilar.
+              Damos clases particulares de inglés uno a uno en Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar, o por videollamada. El plan lo diseña JP, director de estudios, tras una prueba de nivel gratuita de 25 min. Sesiones de 60 min.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
@@ -455,6 +472,127 @@ export default function ParticularesPage() {
             showLevel={true}
             variant="refresh"
           />
+        </div>
+      </section>
+
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            Tu plan lo diseña JP, director de estudios y cofundador de la academia, que lleva más de 10 años enseñando inglés. Si prefieres trabajar la conversación con un nativo, Danny es irlandés y lleva 12 años dando clase en Madrid.
+          </p>
+        </div>
+      </section>
+
+      {/* Un caso real — hechos aprobados, sin claims de nivel inventados */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <span className="eyebrow mb-4">Un caso real</span>
+          <h2 className="t-h2 text-zinc-900 mb-5">Daniel de la Peña</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+                Lo que Daniel quería era salir de España a trabajar: <em>&laquo;acceder a oportunidades laborales en el extranjero y en países de habla inglesa&raquo;</em>. Le llevó cerca de año y medio de clases.
+              </p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">18 meses</p><p className="t-small text-zinc-600">con nosotros</p></div>
+              <div><p className="t-h3 text-accent-blue">Su objetivo</p><p className="t-small text-zinc-600">trabajar en un país de habla inglesa</p></div>
+              <div><p className="t-h3 text-accent-blue">Conseguido</p><p className="t-small text-zinc-600">hoy da inglés en primaria a jornada completa</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed">
+                Cuando explica por qué le sirvió no habla del temario, sino del <em>&laquo;trato personalizado y sobre todo profesionalidad y compromiso&raquo;</em>.
+              </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen los alumnos de clases particulares
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Virginia Toledo", text: "Mi hija tuvo unas clases particulares con JP para terminar de prepararse para el examen Advanced y estaba muy contenta con la dinámica de las clases. Además ha aprobado!!" },
+              { name: "Antonio del Pozo", text: "Clases perfectas, totalmente adaptadas a mi objetivo de conseguir el C1 de inglés. JP es un profesor extraordinario, siempre dispuesto para ayudarte en todo lo que necesites." },
+              { name: "Roberto Herrero", text: "Solo tengo palabras de agradecimiento para Impulse English Academy y muy en particular a mi profesor Daniel. Gracias de nuevo por que este aprendizaje haya sido tan fácil y rápido. Os deseo lo mejor." }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuestan las clases particulares</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                Las clases particulares son <strong>29 €/hora</strong>, presenciales u online, desde <strong>29 €</strong> la sesión suelta. Tú eliges cuántas horas a la semana.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                Si prefieres grupo, los cursos del centro van de <strong>64 €</strong> a <strong>99 €</strong> al mes. En ambos casos la matrícula son <strong>45 €</strong> y el libro <strong>máximo 40 €</strong>.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
+      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
+        <div className="container mx-auto max-w-4xl">
+          <p className="text-zinc-500 text-sm text-center leading-relaxed">
+            <strong className="text-zinc-600">Otros cursos:</strong>{' '}
+            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/infantil/" className="text-indigo-600 hover:underline">Inglés infantil (2-5 años)</a>
+            {' · '}
+            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
+            {' · '}
+            <a href="/cursos-ingles/secundaria/" className="text-indigo-600 hover:underline">Inglés para secundaria y EBAU</a>
+            {' · '}
+            <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline">Clases de inglés para adultos</a>
+            {' · '}
+            <a href="/cursos-ingles/online/" className="text-indigo-600 hover:underline">Clases de inglés online</a>
+          </p>
+          <p className="text-zinc-500 text-sm text-center mt-4">
+            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+          </p>
         </div>
       </section>
 

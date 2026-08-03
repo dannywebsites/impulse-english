@@ -2,17 +2,31 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PrimariaPage, { courseSchema, faqs } from '../../../pages/cursos/PrimariaPage';
 import CookieBanner from '../../../components/CookieBanner';
-import { generateFAQSchema } from '../../../utils/schemaData';
+import { generateBreadcrumbSchema, generateFAQSchema, generateLocationPageSchema } from '../../../utils/schemaData';
 
+const locationSchema = generateLocationPageSchema({
+  locationName: 'La Vaguada',
+  pageUrl: 'https://impulse-english.es/cursos-ingles/primaria',
+});
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Cursos de Inglés', url: 'https://impulse-english.es/cursos-ingles/' },
+  { name: 'Inglés Primaria (6-12 años)', url: 'https://impulse-english.es/cursos-ingles/primaria/' },
+]);
 const schemas = [
+  ...locationItems,
+  breadcrumb,
   courseSchema,
   ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
 ];
+
 ---
 
 <BaseLayout
-  title="Inglés Primaria (6–12 años)"
-  description="Clases de inglés para primaria en La Vaguada / Barrio del Pilar. Cambridge Young Learners, grupos reducidos, profesores cualificados y seguimiento. Impulse English Academy."
+  title="Clases de Inglés para Primaria | Cambridge | Impulse"
+  fullTitle={true}
+  description="Clases de inglés para primaria (6-12 años) en La Vaguada y Barrio del Pilar. Cambridge Young Learners, grupos reducidos, 83 €/mes."
   keywords="clases inglés primaria la vaguada, cambridge young learners, inglés niños 6-12 años, academia inglés primaria barrio del pilar"
   canonical="/cursos-ingles/primaria/"
   schemas={schemas}

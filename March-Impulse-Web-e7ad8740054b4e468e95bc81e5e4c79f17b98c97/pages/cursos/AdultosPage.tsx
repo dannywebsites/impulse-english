@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Briefcase, BookOpen, Users, Target, Globe, Award, Clock, CheckCircle, Phone, Calendar, Coffee, Sun } from 'lucide-react';
+import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -24,6 +25,22 @@ export const courseSchema = generateCourseSchema({
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿Dónde está la academia y cómo llego en metro?",
+    answer: "Estamos en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) queda a 3 minutos andando, y Peñagrande y Herrera Oria (Línea 7) también dan acceso directo."
+  },
+  {
+    question: "¿Cuánto se tarda desde Barrio del Pilar o La Vaguada?",
+    answer: "Desde el propio Barrio del Pilar se tarda menos de 5 minutos andando, y desde el centro comercial La Vaguada, alrededor de 1 minuto. Es el motivo por el que muchos alumnos vienen al salir del trabajo."
+  },
+  {
+    question: "¿Desde qué barrios vienen los alumnos adultos?",
+    answer: "Sobre todo de Barrio del Pilar, La Vaguada, Peñagrande, Mirasierra, Valdezarza, La Paz y Tetuán, además de quienes trabajan en Cuatro Torres o Plaza Castilla y bajan por la Línea 9."
+  },
+  {
+    question: "¿Qué autobuses paran cerca de la academia?",
+    answer: "Los buses 147, 42 y 83 paran en Ginzo de Limia - Ferrol, a 1 minuto andando de la puerta."
+  },
+  {
     question: "¿Qué nivel de inglés piden en las empresas?",
     answer: "Depende del sector, pero B2 es el nivel más habitual para entornos profesionales y C1 se valora para roles internacionales o de liderazgo. Lo importante es que puedas comunicarte con seguridad. Te orientamos para elegir preparación Cambridge o Linguaskill según tu objetivo laboral."
   },
@@ -41,11 +58,11 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay grupos por la mañana?",
-    answer: "Sí. Ofrecemos horarios de mañana y de tarde para adaptarnos a trabajo, turnos y disponibilidad. Te ubicamos según tu nivel real para que aproveches la clase desde el primer día. Si necesitas máxima flexibilidad, también puedes combinar con clases particulares."
+    answer: "Ofrecemos horarios de mañana y de tarde para adaptarnos a trabajo, turnos y disponibilidad. Te ubicamos según tu nivel real para que aproveches la clase desde el primer día. Si necesitas máxima flexibilidad, también puedes combinar con clases particulares."
   },
   {
     question: "¿Soy principiante total, me vale el curso?",
-    answer: "Sí. Empezar desde A1 es totalmente viable si el grupo es correcto y el método es práctico. Trabajamos vocabulario funcional, comprensión y estructuras esenciales para que puedas comunicarte cuanto antes. La prioridad es que ganes confianza y avances sin bloquearte."
+    answer: "Empezar desde A1 es totalmente viable si el grupo es correcto y el método es práctico. Trabajamos vocabulario funcional, comprensión y estructuras esenciales para que puedas comunicarte cuanto antes. La prioridad es que ganes confianza y avances sin bloquearte."
   },
   {
     question: "¿Trabajáis conversación o solo gramática?",
@@ -53,7 +70,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Puedo probar antes de apuntarme?",
-    answer: "Sí. Puedes hacer una prueba de nivel gratuita para ver tu punto de partida y conocer el enfoque de la academia. Sin compromiso."
+    answer: "Puedes hacer una prueba de nivel gratuita para ver tu punto de partida y conocer el enfoque de la academia. Sin compromiso."
   },
   // Career PAAs (10)
   {
@@ -78,7 +95,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Inglés mejora salario?",
-    answer: "Sí. Estadísticas muestran 15-25% aumento salarial con B2/C1. En multinacionales, C1 es requisito para promoción. Inversión en inglés (1000-1500€) se recupera en aumento salarial en menos de 1 año. ROI clarísimo."
+    answer: "Estadísticas muestran 15-25% aumento salarial con B2/C1. En multinacionales, C1 es requisito para promoción. Inversión en inglés (1000-1500€) se recupera en aumento salarial en menos de 1 año. ROI clarísimo."
   },
   {
     question: "¿Email profesional en inglés?",
@@ -86,7 +103,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Pronunciación importante para el trabajo?",
-    answer: "Sí. Pronunciación clara mejora credibilidad profesional 40%. No necesitas acento nativo, pero sí inteligibilidad en llamadas telefónicas y reuniones. Trabajamos entonación, ritmo y sonidos clave. Grabaciones de voz personalizadas como herramienta de autoevaluación."
+    answer: "Pronunciación clara mejora credibilidad profesional 40%. No necesitas acento nativo, pero sí inteligibilidad en llamadas telefónicas y reuniones. Trabajamos entonación, ritmo y sonidos clave. Grabaciones de voz personalizadas como herramienta de autoevaluación."
   },
   {
     question: "¿Aprender inglés mientras trabajo?",
@@ -102,7 +119,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Se puede aprender inglés de adulto empezando desde cero?",
-    answer: "Sí. Los adultos tienen ventajas que los niños no tienen: capacidad de análisis gramatical, motivación clara y disciplina. El aprendizaje es diferente (más analítico, menos intuitivo), pero perfectamente viable. Con 2-4 horas semanales de clase y práctica regular, es posible alcanzar un A2 en 6 meses y un B1 en 12-18 meses."
+    answer: "Los adultos tienen ventajas que los niños no tienen: capacidad de análisis gramatical, motivación clara y disciplina. El aprendizaje es diferente (más analítico, menos intuitivo), pero perfectamente viable. Con 2-4 horas semanales de clase y práctica regular, es posible alcanzar un A2 en 6 meses y un B1 en 12-18 meses."
   },
   {
     question: "¿Cuánto cuesta al mes una academia de inglés en Madrid?",
@@ -183,11 +200,11 @@ export default function AdultosPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Inglés para Adultos
+              Clases de inglés para adultos en La Vaguada, grupos de 8
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              Grupos reducidos, enfoque práctico y objetivos claros. Desde A1 hasta C1/C2, con preparación Cambridge y Linguaskill en La Vaguada.
+              Damos clases de inglés para adultos en Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. Grupos de máximo 8 alumnos, de A1 a C2, por 94 €/mes, con Metro Barrio del Pilar (Línea 9) a 3 minutos andando.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
@@ -561,6 +578,127 @@ export default function AdultosPage() {
             showAge={false}
             showLevel={true}
           />
+        </div>
+      </section>
+
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            Las clases de adultos las coordina JP, director de estudios y cofundador de Impulse English Academy, que lleva más de 10 años enseñando inglés y dirige la preparación Cambridge del centro. Danny, el otro cofundador, es irlandés y vive en Madrid desde hace 12 años.
+          </p>
+        </div>
+      </section>
+
+      {/* Un caso real — hechos aprobados, sin claims de nivel inventados */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <span className="eyebrow mb-4">Un caso real</span>
+          <h2 className="t-h2 text-zinc-900 mb-5">Sergio</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+                Sergio llegó con el inglés de cualquiera que ha pasado por el sistema educativo español sin volver a usarlo. En sus palabras: <em>&laquo;siempre he tenido una gran carencia de confianza para hablar en inglés&raquo;</em>. No era gramática, era no atreverse.
+              </p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">30 años</p><p className="t-small text-zinc-600">cuando se puso en serio</p></div>
+              <div><p className="t-h3 text-accent-blue">Dublín</p><p className="t-small text-zinc-600">sus primeros meses fuera</p></div>
+              <div><p className="t-h3 text-accent-blue">2 años</p><p className="t-small text-zinc-600">viviendo y trabajando en Irlanda</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed">
+                Hoy trabaja como analista de pólizas en una empresa irlandesa.
+              </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen nuestros alumnos adultos
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Gonzalo Tarascón", text: "¡Recomiendo 100% esta academia! Gracias a sus clases y al excelente equipo de profesores, logré obtener mi certificado C1 de inglés. Esto me ha abierto muchas puertas en el mercado laboral." },
+              { name: "Aurora Jimenez Solano", text: "Tras varios intentos de retomar mi formación en inglés, en otros centros con poco éxito, he encontrado la academia ideal para mi. Estoy muy satisfecha con el método, mi profesor y mi progreso con el idioma." },
+              { name: "Natalia López Casado", text: "Llevo 2 meses dando clase con Danny y estoy encantada. Clases muy amenas y en las que conversamos todo el rato. Me hace correcciones y me da tips para mejorar." }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta el curso de adultos</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                El grupo de adultos son <strong>94 €/mes</strong>, con clases semanales en grupos de máximo 8. Los cursos del centro van desde <strong>64 €</strong> hasta <strong>99 €</strong> al mes según el curso y el número de clases.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                El primer mes se paga además la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): en total <strong>179 €</strong> el primer mes y 94 €/mes después. Las tasas de examen Cambridge o Linguaskill van aparte.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
+      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
+        <div className="container mx-auto max-w-4xl">
+          <p className="text-zinc-500 text-sm text-center leading-relaxed">
+            <strong className="text-zinc-600">Otros cursos:</strong>{' '}
+            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/infantil/" className="text-indigo-600 hover:underline">Inglés infantil (2-5 años)</a>
+            {' · '}
+            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
+            {' · '}
+            <a href="/cursos-ingles/secundaria/" className="text-indigo-600 hover:underline">Inglés para secundaria y EBAU</a>
+            {' · '}
+            <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline">Clases particulares de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/online/" className="text-indigo-600 hover:underline">Clases de inglés online</a>
+          </p>
+          <p className="text-zinc-500 text-sm text-center mt-4">
+            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+          </p>
         </div>
       </section>
 

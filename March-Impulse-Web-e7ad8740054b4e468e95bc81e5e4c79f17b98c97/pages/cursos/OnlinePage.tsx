@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Wifi, Users, Target, Award, Clock, CheckCircle, Globe, Video, Laptop, Calendar, ArrowRight } from 'lucide-react';
+import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -21,12 +22,28 @@ export const courseSchema = generateCourseSchema({
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿Desde dónde dais las clases online?",
+    answer: "Desde la propia academia, en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Son los mismos profesores que dan las clases presenciales."
+  },
+  {
+    question: "¿Puedo alternar online y presencial en La Vaguada?",
+    answer: "Se puede combinar: vienes al centro de Barrio del Pilar cuando te encaja y te conectas el resto de días. El grupo y el profesor son los mismos."
+  },
+  {
+    question: "¿Cuánto se tarda hasta la academia si un día quiero ir?",
+    answer: "Metro Barrio del Pilar (Línea 9) deja a 3 minutos andando, y los buses 147, 42 y 83 paran a 1 minuto, en Ginzo de Limia - Ferrol."
+  },
+  {
+    question: "¿Hay alumnos online fuera de Madrid o del barrio?",
+    answer: "El formato online está pensado justo para quien no puede acercarse: alumnos de otras zonas de Madrid y de fuera de la Comunidad siguen el curso desde casa."
+  },
+  {
     question: "¿Las clases online son en directo o grabadas?",
     answer: "Siempre en directo por videoconferencia con tu profesor. No son vídeos pregrabados. Participas, preguntas, practicas speaking y recibes correcciones en tiempo real, igual que en clase presencial."
   },
   {
     question: "¿Puedo combinar clases online y presencial?",
-    answer: "Sí. Ofrecemos modalidad híbrida: puedes asistir presencialmente cuando puedas y conectarte online cuando no. El progreso es continuo independientemente del formato. Es la opción favorita de profesionales con horarios variables."
+    answer: "Ofrecemos modalidad híbrida: puedes asistir presencialmente cuando puedas y conectarte online cuando no. El progreso es continuo independientemente del formato. Es la opción favorita de profesionales con horarios variables."
   },
   {
     question: "¿Qué plataforma usáis para las clases online?",
@@ -34,15 +51,15 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Preparáis exámenes Cambridge y Linguaskill online?",
-    answer: "Sí. Preparamos B1 Preliminary, B2 First, C1 Advanced y Linguaskill en modalidad online con la misma metodología y resultados que en presencial. Nuestro 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados) incluye alumnos online."
+    answer: "Preparamos B1 Preliminary, B2 First, C1 Advanced y Linguaskill en modalidad online con la misma metodología y resultados que en presencial. Nuestro 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados) incluye alumnos online."
   },
   {
     question: "¿Las clases online son igual de efectivas?",
-    answer: "Sí, siempre que el grupo sea reducido y el profesor esté cualificado. Nuestros grupos online tienen máximo 8 alumnos, los mismos profesores que las clases presenciales y la misma metodología Impulse. La diferencia es solo el medio, no la calidad."
+    answer: "Siempre que el grupo sea reducido y el profesor esté cualificado. Nuestros grupos online tienen máximo 8 alumnos, los mismos profesores que las clases presenciales y la misma metodología Impulse. La diferencia es solo el medio, no la calidad."
   },
   {
     question: "¿Puedo hacer clases particulares online?",
-    answer: "Sí. Las clases particulares 1:1 funcionan muy bien online. Tú eliges horario, y el profesor adapta cada sesión a tus necesidades: preparación de exámenes, entrevistas de trabajo, reuniones en inglés o conversación general."
+    answer: "Las clases particulares 1:1 funcionan muy bien online. Tú eliges horario, y el profesor adapta cada sesión a tus necesidades: preparación de exámenes, entrevistas de trabajo, reuniones en inglés o conversación general."
   },
   {
     question: "¿Para quién son las clases online?",
@@ -50,7 +67,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay clases online para niños y adolescentes?",
-    answer: "Sí. Ofrecemos clases online para primaria (6-12 años) y secundaria (13-17 años) con la misma preparación Cambridge. Los grupos son reducidos para mantener la atención y participación activa de cada alumno."
+    answer: "Ofrecemos clases online para primaria (6-12 años) y secundaria (13-17 años) con la misma preparación Cambridge. Los grupos son reducidos para mantener la atención y participación activa de cada alumno."
   }
 ];
 
@@ -87,11 +104,11 @@ export default function OnlinePage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Clases de Inglés Online en Directo
+              Clases de inglés online en directo desde La Vaguada, grupos de 8
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              La misma metodología Impulse, los mismos profesores, los mismos resultados. Desde tu casa, tu oficina o donde estés. Grupos reducidos con preparación Cambridge y Linguaskill.
+              Damos clases de inglés online en directo desde nuestra academia de Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. El mismo profesor y el mismo método que en clase presencial, en grupos de máximo 8 alumnos y sesiones de 60 min.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
@@ -404,6 +421,105 @@ export default function OnlinePage() {
             <a href="/academia-ingles-penagrande/" className="text-indigo-600 hover:underline">Peñagrande</a>{' | '}
             <a href="/academia-ingles-plaza-castilla/" className="text-indigo-600 hover:underline">Plaza Castilla</a>{' | '}
             <a href="/academia-ingles-tetuan/" className="text-indigo-600 hover:underline">Tetuán</a>
+          </p>
+        </div>
+      </section>
+
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            Las clases online las dan los mismos profesores del centro: JP, director de estudios y cofundador, con más de 10 años enseñando inglés, y Danny, cofundador, irlandés afincado en Madrid desde hace 12 años.
+          </p>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen nuestros alumnos
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Michelle Correa Sánchez", text: "Una academia con profesores muy amables y cercanos, te enseñan acorde a tus capacidades y se adaptan a las necesidades del alumno." },
+              { name: "Laia Lubillo Solsona", text: "Las clases en Impulse son muy entretenidas y divertidas, aprendes inglés sin darte cuenta. Los profesores se adaptan a ti, por lo que el trato es muy personalizado." },
+              { name: "Ana Torrado", text: "Impulse English Academy ha sido la mejor academia en la que he estado. Gracias a JP aprobé la asignatura. Lo que más me gusta es que se adaptan a tus necesidades y se centran donde ven más dificultades." }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuestan las clases online</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                En grupo, los cursos online cuestan lo mismo que los presenciales: desde 64 € hasta 99 € al mes según el curso y el número de clases semanales. Uno a uno son <strong>29 €/hora</strong>.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                La matrícula son <strong>45 €</strong> y el libro <strong>máximo 40 €</strong>. Las tasas de los exámenes Cambridge y Linguaskill se pagan aparte y solo si te presentas.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
+      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
+        <div className="container mx-auto max-w-4xl">
+          <p className="text-zinc-500 text-sm text-center leading-relaxed">
+            <strong className="text-zinc-600">Otros cursos:</strong>{' '}
+            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/infantil/" className="text-indigo-600 hover:underline">Inglés infantil (2-5 años)</a>
+            {' · '}
+            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
+            {' · '}
+            <a href="/cursos-ingles/secundaria/" className="text-indigo-600 hover:underline">Inglés para secundaria y EBAU</a>
+            {' · '}
+            <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline">Clases de inglés para adultos</a>
+            {' · '}
+            <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline">Clases particulares de inglés</a>
+          </p>
+          <p className="text-zinc-500 text-sm text-center mt-4">
+            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
           </p>
         </div>
       </section>

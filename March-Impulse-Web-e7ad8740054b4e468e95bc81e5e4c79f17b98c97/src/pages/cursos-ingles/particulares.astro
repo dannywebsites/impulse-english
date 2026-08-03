@@ -2,17 +2,31 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ParticularesPage, { courseSchema, faqs } from '../../../pages/cursos/ParticularsPage';
 import CookieBanner from '../../../components/CookieBanner';
-import { generateFAQSchema } from '../../../utils/schemaData';
+import { generateBreadcrumbSchema, generateFAQSchema, generateLocationPageSchema } from '../../../utils/schemaData';
 
+const locationSchema = generateLocationPageSchema({
+  locationName: 'La Vaguada',
+  pageUrl: 'https://impulse-english.es/cursos-ingles/particulares',
+});
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Cursos de Inglés', url: 'https://impulse-english.es/cursos-ingles/' },
+  { name: 'Clases Particulares de Inglés', url: 'https://impulse-english.es/cursos-ingles/particulares/' },
+]);
 const schemas = [
+  ...locationItems,
+  breadcrumb,
   courseSchema,
   ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
 ];
+
 ---
 
 <BaseLayout
-  title="Clases Particulares Inglés"
-  description="Clases particulares de inglés 1:1 en La Vaguada / Barrio del Pilar. 100% personalizadas, horarios flexibles, online o presencial. Preparación Cambridge y centro oficial Linguaskill."
+  title="Clases Particulares de Inglés 1:1 | Cambridge | Impulse"
+  fullTitle={true}
+  description="Clases particulares de inglés 1:1 en La Vaguada y Barrio del Pilar, presenciales u online. Plan personalizado y preparación Cambridge y Linguaskill."
   keywords="clases particulares inglés la vaguada, profesor particular inglés barrio del pilar, clases privadas inglés madrid"
   canonical="/cursos-ingles/particulares/"
   schemas={schemas}

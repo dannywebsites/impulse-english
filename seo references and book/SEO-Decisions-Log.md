@@ -795,3 +795,68 @@ rather than a historical result. Aligned to the phrasing used everywhere else on
 **Validation plan:** GSC — filter "URLs containing `prueba-de-nivel`" plus queries containing
 "nivel"; watch impressions/position through the September peak (3,600/mo on the head term).
 Baseline is zero. Ship before mid-August so the page is indexed before the spike.
+
+---
+
+### 2026-08-03 — Service pages round 1: `/cursos-ingles/*` rebuilt for GEO (42 → 93)
+
+**Context:** the location-page programme closed at 96. GSC (2026-07-28) showed `/cursos-ingles/*`
+earning **2 clicks from 1,025 impressions**, the weakest commercial surface on the site. Branch
+`geo/service-pages-round-1`; full work record in `GEO-Content-Project/service-pages-ledger.md`.
+
+### Decision 1 — Target demand we already receive, not the high-volume head terms.
+**Why (book §5 Validation + §2 keyword levels):** the Competitor Gap Dashboard (DataForSEO,
+2026-08-02) puts Impulse at **9 referring domains** against Cambridge House's 520 (DR 304) and
+Kids&Us's 1,528. `academias de ingles madrid` (KD 26) has Cambridge House at #4 — not winnable this
+year. The pages already had impressions and no clicks, which is a CTR and trust problem that on-page
+work fixes without links. Head terms are logged as gated on the Madrid Norte referring-domain
+campaign, not attempted here.
+
+### Decision 2 — Focus keyword set from page × query attribution, not cluster totals.
+**Why (book §2 broad-vs-narrow + §5 n-grams):** cluster-level `Queries.csv` has no page dimension.
+A new `page_query_pull.py` (dimensions `["page","query"]`, 5,488 rows) showed the plan's targeting
+was wrong in three places: `clases de inglés para niños en madrid` at position 1.6 is held by the
+**homepage** on the `http://www` variant, not by `/primaria/`; `/cursos-ingles/adultos/` has 63
+impressions of which **42 are brand lookups**, with the whole adults cluster (1,250 impr, pos 29)
+sitting on `/academias-ingles-madrid/adultos/`; and `/online/`, `/particulares/`, `/secundaria/` have
+7, 4 and 3 impressions, so their cluster-derived focus terms were unsupported. The generic "niños"
+family stayed on `/infantil/`, which already ranks for it (569 impr, 94 queries).
+
+### Decision 3 — No new pages; fold the winnable head terms into the existing hub.
+**Why (book §2 consolidate synonyms + §4 everything links to the homepage):** the gap report proposed
+`/academia-de-ingles/`, `/escuelas-de-ingles-madrid/` and `/clases-de-ingles-madrid/`. The first
+collides with the homepage, which already targets *Academia de Inglés La Vaguada y Barrio del Pilar*;
+the other two are synonyms of each other. With 9 referring domains the site cannot power four
+near-identical pages. `curso de ingles madrid` (880/mo, **KD 11**, no rival ranking) becomes the
+`/cursos-ingles/` hub's focus, with `clase de ingles madrid` (KD 4), `escuelas de ingles en madrid`
+(KD 8) and `academias de idiomas madrid` drilled into H2/H3.
+
+### Decision 4 — Reject the gap report's "re-aim `/academias-ingles-madrid/` at inglés cerca de mí".
+**Why (book §2 one intent = one page):** the `cerca de mí` pillar shipped onto the **homepage** in
+July 2026 — `cerca de m` appears in `src/pages/index.astro` and nowhere else. Moving the target would
+cannibalise the site's highest-authority page.
+
+### Decision 5 — Defer de-commercialising the two overlapping hub pages to the +4-week read.
+**Why:** Danny chose "keep both doors, different signs" over consolidation, which §2 permits
+("tiers are fluid — anchor text and link direction tell Google which role it plays"). But the
+attribution in Decision 2 showed `/academias-ingles-madrid/adultos/` holds the adults intent
+*outright*. Stripping its commercial signals now would de-target the only page Google associates with
+that intent and hand it to a page with 21 non-brand impressions. Steps 1–7 land first; re-decide once
+the service page has traction.
+
+### Decision 6 — On-page work, all seven pages.
+**Why (book §3 + §4):** titles ≤60 with `fullTitle` (five were being truncated by the brand chain)
+and metas ≤160 (six of seven were 162–191); H1s carrying a place and a number; answer capsules ≤300
+chars; **33 FAQ answers rewritten** because they opened with "Sí."/"No.", which the book forbids;
+28 location FAQs added; every page now links **back to the homepage** (none did), up to the hub and
+sideways to its siblings — `/cursos-ingles/online/` went from 1 inbound link to 21.
+
+**Deliberate divergence from the book (§6 Expansion):** these pages are not proven winners — the
+site's winners are PDF-hunter blog posts with near-zero commercial intent. Book-optimal and
+business-optimal point different ways here; enrolments won.
+
+**Validation plan:** baseline `/cursos-ingles/*` = 2 clicks, 1,025 impressions, positions 13.8–47.6
+(`data/gsc/2026-07-28/`). Re-pull at +4 and +8 weeks with `gsc_pull.py --days 28` plus
+`page_query_pull.py --filter cursos-ingles`, and read **position and CTR, not raw clicks** — July–
+August is the seasonal trough and September is a 3× spike, so judge against the barrio/blog control
+cohort. Titles must not change again for a quarter (§3).
