@@ -1,0 +1,499 @@
+{
+  "Adultos": {
+    "raw": 75,
+    "geo": 47,
+    "grade": "F",
+    "elements": {
+      "Title Tag": {
+        "score": 7,
+        "evidence": "len=58 brand=True diff=False"
+      },
+      "H1 Heading": {
+        "score": 5,
+        "evidence": "local=False number=False"
+      },
+      "Intro Paragraph": {
+        "score": 4,
+        "evidence": "local_refs=1 numbers=0 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 10,
+        "evidence": "max 3-gram overlap=0.05 -> 95% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 5,
+        "evidence": "named=['JP']"
+      },
+      "Testimonials": {
+        "score": 0,
+        "evidence": "no testimonials on page"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 5,
+        "evidence": "distinct_local_signals=2 travel_times=1"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 5,
+        "evidence": "price_figures=['1500€']"
+      },
+      "FAQ Section": {
+        "score": 8,
+        "evidence": "faqs=24 location_specific=2"
+      },
+      "Contact Information": {
+        "score": 7,
+        "evidence": "phone=True address=False hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 0,
+        "evidence": "no LocalBusiness schema"
+      },
+      "Service Schema": {
+        "score": 0,
+        "evidence": "no Service schema"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 0,
+        "evidence": "no AggregateRating on page"
+      }
+    }
+  },
+  "CursosOverview": {
+    "raw": 73,
+    "geo": 46,
+    "grade": "F",
+    "elements": {
+      "Title Tag": {
+        "score": 6,
+        "evidence": "len=69 brand=True diff=False"
+      },
+      "H1 Heading": {
+        "score": 5,
+        "evidence": "local=False number=False"
+      },
+      "Intro Paragraph": {
+        "score": 7,
+        "evidence": "local_refs=0 numbers=6 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 10,
+        "evidence": "max 3-gram overlap=0.03 -> 97% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 0,
+        "evidence": "no testimonials on page"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 4,
+        "evidence": "distinct_local_signals=0 travel_times=2"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 8,
+        "evidence": "price_figures=['64€', '99€']"
+      },
+      "FAQ Section": {
+        "score": 5,
+        "evidence": "faqs=6 location_specific=0"
+      },
+      "Contact Information": {
+        "score": 7,
+        "evidence": "phone=True address=True hours=False"
+      },
+      "LocalBusiness Schema": {
+        "score": 0,
+        "evidence": "no LocalBusiness schema"
+      },
+      "Service Schema": {
+        "score": 0,
+        "evidence": "no Service schema"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 0,
+        "evidence": "no AggregateRating on page"
+      }
+    }
+  },
+  "Infantil": {
+    "raw": 63,
+    "geo": 39,
+    "grade": "F",
+    "elements": {
+      "Title Tag": {
+        "score": 6,
+        "evidence": "len=63 brand=True diff=False"
+      },
+      "H1 Heading": {
+        "score": 5,
+        "evidence": "local=False number=False"
+      },
+      "Intro Paragraph": {
+        "score": 7,
+        "evidence": "local_refs=0 numbers=4 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 10,
+        "evidence": "max 3-gram overlap=0.02 -> 98% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 0,
+        "evidence": "no testimonials on page"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 4,
+        "evidence": "distinct_local_signals=2 travel_times=0"
+      },
+      "Hero CTA": {
+        "score": 7,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=False"
+      },
+      "Pricing Information": {
+        "score": 0,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 6,
+        "evidence": "faqs=23 location_specific=0"
+      },
+      "Contact Information": {
+        "score": 7,
+        "evidence": "phone=True address=False hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 0,
+        "evidence": "no LocalBusiness schema"
+      },
+      "Service Schema": {
+        "score": 0,
+        "evidence": "no Service schema"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 0,
+        "evidence": "no AggregateRating on page"
+      }
+    }
+  },
+  "Online": {
+    "raw": 64,
+    "geo": 40,
+    "grade": "F",
+    "elements": {
+      "Title Tag": {
+        "score": 7,
+        "evidence": "len=57 brand=True diff=False"
+      },
+      "H1 Heading": {
+        "score": 5,
+        "evidence": "local=False number=False"
+      },
+      "Intro Paragraph": {
+        "score": 5,
+        "evidence": "local_refs=0 numbers=1 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 10,
+        "evidence": "max 3-gram overlap=0.03 -> 97% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 0,
+        "evidence": "no testimonials on page"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 6,
+        "evidence": "distinct_local_signals=4 travel_times=0"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 0,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 6,
+        "evidence": "faqs=8 location_specific=0"
+      },
+      "Contact Information": {
+        "score": 4,
+        "evidence": "phone=True address=False hours=False"
+      },
+      "LocalBusiness Schema": {
+        "score": 0,
+        "evidence": "no LocalBusiness schema"
+      },
+      "Service Schema": {
+        "score": 0,
+        "evidence": "no Service schema"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 0,
+        "evidence": "no AggregateRating on page"
+      }
+    }
+  },
+  "Particulars": {
+    "raw": 66,
+    "geo": 41,
+    "grade": "F",
+    "elements": {
+      "Title Tag": {
+        "score": 6,
+        "evidence": "len=63 brand=True diff=False"
+      },
+      "H1 Heading": {
+        "score": 5,
+        "evidence": "local=False number=False"
+      },
+      "Intro Paragraph": {
+        "score": 8,
+        "evidence": "local_refs=4 numbers=1 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 10,
+        "evidence": "max 3-gram overlap=0.03 -> 97% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 5,
+        "evidence": "named=['JP']"
+      },
+      "Testimonials": {
+        "score": 0,
+        "evidence": "no testimonials on page"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 6,
+        "evidence": "distinct_local_signals=2 travel_times=2"
+      },
+      "Hero CTA": {
+        "score": 7,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=False"
+      },
+      "Pricing Information": {
+        "score": 0,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 6,
+        "evidence": "faqs=8 location_specific=0"
+      },
+      "Contact Information": {
+        "score": 4,
+        "evidence": "phone=True address=False hours=False"
+      },
+      "LocalBusiness Schema": {
+        "score": 0,
+        "evidence": "no LocalBusiness schema"
+      },
+      "Service Schema": {
+        "score": 0,
+        "evidence": "no Service schema"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 0,
+        "evidence": "no AggregateRating on page"
+      }
+    }
+  },
+  "Primaria": {
+    "raw": 67,
+    "geo": 42,
+    "grade": "F",
+    "elements": {
+      "Title Tag": {
+        "score": 6,
+        "evidence": "len=64 brand=True diff=False"
+      },
+      "H1 Heading": {
+        "score": 5,
+        "evidence": "local=False number=False"
+      },
+      "Intro Paragraph": {
+        "score": 6,
+        "evidence": "local_refs=1 numbers=1 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 10,
+        "evidence": "max 3-gram overlap=0.04 -> 96% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 0,
+        "evidence": "no testimonials on page"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 9,
+        "evidence": "distinct_local_signals=6 travel_times=3"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 0,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 6,
+        "evidence": "faqs=19 location_specific=0"
+      },
+      "Contact Information": {
+        "score": 4,
+        "evidence": "phone=True address=False hours=False"
+      },
+      "LocalBusiness Schema": {
+        "score": 0,
+        "evidence": "no LocalBusiness schema"
+      },
+      "Service Schema": {
+        "score": 0,
+        "evidence": "no Service schema"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 0,
+        "evidence": "no AggregateRating on page"
+      }
+    }
+  },
+  "Secundaria": {
+    "raw": 66,
+    "geo": 41,
+    "grade": "F",
+    "elements": {
+      "Title Tag": {
+        "score": 6,
+        "evidence": "len=61 brand=True diff=False"
+      },
+      "H1 Heading": {
+        "score": 5,
+        "evidence": "local=False number=False"
+      },
+      "Intro Paragraph": {
+        "score": 8,
+        "evidence": "local_refs=1 numbers=2 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 10,
+        "evidence": "max 3-gram overlap=0.05 -> 95% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 0,
+        "evidence": "no testimonials on page"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 6,
+        "evidence": "distinct_local_signals=3 travel_times=1"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 0,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 6,
+        "evidence": "faqs=15 location_specific=0"
+      },
+      "Contact Information": {
+        "score": 4,
+        "evidence": "phone=True address=False hours=False"
+      },
+      "LocalBusiness Schema": {
+        "score": 0,
+        "evidence": "no LocalBusiness schema"
+      },
+      "Service Schema": {
+        "score": 0,
+        "evidence": "no Service schema"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 0,
+        "evidence": "no AggregateRating on page"
+      }
+    }
+  }
+}
