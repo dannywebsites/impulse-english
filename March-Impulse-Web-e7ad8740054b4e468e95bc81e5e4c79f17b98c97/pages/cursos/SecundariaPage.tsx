@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import { GraduationCap, FileText, Target, TrendingUp, Clock, Award, Users, Phone, Calendar, CheckCircle } from 'lucide-react';
+import TeacherCard from '../../components/TeacherCard';
+import GoogleReviews from '../../components/GoogleReviews';
+import PriceLocationCards from '../../components/PriceLocationCards';
+import CTABand from '../../components/CTABand';
 import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -462,116 +466,21 @@ export default function SecundariaPage() {
       </section>
 
 
-      {/* Equipo — personas con nombre y credenciales verificables */}
-      <section className="section px-6 surface-alt">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
-          <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
-            La preparación de B1, B2, C1 y EBAU la lleva JP, director de estudios y cofundador, con más de 10 años enseñando inglés. Danny, cofundador, es irlandés y trabaja en Madrid desde hace 12 años.
-          </p>
-        </div>
-      </section>
-
-      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
-      <section className="section-lead px-6 surface-alt">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
-            Lo que dicen las familias de secundaria
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { name: "Luis Martin Gonzalez", text: "100% recomendable, merece la pena. De echo mi hijo ahora sigue con JP, para prestarse sus exámenes de titulación Gran persona JP y su método" },
-              { name: "Rodrigo Sanz", text: "Muy buen profesor, muy cercano y asequible. Realmente contento con esta academia del barrio. Los chicos van felices a clase. Gran tranquilidad para los padres." },
-              { name: "Laura García Lomas", text: "Una suerte encontrar esta academia con tan grandes profesionales. Gracias a ellos he conseguido el B2, la metodología hace que aprendas rápido y no olvides" }
-            ,
-              { name: "Manuel Casas Herrero", text: "Danny es un excelente profesional que vive con pasion su labor didactica. Nuestros hijos son biligues gracias a sus enseñazas en Madrid e Irlanda." },
-              { name: "Lorena Jiménez", text: "Fantástica academia donde realmente se aprende inglés. La atención de los profesores es increible y son todos encantadores. Especial gracias a Jp por la atención personalizada a mi hijo." }
-            ].map((r) => (
-              <blockquote key={r.name} className="card p-6">
-                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
-                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
-              </blockquote>
-            ))}
-          </div>
-          <p className="t-small text-zinc-500 text-center mt-8">
-            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
-          </p>
-        </div>
-      </section>
-
-
-      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
-      <section className="section px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta el curso de secundaria</h2>
-          <div className="rule"></div>
-          <div className="grid md:grid-cols-2 gap-6 mt-8">
-            <div className="card p-6">
-              <p className="text-zinc-600 leading-relaxed mb-4">
-                Secundaria va por cursos: S1-S3 <strong>87 €/mes</strong> o <strong>251 €/trimestre</strong>; S4-S6 <strong>91 €/mes</strong> o <strong>263 €/trimestre</strong>; S7-S8 <strong>93 €/mes</strong> o <strong>269 €/trimestre</strong>. Desde <strong>87 €/mes</strong>.
-              </p>
-              <p className="text-zinc-600 leading-relaxed">
-                Aparte quedan la matrícula (<strong>45 €</strong>), el libro (<strong>máximo 40 €</strong>) y las tasas del examen Cambridge, que se pagan solo si te presentas. Hay descuento por pago trimestral y descuento familiar.
-              </p>
-              <p className="t-small text-zinc-500 mt-4">
-                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
-              </p>
-            </div>
-            <div className="card p-6">
-              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
-              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
-              <p className="text-zinc-600 leading-relaxed mb-3">
-                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
-                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
-                a 1 min · el centro comercial La Vaguada está a 1 min.
-              </p>
-              <ul className="t-small text-zinc-600 mb-3">
-                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
-              </ul>
-              <p className="text-zinc-600">
-                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
-                {' · '}
-                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
-      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
-        <div className="container mx-auto max-w-4xl">
-          <p className="text-zinc-500 text-sm text-center leading-relaxed">
-            <strong className="text-zinc-600">Otros cursos:</strong>{' '}
-            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos de inglés</a>
-            {' · '}
-            <a href="/cursos-ingles/infantil/" className="text-indigo-600 hover:underline">Inglés infantil (2-5 años)</a>
-            {' · '}
-            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
-            {' · '}
-            <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline">Clases de inglés para adultos</a>
-            {' · '}
-            <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline">Clases particulares de inglés</a>
-            {' · '}
-            <a href="/cursos-ingles/online/" className="text-indigo-600 hover:underline">Clases de inglés online</a>
-          </p>
-          <p className="text-zinc-500 text-sm text-center mt-4">
-            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
-          </p>
-        </div>
-      </section>
-
+      <TeacherCard
+        heading="Quién prepara los exámenes"
+        imageAlt="JP, director de estudios de Impulse English Academy, responsable de la preparación Cambridge y EBAU en La Vaguada"
+      >
+            <p>La preparación de B1, B2, C1 y EBAU la lleva JP, director de estudios y cofundador, con más de 10 años enseñando inglés. Danny, cofundador, es irlandés y trabaja en Madrid desde hace 12 años.</p>
+      </TeacherCard>
 
       {/* CASE STUDY: Antonio Pérez Blázquez */}
       {/* Un caso real contado por la propia familia — cita verbatim de Google */}
-      <section className="section px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
+      <section className="section bg-white px-6">
+        <div className="container-narrow">
           <span className="eyebrow mb-4">Un caso real</span>
           <h2 className="t-h2 text-zinc-900 mb-5">Antonio Pérez Blázquez</h2>
           <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+          <p className="t-body my-6 max-w-3xl text-zinc-600">
             Con adolescentes, el salto suele darse fuera del aula. Antonio cuenta cómo fue el verano de su hija en Irlanda, organizado por Danny.
           </p>
           <div className="card p-8">
@@ -584,13 +493,67 @@ export default function SecundariaPage() {
               { name: "Antonio Pérez Blázquez", text: "Danny se ha encargado de gestionar la estancia de mi hija con una familia durante tres semanas en un campamento de verano en Irlanda. Ha identificado a las familias, ha acompañados a los chavales, ha estado pendiente de ellos durante su estancia. Ni un sólo pero. Perfecto. Totalmente recomendable." }
             ].map((r) => (
               <blockquote key={r.name}>
-                <p className="text-zinc-600 leading-relaxed mb-3">&laquo;{r.text}&raquo;</p>
+                <p className="t-body mb-3 text-zinc-600">&laquo;{r.text}&raquo;</p>
                 <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}, reseña en Google</cite>
               </blockquote>
             ))}
           </div>
         </div>
       </section>
+
+      <CTABand
+        title="Prueba de nivel gratuita antes de elegir grupo"
+        subtitle="25 minutos con JP para situar el nivel real y decidir si toca B1, B2 o C1."
+        whatsappText="Hola, me gustaría reservar una prueba de nivel para secundaria"
+      />
+
+      <PriceLocationCards heading="Cuánto cuesta el curso de secundaria">
+        <p>Secundaria va por cursos: S1-S3 <strong>87 €/mes</strong> o <strong>251 €/trimestre</strong>; S4-S6 <strong>91 €/mes</strong> o <strong>263 €/trimestre</strong>; S7-S8 <strong>93 €/mes</strong> o <strong>269 €/trimestre</strong>. Desde <strong>87 €/mes</strong>.</p>
+        <p>Aparte quedan la matrícula (<strong>45 €</strong>), el libro (<strong>máximo 40 €</strong>) y las tasas del examen Cambridge, que se pagan solo si te presentas. Hay descuento por pago trimestral y descuento familiar.</p>
+      </PriceLocationCards>
+
+      <GoogleReviews
+        heading="Lo que dicen las familias de secundaria"
+        intro="Reseñas de madres y padres publicadas en nuestro perfil de Google, sin editar."
+        reviews={[
+              { name: "Luis Martin Gonzalez", text: "100% recomendable, merece la pena. De echo mi hijo ahora sigue con JP, para prestarse sus exámenes de titulación Gran persona JP y su método" },
+              { name: "Rodrigo Sanz", text: "Muy buen profesor, muy cercano y asequible. Realmente contento con esta academia del barrio. Los chicos van felices a clase. Gran tranquilidad para los padres." },
+              { name: "Laura García Lomas", text: "Una suerte encontrar esta academia con tan grandes profesionales. Gracias a ellos he conseguido el B2, la metodología hace que aprendas rápido y no olvides" }
+            ,
+              { name: "Manuel Casas Herrero", text: "Danny es un excelente profesional que vive con pasion su labor didactica. Nuestros hijos son biligues gracias a sus enseñazas en Madrid e Irlanda." },
+              { name: "Lorena Jiménez", text: "Fantástica academia donde realmente se aprende inglés. La atención de los profesores es increible y son todos encantadores. Especial gracias a Jp por la atención personalizada a mi hijo." }
+            ]}
+      />
+
+      <CTABand
+        title="Preparación de EBAU y Cambridge"
+        subtitle="Grupos de máximo 10 alumnos por nivel. Escríbenos y te contamos cómo va el curso."
+        whatsappText="Hola, me gustaría información sobre las clases de secundaria y EBAU"
+      />
+
+      {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
+      <section className="section-tight surface-alt px-6 border-t border-zinc-200/70">
+        <div className="container-narrow">
+          <p className="t-small text-center text-zinc-500">
+            <strong className="text-zinc-600">Otros cursos:</strong>{' '}
+            <a href="/cursos-ingles/" className="font-medium text-accent-blue hover:underline">Todos los cursos de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/infantil/" className="font-medium text-accent-blue hover:underline">Inglés infantil (2-5 años)</a>
+            {' · '}
+            <a href="/cursos-ingles/primaria/" className="font-medium text-accent-blue hover:underline">Inglés para primaria (6-12)</a>
+            {' · '}
+            <a href="/cursos-ingles/adultos/" className="font-medium text-accent-blue hover:underline">Clases de inglés para adultos</a>
+            {' · '}
+            <a href="/cursos-ingles/particulares/" className="font-medium text-accent-blue hover:underline">Clases particulares de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/online/" className="font-medium text-accent-blue hover:underline">Clases de inglés online</a>
+          </p>
+          <p className="t-small text-center text-zinc-500 mt-4">
+            <a href="/" className="font-medium text-accent-blue hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+          </p>
+        </div>
+      </section>
+
 
       <Footer />
 

@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import { User, Video, MapPin, Calendar, Target, Clock, CheckCircle, Briefcase, FileText, Award } from 'lucide-react';
+import TeacherCard from '../../components/TeacherCard';
+import GoogleReviews from '../../components/GoogleReviews';
+import PriceLocationCards from '../../components/PriceLocationCards';
+import CTABand from '../../components/CTABand';
 import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -476,24 +480,20 @@ export default function ParticularesPage() {
       </section>
 
 
-      {/* Equipo — personas con nombre y credenciales verificables */}
-      <section className="section px-6 surface-alt">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
-          <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
-            Tu plan lo diseña JP, director de estudios y cofundador de la academia, que lleva más de 10 años enseñando inglés. Si prefieres trabajar la conversación con un nativo, Danny es irlandés y lleva 12 años dando clase en Madrid.
-          </p>
-        </div>
-      </section>
+      <TeacherCard
+        heading="Quién diseña tu plan"
+        imageAlt="JP, director de estudios de Impulse English Academy, en una clase particular de inglés en La Vaguada"
+      >
+            <p>Tu plan lo diseña JP, director de estudios y cofundador de la academia, que lleva más de 10 años enseñando inglés. Si prefieres trabajar la conversación con un nativo, Danny es irlandés y lleva 12 años dando clase en Madrid.</p>
+      </TeacherCard>
 
       {/* Un caso real — hechos aprobados, sin claims de nivel inventados */}
-      <section className="section px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
+      <section className="section bg-white px-6">
+        <div className="container-narrow">
           <span className="eyebrow mb-4">Un caso real</span>
           <h2 className="t-h2 text-zinc-900 mb-5">Daniel de la Peña</h2>
           <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+          <p className="t-body my-6 max-w-3xl text-zinc-600">
                 Lo que Daniel quería era salir de España a trabajar: <em>&laquo;acceder a oportunidades laborales en el extranjero y en países de habla inglesa&raquo;</em>. Le llevó cerca de año y medio de clases.
               </p>
           <div className="card p-8">
@@ -502,99 +502,62 @@ export default function ParticularesPage() {
               <div><p className="t-h3 text-accent-blue">Su objetivo</p><p className="t-small text-zinc-600">trabajar en un país de habla inglesa</p></div>
               <div><p className="t-h3 text-accent-blue">Conseguido</p><p className="t-small text-zinc-600">hoy da inglés en primaria a jornada completa</p></div>
             </div>
-            <p className="text-zinc-600 leading-relaxed">
+            <p className="t-body text-zinc-600">
                 Cuando explica por qué le sirvió no habla del temario, sino del <em>&laquo;trato personalizado y sobre todo profesionalidad y compromiso&raquo;</em>.
               </p>
           </div>
         </div>
       </section>
 
-      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
-      <section className="section-lead px-6 surface-alt">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
-            Lo que dicen los alumnos de clases particulares
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
+      <CTABand
+        title="Diseñamos tu plan en 25 minutos"
+        subtitle="La prueba de nivel es gratuita y de ella sale el plan de estudios personalizado."
+        whatsappText="Hola, me gustaría información sobre las clases particulares"
+      />
+
+      <PriceLocationCards heading="Cuánto cuestan las clases particulares">
+        <p>Las clases particulares son <strong>29 €/hora</strong>, presenciales u online, desde <strong>29 €</strong> la sesión suelta. Tú eliges cuántas horas a la semana.</p>
+        <p>Si prefieres grupo, los cursos del centro van de <strong>64 €</strong> a <strong>99 €</strong> al mes. En ambos casos la matrícula son <strong>45 €</strong> y el libro <strong>máximo 40 €</strong>.</p>
+      </PriceLocationCards>
+
+      <GoogleReviews
+        heading="Lo que dicen los alumnos de clases particulares"
+        intro="Reseñas publicadas en nuestro perfil de Google, reproducidas sin editar."
+        reviews={[
               { name: "Virginia Toledo", text: "Mi hija tuvo unas clases particulares con JP para terminar de prepararse para el examen Advanced y estaba muy contenta con la dinámica de las clases. Además ha aprobado!!" },
               { name: "Antonio del Pozo", text: "Clases perfectas, totalmente adaptadas a mi objetivo de conseguir el C1 de inglés. JP es un profesor extraordinario, siempre dispuesto para ayudarte en todo lo que necesites." },
               { name: "Roberto Herrero", text: "Solo tengo palabras de agradecimiento para Impulse English Academy y muy en particular a mi profesor Daniel. Gracias de nuevo por que este aprendizaje haya sido tan fácil y rápido. Os deseo lo mejor." }
             ,
               { name: "Edixon MUÑOZ", text: "He tenido un par de clases particulares  con Jp para prepaprar  un curso para el trabajo. El curso fue adaptado  a lo que necesitaba  y Jp fue .... AMAZING 🥳" },
               { name: "Elga Quintans", text: "Me encantó las clases intensivas con J.P muy didácticas y amenas, Gracias" }
-            ].map((r) => (
-              <blockquote key={r.name} className="card p-6">
-                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
-                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
-              </blockquote>
-            ))}
-          </div>
-          <p className="t-small text-zinc-500 text-center mt-8">
-            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
-          </p>
-        </div>
-      </section>
+            ]}
+      />
 
-
-      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
-      <section className="section px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuestan las clases particulares</h2>
-          <div className="rule"></div>
-          <div className="grid md:grid-cols-2 gap-6 mt-8">
-            <div className="card p-6">
-              <p className="text-zinc-600 leading-relaxed mb-4">
-                Las clases particulares son <strong>29 €/hora</strong>, presenciales u online, desde <strong>29 €</strong> la sesión suelta. Tú eliges cuántas horas a la semana.
-              </p>
-              <p className="text-zinc-600 leading-relaxed">
-                Si prefieres grupo, los cursos del centro van de <strong>64 €</strong> a <strong>99 €</strong> al mes. En ambos casos la matrícula son <strong>45 €</strong> y el libro <strong>máximo 40 €</strong>.
-              </p>
-              <p className="t-small text-zinc-500 mt-4">
-                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
-              </p>
-            </div>
-            <div className="card p-6">
-              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
-              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
-              <p className="text-zinc-600 leading-relaxed mb-3">
-                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
-                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
-                a 1 min · el centro comercial La Vaguada está a 1 min.
-              </p>
-              <ul className="t-small text-zinc-600 mb-3">
-                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
-              </ul>
-              <p className="text-zinc-600">
-                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
-                {' · '}
-                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <CTABand
+        title="Clases particulares desde 29 €/hora"
+        subtitle="Presenciales en La Vaguada o por videollamada, con el horario que tú elijas."
+        whatsappText="Hola, quiero reservar clases particulares de inglés"
+      />
 
       {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
-      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
-        <div className="container mx-auto max-w-4xl">
-          <p className="text-zinc-500 text-sm text-center leading-relaxed">
+      <section className="section-tight surface-alt px-6 border-t border-zinc-200/70">
+        <div className="container-narrow">
+          <p className="t-small text-center text-zinc-500">
             <strong className="text-zinc-600">Otros cursos:</strong>{' '}
-            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos de inglés</a>
+            <a href="/cursos-ingles/" className="font-medium text-accent-blue hover:underline">Todos los cursos de inglés</a>
             {' · '}
-            <a href="/cursos-ingles/infantil/" className="text-indigo-600 hover:underline">Inglés infantil (2-5 años)</a>
+            <a href="/cursos-ingles/infantil/" className="font-medium text-accent-blue hover:underline">Inglés infantil (2-5 años)</a>
             {' · '}
-            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
+            <a href="/cursos-ingles/primaria/" className="font-medium text-accent-blue hover:underline">Inglés para primaria (6-12)</a>
             {' · '}
-            <a href="/cursos-ingles/secundaria/" className="text-indigo-600 hover:underline">Inglés para secundaria y EBAU</a>
+            <a href="/cursos-ingles/secundaria/" className="font-medium text-accent-blue hover:underline">Inglés para secundaria y EBAU</a>
             {' · '}
-            <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline">Clases de inglés para adultos</a>
+            <a href="/cursos-ingles/adultos/" className="font-medium text-accent-blue hover:underline">Clases de inglés para adultos</a>
             {' · '}
-            <a href="/cursos-ingles/online/" className="text-indigo-600 hover:underline">Clases de inglés online</a>
+            <a href="/cursos-ingles/online/" className="font-medium text-accent-blue hover:underline">Clases de inglés online</a>
           </p>
-          <p className="text-zinc-500 text-sm text-center mt-4">
-            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+          <p className="t-small text-center text-zinc-500 mt-4">
+            <a href="/" className="font-medium text-accent-blue hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
           </p>
         </div>
       </section>
