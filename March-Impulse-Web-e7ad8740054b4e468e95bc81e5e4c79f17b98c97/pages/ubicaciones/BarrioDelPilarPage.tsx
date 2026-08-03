@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { MapPin, Clock, Train, Bus, CheckCircle, Star, ArrowRight } from 'lucide-react';
+import { GoogleMark } from '../../components/GoogleReviews';
 import NearbyAreas from '../../components/NearbyAreas';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -437,10 +438,13 @@ export default function BarrioDelPilarPage() {
               { name: "Rodrigo Sanz", text: "Muy buen profesor, muy cercano y asequible. Realmente contento con esta academia del barrio. Los chicos van felices a clase. Gran tranquilidad para los padres." }
             ].map((testimonial, idx) => (
               <div key={idx} className="card p-6">
-                <div className="flex gap-1 mb-3">
+                <div className="mb-3 flex items-center justify-between">
+                  <div className="flex gap-1">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                   ))}
+                </div>
+                  <GoogleMark className="h-4 w-4 opacity-70" />
                 </div>
                 <p className="text-zinc-700 mb-4 italic">"{testimonial.text}"</p>
                 <p className="text-zinc-900 font-semibold">{testimonial.name}</p>
