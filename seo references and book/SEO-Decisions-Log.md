@@ -5,6 +5,35 @@ Every SEO decision is logged here, grounded in [`SEO-Master-Class-Reference.md`]
 
 ---
 
+## 2026-08-03 — DECIDED: do not build San Sebastián de los Reyes or Alcobendas.
+
+**Decision [DANNY, 3 Aug 2026]:** no pages for **San Sebastián de los Reyes (90/mo, 210 in
+September)** or **Alcobendas (70/mo, 170 in September)**, despite these being the two highest-volume
+unbuilt terms in the §14 research — each on its own bigger than any barrio term the site owns
+(Barrio del Pilar, the best, is 40/mo).
+
+**Why this is the right call, recorded so it stops being re-proposed:**
+- Both are **separate municipalities**, not Madrid barrios. The academy is one physical centre on
+  Av. de El Ferrol 22, and the entire local play on the existing 14 pages rests on a checkable
+  proximity claim — "2 paradas", "8 minutos en el 147", "3 minutos andando". Neither town has a
+  route like that. There is no honest version of the page's core argument.
+- The book's **purchasing-intent / landmine test** applies: someone searching "academia de inglés
+  Alcobendas" wants an academy *in Alcobendas*. Ranking a Madrid-Norte centre for it would earn
+  impressions and bounce them, which is the pattern §5 says to stop doing, not start.
+- It would also be the **one-intent-one-page rule inverted** — a page whose intent we cannot
+  actually serve, competing for attention with fourteen pages we can.
+
+**What this closes:** the barrio/location-page programme is **complete**. 14 pages, all grade A,
+zero elements below 9. No further location pages are planned; the phase-2 list in §2 is now fully
+resolved (built, folded, or explicitly declined).
+
+**Where the growth actually is, for the next session:** not more location pages. The head term
+`academia de inglés cerca de mí` is **1,600/mo, 4,400 in September** — the pillar shipped in July
+and is the asset worth expanding. Off-page is the other half: the site has **zero local backlinks**
+(see the Madrid Norte target list, 2026-08-02), which no amount of on-page work substitutes for.
+
+---
+
 ## 2026-08-03 — Four new barrio pages built; two barrios deliberately NOT given pages.
 
 **Context:** Danny asked for pages on seven phase-2 barrios. Research changed the shape of it.
