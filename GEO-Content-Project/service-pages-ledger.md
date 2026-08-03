@@ -300,3 +300,59 @@ Also fixed in the same commit:
   serves `/cursos-ingles/particulares/` and `CursosOverviewPage.tsx` serves `/cursos-ingles/`,
   neither derivable from the filename. The old slug guess is kept as a fallback so barrio
   scoring cannot move.
+
+---
+
+# Design round — 2026-08-03
+
+Branch `design/service-pages-polish`. Danny's review of the shipped pages: the new sections were
+not aesthetically pleasing, the reviews didn't look like Google reviews, there was nothing to click
+on the way down, line spacing was inconsistent, there was no photo of JP, and price/address were
+only visible near the foot of the page.
+
+## Root cause — one mistake, repeated
+
+The site already had a design system (`src/index.css`, `@layer components`) and the barrio pages
+already solved every one of those complaints. The service-page sections were written from scratch
+in raw Tailwind instead:
+
+| Already existed | What was written instead |
+|---|---|
+| `.container-narrow` | `container mx-auto max-w-4xl` |
+| `.t-body` (line-height 1.7) | `text-zinc-600 leading-relaxed` → **the inconsistent line spacing** |
+| `.btn-primary` / `.btn-outline` | `text-indigo-600 hover:underline` → **nothing to click** |
+| `eyebrow` + `t-h2` + `rule` | a bare `<h2>` |
+| Google mark, stars, avatar, badge — all in `TestimonialsSection.tsx` | a plain `<blockquote>` |
+| JP portrait block on every barrio page, `jp-director-estudios.webp` in the repo | a paragraph, **no photo** |
+
+**Nothing was missing. It just wasn't reused.** Recorded in `DESIGN.md` and in root `CLAUDE.md` so
+it loads every session, and enforced by `npm run verify:design`.
+
+| # | Date | Step | Files | Commit | Gates | Reverse with |
+|---|---|---|---|---|---|---|
+| D1 | 2026-08-03 | Four shared components; sections rebuilt on the design system; geo-audit follows component imports | `components/{GoogleReviews,TeacherCard,PriceLocationCards,CTABand}.tsx`, `pages/cursos/*.tsx`, `geo-audit.py` | `262b0cf` | both audits **96**; 124 quotes 0 FAIL; every page renders 30 stars, the Google mark, JP's photo, 3 `btn-primary` | `git revert 262b0cf` |
+| D2 | 2026-08-03 | Price/group size/address above the fold; group-size contradiction settled | `components/QuickFacts.tsx`, `pages/cursos/*.tsx`, `Business-Information.txt` | `65f75b4` | price above the fold on 7/7; one group number per course | `git revert 65f75b4` |
+| D3 | 2026-08-03 | `npm run verify:design`; Google mark on all 14 barrio review blocks | `scripts/verify-design/*`, `package.json`, `pages/ubicaciones/*.tsx` | `03e5b89` | gate **ALL PASS**; both audits 96 | `git revert 03e5b89` |
+| D4 | 2026-08-03 | `DESIGN.md` + `CLAUDE.md` Design section + this ledger | `DESIGN.md`, `CLAUDE.md`, ledger | `PENDING` | — | `git revert <sha>` |
+
+## What running the gate found beyond the service pages
+
+- **All 14 barrio pages** rendered Google reviews with **no Google mark**. Fixed.
+- **`LaVaguadaPage.tsx`** used `fill-yellow-400` where the rest of the site uses amber, on a
+  hand-rolled card instead of `.card`. Fixed.
+- **Token debt is site-wide: 793 instances across all 21 page components**, and it predates the
+  design system. Failing the build on it outright would have got the gate switched off, so it
+  ratchets instead — recorded in `scripts/verify-design/baseline.json`, fails only if a file gets
+  worse. Pay down when touching a file, then `--update-baseline`.
+
+## Two bugs in the gate itself, both found by running it
+
+1. The CTA rule counted only `.btn-*` and so failed 13 barrio pages that **do** give the reader
+   somewhere to click, just with hand-styled anchors. Corrected: missing CTAs are an error, not
+   using the button system is debt.
+2. The import scanner matched only default imports, so it could not see
+   `import { GoogleMark } from '…'` and reported pages as missing a mark they render.
+
+Same lesson as the content round: **a checker that reads the input rather than the output will
+certify things that are not true.** Always run a gate against a case you know is broken before
+trusting a pass.
