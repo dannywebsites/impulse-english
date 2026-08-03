@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ValdezarzaPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/ValdezarzaPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema, generateBreadcrumbSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Ubicaciones', url: 'https://impulse-english.es/academias-ingles-madrid/por-barrios/' },
+  { name: locationMeta.locationName, url: `${locationMeta.pageUrl}/` },
+]);
+const schemas = [...locationItems, breadcrumb, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Inglés a 2 paradas de Valdezarza | desde 64 € | Impulse"
+  description="Academia de inglés a dos paradas de Valdezarza por la línea 7, sin transbordos. Centro oficial Cambridge, grupos de 7 a 10 alumnos y clases desde 64 €/mes."
+  keywords="academia inglés valdezarza, clases inglés valdezarza, cursos inglés valdezarza madrid, cambridge valdezarza, inglés moncloa aravaca"
+  canonical="/academia-ingles-valdezarza/"
+  fullTitle={true}
+  schemas={schemas}
+>
+  <ValdezarzaPage client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>

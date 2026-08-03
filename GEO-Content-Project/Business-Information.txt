@@ -151,6 +151,39 @@ strongest local signal we own and it is currently under-used on the individual p
 - [GAP] Any barrio-specific pricing, timetable or group differences — probably none,
   but confirm, because "same price everywhere" is itself a fact worth stating.
 
+### Transit facts for the four pages built 2026-08-03  [VERIFIED, sources noted]
+Rule applied: publish the structural facts (line, stops, transfer point), which are
+checkable, and only publish a minute figure where an existing source gives one. No
+invented distances — the Peñagrande page shipped with a wrong one and had to be fixed.
+
+Anchor figures already owned by the site (components/LocationsSection.tsx):
+- Metro Barrio del Pilar (L9) → academy: 500 m, ~3 min on foot
+- Metro Peñagrande (L7) → academy: ~8 min on foot
+- From Plaza de Castilla: ~12 min on L9, ~15 min door to door
+
+L7 station order confirmed (Wikipedia / Metro de Madrid, checked 2026-08-03):
+  Valdezarza – Antonio Machado – Peñagrande – Avenida de la Ilustración – Lacoma –
+  Arroyofresno – Pitis
+  → NOTE the station is spelled **Arroyofresno** (one word); the barrio is Arroyo del
+    Fresno. Use the barrio spelling in copy, the station spelling for the station.
+
+- **Valdezarza** — Metro Valdezarza (L7). **2 paradas** to Peñagrande (Antonio Machado,
+  Peñagrande), no transfer, then ~8 min on foot. Cleanest story of the four.
+- **Arroyo del Fresno** — Metro Arroyofresno (L7). **3 paradas** to Peñagrande (Lacoma,
+  Avenida de la Ilustración, Peñagrande), no transfer, then ~8 min on foot.
+- **Chamartín** — Chamartín (L1, L10, Cercanías). **1 parada** to Plaza de Castilla on
+  L10 (they were the original 1967 section of the line, so they are adjacent), change to
+  L9 inside the intercambiador without going out to the street (the site already makes
+  this claim on the Plaza Castilla page), then **2 paradas** to Barrio del Pilar. 3 stops
+  total, one cross-platform change.
+- **Sanchinarro** — [WEAKEST] no metro station in the barrio. Metro Ligero ML1
+  (Pinar de Chamartín–Las Tablas) runs through Sanchinarro and meets L10 at Las Tablas;
+  from there L10 → Plaza de Castilla → L9. Buses 172, 174 and others serve the barrio.
+  **No sourced minute figure exists — do not publish one.** The page leads on price and
+  group size instead of proximity, and links up to the Montecarmelo/Las Tablas page,
+  which is the natural parent. [GAP for Danny: do we actually draw students from
+  Sanchinarro, and by what route do they come?]
+
 ### Barrios with NO page yet (phase 2, per Danny)
 Fuencarral, Chamartín, Valdezarza, Arroyo del Fresno, Herrera Oria, Begoña,
 Valdeacederas, Sanchinarro  — [GAP: which of these do you actually draw students from?]

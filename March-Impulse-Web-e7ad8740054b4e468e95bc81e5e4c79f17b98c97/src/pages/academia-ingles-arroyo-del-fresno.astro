@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArroyoDelFresnoPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/ArroyoDelFresnoPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema, generateBreadcrumbSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Ubicaciones', url: 'https://impulse-english.es/academias-ingles-madrid/por-barrios/' },
+  { name: locationMeta.locationName, url: `${locationMeta.pageUrl}/` },
+]);
+const schemas = [...locationItems, breadcrumb, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Inglés cerca de Arroyo del Fresno | desde 64 € | Impulse"
+  description="Academia de inglés a tres paradas de Arroyo del Fresno por la línea 7, sin transbordos. Centro oficial Cambridge, grupos de 7 a 10 alumnos, desde 64 €/mes."
+  keywords="academia inglés arroyo del fresno, clases inglés arroyo del fresno, cursos inglés arroyo del fresno madrid, cambridge arroyo del fresno"
+  canonical="/academia-ingles-arroyo-del-fresno/"
+  fullTitle={true}
+  schemas={schemas}
+>
+  <ArroyoDelFresnoPage client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ChamartinPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/ChamartinPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema, generateBreadcrumbSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Ubicaciones', url: 'https://impulse-english.es/academias-ingles-madrid/por-barrios/' },
+  { name: locationMeta.locationName, url: `${locationMeta.pageUrl}/` },
+]);
+const schemas = [...locationItems, breadcrumb, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Inglés a 3 paradas de Chamartín | desde 64 € | Impulse"
+  description="Academia de inglés a tres paradas de Chamartín: una en la línea 10 y dos en la 9. Centro oficial Cambridge, grupos de 7 a 10 alumnos, desde 64 €/mes."
+  keywords="academia inglés chamartín, clases inglés chamartín, cursos inglés chamartín madrid, cambridge chamartín, inglés cerca estación chamartín"
+  canonical="/academia-ingles-chamartin/"
+  fullTitle={true}
+  schemas={schemas}
+>
+  <ChamartinPage client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>

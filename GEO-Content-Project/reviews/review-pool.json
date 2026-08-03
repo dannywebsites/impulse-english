@@ -7,9 +7,9 @@
     "reviews_count": 180,
     "pulled_count": 180,
     "source": "DataForSEO business_data/google/reviews",
-    "eligible": 79,
+    "eligible": 93,
     "rules": {
-      "min_chars": 70,
+      "min_chars": 43,
       "max_chars": 600,
       "approved_teachers": [
         "dani",
@@ -166,10 +166,8 @@
       "themes": [
         "atmosphere"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "too short (58 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2sxSGNrUk9jRTFsWkhaS1VGVXdRV3huVTFwQ2FHYxAB",
@@ -266,10 +264,8 @@
         "parent",
         "adult"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "too short (65 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "Ci9DQUlRQUNvZENodHljRjlvT25KTVpsUkxjV2s1V0dFeVkyNXZjWEJuTFVoT1NGRRAB",
@@ -285,10 +281,8 @@
       "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KTVpsUkxjV2s1V0dFeVkyNXZjWEJuTFVoT1NGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOnJMZlRLcWk5WGEyY25vcXBnLUhOSFE%7C%7C?hl=es",
       "owner_answered": true,
       "themes": [],
-      "eligible": false,
-      "blocked_by": [
-        "too short (55 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "Ci9DQUlRQUNvZENodHljRjlvT25KWFpFOVJVVTQwYUhnMGMwVnlRVTVoTWpka2RVRRAB",
@@ -432,7 +426,6 @@
       ],
       "eligible": false,
       "blocked_by": [
-        "too short (56 chars)",
         "names a teacher outside the approved set: Profesor"
       ]
     },
@@ -452,10 +445,8 @@
       "themes": [
         "adult"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "too short (49 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21KRmNtNVJWM2xST1ZGUWMyMWxaMGhsVkVoZmIxRRAB",
@@ -1032,10 +1023,8 @@
       "themes": [
         "adult"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "too short (53 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNJZ05xZVp3EAE",
@@ -1094,10 +1083,8 @@
       "themes": [
         "cambridge"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "too short (46 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNfc282ZjV3RRAB",
@@ -1509,10 +1496,8 @@
       "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6cktlQ2ZREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICzrKeCfQ%7C%7C?hl=es",
       "owner_answered": true,
       "themes": [],
-      "eligible": false,
-      "blocked_by": [
-        "too short (56 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUbFpHOGlnRRAB",
@@ -1803,10 +1788,8 @@
         "atmosphere",
         "recommend"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "too short (66 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWd2JxRlBnEAE",
@@ -2101,10 +2084,8 @@
       "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNad0piSDFnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICZwJbH1gE%7C%7C?hl=es",
       "owner_answered": true,
       "themes": [],
-      "eligible": false,
-      "blocked_by": [
-        "too short (49 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwdjlDaHNBRRAB",
@@ -2375,10 +2356,8 @@
       "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjR6N21BRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr4z7mAE%7C%7C?hl=es",
       "owner_answered": true,
       "themes": [],
-      "eligible": false,
-      "blocked_by": [
-        "too short (49 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjdUc1RBEAE",
@@ -2417,10 +2396,8 @@
       "themes": [
         "adult"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "too short (50 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjdqdjJ3RRAB",
@@ -2457,10 +2434,8 @@
       "themes": [
         "adult"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "too short (53 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjlpLVpBEAE",
@@ -2876,10 +2851,8 @@
       "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLWR1THh3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-duLxwE%7C%7C?hl=es",
       "owner_answered": true,
       "themes": [],
-      "eligible": false,
-      "blocked_by": [
-        "too short (43 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwLVp1Zkp3EAE",
@@ -2938,10 +2911,8 @@
         "adult",
         "atmosphere"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "too short (67 chars)"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLWNQSW13RRAB",
