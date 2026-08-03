@@ -318,8 +318,28 @@ def score_testimonials(text, src, dist_html=None):
     return min(s, 10), "verbatim Google reviews=%d" % len(names)
 
 
+# A case study can also be a real customer telling their own story. Those are marked
+# in the source with {/* CASE STUDY: <name> */} and only count if that person's quote
+# on the same page verifies verbatim against the live Google profile — so the marker
+# cannot be used to smuggle in an invented story, which is the whole reason the
+# original hardcoded name list existed.
+CASE_MARK = re.compile(r"\{/\*\s*CASE STUDY:\s*(.+?)\s*\*/\}")
+
+
+def verified_case_subjects(src):
+    out = []
+    for m in CASE_MARK.finditer(src):
+        who = m.group(1).strip()
+        for qn, qt in VQ.extract(src):
+            if qn.strip() == who and VQ.check(qn, qt, _BY_AUTHOR)[0] == "OK":
+                out.append(who)
+                break
+    return out
+
+
 def score_case_study(text, src):
     named = [n for n in ("Sergio", "Daniel de la Pe", "Josmary", "Josh Mary") if n in src]
+    named += verified_case_subjects(src)
     if not named:
         return 0, "no case study"
     s = 5

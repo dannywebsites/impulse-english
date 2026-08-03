@@ -560,6 +560,35 @@ export default function SecundariaPage() {
         </div>
       </section>
 
+
+      {/* CASE STUDY: Antonio Pérez Blázquez */}
+      {/* Un caso real contado por la propia familia — cita verbatim de Google */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <span className="eyebrow mb-4">Un caso real</span>
+          <h2 className="t-h2 text-zinc-900 mb-5">Antonio Pérez Blázquez</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+            Con adolescentes, el salto suele darse fuera del aula. Antonio cuenta cómo fue el verano de su hija en Irlanda, organizado por Danny.
+          </p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">3 semanas</p><p className="t-small text-zinc-600">en Irlanda</p></div>
+              <div><p className="t-h3 text-accent-blue">Familia anfitriona</p><p className="t-small text-zinc-600">seleccionada por Danny</p></div>
+              <div><p className="t-h3 text-accent-blue">Acompañados</p><p className="t-small text-zinc-600">durante toda la estancia</p></div>
+            </div>
+            {[
+              { name: "Antonio Pérez Blázquez", text: "Danny se ha encargado de gestionar la estancia de mi hija con una familia durante tres semanas en un campamento de verano en Irlanda. Ha identificado a las familias, ha acompañados a los chavales, ha estado pendiente de ellos durante su estancia. Ni un sólo pero. Perfecto. Totalmente recomendable." }
+            ].map((r) => (
+              <blockquote key={r.name}>
+                <p className="text-zinc-600 leading-relaxed mb-3">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}, reseña en Google</cite>
+              </blockquote>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
 
       {/* Schema.org Structured Data */}

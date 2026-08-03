@@ -562,6 +562,35 @@ export default function InfantilPage() {
         </div>
       </section>
 
+
+      {/* CASE STUDY: Débora Azevedo */}
+      {/* Un caso real contado por la propia familia — cita verbatim de Google */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <span className="eyebrow mb-4">Un caso real</span>
+          <h2 className="t-h2 text-zinc-900 mb-5">Débora Azevedo</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+            Con niños de 2 a 5 años, el primer obstáculo no es el idioma: es entrar por la puerta. Débora lo cuenta en su reseña de Google.
+          </p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">Sin llorar</p><p className="t-small text-zinc-600">el primer día que entró</p></div>
+              <div><p className="t-h3 text-accent-blue">2 a 5 años</p><p className="t-small text-zinc-600">el grupo de infantil</p></div>
+              <div><p className="t-h3 text-accent-blue">Aprendiendo</p><p className="t-small text-zinc-600">en palabras de su madre</p></div>
+            </div>
+            {[
+              { name: "Débora Azevedo", text: "Muy contenta con las clases impartidas a mi hijo. Todo los profisionales son muy comprometidos, siempre muy amables y con una gran sonrisa. Hay que decir que esa academia ha sido la unica que mi hijo entró sin llorar y aceptó finalmente asistir, eso porque han tenido todo el cuidado en conectarse con él, además son muy divertidos y veo que me hijo esta aprendiendo." }
+            ].map((r) => (
+              <blockquote key={r.name}>
+                <p className="text-zinc-600 leading-relaxed mb-3">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}, reseña en Google</cite>
+              </blockquote>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
 
       {/* Schema.org Structured Data */}
