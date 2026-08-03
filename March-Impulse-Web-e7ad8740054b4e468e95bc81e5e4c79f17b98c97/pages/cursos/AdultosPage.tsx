@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react';
 import { Briefcase, BookOpen, Users, Target, Globe, Award, Clock, CheckCircle, Phone, Calendar, Coffee, Sun } from 'lucide-react';
+import QuickFacts from '../../components/QuickFacts';
+import TeacherCard from '../../components/TeacherCard';
+import GoogleReviews from '../../components/GoogleReviews';
+import PriceLocationCards from '../../components/PriceLocationCards';
+import CTABand from '../../components/CTABand';
 import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -225,29 +230,16 @@ export default function AdultosPage() {
         </div>
       </section>
 
-      {/* Quick Info Bar */}
-      <section className="bg-white py-6 border-b border-zinc-100">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-center">
-            <div className="flex items-center gap-2">
-              <Users className="w-5 h-5 text-teal-500" />
-              <span className="text-zinc-700 font-medium">Máx. 8 alumnos</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock className="w-5 h-5 text-teal-500" />
-              <span className="text-zinc-700 font-medium">Horarios mañana y tarde</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Briefcase className="w-5 h-5 text-teal-500" />
-              <span className="text-zinc-700 font-medium">Enfoque práctico: trabajo, viajes y vida real</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Award className="w-5 h-5 text-amber-500" />
-              <span className="text-zinc-700 font-medium">Centro Oficial Cambridge y Linguaskill</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <QuickFacts
+        price="94 €/mes"
+        facts={[
+          "Máx. 8 alumnos",
+          "Horarios mañana y tarde",
+          "Enfoque práctico: trabajo, viajes y vida real",
+          "Centro Oficial Cambridge y Linguaskill",
+        ]}
+        whatsappText="Hola, me gustaría información sobre las clases de inglés para adultos"
+      />
 
       {/* Main Content */}
       <section className="section px-6 surface-alt">
@@ -582,24 +574,20 @@ export default function AdultosPage() {
       </section>
 
 
-      {/* Equipo — personas con nombre y credenciales verificables */}
-      <section className="section px-6 surface-alt">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
-          <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
-            Las clases de adultos las coordina JP, director de estudios y cofundador de Impulse English Academy, que lleva más de 10 años enseñando inglés y dirige la preparación Cambridge del centro. Danny, el otro cofundador, es irlandés y vive en Madrid desde hace 12 años.
-          </p>
-        </div>
-      </section>
+      <TeacherCard
+        heading="Quién te va a dar clase"
+        imageAlt="JP, director de estudios de Impulse English Academy, en las clases de inglés para adultos de La Vaguada"
+      >
+            <p>Las clases de adultos las coordina JP, director de estudios y cofundador de Impulse English Academy, que lleva más de 10 años enseñando inglés y dirige la preparación Cambridge del centro. Danny, el otro cofundador, es irlandés y vive en Madrid desde hace 12 años.</p>
+      </TeacherCard>
 
       {/* Un caso real — hechos aprobados, sin claims de nivel inventados */}
-      <section className="section px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
+      <section className="section bg-white px-6">
+        <div className="container-narrow">
           <span className="eyebrow mb-4">Un caso real</span>
           <h2 className="t-h2 text-zinc-900 mb-5">Sergio</h2>
           <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+          <p className="t-body my-6 max-w-3xl text-zinc-600">
                 Sergio llegó con el inglés de cualquiera que ha pasado por el sistema educativo español sin volver a usarlo. En sus palabras: <em>&laquo;siempre he tenido una gran carencia de confianza para hablar en inglés&raquo;</em>. No era gramática, era no atreverse.
               </p>
           <div className="card p-8">
@@ -608,99 +596,62 @@ export default function AdultosPage() {
               <div><p className="t-h3 text-accent-blue">Dublín</p><p className="t-small text-zinc-600">sus primeros meses fuera</p></div>
               <div><p className="t-h3 text-accent-blue">2 años</p><p className="t-small text-zinc-600">viviendo y trabajando en Irlanda</p></div>
             </div>
-            <p className="text-zinc-600 leading-relaxed">
+            <p className="t-body text-zinc-600">
                 Hoy trabaja como analista de pólizas en una empresa irlandesa.
               </p>
           </div>
         </div>
       </section>
 
-      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
-      <section className="section-lead px-6 surface-alt">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
-            Lo que dicen nuestros alumnos adultos
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
+      <CTABand
+        title="¿Quieres saber por dónde empezar?"
+        subtitle="Prueba de nivel gratuita de 25 minutos con JP, el director de estudios. Sin compromiso."
+        whatsappText="Hola, me gustaría reservar una prueba de nivel para el curso de adultos"
+      />
+
+      <PriceLocationCards heading="Cuánto cuesta el curso de adultos">
+        <p>El grupo de adultos son <strong>94 €/mes</strong>, con clases semanales en grupos de máximo 8. Los cursos del centro van desde <strong>64 €</strong> hasta <strong>99 €</strong> al mes según el curso y el número de clases.</p>
+        <p>El primer mes se paga además la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): en total <strong>179 €</strong> el primer mes y 94 €/mes después. Las tasas de examen Cambridge o Linguaskill van aparte.</p>
+      </PriceLocationCards>
+
+      <GoogleReviews
+        heading="Lo que dicen nuestros alumnos adultos"
+        intro="Reseñas publicadas por alumnos en nuestro perfil de Google, reproducidas sin editar."
+        reviews={[
               { name: "Gonzalo Tarascón", text: "¡Recomiendo 100% esta academia! Gracias a sus clases y al excelente equipo de profesores, logré obtener mi certificado C1 de inglés. Esto me ha abierto muchas puertas en el mercado laboral." },
               { name: "Aurora Jimenez Solano", text: "Tras varios intentos de retomar mi formación en inglés, en otros centros con poco éxito, he encontrado la academia ideal para mi. Estoy muy satisfecha con el método, mi profesor y mi progreso con el idioma." },
               { name: "Natalia López Casado", text: "Llevo 2 meses dando clase con Danny y estoy encantada. Clases muy amenas y en las que conversamos todo el rato. Me hace correcciones y me da tips para mejorar." }
             ,
               { name: "Esther Valencia", text: "Súper recomendable!! Sus métodos me han ayudado a avanzar rápidamente de nivel y mejorar profesionalmente. Se nota su pasión por la enseñanza, el trato es personalizado y de calidad. Son un 10!!" },
               { name: "Alberto Rueda Rodriguez", text: "Las clases y los profesores son de 10. Me ayudaron a mejorar mi nivel de inglés muchísimo para superar mi examen de Cambridge." }
-            ].map((r) => (
-              <blockquote key={r.name} className="card p-6">
-                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
-                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
-              </blockquote>
-            ))}
-          </div>
-          <p className="t-small text-zinc-500 text-center mt-8">
-            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
-          </p>
-        </div>
-      </section>
+            ]}
+      />
 
-
-      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
-      <section className="section px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta el curso de adultos</h2>
-          <div className="rule"></div>
-          <div className="grid md:grid-cols-2 gap-6 mt-8">
-            <div className="card p-6">
-              <p className="text-zinc-600 leading-relaxed mb-4">
-                El grupo de adultos son <strong>94 €/mes</strong>, con clases semanales en grupos de máximo 8. Los cursos del centro van desde <strong>64 €</strong> hasta <strong>99 €</strong> al mes según el curso y el número de clases.
-              </p>
-              <p className="text-zinc-600 leading-relaxed">
-                El primer mes se paga además la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): en total <strong>179 €</strong> el primer mes y 94 €/mes después. Las tasas de examen Cambridge o Linguaskill van aparte.
-              </p>
-              <p className="t-small text-zinc-500 mt-4">
-                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
-              </p>
-            </div>
-            <div className="card p-6">
-              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
-              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
-              <p className="text-zinc-600 leading-relaxed mb-3">
-                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
-                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
-                a 1 min · el centro comercial La Vaguada está a 1 min.
-              </p>
-              <ul className="t-small text-zinc-600 mb-3">
-                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
-              </ul>
-              <p className="text-zinc-600">
-                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
-                {' · '}
-                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <CTABand
+        title="Plazas por grupo limitadas a 8 adultos"
+        subtitle="Los grupos de mañana y de tarde se cierran en septiembre. Escríbenos y te decimos qué queda libre."
+        whatsappText="Hola, ¿qué plazas quedan en los grupos de adultos?"
+      />
 
       {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
-      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
-        <div className="container mx-auto max-w-4xl">
-          <p className="text-zinc-500 text-sm text-center leading-relaxed">
+      <section className="section-tight surface-alt px-6 border-t border-zinc-200/70">
+        <div className="container-narrow">
+          <p className="t-small text-center text-zinc-500">
             <strong className="text-zinc-600">Otros cursos:</strong>{' '}
-            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos de inglés</a>
+            <a href="/cursos-ingles/" className="font-medium text-accent-blue hover:underline">Todos los cursos de inglés</a>
             {' · '}
-            <a href="/cursos-ingles/infantil/" className="text-indigo-600 hover:underline">Inglés infantil (2-5 años)</a>
+            <a href="/cursos-ingles/infantil/" className="font-medium text-accent-blue hover:underline">Inglés infantil (2-5 años)</a>
             {' · '}
-            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
+            <a href="/cursos-ingles/primaria/" className="font-medium text-accent-blue hover:underline">Inglés para primaria (6-12)</a>
             {' · '}
-            <a href="/cursos-ingles/secundaria/" className="text-indigo-600 hover:underline">Inglés para secundaria y EBAU</a>
+            <a href="/cursos-ingles/secundaria/" className="font-medium text-accent-blue hover:underline">Inglés para secundaria y EBAU</a>
             {' · '}
-            <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline">Clases particulares de inglés</a>
+            <a href="/cursos-ingles/particulares/" className="font-medium text-accent-blue hover:underline">Clases particulares de inglés</a>
             {' · '}
-            <a href="/cursos-ingles/online/" className="text-indigo-600 hover:underline">Clases de inglés online</a>
+            <a href="/cursos-ingles/online/" className="font-medium text-accent-blue hover:underline">Clases de inglés online</a>
           </p>
-          <p className="text-zinc-500 text-sm text-center mt-4">
-            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+          <p className="t-small text-center text-zinc-500 mt-4">
+            <a href="/" className="font-medium text-accent-blue hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
           </p>
         </div>
       </section>
