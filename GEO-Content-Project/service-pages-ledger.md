@@ -38,7 +38,7 @@ and Pricing (1.9 avg).
 | # | Date | Step | Files touched | Commit | GEO before → after | Gates | Reverse with |
 |---|---|---|---|---|---|---|---|
 | 01 | 2026-08-03 | Step 0 — service mode for `geo-audit.py`; freeze baseline | `GEO-Content-Project/geo-audit.py`, `service-baseline.json`, `service-pages-ledger.md` | `a623c77` | n/a (tooling) | `--set barrios` still **96/100, all A** (no regression); `--set servicios` runs clean and reports **42** | `git revert a623c77` |
-| 02 | 2026-08-03 | Step 0b — page × query GSC pull, to attribute queries to URLs | `impulse-seo-ops/page_query_pull.py` (new), `data/gsc/2026-08-01/PagesXQueries.csv` | `465a217` | n/a (measurement) | 5,488 rows, window 2026-07-05 → 2026-08-01. Overturned three targeting assumptions — see below | `git revert 465a217` |
+| 02 | 2026-08-03 | Step 0b — page × query GSC pull, to attribute queries to URLs | `impulse-seo-ops/page_query_pull.py` (new), `data/gsc/2026-08-01/PagesXQueries.csv` | `465a217` (ledger only — see ⚠) | n/a (measurement) | 5,488 rows, window 2026-07-05 → 2026-08-01. Overturned three targeting assumptions — see below | `rm impulse-seo-ops/page_query_pull.py` — **not** a git revert |
 | 03 | 2026-08-03 | Step 1 — titles + meta descriptions, `fullTitle` on all 7 | `src/pages/cursos-ingles/*.astro` (7) | `2907ca5` | **42 → 45** | Title Tag **6–7 → 10/10 on all seven**; build green (150 pages); all titles ≤60 and metas ≤160 **read from `dist/`**, none cut mid-word | `git revert 2907ca5` |
 | 04 | 2026-08-03 | Step 2 — H1s + answer capsules; fix the intro scorer | `GEO-Content-Project/geo-audit.py`, `pages/cursos/*.tsx` (7) | `7c8d2a4` | **45 → 55** | H1 **5 → 9/10 all seven**; Intro **→ 10/10 all seven**; `astro check` 0 errors 0 warnings; build green; H1s verified in `dist/`; barrios re-run **still 96** | `git revert 7c8d2a4` |
 | 05 | 2026-08-03 | Step 3 — team bios, 21 verbatim reviews, 3 case studies | `pages/cursos/*.tsx` (7) | `c64b5c7` | **55 → 68** | Team **2–7 → 10/10 all seven**; Testimonials **0 → 10/10 all seven**; Case Studies 0 → 9 on three pages, **still 0 on four (gap, see below)**; `verify_quotes.py --dist` **107 quotes, 0 FAIL**; `astro check` clean; build green | `git revert c64b5c7` |
@@ -89,6 +89,16 @@ A first run reported CLS 0.154 and was nearly written up as a regression. Four r
 same build all returned **0.080**, against 0.091 on the pre-change build — so the page is marginally
 *better*, and the outlier was a cold start on a just-launched static server. **Never call a CLS
 regression from one Lighthouse run.**
+
+### ⚠ Reversibility gap found while closing the ledger
+
+`~/Desktop/impulse-seo-ops/` **is not a git repository.** `page_query_pull.py` (row 02) therefore
+has no version history, and neither do `gsc_pull.py`, `monthly_report.py`, `track_ranks.py` or
+`crawl.py` — the whole reporting toolchain is unversioned. Row 02's reversal is a plain `rm`, not a
+`git revert`, and the ledger said otherwise until this was checked.
+
+Worth fixing separately: `git init` in that directory, with the service-account key paths and
+`data/` either ignored or reviewed first.
 
 ## Notes and corrections
 
