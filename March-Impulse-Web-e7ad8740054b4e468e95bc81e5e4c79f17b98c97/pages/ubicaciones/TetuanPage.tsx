@@ -68,6 +68,12 @@ export const localFaqs: FAQItem[] = [
     answer: "Somos centro preparador oficial de Cambridge y centro oficial de Linguaskill. Te preparas y te examinas en el mismo sitio, sin cruzar Madrid el día del examen. Llevamos 100 alumnos aprobados y un 100% de aprobados en B2 First en 2024/25 y 2025/26."
   },
   {
+    // Valdeacederas se cubre aquí a propósito, en lugar de abrir una página que
+    // competiría con esta por la misma intención de búsqueda.
+    question: "Vivo en Valdeacederas. ¿El 147 sale también desde mi zona?",
+    answer: "Sí. El autobús 147 sale de Tetuán y Valdeacederas y tarda unos 8 minutos hasta la parada de Ginzo de Limia - Ferrol, a un minuto andando de la academia. Es directo, sin transbordos, así que desde Valdeacederas se llega igual de rápido que desde el propio Tetuán. En coche, por la Av. de la Paz, entre 8 y 12 minutos."
+  },
+  {
     question: "¿Por qué elegiros y no una academia del propio Tetuán?",
     answer: "Por tres cosas comprobables: 5,0 sobre 180 reseñas en Google, todas de 5 estrellas; precios publicados desde 64 €/mes sin letra pequeña; y que los dos fundadores, JP y Danny, dan clase en persona. A 8 minutos en el 147, merece la pena el trayecto."
   }

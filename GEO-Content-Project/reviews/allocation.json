@@ -1,39 +1,12 @@
 {
   "meta": {
-    "pool_eligible": 79,
-    "allocated": 78
+    "pool_eligible": 93,
+    "allocated": 86
   },
   "pages": {
     "ubicaciones/BarrioDelPilarPage.tsx": {
       "label": "Barrio del Pilar",
       "reviews": [
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwdTYyRnlRRRAB",
-          "name": "Marta Ferrer",
-          "role": "Madre/padre de alumno",
-          "text": "Que gran suerte tuvimos de encontrar a Daniel y su equipo. Grandes profesionales y cercanos con sus alumnos. Gracias a ellos mis hijos han mejorado su inglés y pasado unos maravillosos veranos en Irlanda",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwdTYyRnlRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpu62FyQE%7C%7C?hl=es",
-          "timestamp": "2023-08-11 08:17:17 +00:00",
-          "themes": [
-            "parent",
-            "adult",
-            "atmosphere",
-            "progress"
-          ]
-        },
-        {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwLWVETEZREAE",
-          "name": "Pepi Moral Ventura",
-          "role": "Madre/padre de alumno",
-          "text": "El ambiente, los profesores, una academia excelente para todos los públicos. Mis hijos están encantados de ir son muy profesionales. Se nota que tienen experiencia en formación.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwLWVETEZREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-eDLFQ%7C%7C?hl=es",
-          "timestamp": "2023-08-25 08:53:19 +00:00",
-          "themes": [
-            "parent",
-            "adult",
-            "atmosphere"
-          ]
-        },
         {
           "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUbFpHOGlnRRAB",
           "name": "Salvador Muñoz-Perea",
@@ -57,12 +30,66 @@
             "parent",
             "atmosphere"
           ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwLWVETEZREAE",
+          "name": "Pepi Moral Ventura",
+          "role": "Madre/padre de alumno",
+          "text": "El ambiente, los profesores, una academia excelente para todos los públicos. Mis hijos están encantados de ir son muy profesionales. Se nota que tienen experiencia en formación.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwLWVETEZREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-eDLFQ%7C%7C?hl=es",
+          "timestamp": "2023-08-25 08:53:19 +00:00",
+          "themes": [
+            "parent",
+            "adult",
+            "atmosphere"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwdTYyRnlRRRAB",
+          "name": "Marta Ferrer",
+          "role": "Madre/padre de alumno",
+          "text": "Que gran suerte tuvimos de encontrar a Daniel y su equipo. Grandes profesionales y cercanos con sus alumnos. Gracias a ellos mis hijos han mejorado su inglés y pasado unos maravillosos veranos en Irlanda",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwdTYyRnlRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpu62FyQE%7C%7C?hl=es",
+          "timestamp": "2023-08-11 08:17:17 +00:00",
+          "themes": [
+            "parent",
+            "adult",
+            "atmosphere",
+            "progress"
+          ]
         }
       ]
     },
     "ubicaciones/LaVaguadaPage.tsx": {
       "label": "La Vaguada",
       "reviews": [
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT25rdFFWQXdYM053UVVVd1gzUjJVbVUxWnpseGVuYxAB",
+          "name": "Yurisbeth Rivero Chirinos",
+          "role": "Madre/padre de alumno",
+          "text": "Mi hija estudia en Impulse English Academy y estoy muy contenta con los resultados, su método de enseñanza es excelente, la atención es cercana, los profesores son dedicados y  atentos. Quiero agradecer especialmente a JP, su profesor, por su enorme calidad humana. Él no solo enseña inglés, también ha acompañado a mi hija en un momento difícil de adaptación como emigrante, haciéndola sentir vista, apoyada y parte de una pequeña comunidad que se siente como familia. Gracias por todo lo que aportan, no solo en conocimiento, sino también en humanidad.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25rdFFWQXdYM053UVVVd1gzUjJVbVUxWnpseGVuYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOnktQVAwX3NwQUUwX3R2UmU1Zzlxenc%7C%7C?hl=es",
+          "timestamp": "2025-11-26 14:43:16 +00:00",
+          "themes": [
+            "parent",
+            "method",
+            "atmosphere"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqNTRfRlZnEAE",
+          "name": "Luis Martin Gonzalez",
+          "role": "Madre/padre de alumno",
+          "text": "100% recomendable, merece la pena. De echo mi hijo ahora sigue con JP, para prestarse sus exámenes de titulación Gran persona JP y su método",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqNTRfRlZnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDj54_FVg%7C%7C?hl=es",
+          "timestamp": "2024-05-08 12:01:37 +00:00",
+          "themes": [
+            "cambridge",
+            "parent",
+            "method",
+            "recommend"
+          ]
+        },
         {
           "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNscmJTOVp3EAE",
           "name": "Michelle Correa Sánchez",
@@ -90,51 +117,12 @@
             "progress",
             "recommend"
           ]
-        },
-        {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqNTRfRlZnEAE",
-          "name": "Luis Martin Gonzalez",
-          "role": "Madre/padre de alumno",
-          "text": "100% recomendable, merece la pena. De echo mi hijo ahora sigue con JP, para prestarse sus exámenes de titulación Gran persona JP y su método",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqNTRfRlZnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDj54_FVg%7C%7C?hl=es",
-          "timestamp": "2024-05-08 12:01:37 +00:00",
-          "themes": [
-            "cambridge",
-            "parent",
-            "method",
-            "recommend"
-          ]
-        },
-        {
-          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT25rdFFWQXdYM053UVVVd1gzUjJVbVUxWnpseGVuYxAB",
-          "name": "Yurisbeth Rivero Chirinos",
-          "role": "Madre/padre de alumno",
-          "text": "Mi hija estudia en Impulse English Academy y estoy muy contenta con los resultados, su método de enseñanza es excelente, la atención es cercana, los profesores son dedicados y  atentos. Quiero agradecer especialmente a JP, su profesor, por su enorme calidad humana. Él no solo enseña inglés, también ha acompañado a mi hija en un momento difícil de adaptación como emigrante, haciéndola sentir vista, apoyada y parte de una pequeña comunidad que se siente como familia. Gracias por todo lo que aportan, no solo en conocimiento, sino también en humanidad.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25rdFFWQXdYM053UVVVd1gzUjJVbVUxWnpseGVuYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOnktQVAwX3NwQUUwX3R2UmU1Zzlxenc%7C%7C?hl=es",
-          "timestamp": "2025-11-26 14:43:16 +00:00",
-          "themes": [
-            "parent",
-            "method",
-            "atmosphere"
-          ]
         }
       ]
     },
     "ubicaciones/LaVentillaPage.tsx": {
       "label": "La Ventilla",
       "reviews": [
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURmeVpyTWtRRRAB",
-          "name": "Lara OM",
-          "role": "Alumno/a · preparación C1",
-          "text": "Academia increíble para mejorar el nivel de inglés. Siempre cercanos y atentos al seguimiento de los estudiantes. Un gran trato personalizado y cercano con el que he podido sacarme el C1 de inglés en tiempo récord. Siempre estaré agradecida ❤️",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmeVpyTWtRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDfyZrMkQE%7C%7C?hl=es",
-          "timestamp": "2025-01-07 20:51:22 +00:00",
-          "themes": [
-            "cambridge",
-            "atmosphere"
-          ]
-        },
         {
           "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21wc2FXcFFTRTVQYkMxaFZXNDRSVlkyVVd0Q0xVRRAB",
           "name": "Virginia Toledo",
@@ -146,6 +134,18 @@
             "cambridge",
             "parent",
             "method"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURmeVpyTWtRRRAB",
+          "name": "Lara OM",
+          "role": "Alumno/a · preparación C1",
+          "text": "Academia increíble para mejorar el nivel de inglés. Siempre cercanos y atentos al seguimiento de los estudiantes. Un gran trato personalizado y cercano con el que he podido sacarme el C1 de inglés en tiempo récord. Siempre estaré agradecida ❤️",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmeVpyTWtRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDfyZrMkQE%7C%7C?hl=es",
+          "timestamp": "2025-01-07 20:51:22 +00:00",
+          "themes": [
+            "cambridge",
+            "atmosphere"
           ]
         }
       ]
@@ -285,19 +285,6 @@
       "label": "Montecarmelo",
       "reviews": [
         {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN0NDQtMWJBEAE",
-          "name": "Débora Azevedo",
-          "role": "Madre/padre de alumno",
-          "text": "Muy contenta con las clases impartidas a mi hijo. Todo los profisionales son muy comprometidos, siempre muy amables y con una gran sonrisa. Hay que decir que esa academia ha sido la unica que mi hijo entró sin llorar y aceptó finalmente asistir, eso porque han tenido todo el cuidado en conectarse con él, además son muy divertidos y veo que me hijo esta aprendiendo.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0NDQtMWJBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICt44-1bA%7C%7C?hl=es",
-          "timestamp": "2024-01-31 19:05:06 +00:00",
-          "themes": [
-            "parent",
-            "teens",
-            "method"
-          ]
-        },
-        {
           "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNieWJpbmdnRRAB",
           "name": "Lorena Jiménez",
           "role": "Madre/padre de alumno",
@@ -319,25 +306,25 @@
             "parent",
             "recommend"
           ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN0NDQtMWJBEAE",
+          "name": "Débora Azevedo",
+          "role": "Madre/padre de alumno",
+          "text": "Muy contenta con las clases impartidas a mi hijo. Todo los profisionales son muy comprometidos, siempre muy amables y con una gran sonrisa. Hay que decir que esa academia ha sido la unica que mi hijo entró sin llorar y aceptó finalmente asistir, eso porque han tenido todo el cuidado en conectarse con él, además son muy divertidos y veo que me hijo esta aprendiendo.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0NDQtMWJBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICt44-1bA%7C%7C?hl=es",
+          "timestamp": "2024-01-31 19:05:06 +00:00",
+          "themes": [
+            "parent",
+            "teens",
+            "method"
+          ]
         }
       ]
     },
     "ubicaciones/MirasierraPage.tsx": {
       "label": "Mirasierra",
       "reviews": [
-        {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjdUc1RBEAE",
-          "name": "Aurora Jimenez Solano",
-          "role": "Reseña verificada en Google",
-          "text": "Tras varios intentos de retomar mi formación en inglés, en otros centros con poco éxito, he encontrado la academia ideal para mi. Estoy muy satisfecha con el método, mi profesor y mi progreso con el idioma.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjdUc1RBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr7TsTA%7C%7C?hl=es",
-          "timestamp": "2023-08-31 17:51:28 +00:00",
-          "themes": [
-            "teens",
-            "method",
-            "progress"
-          ]
-        },
         {
           "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiNXBIQXZ3RRAB",
           "name": "Irene C",
@@ -360,12 +347,38 @@
             "parent",
             "adult"
           ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjdUc1RBEAE",
+          "name": "Aurora Jimenez Solano",
+          "role": "Reseña verificada en Google",
+          "text": "Tras varios intentos de retomar mi formación en inglés, en otros centros con poco éxito, he encontrado la academia ideal para mi. Estoy muy satisfecha con el método, mi profesor y mi progreso con el idioma.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjdUc1RBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr7TsTA%7C%7C?hl=es",
+          "timestamp": "2023-08-31 17:51:28 +00:00",
+          "themes": [
+            "teens",
+            "method",
+            "progress"
+          ]
         }
       ]
     },
     "ubicaciones/PenagrandePage.tsx": {
       "label": "Peñagrande",
       "reviews": [
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaNUpQaHRBRRAB",
+          "name": "Miguel Garcia",
+          "role": "Reseña verificada en Google",
+          "text": "Experiencia muy buena de los niños de 10 y 12 años. Muy atento en su evolución con las familias y siempre disponibles para cualquier cosa. Lo recomiendo.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaNUpQaHRBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICZ5JPhtAE%7C%7C?hl=es",
+          "timestamp": "2023-09-04 19:09:18 +00:00",
+          "themes": [
+            "kids",
+            "progress",
+            "recommend"
+          ]
+        },
         {
           "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjZUTTBnRRAB",
           "name": "María Jesús Zuazo Sahagún",
@@ -391,38 +404,12 @@
             "progress",
             "recommend"
           ]
-        },
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaNUpQaHRBRRAB",
-          "name": "Miguel Garcia",
-          "role": "Reseña verificada en Google",
-          "text": "Experiencia muy buena de los niños de 10 y 12 años. Muy atento en su evolución con las familias y siempre disponibles para cualquier cosa. Lo recomiendo.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaNUpQaHRBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICZ5JPhtAE%7C%7C?hl=es",
-          "timestamp": "2023-09-04 19:09:18 +00:00",
-          "themes": [
-            "kids",
-            "progress",
-            "recommend"
-          ]
         }
       ]
     },
     "../components/TestimonialsSection.tsx": {
       "label": "Home · testimonios",
       "reviews": [
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwaHNtNGlBRRAB",
-          "name": "Alberto Rueda Rodriguez",
-          "role": "Clases de conversación",
-          "text": "Las clases y los profesores son de 10. Me ayudaron a mejorar mi nivel de inglés muchísimo para superar mi examen de Cambridge. Te ayudan a soltarte en la conversación reconociendo donde tienes más dificultad y dándote los consejos necesarios para superarlos. Academia recomendada 100%",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwaHNtNGlBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDphsm4iAE%7C%7C?hl=es",
-          "timestamp": "2023-08-20 20:34:32 +00:00",
-          "themes": [
-            "cambridge",
-            "adult",
-            "recommend"
-          ]
-        },
         {
           "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2tOaGFuQmhTazVGTkhaelRISnpVak0xUmpCM1NsRRAB",
           "name": "Ilias Frafer Afif",
@@ -436,52 +423,13 @@
           ]
         },
         {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcHB6aTNnRRAB",
-          "name": "Cesar Seneca Tellechea Corral",
-          "role": "Alumno/a · preparación C1",
-          "text": "Luego de pasar por varias academias en toda Madrid está fue la única que dio con el método y el contenido perfecto para aprender, tengo un C1 y es todo gracias a ellos.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcHB6aTNnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpppzi3gE%7C%7C?hl=es",
-          "timestamp": "2023-08-21 04:11:20 +00:00",
-          "themes": [
-            "cambridge",
-            "method"
-          ]
-        },
-        {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjlpLVpBEAE",
-          "name": "Paula Cuadrado",
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNJd0tIVEFnEAE",
+          "name": "Alba Garrido Iglesias",
           "role": "Reseña verificada en Google",
-          "text": "Mi inglés ha mejorado, son buenisimos profesionales, buen método, mucha paciencia por su parte. Volveré para seguir mejorando",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjlpLVpBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr9i-ZA%7C%7C?hl=es",
-          "timestamp": "2023-08-31 17:39:31 +00:00",
+          "text": "¡¡ME ENCANTA LA ACADEMIA!! Las clases son muy divertidas y se esfuerzan en ayudarnos a aprender. Las clases a las que acudo son completamente en inglés, no obstante, si pides al profesor que explique en castellano alguna cosa que no haya quedado clara, lo hará y te ayudará a comprenderlo. JP es un gran profesor. Muy contenta y totalmente recomendado.👏",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNJd0tIVEFnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCIwKHTAg%7C%7C?hl=es",
+          "timestamp": "2026-01-28 22:24:51 +00:00",
           "themes": [
-            "adult",
-            "method",
-            "progress"
-          ]
-        },
-        {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwOThLWkhREAE",
-          "name": "CJ Martos",
-          "role": "Reseña verificada en Google",
-          "text": "Muy profesionales. Se adaptan a tu nivel y están muy pendientes de tu progreso. Danny y JP tienen mucha experiencia y trabajan genial",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwOThLWkhREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp98KZHQ%7C%7C?hl=es",
-          "timestamp": "2023-08-31 09:18:02 +00:00",
-          "themes": [
-            "adult",
-            "teens",
-            "progress"
-          ]
-        },
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwX1B1d3lRRRAB",
-          "name": "Antonio Del Pozo",
-          "role": "Alumno/a · preparación C1",
-          "text": "Clases perfectas, totalmente adaptadas a mi objetivo de conseguir el C1 de inglés. JP es un profesor extraordinario, siempre dispuesto para ayudarte en todo lo que necesites. Sabe como transmitir lo que necesitas aprender, además de hacer la clases divertidas. Es un motivador nato. No podría haber tenido un profesor mejor. Thanks for everything JP!",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwX1B1d3lRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp_PuwyQE%7C%7C?hl=es",
-          "timestamp": "2023-08-18 10:53:41 +00:00",
-          "themes": [
-            "cambridge",
             "method"
           ]
         },
@@ -499,53 +447,50 @@
           ]
         },
         {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwbThqdThnRRAB",
-          "name": "Laia Lubillo Solsona",
-          "role": "Reseña verificada en Google",
-          "text": "Las clases en Impulse son muy entretenidas y divertidas, aprendes inglés sin darte cuenta. Los profesores se adaptan a ti, por lo que el trato es muy personalizado. Danny siempre está dispuesto a ayudarte y resolver cualquier duda.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwbThqdThnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpm8ju8gE%7C%7C?hl=es",
-          "timestamp": "2023-08-14 21:02:04 +00:00",
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pGWWRsUkJTemhNYzJaTlJ6RTJXR04xVWs5cmRuYxAB",
+          "name": "Lucía Moreno Zubiaur",
+          "role": "Alumno/a · preparación C1",
+          "text": "He estado solo un año en la academia, y puedo asegurar con certeza que es una experiencia increíble. Aprendes sin darte cuenta, llegué con un nivel B1-B2 y en menos de un año me había sacado el C1 alto. No se siente como una rutina, tenía ganas de ir todos los días porque los profesores hablaban contigo en vez de enseñar y copiar apuntes, practicaban y te sentías bien. Recomiendo esta academia para sacarte cualquier titulación sin duda. Especial gracias a JP, un excelente profesor y persona. Gracias sinceras.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGWWRsUkJTemhNYzJaTlJ6RTJXR04xVWs5cmRuYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjFYdlRBSzhMc2ZNRzE2WGN1Uk9rdnc%7C%7C?hl=es",
+          "timestamp": "2025-09-11 16:05:04 +00:00",
           "themes": [
-            "method",
-            "atmosphere"
+            "cambridge",
+            "recommend"
           ]
         },
         {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjZqcTB3RRAB",
-          "name": "Carmen Moreno",
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNfc282ZjV3RRAB",
+          "name": "Víctor RC",
           "role": "Reseña verificada en Google",
-          "text": "Grandes profesionales que facilitan el aprendizaje desde el primer día! Metodologías y dinámicas divertidas!",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjZqcTB3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr6jq0wE%7C%7C?hl=es",
-          "timestamp": "2023-08-31 17:34:20 +00:00",
+          "text": "Gracias, Jp, por tu ayuda con mi examen. Recomiendo ampliamente esta academia a cualquiera que busque mejorar y obtener su certificación.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfc282ZjV3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIC_so6f5wE%7C%7C?hl=es",
+          "timestamp": "2025-01-14 17:49:20 +00:00",
           "themes": [
-            "adult",
+            "cambridge",
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURmbGJhaHhRRRAB",
+          "name": "Hugo G",
+          "role": "Reseña verificada en Google",
+          "text": "Jp es muy majo y divertido además de aprender un montón es sus clases y no se hacen pesadas, la recomiendo mucho.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmbGJhaHhRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDflbahxQE%7C%7C?hl=es",
+          "timestamp": "2025-01-08 19:00:12 +00:00",
+          "themes": [
+            "method",
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiMDVDR0x3EAE",
+          "name": "Patricia Gallardo",
+          "role": "Reseña verificada en Google",
+          "text": "Muy majetes y muy flexibles. Yo he ido todo el año con mi bebé. Su método para aprender mediante app, el mejor que he visto (a parte de los libros).",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiMDVDR0x3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICb05CGLw%7C%7C?hl=es",
+          "timestamp": "2024-07-29 15:49:18 +00:00",
+          "themes": [
             "method"
-          ]
-        },
-        {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWNHJPSWZ3EAE",
-          "name": "Leticia Ramos Setim",
-          "role": "Madre/padre de alumno",
-          "text": "Una academia totalmente recomendable, mi hijo está encantado con las clases, son divertidas y variadas.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWNHJPSWZ3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICV4rOIfw%7C%7C?hl=es",
-          "timestamp": "2023-12-06 09:24:17 +00:00",
-          "themes": [
-            "parent",
-            "method",
-            "recommend"
-          ]
-        },
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNweThxNm5nRRAB",
-          "name": "Dámaris Valentín-Fernández Gómez",
-          "role": "Reseña verificada en Google",
-          "text": "Mi nivel de inglés ha mejorado muchísimo! La calidad del profesorado es excelente. Recomiendo sin duda esta gran academia de inglés.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNweThxNm5nRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpy8q6ngE%7C%7C?hl=es",
-          "timestamp": "2023-08-12 13:43:02 +00:00",
-          "themes": [
-            "adult",
-            "progress",
-            "recommend"
           ]
         },
         {
@@ -572,12 +517,75 @@
           ]
         },
         {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwZ3ZETFV3EAE",
-          "name": "Edixon Muñoz",
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWNHJPSWZ3EAE",
+          "name": "Leticia Ramos Setim",
+          "role": "Madre/padre de alumno",
+          "text": "Una academia totalmente recomendable, mi hijo está encantado con las clases, son divertidas y variadas.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWNHJPSWZ3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICV4rOIfw%7C%7C?hl=es",
+          "timestamp": "2023-12-06 09:24:17 +00:00",
+          "themes": [
+            "parent",
+            "method",
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjlpLVpBEAE",
+          "name": "Paula Cuadrado",
+          "role": "Reseña verificada en Google",
+          "text": "Mi inglés ha mejorado, son buenisimos profesionales, buen método, mucha paciencia por su parte. Volveré para seguir mejorando",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjlpLVpBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr9i-ZA%7C%7C?hl=es",
+          "timestamp": "2023-08-31 17:39:31 +00:00",
+          "themes": [
+            "adult",
+            "method",
+            "progress"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjZqcTB3RRAB",
+          "name": "Carmen Moreno",
+          "role": "Reseña verificada en Google",
+          "text": "Grandes profesionales que facilitan el aprendizaje desde el primer día! Metodologías y dinámicas divertidas!",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjZqcTB3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr6jq0wE%7C%7C?hl=es",
+          "timestamp": "2023-08-31 17:34:20 +00:00",
+          "themes": [
+            "adult",
+            "method"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwOThLWkhREAE",
+          "name": "CJ Martos",
+          "role": "Reseña verificada en Google",
+          "text": "Muy profesionales. Se adaptan a tu nivel y están muy pendientes de tu progreso. Danny y JP tienen mucha experiencia y trabajan genial",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwOThLWkhREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp98KZHQ%7C%7C?hl=es",
+          "timestamp": "2023-08-31 09:18:02 +00:00",
+          "themes": [
+            "adult",
+            "teens",
+            "progress"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLWN2QjRRRRAB",
+          "name": "Ramon Pico",
+          "role": "Reseña verificada en Google",
+          "text": "Profesores muy profesionales, trato excelente y me sirvió para mejorar mi nivel rápidamente",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLWN2QjRRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-cvB4QE%7C%7C?hl=es",
+          "timestamp": "2023-08-25 17:14:18 +00:00",
+          "themes": [
+            "adult",
+            "atmosphere"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwdVliWnpnRRAB",
+          "name": "Paloma Canalda",
           "role": "Alumno/a adulto",
-          "text": "He tenido un par de clases particulares  con Jp para prepaprar  un curso para el trabajo. El curso fue adaptado  a lo que necesitaba  y Jp fue .... AMAZING 🥳",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwZ3ZETFV3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpgvDLUw%7C%7C?hl=es",
-          "timestamp": "2023-08-18 11:28:44 +00:00",
+          "text": "Profesores súper profesionales que son ,además, muy creativos y les gusta su trabajo porque buscan la manera de conseguir el objetivo con cada alumno .",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdVliWnpnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpuYbZzgE%7C%7C?hl=es",
+          "timestamp": "2023-08-25 06:29:46 +00:00",
           "themes": [
             "adult"
           ]
@@ -594,71 +602,98 @@
           ]
         },
         {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwaTlyZXJBRRAB",
-          "name": "Manuel Casas Herrero",
-          "role": "Reseña verificada en Google",
-          "text": "Danny es un excelente profesional que vive con pasion su labor didactica. Nuestros hijos son biligues gracias a sus enseñazas en Madrid e Irlanda. Sin lugar a duda Impulse English Academy sera nuestro centro de referencia en la capital",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwaTlyZXJBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpi9rerAE%7C%7C?hl=es",
-          "timestamp": "2023-08-10 10:31:55 +00:00",
-          "themes": [
-            "adult"
-          ]
-        },
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwdVliWnpnRRAB",
-          "name": "Paloma Canalda",
-          "role": "Alumno/a adulto",
-          "text": "Profesores súper profesionales que son ,además, muy creativos y les gusta su trabajo porque buscan la manera de conseguir el objetivo con cada alumno .",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdVliWnpnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpuYbZzgE%7C%7C?hl=es",
-          "timestamp": "2023-08-25 06:29:46 +00:00",
-          "themes": [
-            "adult"
-          ]
-        },
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNfc282ZjV3RRAB",
-          "name": "Víctor RC",
-          "role": "Reseña verificada en Google",
-          "text": "Gracias, Jp, por tu ayuda con mi examen. Recomiendo ampliamente esta academia a cualquiera que busque mejorar y obtener su certificación.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfc282ZjV3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIC_so6f5wE%7C%7C?hl=es",
-          "timestamp": "2025-01-14 17:49:20 +00:00",
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcHB6aTNnRRAB",
+          "name": "Cesar Seneca Tellechea Corral",
+          "role": "Alumno/a · preparación C1",
+          "text": "Luego de pasar por varias academias en toda Madrid está fue la única que dio con el método y el contenido perfecto para aprender, tengo un C1 y es todo gracias a ellos.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcHB6aTNnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpppzi3gE%7C%7C?hl=es",
+          "timestamp": "2023-08-21 04:11:20 +00:00",
           "themes": [
             "cambridge",
-            "recommend"
-          ]
-        },
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLWN2QjRRRRAB",
-          "name": "Ramon Pico",
-          "role": "Reseña verificada en Google",
-          "text": "Profesores muy profesionales, trato excelente y me sirvió para mejorar mi nivel rápidamente",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLWN2QjRRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-cvB4QE%7C%7C?hl=es",
-          "timestamp": "2023-08-25 17:14:18 +00:00",
-          "themes": [
-            "adult",
-            "atmosphere"
-          ]
-        },
-        {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiMDVDR0x3EAE",
-          "name": "Patricia Gallardo",
-          "role": "Reseña verificada en Google",
-          "text": "Muy majetes y muy flexibles. Yo he ido todo el año con mi bebé. Su método para aprender mediante app, el mejor que he visto (a parte de los libros).",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiMDVDR0x3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICb05CGLw%7C%7C?hl=es",
-          "timestamp": "2024-07-29 15:49:18 +00:00",
-          "themes": [
             "method"
           ]
         },
         {
-          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pGWWRsUkJTemhNYzJaTlJ6RTJXR04xVWs5cmRuYxAB",
-          "name": "Lucía Moreno Zubiaur",
-          "role": "Alumno/a · preparación C1",
-          "text": "He estado solo un año en la academia, y puedo asegurar con certeza que es una experiencia increíble. Aprendes sin darte cuenta, llegué con un nivel B1-B2 y en menos de un año me había sacado el C1 alto. No se siente como una rutina, tenía ganas de ir todos los días porque los profesores hablaban contigo en vez de enseñar y copiar apuntes, practicaban y te sentías bien. Recomiendo esta academia para sacarte cualquier titulación sin duda. Especial gracias a JP, un excelente profesor y persona. Gracias sinceras.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGWWRsUkJTemhNYzJaTlJ6RTJXR04xVWs5cmRuYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjFYdlRBSzhMc2ZNRzE2WGN1Uk9rdnc%7C%7C?hl=es",
-          "timestamp": "2025-09-11 16:05:04 +00:00",
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwaHNtNGlBRRAB",
+          "name": "Alberto Rueda Rodriguez",
+          "role": "Clases de conversación",
+          "text": "Las clases y los profesores son de 10. Me ayudaron a mejorar mi nivel de inglés muchísimo para superar mi examen de Cambridge. Te ayudan a soltarte en la conversación reconociendo donde tienes más dificultad y dándote los consejos necesarios para superarlos. Academia recomendada 100%",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwaHNtNGlBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDphsm4iAE%7C%7C?hl=es",
+          "timestamp": "2023-08-20 20:34:32 +00:00",
           "themes": [
             "cambridge",
+            "adult",
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwZ3ZETFV3EAE",
+          "name": "Edixon Muñoz",
+          "role": "Alumno/a adulto",
+          "text": "He tenido un par de clases particulares  con Jp para prepaprar  un curso para el trabajo. El curso fue adaptado  a lo que necesitaba  y Jp fue .... AMAZING 🥳",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwZ3ZETFV3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpgvDLUw%7C%7C?hl=es",
+          "timestamp": "2023-08-18 11:28:44 +00:00",
+          "themes": [
+            "adult"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwX1B1d3lRRRAB",
+          "name": "Antonio Del Pozo",
+          "role": "Alumno/a · preparación C1",
+          "text": "Clases perfectas, totalmente adaptadas a mi objetivo de conseguir el C1 de inglés. JP es un profesor extraordinario, siempre dispuesto para ayudarte en todo lo que necesites. Sabe como transmitir lo que necesitas aprender, además de hacer la clases divertidas. Es un motivador nato. No podría haber tenido un profesor mejor. Thanks for everything JP!",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwX1B1d3lRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp_PuwyQE%7C%7C?hl=es",
+          "timestamp": "2023-08-18 10:53:41 +00:00",
+          "themes": [
+            "cambridge",
+            "method"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURweE51NFp3EAE",
+          "name": "Anna Farney",
+          "role": "Reseña verificada en Google",
+          "text": "Si buscas aprender inglés de una manera divertida, innovadora y eficaz, ¡no busques más! ¡Recomiendo encarecidamente a Daniel y a su equipo!",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURweE51NFp3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpxNu4Zw%7C%7C?hl=es",
+          "timestamp": "2023-08-16 10:53:04 +00:00",
+          "themes": [
+            "method",
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURweExxWFJnEAE",
+          "name": "Gloria Ruiz García",
+          "role": "Reseña verificada en Google",
+          "text": "Una absoluta maravilla! Danny es un gran profesional que cuenta con muchísimos años de experiencia. Serio, empático y trabajador.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURweExxWFJnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpxLqXRg%7C%7C?hl=es",
+          "timestamp": "2023-08-16 09:12:23 +00:00",
+          "themes": [
+            "adult"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwbThqdThnRRAB",
+          "name": "Laia Lubillo Solsona",
+          "role": "Reseña verificada en Google",
+          "text": "Las clases en Impulse son muy entretenidas y divertidas, aprendes inglés sin darte cuenta. Los profesores se adaptan a ti, por lo que el trato es muy personalizado. Danny siempre está dispuesto a ayudarte y resolver cualquier duda.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwbThqdThnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpm8ju8gE%7C%7C?hl=es",
+          "timestamp": "2023-08-14 21:02:04 +00:00",
+          "themes": [
+            "method",
+            "atmosphere"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNweThxNm5nRRAB",
+          "name": "Dámaris Valentín-Fernández Gómez",
+          "role": "Reseña verificada en Google",
+          "text": "Mi nivel de inglés ha mejorado muchísimo! La calidad del profesorado es excelente. Recomiendo sin duda esta gran academia de inglés.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNweThxNm5nRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpy8q6ngE%7C%7C?hl=es",
+          "timestamp": "2023-08-12 13:43:02 +00:00",
+          "themes": [
+            "adult",
+            "progress",
             "recommend"
           ]
         },
@@ -675,49 +710,14 @@
           ]
         },
         {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURweE51NFp3EAE",
-          "name": "Anna Farney",
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwaTlyZXJBRRAB",
+          "name": "Manuel Casas Herrero",
           "role": "Reseña verificada en Google",
-          "text": "Si buscas aprender inglés de una manera divertida, innovadora y eficaz, ¡no busques más! ¡Recomiendo encarecidamente a Daniel y a su equipo!",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURweE51NFp3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpxNu4Zw%7C%7C?hl=es",
-          "timestamp": "2023-08-16 10:53:04 +00:00",
-          "themes": [
-            "method",
-            "recommend"
-          ]
-        },
-        {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNJd0tIVEFnEAE",
-          "name": "Alba Garrido Iglesias",
-          "role": "Reseña verificada en Google",
-          "text": "¡¡ME ENCANTA LA ACADEMIA!! Las clases son muy divertidas y se esfuerzan en ayudarnos a aprender. Las clases a las que acudo son completamente en inglés, no obstante, si pides al profesor que explique en castellano alguna cosa que no haya quedado clara, lo hará y te ayudará a comprenderlo. JP es un gran profesor. Muy contenta y totalmente recomendado.👏",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNJd0tIVEFnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCIwKHTAg%7C%7C?hl=es",
-          "timestamp": "2026-01-28 22:24:51 +00:00",
-          "themes": [
-            "method"
-          ]
-        },
-        {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURweExxWFJnEAE",
-          "name": "Gloria Ruiz García",
-          "role": "Reseña verificada en Google",
-          "text": "Una absoluta maravilla! Danny es un gran profesional que cuenta con muchísimos años de experiencia. Serio, empático y trabajador.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURweExxWFJnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpxLqXRg%7C%7C?hl=es",
-          "timestamp": "2023-08-16 09:12:23 +00:00",
+          "text": "Danny es un excelente profesional que vive con pasion su labor didactica. Nuestros hijos son biligues gracias a sus enseñazas en Madrid e Irlanda. Sin lugar a duda Impulse English Academy sera nuestro centro de referencia en la capital",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwaTlyZXJBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICpi9rerAE%7C%7C?hl=es",
+          "timestamp": "2023-08-10 10:31:55 +00:00",
           "themes": [
             "adult"
-          ]
-        },
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURmbGJhaHhRRRAB",
-          "name": "Hugo G",
-          "role": "Reseña verificada en Google",
-          "text": "Jp es muy majo y divertido además de aprender un montón es sus clases y no se hacen pesadas, la recomiendo mucho.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmbGJhaHhRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDflbahxQE%7C%7C?hl=es",
-          "timestamp": "2025-01-08 19:00:12 +00:00",
-          "themes": [
-            "method",
-            "recommend"
           ]
         }
       ]
@@ -725,6 +725,39 @@
     "../components/PartnersSection.tsx": {
       "label": "Home · rail",
       "reviews": [
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xOSFkwNHdSbmR4WkZrM1JreHFYMnd3YjA1UGVGRRAB",
+          "name": "Carmen Suarez",
+          "role": "Reseña verificada en Google",
+          "text": "Academia totalmente recomendable para mejorar tu inglés, buenos profesores y mejores personas aún, si estás buscando una academia de calidad, este es tu sitio.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOSFkwNHdSbmR4WkZrM1JreHFYMnd3YjA1UGVGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlNHY04wRndxZFk3RkxqX2wwb05PeFE%7C%7C?hl=es",
+          "timestamp": "2026-01-31 09:42:33 +00:00",
+          "themes": [
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pOc2RFcFpOblUyTFdKQmVuRmFiMEZWWmxCNlNGRRAB",
+          "name": "Yosmari A. Diaz O.",
+          "role": "Reseña verificada en Google",
+          "text": "No puedo estar mas contenta con mi profesor, JP, y la facilidad para todo en general en la academia, que mas que un lugar donde ir a aprender, es un espacio donde soy muy feliz cada vez que voy! :) 100% recomendado",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOc2RFcFpOblUyTFdKQmVuRmFiMEZWWmxCNlNGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjNsdEpZNnU2LWJBenFab0FVZlB6SFE%7C%7C?hl=es",
+          "timestamp": "2025-12-15 09:29:13 +00:00",
+          "themes": [
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWejV6OWhRRRAB",
+          "name": "Natalia López Casado",
+          "role": "Reseña verificada en Google",
+          "text": "Llevo 2 meses dando clase con Danny y estoy encantada. Clases muy amenas y en las que conversamos todo el rato. Me hace correcciones y me da tips para mejorar. Además, agradezco de ellos su disponibilidad y adaptación a mis complicados horarios. La recomiendo 100 %",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWejV6OWhRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICVz5z9hQE%7C%7C?hl=es",
+          "timestamp": "2023-12-09 21:59:46 +00:00",
+          "themes": [
+            "recommend"
+          ]
+        },
         {
           "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwOV9XOENnEAE",
           "name": "Carlos Javier Ayllón Gordillo",
@@ -750,39 +783,6 @@
           ]
         },
         {
-          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pOc2RFcFpOblUyTFdKQmVuRmFiMEZWWmxCNlNGRRAB",
-          "name": "Yosmari A. Diaz O.",
-          "role": "Reseña verificada en Google",
-          "text": "No puedo estar mas contenta con mi profesor, JP, y la facilidad para todo en general en la academia, que mas que un lugar donde ir a aprender, es un espacio donde soy muy feliz cada vez que voy! :) 100% recomendado",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOc2RFcFpOblUyTFdKQmVuRmFiMEZWWmxCNlNGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjNsdEpZNnU2LWJBenFab0FVZlB6SFE%7C%7C?hl=es",
-          "timestamp": "2025-12-15 09:29:13 +00:00",
-          "themes": [
-            "recommend"
-          ]
-        },
-        {
-          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xOSFkwNHdSbmR4WkZrM1JreHFYMnd3YjA1UGVGRRAB",
-          "name": "Carmen Suarez",
-          "role": "Reseña verificada en Google",
-          "text": "Academia totalmente recomendable para mejorar tu inglés, buenos profesores y mejores personas aún, si estás buscando una academia de calidad, este es tu sitio.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOSFkwNHdSbmR4WkZrM1JreHFYMnd3YjA1UGVGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlNHY04wRndxZFk3RkxqX2wwb05PeFE%7C%7C?hl=es",
-          "timestamp": "2026-01-31 09:42:33 +00:00",
-          "themes": [
-            "recommend"
-          ]
-        },
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWejV6OWhRRRAB",
-          "name": "Natalia López Casado",
-          "role": "Reseña verificada en Google",
-          "text": "Llevo 2 meses dando clase con Danny y estoy encantada. Clases muy amenas y en las que conversamos todo el rato. Me hace correcciones y me da tips para mejorar. Además, agradezco de ellos su disponibilidad y adaptación a mis complicados horarios. La recomiendo 100 %",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWejV6OWhRRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICVz5z9hQE%7C%7C?hl=es",
-          "timestamp": "2023-12-09 21:59:46 +00:00",
-          "themes": [
-            "recommend"
-          ]
-        },
-        {
           "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwaGV6eXdnRRAB",
           "name": "Laura Garcia",
           "role": "Reseña verificada en Google",
@@ -798,6 +798,86 @@
     "TestimonialsPage.tsx": {
       "label": "Testimonios",
       "reviews": [
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21ZeFYwUk5TSFpJY3pKdlJtSlJRbDgwTlhJMVZtYxAB",
+          "name": "Isabella Giron Iglesias",
+          "role": "Reseña verificada en Google",
+          "text": "Jp es mi profesor..el mejor profesor y la mejor academia en el barrio!! Muchas gracias por todo",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ZeFYwUk5TSFpJY3pKdlJtSlJRbDgwTlhJMVZtYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmYxV0RNSHZIczJvRmJRQl80NXI1Vmc%7C%7C?hl=es",
+          "timestamp": "2026-05-07 14:37:32 +00:00",
+          "themes": []
+        },
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2s1eVJDMWhkbkl5UkZkbmJFWkRVVEl5Y1VjM1IxRRAB",
+          "name": "Samuel Bryan",
+          "role": "Reseña verificada en Google",
+          "text": "¡La mejor academia de inglés! Los profesores son super divertidos y amables. Lo recomiendo 100%",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1eVJDMWhkbkl5UkZkbmJFWkRVVEl5Y1VjM1IxRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOk5yRC1hdnIyRFdnbEZDUTIycUc3R1E%7C%7C?hl=es",
+          "timestamp": "2026-05-02 11:06:47 +00:00",
+          "themes": [
+            "method",
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pGc2NUWktabEZPVkY5R1MwbEJiamR0YkdOa09GRRAB",
+          "name": "Mariana Arias",
+          "role": "Reseña verificada en Google",
+          "text": "Excelente atención, el profe JP es muy majo, siempre dispuesto a enseñarnos.!",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGc2NUWktabEZPVkY5R1MwbEJiamR0YkdOa09GRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjFscTZKZlFOVF9GS0lBbjdtbGNkOFE%7C%7C?hl=es",
+          "timestamp": "2026-05-01 13:51:08 +00:00",
+          "themes": []
+        },
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xKMk0xVnJRM1kyWTFZeWVFTnhNVzkwV1V4T1ozYxAB",
+          "name": "Marco Garcia",
+          "role": "Reseña verificada en Google",
+          "text": "Buscaba una escuela con quien conectará y entendieran mi necesidades de aprendizaje y siento que en Impulse estoy muy contento.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKMk0xVnJRM1kyWTFZeWVFTnhNVzkwV1V4T1ozYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlJ2M1VrQ3Y2Y1YyeENxMW90WUxOZ3c%7C%7C?hl=es",
+          "timestamp": "2026-01-28 20:09:55 +00:00",
+          "themes": []
+        },
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pFd2VVaEZOMVpJZEVZeWMwWlBRVlpmV2sxMlNGRRAB",
+          "name": "Mariela Ruiz",
+          "role": "Reseña verificada en Google",
+          "text": "Muy contenta por recibirme en vuestra academia y muy contenta con lo que voy aprendiendo 😊",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pFd2VVaEZOMVpJZEVZeWMwWlBRVlpmV2sxMlNGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjEweUhFN1ZIdEYyc0ZPQVZfWk12SFE%7C%7C?hl=es",
+          "timestamp": "2026-01-28 19:42:30 +00:00",
+          "themes": []
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnTUNJZ3BlZzVBRRAB",
+          "name": "Alicia Fernandez",
+          "role": "Reseña verificada en Google",
+          "text": "Una gran academia con buenos profesores y la implicación de JP es maravillosa (es uno de los dueños) Recomiendo la academia 100%",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNJZ3BlZzVBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCIgpeg5AE%7C%7C?hl=es",
+          "timestamp": "2025-03-31 11:59:58 +00:00",
+          "themes": [
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiaHV2U0l3EAE",
+          "name": "Maru Teran",
+          "role": "Madre/padre de alumno",
+          "text": "Recomiendo la  Academia, mi hijo ha aprendido mucho, les agradezco la atención y la dedicación.  Muchas gracias!",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiaHV2U0l3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICbhuvSIw%7C%7C?hl=es",
+          "timestamp": "2024-07-26 11:37:59 +00:00",
+          "themes": [
+            "parent",
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUNmJ6Y1NnEAE",
+          "name": "Roberto Herrero",
+          "role": "Reseña verificada en Google",
+          "text": "Solo tengo palabras de agradecimiento para Impulse English Academy y muy en particular a mi profesor Daniel. Gracias de nuevo por que este aprendizaje haya sido tan fácil y rápido. Os deseo lo mejor.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUNmJ6Y1NnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICT6bzcSg%7C%7C?hl=es",
+          "timestamp": "2024-05-16 13:23:44 +00:00",
+          "themes": []
+        },
         {
           "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWbHJieWdBRRAB",
           "name": "Ylich Layana",
@@ -821,39 +901,6 @@
           ]
         },
         {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiaHV2U0l3EAE",
-          "name": "Maru Teran",
-          "role": "Madre/padre de alumno",
-          "text": "Recomiendo la  Academia, mi hijo ha aprendido mucho, les agradezco la atención y la dedicación.  Muchas gracias!",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiaHV2U0l3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICbhuvSIw%7C%7C?hl=es",
-          "timestamp": "2024-07-26 11:37:59 +00:00",
-          "themes": [
-            "parent",
-            "recommend"
-          ]
-        },
-        {
-          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2s1eVJDMWhkbkl5UkZkbmJFWkRVVEl5Y1VjM1IxRRAB",
-          "name": "Samuel Bryan",
-          "role": "Reseña verificada en Google",
-          "text": "¡La mejor academia de inglés! Los profesores son super divertidos y amables. Lo recomiendo 100%",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1eVJDMWhkbkl5UkZkbmJFWkRVVEl5Y1VjM1IxRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOk5yRC1hdnIyRFdnbEZDUTIycUc3R1E%7C%7C?hl=es",
-          "timestamp": "2026-05-02 11:06:47 +00:00",
-          "themes": [
-            "method",
-            "recommend"
-          ]
-        },
-        {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUNmJ6Y1NnEAE",
-          "name": "Roberto Herrero",
-          "role": "Reseña verificada en Google",
-          "text": "Solo tengo palabras de agradecimiento para Impulse English Academy y muy en particular a mi profesor Daniel. Gracias de nuevo por que este aprendizaje haya sido tan fácil y rápido. Os deseo lo mejor.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUNmJ6Y1NnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICT6bzcSg%7C%7C?hl=es",
-          "timestamp": "2024-05-16 13:23:44 +00:00",
-          "themes": []
-        },
-        {
           "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsdFpfWXdBRRAB",
           "name": "Toña Agüero",
           "role": "Reseña verificada en Google",
@@ -869,53 +916,6 @@
           "text": "Los profes son fantástico y con gran experiencia. Aprender inglés adquiere otro sentido, os lo dice alguien para la que aprender inglés era difícil.  Se aprende con ganas e ilusión. Gracias",
           "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcl95QktBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr_yBKA%7C%7C?hl=es",
           "timestamp": "2023-08-31 18:04:34 +00:00",
-          "themes": []
-        },
-        {
-          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xKMk0xVnJRM1kyWTFZeWVFTnhNVzkwV1V4T1ozYxAB",
-          "name": "Marco Garcia",
-          "role": "Reseña verificada en Google",
-          "text": "Buscaba una escuela con quien conectará y entendieran mi necesidades de aprendizaje y siento que en Impulse estoy muy contento.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKMk0xVnJRM1kyWTFZeWVFTnhNVzkwV1V4T1ozYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlJ2M1VrQ3Y2Y1YyeENxMW90WUxOZ3c%7C%7C?hl=es",
-          "timestamp": "2026-01-28 20:09:55 +00:00",
-          "themes": []
-        },
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnTUNJZ3BlZzVBRRAB",
-          "name": "Alicia Fernandez",
-          "role": "Reseña verificada en Google",
-          "text": "Una gran academia con buenos profesores y la implicación de JP es maravillosa (es uno de los dueños) Recomiendo la academia 100%",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNJZ3BlZzVBRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCIgpeg5AE%7C%7C?hl=es",
-          "timestamp": "2025-03-31 11:59:58 +00:00",
-          "themes": [
-            "recommend"
-          ]
-        },
-        {
-          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21ZeFYwUk5TSFpJY3pKdlJtSlJRbDgwTlhJMVZtYxAB",
-          "name": "Isabella Giron Iglesias",
-          "role": "Reseña verificada en Google",
-          "text": "Jp es mi profesor..el mejor profesor y la mejor academia en el barrio!! Muchas gracias por todo",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ZeFYwUk5TSFpJY3pKdlJtSlJRbDgwTlhJMVZtYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmYxV0RNSHZIczJvRmJRQl80NXI1Vmc%7C%7C?hl=es",
-          "timestamp": "2026-05-07 14:37:32 +00:00",
-          "themes": []
-        },
-        {
-          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pFd2VVaEZOMVpJZEVZeWMwWlBRVlpmV2sxMlNGRRAB",
-          "name": "Mariela Ruiz",
-          "role": "Reseña verificada en Google",
-          "text": "Muy contenta por recibirme en vuestra academia y muy contenta con lo que voy aprendiendo 😊",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pFd2VVaEZOMVpJZEVZeWMwWlBRVlpmV2sxMlNGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjEweUhFN1ZIdEYyc0ZPQVZfWk12SFE%7C%7C?hl=es",
-          "timestamp": "2026-01-28 19:42:30 +00:00",
-          "themes": []
-        },
-        {
-          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pGc2NUWktabEZPVkY5R1MwbEJiamR0YkdOa09GRRAB",
-          "name": "Mariana Arias",
-          "role": "Reseña verificada en Google",
-          "text": "Excelente atención, el profe JP es muy majo, siempre dispuesto a enseñarnos.!",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGc2NUWktabEZPVkY5R1MwbEJiamR0YkdOa09GRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjFscTZKZlFOVF9GS0lBbjdtbGNkOFE%7C%7C?hl=es",
-          "timestamp": "2026-05-01 13:51:08 +00:00",
           "themes": []
         }
       ]
@@ -933,6 +933,15 @@
           "themes": []
         },
         {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwdWM2VTNnRRAB",
+          "name": "Alfonso Navarro",
+          "role": "Reseña verificada en Google",
+          "text": "La academia merece la pena totalmente. He podido mejorar mi inglés mucho gracias a los profesores que hacen las clases muy amenas.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdWM2VTNnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpuc6U3gE%7C%7C?hl=es",
+          "timestamp": "2023-08-25 06:45:10 +00:00",
+          "themes": []
+        },
+        {
           "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwb3B1cm53RRAB",
           "name": "Ludmyla Severino Anjos",
           "role": "Curso intensivo",
@@ -942,15 +951,6 @@
           "themes": [
             "recommend"
           ]
-        },
-        {
-          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwdWM2VTNnRRAB",
-          "name": "Alfonso Navarro",
-          "role": "Reseña verificada en Google",
-          "text": "La academia merece la pena totalmente. He podido mejorar mi inglés mucho gracias a los profesores que hacen las clases muy amenas.",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdWM2VTNnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpuc6U3gE%7C%7C?hl=es",
-          "timestamp": "2023-08-25 06:45:10 +00:00",
-          "themes": []
         },
         {
           "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwaE9HeWVnEAE",
@@ -976,6 +976,15 @@
           "themes": []
         },
         {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjZ6M0dnEAE",
+          "name": "Anabel Munoz",
+          "role": "Reseña verificada en Google",
+          "text": "Con  Danny y JP mejoré mi inglés y he conseguido hablar muy fluido. Gracias",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjZ6M0dnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr6z3Gg%7C%7C?hl=es",
+          "timestamp": "2023-08-31 18:00:31 +00:00",
+          "themes": []
+        },
+        {
           "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwajlESzRRRRAB",
           "name": "Miguel Gallego Gracia",
           "role": "Reseña verificada en Google",
@@ -985,15 +994,116 @@
           "themes": [
             "recommend"
           ]
+        }
+      ]
+    },
+    "ubicaciones/ArroyoDelFresnoPage.tsx": {
+      "label": "Arroyo del Fresno",
+      "reviews": [
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xsdGNGRTNabXB3ZVdoamVYWk5XRUU0UlY5WllVRRAB",
+          "name": "Marta Sancho",
+          "role": "Madre/padre de alumno",
+          "text": "Mi hijo va contentísimo! Grandes profesionales y buenas personas!",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsdGNGRTNabXB3ZVdoamVYWk5XRUU0UlY5WllVRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlltcFE3ZmpweWhjeXZNWEE4RV9ZYUE%7C%7C?hl=es",
+          "timestamp": "2026-05-06 16:36:20 +00:00",
+          "themes": [
+            "parent",
+            "adult"
+          ]
         },
         {
-          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjZ6M0dnEAE",
-          "name": "Anabel Munoz",
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pndFFWUldRV1ZLZW1SNlluSlBTMHRuUjFSU09WRRAB",
+          "name": "Cosme González",
           "role": "Reseña verificada en Google",
-          "text": "Con  Danny y JP mejoré mi inglés y he conseguido hablar muy fluido. Gracias",
-          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjZ6M0dnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr6z3Gg%7C%7C?hl=es",
-          "timestamp": "2023-08-31 18:00:31 +00:00",
-          "themes": []
+          "text": "Grandes profesores, magnífico ambiente y ganas de agradar.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pndFFWUldRV1ZLZW1SNlluSlBTMHRuUjFSU09WRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjgtQVRWQWVKemR6YnJPS0tnR1RSOVE%7C%7C?hl=es",
+          "timestamp": "2026-06-23 13:53:54 +00:00",
+          "themes": [
+            "atmosphere"
+          ]
+        }
+      ]
+    },
+    "ubicaciones/SanchinarroPage.tsx": {
+      "label": "Sanchinarro",
+      "reviews": [
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xKMWJUUjBWVXRaWlRZMVFqWnZaREJrTkUxbk5tYxAB",
+          "name": "Carolina Lopez",
+          "role": "Reseña verificada en Google",
+          "text": "Lo más profesional y especial del curso de inglés",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKMWJUUjBWVXRaWlRZMVFqWnZaREJrTkUxbk5tYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlJ1bTR0VUtZZTY1QjZvZDBkNE1nNmc%7C%7C?hl=es",
+          "timestamp": "2026-05-01 13:30:55 +00:00",
+          "themes": [
+            "adult"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNBOWZmT0lREAE",
+          "name": "Madalina Rusanu",
+          "role": "Alumno/a · preparación C1",
+          "text": "Me voy a sacar el Advanced aqui! Es mi plan ☺️",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNBOWZmT0lREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCA9ffOIQ%7C%7C?hl=es",
+          "timestamp": "2025-02-03 01:57:32 +00:00",
+          "themes": [
+            "cambridge"
+          ]
+        }
+      ]
+    },
+    "ubicaciones/ValdezarzaPage.tsx": {
+      "label": "Valdezarza",
+      "reviews": [
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNJd0xiM0pnEAE",
+          "name": "Gloria Arroyo",
+          "role": "Reseña verificada en Google",
+          "text": "Nos gusta mucho esta Academia, grandes profesionales.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNJd0xiM0pnEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgMCIwLb3Jg%7C%7C?hl=es",
+          "timestamp": "2025-03-29 11:52:06 +00:00",
+          "themes": [
+            "adult"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcjdpVU13EAE",
+          "name": "Luis Jimenez",
+          "role": "Reseña verificada en Google",
+          "text": "Son muy profesionales y te hacen fácil el aprendizaje",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcjdpVU13EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr7iUMw%7C%7C?hl=es",
+          "timestamp": "2023-08-31 17:39:43 +00:00",
+          "themes": [
+            "adult"
+          ]
+        }
+      ]
+    },
+    "ubicaciones/ChamartinPage.tsx": {
+      "label": "Chamartín",
+      "reviews": [
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwci1UQzl3RRAB",
+          "name": "Enrique Villar Ropero",
+          "role": "Reseña verificada en Google",
+          "text": "Son muy buenos profesionales que te ayudan en todo",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwci1UQzl3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr-TC9wE%7C%7C?hl=es",
+          "timestamp": "2023-08-31 17:47:03 +00:00",
+          "themes": [
+            "adult"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLWFPOG1RRRAB",
+          "name": "Juan Sáenz De Buruaga García",
+          "role": "Reseña verificada en Google",
+          "text": "Profesionales desde el primer minuto. Increíble trato y desempeño!!",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLWFPOG1RRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-aO8mQE%7C%7C?hl=es",
+          "timestamp": "2023-08-25 10:22:27 +00:00",
+          "themes": [
+            "adult",
+            "atmosphere"
+          ]
         }
       ]
     }

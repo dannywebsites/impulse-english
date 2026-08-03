@@ -47,6 +47,13 @@ PAGES = [
     ("TestimonialsPage.tsx",                     "Testimonios",     12, ["cambridge", "adult", "parent", "kids", "method", "atmosphere", "progress", "teens"]),
     ("MetodologiaPage.tsx",                      "Metodología",      4, ["method", "progress"]),
     ("blog/PreparacionB2FirstMadridPage.tsx",    "Blog · B2 First",  3, ["cambridge"]),
+    # New barrio pages, 2026-08-03. Appended deliberately: PAGES is consumed in
+    # order and each page takes from what is left, so adding at the end cannot
+    # disturb the 78 quotes already placed and verified on the existing pages.
+    ("ubicaciones/ArroyoDelFresnoPage.tsx",      "Arroyo del Fresno", 2, ["parent", "kids"]),
+    ("ubicaciones/SanchinarroPage.tsx",          "Sanchinarro",       2, ["parent", "teens"]),
+    ("ubicaciones/ValdezarzaPage.tsx",           "Valdezarza",        2, ["adult", "progress"]),
+    ("ubicaciones/ChamartinPage.tsx",            "Chamartín",         2, ["adult", "cambridge"]),
 ]
 
 IDEAL_MIN, IDEAL_MAX = 140, 330
@@ -113,14 +120,43 @@ def score(rev, themes):
     return s
 
 
+def load_pins():
+    """review_id -> page path, from the allocation already published.
+
+    A quote that is live and verified stays where it is. Without this, widening
+    the eligibility rules re-ranks the whole pool and silently reshuffles pages
+    that were already correct — the first run after MIN_CHARS dropped to 43 tried
+    to swap a 353-character review off the homepage rail for a 65-character one.
+    Re-churning verified live testimonials to no benefit is the opposite of what
+    the verbatim gate is protecting.
+    """
+    if not os.path.exists(OUT):
+        return {}
+    try:
+        prev = json.load(open(OUT))
+    except (ValueError, OSError):
+        return {}
+    # Keep the published order too, so a re-run produces an identical artifact
+    # rather than the same reviews shuffled into pool order.
+    return {r["review_id"]: (path, i)
+            for path, page in prev.get("pages", {}).items()
+            for i, r in enumerate(page.get("reviews", []))}
+
+
 def allocate():
     pool = [r for r in json.load(open(POOL))["reviews"] if r["eligible"]]
+    live = {r["review_id"] for r in pool}
+    pins = {rid: v for rid, v in load_pins().items() if rid in live}
     used = set()
     alloc = {}
     for path, label, need, themes in PAGES:
-        picks = []
+        # Anything this page already publishes keeps its slot, in its published order.
+        picks = sorted((r for r in pool if pins.get(r["review_id"], (None,))[0] == path),
+                       key=lambda r: pins[r["review_id"]][1])[:need]
+        used.update(r["review_id"] for r in picks)
         ranked = sorted(
-            (r for r in pool if r["review_id"] not in used),
+            (r for r in pool
+             if r["review_id"] not in used and r["review_id"] not in pins),
             key=lambda r: (-score(r, themes), r["review_id"]))
         for r in ranked:
             if len(picks) >= need:

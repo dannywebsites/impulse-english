@@ -26,7 +26,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 IN = os.path.join(HERE, "reviews.json")
 OUT = os.path.join(HERE, "review-pool.json")
 
-MIN_CHARS = 70
+# Lowered 70 -> 43 on 2026-08-03 to open enough headroom for four new barrio
+# pages. 78 of the 79 reviews eligible at 70 chars were already placed, and the
+# no-repeats rule means a new page needs new reviews. 43 is not arbitrary: it is
+# the shortest real review that still reads as a sentence rather than a fragment.
+# Raise it again once JP brings in more long reviews — shorter quotes are weaker.
+MIN_CHARS = 43
 MAX_CHARS = 600
 
 # Teachers we are allowed to name on the site. Anything else in a quote

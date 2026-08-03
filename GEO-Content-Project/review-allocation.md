@@ -7,25 +7,29 @@ Source of truth is the live Google Business Profile (place_id `ChIJG7G2oAkpQg0Re
 hand-transcribed subset. **No review appears on two pages.** Every quote on the
 site is verbatim; `verify_quotes.py` fails the build if a single character drifts.
 
-Pool: **79 eligible** of 180. Allocated: **78**. Spare: **1**.
+Pool: **93 eligible** of 180. Allocated: **86**. Spare: **7**.
 
 | Page | Reviews |
 |---|---|
-| Barrio del Pilar | Marta Ferrer · Pepi Moral Ventura · Salvador Muñoz-Perea · Rodrigo Sanz |
-| La Vaguada | Michelle Correa Sánchez · Esther Valencia · Luis Martin Gonzalez · Yurisbeth Rivero Chirinos |
-| La Ventilla | Lara OM · Virginia Toledo |
+| Barrio del Pilar | Salvador Muñoz-Perea · Rodrigo Sanz · Pepi Moral Ventura · Marta Ferrer |
+| La Vaguada | Yurisbeth Rivero Chirinos · Luis Martin Gonzalez · Michelle Correa Sánchez · Esther Valencia |
+| La Ventilla | Virginia Toledo · Lara OM |
 | Tetuán | Eva Liarte · Laura García Lomas |
 | La Paz | Sandra Dos Anjos Costa · Marina Penerbosa |
 | Cuatro Torres | Gonzalo Tarascón · Hugo Antonio |
 | Plaza Castilla | Mely Alferes · Brian Carey |
-| Montecarmelo | Débora Azevedo · Lorena Jiménez · Antonio Pérez Blázquez |
-| Mirasierra | Aurora Jimenez Solano · Irene C · Rosangel Bandres |
-| Peñagrande | María Jesús Zuazo Sahagún · Oscar Bonilla Mansilla · Miguel Garcia |
-| Home · testimonios | Alberto Rueda Rodriguez · Ilias Frafer Afif · Cesar Seneca Tellechea Corral · Paula Cuadrado · CJ Martos · Antonio Del Pozo · Clara Sánchez · Laia Lubillo Solsona · Carmen Moreno · Leticia Ramos Setim · Dámaris Valentín-Fernández Gómez · Ana Torrado · Mª Del Espino Monedero García · Edixon Muñoz · Javier Salmeron · Manuel Casas Herrero · Paloma Canalda · Víctor RC · Ramon Pico · Patricia Gallardo · Lucía Moreno Zubiaur · David Garcia · Anna Farney · Alba Garrido Iglesias · Gloria Ruiz García · Hugo G |
-| Home · rail | Carlos Javier Ayllón Gordillo · Alejandro Carre · Yosmari A. Diaz O. · Carmen Suarez · Natalia López Casado · Laura Garcia |
-| Testimonios | Ylich Layana · Javier Sanz Lázaro · Maru Teran · Samuel Bryan · Roberto Herrero · Toña Agüero · Maria Jose Navarredonda · Marco Garcia · Alicia Fernandez · Isabella Giron Iglesias · Mariela Ruiz · Mariana Arias |
-| Metodología | Elga Quintans · Ludmyla Severino Anjos · Alfonso Navarro · Judit Navarro Oriola |
-| Blog · B2 First | Yan Yang Wang · Miguel Gallego Gracia · Anabel Munoz |
+| Montecarmelo | Lorena Jiménez · Antonio Pérez Blázquez · Débora Azevedo |
+| Mirasierra | Irene C · Rosangel Bandres · Aurora Jimenez Solano |
+| Peñagrande | Miguel Garcia · María Jesús Zuazo Sahagún · Oscar Bonilla Mansilla |
+| Home · testimonios | Ilias Frafer Afif · Alba Garrido Iglesias · Clara Sánchez · Lucía Moreno Zubiaur · Víctor RC · Hugo G · Patricia Gallardo · Ana Torrado · Mª Del Espino Monedero García · Leticia Ramos Setim · Paula Cuadrado · Carmen Moreno · CJ Martos · Ramon Pico · Paloma Canalda · Javier Salmeron · Cesar Seneca Tellechea Corral · Alberto Rueda Rodriguez · Edixon Muñoz · Antonio Del Pozo · Anna Farney · Gloria Ruiz García · Laia Lubillo Solsona · Dámaris Valentín-Fernández Gómez · David Garcia · Manuel Casas Herrero |
+| Home · rail | Carmen Suarez · Yosmari A. Diaz O. · Natalia López Casado · Carlos Javier Ayllón Gordillo · Alejandro Carre · Laura Garcia |
+| Testimonios | Isabella Giron Iglesias · Samuel Bryan · Mariana Arias · Marco Garcia · Mariela Ruiz · Alicia Fernandez · Maru Teran · Roberto Herrero · Ylich Layana · Javier Sanz Lázaro · Toña Agüero · Maria Jose Navarredonda |
+| Metodología | Elga Quintans · Alfonso Navarro · Ludmyla Severino Anjos · Judit Navarro Oriola |
+| Blog · B2 First | Yan Yang Wang · Anabel Munoz · Miguel Gallego Gracia |
+| Arroyo del Fresno | Marta Sancho · Cosme González |
+| Sanchinarro | Carolina Lopez · Madalina Rusanu |
+| Valdezarza | Gloria Arroyo · Luis Jimenez |
+| Chamartín | Enrique Villar Ropero · Juan Sáenz De Buruaga García |
 
 ## Eligibility rules (`build_pool.py`)
 5 stars · 90–420 characters · a real full name · no teacher named outside

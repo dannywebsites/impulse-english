@@ -22,7 +22,11 @@ export const BARRIO_AREAS: BarrioArea[] = [
   { name: "Tetuán", href: "/academia-ingles-tetuan/" },
   { name: "Cuatro Torres", href: "/academia-ingles-cuatro-torres/" },
   { name: "Mirasierra", href: "/academia-ingles-mirasierra/" },
-  { name: "Montecarmelo y Las Tablas", href: "/academia-ingles-montecarmelo-las-tablas/" }
+  { name: "Montecarmelo y Las Tablas", href: "/academia-ingles-montecarmelo-las-tablas/" },
+  { name: "Arroyo del Fresno", href: "/academia-ingles-arroyo-del-fresno/" },
+  { name: "Valdezarza", href: "/academia-ingles-valdezarza/" },
+  { name: "Chamartín", href: "/academia-ingles-chamartin/" },
+  { name: "Sanchinarro", href: "/academia-ingles-sanchinarro/" }
 ];
 
 /** Hub que agrupa todas las páginas de barrio (Tier 2). */

@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SanchinarroPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/SanchinarroPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema, generateBreadcrumbSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Ubicaciones', url: 'https://impulse-english.es/academias-ingles-madrid/por-barrios/' },
+  { name: locationMeta.locationName, url: `${locationMeta.pageUrl}/` },
+]);
+const schemas = [...locationItems, breadcrumb, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Clases de inglés para Sanchinarro | 29 €/hora | Impulse"
+  description="Academia de inglés para familias de Sanchinarro: grupos de 7 a 10 alumnos desde 64 €/mes, y clases particulares u online a 29 €/hora con los mismos profesores."
+  keywords="academia inglés sanchinarro, clases inglés sanchinarro, cursos inglés sanchinarro madrid, cambridge sanchinarro, inglés online sanchinarro"
+  canonical="/academia-ingles-sanchinarro/"
+  fullTitle={true}
+  schemas={schemas}
+>
+  <SanchinarroPage client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -65,6 +65,12 @@ export const localFaqs: FAQItem[] = [
     answer: "Algunas academias en zona norte de Madrid ofrecen clases por la mañana para adultos con horarios flexibles. Es ideal para profesionales con turnos, autónomos o personas que prefieren estudiar antes del mediodía. Consulta horarios concretos con cada centro para encontrar el que mejor se adapte a tu disponibilidad."
   },
   {
+    // Herrera Oria se cubre desde aquí, que es la página vecina en la línea 9,
+    // en vez de abrir una página nueva que competiría con esta.
+    question: "Vivo en Herrera Oria. ¿Cuánto se tarda desde allí?",
+    answer: "Herrera Oria está en la misma línea 9, una parada más allá de Mirasierra: unos 5 minutos de metro hasta Barrio del Pilar y otros 3 andando hasta Av. de El Ferrol, 22. En coche son de 5 a 8 minutos bajando por Ginzo de Limia. Es de los trayectos más cortos que tenemos."
+  },
+  {
     question: "¿Es fácil aparcar cerca de la academia desde Mirasierra?",
     answer: "Sí, hay aparcamiento en superficie disponible en la propia Av. de El Ferrol y en las calles adyacentes. El acceso desde Mirasierra es directo por Fermín Caballero."
   }

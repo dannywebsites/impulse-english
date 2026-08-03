@@ -5,6 +5,71 @@ Every SEO decision is logged here, grounded in [`SEO-Master-Class-Reference.md`]
 
 ---
 
+## 2026-08-03 — Four new barrio pages built; two barrios deliberately NOT given pages.
+
+**Context:** Danny asked for pages on seven phase-2 barrios. Research changed the shape of it.
+
+### Decision 1 — Build four, fold two into existing pages, skip one.
+**Why (book §2, "one intent = ONE page"):** five of the seven were already claimed by live pages.
+**Valdeacederas is literally the origin of the bus-147 route the Tetuán page is built on**, and
+Herrera Oria appears on five pages plus the homepage. A separate page for either would compete with
+its own siblings for the same searcher.
+
+| Barrio | Decision | Why |
+|---|---|---|
+| Arroyo del Fresno | **Built** | No existing mention; clean L7 route |
+| Sanchinarro | **Built** | No existing mention; 20/mo, the most volume of the seven |
+| Valdezarza | **Built** | Only a passing EOI reference on Mirasierra |
+| Chamartín | **Built** | Only a passing mention on Tetuán |
+| Valdeacederas | **Folded into Tetuán** | Same intent as the page that owns the 147 route |
+| Herrera Oria | **Folded into Mirasierra** | Its L9 neighbour; named on 5 pages already |
+| Fuencarral | **Skipped** | Zero volume, and it is the *district* name on four pages |
+
+Instead of competing pages, Tetuán and Mirasierra each gained a dedicated FAQ answering the
+"¿cuánto se tarda desde …?" query for the folded barrio, using the canonical route data. That keeps
+the term covered and the authority concentrated.
+
+**Volume caveat, stated plainly:** per §14 these are 0–20/mo terms. This is a local-pack and
+topical-coverage play, not a traffic play. San Sebastián de los Reyes (90/mo) and Alcobendas
+(70/mo) remain the real unbuilt gaps.
+
+### Decision 2 — Publish structural transit facts, never invented minutes.
+L7 station order was verified against Metro de Madrid/Wikipedia before any copy was written, and
+recorded in `Business-Information.txt` §2. Arroyo del Fresno is **3 paradas** from Peñagrande,
+Valdezarza **2**, both on L7 with no transfer; Chamartín is **1 parada on L10 to Plaza de Castilla
+then 2 on L9**. Minute figures appear only where the site already owned a source (Peñagrande
+station → academy ~8 min on foot; Barrio del Pilar → academy 500 m / ~3 min). **Sanchinarro has no
+metro and no sourced minute figure, so the page publishes none** — it leads on price, group size
+and the online option instead, and says outright that the academy is not around the corner.
+
+### Decision 3 — Shared JSX scaffolding, prose written per barrio.
+The uniqueness scorer strips classNames and tags and compares only visible text, so sharing markup
+costs nothing while sharing prose costs everything. Every reader-visible string was written once,
+for one barrio. Case studies rotated (Josmary, Daniel, Sergio ×2) rather than repeating one.
+Result: the four new pages score 93–96 on uniqueness-inclusive GEO with **no regression on the
+existing ten**.
+
+### Decision 4 — Review threshold lowered 70 → 43 chars, and the allocator now pins.
+Four pages need eight verbatim reviews and only one eligible review was unplaced. `MIN_CHARS` in
+`build_pool.py` dropped to 43 — the shortest real review that still reads as a sentence — taking
+the eligible pool from 79 to 93.
+**The first re-run then tried to reshuffle four already-live pages**, swapping a 353-character
+review off the homepage rail for a 65-character one, because widening eligibility re-ranks the
+whole pool. `allocate.py` now pins every already-published review to its page and only fills empty
+slots, so the 78 live quotes are untouched and the artifact is idempotent. Churning verified
+testimonials for no benefit is exactly what the verbatim gate exists to prevent.
+
+**Result:** 14 barrio pages, **all grade A**, lowest 95, **zero elements below 9**, site-wide
+baseline 96. Build 146 → 150 pages. Gates: `astro check` 0 errors · quote gate 0 fail in source and
+dist (86 quotes now) · sitemap carries all four new URLs.
+
+**Validation plan:** book §5. These four start from zero impressions, so impressions are the first
+signal, not CTR. Filter GSC on "URLs containing `academia-ingles-`" and watch the cluster; judge the
+four new ones against the existing ten as the control. Seasonal caveat as ever: August trough,
+September 3× spike.
+
+---
+
 ## 2026-08-02 (late, part 2) — The last five barrio pages rebuilt for GEO. All ten now grade A, every element ≥ 9.
 
 **Context:** Barrio del Pilar, La Vaguada, Mirasierra, Montecarmelo/Las Tablas and Peñagrande had
