@@ -139,7 +139,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Cómo saber si una academia de inglés es buena para mi hijo pequeño?",
-    answer: "Fíjate en: método adaptado a la edad (no clases de adulto simplificadas), tamaño del grupo (máximo 7-8 niños), profesores con formación en educación infantil, un ambiente seguro y lúdico, y la posibilidad de hacer una clase de prueba antes de comprometerte. Las reseñas de otros padres en Google también son orientativas."
+    answer: "Fíjate en: método adaptado a la edad (no clases de adulto simplificadas), tamaño del grupo (máximo 7 niños), profesores con formación en educación infantil, un ambiente seguro y lúdico, y la posibilidad de hacer una clase de prueba antes de comprometerte. Las reseñas de otros padres en Google también son orientativas."
   }
 ];
 
