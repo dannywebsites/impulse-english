@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { User, Video, MapPin, Calendar, Target, Clock, CheckCircle, Briefcase, FileText, Award } from 'lucide-react';
+import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -476,14 +477,18 @@ export default function ParticularesPage() {
           <span className="eyebrow mb-4">Un caso real</span>
           <h2 className="t-h2 text-zinc-900 mb-5">Daniel de la Peña</h2>
           <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl" dangerouslySetInnerHTML={{ __html: "Lo que Daniel quería era salir de España a trabajar: <em>&laquo;acceder a oportunidades laborales en el extranjero y en países de habla inglesa&raquo;</em>. Le llevó cerca de año y medio de clases." }} />
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+                Lo que Daniel quería era salir de España a trabajar: <em>&laquo;acceder a oportunidades laborales en el extranjero y en países de habla inglesa&raquo;</em>. Le llevó cerca de año y medio de clases.
+              </p>
           <div className="card p-8">
             <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
               <div><p className="t-h3 text-accent-blue">18 meses</p><p className="t-small text-zinc-600">con nosotros</p></div>
               <div><p className="t-h3 text-accent-blue">Su objetivo</p><p className="t-small text-zinc-600">trabajar en un país de habla inglesa</p></div>
               <div><p className="t-h3 text-accent-blue">Conseguido</p><p className="t-small text-zinc-600">hoy da inglés en primaria a jornada completa</p></div>
             </div>
-            <p className="text-zinc-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: "Cuando explica por qué le sirvió no habla del temario, sino del <em>&laquo;trato personalizado y sobre todo profesionalidad y compromiso&raquo;</em>." }} />
+            <p className="text-zinc-600 leading-relaxed">
+                Cuando explica por qué le sirvió no habla del temario, sino del <em>&laquo;trato personalizado y sobre todo profesionalidad y compromiso&raquo;</em>.
+              </p>
           </div>
         </div>
       </section>
@@ -509,6 +514,45 @@ export default function ParticularesPage() {
           <p className="t-small text-zinc-500 text-center mt-8">
             Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
           </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuestan las clases particulares</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                Las clases particulares son <strong>29 €/hora</strong>, presenciales u online, desde <strong>29 €</strong> la sesión suelta. Tú eliges cuántas horas a la semana.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                Si prefieres grupo, los cursos del centro van de <strong>64 €</strong> a <strong>99 €</strong> al mes. En ambos casos la matrícula son <strong>45 €</strong> y el libro <strong>máximo 40 €</strong>.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BookOpen, Award, Target, Users, Zap, GraduationCap, Clock, CheckCircle, Star, Phone, Calendar } from 'lucide-react';
+import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -506,6 +507,45 @@ export default function PrimariaPage() {
           <p className="t-small text-zinc-500 text-center mt-8">
             Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
           </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta el curso de primaria</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                Primaria son <strong>83 €/mes</strong>, o <strong>239 €/trimestre</strong> si eliges el pago trimestral con descuento. Los cursos del centro empiezan desde <strong>64 €/mes</strong>.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                El primer mes se añaden la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): <strong>168 €</strong> el primer mes y 83 €/mes después. Si tienes más de un hijo matriculado, se aplica descuento familiar.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

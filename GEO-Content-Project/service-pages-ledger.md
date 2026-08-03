@@ -41,7 +41,8 @@ and Pricing (1.9 avg).
 | 02 | 2026-08-03 | Step 0b — page × query GSC pull, to attribute queries to URLs | `impulse-seo-ops/page_query_pull.py` (new), `data/gsc/2026-08-01/PagesXQueries.csv` | `465a217` | n/a (measurement) | 5,488 rows, window 2026-07-05 → 2026-08-01. Overturned three targeting assumptions — see below | `git revert 465a217` |
 | 03 | 2026-08-03 | Step 1 — titles + meta descriptions, `fullTitle` on all 7 | `src/pages/cursos-ingles/*.astro` (7) | `2907ca5` | **42 → 45** | Title Tag **6–7 → 10/10 on all seven**; build green (150 pages); all titles ≤60 and metas ≤160 **read from `dist/`**, none cut mid-word | `git revert 2907ca5` |
 | 04 | 2026-08-03 | Step 2 — H1s + answer capsules; fix the intro scorer | `GEO-Content-Project/geo-audit.py`, `pages/cursos/*.tsx` (7) | `7c8d2a4` | **45 → 55** | H1 **5 → 9/10 all seven**; Intro **→ 10/10 all seven**; `astro check` 0 errors 0 warnings; build green; H1s verified in `dist/`; barrios re-run **still 96** | `git revert 7c8d2a4` |
-| 05 | 2026-08-03 | Step 3 — team bios, 21 verbatim reviews, 3 case studies | `pages/cursos/*.tsx` (7) | `PENDING` | **55 → 68** | Team **2–7 → 10/10 all seven**; Testimonials **0 → 10/10 all seven**; Case Studies 0 → 9 on three pages, **still 0 on four (gap, see below)**; `verify_quotes.py --dist` **107 quotes, 0 FAIL**; `astro check` clean; build green | `git revert <sha>` |
+| 05 | 2026-08-03 | Step 3 — team bios, 21 verbatim reviews, 3 case studies | `pages/cursos/*.tsx` (7) | `c64b5c7` | **55 → 68** | Team **2–7 → 10/10 all seven**; Testimonials **0 → 10/10 all seven**; Case Studies 0 → 9 on three pages, **still 0 on four (gap, see below)**; `verify_quotes.py --dist` **107 quotes, 0 FAIL**; `astro check` clean; build green | `git revert c64b5c7` |
+| 06 | 2026-08-03 | Step 4 — real prices + NAP contact/transit block | `pages/cursos/*.tsx` (7) | `PENDING` | **68 → 73** | Pricing **0–9 → 10/10 all seven**; Contact **7–10 → 10/10**; Service Area **6–10 → 10/10**; `astro check` clean; build green | `git revert <sha>` |
 
 ---
 
@@ -141,6 +142,32 @@ Quote selection: 21 quotes, 21 distinct reviewers, 7 distinct sets — reuse was
 turn out to be needed. Every quote is a contiguous verbatim excerpt (`check()` accepts a substring of
 the real review), chosen to match the page's audience: Patricia Gallardo's "he ido todo el año con mi
 bebé" on infantil, Miguel Garcia's "los niños de 10 y 12 años" on primaria, and so on.
+
+**2026-08-03 — row 06 shipped invisible copy, then fixed it.** The price and case-study paragraphs
+were first written with `dangerouslySetInnerHTML={{ __html: "..." }}`. `strip_code()`'s tag stripper
+is `<[^>]+>`, so on a line beginning `<p ... __html: "…prose…<strong>` it matches from `<p` all the
+way to the first `>` — which is the closing bracket of the *first inner* `<strong>` — swallowing the
+whole sentence. The audit could not see a word of the new pricing copy, and Pricing was scoring off
+unrelated figures in the FAQ answers ("1000-1500€"). All 20 such paragraphs were rewritten as real
+JSX with `<strong>` children. Better markup regardless, and now the copy is visible to both readers
+and the scorer.
+
+Prices published are the approved set, cross-checked against `PreciosPage.tsx` and
+`Business-Information.txt` (`[DANNY — APPROVED FOR PUBLICATION]`): matrícula **45 €**, libro **máx
+40 €**, Infantil desde **64**, Primaria **83** (239/trimestre), Secundaria **87/91/93**
+(251/263/269), Adultos **94**, particulares y online **29 €/hora**. The 29 €/hora figure was not in
+the plan — it was found in the approved-facts file and closes what would otherwise have been a
+"consultar" gap on two pages.
+
+**Group sizes.** `Business-Information.txt` line 284 says "máximo 7–10 alumnos (adults capped at
+10)", tagged `[SITE]`. The shipped site says **7** (infantil/niños) and **8** (adultos, online) in
+every instance. The new copy follows the site, not the fact sheet. Someone should reconcile the two.
+
+**Open item:** `/infantil/` Hero CTA is capped at **7/10** and left there deliberately. The scorer
+wants the literal phrase "prueba de nivel" in the hero; Infantil's actual offer is a 1-hour *clase
+de prueba*, kept on purpose (a 25-minute level test is not age-appropriate for 2–5s). Its hero
+button already links to `/prueba-de-nivel-ingles/` while the label says otherwise — a pre-existing
+mismatch worth a separate look.
 
 Also fixed in the same commit:
 - `find_astro_for()` now matches on a word boundary; the bare substring test would match a
