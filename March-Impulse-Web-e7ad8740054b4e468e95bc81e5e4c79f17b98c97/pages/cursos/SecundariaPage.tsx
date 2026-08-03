@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { GraduationCap, FileText, Target, TrendingUp, Clock, Award, Users, Phone, Calendar, CheckCircle } from 'lucide-react';
+import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -26,6 +27,22 @@ export const courseSchema = generateCourseSchema({
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿Dónde estáis y cómo llegan los chicos en metro?",
+    answer: "Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) está a 3 minutos andando, así que vienen solos sin problema."
+  },
+  {
+    question: "¿Cuánto se tarda desde los institutos del barrio?",
+    answer: "Desde los institutos de Barrio del Pilar y La Vaguada, unos 5 a 10 minutos andando, que es lo que permite encajar las clases justo después del instituto."
+  },
+  {
+    question: "¿Desde qué barrios vienen los alumnos de secundaria?",
+    answer: "Sobre todo de Barrio del Pilar, La Vaguada, Peñagrande, Mirasierra, Montecarmelo, Las Tablas y Chamartín."
+  },
+  {
+    question: "¿Hay parada de bus cerca para volver a casa?",
+    answer: "Los buses 147, 42 y 83 paran en Ginzo de Limia - Ferrol, a 1 minuto de la academia."
+  },
+  {
     question: "¿Qué nivel suele tener un alumno de 4º ESO?",
     answer: "Suele estar alrededor de B1, aunque varía mucho. Por eso hacemos prueba de nivel y observación, para no perder tiempo. Si el alumno está en B1, trazamos un plan para consolidar base y avanzar hacia B2, que es el estándar más solicitado."
   },
@@ -35,7 +52,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Preparáis EBAU/Selectividad?",
-    answer: "Sí. Integramos preparación EBAU dentro del programa: comprensión, writing, vocabulario y estructura. Cuando el alumno alcanza nivel real B2, la EBAU se vuelve mucho más manejable. Trabajamos técnica de examen y práctica guiada sin descuidar el idioma real."
+    answer: "Integramos preparación EBAU dentro del programa: comprensión, writing, vocabulario y estructura. Cuando el alumno alcanza nivel real B2, la EBAU se vuelve mucho más manejable. Trabajamos técnica de examen y práctica guiada sin descuidar el idioma real."
   },
   {
     question: "¿Cuándo es buen momento para preparar B2 First?",
@@ -47,7 +64,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Cambridge ayuda con el instituto?",
-    answer: "Sí. Mejorar nivel real (vocabulario, comprensión y gramática funcional) impacta directamente en exámenes y tareas del instituto. Además, la práctica de writing y reading para Cambridge fortalece habilidades que se usan en clase. No es \"extra\": es el mismo idioma, mejor trabajado."
+    answer: "Mejorar nivel real (vocabulario, comprensión y gramática funcional) impacta directamente en exámenes y tareas del instituto. Además, la práctica de writing y reading para Cambridge fortalece habilidades que se usan en clase. No es \"extra\": es el mismo idioma, mejor trabajado."
   },
   {
     question: "¿Qué es mejor: Cambridge o Linguaskill?",
@@ -55,7 +72,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay prueba de nivel gratuita?",
-    answer: "Sí. Hacemos prueba de nivel gratuita para ubicar al alumno en el grupo correcto y proponer el plan más realista. Sin compromiso."
+    answer: "Hacemos prueba de nivel gratuita para ubicar al alumno en el grupo correcto y proponer el plan más realista. Sin compromiso."
   },
   // Kids Secondary PAAs (7)
   {
@@ -64,7 +81,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Speaking es lo difícil en Secundaria?",
-    answer: "Sí, speaking genera nervios. Por eso empezamos con conversación grupal sobre temas seguros, después parejas, después presentaciones. La exposición repetida reduce ansiedad exponencialmente. En 8-12 semanas bien hechas, el miedo desaparece."
+    answer: "Speaking genera nervios. Por eso empezamos con conversación grupal sobre temas seguros, después parejas, después presentaciones. La exposición repetida reduce ansiedad exponencialmente. En 8-12 semanas bien hechas, el miedo desaparece."
   },
   {
     question: "¿Preparar examen sin perder motivación?",
@@ -72,7 +89,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿C1 es realista en Secundaria?",
-    answer: "Sí, para alumnos brillantes que empezaron en Primaria. Generalmente alcanzables B2 con constancia en 3-4 años, C1 en 5-6 años. No es imposible pero requiere dedicación especial y metodología intensiva. Algunos alumnos lo alcanzan, otros necesitan más tiempo."
+    answer: "Para alumnos brillantes que empezaron en Primaria. Generalmente alcanzables B2 con constancia en 3-4 años, C1 en 5-6 años. No es imposible pero requiere dedicación especial y metodología intensiva. Algunos alumnos lo alcanzan, otros necesitan más tiempo."
   },
   {
     question: "¿Smartphones ayudan o distraen?",
@@ -128,11 +145,11 @@ export default function SecundariaPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Inglés para Secundaria
+              Inglés para secundaria y EBAU en La Vaguada, de 13 a 17 años
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              Preparación EBAU y Cambridge B1, B2, C1 en La Vaguada. Grupos por nivel real, seguimiento continuo y un 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados).
+              Preparamos el inglés de la ESO, Bachillerato y EBAU para alumnos de 13 a 17 años en Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. Grupos por nivel real y preparación Cambridge B1, B2 y C1 desde 87 €/mes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
@@ -441,6 +458,105 @@ export default function SecundariaPage() {
             showLevel={true}
             variant="refresh"
           />
+        </div>
+      </section>
+
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            La preparación de B1, B2, C1 y EBAU la lleva JP, director de estudios y cofundador, con más de 10 años enseñando inglés. Danny, cofundador, es irlandés y trabaja en Madrid desde hace 12 años.
+          </p>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen las familias de secundaria
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Luis Martin Gonzalez", text: "100% recomendable, merece la pena. De echo mi hijo ahora sigue con JP, para prestarse sus exámenes de titulación Gran persona JP y su método" },
+              { name: "Marina Penerbosa", text: "Muy contenta con haber encontrado esta academia para mi hijo. Todo el staff es MUY amable, dedicado y profesional. Mi hijo ha progresado muchísimo en su comprensión y desempeño en ingles." },
+              { name: "Laura García Lomas", text: "Una suerte encontrar esta academia con tan grandes profesionales. Gracias a ellos he conseguido el B2, la metodología hace que aprendas rápido y no olvides" }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta el curso de secundaria</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                Secundaria va por cursos: S1-S3 <strong>87 €/mes</strong> o <strong>251 €/trimestre</strong>; S4-S6 <strong>91 €/mes</strong> o <strong>263 €/trimestre</strong>; S7-S8 <strong>93 €/mes</strong> o <strong>269 €/trimestre</strong>. Desde <strong>87 €/mes</strong>.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                Aparte quedan la matrícula (<strong>45 €</strong>), el libro (<strong>máximo 40 €</strong>) y las tasas del examen Cambridge, que se pagan solo si te presentas. Hay descuento por pago trimestral y descuento familiar.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
+      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
+        <div className="container mx-auto max-w-4xl">
+          <p className="text-zinc-500 text-sm text-center leading-relaxed">
+            <strong className="text-zinc-600">Otros cursos:</strong>{' '}
+            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/infantil/" className="text-indigo-600 hover:underline">Inglés infantil (2-5 años)</a>
+            {' · '}
+            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
+            {' · '}
+            <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline">Clases de inglés para adultos</a>
+            {' · '}
+            <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline">Clases particulares de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/online/" className="text-indigo-600 hover:underline">Clases de inglés online</a>
+          </p>
+          <p className="text-zinc-500 text-sm text-center mt-4">
+            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+          </p>
         </div>
       </section>
 

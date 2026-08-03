@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BookOpen, Award, Target, Users, Zap, GraduationCap, Clock, CheckCircle, Star, Phone, Calendar } from 'lucide-react';
+import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -26,12 +27,28 @@ export const courseSchema = generateCourseSchema({
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿Dónde está el centro y qué metro me deja cerca?",
+    answer: "En Av. de El Ferrol, 22, al lado del centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) queda a 3 minutos andando."
+  },
+  {
+    question: "¿Cuánto se tarda desde los colegios de la zona?",
+    answer: "Desde los colegios de Barrio del Pilar y La Vaguada, entre 5 y 10 minutos andando. Por eso los grupos de primaria empiezan a media tarde, al salir de clase."
+  },
+  {
+    question: "¿Desde qué barrios vienen los niños de primaria?",
+    answer: "De Barrio del Pilar, La Vaguada, Peñagrande, Valdezarza, Mirasierra, La Paz y Tetuán, principalmente."
+  },
+  {
+    question: "¿Qué autobús para cerca de la academia?",
+    answer: "Los buses 147, 42 y 83, en la parada Ginzo de Limia - Ferrol, a 1 minuto de la puerta."
+  },
+  {
     question: "¿Cómo sé qué nivel tiene mi hijo?",
     answer: "Con una prueba de nivel sencilla y observación en clase. Evaluamos comprensión, vocabulario, lectura y expresión oral según su edad. Así evitamos grupos descompensados y conseguimos progreso real. Te explicamos el punto de partida y el plan de mejora de forma clara."
   },
   {
     question: "¿Se puede preparar Cambridge en primaria?",
-    answer: "Sí, con un enfoque adecuado. No se trata de \"examen\" desde el primer día, sino de construir base y familiaridad con el formato. Cuando el alumno está listo, trabajamos tareas tipo, vocabulario y simulacros. El objetivo es seguridad y progreso, no presión."
+    answer: "Con un enfoque adecuado. No se trata de \"examen\" desde el primer día, sino de construir base y familiaridad con el formato. Cuando el alumno está listo, trabajamos tareas tipo, vocabulario y simulacros. El objetivo es seguridad y progreso, no presión."
   },
   {
     question: "¿Qué es más importante: gramática o hablar?",
@@ -55,7 +72,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay prueba de nivel gratuita?",
-    answer: "Sí. Ofrecemos clase/prueba de nivel para ubicar al alumno en su grupo ideal. Así puedes ver el ambiente, el método y cómo trabajamos. Sin compromiso."
+    answer: "Ofrecemos clase/prueba de nivel para ubicar al alumno en su grupo ideal. Así puedes ver el ambiente, el método y cómo trabajamos. Sin compromiso."
   },
   // Kids Primary PAAs (8)
   {
@@ -76,7 +93,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Leer en inglés siendo niño?",
-    answer: "Sí, a partir de 7-8 años con libros adaptados (Easy Readers A1-A2). Lectura tiene beneficios enormes: gramática, vocabulario, pronunciación mental. Usar libros con ilustraciones, historias atractivas, longitud adecuada. 15-20 min lectura semanal = mejora visible en 2-3 meses."
+    answer: "A partir de 7-8 años con libros adaptados (Easy Readers A1-A2). Lectura tiene beneficios enormes: gramática, vocabulario, pronunciación mental. Usar libros con ilustraciones, historias atractivas, longitud adecuada. 15-20 min lectura semanal = mejora visible en 2-3 meses."
   },
   {
     question: "¿Videos en inglés para niños?",
@@ -150,11 +167,11 @@ export default function PrimariaPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Inglés para Primaria
+              Clases de inglés para primaria, de 6 a 12 años, en La Vaguada
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              Construimos una base sólida con clases dinámicas, grupos reducidos y seguimiento personalizado. Cambridge Young Learners en La Vaguada.
+              Damos clases de inglés para primaria, de 6 a 12 años, en Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. Preparamos Cambridge Young Learners en grupos reducidos, por 83 €/mes, con Metro Barrio del Pilar (Línea 9) a 3 minutos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
@@ -470,6 +487,105 @@ export default function PrimariaPage() {
             showLevel={true}
             variant="refresh"
           />
+        </div>
+      </section>
+
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            Quien coloca a cada niño en su grupo es JP, director de estudios y cofundador, con más de 10 años enseñando inglés y a cargo de la preparación Cambridge Young Learners. Danny, cofundador irlandés, lleva 12 años en Madrid.
+          </p>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen las familias de primaria
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Miguel Garcia", text: "Experiencia muy buena de los niños de 10 y 12 años. Muy atento en su evolución con las familias y siempre disponibles para cualquier cosa. Lo recomiendo." },
+              { name: "María Jesús Zuazo Sahagún", text: "Solo puedo decir cosas positivas de la experiencia que tiene mi hija con sus profesores. Lo más importante es que le gusta mucho ir a las clases." },
+              { name: "Marta Ferrer", text: "Que gran suerte tuvimos de encontrar a Daniel y su equipo. Grandes profesionales y cercanos con sus alumnos. Gracias a ellos mis hijos han mejorado su inglés y pasado unos maravillosos veranos en Irlanda" }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta el curso de primaria</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                Primaria son <strong>83 €/mes</strong>, o <strong>239 €/trimestre</strong> si eliges el pago trimestral con descuento. Los cursos del centro empiezan desde <strong>64 €/mes</strong>.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                El primer mes se añaden la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): <strong>168 €</strong> el primer mes y 83 €/mes después. Si tienes más de un hijo matriculado, se aplica descuento familiar.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
+      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
+        <div className="container mx-auto max-w-4xl">
+          <p className="text-zinc-500 text-sm text-center leading-relaxed">
+            <strong className="text-zinc-600">Otros cursos:</strong>{' '}
+            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/infantil/" className="text-indigo-600 hover:underline">Inglés infantil (2-5 años)</a>
+            {' · '}
+            <a href="/cursos-ingles/secundaria/" className="text-indigo-600 hover:underline">Inglés para secundaria y EBAU</a>
+            {' · '}
+            <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline">Clases de inglés para adultos</a>
+            {' · '}
+            <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline">Clases particulares de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/online/" className="text-indigo-600 hover:underline">Clases de inglés online</a>
+          </p>
+          <p className="text-zinc-500 text-sm text-center mt-4">
+            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+          </p>
         </div>
       </section>
 

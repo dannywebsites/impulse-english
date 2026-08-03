@@ -2,14 +2,29 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CursosOverviewPage, { faqs } from '../../../pages/cursos/CursosOverviewPage';
 import CookieBanner from '../../../components/CookieBanner';
-import { generateFAQSchema } from '../../../utils/schemaData';
+import { generateBreadcrumbSchema, generateFAQSchema, generateLocationPageSchema } from '../../../utils/schemaData';
 
-const schemas = faqs?.length > 0 ? [generateFAQSchema(faqs)] : [];
+const locationSchema = generateLocationPageSchema({
+  locationName: 'La Vaguada',
+  pageUrl: 'https://impulse-english.es/cursos-ingles',
+});
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Cursos de Inglés', url: 'https://impulse-english.es/cursos-ingles/' },
+]);
+const schemas = [
+  ...locationItems,
+  breadcrumb,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+
 ---
 
 <BaseLayout
-  title="Cursos de Inglés en Madrid Norte"
-  description="Cursos de inglés para todas las edades en Madrid Norte. Infantil, primaria, secundaria, adultos y clases particulares. Centro Cambridge oficial, grupos reducidos."
+  title="Cursos de Inglés en Madrid | Cambridge oficial | Impulse"
+  fullTitle={true}
+  description="Cursos de inglés en Madrid Norte para todas las edades: infantil, primaria, secundaria, adultos y clases particulares. Centro Cambridge oficial."
   keywords="cursos inglés madrid, clases inglés madrid norte, academia inglés cursos, inglés niños madrid, inglés adultos madrid"
   canonical="/cursos-ingles/"
   schemas={schemas}

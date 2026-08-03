@@ -2,17 +2,31 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdultosPage, { courseSchema, faqs } from '../../../pages/cursos/AdultosPage';
 import CookieBanner from '../../../components/CookieBanner';
-import { generateFAQSchema } from '../../../utils/schemaData';
+import { generateBreadcrumbSchema, generateFAQSchema, generateLocationPageSchema } from '../../../utils/schemaData';
 
+const locationSchema = generateLocationPageSchema({
+  locationName: 'La Vaguada',
+  pageUrl: 'https://impulse-english.es/cursos-ingles/adultos',
+});
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Cursos de Inglés', url: 'https://impulse-english.es/cursos-ingles/' },
+  { name: 'Clases de Inglés para Adultos', url: 'https://impulse-english.es/cursos-ingles/adultos/' },
+]);
 const schemas = [
+  ...locationItems,
+  breadcrumb,
   courseSchema,
   ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
 ];
+
 ---
 
 <BaseLayout
-  title="Clases Inglés Adultos"
-  description="Inglés para adultos en La Vaguada / Barrio del Pilar. Grupos máx. 8, horarios mañana y tarde, preparación Cambridge y centro oficial Linguaskill. Prueba de nivel gratis."
+  title="Clases de Inglés para Adultos Madrid | Cambridge | Impulse"
+  fullTitle={true}
+  description="Clases de inglés para adultos en La Vaguada y Barrio del Pilar, 94 €/mes. Grupos de máximo 8, horarios de mañana y tarde. Prueba de nivel gratuita."
   keywords="cursos inglés adultos la vaguada, clases inglés adultos barrio del pilar, inglés para adultos madrid, cambridge adultos"
   canonical="/cursos-ingles/adultos/"
   schemas={schemas}

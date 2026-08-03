@@ -21,7 +21,7 @@ export function toCanonicalPageUrl(url: string): string {
 export const businessInfo = {
   name: NAP.name,
   alternateName: [NAP.legalName, NAP.shortName],
-  description: "Academia de inglés en Madrid especializada en preparación de exámenes Cambridge, Linguaskill y clases para todas las edades. Centro oficial Cambridge con 100% de aprobados.",
+  description: "Academia de inglés en Madrid especializada en preparación de exámenes Cambridge, Linguaskill y clases para todas las edades. Centro oficial Cambridge con 100% de aprobados en el curso 2024/25 (alumnos presentados).",
   url: NAP.website,
   logo: NAP.logo,
   image: NAP.image,
@@ -506,7 +506,7 @@ export function generateLocationPageSchema(props: LocationPageSchemaProps) {
     {
       "@type": "Service",
       name: `Preparación Exámenes Cambridge cerca de ${props.locationName}`,
-      description: `Centro oficial de preparación de exámenes Cambridge (B1, B2 First, C1 Advanced) cerca de ${props.locationName}, Madrid. 100% aprobados.`,
+      description: `Centro oficial de preparación de exámenes Cambridge (B1, B2 First, C1 Advanced) cerca de ${props.locationName}, Madrid. 100% de aprobados en el curso 2024/25 (alumnos presentados).`,
       serviceType: "Cambridge Exam Preparation"
     },
     {
@@ -529,7 +529,7 @@ export function generateLocationPageSchema(props: LocationPageSchemaProps) {
         },
         name: businessInfo.name,
         alternateName: businessInfo.alternateName,
-        description: `Academia de inglés cerca de ${props.locationName}, Madrid. Centro oficial Cambridge y Linguaskill con 100% de aprobados. Clases para todas las edades.`,
+        description: `Academia de inglés cerca de ${props.locationName}, Madrid. Centro oficial Cambridge y Linguaskill con 100% de aprobados en el curso 2024/25 (alumnos presentados). Clases para todas las edades.`,
         url: toCanonicalPageUrl(props.pageUrl),
         logo: {
           "@type": "ImageObject",

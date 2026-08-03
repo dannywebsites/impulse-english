@@ -62,6 +62,22 @@ const courses = [
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿En qué zona de Madrid estáis exactamente?",
+    answer: "En Av. de El Ferrol, 22, 28029 Madrid, en pleno Barrio del Pilar y junto al centro comercial La Vaguada, dentro del distrito de Fuencarral-El Pardo."
+  },
+  {
+    question: "¿Cómo se llega en metro y cuánto se tarda?",
+    answer: "Metro Barrio del Pilar (Línea 9) está a 3 minutos andando. Peñagrande y Herrera Oria, en la Línea 7, dejan también a poca distancia."
+  },
+  {
+    question: "¿Desde qué barrios vienen las familias?",
+    answer: "La mayoría vive en Barrio del Pilar, La Vaguada, Peñagrande, Mirasierra, Montecarmelo, Las Tablas, Sanchinarro, La Paz, Valdezarza, Tetuán, Chamartín y Plaza Castilla."
+  },
+  {
+    question: "¿Hay parada de autobús cerca del centro?",
+    answer: "Los autobuses 147, 42 y 83 tienen parada en Ginzo de Limia - Ferrol, a 1 minuto de la academia."
+  },
+  {
     question: "¿Qué cursos de inglés ofrecéis?",
     answer: "Ofrecemos cursos para todas las edades y niveles: Infantil (2-5 años) con metodología Great Little People, Primaria (6-12 años) con Cambridge Young Learners, Secundaria (13-17 años) con preparación Cambridge B1/B2/C1 y EBAU, Adultos (todos los niveles A1-C2), Clases Particulares presenciales u online, y Clases Online en directo por videollamada."
   },
@@ -75,7 +91,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Ofrecéis prueba de nivel gratuita?",
-    answer: "Sí, ofrecemos una prueba de nivel gratuita de 25 minutos sin compromiso. Evaluamos tu nivel actual de inglés y te recomendamos el curso más adecuado para tus objetivos. Puedes reservarla por WhatsApp, teléfono o a través de nuestra web."
+    answer: "Ofrecemos una prueba de nivel gratuita de 25 minutos sin compromiso. Evaluamos tu nivel actual de inglés y te recomendamos el curso más adecuado para tus objetivos. Puedes reservarla por WhatsApp, teléfono o a través de nuestra web."
   },
   {
     question: "¿Qué certificaciones oficiales puedo obtener?",
@@ -128,11 +144,11 @@ export default function CursosOverviewPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Cursos de Inglés en Madrid Norte
+              Cursos de inglés en Madrid, en La Vaguada, desde los 2 años
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
-              Programas para todas las edades, desde 2 años hasta adultos
+              Impulse English Academy imparte cursos de inglés en Madrid desde los 2 años hasta adultos, en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Somos centro oficial Cambridge y Linguaskill, con grupos de 7 a 8 alumnos y cuotas desde 64 €/mes.
             </p>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress}
@@ -382,6 +398,127 @@ export default function CursosOverviewPage() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            Detrás de todos los cursos están JP, director de estudios y cofundador, con más de 10 años enseñando inglés y experto en exámenes Cambridge, y Danny, cofundador, irlandés afincado en Madrid desde hace 12 años.
+          </p>
+        </div>
+      </section>
+
+      {/* Un caso real — hechos aprobados, sin claims de nivel inventados */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <span className="eyebrow mb-4">Un caso real</span>
+          <h2 className="t-h2 text-zinc-900 mb-5">Josmary</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+                Josmary entró, en sus palabras, <em>&laquo;con una situación un poco cacao&raquo;</em>: hablaba y entendía algo de inglés, pero tenía <em>&laquo;muchísimos vacíos de gramática, de vocabulario y de no saber en qué punto estaba&raquo;</em>.
+              </p>
+          <div className="card p-8">
+            <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
+              <div><p className="t-h3 text-accent-blue">Desde septiembre</p><p className="t-small text-zinc-600">en el grupo de B1</p></div>
+              <div><p className="t-h3 text-accent-blue">Clases de noche</p><p className="t-small text-zinc-600">compatibles con su trabajo</p></div>
+              <div><p className="t-h3 text-accent-blue">Un plan claro</p><p className="t-small text-zinc-600">y la confianza para equivocarse</p></div>
+            </div>
+            <p className="text-zinc-600 leading-relaxed">
+                Va a clase por la noche, en el grupo de B1 con JP.
+              </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen las familias y los alumnos
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Cesar Seneca Tellechea Corral", text: "Luego de pasar por varias academias en toda Madrid está fue la única que dio con el método y el contenido perfecto para aprender, tengo un C1 y es todo gracias a ellos." },
+              { name: "carmen suarez", text: "Academia totalmente recomendable para mejorar tu inglés, buenos profesores y mejores personas aún, si estás buscando una academia de calidad, este es tu sitio." },
+              { name: "Carlos Javier Ayllón Gordillo", text: "Excelente ambiente, profesores muy amables y muy cercanos a los estudiantes. Definitivamente recomiendo esta academia para aprender inglés." }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Precios de los cursos</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                Infantil desde <strong>64 €/mes</strong> · Primaria <strong>83 €/mes</strong> · Secundaria desde <strong>87 €/mes</strong> · Adultos <strong>94 €/mes</strong> · Clases particulares <strong>29 €/hora</strong>.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                A la cuota mensual se añaden la matrícula (<strong>45 €</strong>, una sola vez) y el libro de texto (<strong>máximo 40 €</strong>). Las tasas de los exámenes oficiales Cambridge y Linguaskill van aparte. Hay descuento por pago trimestral y descuento familiar.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
+      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
+        <div className="container mx-auto max-w-4xl">
+          <p className="text-zinc-500 text-sm text-center leading-relaxed">
+            <strong className="text-zinc-600">Otros cursos:</strong>{' '}
+            <a href="/cursos-ingles/infantil/" className="text-indigo-600 hover:underline">Inglés infantil (2-5 años)</a>
+            {' · '}
+            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
+            {' · '}
+            <a href="/cursos-ingles/secundaria/" className="text-indigo-600 hover:underline">Inglés para secundaria y EBAU</a>
+            {' · '}
+            <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline">Clases de inglés para adultos</a>
+            {' · '}
+            <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline">Clases particulares de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/online/" className="text-indigo-600 hover:underline">Clases de inglés online</a>
+          </p>
+          <p className="text-zinc-500 text-sm text-center mt-4">
+            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+          </p>
         </div>
       </section>
 

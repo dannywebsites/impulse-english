@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Baby, Music, Gamepad2, Heart, Users, Sparkles, Clock, CheckCircle, Star, Phone, Calendar } from 'lucide-react';
+import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -27,12 +28,28 @@ export const courseSchema = generateCourseSchema({
 // FAQs for Infantil page
 export const faqs: FAQItem[] = [
   {
+    question: "¿Dónde estáis y cómo llego con el carrito desde el metro?",
+    answer: "Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) está a 3 minutos andando por acera llana."
+  },
+  {
+    question: "¿Cuánto se tarda desde La Vaguada con niños pequeños?",
+    answer: "Desde el centro comercial La Vaguada es cosa de 1 minuto, y desde el resto de Barrio del Pilar, menos de 5. Muchas familias encadenan la clase con la compra."
+  },
+  {
+    question: "¿De qué barrios son las familias de infantil?",
+    answer: "Sobre todo de Barrio del Pilar, La Vaguada, Peñagrande, Valdezarza y Mirasierra, que son las zonas desde las que se llega andando o en una parada de metro."
+  },
+  {
+    question: "¿Puedo aparcar cerca para dejar y recoger?",
+    answer: "El parking del centro comercial La Vaguada está a 1 minuto y es la opción que usan casi todas las familias que vienen en coche."
+  },
+  {
     question: "¿Es buena idea empezar inglés a los 2 años?",
-    answer: "Sí, a esta edad el aprendizaje es natural y sin bloqueo. En clase trabajamos rutinas, canciones, juego guiado y comprensión oral para que el niño se familiarice con el idioma con confianza. El objetivo no es \"memorizar\", sino crear una relación positiva y constante con el inglés."
+    answer: "A esta edad el aprendizaje es natural y sin bloqueo. En clase trabajamos rutinas, canciones, juego guiado y comprensión oral para que el niño se familiarice con el idioma con confianza. El objetivo no es \"memorizar\", sino crear una relación positiva y constante con el inglés."
   },
   {
     question: "¿Mi hijo es tímido, funcionará?",
-    answer: "Sí. En grupos reducidos y con una metodología lúdica, los niños se sueltan poco a poco. No forzamos a \"hablar\" desde el minuto uno: primero escuchan, imitan y participan con gestos y juego. La confianza aparece cuando el entorno es seguro y repetible."
+    answer: "En grupos reducidos y con una metodología lúdica, los niños se sueltan poco a poco. No forzamos a \"hablar\" desde el minuto uno: primero escuchan, imitan y participan con gestos y juego. La confianza aparece cuando el entorno es seguro y repetible."
   },
   {
     question: "¿Necesito quedarme en clase?",
@@ -48,7 +65,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay material para practicar en casa?",
-    answer: "Sí. Usamos canciones y recursos que también pueden repetirse en casa sin convertirlo en deberes. La idea es reforzar lo visto en clase con un enfoque ligero: música, frases cortas y rutinas. Te damos pautas para acompañar el proceso sin presión."
+    answer: "Usamos canciones y recursos que también pueden repetirse en casa sin convertirlo en deberes. La idea es reforzar lo visto en clase con un enfoque ligero: música, frases cortas y rutinas. Te damos pautas para acompañar el proceso sin presión."
   },
   {
     question: "¿Qué pasa si un niño no se adapta rápido?",
@@ -56,7 +73,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Puedo probar antes de apuntarme?",
-    answer: "Sí. Ofrecemos clase de prueba gratuita para que tu hijo viva una sesión real y tú veas el método en acción. Te explicamos el grupo adecuado por edad y nivel de exposición previa. Sin compromiso."
+    answer: "Ofrecemos clase de prueba gratuita para que tu hijo viva una sesión real y tú veas el método en acción. Te explicamos el grupo adecuado por edad y nivel de exposición previa. Sin compromiso."
   },
   // Kids Early Childhood PAAs (10)
   {
@@ -65,11 +82,11 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Mi hijo confunde dos idiomas si aprende inglés y español?",
-    answer: "No. Los niños bilingües no se confunden; el cerebro maneja naturalmente dos códigos lingüísticos. Es normal una fase inicial de mezcla de palabras (code-switching), pero se resuelve naturalmente antes de los 4 años. Los bilingües tienen ventajas cognitivas: flexibilidad mental, creatividad, facilidad para aprender idiomas."
+    answer: "Los niños bilingües no se confunden; el cerebro maneja naturalmente dos códigos lingüísticos. Es normal una fase inicial de mezcla de palabras (code-switching), pero se resuelve naturalmente antes de los 4 años. Los bilingües tienen ventajas cognitivas: flexibilidad mental, creatividad, facilidad para aprender idiomas."
   },
   {
     question: "¿Los niños pequeños aprenden pronunciación mejor?",
-    answer: "Sí. Hasta los 7-8 años, el sistema auditivo es plástico y capta sonidos nativos con facilidad. Después, es más costoso. Los niños en Infantil desarrollan acento nativo en inglés con exposición regular. Aprovecha esta ventana: 2-5 años es oro puro para pronunciación."
+    answer: "Hasta los 7-8 años, el sistema auditivo es plástico y capta sonidos nativos con facilidad. Después, es más costoso. Los niños en Infantil desarrollan acento nativo en inglés con exposición regular. Aprovecha esta ventana: 2-5 años es oro puro para pronunciación."
   },
   {
     question: "¿Mi hijo dirá palabras en inglés rápido?",
@@ -77,7 +94,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Canciones y juegos suficientes para aprender?",
-    answer: "Sí, para Infantil (2-5) canciones y juegos son el vehículo perfecto. Los niños aprenden por imitación, repetición y asociación emocional. Una canción repetida 10 veces = vocabulario, ritmo, pronunciación. El juego = contexto donde las palabras cobran significado."
+    answer: "Para Infantil (2-5) canciones y juegos son el vehículo perfecto. Los niños aprenden por imitación, repetición y asociación emocional. Una canción repetida 10 veces = vocabulario, ritmo, pronunciación. El juego = contexto donde las palabras cobran significado."
   },
   {
     question: "¿Debo hablar inglés en casa si no lo domino?",
@@ -89,7 +106,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Se olvida si dejamos de ir a clase?",
-    answer: "Sí, el vocabulario pasivo se olvida sin práctica. Es como cualquier habilidad: discontinuidad = retroceso. Ideal: continuidad en clase + refuerzo mínimo en casa (una canción semanal). Pero una pausa de 2-3 meses no borra todo; vuelven rápido si retoman."
+    answer: "El vocabulario pasivo se olvida sin práctica. Es como cualquier habilidad: discontinuidad = retroceso. Ideal: continuidad en clase + refuerzo mínimo en casa (una canción semanal). Pero una pausa de 2-3 meses no borra todo; vuelven rápido si retoman."
   },
   {
     question: "¿Great Little People mejor que otros métodos?",
@@ -97,7 +114,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Niños 2 años vs 5 años en la misma clase?",
-    answer: "No, dividimos por edad/nivel. 2-3 años: focus en rutinas, gestos, vocabulario pasivo. 4-5 años: frases, conversación simple, pre-lectoescritura en inglés. Aunque la metodología es la misma, el contenido y ritmo se adaptan. Grupos por edad = máxima efectividad."
+    answer: "Dividimos por edad/nivel. 2-3 años: focus en rutinas, gestos, vocabulario pasivo. 4-5 años: frases, conversación simple, pre-lectoescritura en inglés. Aunque la metodología es la misma, el contenido y ritmo se adaptan. Grupos por edad = máxima efectividad."
   },
   {
     question: "¿A qué edad puede un niño empezar clases de inglés en academia?",
@@ -113,7 +130,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Las clases de inglés para bebés realmente funcionan?",
-    answer: "Sí, la neurociencia confirma que entre los 0 y 6 años el cerebro está en su momento óptimo para adquirir idiomas. La exposición temprana al inglés a través de canciones, juegos y rutinas crea conexiones neuronales que facilitan el aprendizaje futuro. No se busca que el bebé hable, sino que absorba sonidos, ritmos y patrones del idioma."
+    answer: "La neurociencia confirma que entre los 0 y 6 años el cerebro está en su momento óptimo para adquirir idiomas. La exposición temprana al inglés a través de canciones, juegos y rutinas crea conexiones neuronales que facilitan el aprendizaje futuro. No se busca que el bebé hable, sino que absorba sonidos, ritmos y patrones del idioma."
   },
   {
     question: "¿Cómo saber si una academia de inglés es buena para mi hijo pequeño?",
@@ -167,11 +184,11 @@ export default function InfantilPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Inglés para Infantil
+              Clases de inglés infantil de 2 a 5 años en La Vaguada
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mb-10 animate-hero-fade-up animation-delay-200">
-              Los más pequeños aprenden jugando, cantando y explorando en un entorno seguro y positivo. Metodología Great Little People en La Vaguada, Barrio del Pilar.
+              Enseñamos inglés a niños de 2 a 5 años en Barrio del Pilar, en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Trabajamos con el método Great Little People, 100% en inglés, en grupos de máximo 7 alumnos y desde 64 €/mes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-hero-fade-up animation-delay-300">
               <a
@@ -443,6 +460,105 @@ export default function InfantilPage() {
             showLevel={false}
             variant="refresh"
           />
+        </div>
+      </section>
+
+
+      {/* Equipo — personas con nombre y credenciales verificables */}
+      <section className="section px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Quién da las clases</h2>
+          <div className="rule"></div>
+          <p className="text-zinc-600 leading-relaxed mt-6 max-w-3xl">
+            El grupo de infantil lo supervisa JP, director de estudios y cofundador del centro, con más de 10 años enseñando inglés. Danny, cofundador, es irlandés y lleva 12 años viviendo en Madrid, y es quien organiza los campamentos en Irlanda.
+          </p>
+        </div>
+      </section>
+
+      {/* Reseñas verbatim de Google — verificadas por reviews/verify_quotes.py */}
+      <section className="section-lead px-6 surface-alt">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-12 text-center">
+            Lo que dicen las familias de infantil
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { name: "Patricia Gallardo", text: "Muy majetes y muy flexibles. Yo he ido todo el año con mi bebé. Su método para aprender mediante app, el mejor que he visto (a parte de los libros)." },
+              { name: "Salvador Muñoz-Perea", text: "Una verdadera academia de inglés, donde mis hijas van felices y aprendan inglés de verdad. Pero sobretodo hay destacar el trato cercano y familiar" },
+              { name: "Pepi Moral ventura", text: "El ambiente, los profesores, una academia excelente para todos los públicos. Mis hijos están encantados de ir son muy profesionales. Se nota que tienen experiencia en formación." }
+            ].map((r) => (
+              <blockquote key={r.name} className="card p-6">
+                <p className="text-zinc-600 leading-relaxed mb-4">&laquo;{r.text}&raquo;</p>
+                <cite className="t-small text-zinc-900 not-italic font-semibold">{r.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+          <p className="t-small text-zinc-500 text-center mt-8">
+            Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
+          </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta el curso de infantil</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                Infantil son <strong>64 €/mes</strong> con una clase de 60 min a la semana, o <strong>99 €/mes</strong> con dos clases semanales. Los grupos son de máximo 7 niños.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                El primer mes se suman la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): <strong>149 €</strong> el primer mes con una clase semanal, y desde 64 €/mes después. Hay descuento por pago trimestral y descuento familiar.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Interlinking: sube al hub, cruza a los hermanos y vuelve a la home */}
+      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
+        <div className="container mx-auto max-w-4xl">
+          <p className="text-zinc-500 text-sm text-center leading-relaxed">
+            <strong className="text-zinc-600">Otros cursos:</strong>{' '}
+            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
+            {' · '}
+            <a href="/cursos-ingles/secundaria/" className="text-indigo-600 hover:underline">Inglés para secundaria y EBAU</a>
+            {' · '}
+            <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline">Clases de inglés para adultos</a>
+            {' · '}
+            <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline">Clases particulares de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/online/" className="text-indigo-600 hover:underline">Clases de inglés online</a>
+          </p>
+          <p className="text-zinc-500 text-sm text-center mt-4">
+            <a href="/" className="text-indigo-600 hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+          </p>
         </div>
       </section>
 

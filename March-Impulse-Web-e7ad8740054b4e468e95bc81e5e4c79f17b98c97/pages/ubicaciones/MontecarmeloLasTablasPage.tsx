@@ -675,6 +675,29 @@ export default function MontecarmeloLasTablasPage() {
         </div>
       </section>
 
+
+      {/* Downline: el hub de barrios reparte hacia cada curso */}
+      <section className="section-lead px-6 surface-alt border-t border-zinc-100">
+        <div className="container mx-auto max-w-4xl">
+          <p className="text-zinc-500 text-sm text-center leading-relaxed">
+            <strong className="text-zinc-600">Cursos disponibles:</strong>{' '}
+            <a href="/cursos-ingles/" className="text-indigo-600 hover:underline">Todos los cursos</a>
+            {' · '}
+            <a href="/cursos-ingles/infantil/" className="text-indigo-600 hover:underline">Inglés infantil (2-5 años)</a>
+            {' · '}
+            <a href="/cursos-ingles/primaria/" className="text-indigo-600 hover:underline">Inglés para primaria (6-12)</a>
+            {' · '}
+            <a href="/cursos-ingles/secundaria/" className="text-indigo-600 hover:underline">Inglés para secundaria y EBAU</a>
+            {' · '}
+            <a href="/cursos-ingles/adultos/" className="text-indigo-600 hover:underline">Clases de inglés para adultos</a>
+            {' · '}
+            <a href="/cursos-ingles/particulares/" className="text-indigo-600 hover:underline">Clases particulares de inglés</a>
+            {' · '}
+            <a href="/cursos-ingles/online/" className="text-indigo-600 hover:underline">Clases de inglés online</a>
+          </p>
+        </div>
+      </section>
+
       <Footer />
 
       {/* Schema.org Structured Data */}
