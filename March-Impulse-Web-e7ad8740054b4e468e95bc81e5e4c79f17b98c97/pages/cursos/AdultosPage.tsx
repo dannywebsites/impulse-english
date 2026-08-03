@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Briefcase, BookOpen, Users, Target, Globe, Award, Clock, CheckCircle, Phone, Calendar, Coffee, Sun } from 'lucide-react';
+import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -582,14 +583,18 @@ export default function AdultosPage() {
           <span className="eyebrow mb-4">Un caso real</span>
           <h2 className="t-h2 text-zinc-900 mb-5">Sergio</h2>
           <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl" dangerouslySetInnerHTML={{ __html: "Sergio llegó con el inglés de cualquiera que ha pasado por el sistema educativo español sin volver a usarlo. En sus palabras: <em>&laquo;siempre he tenido una gran carencia de confianza para hablar en inglés&raquo;</em>. No era gramática, era no atreverse." }} />
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+                Sergio llegó con el inglés de cualquiera que ha pasado por el sistema educativo español sin volver a usarlo. En sus palabras: <em>&laquo;siempre he tenido una gran carencia de confianza para hablar en inglés&raquo;</em>. No era gramática, era no atreverse.
+              </p>
           <div className="card p-8">
             <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
               <div><p className="t-h3 text-accent-blue">30 años</p><p className="t-small text-zinc-600">cuando se puso en serio</p></div>
               <div><p className="t-h3 text-accent-blue">Dublín</p><p className="t-small text-zinc-600">sus primeros meses fuera</p></div>
               <div><p className="t-h3 text-accent-blue">2 años</p><p className="t-small text-zinc-600">viviendo y trabajando en Irlanda</p></div>
             </div>
-            <p className="text-zinc-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: "Hoy trabaja como analista de pólizas en una empresa irlandesa." }} />
+            <p className="text-zinc-600 leading-relaxed">
+                Hoy trabaja como analista de pólizas en una empresa irlandesa.
+              </p>
           </div>
         </div>
       </section>
@@ -615,6 +620,45 @@ export default function AdultosPage() {
           <p className="t-small text-zinc-500 text-center mt-8">
             Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
           </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta el curso de adultos</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                El grupo de adultos son <strong>94 €/mes</strong>, con clases semanales en grupos de máximo 8. Los cursos del centro van desde <strong>64 €</strong> hasta <strong>99 €</strong> al mes según el curso y el número de clases.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                El primer mes se paga además la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): en total <strong>179 €</strong> el primer mes y 94 €/mes después. Las tasas de examen Cambridge o Linguaskill van aparte.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

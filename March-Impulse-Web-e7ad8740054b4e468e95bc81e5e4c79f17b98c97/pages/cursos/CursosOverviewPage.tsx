@@ -403,14 +403,18 @@ export default function CursosOverviewPage() {
           <span className="eyebrow mb-4">Un caso real</span>
           <h2 className="t-h2 text-zinc-900 mb-5">Josmary</h2>
           <div className="rule"></div>
-          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl" dangerouslySetInnerHTML={{ __html: "Josmary entró, en sus palabras, <em>&laquo;con una situación un poco cacao&raquo;</em>: hablaba y entendía algo de inglés, pero tenía <em>&laquo;muchísimos vacíos de gramática, de vocabulario y de no saber en qué punto estaba&raquo;</em>." }} />
+          <p className="text-zinc-600 leading-relaxed my-6 max-w-3xl">
+                Josmary entró, en sus palabras, <em>&laquo;con una situación un poco cacao&raquo;</em>: hablaba y entendía algo de inglés, pero tenía <em>&laquo;muchísimos vacíos de gramática, de vocabulario y de no saber en qué punto estaba&raquo;</em>.
+              </p>
           <div className="card p-8">
             <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
               <div><p className="t-h3 text-accent-blue">Desde septiembre</p><p className="t-small text-zinc-600">en el grupo de B1</p></div>
               <div><p className="t-h3 text-accent-blue">Clases de noche</p><p className="t-small text-zinc-600">compatibles con su trabajo</p></div>
               <div><p className="t-h3 text-accent-blue">Un plan claro</p><p className="t-small text-zinc-600">y la confianza para equivocarse</p></div>
             </div>
-            <p className="text-zinc-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: "Va a clase por la noche, en el grupo de B1 con JP." }} />
+            <p className="text-zinc-600 leading-relaxed">
+                Va a clase por la noche, en el grupo de B1 con JP.
+              </p>
           </div>
         </div>
       </section>
@@ -436,6 +440,45 @@ export default function CursosOverviewPage() {
           <p className="t-small text-zinc-500 text-center mt-8">
             Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
           </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Precios de los cursos</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                Infantil desde <strong>64 €/mes</strong> · Primaria <strong>83 €/mes</strong> · Secundaria desde <strong>87 €/mes</strong> · Adultos <strong>94 €/mes</strong> · Clases particulares <strong>29 €/hora</strong>.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                A la cuota mensual se añaden la matrícula (<strong>45 €</strong>, una sola vez) y el libro de texto (<strong>máximo 40 €</strong>). Las tasas de los exámenes oficiales Cambridge y Linguaskill van aparte. Hay descuento por pago trimestral y descuento familiar.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

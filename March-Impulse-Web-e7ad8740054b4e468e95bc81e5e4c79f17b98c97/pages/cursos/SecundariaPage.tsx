@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { GraduationCap, FileText, Target, TrendingUp, Clock, Award, Users, Phone, Calendar, CheckCircle } from 'lucide-react';
+import { NAP } from '../../utils/napData';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import LeadForm from '../../components/LeadForm';
@@ -477,6 +478,45 @@ export default function SecundariaPage() {
           <p className="t-small text-zinc-500 text-center mt-8">
             Reseñas reales publicadas en nuestro perfil de Google, reproducidas sin editar.
           </p>
+        </div>
+      </section>
+
+
+      {/* Precios reales y NAP — cifras aprobadas, direccion y horario desde napData */}
+      <section className="section px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta el curso de secundaria</h2>
+          <div className="rule"></div>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="card p-6">
+              <p className="text-zinc-600 leading-relaxed mb-4">
+                Secundaria va por cursos: S1-S3 <strong>87 €/mes</strong> o <strong>251 €/trimestre</strong>; S4-S6 <strong>91 €/mes</strong> o <strong>263 €/trimestre</strong>; S7-S8 <strong>93 €/mes</strong> o <strong>269 €/trimestre</strong>. Desde <strong>87 €/mes</strong>.
+              </p>
+              <p className="text-zinc-600 leading-relaxed">
+                Aparte quedan la matrícula (<strong>45 €</strong>), el libro (<strong>máximo 40 €</strong>) y las tasas del examen Cambridge, que se pagan solo si te presentas. Hay descuento por pago trimestral y descuento familiar.
+              </p>
+              <p className="t-small text-zinc-500 mt-4">
+                <a href="/precios/" className="text-indigo-600 hover:underline">Ver todos los precios</a>
+              </p>
+            </div>
+            <div className="card p-6">
+              <h3 className="t-h3 text-zinc-900 mb-3">Dónde estamos y cuándo abrimos</h3>
+              <p className="text-zinc-600 leading-relaxed mb-3">{NAP.fullAddress}</p>
+              <p className="text-zinc-600 leading-relaxed mb-3">
+                Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro
+                Herrera Oria (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol,
+                a 1 min · el centro comercial La Vaguada está a 1 min.
+              </p>
+              <ul className="t-small text-zinc-600 mb-3">
+                {NAP.openingHoursText.map((h) => (<li key={h}>{h}</li>))}
+              </ul>
+              <p className="text-zinc-600">
+                <a href={NAP.phoneTel} className="text-indigo-600 hover:underline">{NAP.phone}</a>
+                {' · '}
+                <a href={NAP.whatsappUrl} className="text-indigo-600 hover:underline">WhatsApp</a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
