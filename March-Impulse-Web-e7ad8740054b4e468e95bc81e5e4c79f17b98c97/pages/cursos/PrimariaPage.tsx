@@ -27,12 +27,28 @@ export const courseSchema = generateCourseSchema({
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿Dónde está el centro y qué metro me deja cerca?",
+    answer: "En Av. de El Ferrol, 22, al lado del centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) queda a 3 minutos andando."
+  },
+  {
+    question: "¿Cuánto se tarda desde los colegios de la zona?",
+    answer: "Desde los colegios de Barrio del Pilar y La Vaguada, entre 5 y 10 minutos andando. Por eso los grupos de primaria empiezan a media tarde, al salir de clase."
+  },
+  {
+    question: "¿Desde qué barrios vienen los niños de primaria?",
+    answer: "De Barrio del Pilar, La Vaguada, Peñagrande, Valdezarza, Mirasierra, La Paz y Tetuán, principalmente."
+  },
+  {
+    question: "¿Qué autobús para cerca de la academia?",
+    answer: "Los buses 147, 42 y 83, en la parada Ginzo de Limia - Ferrol, a 1 minuto de la puerta."
+  },
+  {
     question: "¿Cómo sé qué nivel tiene mi hijo?",
     answer: "Con una prueba de nivel sencilla y observación en clase. Evaluamos comprensión, vocabulario, lectura y expresión oral según su edad. Así evitamos grupos descompensados y conseguimos progreso real. Te explicamos el punto de partida y el plan de mejora de forma clara."
   },
   {
     question: "¿Se puede preparar Cambridge en primaria?",
-    answer: "Sí, con un enfoque adecuado. No se trata de \"examen\" desde el primer día, sino de construir base y familiaridad con el formato. Cuando el alumno está listo, trabajamos tareas tipo, vocabulario y simulacros. El objetivo es seguridad y progreso, no presión."
+    answer: "Con un enfoque adecuado. No se trata de \"examen\" desde el primer día, sino de construir base y familiaridad con el formato. Cuando el alumno está listo, trabajamos tareas tipo, vocabulario y simulacros. El objetivo es seguridad y progreso, no presión."
   },
   {
     question: "¿Qué es más importante: gramática o hablar?",
@@ -56,7 +72,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay prueba de nivel gratuita?",
-    answer: "Sí. Ofrecemos clase/prueba de nivel para ubicar al alumno en su grupo ideal. Así puedes ver el ambiente, el método y cómo trabajamos. Sin compromiso."
+    answer: "Ofrecemos clase/prueba de nivel para ubicar al alumno en su grupo ideal. Así puedes ver el ambiente, el método y cómo trabajamos. Sin compromiso."
   },
   // Kids Primary PAAs (8)
   {
@@ -77,7 +93,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Leer en inglés siendo niño?",
-    answer: "Sí, a partir de 7-8 años con libros adaptados (Easy Readers A1-A2). Lectura tiene beneficios enormes: gramática, vocabulario, pronunciación mental. Usar libros con ilustraciones, historias atractivas, longitud adecuada. 15-20 min lectura semanal = mejora visible en 2-3 meses."
+    answer: "A partir de 7-8 años con libros adaptados (Easy Readers A1-A2). Lectura tiene beneficios enormes: gramática, vocabulario, pronunciación mental. Usar libros con ilustraciones, historias atractivas, longitud adecuada. 15-20 min lectura semanal = mejora visible en 2-3 meses."
   },
   {
     question: "¿Videos en inglés para niños?",

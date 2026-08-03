@@ -22,12 +22,28 @@ export const courseSchema = generateCourseSchema({
 
 export const faqs: FAQItem[] = [
   {
+    question: "¿Desde dónde dais las clases online?",
+    answer: "Desde la propia academia, en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Son los mismos profesores que dan las clases presenciales."
+  },
+  {
+    question: "¿Puedo alternar online y presencial en La Vaguada?",
+    answer: "Se puede combinar: vienes al centro de Barrio del Pilar cuando te encaja y te conectas el resto de días. El grupo y el profesor son los mismos."
+  },
+  {
+    question: "¿Cuánto se tarda hasta la academia si un día quiero ir?",
+    answer: "Metro Barrio del Pilar (Línea 9) deja a 3 minutos andando, y los buses 147, 42 y 83 paran a 1 minuto, en Ginzo de Limia - Ferrol."
+  },
+  {
+    question: "¿Hay alumnos online fuera de Madrid o del barrio?",
+    answer: "El formato online está pensado justo para quien no puede acercarse: alumnos de otras zonas de Madrid y de fuera de la Comunidad siguen el curso desde casa."
+  },
+  {
     question: "¿Las clases online son en directo o grabadas?",
     answer: "Siempre en directo por videoconferencia con tu profesor. No son vídeos pregrabados. Participas, preguntas, practicas speaking y recibes correcciones en tiempo real, igual que en clase presencial."
   },
   {
     question: "¿Puedo combinar clases online y presencial?",
-    answer: "Sí. Ofrecemos modalidad híbrida: puedes asistir presencialmente cuando puedas y conectarte online cuando no. El progreso es continuo independientemente del formato. Es la opción favorita de profesionales con horarios variables."
+    answer: "Ofrecemos modalidad híbrida: puedes asistir presencialmente cuando puedas y conectarte online cuando no. El progreso es continuo independientemente del formato. Es la opción favorita de profesionales con horarios variables."
   },
   {
     question: "¿Qué plataforma usáis para las clases online?",
@@ -35,15 +51,15 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Preparáis exámenes Cambridge y Linguaskill online?",
-    answer: "Sí. Preparamos B1 Preliminary, B2 First, C1 Advanced y Linguaskill en modalidad online con la misma metodología y resultados que en presencial. Nuestro 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados) incluye alumnos online."
+    answer: "Preparamos B1 Preliminary, B2 First, C1 Advanced y Linguaskill en modalidad online con la misma metodología y resultados que en presencial. Nuestro 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados) incluye alumnos online."
   },
   {
     question: "¿Las clases online son igual de efectivas?",
-    answer: "Sí, siempre que el grupo sea reducido y el profesor esté cualificado. Nuestros grupos online tienen máximo 8 alumnos, los mismos profesores que las clases presenciales y la misma metodología Impulse. La diferencia es solo el medio, no la calidad."
+    answer: "Siempre que el grupo sea reducido y el profesor esté cualificado. Nuestros grupos online tienen máximo 8 alumnos, los mismos profesores que las clases presenciales y la misma metodología Impulse. La diferencia es solo el medio, no la calidad."
   },
   {
     question: "¿Puedo hacer clases particulares online?",
-    answer: "Sí. Las clases particulares 1:1 funcionan muy bien online. Tú eliges horario, y el profesor adapta cada sesión a tus necesidades: preparación de exámenes, entrevistas de trabajo, reuniones en inglés o conversación general."
+    answer: "Las clases particulares 1:1 funcionan muy bien online. Tú eliges horario, y el profesor adapta cada sesión a tus necesidades: preparación de exámenes, entrevistas de trabajo, reuniones en inglés o conversación general."
   },
   {
     question: "¿Para quién son las clases online?",
@@ -51,7 +67,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay clases online para niños y adolescentes?",
-    answer: "Sí. Ofrecemos clases online para primaria (6-12 años) y secundaria (13-17 años) con la misma preparación Cambridge. Los grupos son reducidos para mantener la atención y participación activa de cada alumno."
+    answer: "Ofrecemos clases online para primaria (6-12 años) y secundaria (13-17 años) con la misma preparación Cambridge. Los grupos son reducidos para mantener la atención y participación activa de cada alumno."
   }
 ];
 
