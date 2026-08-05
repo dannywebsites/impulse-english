@@ -56,7 +56,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Academia inglés Peñagrande con buena relación calidad-precio?",
-    answer: "Impulse English ofrece excelente relación de valor en Peñagrande. Incluimos material didáctico, simulacros de examen, seguimiento personalizado y garantía 100% aprobados Cambridge sin matrícula inicial. Prueba de nivel gratuita para evaluar tu caso. Contacta para conocer opciones."
+    answer: "Impulse English ofrece excelente relación de valor en Peñagrande. Incluimos material de clase, simulacros de examen, seguimiento personalizado y garantía 100% aprobados Cambridge. Al margen de la cuota hay dos pagos únicos: matrícula, 45 €, y libro, como mucho 40 €. Prueba de nivel gratuita para evaluar tu caso. Contacta para conocer opciones."
   },
   {
     question: "¿Hay academias de inglés para niños cerca de Peñagrande?",
@@ -545,8 +545,7 @@ export default function PenagrandePage() {
           </div>
           <p className="t-small text-zinc-500 mt-6">
             Fuera de la cuota solo hay dos cosas, y las dos se pagan una vez:
-            <strong> matrícula 45 €</strong> y <strong>libro, como mucho 40 €</strong>. Un primer mes
-            de Primaria sale por 168 € contándolo todo, y 83 € los meses siguientes. Dentro de la
+            <strong> matrícula 45 €</strong> y <strong>libro, como mucho 40 €</strong>. Dentro de la
             cuota entran las clases semanales, los simulacros de Cambridge, el seguimiento y los
             recursos online. Hay descuento por pago trimestral y por hermanos. Las tasas del examen
             oficial no las ponemos nosotros, las fija Cambridge.

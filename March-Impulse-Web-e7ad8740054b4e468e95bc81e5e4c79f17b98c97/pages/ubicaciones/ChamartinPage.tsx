@@ -332,7 +332,7 @@ export default function ChamartinPage() {
               </tbody>
             </table>
           </div>
-          <p className="t-small text-zinc-500 mt-6">A la cuota se suman <strong>45 € de matrícula</strong> y un <strong>libro de 40 € como máximo</strong>, ambos una única vez. Un adulto en grupo son 94 €/mes; un primer mes con matrícula y libro sale por 179 € contándolo todo. Dentro van las clases semanales, los simulacros de Cambridge, el seguimiento y los recursos online. Las tasas del examen oficial las cobra Cambridge, no la academia.</p>
+          <p className="t-small text-zinc-500 mt-6">A la cuota se suman <strong>45 € de matrícula</strong> y un <strong>libro de 40 € como máximo</strong>, ambos una única vez. Un adulto en grupo son 94 €/mes. Dentro van las clases semanales, los simulacros de Cambridge, el seguimiento y los recursos online. Las tasas del examen oficial las cobra Cambridge, no la academia.</p>
         </div>
       </section>
 

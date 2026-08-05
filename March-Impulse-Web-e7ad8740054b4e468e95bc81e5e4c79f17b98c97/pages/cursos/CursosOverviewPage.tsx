@@ -104,7 +104,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Cuáles son los precios de los cursos de inglés?",
-    answer: "Nuestros precios van desde 64€ hasta 99€ al mes, dependiendo del curso y la modalidad. No cobramos matrícula y el material didáctico está incluido. Ofrecemos descuento por pago trimestral. Consulta todos los detalles en nuestra página de precios o solicita información sin compromiso."
+    answer: "Nuestros precios van desde 64 € hasta 99 € al mes, dependiendo del curso y la modalidad. Aparte de la cuota se pagan una sola vez la matrícula (45 €) y el libro de texto (máximo 40 €). Ofrecemos descuento por pago trimestral y descuento familiar. Consulta todos los detalles en nuestra página de precios o solicita información sin compromiso."
   }
 ];
 
@@ -376,11 +376,11 @@ export default function CursosOverviewPage() {
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0" />
-                  <span className="text-zinc-700">Sin matrícula ni permanencia</span>
+                  <span className="text-zinc-700">Matrícula única de 45 €, sin permanencia</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0" />
-                  <span className="text-zinc-700">Material didáctico incluido</span>
+                  <span className="text-zinc-700">Material de clase incluido, libro aparte (máx. 40 €)</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0" />
