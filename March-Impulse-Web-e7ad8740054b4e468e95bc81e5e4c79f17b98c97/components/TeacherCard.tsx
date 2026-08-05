@@ -17,10 +17,21 @@ interface Props {
   eyebrow?: string;
   /** Alt text must describe this page's context, not be reused verbatim. */
   imageAlt: string;
+  /**
+   * Portrait to show. Defaults to JP so every existing caller is unchanged.
+   * The study-abroad pages front Daniel, not JP — the Ireland credential is his.
+   */
+  imageSrc?: string;
   children: React.ReactNode;
 }
 
-export default function TeacherCard({ heading, eyebrow = 'Quién da las clases', imageAlt, children }: Props) {
+export default function TeacherCard({
+  heading,
+  eyebrow = 'Quién da las clases',
+  imageAlt,
+  imageSrc = '/images/academy/jp-director-estudios.webp',
+  children,
+}: Props) {
   return (
     <section className="section bg-white px-6">
       <div className="container-narrow">
@@ -33,7 +44,7 @@ export default function TeacherCard({ heading, eyebrow = 'Quién da las clases',
         <div className="grid items-start gap-10 md:grid-cols-[280px_1fr]">
           <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-panel">
             <img
-              src="/images/academy/jp-director-estudios.webp"
+              src={imageSrc}
               alt={imageAlt}
               className="h-full w-full object-cover"
               loading="lazy"

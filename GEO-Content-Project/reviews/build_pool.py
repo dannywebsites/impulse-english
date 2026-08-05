@@ -36,7 +36,10 @@ MAX_CHARS = 600
 
 # Teachers we are allowed to name on the site. Anything else in a quote
 # disqualifies that quote (we do not edit the customer's text).
-APPROVED_TEACHERS = {"jp", "danny", "dani", "daniel"}
+# "fitzpatrick" added 2026-08-05: the capitalised-token scan splits "Danny
+# Fitzpatrick" and flagged the surname of a cofounder as an unapproved teacher,
+# which blocked the only review describing the Ireland programme.
+APPROVED_TEACHERS = {"jp", "danny", "dani", "daniel", "fitzpatrick"}
 
 # Teachers who really do appear in the reviews but are not in the approved set.
 # Matched case-insensitively anywhere in the text, because the capitalised-token
@@ -56,6 +59,12 @@ NOT_PEOPLE = {
     "nueva", "york", "londres", "dublín", "dublin", "recomiendo", "gracias",
     "muchas", "enhorabuena", "gran", "gente", "gracias", "gustaría", "gustaria",
     "gustan", "también", "gonzalo", "gustó",
+    # Study-abroad vocabulary, added 2026-08-05 with the /ingles-en-el-extranjero/
+    # pages. "Canadá" and "Osteópatas" were both being read as teacher names.
+    # Lookup happens after strip_accents(), so the unaccented form is what matters.
+    "canada", "malta", "osteopatas", "osteopata", "drogheda", "eaquals",
+    "aseproce", "irlandes", "irlandesa", "escocia", "gales", "boston", "toronto",
+    "vancouver", "florida", "california",
 }
 
 
