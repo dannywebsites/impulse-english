@@ -18,3 +18,8 @@ social-repurpose/*.log
 social-repurpose/keepers.txt
 social-repurpose/accounts.json
 social-repurpose/media_cache.json
+
+# Scraped Facebook media — staging only, never committed.
+# Contains identifiable minors with no documented consent for web use (GDPR/LOPDGDD).
+# Images move to public/images/ ONLY after manifest.json marks them consentCleared.
+new fotos/facebook-scrape/
