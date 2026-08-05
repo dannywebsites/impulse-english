@@ -2,12 +2,12 @@
   "meta": {
     "place_id": "ChIJG7G2oAkpQg0Re7iLuuLzbr4",
     "cid": "13722173269762357371",
-    "pulled_at": "2026-08-02 21:05:11 +00:00",
+    "pulled_at": "2026-08-05 17:05:29 +00:00",
     "rating": 5,
-    "reviews_count": 180,
-    "pulled_count": 180,
+    "reviews_count": 183,
+    "pulled_count": 183,
     "source": "DataForSEO business_data/google/reviews",
-    "eligible": 99,
+    "eligible": 101,
     "rules": {
       "min_chars": 43,
       "max_chars": 600,
@@ -22,6 +22,66 @@
   },
   "reviews": [
     {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xwcU4zTTRjVmxrUzAxNFVrTnJjVUYzYkMwemExRRAB",
+      "author": "Lorena",
+      "author_url": "https://www.google.com/maps/contrib/106077310592659901036/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Este año he sido alumna de Andrea y la experiencia ha sido buenísima. Vengo desde Montecarmelo, donde me costó bastante encontrar una academia buena, así que dar con Impulse fue todo un acierto. En septiembre vuelvo, y voy a por el B2 , JP me dijo que lo sacaba, así que ahí estaré!",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-08-04 12:45:25 +00:00",
+      "time_ago": "hace un día",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwcU4zTTRjVmxrUzAxNFVrTnJjVUYzYkMwemExRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlpqN3M4cVlkS014UkNrcUF3bC0za1E%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "cambridge"
+      ],
+      "eligible": false,
+      "blocked_by": [
+        "no full name",
+        "names a teacher outside the approved set: Andrea, Montecarmelo"
+      ]
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xoclMxY3lMWFJhWTNseFNuZHpTakZqTTBaNWQwRRAB",
+      "author": "Jorge - Work & Study Travel - España -",
+      "author_url": "https://www.google.com/maps/contrib/103489410319435307495/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Fantastica Academia y colaborador con el que es un gusto trabajar y trasladar experiencias maravillosas a los alumnos y estudiantes de Impulse English Academy. Gracias Daniel por todo lo que haces con nosotros y tus alumnos.",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-08-04 11:06:45 +00:00",
+      "time_ago": "hace un día",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoclMxY3lMWFJhWTNseFNuZHpTakZqTTBaNWQwRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlhrS1cyLXRaY3lxSndzSjFjM0Z5d0E%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pGZlQxUm5SRXBaT0RaVFVWZ3hSMnRTTUc5UE4zYxAB",
+      "author": "Jose Hernandez",
+      "author_url": "https://www.google.com/maps/contrib/107802038625033334964/reviews?hl=es-ES",
+      "local_guide": false,
+      "rating": 5,
+      "text": "Muy profesionales, mis niños están muy contentos, sin dudas los recomiendo",
+      "original_text": null,
+      "language": "es",
+      "timestamp": "2026-08-04 09:22:14 +00:00",
+      "time_ago": "hace un día",
+      "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGZlQxUm5SRXBaT0RaVFVWZ3hSMnRTTUc5UE4zYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjFfT1RnREpZODZTUVgxR2tSMG9PN3c%7C%7C?hl=es",
+      "owner_answered": true,
+      "themes": [
+        "kids",
+        "adult",
+        "recommend"
+      ],
+      "eligible": true,
+      "blocked_by": []
+    },
+    {
       "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21wc2FXcFFTRTVQYkMxaFZXNDRSVlkyVVd0Q0xVRRAB",
       "author": "Virginia Toledo",
       "author_url": "https://www.google.com/maps/contrib/112795340178443663927/reviews?hl=es-ES",
@@ -31,7 +91,7 @@
       "original_text": null,
       "language": "es",
       "timestamp": "2026-07-31 06:55:58 +00:00",
-      "time_ago": "hace 2 días",
+      "time_ago": "hace 5 días",
       "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wc2FXcFFTRTVQYkMxaFZXNDRSVlkyVVd0Q0xVRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmpsaWpQSE5PbC1hVW44RVY2UWtCLUE%7C%7C?hl=es",
       "owner_answered": true,
       "themes": [
@@ -52,7 +112,7 @@
       "original_text": null,
       "language": "es",
       "timestamp": "2026-07-29 21:40:14 +00:00",
-      "time_ago": "hace 3 días",
+      "time_ago": "hace 6 días",
       "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKWk1rZ3hPRU53TVMxQ1VEQTJWbWRUVDJoNFRXYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjJZMkgxOENwMS1CUDA2VmdTT2h4TWc%7C%7C?hl=es",
       "owner_answered": true,
       "themes": [
@@ -99,7 +159,7 @@
       "original_text": null,
       "language": "es",
       "timestamp": "2026-07-14 16:24:09 +00:00",
-      "time_ago": "Hace 2 semanas",
+      "time_ago": "Hace 3 semanas",
       "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sTlRFSktYMEZXYVRSRVFWQTNTRlYwTkhaMFkyYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmlNTEJKX0FWaTREQVA3SFV0NHZ0Y2c%7C%7C?hl=es",
       "owner_answered": true,
       "themes": [
@@ -142,7 +202,7 @@
       "original_text": "JP is THE MAN",
       "language": "en",
       "timestamp": "2026-07-05 08:32:13 +00:00",
-      "time_ago": "Hace 4 semanas",
+      "time_ago": "Hace un mes",
       "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaSmFraGFNRkV6YVRoRGRXRnlObkZ5YzI5eFlWRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlZJakhaMFEzaThDdWFyNnFyc29xYVE%7C%7C?hl=es",
       "owner_answered": true,
       "themes": [],
@@ -278,7 +338,7 @@
       "original_text": null,
       "language": "es",
       "timestamp": "2026-05-03 23:23:36 +00:00",
-      "time_ago": "Hace 2 meses",
+      "time_ago": "Hace 3 meses",
       "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KTVpsUkxjV2s1V0dFeVkyNXZjWEJuTFVoT1NGRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOnJMZlRLcWk5WGEyY25vcXBnLUhOSFE%7C%7C?hl=es",
       "owner_answered": true,
       "themes": [],
