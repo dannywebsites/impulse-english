@@ -7,7 +7,7 @@
     "reviews_count": 180,
     "pulled_count": 180,
     "source": "DataForSEO business_data/google/reviews",
-    "eligible": 95,
+    "eligible": 99,
     "rules": {
       "min_chars": 43,
       "max_chars": 600,
@@ -861,7 +861,7 @@
       ],
       "eligible": false,
       "blocked_by": [
-        "names a teacher outside the approved set: Las, Ojalá"
+        "names a teacher outside the approved set: Ojalá"
       ]
     },
     {
@@ -880,10 +880,8 @@
       "themes": [
         "method"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "names a teacher outside the approved set: Además"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pkQlRXVnNhV05LZWtWd1FVTXROblJ4VDFSRFIxRRAB",
@@ -927,7 +925,7 @@
       ],
       "eligible": false,
       "blocked_by": [
-        "names a teacher outside the approved set: Ahu, Totalmente"
+        "names a teacher outside the approved set: Ahu"
       ]
     },
     {
@@ -1171,7 +1169,7 @@
       ],
       "eligible": false,
       "blocked_by": [
-        "names a teacher outside the approved set: Los, Philip"
+        "names a teacher outside the approved set: Philip"
       ]
     },
     {
@@ -1681,10 +1679,8 @@
         "adult",
         "recommend"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "names a teacher outside the approved set: Recomendados, Sigan"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN0NDQtMWJBEAE",
@@ -1766,7 +1762,7 @@
       ],
       "eligible": false,
       "blocked_by": [
-        "names a teacher outside the approved set: Excelente, Stephen"
+        "names a teacher outside the approved set: Stephen"
       ]
     },
     {
@@ -2473,10 +2469,8 @@
       "themes": [
         "progress"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "names a teacher outside the approved set: Sobre"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjZpdDZRRRAB",
@@ -3534,10 +3528,8 @@
         "atmosphere",
         "recommend"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "names a teacher outside the approved set: Trato"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwajlESzRRRRAB",

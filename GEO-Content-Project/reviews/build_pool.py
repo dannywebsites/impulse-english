@@ -65,6 +65,16 @@ NOT_PEOPLE = {
     "canada", "malta", "osteopatas", "osteopata", "drogheda", "eaquals",
     "aseproce", "irlandes", "irlandesa", "escocia", "gales", "boston", "toronto",
     "vancouver", "florida", "california",
+    # Ordinary Spanish words that happen to start a sentence, so the
+    # capitalised-token scan reads them as names. Each one here was observed
+    # blocking a real review: "Sobre todo…", "Sigan así", "Recomendados 100%".
+    "sobre", "sigan", "recomendados", "recomendado", "recomendable", "excelente",
+    "excelentes", "desde", "tanto", "completamente", "totalmente", "siempre",
+    "ademas", "aunque", "porque", "cuando", "despues", "ahora", "todos", "todas",
+    "nunca", "nada", "personalmente", "realmente", "gran", "grandes", "mejor",
+    "mejores", "buenos", "buenas", "buena", "bueno", "clases", "profesores",
+    "profesorado", "trato", "ambiente", "calidad", "atencion", "hola", "estoy",
+    "llevo", "hace", "para", "como", "salir", "hay", "mis", "mi", "los", "las",
 }
 
 
