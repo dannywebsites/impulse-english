@@ -7,7 +7,7 @@
     "reviews_count": 180,
     "pulled_count": 180,
     "source": "DataForSEO business_data/google/reviews",
-    "eligible": 93,
+    "eligible": 95,
     "rules": {
       "min_chars": 43,
       "max_chars": 600,
@@ -15,6 +15,7 @@
         "dani",
         "daniel",
         "danny",
+        "fitzpatrick",
         "jp"
       ]
     }
@@ -1454,10 +1455,8 @@
         "parent",
         "atmosphere"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "names a teacher outside the approved set: Fitzpatrick"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMa0t6UVl3EAE",
@@ -3085,10 +3084,8 @@
       "themes": [
         "recommend"
       ],
-      "eligible": false,
-      "blocked_by": [
-        "names a teacher outside the approved set: Canadá, Osteópatas"
-      ]
+      "eligible": true,
+      "blocked_by": []
     },
     {
       "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwdm9XdGF3EAE",
