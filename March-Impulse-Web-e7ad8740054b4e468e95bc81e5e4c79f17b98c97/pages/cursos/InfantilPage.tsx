@@ -501,7 +501,7 @@ export default function InfantilPage() {
 
       <PriceLocationCards heading="Cuánto cuesta el curso de infantil">
         <p>Infantil son <strong>64 €/mes</strong> con una clase de 60 min a la semana, o <strong>99 €/mes</strong> con dos clases semanales. Los grupos son de máximo 7 niños.</p>
-        <p>El primer mes se suman la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): <strong>149 €</strong> el primer mes con una clase semanal, y desde 64 €/mes después. Hay descuento por pago trimestral y descuento familiar.</p>
+        <p>Aparte de la cuota quedan la matrícula, <strong>45 €</strong> en un único pago al empezar, y el libro, que no pasa de <strong>40 €</strong>. Hay descuento por pago trimestral y descuento familiar.</p>
       </PriceLocationCards>
 
       <GoogleReviews

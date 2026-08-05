@@ -549,8 +549,7 @@ export default function MontecarmeloLasTablasPage() {
           </div>
           <p className="t-small text-zinc-500 mt-6">
             A eso se suman <strong>45 € de matrícula</strong> y un <strong>libro de 40 € como
-            máximo</strong>, ambos de una sola vez. Ejemplo con todo incluido: un niño de Primaria
-            son 168 € el primer mes y 83 € a partir del segundo. La cuota cubre las clases
+            máximo</strong>, ambos de una sola vez. La cuota cubre las clases
             semanales, los simulacros de Cambridge, el seguimiento y los recursos online, con
             descuento por trimestre y por hermanos matriculados. Las tasas oficiales del examen las
             cobra Cambridge, no la academia.

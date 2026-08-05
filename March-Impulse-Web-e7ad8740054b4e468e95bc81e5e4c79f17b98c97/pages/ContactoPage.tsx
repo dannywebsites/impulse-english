@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     question: "¿Hay que pagar matrícula aparte?",
-    answer: "Depende del centro. En Impulse, ofrecemos transparencia total en costos desde la primera consulta. Te explicamos exactamente qué incluye tu curso sin sorpresas ocultas. Contacta para detalles específicos."
+    answer: "Sí. La matrícula son 45 € y se paga una sola vez, al entrar. El libro de texto también va aparte y cuesta como máximo 40 €. La cuota mensual cubre las clases semanales, los simulacros y el seguimiento; las tasas de los exámenes oficiales las fija Cambridge."
   },
   {
     question: "¿Se recuperan las clases si faltas?",

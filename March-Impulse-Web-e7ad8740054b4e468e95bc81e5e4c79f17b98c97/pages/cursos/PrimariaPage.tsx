@@ -526,7 +526,7 @@ export default function PrimariaPage() {
 
       <PriceLocationCards heading="Cuánto cuesta el curso de primaria">
         <p>Primaria son <strong>83 €/mes</strong>, o <strong>239 €/trimestre</strong> si eliges el pago trimestral con descuento. Los cursos del centro empiezan desde <strong>64 €/mes</strong>.</p>
-        <p>El primer mes se añaden la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): <strong>168 €</strong> el primer mes y 83 €/mes después. Si tienes más de un hijo matriculado, se aplica descuento familiar.</p>
+        <p>La matrícula son <strong>45 €</strong> y se paga una sola vez, al entrar. El libro de texto cuesta <strong>como máximo 40 €</strong>. Si tienes más de un hijo matriculado, se aplica descuento familiar.</p>
       </PriceLocationCards>
 
       <GoogleReviews

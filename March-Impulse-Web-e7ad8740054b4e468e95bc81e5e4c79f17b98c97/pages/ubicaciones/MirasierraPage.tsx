@@ -55,7 +55,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Academia inglés Mirasierra con buena relación calidad-precio?",
-    answer: "Impulse English ofrece excelente relación de valor cerca de Mirasierra. Incluimos material didáctico, simulacros de examen, seguimiento personalizado y garantía 100% aprobados Cambridge sin matrícula inicial. Prueba de nivel gratuita para evaluar tu caso. Contacta para conocer opciones."
+    answer: "Impulse English ofrece excelente relación de valor cerca de Mirasierra. Incluimos material de clase, simulacros de examen, seguimiento personalizado y garantía 100% aprobados Cambridge. Aparte de la cuota se pagan una sola vez la matrícula (45 €) y el libro de texto (máximo 40 €). Prueba de nivel gratuita para evaluar tu caso. Contacta para conocer opciones."
   },
   {
     question: "¿Hay academias de inglés para niños cerca de Mirasierra?",

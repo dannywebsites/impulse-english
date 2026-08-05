@@ -15,11 +15,11 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay matrícula o coste de inscripción?",
-    answer: "Sí, hay matrícula y libro de texto que van aparte como coste adicional. La cuota mensual incluye las clases semanales y el seguimiento personalizado."
+    answer: "Sí. La matrícula son 45 € y se paga una sola vez, al entrar. El libro de texto también va aparte y cuesta como máximo 40 €. La cuota mensual incluye las clases semanales y el seguimiento personalizado."
   },
   {
     question: "¿Qué incluye el precio de las clases?",
-    answer: "La cuota mensual incluye clases semanales, simulacros de examen, seguimiento personalizado del progreso y acceso a recursos online complementarios. El libro de texto y la matrícula son un extra aparte."
+    answer: "La cuota mensual incluye clases semanales, simulacros de examen, seguimiento personalizado del progreso y acceso a recursos online complementarios. Aparte quedan la matrícula (45 €, una sola vez) y el libro de texto (máximo 40 €)."
   },
   {
     question: "¿Ofrecéis descuentos?",
@@ -95,10 +95,10 @@ const courses: CoursePrice[] = [
 
 const included = [
   "Clases semanales en grupos reducidos (máx. 7-10)",
-  "Material didáctico incluido",
+  "Material de clase incluido, libro aparte (máx. 40 €)",
   "Simulacros de examen Cambridge",
   "Seguimiento personalizado del progreso",
-  "Matrícula y libro aparte",
+  "Matrícula de 45 €, un único pago al entrar",
   "Descuento trimestral disponible"
 ];
 

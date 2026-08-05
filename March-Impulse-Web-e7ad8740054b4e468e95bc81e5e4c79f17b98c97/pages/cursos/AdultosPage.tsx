@@ -435,7 +435,7 @@ export default function AdultosPage() {
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-emerald-600" />
-                  <span className="text-zinc-700">Material didáctico incluido</span>
+                  <span className="text-zinc-700">Material de clase incluido, libro aparte (máx. 40 €)</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-emerald-600" />
@@ -611,7 +611,7 @@ export default function AdultosPage() {
 
       <PriceLocationCards heading="Cuánto cuesta el curso de adultos">
         <p>El grupo de adultos son <strong>94 €/mes</strong>, con clases semanales en grupos de máximo 8. Los cursos del centro van desde <strong>64 €</strong> hasta <strong>99 €</strong> al mes según el curso y el número de clases.</p>
-        <p>El primer mes se paga además la matrícula (<strong>45 €</strong>) y el libro (<strong>máximo 40 €</strong>): en total <strong>179 €</strong> el primer mes y 94 €/mes después. Las tasas de examen Cambridge o Linguaskill van aparte.</p>
+        <p>A la cuota se suma una matrícula de <strong>45 €</strong>, que se paga solo al entrar, y el libro de texto, con un tope de <strong>40 €</strong>. Las tasas de examen Cambridge o Linguaskill van aparte.</p>
       </PriceLocationCards>
 
       <GoogleReviews
