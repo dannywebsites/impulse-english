@@ -148,8 +148,12 @@ def name_problems(author):
         out.append("anonymous account")
     if re.search(r"\d", author):
         out.append("username, not a name")
+    # Punctuation-only tokens are separators, not name parts. A byline like
+    # "Jorge - Work & Study Travel - España -" was flagged as an auto-generated
+    # handle because the hyphen repeats; the rule is meant to catch "Maria Maria".
     low = [strip_accents(t).lower() for t in toks]
-    if len(low) != len(set(low)):
+    words = [t for t in low if re.search(r"\w", t)]
+    if len(words) != len(set(words)):
         out.append("duplicated name token (auto-generated handle)")
     if any(t in BRAND_WORDS for t in low):
         out.append("business account, not a person")
