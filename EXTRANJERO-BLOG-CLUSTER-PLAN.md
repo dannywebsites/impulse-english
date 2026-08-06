@@ -27,6 +27,7 @@
 > <repo>/GEO-Content-Project/extranjero-blog-briefs.md  ← the other session's 30 briefs
 > ~/.claude/skills/seo-blog-writer/scripts/lib/cms-impulse-astro.js   ← the converter
 > ~/.claude/skills/seo-blog-writer/scripts/lib/frontmatter.js         ← cmsProfile dispatch
+> ~/.claude/skills/seo-blog-writer/scripts/lib/firecrawl.js           ← scraper (Apify = fallback)
 > ~/.claude/skills/seo-blog-writer/scripts/rotate-images.js           ← per-article images
 > ~/.claude/skills/seo-blog-writer/brands/impulse-english.brand.json  ← + .bak-20260806
 > ```
@@ -47,10 +48,16 @@
 >   and the build both stay green.
 > - All 34 photos are **Ireland**. Non-Ireland articles use `--pool academy`.
 >
-> **Also worth telling Danny:** `~/.claude/skills` has **no `.gitignore`**, and
-> `seo-blog-writer/.env` (live API keys) sits inside an untracked directory. A careless
-> `git add seo-blog-writer/` there would stage 3.101 files including that `.env`. Only explicit
-> paths were staged. Worth adding a `.gitignore` before anyone else works in that repo.
+> **Also worth telling Danny:** `~/.claude/skills` is a git repo with **no `.gitignore`**, and the
+> entire `seo-blog-writer/` skill is still **untracked** — nothing in it has ever been committed.
+> A careless `git add seo-blog-writer/` would stage **3.102 paths**, of which 3.003 are
+> `scripts/node_modules` and 90 are `runs/`.
+>
+> **Correction (verified 2026-08-06 with `git add --dry-run` + `git check-ignore`):** an earlier
+> version of this note claimed that would also stage `seo-blog-writer/.env` with its live API keys.
+> **It would not** — `~/.gitignore_global:1` ignores `.env` globally, and the dry run confirms the
+> file is absent from the staged set. The real problem is the node_modules bulk, not a key leak.
+> Still worth a `.gitignore` (`node_modules/`, `runs/`) before anyone commits that skill.
 
 
 **Date:** 2026-08-06 · **Branch:** `seo/extranjero-hub` (not pushed/merged)
@@ -359,9 +366,20 @@ node scripts/assemble.js --all
 cd "March-Impulse-Web-.../" && python3 scripts/seo/gen_blog_directory.py && npm run build
 ```
 
-⚠️ **Apify is on the separate `dannyaiagents2@` account, which hit its cap on 5 August.** Stage A
-scrapes on every run; 23 runs in one sitting is a real bill. Start with a small `resultsLimit`. If
-it throttles, Stage A resumes safely — research is skipped when `brief.md` already exists.
+⚠️ **Scraping moved from Apify to Firecrawl on 2026-08-06** — Apify's separate `dannyaiagents2@`
+account hit its cap on 5 August. `scripts/lib/firecrawl.js` now backs the `web_scrape` tool and
+falls back to `apify.js` only when Firecrawl exhausts its retries, logging
+`[research] firecrawl failed → apify fallback` so the switch is never silent.
+
+Measured on article #1: **8 SERP searches + 6 scrapes = 6 Firecrawl credits.** Budget ~140 credits
+for the 23 pieces. Stage A resumes safely — research is skipped when `brief.md` already exists.
+
+**Correction to an earlier version of this plan:** it said to *"start with a small `resultsLimit`"*.
+No such parameter exists in this code path — `apify.js:27` hardcodes `maxCrawlPages: 1`, and the
+Firecrawl CLI scrapes one page per call. That advice was carried over from the old
+`<repo>/seo-writer/` app, which is dead code. The real levers are **`researchDepth`** in the brand
+config (`standard` = 3-5 scrapes, `light` = 2-3) and **pre-seeding `runs/<id>/brief.md`**, which
+skips Stage A research entirely (`prewrite.js:155`).
 
 ⚠️ Writing 23 articles in-session is the token-heavy part. Expect to run it across a few sessions
 even though they publish together; each run directory is independent and re-runnable.
