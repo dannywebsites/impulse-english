@@ -389,6 +389,7 @@ export default function ExtranjeroHubPage() {
         title="Preguntas frecuentes sobre estudiar inglés en el extranjero"
         eyebrow="Dudas habituales"
         variant="refresh"
+        defaultOpen="all"
       />
 
       <CTABand

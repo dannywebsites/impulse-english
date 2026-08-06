@@ -403,6 +403,7 @@ export default function CanadaPage() {
         title="Preguntas frecuentes sobre el año escolar en Canadá"
         eyebrow="Dudas habituales"
         variant="refresh"
+        defaultOpen="all"
       />
 
       <CTABand
