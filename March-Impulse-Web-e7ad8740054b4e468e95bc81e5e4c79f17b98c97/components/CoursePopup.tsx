@@ -209,7 +209,7 @@ export default function CoursePopup() {
                 this is just another form demanding a phone number. Same four on
                 every variant: the offer doesn't change, only the hook above does. */}
             <ul className="mb-5 space-y-2 rounded-xl bg-accent-blue/5 p-4">
-              {POPUP_BENEFITS.map((benefit) => (
+              {(variant.benefits ?? POPUP_BENEFITS).map((benefit) => (
                 <li key={benefit} className="flex items-start gap-2 text-sm text-zinc-700">
                   <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" />
                   <span>{benefit}</span>

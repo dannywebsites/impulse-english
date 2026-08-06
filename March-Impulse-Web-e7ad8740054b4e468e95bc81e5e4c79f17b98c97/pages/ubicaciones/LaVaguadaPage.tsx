@@ -16,7 +16,7 @@ const benefits = [
   { title: "Centro Oficial de Preparación Cambridge", desc: "Prepárate y haz el examen donde estudias." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Metodología probada. Resultados garantizados." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada que marca la diferencia." },
-  { title: "Más de 4 Años Sirviendo a Familias de La Vaguada", desc: "180 reseñas de 5 estrellas en Google, con una media de 5,0." },
+  { title: "Más de 4 Años Sirviendo a Familias de La Vaguada", desc: "183 reseñas de 5 estrellas en Google, con una media de 5,0." },
   { title: "Expertos en Principiantes Absolutos", desc: "\"¿Lo intentaste antes y no pudiste?\" Te ayudamos." }
 ];
 
@@ -659,7 +659,7 @@ export default function LaVaguadaPage() {
               className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               <Star className="w-5 h-5 fill-yellow-400 text-amber-400" />
-              180 reseñas reales
+              183 reseñas reales
             </a>
           </div>
         </div>
@@ -697,7 +697,7 @@ export default function LaVaguadaPage() {
               </p>
               <p>
                 Es especialista en exámenes Cambridge y en adquisición temprana del idioma, y su
-                nombre se repite en las 180 reseñas de Google del centro. El segundo cofundador es
+                nombre se repite en las 183 reseñas de Google del centro. El segundo cofundador es
                 Danny Fitzpatrick, que se ocupa de adultos y de inglés de negocios.
               </p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">

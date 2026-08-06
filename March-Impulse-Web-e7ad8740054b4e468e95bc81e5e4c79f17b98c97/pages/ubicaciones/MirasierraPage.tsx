@@ -16,7 +16,7 @@ const benefits = [
   { title: "Centro Oficial de Preparación Cambridge", desc: "Preparación y examen en el mismo lugar." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Metodología Impulse con resultados probados." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada garantizada." },
-  { title: "Familias de Mirasierra Confían en Nosotros", desc: "180 reseñas de 5 estrellas en Google, con una media de 5,0." },
+  { title: "Familias de Mirasierra Confían en Nosotros", desc: "183 reseñas de 5 estrellas en Google, con una media de 5,0." },
   { title: "Metodología Probada", desc: "Conversación desde día 1. Resultados medibles." }
 ];
 
@@ -498,7 +498,7 @@ export default function MirasierraPage() {
               <p>
                 Está especializado en preparación de exámenes Cambridge y en adquisición temprana
                 del idioma, lo que importa si el alumno tiene 4 años y no 40. Aparece con nombre
-                propio en buena parte de las 180 reseñas de Google. El otro cofundador es Danny
+                propio en buena parte de las 183 reseñas de Google. El otro cofundador es Danny
                 Fitzpatrick, y también da clase.
               </p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">

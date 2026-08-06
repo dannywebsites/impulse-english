@@ -10,7 +10,7 @@
 // field the existing LeadForm / reservar-clase forms already send), so the CRM
 // can see exactly which page/level produced the lead.
 
-export type PopupKey = 'c1' | 'b2' | 'b1' | 'linguaskill' | 'general';
+export type PopupKey = 'c1' | 'b2' | 'b1' | 'linguaskill' | 'extranjero' | 'general';
 
 export interface PopupVariant {
   key: PopupKey;
@@ -21,6 +21,13 @@ export interface PopupVariant {
   title: string;
   subtitle: string;
   ctaText: string;
+  /**
+   * Overrides the shared benefit list. Only the study-abroad variant uses this:
+   * every other popup sells the same 25-minute level test with JP, but a family
+   * asking about a school year abroad is not asking for a CEFR grade, and the
+   * person they will actually speak to is Daniel.
+   */
+  benefits?: string[];
 }
 
 /* Every variant now sells the same thing — the free 25-minute prueba de nivel
@@ -65,6 +72,21 @@ const VARIANTS: Record<PopupKey, PopupVariant> = {
       'Compruébalo antes de examinarte. Prueba de nivel gratuita de 25 minutos con nuestro Director de Estudios, con tu nivel real y los plazos para llegar. Sin compromiso.',
     ctaText: 'Pide tu prueba de nivel',
   },
+  extranjero: {
+    key: 'extranjero',
+    level: '',
+    source: 'popup-extranjero',
+    title: '¿Estás pensando en mandar a tu hijo a Irlanda?',
+    subtitle:
+      'Habla directamente con Daniel, cofundador irlandés de la academia y quien organiza los programas en el extranjero. Te dice con franqueza qué encaja, qué no y cuánto cuesta de verdad. Sin compromiso.',
+    ctaText: 'Habla con Daniel',
+    benefits: [
+      'Qué programa encaja según la edad, el curso y el nivel',
+      'Cómo funcionan la familia de acogida y el colegio',
+      'El desglose real de lo que entra en el precio y lo que no',
+      'Con Daniel Fitzpatrick, cofundador y responsable de los programas',
+    ],
+  },
   general: {
     key: 'general',
     level: '',
@@ -103,6 +125,11 @@ export function isSuppressed(pathname: string): boolean {
  */
 export function resolveVariant(pathname: string): PopupVariant {
   const p = normalize(pathname).toLowerCase();
+
+  // Checked first, and by full path segment. The study-abroad pages are about a
+  // programme, not an exam level, so an accidental substring match into the
+  // Cambridge variants would offer a school-year family a C1 level test.
+  if (p.startsWith('/ingles-en-el-extranjero')) return VARIANTS.extranjero;
 
   if (p.includes('linguaskill')) return VARIANTS.linguaskill;
   if (p.includes('c1') || p.includes('advanced')) return VARIANTS.c1;

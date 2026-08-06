@@ -469,7 +469,10 @@ export default function SecundariaPage() {
           <h2 className="t-h2 text-zinc-900 mb-5">Antonio Pérez Blázquez</h2>
           <div className="rule"></div>
           <p className="t-body my-6 max-w-3xl text-zinc-600">
-            Con adolescentes, el salto suele darse fuera del aula. Antonio cuenta cómo fue el verano de su hija en Irlanda, organizado por Danny.
+            Con adolescentes, el salto suele darse fuera del aula. Antonio cuenta cómo fue el verano de su hija en Irlanda, organizado por Danny. Si estáis dándole vueltas, aquí tienes{' '}
+            <a href="/ingles-en-el-extranjero/irlanda/" className="font-medium text-accent-blue hover:underline">nuestros programas en Irlanda</a>{' '}
+            y el{' '}
+            <a href="/ingles-en-el-extranjero/irlanda/ano-escolar/" className="font-medium text-accent-blue hover:underline">año escolar en Irlanda</a>.
           </p>
           <div className="card p-8">
             <div className="grid sm:grid-cols-3 gap-6 mb-6 text-center">
@@ -538,6 +541,8 @@ export default function SecundariaPage() {
           </p>
           <p className="t-small text-center text-zinc-500 mt-4">
             <a href="/" className="font-medium text-accent-blue hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+            {' · '}
+            <a href="/ingles-en-el-extranjero/" className="font-medium text-accent-blue hover:underline">Inglés en el extranjero</a>
           </p>
         </div>
       </section>

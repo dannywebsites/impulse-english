@@ -36,7 +36,10 @@ MAX_CHARS = 600
 
 # Teachers we are allowed to name on the site. Anything else in a quote
 # disqualifies that quote (we do not edit the customer's text).
-APPROVED_TEACHERS = {"jp", "danny", "dani", "daniel"}
+# "fitzpatrick" added 2026-08-05: the capitalised-token scan splits "Danny
+# Fitzpatrick" and flagged the surname of a cofounder as an unapproved teacher,
+# which blocked the only review describing the Ireland programme.
+APPROVED_TEACHERS = {"jp", "danny", "dani", "daniel", "fitzpatrick"}
 
 # Teachers who really do appear in the reviews but are not in the approved set.
 # Matched case-insensitively anywhere in the text, because the capitalised-token
@@ -56,6 +59,22 @@ NOT_PEOPLE = {
     "nueva", "york", "londres", "dublín", "dublin", "recomiendo", "gracias",
     "muchas", "enhorabuena", "gran", "gente", "gracias", "gustaría", "gustaria",
     "gustan", "también", "gonzalo", "gustó",
+    # Study-abroad vocabulary, added 2026-08-05 with the /ingles-en-el-extranjero/
+    # pages. "Canadá" and "Osteópatas" were both being read as teacher names.
+    # Lookup happens after strip_accents(), so the unaccented form is what matters.
+    "canada", "malta", "osteopatas", "osteopata", "drogheda", "eaquals",
+    "aseproce", "irlandes", "irlandesa", "escocia", "gales", "boston", "toronto",
+    "vancouver", "florida", "california",
+    # Ordinary Spanish words that happen to start a sentence, so the
+    # capitalised-token scan reads them as names. Each one here was observed
+    # blocking a real review: "Sobre todo…", "Sigan así", "Recomendados 100%".
+    "sobre", "sigan", "recomendados", "recomendado", "recomendable", "excelente",
+    "excelentes", "desde", "tanto", "completamente", "totalmente", "siempre",
+    "ademas", "aunque", "porque", "cuando", "despues", "ahora", "todos", "todas",
+    "nunca", "nada", "personalmente", "realmente", "gran", "grandes", "mejor",
+    "mejores", "buenos", "buenas", "buena", "bueno", "clases", "profesores",
+    "profesorado", "trato", "ambiente", "calidad", "atencion", "hola", "estoy",
+    "llevo", "hace", "para", "como", "salir", "hay", "mis", "mi", "los", "las",
 }
 
 
@@ -129,8 +148,12 @@ def name_problems(author):
         out.append("anonymous account")
     if re.search(r"\d", author):
         out.append("username, not a name")
+    # Punctuation-only tokens are separators, not name parts. A byline like
+    # "Jorge - Work & Study Travel - España -" was flagged as an auto-generated
+    # handle because the hyphen repeats; the rule is meant to catch "Maria Maria".
     low = [strip_accents(t).lower() for t in toks]
-    if len(low) != len(set(low)):
+    words = [t for t in low if re.search(r"\w", t)]
+    if len(words) != len(set(words)):
         out.append("duplicated name token (auto-generated handle)")
     if any(t in BRAND_WORDS for t in low):
         out.append("business account, not a person")

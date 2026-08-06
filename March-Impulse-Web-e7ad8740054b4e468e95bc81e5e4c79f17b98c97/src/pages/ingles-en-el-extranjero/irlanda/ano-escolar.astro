@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnoEscolarIrlandaPage, { faqs } from '../../../../pages/extranjero/AnoEscolarIrlandaPage';
+import CookieBanner from '../../../../components/CookieBanner';
+import {
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  generateServiceSchema,
+} from '../../../../utils/schemaData';
+
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Inglés en el extranjero', url: 'https://impulse-english.es/ingles-en-el-extranjero/' },
+  { name: 'Irlanda', url: 'https://impulse-english.es/ingles-en-el-extranjero/irlanda/' },
+  { name: 'Año escolar', url: 'https://impulse-english.es/ingles-en-el-extranjero/irlanda/ano-escolar/' },
+]);
+
+// Enquiry-only: no `price`, so no Offer node is emitted. Publishing a headline
+// figure would be misleading — the real cost varies by colegio, duración,
+// alojamiento and whether flights are included.
+const service = generateServiceSchema({
+  name: 'Año escolar en Irlanda',
+  description:
+    'Curso escolar completo, medio curso o un trimestre en un colegio irlandés, con familia de acogida seleccionada y monitores de Impulse disponibles 24 horas al día, con orientación para tramitar la convalidación ante el Ministerio de Educación.',
+  url: '/ingles-en-el-extranjero/irlanda/ano-escolar/',
+  serviceType: 'Año escolar en el extranjero',
+});
+
+const schemas = [breadcrumb, service, ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : [])];
+---
+
+<BaseLayout
+  title="Año escolar en Irlanda | Impulse English"
+  fullTitle={true}
+  description="Curso escolar o trimestre en un colegio irlandés con familia de acogida y monitores 24/7. Para 4º de la ESO y Bachillerato, con orientación para la convalidación."
+  keywords="año escolar en irlanda, curso escolar en irlanda, estudiar 4 eso en irlanda, estudiar bachillerato en irlanda, trimestre en irlanda, transition year irlanda"
+  canonical="/ingles-en-el-extranjero/irlanda/ano-escolar/"
+  schemas={schemas}
+>
+  <AnoEscolarIrlandaPage client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>

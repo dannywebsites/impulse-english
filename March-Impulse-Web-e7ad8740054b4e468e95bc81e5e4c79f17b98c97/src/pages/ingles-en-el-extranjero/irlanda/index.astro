@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import IrlandaPage, { faqs } from '../../../../pages/extranjero/IrlandaPage';
+import CookieBanner from '../../../../components/CookieBanner';
+import {
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  generateServiceSchema,
+} from '../../../../utils/schemaData';
+
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Inglés en el extranjero', url: 'https://impulse-english.es/ingles-en-el-extranjero/' },
+  { name: 'Irlanda', url: 'https://impulse-english.es/ingles-en-el-extranjero/irlanda/' },
+]);
+
+// Enquiry-only: no `price`, so no Offer node is emitted.
+const service = generateServiceSchema({
+  name: 'Programas de inglés en Irlanda',
+  description:
+    'Año escolar, trimestre, campamentos de verano y cursos de inglés para adultos en Irlanda, con familia de acogida y monitores de Impulse disponibles 24 horas al día.',
+  url: '/ingles-en-el-extranjero/irlanda/',
+  serviceType: 'Programas de inmersión lingüística en Irlanda',
+});
+
+const schemas = [breadcrumb, service, ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : [])];
+---
+
+<BaseLayout
+  title="Estudiar inglés en Irlanda | Impulse English"
+  fullTitle={true}
+  description="Año escolar, campamentos de verano y cursos de inglés en Irlanda con familia de acogida y monitores 24/7, organizados por tu academia de Madrid."
+  keywords="estudiar inglés en irlanda, curso de inglés en irlanda, estudiar en irlanda, colegios en irlanda, internado en irlanda"
+  canonical="/ingles-en-el-extranjero/irlanda/"
+  schemas={schemas}
+>
+  <IrlandaPage client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>
