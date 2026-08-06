@@ -35,7 +35,7 @@ const BASELINE = join(HERE, 'baseline.json');
 const LIST = process.argv.includes('--list');
 const UPDATE = process.argv.includes('--update-baseline');
 
-const PAGE_DIRS = ['pages/cursos', 'pages/ubicaciones'];
+const PAGE_DIRS = ['pages/cursos', 'pages/ubicaciones', 'pages/extranjero'];
 const read = (p) => readFileSync(p, 'utf8');
 const tsxIn = (d) =>
   existsSync(join(ROOT, d))
@@ -53,8 +53,14 @@ const dangerousHtml = (src) => {
 };
 
 // A block of real Google reviews must look like Google reviews.
+//
+// Both quote styles, deliberately. The double-quote-only version of this test
+// never fired on pages/extranjero/, whose review objects are all single-quoted —
+// the same blind spot that let six testimonials past verify_quotes.py until
+// 2026-08-06. A check that silently matches nothing reads exactly like a pass.
+const REVIEW_OBJ = /\{\s*(?:name|author):\s*(["'])(?:(?!\1).)+\1\s*,\s*(?:text|quote):\s*["']/;
 const reviewBlocks = (src, all) => {
-  if (!/\{\s*name:\s*"[^"]+",\s*text:\s*"/.test(src)) return [];
+  if (!REVIEW_OBJ.test(src)) return [];
   const s = src + all;
   const missing = [];
   if (!/fill-amber-400/.test(s)) missing.push('star row');
