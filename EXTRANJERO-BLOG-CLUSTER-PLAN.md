@@ -1,19 +1,24 @@
 # Plan — Blog cluster for the "inglés en el extranjero" pillar
 
-> ## ▶ RESUME HERE — paused 2026-08-06 for a Claude Code update
+> ## ▶ RESUME HERE — updated 2026-08-06 after the third batch
 >
-> **State: the pipeline is built and proven. Nothing has been written yet.**
+> **State: 8 of 23 written, installed, gated and committed** (`3dd843b`, `de7e758`, `4bb3812`,
+> `eecbe89`). 14 articles + the hub remain. Superseded: an earlier version of this block said
+> "nothing has been written yet" — that is no longer true, and starting at §6 article #1 would
+> duplicate shipped work. **Read the batch-progress table in §12 for what exists.**
 >
 > **First three things to do on resume**
 > 1. **Check for a parallel session before touching anything.** `git log --oneline -10` on
 >    `seo/extranjero-hub` and `ls GEO-Content-Project/`. Two sessions already collided on
 >    2026-08-06 and duplicated the photo work end to end. If someone else is mid-batch, split the
->    article list — do not both start at #1.
+>    article list — do not both start at the same number.
 > 2. **Ask Danny what the 6.750 € covers** — which programme, which duration, what is included.
 >    He authorised publishing "desde 6.750 €" as Impulse's own price; he has not yet said what it
 >    buys. Until then it ships as `[PENDIENTE: confirmar qué incluye]`. Do not invent it.
-> 3. Then start writing at **§6 article #1** (`becas para estudiar bachillerato en el extranjero`,
->    210/mo, peaking Aug 320 → Sep 480 — the most time-sensitive item in the batch).
+>    Blocks the pricing article only; nothing shipped so far quotes a price.
+> 3. Then continue at **§6 article #13** (`estudiar en inglaterra`, 70/mo but Sep 320) and
+>    **#11** (`transition year irlanda`, 50/mo but Sep 170) — the two remaining articles whose
+>    demand peaks next month. **Next image rotation index is 8.**
 >
 > **What is already done and must not be redone**
 > - Brand config wired and corrected (§2 B1, B3) — pillar URLs in the link graph, retired facts
