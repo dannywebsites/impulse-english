@@ -20,6 +20,12 @@ export const internalLinkMap: Record<string, { url: string; anchorText: string }
   'Precios Linguaskill': { url: '/linguaskill/precios-fechas/', anchorText: 'precios Linguaskill' },
   'Registro Linguaskill': { url: '/blog/registro-linguaskill/', anchorText: 'registro Linguaskill' },
 
+  // Study abroad
+  'Extranjero': { url: '/ingles-en-el-extranjero/', anchorText: 'inglés en el extranjero' },
+  'Ano Escolar': { url: '/ingles-en-el-extranjero/irlanda/ano-escolar/', anchorText: 'año escolar en Irlanda' },
+  'Irlanda': { url: '/ingles-en-el-extranjero/irlanda/', anchorText: 'estudiar inglés en Irlanda' },
+  'Canada': { url: '/ingles-en-el-extranjero/canada/', anchorText: 'año escolar en Canadá' },
+
   // Course pages
   'Cursos Adultos': { url: '/cursos-ingles/adultos/', anchorText: 'cursos de inglés para adultos' },
   'Cursos': { url: '/cursos-ingles/adultos/', anchorText: 'nuestros cursos' },
