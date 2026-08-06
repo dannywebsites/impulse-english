@@ -31,7 +31,20 @@ const navItems: NavItem[] = [
       { label: "Linguaskill", href: "/linguaskill/", description: "Certificación rápida de Cambridge" },
     ]
   },
-  { label: "Sobre Nosotros", href: "/sobre-nosotros/" },
+  // "Extranjero" not "En el extranjero", "Nosotros" not "Sobre Nosotros": with eight
+  // top-level items plus the WhatsApp and CTA buttons, the desktop row only fits from
+  // xl: (1280px) and those two labels were the longest by a distance. Twelve characters
+  // back is the difference between a row that fits at 1280 and one that wraps.
+  {
+    label: "Extranjero",
+    children: [
+      { label: "Inglés en el extranjero", href: "/ingles-en-el-extranjero/", description: "Año escolar, verano y adultos" },
+      { label: "Irlanda", href: "/ingles-en-el-extranjero/irlanda/", description: "Nuestro destino principal" },
+      { label: "Año escolar en Irlanda", href: "/ingles-en-el-extranjero/irlanda/ano-escolar/", description: "Curso completo o trimestre" },
+      { label: "Canadá", href: "/ingles-en-el-extranjero/canada/", description: "Año escolar en colegio público" },
+    ]
+  },
+  { label: "Nosotros", href: "/sobre-nosotros/" },
   { label: "Testimonios", href: "/testimonios/" },
   { label: "Blog", href: "/blog/" },
   { label: "Contacto", href: "/contacto/" }

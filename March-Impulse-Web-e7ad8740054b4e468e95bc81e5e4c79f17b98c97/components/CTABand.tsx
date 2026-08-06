@@ -19,6 +19,14 @@ interface Props {
   ctaHref?: string;
   /** Prefilled WhatsApp message, so the enquiry arrives with context. */
   whatsappText?: string;
+  /**
+   * Which WhatsApp line to open. Defaults to the academy number, which is what
+   * every page except the study-abroad section wants. The extranjero pages pass
+   * Daniel's line, because they name him and he runs those programmes.
+   */
+  whatsappUrl?: string;
+  /** Label on the WhatsApp button — "WhatsApp" unless the page names a person. */
+  whatsappLabel?: string;
 }
 
 export default function CTABand({
@@ -27,6 +35,8 @@ export default function CTABand({
   ctaText = 'Reservar prueba de nivel gratuita',
   ctaHref = '/prueba-de-nivel-ingles/',
   whatsappText = 'Hola, me gustaría información sobre los cursos',
+  whatsappUrl = NAP.whatsappUrl,
+  whatsappLabel = 'WhatsApp',
 }: Props) {
   return (
     <section className="section-tight px-6">
@@ -42,13 +52,13 @@ export default function CTABand({
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href={`${NAP.whatsappUrl}?text=${encodeURIComponent(whatsappText)}`}
+              href={`${whatsappUrl}?text=${encodeURIComponent(whatsappText)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline"
             >
               <WhatsAppIcon className="h-4 w-4" />
-              WhatsApp
+              {whatsappLabel}
             </a>
           </div>
         </div>

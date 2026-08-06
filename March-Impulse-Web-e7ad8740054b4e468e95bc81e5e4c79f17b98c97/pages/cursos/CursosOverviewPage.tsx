@@ -497,6 +497,8 @@ export default function CursosOverviewPage() {
           </p>
           <p className="t-small text-center text-zinc-500 mt-4">
             <a href="/" className="font-medium text-accent-blue hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+            {' · '}
+            <a href="/ingles-en-el-extranjero/" className="font-medium text-accent-blue hover:underline">Inglés en el extranjero</a>
           </p>
         </div>
       </section>

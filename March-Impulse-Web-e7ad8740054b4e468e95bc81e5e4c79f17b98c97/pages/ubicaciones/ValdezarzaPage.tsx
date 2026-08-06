@@ -16,7 +16,7 @@ const benefits = [
   { title: "Centro oficial Cambridge y Linguaskill", desc: "Te preparas y te examinas en la misma dirección. Linguaskill entrega el certificado en 48 horas." },
   { title: "Grupos de 7 a 10 alumnos", desc: "Con diez como tope en adultos, hablas todas las semanas. En un grupo de veinte, no." },
   { title: "Clases particulares a 29 €/hora", desc: "Presenciales u online, con horario flexible. La vía habitual para quien estudia o trabaja a turnos." },
-  { title: "5,0 sobre 180 reseñas en Google", desc: "Todas de cinco estrellas. Compruébalo antes de reservar nada." }
+  { title: "5,0 sobre 183 reseñas en Google", desc: "Todas de cinco estrellas. Compruébalo antes de reservar nada." }
 ];
 
 const courses = [
@@ -134,7 +134,7 @@ export default function ValdezarzaPage() {
             </p>
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro oficial Cambridge</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 180 reseñas</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 183 reseñas</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos de 7 a 10 alumnos</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
@@ -270,7 +270,7 @@ export default function ValdezarzaPage() {
               <p>Dos paradas es poco viaje, pero sigue siendo un viaje. Conviene saber a quién vas a encontrarte al final.</p>
               <p><strong className="text-zinc-900">JP</strong>, cofundador y director de estudios. <strong className="text-zinc-900">Más de 10 años</strong> dando clase de inglés y otros 10 viviendo en Irlanda antes de instalarse en Madrid.</p>
               <p>Dirige la parte académica, hace él mismo las pruebas de nivel de 25 minutos y contesta el WhatsApp del 604 910 611. Lo que leas cuando escribas lo ha escrito él.</p>
-              <p>Está especializado en exámenes Cambridge y en adquisición temprana del idioma, y aparece nombrado en buena parte de las 180 reseñas de Google. Con él está Danny Fitzpatrick, cofundador, que lleva adultos e inglés de negocios.</p>
+              <p>Está especializado en exámenes Cambridge y en adquisición temprana del idioma, y aparece nombrado en buena parte de las 183 reseñas de Google. Con él está Danny Fitzpatrick, cofundador, que lleva adultos e inglés de negocios.</p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
                 Conoce al equipo completo <ArrowRight className="w-4 h-4" />
               </a>
@@ -360,7 +360,7 @@ export default function ValdezarzaPage() {
           <div className="text-center">
             <a href={NAP.gbpUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors">
               <Star className="w-5 h-5 fill-amber-400 text-amber-400" />
-              Ver las 180 reseñas en Google
+              Ver las 183 reseñas en Google
             </a>
           </div>
         </div>

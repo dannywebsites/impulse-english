@@ -16,7 +16,7 @@ const benefits = [
   { title: "Centro Oficial de Preparación Cambridge", desc: "Prepárate y haz el examen donde estudias. Sin sorpresas." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Todos nuestros estudiantes aprobaron sus exámenes." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada real. No 15-20 como otras \"reducidas\"." },
-  { title: "180 Reseñas de 5 Estrellas en Google", desc: "Vecinos del barrio que ya han pasado por aquí, con nombre y apellidos." },
+  { title: "183 Reseñas de 5 Estrellas en Google", desc: "Vecinos del barrio que ya han pasado por aquí, con nombre y apellidos." },
   { title: "Metodología Impulse Probada", desc: "Conversación desde día 1. Resultados medibles. Aprendizaje efectivo." }
 ];
 
@@ -60,7 +60,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Mejor academia inglés Madrid norte?",
-    answer: "Impulse English Academy en Barrio del Pilar destaca por: Centro Oficial Cambridge, grupos de 7 a 10 alumnos, metodología conversacional y una ubicación accesible (Metro Barrio del Pilar + parking). Tenemos 180 reseñas de 5 estrellas en Google, con una media de 5,0."
+    answer: "Impulse English Academy en Barrio del Pilar destaca por: Centro Oficial Cambridge, grupos de 7 a 10 alumnos, metodología conversacional y una ubicación accesible (Metro Barrio del Pilar + parking). Tenemos 183 reseñas de 5 estrellas en Google, con una media de 5,0."
   },
   {
     question: "¿Inglés para niños en Barrio del Pilar?",
@@ -497,7 +497,7 @@ export default function BarrioDelPilarPage() {
               </p>
               <p>
                 Su terreno son los exámenes Cambridge y la adquisición temprana del idioma. Su
-                nombre sale citado, una y otra vez, en las 180 reseñas del perfil de Google del
+                nombre sale citado, una y otra vez, en las 183 reseñas del perfil de Google del
                 centro. Junto a él está Danny Fitzpatrick, el otro cofundador, especializado en
                 adultos e inglés de negocios.
               </p>

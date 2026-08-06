@@ -68,6 +68,17 @@ PAGE_SETS = {
         "label": "service pages",
         "own_place_name": False,
     },
+    # Study-abroad destination pages. own_place_name is True for the same reason
+    # it is on barrios: the destination ("Irlanda", "Canadá") is this page's own
+    # place name, and an H1 that carries it should score for it.
+    #
+    # These pages shipped with no set at all, so `geo-audit.py` had never looked
+    # at them -- a green run on barrios/servicios said nothing about the cluster.
+    "extranjero": {
+        "glob": "pages/extranjero/*.tsx",
+        "label": "study-abroad pages",
+        "own_place_name": True,
+    },
 }
 
 # Spanish generic-marketing blacklist — the anti-pattern phrases that cap a score.
@@ -465,30 +476,62 @@ def resolve_schema_helper(root):
     }
 
 
-def score_schema(astro_src, kind, helper):
-    if astro_src is None:
+def score_schema(astro_src, kind, helper, dist_html=None):
+    """Score the four schema rows.
+
+    Source inference (does the wrapper call generateLocationPageSchema?) is only
+    the FIRST test. It encodes the barrio architecture: any page that emits its
+    schema another way scored 0 on LocalBusiness, Service and AggregateRating
+    even when all three were demonstrably in the built HTML. The study-abroad
+    pages call generateServiceSchema directly and inherit LocalBusiness from
+    BaseLayout, and were reported as having no schema at all.
+
+    So each of those three now falls back to dist/ — the actual shipped output,
+    which is the ground truth and cannot be fooled by a helper's name. Barrio
+    scoring is untouched: the location-helper branch still runs first and still
+    scores highest, because a page-specific LocalBusiness carrying geo and
+    areaServed really is stronger than the sitewide one.
+    """
+    if astro_src is None and not dist_html:
         return 0, "no .astro wrapper found"
-    a = astro_src
+    a = astro_src or ""
+    d = dist_html or ""
     calls_location = "generateLocationPageSchema" in a
     if kind == "local":
-        if not calls_location:
-            return 0, "no LocalBusiness schema"
-        s = 7 + (1 if helper.get("geo") else 0) + (1 if helper.get("areaServed") else 0)
-        return s, "generateLocationPageSchema: geo=%s areaServed=%s" % (
-            helper.get("geo"), helper.get("areaServed"))
+        if calls_location:
+            s = 7 + (1 if helper.get("geo") else 0) + (1 if helper.get("areaServed") else 0)
+            return s, "generateLocationPageSchema: geo=%s areaServed=%s" % (
+                helper.get("geo"), helper.get("areaServed"))
+        if re.search(r'"@type":\s*(?:"LocalBusiness"|\[[^\]]*"LocalBusiness")', d):
+            return 7, "LocalBusiness in dist via BaseLayout (sitewide, no page-specific geo/areaServed)"
+        return 0, "no LocalBusiness schema"
     if kind == "service":
-        if not (calls_location and helper.get("service")):
-            return 0, "no Service schema"
-        if helper.get("offers") and helper.get("prices"):
-            return 9, "Service + Offer with prices %s (via helper)" % helper["prices"]
-        return 6, "Service present but no priced Offer"
+        if calls_location and helper.get("service"):
+            if helper.get("offers") and helper.get("prices"):
+                return 9, "Service + Offer with prices %s (via helper)" % helper["prices"]
+            return 6, "Service present but no priced Offer"
+        if "generateServiceSchema" in a and re.search(r'"@type":\s*"Service"', d):
+            if re.search(r'"@type":\s*"Offer"', d):
+                return 9, "Service + Offer (generateServiceSchema)"
+            return 6, "Service in dist but no priced Offer (enquiry-only by design)"
+        return 0, "no Service schema"
     if kind == "faq":
         if "generateFAQSchema" not in a:
             return 0, "no FAQPage schema"
         return 9, "generateFAQSchema wired"
     if kind == "rating":
         if not (calls_location and helper.get("rating")):
-            return 0, "no AggregateRating on page"
+            m = re.search(r'"reviewCount":\s*"?(\d+)', d)
+            if not m:
+                return 0, "no AggregateRating on page"
+            shipped, live = int(m.group(1)), live_review_count()
+            if live is None:
+                return 8, "AggregateRating in dist, reviewCount=%d — no reviews.json to check against" % shipped
+            if shipped == live:
+                return 10, ("AggregateRating in dist via BaseLayout, reviewCount=%d — in sync "
+                            "with the live Google profile" % shipped)
+            return 6, ("AggregateRating reviewCount=%d but the profile has %d — re-run "
+                       "reviews/pull_reviews.py and update napData" % (shipped, live))
         shipped, live = helper.get("reviewCount"), live_review_count()
         if live is None:
             return 8, ("AggregateRating via helper, reviewCount=%s — no reviews.json "
@@ -564,6 +607,9 @@ def main():
     helper = resolve_schema_helper(root)
     astros = {f: find_astro_for(f, root) for f in files}
     astro_srcs = {f: (read(a) if a else None) for f, a in astros.items()}
+    # Read each page's built HTML once: testimonials and three of the four
+    # schema rows are now scored against what actually shipped.
+    dists = {f: dist_of(f, root, astro_srcs[f]) for f in files}
 
     titles, themes, truncs, h1s = {}, {}, {}, {}
     for f in files:
@@ -586,7 +632,7 @@ def main():
             score_intro(visible_intro(src)),
             score_uniqueness(f, sets),
             score_team(text),
-            score_testimonials(text, src, dist_of(f, root, a)),
+            score_testimonials(text, src, dists[f]),
             score_case_study(text, src),
             # Area and contact are marker-based, so they read the page PLUS the
             # components it renders. Uniqueness, intro and pricing stay page-only:
@@ -596,10 +642,10 @@ def main():
             score_pricing(text),
             score_faq(src, text),
             score_contact(text_plus[f], src + comp_srcs[f]),
-            score_schema(a, "local", helper),
-            score_schema(a, "service", helper),
-            score_schema(a, "faq", helper),
-            score_schema(a, "rating", helper),
+            score_schema(a, "local", helper, dists[f]),
+            score_schema(a, "service", helper, dists[f]),
+            score_schema(a, "faq", helper, dists[f]),
+            score_schema(a, "rating", helper, dists[f]),
         ]
         raw = sum(s for s, _ in row)
         results[f] = {"row": row, "raw": raw, "geo": round(raw / 160 * 100),

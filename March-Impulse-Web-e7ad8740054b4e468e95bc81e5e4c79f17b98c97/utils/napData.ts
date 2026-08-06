@@ -25,6 +25,19 @@ export const NAP = {
   phoneRaw: "+34604910611",
   phoneTel: "tel:+34604910611",
   whatsappUrl: "https://wa.me/34604910611",
+
+  // Daniel's own line, for the study-abroad section ONLY.
+  //
+  // The main number is answered by JP. The extranjero pages promise "habla
+  // directamente con Daniel" and he runs those programmes, so the promise has to
+  // be true — routing that to the general line would make the copy a lie the
+  // first time someone used it.
+  //
+  // This is NOT the business NAP number. It must never appear in LocalBusiness
+  // schema, the footer, GBP, or any citation: two phone numbers on the same
+  // business entity is exactly the NAP inconsistency that costs local rankings.
+  whatsappDaniel: "https://wa.me/34722334244",
+  phoneDaniel: "+34 722 334 244",
   email: "info@impulse-english.es",
 
   // Web
@@ -131,12 +144,18 @@ export const NAP = {
   ],
 
   // Aggregate rating (Google Reviews): kept in sync with the live GBP.
-  // Verified 2026-08-02 against the Google knowledge panel ("180 reseñas",
-  // place_id ChIJG7G2oAkpQg0Re7iLuuLzbr4). All 180 are 5-star — the rating
-  // distribution showed zero reviews at 1-4 stars.
+  // Re-verified 2026-08-05 against place_id ChIJG7G2oAkpQg0Re7iLuuLzbr4:
+  // the profile reports 183 and all 183 pulled clean, so there is no pagination
+  // shortfall behind this number. All 183 are 5-star — the rating distribution
+  // showed zero reviews at 1-4 stars.
+  //
+  // This number is a gate, not decoration: geo-audit.py compares it against
+  // reviews/reviews.json and drops AggregateRating to 6/10 on EVERY page when
+  // they disagree, which is enough to block grade A sitewide. Re-run
+  // reviews/pull_reviews.py and update this together, or not at all.
   aggregateRating: {
     ratingValue: 5,
-    reviewCount: 180,
+    reviewCount: 183,
     bestRating: 5,
     worstRating: 1,
   },
@@ -164,8 +183,17 @@ export const FOUNDERS: Founder[] = [
     alternateName: "JP",
     jobTitle: "Director de Estudios y Cofundador",
   },
+  // Legal name in `name`, the name customers actually use in `alternateName` —
+  // the same split already applied to JP above. Both go into the Person node,
+  // so Google can reconcile the LinkedIn profile (danieljohnfitzpatrick) with
+  // the 24 Google reviews that call him Danny or Dani.
+  //
+  // The visible copy deliberately still says "Danny". Renaming it to "Daniel"
+  // would put the site out of step with its own testimonials, which cannot be
+  // edited — that is a weaker entity signal, not a stronger one.
   {
-    name: "Danny Fitzpatrick",
+    name: "Daniel Fitzpatrick",
+    alternateName: "Danny",
     jobTitle: "Cofundador",
     sameAs: ["https://www.linkedin.com/in/danieljohnfitzpatrick/"],
   },

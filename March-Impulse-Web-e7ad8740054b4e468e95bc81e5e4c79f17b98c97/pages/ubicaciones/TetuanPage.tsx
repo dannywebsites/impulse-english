@@ -16,7 +16,7 @@ const benefits = [
   { title: "Centro oficial Cambridge y Linguaskill", desc: "Te preparas y te examinas en el mismo sitio. No tienes que cruzar Madrid el día del examen." },
   { title: "100 alumnos aprobados en Cambridge", desc: "100% de aprobados en B2 First en 2024/25 y 2025/26. Casi todos empezaron desde un nivel muy básico." },
   { title: "Grupos de 7 a 10 alumnos", desc: "Máximo 10 en adultos. Suficientemente pequeño para que hables en todas las clases, no una vez al mes." },
-  { title: "5,0 sobre 180 reseñas en Google", desc: "Las 180 son de 5 estrellas. Ninguna academia de la zona norte tiene esa combinación de nota y volumen." },
+  { title: "5,0 sobre 183 reseñas en Google", desc: "Las 183 son de 5 estrellas. Ninguna academia de la zona norte tiene esa combinación de nota y volumen." },
   { title: "Precios publicados, sin letra pequeña", desc: "Desde 64 €/mes en grupo o 29 €/hora en clase particular. Matrícula 45 € y libro hasta 40 €. Eso es todo." }
 ];
 
@@ -76,7 +76,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Por qué elegiros y no una academia del propio Tetuán?",
-    answer: "Por tres cosas comprobables: 5,0 sobre 180 reseñas en Google, todas de 5 estrellas; precios publicados desde 64 €/mes sin letra pequeña; y que los dos fundadores, JP y Danny, dan clase en persona. A 8 minutos en el 147, merece la pena el trayecto."
+    answer: "Por tres cosas comprobables: 5,0 sobre 183 reseñas en Google, todas de 5 estrellas; precios publicados desde 64 €/mes sin letra pequeña; y que los dos fundadores, JP y Danny, dan clase en persona. A 8 minutos en el 147, merece la pena el trayecto."
   }
 ];
 
@@ -136,7 +136,7 @@ export default function TetuanPage() {
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro oficial Cambridge</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">100 aprobados en Cambridge</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 180 reseñas</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 183 reseñas</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos de 7 a 10</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
@@ -474,8 +474,8 @@ export default function TetuanPage() {
           <div className="text-center">
             <p className="text-zinc-600 mb-6">
               Las dos son de alumnos adultos, que es el perfil que más nos llega desde Tetuán y
-              Valdeacederas. Son dos de las <strong>180 reseñas</strong> que tenemos en Google, y
-              las 180 son de 5 estrellas: ni una sola de 4, 3, 2 o 1.
+              Valdeacederas. Son dos de las <strong>183 reseñas</strong> que tenemos en Google, y
+              las 183 son de 5 estrellas: ni una sola de 4, 3, 2 o 1.
             </p>
             <a
               href={NAP.gbpUrl}
@@ -484,7 +484,7 @@ export default function TetuanPage() {
               className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               <Star className="w-5 h-5 fill-amber-400 text-amber-400" />
-              Ver las 180 reseñas en Google
+              Ver las 183 reseñas en Google
             </a>
           </div>
         </div>
@@ -529,7 +529,7 @@ export default function TetuanPage() {
               </p>
               <p>
                 Trabaja sobre todo preparación Cambridge y adquisición temprana del idioma, y su
-                nombre aparece citado en buena parte de las 180 reseñas de Google. La otra mitad
+                nombre aparece citado en buena parte de las 183 reseñas de Google. La otra mitad
                 del proyecto es Danny Fitzpatrick, cofundador, que lleva adultos y negocios.
               </p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">

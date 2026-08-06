@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ExtranjeroHubPage, { faqs } from '../../../pages/extranjero/ExtranjeroHubPage';
+import CookieBanner from '../../../components/CookieBanner';
+import {
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  generateServiceSchema,
+} from '../../../utils/schemaData';
+
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Inglés en el extranjero', url: 'https://impulse-english.es/ingles-en-el-extranjero/' },
+]);
+
+// No `price` — the offer is enquiry-only, so no Offer node is emitted.
+const service = generateServiceSchema({
+  name: 'Programas de inglés en el extranjero',
+  description:
+    'Año escolar, trimestre, campamentos de verano y cursos de inglés para adultos en Irlanda, Malta, Canadá y Estados Unidos, organizados por Impulse English Academy en Madrid.',
+  url: '/ingles-en-el-extranjero/',
+  serviceType: 'Programas de inmersión lingüística en el extranjero',
+});
+
+const schemas = [breadcrumb, service, ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : [])];
+---
+
+<BaseLayout
+  title="Estudiar inglés en el extranjero | Impulse English"
+  fullTitle={true}
+  description="Año escolar, campamentos de verano y cursos de inglés en Irlanda, Malta, Canadá y EE. UU., organizados por tu academia de Madrid. Catorce años en el sector."
+  keywords="estudiar inglés en el extranjero, cursos de inglés en el extranjero, año escolar en el extranjero, inmersión lingüística, cursos de idiomas en el extranjero"
+  canonical="/ingles-en-el-extranjero/"
+  schemas={schemas}
+>
+  <ExtranjeroHubPage client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>

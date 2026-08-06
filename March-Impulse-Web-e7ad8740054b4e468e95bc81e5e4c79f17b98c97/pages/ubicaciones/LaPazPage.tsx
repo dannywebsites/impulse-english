@@ -130,7 +130,7 @@ export default function LaPazPage() {
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro oficial Cambridge</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">100 aprobados en Cambridge</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 180 reseñas</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 183 reseñas</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos de 7 a 10</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
@@ -506,7 +506,7 @@ export default function LaPazPage() {
               </p>
               <p>
                 Está especializado en exámenes Cambridge y en adquisición temprana del idioma, y
-                aparece por su nombre en buena parte de nuestras 180 reseñas. Junto a Danny
+                aparece por su nombre en buena parte de nuestras 183 reseñas. Junto a Danny
                 Fitzpatrick, cofundador, da clase en persona.
               </p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">

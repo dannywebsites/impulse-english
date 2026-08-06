@@ -15,7 +15,7 @@ const benefits = [
   { title: "Un barrio nuevo, una academia con recorrido", desc: "Abrimos en 2022 en el Barrio del Pilar y seguimos en el mismo portal. No somos una franquicia que rota de local." },
   { title: "Centro oficial Cambridge y Linguaskill", desc: "Preparas y te examinas en la misma dirección, sin cruzar Madrid en la mañana del examen." },
   { title: "Grupos de 7 a 10 alumnos", desc: "Diez como techo en adultos. En un grupo así hablas cada semana, no cada mes." },
-  { title: "5,0 sobre 180 reseñas en Google", desc: "Todas de cinco estrellas, y puedes leerlas antes de escribirnos." },
+  { title: "5,0 sobre 183 reseñas en Google", desc: "Todas de cinco estrellas, y puedes leerlas antes de escribirnos." },
   { title: "Precios en la web, no por teléfono", desc: "Desde 64 €/mes en grupo, 29 €/hora en particular, matrícula 45 € y libro hasta 40 €." }
 ];
 
@@ -134,7 +134,7 @@ export default function ArroyoDelFresnoPage() {
             </p>
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro oficial Cambridge</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 180 reseñas</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 183 reseñas</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos de 7 a 10 alumnos</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
@@ -270,7 +270,7 @@ export default function ArroyoDelFresnoPage() {
               <p>En un barrio de casas bajas y familias jóvenes, la pregunta suele ser la misma: ¿quién va a estar de verdad con mi hijo cada semana?</p>
               <p>Se llama <strong className="text-zinc-900">JP</strong>, es cofundador y director de estudios, y lleva <strong className="text-zinc-900">más de 10 años</strong> dando clase de inglés, con una década previa viviendo en Irlanda.</p>
               <p>Él organiza los grupos, él hace la prueba de nivel gratuita de 25 minutos y él responde el WhatsApp del 604 910 611. No hay intermediario.</p>
-              <p>Trabaja preparación Cambridge y adquisición temprana del idioma, que es lo que importa cuando el alumno tiene cuatro años. Su nombre se repite en las 180 reseñas del perfil. El otro cofundador, Danny Fitzpatrick, lleva adultos y negocios.</p>
+              <p>Trabaja preparación Cambridge y adquisición temprana del idioma, que es lo que importa cuando el alumno tiene cuatro años. Su nombre se repite en las 183 reseñas del perfil. El otro cofundador, Danny Fitzpatrick, lleva adultos y negocios.</p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
                 Conoce al equipo completo <ArrowRight className="w-4 h-4" />
               </a>
@@ -360,7 +360,7 @@ export default function ArroyoDelFresnoPage() {
           <div className="text-center">
             <a href={NAP.gbpUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors">
               <Star className="w-5 h-5 fill-amber-400 text-amber-400" />
-              Ver las 180 reseñas en Google
+              Ver las 183 reseñas en Google
             </a>
           </div>
         </div>
