@@ -331,6 +331,7 @@ export default function IrlandaPage() {
         title="Preguntas frecuentes sobre estudiar inglés en Irlanda"
         eyebrow="Dudas habituales"
         variant="refresh"
+        defaultOpen="all"
       />
 
       <CTABand
