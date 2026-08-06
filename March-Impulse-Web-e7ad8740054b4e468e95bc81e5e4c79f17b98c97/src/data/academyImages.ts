@@ -16,7 +16,7 @@ export interface AcademyImage {
   alt: string;
   title: string;
   description: string;
-  category: 'infantil' | 'primaria' | 'secundaria' | 'adultos' | 'facilities' | 'certificates' | 'branding' | 'exterior';
+  category: 'infantil' | 'primaria' | 'secundaria' | 'adultos' | 'facilities' | 'certificates' | 'branding' | 'exterior' | 'extranjero';
   aspectRatio: 'portrait' | 'square' | 'landscape';
   keywords: string[];
 }

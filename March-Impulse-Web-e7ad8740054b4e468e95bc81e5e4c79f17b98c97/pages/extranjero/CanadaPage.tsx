@@ -9,6 +9,9 @@ import TeacherCard from '../../components/TeacherCard';
 import GoogleReviews from '../../components/GoogleReviews';
 import FAQSection from '../../components/FAQSection';
 import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
+import AcademyGallery from '../../components/AcademyGallery';
+import { extranjeroImages } from '../../src/data/extranjeroImages';
+import { businessInfo } from '../../utils/schemaData';
 import { NAP } from '../../utils/napData';
 import type { FAQItem } from '../../utils/schemaData';
 
@@ -397,6 +400,18 @@ export default function CanadaPage() {
           </div>
         </div>
       </section>
+
+      {/* Fotos reales de Irlanda. Hasta hoy la sección no tenía ninguna imagen de
+          destino y los facts lo prohibían explícitamente. Cada página muestra un
+          tramo distinto: galerías idénticas en un clúster son la misma señal de
+          "esto es la misma página" que los testimonios repetidos. */}
+      <AcademyGallery
+        images={extranjeroImages.slice(26, 34)}
+        pageUrl={`${businessInfo.url}/ingles-en-el-extranjero/canada/`}
+        title="Nuestros viajes, por dentro"
+        subtitle="Fotos de nuestras estancias en Irlanda, el destino del que más experiencia tenemos"
+        maxImages={8}
+      />
 
       <FAQSection
         faqs={faqs}
