@@ -70,6 +70,10 @@ const reviews = [
     name: 'Jorge Martinez',
     text: 'Impulse Academy es y será la mejor academia para aprender inglés! Los mejores maestros, atención de la mejor calidad y la disponibilidad de horarios que tienen son muy buenos! Danny y JP son grandes profesionales mi hija está encantada con ellos y sus clases. Más que Recomendados al 100% Sigan asi.!💯👌🏻',
   },
+  {
+    name: 'Daniela janet Luna rodriguez',
+    text: 'Es una buena academia para aprender y mejorar tu inglés.',
+  },
 ];
 
 // Reseña real de Google, verbatim. Va en el bloque de adultos y SÓLO ahí.
@@ -158,7 +162,7 @@ export default function CanadaPage() {
               de Madrid, no una agencia que te ve por primera vez.
             </p>
             <div className="mb-8 flex flex-wrap gap-3">
-              {['Colegio público canadiense', 'Familia de acogida seleccionada', 'Monitores 24/7'].map((b) => (
+              {['Colegio público canadiense', 'Monitores 24/7', '14 años de experiencia en el sector', 'Prueba de nivel gratis de 25 min'].map((b) => (
                 <span key={b} className="t-small rounded-full border border-white/15 px-4 py-2 text-white/80">
                   {b}
                 </span>
@@ -406,6 +410,37 @@ export default function CanadaPage() {
         subtitle="Te decimos con franqueza qué programa encaja, qué no, y cuánto cuesta de verdad."
         whatsappText="Hola, me gustaría información sobre el año escolar en Canadá"
       />
+
+      {/* Dónde estamos. Esta página vende una decisión que se toma hablando, y la
+          conversación se puede tener en persona: la academia es un sitio real con
+          una puerta. Dirección y horario salen de utils/napData.ts, fuente única,
+          para que no se queden desactualizados aquí cuando cambien. */}
+      <section className="section-tight surface-alt">
+        <div className="container-narrow">
+          <div className="mb-8 max-w-2xl">
+            <span className="eyebrow mb-4">Dónde estamos</span>
+            <h2 className="t-h2 mb-5 text-zinc-900">Ven a hablarlo en persona</h2>
+            <span className="rule"></span>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="card-quiet p-6">
+              <h3 className="t-h3 mb-2 text-zinc-900">La academia</h3>
+              <p className="t-body text-zinc-600">{NAP.fullAddress}</p>
+              <a href={NAP.phoneTel} className="link-inline mt-3 inline-block">
+                {NAP.phone}
+              </a>
+            </div>
+            <div className="card-quiet p-6">
+              <h3 className="t-h3 mb-2 text-zinc-900">Horario</h3>
+              <ul className="t-small space-y-1 text-zinc-600">
+                {NAP.openingHoursText.map((h) => (
+                  <li key={h}>{h}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <LeadForm />
       <Footer />

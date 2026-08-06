@@ -54,6 +54,12 @@ const reviews = [
     name: 'jorge vila prieto',
     text: 'Una experiencia inigualable . La tranquilidad q transmite Danny Fitzpatrick no tiene precio . Las familias de acogida son encantadoras . El ambiente no puede ser más sano . No habla nadie español y éramos los únicos en el campamento . Mi hija quiere repetir el año q viene . Enhorabuena y gracias',
   },
+  {
+    // Sobre el miedo a hablar, que es justo la barrera que rompe una inmersión.
+    // Reseña general de la academia: no dice ni insinúa que viajara.
+    name: 'Begoña Carnicero',
+    text: 'Gracias a la gran experiencia y paciencia de Danny y JP he mejorado muchísimo en muy poco tiempo.  Sobre todo a la hora de lanzarme para hablar, me han quitado por completo el miedo. Agradecidisima',
+  },
 ];
 
 export const faqs: FAQItem[] = [
@@ -122,7 +128,7 @@ export default function IrlandaPage() {
               principal y del que más experiencia tenemos.
             </p>
             <div className="mb-8 flex flex-wrap gap-3">
-              {['Colegios y escuelas acreditadas', 'Familia de acogida seleccionada', 'Monitores 24/7'].map((b) => (
+              {['Colegios y escuelas acreditadas', 'Monitores 24/7', '14 años de experiencia en el sector', 'Prueba de nivel gratis de 25 min'].map((b) => (
                 <span key={b} className="t-small rounded-full border border-white/15 px-4 py-2 text-white/80">
                   {b}
                 </span>
@@ -332,6 +338,37 @@ export default function IrlandaPage() {
         subtitle="Te decimos con franqueza qué programa encaja, qué no, y cuánto cuesta de verdad."
         whatsappText="Hola, me gustaría información sobre los programas en Irlanda"
       />
+
+      {/* Dónde estamos. Esta página vende una decisión que se toma hablando, y la
+          conversación se puede tener en persona: la academia es un sitio real con
+          una puerta. Dirección y horario salen de utils/napData.ts, fuente única,
+          para que no se queden desactualizados aquí cuando cambien. */}
+      <section className="section-tight surface-alt">
+        <div className="container-narrow">
+          <div className="mb-8 max-w-2xl">
+            <span className="eyebrow mb-4">Dónde estamos</span>
+            <h2 className="t-h2 mb-5 text-zinc-900">Ven a hablarlo en persona</h2>
+            <span className="rule"></span>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="card-quiet p-6">
+              <h3 className="t-h3 mb-2 text-zinc-900">La academia</h3>
+              <p className="t-body text-zinc-600">{NAP.fullAddress}</p>
+              <a href={NAP.phoneTel} className="link-inline mt-3 inline-block">
+                {NAP.phone}
+              </a>
+            </div>
+            <div className="card-quiet p-6">
+              <h3 className="t-h3 mb-2 text-zinc-900">Horario</h3>
+              <ul className="t-small space-y-1 text-zinc-600">
+                {NAP.openingHoursText.map((h) => (
+                  <li key={h}>{h}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <LeadForm />
       <Footer />

@@ -21,7 +21,7 @@ const breadcrumb = generateBreadcrumbSchema([
 const service = generateServiceSchema({
   name: 'Año escolar en Irlanda',
   description:
-    'Curso escolar completo, medio curso o un trimestre en un colegio irlandés, con familia de acogida seleccionada y monitores de Impulse disponibles 24 horas al día. Convalidable en España.',
+    'Curso escolar completo, medio curso o un trimestre en un colegio irlandés, con familia de acogida seleccionada y monitores de Impulse disponibles 24 horas al día, con orientación para tramitar la convalidación ante el Ministerio de Educación.',
   url: '/ingles-en-el-extranjero/irlanda/ano-escolar/',
   serviceType: 'Año escolar en el extranjero',
 });
@@ -32,7 +32,7 @@ const schemas = [breadcrumb, service, ...(faqs?.length > 0 ? [generateFAQSchema(
 <BaseLayout
   title="Año escolar en Irlanda | Impulse English"
   fullTitle={true}
-  description="Curso escolar o trimestre en un colegio irlandés con familia de acogida y monitores 24/7. Para 4º de la ESO y Bachillerato, convalidable en España."
+  description="Curso escolar o trimestre en un colegio irlandés con familia de acogida y monitores 24/7. Para 4º de la ESO y Bachillerato, con orientación para la convalidación."
   keywords="año escolar en irlanda, curso escolar en irlanda, estudiar 4 eso en irlanda, estudiar bachillerato en irlanda, trimestre en irlanda, transition year irlanda"
   canonical="/ingles-en-el-extranjero/irlanda/ano-escolar/"
   schemas={schemas}
