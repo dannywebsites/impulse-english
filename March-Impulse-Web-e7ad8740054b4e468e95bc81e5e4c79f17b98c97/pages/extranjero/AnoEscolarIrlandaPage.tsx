@@ -51,12 +51,17 @@ const reviews = [
     name: 'Antonio Pérez Blázquez',
     text: 'Danny se ha encargado de gestionar la estancia de mi hija con una familia durante tres semanas en un campamento de verano en Irlanda. Ha identificado a las familias, ha acompañados a los chavales, ha estado pendiente de ellos durante su estancia. Ni un sólo pero. Perfecto. Totalmente recomendable.',
   },
+  {
+    // Voz de padre, que es a quien se dirige esta página. Reseña general.
+    name: 'Jose Hernandez',
+    text: 'Muy profesionales, mis niños están muy contentos, sin dudas los recomiendo',
+  },
 ];
 
 export const faqs: FAQItem[] = [
   {
     question: '¿Qué es exactamente el año escolar en Irlanda?',
-    answer: 'Es cursar un año académico completo en un colegio irlandés, conviviendo con una familia de acogida. El alumno hace las mismas asignaturas que sus compañeros irlandeses, en inglés, y convalida el curso al volver a España.',
+    answer: 'Es cursar un año académico completo en un colegio irlandés, conviviendo con una familia de acogida. El alumno hace las mismas asignaturas que sus compañeros irlandeses, en inglés, y al volver se tramita la convalidación del curso ante el Ministerio de Educación.',
   },
   {
     question: '¿En qué curso conviene irse, 4º de la ESO o Bachillerato?',
@@ -68,7 +73,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: '¿Se convalida el curso al volver a España?',
-    answer: 'Sí, siguiendo el procedimiento del Ministerio de Educación. La documentación la emite el colegio irlandés al terminar. Te explicamos los pasos antes de que el alumno salga, no cuando vuelve.',
+    answer: 'La convalidación se tramita ante el Ministerio de Educación y es él quien resuelve: no es automática y depende del curso y de la documentación. El colegio irlandés emite el expediente al terminar. Nosotros te explicamos los pasos antes de que el alumno salga, no cuando vuelve, para que nadie se lleve una sorpresa.',
   },
   {
     question: '¿Cuánto cuesta el año escolar en Irlanda?',
@@ -124,7 +129,7 @@ export default function AnoEscolarIrlandaPage() {
               tu academia de Madrid, no desde un catálogo.
             </p>
             <div className="mb-8 flex flex-wrap gap-3">
-              {['4º de la ESO y Bachillerato', 'Curso completo o trimestre', 'Convalidable en España'].map((b) => (
+              {['4º de la ESO y Bachillerato', 'Curso completo o trimestre', '14 años de experiencia en el sector', 'Prueba de nivel gratis de 25 min'].map((b) => (
                 <span key={b} className="t-small rounded-full border border-white/15 px-4 py-2 text-white/80">
                   {b}
                 </span>
@@ -156,7 +161,8 @@ export default function AnoEscolarIrlandaPage() {
               El año escolar en Irlanda no es un curso de inglés largo. El alumno se matricula en un{' '}
               <strong>colegio irlandés de secundaria</strong> y hace el curso con sus compañeros
               irlandeses: las mismas asignaturas, los mismos exámenes, en inglés. Vive con una{' '}
-              <strong>familia de acogida</strong> y, al volver, convalida el curso en España.
+              <strong>familia de acogida</strong> y, al volver, se tramita la convalidación del curso
+              ante el Ministerio de Educación.
             </p>
             <p>
               Esa es la razón por la que funciona. En una academia el inglés dura una hora; allí dura
@@ -364,6 +370,37 @@ export default function AnoEscolarIrlandaPage() {
         subtitle="Te decimos qué colegios hay disponibles, cómo va la convalidación y cuánto cuesta, con el desglose completo."
         whatsappText="Hola, me gustaría información sobre el año escolar en Irlanda"
       />
+
+      {/* Dónde estamos. Esta página vende una decisión que se toma hablando, y la
+          conversación se puede tener en persona: la academia es un sitio real con
+          una puerta. Dirección y horario salen de utils/napData.ts, fuente única,
+          para que no se queden desactualizados aquí cuando cambien. */}
+      <section className="section-tight surface-alt">
+        <div className="container-narrow">
+          <div className="mb-8 max-w-2xl">
+            <span className="eyebrow mb-4">Dónde estamos</span>
+            <h2 className="t-h2 mb-5 text-zinc-900">Ven a hablarlo en persona</h2>
+            <span className="rule"></span>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="card-quiet p-6">
+              <h3 className="t-h3 mb-2 text-zinc-900">La academia</h3>
+              <p className="t-body text-zinc-600">{NAP.fullAddress}</p>
+              <a href={NAP.phoneTel} className="link-inline mt-3 inline-block">
+                {NAP.phone}
+              </a>
+            </div>
+            <div className="card-quiet p-6">
+              <h3 className="t-h3 mb-2 text-zinc-900">Horario</h3>
+              <ul className="t-small space-y-1 text-zinc-600">
+                {NAP.openingHoursText.map((h) => (
+                  <li key={h}>{h}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <LeadForm />
       <Footer />

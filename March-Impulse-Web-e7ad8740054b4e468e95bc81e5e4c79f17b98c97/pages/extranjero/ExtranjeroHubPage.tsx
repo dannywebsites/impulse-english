@@ -93,6 +93,10 @@ const reviews = [
     name: 'Lucía Fernández Casanova',
     text: 'Excelentes profesionales y un trato inmejorable. Recomendable 100%',
   },
+  {
+    name: 'Maria Dolores Muñoz',
+    text: 'Un profesorado con un gran nivel y calidad humana',
+  },
 ];
 
 export const faqs: FAQItem[] = [
@@ -164,7 +168,7 @@ export default function ExtranjeroHubPage() {
               red de colegios y familias que conocemos de primera mano.
             </p>
             <div className="mb-8 flex flex-wrap gap-3">
-              {['Irlanda · Malta · Canadá · EE. UU.', 'Viajes propios y plazas concertadas', '5,0 sobre 183 reseñas'].map((b) => (
+              {['Irlanda · Malta · Canadá · EE. UU.', '5,0 sobre 183 reseñas', '14 años de experiencia en el sector', 'Prueba de nivel gratis de 25 min'].map((b) => (
                 <span key={b} className="t-small rounded-full border border-white/15 px-4 py-2 text-white/80">
                   {b}
                 </span>
@@ -392,6 +396,37 @@ export default function ExtranjeroHubPage() {
         subtitle="Edad, fechas aproximadas y qué esperáis del viaje. Te respondemos con una recomendación concreta y el desglose de lo que cuesta."
         whatsappText="Hola, me gustaría información sobre los programas de inglés en el extranjero"
       />
+
+      {/* Dónde estamos. Esta página vende una decisión que se toma hablando, y la
+          conversación se puede tener en persona: la academia es un sitio real con
+          una puerta. Dirección y horario salen de utils/napData.ts, fuente única,
+          para que no se queden desactualizados aquí cuando cambien. */}
+      <section className="section-tight surface-alt">
+        <div className="container-narrow">
+          <div className="mb-8 max-w-2xl">
+            <span className="eyebrow mb-4">Dónde estamos</span>
+            <h2 className="t-h2 mb-5 text-zinc-900">Ven a hablarlo en persona</h2>
+            <span className="rule"></span>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="card-quiet p-6">
+              <h3 className="t-h3 mb-2 text-zinc-900">La academia</h3>
+              <p className="t-body text-zinc-600">{NAP.fullAddress}</p>
+              <a href={NAP.phoneTel} className="link-inline mt-3 inline-block">
+                {NAP.phone}
+              </a>
+            </div>
+            <div className="card-quiet p-6">
+              <h3 className="t-h3 mb-2 text-zinc-900">Horario</h3>
+              <ul className="t-small space-y-1 text-zinc-600">
+                {NAP.openingHoursText.map((h) => (
+                  <li key={h}>{h}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <LeadForm />
       <Footer />
