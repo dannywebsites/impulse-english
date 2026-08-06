@@ -2,10 +2,15 @@
 
 > ## ▶ RESUME HERE — updated 2026-08-06 after the third batch
 >
-> **State: 8 of 23 written, installed, gated and committed** (`3dd843b`, `de7e758`, `4bb3812`,
-> `eecbe89`). 14 articles + the hub remain. Superseded: an earlier version of this block said
-> "nothing has been written yet" — that is no longer true, and starting at §6 article #1 would
-> duplicate shipped work. **Read the batch-progress table in §12 for what exists.**
+> **State: 12 of 23 written, installed, gated and committed** (`3dd843b`, `de7e758`, `4bb3812`,
+> `eecbe89`, `04597c7`). 10 articles + the hub remain. Superseded: an earlier version of this
+> block said "nothing has been written yet" — that is no longer true, and starting at §6 article
+> #1 would duplicate shipped work. **Read the batch-progress table in §12 for what exists.**
+>
+> **The research pipeline changed on 2026-08-06 — read §12 before writing anything.** The SERP
+> was never actually being read; it is now pulled deterministically into `runs/<id>/serp.json`
+> and **at least half of every FAQ must be real People Also Ask questions, copied verbatim**.
+> `gate-article.sh` fails the article otherwise, and fails outright if `serp.json` is missing.
 >
 > **First three things to do on resume**
 > 1. **Check for a parallel session before touching anything.** `git log --oneline -10` on
@@ -16,9 +21,10 @@
 >    He authorised publishing "desde 6.750 €" as Impulse's own price; he has not yet said what it
 >    buys. Until then it ships as `[PENDIENTE: confirmar qué incluye]`. Do not invent it.
 >    Blocks the pricing article only; nothing shipped so far quotes a price.
-> 3. Then continue at **§6 article #13** (`estudiar en inglaterra`, 70/mo but Sep 320) and
->    **#11** (`transition year irlanda`, 50/mo but Sep 170) — the two remaining articles whose
->    demand peaks next month. **Next image rotation index is 8.**
+> 3. Then continue with the 10 remaining articles (#10, #12, #15-#22) plus the hub.
+>    **Rotation indices are PER POOL** — see §12. Consumed so far: `ireland` 0,1,2,3,4,7 ·
+>    `academy` 3,4,5,6,7,8. The Ireland pool has only 11 distinct sets and most of what
+>    remains is Ireland-topic, so assign the pool per article rather than sequentially.
 >
 > **What is already done and must not be redone**
 > - Brand config wired and corrected (§2 B1, B3) — pillar URLs in the link graph, retired facts
@@ -41,9 +47,12 @@
 > ```bash
 > cd ~/.claude/skills/seo-blog-writer
 > node scripts/prewrite.js --brand brands/impulse-english.brand.json \
->   --topic "<title>" --keywords "<kw>" --category "Inglés en el extranjero"
+>   --topic "<title>" --keywords "<primary>, <secondary>" --category "Inglés en el extranjero"
+> #   ↑ pass 2-3 keywords: the SERP is pulled for each, and PAA boxes differ per keyword.
+> #     Add --run runs/<id> to RESUME an existing run without paying again.
 > node scripts/rotate-images.js --run runs/<id> --index <n> --pool ireland|academy
-> #   ↑ MUST run between prewrite and writing. --pool ireland ONLY for Ireland articles.
+> #   ↑ MUST run between prewrite and writing, and again after any --run resume.
+> #     --pool ireland ONLY for Ireland articles. Index space is PER POOL.
 > # write runs/<id>/article.md in-session — 4+ "## " sections, FAQ, answer in first 80 words
 > node scripts/assemble.js --run runs/<id>
 > ```
