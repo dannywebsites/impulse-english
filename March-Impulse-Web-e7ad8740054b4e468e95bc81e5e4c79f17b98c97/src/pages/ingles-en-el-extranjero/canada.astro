@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CanadaPage, { faqs } from '../../../pages/extranjero/CanadaPage';
+import CookieBanner from '../../../components/CookieBanner';
+import {
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  generateServiceSchema,
+} from '../../../utils/schemaData';
+
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Inglés en el extranjero', url: 'https://impulse-english.es/ingles-en-el-extranjero/' },
+  { name: 'Canadá', url: 'https://impulse-english.es/ingles-en-el-extranjero/canada/' },
+]);
+
+// Enquiry-only: no `price`, so no Offer node is emitted.
+const service = generateServiceSchema({
+  name: 'Año escolar en Canadá',
+  description:
+    'Año escolar completo, trimestre y cursos de Bachillerato en colegios canadienses con familia de acogida y monitores de Impulse disponibles 24 horas al día, además de inmersión para adultos.',
+  url: '/ingles-en-el-extranjero/canada/',
+  serviceType: 'Programas de año escolar e inmersión lingüística en Canadá',
+});
+
+const schemas = [breadcrumb, service, ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : [])];
+---
+
+<BaseLayout
+  title="Año escolar en Canadá | Impulse English"
+  fullTitle={true}
+  description="Año escolar, trimestre y Bachillerato en un colegio canadiense con familia de acogida y monitores 24/7, organizados por tu academia de Madrid."
+  keywords="año escolar en canadá, curso escolar en canadá, estudiar en canadá, estudiar inglés en canadá, colegios en canadá, bachillerato en canadá"
+  canonical="/ingles-en-el-extranjero/canada/"
+  schemas={schemas}
+>
+  <CanadaPage client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>
