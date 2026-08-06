@@ -440,8 +440,58 @@ Resolved: photos ✅ · brand config ✅ · launch list ✅.
 | Per-article image rotation | ✅ done — `scripts/rotate-images.js` |
 | Pipeline proven end-to-end against a real build | ✅ done — probe article rendered, then removed |
 | Price decision | ✅ Danny 2026-08-06: **Impulse publishes "desde 6.750 €"** — inclusions still needed |
-| **Write the 22 + hub** | ⬜ **next** |
-| `gen_blog_directory.py`, build, gates | ⬜ |
+| Scraper moved Apify → Firecrawl | ✅ done — `lib/firecrawl.js`, Apify kept as logged fallback |
+| **Write the 22 + hub** | 🟡 **5 of 23 written, installed and committed** |
+| `gen_blog_directory.py`, build, gates | ⬜ — run once the batch is complete |
+
+### Batch progress — 5 of 23 (2026-08-06)
+
+| # | Article | Slug | Commit |
+|---|---|---|---|
+| 1 | Becas para estudiar bachillerato en el extranjero | `becas-bachillerato-extranjero-reales` | `3dd843b` |
+| 4 | Becas de inmersión lingüística: Ministerio vs privado | `becas-inmersion-linguistica-ministerio` | `de7e758` |
+| 2 | Vivir en Irlanda: coste real y vivienda | `vivir-en-irlanda-coste-real` | `de7e758` |
+| 3 | Curso de inglés en Malta | `estudiar-ingles-malta-consejos` | `4bb3812` |
+| 6 | Internados en Inglaterra | `guia-internados-inglaterra-precios` | `4bb3812` |
+
+**Research already paid for and sitting on disk** (Stage A done, `brief.md` + rotated
+`images.json` present — do NOT re-run prewrite, it would re-scrape):
+`ano-escolar-en-estados-unidos-que-espera-mshlab41` (index 5, academy) ·
+`campamentos-de-verano-en-inglaterra-que--mshlbth3` (index 6, academy) ·
+`campamento-de-verano-en-irlanda-que-incl-mshldbg4` (index 7, ireland).
+
+**Next image rotation index is 8.** Indices 0-7 are used; reusing one repeats another
+article's photo set.
+
+### Four defects fixed during the first batch — all would have hit every article
+
+1. **`cmsProfile` was never set** in `impulse-english.brand.json`, so `assemble.js` emitted
+   generic front-matter with no `contextSections`/`faqItems`/`articleImages` and an unquoted
+   `date:`. The converter existed and was wired; the switch was simply never flipped. §12 above
+   recorded it as done because the code was done.
+2. **`rotate-images.js` appended instead of replacing.** `write-context.md` ended up with two
+   image blocks, the stale one first, so bodies would cite brand-default academy photos while
+   the front-matter cited the rotated ones.
+3. **Titles.** `metaTitleMaxLength` was 60 but `utils/buildPageTitle.ts` hard-cuts the theme at
+   **41**, mid-word. Set to 41, and the `+5` slack in `lib/meta.js` removed.
+   ⚠️ **Pre-existing and untouched: 25 of 98 blog pages already ship mid-word titles.**
+4. **Image pools.** `academyImages.ts` contains logos, duplicates and one Ireland photo
+   (`dnny-tour-of-ireland.jpg`), which rotation handed to the *United States* article. Now
+   filtered: no logos, no duplicates, no geography-tagged files in the academy pool.
+
+### Two targeting conflicts inside this plan, resolved by writing around them
+
+§6 assigns article #12 the term `año escolar en irlanda 4 ESO` and #18 `curso escolar en
+irlanda`. **Both are owned by `AnoEscolarIrlandaPage` per §1**, and §9 forbids targeting them.
+Write those two to the non-owned half of their term pair and link the pillar for the
+commercial query.
+
+### Gate script
+
+`gate.sh` (session scratchpad) checks the things that fail silently: <4 `##` sections, missing
+or stray images, hero leaking into the body, dashes, banned words, duplicate links, and pillar
+terms in an H2. Verified in both directions — it passes known-good articles and catches
+injected defects. Worth moving into the skill.
 
 ### What the build gate caught (neither was visible in review)
 
