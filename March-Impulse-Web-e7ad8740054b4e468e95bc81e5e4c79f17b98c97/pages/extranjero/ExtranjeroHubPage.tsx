@@ -178,9 +178,9 @@ export default function ExtranjeroHubPage() {
               ))}
             </div>
             <div className="flex flex-wrap gap-4">
-              <a href={NAP.whatsappUrl} className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+              <a href={NAP.whatsappDaniel} className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="h-5 w-5" />
-                Pregúntanos por WhatsApp
+                Habla directamente con Daniel
               </a>
               <a href="#destinos" className="btn-on-dark btn-lg">
                 Ver destinos
@@ -259,6 +259,8 @@ export default function ExtranjeroHubPage() {
         title="¿No sabes qué destino le conviene a tu hijo?"
         subtitle="Cuéntanos la edad, el nivel y las fechas que barajáis y te decimos con franqueza qué encaja y qué no."
         whatsappText="Hola, me gustaría información sobre los programas de inglés en el extranjero"
+        whatsappUrl={NAP.whatsappDaniel}
+        whatsappLabel="Escribir a Daniel"
       />
 
       {/* Programas */}
@@ -408,9 +410,11 @@ export default function ExtranjeroHubPage() {
       />
 
       <CTABand
-        title="Cuéntanos qué tenéis en mente"
-        subtitle="Edad, fechas aproximadas y qué esperáis del viaje. Te respondemos con una recomendación concreta y el desglose de lo que cuesta."
+        title="Habla directamente con Daniel"
+        subtitle="Edad, fechas aproximadas y qué esperáis del viaje. Daniel Fitzpatrick, cofundador irlandés y experto en los viajes al extranjero, te responde con una recomendación concreta y el desglose de lo que cuesta."
         whatsappText="Hola, me gustaría información sobre los programas de inglés en el extranjero"
+        whatsappUrl={NAP.whatsappDaniel}
+        whatsappLabel="Escribir a Daniel"
       />
 
       {/* Dónde estamos. Esta página vende una decisión que se toma hablando, y la

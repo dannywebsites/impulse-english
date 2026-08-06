@@ -25,6 +25,19 @@ export const NAP = {
   phoneRaw: "+34604910611",
   phoneTel: "tel:+34604910611",
   whatsappUrl: "https://wa.me/34604910611",
+
+  // Daniel's own line, for the study-abroad section ONLY.
+  //
+  // The main number is answered by JP. The extranjero pages promise "habla
+  // directamente con Daniel" and he runs those programmes, so the promise has to
+  // be true — routing that to the general line would make the copy a lie the
+  // first time someone used it.
+  //
+  // This is NOT the business NAP number. It must never appear in LocalBusiness
+  // schema, the footer, GBP, or any citation: two phone numbers on the same
+  // business entity is exactly the NAP inconsistency that costs local rankings.
+  whatsappDaniel: "https://wa.me/34722334244",
+  phoneDaniel: "+34 722 334 244",
   email: "info@impulse-english.es",
 
   // Web
