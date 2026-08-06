@@ -446,10 +446,10 @@ Resolved: photos ✅ · brand config ✅ · launch list ✅.
 | Pipeline proven end-to-end against a real build | ✅ done — probe article rendered, then removed |
 | Price decision | ✅ Danny 2026-08-06: **Impulse publishes "desde 6.750 €"** — inclusions still needed |
 | Scraper moved Apify → Firecrawl | ✅ done — `lib/firecrawl.js`, Apify kept as logged fallback |
-| **Write the 22 + hub** | 🟡 **8 of 23 written, installed and committed** |
+| **Write the 22 + hub** | 🟡 **12 of 23 written, installed and committed** |
 | `gen_blog_directory.py`, build, gates | ⬜ — run once the batch is complete |
 
-### Batch progress — 8 of 23 (2026-08-06)
+### Batch progress — 12 of 23 (2026-08-06)
 
 | # | Article | Slug | Commit |
 |---|---|---|---|
@@ -461,9 +461,72 @@ Resolved: photos ✅ · brand config ✅ · launch list ✅.
 | 7 | Año escolar en Estados Unidos | `ano-escolar-estados-unidos` | `eecbe89` |
 | 8 | Campamentos de verano en Inglaterra | `campamentos-verano-inglaterra` | `eecbe89` |
 | 5 | Campamento de verano en Irlanda | `campamento-verano-irlanda-guia` | `eecbe89` |
+| 13 | Estudiar en Inglaterra | `estudiar-bachillerato-inglaterra` | `04597c7` |
+| 11 | Transition Year y 4.º de la ESO | `transition-year-irlanda-4-eso` | `04597c7` |
+| 9 | Trabajar en Irlanda sin inglés | `trabajar-irlanda-sin-ingles` | `04597c7` |
+| 14 | Au pair en Irlanda | `ser-au-pair-irlanda` | `04597c7` |
 
-**Next image rotation index is 8.** Indices 0-7 are consumed. All three paid-for run dirs
-listed below have now been written, assembled and shipped.
+#### ⚠️ The research pipeline was broken for the first 8 articles
+
+`seo-blog-writer` claimed SERP analysis and produced none. `scripts/lib/dataforseo.js` called
+`/serp/google/organic/live/**regular**`, which returns organic items only — PAA, featured
+snippets, related searches and AI Overview are exclusive to `/advanced`. `extractPAA()` and
+`extractFeaturedSnippet()` therefore returned **empty on every run for the life of the skill**
+while looking correct in review. The SERP call was also an *optional* Gemini tool that runs
+frequently skipped, and nothing was persisted, so it could not be audited. The
+"AI Overviews on all 3 money terms" line in §3 of this plan came from **manual** DataForSEO work,
+not the pipeline — which is how the gap stayed invisible.
+
+Fixed 2026-08-06 (skill commit is outside this repo; gate half is `ff07426`):
+
+- `/advanced` endpoint at click depth 2 — measured: 8 PAA vs 6, +7% cost.
+- New deterministic **stage A0** pulls the SERP before Gemini runs and writes `serp.json`.
+  Hard-fails the run when a keyword returns zero PAA *and* zero related searches.
+- AI Overview extraction added (did not exist), and the writer is told to beat it.
+- Competitors now come from the real top-10 instead of Gemini's recollection.
+- Geo split: Madrid for local-intent keywords, Spain otherwise, no `United States` fallback.
+- `gate-article.sh` now fails any article whose FAQ is less than half real scraped PAA, and
+  fails outright when `serp.json` is missing rather than skipping the check.
+
+**Articles 1-8 predate this and have no `serp.json`, so their run dirs now fail the gate by
+design.** Backfilling their FAQs is an open decision (see §11). Articles 9, 11, 13 and 14 had
+been drafted under the old standard and were corrected before shipping rather than grandfathered.
+
+Two things measured, not assumed, worth not re-litigating:
+
+- **PAA answer text is volatile.** Five identical requests returned 0, 1, 4, 5 and 5 answers for
+  the same 6 questions. The *questions* are stable. Never build a check on the answers.
+- **`--run <dir>` is required to actually resume.** `runId()` timestamps every invocation, so
+  re-running a topic always minted a fresh dir and re-paid for both the SERP pull and the whole
+  research agent. The pre-existing `brief.md` resume check could never fire from the CLI.
+  Resuming also regenerates `images.json`, so **re-run `rotate-images.js` after any resume**.
+
+#### Rotation index is PER POOL, not global — and the Ireland pool is the scarce one
+
+The handoff said "next index is 8, indices 0-7 are consumed". That is safe but wrong, and it
+wastes the only pool that is actually scarce. `rotate-images.js` computes
+`start = (index * 3) % pool.length` **against the chosen pool**, so `--index 5 --pool ireland`
+and `--index 5 --pool academy` select completely different photos. The two index spaces are
+independent. Verified against the eight shipped articles:
+
+| Pool | Photos | Distinct sets | Indices consumed | Indices free |
+|---|---|---|---|---|
+| `ireland` | 34 | **11** (0-10) | 0, 1, 2, 7 | 3, 4, 5, 6, 8, 9, 10 → **7 left** |
+| `academy` | 36 | 12 (0-11) | 3, 4, 5, 6 | 0, 1, 2, 7, 8, 9, 10, 11 → **8 left** |
+
+**The constraint this exposes: 10 of the 14 remaining articles are Ireland topics, and the
+Ireland pool has 7 unused sets.** Past index 10 it wraps and articles start sharing photos.
+So the pool is an editorial decision, not an automatic one: give `ireland` to the articles a
+trip photo genuinely illustrates (campamentos, familia de acogida, sistema educativo,
+calendario, trimestre), and `academy` to the administrative or Spain-side ones (convalidación,
+academia o agencia, trabajar en Irlanda, Transition Year explained to Spanish parents), where a
+Madrid classroom photo is the honest illustration anyway. That fits 10 articles into 7 slots
+without repeating a set and without a single caption that misleads.
+
+Checked and cleared while auditing this: `becas-bachillerato` and `becas-inmersion` both use
+Ireland photos, and `becas-inmersion` is largely about programmes held **in Spain**. Their alt
+text names Ireland explicitly and the article covers private programmes abroad too, so the
+captions are honest. Left alone deliberately.
 
 #### What `eecbe89` also fixed (found, not assumed)
 
