@@ -170,8 +170,17 @@ export const FOUNDERS: Founder[] = [
     alternateName: "JP",
     jobTitle: "Director de Estudios y Cofundador",
   },
+  // Legal name in `name`, the name customers actually use in `alternateName` —
+  // the same split already applied to JP above. Both go into the Person node,
+  // so Google can reconcile the LinkedIn profile (danieljohnfitzpatrick) with
+  // the 24 Google reviews that call him Danny or Dani.
+  //
+  // The visible copy deliberately still says "Danny". Renaming it to "Daniel"
+  // would put the site out of step with its own testimonials, which cannot be
+  // edited — that is a weaker entity signal, not a stronger one.
   {
-    name: "Danny Fitzpatrick",
+    name: "Daniel Fitzpatrick",
+    alternateName: "Danny",
     jobTitle: "Cofundador",
     sameAs: ["https://www.linkedin.com/in/danieljohnfitzpatrick/"],
   },
