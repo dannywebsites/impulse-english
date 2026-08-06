@@ -483,7 +483,7 @@ export default function MontecarmeloLasTablasPage() {
               <p>
                 Se ha especializado en exámenes Cambridge y en adquisición temprana del idioma
                 (útil en dos barrios llenos de familias con niños pequeños). Su nombre aparece
-                repetido en las 180 reseñas de Google. Danny Fitzpatrick, cofundador, lleva adultos
+                repetido en las 183 reseñas de Google. Danny Fitzpatrick, cofundador, lleva adultos
                 e inglés de negocios.
               </p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">

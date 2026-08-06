@@ -131,12 +131,18 @@ export const NAP = {
   ],
 
   // Aggregate rating (Google Reviews): kept in sync with the live GBP.
-  // Verified 2026-08-02 against the Google knowledge panel ("180 reseñas",
-  // place_id ChIJG7G2oAkpQg0Re7iLuuLzbr4). All 180 are 5-star — the rating
-  // distribution showed zero reviews at 1-4 stars.
+  // Re-verified 2026-08-05 against place_id ChIJG7G2oAkpQg0Re7iLuuLzbr4:
+  // the profile reports 183 and all 183 pulled clean, so there is no pagination
+  // shortfall behind this number. All 183 are 5-star — the rating distribution
+  // showed zero reviews at 1-4 stars.
+  //
+  // This number is a gate, not decoration: geo-audit.py compares it against
+  // reviews/reviews.json and drops AggregateRating to 6/10 on EVERY page when
+  // they disagree, which is enough to block grade A sitewide. Re-run
+  // reviews/pull_reviews.py and update this together, or not at all.
   aggregateRating: {
     ratingValue: 5,
-    reviewCount: 180,
+    reviewCount: 183,
     bestRating: 5,
     worstRating: 1,
   },

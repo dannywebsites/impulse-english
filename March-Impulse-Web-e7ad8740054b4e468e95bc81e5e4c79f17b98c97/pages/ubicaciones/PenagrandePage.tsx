@@ -16,7 +16,7 @@ const benefits = [
   { title: "Centro Oficial de Preparación Cambridge", desc: "Preparación y examen en el mismo lugar." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Metodología Impulse con resultados probados." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada garantizada." },
-  { title: "Familias de Peñagrande Confían en Nosotros", desc: "180 reseñas de 5 estrellas en Google, con una media de 5,0." },
+  { title: "Familias de Peñagrande Confían en Nosotros", desc: "183 reseñas de 5 estrellas en Google, con una media de 5,0." },
   { title: "Metodología Probada", desc: "Conversación desde día 1. Resultados medibles." }
 ];
 
@@ -479,7 +479,7 @@ export default function PenagrandePage() {
               </p>
               <p>
                 Su especialidad son los exámenes Cambridge y la adquisición temprana del idioma, y
-                su nombre sale una y otra vez en las 180 reseñas del perfil de Google. Danny
+                su nombre sale una y otra vez en las 183 reseñas del perfil de Google. Danny
                 Fitzpatrick, el otro cofundador, lleva la parte de inglés de negocios y adultos.
               </p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">

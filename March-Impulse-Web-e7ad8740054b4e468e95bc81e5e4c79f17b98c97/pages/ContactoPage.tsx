@@ -240,7 +240,7 @@ export default function ContactoPage() {
                       <Star key={i} className="w-5 h-5 text-amber-400 fill-amber-400" />
                     ))}
                   </div>
-                  <span className="text-zinc-600 font-medium">180 reseñas en Google</span>
+                  <span className="text-zinc-600 font-medium">183 reseñas en Google</span>
                 </div>
               </div>
             </div>

@@ -93,7 +93,7 @@ export default function GoogleReviews({ heading, intro, reviews }: Props) {
             <GoogleMark />
             <Stars />
             <span className="text-sm font-medium text-zinc-600">
-              {NAP.aggregateRating?.reviewCount ?? 180} reseñas reales
+              {NAP.aggregateRating?.reviewCount ?? 183} reseñas reales
             </span>
           </a>
           <a href={NAP.gbpUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">

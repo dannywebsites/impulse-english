@@ -17,7 +17,7 @@ const benefits = [
   { title: "Linguaskill en 48 horas", desc: "Centro oficial. Si tu empresa o una oposición te pide acreditar el nivel ya, tienes el certificado en 48 horas." },
   { title: "Clases particulares a 29 €/hora", desc: "Presenciales u online, con horario adaptado. La opción que eligen los que tienen agenda de oficina y no pueden fijar un grupo." },
   { title: "Grupos de 7 a 10 alumnos", desc: "Máximo 10 en adultos. Hablas en todas las clases, que es lo que necesitas si el inglés te hace falta en reuniones." },
-  { title: "5,0 sobre 180 reseñas en Google", desc: "Las 180 son de 5 estrellas. Puedes comprobarlo antes de reservar la prueba de nivel." }
+  { title: "5,0 sobre 183 reseñas en Google", desc: "Las 183 son de 5 estrellas. Puedes comprobarlo antes de reservar la prueba de nivel." }
 ];
 
 const courses = [
@@ -131,7 +131,7 @@ export default function CuatroTorresPage() {
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Inglés de negocios</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Linguaskill en 48 h</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 180 reseñas</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 183 reseñas</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">29 €/hora particular</span>
               </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
@@ -506,7 +506,7 @@ export default function CuatroTorresPage() {
               </p>
               <p>
                 Está especializado en exámenes Cambridge y en adquisición temprana del idioma, y
-                aparece por su nombre en buena parte de nuestras 180 reseñas. Junto a Danny
+                aparece por su nombre en buena parte de nuestras 183 reseñas. Junto a Danny
                 Fitzpatrick, cofundador, da clase en persona.
               </p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">

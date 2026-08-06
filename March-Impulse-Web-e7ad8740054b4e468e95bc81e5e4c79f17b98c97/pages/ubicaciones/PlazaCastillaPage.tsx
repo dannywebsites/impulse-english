@@ -130,7 +130,7 @@ export default function PlazaCastillaPage() {
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro oficial Cambridge</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Línea 9 sin transbordos</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 180 reseñas</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 183 reseñas</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos de 7 a 10</span>
               </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
@@ -467,7 +467,7 @@ export default function PlazaCastillaPage() {
               className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               <Star className="w-5 h-5 fill-amber-400 text-amber-400" />
-              Ver las 180 reseñas en Google
+              Ver las 183 reseñas en Google
             </a>
           </div>
         </div>
@@ -507,7 +507,7 @@ export default function PlazaCastillaPage() {
               </p>
               <p>
                 Está especializado en exámenes Cambridge y en adquisición temprana del idioma, y
-                aparece por su nombre en buena parte de nuestras 180 reseñas. Junto a Danny
+                aparece por su nombre en buena parte de nuestras 183 reseñas. Junto a Danny
                 Fitzpatrick, cofundador, da clase en persona.
               </p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">

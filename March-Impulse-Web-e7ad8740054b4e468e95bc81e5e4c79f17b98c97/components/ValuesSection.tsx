@@ -23,7 +23,7 @@ const valueCards = [
     imageUrl: '/images/academy/escuela-gonzalo-18.jpeg',
     imageAlt: 'Clase de inglés en Impulse English Academy La Vaguada Madrid',
     title: "150+ Familias Satisfechas",
-    description: "180 reseñas de 5 estrellas en Google. Las familias de Barrio del Pilar, La Vaguada y alrededores nos recomiendan.",
+    description: "183 reseñas de 5 estrellas en Google. Las familias de Barrio del Pilar, La Vaguada y alrededores nos recomiendan.",
     link: "Ver Reseñas",
     href: "#testimonials"
   }
