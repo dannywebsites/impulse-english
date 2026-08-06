@@ -26,6 +26,11 @@ import type { FAQItem } from '../../utils/schemaData';
  * presented as taken abroad — the repo has none.
  */
 
+// Los cuatro destinos son reales y están aprobados como oferta viva. Sólo dos
+// tienen página propia todavía: `href` se omite en los otros dos y la tarjeta se
+// renderiza sin enlace, invitando a preguntar. Enlazar a una URL que no existe es
+// un 404 en la cara del visitante y una señal muerta para Google — peor que no
+// enlazar. Cuando Malta y Estados Unidos tengan página, se les añade el href.
 const destinos = [
   {
     nombre: 'Irlanda',
@@ -34,20 +39,18 @@ const destinos = [
     para: 'Desde 4º de ESO y Bachillerato hasta adultos',
   },
   {
-    nombre: 'Malta',
-    href: '/ingles-en-el-extranjero/malta/',
-    resumen: 'Cursos intensivos de inglés en un país donde el inglés es lengua oficial, con clima mediterráneo. Funciona especialmente bien para adultos y para veranos cortos.',
-    para: 'Adultos y jóvenes en verano',
-  },
-  {
     nombre: 'Canadá',
     href: '/ingles-en-el-extranjero/canada/',
     resumen: 'Año escolar en colegio público canadiense e inmersión para adultos. Un destino seguro, con acento claro y una experiencia académica muy valorada.',
     para: 'Año escolar y adultos',
   },
   {
+    nombre: 'Malta',
+    resumen: 'Cursos intensivos de inglés en un país donde el inglés es lengua oficial, con clima mediterráneo. Funciona especialmente bien para adultos y para veranos cortos.',
+    para: 'Adultos y jóvenes en verano',
+  },
+  {
     nombre: 'Estados Unidos',
-    href: '/ingles-en-el-extranjero/estados-unidos/',
     resumen: 'Año escolar y estancias en Estados Unidos, la opción clásica para quien quiere la experiencia del instituto americano.',
     para: 'Año escolar y estancias',
   },
@@ -219,17 +222,28 @@ export default function ExtranjeroHubPage() {
             <span className="rule"></span>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
-            {destinos.map((d) => (
-              <a key={d.nombre} href={d.href} className="card-interactive block p-7">
-                <span className="eyebrow mb-3">{d.para}</span>
-                <h3 className="t-h3 mb-3 text-zinc-900">{d.nombre}</h3>
-                <p className="t-body mb-4 text-zinc-600">{d.resumen}</p>
-                <span className="link-inline inline-flex items-center gap-1.5">
-                  Ver programas en {d.nombre}
-                  <ArrowRight className="h-4 w-4" />
-                </span>
-              </a>
-            ))}
+            {destinos.map((d) =>
+              d.href ? (
+                <a key={d.nombre} href={d.href} className="card-interactive block p-7">
+                  <span className="eyebrow mb-3">{d.para}</span>
+                  <h3 className="t-h3 mb-3 text-zinc-900">{d.nombre}</h3>
+                  <p className="t-body mb-4 text-zinc-600">{d.resumen}</p>
+                  <span className="link-inline inline-flex items-center gap-1.5">
+                    Ver programas en {d.nombre}
+                    <ArrowRight className="h-4 w-4" />
+                  </span>
+                </a>
+              ) : (
+                <div key={d.nombre} className="card block p-7">
+                  <span className="eyebrow mb-3">{d.para}</span>
+                  <h3 className="t-h3 mb-3 text-zinc-900">{d.nombre}</h3>
+                  <p className="t-body mb-4 text-zinc-600">{d.resumen}</p>
+                  <span className="t-small text-zinc-500">
+                    Pregúntanos por {d.nombre} y te contamos las fechas y las plazas disponibles.
+                  </span>
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>
