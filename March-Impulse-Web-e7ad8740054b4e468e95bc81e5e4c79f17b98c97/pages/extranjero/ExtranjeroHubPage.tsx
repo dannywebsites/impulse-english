@@ -161,7 +161,7 @@ export default function ExtranjeroHubPage() {
               red de colegios y familias que conocemos de primera mano.
             </p>
             <div className="mb-8 flex flex-wrap gap-3">
-              {['Irlanda · Malta · Canadá · EE. UU.', 'Viajes propios y plazas concertadas', '5,0 sobre 180 reseñas'].map((b) => (
+              {['Irlanda · Malta · Canadá · EE. UU.', 'Viajes propios y plazas concertadas', '5,0 sobre 183 reseñas'].map((b) => (
                 <span key={b} className="t-small rounded-full border border-white/15 px-4 py-2 text-white/80">
                   {b}
                 </span>

@@ -15,7 +15,7 @@ const benefits = [
   { title: "Centro oficial Cambridge y Linguaskill", desc: "En el aula de Av. de El Ferrol, junto al centro comercial La Vaguada. Linguaskill da el certificado en 48 horas." },
   { title: "Grupos de 7 a 10 alumnos", desc: "Máximo 10 en adultos. El metro ligero y el autobús dejan cerca del enlace con la línea 10." },
   { title: "Sin permanencia ni cuota oculta", desc: "Matrícula 45 €, libro hasta 40 €, y nada más. Ni cuota de mantenimiento ni penalización por irte." },
-  { title: "5,0 sobre 180 reseñas en Google", desc: "Las 180 son de cinco estrellas, con nombre y apellidos verificables." },
+  { title: "5,0 sobre 183 reseñas en Google", desc: "Las 183 son de cinco estrellas, con nombre y apellidos verificables." },
   { title: "Abrimos hasta las 21:30", desc: "De lunes a jueves. Suficiente margen para llegar después del trabajo sin ir con la lengua fuera." }
 ];
 
@@ -134,7 +134,7 @@ export default function SanchinarroPage() {
             </p>
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro oficial Cambridge</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 180 reseñas</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 183 reseñas</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos de 7 a 10 alumnos</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
@@ -360,7 +360,7 @@ export default function SanchinarroPage() {
           <div className="text-center">
             <a href={NAP.gbpUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors">
               <Star className="w-5 h-5 fill-amber-400 text-amber-400" />
-              Ver las 180 reseñas en Google
+              Ver las 183 reseñas en Google
             </a>
           </div>
         </div>

@@ -16,7 +16,7 @@ const benefits = [
   { title: "Centro oficial Cambridge y Linguaskill", desc: "Estudias y te examinas bajo el mismo techo. El día del examen no tienes que plantarte en la otra punta de Madrid." },
   { title: "100 alumnos aprobados en Cambridge", desc: "Con un 100% de aprobados en B2 First en los cursos 2024/25 y 2025/26. La mayoría arrancó prácticamente desde cero." },
   { title: "Grupos de 7 a 10 alumnos", desc: "Tope de 10 en los grupos de adultos. Con ese aforo te toca hablar cada sesión, no una vez cada tres semanas." },
-  { title: "5,0 sobre 180 reseñas en Google", desc: "Las 180 puntúan 5 estrellas. Esa mezcla de nota y cantidad no la reúne ningún centro del norte de Madrid." },
+  { title: "5,0 sobre 183 reseñas en Google", desc: "Las 183 puntúan 5 estrellas. Esa mezcla de nota y cantidad no la reúne ningún centro del norte de Madrid." },
   { title: "Precios publicados, sin letra pequeña", desc: "En grupo arranca en 64 €/mes; la clase individual sale a 29 €/hora. Súmale 45 € de matrícula y como mucho 40 € de libro. Nada más." }
 ];
 
@@ -70,7 +70,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Por qué elegiros y no otra academia de la zona norte?",
-    answer: "Por tres cosas comprobables: 5,0 sobre 180 reseñas en Google, todas de 5 estrellas; precios publicados desde 64 €/mes sin letra pequeña; y que los dos fundadores, JP y Danny, dan clase en persona. Puedes verificar las tres antes de venir."
+    answer: "Por tres cosas comprobables: 5,0 sobre 183 reseñas en Google, todas de 5 estrellas; precios publicados desde 64 €/mes sin letra pequeña; y que los dos fundadores, JP y Danny, dan clase en persona. Puedes verificar las tres antes de venir."
   }
 ];
 
@@ -130,7 +130,7 @@ export default function LaVentillaPage() {
             <div className="flex flex-wrap gap-3 mb-8 animate-hero-fade-up animation-delay-300">
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Centro oficial Cambridge</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">100 aprobados en Cambridge</span>
-              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 180 reseñas</span>
+              <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">5,0 · 183 reseñas</span>
               <span className="border border-white/15 px-4 py-2 rounded-full text-white/80 font-display text-sm">Grupos de 7 a 10</span>
             </div>
             <div className="flex flex-wrap gap-4 animate-hero-fade-up animation-delay-400">
@@ -467,7 +467,7 @@ export default function LaVentillaPage() {
           </div>
           <div className="text-center">
             <p className="text-zinc-600 mb-6">
-              Son dos de las <strong>180 reseñas</strong> que tenemos en Google. Las 180 son de 5 estrellas: ni una sola de 4, 3, 2 o 1. Puedes leerlas todas antes de escribirnos.
+              Son dos de las <strong>183 reseñas</strong> que tenemos en Google. Las 183 son de 5 estrellas: ni una sola de 4, 3, 2 o 1. Puedes leerlas todas antes de escribirnos.
             </p>
             <a
               href={NAP.gbpUrl}
@@ -476,7 +476,7 @@ export default function LaVentillaPage() {
               className="inline-flex items-center gap-2 bg-accent-blue hover:bg-accent-blue-800 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               <Star className="w-5 h-5 fill-amber-400 text-amber-400" />
-              Ver las 180 reseñas en Google
+              Ver las 183 reseñas en Google
             </a>
           </div>
         </div>
@@ -507,7 +507,7 @@ export default function LaVentillaPage() {
                 Acumula <strong>más de 10 años dando clase de inglés</strong>, precedidos de 10 años viviendo en Irlanda. Dirige la parte académica del centro, se sienta contigo en la <strong>prueba de nivel gratuita de 25 minutos</strong> y atiende personalmente el WhatsApp del 604 910 611.
               </p>
               <p className="text-zinc-700 leading-relaxed mb-4">
-                Sus áreas son la preparación de <strong>exámenes Cambridge</strong> y la adquisición temprana del idioma. Lo verás nombrado, alumno tras alumno, en las 180 reseñas de Google. Con Danny Fitzpatrick, el otro cofundador, se reparten las clases: aquí no rotan profesores cada trimestre como en una franquicia.
+                Sus áreas son la preparación de <strong>exámenes Cambridge</strong> y la adquisición temprana del idioma. Lo verás nombrado, alumno tras alumno, en las 183 reseñas de Google. Con Danny Fitzpatrick, el otro cofundador, se reparten las clases: aquí no rotan profesores cada trimestre como en una franquicia.
               </p>
               <a href="/nuestro-equipo/" className="text-accent-blue font-semibold hover:underline inline-flex items-center gap-1">
                 Conoce al equipo completo <ArrowRight className="w-4 h-4" />

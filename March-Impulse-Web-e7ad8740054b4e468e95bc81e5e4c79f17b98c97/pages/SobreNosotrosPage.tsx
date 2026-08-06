@@ -12,7 +12,7 @@ const certifications = [
   "Centro autorizado Linguaskill",
   "Partner de Great Little People (metodología infantil)",
   "Partner school de ESIC Idiomas (Cambridge Exam Centre ES278)",
-  "180 reseñas de 5 estrellas en Google",
+  "183 reseñas de 5 estrellas en Google",
   "100% de aprobados Cambridge 2025-2026"
 ];
 
