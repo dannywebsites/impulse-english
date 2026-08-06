@@ -1,8 +1,9 @@
 #!/bin/bash
 # Pre-assemble gate for one run dir. Usage: gate.sh <runDir>
 # Checks the things that fail SILENTLY: too few sections (drops an image), wrong
-# images (rotation not applied), dashes, banned words, duplicate links.
-R="$1"; A="$R/article.md"; I="$R/images.json"
+# images (rotation not applied), dashes, banned words, duplicate links, and whether
+# the FAQ actually uses the People Also Ask questions that were scraped for it.
+R="$1"; A="$R/article.md"; I="$R/images.json"; S="$R/serp.json"
 [ -f "$A" ] || { echo "❌ no article.md in $R"; exit 1; }
 fail=0
 say() { printf "  %-26s %s\n" "$1" "$2"; }
@@ -53,6 +54,32 @@ curso de inglés en irlanda
 curso escolar en irlanda
 estudiar en canadá
 TERMS
+
+# PAA coverage. The research stage scrapes the real People Also Ask box into serp.json; this
+# checks the writer actually used it. At least HALF the FAQ questions must be scraped ones.
+# A missing serp.json FAILS rather than skips — "no file" reading as "pass" is precisely the
+# silent failure that let 11 articles ship against briefs with no SERP data behind them.
+if [ -f "$A" ]; then
+  if [ ! -f "$S" ]; then
+    say "PAA coverage" "❌ no serp.json in run dir — research stage did not pull the SERP"
+    fail=1
+  else
+    paa_report=$(python3 "$(dirname "$0")/paa-coverage.py" "$A" "$S")
+    paa_status=$?
+    if [ -z "$paa_report" ] || [ "$paa_status" -eq 2 ]; then
+      say "PAA coverage" "❌ check errored (see stderr)"
+      fail=1
+    else
+      IFS='|' read -r m t need avail <<< "$paa_report"
+      if [ "$paa_status" -eq 0 ]; then
+        say "PAA coverage" "✅ $m of $t FAQs scraped from PAA (need $need, $avail available)"
+      else
+        say "PAA coverage" "❌ $m of $t FAQs scraped from PAA (need $need, $avail available)"
+        fail=1
+      fi
+    fi
+  fi
+fi
 
 [ "$fail" -eq 0 ] && echo "  ✅ GATE PASS" || echo "  ❌ GATE FAIL"
 exit $fail
