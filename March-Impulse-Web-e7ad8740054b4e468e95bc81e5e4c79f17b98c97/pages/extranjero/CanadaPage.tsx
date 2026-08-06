@@ -172,9 +172,9 @@ export default function CanadaPage() {
               ))}
             </div>
             <div className="flex flex-wrap gap-4">
-              <a href={NAP.whatsappUrl} className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+              <a href={NAP.whatsappDaniel} className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="h-5 w-5" />
-                Pregúntanos por WhatsApp
+                Habla directamente con Daniel
               </a>
               <a href="#programas" className="btn-on-dark btn-lg">
                 Ver los programas
@@ -275,6 +275,8 @@ export default function CanadaPage() {
         title="¿Estás mirando Canadá para el curso que viene?"
         subtitle="Dinos la edad, el curso y las fechas que barajáis y te decimos con franqueza qué encaja, qué no y cuánto cuesta de verdad."
         whatsappText="Hola, me gustaría información sobre el año escolar en Canadá"
+        whatsappUrl={NAP.whatsappDaniel}
+        whatsappLabel="Escribir a Daniel"
       />
 
       {/* colegios en canadá (40) · bachillerato en canadá (50) · curso escolar (70) */}
@@ -422,9 +424,11 @@ export default function CanadaPage() {
       />
 
       <CTABand
-        title="Hablamos y te lo contamos sin compromiso"
-        subtitle="Te decimos con franqueza qué programa encaja, qué no, y cuánto cuesta de verdad."
+        title="Habla directamente con Daniel"
+        subtitle="Daniel Fitzpatrick es cofundador de la academia, irlandés, y el experto en los viajes al extranjero. Te dice con franqueza qué programa encaja, qué no, y cuánto cuesta de verdad."
         whatsappText="Hola, me gustaría información sobre el año escolar en Canadá"
+        whatsappUrl={NAP.whatsappDaniel}
+        whatsappLabel="Escribir a Daniel"
       />
 
       {/* Dónde estamos. Esta página vende una decisión que se toma hablando, y la

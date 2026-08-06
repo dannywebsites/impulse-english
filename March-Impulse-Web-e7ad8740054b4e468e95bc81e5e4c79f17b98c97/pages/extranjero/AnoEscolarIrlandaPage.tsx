@@ -139,9 +139,9 @@ export default function AnoEscolarIrlandaPage() {
               ))}
             </div>
             <div className="flex flex-wrap gap-4">
-              <a href={NAP.whatsappUrl} className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+              <a href={NAP.whatsappDaniel} className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="h-5 w-5" />
-                Pedir información
+                Habla directamente con Daniel
               </a>
               <a href="#precio" className="btn-on-dark btn-lg">
                 Qué incluye y qué no
@@ -242,6 +242,8 @@ export default function AnoEscolarIrlandaPage() {
         title="¿Estáis pensando en el curso que viene?"
         subtitle="Las plazas en colegios y familias se cierran con meses de antelación. Cuéntanos el curso y las fechas y te decimos qué hay disponible."
         whatsappText="Hola, me gustaría información sobre el año escolar en Irlanda"
+        whatsappUrl={NAP.whatsappDaniel}
+        whatsappLabel="Escribir a Daniel"
       />
 
       {/* Monitores */}
@@ -325,7 +327,7 @@ export default function AnoEscolarIrlandaPage() {
             </div>
           </div>
           <div className="mt-8">
-            <a href={NAP.whatsappUrl} className="btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href={NAP.whatsappDaniel} className="btn-primary" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon className="h-5 w-5" />
               Pedir el desglose por WhatsApp
             </a>
@@ -382,9 +384,11 @@ export default function AnoEscolarIrlandaPage() {
       />
 
       <CTABand
-        title="Cuéntanos el curso y las fechas"
-        subtitle="Te decimos qué colegios hay disponibles, cómo va la convalidación y cuánto cuesta, con el desglose completo."
+        title="Habla directamente con Daniel"
+        subtitle="Cuéntale el curso y las fechas. Daniel Fitzpatrick, cofundador irlandés y experto en los viajes al extranjero, te dice qué colegios hay disponibles, cómo va la convalidación y cuánto cuesta, con el desglose completo."
         whatsappText="Hola, me gustaría información sobre el año escolar en Irlanda"
+        whatsappUrl={NAP.whatsappDaniel}
+        whatsappLabel="Escribir a Daniel"
       />
 
       {/* Dónde estamos. Esta página vende una decisión que se toma hablando, y la

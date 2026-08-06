@@ -138,9 +138,9 @@ export default function IrlandaPage() {
               ))}
             </div>
             <div className="flex flex-wrap gap-4">
-              <a href={NAP.whatsappUrl} className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+              <a href={NAP.whatsappDaniel} className="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="h-5 w-5" />
-                Pregúntanos por WhatsApp
+                Habla directamente con Daniel
               </a>
               <a href="/ingles-en-el-extranjero/irlanda/ano-escolar/" className="btn-on-dark btn-lg">
                 Año escolar en Irlanda
@@ -244,6 +244,8 @@ export default function IrlandaPage() {
         title="¿Te cuadra Irlanda para tu hijo?"
         subtitle="Dinos la edad, el nivel y las fechas que barajáis y te decimos qué programa encaja, con el desglose de lo que cuesta."
         whatsappText="Hola, me gustaría información sobre los programas en Irlanda"
+        whatsappUrl={NAP.whatsappDaniel}
+        whatsappLabel="Escribir a Daniel"
       />
 
       {/* Colegios e internados — colegios en irlanda (170) / internado en irlanda (170) */}
@@ -350,9 +352,11 @@ export default function IrlandaPage() {
       />
 
       <CTABand
-        title="Hablamos y te lo contamos sin compromiso"
-        subtitle="Te decimos con franqueza qué programa encaja, qué no, y cuánto cuesta de verdad."
+        title="Habla directamente con Daniel"
+        subtitle="Daniel Fitzpatrick es cofundador de la academia, irlandés, y el experto en los viajes al extranjero. Te dice con franqueza qué programa encaja, qué no, y cuánto cuesta de verdad."
         whatsappText="Hola, me gustaría información sobre los programas en Irlanda"
+        whatsappUrl={NAP.whatsappDaniel}
+        whatsappLabel="Escribir a Daniel"
       />
 
       {/* Dónde estamos. Esta página vende una decisión que se toma hablando, y la
