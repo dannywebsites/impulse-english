@@ -64,23 +64,41 @@ def load_reviews():
     return doc, by_author
 
 
+# Matches a {name, text} testimonial object in either key order and in either
+# JS string style.
+#
+# The single-quote half is NOT optional politeness. Until 2026-08-06 this pattern
+# only accepted double-quoted strings, and every review object written with '...'
+# was silently skipped -- the gate printed "0 FAIL" without ever having looked at
+# them. That hid all six testimonials in pages/extranjero/ (the whole study-abroad
+# cluster), two of which were already live. A verifier that quietly checks less
+# than you think is worse than no verifier, because it is trusted.
+def _obj_pattern(quote, idx):
+    e = re.escape(quote)
+    ch = rf"(?:[^{e}\\]|\\.)"     # any char except the delimiter, or an escape
+    return (
+        rf"\{{[^{{}}]*?(?:name|author)\s*:\s*{e}(?P<name{idx}>{ch}+){e}[^{{}}]*?"
+        rf"(?:text|quote)\s*:\s*{e}(?P<text{idx}>{ch}*){e}[^{{}}]*?\}}"
+        rf"|\{{[^{{}}]*?(?:text|quote)\s*:\s*{e}(?P<text{idx}b>{ch}*){e}[^{{}}]*?"
+        rf"(?:name|author)\s*:\s*{e}(?P<name{idx}b>{ch}+){e}[^{{}}]*?\}}"
+    )
+
+
 QUOTE_OBJ = re.compile(
-    r"\{[^{}]*?(?:name|author)\s*:\s*\"(?P<name>[^\"]+)\"[^{}]*?"
-    r"(?:text|quote)\s*:\s*\"(?P<text>(?:[^\"\\]|\\.)*)\"[^{}]*?\}"
-    r"|\{[^{}]*?(?:text|quote)\s*:\s*\"(?P<text2>(?:[^\"\\]|\\.)*)\"[^{}]*?"
-    r"(?:name|author)\s*:\s*\"(?P<name2>[^\"]+)\"[^{}]*?\}", re.S)
+    "|".join(_obj_pattern(q, i) for i, q in enumerate(['"', "'"])), re.S)
 
 
 def extract(src):
     out = []
     for m in QUOTE_OBJ.finditer(src):
-        name = m.group("name") or m.group("name2")
-        text = m.group("text") or m.group("text2")
+        g = m.groupdict()
+        name = next((v for k, v in g.items() if k.startswith("name") and v), None)
+        text = next((v for k, v in g.items() if k.startswith("text") and v), None)
         if not name or not text:
             continue
         if len(text) < 40:          # course names, nav labels - not testimonials
             continue
-        out.append((name, text.replace('\\"', '"')))
+        out.append((name, text.replace('\\"', '"').replace("\\'", "'")))
     return out
 
 
