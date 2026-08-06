@@ -31,6 +31,15 @@ const navItems: NavItem[] = [
       { label: "Linguaskill", href: "/linguaskill/", description: "Certificación rápida de Cambridge" },
     ]
   },
+  {
+    label: "En el extranjero",
+    children: [
+      { label: "Inglés en el extranjero", href: "/ingles-en-el-extranjero/", description: "Año escolar, verano y adultos" },
+      { label: "Irlanda", href: "/ingles-en-el-extranjero/irlanda/", description: "Nuestro destino principal" },
+      { label: "Año escolar en Irlanda", href: "/ingles-en-el-extranjero/irlanda/ano-escolar/", description: "Curso completo o trimestre" },
+      { label: "Canadá", href: "/ingles-en-el-extranjero/canada/", description: "Año escolar en colegio público" },
+    ]
+  },
   { label: "Sobre Nosotros", href: "/sobre-nosotros/" },
   { label: "Testimonios", href: "/testimonios/" },
   { label: "Blog", href: "/blog/" },

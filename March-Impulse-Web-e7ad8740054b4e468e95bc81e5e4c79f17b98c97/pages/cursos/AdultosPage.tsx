@@ -597,7 +597,9 @@ export default function AdultosPage() {
               <div><p className="t-h3 text-accent-blue">2 años</p><p className="t-small text-zinc-600">viviendo y trabajando en Irlanda</p></div>
             </div>
             <p className="t-body text-zinc-600">
-                Hoy trabaja como analista de pólizas en una empresa irlandesa.
+                Hoy trabaja como analista de pólizas en una empresa irlandesa. Si te estás planteando algo parecido, organizamos{' '}
+                <a href="/ingles-en-el-extranjero/" className="font-medium text-accent-blue hover:underline">estancias de inglés en el extranjero</a>{' '}
+                para adultos.
               </p>
           </div>
         </div>
@@ -652,6 +654,8 @@ export default function AdultosPage() {
           </p>
           <p className="t-small text-center text-zinc-500 mt-4">
             <a href="/" className="font-medium text-accent-blue hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
+            {' · '}
+            <a href="/ingles-en-el-extranjero/" className="font-medium text-accent-blue hover:underline">Inglés en el extranjero</a>
           </p>
         </div>
       </section>
