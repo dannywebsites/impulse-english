@@ -441,10 +441,10 @@ Resolved: photos ✅ · brand config ✅ · launch list ✅.
 | Pipeline proven end-to-end against a real build | ✅ done — probe article rendered, then removed |
 | Price decision | ✅ Danny 2026-08-06: **Impulse publishes "desde 6.750 €"** — inclusions still needed |
 | Scraper moved Apify → Firecrawl | ✅ done — `lib/firecrawl.js`, Apify kept as logged fallback |
-| **Write the 22 + hub** | 🟡 **5 of 23 written, installed and committed** |
+| **Write the 22 + hub** | 🟡 **8 of 23 written, installed and committed** |
 | `gen_blog_directory.py`, build, gates | ⬜ — run once the batch is complete |
 
-### Batch progress — 5 of 23 (2026-08-06)
+### Batch progress — 8 of 23 (2026-08-06)
 
 | # | Article | Slug | Commit |
 |---|---|---|---|
@@ -453,6 +453,37 @@ Resolved: photos ✅ · brand config ✅ · launch list ✅.
 | 2 | Vivir en Irlanda: coste real y vivienda | `vivir-en-irlanda-coste-real` | `de7e758` |
 | 3 | Curso de inglés en Malta | `estudiar-ingles-malta-consejos` | `4bb3812` |
 | 6 | Internados en Inglaterra | `guia-internados-inglaterra-precios` | `4bb3812` |
+| 7 | Año escolar en Estados Unidos | `ano-escolar-estados-unidos` | `eecbe89` |
+| 8 | Campamentos de verano en Inglaterra | `campamentos-verano-inglaterra` | `eecbe89` |
+| 5 | Campamento de verano en Irlanda | `campamento-verano-irlanda-guia` | `eecbe89` |
+
+**Next image rotation index is 8.** Indices 0-7 are consumed. All three paid-for run dirs
+listed below have now been written, assembled and shipped.
+
+#### What `eecbe89` also fixed (found, not assumed)
+
+- **The first five articles were never registered in the blog directory.** Running
+  `gen_blog_directory.py` moved the collection count **25 → 33**, i.e. +8, not +3. The
+  previous session shipped its 5 articles without regenerating, so they existed as pages
+  but were unreachable from `/blog/`, `/blog/todos/` and the sibling rings. This is exactly
+  the silent-gate failure mode: the build was green and the pages resolved by direct URL.
+  **Regenerate after every batch, and check the count moved by the number you added.**
+- **`assemble.js` takes ~3 minutes per article** (Gemini meta call). A 2-minute shell timeout
+  kills the wrapper *after* the file is already written, so a re-run produces a duplicate with
+  a `-2` slug suffix. One such duplicate (`ano-escolar-estados-unidos-2.md`) was removed and the
+  clean-slug file kept. Run assemble in the background or with a 6+ minute timeout.
+- **The converter folds all pre-H2 prose into `contextSections[0]`.** Any opening sentence that
+  bridges from the intro ("Esa última frase...") ends up under the first unrelated H2 and reads
+  as a non-sequitur. Fixed in the EE. UU. article. Three shipped articles have a milder version
+  of this; they read acceptably because `PAAArticlePage` renders `paaAnswer` directly above the
+  first section, so they were left alone. **Write the second intro paragraph self-contained.**
+- **`\brealm` in the gate matches the Spanish word `realmente`.** Not a false positive to
+  suppress, just avoid `realmente`. Same class of trap as `crucial`, `robusto` and `paradigma`,
+  which are all real Spanish words on the banned list.
+- **The England camps brief was unusable as written.** It proposed "El factor Impulse: de Barrio
+  del Pilar a Londres" and "cómo Impulse selecciona los centros asociados" for a country we do
+  not sell. Research briefs are generated per topic and do not know §4. **Read the brief against
+  the offer-honesty rule before writing, not after.**
 
 **Research already paid for and sitting on disk** (Stage A done, `brief.md` + rotated
 `images.json` present — do NOT re-run prewrite, it would re-scrape):
