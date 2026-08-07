@@ -989,3 +989,56 @@ returns 404 rather than landing on the moved article. Reversible in minutes if G
 `precio` rules had already captured two cluster articles into foreign rings. The related-articles ring
 is the cluster's internal link graph (book §4: *each article links to at least two others, treat the
 list as circular*), so it has to be the cluster.
+
+---
+
+## 2026-08-07 — 30 articles for families and adult learners in the catchment
+
+**Artifact:** `GEO-Content-Project/local-families-adults-blog-briefs.md`. Volumes and KD are live
+DataForSEO Labs pulls (Spain/es); the SERP and PAA for the hub term are live Madrid pulls via
+`/serp/google/organic/live/advanced`. Brief: attract families and adults within ~6 km, local intent.
+
+### Decision 1 — "Local intent" is redefined as the audience and the proof, not the query string.
+**Why (measured, not asserted):** across 354 pulled keywords the entire Madrid-modified space is
+`academia de ingles madrid` 1.300 (navigational, KD 32), `clases de ingles madrid` 480 (KD 34),
+`academia de ingles en madrid` 170 — and then a cliff to ≤30/mo, where the tail is almost entirely
+navigational hunts for a named rival or a street (`…calle orense…`, `…chester…`, `…what's up…`).
+The two real terms are **commercial heads that belong to service pages** — already ruled in
+Decision 6 of the primaria/ESO entry. There is no 30-article blog set in geo-modified queries.
+Each brief is therefore a decision-moment question answered with local proof (barrio, group size,
+real price, JP, the 25-minute test) and linked into the local service pages.
+
+### Decision 2 — `niveles de inglés` (14.800/mo, LOW, €1,49 CPC) becomes the hub of the set.
+**Why (book §2, "find the tier you can compete with" + §4, hub formula):** it is the largest
+legitimate non-dictionary term found, its page 1 is British Council plus **small academies**
+(Kells College, Astex, St George's, angloeducativo) several on 2019–2023 content and one on
+`http://`, and the AI Overview at position 1 **cites those same small academies** — so citation is
+attainable. Its PAA is almost entirely self-assessment (*¿cómo saber si soy B2?*, *¿qué nivel da la
+ESO?*, *¿el B1 equivale a bachillerato?*), which lands directly on the free level test.
+
+### Decision 3 — Reject the national ESL-grammar and dictionary space a second time.
+**Why (book §1, purchasing-intent test):** widening the seeds returned
+`verbos irregulares en ingles` 40.500, `diccionario ingles` 33.100, `hola en ingles` 22.200,
+`traductor a ingles` 18.100 and `portadas de inglés` 18.100 — the last being school notebook covers,
+peaking at **165.000 in September**. Owned by Google, WordReference and DeepL. This independently
+re-confirms Decision 2 of the primaria/ESO entry from a different seed set.
+
+### Decision 4 — One new category, not four. `Niveles de inglés`, `hubPath` = the level test.
+**Why:** the other 24 briefs map onto existing categories (Cambridge exams, Kids Primary/Secundaria,
+Career, Learning Methods). Only the MCER-ladder cluster has no home. Its `hubPath` is
+`/prueba-de-nivel-ingles/` rather than a course page because the question the reader arrives with
+*is* the thing the test answers. Registered in all four required places — the union, the config,
+`MD_TO_DISPLAY` and `order` — because a frontmatter category string alone silently falls back to
+Cambridge B2 First (see the same-day entry on `/blog/extranjero/`).
+
+### Decision 5 — The Cambridge "for Schools" family is carried over, Madrid-localised.
+**Why:** 25 of 117 published pieces cover Cambridge exams and none covers the *for Schools*
+versions school-age candidates actually sit. `a2 key for schools` is 110/mo at **KD 3** with page-1
+rivals averaging 6,9 referring domains. The national head terms stay with `/examenes-cambridge/*`;
+the blog takes the localised and parent-facing forms only.
+
+**Honest ceiling, recorded so it is not a surprise later:** Cluster A is the only part with real
+measurable volume. Clusters C and D are largely zero-volume decision content — the deliberate cost
+of choosing local intent over national volume. **Judge them on enquiries, not clicks.** Publish
+A and B before September (`academia de ingles` 9.900 → 27.100; `academia de ingles madrid`
+1.300 → 2.900).

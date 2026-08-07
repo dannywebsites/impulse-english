@@ -162,4 +162,17 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
     leadFormSource: 'paa-extranjero',
     color: 'teal',
   },
+  // The MCER ladder (A1-C2). `niveles de inglés` is 14.800/mo at LOW competition and its
+  // People Also Ask is almost entirely self-assessment — "¿cómo saber si soy B2?",
+  // "¿qué nivel da la ESO?". hubPath is therefore the free 25-minute level test rather than
+  // a course page: the question the reader arrived with IS the thing the test answers.
+  'Niveles de inglés': {
+    displayName: 'Niveles de inglés',
+    hubPath: '/prueba-de-nivel-ingles/',
+    hubLabel: 'la prueba de nivel',
+    blogFilterName: 'Niveles de inglés',
+    imageKey: 'classroom',
+    leadFormSource: 'paa-niveles',
+    color: 'purple',
+  },
 };
