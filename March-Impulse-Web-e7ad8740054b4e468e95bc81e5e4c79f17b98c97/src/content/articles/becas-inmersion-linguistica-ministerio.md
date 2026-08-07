@@ -1,5 +1,5 @@
 ---
-url: /blog/becas-inmersion-linguistica-ministerio/
+url: /blog/extranjero/becas-inmersion-linguistica-ministerio/
 category: Inglés en el extranjero
 priority: Medium
 question: Becas inmersión Ministerio o privadas
@@ -58,6 +58,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: Becas inmersión Ministerio o privadas
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"

@@ -1,5 +1,5 @@
 ---
-url: /blog/elegir-familia-acogida-irlanda/
+url: /blog/extranjero/elegir-familia-acogida-irlanda/
 category: Inglés en el extranjero
 priority: Medium
 question: Elegir tu familia de acogida en Irlanda
@@ -58,6 +58,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: Elegir tu familia de acogida en Irlanda
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"

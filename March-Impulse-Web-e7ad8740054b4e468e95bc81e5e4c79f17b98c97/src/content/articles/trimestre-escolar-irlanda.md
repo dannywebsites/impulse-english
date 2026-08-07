@@ -1,5 +1,5 @@
 ---
-url: /blog/trimestre-escolar-irlanda/
+url: /blog/extranjero/trimestre-escolar-irlanda/
 category: Inglés en el extranjero
 priority: Medium
 question: "Trimestre escolar en Irlanda: claves"
@@ -60,6 +60,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: "Trimestre escolar en Irlanda: claves"
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"

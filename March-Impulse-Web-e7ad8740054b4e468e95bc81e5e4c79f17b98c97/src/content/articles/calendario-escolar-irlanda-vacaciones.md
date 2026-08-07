@@ -1,5 +1,5 @@
 ---
-url: /blog/calendario-escolar-irlanda-vacaciones/
+url: /blog/extranjero/calendario-escolar-irlanda-vacaciones/
 category: Inglés en el extranjero
 priority: Medium
 question: "Calendario escolar Irlanda: qué saber"
@@ -60,6 +60,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: "Calendario escolar Irlanda: qué saber"
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"

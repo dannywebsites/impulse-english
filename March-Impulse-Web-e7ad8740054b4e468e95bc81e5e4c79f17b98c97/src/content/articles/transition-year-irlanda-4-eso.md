@@ -1,5 +1,5 @@
 ---
-url: /blog/transition-year-irlanda-4-eso/
+url: /blog/extranjero/transition-year-irlanda-4-eso/
 category: Inglés en el extranjero
 priority: Medium
 question: "Transition Year Irlanda: qué es y 4º ESO"
@@ -60,6 +60,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: "Transition Year Irlanda: qué es y 4º ESO"
 publishedDate: "2026-08-06"
 modifiedDate: "2026-08-06"

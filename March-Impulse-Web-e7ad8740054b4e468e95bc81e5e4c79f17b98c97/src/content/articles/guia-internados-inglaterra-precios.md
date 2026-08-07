@@ -1,5 +1,5 @@
 ---
-url: /blog/guia-internados-inglaterra-precios/
+url: /blog/extranjero/guia-internados-inglaterra-precios/
 category: Inglés en el extranjero
 priority: Medium
 question: "Internados en Inglaterra: Guía y Precios"
@@ -58,6 +58,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: "Internados en Inglaterra: Guía y Precios"
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"

@@ -1,5 +1,5 @@
 ---
-url: /blog/ano-escolar-estados-unidos/
+url: /blog/extranjero/ano-escolar-estados-unidos/
 category: Inglés en el extranjero
 priority: Medium
 question: Claves del año escolar en Estados Unidos
@@ -57,6 +57,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: Claves del año escolar en Estados Unidos
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"

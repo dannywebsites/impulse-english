@@ -1,5 +1,5 @@
 ---
-url: /blog/campamento-verano-irlanda-guia/
+url: /blog/extranjero/campamento-verano-irlanda-guia/
 category: Inglés en el extranjero
 priority: Medium
 question: "Campamento de verano en Irlanda: Claves"
@@ -60,6 +60,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: "Campamento de verano en Irlanda: Claves"
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"
