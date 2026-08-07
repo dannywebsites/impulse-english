@@ -337,6 +337,56 @@ export default function ExtranjeroHubPage() {
         </div>
       </section>
 
+      {/* Enlace hacia abajo al cluster de guías. Esta página no enlazaba a ninguno
+          de los 21 artículos: se escribieron, se publicaron y quedaron huérfanos.
+          Los anclajes llevan el término de búsqueda, no "leer más". */}
+      <section className="section bg-white">
+        <div className="container-narrow">
+          <div className="mb-10 max-w-2xl">
+            <span className="eyebrow mb-4">Antes de decidir</span>
+            <h2 className="t-h2 mb-5 text-zinc-900">Guías para leer con calma</h2>
+            <span className="rule"></span>
+          </div>
+          <div className="t-body measure mb-8 space-y-4 text-zinc-600">
+            <p>
+              Mandar a un hijo fuera un curso entero no se decide en una llamada. Hemos escrito
+              veintiuna guías sobre las preguntas que nos hacen de verdad: cómo se elige la{' '}
+              <a href="/blog/extranjero/elegir-familia-acogida-irlanda/" className="text-accent-blue underline">
+                familia de acogida en Irlanda
+              </a>
+              , cómo funciona el{' '}
+              <a href="/blog/extranjero/sistema-educativo-irlandes-guia/" className="text-accent-blue underline">
+                sistema educativo irlandés
+              </a>
+              , qué es el{' '}
+              <a href="/blog/extranjero/transition-year-irlanda-4-eso/" className="text-accent-blue underline">
+                Transition Year para 4º de la ESO
+              </a>{' '}
+              y cómo se tramita la{' '}
+              <a href="/blog/extranjero/convalidar-curso-escolar-extranjero/" className="text-accent-blue underline">
+                convalidación del curso escolar
+              </a>{' '}
+              al volver.
+            </p>
+            <p>
+              También las incómodas: qué{' '}
+              <a href="/blog/extranjero/becas-bachillerato-extranjero-reales/" className="text-accent-blue underline">
+                becas de bachillerato en el extranjero
+              </a>{' '}
+              existen de verdad, y qué cambia según{' '}
+              <a href="/blog/extranjero/academia-o-agencia-estudiar-extranjero/" className="text-accent-blue underline">
+                contrates con una academia o con una agencia
+              </a>
+              .
+            </p>
+          </div>
+          <a href="/blog/extranjero/" className="btn-outline">
+            Ver las 21 guías
+            <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+      </section>
+
       <GoogleReviews
         heading="Lo que dicen las familias que ya han ido"
         intro="Reseñas reales publicadas en nuestro perfil de Google, sin editar."

@@ -5,6 +5,51 @@ Every SEO decision is logged here, grounded in [`SEO-Master-Class-Reference.md`]
 
 ---
 
+## 2026-08-07 — Blog targeting for primaria/ESO parents (30 briefs)
+
+Artifact: `GEO-Content-Project/primaria-eso-blog-briefs.md`. All figures are live DataForSEO Labs
+pulls (Spain, Spanish, 2026-08-07); zero-volume targets are labelled as such.
+
+### Decision 1 — Reject `colegio bilingüe` despite 880/mo at LOW competition.
+**Why (book §1, "Avoid branded searches"):** the cluster is ~90% navigational brand queries for
+named schools — `colegio bilingüe valle del miro` (3.600), `vallmont` (1.900), `sierra blanca`
+(1.600). Searchers want one specific school, not advice. Kept only as an *angle* (brief #22,
+"is a bilingual school enough?"), never as a head-term target.
+
+### Decision 2 — Reject the whole `inglés primaria` / `inglés eso` space.
+**Why (book §1, purchasing-intent test):** top terms are `fichas inglés 3 primaria` (480),
+`ejercicios`, `libros`, `repaso … pdf con soluciones` — free-worksheet hunters and pupils, not
+buying parents. `inglés eso` is additionally polluted by "eso" the pronoun. Note this is the same
+trap already visible in GSC: the site's current "winners" are PDF-hunter posts with near-zero
+commercial intent (see Decision 6, 2026-07-28).
+
+### Decision 3 — Target the Cambridge exam-logistics and level-ladder cluster instead.
+**Why (book §2, tier you can compete with):** `fechas examen cambridge` 590/mo at **KD 2**,
+`examen cambridge b2` 1.000/mo at **KD 8**, `niveles de inglés cambridge` 1.000/mo at **KD 5–7**,
+`a2 key for schools` 110/mo at **KD 3** with page-1 rivals averaging 6,9 referring domains —
+the book's "ripe for the picking". All uncovered by the 58 existing articles, and Impulse is an
+official Cambridge preparation centre, so the authority is real rather than claimed.
+
+### Decision 4 — The "for Schools" exam family is the primaria/ESO gap.
+**Why:** 25 of 58 existing articles cover Cambridge exams, and **none** covers the *for Schools*
+versions that school-age candidates actually sit. Distinct exam, distinct intent, so a separate
+page is permitted under §2 — but `b2 first for schools` (#16) carries real cannibalisation risk
+against 18 existing B2 articles and must lead on the *for Schools* difference.
+
+### Decision 5 — `niveles de inglés cambridge` (#4) becomes the hub.
+**Why (book §4, interlinking / Knowledge Graph):** it is the first question a parent asks and the
+natural parent of every exam piece. The exam briefs link into it; it earns the authority.
+
+### Decision 6 — `clases particulares de inglés` (590/mo, KD 2) is NOT a blog target.
+**Why:** intent is **commercial**. It belongs to a service page via `geo-pages`; routing it
+through the blog would build the wrong page type for the query.
+
+**Validation plan:** publish Tier 1 before the September spike (Cambridge and class-search terms
+run ~3× in September). Re-pull at +4/+8 weeks and read position and CTR against the control
+cohort, not raw clicks.
+
+---
+
 ## 2026-08-03 — DECIDED: do not build San Sebastián de los Reyes or Alcobendas.
 
 **Decision [DANNY, 3 Aug 2026]:** no pages for **San Sebastián de los Reyes (90/mo, 210 in
@@ -609,6 +654,8 @@ vercel.json redirect sources = 339 URLs (Google's own count: 315). Hard facts se
 - PSI keyless quota exhausted — mobile perf unverified today (last verified 85+ in March; the
   perf-harness gap memory stands).
 
+---
+
 ## 2026-07-24 (evening) — PR 1 built + URL Inspection API results (SA now Full)
 
 **Inspection API (145 sitemap URLs + variants, archived `inspection-2026-07-24.json`):**
@@ -860,3 +907,85 @@ business-optimal point different ways here; enrolments won.
 `page_query_pull.py --filter cursos-ingles`, and read **position and CTR, not raw clicks** — July–
 August is the seasonal trough and September is a 3× spike, so judge against the barrio/blog control
 cohort. Titles must not change again for a quarter (§3).
+
+---
+
+## 2026-07-23 — Target keyword: "academia de inglés cerca de mí" (6,600/mo, ~#22)
+
+**Context:** biggest generic local term in the niche; a proximity/"near-me" query. No page currently
+targets it; homepage is anchored to "La Vaguada y Barrio del Pilar."
+
+### Decision 1 — The **homepage** owns the term as the Tier-1 pillar; the `por-barrios` hub + 10 barrio pages are the interlinked Tier-2/3 moat.
+**Why (book):**
+- Homepage is the authority node and *already ranks #22* — Expansion step says **build the moat around the proven winner**, don't move the target to a zero-authority page.
+- **One intent = one page** — chasing the term on both homepage *and* hub = self-cannibalization.
+- **Broad-vs-narrow rule** removes the only risk (barrio dilution): broaden the H1/title/intro to "Madrid norte / cerca de ti," keep "La Vaguada"/"Barrio del Pilar" as H2 sub-sections.
+- Rejected: new `/academia-ingles-cerca-de-mi/` page (don't spin up a thin page for a term you already rank for); hub-as-pillar (discards homepage traction/authority).
+
+### Decision 2 — Optimise existing surfaces **this PR**; build new location pages (Herrera Oria, Valdeacederas, Fuentelarreina) as a **separate Expansion PR after validation.**
+**Why (book):** **Validation precedes Expansion** — measure the term's avg position + the barrio cluster
+(GSC "URLs containing academia-ingles") first; *"don't build hubs just to build hubs."* Then expand
+around what's working, using the routing data in `Competitor info and direction for new location pages.docx`.
+
+### Decision 3 — **Defer the homepage copy rewrite.** Ship the near-me signal through new surfaces, geo data and internal linking only; leave title, H1 and intro untouched.
+**Why (book):** same principle as Decision 2 — **Validation precedes Expansion.** The homepage's barrio
+consolidation merged the *same day* (`f29b3b9`) and has **zero GSC data**. Rewriting its title/H1/intro
+now would overwrite an unmeasured change and make both experiments unreadable: if position moves, we
+couldn't attribute it. Decision 1 stands — the homepage is still the Tier-1 pillar — but the
+broad-vs-narrow rewrite of its copy waits for one GSC cycle on the barrio terms.
+
+**Shipped instead (PR `seo/cerca-de-mi-pillar`):**
+- Corrected the LocalBusiness `geo` pin (~500 m off) to the real GBP coordinates; added `geo.position` + `ICBM` head meta.
+- Homepage FAQ + `FAQPage` schema, six proximity questions (metro/bus/coche/aparcamiento), answers <300 chars.
+- "Cómo llegar desde tu barrio" routing block on the homepage — real metro L9 / bus / drive times per origin.
+- "Zonas" header-nav entry → the `por-barrios` hub (it had no nav entry at all).
+- Completed the lateral barrio ring + added homepage up-links, via a shared `NearbyAreas` component
+  fed by a single `utils/barrioAreas.ts` list (the hand-maintained rings had drifted: several pages
+  were missing Mirasierra and Montecarmelo/Las Tablas).
+
+**Scope note:** the book has **no GBP/citations chapter** → the "citations" half of this keyword's
+attack is a separate, off-repo workstream (GBP category, NAP consistency vs `utils/napData.ts`, reviews).
+
+**Implementation plan:** `~/.claude/plans/handoff-saved-vectorized-ullman.md` (approved and executed
+2026-07-23). Supersedes the earlier draft `twinkly-popping-gosling.md`, whose Deliverable B1
+(homepage copy rewrite) is deferred by Decision 3.
+
+---
+
+## 2026-08-07 — Study-abroad blog cluster gets its own section: `/blog/extranjero/`
+
+**Trigger:** the 21 study-abroad articles shipped carrying `category: Inglés en el extranjero`, a value
+that existed in the markdown and **nowhere in the rendering code**. They rendered a *Cambridge B2 First*
+badge, a *"Volver a B2 First"* link to `/examenes-cambridge/b2-first/`, a `paa-cambridge-b2` lead source,
+and an "Aprender Inglés" related-articles ring that recommended podcasts and vergüenza-al-hablar.
+
+### Decision 1 — A real section hub at `/blog/extranjero/`, with all 21 articles nested inside it.
+**Why (book §4, Interlinking):** the cluster had no Tier-1. Its only "hub" was another article that
+nothing linked to, and `/ingles-en-el-extranjero/` contained **zero** links to any of the 21 — the
+*"go back and link the pillar down to the new pages"* step ("build the moat") was never done. Each
+article now links up to a section that links down to all 21, and the pillar links down to both.
+
+### Decision 2 — The hub deliberately does **not** target "estudiar inglés en el extranjero".
+**Why (book §2, anti-cannibalisation):** **one intent = one page.** That term belongs to
+`/ingles-en-el-extranjero/`, which is the page that sells. The hub is a Tier-1 *organiser* —
+built to group and pass authority, not to rank — exactly the role the book describes for Tier 1.
+
+### Decision 3 — Nest the articles under a shared path token rather than leave them flat under `/blog/`.
+**Why (book §5, Validation):** *"put a shared keyword in every hub page's slug so you can filter GSC by
+URLs containing [token] and judge the cluster as a whole."* Flat under `/blog/` the 21 shared no token
+and could only be read article-by-article. `/blog/extranjero/` is now one GSC filter.
+
+### Decision 4 — **No redirects.** The old `/blog/<slug>/` URLs are left to 404.
+**Why:** Danny's call, on the grounds that the articles went live the same day (`9abac0c`, 2026-08-07)
+and are not yet indexed. All 69 internal cross-links were rewritten, so nothing on the site points at
+the old paths and the sitemap lists only the new ones. Consistent with the standing preference for a
+clean 404 over a redirect where there is no accrued equity to preserve.
+**Residual risk, accepted:** any old URL Google *did* crawl in that window, or any external link,
+returns 404 rather than landing on the moved article. Reversible in minutes if GSC shows crawled 404s —
+21 entries in `vercel.json`.
+
+### Decision 5 — `ringGroup` now derives from the markdown category, not the slug regex.
+**Why:** `ring_group()` in `gen_blog_directory.py` is order-sensitive, and its `academia|madrid` and
+`precio` rules had already captured two cluster articles into foreign rings. The related-articles ring
+is the cluster's internal link graph (book §4: *each article links to at least two others, treat the
+list as circular*), so it has to be the cluster.

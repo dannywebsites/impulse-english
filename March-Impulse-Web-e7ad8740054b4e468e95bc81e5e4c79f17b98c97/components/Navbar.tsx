@@ -42,6 +42,7 @@ const navItems: NavItem[] = [
       { label: "Irlanda", href: "/ingles-en-el-extranjero/irlanda/", description: "Nuestro destino principal" },
       { label: "Año escolar en Irlanda", href: "/ingles-en-el-extranjero/irlanda/ano-escolar/", description: "Curso completo o trimestre" },
       { label: "Canadá", href: "/ingles-en-el-extranjero/canada/", description: "Año escolar en colegio público" },
+      { label: "Guías y artículos", href: "/blog/extranjero/", description: "Familia de acogida, becas, coste real" },
     ]
   },
   { label: "Nosotros", href: "/sobre-nosotros/" },
