@@ -37,7 +37,19 @@ FLAG  W00  —  scope  Three assembled .md files sit in the skill output dir and
 FLAG  W00  —  scope  Three untracked .md files are sitting in src/content/articles/ uncommitted from
       another batch: mejor-academia-ingles-tetuan.md, mejor-academia-ingles-chamartin.md,
       mejores-academias-ingles-plaza-castilla.md. Not touched. Not ours to commit.
+FLAG  W00  —  concurrent  ANOTHER SESSION IS RUNNING seo-blog-writer RIGHT NOW (local-30 batch:
+      Chamartin, Fuencarral-El Pardo; files appearing in output/impulse-english at 20:42 and 20:44
+      on 2026-08-07). It has already produced the duplicate-slug defect this batch pins slugs to
+      avoid: mejor-academia-ingles-chamartin.md AND mejores-academias-ingles-chamartin.md are the
+      SAME article (identical seoTitle "Mejores academias de inglés en Chamartín") assembled twice
+      without --slug, so they carry two different /blog/ URLs. The 20:42 one is already in the
+      site; the 20:44 one is an orphan. NOT touched - it is in-flight work. Danny to decide which
+      URL survives.
 ```
+
+**Consequence for tonight:** `runs/` and `output/impulse-english/` are shared with that session.
+This is why §9's "never `assemble.js --all`" and "explicit `git add` paths only" are not theoretical
+— a window using `--all` would sweep up their half-finished articles.
 
 ---
 
