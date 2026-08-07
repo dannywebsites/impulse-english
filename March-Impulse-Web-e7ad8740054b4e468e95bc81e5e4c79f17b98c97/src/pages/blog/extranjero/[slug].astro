@@ -1,0 +1,95 @@
+---
+/**
+ * Study-abroad cluster articles, at /blog/extranjero/<slug>/.
+ *
+ * Same template as ../[slug].astro — only the path and the collection filter
+ * differ. The sibling route excludes this category, so each article is built
+ * here and nowhere else; the old /blog/<slug>/ URLs are 308s in vercel.json.
+ *
+ * Canonical is derived from the ROUTE, not from frontmatter `url`. The route is
+ * what actually decides where the file lands, and deriving it here means a stale
+ * `url:` in a markdown file can never ship a canonical pointing at a 308.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PAAArticlePage from '../../../../components/PAAArticlePage';
+import CookieBanner from '../../../../components/CookieBanner';
+import { getBlogSiblingCards } from '../../../../data/blog-directory';
+import {
+  generateArticleSchema,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+  businessInfo,
+  toCanonicalPageUrl,
+} from '../../../../utils/schemaData';
+import { EXTRANJERO_CATEGORY, extranjeroHref } from '../../../../utils/extranjeroCluster';
+import type { PAAArticle } from '../../../../data/articles/types';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles
+    .filter((entry) => entry.data.category === EXTRANJERO_CATEGORY)
+    .map((entry) => ({
+      params: { slug: entry.id.replace(/\.md$/, '') },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const slug = entry.id.replace(/\.md$/, '');
+const data = entry.data;
+const url = extranjeroHref(slug);
+
+const normalizedData = {
+  ...data,
+  url,
+  breadcrumbs: data.breadcrumbs.map((b) => (b.href ? { ...b, href: toCanonicalPageUrl(b.href) } : b)),
+  impulseSection: {
+    ...data.impulseSection,
+    ctaLinks: data.impulseSection.ctaLinks.map((c) => ({ ...c, href: toCanonicalPageUrl(c.href) })),
+  },
+};
+
+const article = { slug, ...normalizedData, category: normalizedData.category as PAAArticle['category'] };
+const siblings = getBlogSiblingCards(slug, 3);
+const fullUrl = `${businessInfo.url}${url}`;
+
+const schemaImage =
+  data.articleImages?.[0]?.url ?? `/images/academy/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg`;
+
+const schemas: object[] = [
+  generateArticleSchema({
+    headline: data.seoTitle,
+    description: data.metaDescription,
+    url: fullUrl,
+    image: schemaImage,
+    datePublished: data.publishedDate,
+    dateModified: data.modifiedDate,
+    wordCount: 1500,
+  }),
+  // The base article route emits no BreadcrumbList at all. These pages are three
+  // levels deep, so the trail is worth stating rather than leaving Google to infer.
+  generateBreadcrumbSchema([
+    { name: 'Inicio', url: 'https://impulse-english.es/' },
+    { name: 'Blog', url: 'https://impulse-english.es/blog/' },
+    { name: 'Inglés en el extranjero', url: 'https://impulse-english.es/blog/extranjero/' },
+    { name: data.question, url: fullUrl },
+  ]),
+];
+if (data.faqItems.length > 0) {
+  schemas.push(generateFAQSchema(data.faqItems));
+}
+---
+
+<BaseLayout
+  title={data.seoTitle}
+  description={data.metaDescription}
+  canonical={url}
+  ogType="article"
+  publishedTime={data.publishedDate}
+  modifiedTime={data.modifiedDate}
+  schemas={schemas}
+>
+  <PAAArticlePage article={article} siblingArticles={siblings} client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>

@@ -1,0 +1,67 @@
+---
+/**
+ * Section hub for the study-abroad cluster.
+ *
+ * Before this page existed the 21 articles had no parent: the only thing linking
+ * them was the generic /blog/ directory, where they sat inside "Aprender Inglés".
+ * The cluster's own "hub" was another article that nothing linked to.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ExtranjeroBlogHubPage from '../../../../pages/extranjero/ExtranjeroBlogHubPage';
+import CookieBanner from '../../../../components/CookieBanner';
+import { generateBreadcrumbSchema } from '../../../../utils/schemaData';
+import { EXTRANJERO_CATEGORY, extranjeroHref } from '../../../../utils/extranjeroCluster';
+import type { ArticleCard } from '../../../../data/articles/types';
+
+const entries = (await getCollection('articles')).filter(
+  (e) => e.data.category === EXTRANJERO_CATEGORY,
+);
+
+const articles: ArticleCard[] = entries
+  .map((e) => {
+    const slug = e.id.replace(/\.md$/, '');
+    return {
+      id: slug,
+      title: e.data.question,
+      excerpt: e.data.metaDescription,
+      category: e.data.category,
+      readTime: e.data.readTime,
+      href: extranjeroHref(slug),
+      priority: e.data.priority,
+    };
+  })
+  .sort((a, b) => a.title.localeCompare(b.title, 'es'));
+
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Blog', url: 'https://impulse-english.es/blog/' },
+  { name: 'Inglés en el extranjero', url: 'https://impulse-english.es/blog/extranjero/' },
+]);
+
+// ItemList is what tells Google this is a section index rather than an article,
+// and it names the members explicitly instead of hoping the crawler follows 21 links.
+const itemList = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Guías sobre estudiar inglés en el extranjero',
+  itemListElement: articles.map((a, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `https://impulse-english.es${a.href}`,
+    name: a.title,
+  })),
+};
+---
+
+<BaseLayout
+  title="Guías: inglés en el extranjero | Impulse English"
+  fullTitle={true}
+  description="Año escolar, trimestre, campamentos y cursos para adultos en Irlanda, Inglaterra, Malta, Canadá y EE. UU. Guías sobre familia de acogida, becas, convalidación y coste real."
+  keywords="año escolar en el extranjero, familia de acogida irlanda, campamento de verano irlanda, becas bachillerato extranjero, convalidar curso escolar extranjero"
+  canonical="/blog/extranjero/"
+  schemas={[breadcrumb, itemList]}
+>
+  <ExtranjeroBlogHubPage articles={articles} client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>
