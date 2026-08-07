@@ -1,0 +1,723 @@
+# 30 artículos — keywords, SERP, PAA y estructura de cuerpo
+
+Investigación en vivo **2026-08-07**. Volúmenes: Google Ads, España/`es`. SERP y PAA: DataForSEO `/serp/google/organic/live/advanced`, España/`es`, profundidad de clic 2.
+
+**Cómo usar este documento.** Cada ficha trae el keyword objetivo, el volumen medido, las preguntas PAA **literales** (de ahí salen los FAQ) y el esqueleto del cuerpo. La regla del gate del writer es que **al menos la mitad de las preguntas del FAQ sean PAA copiadas literalmente**, con sus `¿` y `?`.
+
+⚠️ **El texto de las respuestas PAA es volátil** (varía entre peticiones idénticas). Las **preguntas** son estables. Nunca construyas un check sobre las respuestas.
+
+**Cobertura de la investigación:** 196 preguntas PAA reales sobre 30 keywords, 20 con AI Overview, 3 sin caja PAA.
+
+**CTA en las 30:** prueba de nivel gratuita de 25 minutos con JP → la página de curso que corresponda.  
+**Datos citables:** grupos 7/10/10/8 · 64/83/87/94 € al mes · matrícula 45 € · libro máx 40 € · 960 alumnos · 183 reseñas · 100 aprobados de Cambridge (nunca un denominador).
+
+---
+
+
+# Cluster A — Niveles de inglés
+
+
+## A1 · Niveles de inglés A1 a C2: la guía completa
+
+**Objetivo:** `niveles de ingles` · **14800/mes** · competencia LOW · CPC 1.49 € · septiembre 27100  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** HUB. Qué mide el MCER (tareas, no gramática) · los 6 niveles en 'qué puedes hacer de verdad' · el mito del nivel cero · equivalencias con ESO/Bachillerato (no hay oficial) · qué certificado por nivel · cuánto se tarda · cómo medirlo bien.
+
+**Nota:** Enlaza ABAJO a A2-A6 y a los exámenes. ⚠ No repetir escala-cambridge (eso es la escala de puntos Cambridge).
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Qué significa A1, A2, B1, B2, C1, C2 en inglés?
+- ¿Qué nivel de inglés se obtiene con la ESO?
+- ¿Cuáles son los niveles de inglés A1, A2, B1, B2, C1 y C2?
+- ¿Cuáles son los 3 niveles de inglés?
+- ¿Qué nivel de inglés te dan con la ESO?
+- ¿Diferencia entre A2 y B1 inglés?
+- ¿A qué nivel de inglés equivale el bachillerato?
+- ¿A qué edad se suele sacar el B2 de inglés?
+
+**Búsquedas relacionadas:** `Niveles de inglés Cambridge` · `Niveles de inglés A1 A2 B1, B2 C1 C2` · `Niveles de inglés First` · `Niveles de inglés B1` · `Niveles de inglés niños` · `Niveles de inglés B2` · `Niveles de inglés en España` · `Niveles de ingles eso`
+
+**Quién rankea hoy:** www.britishcouncil.es · inglesya.com · cesformacionyempleo.com · iddocente.com · www.kellscollege.com
+
+
+## A2 · ¿Qué nivel de inglés se da en la ESO?
+
+**Objetivo:** `nivel de ingles eso` · **70/mes** · competencia LOW · septiembre 110  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Qué dice el currículo vs qué medimos en aula · por qué la nota del instituto no es un nivel · qué pedir en 4º ESO · cómo acreditarlo.
+
+**Nota:** Sube a A1. ⚠ Distinto de b1-vs-b2-que-nivel-necesito.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Qué nivel de inglés equivale a la ESO?
+- ¿Cuál es el nivel de inglés de 4 de la ESO?
+- ¿Qué nivel de inglés te dan con ESO?
+- ¿Qué nivel de inglés es ESO?
+- ¿Qué es A1, A2, B1, B2, C1 y C2?
+- ¿Qué nivel de inglés es 3 ESO?
+- ¿Qué nivel de inglés tienes en 3 ESO?
+
+**Búsquedas relacionadas:** `Que nivel de inglés te dan con bachillerato` · `Nivel inglés 4 ESO` · `Que nivel de inglés se da en 3 ESO` · `Niveles de inglés` · `Niveles de inglés en España` · `Niveles de inglés Cambridge` · `Nivel de inglés A2` · `Como saber que nivel de inglés tengo`
+
+**Quién rankea hoy:** www.ceac.es · www.academiatopsystem.com · stgeorgesacademy.es · diagonalenglish.com · examenexam.com
+
+
+## A3 · ¿El B1 equivale a Bachillerato?
+
+**Objetivo:** `nivel de ingles bachillerato` · **320/mes** · competencia LOW · septiembre 590  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Bachillerato apunta a B1 con vista al B2 · qué piden las universidades · EvAU no acredita nivel · cómo llegar al B2 antes de selectividad.
+
+**Nota:** Sube a A1, lateral a A2 y C19. ⚠ b1-universidad-espana ya cubre requisitos universitarios.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Cuál es el nivel de inglés en bachillerato?
+- ¿Qué significa A1, A2, B1, B2, C1, C2 en inglés?
+- ¿Nivel B2 inglés equivalencia bachillerato?
+- ¿Qué niveles son B1 y B2 en inglés?
+- ¿Qué es A1, A2, B1, B2, C1 y C2?
+- ¿Cuando acabas Bachillerato te dan el B1?
+- ¿Qué nivel de inglés te dan con la ESO?
+- ¿Diferencia entre nivel A1 y A2?
+
+**Búsquedas relacionadas:** `Como convalidar B1 inglés Bachillerato` · `Que nivel de inglés se da en 2 bachillerato` · `Nivel de inglés bachillerato España` · `Solicitar certificado inglés Bachillerato` · `Nivel inglés bachillerato cataluña` · `Nivel B2 inglés equivalencia Bachillerato` · `Niveles de inglés` · `Convalidación nivel inglés Bachillerato`
+
+**Quién rankea hoy:** academia-malaga.es · www.englishsummer.com · mundoestudiante.com · www.ceac.es · www.cesurformacion.com
+
+
+## A4 · ¿A qué edad se saca el B2?
+
+**Objetivo:** `a que edad se saca el b2 de ingles` · **sin volumen medido**  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** La franja real 16-18 · casos de 4º ESO · el B2 First for Schools · por qué presentarse antes sale caro.
+
+**Nota:** Sube a A1, lateral a B12. ⚠ edad-ninos-aprender-ingles es la edad de EMPEZAR, no la del B2.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Cuándo es obligatorio el B2 de inglés?
+- ¿Cuánto tardó en sacarme el B2 de inglés?
+- ¿Qué nivel de inglés tiene un niño de 12 años?
+- ¿Cuánto tiempo necesito para pasar de B1 a B2?
+- ¿Qué nivel de inglés se tiene en 4 eso?
+- ¿Es difícil el nivel B2 de inglés?
+- ¿Es B2 casi fluido?
+- ¿Qué tan difícil es sacarse el B2 de inglés?
+
+**Búsquedas relacionadas:** `A que edad te puedes sacar el B1 de inglés` · `Se puede sacar el B2 sin tener el B1` · `A que edad se saca el Advanced` · `A que edad se puede sacar el C2 de inglés` · `Niveles Cambridge edades` · `A que edad se puede sacar el C1 de inglés` · `Cuantos años son el b1 de inglés` · `El First es el B1 o B2`
+
+**Quién rankea hoy:** m.cambridgeschool.com · www.theglobeformacion.com · www.examenes-cambridge.com · www.colegiobristol.es · www.kellscollege.com
+
+
+## A5 · ¿Cómo saber si eres B2 sin examinarte?
+
+**Objetivo:** `como saber mi nivel de ingles` · **390/mes** · competencia HIGH · CPC 1.34 € · septiembre 880  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Tres formas de medirlo y lo que vale cada una · límites de los test online · señales de B2 real por destreza · qué te llevas de una prueba presencial.
+
+**Nota:** El puente comercial más directo. Enlaza a /prueba-de-nivel-ingles/ y a D28.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Cómo saber si mi nivel de inglés es B1 o B2?
+- ¿Qué son los niveles de inglés A1 A2 B1 B2 C1 C2?
+- ¿Cómo saber si mi nivel de inglés es A1 o A2?
+- ¿Cómo saber si mi nivel de inglés es C1 o C2?
+- ¿Qué es A1, A2, B1, B2, C1 y C2?
+- ¿Qué nivel de inglés te dan con la ESO?
+- ¿Cómo saber si soy B2 en inglés?
+
+**Búsquedas relacionadas:** `Como saber mi nivel de inglés gratis` · `Test de nivel de inglés A1 A2, B1, B2` · `Test nivel inglés gratis sin registrarse` · `Prueba de nivel de inglés PDF` · `Prueba de nivel de inglés PDF con respuestas` · `Cambridge nivel de inglés` · `Test de inglés básico` · `Test nivel de inglés Cambridge`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · www.efset.org · grupovaughan.com · englishonline.britishcouncil.org · www.abaenglish.com
+
+
+## A6 · Niveles de inglés para niños por edad
+
+**Objetivo:** `niveles de ingles para ninos` · **sin volumen medido**  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Qué se puede esperar por edad (infantil, primaria, ESO) · YLE Starters/Movers/Flyers · por qué no se mide igual que en adultos.
+
+**Nota:** Sube a A1, lateral a B13.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Cuáles son los 3 niveles de inglés?
+- ¿Qué significa nivel A1 A2 B1 B2 C1 C2?
+- ¿Cuáles son los niveles de Cambridge para niños?
+- ¿Cuáles son los niveles educativos en inglés?
+- ¿Qué significa A1, A2, B1, B2, C1, C2 en inglés?
+- ¿Qué nivel de inglés te dan con la ESO?
+- ¿Cuál es la diferencia entre inglés A1 y A2?
+
+**Búsquedas relacionadas:** `Inglés para niños de 7 a 8 años` · `Inglés para niños de 10 a 12 años` · `Curso de inglés para niños gratis` · `Mejores clases de inglés online para niños` · `Inglés para niños de primaria` · `Inglés para niños PDF` · `Inglés para niños online` · `Niveles Cambridge niños`
+
+**Quién rankea hoy:** m.cambridgeschool.com · english4kidsonline.com · properlyidiomas.com · www.colegiobristol.es · www.cambridgeenglish.org
+
+
+# Cluster B — Cambridge: logística y 'for Schools'
+
+
+## B7 · Fechas de los exámenes Cambridge en Madrid
+
+**Objetivo:** `fechas examen cambridge` · **590/mes** · competencia LOW · CPC 0.37 € · septiembre 720  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Convocatorias del año · plazos de inscripción · papel vs ordenador · cómo elegir fecha según cuándo empiezas a preparar.
+
+**Nota:** KD 2, el más barato del set. Enlaza a /examenes-cambridge/fechas-precios/.
+
+**PAA literales (5) — de aquí salen los FAQ:**
+
+- ¿Cuáles son las fechas de los exámenes Cambridge en 2026?
+- ¿Cuándo suelen ser los exámenes de Cambridge?
+- ¿Se han cancelado los exámenes de Cambridge previstos para mayo o junio de 2026?
+- ¿Cuál es el first, B1 o B2?
+- ¿Es difícil aprobar el B2 de Cambridge?
+
+**Búsquedas relacionadas:** `Fechas examen cambridge B2` · `Fechas exámenes Cambridge 2026` · `Fechas exámenes Cambridge 2026 B1` · `Fechas examen First 2026 Barcelona` · `Fechas examen First 2026 bilbao` · `Fechas examen B2 Cambridge Valencia` · `Examen Cambridge B2 Castellón fechas` · `Examen B2 Cambridge para practicar`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · exams-catalunya.com · exams-madrid.com · examscadiz.com · examsgranada.com
+
+
+## B8 · Cómo inscribir a tu hijo en un examen Cambridge
+
+**Objetivo:** `inscripcion examen cambridge` · **20/mes** · competencia LOW · CPC 0.75 € · septiembre 20  
+**AI Overview en la SERP:** no
+
+**Cuerpo:** Paso a paso de la inscripción · qué necesita un menor · centros en Madrid · errores que cuestan la tasa.
+
+**Nota:** ⚠ registro-cambridge ya existe: enfocar en el PADRE inscribiendo a un MENOR en Madrid, o fusionar.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Cuáles son las fechas de los exámenes Cambridge en 2026?
+- ¿Cuánto cuesta presentarse al examen de Cambridge?
+- ¿Cómo me registro en Cambridge?
+- ¿Cuándo se hacen los exámenes de Cambridge B2?
+- ¿Cómo apuntarse al examen B1 Cambridge?
+- ¿Se han cancelado los exámenes de Cambridge previstos para mayo o junio de 2026?
+- ¿Cómo inscribirse al examen Cambridge?
+- ¿Merece la pena obtener un certificado de Cambridge?
+
+**Búsquedas relacionadas:** `Inscripción examen Cambridge B2` · `Inscripción examen Cambridge C1` · `Fechas exámenes Cambridge 2026` · `Precio examen Cambridge C1` · `Fechas examen cambridge B2` · `Precio examen Cambridge B1` · `Fechas examen Cambridge C1` · `Precio examen Cambridge B2`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · exams-madrid.com · exams-catalunya.com · exams-sevilla.com · exams-madrid.com
+
+
+## B9 · Resultados Cambridge: cuándo llegan y cómo se leen
+
+**Objetivo:** `resultados examen cambridge` · **320/mes** · competencia LOW · septiembre 390  
+**AI Overview en la SERP:** no
+
+**Cuerpo:** Cuándo salen · cómo se lee el Statement of Results · el Cambridge English Scale · qué pasa si suspendes.
+
+**Nota:** ⚠ Pico real en julio (1.300 vs 320 de media): publicar en junio. ⚠ Comprobar solape con escala-cambridge.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Cómo saber si has aprobado un examen de Cambridge?
+- ¿Cuándo sacan los resultados de Cambridge?
+- ¿Cuándo salen los resultados del B2 de Cambridge?
+- ¿Cuándo dan los resultados del B1 de inglés?
+- ¿Qué pasa si sacas 160 en el B1?
+- ¿Qué nota hay que sacar para aprobar el B2 Cambridge?
+- ¿Cómo saber si he aprobado el examen Cambridge?
+
+**Búsquedas relacionadas:** `Resultados examen Cambridge B1` · `Resultados examen Cambridge B2` · `Resultados examen Cambridge C1` · `Resultados Cambridge comunidad de madrid` · `Interpretar resultados Cambridge` · `Cambridge notas` · `Notas Cambridge A2` · `Resultados Cambridge centros preparadores`
+
+**Quién rankea hoy:** candidates.cambridgeenglish.org · support.cambridgeenglish.org · www.cambridgeenglish.org · lenguasvivasexams.com · exams-catalunya.com
+
+
+## B10 · A2 Key for Schools
+
+**Objetivo:** `a2 key for schools` · **110/mes** · competencia MEDIUM · CPC 0.37 € · septiembre 140  
+**AI Overview en la SERP:** no
+
+**Cuerpo:** Qué es el A2 Key for Schools y en qué se diferencia del A2 Key · formato y partes · edad típica · cómo se prepara.
+
+**Nota:** KD bajo, rivales de página 1 con ~6,9 dominios de referencia. Sube a B14.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- What is the difference between A2 Key and A2 Key for Schools?
+- What is the Cambridge A2 Key for Schools exam?
+- What does A2 Key mean?
+- What is the curriculum for the A2 Key exam?
+- Is A2 Key the same as KET?
+- How hard is the A2 English test?
+- What does the A2 Key for Schools mean?
+- Is the A2 English test hard?
+
+**Búsquedas relacionadas:** `A2 Key for Schools practice tests PDF` · `A2 Key for Schools with Answers PDF` · `Reading and writing A2 Key for Schools` · `A2 key FOR schools Booster` · `A2 Key for Schools sample paper` · `A2 Key for Schools Speaking test` · `A2 key for schools parts` · `A2 Key for Schools exam format`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · www.cambridge.es · www.cambridgeenglish.org · cambridgemb.com · examsfactory.com
+
+
+## B11 · B1 Preliminary for Schools
+
+**Objetivo:** `b1 preliminary for schools` · **210/mes** · competencia HIGH · CPC 0.17 € · septiembre 260  
+**AI Overview en la SERP:** no
+
+**Cuerpo:** B1 Preliminary for Schools: formato, partes, nivel real · diferencia con la versión adulta.
+
+**Nota:** ⚠ cambridge-b1-guia existe: liderar con 'for Schools'.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- What is B1 Preliminary for Schools?
+- What is the difference between B1 Preliminary and B1 Preliminary for Schools?
+- What is the B1 exam for Schools?
+- What is B1 Preliminary for Schools British Council?
+- What is the difference between B1 and B1 for Schools?
+- Can I do a B1 test online?
+- Is B1 hard to pass?
+
+**Búsquedas relacionadas:** `Libro Cambridge B1 Preliminary for Schools PDF` · `Practice tests b1 preliminary for schools answers pdf` · `Cambridge b1 preliminary for schools 1 pdf` · `B1 Preliminary for Schools With answers` · `B1 Preliminary for Schools 3 with answers PDF` · `B1 preliminary for schools with answers pdf listening` · `B1 Preliminary for Schools Listening` · `B1 preliminary for schools books`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · examsfactory.com · www.amazon.es · www.bestexamszaragoza.com · www.cambridge.es
+
+
+## B12 · B2 First for Schools vs B2 First
+
+**Objetivo:** `b2 first for schools` · **170/mes** · competencia MEDIUM · CPC 1.35 € · septiembre 170  
+**AI Overview en la SERP:** no
+
+**Cuerpo:** La diferencia real (mismo nivel, contextos escolares) · a quién le conviene cada versión · cómo se puntúa.
+
+**Nota:** ⚠ RIESGO MÁXIMO: 16 artículos B2 publicados. Si no puede liderar con la diferencia, no escribirlo.
+
+**PAA literales (6) — de aquí salen los FAQ:**
+
+- What's the difference between B2 First and B2 First for Schools?
+- What is a B2 First for Schools certificate?
+- What is B2 First for Schools?
+- Is B2 First a good qualification?
+- Do I get B2 if I fail C1?
+- Is B2 for Schools easier than B2?
+
+**Búsquedas relacionadas:** `B2 First for Schools PDF` · `Diferencia entre B2 First y B2 First for Schools` · `B2 First for Schools 5 with answers PDF` · `B2 First for Schools Speaking` · `B2 First for Schools Listening Sample Test 1` · `Test & train b2 first for schools self study` · `B2 First for Schools Reading and Use of English sample test 1` · `B2 First 4 pdf`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · exams-catalunya.com · londoncallingacademy.es · examsfactory.com · exams-sevilla.com
+
+
+## B13 · Cambridge Young Learners: Starters, Movers y Flyers
+
+**Objetivo:** `cambridge young learners` · **140/mes** · competencia LOW · septiembre 210  
+**AI Overview en la SERP:** no
+
+**Cuerpo:** Starters, Movers y Flyers: qué son, edades, formato de escudos · para qué sirven de verdad · cómo encajan antes del A2 Key.
+
+**Nota:** Encaja con la oferta de primaria. Sube a B14.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Qué son los Young Learners?
+- ¿Cuáles son los niveles de Cambridge English Young Learners?
+- ¿Qué es el examen YLE?
+- ¿Cuáles son los niveles de Cambridge?
+- ¿Cuáles son los niveles de inglés de Cambridge por edad?
+- ¿Qué nivel corresponde al programa de Cambridge para jóvenes estudiantes?
+- ¿Para qué edad es A1 Movers?
+
+**Búsquedas relacionadas:** `Cambridge Young Learners PDF` · `Cambridge young learners book` · `Cambridge Young Learners test` · `Cambridge Young Learners test pdf` · `Cambridge Young Learners sample papers` · `Cambridge young learners certificate` · `Cambridge young learners exam preparation` · `Cambridge Young Learners Movers`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · m.cambridgeschool.com · www.cambridgeenglish.org · www.elduaien.com · ceqdyl.cambridge.org
+
+
+## B14 · Qué examen Cambridge le toca a tu hijo
+
+**Objetivo:** `que examen de cambridge hacer` · **10/mes** · competencia LOW · septiembre 10  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Tabla de decisión por curso y edad · qué examen toca y cuándo · cómo saber si está listo.
+
+**Nota:** Nodo de decisión: enlaza a B10-B13 y sube a A1.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Diferencia entre B1 y B2 Cambridge?
+- ¿Cuáles son los tipos de exámenes de Cambridge?
+- ¿Diferencia entre C1 y C2 Cambridge?
+- ¿Qué exámenes de Cambridge B2 puedo usar para practicar?
+- ¿Qué es más fácil, B1 o B2?
+- ¿Es B2 más difícil que B1?
+- ¿Cuál es la diferencia entre los exámenes B2 y C1 de Cambridge?
+
+**Búsquedas relacionadas:** `Exámenes Cambridge para practicar` · `Presentarse examen Cambridge por libre` · `Test nivel inglés gratis sin registrarse` · `Test nivel inglés gratis online` · `Exámenes Cambridge B2` · `Cambridge examen` · `Exámenes Cambridge Logroño` · `Cambridge prueba de nivel`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · www.cambridgeenglish.org · www.ihmadrid.com · www.ef.com.es · www.bestexamszaragoza.com
+
+
+# Cluster C — Momentos de decisión de los padres
+
+
+## C15 · Cómo elegir academia de inglés en septiembre
+
+**Objetivo:** `como elegir academia de ingles` · **sin volumen medido**  
+**AI Overview en la SERP:** no
+
+**Cuerpo:** Qué preguntar antes de matricular · ratio real por aula · quién da la clase · qué incluye el precio · señales de alarma.
+
+**Nota:** Sin volumen medido y SIN PAA. ⚠ No convertir en ranking: mejores-academias-madrid ya existe.
+
+**PAA:** la SERP no muestra caja PAA para este término. El FAQ tendrá que escribirse a mano; el gate de PAA no se puede cumplir, así que hay que bajarlo o justificar la excepción.
+
+
+## C16 · Refuerzo escolar o academia de inglés
+
+**Objetivo:** `clases de refuerzo de ingles` · **sin volumen medido**  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Refuerzo (recuperar) vs academia (avanzar) · cuál necesita según el síntoma · cuándo combinar.
+
+**Nota:** ⚠ academia-vs-profesor-particular y clases-particulares-vs-academia existen: comprobar solape.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Cómo puedo reforzar mi inglés?
+- ¿Cuál es el curso más recomendado para aprender inglés?
+- ¿Con el C1 puedo dar clases de inglés?
+- ¿Qué es mejor, B1 o B2 en inglés?
+- ¿Cuáles son las 4 reglas de inglés?
+- ¿Cuáles son las 5 habilidades en inglés?
+- ¿Es posible aprender inglés en 2 meses?
+- ¿Puedo hablar inglés con fluidez en 30 días?
+
+**Quién rankea hoy:** www.academiainfolang.com · salondeidiomas.es · www.laacademiadehugo.es · ecocentreenglish.com · www.cogiendoimpulso.com
+
+
+## C17 · Extraescolar del colegio vs academia
+
+**Objetivo:** `extraescolar de ingles` · **sin volumen medido**  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Extraescolar del colegio vs academia · ratio, nivel del grupo, objetivo · qué esperar de cada una.
+
+**Nota:** ⚠ ingles-colegio-suficiente cubre 'el colegio basta'; esto es la comparación de la extraescolar.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Qué actividades divertidas puedo hacer para aprender inglés?
+- ¿Qué es extraescolar y ejemplos?
+- ¿Qué tipos de extraescolares hay?
+- ¿Qué juego divertido hay para hacer en equipo en la clase de inglés?
+- ¿Cuáles son 10 actividades diarias en inglés?
+- ¿Cuáles son las 10 actividades más comunes que se realizan en la escuela?
+- ¿Cuáles pueden ser mis actividades extracurriculares?
+
+**Búsquedas relacionadas:** `Extraescolares` · `Actividades extraescolares inglés primaria` · `WordReference` · `Academias de inglés en Oviedo` · `Academia inglés tineo` · `Lkidiomas` · `Academia idiomas Oviedo` · `Lkidiomas inscripciones`
+
+**Quién rankea hoy:** lkidiomas.com · m.cambridgeschool.com · www.wordreference.com · www.englishsummer.com · grupovaughan.com
+
+
+## C18 · Mi hijo suspende inglés en la ESO
+
+**Objetivo:** `mi hijo suspende ingles` · **sin volumen medido**  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Por qué suspende (no suele ser vocabulario) · diagnóstico por destreza · plan de recuperación · cuándo pedir ayuda.
+
+**Nota:** ⚠ hijo-no-avanza-ingles existe (no avanza). Esto es SUSPENDER en la ESO. Valorar fusión.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Qué puedo hacer si mi hijo no quiere aprender inglés?
+- ¿Con cuántas asignaturas suspendidas puedes pasar de curso?
+- ¿Qué hacer cuando suspenden a un niño?
+- ¿Cuáles son los factores de dificultad más comunes para el aprendizaje del inglés?
+- ¿Cuál es la edad perfecta para que un niño aprenda inglés?
+- ¿Cómo estimular el cerebro para aprender inglés?
+- ¿Puedo aprobar el bachillerato con una asignatura suspensa?
+- ¿Cómo se recuperan las asignaturas suspendidas en la ESO?
+
+**Búsquedas relacionadas:** `Si su hijo suspende haga estos deberes` · `Mi hija suspende bachillerato` · `Es normal suspender en la ESO` · `Castigos por suspender` · `Mi hijo estudia pero no aprueba` · `Niños que suspenden en primaria` · `Mi hijo no quiere estudiar tiene 13 años` · `Es normal suspender en bachillerato`
+
+**Quién rankea hoy:** lapizarraencasa.com · wornham.com · www.gostudent.org · www.instagram.com · www.facebook.com
+
+
+## C19 · Inglés para la EBAU
+
+**Objetivo:** `ingles ebau` · **20/mes** · competencia LOW · septiembre 10  
+**AI Overview en la SERP:** no
+
+**Cuerpo:** Qué evalúa la EBAU en inglés · estructura y criterios · cómo se prepara desde 1º de Bachillerato.
+
+**Nota:** Hueco limpio: nada en el blog lo cubre y SecundariaPage ya lo vende. SIN PAA.
+
+**PAA:** la SERP no muestra caja PAA para este término. El FAQ tendrá que escribirse a mano; el gate de PAA no se puede cumplir, así que hay que bajarlo o justificar la excepción.
+
+**Búsquedas relacionadas:** `Exámenes PAU Inglés resueltos` · `Exámenes Selectividad Inglés resueltos PDF` · `Selectividad Inglés Comunidad Valenciana resueltos` · `EvAU Inglés Madrid` · `Examen Inglés PAU 2026` · `Exámenes Selectividad Inglés resueltos Andalucía` · `Ejercicios ingles ebau` · `Examen EvAU Inglés`
+
+**Quién rankea hoy:** www.uc3m.es · www.examenesdepau.com · bancdelaselectivitat.umh.es · www.um.es · academia-granada.es
+
+
+## C20 · El verano le ha borrado el inglés
+
+**Objetivo:** `repasar ingles en verano` · **10/mes** · competencia HIGH  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Cuánto se pierde en verano y por qué · plan de septiembre · qué hacer en agosto sin agobiar.
+
+**Nota:** Estacional: publicar a finales de agosto.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Cómo puedo aprender inglés en verano?
+- ¿Aprender inglés en 3 meses es posible?
+- ¿Cuánto cobra Harmon Hall por mes?
+- ¿Cuánto tiempo tarda una persona normal en aprender inglés?
+- ¿Cuáles son 20 palabras básicas en inglés?
+- ¿Cuánto tarda una persona normal en aprender inglés?
+- ¿Cuáles son los 3 idiomas más fáciles de aprender?
+
+**Búsquedas relacionadas:** `Cursos inglés verano extranjero adultos` · `Cursos de verano en el extranjero para adolescentes` · `Intercambio inglés verano` · `Curso inglés verano 2026` · `Interway verano 2026` · `Cursos de verano en el extranjero para universitarios` · `Inglés en el extranjero para jóvenes` · `Curso verano inglés Canadá`
+
+**Quién rankea hoy:** www.ef.com.es · blog.cambridge.es · www.interway.es · www.britishcouncil.es · aprendeingles.grupovaughan.com
+
+
+# Cluster D — Adultos
+
+
+## D21 · Retomar el inglés después de años
+
+**Objetivo:** `retomar el ingles` · **sin volumen medido**  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Por qué el falso principiante no es principiante · medir antes de elegir grupo · qué cambia a los 30/40/50.
+
+**Nota:** Sin volumen medido pero 8 PAA. ⚠ por-que-no-avanzo-ingles es adyacente.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Cómo se dice en inglés retomar?
+- ¿Cómo se dice retomar las clases en inglés?
+- ¿Cómo funciona el método 15-30-15?
+- ¿Cómo hacer para que no se me olvide el inglés?
+- ¿Cómo se dice retomar algo en inglés?
+- ¿Cómo se traduce "reanudar" al inglés?
+- ¿Cómo se dice "retomar" en inglés?
+- ¿Qué significa la expresión "keep it up"?
+
+**Búsquedas relacionadas:** `Retomar el proyecto en inglés` · `Retomar en catalan` · `Retomar significado` · `Retomar sinónimo` · `Reanudar en inglés` · `Podcast en inglés nivel B1` · `Inglés podcast` · `Translate`
+
+**Quién rankea hoy:** www.inglesparaempresas.net · whatsup.es · es.linkedin.com · www.linguee.es · www.speakup.es
+
+
+## D22 · Cuánto cuesta aprender inglés de adulto en Madrid
+
+**Objetivo:** `cuanto cuesta aprender ingles` · **10/mes** · competencia MEDIUM · septiembre 10  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Coste real del primer año: cuota + matrícula 45 € + libro máx 40 € · qué incluye · comparación honesta de formatos.
+
+**Nota:** ⚠ precio-clases-ingles-madrid-2026 existe: esto es el COSTE TOTAL de un ADULTO.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Es posible aprender inglés en 2 meses?
+- ¿Qué es mejor, B1 o B2 en inglés?
+- ¿Cuál es el curso más efectivo para aprender inglés?
+- ¿Dónde es más barato aprender inglés?
+- ¿Cuáles son los 3 idiomas más fáciles de aprender?
+- ¿Cuánto tarda una persona normal en aprender inglés?
+- ¿Qué nivel de inglés te dan con la ESO?
+- ¿Puedes alcanzar el nivel B1 en 3 meses?
+
+**Búsquedas relacionadas:** `Precios Open English España` · `Cuanto cuesta un curso de inglés en España` · `EF English Live precio españa` · `Open English precio` · `Cursos de inglés online gratis` · `Aprender inglés en casa gratis` · `EF English Live precios` · `Como aprender inglés`
+
+**Quién rankea hoy:** www.ef.com.es · www.openenglish.com · www.esl-idiomas.com · aprendeingles.grupovaughan.com · www.britishcouncil.es
+
+
+## D23 · Por qué un grupo de 8 cambia el resultado
+
+**Objetivo:** `clases de ingles grupos reducidos` · **sin volumen medido**  
+**AI Overview en la SERP:** no
+
+**Cuerpo:** Minutos de habla por alumno según tamaño de grupo · por qué 8 es el techo en adultos · qué cambia en la práctica.
+
+**Nota:** El diferenciador que nadie publica. Cifras exactas por curso, nunca un rango.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Qué es el estilo de enseñanza de grupos reducidos?
+- ¿Cuál es el curso más recomendado para aprender inglés?
+- ¿Qué significan A1, A2, B1, B2, C1, C2 en inglés?
+- ¿Grupos para aprender inglés gratis?
+- ¿Qué son los grupos reducidos?
+- ¿Cuáles son los 4 tipos de bap?
+- ¿Es posible aprender inglés en 2 meses?
+- ¿Puedo hablar inglés con fluidez en 30 días?
+
+**Búsquedas relacionadas:** `Clases de inglés online` · `Curso intensivo inglés B2 Zaragoza` · `Clase de inglés Madrid` · `Clases particulares inglés Madrid` · `Curso intensivo inglés B1 Zaragoza` · `Inglés intensivo` · `Clases ingles bilbao` · `Number 16 clases online`
+
+**Quién rankea hoy:** www.cheekyenglish.com · www.learningonthego.org · number16.com · vamospanish.com · www.carlosveducation.es
+
+
+## D24 · Inglés para oposiciones: qué nivel piden
+
+**Objetivo:** `nivel de ingles para oposiciones` · **10/mes** · competencia LOW · septiembre 20  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Qué nivel pide cada cuerpo · cómo se acredita · Linguaskill vs Cambridge para oposiciones.
+
+**Nota:** ⚠ linguaskill-oposiciones-* (x2) existen: esto es la pregunta del NIVEL, no del examen.
+
+**PAA literales (6) — de aquí salen los FAQ:**
+
+- ¿Qué nivel de inglés te piden para opositar?
+- ¿Qué es A1, A2, B1, B2, C1 y C2?
+- ¿Es necesario el B1 para opositar?
+- ¿Cuánto puntúa el B2 en oposiciones?
+- ¿Qué nivel de inglés te dan con la ESO?
+- ¿Es mejor A1 o C2?
+
+**Búsquedas relacionadas:** `Títulos de inglés válidos para oposiciones secundaria` · `Títulos de inglés válidos para oposiciones Comunidad Valenciana` · `Títulos de inglés válidos para oposiciones primaria` · `Títulos de inglés válidos para oposiciones Secundaria Madrid` · `B1 inglés para oposiciones` · `Examenes de ingles para oposiciones` · `EOI o Cambridge para oposiciones` · `Niveles de inglés`
+
+**Quién rankea hoy:** www.theglobeformacion.com · www.ihmadrid.com · cesaidiomas.es · blueparrotschool.com · ineforma.com
+
+
+## D25 · Inglés de negocios para profesionales
+
+**Objetivo:** `ingles de negocios` · **50/mes** · competencia HIGH · CPC 13.34 € · septiembre 70  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Qué es inglés de negocios y qué no · a quién le hace falta · reuniones, correo, negociación.
+
+**Nota:** CPC 13,34 €: el término más valioso del set. SIN PAA. Ancla con Cuatro Torres / Plaza Castilla.
+
+**PAA:** la SERP no muestra caja PAA para este término. El FAQ tendrá que escribirse a mano; el gate de PAA no se puede cumplir, así que hay que bajarlo o justificar la excepción.
+
+**Búsquedas relacionadas:** `Curso de ingles de negocios santander` · `Inglés empresarial pdf gratis` · `Curso Business English online gratis` · `Certificado de ingles para negocios` · `Santander cursos de inglés gratis` · `Curso de inglés Santander British Council` · `Santander Open Academy cursos inglés` · `Inglés profesional FP`
+
+**Quién rankea hoy:** app.santanderopenacademy.com · www.ef.com.es · open.spotify.com · businessenglishmadrid.com · www.nativos.org
+
+
+## D26 · Clases de inglés por la mañana
+
+**Objetivo:** `clases de ingles por la manana` · **sin volumen medido**  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Quién estudia por la mañana y por qué funciona · horarios reales (L y X 10:00-21:30) · ventaja de grupos vacíos.
+
+**Nota:** Cierto, poco escrito por nadie, y encaja con el horario real.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Dónde puedo aprender inglés de forma gratuita?
+- ¿Cuánto cuesta una clase de inglés por hora?
+- ¿Qué es el método de Schechter?
+- ¿Cuánto vale una hora de clase de inglés?
+- ¿Cuál es el mejor curso de inglés gratuito?
+- ¿Dónde puedo aprender a hablar inglés con fluidez de forma gratuita?
+- ¿Es posible aprender inglés en 2 meses?
+- ¿Puedo aprender inglés con fluidez en 3 meses?
+
+**Búsquedas relacionadas:** `Academia de inglés cerca de mi` · `Cursos de inglés gratis` · `Academia de inglés Madrid` · `Academia de inglés Madrid cerca de mi` · `Academia de inglés niños` · `Curso de inglés presencial Madrid` · `Estudiar inglés en Madrid gratis` · `Academia de inglés online`
+
+**Quién rankea hoy:** idiomasseif.com · www.speakandlive.com · www.languageinternational.es · www.cediformacio.com · www.britishacademiadeingles.com
+
+
+## D27 · De A2 a B1 y de B1 a B2: cuánto se tarda
+
+**Objetivo:** `cuanto se tarda en pasar de b1 a b2` · **sin volumen medido**  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Horas por nivel y por qué los saltos altos cuestan más · qué acelera de verdad · plazos realistas.
+
+**Nota:** ⚠ tiempo-b2-a-c1 y cuanto-tiempo-aprender-ingles existen: quedarse en los peldaños BAJOS.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Cuántas horas se necesitan para pasar del nivel B1 al B2?
+- ¿Qué tan rápido puedes pasar de B1 a B2?
+- ¿Puedes sacarte el B2 sin tener el B1?
+- ¿Cuánto se tarda en sacarse el B2 de inglés?
+- ¿Cuánto se tarda en pasar del B1 al B2?
+- ¿Es B2 más difícil que B1?
+- ¿Cuántas horas necesito para pasar de B1 a B2?
+
+**Búsquedas relacionadas:** `Cuanto se tarda en sacar el B1 de inglés` · `En Cuánto tiempo se puede aprender inglés fluido` · `Pasar de b1 a b2 inglés` · `Cuanto se tarda en sacar el B2 de inglés` · `Cuanto se tarda en aprender inglés con Duolingo` · `Como sacarse el B2 de inglés rápido` · `Cuanto tiempo se tarda en aprender inglés desde cero` · `Cuanto se tarda en sacar el a2 de ingles`
+
+**Quién rankea hoy:** www.reddit.com · support.cambridgeenglish.org · sclanguage.com · www.ef.com.es · es.quora.com
+
+
+## D28 · La prueba de nivel de 25 minutos
+
+**Objetivo:** `prueba de nivel de ingles` · **1300/mes** · competencia MEDIUM · CPC 1.33 € · septiembre 3600  
+**AI Overview en la SERP:** no
+
+**Cuerpo:** Qué se evalúa en 25 minutos · quién la hace (JP) · qué te llevas · por qué no es una clase comercial.
+
+**Nota:** 1.300/mo y 3.600 en septiembre. Activo de conversión y nodo enlazado desde casi todo el set.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Qué es A1, A2, B1, B2, C1 y C2?
+- ¿Cómo saber si mi nivel de inglés es B1 o B2?
+- ¿Cuáles son los niveles de examen de inglés A1, A2, B1 y B2?
+- ¿Cómo puedo calcular mi nivel de inglés?
+- ¿Qué nivel de inglés te dan con la ESO?
+- ¿Es más fluido el nivel A1 o el A2?
+- ¿Qué significan A1, A2, B1, B2, C1, C2 en inglés?
+- ¿Qué niveles hay en inglés A1 A2 B1 B2 C1 C2?
+
+**Búsquedas relacionadas:** `Prueba de nivel de inglés Cambridge` · `Test de nivel de inglés A1 A2, B1, B2` · `Test nivel inglés gratis online` · `Test nivel inglés gratis sin registrarse` · `Prueba de nivel de inglés PDF` · `Prueba de nivel de inglés EOI` · `Test de inglés` · `Nivel de inglés gratis`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · www.efset.org · grupovaughan.com · www.alpadia.com · oxfordhousebcn.com
+
+
+## D29 · El falso nivel intermedio
+
+**Objetivo:** `nivel intermedio de ingles` · **40/mes** · competencia LOW · septiembre 50  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Por qué la meseta en B1 · qué falta normalmente (producción, no input) · cómo romperla.
+
+**Nota:** ⚠ entiendo-ingles-no-hablo adyacente: el ángulo es la MESETA medida.
+
+**PAA literales (6) — de aquí salen los FAQ:**
+
+- ¿Qué es A1, A2, B1, B2, C1 y C2?
+- ¿Qué niveles son B1 y B2 en inglés?
+- ¿Cuál es el nivel de inglés de 4 eso?
+- ¿Qué nivel de inglés te dan con la ESO?
+- ¿Un nivel de inglés B1 o B2 es bueno?
+- ¿Qué significan A1, A2, B1, B2, C1, C2 en inglés?
+
+**Búsquedas relacionadas:** `Niveles de inglés A1 A2 B1, B2 C1 C2` · `Nivel intermedio inglés B1` · `Niveles de inglés First` · `A1 inglés que nivel es` · `Nivel de inglés A2` · `Niveles de inglés Cambridge` · `Niveles de inglés B2` · `Niveles de inglés test`
+
+**Quién rankea hoy:** inglesya.com · www.curso-ingles.com · langsols.es · examenexam.com · europeanidiomas.com
+
+
+## D30 · Cómo elegir academia de inglés para adultos
+
+**Objetivo:** `academia de ingles para adultos` · **210/mes** · competencia MEDIUM · CPC 4.19 € · septiembre 720  
+**AI Overview en la SERP:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** 7 preguntas antes de pagar · ratio, profesor, nivel del grupo, qué incluye · horarios para quien trabaja.
+
+**Nota:** Gemelo adulto de C15. 720 en septiembre. Preguntas, no ranking de rivales.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Cuánto tiempo tarda una persona adulta en aprender inglés?
+- ¿Cuál es la mejor forma de aprender inglés para un adulto?
+- ¿Dónde estudiar inglés gratis para adultos?
+- ¿Cuál es el curso más efectivo para aprender inglés?
+- ¿Es posible hablar inglés en 3 meses?
+- ¿Cuáles son los 3 idiomas más fáciles de aprender?
+- ¿Cuáles son las 7 reglas gramaticales básicas en inglés?
+
+**Búsquedas relacionadas:** `academia de ingles para adultos cerca de villa de vallecas, madrid` · `Academia de ingles para adultos madrid` · `Cursos de inglés en Madrid para adultos gratis` · `Academia de inglés Madrid cerca de mi` · `Academia de inglés Madrid` · `Cursos de inglés en Madrid gratis` · `Academias de inglés cerca de mi` · `Cursos de inglés en Madrid precios`
+
+**Quién rankea hoy:** www.iie.es · grupovaughan.com · www.britishcouncil.es · www.cambridge-house.com · idiomasseif.com
