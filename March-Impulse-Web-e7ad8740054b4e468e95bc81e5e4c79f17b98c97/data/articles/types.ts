@@ -41,7 +41,8 @@ export type ArticleCategory =
   | 'Career'
   | 'Local Madrid'
   | 'Price'
-  | 'Definitions';
+  | 'Definitions'
+  | 'Inglés en el extranjero';
 
 export interface ArticleImage {
   url: string;

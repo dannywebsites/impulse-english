@@ -64,7 +64,15 @@ MD_TO_DISPLAY = {
     "Kids Primary": "Inglés para Niños", "Kids Secondary": "Inglés para Niños",
     "Career": "Carrera Profesional", "Skills": "Habilidades", "Comparison": "Comparativas",
     "Definitions": "Exámenes Cambridge",
+    "Inglés en el extranjero": "Inglés en el extranjero",
 }
+
+# Categories that own their own section and therefore their own related-articles ring.
+# ring_group() below is a slug/title regex whose rules are order-sensitive: `academia|madrid`
+# and `precio` already swallow two of the study-abroad articles
+# (academia-o-agencia-estudiar-extranjero, guia-internados-inglaterra-precios). When the
+# markdown declares one of these categories, that declaration wins over the regex.
+SELF_RINGED = {"Inglés en el extranjero"}
 
 def ring_group(slug, title):
     s = slug + " " + title.lower()
@@ -85,16 +93,24 @@ def ring_group(slug, title):
     return "Aprender Inglés"
 
 def display_cat(entry):
+    if entry.get("mdCategory") in SELF_RINGED:
+        return MD_TO_DISPLAY[entry["mdCategory"]]
     if entry["url"] in cards:
         return cards[entry["url"]]
     if entry.get("mdCategory"):
         return MD_TO_DISPLAY.get(entry["mdCategory"], "Aprender Inglés")
     return ring_group(entry["slug"], entry["title"])
 
+def ring_group_for(entry):
+    md = entry.get("mdCategory")
+    if md in SELF_RINGED:
+        return md
+    return ring_group(entry["slug"], entry["title"])
+
 universe = list(wrappers.values()) + list(collection_only.values())
 for e in universe:
     e["displayCategory"] = display_cat(e)
-    e["ringGroup"] = ring_group(e["slug"], e["title"])
+    e["ringGroup"] = ring_group_for(e)
 universe.sort(key=lambda e: e["slug"])
 
 # ------------------------------------------------------------- crown links

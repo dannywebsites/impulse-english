@@ -148,4 +148,18 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
     leadFormSource: 'paa-definitions',
     color: 'amber',
   },
+  // Study-abroad cluster. Until 2026-08-07 this key did not exist, so all 21 articles
+  // hit the `?? categoryConfig['Cambridge B2 First']` fallback in PAAArticlePage and
+  // shipped a "Cambridge B2 First" badge, a "Volver a B2 First" link and a
+  // `paa-cambridge-b2` lead source. hubPath goes to the sales pillar rather than the
+  // blog hub, matching every other category — the reader lands somewhere that converts.
+  'Inglés en el extranjero': {
+    displayName: 'Inglés en el extranjero',
+    hubPath: '/ingles-en-el-extranjero/',
+    hubLabel: 'Inglés en el extranjero',
+    blogFilterName: 'Inglés en el extranjero',
+    imageKey: 'classroom',
+    leadFormSource: 'paa-extranjero',
+    color: 'teal',
+  },
 };
