@@ -500,6 +500,58 @@ re-assembled with its original slug pinned.
 - **`internado en inglaterra` has an AI Overview quoting ~11.000 £ per term.** The rewritten
   opening keeps that figure and adds what it omits: guardianship, uniform, half-term flights.
 
+### ✅ CLUSTER COMPLETE — 21 pieces live (2026-08-07)
+
+All 21 are backed by a `serp.json` and carry at least half their FAQ verbatim from the real
+People Also Ask box. Scope settled at 21, not 23: **#12 dropped** (the pillar owns the 110/mo
+commercial term and #11 already answers its PAA question) and **#10 + #17 merged** into one
+Irish-calendar article. Both were anti-cannibalisation calls made on SERP evidence.
+
+| Piece | Slug | PAA in FAQ |
+|---|---|---|
+| Calendario escolar irlandés (#10+#17) | `calendario-escolar-irlanda-vacaciones` | 5/8 |
+| Cursos de inglés en Irlanda para adultos (#15) | `cursos-ingles-irlanda-adultos` | 7/8 |
+| Trimestre en Irlanda (#18) | `trimestre-escolar-irlanda` | 5/8 |
+| Familia de acogida (#19) | `elegir-familia-acogida-irlanda` | 3/6 |
+| Sistema educativo irlandés (#22) | `sistema-educativo-irlandes-guia` | 5/8 |
+| Año escolar Inglaterra vs Irlanda (#16) | `ano-escolar-inglaterra-irlanda` | 7/8 |
+| Convalidar el curso (#20) | `convalidar-curso-escolar-extranjero` | 5/7 |
+| Academia o agencia (#21) | `academia-o-agencia-estudiar-extranjero` | 4/8 |
+| **Hub** | `ano-escolar-extranjero-guia-padres` | 3/6 |
+
+Commits: `6b3e160` (skill, in `~/.claude/skills`) · `da1d084` (8 improved) · `89dc259` (9 new).
+
+#### What only the live SERP could have told us
+
+- **`familia de acogida` collides with FOSTER CARE in Spanish.** Half its PAA box is child
+  protection ("¿Qué hay que hacer para ser madre de acogida?"). Only 3 questions were usable, so
+  that article ships **6 FAQs instead of 8** to hold the 50% ratio. First real use of the
+  reduce-the-FAQ-count fallback.
+- **`campamento de verano en Irlanda` returned "¿Es legal acampar en Irlanda?"** — the tent
+  meaning of *campamento*. PAA is filtered, never swallowed.
+- **Two PAA answers for the Irish calendar were factually false** (a November start, a 16 June
+  start). The questions were used, the snippets were not, and the article now warns readers off
+  unverified calendar dates.
+- **`academia o agencia` had ZERO PAA** on its first two keywords, because it is a differentiator
+  topic with no head term. Re-pulled on `agencias para estudiar en el extranjero` (8 PAA).
+  Lesson: a no-head-term article needs its SERP keyword chosen separately from its title.
+
+#### Two engineering fixes this phase forced
+
+1. **`assemble.js --slug`.** `meta.slug` comes from a non-deterministic Gemini call, so
+   re-assembling a published article changed its URL and left a `-2` twin. It generated a
+   different slug for **6 of the 8** improved articles and **4 of the 9** new ones. Every URL the
+   hub links to is now pinned.
+2. **One bad keyword no longer kills a run.** DataForSEO returns transient per-task errors
+   (`40101`); `pullSerpEvidence` threw straight out of the loop, discarding SERP data already
+   fetched and paid for. Now: retry once, then continue without that keyword.
+
+⚠️ **`academy` pool indices 0 and 1 are INFANTIL photo sets.** The plan assigned index 0 to the
+England-vs-Ireland article and it produced toddler classroom shots for an article aimed at parents
+of teenagers. All secondary-age academy sets (5-8) are consumed; the remaining teen-safe options
+are the age-neutral facility sets 9, 10 and 11. **Both pools are now exhausted** — any further
+article in this cluster will repeat a photo set unless new photos are added.
+
 ### Batch progress — 12 of 23 (2026-08-06)
 
 | # | Article | Slug | Commit |
