@@ -1,77 +1,33 @@
 # Plan — Blog cluster for the "inglés en el extranjero" pillar
 
-> ## ▶ RESUME HERE — updated 2026-08-06 after the third batch
+> ## ✅ CLUSTER COMPLETE — updated 2026-08-07
 >
-> **State: 12 of 23 written, installed, gated and committed** (`3dd843b`, `de7e758`, `4bb3812`,
-> `eecbe89`, `04597c7`). 10 articles + the hub remain. Superseded: an earlier version of this
-> block said "nothing has been written yet" — that is no longer true, and starting at §6 article
-> #1 would duplicate shipped work. **Read the batch-progress table in §12 for what exists.**
+> **All 21 pieces are written, gated, committed and pushed.** Final scope is 21, not 23:
+> **#12 dropped** and **#10 + #17 merged**, both anti-cannibalisation calls made on SERP evidence.
+> See the "CLUSTER COMPLETE" table in §12 for every slug and its PAA ratio. Superseded: earlier
+> versions of this block said "nothing has been written yet" and later "12 of 23". Both are stale.
 >
-> **The research pipeline changed on 2026-08-06 — read §12 before writing anything.** The SERP
-> was never actually being read; it is now pulled deterministically into `runs/<id>/serp.json`
-> and **at least half of every FAQ must be real People Also Ask questions, copied verbatim**.
-> `gate-article.sh` fails the article otherwise, and fails outright if `serp.json` is missing.
+> **Do not start new articles in this cluster without adding photos first.** Both rotation pools
+> are exhausted (`ireland` 0-10 and `academy` 0-11 all consumed), so a new article would repeat
+> another one's photo set. And note `academy` 0 and 1 are INFANTIL sets — never put them on an
+> article aimed at parents of teenagers.
 >
-> **First three things to do on resume**
-> 1. **Check for a parallel session before touching anything.** `git log --oneline -10` on
->    `seo/extranjero-hub` and `ls GEO-Content-Project/`. Two sessions already collided on
->    2026-08-06 and duplicated the photo work end to end. If someone else is mid-batch, split the
->    article list — do not both start at the same number.
-> 2. **Ask Danny what the 6.750 € covers** — which programme, which duration, what is included.
->    He authorised publishing "desde 6.750 €" as Impulse's own price; he has not yet said what it
->    buys. Until then it ships as `[PENDIENTE: confirmar qué incluye]`. Do not invent it.
->    Blocks the pricing article only; nothing shipped so far quotes a price.
-> 3. Then continue with the 10 remaining articles (#10, #12, #15-#22) plus the hub.
->    **Rotation indices are PER POOL** — see §12. Consumed so far: `ireland` 0,1,2,3,4,7 ·
->    `academy` 3,4,5,6,7,8. The Ireland pool has only 11 distinct sets and most of what
->    remains is Ireland-topic, so assign the pool per article rather than sequentially.
+> **The research pipeline was rebuilt on 2026-08-06 and the skill is now COMMITTED** at
+> `~/.claude/skills` (`6b3e160`), with a `.gitignore` that keeps `node_modules/`, `runs/`,
+> `output/`, `*.bak-*` and `.env` out. The earlier warning that the skill was untracked and that
+> `git add` would stage 3.102 paths is resolved.
 >
-> **What is already done and must not be redone**
-> - Brand config wired and corrected (§2 B1, B3) — pillar URLs in the link graph, retired facts
->   replaced, `/reservar-clase` 308 removed from CTAs.
-> - Photos shipped by the other session (§2 B4) — `viaje-01..34.webp`. **Do not re-convert them.**
-> - The `impulse-astro` converter and the image rotation are written and build-verified (§12).
+> **Two rules that now bind every article in this repo:**
+> - The SERP is pulled deterministically into `runs/<id>/serp.json`, and **at least half of every
+>   FAQ must be real People Also Ask questions, copied verbatim.** `gate-article.sh` fails the
+>   article otherwise, and fails outright if `serp.json` is missing.
+> - **Always pass `--slug` to `assemble.js` when re-assembling anything already published.**
+>   `meta.slug` comes from a non-deterministic Gemini call; it generated a different slug for 6 of
+>   8 improved articles and 4 of 9 new ones.
 >
-> **Files that hold this work** (the skill lives outside the site repo):
-> ```
-> <repo>/EXTRANJERO-BLOG-CLUSTER-PLAN.md            ← this file
-> <repo>/GEO-Content-Project/extranjero-blog-briefs.md  ← the other session's 30 briefs
-> ~/.claude/skills/seo-blog-writer/scripts/lib/cms-impulse-astro.js   ← the converter
-> ~/.claude/skills/seo-blog-writer/scripts/lib/frontmatter.js         ← cmsProfile dispatch
-> ~/.claude/skills/seo-blog-writer/scripts/lib/firecrawl.js           ← scraper (Apify = fallback)
-> ~/.claude/skills/seo-blog-writer/scripts/rotate-images.js           ← per-article images
-> ~/.claude/skills/seo-blog-writer/brands/impulse-english.brand.json  ← + .bak-20260806
-> ```
->
-> **Per-article command sequence** (the rotation step is easy to forget and silently ruins a batch):
-> ```bash
-> cd ~/.claude/skills/seo-blog-writer
-> node scripts/prewrite.js --brand brands/impulse-english.brand.json \
->   --topic "<title>" --keywords "<primary>, <secondary>" --category "Inglés en el extranjero"
-> #   ↑ pass 2-3 keywords: the SERP is pulled for each, and PAA boxes differ per keyword.
-> #     Add --run runs/<id> to RESUME an existing run without paying again.
-> node scripts/rotate-images.js --run runs/<id> --index <n> --pool ireland|academy
-> #   ↑ MUST run between prewrite and writing, and again after any --run resume.
-> #     --pool ireland ONLY for Ireland articles. Index space is PER POOL.
-> # write runs/<id>/article.md in-session — 4+ "## " sections, FAQ, answer in first 80 words
-> node scripts/assemble.js --run runs/<id>
-> ```
->
-> **Two hard rules learned from the build gate — see §12:**
-> - **4+ `##` sections per article**, or the second inline image never renders while the schema
->   and the build both stay green.
-> - All 34 photos are **Ireland**. Non-Ireland articles use `--pool academy`.
->
-> **Also worth telling Danny:** `~/.claude/skills` is a git repo with **no `.gitignore`**, and the
-> entire `seo-blog-writer/` skill is still **untracked** — nothing in it has ever been committed.
-> A careless `git add seo-blog-writer/` would stage **3.102 paths**, of which 3.003 are
-> `scripts/node_modules` and 90 are `runs/`.
->
-> **Correction (verified 2026-08-06 with `git add --dry-run` + `git check-ignore`):** an earlier
-> version of this note claimed that would also stage `seo-blog-writer/.env` with its live API keys.
-> **It would not** — `~/.gitignore_global:1` ignores `.env` globally, and the dry run confirms the
-> file is absent from the staged set. The real problem is the node_modules bulk, not a key leak.
-> Still worth a `.gitignore` (`node_modules/`, `runs/`) before anyone commits that skill.
+> **Still open with Danny:** the **6.750 €** inclusions (which programme, which duration, what is
+> included). Blocks only the pricing article, which is in the follow-on queue and not in this
+> cluster. Nothing shipped quotes an Impulse price.
 
 
 **Date:** 2026-08-06 · **Branch:** `seo/extranjero-hub` (not pushed/merged)
