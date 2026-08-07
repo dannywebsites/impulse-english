@@ -146,13 +146,20 @@ is linked from most pieces. Each article links to at least two others (one up, o
 the cluster ring is circular. After publishing, link the relevant **service pages down** into the
 cluster — the step that was skipped for the extranjero cluster and left 21 articles orphaned.
 
-## Open blockers
+## Rulings — binding on all 30 (Danny, 2026-08-07)
 
-1. **Images.** Every article needs 3+. Both pools are exhausted (`ireland` 0-10, `academy` 0-11);
-   `academy` 0 and 1 are infantil sets and must never land on an adult or teen piece. 30 articles
-   need ~90 images that do not exist in the repo. **New photography, or these ship without images.**
-2. **Two facts contradict themselves and would get baked into 30 pieces.** Alumnos: publish **960**
-   (`Business-Information.txt` ruling) — but a table two lines above still says "+1.000". Reviews:
-   `napData.ts` **183** vs `Business-Information.txt` 180 vs `LocationsSection.tsx` "150+".
-3. **Never state a denominator** for the "100 % de aprobados 2024/25" claim — cohort size unknown.
-4. Exam price figures (#9, #22) need Danny's sign-off before any number is published.
+1. **Images: reuse the curated pool. No new photography, no curation pass.**
+   Measured position: **77** academy files on disk, **43 curated** with alt text in
+   `src/data/academyImages.ts`, of which only **8 are unused** by an existing article. 30 articles
+   × 3 images = 90 slots → **~2.1× reuse**, i.e. most photos will appear on about two articles.
+   Accepted deliberately. *(An earlier note claiming "both pools exhausted, academy 0-11" was wrong —
+   that described the writer's per-run index rotation, not the library.)*
+   ⚠️ **The 34 Ireland photos in `extranjeroImages.ts` are OFF LIMITS here.** Their consent note
+   scopes them to the travel section: *"NO reutilizar estas imágenes fuera de la sección de viajes."*
+   ⚠️ The 6 `infantil` images must never land on a teen or adult piece.
+2. **Alumnos: publish 960.** Not "+1.000". The stale table in `Business-Information.txt` is wrong.
+3. **Reviews: publish 183.** `napData.ts` is the source; 180 and "150+" elsewhere are stale.
+4. **Never state a denominator** for the "100 % de aprobados 2024/25" claim — cohort size unknown.
+5. Exam price figures (#9, #22) still need sign-off before any number is published.
+6. `/blog/academias-ingles-vaguada-barrio-pilar/` is **out of scope** for this batch — it names and
+   links seven rivals and carries three facts that contradict the approved set. Logged, not fixed.
