@@ -168,11 +168,63 @@ so **link to the pinned URL even if the file does not exist yet** — it will by
 
 ---
 
+## 8b. The scraper — read this before your first `prewrite`
+
+Research scraping goes to Danny's **self-hosted Firecrawl VPS**, not the paid hosted API. This was
+wired into the skill's `.env` on 2026-08-07 (`FIRECRAWL_API_URL=http://firecrawl-vps:3002`), and it
+is the reason this batch is affordable:
+
+- the **hosted** plan had **227 of 1,000 credits left** and a **parallel scrape limit of 2 jobs** —
+  this batch is ~150–200 scrapes across up to 10 simultaneous windows, so hosted would have run dry
+  mid-night and then queued everyone behind a 2-job ceiling
+- the VPS is flat-rate, tailnet-only, and measured at **12/12 concurrent scrapes returning real
+  content** in 52s on 2026-08-07
+
+**The Apify fallback is deliberately switched OFF for this batch.** `gemini.js` catches a tool error
+and hands it back to the research model, so **a failed scrape thins a brief, it never aborts one** —
+the model just picks another URL. With Apify on, one antibot page cost ~37s and a run on an account
+that hit its spending cap on 2026-08-05. With it off, a blocked page fails in ~3s.
+
+**So: a scrape failure in your prewrite output is normal. Do not retry it, do not re-run prewrite,
+do not panic.** `Both scrapers failed for <url>` on one or two URLs is expected.
+
+### ⚠️ The one scraper failure that is NOT normal — check for it
+
+The VPS browser pool has a documented failure mode: it **accepts requests, never navigates, and
+returns EMPTY markdown** with a warning about `waitFor`. It was silently wedged from 2026-06-20 to
+2026-07-27 and nothing surfaced an error. A wedge tonight would produce **briefs built on nothing,
+silently** — the worst outcome available.
+
+**After your first `prewrite`, check that the research actually read something:**
+
+```bash
+ls -la runs/<id>/sources/          # should contain files, not be empty
+wc -c runs/<id>/sources.json       # should be thousands of bytes, not ~20
+```
+
+If `sources/` is empty or every source is ~0 bytes for **more than one article**, stop, and:
+
+1. `curl -s -o /dev/null -w "%{http_code}\n" http://firecrawl-vps:3002/` — if it returns `000`,
+   Tailscale is down on the Mac. Fix it and never ask: `tailscale up`, or the menu-bar icon →
+   Connect. (Hub decision `2026-07-01-auto-fix-tailscale-never-ask`.)
+2. If it returns 200 but markdown is still empty, the browser pool is wedged. The remedy is
+   `docker compose restart playwright-service` on the VPS. **Write a `FLAG:` line in `_LEDGER.md`
+   and stop your window** rather than writing articles on empty research.
+
+### Sources that do not scrape
+
+- **`coe.int` is antibot-protected** and will fail. For CEFR descriptors use
+  **`europass.europa.eu`** or **`cvc.cervantes.es`** instead — both scrape clean, and the live hub
+  article already cites them.
+- `screenshot` and `branding` formats do not work on the VPS. You do not need them.
+
 ## 9. Parallel-safety rules — breaking these damages another window's work
 
 1. **Never `node scripts/assemble.js --all`.** It picks up every unpublished `article.md` under
    `runs/`, including the half-written one another window is editing right now. Always
-   `--run runs/<id>`.
+   `--run runs/<id>`. Checked 2026-08-07: `--all` would *already* sweep up four unrelated drafts —
+   three English aesthetic-clinic articles for a different brand, plus one Impulse article nobody
+   reviewed tonight — before it even reached another window's work.
 2. **Never re-run `prewrite.js` without `--run runs/<existing-id>`.** `runId()` timestamps every
    invocation, so a bare re-run mints a fresh directory and re-pays for the whole SERP + research
    pass. And **always re-run `rotate-images.js` after a resume** — resume regenerates
@@ -246,7 +298,8 @@ DONE  W01  art-01  test-cambridge-hijo-preparado  runs/<id>  <commit-sha>  2380w
 - `BaseLayout` appends the brand chain to `title=` and hard-truncates at 70 chars (the theme cuts
   at 41). Only relevant to the fix windows: use `fullTitle={true}` and ≤ 60 chars.
 - Desktop sync breeds `index 2.html` / `* 2.md` duplicates. Never glob-stage; ignore them.
-- If you see `[research] firecrawl failed → apify fallback` in prewrite output, note it in the
-  ledger. The Apify account is at its spending cap and the fallback may return nothing.
+- Scraping runs on the self-hosted VPS and the Apify fallback is off — see §8b. A `Both scrapers
+  failed` line for one or two URLs is normal; **empty `runs/<id>/sources/` across several articles
+  is a wedged browser pool** and means stop.
 - `verify:design` does **not** scan `pages/blog/*.tsx`, so the fix windows carry no token-debt
   risk. It *does* scan `components/PAAArticlePage.tsx` — do not touch that file.

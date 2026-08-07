@@ -4,6 +4,31 @@
 the line. Each brief is fully self-contained — no prior context needed, and no window needs to read
 the 754-line batch brief.
 
+## Pre-flight — 20 seconds, run this ONCE before you open any window
+
+Scraping runs on the self-hosted Firecrawl VPS (tailnet-only). If it is down or its browser pool is
+wedged, the ten writing windows will build **briefs on empty research, silently** — so check it
+first.
+
+```bash
+# 1. is the VPS reachable? (000 = Tailscale is down on the Mac -> `tailscale up`, never ask)
+curl -s -o /dev/null -w "VPS: HTTP %{http_code}\n" http://firecrawl-vps:3002/
+
+# 2. does it return REAL content, not empty markdown? (the wedge symptom)
+cd ~/.claude/skills/seo-blog-writer
+FIRECRAWL_API_URL=http://firecrawl-vps:3002 FIRECRAWL_API_KEY=self-hosted-no-auth \
+  firecrawl scrape "https://www.cambridgeenglish.org/exams-and-tests/first/" \
+  --format markdown --json --only-main-content 2>/dev/null \
+  | python3 -c "import json,sys; d=json.load(sys.stdin); print('markdown chars:', len(d.get('markdown') or ''))"
+```
+
+Want **HTTP 200** and **several thousand markdown chars**. A few hundred or zero = the browser pool
+is wedged: `docker compose restart playwright-service` on the VPS, then re-check. Do not launch
+until this passes.
+
+Measured 2026-08-07: 12/12 concurrent scrapes returned real content in 52s, so the box handles all
+ten writing windows at once. No need to stagger.
+
 ## The 13 launch lines
 
 ```
