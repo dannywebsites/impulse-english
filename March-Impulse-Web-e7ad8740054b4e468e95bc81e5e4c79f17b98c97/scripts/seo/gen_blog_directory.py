@@ -65,6 +65,7 @@ MD_TO_DISPLAY = {
     "Career": "Carrera Profesional", "Skills": "Habilidades", "Comparison": "Comparativas",
     "Definitions": "Exámenes Cambridge",
     "Inglés en el extranjero": "Inglés en el extranjero",
+    "Niveles de inglés": "Niveles de inglés",
 }
 
 # Categories that own their own section and therefore their own related-articles ring.
@@ -72,7 +73,7 @@ MD_TO_DISPLAY = {
 # and `precio` already swallow two of the study-abroad articles
 # (academia-o-agencia-estudiar-extranjero, guia-internados-inglaterra-precios). When the
 # markdown declares one of these categories, that declaration wins over the regex.
-SELF_RINGED = {"Inglés en el extranjero"}
+SELF_RINGED = {"Inglés en el extranjero", "Niveles de inglés"}
 
 def ring_group(slug, title):
     s = slug + " " + title.lower()
@@ -242,9 +243,10 @@ export function getBlogSiblingCards(slug: string, count = 3): SiblingCard[] {
 /** Directory grouped by display category, for /blog/ and /blog/todos/. */
 export function getDirectoryByCategory(): { category: string; entries: BlogDirectoryEntry[] }[] {
   const order = [
-    'Exámenes Cambridge', 'Linguaskill', 'Academias Madrid', 'Inglés en el extranjero',
-    'Inglés para Niños', 'Aprender Inglés', 'Habilidades', 'Carrera Profesional',
-    'Comparativas', 'Precios', 'Metodología', 'Consejos', 'Recursos', 'Calendario',
+    'Niveles de inglés', 'Exámenes Cambridge', 'Linguaskill', 'Academias Madrid',
+    'Inglés en el extranjero', 'Inglés para Niños', 'Aprender Inglés', 'Habilidades',
+    'Carrera Profesional', 'Comparativas', 'Precios', 'Metodología', 'Consejos',
+    'Recursos', 'Calendario',
   ];
   const groups = new Map<string, BlogDirectoryEntry[]>();
   for (const e of BLOG_DIRECTORY) {

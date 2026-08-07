@@ -42,7 +42,8 @@ export type ArticleCategory =
   | 'Local Madrid'
   | 'Price'
   | 'Definitions'
-  | 'Inglés en el extranjero';
+  | 'Inglés en el extranjero'
+  | 'Niveles de inglés';
 
 export interface ArticleImage {
   url: string;
