@@ -33,14 +33,18 @@ The skill is meant to feel as simple as "ask Claude to write an article". Setup 
 
 ### Check 1: Python dependencies
 
-Try to import the one library:
+Try to import both libraries:
 
 ```bash
-python -c "import exa_py" 2>&1
+python -c "import exa_py, dotenv" 2>&1
 ```
 
-If this fails, the buyer hasn't installed the dependency. Say something like:
-*"I need to install one Python package (exa-py) before I can research the SERP. Want me to run `pip install -r requirements.txt` for you?"*
+Check both. `python-dotenv` is what reads `.env`, and every loader wraps its import in a bare
+`try/except ImportError` — so when it is missing, the key file is silently read as nothing and
+you get "EXA_API_KEY not set" while staring at a populated `.env`. Do not skip it.
+
+If this fails, the buyer hasn't installed the dependencies. Say something like:
+*"I need to install the Python dependencies (exa-py and python-dotenv) before I can research the SERP. Want me to run `pip install -r requirements.txt` for you?"*
 
 If they say yes, run it from the skill directory. If it succeeds, move on. If pip itself fails (missing pip, permission issue), tell them what's wrong specifically — don't give a generic "setup failed" message.
 

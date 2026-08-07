@@ -14,7 +14,7 @@ That's the only manual step. Now open Claude Code in any project folder and type
 
 The skill detects this is your first run and walks you through everything:
 
-- Installs the one Python dependency for you
+- Installs the Python dependencies for you
 - Asks for your Exa API key (with the link to exa.ai if you don't have one yet)
 - Then writes the article
 
@@ -32,7 +32,7 @@ The first time you ask the skill to write something, you'll see a conversation l
 
 > **You:** write an SEO article about "best ai writing tools 2026"
 >
-> **Claude:** Looks like this is your first time using exa-seo-writer. I need to install one Python package (exa-py). Want me to run `pip install -r requirements.txt`? — Yes
+> **Claude:** Looks like this is your first time using exa-seo-writer. I need to install the Python dependencies (exa-py, python-dotenv). Want me to run `pip install -r requirements.txt`? — Yes
 >
 > **Claude:** Done. Now I need your Exa API key. Exa pulls real top-10 SERP data so the article competes with what's actually ranking. Free signup at exa.ai if you don't have one. Paste your key here. — `<your key>`
 >

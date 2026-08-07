@@ -1,0 +1,11 @@
+# Local secrets — the Exa key lives here. Never commit.
+.env
+
+# setup.py's test-article scratch output
+test-output/
+
+# Screenshot captures
+screenshots/
+
+__pycache__/
+*.pyc
