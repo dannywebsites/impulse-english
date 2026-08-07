@@ -103,3 +103,65 @@ worse. When you touch a file, convert its raw utilities, then:
 npm run verify:design -- --list              # see what's left
 npm run verify:design -- --update-baseline   # record the improvement
 ```
+
+---
+
+## 6. Blog — the contract between the writer and the template
+
+This section is **read by the `seo-blog-writer` skill** (`brands/impulse-english.brand.json` →
+`design.briefPath`) and surfaced into every run's `write-context.md`. It is this client's copy of
+the blog design brief. A new client gets their own, in their own repo — nothing about the blog's
+appearance lives in the skill.
+
+### Who owns what
+
+Blog articles are **not** hand-built pages. The writer produces a markdown body; `assemble.js`
+converts it to `contextSections[].content` as HTML strings; `components/PAAArticlePage.tsx` renders
+every one of them. So:
+
+- **The template owns all appearance.** Typography, spacing, colour, section rhythm, CTAs.
+- **The writer owns structure and words only.** It emits semantic markup and nothing else.
+
+The writer must never try to style anything. Inline styles, decorative separators, emoji section
+markers and ASCII rules are the AI tell, not a substitute for a design system.
+
+### The markup a writer may emit
+
+The template styles exactly this set through `.article-prose`. Anything outside it renders
+unstyled, because the article body is injected HTML and no utility class reaches inside it.
+
+| Tag | Treatment |
+|---|---|
+| `<p>` | 17px / 1.7, `.measure` (68ch) |
+| `<h3>` `<h4>` | `.t-h3` / small caps. **Never `<h2>`** — the section heading is supplied separately by `contextSections[].heading` |
+| `<ul>` `<ol>` | disc / decimal, accent-blue markers |
+| `<table>` `<thead>` `<tbody>` `<th>` `<td>` | Accent-blue rule under the header row, hairline row separators. **HTML tables only** (`brand.useHtmlTables: true`) — markdown tables do not survive the HTML conversion |
+| `<strong>` | Semibold, zinc-900 |
+| `<a>` | `.link-inline`. Internal links are root-relative (`/cursos-ingles/primaria/`); external links only to allow-listed authorities |
+| `<blockquote>` | Brand-red left rule, italic |
+
+**Never** `<h1>` (the template renders `article.question`), `<h2>`, `<img>` (image placement is
+decided by `images.json`, not by the body), `<style>`, `<div>`, or any `class`/`style` attribute.
+
+### What the template adds around the words
+
+Do not write these into the body; they already exist and will duplicate:
+
+- hero with breadcrumb, category eyebrow, read time and date
+- the "Respuesta directa" card, from `paaAnswer`
+- alternating `.surface-alt` bands between sections
+- inline images after sections 2 and 4, from `images.json`
+- a mid-article `<CTABand>`, the "Te puede interesar" links, the Impulse CTA band with `LeadForm`,
+  `FAQSection`, related articles, and the back-to-hub link
+
+### Anti-AI checklist for an article
+
+The subset of the playbook that applies to a blog piece. The full split of writer laws versus page
+laws is in `~/.claude/skills/seo-blog-writer/references/anti-ai-playbook.md`.
+
+- [ ] Written from the run's evidence (`brief.md`, `serp.json`, `sources/`), never from memory
+- [ ] Every image `src` is in `images.json` — an invented path is a blocking error
+- [ ] Every external link is an allow-listed authority; **never** a competitor
+- [ ] Reviews and figures verbatim and sourced, or absent
+- [ ] Paragraphs of five sentences or fewer; sentence length varied
+- [ ] No em dashes, no banned words, no `<h1>`/`<h2>`, no inline styling
