@@ -281,8 +281,8 @@ export default function IrlandaPage() {
       <TeacherCard
         heading="Quién organiza los programas en Irlanda"
         eyebrow="Quién está detrás"
-        imageSrc="/images/academy/secondary-students-danny-helping-student.jpg"
-        imageAlt="Daniel Fitzpatrick, cofundador irlandés de Impulse English Academy, con una alumna de secundaria en clase"
+        imageSrc="/images/academy/danny-director-extranjero.webp"
+        imageAlt="Retrato de Daniel Fitzpatrick, cofundador irlandés de Impulse English Academy, que organiza los programas de inglés en Irlanda"
       >
         <p>
           <strong>Daniel Fitzpatrick</strong> es cofundador de Impulse English Academy y quien lleva

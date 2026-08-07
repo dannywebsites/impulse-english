@@ -311,8 +311,8 @@ export default function CanadaPage() {
       <TeacherCard
         heading="Quién organiza los programas en el extranjero"
         eyebrow="Quién está detrás"
-        imageSrc="/images/academy/daniel-helping-secondary-school-students.jpg"
-        imageAlt="Daniel Fitzpatrick, cofundador de Impulse English Academy, con alumnos de secundaria en clase en Madrid"
+        imageSrc="/images/academy/danny-director-extranjero.webp"
+        imageAlt="Retrato de Daniel Fitzpatrick, cofundador irlandés de Impulse English Academy, responsable del año escolar en Canadá"
       >
         <p>
           <strong>Daniel Fitzpatrick</strong> es cofundador de Impulse English Academy y quien lleva

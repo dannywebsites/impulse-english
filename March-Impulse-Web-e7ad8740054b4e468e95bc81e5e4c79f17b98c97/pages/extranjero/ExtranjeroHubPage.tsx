@@ -287,8 +287,8 @@ export default function ExtranjeroHubPage() {
       <TeacherCard
         heading="Quién organiza los programas"
         eyebrow="Quién está detrás"
-        imageSrc="/images/academy/secondary-students-danny-helping-student.jpg"
-        imageAlt="Daniel Fitzpatrick, cofundador irlandés de Impulse English Academy, con una alumna en clase en Barrio del Pilar"
+        imageSrc="/images/academy/danny-director-extranjero.webp"
+        imageAlt="Retrato de Daniel Fitzpatrick, cofundador irlandés de Impulse English Academy y responsable de los programas de inglés en el extranjero"
       >
         <p>
           <strong>Daniel Fitzpatrick</strong> es cofundador de Impulse English Academy y quien lleva

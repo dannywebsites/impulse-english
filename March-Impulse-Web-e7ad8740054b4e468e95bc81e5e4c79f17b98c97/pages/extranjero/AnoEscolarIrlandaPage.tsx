@@ -338,8 +338,8 @@ export default function AnoEscolarIrlandaPage() {
       <TeacherCard
         heading="Quién lo organiza"
         eyebrow="Quién está detrás"
-        imageSrc="/images/academy/daniel-helping-secondary-school-students.jpg"
-        imageAlt="Daniel Fitzpatrick dando clase a alumnos de secundaria en Impulse English Academy, Barrio del Pilar"
+        imageSrc="/images/academy/danny-director-extranjero.webp"
+        imageAlt="Retrato de Daniel Fitzpatrick, cofundador irlandés de Impulse English Academy, que coordina el año escolar en Irlanda con los colegios y las familias de acogida"
       >
         <p>
           <strong>Daniel Fitzpatrick</strong>, cofundador de la academia, es{' '}
