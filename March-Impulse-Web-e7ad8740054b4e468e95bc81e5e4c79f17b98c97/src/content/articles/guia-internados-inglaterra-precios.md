@@ -4,7 +4,7 @@ category: Inglés en el extranjero
 priority: Medium
 question: "Internados en Inglaterra: Guía y Precios"
 seoTitle: "Internados en Inglaterra: Guía y Precios"
-metaDescription: Descubre cómo funciona un internado en Inglaterra y cuánto cuesta. Conoce las equivalencias de nivel y el sistema de casas para elegir mejor. ¡Infórmate aquí!
+metaDescription: Descubre cómo funciona un internado en Inglaterra y sus precios reales. Entiende el sistema británico y decide el mejor futuro para tu hijo con esta guía.
 paaAnswer: "Un internado en Inglaterra es un colegio en el que el alumno vive durante el trimestre, con clases, comidas, deporte y actividades dentro del mismo recinto. Cuestan mucho: las tarifas publicadas por los propios colegios se mueven en general entre unas 12.000 y 18.000 libras por trimestre en régimen de internado completo, lo que sitúa el curso entero por encima de las 35.000 libras en la mayoría de los casos, y bastante más en los colegios de mayor renombre. La admisión no es automática: hay solicitud, entrevista y, para un alumno español, casi siempre una prueba de inglés."
 contextSections:
   - heading: Cómo funciona un internado británico
@@ -28,20 +28,22 @@ impulseSection:
     - text: Inglés en el extranjero
       href: /ingles-en-el-extranjero/
 faqItems:
-  - question: ¿Cuánto cuesta un internado en Inglaterra?
-    answer: Las tarifas publicadas por los colegios se mueven en general entre 12.000 y 18.000 libras por trimestre en régimen de internado completo, con tres trimestres por curso, y suben bastante en los colegios de mayor renombre. A eso hay que sumar uniforme, depósito, clases de apoyo de inglés si hacen falta, actividades, vuelos y tutor legal.
-  - question: ¿Necesita visado un español para estudiar en Inglaterra?
-    answer: Sí. Desde el Brexit, una estancia larga de estudios requiere el visado de estudiante correspondiente, con patrocinio del colegio, prueba de fondos y tasas asociadas. Confirma las condiciones vigentes en la información oficial del Gobierno británico, porque los requisitos se actualizan.
+  - question: ¿Cuánto cuesta ir a un internado en Inglaterra?
+    answer: "Las cifras que se publican rondan las 11.000 libras por trimestre de media, lo que sitúa un curso completo en una horquilla amplia según el prestigio del centro. Esa cifra es la matrícula, no el total: fuera quedan la tutela legal obligatoria para menores internacionales, el uniforme y el equipo deportivo, los vuelos de las vacaciones intermedias, el visado y el dinero de bolsillo de nueve meses."
+  - question: ¿Cuánto cuesta un internado al año en el Reino Unido?
+    answer: "Sumando trimestres, el coste anual de un internado británico se mueve habitualmente entre los 30.000 y los 60.000 euros, y los centros más solicitados superan esa banda. Compara siempre presupuestos que incluyan o excluyan las mismas partidas: un centro que parece 8.000 euros más barato deja de serlo cuando uno incluye tutela y vuelos y el otro no."
+  - question: ¿A qué edad se puede ir a un internado?
+    answer: El sistema británico admite internos desde primaria en las llamadas prep schools, en torno a los 7 u 8 años, y de forma mucho más habitual a partir de los 11 en las senior schools, hasta los 18. Para un alumno español que llega de fuera, las entradas naturales son Year 9 y Year 10, porque dan margen de adaptación antes de los exámenes.
+  - question: ¿Cómo son los internados en el Reino Unido?
+    answer: "La vida transcurre entera en el campus: se duerme en una casa (house) con un tutor responsable, se come allí, se estudia en horario supervisado por la tarde y el deporte y las actividades forman parte del día, no son extras. La casa a la que te asignan es la unidad social de referencia y pesa más en la experiencia que el propio colegio."
+  - question: ¿La mayoría de los niños británicos van a internados?
+    answer: "No. Es una minoría pequeña: la mayoría del alumnado británico estudia en centros públicos y no interno. Conviene saberlo porque desmonta la imagen que llega desde España a través del cine, y porque explica el ambiente real de un internado, donde el alumnado local convive con una proporción alta de estudiantes internacionales."
   - question: ¿Qué nivel de inglés piden los internados británicos?
-    answer: Depende del colegio y del curso. Como referencia práctica, un B1 sólido para entrar en la etapa equivalente a la ESO y un B2 o superior para el Sixth Form. Muchos colegios aceptan un certificado de Cambridge como acreditación en lugar de su propia prueba interna.
-  - question: ¿A qué edad se entra en un internado inglés?
-    answer: Los puntos de entrada más habituales para alumnos extranjeros son Year 9, a los 13 o 14 años, y el Sixth Form, a los 16. Entrar en Year 10 u 11 es posible pero implica incorporarse a mitad de la preparación de los GCSE, con un nivel de inglés exigente desde el primer día.
+    answer: La mayoría exige una prueba propia o un certificado, y la referencia práctica es un B2 para seguir clases de contenido sin ir a remolque. Con un B1 justo se sobrevive, pero el primer trimestre se convierte en un esfuerzo de comprensión constante que pasa factura a las notas y al ánimo, justo cuando el alumno más necesita hacerse un sitio.
   - question: ¿Con cuánta antelación hay que solicitar plaza?
-    answer: Al menos un curso antes, y en los colegios más demandados dos. El proceso incluye solicitud, informes del colegio actual, prueba de inglés, entrevista y en ocasiones pruebas académicas, así que empezar tarde suele significar perder la convocatoria de ese año.
+    answer: Los centros con demanda alta trabajan con un año o más de antelación. Entre la solicitud, las pruebas de admisión, la entrevista, el visado y la contratación de la tutela se van varios meses, así que lo razonable es arrancar el otoño anterior al curso que se quiere cursar.
   - question: ¿Organiza Impulse English programas en internados de Inglaterra?
-    answer: No. No colocamos alumnos en colegios británicos ni trabajamos como agencia de ninguno. Organizamos programas propios en Irlanda, Malta, Canadá y Estados Unidos. Lo que sí hacemos en relación con Inglaterra es preparar el inglés y la entrevista de admisión.
-  - question: ¿Es mejor un internado en Inglaterra o estudiar un año en Irlanda?
-    answer: Son cosas distintas. Inglaterra ofrece el modelo de internado tradicional y un prestigio académico reconocido, a un coste alto y con visado desde el Brexit. Irlanda es sensiblemente más económica, sin visado por seguir en la Unión Europea, y el alumno se aloja normalmente con una familia en lugar de en un internado. La elección depende del presupuesto y de qué tipo de experiencia buscáis.
+    answer: No. Nuestros destinos son Irlanda, Malta, Canadá y Estados Unidos, y no intermediamos plazas en internados británicos ni en Escocia. Esta guía existe para que compares con criterio, lo contrates con quien lo contrates. Lo que sí hacemos es preparar el nivel de inglés con el que tu hijo llega.
 internalLinkRefs:
   - Inglés en el extranjero
   - Año escolar en Irlanda
@@ -57,9 +59,9 @@ breadcrumbs:
   - label: Blog
     href: /blog/
   - label: "Internados en Inglaterra: Guía y Precios"
-publishedDate: "2026-08-06"
-modifiedDate: "2026-08-06"
-readTime: 10 min
+publishedDate: "2026-08-07"
+modifiedDate: "2026-08-07"
+readTime: 11 min
 articleImages:
   - url: /images/academy/priamry.jpg
     alt: Estudiante de primaria inglés academia Cambridge La Vaguada Madrid
@@ -227,30 +229,34 @@ Aquí sí podemos ser útiles, y es lo único que ofrecemos en relación con Ing
 
 ## Preguntas frecuentes
 
-### ¿Cuánto cuesta un internado en Inglaterra?
+### ¿Cuánto cuesta ir a un internado en Inglaterra?
 
-Las tarifas publicadas por los colegios se mueven en general entre 12.000 y 18.000 libras por trimestre en régimen de internado completo, con tres trimestres por curso, y suben bastante en los colegios de mayor renombre. A eso hay que sumar uniforme, depósito, clases de apoyo de inglés si hacen falta, actividades, vuelos y tutor legal.
+Las cifras que se publican rondan las 11.000 libras por trimestre de media, lo que sitúa un curso completo en una horquilla amplia según el prestigio del centro. Esa cifra es la matrícula, no el total: fuera quedan la tutela legal obligatoria para menores internacionales, el uniforme y el equipo deportivo, los vuelos de las vacaciones intermedias, el visado y el dinero de bolsillo de nueve meses.
 
-### ¿Necesita visado un español para estudiar en Inglaterra?
+### ¿Cuánto cuesta un internado al año en el Reino Unido?
 
-Sí. Desde el Brexit, una estancia larga de estudios requiere el visado de estudiante correspondiente, con patrocinio del colegio, prueba de fondos y tasas asociadas. Confirma las condiciones vigentes en la información oficial del Gobierno británico, porque los requisitos se actualizan.
+Sumando trimestres, el coste anual de un internado británico se mueve habitualmente entre los 30.000 y los 60.000 euros, y los centros más solicitados superan esa banda. Compara siempre presupuestos que incluyan o excluyan las mismas partidas: un centro que parece 8.000 euros más barato deja de serlo cuando uno incluye tutela y vuelos y el otro no.
+
+### ¿A qué edad se puede ir a un internado?
+
+El sistema británico admite internos desde primaria en las llamadas prep schools, en torno a los 7 u 8 años, y de forma mucho más habitual a partir de los 11 en las senior schools, hasta los 18. Para un alumno español que llega de fuera, las entradas naturales son Year 9 y Year 10, porque dan margen de adaptación antes de los exámenes.
+
+### ¿Cómo son los internados en el Reino Unido?
+
+La vida transcurre entera en el campus: se duerme en una casa (house) con un tutor responsable, se come allí, se estudia en horario supervisado por la tarde y el deporte y las actividades forman parte del día, no son extras. La casa a la que te asignan es la unidad social de referencia y pesa más en la experiencia que el propio colegio.
+
+### ¿La mayoría de los niños británicos van a internados?
+
+No. Es una minoría pequeña: la mayoría del alumnado británico estudia en centros públicos y no interno. Conviene saberlo porque desmonta la imagen que llega desde España a través del cine, y porque explica el ambiente real de un internado, donde el alumnado local convive con una proporción alta de estudiantes internacionales.
 
 ### ¿Qué nivel de inglés piden los internados británicos?
 
-Depende del colegio y del curso. Como referencia práctica, un B1 sólido para entrar en la etapa equivalente a la ESO y un B2 o superior para el Sixth Form. Muchos colegios aceptan un certificado de Cambridge como acreditación en lugar de su propia prueba interna.
-
-### ¿A qué edad se entra en un internado inglés?
-
-Los puntos de entrada más habituales para alumnos extranjeros son Year 9, a los 13 o 14 años, y el Sixth Form, a los 16. Entrar en Year 10 u 11 es posible pero implica incorporarse a mitad de la preparación de los GCSE, con un nivel de inglés exigente desde el primer día.
+La mayoría exige una prueba propia o un certificado, y la referencia práctica es un B2 para seguir clases de contenido sin ir a remolque. Con un B1 justo se sobrevive, pero el primer trimestre se convierte en un esfuerzo de comprensión constante que pasa factura a las notas y al ánimo, justo cuando el alumno más necesita hacerse un sitio.
 
 ### ¿Con cuánta antelación hay que solicitar plaza?
 
-Al menos un curso antes, y en los colegios más demandados dos. El proceso incluye solicitud, informes del colegio actual, prueba de inglés, entrevista y en ocasiones pruebas académicas, así que empezar tarde suele significar perder la convocatoria de ese año.
+Los centros con demanda alta trabajan con un año o más de antelación. Entre la solicitud, las pruebas de admisión, la entrevista, el visado y la contratación de la tutela se van varios meses, así que lo razonable es arrancar el otoño anterior al curso que se quiere cursar.
 
 ### ¿Organiza Impulse English programas en internados de Inglaterra?
 
-No. No colocamos alumnos en colegios británicos ni trabajamos como agencia de ninguno. Organizamos programas propios en Irlanda, Malta, Canadá y Estados Unidos. Lo que sí hacemos en relación con Inglaterra es preparar el inglés y la entrevista de admisión.
-
-### ¿Es mejor un internado en Inglaterra o estudiar un año en Irlanda?
-
-Son cosas distintas. Inglaterra ofrece el modelo de internado tradicional y un prestigio académico reconocido, a un coste alto y con visado desde el Brexit. Irlanda es sensiblemente más económica, sin visado por seguir en la Unión Europea, y el alumno se aloja normalmente con una familia en lugar de en un internado. La elección depende del presupuesto y de qué tipo de experiencia buscáis.
+No. Nuestros destinos son Irlanda, Malta, Canadá y Estados Unidos, y no intermediamos plazas en internados británicos ni en Escocia. Esta guía existe para que compares con criterio, lo contrates con quien lo contrates. Lo que sí hacemos es preparar el nivel de inglés con el que tu hijo llega.

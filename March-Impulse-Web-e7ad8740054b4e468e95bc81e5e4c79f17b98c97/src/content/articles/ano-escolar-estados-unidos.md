@@ -2,9 +2,9 @@
 url: /blog/ano-escolar-estados-unidos/
 category: Inglés en el extranjero
 priority: Medium
-question: Guía de tu año escolar en Estados Unidos
-seoTitle: Guía de tu año escolar en Estados Unidos
-metaDescription: Descubre cómo funciona un high school en Estados Unidos. Domina las convalidaciones, el sistema de grados y mejora tu inglés. ¡Prepárate para tu gran aventura!
+question: Claves del año escolar en Estados Unidos
+seoTitle: Claves del año escolar en Estados Unidos
+metaDescription: ¿Buscas un año escolar en Estados Unidos? Descubre cómo es el high school, los visados y el nivel de inglés necesario. Asegura tu plaza y convalidación ahora.
 paaAnswer: "Un año escolar en Estados Unidos consiste en cursar un curso completo en un instituto público o privado americano, viviendo con una familia de acogida o en un internado, con dos vías de entrada muy distintas: el visado J-1, más barato, en el que no eliges ni la zona ni el colegio, y el visado F-1, bastante más caro, en el que sí los eliges. La edad habitual va de los 14 a los 18 años, las plazas se cierran entre marzo y abril del curso anterior, y casi todos los programas exigen una prueba de inglés antes de aceptar al alumno."
 contextSections:
   - heading: Cómo encaja el curso americano con la ESO y el Bachillerato
@@ -28,20 +28,22 @@ impulseSection:
     - text: Inglés en el extranjero
       href: /ingles-en-el-extranjero/
 faqItems:
-  - question: ¿Qué edad hay que tener para hacer un año escolar en Estados Unidos?
-    answer: La horquilla habitual va de los 14 a los 18 años, y cada programa fija la suya. El visado J-1 es el más estricto en este punto y suele exigir que el alumno no haya cumplido cierta edad el día que empieza el curso, así que conviene confirmarlo antes de hacer planes, sobre todo si el cumpleaños cae en verano.
+  - question: ¿Cuándo inicia y termina el año escolar en Estados Unidos?
+    answer: Empieza entre mediados de agosto y la primera semana de septiembre según el estado y el distrito, y termina a finales de mayo o principios de junio. Es un calendario adelantado respecto al español por los dos extremos, lo que significa que tu hijo se va en pleno verano español y vuelve antes de que aquí acabe el curso.
+  - question: ¿Cuánto dura un año escolar en EEUU?
+    answer: Entre 36 y 42 semanas lectivas según el distrito, repartidas en dos semestres separados por las vacaciones de invierno. Es un curso algo más largo en semanas que el español, aunque con más días sueltos de fiesta a lo largo del año.
+  - question: ¿Cuándo son las vacaciones escolares en Estados Unidos?
+    answer: Las de invierno van desde mediados de diciembre hasta primeros de enero, hay un spring break de una o dos semanas en marzo, y el verano son de diez a doce semanas. A eso se añaden festivos largos como Thanksgiving a finales de noviembre. Conviene mirarlo antes de comprar vuelos, porque los periodos en que el alumno no puede quedarse en el instituto los organiza la familia de acogida.
+  - question: ¿Cuántos años son High School en EEUU?
+    answer: "Cuatro: del 9.º al 12.º grado, entre los 14 y los 18 años aproximadamente. Se cursan de forma continua en el mismo centro, y cada curso tiene su nombre propio (freshman, sophomore, junior y senior), que es como se identifican los alumnos entre ellos."
+  - question: ¿Cómo se llama el bachillerato en Estados Unidos?
+    answer: No existe una etapa separada equivalente al Bachillerato español. Los dos últimos cursos de high school, 11.º y 12.º grado, hacen esa función y se cursan dentro del mismo instituto que los dos anteriores. Por eso 11.º grado equivale a 1.º de Bachillerato y 12.º a 2.º, y por eso no hay un "instituto de bachillerato" al que cambiarse.
   - question: ¿Se puede elegir el estado o la ciudad?
     answer: Con el visado J-1, no. La organización asigna la plaza en función de dónde haya una familia de acogida validada, y puede ser cualquier estado. Con el visado F-1 sí se elige centro y localidad, y esa libertad es justamente lo que explica la diferencia de precio entre ambos.
-  - question: ¿Cuánto cuesta un curso completo?
-    answer: Depende del visado y del tipo de centro. Las agencias españolas publican horquillas que arrancan en torno a los 13.000 euros para un J-1 en instituto público y llegan a superar los 50.000 en internados privados. Compara siempre qué incluye cada presupuesto, porque los vuelos, el seguro y el dinero de bolsillo cambian mucho el total.
   - question: ¿Qué nivel de inglés piden?
     answer: La mayoría de programas J-1 exige una prueba estandarizada, normalmente el ELTiS. En términos del Marco Común Europeo, llegar con un B1 sólido es el mínimo para seguir las clases con soltura, y un B2 marca una diferencia enorme en las primeras semanas, que son las que determinan cómo va el resto del año.
-  - question: ¿Cuándo hay que empezar los trámites?
-    answer: Los procesos de admisión se cierran entre marzo y abril para un curso que empieza en agosto o septiembre. Entre la solicitud, la prueba de inglés, la documentación académica y la cita del consulado se van varios meses, así que lo razonable es arrancar con un año de antelación.
   - question: ¿Convalidan el curso en España al volver?
     answer: El reconocimiento lo tramita el Ministerio de Educación y depende de la documentación oficial del instituto americano y del expediente del alumno. No es automático ni lo puede garantizar una agencia. Pide por escrito qué certificados te entregarán al terminar y con qué sellos, porque de ese papel depende el trámite.
-  - question: ¿Y si mi hijo lo pasa mal y quiere volverse?
-    answer: Es una preocupación razonable y a casi todos les pasa en algún momento, normalmente entre la sexta y la décima semana, cuando la novedad se acaba y aún no hay amigos de verdad. Casi siempre se supera, y se supera antes cuanto mejor sea el inglés de partida y cuanto más implicado esté el coordinador local. Pregunta cómo se gestionan estas situaciones y qué apoyo hay sobre el terreno antes de contratar nada.
 internalLinkRefs:
   - Prueba de nivel gratis de 25 minutos
   - Inglés para secundaria
@@ -55,9 +57,9 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
-  - label: Guía de tu año escolar en Estados Unidos
-publishedDate: "2026-08-06"
-modifiedDate: "2026-08-06"
+  - label: Claves del año escolar en Estados Unidos
+publishedDate: "2026-08-07"
+modifiedDate: "2026-08-07"
 readTime: 13 min
 articleImages:
   - url: /images/academy/daniel-helping-secondary-school-students.jpg
@@ -233,30 +235,34 @@ Y si al comparar destinos veis que Estados Unidos no encaja, por precio o porque
 
 ## Preguntas frecuentes
 
-### ¿Qué edad hay que tener para hacer un año escolar en Estados Unidos?
+### ¿Cuándo inicia y termina el año escolar en Estados Unidos?
 
-La horquilla habitual va de los 14 a los 18 años, y cada programa fija la suya. El visado J-1 es el más estricto en este punto y suele exigir que el alumno no haya cumplido cierta edad el día que empieza el curso, así que conviene confirmarlo antes de hacer planes, sobre todo si el cumpleaños cae en verano.
+Empieza entre mediados de agosto y la primera semana de septiembre según el estado y el distrito, y termina a finales de mayo o principios de junio. Es un calendario adelantado respecto al español por los dos extremos, lo que significa que tu hijo se va en pleno verano español y vuelve antes de que aquí acabe el curso.
+
+### ¿Cuánto dura un año escolar en EEUU?
+
+Entre 36 y 42 semanas lectivas según el distrito, repartidas en dos semestres separados por las vacaciones de invierno. Es un curso algo más largo en semanas que el español, aunque con más días sueltos de fiesta a lo largo del año.
+
+### ¿Cuándo son las vacaciones escolares en Estados Unidos?
+
+Las de invierno van desde mediados de diciembre hasta primeros de enero, hay un spring break de una o dos semanas en marzo, y el verano son de diez a doce semanas. A eso se añaden festivos largos como Thanksgiving a finales de noviembre. Conviene mirarlo antes de comprar vuelos, porque los periodos en que el alumno no puede quedarse en el instituto los organiza la familia de acogida.
+
+### ¿Cuántos años son High School en EEUU?
+
+Cuatro: del 9.º al 12.º grado, entre los 14 y los 18 años aproximadamente. Se cursan de forma continua en el mismo centro, y cada curso tiene su nombre propio (freshman, sophomore, junior y senior), que es como se identifican los alumnos entre ellos.
+
+### ¿Cómo se llama el bachillerato en Estados Unidos?
+
+No existe una etapa separada equivalente al Bachillerato español. Los dos últimos cursos de high school, 11.º y 12.º grado, hacen esa función y se cursan dentro del mismo instituto que los dos anteriores. Por eso 11.º grado equivale a 1.º de Bachillerato y 12.º a 2.º, y por eso no hay un "instituto de bachillerato" al que cambiarse.
 
 ### ¿Se puede elegir el estado o la ciudad?
 
 Con el visado J-1, no. La organización asigna la plaza en función de dónde haya una familia de acogida validada, y puede ser cualquier estado. Con el visado F-1 sí se elige centro y localidad, y esa libertad es justamente lo que explica la diferencia de precio entre ambos.
 
-### ¿Cuánto cuesta un curso completo?
-
-Depende del visado y del tipo de centro. Las agencias españolas publican horquillas que arrancan en torno a los 13.000 euros para un J-1 en instituto público y llegan a superar los 50.000 en internados privados. Compara siempre qué incluye cada presupuesto, porque los vuelos, el seguro y el dinero de bolsillo cambian mucho el total.
-
 ### ¿Qué nivel de inglés piden?
 
 La mayoría de programas J-1 exige una prueba estandarizada, normalmente el ELTiS. En términos del Marco Común Europeo, llegar con un B1 sólido es el mínimo para seguir las clases con soltura, y un B2 marca una diferencia enorme en las primeras semanas, que son las que determinan cómo va el resto del año.
 
-### ¿Cuándo hay que empezar los trámites?
-
-Los procesos de admisión se cierran entre marzo y abril para un curso que empieza en agosto o septiembre. Entre la solicitud, la prueba de inglés, la documentación académica y la cita del consulado se van varios meses, así que lo razonable es arrancar con un año de antelación.
-
 ### ¿Convalidan el curso en España al volver?
 
 El reconocimiento lo tramita el Ministerio de Educación y depende de la documentación oficial del instituto americano y del expediente del alumno. No es automático ni lo puede garantizar una agencia. Pide por escrito qué certificados te entregarán al terminar y con qué sellos, porque de ese papel depende el trámite.
-
-### ¿Y si mi hijo lo pasa mal y quiere volverse?
-
-Es una preocupación razonable y a casi todos les pasa en algún momento, normalmente entre la sexta y la décima semana, cuando la novedad se acaba y aún no hay amigos de verdad. Casi siempre se supera, y se supera antes cuanto mejor sea el inglés de partida y cuanto más implicado esté el coordinador local. Pregunta cómo se gestionan estas situaciones y qué apoyo hay sobre el terreno antes de contratar nada.

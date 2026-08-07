@@ -2,10 +2,10 @@
 url: /blog/becas-bachillerato-extranjero-reales/
 category: Inglés en el extranjero
 priority: Medium
-question: "Becas bachillerato extranjero: la verdad"
-seoTitle: "Becas bachillerato extranjero: la verdad"
-metaDescription: ¿Buscas becas de bachillerato extranjero? Descubre qué fundaciones ofrecen ayudas reales y cómo distinguirlas de descuentos comerciales. ¡Infórmate ahora!
-paaAnswer: 'Sí, existen becas que pagan un curso de Bachillerato en el extranjero casi al completo, pero son pocas y ninguna la concede una agencia de idiomas. Las de cobertura real las convocan fundaciones y organizaciones sin ánimo de lucro: la Fundación Amancio Ortega, los Colegios del Mundo Unido (UWC), AFS Intercultura y los intercambios de Rotary. Todo lo demás que verás anunciado como "beca" suele ser un descuento comercial sobre el precio de catálogo.'
+question: Becas reales bachillerato extranjero
+seoTitle: Becas reales bachillerato extranjero
+metaDescription: ¿Buscas becas para estudiar bachillerato en el extranjero? Descubre las opciones reales, plazos y cómo distinguir una ayuda de un descuento. ¡Infórmate ahora!
+paaAnswer: 'Sí, existen becas que pagan un curso de Bachillerato en el extranjero casi al completo, pero son pocas, se piden con un año de antelación y ninguna la concede una agencia de idiomas. Las de cobertura real las convocan fundaciones y organizaciones sin ánimo de lucro: la Fundación Amancio Ortega, los Colegios del Mundo Unido (UWC), AFS Intercultura y los intercambios de Rotary. Se solicitan desde 4.º de la ESO, las convocatorias grandes abren en otoño y cierran en semanas, y compiten miles de expedientes por cada centenar de plazas. Todo lo demás que verás anunciado como "beca" suele ser un descuento comercial sobre el precio de catálogo.'
 contextSections:
   - heading: "Beca o descuento: cómo distinguirlos en treinta segundos"
     content: '<p>Esa distinción es la que decide si tu familia se ahorra un curso entero o un porcentaje pequeño de una factura muy alta. Y como casi todas estas convocatorias filtran por inglés antes que por cualquier otra cosa, conviene entender el calendario con tiempo. En Madrid, septiembre y octubre son los meses en los que se mueve casi todo.</p><p>El sector mezcla dos cosas muy distintas bajo la misma palabra.</p><p>Una <strong>beca</strong> la concede un tercero que no te vende el programa. La fundación paga, el colegio recibe y tú no firmas un contrato de compraventa con quien te ha becado. El dinero sale del patrimonio de la fundación, no de tu bolsillo, y el proceso de selección es competitivo: hay más candidatos que plazas.</p><p>Una <strong>ayuda comercial</strong> la concede la propia empresa que te vende el curso. Es un descuento sobre su propia tarifa. Puede ser perfectamente legítimo y útil, pero no es lo mismo: si el descuento es de un 10 % o un 15 % sobre el precio de catálogo, sigues pagando el 85 % restante.</p><p>Hay tres preguntas que separan una cosa de la otra en menos de un minuto:</p><ol><li><strong>¿Quién paga?</strong> Si quien te "beca" es la misma entidad que te factura, es un descuento.</li><li><strong>¿Hay convocatoria pública con bases?</strong> Las becas reales publican bases, plazos, criterios y número de plazas. Los descuentos, no.</li><li><strong>¿Cuántas plazas hay?</strong> Una beca de fundación tiene un número limitado y publicado. Una promoción comercial suele estar disponible para todo el que contrate.</li></ol><p>Ninguna de estas preguntas es un juicio moral sobre las agencias. Es simplemente saber qué estás mirando antes de hacer cuentas.</p>'
@@ -28,20 +28,22 @@ impulseSection:
     - text: Inglés en el extranjero
       href: /ingles-en-el-extranjero/
 faqItems:
+  - question: ¿Qué becas puedo solicitar para estudiar en el extranjero?
+    answer: 'Para un curso escolar completo desde España, las de cobertura real son pocas y están muy identificadas: la Fundación Amancio Ortega, los Colegios del Mundo Unido (UWC), AFS Intercultura y los intercambios de Rotary. Cada una tiene su propio perfil de candidato, su calendario y su destino. Cualquier otra cosa que veas anunciada como "beca" por una agencia de idiomas es, casi siempre, un descuento comercial sobre el precio de catálogo.'
+  - question: ¿Es fácil conseguir una beca para estudiar en el extranjero?
+    answer: "No. Son convocatorias con muchísimas más solicitudes que plazas, y el filtro no es solo económico: pesan el expediente, la madurez del candidato, la entrevista y, en casi todas, el nivel de inglés. Conviene plantearlo como una candidatura que se prepara durante meses, no como un formulario que se rellena en una tarde, y tener siempre un plan B por si no sale."
+  - question: ¿Cómo ganarse una beca para estudiar en el extranjero?
+    answer: "Preparando las tres cosas que se evalúan y que sí dependen de ti: un expediente sostenido (no un sprint del último trimestre), un nivel de inglés acreditado por encima del mínimo exigido, y una entrevista en la que el alumno sepa explicar por qué quiere irse. Las cartas de recomendación y el trabajo de voluntariado o extraescolar cuentan, y no se improvisan en septiembre."
+  - question: ¿Cómo conseguir becas para estudiar en el extranjero gratis?
+    answer: 'La solicitud de estas convocatorias no cuesta dinero: son gratuitas de pedir. Lo que hay que vigilar es a quién se le paga algo por el camino. Ninguna fundación seria cobra por tramitar una candidatura, y si una empresa te pide una cuota para "gestionar tu beca", eso no es una beca. Los gastos legítimos que sí pueden aparecer son la traducción de documentos o un examen oficial de idioma.'
   - question: ¿Existe alguna beca que cubra el 100 % de un año escolar en el extranjero?
-    answer: Sí, aunque son pocas. La Fundación Amancio Ortega es la que ofrece la cobertura más completa para cursar 1.º de Bachillerato en Canadá o Estados Unidos, y los Colegios del Mundo Unido pueden llegar a una cobertura total en función de la renta familiar. Son convocatorias muy competitivas, con bastantes más solicitudes que plazas.
+    answer: Prácticamente ninguna cubre el cien por cien de todo. Las mejores cubren matrícula, alojamiento, manutención y, en algunos casos, el viaje, y dejan fuera el dinero de bolsillo, el seguro complementario, los gastos de material y las visitas de la familia. Lee siempre la letra pequeña de la convocatoria concreta, porque la diferencia entre "beca completa" y "beca completa salvo X" son varios miles de euros.
   - question: ¿Las "becas" que anuncian las agencias de idiomas son becas de verdad?
-    answer: "Normalmente no. Suelen ser descuentos sobre la tarifa de la propia agencia. Pueden interesarte igualmente, pero conviene saber que el ahorro es un porcentaje del precio, no una financiación externa. La prueba más rápida es preguntar quién paga: si es la misma empresa que te factura, es un descuento."
+    answer: "Casi nunca. Suelen ser descuentos de un porcentaje sobre una tarifa que fija la propia agencia, a veces condicionados a reservar antes de una fecha. No es que sean ilegítimos, es que no son lo mismo: una beca la concede un tercero sobre un proceso competitivo, un descuento lo concede el vendedor sobre su propio precio."
   - question: ¿Qué nivel de inglés piden estas becas?
-    answer: Las bases no siempre publican un nivel del Marco Común Europeo, pero las pruebas de selección se mueven en la práctica en torno a un B2 o superior, sobre todo en la parte oral. Llegar con un B2 First o un C1 Advanced acreditado da margen y evita que el idioma sea el motivo de la eliminación.
+    answer: "Depende de la convocatoria, pero la horquilla habitual está entre un B1 alto y un B2, y varias exigen prueba propia o certificado oficial. Más importante que el mínimo formal: en un proceso con más candidatos que plazas, el inglés es uno de los pocos criterios que separa expedientes parecidos, así que llegar con margen sobre el mínimo es una ventaja real, no un adorno."
   - question: ¿Cuándo hay que empezar a preparar la solicitud?
-    answer: Con un curso escolar de antelación. La mayoría de convocatorias para el año siguiente se abren y se resuelven durante el otoño y el invierno previos, así que la preparación de inglés debería empezar antes del verano anterior. Confirma las fechas exactas en la web oficial de cada organización, porque varían cada año.
-  - question: ¿Sirve de algo tener un certificado Cambridge si la beca no lo exige?
-    answer: Sí, por dos motivos. Acredita el nivel ante el comité con un sello reconocido y, sobre todo, hace que el alumno ya se haya examinado oralmente con un evaluador desconocido. Cuando llega la prueba de la beca, deja de ser una situación nueva.
-  - question: Si mi hijo no consigue la beca, ¿qué alternativas hay?
-    answer: Bastantes, y con costes muy distintos entre sí. Un trimestre en lugar de un curso completo, un campamento de verano o un curso corto cumplen buena parte del objetivo lingüístico. Es sensato plantear la candidatura a la beca como una opción y no como el único camino.
-  - question: ¿Estas becas solo son para familias con pocos ingresos?
-    answer: No todas. Algunas ajustan la financiación a la renta familiar, de forma que las rentas bajas reciben más cobertura, mientras que otras se centran sobre todo en el expediente y en la motivación del candidato. Conviene leer los criterios de cada convocatoria antes de descartarse.
+    answer: Con un curso de antelación. Las convocatorias grandes se abren en otoño para el curso siguiente y cierran en pocas semanas, así que quien empieza a mirarlo cuando ya está abierta llega sin certificado, sin referencias y sin tiempo de preparar la entrevista. Si tu hijo está en 3.º de la ESO, este es el momento.
 internalLinkRefs:
   - Año escolar en Canadá
   - Cambridge B2 First
@@ -57,10 +59,10 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
-  - label: "Becas bachillerato extranjero: la verdad"
-publishedDate: "2026-08-06"
-modifiedDate: "2026-08-06"
-readTime: 13 min
+  - label: Becas reales bachillerato extranjero
+publishedDate: "2026-08-07"
+modifiedDate: "2026-08-07"
+readTime: 14 min
 articleImages:
   - url: /images/extranjero/viaje-01.webp
     alt: Estudiantes de Impulse English en una actividad del programa de inmersión en Irlanda
@@ -73,7 +75,7 @@ articleImages:
     placement: inline
 ---
 
-Sí, existen becas que pagan un curso de Bachillerato en el extranjero casi al completo, pero son pocas y ninguna la concede una agencia de idiomas. Las de cobertura real las convocan fundaciones y organizaciones sin ánimo de lucro: la Fundación Amancio Ortega, los Colegios del Mundo Unido (UWC), AFS Intercultura y los intercambios de Rotary. Todo lo demás que verás anunciado como "beca" suele ser un descuento comercial sobre el precio de catálogo.
+Sí, existen becas que pagan un curso de Bachillerato en el extranjero casi al completo, pero son pocas, se piden con un año de antelación y ninguna la concede una agencia de idiomas. Las de cobertura real las convocan fundaciones y organizaciones sin ánimo de lucro: la Fundación Amancio Ortega, los Colegios del Mundo Unido (UWC), AFS Intercultura y los intercambios de Rotary. Se solicitan desde 4.º de la ESO, las convocatorias grandes abren en otoño y cierran en semanas, y compiten miles de expedientes por cada centenar de plazas. Todo lo demás que verás anunciado como "beca" suele ser un descuento comercial sobre el precio de catálogo.
 
 Esa distinción es la que decide si tu familia se ahorra un curso entero o un porcentaje pequeño de una factura muy alta. Y como casi todas estas convocatorias filtran por inglés antes que por cualquier otra cosa, conviene entender el calendario con tiempo. En Madrid, septiembre y octubre son los meses en los que se mueve casi todo.
 
@@ -219,30 +221,34 @@ Y conviene decir una cosa con claridad: nosotros no concedemos ninguna de estas 
 
 ## Preguntas frecuentes
 
+### ¿Qué becas puedo solicitar para estudiar en el extranjero?
+
+Para un curso escolar completo desde España, las de cobertura real son pocas y están muy identificadas: la Fundación Amancio Ortega, los Colegios del Mundo Unido (UWC), AFS Intercultura y los intercambios de Rotary. Cada una tiene su propio perfil de candidato, su calendario y su destino. Cualquier otra cosa que veas anunciada como "beca" por una agencia de idiomas es, casi siempre, un descuento comercial sobre el precio de catálogo.
+
+### ¿Es fácil conseguir una beca para estudiar en el extranjero?
+
+No. Son convocatorias con muchísimas más solicitudes que plazas, y el filtro no es solo económico: pesan el expediente, la madurez del candidato, la entrevista y, en casi todas, el nivel de inglés. Conviene plantearlo como una candidatura que se prepara durante meses, no como un formulario que se rellena en una tarde, y tener siempre un plan B por si no sale.
+
+### ¿Cómo ganarse una beca para estudiar en el extranjero?
+
+Preparando las tres cosas que se evalúan y que sí dependen de ti: un expediente sostenido (no un sprint del último trimestre), un nivel de inglés acreditado por encima del mínimo exigido, y una entrevista en la que el alumno sepa explicar por qué quiere irse. Las cartas de recomendación y el trabajo de voluntariado o extraescolar cuentan, y no se improvisan en septiembre.
+
+### ¿Cómo conseguir becas para estudiar en el extranjero gratis?
+
+La solicitud de estas convocatorias no cuesta dinero: son gratuitas de pedir. Lo que hay que vigilar es a quién se le paga algo por el camino. Ninguna fundación seria cobra por tramitar una candidatura, y si una empresa te pide una cuota para "gestionar tu beca", eso no es una beca. Los gastos legítimos que sí pueden aparecer son la traducción de documentos o un examen oficial de idioma.
+
 ### ¿Existe alguna beca que cubra el 100 % de un año escolar en el extranjero?
 
-Sí, aunque son pocas. La Fundación Amancio Ortega es la que ofrece la cobertura más completa para cursar 1.º de Bachillerato en Canadá o Estados Unidos, y los Colegios del Mundo Unido pueden llegar a una cobertura total en función de la renta familiar. Son convocatorias muy competitivas, con bastantes más solicitudes que plazas.
+Prácticamente ninguna cubre el cien por cien de todo. Las mejores cubren matrícula, alojamiento, manutención y, en algunos casos, el viaje, y dejan fuera el dinero de bolsillo, el seguro complementario, los gastos de material y las visitas de la familia. Lee siempre la letra pequeña de la convocatoria concreta, porque la diferencia entre "beca completa" y "beca completa salvo X" son varios miles de euros.
 
 ### ¿Las "becas" que anuncian las agencias de idiomas son becas de verdad?
 
-Normalmente no. Suelen ser descuentos sobre la tarifa de la propia agencia. Pueden interesarte igualmente, pero conviene saber que el ahorro es un porcentaje del precio, no una financiación externa. La prueba más rápida es preguntar quién paga: si es la misma empresa que te factura, es un descuento.
+Casi nunca. Suelen ser descuentos de un porcentaje sobre una tarifa que fija la propia agencia, a veces condicionados a reservar antes de una fecha. No es que sean ilegítimos, es que no son lo mismo: una beca la concede un tercero sobre un proceso competitivo, un descuento lo concede el vendedor sobre su propio precio.
 
 ### ¿Qué nivel de inglés piden estas becas?
 
-Las bases no siempre publican un nivel del Marco Común Europeo, pero las pruebas de selección se mueven en la práctica en torno a un B2 o superior, sobre todo en la parte oral. Llegar con un B2 First o un C1 Advanced acreditado da margen y evita que el idioma sea el motivo de la eliminación.
+Depende de la convocatoria, pero la horquilla habitual está entre un B1 alto y un B2, y varias exigen prueba propia o certificado oficial. Más importante que el mínimo formal: en un proceso con más candidatos que plazas, el inglés es uno de los pocos criterios que separa expedientes parecidos, así que llegar con margen sobre el mínimo es una ventaja real, no un adorno.
 
 ### ¿Cuándo hay que empezar a preparar la solicitud?
 
-Con un curso escolar de antelación. La mayoría de convocatorias para el año siguiente se abren y se resuelven durante el otoño y el invierno previos, así que la preparación de inglés debería empezar antes del verano anterior. Confirma las fechas exactas en la web oficial de cada organización, porque varían cada año.
-
-### ¿Sirve de algo tener un certificado Cambridge si la beca no lo exige?
-
-Sí, por dos motivos. Acredita el nivel ante el comité con un sello reconocido y, sobre todo, hace que el alumno ya se haya examinado oralmente con un evaluador desconocido. Cuando llega la prueba de la beca, deja de ser una situación nueva.
-
-### Si mi hijo no consigue la beca, ¿qué alternativas hay?
-
-Bastantes, y con costes muy distintos entre sí. Un trimestre en lugar de un curso completo, un campamento de verano o un curso corto cumplen buena parte del objetivo lingüístico. Es sensato plantear la candidatura a la beca como una opción y no como el único camino.
-
-### ¿Estas becas solo son para familias con pocos ingresos?
-
-No todas. Algunas ajustan la financiación a la renta familiar, de forma que las rentas bajas reciben más cobertura, mientras que otras se centran sobre todo en el expediente y en la motivación del candidato. Conviene leer los criterios de cada convocatoria antes de descartarse.
+Con un curso de antelación. Las convocatorias grandes se abren en otoño para el curso siguiente y cierran en pocas semanas, así que quien empieza a mirarlo cuando ya está abierta llega sin certificado, sin referencias y sin tiempo de preparar la entrevista. Si tu hijo está en 3.º de la ESO, este es el momento.

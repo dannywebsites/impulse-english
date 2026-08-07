@@ -458,6 +458,48 @@ Resolved: photos ✅ · brand config ✅ · launch list ✅.
 | **Write the 22 + hub** | 🟡 **12 of 23 written, installed and committed** |
 | `gen_blog_directory.py`, build, gates | ⬜ — run once the batch is complete |
 
+### Phase 1 improve pass — the 8 pre-fix articles (2026-08-07)
+
+Articles 1-8 were written before the SERP pipeline was repaired, so their FAQs were invented and
+their openings were written without knowing what Google already answers above the results. Each
+one has now had its SERP pulled, its FAQ rebuilt to **at least half verbatim People Also Ask**,
+and its opening capsule rewritten against the live AI Overview. Bodies otherwise untouched —
+they already passed every gate and their facts were checked.
+
+| Slug | PAA in FAQ | PAA available | AI Overview |
+|---|---|---|---|
+| `becas-bachillerato-extranjero-reales` | 4 of 8 | 8 | yes |
+| `becas-inmersion-linguistica-ministerio` | 4 of 8 | 11 | yes |
+| `vivir-en-irlanda-coste-real` | 5 of 8 | 11 | yes |
+| `estudiar-ingles-malta-consejos` | 5 of 8 | 13 | none |
+| `guia-internados-inglaterra-precios` | 5 of 8 | 12 | yes |
+| `ano-escolar-estados-unidos` | 5 of 8 | 15 | yes |
+| `campamentos-verano-inglaterra` | 5 of 8 | 7 | yes |
+| `campamento-verano-irlanda-guia` | 5 of 8 | 12 | yes |
+
+**URLs are unchanged.** `assemble.js --slug` was added precisely for this: `meta.slug` comes from
+a non-deterministic Gemini call and `brand.output.overwrite` is `false`, so a plain re-assembly of
+a published article mints a new slug and leaves a `-2` duplicate behind. Every article above was
+re-assembled with its original slug pinned.
+
+#### What the SERP showed that the old briefs could not
+
+- **PAA drifts off-topic and must be filtered, not swallowed.** `campamento de verano en irlanda`
+  returned *"¿Es legal acampar en Irlanda?"* and *"¿Es gratis acampar en Irlanda?"* — the tent
+  meaning of *campamento*, nothing to do with the article. `au pair` returned a US nanny-cost
+  comparison in dollars. This is exactly why the rule is "at least half", not "all".
+- **Some PAA is Latin-American in phrasing** (`¿Qué tan bueno es Irlanda para vivir?`). Skipped:
+  the brand voice is Peninsular Spanish and there were plenty of alternatives.
+- **One PAA was rejected on judgement, not language:** `¿Dónde puedo internar a un adolescente
+  rebelde?` is a different and sensitive intent that the boarding-school article has no business
+  answering.
+- **The AI Overview for `becas de inmersión lingüística` quotes a specific birth-date range** that
+  belongs to one convocatoria and goes stale every year. The rewritten opening beats it by saying
+  the requirements rotate annually and to read the current text — which is the durably correct
+  answer.
+- **`internado en inglaterra` has an AI Overview quoting ~11.000 £ per term.** The rewritten
+  opening keeps that figure and adds what it omits: guardianship, uniform, half-term flights.
+
 ### Batch progress — 12 of 23 (2026-08-06)
 
 | # | Article | Slug | Commit |
