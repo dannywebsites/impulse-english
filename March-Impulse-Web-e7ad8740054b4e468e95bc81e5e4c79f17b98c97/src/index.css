@@ -245,4 +245,84 @@
            underline-offset-2 transition-colors
            hover:text-accent-blue-800 hover:decoration-accent-blue;
   }
+
+  /* -----------------------------------------------------------------------
+     Article body.
+
+     Blog articles arrive as HTML strings in `contextSections[].content` and
+     are injected with dangerouslySetInnerHTML, so no utility class can reach
+     the <p>, <ul>, <table> and <h3> inside them. PAAArticlePage carried
+     `prose prose-zinc` to cover that — but @tailwindcss/typography is not
+     installed (`plugins: []`, absent from package.json), so those classes
+     matched nothing and every article body rendered at browser defaults.
+     That, not the wrapper, is why the blog never looked like the rest of the
+     site.
+
+     Built from this site's own tokens rather than by adding the typography
+     plugin: the plugin's defaults are a generic look shared by every site
+     that installs it, which is the thing the anti-AI playbook tells us to
+     avoid. Line-heights are explicit here for the same reason (Law 2).
+  ----------------------------------------------------------------------- */
+  .article-prose {
+    @apply text-zinc-700;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  .article-prose > * + * {
+    @apply mt-5;
+  }
+
+  .article-prose h3 {
+    @apply t-h3 mb-3 mt-10 text-zinc-900;
+  }
+
+  .article-prose h4 {
+    @apply mb-2 mt-8 text-base font-semibold uppercase tracking-wide text-zinc-900;
+  }
+
+  .article-prose strong {
+    @apply font-semibold text-zinc-900;
+  }
+
+  .article-prose a {
+    @apply link-inline;
+  }
+
+  .article-prose ul,
+  .article-prose ol {
+    @apply space-y-2 pl-6;
+  }
+
+  .article-prose ul {
+    @apply list-disc marker:text-accent-blue/50;
+  }
+
+  .article-prose ol {
+    @apply list-decimal marker:font-semibold marker:text-accent-blue/70;
+  }
+
+  /* Tables are the one thing the writer emits as raw HTML by contract
+     (brand.useHtmlTables), so they have to survive on a 390px phone. The
+     wrapper scrolls rather than letting the page body scroll sideways. */
+  .article-prose table {
+    @apply my-7 w-full border-collapse text-left text-[0.9375rem];
+  }
+
+  .article-prose thead th {
+    @apply border-b-2 border-accent-blue/25 pb-2.5 pr-4 align-bottom
+           text-xs font-semibold uppercase tracking-[0.12em] text-accent-blue;
+  }
+
+  .article-prose tbody td {
+    @apply border-b border-zinc-200/80 py-3 pr-4 align-top;
+  }
+
+  .article-prose tbody tr:last-child td {
+    @apply border-b-0;
+  }
+
+  .article-prose blockquote {
+    @apply border-l-2 border-brand-red/40 pl-5 italic text-zinc-600;
+  }
 }

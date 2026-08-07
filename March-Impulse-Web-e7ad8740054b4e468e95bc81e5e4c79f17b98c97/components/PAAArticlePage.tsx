@@ -6,6 +6,7 @@ import LeadForm from './LeadForm';
 import FAQSection from './FAQSection';
 import Breadcrumb from './Breadcrumb';
 import RelatedArticles from './RelatedArticles';
+import CTABand from './CTABand';
 import { categoryConfig } from '../data/category-config';
 import { resolveInternalLinks } from '../data/internal-links';
 import type { PAAArticle, ArticleCard, ArticleImage } from '../data/articles/types';
@@ -71,6 +72,12 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
 
   const resolvedLinks = resolveInternalLinks(article.internalLinkRefs);
 
+  // Where the mid-article CTA band goes. Placed after a section rather than at a
+  // fixed index so a short article does not end up with two CTAs side by side.
+  const midSectionIndex = article.contextSections.length >= 4
+    ? Math.floor(article.contextSections.length / 2)
+    : -1;
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [article.slug]);
@@ -92,31 +99,31 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]" />
 
-        <div className="relative z-10 container mx-auto px-6 md:px-12">
-          <div className="max-w-3xl mt-8 md:mt-12">
+        <div className="container-narrow relative z-10">
+          <div className="mt-8 md:mt-12">
             <Breadcrumb
               items={article.breadcrumbs}
               variant="light"
               className="mb-6 animate-hero-fade-up"
             />
 
-            <div className="flex items-center gap-3 mb-4 animate-hero-fade-up animation-delay-100">
-              <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm">
-                {config.displayName}
-              </span>
-              <span className="text-white/60 text-sm flex items-center gap-1">
+            {/* The site's own section-label pattern, in its on-dark variant,
+                instead of the pill chip the blog had invented for itself. */}
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-4 animate-hero-fade-up animation-delay-100">
+              <span className="eyebrow-light">{config.displayName}</span>
+              <span className="t-small flex items-center gap-1 text-white/60">
                 <Clock className="w-3.5 h-3.5" />
                 {article.readTime} de lectura
               </span>
             </div>
 
-            <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-150">
+            <h1 className="t-h1 mb-6 text-white animate-hero-fade-up animation-delay-150">
               {article.question}
             </h1>
 
-            <div className="w-16 h-0.5 bg-brand-red mb-4 animate-hero-fade-up animation-delay-200" />
+            <span className="rule-light mb-4 animate-hero-fade-up animation-delay-200" />
 
-            <div className="flex items-center gap-4 text-white/60 text-sm animate-hero-fade-up animation-delay-200">
+            <div className="t-small flex items-center gap-4 text-white/60 animate-hero-fade-up animation-delay-200">
               <span className="flex items-center gap-1">
                 <Calendar className="w-3.5 h-3.5" />
                 {formatDate(article.modifiedDate)}
@@ -130,12 +137,12 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
         </div>
       </section>
 
-      {/* Direct Answer Section */}
-      <section className="py-10 px-6 bg-white">
-        <div className="container mx-auto max-w-3xl">
-          <div className="bg-accent-blue/5 border-l-4 border-accent-blue rounded-r-lg p-6 md:p-8">
-            <h2 className="text-lg font-bold text-accent-blue mb-3">Respuesta directa</h2>
-            <p className="text-zinc-800 text-lg leading-relaxed">{article.paaAnswer}</p>
+      {/* Direct answer. This is the block AI Overviews quote, so it leads. */}
+      <section className="section-tight">
+        <div className="container-narrow">
+          <div className="card border-l-4 border-l-accent-blue p-6 md:p-8">
+            <span className="eyebrow mb-3">Respuesta directa</span>
+            <p className="t-lede measure text-zinc-800">{article.paaAnswer}</p>
           </div>
         </div>
       </section>
@@ -150,28 +157,42 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
 
         return (
           <React.Fragment key={index}>
-            <section
-              className={`py-10 px-6 ${index % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}`}
-            >
-              <div className="container mx-auto max-w-3xl">
-                <h2 className="text-2xl font-bold text-zinc-900 mb-4">{section.heading}</h2>
+            <section className={`section ${index % 2 === 0 ? '' : 'surface-alt'}`}>
+              <div className="container-narrow">
+                <h2 className="t-h2 mb-4 text-zinc-900">{section.heading}</h2>
+                <span className="rule mb-6" />
+                {/* .article-prose styles the injected HTML. Without it the
+                    <p>/<ul>/<table> inside render at browser defaults — the
+                    `prose` classes that used to sit here matched nothing,
+                    because @tailwindcss/typography is not installed. */}
                 <div
-                  className="text-zinc-700 leading-relaxed space-y-4 prose prose-zinc max-w-none"
+                  className="article-prose measure"
                   dangerouslySetInnerHTML={{ __html: section.content }}
                 />
               </div>
             </section>
+
             {inlineImg && (
-              <div className={`py-6 px-6 ${index % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}`}>
-                <div className="container mx-auto max-w-3xl">
+              <div className={`pb-14 md:pb-20 ${index % 2 === 0 ? '' : 'surface-alt'}`}>
+                <div className="container-narrow">
                   <img
                     src={inlineImg.url}
                     alt={inlineImg.alt}
-                    className="w-full rounded-xl shadow-sm"
+                    className="w-full rounded-2xl shadow-card"
                     loading="lazy"
                   />
                 </div>
               </div>
+            )}
+
+            {/* DESIGN.md: at least two CTAs below the hero. The article had one,
+                at the very bottom, so a reader who stopped halfway had nothing
+                to click. */}
+            {index === midSectionIndex && (
+              <CTABand
+                title="¿Quieres saber en qué nivel está de verdad?"
+                subtitle="Una prueba de nivel gratuita de 25 minutos te lo dice, sin compromiso."
+              />
             )}
           </React.Fragment>
         );
@@ -179,18 +200,19 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
 
       {/* Internal Links Section */}
       {resolvedLinks.length > 0 && (
-        <section className="py-8 px-6 bg-white">
-          <div className="container mx-auto max-w-3xl">
-            <h2 className="text-xl font-bold text-zinc-900 mb-4">Te puede interesar</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <section className="section-tight">
+          <div className="container-narrow">
+            <span className="eyebrow mb-3">Seguir leyendo</span>
+            <h2 className="t-h3 mb-5 text-zinc-900">Te puede interesar</h2>
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {resolvedLinks.map((link, i) => (
                 <a
                   key={i}
                   href={link.url}
-                  className="flex items-center gap-2 p-3 rounded-lg border border-zinc-200 hover:border-accent-blue hover:bg-accent-blue/5 transition-all group"
+                  className="card-interactive group flex items-center gap-2.5 p-4"
                 >
-                  <ArrowRight className="w-4 h-4 text-accent-blue flex-shrink-0" />
-                  <span className="text-zinc-700 group-hover:text-accent-blue transition-colors text-sm font-medium">
+                  <ArrowRight className="w-4 h-4 flex-shrink-0 text-accent-blue" />
+                  <span className="t-small font-medium text-zinc-700 transition-colors group-hover:text-accent-blue">
                     {link.anchorText}
                   </span>
                 </a>
@@ -201,14 +223,16 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
       )}
 
       {/* Impulse CTA Section */}
-      <section className="py-12 px-6 bg-accent-blue">
-        <div className="container mx-auto max-w-4xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <section className="section surface-deep">
+        <div className="container-page">
+          <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <span className="eyebrow-light mb-4">Impulse English Academy</span>
+              <h2 className="t-h2 mb-5 text-white">
                 {article.impulseSection.heading}
               </h2>
-              <p className="text-white/85 leading-relaxed mb-6">
+              <span className="rule-light mb-6" />
+              <p className="t-body measure mb-7 text-white/85">
                 {article.impulseSection.content}
               </p>
               <div className="flex flex-wrap gap-3">
@@ -216,11 +240,7 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
                   <a
                     key={i}
                     href={cta.href}
-                    className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm transition-all ${
-                      i === 0
-                        ? 'bg-white text-accent-blue hover:bg-zinc-100'
-                        : 'bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm'
-                    }`}
+                    className={i === 0 ? 'btn-primary' : 'btn-on-dark'}
                   >
                     {cta.text}
                     <ArrowRight className="w-4 h-4" />
@@ -255,12 +275,9 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
       <RelatedArticles articles={siblingArticles} />
 
       {/* Back to Hub */}
-      <section className="py-8 px-6 bg-white border-t border-zinc-100">
-        <div className="container mx-auto max-w-3xl text-center">
-          <a
-            href={config.hubPath}
-            className="inline-flex items-center gap-2 text-accent-blue hover:text-accent-blue/80 font-medium transition-colors"
-          >
+      <section className="section-tight border-t border-zinc-200/80">
+        <div className="container-narrow text-center">
+          <a href={config.hubPath} className="link-inline inline-flex items-center gap-2">
             <ArrowRight className="w-4 h-4 rotate-180" />
             Volver a {config.hubLabel}
           </a>

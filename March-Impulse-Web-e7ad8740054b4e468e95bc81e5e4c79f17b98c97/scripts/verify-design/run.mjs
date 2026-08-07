@@ -36,6 +36,25 @@ const LIST = process.argv.includes('--list');
 const UPDATE = process.argv.includes('--update-baseline');
 
 const PAGE_DIRS = ['pages/cursos', 'pages/ubicaciones', 'pages/extranjero'];
+
+// Individual components that render a whole page type and therefore carry the
+// same design responsibility as anything in PAGE_DIRS.
+//
+// PAAArticlePage is the template behind every collection blog article and every
+// article the writer pipeline will produce from now on. It was never scanned,
+// which is exactly how it drifted to 100% raw Tailwind — `container mx-auto
+// px-6`, hand-rolled type — while carrying `prose prose-zinc` classes that
+// matched nothing, because @tailwindcss/typography is not installed. One
+// unscanned file governed 58 articles.
+const PAGE_COMPONENTS = ['components/PAAArticlePage.tsx'];
+
+// dangerouslySetInnerHTML is a structural error because it hides copy from
+// geo-audit. That reasoning is about the SERVICE and LOCATION pages geo-audit
+// actually scores (`--set servicios`, `--set barrios`). Blog articles are not in
+// either set, and their bodies arrive from the CMS collection as HTML strings,
+// so there is no JSX alternative available to this component. Exempt it from
+// that ONE rule by name, and keep every other rule and all debt counting live.
+const DANGEROUS_HTML_EXEMPT = new Set(['PAAArticlePage.tsx']);
 const read = (p) => readFileSync(p, 'utf8');
 const tsxIn = (d) =>
   existsSync(join(ROOT, d))
@@ -143,10 +162,24 @@ function componentSources(src) {
       if (existsSync(p)) { out += '\n' + read(p); break; }
     }
   }
+  // Sibling imports from inside components/ itself: `import CTABand from './CTABand'`.
+  // The pattern above only follows paths containing "/components/", which a file
+  // already IN that directory never writes. Adding PAAArticlePage to the scan
+  // exposed this: it composes <CTABand>, and the gate reported it as having only
+  // one CTA because it could not see through the relative import.
+  for (const m of src.matchAll(/^import\s+(?:\w+|\{[^}]*\}|\w+\s*,\s*\{[^}]*\})\s+from\s+'\.\/([\w-]+)'/gm)) {
+    for (const ext of ['.tsx', '.ts']) {
+      const p = join(ROOT, 'components', m[1] + ext);
+      if (existsSync(p)) { out += '\n' + read(p); break; }
+    }
+  }
   return out;
 }
 
-const files = PAGE_DIRS.flatMap(tsxIn);
+const files = [
+  ...PAGE_DIRS.flatMap(tsxIn),
+  ...PAGE_COMPONENTS.map((p) => join(ROOT, p)).filter(existsSync),
+];
 if (!files.length) { console.error('no page files found — run from the project root'); process.exit(1); }
 
 const prev = existsSync(BASELINE) ? JSON.parse(read(BASELINE)) : {};
@@ -160,6 +193,7 @@ for (const file of files) {
   const name = basename(file);
 
   for (const [rule, fn] of ERRORS) {
+    if (rule === 'dangerous-html' && DANGEROUS_HTML_EXEMPT.has(name)) continue;
     for (const hit of fn(src, all, file)) errors.push(`${name} — ${rule}: ${hit}`);
   }
   const d = DEBT.flatMap(([rule, fn]) => fn(src).map((h) => `${rule}: ${h}`));
