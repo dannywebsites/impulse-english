@@ -721,3 +721,281 @@ Investigación en vivo **2026-08-07**. Volúmenes: Google Ads, España/`es`. SER
 **Búsquedas relacionadas:** `academia de ingles para adultos cerca de villa de vallecas, madrid` · `Academia de ingles para adultos madrid` · `Cursos de inglés en Madrid para adultos gratis` · `Academia de inglés Madrid cerca de mi` · `Academia de inglés Madrid` · `Cursos de inglés en Madrid gratis` · `Academias de inglés cerca de mi` · `Cursos de inglés en Madrid precios`
 
 **Quién rankea hoy:** www.iie.es · grupovaughan.com · www.britishcouncil.es · www.cambridge-house.com · idiomasseif.com
+
+
+---
+
+# Ampliación del Cluster B — 10 artículos más (Cambridge)
+
+Investigación en vivo **2026-08-07**, mismo método: volúmenes de Google Ads (España/`es`) y SERP + PAA de DataForSEO. Pool de 20 candidatos, quedan 10.
+
+## Lo que la investigación cambió respecto a lo que yo esperaba
+
+**1. `pet for schools` (110), `ket for schools` (90) y `cambridge first for schools` (140) NO son artículos nuevos.** PET *es* B1 Preliminary, KET *es* A2 Key y First *es* B2 First. Son sinónimos de B10, B11 y B12, que ya están en el plan. El libro es explícito: consolidar sinónimos en una sola página. Van como **keywords secundarias dentro de B10-B12**, no como piezas propias. Escribirlas aparte sería canibalizar tres artículos contra sí mismos.
+
+**2. `test examen cambridge` es el término más grande de las 40: 5.400/mes, 6.600 en septiembre y en junio, competencia LOW.** No estaba en el plan original.
+
+**3. Cuatro candidatos sin volumen medido tienen 7-8 PAA y AI Overview** (`cuanto dura el examen cambridge`, `edad minima examen cambridge`, `como es el examen cambridge b1`, `preparar cambridge en el colegio`). Volumen cero no significa pregunta cero: Google mantiene caja PAA y resumen de IA porque la consulta existe.
+
+**Descartados y por qué:** `oxford test of english for schools` (70, **0 PAA**) · `simulacro examen cambridge` (20, **0 PAA**) · `examen cambridge por ordenador` (10, ya cubierto por `b2-first-papel-ordenador`) · `donde hacer el examen cambridge en madrid` (6 PAA pero intención de SERVICIO: es de `/examenes-cambridge/centros-madrid/`, no del blog) · `como es el examen cambridge b1` (se solapa con B18) · `preparar cambridge en el colegio` (8 PAA, pero choca con `hijo-preparar-cambridge`; es el mejor suplente si cae alguno).
+
+---
+
+
+## B15 · Test de Cambridge: qué es, cómo es y cómo saber si estás listo
+
+**Objetivo:** `test examen cambridge` · **5400/mes** · competencia LOW · CPC 0.54 € · 6.600 en septiembre y en junio  
+**AI Overview:** no
+
+**Cuerpo:** Qué es realmente un examen Cambridge (no es un test de nivel) · las cuatro partes · cómo se puntúa · en qué se diferencia de una prueba de nivel · cómo saber si estás listo antes de pagar la tasa.
+
+**Nota:** El término más grande de las 40 y competencia LOW. Página 1 = cambridgeenglish.org (x2), cambridge.es, ef.com.es. ⚠ Verificar en el primer borrador que la intención no sea solo 'test de práctica gratis': si lo fuera, el tráfico no convierte. La PAA sugiere decisión (cuánto cuesta, qué difícil es, merece la pena).
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Cómo es el test de Cambridge?
+- ¿Cuánto cuesta el test de Cambridge?
+- ¿Cuál es el first, B1 o B2?
+- ¿Qué tan difícil es el examen de Cambridge?
+- ¿Cuánto hay que sacar en Cambridge para aprobar?
+- ¿Es difícil el examen de ingreso a Cambridge?
+- ¿Merece la pena obtener un certificado de Cambridge?
+- ¿Qué certificado es mejor, TOEFL o Cambridge?
+
+**Búsquedas relacionadas:** `Test de nivel de inglés A1 A2, B1, B2` · `Test nivel inglés gratis online` · `Prueba de nivel de inglés Cambridge PDF` · `Test nivel inglés gratis sin registrarse` · `Test inglés Cambridge` · `Test de inglés` · `Prueba de nivel de inglés PDF con respuestas` · `Cambridge nivel de inglés`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · www.cambridgeenglish.org · www.cambridge.es · www.ef.com.es · www.bestexamszaragoza.com
+
+
+## B16 · Niveles de inglés Cambridge: qué examen corresponde a cada nivel
+
+**Objetivo:** `niveles de ingles cambridge` · **1000/mes** · competencia LOW · CPC 1.08 € · 1.900 en septiembre  
+**AI Overview:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Mapa MCER ↔ examen Cambridge (A2 Key, B1 Preliminary, B2 First, C1 Advanced, C2 Proficiency) · qué significa cada uno en la práctica · cuál te toca según edad y curso.
+
+**Nota:** Sube al hub A1 (`niveles de inglés`, 14.800) y baja a B10-B14. ⚠ `escala-cambridge` ya publicado cubre la ESCALA DE PUNTOS de Cambridge; esto es el mapa examen↔nivel. Son cosas distintas y hay que decirlo.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Qué significa A1, A2, B1, B2, C1, C2 en inglés?
+- ¿Cómo saber si soy B2 en inglés?
+- ¿Diferencia entre B1 y B2 Cambridge?
+- ¿Qué nivel es ket y pet?
+- ¿Qué nivel de inglés te dan con la ESO?
+- ¿Cuál es la diferencia entre inglés A1 y A2?
+- ¿Qué es mejor, B2 o B1?
+- ¿Qué es A1, A2, B1, B2, C1, C2?
+
+**Búsquedas relacionadas:** `Niveles de inglés Cambridge por edad` · `Exámenes Cambridge niveles niños` · `Test de nivel de inglés A1 A2, B1, B2` · `Test nivel inglés gratis online` · `Niveles de inglés Cambridge Starters` · `Test nivel inglés Cambridge` · `Niveles inglés Cambridge Flyers` · `Test inglés Cambridge`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · www.cambridgeenglish.org · blog.cambridge.es · www.ef.com.es · idiomas.camarabilbao.com
+
+
+## B17 · Examen B2 First de Cambridge: la guía completa para padres
+
+**Objetivo:** `examen cambridge b2` · **1000/mes** · competencia LOW · CPC 0.8 € · 1.900 en junio  
+**AI Overview:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** HUB del B2. Qué es, partes, puntuación, cuándo presentarse, cuánto cuesta, qué pasa si suspendes. Cada sección resume y enlaza al artículo específico ya publicado.
+
+**Nota:** ⚠ RIESGO MÁXIMO DE CANIBALIZACIÓN: hay 16 artículos B2 publicados. Solo tiene sentido como HUB que los consolida y les enlaza hacia abajo. Si se escribe como un artículo más, compite con los suyos.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Cuánto vale el examen B2 de Cambridge?
+- ¿Qué nivel de inglés es el B2 de Cambridge?
+- ¿Cuánto hay que sacar para aprobar el B2 Cambridge?
+- ¿Qué nota se necesita para aprobar el B2 de Cambridge?
+- ¿Es difícil aprobar el examen de inglés B2?
+- ¿Qué es mejor, B2 o C1?
+- ¿Es difícil el nivel B2 de inglés?
+
+**Búsquedas relacionadas:** `Examen Cambridge B2 ejemplo` · `Examen Cambridge B2 PDF` · `Examen Cambridge B2 precio` · `Exámenes B2 Cambridge resueltos PDF` · `Examen Cambridge B2 fechas 2026` · `Examen Cambridge B2 Valencia` · `Examen Cambridge B2 Speaking` · `Examen Cambridge B2 2026`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · cambridgemb.com · examsfactory.com · www.lacunza.es · lenguasvivasexams.com
+
+
+## B18 · Examen B1 Preliminary: qué es y a quién le toca
+
+**Objetivo:** `cambridge examen b1` · **880/mes** · competencia LOW · CPC 1.06 € · 1.300 en junio  
+**AI Overview:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Qué acredita el B1 · partes y duración · edad típica · diferencia con el B1 for Schools · qué abre (universidad, oposiciones).
+
+**Nota:** ⚠ `cambridge-b1-guia` ya está publicado. Primera opción: ACTUALIZAR ese artículo con este keyword en lugar de escribir uno nuevo. Dos páginas para una intención es exactamente lo que el libro prohíbe.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Qué nivel de inglés es el B1 Cambridge?
+- ¿Cuánto cuesta el examen de B1 de Cambridge?
+- ¿Qué nota hay que sacar para aprobar B1 Cambridge?
+- ¿Diferencia entre B1 y B2 Cambridge?
+- ¿El B1 de inglés equivale a bachillerato?
+- ¿Cuál es mejor, B1 o B2?
+- ¿Cuál es la nota mínima para aprobar el examen Cambridge B1?
+
+**Búsquedas relacionadas:** `Cambridge examen B1 PDF` · `Cambridge examen b1 2025` · `Examen B1 Cambridge para practicar` · `Examen B1 inglés PDF con soluciones` · `Exámenes Cambridge B1 resueltos` · `Examen B1 inglés PDF con soluciones Cambridge` · `Modelo examen B1 inglés PDF Cambridge` · `Examen B1 Cambridge online`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · cambridgemb.com · www.cambridgeenglish.org · www.bestexamszaragoza.com · examsfactory.com
+
+
+## B19 · Examen C1 Advanced: qué cambia de verdad respecto al B2
+
+**Objetivo:** `examen cambridge c1` · **480/mes** · competencia LOW · CPC 0.71 € · 880 en junio  
+**AI Overview:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** El salto real B2→C1 por destrezas · partes y puntuación · cuánto tiempo lleva · para qué sirve.
+
+**Nota:** ⚠ 12 artículos C1 publicados + `examen-cae-cambridge`. Mismo criterio que B17: hub o nada.
+
+**PAA literales (6) — de aquí salen los FAQ:**
+
+- ¿Qué nota hay que sacar para aprobar el C1 de Cambridge?
+- ¿Cuánto cuesta hacer un examen de Cambridge C1?
+- ¿Cuánto tiempo se tarda en sacarse el C1 de inglés?
+- ¿Cómo es el examen C1 de Cambridge?
+- ¿Es difícil el C1 de Cambridge?
+- ¿El nivel C1 de Cambridge es para toda la vida?
+
+**Búsquedas relacionadas:** `Examen Cambridge C1 PDF` · `Examen Cambridge C1 precio` · `Exámenes C1 Cambridge PDF con soluciones` · `Exámenes C1 Cambridge para practicar` · `Examen Cambridge C1 fechas` · `Examen Cambridge C1 Madrid` · `Examen Cambridge C1 online` · `Examen Cambridge C1 santiago de Compostela`
+
+**Quién rankea hoy:** cambridgemb.com · www.cambridgeenglish.org · www.cambridgeenglish.org · lenguasvivasexams.com · www.ihmadrid.com
+
+
+## B20 · Precio de los exámenes Cambridge en Madrid, nivel por nivel
+
+**Objetivo:** `precio examen cambridge` · **170/mes** · competencia LOW · CPC 0.42 € · 260 en septiembre  
+**AI Overview:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Tasa oficial por examen · qué incluye y qué no · dónde se paga · coste de preparación aparte · qué pasa con la tasa si suspendes.
+
+**Nota:** Consolida `precio-b1-cambridge` y `precio-cambridge-c1-madrid` en una tabla de todos los niveles. ⚠ BLOQUEADO hasta que confirmes las cifras: ninguna tasa se publica sin tu visto bueno.
+
+**PAA literales (6) — de aquí salen los FAQ:**
+
+- ¿Cuánto cuesta el examen de Cambridge?
+- ¿Cuánto cuesta dar un examen de Cambridge?
+- ¿Cuánto cuesta un examen de inglés de Cambridge?
+- ¿Cuánto cuesta el examen de B1 de Cambridge?
+- ¿Cuánto cuesta el B2 de Cambridge en España?
+- ¿Merece la pena obtener un certificado de Cambridge?
+
+**Búsquedas relacionadas:** `Precio examen Cambridge B1` · `Precio examen Cambridge B2` · `Precio examen Cambridge C1` · `Precio examen Cambridge c2` · `Precio examen Cambridge C1 madrid` · `Precio examen Cambridge B2 Madrid` · `Precio examen cambridge b2 2024` · `Cambridge examen`
+
+**Quién rankea hoy:** exams-catalunya.com · www.englishexamsbarcelona.com · lenguasvivasexams.com · www.cambridgeenglish.org · www.ef.com.es
+
+
+## B21 · Certificado Cambridge B1: qué acredita y para qué sirve
+
+**Objetivo:** `certificado cambridge b1` · **110/mes** · competencia LOW · CPC 0.59 € · 210 en septiembre  
+**AI Overview:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Qué acredita exactamente · no caduca · quién lo pide (universidad, oposiciones, empresa) · cómo se pide un duplicado.
+
+**Nota:** Distinto del EXAMEN (B18): esto va del certificado y su uso. ⚠ `validez-certificado-b2-cambridge` cubre el B2; este es el B1 y debe enlazarlo, no repetirlo.
+
+**PAA literales (6) — de aquí salen los FAQ:**
+
+- ¿Qué nivel de Cambridge es B1?
+- ¿Cuánto cuesta el certificado de Cambridge B1?
+- ¿Dónde puedo ver mi certificado de Cambridge?
+- ¿Diferencia entre B1 y B2 Cambridge?
+- ¿El B1 de inglés equivale a bachillerato?
+- ¿Merece la pena obtener un certificado de Cambridge?
+
+**Búsquedas relacionadas:** `Descargar certificado B1 Cambridge` · `Certificado B1 inglés online gratis` · `Certificado Cambridge pdf` · `Descargar certificado Cambridge` · `Certificado Cambridge B2` · `Ver mi certificado Cambridge` · `Certificado Cambridge online` · `Certificado B1 inglés Escuela oficial de idiomas`
+
+**Quién rankea hoy:** www.cambridgeenglish.org · www.cambridgeenglish.org · londoncallingacademy.es · theangloassessment.mx · englishfactory.es
+
+
+## B22 · Cuánto dura cada examen Cambridge, parte por parte
+
+**Objetivo:** `cuanto dura el examen cambridge` · **sin volumen medido**  
+**AI Overview:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Tabla de duración por examen y por parte (Reading, Writing, Listening, Speaking) · cuánto dura el día completo · el Speaking va en otra fecha.
+
+**Nota:** Sin volumen medido pero **8 PAA y AI Overview**: Google considera que la pregunta existe. Práctico, sin cubrir en el blog, y la clase de dato que una familia busca la semana antes.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Cuánto dura el examen de B1 Cambridge?
+- ¿Examen Cambridge B2 cuánto dura?
+- ¿Cuánto dura un certificado B2?
+- ¿Cuánto tiempo dura válido un examen Cambridge?
+- ¿Qué pasa si sacas 160 en el B1?
+- ¿Es fácil aprobar el examen B1?
+- ¿Es difícil aprobar el B2 de Cambridge?
+- ¿Obtengo B2 si repruebo C1?
+
+**Búsquedas relacionadas:** `Cuanto dura el examen de Cambridge B2` · `Caducan los títulos de inglés de Cambridge` · `Caduca el C1 de Cambridge` · `El First caduca a los dos años` · `El C2 de Cambridge caduca` · `El B1 de Cambridge caduca` · `Exámenes Cambridge niveles niños` · `Descargar certificado Cambridge`
+
+**Quién rankea hoy:** support.cambridgeenglish.org · examenexam.com · www.englishexaminationinstitute.com · innovaenglishschool.com · salondeidiomas.es
+
+
+## B23 · Edad mínima para presentarse a un examen Cambridge
+
+**Objetivo:** `edad minima examen cambridge` · **sin volumen medido**  
+**AI Overview:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** No hay edad mínima oficial · qué se recomienda por examen · señales de que está listo · por qué presentarse antes de tiempo sale caro.
+
+**Nota:** Sin volumen medido, **7 PAA y AI Overview**. Pregunta de padres pura, sin cubrir. Lateral con A4 (¿a qué edad se saca el B2?) y con B14.
+
+**PAA literales (7) — de aquí salen los FAQ:**
+
+- ¿Edades para exámenes Cambridge?
+- ¿Puede un joven de 16 años ir a Cambridge?
+- ¿Edad minima examen B1 inglés?
+- ¿A qué edad se suele sacar el B2 de inglés?
+- ¿Qué es el examen de Cambridge para niños de 12 años?
+- ¿Cambridge acepta estudiantes mayores de edad?
+- ¿Cuándo finaliza el plazo de solicitud para la Universidad de Cambridge en 2026?
+
+**Búsquedas relacionadas:** `Exámenes Cambridge niveles niños` · `El First caduca a los dos años` · `Caduca el C1 de Cambridge` · `Caduca el B2 de Cambridge` · `Caducan los títulos de inglés de Cambridge` · `El C2 de Cambridge caduca` · `El B1 de Cambridge caduca` · `Normas examen Cambridge`
+
+**Quién rankea hoy:** support.cambridgeenglish.org · www.kellscollege.com · support.cambridgeenglish.org · nuevaescuela.eu · www.theglobeformacion.com
+
+
+## B24 · Trinity o Cambridge: cuál le conviene a tu hijo
+
+**Objetivo:** `trinity o cambridge` · **40/mes** · competencia LOW · 90 en septiembre  
+**AI Overview:** sí, hay que superarla en las primeras 80 palabras
+
+**Cuerpo:** Qué es cada uno · cómo se examinan (Trinity es solo oral en el GESE) · cuál piden los colegios · cuál reconocen las universidades españolas · cuándo tiene sentido cada uno.
+
+**Nota:** **Hueco limpio: el sitio no tiene ni una sola mención a Trinity**, y es la comparación real que hacen los padres en España porque muchos colegios examinan de Trinity. 8 PAA y AI Overview.
+
+**PAA literales (8) — de aquí salen los FAQ:**
+
+- ¿Qué es mejor, el Trinity o el Cambridge?
+- ¿Cuál es la equivalencia entre los exámenes Trinity y Cambridge?
+- ¿Es Trinity lo mismo que Cambridge?
+- ¿Qué título de inglés tiene más prestigio?
+- ¿Niveles Trinity equivalencia Cambridge?
+- ¿Qué certificado de inglés tiene más validez?
+- ¿Qué es más fácil, Cambridge o Trinity?
+- ¿Cuánto vale el B2 de Trinity?
+
+**Búsquedas relacionadas:** `Trinity o Cambridge para oposiciones` · `Trinity o Cambridge Cuál es más fácil` · `Trinity o cambridge forocoches` · `Niveles trinity equivalencia Cambridge` · `Trinity caduca` · `Trinity College` · `Examen Trinity B2` · `Trinity opiniones`
+
+**Quién rankea hoy:** englishworldcenter.com · academia-granada.es · www.kellscollege.com · academiaszeus.com · www.reddit.com
+
+
+---
+
+## Orden de publicación sugerido
+
+1. **B15** (`test examen cambridge`, 5.400) y **B16** (`niveles de ingles cambridge`, 1.000): los dos únicos con volumen alto y competencia baja. Antes de septiembre.
+
+2. **B23** y **B24**: sin volumen medido pero con PAA y AI Overview, y sin nadie ocupándolos desde una academia de Madrid. Baratos de escribir y limpios de canibalización.
+
+3. **B22** y **B21**: prácticos, se leen la semana antes del examen.
+
+4. **B17, B18, B19**: solo como hubs de consolidación, y solo si se aceptan como tales. Son los tres que pueden hacer daño al blog existente.
+
+5. **B20**: bloqueado hasta que confirmes las tasas.
+
+
+**Cluster B pasaría de 8 a 18 piezas, y el total del proyecto de 30 a 40.**
