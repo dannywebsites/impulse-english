@@ -1,5 +1,5 @@
 ---
-url: /blog/becas-bachillerato-extranjero-reales/
+url: /blog/extranjero/becas-bachillerato-extranjero-reales/
 category: Inglés en el extranjero
 priority: Medium
 question: Becas reales bachillerato extranjero
@@ -59,6 +59,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: Becas reales bachillerato extranjero
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"

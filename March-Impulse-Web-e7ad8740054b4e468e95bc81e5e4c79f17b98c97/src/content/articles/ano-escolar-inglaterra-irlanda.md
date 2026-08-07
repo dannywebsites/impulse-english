@@ -1,5 +1,5 @@
 ---
-url: /blog/ano-escolar-inglaterra-irlanda/
+url: /blog/extranjero/ano-escolar-inglaterra-irlanda/
 category: Inglés en el extranjero
 priority: Medium
 question: Año escolar en Inglaterra o Irlanda
@@ -59,6 +59,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: Año escolar en Inglaterra o Irlanda
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"

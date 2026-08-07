@@ -1,5 +1,5 @@
 ---
-url: /blog/vivir-en-irlanda-coste-real/
+url: /blog/extranjero/vivir-en-irlanda-coste-real/
 category: Inglés en el extranjero
 priority: Medium
 question: "Vivir en Irlanda: coste real y vivienda"
@@ -58,6 +58,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: "Vivir en Irlanda: coste real y vivienda"
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"

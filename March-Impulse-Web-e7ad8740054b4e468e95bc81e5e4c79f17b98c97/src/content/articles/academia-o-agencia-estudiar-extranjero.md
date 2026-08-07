@@ -1,5 +1,5 @@
 ---
-url: /blog/academia-o-agencia-estudiar-extranjero/
+url: /blog/extranjero/academia-o-agencia-estudiar-extranjero/
 category: Inglés en el extranjero
 priority: Medium
 question: Agencias para estudiar en el extranjero
@@ -60,6 +60,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: Agencias para estudiar en el extranjero
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"

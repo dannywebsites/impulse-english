@@ -1,5 +1,5 @@
 ---
-url: /blog/sistema-educativo-irlandes-guia/
+url: /blog/extranjero/sistema-educativo-irlandes-guia/
 category: Inglés en el extranjero
 priority: Medium
 question: "Sistema educativo irlandés: guía clave"
@@ -61,6 +61,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: "Sistema educativo irlandés: guía clave"
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"

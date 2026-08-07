@@ -1,5 +1,5 @@
 ---
-url: /blog/estudiar-ingles-malta-consejos/
+url: /blog/extranjero/estudiar-ingles-malta-consejos/
 category: Inglés en el extranjero
 priority: Medium
 question: "Curso de inglés en Malta: pros y contras"
@@ -59,6 +59,8 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
+  - label: Inglés en el extranjero
+    href: /blog/extranjero/
   - label: "Curso de inglés en Malta: pros y contras"
 publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"
