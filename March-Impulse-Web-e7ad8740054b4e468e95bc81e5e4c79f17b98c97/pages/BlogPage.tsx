@@ -54,6 +54,19 @@ const articleImageUrls: Record<string, { url: string; alt: string }> = {
 // Featured Hub Articles - Guías completas
 const hubArticles = [
   {
+    // The study-abroad section. This card is what makes the chip below mean
+    // something: the 21 cluster articles are not in these hardcoded arrays, so a
+    // "Inglés en el extranjero" filter with no card behind it would select nothing.
+    id: 'extranjero-hub',
+    title: "Inglés en el extranjero: las 21 guías",
+    excerpt: "Año escolar, trimestre, campamentos y cursos para adultos en Irlanda, Inglaterra, Malta y Canadá. Familia de acogida, becas, convalidación y coste real.",
+    category: "Inglés en el extranjero",
+    readTime: "21 guías",
+    imageKey: "teenagers",
+    href: "/blog/extranjero/",
+    featured: true,
+  },
+  {
     id: 'linguaskill-guia-completa',
     title: "Guía Completa del Examen Linguaskill 2026",
     excerpt: "Todo sobre estructura, ejemplos reales, sistema adaptativo y estrategias de preparación para certificar tu inglés con resultados en 48 horas.",
@@ -840,7 +853,7 @@ const additionalArticles = [
   }
 ];
 
-const categories = ["Todos", "Exámenes Cambridge", "Linguaskill", "Academias Madrid", "Comparativas", "Aprender Inglés", "Habilidades", "Inglés para Niños", "Carrera Profesional", "Consejos", "Metodología", "Recursos", "Calendario"];
+const categories = ["Todos", "Exámenes Cambridge", "Linguaskill", "Inglés en el extranjero", "Academias Madrid", "Comparativas", "Aprender Inglés", "Habilidades", "Inglés para Niños", "Carrera Profesional", "Consejos", "Metodología", "Recursos", "Calendario"];
 
 export interface BlogDirectoryGroup {
   category: string;

@@ -197,9 +197,9 @@ export function getBlogSiblingCards(slug: string, count = 3): SiblingCard[] {
 /** Directory grouped by display category, for /blog/ and /blog/todos/. */
 export function getDirectoryByCategory(): { category: string; entries: BlogDirectoryEntry[] }[] {
   const order = [
-    'Exámenes Cambridge', 'Linguaskill', 'Academias Madrid', 'Inglés para Niños',
-    'Aprender Inglés', 'Habilidades', 'Carrera Profesional', 'Comparativas',
-    'Precios', 'Metodología', 'Consejos', 'Recursos', 'Calendario',
+    'Exámenes Cambridge', 'Linguaskill', 'Academias Madrid', 'Inglés en el extranjero',
+    'Inglés para Niños', 'Aprender Inglés', 'Habilidades', 'Carrera Profesional',
+    'Comparativas', 'Precios', 'Metodología', 'Consejos', 'Recursos', 'Calendario',
   ];
   const groups = new Map<string, BlogDirectoryEntry[]>();
   for (const e of BLOG_DIRECTORY) {
