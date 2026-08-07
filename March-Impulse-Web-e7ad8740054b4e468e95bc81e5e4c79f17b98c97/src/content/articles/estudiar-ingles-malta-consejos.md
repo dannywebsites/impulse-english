@@ -2,9 +2,9 @@
 url: /blog/estudiar-ingles-malta-consejos/
 category: Inglés en el extranjero
 priority: Medium
-question: "Estudiar inglés en Malta: Pros y contras"
-seoTitle: "Estudiar inglés en Malta: Pros y contras"
-metaDescription: ¿Buscas un curso de inglés en Malta? Descubre si este destino te conviene según tu perfil. Analizamos precios, acentos y cómo evitar la burbuja de españoles.
+question: "Curso de inglés en Malta: pros y contras"
+seoTitle: "Curso de inglés en Malta: pros y contras"
+metaDescription: ¿Buscas un curso de inglés en Malta? Descubre cuándo merece la pena y cómo evitar la burbuja de españoles. Analiza precios, clima y elige la escuela adecuada.
 paaAnswer: Un curso de inglés en Malta funciona muy bien para estancias cortas de dos a cuatro semanas, sobre todo en verano y sobre todo si buscas una relación entre precio, clima y horas de clase que ningún destino del norte de Europa te va a dar. Funciona mal si lo que buscas es un curso escolar completo o si vas en julio a una escuela grande sin preguntar antes cuántos españoles hay en tu clase.
 contextSections:
   - heading: Qué hace distinta a Malta
@@ -30,20 +30,22 @@ impulseSection:
     - text: Inglés en el extranjero
       href: /ingles-en-el-extranjero/
 faqItems:
-  - question: ¿Se habla inglés de verdad en Malta?
-    answer: Sí. El inglés es lengua oficial junto al maltés y prácticamente toda la población lo habla con soltura, porque es el idioma de la enseñanza y de la administración. Entre ellos los malteses hablan maltés, pero cambian al inglés en cuanto te diriges a ellos.
-  - question: ¿El acento maltés es un problema para aprender?
-    answer: No. En clase escucharás el inglés estándar del profesor y en la calle una variedad con influencia italiana. Acostumbrarse a más de un acento es precisamente lo que le falta a quien solo ha escuchado audios de examen, así que juega a favor más que en contra.
+  - question: ¿Cuánto cuesta un curso de inglés en Malta?
+    answer: Depende de las semanas, de la intensidad y sobre todo del alojamiento, que suele cotizarse aparte del curso. Para comparar dos presupuestos hay que sumar curso, alojamiento, comidas, traslados y vuelos, y luego dividir entre las horas lectivas reales. Malta sale habitualmente por debajo de Irlanda e Inglaterra incluso sumándolo todo, y la diferencia se estrecha si vuelas en agosto, porque el vuelo pesa mucho en el total.
+  - question: ¿Es Malta un buen lugar para estudiar inglés?
+    answer: "Para estancias cortas de dos a cuatro semanas, sí, y por razones concretas: el inglés es lengua oficial, hay una industria de escuelas muy desarrollada y la relación entre horas de clase y precio es de las mejores de Europa. Es mala elección si buscas un curso escolar completo integrado en un colegio, o si vas en la peor semana de julio a la escuela más grande que encuentres."
+  - question: ¿Cuánto dinero necesito para estudiar inglés en Malta?
+    answer: Además del curso y el alojamiento, calcula el vuelo, el seguro, los traslados del aeropuerto si no van incluidos, las excursiones grandes que se pagan aparte y el dinero de bolsillo. La isla es pequeña y el transporte público es barato, así que el gasto diario es contenido; lo que descuadra los presupuestos es dar por incluidas partidas que no lo estaban.
+  - question: ¿Cuál es el país más barato para aprender inglés?
+    answer: 'Entre los destinos con inglés como lengua oficial y estándares de escuela homologables, Malta es de los más eficientes por hora de clase, y por eso encabeza casi todas las comparativas de precio en Europa. Ahora bien, "barato" y "adecuado" no son lo mismo: el destino se elige después del objetivo, no antes, y un destino barato en el que acabas hablando español todo el día sale carísimo.'
+  - question: ¿Cuál es la mejor escuela para estudiar inglés en Malta?
+    answer: 'No hay una respuesta única y desconfía de quien te dé una. Lo que sí puedes comprobar antes de pagar es lo que de verdad predice el resultado: el porcentaje máximo de una misma nacionalidad por clase, el número de alumnos por grupo, si hay prueba de nivel antes de llegar o el primer día, cuántas horas lectivas reales incluye (y no cuántas "lecciones" de 45 minutos), y qué pasa por las tardes. Una escuela que responde a esas cinco por escrito vale más que cualquier ranking.'
   - question: ¿Es verdad que Malta se llena de españoles?
     answer: En julio y agosto, sí, y también de italianos. Es el principal riesgo del destino. Se reduce mucho eligiendo junio o septiembre, preguntando por escrito el porcentaje máximo de una misma nacionalidad por clase y evitando las escuelas más masificadas.
   - question: ¿Se puede hacer un curso escolar completo en Malta?
-    answer: No es el destino adecuado para eso. Malta funciona como destino de cursos de idiomas y programas de verano, de dos a cuatro semanas. Para un curso escolar integrado en un colegio, con convalidación en España, hay otros destinos pensados específicamente para ello.
+    answer: No es el destino adecuado para eso. Malta funciona como destino de cursos de idiomas y programas de verano, de dos a cuatro semanas. Para un curso escolar integrado en un colegio, con reconocimiento en España, hay otros destinos pensados específicamente para ello.
   - question: ¿Cuántas semanas hacen falta para notar la diferencia?
     answer: Dos semanas rompen el bloqueo al hablar y mejoran mucho la confianza. Tres o cuatro empiezan a consolidar. Para subir un nivel completo del Marco Común Europeo hace falta más tiempo del que dura cualquier curso de verano, aquí o en cualquier otro sitio.
-  - question: ¿Qué edad mínima tienen los programas?
-    answer: Depende de la escuela. Hay programas junior con supervisión y monitores para menores, y programas de adultos, muchos de ellos con grupos específicos para mayores de 30. Es importante confirmar el rango de edad real del grupo antes de reservar, porque es la queja más repetida de quien vuelve descontento.
-  - question: ¿Es más barato Malta que Irlanda?
-    answer: Normalmente sí, sumando curso y alojamiento. La diferencia se reduce si vuelas en temporada alta, porque el vuelo pesa mucho en el total. Reservar con antelación tiene aquí más recorrido que en otros destinos.
 internalLinkRefs:
   - Inglés en el extranjero
   - Estudiar inglés en Irlanda
@@ -57,10 +59,10 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
-  - label: "Estudiar inglés en Malta: Pros y contras"
-publishedDate: "2026-08-06"
-modifiedDate: "2026-08-06"
-readTime: 11 min
+  - label: "Curso de inglés en Malta: pros y contras"
+publishedDate: "2026-08-07"
+modifiedDate: "2026-08-07"
+readTime: 12 min
 articleImages:
   - url: /images/academy/img-8640.jpg
     alt: Niño de primaria aprendiendo inglés academia La Vaguada Barrio del Pilar Madrid
@@ -215,13 +217,25 @@ Y una idea que casi nadie aprovecha: **el viaje es el mejor momento para prepara
 
 ## Preguntas frecuentes
 
-### ¿Se habla inglés de verdad en Malta?
+### ¿Cuánto cuesta un curso de inglés en Malta?
 
-Sí. El inglés es lengua oficial junto al maltés y prácticamente toda la población lo habla con soltura, porque es el idioma de la enseñanza y de la administración. Entre ellos los malteses hablan maltés, pero cambian al inglés en cuanto te diriges a ellos.
+Depende de las semanas, de la intensidad y sobre todo del alojamiento, que suele cotizarse aparte del curso. Para comparar dos presupuestos hay que sumar curso, alojamiento, comidas, traslados y vuelos, y luego dividir entre las horas lectivas reales. Malta sale habitualmente por debajo de Irlanda e Inglaterra incluso sumándolo todo, y la diferencia se estrecha si vuelas en agosto, porque el vuelo pesa mucho en el total.
 
-### ¿El acento maltés es un problema para aprender?
+### ¿Es Malta un buen lugar para estudiar inglés?
 
-No. En clase escucharás el inglés estándar del profesor y en la calle una variedad con influencia italiana. Acostumbrarse a más de un acento es precisamente lo que le falta a quien solo ha escuchado audios de examen, así que juega a favor más que en contra.
+Para estancias cortas de dos a cuatro semanas, sí, y por razones concretas: el inglés es lengua oficial, hay una industria de escuelas muy desarrollada y la relación entre horas de clase y precio es de las mejores de Europa. Es mala elección si buscas un curso escolar completo integrado en un colegio, o si vas en la peor semana de julio a la escuela más grande que encuentres.
+
+### ¿Cuánto dinero necesito para estudiar inglés en Malta?
+
+Además del curso y el alojamiento, calcula el vuelo, el seguro, los traslados del aeropuerto si no van incluidos, las excursiones grandes que se pagan aparte y el dinero de bolsillo. La isla es pequeña y el transporte público es barato, así que el gasto diario es contenido; lo que descuadra los presupuestos es dar por incluidas partidas que no lo estaban.
+
+### ¿Cuál es el país más barato para aprender inglés?
+
+Entre los destinos con inglés como lengua oficial y estándares de escuela homologables, Malta es de los más eficientes por hora de clase, y por eso encabeza casi todas las comparativas de precio en Europa. Ahora bien, "barato" y "adecuado" no son lo mismo: el destino se elige después del objetivo, no antes, y un destino barato en el que acabas hablando español todo el día sale carísimo.
+
+### ¿Cuál es la mejor escuela para estudiar inglés en Malta?
+
+No hay una respuesta única y desconfía de quien te dé una. Lo que sí puedes comprobar antes de pagar es lo que de verdad predice el resultado: el porcentaje máximo de una misma nacionalidad por clase, el número de alumnos por grupo, si hay prueba de nivel antes de llegar o el primer día, cuántas horas lectivas reales incluye (y no cuántas "lecciones" de 45 minutos), y qué pasa por las tardes. Una escuela que responde a esas cinco por escrito vale más que cualquier ranking.
 
 ### ¿Es verdad que Malta se llena de españoles?
 
@@ -229,16 +243,8 @@ En julio y agosto, sí, y también de italianos. Es el principal riesgo del dest
 
 ### ¿Se puede hacer un curso escolar completo en Malta?
 
-No es el destino adecuado para eso. Malta funciona como destino de cursos de idiomas y programas de verano, de dos a cuatro semanas. Para un curso escolar integrado en un colegio, con convalidación en España, hay otros destinos pensados específicamente para ello.
+No es el destino adecuado para eso. Malta funciona como destino de cursos de idiomas y programas de verano, de dos a cuatro semanas. Para un curso escolar integrado en un colegio, con reconocimiento en España, hay otros destinos pensados específicamente para ello.
 
 ### ¿Cuántas semanas hacen falta para notar la diferencia?
 
 Dos semanas rompen el bloqueo al hablar y mejoran mucho la confianza. Tres o cuatro empiezan a consolidar. Para subir un nivel completo del Marco Común Europeo hace falta más tiempo del que dura cualquier curso de verano, aquí o en cualquier otro sitio.
-
-### ¿Qué edad mínima tienen los programas?
-
-Depende de la escuela. Hay programas junior con supervisión y monitores para menores, y programas de adultos, muchos de ellos con grupos específicos para mayores de 30. Es importante confirmar el rango de edad real del grupo antes de reservar, porque es la queja más repetida de quien vuelve descontento.
-
-### ¿Es más barato Malta que Irlanda?
-
-Normalmente sí, sumando curso y alojamiento. La diferencia se reduce si vuelas en temporada alta, porque el vuelo pesa mucho en el total. Reservar con antelación tiene aquí más recorrido que en otros destinos.

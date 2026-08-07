@@ -2,9 +2,9 @@
 url: /blog/campamento-verano-irlanda-guia/
 category: Inglés en el extranjero
 priority: Medium
-question: "Campamento de verano en Irlanda: Guía"
-seoTitle: "Campamento de verano en Irlanda: Guía"
-metaDescription: ¿Buscas campamentos de verano en Irlanda? Evita gastos sorpresa y descubre qué incluye el precio. Compara familias y residencias para elegir lo mejor para tu hijo.
+question: "Campamento de verano en Irlanda: Claves"
+seoTitle: "Campamento de verano en Irlanda: Claves"
+metaDescription: Descubre qué incluye tu campamento de verano en Irlanda y evita gastos sorpresa. Compara familia o residencia y elige la mejor edad para tu hijo. Infórmate.
 paaAnswer: Un campamento de verano en Irlanda incluye normalmente el curso de inglés (entre 15 y 20 horas lectivas semanales), el alojamiento en familia de acogida o residencia, la pensión completa con comida de mediodía para llevar, el programa de actividades de tarde y una o dos excursiones semanales. Lo que casi nunca incluye, y es donde se disparan los presupuestos, son los vuelos, el seguro, los traslados desde el aeropuerto, las excursiones grandes de fin de semana y el dinero de bolsillo.
 contextSections:
   - heading: Qué incluye y qué se paga aparte
@@ -30,20 +30,22 @@ impulseSection:
     - text: Inglés en el extranjero
       href: /ingles-en-el-extranjero/
 faqItems:
-  - question: ¿Cuántas semanas hacen falta para que se note?
-    answer: Dos semanas rompen el bloqueo al hablar y suben mucho la confianza, que es el objetivo razonable de un primer verano. Tres o cuatro empiezan a consolidar vocabulario y fluidez. Subir un nivel completo del Marco Común Europeo lleva más tiempo del que dura cualquier programa de verano, aquí o en cualquier otro país.
-  - question: ¿Familia de acogida o residencia para un niño de 12 años?
-    answer: A esa edad las dos funcionan y depende del carácter. La residencia da más compañía y más supervisión visible, y suele tranquilizar más a los padres la primera vez. La familia produce más inglés real y encaja mejor con un niño maduro para su edad o que ya ha dormido fuera de casa sin problema.
-  - question: ¿Qué tiempo hace en verano y qué hay que meter en la maleta?
-    answer: Suave y cambiante, con lluvia probable cualquier día y temperaturas que rara vez pasan de los 20 grados. Chubasquero impermeable de verdad, sudadera, pantalón largo, calzado cerrado que aguante mojarse y un par de mudas más de las que llevarías a un campamento en España. El bañador también, porque muchas actividades son acuáticas.
+  - question: ¿Cuánto cuesta un campamento de verano en Irlanda?
+    answer: Depende del formato y de las semanas. Como orientación, los programas residenciales o con familia de acogida se mueven en una horquilla amplia según incluyan o no los vuelos, los traslados y el seguro, que son las tres partidas que más descuadran una comparación. Reduce siempre los presupuestos a precio por semana y divide entre las horas lectivas reales, no entre "lecciones" de 45 minutos.
+  - question: ¿Cuánto cuesta una semana de campamento de verano?
+    answer: En España, un campamento de verano nacional se mueve en torno a los 360 euros la semana y los 750 la quincena. Un programa en Irlanda cuesta bastante más porque incluye alojamiento en familia o residencia, pensión completa, clases y actividades, y porque hay que sumarle el vuelo. La comparación justa no es campamento español contra irlandés, sino cuántas horas de inglés real compra cada uno.
+  - question: ¿Cuál es la edad máxima para ir a un campamento de verano?
+    answer: "No hay un límite universal: depende del programa. En los campamentos de idiomas irlandeses la franja habitual llega hasta los 17 años, y a partir de ahí lo que encaja son los cursos para jóvenes adultos, con otro formato y otra convivencia. Confirma siempre el rango real del grupo, no el del folleto, porque un chaval de 12 en un grupo de 16 y 17 lo pasa mal."
+  - question: ¿Existen los cursos de verano en Irlanda?
+    answer: "Sí, y en varios formatos que conviene no confundir: campamentos residenciales, programas con familia de acogida, cursos de idioma para adolescentes con actividades por la tarde y cursos para adultos. Irlanda es uno de los destinos con más oferta de Europa en este terreno, precisamente por la tradición de las familias de acogida."
+  - question: ¿Es gratuita la educación en Irlanda?
+    answer: "Para los residentes, la educación es obligatoria y gratuita entre los 6 y los 16 años en los centros públicos, aunque las familias asumen material, uniforme y una aportación voluntaria. Eso no se aplica a un alumno extranjero que viene con un programa de verano o un curso escolar: ahí se paga el programa, el alojamiento y la gestión."
   - question: ¿Cuántos españoles va a haber en su clase?
     answer: Depende por completo de la fecha y del programa. En la segunda quincena de julio, muchos. En junio o a finales de agosto, bastantes menos y con más mezcla de nacionalidades. Es la pregunta que más conviene hacer por escrito antes de pagar, junto con el porcentaje máximo por nacionalidad que admite la escuela por clase.
-  - question: ¿Se puede ir por primera vez con 9 o 10 años?
-    answer: Sí, hay programas junior diseñados para esa edad con supervisión permanente. La duración razonable es una o dos semanas, y el objetivo a esa edad es la autonomía y la pérdida del miedo a hablar, no el salto de nivel. Muchas familias hacen una primera semana corta para probar y amplían al año siguiente.
+  - question: ¿Familia de acogida o residencia para un niño de 12 años?
+    answer: A esa edad las dos funcionan y depende del carácter. La residencia da más compañía y más supervisión visible, y suele tranquilizar más a los padres la primera vez. La familia produce más inglés real y encaja mejor con un niño maduro para su edad o que ya ha dormido fuera de casa sin problema.
   - question: ¿Qué pasa si mi hijo lo pasa mal los primeros días?
     answer: "Es habitual y casi siempre se pasa entre el tercer y el quinto día, cuando aparecen los primeros amigos. Lo que marca la diferencia es que haya un responsable local accesible y una política clara sobre llamadas a casa: hablar con los padres cada noche la primera semana suele alargar la morriña en lugar de aliviarla, y los programas con experiencia lo saben y lo gestionan."
-  - question: ¿Merece la pena si ya va a una academia todo el año?
-    answer: Son cosas distintas y se complementan. La academia da la estructura, la gramática y la preparación de examen; el verano fuera da las horas de uso real que en Madrid no existen. Los mejores resultados que vemos son de alumnos que hacen las dos cosas y aprovechan la vuelta, con el oído hecho, para presentarse a un certificado.
 internalLinkRefs:
   - Prueba de nivel gratis de 25 minutos
   - Inglés para primaria
@@ -58,9 +60,9 @@ internalLinkRefs:
 breadcrumbs:
   - label: Blog
     href: /blog/
-  - label: "Campamento de verano en Irlanda: Guía"
-publishedDate: "2026-08-06"
-modifiedDate: "2026-08-06"
+  - label: "Campamento de verano en Irlanda: Claves"
+publishedDate: "2026-08-07"
+modifiedDate: "2026-08-07"
 readTime: 12 min
 articleImages:
   - url: /images/extranjero/viaje-22.webp
@@ -219,30 +221,34 @@ Y una jugada que casi nadie planifica: **el mejor momento para preparar un certi
 
 ## Preguntas frecuentes
 
-### ¿Cuántas semanas hacen falta para que se note?
+### ¿Cuánto cuesta un campamento de verano en Irlanda?
 
-Dos semanas rompen el bloqueo al hablar y suben mucho la confianza, que es el objetivo razonable de un primer verano. Tres o cuatro empiezan a consolidar vocabulario y fluidez. Subir un nivel completo del Marco Común Europeo lleva más tiempo del que dura cualquier programa de verano, aquí o en cualquier otro país.
+Depende del formato y de las semanas. Como orientación, los programas residenciales o con familia de acogida se mueven en una horquilla amplia según incluyan o no los vuelos, los traslados y el seguro, que son las tres partidas que más descuadran una comparación. Reduce siempre los presupuestos a precio por semana y divide entre las horas lectivas reales, no entre "lecciones" de 45 minutos.
 
-### ¿Familia de acogida o residencia para un niño de 12 años?
+### ¿Cuánto cuesta una semana de campamento de verano?
 
-A esa edad las dos funcionan y depende del carácter. La residencia da más compañía y más supervisión visible, y suele tranquilizar más a los padres la primera vez. La familia produce más inglés real y encaja mejor con un niño maduro para su edad o que ya ha dormido fuera de casa sin problema.
+En España, un campamento de verano nacional se mueve en torno a los 360 euros la semana y los 750 la quincena. Un programa en Irlanda cuesta bastante más porque incluye alojamiento en familia o residencia, pensión completa, clases y actividades, y porque hay que sumarle el vuelo. La comparación justa no es campamento español contra irlandés, sino cuántas horas de inglés real compra cada uno.
 
-### ¿Qué tiempo hace en verano y qué hay que meter en la maleta?
+### ¿Cuál es la edad máxima para ir a un campamento de verano?
 
-Suave y cambiante, con lluvia probable cualquier día y temperaturas que rara vez pasan de los 20 grados. Chubasquero impermeable de verdad, sudadera, pantalón largo, calzado cerrado que aguante mojarse y un par de mudas más de las que llevarías a un campamento en España. El bañador también, porque muchas actividades son acuáticas.
+No hay un límite universal: depende del programa. En los campamentos de idiomas irlandeses la franja habitual llega hasta los 17 años, y a partir de ahí lo que encaja son los cursos para jóvenes adultos, con otro formato y otra convivencia. Confirma siempre el rango real del grupo, no el del folleto, porque un chaval de 12 en un grupo de 16 y 17 lo pasa mal.
+
+### ¿Existen los cursos de verano en Irlanda?
+
+Sí, y en varios formatos que conviene no confundir: campamentos residenciales, programas con familia de acogida, cursos de idioma para adolescentes con actividades por la tarde y cursos para adultos. Irlanda es uno de los destinos con más oferta de Europa en este terreno, precisamente por la tradición de las familias de acogida.
+
+### ¿Es gratuita la educación en Irlanda?
+
+Para los residentes, la educación es obligatoria y gratuita entre los 6 y los 16 años en los centros públicos, aunque las familias asumen material, uniforme y una aportación voluntaria. Eso no se aplica a un alumno extranjero que viene con un programa de verano o un curso escolar: ahí se paga el programa, el alojamiento y la gestión.
 
 ### ¿Cuántos españoles va a haber en su clase?
 
 Depende por completo de la fecha y del programa. En la segunda quincena de julio, muchos. En junio o a finales de agosto, bastantes menos y con más mezcla de nacionalidades. Es la pregunta que más conviene hacer por escrito antes de pagar, junto con el porcentaje máximo por nacionalidad que admite la escuela por clase.
 
-### ¿Se puede ir por primera vez con 9 o 10 años?
+### ¿Familia de acogida o residencia para un niño de 12 años?
 
-Sí, hay programas junior diseñados para esa edad con supervisión permanente. La duración razonable es una o dos semanas, y el objetivo a esa edad es la autonomía y la pérdida del miedo a hablar, no el salto de nivel. Muchas familias hacen una primera semana corta para probar y amplían al año siguiente.
+A esa edad las dos funcionan y depende del carácter. La residencia da más compañía y más supervisión visible, y suele tranquilizar más a los padres la primera vez. La familia produce más inglés real y encaja mejor con un niño maduro para su edad o que ya ha dormido fuera de casa sin problema.
 
 ### ¿Qué pasa si mi hijo lo pasa mal los primeros días?
 
 Es habitual y casi siempre se pasa entre el tercer y el quinto día, cuando aparecen los primeros amigos. Lo que marca la diferencia es que haya un responsable local accesible y una política clara sobre llamadas a casa: hablar con los padres cada noche la primera semana suele alargar la morriña en lugar de aliviarla, y los programas con experiencia lo saben y lo gestionan.
-
-### ¿Merece la pena si ya va a una academia todo el año?
-
-Son cosas distintas y se complementan. La academia da la estructura, la gramática y la preparación de examen; el verano fuera da las horas de uso real que en Madrid no existen. Los mejores resultados que vemos son de alumnos que hacen las dos cosas y aprovechan la vuelta, con el oído hecho, para presentarse a un certificado.
