@@ -61,8 +61,8 @@ publishedDate: "2026-08-07"
 modifiedDate: "2026-08-07"
 readTime: 9 min
 articleImages:
-  - url: /images/academy/cambridge-search.jpeg
-    alt: Búsqueda centro Cambridge oficial Impulse English Academy verificado
+  - url: /images/academy/secondary-classes-student-happy.jpg
+    alt: Alumno de secundaria en clase de inglés en la academia de La Vaguada, Madrid
     placement: hero
   - url: /images/academy/classroom-facilities-main-classroom.jpg
     alt: Aula principal instalaciones academia inglés La Vaguada Barrio del Pilar Madrid
