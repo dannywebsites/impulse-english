@@ -13,8 +13,13 @@ export default function LocationsSection() {
     { from: "Peñagrande", line: "L9", time: "Línea directa", href: "/academia-ingles-penagrande/" },
     { from: "Mirasierra", line: "L9", time: "Línea directa", href: "/academia-ingles-mirasierra/" },
     { from: "Herrera Oria", line: "L9", time: "Línea directa", href: null },
-    { from: "Montecarmelo", line: "L9", time: "Línea directa", href: "/academia-ingles-montecarmelo-las-tablas/" },
+    { from: "Montecarmelo", line: "L9", time: "Línea directa", href: "/academia-ingles-montecarmelo/" },
     { from: "Plaza Castilla", line: "L9", time: "Línea directa", href: "/academia-ingles-plaza-castilla/" },
+    // 2026-08-08: Las Tablas se separó de Montecarmelo. Montecarmelo cuelga de la
+    // propia L9 y llega sin transbordo; Las Tablas está en la L10 y tiene que
+    // cambiar en Plaza de Castilla. Esa diferencia es la razón de ser de las dos
+    // páginas, y se puede publicar porque es la red, no un minutaje inventado.
+    { from: "Las Tablas", line: "L10", time: "Transbordo en Plaza de Castilla", href: "/academia-ingles-las-tablas/" },
     { from: "Av. de la Ilustración", line: "L7", time: "Enlace con bus 147", href: null }
   ];
 
@@ -34,7 +39,8 @@ export default function LocationsSection() {
     { from: "Peñagrande", via: "Av. de Peñagrande → Av. de El Ferrol", time: "Acceso directo" },
     { from: "Mirasierra", via: "Fermín Caballero → Av. de El Ferrol", time: "Acceso directo" },
     { from: "Herrera Oria", via: "Ginzo de Limia → Av. de El Ferrol", time: "Acceso directo" },
-    { from: "Montecarmelo y Las Tablas", via: "Av. de la Ilustración → Av. de El Ferrol", time: "Acceso directo" },
+    { from: "Montecarmelo", via: "Av. de la Ilustración → Av. de El Ferrol", time: "Acceso directo" },
+    { from: "Las Tablas", via: "Av. de la Ilustración → Av. de El Ferrol", time: "Acceso directo" },
     { from: "Tetuán y Valdeacederas", via: "Av. de la Paz → Av. de El Ferrol", time: "Acceso directo" },
     { from: "Plaza Castilla", via: "Paseo de la Castellana → Av. de El Ferrol", time: "Acceso directo" }
   ];

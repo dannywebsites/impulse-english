@@ -502,9 +502,13 @@ export default function AcademiasPorBarriosMadridPage() {
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
                   <h4 className="font-bold text-zinc-900 text-sm">Mirasierra</h4>
                 </a>
-                <a href="/academia-ingles-montecarmelo-las-tablas/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                <a href="/academia-ingles-las-tablas/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
-                  <h4 className="font-bold text-zinc-900 text-sm">Montecarmelo y Las Tablas</h4>
+                  <h4 className="font-bold text-zinc-900 text-sm">Las Tablas</h4>
+                </a>
+                <a href="/academia-ingles-montecarmelo/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
+                  <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />
+                  <h4 className="font-bold text-zinc-900 text-sm">Montecarmelo</h4>
                 </a>
                 <a href="/academia-ingles-arroyo-del-fresno/" className="bg-violet-50 rounded-xl p-4 hover:bg-violet-100 transition-colors text-center">
                   <MapPin className="w-5 h-5 text-violet-600 mx-auto mb-2" />

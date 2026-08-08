@@ -7,7 +7,7 @@
     "reviews_count": 183,
     "pulled_count": 183,
     "source": "DataForSEO business_data/google/reviews",
-    "eligible": 101,
+    "eligible": 100,
     "rules": {
       "min_chars": 43,
       "max_chars": 600,
@@ -57,8 +57,10 @@
       "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoclMxY3lMWFJhWTNseFNuZHpTakZqTTBaNWQwRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOlhrS1cyLXRaY3lxSndzSjFjM0Z5d0E%7C%7C?hl=es",
       "owner_answered": true,
       "themes": [],
-      "eligible": true,
-      "blocked_by": []
+      "eligible": false,
+      "blocked_by": [
+        "on excluded-names.txt"
+      ]
     },
     {
       "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pGZlQxUm5SRXBaT0RaVFVWZ3hSMnRTTUc5UE4zYxAB",

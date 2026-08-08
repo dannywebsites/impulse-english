@@ -112,6 +112,10 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
     leadFormSource: 'paa-kids-secundaria',
     color: 'indigo',
   },
+  // 'Career' NO se reapunta a /ingles-para-empresas/. Este grupo está escrito
+  // para el profesional que paga su propio curso ("¿el inglés sube el sueldo?",
+  // "¿cómo preparo una entrevista?"), y mandarlo a un formulario de presupuesto
+  // corporativo es una ruta de conversión peor que /cursos-ingles/adultos/.
   'Career': {
     displayName: 'Inglés Profesional',
     hubPath: '/cursos-ingles/adultos/',
@@ -119,6 +123,18 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
     blogFilterName: 'Carrera Profesional',
     imageKey: 'adults',
     leadFormSource: 'paa-career',
+    color: 'slate',
+  },
+  // Para los artículos B2B que se escriban a partir de ahora — quien busca es
+  // RR. HH., no el alumno. Hoy no hay ninguno etiquetado así, y es deliberado:
+  // no se reetiqueta nada retroactivamente.
+  'Empresas': {
+    displayName: 'Inglés para empresas',
+    hubPath: '/ingles-para-empresas/',
+    hubLabel: 'Inglés para empresas',
+    blogFilterName: 'Empresas',
+    imageKey: 'adults',
+    leadFormSource: 'paa-empresas',
     color: 'slate',
   },
   'Local Madrid': {

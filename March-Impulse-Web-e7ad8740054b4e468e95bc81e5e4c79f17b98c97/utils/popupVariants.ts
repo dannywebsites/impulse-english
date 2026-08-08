@@ -10,7 +10,7 @@
 // field the existing LeadForm / reservar-clase forms already send), so the CRM
 // can see exactly which page/level produced the lead.
 
-export type PopupKey = 'c1' | 'b2' | 'b1' | 'linguaskill' | 'extranjero' | 'general';
+export type PopupKey = 'c1' | 'b2' | 'b1' | 'linguaskill' | 'extranjero' | 'empresas' | 'general';
 
 export interface PopupVariant {
   key: PopupKey;
@@ -72,6 +72,25 @@ const VARIANTS: Record<PopupKey, PopupVariant> = {
       'Compruébalo antes de examinarte. Prueba de nivel gratuita de 25 minutos con nuestro Director de Estudios, con tu nivel real y los plazos para llegar. Sin compromiso.',
     ctaText: 'Pide tu prueba de nivel',
   },
+  // Sin esta variante, /ingles-para-empresas/ caía en `general` y le ofrecía a
+  // un responsable de RR. HH. una prueba de nivel personal de 25 minutos para
+  // saber "su" nivel de inglés. La conversión de esa página no es una persona
+  // midiéndose: es un presupuesto para un equipo.
+  empresas: {
+    key: 'empresas',
+    level: '',
+    source: 'popup-empresas',
+    title: '¿Formación de inglés para vuestro equipo?',
+    subtitle:
+      'Decidnos cuántas personas sois, en qué formato y en qué horario, y os pasamos un presupuesto por escrito. La formación es bonificable a través de FUNDAE.',
+    ctaText: 'Pedir presupuesto',
+    benefits: [
+      'En vuestras oficinas, en la academia o en directo online',
+      'Prueba de nivel gratuita de 25 minutos a cada persona del equipo',
+      'Bonificable a través de FUNDAE',
+      'Certificado Linguaskill de Cambridge en 48 horas',
+    ],
+  },
   extranjero: {
     key: 'extranjero',
     level: '',
@@ -130,6 +149,9 @@ export function resolveVariant(pathname: string): PopupVariant {
   // programme, not an exam level, so an accidental substring match into the
   // Cambridge variants would offer a school-year family a C1 level test.
   if (p.startsWith('/ingles-en-el-extranjero')) return VARIANTS.extranjero;
+  // Mismo motivo y mismo sitio: por segmento completo y antes que las pruebas de
+  // nivel, que buscan subcadenas y se quedarían con este path por accidente.
+  if (p.startsWith('/ingles-para-empresas')) return VARIANTS.empresas;
 
   if (p.includes('linguaskill')) return VARIANTS.linguaskill;
   if (p.includes('c1') || p.includes('advanced')) return VARIANTS.c1;
