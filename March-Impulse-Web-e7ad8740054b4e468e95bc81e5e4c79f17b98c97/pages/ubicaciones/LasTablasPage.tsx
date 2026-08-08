@@ -56,7 +56,7 @@ const localReviews = [
 export const localFaqs: FAQItem[] = [
   {
     question: "¿Cómo llego en metro desde Las Tablas hasta la academia?",
-    answer: "Por la línea 10 hasta Plaza de Castilla y allí cambio a la línea 9 hasta Barrio del Pilar, más tres minutos andando hasta Av. de El Ferrol 22. Es un transbordo, no un trayecto directo. No publicamos los minutos exactos porque dependen de tu punto de partida dentro del barrio y de la espera en Plaza de Castilla: el planificador del Consorcio te lo calcula desde tu portal mejor que nosotros."
+    answer: "Por la línea 10 hasta Plaza de Castilla y allí cambio a la línea 9 hasta Barrio del Pilar, más cuatro minutos andando hasta Av. de El Ferrol 22. Es un transbordo, no un trayecto directo. No publicamos los minutos exactos porque dependen de tu punto de partida dentro del barrio y de la espera en Plaza de Castilla: el planificador del Consorcio te lo calcula desde tu portal mejor que nosotros."
   },
   {
     question: "¿Se llega mejor en coche desde Las Tablas?",

@@ -11,7 +11,7 @@ import type { FAQItem } from '../../utils/schemaData';
 import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 // Separada de Las Tablas el 2026-08-08. Montecarmelo cuelga de la línea 9, que es
-// la misma que pasa por Barrio del Pilar: ocho minutos directos, sin transbordo.
+// la misma que pasa por Barrio del Pilar: se llega directo, sin transbordo. Ese
 // Ese dato es suyo y solo suyo, y durante dos años estuvo repartido entre dos
 // barrios en una página que hablaba de los dos a la vez.
 //
@@ -19,7 +19,7 @@ import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 // de guardería e infantil de toda la zona norte. Las Tablas lleva la voz de adultos
 // y oficinas. Ninguna frase se comparte entre las dos a propósito.
 const benefits = [
-  { title: "Ocho minutos en la línea 9, sin cambiar de tren", desc: "Montecarmelo y Barrio del Pilar están en la misma línea. Se baja directo y quedan tres minutos andando hasta la puerta." },
+  { title: "La línea 9, sin cambiar de tren", desc: "Montecarmelo y Barrio del Pilar están en la misma línea, así que se baja directo. Desde la boca del metro quedan cuatro minutos andando hasta la puerta." },
   { title: "Inglés desde los 2 años", desc: "Metodología Great Little People, en grupos de 7. A esa edad no se estudia un idioma: se adquiere jugando, y por eso las clases son de 60 minutos." },
   { title: "Cambridge Young Learners desde primaria", desc: "El mismo centro que prepara Starters, Movers y Flyers prepara después el B2 First. No hay que cambiar de academia a los quince años." },
   { title: "Grupos de 7 en infantil y 10 en primaria", desc: "Números que decidimos nosotros. Un grupo de siete niños de tres años es otra cosa que un grupo de veinte." },
@@ -60,7 +60,7 @@ const localReviews = [
 export const localFaqs: FAQItem[] = [
   {
     question: "¿Cuánto se tarda desde Montecarmelo hasta la academia?",
-    answer: "Ocho minutos de metro y tres andando. La línea 9 pasa por Montecarmelo y por Barrio del Pilar, así que se baja directo, sin transbordo, y desde la boca del metro hasta Av. de El Ferrol 22 quedan tres minutos a pie. En coche son 10 a 12 minutos por la Av. de la Ilustración."
+    answer: "La línea 9 pasa por Montecarmelo y por Barrio del Pilar, así que se baja directo, sin transbordo, y desde la boca del metro hasta Av. de El Ferrol 22 quedan cuatro minutos a pie. En coche se baja por la Av. de la Ilustración sin cruzar el centro. No publicamos el tiempo del trayecto en metro porque depende de tu parada y de la frecuencia; el planificador del Consorcio lo calcula desde tu portal mejor que nosotros."
   },
   {
     question: "Busco guardería en inglés cerca de Montecarmelo. ¿Sois una guardería?",
@@ -117,7 +117,7 @@ export default function MontecarmeloPage() {
       {/* Hero */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/academy/outside-academy.jpg" alt="Entrada de Impulse English Academy en Av. de El Ferrol 22, a ocho minutos de Montecarmelo por la línea 9" className="w-full h-full object-cover" loading="eager" />
+          <img src="/images/academy/outside-academy.jpg" alt="Entrada de Impulse English Academy en Av. de El Ferrol 22, en la línea 9 desde Montecarmelo" className="w-full h-full object-cover" loading="eager" />
           <div className="absolute inset-0 bg-accent-blue/90"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
@@ -141,7 +141,7 @@ export default function MontecarmeloPage() {
               </span>
             </div>
             <h1 className="t-display text-white mb-6 animate-hero-fade-up animation-delay-100">
-              Inglés cerca de Montecarmelo: línea 9, 8 minutos y 3 andando
+              Inglés cerca de Montecarmelo: línea 9 directa y cuatro minutos andando
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light mb-4 animate-hero-fade-up animation-delay-200">
@@ -177,7 +177,7 @@ export default function MontecarmeloPage() {
       <section className="section-tight px-6 bg-white">
         <div className="container-narrow">
           <p className="t-lede mb-4">
-            Montecarmelo está en la línea 9, la misma que Barrio del Pilar: son ocho minutos de metro y tres andando hasta Av. de El Ferrol 22, sin cambiar de tren. En coche, 10 a 12 minutos por la Av. de la Ilustración. Damos inglés desde los 2 años en grupos de 7, desde 64 €/mes, con matrícula de 45 €.
+            Montecarmelo está en la línea 9, la misma que Barrio del Pilar, así que se llega sin cambiar de tren y quedan cuatro minutos andando hasta Av. de El Ferrol 22. En coche se baja por la Av. de la Ilustración. Damos inglés desde los 2 años en grupos de 7, desde 64 €/mes, con matrícula de 45 €.
           </p>
           <p className="t-body">
             El PAU de Montecarmelo se llenó de familias jóvenes a la vez, y eso se nota en lo que nos preguntan desde aquí: a qué edad se puede empezar, cuántos niños hay en el aula y si los horarios caben después del colegio. Esta página responde a eso. Si lo que buscas es inglés para ti y no para tus hijos, está igual de cubierto, pero al final.
@@ -232,9 +232,9 @@ export default function MontecarmeloPage() {
           </div>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
-              { n: 1, title: "Línea 9, directa", body: "Metro Montecarmelo, dirección sur, y se baja en Barrio del Pilar: unos 8 minutos. Desde la salida quedan 3 andando hasta Av. de El Ferrol 22." },
-              { n: 2, title: "En coche, 10 a 12 minutos", body: "Por la Av. de la Ilustración hasta la Av. de El Ferrol. Hay aparcamiento en superficie en la avenida y en las calles contiguas." },
-              { n: 3, title: "Autobús 147", body: "Para en Ginzo de Limia - Ferrol, a un minuto andando de la puerta. Útil si ya estás bajando por el eje de la Castellana." },
+              { n: 1, title: "Línea 9, directa", body: "Metro Montecarmelo, dirección sur, y se baja en Barrio del Pilar. Sin transbordo. Desde la salida quedan cuatro minutos andando hasta Av. de El Ferrol 22." },
+              { n: 2, title: "En coche", body: "Por la Av. de la Ilustración hasta la Av. de El Ferrol, sin cruzar el centro. Hay aparcamiento en superficie en la avenida y en las calles contiguas." },
+              { n: 3, title: "Autobús 147", body: "Para en Ginzo de Limia - Ferrol, en la propia calle de la academia. Útil si ya estás bajando por el eje de la Castellana." },
             ].map((step) => (
               <div key={step.n} className="card p-6">
                 <p className="t-h3 text-accent-blue mb-2">{step.n}</p>

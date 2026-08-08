@@ -120,7 +120,7 @@ export default function TetuanPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Academia de inglés cerca de Tetuán: el bus 147 para a un minuto
+              Academia de inglés cerca de Tetuán, desde 64 €/mes
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
