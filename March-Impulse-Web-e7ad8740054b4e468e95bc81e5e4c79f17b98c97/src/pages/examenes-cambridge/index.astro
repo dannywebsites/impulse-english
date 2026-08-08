@@ -2,10 +2,15 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CambridgeHubPage, { articleSchema, courseSchema } from '../../../pages/examenes-cambridge/CambridgeHubPage';
 import CookieBanner from '../../../components/CookieBanner';
+import { channelVideoSchema } from '../../../utils/channelVideos';
 
+// The page embeds this clip through <LazyVideo>; without the VideoObject it is
+// invisible to Google. Metadata comes from utils/channelVideos.ts so the duration
+// and upload date cannot drift from the channel.
 const schemas = [
   articleSchema,
   courseSchema,
+  channelVideoSchema('quienesSomos'),
 ];
 ---
 

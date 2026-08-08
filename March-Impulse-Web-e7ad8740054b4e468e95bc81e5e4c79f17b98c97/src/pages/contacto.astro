@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactoPage from '../../pages/ContactoPage';
 import CookieBanner from '../../components/CookieBanner';
 import { generateBreadcrumbSchema } from '../../utils/schemaData';
+import { channelVideoSchema } from '../../utils/channelVideos';
 
 const breadcrumb = generateBreadcrumbSchema([
   { name: 'Inicio', url: 'https://impulse-english.es/' },
@@ -15,7 +16,7 @@ const breadcrumb = generateBreadcrumbSchema([
   description="Contacta con Impulse English Academy. Av. de El Ferrol 22, La Vaguada, Madrid. Tel: 604 910 611. Prueba de nivel gratuita. Metro Barrio del Pilar."
   keywords="contacto academia inglés madrid, dirección impulse english, teléfono academia inglés la vaguada, horarios academia inglés"
   canonical="/contacto/"
-  schemas={[breadcrumb]}
+  schemas={[channelVideoSchema('quienesSomos'), breadcrumb]}
 >
   <ContactoPage client:load />
   <CookieBanner client:idle />
