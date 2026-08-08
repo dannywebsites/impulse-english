@@ -65,8 +65,8 @@ publishedDate: "2026-04-30"
 modifiedDate: "2026-04-30"
 readTime: 18 min
 articleImages:
-  - url: /images/academy/cambridge-search.jpeg
-    alt: Centro Cambridge verificado Impulse English Academy Madrid
+  - url: /images/academy/technology-based-classroom-photo.jpg
+    alt: Aula de la academia de inglés en La Vaguada, Barrio del Pilar, Madrid
     placement: hero
   - url: /images/academy/jp-with-students.jpg
     alt: Profesor JP con estudiantes y certificados Cambridge La Vaguada Madrid
