@@ -35,7 +35,10 @@ const BASELINE = join(HERE, 'baseline.json');
 const LIST = process.argv.includes('--list');
 const UPDATE = process.argv.includes('--update-baseline');
 
-const PAGE_DIRS = ['pages/cursos', 'pages/ubicaciones', 'pages/extranjero'];
+// pages/hubs added 2026-08-08. Directory coverage rather than a PAGE_COMPONENTS
+// entry on purpose: the next hub then ships gated too. Single-file coverage is
+// exactly how PAAArticlePage drifted to 100% raw Tailwind while nobody looked.
+const PAGE_DIRS = ['pages/cursos', 'pages/ubicaciones', 'pages/extranjero', 'pages/hubs'];
 
 // Individual components that render a whole page type and therefore carry the
 // same design responsibility as anything in PAGE_DIRS.

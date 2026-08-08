@@ -4,7 +4,10 @@ import { NAP } from '../utils/napData';
 import { BARRIO_AREAS } from '../utils/barrioAreas';
 import WhatsAppIcon from './icons/WhatsAppIcon';
 
-export default function LocationsSection() {
+// Se renderiza en DOS páginas: la home y el hub de ubicaciones
+// (/academias-ingles-madrid/por-barrios/). Cualquier cambio aquí toca las dos.
+// `showHubLink={false}` lo usa el hub para no enlazarse a sí mismo.
+export default function LocationsSection({ showHubLink = true }: { showHubLink?: boolean } = {}) {
   const areas = BARRIO_AREAS;
 
   // Rutas reales hasta Av. de El Ferrol, 22. Cada barrio se enlaza una sola vez
@@ -154,11 +157,13 @@ export default function LocationsSection() {
                 </a>
               ))}
             </div>
-            <div className="mt-4 text-center">
-              <a href="/academias-ingles-madrid/por-barrios/" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
-                Ver todas las ubicaciones <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
+            {showHubLink && (
+              <div className="mt-4 text-center">
+                <a href="/academias-ingles-madrid/por-barrios/" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
+                  Ver todas las ubicaciones <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            )}
 
             <div className="mt-8 p-4 bg-accent-blue/5 rounded-lg border border-accent-blue/10">
               <p className="text-sm text-accent-blue font-medium">

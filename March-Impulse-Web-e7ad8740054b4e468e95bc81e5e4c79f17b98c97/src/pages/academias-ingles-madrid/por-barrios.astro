@@ -1,24 +1,56 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import AcademiasPorBarriosMadridPage from '../../../pages/blog/AcademiasPorBarriosMadridPage';
+import UbicacionesHubPage, { faqs, hubItems } from '../../../pages/hubs/UbicacionesHubPage';
 import CookieBanner from '../../../components/CookieBanner';
-import { generateBreadcrumbSchema } from '../../../utils/schemaData';
+import {
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  generateItemListSchema,
+  generateServiceSchema,
+} from '../../../utils/schemaData';
 
 const breadcrumb = generateBreadcrumbSchema([
   { name: 'Inicio', url: 'https://impulse-english.es/' },
-  { name: 'Academias Madrid', url: 'https://impulse-english.es/academias-ingles-madrid/' },
-  { name: 'Academias por Barrios Madrid', url: 'https://impulse-english.es/academias-ingles-madrid/por-barrios/' },
+  { name: 'Academias en Madrid', url: 'https://impulse-english.es/academias-ingles-madrid/' },
+  { name: 'Ubicaciones por barrio', url: 'https://impulse-english.es/academias-ingles-madrid/por-barrios/' },
 ]);
+
+// Las 15 páginas de barrio como ItemList navegable. `hubItems` se construye desde
+// BARRIO_AREAS, el mismo array que pinta la página, así que el schema no puede
+// describir un conjunto de ubicaciones distinto del que ve el lector.
+const itemList = generateItemListSchema(hubItems, {
+  name: 'Zonas de Madrid atendidas por Impulse English Academy',
+  order: 'https://schema.org/ItemListUnordered',
+});
+
+const service = generateServiceSchema({
+  name: 'Clases de inglés en el norte de Madrid',
+  description: 'Clases de inglés presenciales en Av. de El Ferrol 22 (Barrio del Pilar) y online, para quince zonas del norte de Madrid.',
+  url: '/academias-ingles-madrid/por-barrios/',
+  serviceType: 'English Language School',
+  price: '64',
+});
+
+// El wrapper anterior importaba NADA del componente, aunque este exportaba `faqs` y
+// un `articleSchema`: sólo se emitía el BreadcrumbList, las cinco FAQ eran invisibles
+// para el buscador y el Article apuntaba a /blog/academias-barrios-madrid, una URL que
+// no existe. articleSchema queda eliminado; las FAQ ya se emiten.
+//
+// Ninguno de estos schemas lleva aggregateRating a propósito: BaseLayout lo quita del
+// nodo Organization en cuanto una página lo trae, y verify:facts exige "reviewCount":183
+// en todas las rutas.
+const schemas = [breadcrumb, itemList, service, generateFAQSchema(faqs)];
 ---
 
 <BaseLayout
-  schemas={[breadcrumb]}
-  title="Academias Inglés por Barrios Madrid"
-  description="Encuentra las mejores academias de inglés cerca de ti en Madrid: Chamberí, Salamanca, Centro, Barrio del Pilar, La Vaguada. Comparativa de precios 55-180€/mes con transporte y recomendaciones."
-  keywords="academias inglés Madrid, academias inglés barrios Madrid, mejor academia inglés Madrid norte, inglés Barrio del Pilar, academia inglés La Vaguada, clases inglés cerca, academias baratas Madrid"
+  title="Ubicaciones en Madrid: 15 barrios desde 64 €/mes | Impulse"
+  description="Un solo centro, en Av. de El Ferrol 22 (Barrio del Pilar), a cuatro minutos del metro. Mira cómo se llega desde tu barrio y abre la página escrita para tu zona."
+  keywords="academia de ingles cerca de mi madrid, academia ingles barrio del pilar, academia de idiomas madrid, clases de ingles norte de madrid, ubicaciones impulse english"
   canonical="/academias-ingles-madrid/por-barrios/"
-  ogType="article"
+  fullTitle={true}
+  ogType="website"
+  schemas={schemas}
 >
-  <AcademiasPorBarriosMadridPage client:idle />
+  <UbicacionesHubPage client:idle />
   <CookieBanner client:idle />
 </BaseLayout>
