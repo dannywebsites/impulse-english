@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import MontecarmeloLasTablasPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/MontecarmeloLasTablasPage';
+import LasTablasPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/LasTablasPage';
 import CookieBanner from '../../components/CookieBanner';
 import { generateLocationPageSchema, generateFAQSchema, generateBreadcrumbSchema } from '../../utils/schemaData';
 import { channelVideoSchema } from '../../utils/channelVideos';
@@ -19,13 +19,13 @@ const schemas = [...locationItems, breadcrumb, ...(localFaqs?.length > 0 ? [gene
 ---
 
 <BaseLayout
-  title="Inglés en Montecarmelo y Las Tablas | 8 min | Impulse"
-  description="Academia de inglés a 8 minutos de Montecarmelo por la línea 9, o 10-12 en coche desde Las Tablas. Centro oficial Cambridge, grupos de 7 a 10 alumnos, desde 64 €/mes."
-  keywords="academia inglés montecarmelo, academia inglés las tablas, clases inglés montecarmelo las tablas, cambridge montecarmelo"
-  canonical="/academia-ingles-montecarmelo-las-tablas/"
+  title="Academia de inglés en Las Tablas | desde 64 €/mes | Impulse"
+  description="Academia de inglés para Las Tablas: línea 10 hasta Plaza de Castilla y cambio a la 9. Centro oficial Cambridge y Linguaskill, adultos en grupos de 8, desde 64 €/mes."
+  keywords="academia ingles las tablas, academia de idiomas en las tablas, clases de ingles las tablas, escuela infantil ingles las tablas, cambridge las tablas"
+  canonical="/academia-ingles-las-tablas/"
   fullTitle={true}
   schemas={schemas}
 >
-  <MontecarmeloLasTablasPage client:idle />
+  <LasTablasPage client:idle />
   <CookieBanner client:idle />
 </BaseLayout>

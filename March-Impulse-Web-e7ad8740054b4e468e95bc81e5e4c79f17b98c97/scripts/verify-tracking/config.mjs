@@ -71,6 +71,19 @@ export const MATRIX = [
     form: { source: 'mirasierra', submit: false },
   },
   {
+    // Las Tablas, added 2026-08-08 when it was split off the Montecarmelo page.
+    // It is now the highest-impression barrio page on the site (685 real GSC
+    // impressions over 90 days), so it earns its own row rather than riding on
+    // Mirasierra as the template proxy. Montecarmelo is deliberately NOT added:
+    // same template, same components, no coverage a second row would buy.
+    path: '/academia-ingles-las-tablas/', race: true,
+    tests: [
+      { label: 'WhatsApp (first-tap race)', find: WA, expect: 'whatsapp_click', required: true, raceClick: true },
+      { label: 'Phone (body)', find: TEL, expect: 'phone_click', required: true },
+    ],
+    form: { source: 'las-tablas', submit: false },
+  },
+  {
     path: '/academias-ingles-madrid/',
     tests: [
       { label: 'WhatsApp (hub)', find: WA, expect: 'whatsapp_click' },

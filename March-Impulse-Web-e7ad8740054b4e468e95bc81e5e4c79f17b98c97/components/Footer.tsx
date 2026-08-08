@@ -20,8 +20,12 @@ const serviceAreas = [
   { name: "Tetuán", href: "/academia-ingles-tetuan/" },
   { name: "Cuatro Torres", href: "/academia-ingles-cuatro-torres/" },
   { name: "Mirasierra", href: "/academia-ingles-mirasierra/" },
-  { name: "Montecarmelo / Las Tablas", href: "/academia-ingles-montecarmelo-las-tablas/" }
+  { name: "Las Tablas", href: "/academia-ingles-las-tablas/" },
+  { name: "Montecarmelo", href: "/academia-ingles-montecarmelo/" }
 ];
+// This list is hand-maintained and does NOT read utils/barrioAreas.ts, so it
+// drifts: it carries 11 of the 15 barrios that exist. Pre-existing, not fixed
+// here — worth reconciling against BARRIO_AREAS in its own change.
 
 /* Small uppercase headings set in Playfair are hard to read; the column titles
    stay in Inter. Colours are white-alpha rather than the zinc ramp, which was
