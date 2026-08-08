@@ -89,18 +89,33 @@
     }
   ],
 
+  "_confirmedByDanny": {
+    "date": "2026-08-08",
+    "note": "Read back to Danny item by item and confirmed correct. Do not re-litigate these without a new ruling; if one changes, change it in napData/PreciosPage AND here on the same day.",
+    "items": [
+      "Full price list: Infantil 64/99 · Primaria 83 (239/trim) · Secundaria 87/91/93 (251/263/269 trim) · Adultos 94 · Particulares y online 1:1 29 €/hora · Online desde 64 · Matrícula 45 · Libro máx 40",
+      "Reviews 183, rating 5.0",
+      "Opening hours, whole week: L 10:00-21:30 · M 15:30-21:30 · X 10:00-21:30 · J 15:30-21:30 · V 13:30-19:30 · S-D cerrado",
+      "Metro Barrio del Pilar to the door: 4 minutos",
+      "Centro comercial La Vaguada to the door: unos 5 minutos",
+      "Pass rate: 100% en B2 First en 2024/25 y 2025/26 (alumnos presentados)",
+      "Teachers: nativos y bilingües certificados — not 'all native'",
+      "Adult group size 8; per-course 7/10/10/8/8/1:1"
+    ]
+  },
+
   "canonical": [
     {
       "fact": "reviewCount",
       "value": "183",
       "mustAppearOn": ["/testimonios/", "/sobre-nosotros/", "/contacto/"],
-      "source": "utils/napData.ts aggregateRating.reviewCount + GEO-Content-Project/reviews/reviews.json"
+      "source": "utils/napData.ts aggregateRating.reviewCount + reviews.json — confirmed by Danny 2026-08-08"
     },
     {
       "fact": "fridayHours",
       "value": "Viernes: 13:30 - 19:30",
       "mustAppearOn": ["/contacto/"],
-      "source": "utils/napData.ts openingHours — Danny confirmed 13:30 on 2026-08-08"
+      "source": "utils/napData.ts openingHours — Danny confirmed 13:30, and the whole week, on 2026-08-08"
     },
     {
       "fact": "streetAddress",
