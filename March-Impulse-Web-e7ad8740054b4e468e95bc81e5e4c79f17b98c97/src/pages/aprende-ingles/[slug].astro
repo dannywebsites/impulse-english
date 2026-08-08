@@ -1,0 +1,120 @@
+---
+/**
+ * Learn-English resource articles, at /aprende-ingles/<slug>/.
+ *
+ * Same template as blog/[slug].astro — only the path and the collection filter
+ * differ. The blog route excludes this category, so each article is built here and
+ * nowhere else. Unlike the study-abroad cluster there are no legacy /blog/<slug>/
+ * URLs to redirect: these articles are new, so nothing in vercel.json changes.
+ *
+ * Canonical is derived from the ROUTE, not from frontmatter `url`, for the same
+ * reason as the extranjero cluster: the route is what decides where the file lands,
+ * so a stale `url:` in a markdown file can never ship a canonical pointing elsewhere.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PAAArticlePage from '../../../components/PAAArticlePage';
+import CookieBanner from '../../../components/CookieBanner';
+import { getBlogSiblingCards } from '../../../data/blog-directory';
+import {
+  generateArticleSchema,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+  generateVideoObjectSchema,
+  businessInfo,
+  toCanonicalPageUrl,
+} from '../../../utils/schemaData';
+import {
+  APRENDE_INGLES_CATEGORY,
+  aprendeInglesHref,
+  APRENDE_INGLES_PILLAR,
+} from '../../../utils/aprendeInglesCluster';
+import type { PAAArticle } from '../../../data/articles/types';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles
+    .filter((entry) => entry.data.category === APRENDE_INGLES_CATEGORY)
+    .map((entry) => ({
+      params: { slug: entry.id.replace(/\.md$/, '') },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const slug = entry.id.replace(/\.md$/, '');
+const data = entry.data;
+const url = aprendeInglesHref(slug);
+
+const normalizedData = {
+  ...data,
+  url,
+  breadcrumbs: data.breadcrumbs.map((b) => (b.href ? { ...b, href: toCanonicalPageUrl(b.href) } : b)),
+  impulseSection: {
+    ...data.impulseSection,
+    ctaLinks: data.impulseSection.ctaLinks.map((c) => ({ ...c, href: toCanonicalPageUrl(c.href) })),
+  },
+};
+
+const article = { slug, ...normalizedData, category: normalizedData.category as PAAArticle['category'] };
+const siblings = getBlogSiblingCards(slug, 3);
+const fullUrl = `${businessInfo.url}${url}`;
+
+const schemaImage =
+  data.articleImages?.[0]?.url ?? `/images/academy/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg`;
+
+const schemas: object[] = [
+  generateArticleSchema({
+    headline: data.seoTitle,
+    description: data.metaDescription,
+    url: fullUrl,
+    image: schemaImage,
+    datePublished: data.publishedDate,
+    dateModified: data.modifiedDate,
+    wordCount: 1500,
+  }),
+  generateBreadcrumbSchema([
+    { name: 'Inicio', url: businessInfo.url + '/' },
+    { name: 'Aprender inglés', url: `${businessInfo.url}${APRENDE_INGLES_PILLAR}` },
+    { name: data.question, url: fullUrl },
+  ]),
+];
+
+if (data.faqItems.length > 0) {
+  schemas.push(generateFAQSchema(data.faqItems));
+}
+
+// One VideoObject per clip. These pages exist because the SERPs they target carry
+// video carousels and cite video in the AI Overview — an embed with no markup is
+// invisible to both. generateVideoObjectSchema throws at build time on a missing
+// embedUrl, so a mistyped ID fails the build rather than shipping a dead entry.
+if (data.videos?.length) {
+  for (const v of data.videos) {
+    schemas.push(
+      generateVideoObjectSchema({
+        name: v.title,
+        description: v.description,
+        embedUrl: `https://www.youtube.com/embed/${v.youtubeId}`,
+        // oardefault is the original-aspect frame. maxresdefault is a 16:9 centre-crop
+        // of a vertical Short and cuts heads off in the thumbnail Google shows.
+        thumbnailUrl: `https://i.ytimg.com/vi/${v.youtubeId}/oardefault.jpg`,
+        uploadDate: v.uploadDate,
+        duration: v.duration,
+      })
+    );
+  }
+}
+---
+
+<BaseLayout
+  title={data.seoTitle}
+  description={data.metaDescription}
+  canonical={url}
+  ogType="article"
+  publishedTime={data.publishedDate}
+  modifiedTime={data.modifiedDate}
+  schemas={schemas}
+>
+  <PAAArticlePage article={article} siblingArticles={siblings} client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>
