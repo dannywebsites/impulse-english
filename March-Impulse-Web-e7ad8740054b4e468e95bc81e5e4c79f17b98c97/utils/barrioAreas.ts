@@ -21,8 +21,8 @@ export interface BarrioArea {
    * Cómo se llega. Se publica la RUTA, no un minutaje inventado: es la doctrina
    * que Danny fijó el 2026-08-08 (c3a4d9e) y que verify:facts vigila. Ojo al
    * copiar de las páginas de barrio: varias siguen publicando cifras retiradas
-   * ("a solo 500 metros" en Barrio del Pilar, "unos 3 minutos" en Peñagrande) que
-   * sobreviven sólo porque esas rutas no están en facts.json. No se traen aquí.
+   * ("a solo 500 metros" en Barrio del Pilar) que sobreviven sólo porque esas rutas
+   * no están en facts.json. No se traen aquí.
    * El único minutaje permitido es el andando canónico: 4 minutos.
    */
   access?: string;
@@ -37,12 +37,13 @@ export const BARRIO_AREAS: BarrioArea[] = [
   { name: "La Vaguada", href: "/academia-ingles-la-vaguada/", group: 'directo',
     access: "Junto al centro comercial La Vaguada, en el propio Barrio del Pilar",
     serves: "Quien ya baja al centro comercial entre semana" },
-  { name: "Peñagrande", href: "/academia-ingles-penagrande/", group: 'directo',
-    // Dos estaciones sirven al barrio y las páginas del sitio se contradicen entre
-    // sí (línea 7 en unos sitios, línea 9 en otros). Se nombran las dos, que es lo
-    // único verificable, hasta que Danny resuelva cuál encabeza.
-    access: "Metro Peñagrande (línea 7) o Barrio del Pilar (línea 9)",
-    serves: "Familias del barrio, a un paso por la Av. de Peñagrande" },
+  // 2026-08-08, resuelto por Danny: Peñagrande es la LÍNEA 7, no la 9, y desde el
+  // barrio son 10-15 minutos ANDANDO. El sitio publicaba "línea 9 · 3 minutos" en el
+  // H1, el título, el hero, la cápsula y tres FAQ a la vez, así que el error se
+  // corroboraba solo y ningún cotejo podía cazarlo. Va en 'l7-bus' y no en 'directo'.
+  { name: "Peñagrande", href: "/academia-ingles-penagrande/", group: 'l7-bus',
+    access: "De 10 a 15 minutos andando por la Av. de Peñagrande",
+    serves: "El barrio de al lado: se viene a pie, sin coger el metro" },
   { name: "La Ventilla", href: "/academia-ingles-la-ventilla/", group: 'directo',
     access: "Línea 9: Ventilla → Barrio del Pilar, una parada",
     serves: "Una parada de metro, sin cambiar de línea" },
@@ -90,6 +91,6 @@ export const BARRIO_GROUPS: { id: NonNullable<BarrioArea['group']>; title: strin
     blurb: 'La academia está en Barrio del Pilar, sobre la propia línea 9. Desde estos barrios se llega sin cambiar de tren.' },
   { id: 'transbordo', title: 'Un transbordo en Plaza de Castilla',
     blurb: 'Desde el corredor de la línea 10 se baja a Plaza de Castilla y allí se enlaza con la 9. Es un cambio, y preferimos decirlo.' },
-  { id: 'l7-bus', title: 'Línea 7 o autobús',
+  { id: 'l7-bus', title: 'Línea 7, autobús o andando',
     blurb: 'La línea 7 y el autobús 147 cubren el otro lado del distrito, en varios casos mejor que el metro.' }
 ];
