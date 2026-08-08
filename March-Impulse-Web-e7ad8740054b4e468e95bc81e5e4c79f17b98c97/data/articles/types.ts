@@ -48,7 +48,8 @@ export type ArticleCategory =
   // only step one of four — categoryConfig, the blog index and blog-directory all need
   // it too, or PAAArticlePage falls back to Cambridge B2 First and the article ships
   // with the wrong badge, the wrong hub link and the wrong GHL lead source.
-  | 'Aprender inglés';
+  | 'Aprender inglés'
+  | 'Empresas';
 
 export interface ArticleImage {
   url: string;

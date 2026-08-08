@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MontecarmeloPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/MontecarmeloPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateLocationPageSchema, generateFAQSchema, generateBreadcrumbSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema(locationMeta);
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Ubicaciones', url: 'https://impulse-english.es/academias-ingles-madrid/por-barrios/' },
+  { name: locationMeta.locationName, url: `${locationMeta.pageUrl}/` },
+]);
+const schemas = [...locationItems, breadcrumb, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+---
+
+<BaseLayout
+  title="Inglés en Montecarmelo | Cambridge desde 64 €/mes | Impulse"
+  description="Inglés desde los 2 años cerca de Montecarmelo: línea 9 directa hasta Barrio del Pilar, sin transbordo. Grupos de 7 en infantil, centro oficial Cambridge, desde 64 €/mes."
+  keywords="academia ingles montecarmelo, academia de idiomas en montecarmelo, guarderia ingles montecarmelo, clases ingles ninos montecarmelo, cambridge montecarmelo"
+  canonical="/academia-ingles-montecarmelo/"
+  fullTitle={true}
+  schemas={schemas}
+>
+  <MontecarmeloPage client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>

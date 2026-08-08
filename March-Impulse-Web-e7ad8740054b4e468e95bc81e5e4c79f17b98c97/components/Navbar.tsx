@@ -22,6 +22,9 @@ const navItems: NavItem[] = [
       { label: "Adultos", href: "/cursos-ingles/adultos/", description: "Desde principiante hasta C2" },
       { label: "Clases Particulares", href: "/cursos-ingles/particulares/", description: "Presencial y online" },
       { label: "Online", href: "/cursos-ingles/online/", description: "Clases en directo por videoconferencia" },
+      // Hijo del desplegable y no elemento de primer nivel: la fila superior solo
+      // cabe a partir de xl (1280 px) y una entrada más la haría saltar de línea.
+      { label: "Inglés para Empresas", href: "/ingles-para-empresas/", description: "In company, en la academia u online · FUNDAE" },
     ]
   },
   {

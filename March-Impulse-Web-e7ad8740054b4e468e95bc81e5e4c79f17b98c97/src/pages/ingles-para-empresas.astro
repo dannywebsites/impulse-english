@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EmpresasPage, { serviceSchema, faqs } from '../../pages/cursos/EmpresasPage';
+import CookieBanner from '../../components/CookieBanner';
+import { generateBreadcrumbSchema, generateFAQSchema, generateLocationPageSchema } from '../../utils/schemaData';
+
+const locationSchema = generateLocationPageSchema({
+  locationName: 'La Vaguada',
+  pageUrl: 'https://impulse-english.es/ingles-para-empresas',
+});
+const locationItems = locationSchema["@graph"] || [locationSchema];
+const breadcrumb = generateBreadcrumbSchema([
+  { name: 'Inicio', url: 'https://impulse-english.es/' },
+  { name: 'Cursos de Inglés', url: 'https://impulse-english.es/cursos-ingles/' },
+  { name: 'Inglés para Empresas', url: 'https://impulse-english.es/ingles-para-empresas/' },
+]);
+// serviceSchema deliberadamente SIN price: la oferta es presupuesto a medida, y
+// emitir un Offer con una cifra inventada sería datos estructurados falsos.
+const schemas = [
+  ...locationItems,
+  breadcrumb,
+  serviceSchema,
+  ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+];
+---
+
+<BaseLayout
+  title="Inglés para Empresas Madrid | FUNDAE y Cambridge | Impulse"
+  fullTitle={true}
+  description="Inglés para empresas en Madrid: en vuestras oficinas, en la academia o en directo online. Formación bonificable por FUNDAE y presupuesto a medida."
+  keywords="inglés para empresas madrid, clases de inglés empresas, academias de inglés para empresas, curso de inglés empresarial, inglés in company madrid"
+  canonical="/ingles-para-empresas/"
+  schemas={schemas}
+>
+  <EmpresasPage client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>

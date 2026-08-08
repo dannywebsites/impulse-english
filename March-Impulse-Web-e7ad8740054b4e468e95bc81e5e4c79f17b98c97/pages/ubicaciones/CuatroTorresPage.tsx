@@ -50,7 +50,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Dais inglés de negocios para profesionales de la zona?",
-    answer: "Sí, y es la especialidad de Danny Fitzpatrick, cofundador y licenciado en Marketing por ESIC University. Irlandés afincado en Madrid desde hace 12 años, une su experiencia profesional con la enseñanza para que trabajes un inglés aplicable a tu carrera."
+    answer: "Sí, y es la especialidad de Danny Fitzpatrick, cofundador y licenciado en Marketing por ESIC University. Irlandés afincado en Madrid desde hace 12 años, une su experiencia profesional con la enseñanza para que trabajes un inglés aplicable a tu carrera. Si quien paga el curso es tu empresa y no tú, la formación para empresas va por otra vía: en vuestras oficinas, en la academia u online, y bonificable por FUNDAE."
   },
   {
     question: "Trabajo en una de las torres y salgo tarde. ¿Hay grupos a última hora cerca?",
@@ -549,7 +549,7 @@ export default function CuatroTorresPage() {
             <h2 className="t-h2 text-zinc-900 mb-5">Cuánto cuesta, sin letra pequeña</h2>
             <div className="rule"></div>
           </div>
-          <p className="text-zinc-600 mb-8">Estos son los precios reales, publicados. No hay tarifa de empresa distinta ni recargo por horario de tarde: pagas lo mismo que cualquier otro alumno.</p>
+          <p className="text-zinc-600 mb-8">Estos son los precios reales, publicados. Vengas de una torre o de la puerta de al lado, pagas lo mismo, y no hay recargo por venir en horario de tarde. (Si es tu empresa la que contrata la formación para un equipo, eso sí va por presupuesto: lo explicamos en <a href="/ingles-para-empresas/" className="text-accent-blue font-semibold hover:underline">inglés para empresas</a>.)</p>
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>

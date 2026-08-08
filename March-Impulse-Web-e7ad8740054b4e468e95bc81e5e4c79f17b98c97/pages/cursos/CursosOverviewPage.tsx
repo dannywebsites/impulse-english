@@ -62,6 +62,14 @@ const courses = [
     href: "/cursos-ingles/online/",
     image: "/images/academy/technology-based-classroom-photo.jpg",
     age: "Todas las edades"
+  },
+  {
+    name: "Inglés para Empresas",
+    method: "In company, en la academia u online",
+    description: "Formación para equipos: vamos a vuestras oficinas, os recibimos aquí o la damos en directo online. Bonificable a través de FUNDAE y con presupuesto a medida.",
+    href: "/ingles-para-empresas/",
+    image: "/images/academy/adult-one-to-one-classes.jpg",
+    age: "Equipos de empresa"
   }
 ];
 
@@ -105,6 +113,10 @@ export const faqs: FAQItem[] = [
   {
     question: "¿Cuáles son los precios de los cursos de inglés?",
     answer: "Nuestros precios van desde 64 € hasta 99 € al mes, dependiendo del curso y la modalidad. Aparte de la cuota se pagan una sola vez la matrícula (45 €) y el libro de texto (máximo 40 €). Ofrecemos descuento por pago trimestral y descuento familiar. Consulta todos los detalles en nuestra página de precios o solicita información sin compromiso."
+  },
+  {
+    question: "¿Dais clases de inglés para empresas?",
+    answer: "Sí. Vamos a las oficinas del cliente, recibimos al equipo en la academia o damos la clase en directo online, y se puede combinar. La formación es bonificable a través de FUNDAE y el precio va por presupuesto, porque depende del número de personas, el formato y el horario. Empezamos con una prueba de nivel gratuita de 25 minutos a cada persona del equipo."
   }
 ];
 
@@ -494,6 +506,8 @@ export default function CursosOverviewPage() {
             <a href="/cursos-ingles/particulares/" className="font-medium text-accent-blue hover:underline">Clases particulares de inglés</a>
             {' · '}
             <a href="/cursos-ingles/online/" className="font-medium text-accent-blue hover:underline">Clases de inglés online</a>
+            {' · '}
+            <a href="/ingles-para-empresas/" className="font-medium text-accent-blue hover:underline">Inglés para empresas</a>
           </p>
           <p className="t-small text-center text-zinc-500 mt-4">
             <a href="/" className="font-medium text-accent-blue hover:underline">Academia de inglés en La Vaguada y Barrio del Pilar</a>
