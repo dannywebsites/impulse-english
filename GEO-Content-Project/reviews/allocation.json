@@ -1,7 +1,7 @@
 {
   "meta": {
-    "pool_eligible": 93,
-    "allocated": 86
+    "pool_eligible": 100,
+    "allocated": 95
   },
   "pages": {
     "ubicaciones/BarrioDelPilarPage.tsx": {
@@ -281,7 +281,7 @@
         }
       ]
     },
-    "ubicaciones/MontecarmeloLasTablasPage.tsx": {
+    "ubicaciones/MontecarmeloPage.tsx": {
       "label": "Montecarmelo",
       "reviews": [
         {
@@ -1104,6 +1104,133 @@
             "adult",
             "atmosphere"
           ]
+        }
+      ]
+    },
+    "extranjero/AnoEscolarIrlandaPage.tsx": {
+      "label": "Año escolar Irlanda",
+      "reviews": [
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pGZlQxUm5SRXBaT0RaVFVWZ3hSMnRTTUc5UE4zYxAB",
+          "name": "Jose Hernandez",
+          "role": "Reseña verificada en Google",
+          "text": "Muy profesionales, mis niños están muy contentos, sin dudas los recomiendo",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGZlQxUm5SRXBaT0RaVFVWZ3hSMnRTTUc5UE4zYxAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOjFfT1RnREpZODZTUVgxR2tSMG9PN3c%7C%7C?hl=es",
+          "timestamp": "2026-08-04 09:22:14 +00:00",
+          "themes": [
+            "kids",
+            "adult",
+            "recommend"
+          ]
+        }
+      ]
+    },
+    "extranjero/CanadaPage.tsx": {
+      "label": "Canadá",
+      "reviews": [
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQxM2FDc0JBEAE",
+          "name": "Jorge Martinez",
+          "role": "Madre/padre de alumno",
+          "text": "Impulse Academy es y será la mejor academia para aprender inglés! Los mejores maestros, atención de la mejor calidad y la disponibilidad de horarios que tienen son muy buenos! Danny y JP son grandes profesionales mi hija está encantada con ellos y sus clases. Más que Recomendados al 100% Sigan asi.!💯👌🏻",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQxM2FDc0JBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgID13aCsBA%7C%7C?hl=es",
+          "timestamp": "2024-02-05 17:27:45 +00:00",
+          "themes": [
+            "parent",
+            "adult",
+            "recommend"
+          ]
+        }
+      ]
+    },
+    "extranjero/IrlandaPage.tsx": {
+      "label": "Irlanda",
+      "reviews": [
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwci1qSUxBEAE",
+          "name": "Begoña Carnicero",
+          "role": "Reseña verificada en Google",
+          "text": "Gracias a la gran experiencia y paciencia de Danny y JP he mejorado muchísimo en muy poco tiempo.  Sobre todo a la hora de lanzarme para hablar, me han quitado por completo el miedo. Agradecidisima",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwci1qSUxBEAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr-jILA%7C%7C?hl=es",
+          "timestamp": "2023-08-31 17:37:21 +00:00",
+          "themes": [
+            "progress"
+          ]
+        }
+      ]
+    },
+    "extranjero/ExtranjeroHubPage.tsx": {
+      "label": "Extranjero · hub",
+      "reviews": [
+        {
+          "review_id": "ChRDSUhNMG9nS0VJQ0FnSURwMVpnaBAB",
+          "name": "Gaby S",
+          "role": "Reseña verificada en Google",
+          "text": "Excelente academia para aprender o mejorar tu inglés gracias a Danny y JP",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSURwMVpnaBAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp1Zgh%7C%7C?hl=es",
+          "timestamp": "2023-08-26 05:33:06 +00:00",
+          "themes": []
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWOGFxRkt3EAE",
+          "name": "Lucía Fernández Casanova",
+          "role": "Reseña verificada en Google",
+          "text": "Excelentes profesionales y un trato inmejorable. Recomendable 100%",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWOGFxRkt3EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDV8aqFKw%7C%7C?hl=es",
+          "timestamp": "2023-12-13 17:34:05 +00:00",
+          "themes": [
+            "adult",
+            "atmosphere",
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNad0piSDFnRRAB",
+          "name": "Maria Dolores Muñoz",
+          "role": "Reseña verificada en Google",
+          "text": "Un profesorado con un gran nivel y calidad humana",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNad0piSDFnRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICZwJbH1gE%7C%7C?hl=es",
+          "timestamp": "2023-09-01 20:22:35 +00:00",
+          "themes": []
+        }
+      ]
+    },
+    "ubicaciones/LasTablasPage.tsx": {
+      "label": "Las Tablas",
+      "reviews": [
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwMzdMak93EAE",
+          "name": "Paloma Aranda",
+          "role": "Alumno/a · preparación C1",
+          "text": "Advanced aprobado a la primera gracias a Dani y JP.  Trato y metodología inmejorables. 100% recomendable.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwMzdMak93EAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICp37LjOw%7C%7C?hl=es",
+          "timestamp": "2023-08-13 11:41:17 +00:00",
+          "themes": [
+            "cambridge",
+            "method",
+            "atmosphere",
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21SVE5HbEtUekZITTBoWFEwZHZlVFU0UVMxUWQwRRAB",
+          "name": "Stefany Jiménez Espitia",
+          "role": "Curso intensivo",
+          "text": "Es genial, profesores amables y clases divertidas,e estado en el curso intensivo de verano y valió total la pena. (Además J.P hace las clases super fácil de entender 🫂✨)",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SVE5HbEtUekZITTBoWFEwZHZlVFU0UVMxUWQwRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CAIQACodChtycF9oOmRTNGlKTzFHM0hXQ0dveTU4QS1Qd0E%7C%7C?hl=es",
+          "timestamp": "2025-07-17 09:07:07 +00:00",
+          "themes": [
+            "method"
+          ]
+        },
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6cktlQ2ZREAE",
+          "name": "Daniela Janet Luna Rodriguez",
+          "role": "Reseña verificada en Google",
+          "text": "Es una buena academia para aprender y mejorar tu inglés.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6cktlQ2ZREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICzrKeCfQ%7C%7C?hl=es",
+          "timestamp": "2024-05-31 14:09:57 +00:00",
+          "themes": []
         }
       ]
     }
