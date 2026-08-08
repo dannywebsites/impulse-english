@@ -43,12 +43,33 @@ export type ArticleCategory =
   | 'Price'
   | 'Definitions'
   | 'Inglés en el extranjero'
-  | 'Niveles de inglés';
+  | 'Niveles de inglés'
+  // The learn-English resource cluster under /aprende-ingles/. Registering it here is
+  // only step one of four — categoryConfig, the blog index and blog-directory all need
+  // it too, or PAAArticlePage falls back to Cambridge B2 First and the article ships
+  // with the wrong badge, the wrong hub link and the wrong GHL lead source.
+  | 'Aprender inglés';
 
 export interface ArticleImage {
   url: string;
   alt: string;
   placement: 'hero' | 'inline';
+}
+
+/**
+ * A YouTube clip from the academy's own channel. `vertical` and `placement` carry zod
+ * defaults, so they are always present on data read through the content collection —
+ * they stay optional here for objects built by hand.
+ */
+export interface ArticleVideo {
+  youtubeId: string;
+  title: string;
+  description: string;
+  uploadDate: string;
+  /** ISO 8601, e.g. PT47S */
+  duration: string;
+  vertical?: boolean;
+  placement?: 'hero' | 'inline';
 }
 
 export interface PAAArticle {
@@ -70,6 +91,14 @@ export interface PAAArticle {
   readTime: string;
   imageKey?: string;
   articleImages?: ArticleImage[];
+  // Ranked listicle entries ("mejores academias de inglés en X"). Rendered as ItemList
+  // schema by blog/[slug].astro; the visible ranking lives in contextSections.
+  listItems?: { position: number; name: string; description: string }[];
+  // Verbatim Google reviews, rendered through <GoogleReviews>.
+  googleReviews?: { name: string; text: string }[];
+  // Channel clips. A `hero` video renders before the "Respuesta directa" card; the
+  // route emits one VideoObject per entry.
+  videos?: ArticleVideo[];
 }
 
 // Blog listing card for BlogPage
