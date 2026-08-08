@@ -81,6 +81,13 @@ PAGES = [
     # Themes lean adult because Las Tablas is the office-park half of the pair.
     # Listed last so it draws only from what nothing else is already publishing.
     ("ubicaciones/LasTablasPage.tsx",            "Las Tablas",        3, ["adult", "progress", "cambridge"]),
+    # /ingles-para-empresas/, 2026-08-08. Last in the list because it draws from
+    # what nothing else publishes. Worth recording plainly: the pool has no
+    # corporate reviews at all — nobody has ever reviewed us as a company client —
+    # so this page's social proof is one professional who needed English for work
+    # (RAUL SAN SEGUNDO, who also carries the case study) plus two short adult
+    # reviews. That is the honest ceiling until a company writes one.
+    ("cursos/EmpresasPage.tsx",                  "Inglés para empresas", 3, ["adult", "recommend", "progress"]),
 ]
 
 IDEAL_MIN, IDEAL_MAX = 140, 330

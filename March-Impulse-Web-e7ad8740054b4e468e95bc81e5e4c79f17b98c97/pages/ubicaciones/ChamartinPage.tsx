@@ -65,7 +65,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Dais inglés de negocios?",
-    answer: "Sí, y lo lleva Danny Fitzpatrick, cofundador y licenciado en Marketing por ESIC University. Es irlandés y lleva 12 años en Madrid, así que trabaja el inglés que de verdad se usa en una reunión."
+    answer: "Sí, y lo lleva Danny Fitzpatrick, cofundador y licenciado en Marketing por ESIC University. Es irlandés y lleva 12 años en Madrid, así que trabaja el inglés que de verdad se usa en una reunión. Cuando quien contrata es la empresa y no la persona, lo que encaja es la formación para empresas: en vuestras oficinas, en la academia u online, y bonificable por FUNDAE."
   },
   {
     question: "¿Cuántos alumnos hay por clase?",

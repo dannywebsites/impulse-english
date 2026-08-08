@@ -154,6 +154,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
               <li><a href="/cursos-ingles/secundaria/" className={FOOTER_LINK}>Secundaria (13-17 años)</a></li>
               <li><a href="/cursos-ingles/adultos/" className={FOOTER_LINK}>Adultos</a></li>
               <li><a href="/cursos-ingles/particulares/" className={FOOTER_LINK}>Clases Particulares</a></li>
+              <li><a href="/ingles-para-empresas/" className={FOOTER_LINK}>Inglés para Empresas</a></li>
               <li><a href="/ingles-en-el-extranjero/" className={FOOTER_LINK}>Inglés en el extranjero</a></li>
             </ul>
           </div>

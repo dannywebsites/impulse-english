@@ -83,6 +83,12 @@
     { "source": "/ubicaciones/mirasierra/", "destination": "/academia-ingles-mirasierra/", "permanent": true },
     { "source": "/ubicaciones/montecarmelo-las-tablas/", "destination": "/academia-ingles-las-tablas/", "permanent": true },
     { "source": "/academia-ingles-montecarmelo-las-tablas/", "destination": "/academia-ingles-las-tablas/", "permanent": true },
+    { "source": "/cursos-ingles/empresas/", "destination": "/ingles-para-empresas/", "permanent": true },
+    { "source": "/ingles-empresas/", "destination": "/ingles-para-empresas/", "permanent": true },
+    { "source": "/ingles-de-negocios/", "destination": "/ingles-para-empresas/", "permanent": true },
+    { "source": "/business-english/", "destination": "/ingles-para-empresas/", "permanent": true },
+    { "source": "/ingles-empresarial/", "destination": "/ingles-para-empresas/", "permanent": true },
+    { "source": "/clases-ingles-empresas/", "destination": "/ingles-para-empresas/", "permanent": true },
 
     { "source": "/hello-world/", "destination": "/", "permanent": true },
     { "source": "/hello-world/feed/", "destination": "/", "permanent": true },

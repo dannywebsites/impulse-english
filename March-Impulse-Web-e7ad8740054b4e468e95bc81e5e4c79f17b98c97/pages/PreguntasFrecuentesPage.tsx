@@ -84,7 +84,11 @@ const faqSections: FAQSection[] = [
       },
       {
         question: "¿Ofrecéis Business English?",
-        answer: "No tenemos curso específico de Business English, pero preparamos adultos para Linguaskill Business y contextos laborales."
+        answer: "Sí. Preparamos adultos para Linguaskill Business y para el inglés que se usa en el trabajo, y desde 2026 tenemos además formación para empresas: en vuestras oficinas, en la academia o en directo online, bonificable a través de FUNDAE."
+      },
+      {
+        question: "¿Dais clases de inglés en empresas?",
+        answer: "Sí. Vamos a las oficinas del cliente, recibimos al equipo en la academia o damos la clase en directo online, y se puede combinar. Empezamos con una prueba de nivel gratuita de 25 minutos a cada persona y el precio va por presupuesto. Está todo explicado en la página de inglés para empresas."
       },
       {
         question: "¿Las clases particulares son presenciales u online?",

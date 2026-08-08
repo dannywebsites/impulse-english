@@ -84,6 +84,17 @@ export const MATRIX = [
     form: { source: 'las-tablas', submit: false },
   },
   {
+    // /ingles-para-empresas/, added 2026-08-08. A first-class service page with
+    // its own lead form and its own popup variant is an unverified conversion
+    // path until it is in this matrix.
+    path: '/ingles-para-empresas/',
+    tests: [
+      { label: 'WhatsApp (empresas prefill)', find: WA, expect: 'whatsapp_click', required: true },
+      { label: 'Phone (body)', find: TEL, expect: 'phone_click', required: true },
+    ],
+    form: { source: 'empresas', submit: false },
+  },
+  {
     path: '/academias-ingles-madrid/',
     tests: [
       { label: 'WhatsApp (hub)', find: WA, expect: 'whatsapp_click' },

@@ -33,6 +33,8 @@ export const internalLinkMap: Record<string, { url: string; anchorText: string }
   'Primaria': { url: '/cursos-ingles/primaria/', anchorText: 'inglés primaria' },
   'Secundaria': { url: '/cursos-ingles/secundaria/', anchorText: 'inglés secundaria' },
   'Great Little People': { url: '/cursos-ingles/infantil/', anchorText: 'método Great Little People' },
+  'Empresas': { url: '/ingles-para-empresas/', anchorText: 'inglés para empresas' },
+  'Ingles Empresas': { url: '/ingles-para-empresas/', anchorText: 'clases de inglés para empresas' },
 
   // General pages
   'Metodología': { url: '/metodologia/', anchorText: 'nuestra metodología' },

@@ -47,7 +47,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Qué nivel de inglés piden en las empresas?",
-    answer: "Depende del sector, pero B2 es el nivel más habitual para entornos profesionales y C1 se valora para roles internacionales o de liderazgo. Lo importante es que puedas comunicarte con seguridad. Te orientamos para elegir preparación Cambridge o Linguaskill según tu objetivo laboral."
+    answer: "B2 es el nivel más habitual en entornos profesionales y el C1 se valora para roles internacionales o de liderazgo, aunque depende mucho del sector. Lo tenemos desglosado por sectores en el artículo sobre qué nivel de inglés piden las empresas en España."
   },
   {
     question: "¿B2 es suficiente para trabajar?",
@@ -88,7 +88,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Business English o inglés general?",
-    answer: "Business English se especializa en contextos laborales: emailes profesionales, reuniones, presentaciones, negociación. Inglés general cubre comunicación cotidiana. Para trabajar en empresa, Business English acelerará 3-6 meses tu efectividad profesional. Lo ideal: base sólida general + especialización Business."
+    answer: "El inglés general cubre la comunicación cotidiana; el Business English se centra en el contexto laboral: correos, reuniones, presentaciones y negociación. Lo normal es necesitar una base general sólida y encima la especialización. Si quien paga el curso es tu empresa y no tú, lo que buscas es la formación para empresas, que va por otro camino y es bonificable por FUNDAE."
   },
   {
     question: "¿Inglés para presentaciones?",
@@ -122,10 +122,10 @@ export const faqs: FAQItem[] = [
     question: "¿Inglés técnico o sectorial?",
     answer: "Para profesiones específicas (IT, medicina, ingeniería), ofrecemos inglés especializado con vocabulario técnico relevante. Consulta con tu asesor si tu campo requiere terminología específica. Generalmente B2 general + 2-4 semanas de vocabulario técnico = flujo laboral."
   },
-  {
-    question: "¿Qué nivel de inglés necesito para trabajar en una multinacional?",
-    answer: "El nivel mínimo habitual es B2 para puestos operativos. Para roles de gestión, liderazgo o contacto directo con clientes internacionales, se suele pedir C1. La tendencia en empresas multinacionales es exigir cada vez más nivel certificado (Cambridge o Linguaskill) en los procesos de selección."
-  },
+  // 2026-08-08: aquí había una segunda "¿Qué nivel de inglés necesito para
+  // trabajar en una multinacional?" con una respuesta distinta a la de arriba.
+  // Las dos entraban en generateFAQSchema, así que la página emitía dos nodos
+  // Question con el mismo name. Se queda la primera.
   {
     question: "¿Se puede aprender inglés de adulto empezando desde cero?",
     answer: "Los adultos tienen ventajas que los niños no tienen: capacidad de análisis gramatical, motivación clara y disciplina. El aprendizaje es diferente (más analítico, menos intuitivo), pero perfectamente viable. Con 2-4 horas semanales de clase y práctica regular, es posible alcanzar un A2 en 6 meses y un B1 en 12-18 meses."
