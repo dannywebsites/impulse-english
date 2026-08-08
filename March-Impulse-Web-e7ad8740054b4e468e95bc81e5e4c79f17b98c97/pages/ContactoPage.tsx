@@ -31,7 +31,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Dónde estáis ubicados exactamente?",
-    answer: "Estamos en Av. de El Ferrol, 22, en La Vaguada (Barrio del Pilar), Madrid 28029. A solo 500 metros del metro Barrio del Pilar (Línea 9). Hay parking gratuito en la zona."
+    answer: "Estamos en Av. de El Ferrol, 22, en La Vaguada (Barrio del Pilar), Madrid 28029. A 4 minutos andando del metro Barrio del Pilar (Línea 9). Hay parking gratuito en la zona."
   },
   {
     question: "¿Cuál es el horario de atención?",
@@ -167,8 +167,8 @@ export default function ContactoPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-zinc-900 mb-1">Cómo llegar - Metro</h3>
-                    <p className="text-zinc-600"><strong>500 metros</strong> desde Metro Barrio del Pilar (Línea 9)</p>
-                    <p className="text-zinc-600">15 minutos andando desde Peñagrande</p>
+                    <p className="text-zinc-600"><strong>4 minutos andando</strong> desde Metro Barrio del Pilar (Línea 9)</p>
+                    <p className="text-zinc-600">Metro Peñagrande y Herrera Oria (Línea 7) también dan acceso</p>
                   </div>
                 </div>
 

@@ -10,12 +10,12 @@ export default function LocationsSection() {
   // Rutas reales hasta Av. de El Ferrol, 22. Cada barrio se enlaza una sola vez
   // en todo el bloque para no sobrecargar de enlaces internos.
   const metroRoutes = [
-    { from: "Peñagrande", line: "L9", time: "~3 min", href: "/academia-ingles-penagrande/" },
-    { from: "Mirasierra", line: "L9", time: "~4 min", href: "/academia-ingles-mirasierra/" },
-    { from: "Herrera Oria", line: "L9", time: "~5 min", href: null },
-    { from: "Montecarmelo", line: "L9", time: "~8 min", href: "/academia-ingles-montecarmelo-las-tablas/" },
-    { from: "Plaza Castilla", line: "L9", time: "~12 min", href: "/academia-ingles-plaza-castilla/" },
-    { from: "Av. de la Ilustración", line: "L7", time: "~10 min + bus 147", href: null }
+    { from: "Peñagrande", line: "L9", time: "Línea directa", href: "/academia-ingles-penagrande/" },
+    { from: "Mirasierra", line: "L9", time: "Línea directa", href: "/academia-ingles-mirasierra/" },
+    { from: "Herrera Oria", line: "L9", time: "Línea directa", href: null },
+    { from: "Montecarmelo", line: "L9", time: "Línea directa", href: "/academia-ingles-montecarmelo-las-tablas/" },
+    { from: "Plaza Castilla", line: "L9", time: "Línea directa", href: "/academia-ingles-plaza-castilla/" },
+    { from: "Av. de la Ilustración", line: "L7", time: "Enlace con bus 147", href: null }
   ];
 
   const busRoutes = [
@@ -24,19 +24,19 @@ export default function LocationsSection() {
     // Valdeacederas, and the published EMT timetable puts Ginzo de Limia–Plaza de Castilla alone
     // at 12 minutes. Route kept, unsourced number dropped.
     { line: "147", from: "Eje de la Castellana", time: "Directo", href: "/academia-ingles-tetuan/" },
-    { line: "42", from: "Plaza Castilla", time: "~15 min", href: null },
-    { line: "83", from: "Moncloa", time: "~20 min", href: null },
-    { line: "126", from: "Nuevos Ministerios", time: "~18 min", href: null },
+    { line: "42", from: "Plaza Castilla", time: "Directo", href: null },
+    { line: "83", from: "Moncloa", time: "Directo", href: null },
+    { line: "126", from: "Nuevos Ministerios", time: "Directo", href: null },
     { line: "N23", from: "Servicio nocturno", time: "Toda la noche", href: null }
   ];
 
   const carRoutes = [
-    { from: "Peñagrande", via: "Av. de Peñagrande → Av. de El Ferrol", time: "3-5 min" },
-    { from: "Mirasierra", via: "Fermín Caballero → Av. de El Ferrol", time: "5-8 min" },
-    { from: "Herrera Oria", via: "Ginzo de Limia → Av. de El Ferrol", time: "5-8 min" },
-    { from: "Montecarmelo y Las Tablas", via: "Av. de la Ilustración → Av. de El Ferrol", time: "10-12 min" },
-    { from: "Tetuán y Valdeacederas", via: "Av. de la Paz → Av. de El Ferrol", time: "8-12 min" },
-    { from: "Plaza Castilla", via: "Paseo de la Castellana → Av. de El Ferrol", time: "10-15 min" }
+    { from: "Peñagrande", via: "Av. de Peñagrande → Av. de El Ferrol", time: "Acceso directo" },
+    { from: "Mirasierra", via: "Fermín Caballero → Av. de El Ferrol", time: "Acceso directo" },
+    { from: "Herrera Oria", via: "Ginzo de Limia → Av. de El Ferrol", time: "Acceso directo" },
+    { from: "Montecarmelo y Las Tablas", via: "Av. de la Ilustración → Av. de El Ferrol", time: "Acceso directo" },
+    { from: "Tetuán y Valdeacederas", via: "Av. de la Paz → Av. de El Ferrol", time: "Acceso directo" },
+    { from: "Plaza Castilla", via: "Paseo de la Castellana → Av. de El Ferrol", time: "Acceso directo" }
   ];
 
   return (
@@ -98,8 +98,8 @@ export default function LocationsSection() {
                   <Train className="w-5 h-5 text-accent-blue flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-medium text-zinc-900 mb-1">Metro</p>
-                    <p className="text-sm">Línea 9 - Barrio del Pilar (4 min)</p>
-                    <p className="text-sm">Línea 7 - Peñagrande (8 min)</p>
+                    <p className="text-sm">Línea 9 - Barrio del Pilar</p>
+                    <p className="text-sm">Línea 7 - Peñagrande</p>
                   </div>
                 </div>
               </div>
@@ -184,10 +184,10 @@ export default function LocationsSection() {
             Cómo llegar desde tu barrio
           </h3>
           <p className="text-zinc-500 max-w-3xl mb-8">
-            Estamos en la Av. de El Ferrol, 22, a 3 minutos andando del metro de Barrio del Pilar.
+            Estamos en la Av. de El Ferrol, 22, a 4 minutos andando del metro de Barrio del Pilar.
             La Línea 9 recorre todo el eje norte de Madrid (Herrera Oria → Mirasierra → Barrio del
-            Pilar → Ventilla), así que llegas desde casi cualquier barrio de la zona en menos de 15
-            minutos. Estos son los tiempos reales desde cada punto de origen:
+            Pilar → Ventilla), así que llegas directamente desde casi cualquier barrio de la
+            zona. Estas son las rutas desde cada punto de origen:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -215,7 +215,7 @@ export default function LocationsSection() {
                 ))}
               </ul>
               <p className="text-xs text-zinc-400 mt-4">
-                Todos los tiempos hasta la estación de Barrio del Pilar, más 3 minutos andando hasta la academia.
+                Todas las rutas llegan a la estación de Barrio del Pilar, a 4 minutos andando de la academia.
               </p>
             </div>
 
@@ -245,7 +245,7 @@ export default function LocationsSection() {
                 ))}
               </ul>
               <p className="text-xs text-zinc-400 mt-4">
-                Parada Ginzo de Limia - Ferrol, a 1 minuto andando de la academia.
+                Parada Ginzo de Limia - Ferrol, en la propia calle de la academia.
               </p>
             </div>
 

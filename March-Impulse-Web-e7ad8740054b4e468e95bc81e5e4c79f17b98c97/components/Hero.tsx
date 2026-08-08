@@ -39,7 +39,7 @@ export default function Hero() {
 
                     {/* Subheadline */}
                     <p className="hero-sub hidden xl:block text-white/80 text-lg max-w-xl leading-relaxed mb-10 font-light text-left animate-fade-in-up delay-200">
-                        A 6 minutos de Línea 9 (Barrio del Pilar), en el tranquilo Parque de la Alcazaba. Zona verde, parque infantil y aparcamiento. El entorno perfecto para aprender inglés.
+                        A 4 minutos andando del Metro Barrio del Pilar (Línea 9), en el tranquilo Parque de la Alcazaba. Zona verde, parque infantil y aparcamiento. El entorno perfecto para aprender inglés.
                     </p>
 
                     {/* CTAs */}

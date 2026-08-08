@@ -31,11 +31,11 @@ export const courseSchema = generateCourseSchema({
 export const faqs: FAQItem[] = [
   {
     question: "¿Dónde está la academia y cómo llego en metro?",
-    answer: "Estamos en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) queda a 3 minutos andando, y Peñagrande y Herrera Oria (Línea 7) también dan acceso directo."
+    answer: "Estamos en Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) queda a 4 minutos andando, y Peñagrande y Herrera Oria (Línea 7) también dan acceso directo."
   },
   {
     question: "¿Cuánto se tarda desde Barrio del Pilar o La Vaguada?",
-    answer: "Desde el propio Barrio del Pilar se tarda menos de 5 minutos andando, y desde el centro comercial La Vaguada, alrededor de 1 minuto. Es el motivo por el que muchos alumnos vienen al salir del trabajo."
+    answer: "Desde el propio Barrio del Pilar es un paseo corto, y desde el centro comercial La Vaguada, unos 5 minutos andando. Es el motivo por el que muchos alumnos vienen al salir del trabajo."
   },
   {
     question: "¿Desde qué barrios vienen los alumnos adultos?",
@@ -43,7 +43,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Qué autobuses paran cerca de la academia?",
-    answer: "Los buses 147, 42 y 83 paran en Ginzo de Limia - Ferrol, a 1 minuto andando de la puerta."
+    answer: "Los buses 147, 42 y 83 paran en Ginzo de Limia - Ferrol, en la propia calle de la academia."
   },
   {
     question: "¿Qué nivel de inglés piden en las empresas?",

@@ -22,9 +22,9 @@ interface Props {
 
 const DEFAULT_TRANSPORT = (
   <>
-    Metro Barrio del Pilar (Línea 9) a 3 min andando · Metro Peñagrande y Metro Herrera Oria
-    (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol, a 1 min · el centro comercial
-    La Vaguada está a 1 min.
+    Metro Barrio del Pilar (Línea 9) a 4 min andando · Metro Peñagrande y Metro Herrera Oria
+    (Línea 7) · buses 147, 42 y 83, parada Ginzo de Limia - Ferrol · el centro comercial
+    La Vaguada está a unos 5 min.
   </>
 );
 

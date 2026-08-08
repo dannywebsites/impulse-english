@@ -34,11 +34,11 @@ export const courseSchema = generateCourseSchema({
 export const faqs: FAQItem[] = [
   {
     question: "¿Dónde estáis y cómo llego con el carrito desde el metro?",
-    answer: "Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) está a 3 minutos andando por acera llana."
+    answer: "Av. de El Ferrol, 22, junto al centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) está a 4 minutos andando por acera llana."
   },
   {
     question: "¿Cuánto se tarda desde La Vaguada con niños pequeños?",
-    answer: "Desde el centro comercial La Vaguada es cosa de 1 minuto, y desde el resto de Barrio del Pilar, menos de 5. Muchas familias encadenan la clase con la compra."
+    answer: "Desde el centro comercial La Vaguada son unos 5 minutos andando, y desde el resto de Barrio del Pilar, un paseo corto. Muchas familias encadenan la clase con la compra."
   },
   {
     question: "¿De qué barrios son las familias de infantil?",
@@ -46,7 +46,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Puedo aparcar cerca para dejar y recoger?",
-    answer: "El parking del centro comercial La Vaguada está a 1 minuto y es la opción que usan casi todas las familias que vienen en coche."
+    answer: "El parking del centro comercial La Vaguada está a unos 5 minutos andando y es la opción que usan casi todas las familias que vienen en coche."
   },
   {
     question: "¿Es buena idea empezar inglés a los 2 años?",

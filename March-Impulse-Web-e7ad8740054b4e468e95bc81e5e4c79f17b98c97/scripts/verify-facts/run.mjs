@@ -116,6 +116,8 @@ if (SELF_TEST) {
       'pass-rate guarantee': 'Ofrecemos garantía 100% aprobados Cambridge',
       '+1.000 alumnos': 'Más de 1.000 alumnos formados desde 2023',
       'retired legal name': 'Bienvenido a Impulse English Academy La Vaguada',
+      'wrong metro walking time': 'Estamos a 3 minutos andando del metro de Barrio del Pilar',
+      'La Vaguada walk understated': 'El centro comercial La Vaguada está a 1 min.',
       'unsourced salary statistic': 'Estadísticas muestran 15-25% aumento salarial con B2',
     }[rule.label];
     if (!probe) { console.error(RED(`  no probe defined for "${rule.label}" — add one`)); process.exit(1); }

@@ -58,11 +58,11 @@ const courseGalleryImages = [
 export const faqs: FAQItem[] = [
   {
     question: "¿Dónde se dan las clases particulares presenciales?",
-    answer: "En la academia, Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. Metro Barrio del Pilar (Línea 9) está a 3 minutos andando."
+    answer: "En la academia, Av. de El Ferrol, 22, junto al centro comercial La Vaguada, en Barrio del Pilar. Metro Barrio del Pilar (Línea 9) está a 4 minutos andando."
   },
   {
     question: "¿Cuánto se tarda en llegar desde La Vaguada?",
-    answer: "Alrededor de 1 minuto desde el centro comercial La Vaguada y menos de 5 desde el resto de Barrio del Pilar."
+    answer: "Unos 5 minutos andando desde el centro comercial La Vaguada, y un paseo corto desde el resto de Barrio del Pilar."
   },
   {
     question: "¿Dais clase a domicilio en otros barrios?",
@@ -70,7 +70,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Qué transporte tengo cerca de la academia?",
-    answer: "Metro Barrio del Pilar (Línea 9) a 3 minutos, Peñagrande y Herrera Oria en la Línea 7, y los buses 147, 42 y 83 en la parada Ginzo de Limia - Ferrol."
+    answer: "Metro Barrio del Pilar (Línea 9) a 4 minutos andando, Peñagrande y Herrera Oria en la Línea 7, y los buses 147, 42 y 83 en la parada Ginzo de Limia - Ferrol."
   },
   {
     question: "¿Qué es mejor: clases particulares o grupo reducido?",
