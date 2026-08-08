@@ -50,7 +50,7 @@ const formatos = [
   },
   {
     title: "En la academia",
-    body: "En Av. de El Ferrol 22, en Barrio del Pilar, a tres minutos andando del metro de la línea 9. Dos aulas, London y Manchester. Funciona bien cuando el equipo está repartido y a nadie le sirve la sede de otro.",
+    body: "En Av. de El Ferrol 22, en Barrio del Pilar, a cuatro minutos andando del metro de la línea 9. Dos aulas, London y Manchester. Funciona bien cuando el equipo está repartido y a nadie le sirve la sede de otro.",
     detail: "Abrimos hasta las 21:30 de lunes a jueves."
   },
   {
@@ -118,7 +118,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Cómo se llega a la academia desde la zona de oficinas del norte?",
-    answer: "Estamos en Av. de El Ferrol 22, a 3 min andando del metro de Barrio del Pilar (línea 9). Desde Plaza de Castilla son unos 12 min en la línea 9, desde Peñagrande unos 3 min y desde Mirasierra unos 4 min. El autobús 147 recorre el eje de la Castellana y para en Ginzo de Limia - Ferrol, a 1 min de la puerta."
+    answer: "Estamos en Av. de El Ferrol 22, a 4 minutos andando del metro de Barrio del Pilar. La línea 9 llega directa desde Plaza de Castilla, Peñagrande, Mirasierra y Montecarmelo, sin transbordo. El autobús 147 recorre el eje de la Castellana y para en Ginzo de Limia - Ferrol, en la propia calle de la academia. No publicamos minutos de trayecto porque dependen de la parada de salida."
   },
   {
     question: "¿Se puede empezar en cualquier momento del año?",
@@ -179,7 +179,7 @@ export default function EmpresasPage() {
             </p>
             <div className="flex items-center gap-2 text-white/60 font-display text-sm mb-2 animate-hero-fade-up animation-delay-200">
               <Train className="w-4 h-4" />
-              <span>Av. de El Ferrol 22 · a 3 min andando del metro de la línea 9</span>
+              <span>Av. de El Ferrol 22 · a 4 minutos andando del metro de la línea 9</span>
             </div>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               Centro oficial Cambridge y Linguaskill · adultos en grupos de 8
@@ -385,13 +385,13 @@ export default function EmpresasPage() {
             <div className="rule"></div>
           </div>
           <p className="t-body mb-6">
-            Si venís vosotros, la academia está en <strong className="text-zinc-900">Av. de El Ferrol 22</strong>, en Barrio del Pilar, junto al centro comercial La Vaguada, a <strong className="text-zinc-900">3 min</strong> andando del metro de la línea 9. Desde las zonas de oficinas del norte:
+            Si venís vosotros, la academia está en <strong className="text-zinc-900">Av. de El Ferrol 22</strong>, en Barrio del Pilar, junto al centro comercial La Vaguada, a <strong className="text-zinc-900">4 minutos</strong> andando del metro de la línea 9. La línea 9 llega directa, sin transbordo, desde las zonas de oficinas del norte:
           </p>
           <ul className="space-y-2 t-body mb-6">
-            <li>· Plaza de Castilla, línea 9: unos <strong className="text-zinc-900">12 min</strong>.</li>
-            <li>· Peñagrande, línea 9: unos <strong className="text-zinc-900">3 min</strong>.</li>
-            <li>· Mirasierra, línea 9: unos <strong className="text-zinc-900">4 min</strong>.</li>
-            <li>· Autobús 147 por el eje de la Castellana, parada Ginzo de Limia - Ferrol, a <strong className="text-zinc-900">1 min</strong> de la puerta.</li>
+            <li>· <strong className="text-zinc-900">Plaza de Castilla</strong>, línea 9 directa.</li>
+            <li>· <strong className="text-zinc-900">Peñagrande</strong> y <strong className="text-zinc-900">Mirasierra</strong>, línea 9 directa.</li>
+            <li>· <strong className="text-zinc-900">Montecarmelo</strong>, línea 9 directa; desde <strong className="text-zinc-900">Las Tablas</strong>, línea 10 con transbordo en Plaza de Castilla.</li>
+            <li>· Autobús <strong className="text-zinc-900">147</strong> por el eje de la Castellana, parada Ginzo de Limia - Ferrol, en la propia calle de la academia.</li>
           </ul>
           <p className="t-body">
             Si vamos nosotros, la zona de desplazamiento se acuerda en el presupuesto. Preferimos concretarlo por escrito para una empresa concreta antes que publicar un radio genérico que después no se sostenga.
