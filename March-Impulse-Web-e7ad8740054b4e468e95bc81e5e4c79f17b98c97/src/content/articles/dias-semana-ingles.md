@@ -101,7 +101,7 @@ internalLinkRefs:
   - Primaria
   - Infantil
   - Cursos
-  - Tetuánpage
+  - Tetuán page
 breadcrumbs:
   - label: Aprender inglés
     href: /aprende-ingles/
