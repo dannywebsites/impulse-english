@@ -350,15 +350,6 @@ export const adultosImages: AcademyImage[] = [
     category: "adultos",
     aspectRatio: "landscape",
     keywords: ["cambridge centro preparador", "adultos cambridge", "b2 first c1 advanced madrid", "academia la vaguada"]
-  },
-  {
-    url: "/images/academy/cambridge-search.jpeg",
-    alt: "Búsqueda centro Cambridge oficial Impulse English Academy verificado",
-    title: "Centro Cambridge verificado Impulse English",
-    description: "Impulse English Academy aparece en la búsqueda oficial de centros Cambridge como centro preparador verificado en La Vaguada, Madrid.",
-    category: "adultos",
-    aspectRatio: "landscape",
-    keywords: ["cambridge centro verificado", "centro oficial cambridge", "preparación cambridge madrid", "academia la vaguada"]
   }
 ];
 
@@ -431,9 +422,12 @@ export const facilitiesImages: AcademyImage[] = [
   },
   {
     url: "/images/academy/nabscabdsc-6785.jpeg",
-    alt: "Vista aérea aula Stephen academia inglés La Vaguada Madrid",
-    title: "Aula de Stephen Impulse English La Vaguada",
-    description: "Vista panorámica del aula de Stephen en Impulse English Academy. Espacio diseñado para grupos reducidos de máximo 10 estudiantes.",
+    // Named after a former teacher until 2026-08-08. This entry is the SOURCE the blog
+    // pipeline copies alt text from, so it had re-injected the name into four articles.
+    // Rooms are described by what they are, not by who taught in them.
+    alt: "Vista aérea de un aula de Impulse English Academy en La Vaguada, Madrid",
+    title: "Aula de Impulse English Academy en La Vaguada",
+    description: "Vista panorámica de un aula de Impulse English Academy. Espacio diseñado para grupos reducidos de máximo 10 estudiantes.",
     category: "facilities",
     aspectRatio: "landscape",
     keywords: ["aula inglés", "grupos reducidos", "academia la vaguada", "barrio del pilar madrid"]
