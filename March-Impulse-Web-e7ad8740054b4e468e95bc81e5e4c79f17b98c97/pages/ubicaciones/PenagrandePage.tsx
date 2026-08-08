@@ -377,7 +377,9 @@ export default function PenagrandePage() {
                   <Train className="w-6 h-6 text-accent-blue flex-shrink-0" />
                   <div>
                     <p className="font-bold text-zinc-900">Metro Barrio del Pilar (Línea 9)</p>
-                    <p className="text-zinc-600">500 metros caminando</p>
+                    {/* "500 metros" es una cadena retirada en facts.json: era otra
+                        forma de decir el paseo de 3 minutos que Danny corrigió a 4. */}
+                    <p className="text-zinc-600">4 minutos andando</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-zinc-50 rounded-xl">
