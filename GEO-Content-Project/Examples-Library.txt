@@ -1,0 +1,405 @@
+# EXAMPLES LIBRARY: GOOD VS. BAD GEO CONTENT
+## Reference File for GEO Content Project
+
+---
+
+## PURPOSE OF THIS FILE
+
+Use this file to understand the quality bar for GEO-optimized content. Each section shows BAD examples (what to avoid) and GOOD examples (what to emulate).
+
+Study the differences. The gap between bad and good is almost always: **specificity and local authenticity.**
+
+---
+
+## TITLE TAGS
+
+### BAD Examples ❌
+
+```
+Plumbing Services in Boston | ABC Plumbing
+```
+- Template format
+- Just city, no neighborhood
+- No differentiator
+- Could be any plumber's page
+
+```
+Boston Plumber | Professional Plumbing Services | ABC
+```
+- Generic terms
+- No unique angle
+- Identical structure to competitors
+
+```
+Best Plumber in Boston, MA | Call ABC Plumbing Today!
+```
+- Superlative claim with no proof
+- Pushy CTA in title
+- No local specificity
+
+### GOOD Examples ✓
+
+```
+Emergency Plumber in Boston's Back Bay | 24/7 Brownstone Specialists
+```
+- Specific neighborhood (Back Bay)
+- Clear specialty (brownstones)
+- Differentiator (24/7 emergency)
+- Impossible to use for another location
+
+```
+Cambridge Victorian Home Plumbing | Mike Torres | 15-Year Expert
+```
+- Specific building type (Victorian)
+- Named expert (builds E-E-A-T)
+- Specific credibility (15 years)
+
+```
+45-Minute Plumber in Beacon Hill | Historic Pipe Experts | ABC
+```
+- Leads with speed promise
+- Specific neighborhood
+- Specialty clearly stated
+
+---
+
+## META DESCRIPTIONS
+
+### BAD Examples ❌
+
+```
+ABC Plumbing provides professional plumbing services in Boston. Call us today for all your plumbing needs. Licensed and insured. Free estimates available.
+```
+- No specific numbers
+- Generic claims
+- No location specificity
+- Weak CTA
+
+```
+Looking for a plumber in Boston? ABC Plumbing is here to help! We offer quality service at competitive prices. Contact us now!
+```
+- Question format wastes characters
+- "Competitive prices" means nothing
+- No differentiator
+
+### GOOD Examples ✓
+
+```
+Back Bay's trusted emergency plumber for 15+ years. Brownstone pipe specialists serving Beacon Hill to South End. $89 service call, 45-min response. Call: (617) 555-0123
+```
+- Specific areas (Back Bay, Beacon Hill, South End)
+- Specific numbers (15+ years, $89, 45-min)
+- Clear specialty (brownstone pipes)
+- Phone number included
+
+```
+Need a plumber in Back Bay? Mike's team has fixed 2,000+ brownstone plumbing issues since 2009. Same-day service, upfront pricing. Book now: (617) 555-0123
+```
+- Named team member
+- Specific job count
+- Founding year
+- Phone included
+
+---
+
+## ANSWER CAPSULES (Hero Intro)
+
+### BAD Example ❌
+
+```
+Welcome to ABC Plumbing, your trusted plumbing professionals in Boston. We provide comprehensive plumbing services to residential and commercial customers throughout the Boston area. Our experienced team is dedicated to quality workmanship and customer satisfaction. Contact us today to learn how we can help with all your plumbing needs.
+```
+- Generic welcome
+- No specific location beyond "Boston"
+- No numbers
+- No differentiator
+- No CTA with phone
+- Too long (62 words but no substance)
+
+### GOOD Example ✓
+
+```
+Looking for emergency plumbing in Back Bay? ABC Plumbing has served Boston's brownstone district for 15 years. Our certified team, led by Mike Torres, responds within 45 minutes—day or night. Starting at $89 for service calls, with upfront pricing guaranteed. Call (617) 555-0123 for same-day appointments.
+```
+- Direct question/answer format
+- Specific area (Back Bay, brownstone district)
+- Specific numbers (15 years, 45 minutes, $89)
+- Named expert (Mike Torres)
+- Clear CTA with phone
+- Exactly 52 words
+
+---
+
+## SERVICE DESCRIPTIONS
+
+### BAD Example ❌
+
+```
+At ABC Plumbing, we provide professional plumbing services to homeowners in Boston and the surrounding areas. Our experienced technicians can handle any plumbing problem, from leaky faucets to major repairs. We pride ourselves on quality workmanship and customer satisfaction. Whether you need routine maintenance or emergency repairs, our team is here to help. Contact us today for a free estimate.
+```
+- "Boston and surrounding areas" - too vague
+- "Any plumbing problem" - no specialty
+- "Experienced technicians" - unnamed
+- No local building knowledge
+- No specific methods or approaches
+- Could be used for ANY location
+
+### GOOD Example ✓
+
+```
+Back Bay's historic brownstones present unique plumbing challenges that generic plumbers often miss. The original copper and lead pipes in these 1870s-1890s buildings require specialized knowledge—aggressive modern techniques can damage fragile connections and century-old fixtures.
+
+ABC Plumbing has spent 15 years mastering Back Bay's distinctive plumbing architecture. Our technicians are trained specifically in brownstone systems—from the common galvanized-to-copper transitions to the cast iron stacks found in properties along Commonwealth Avenue and Marlborough Street. We use low-impact repair methods that preserve your home's historic character while meeting modern Massachusetts code requirements.
+
+With over 2,000 brownstone plumbing jobs completed from Beacon Hill to the South End, we understand what works in Boston's historic core. Mike Torres and our certified team respond within 45 minutes to Back Bay emergencies. Call (617) 555-0123 for expert brownstone plumbing.
+```
+- Opens with local building type
+- Specific date ranges (1870s-1890s)
+- Specific pipe types (copper, lead, galvanized, cast iron)
+- Specific streets (Commonwealth Ave, Marlborough Street)
+- Specific areas (Back Bay, Beacon Hill, South End)
+- Specific numbers (15 years, 2,000 jobs, 45 minutes)
+- Named expert
+- Cannot be used for another location
+
+---
+
+## TESTIMONIALS
+
+### BAD Example ❌
+
+```
+"Great service! Very professional and on time. Would definitely recommend to anyone needing a plumber."
+— John D., Boston
+```
+- Anonymous (initials only)
+- Generic location
+- No specific problem mentioned
+- No specific result
+- No named service provider
+- Could be for any service anywhere
+
+### GOOD Example ✓
+
+```
+"When our Back Bay brownstone's pipes burst during the February cold snap, we panicked. Mike from ABC Plumbing arrived in 30 minutes—on a Sunday morning. He immediately identified the issue with our 1890s copper piping and had us back up and running by noon. The other quote we got was $2,000 more. Can't recommend them enough!"
+— Sarah Mitchell, Marlborough Street, Back Bay
+```
+- Full name
+- Specific location (Marlborough Street, Back Bay)
+- Specific problem (pipes burst, February cold snap)
+- Specific building detail (1890s copper piping)
+- Specific response (30 minutes, Sunday morning)
+- Named technician (Mike)
+- Specific result (fixed by noon, $2,000 savings)
+- Authentic voice
+
+---
+
+## CASE STUDIES
+
+### BAD Example ❌
+
+```
+Project: Plumbing Repair
+Location: Boston, MA
+Challenge: Customer had a plumbing emergency
+Solution: Our team responded quickly and fixed the problem
+Result: Customer was satisfied with our service
+```
+- Vague location
+- Vague problem
+- Vague solution
+- Vague result
+- No names
+- No numbers
+- Template format
+
+### GOOD Example ✓
+
+```
+Historic Brownstone Pipe Emergency in Back Bay
+
+THE CHALLENGE
+When the temperature dropped to -10°F during Boston's February 2024 cold snap, the Andersons' 1885 brownstone on Commonwealth Avenue faced a homeowner's nightmare: a burst pipe in their third-floor bathroom sent water cascading through two floors. Previous attempts by another plumber to patch the aging copper system had failed within weeks.
+
+OUR APPROACH
+Mike Torres arrived within 35 minutes—despite it being Super Bowl Sunday. Rather than aggressive pipe replacement, Mike took an approach suited to Back Bay brownstones: careful assessment of the original 1880s copper trunk lines, followed by targeted reinforcement at vulnerable junction points. The repair took 4 hours.
+
+THE RESULTS
+The Andersons' repair cost $1,850—compared to the $4,200 quote for full re-piping. One year later, the repair is holding strong. "Mike understood that our brownstone isn't just old pipes—it's our home's history."
+— Jennifer Anderson, Commonwealth Avenue
+```
+- Specific location (Commonwealth Avenue, Back Bay)
+- Specific date (February 2024)
+- Specific circumstances (-10°F, Super Bowl Sunday)
+- Building details (1885 brownstone, 1880s copper)
+- Named technician (Mike Torres)
+- Response time (35 minutes)
+- Repair duration (4 hours)
+- Cost comparison ($1,850 vs $4,200)
+- Follow-up result (one year later)
+- Customer quote with name
+
+---
+
+## FAQs
+
+### BAD Example ❌
+
+```
+Q: What services do you offer?
+A: We offer a full range of plumbing services including repairs, installations, and maintenance.
+
+Q: What is your service area?
+A: We serve Boston and the surrounding communities.
+
+Q: How much do you charge?
+A: Our rates are competitive. Contact us for a free estimate.
+```
+- Generic questions
+- Generic answers
+- No location specificity
+- No specific prices
+- No differentiators
+- Could be any plumber anywhere
+
+### GOOD Example ✓
+
+```
+Q: How much does a plumber cost in Back Bay?
+A: Emergency plumbing service in Back Bay starts at $89 for the service call, with most repairs ranging from $150-$450 depending on complexity. We provide upfront pricing before any work begins—no surprises. Brownstone-specific work like historic pipe repair may be quoted separately after inspection. Call (617) 555-0123 for a free estimate.
+
+Q: How quickly can you respond to a plumbing emergency in Back Bay?
+A: We guarantee 45-minute response times to Back Bay emergencies, 24 hours a day. Our lead technician Mike Torres is based in Somerville and knows the fastest routes through Boston—even during Red Sox games when traffic backs up. For true emergencies, call our direct line: (617) 555-0123.
+
+Q: Can you work on older brownstone plumbing without damaging the historic pipes?
+A: Absolutely—it's our specialty. Back Bay brownstones built between 1860-1900 have unique copper and galvanized systems that require a different approach than modern homes. Mike Torres is certified in historic building systems and uses low-impact repair techniques that preserve your original plumbing while meeting current Massachusetts codes.
+```
+- Location-specific questions
+- Specific prices ($89, $150-$450)
+- Specific response time (45 minutes)
+- Named technician
+- Local knowledge (Red Sox traffic)
+- Building-specific expertise
+- Dates and details (1860-1900)
+- Phone numbers included
+
+---
+
+## TEAM BIOS
+
+### BAD Example ❌
+
+```
+Our Team
+Our experienced plumbers are fully licensed and insured. With years of industry experience, our team is dedicated to providing quality service to our customers. We hire only the best technicians who share our commitment to excellence.
+```
+- No names
+- No specific credentials
+- No numbers
+- No local connection
+- No personal details
+- Pure marketing speak
+
+### GOOD Example ✓
+
+```
+Meet Mike Torres, Your Back Bay Plumber
+
+Mike Torres has been Back Bay's go-to emergency plumber for 15 years. A Massachusetts-licensed master plumber (License #PL-12345) with additional certification in historic building systems, Mike has personally completed over 2,000 plumbing repairs in brownstones from Beacon Hill to the South End.
+
+A Somerville resident, Mike knows Boston's historic neighborhoods like the back of his hand—including the quirks of century-old plumbing that trip up less experienced technicians. When he's not under a sink, you'll find him coaching his daughter's soccer team in Davis Square.
+
+What sets Mike apart is his diagnostic approach: he doesn't just fix the immediate problem, he identifies why it happened and how to prevent it. When you call ABC Plumbing for Back Bay service, Mike personally oversees every job.
+```
+- Full name
+- Specific role (Back Bay plumber)
+- Years of experience (15)
+- License number
+- Specific certification (historic building systems)
+- Job count (2,000)
+- Specific areas (Beacon Hill, South End)
+- Residence (Somerville)
+- Personal detail (daughter's soccer, Davis Square)
+- Differentiator (diagnostic approach)
+
+---
+
+## SCHEMA MARKUP
+
+### BAD Example ❌
+
+```json
+{
+  "@type": "LocalBusiness",
+  "name": "ABC Plumbing",
+  "address": "Boston, MA"
+}
+```
+- Incomplete
+- No geo coordinates
+- No specific address
+- No areaServed
+- No phone
+- No rating
+- Same as every other location page
+
+### GOOD Example ✓
+
+```json
+{
+  "@type": "Plumber",
+  "@id": "https://abcplumbing.com/boston-back-bay/#business",
+  "name": "ABC Plumbing - Back Bay Boston",
+  "telephone": "+1-617-555-0123",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "234 Newbury Street",
+    "addressLocality": "Boston",
+    "addressRegion": "MA",
+    "postalCode": "02116"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.3505,
+    "longitude": -71.0789
+  },
+  "areaServed": [
+    {"@type": "Neighborhood", "name": "Back Bay"},
+    {"@type": "Neighborhood", "name": "Beacon Hill"},
+    {"@type": "Neighborhood", "name": "South End"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127"
+  }
+}
+```
+- Specific business type (Plumber)
+- Unique @id with page URL
+- Location-specific name
+- Full address
+- Geo coordinates
+- Specific neighborhoods in areaServed
+- Rating with review count
+
+---
+
+## THE PATTERN
+
+Notice what separates BAD from GOOD in every example:
+
+| BAD | GOOD |
+|-----|------|
+| Generic | Specific |
+| City-level | Neighborhood-level |
+| Unnamed | Named people |
+| No numbers | Specific numbers |
+| Template language | Authentic voice |
+| Could be anywhere | Could ONLY be this location |
+| Marketing speak | Real information |
+| Vague claims | Verifiable facts |
+
+**The transformation is always the same:** Replace vague with specific, generic with local, unnamed with named, claims with proof.

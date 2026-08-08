@@ -1,0 +1,39 @@
+{
+  "_comment": [
+    "Clips with a TikTok watermark burned into the pixels, reading '@danu_english' — a",
+    "different handle from the @impulse_english archive they were pulled from. They are",
+    "re-uploads of another account's downloads, so the watermark was already in the file",
+    "when it reached @impulse_english: TikTok's own non-watermarked renditions still show",
+    "it, and re-downloading cannot fix them. Verified visually 2026-08-02, frame-by-frame,",
+    "across all 21 — not sampled.",
+    "",
+    "Listed by ID rather than by rule because nothing in the metadata distinguishes them:",
+    "format_id, resolution and description are identical to clean clips. The whole 2022",
+    "cohort is affected; 2020, 2023 and 2024 sampled clean.",
+    "",
+    "Remove an ID here only if that clip is replaced with genuinely clean source footage."
+  ],
+  "video_ids": [
+    "7133287946014231813",
+    "7133512915335843077",
+    "7133626130950638854",
+    "7133930699945479430",
+    "7134338777404689669",
+    "7134992197602135302",
+    "7137286902620671237",
+    "7140188470764440837",
+    "7140316313196432646",
+    "7142869525942291718",
+    "7142960275048664325",
+    "7143173358828391686",
+    "7143274439847775493",
+    "7143564325247126789",
+    "7144757833098136838",
+    "7145394549907524870",
+    "7145562862839237893",
+    "7145774438846418182",
+    "7146233445176413445",
+    "7147611781010181381",
+    "7147707589143383297"
+  ]
+}

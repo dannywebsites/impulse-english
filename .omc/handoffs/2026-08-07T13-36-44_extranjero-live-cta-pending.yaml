@@ -1,0 +1,43 @@
+# Handoff — 2026-08-07T13-36-44
+goal: "Fix the seo-blog-writer SERP/PAA research, finish the extranjero blog cluster, ship it live, then change the study-abroad CTA to an Ireland advisory with Daniel."
+now: "Cluster is LIVE (21 pieces). CTA change is fully specified and unblocked (headshot now in repo) but NOT STARTED."
+done_this_session:
+  - "Found + fixed total failure: dataforseo.js called /regular (no SERP features), so extractPAA returned empty for the skill's whole life"
+  - "Rebuilt research: stage A0 pulls SERP into serp.json, hard-fails on empty; AI Overview extractor added; competitors now the real top-10"
+  - "Added PAA gate: >=50% of every FAQ must be verbatim scraped PAA (paa-coverage.py); verified failing both ways"
+  - "Committed the skill to ~/.claude/skills (6b3e160) with .gitignore; .env stays ignored"
+  - "Rebuilt FAQ+opening of the 8 pre-SERP articles (da1d084); wrote 8 new + hub (89dc259)"
+  - "Merged PR #16 to main (9abac0c). All 21 verified 200 + rendering on impulse-english.es"
+  - "Optimised Danny headshot -> public/images/academy/danny-director-extranjero.webp (933x1400, 40KB)"
+blockers: []
+decisions:
+  - "Scope 21 not 23: #12 dropped (pillar + #11 own the term), #10+#17 merged. Both on SERP evidence."
+  - "Added assemble.js --slug: meta.slug is a non-deterministic Gemini call and differed on 6 of 8 rebuilt articles; without it 6 live URLs would have changed"
+  - "Ran verify:tracking BEFORE merging because CoursePopup.tsx differed from main. ALL PASS, both ticks."
+  - "CTA change scoped to CoursePopup.tsx + /ingles-en-el-extranjero/ ONLY, per Danny. Not the 21 articles."
+findings:
+  - "PAA answer TEXT is volatile (0,1,4,5,5 answers across identical requests). Questions are stable. Never gate on answers."
+  - "'familia de acogida' collides with FOSTER CARE in Spanish; 'campamento' returns tent questions. PAA must be filtered."
+  - "Two PAA answers about the Irish calendar were factually FALSE (Nov start, 16 June start). Used questions, discarded snippets."
+  - "BOTH photo pools now exhausted (ireland 0-10, academy 0-11). academy 0/1 are INFANTIL sets."
+  - "APPROVED FACTS: Daniel = owner, IRISH, 14 years in the LANGUAGE TRAVEL SECTOR (not 'English education in Ireland')"
+next:
+  - "Wire the CTA: 'Mas informacion sobre Irlanda' -> asesoria personalizada con Daniel, sin compromiso"
+  - "Use the UNUSED TeacherCard component — its own comment says study-abroad fronts Daniel, not JP"
+  - "MANDATORY: npm run verify:tracking ALL PASS before shipping (CoursePopup is a tracking surface)"
+  - "Add new photos before writing any further article in this cluster, or it repeats another's images"
+files:
+  modified:
+    - "~/.claude/skills/seo-blog-writer/scripts/lib/dataforseo.js"
+    - "~/.claude/skills/seo-blog-writer/scripts/lib/research.js"
+    - "~/.claude/skills/seo-blog-writer/scripts/prewrite.js + assemble.js + test-serp.js"
+    - "March-Impulse-Web-.../scripts/seo/gate-article.sh + paa-coverage.py"
+    - "March-Impulse-Web-.../src/content/articles/ (17 files)"
+    - "March-Impulse-Web-.../public/images/academy/danny-director-extranjero.webp (new, uncommitted)"
+    - "EXTRANJERO-BLOG-CLUSTER-PLAN.md"
+  read:
+    - "March-Impulse-Web-.../components/CoursePopup.tsx"
+    - "March-Impulse-Web-.../components/TeacherCard.tsx"
+    - "en el extrangero/danny official headshot.jpeg"
+errors: []
+git_branch: "seo/extranjero-hub (merged to main as 9abac0c; only the new .webp is uncommitted)"

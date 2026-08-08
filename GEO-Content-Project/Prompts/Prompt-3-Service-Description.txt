@@ -1,0 +1,175 @@
+# PROMPT 3: SERVICE DESCRIPTION WITH LOCAL CONTEXT
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Service description
+- What we do section
+- Service overview
+- About this service
+- How we help
+- Our approach
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+Service descriptions are where most businesses fall into the duplicate content trap. They write one "master" description and copy it across all location pages, just swapping the city name.
+
+**AI systems detect this immediately.** When your Cambridge service description is 95% identical to your Boston description, AI groups them as duplicates.
+
+**The solution:** Every service description must include LOCAL CONTEXT that could ONLY apply to that specific area.
+
+---
+
+## LOCAL CONTEXT REQUIREMENTS
+
+The service description must reference AT LEAST 3 of these local elements:
+
+### Local Building Types
+- "Back Bay's 19th-century brownstones have unique copper piping..."
+- "Cambridge triple-deckers often feature..."
+- "South End Victorian homes typically need..."
+
+### Local Conditions/Challenges
+- "Boston's harsh winters mean frozen pipe emergencies..."
+- "The clay soil in Arlington causes foundation shifting that affects..."
+- "Coastal humidity in Quincy accelerates corrosion in..."
+
+### Local Regulations/Codes
+- "Massachusetts code 248 CMR requires..."
+- "Boston's historic district regulations mean..."
+- "Cambridge permit requirements for..."
+
+### Local Infrastructure
+- "Homes near the Charles River often have..."
+- "Properties built before 1950 in Somerville typically..."
+- "The water pressure issues common in Beacon Hill..."
+
+### Local Landmarks/Geography
+- "Serving brownstones from Copley Square to the Public Garden..."
+- "Properties along Commonwealth Avenue..."
+- "Homes within walking distance of Harvard Square..."
+
+---
+
+## FORMAT SPECIFICATIONS
+
+- **Length:** 150-200 words
+- **Structure:** 2-3 paragraphs
+- **Local references:** Minimum 3 distinct local elements
+- **Specificity test:** If you can swap the location name and content still works, it's too generic
+
+---
+
+## CONTENT STRUCTURE
+
+### Paragraph 1: Local Problem Statement (40-60 words)
+Open with a location-specific statement that establishes local expertise.
+- Reference the area by name
+- Mention a local challenge or characteristic
+- Establish that you understand THIS area specifically
+
+### Paragraph 2: Service Approach (60-80 words)
+Describe how you provide the service with local context.
+- What specific methods/equipment you use
+- How your approach is adapted for this area
+- Reference local building types or conditions
+
+### Paragraph 3: Local Credibility & CTA (40-60 words)
+Close with proof of local presence and next step.
+- Specific job count or years in this area
+- Local team member reference
+- Clear call-to-action
+
+---
+
+## OUTPUT FORMAT
+
+Generate one complete service description with annotations showing which local signals are included.
+
+### Example Output:
+
+---
+
+**SERVICE DESCRIPTION: Plumbing Services in Back Bay, Boston**
+
+[LOCAL BUILDING TYPE] [LOCAL CONDITION]
+Back Bay's historic brownstones present unique plumbing challenges that generic plumbers often miss. The original copper and lead pipes in these 1870s-1890s buildings require specialized knowledge—aggressive modern techniques can damage fragile connections and century-old fixtures.
+
+[LOCAL APPROACH] [LOCAL EXPERTISE]
+ABC Plumbing has spent 15 years mastering Back Bay's distinctive plumbing architecture. Our technicians are trained specifically in brownstone systems—from the common galvanized-to-copper transitions to the cast iron stacks found in properties along Commonwealth Avenue and Marlborough Street. We use low-impact repair methods that preserve your home's historic character while meeting modern Massachusetts code requirements.
+
+[LOCAL CREDIBILITY] [CTA]
+With over 2,000 brownstone plumbing jobs completed from Beacon Hill to the South End, we understand what works in Boston's historic core. Mike Torres and our certified team respond within 45 minutes to Back Bay emergencies. Call (617) 555-0123 for expert brownstone plumbing.
+
+---
+
+**Local Signals Used:**
+1. Building type: Historic brownstones, 1870s-1890s buildings
+2. Local infrastructure: Copper and lead pipes, galvanized-to-copper transitions, cast iron stacks
+3. Specific streets: Commonwealth Avenue, Marlborough Street
+4. Area references: Back Bay, Beacon Hill, South End, Boston's historic core
+5. Local regulations: Massachusetts code requirements
+6. Credibility: 15 years, 2,000 jobs in area
+
+**Word Count:** 178
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have from Business-Information.txt:
+- [ ] Service name
+- [ ] Specific location/neighborhoods
+- [ ] Local building types in this area
+- [ ] Local challenges or conditions
+- [ ] How the service is adapted for this area
+- [ ] Equipment or methods used
+- [ ] Years serving this specific area
+- [ ] Job count in this area
+- [ ] Team member name
+- [ ] Phone number
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] Opens with location-specific statement (not generic)
+- [ ] Contains at least 3 distinct local references
+- [ ] Mentions specific neighborhoods or street names
+- [ ] References local building types or characteristics
+- [ ] Could NOT be used for a different location
+- [ ] Includes credibility metrics (years, job count)
+- [ ] Ends with clear CTA and phone number
+- [ ] Length is 150-200 words
+
+---
+
+## WHAT TO AVOID
+
+**Generic Openings:**
+- "We provide quality [service] to residents of [City]..."
+- "Our experienced team serves the [City] area..."
+- "[Business] is your trusted [City] [service provider]..."
+
+**Swappable Content:**
+If you can replace "Back Bay" with "Cambridge" and the paragraph still works, it's too generic.
+
+**Vague Local References:**
+- "Boston area" → Be specific: "Back Bay, Beacon Hill, and South End"
+- "Historic homes" → Be specific: "1870s brownstones with original copper piping"
+- "Local regulations" → Be specific: "Massachusetts code 248 CMR"
+
+---
+
+## PRO TIP: THE SWAP TEST
+
+After writing, perform this test:
+1. Replace all location references with a different area you serve
+2. Read it again
+3. If it still makes sense, the content is too generic
+4. Add more specific local details until the swap test fails

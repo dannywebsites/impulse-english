@@ -1,0 +1,265 @@
+# PROMPT 12: LOCAL PERMITS & BUILDING CODES SECTION
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Permit information
+- Building code info
+- Local regulations
+- Code compliance
+- Permit requirements
+- "Do I need a permit for..."
+
+**Best for:** Plumbers, electricians, HVAC technicians, roofers, general contractors, remodelers, home builders.
+
+**THIS IS AN OPTIONAL INDUSTRY-SPECIFIC PROMPT** - Only use for contractor/home service businesses.
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+AI systems frequently answer permit and code questions like:
+- "Do I need a permit for [work] in [city]?"
+- "What are [city] building codes for [work type]?"
+- "[City] plumbing permit requirements"
+- "How much does a [work type] permit cost in [area]?"
+
+A local permits/codes section:
+1. **Answers high-intent queries** - People asking about permits are ready to hire
+2. **Creates untemplatable content** - Every jurisdiction has different requirements
+3. **Builds authority** - Shows you know local regulations
+4. **Differentiates from national competitors** - Local knowledge they can't match
+
+---
+
+## LOCAL PERMITS & CODES REQUIREMENTS
+
+### Format Specifications
+- **MAXIMUM LENGTH: 120 words** (strict limit)
+- Must reference specific jurisdiction (city/county)
+- Must include at least 2 specific details (fees, timelines, requirements)
+- Must cite official source with hyperlink
+- Must include practical guidance
+
+### Required Elements
+1. **Jurisdiction name** - Specific city or county
+2. **Permit requirement** - What work requires permits
+3. **Cost/fee** - Specific permit costs if available
+4. **Timeline** - How long permits typically take
+5. **Official source** - Link to city/county permit office
+
+---
+
+## RESEARCH INSTRUCTIONS
+
+Before writing, research from official sources:
+
+### Where to Find Permit Information
+
+**United States:**
+- City/County Building Department websites
+- [Municipal code databases](https://municode.com/)
+- State contractor licensing boards
+- Local permit office phone/contact
+
+**Search queries to use:**
+- "[City] building permit requirements"
+- "[City] [service type] permit cost"
+- "[County] building department"
+- "[City] contractor license requirements"
+
+### Data to Gather
+- [ ] What work requires a permit in this jurisdiction?
+- [ ] Permit application fees
+- [ ] Typical processing time
+- [ ] Inspection requirements
+- [ ] Homeowner vs. contractor permit rules
+- [ ] Official permit office contact/URL
+
+---
+
+## CONTENT STRUCTURE
+
+### Format Template
+```
+**[Service] Permits in [City/County]**
+
+[What requires a permit]. [Specific fee or cost]. [Timeline information]. [One practical tip or requirement]. [How you help with permits].
+
+Source: [Official City/County Department](URL)
+```
+
+### Example Output
+
+---
+
+**Plumbing Permits in Boston**
+
+Most plumbing work in Boston requires a permit from the Inspectional Services Department—including water heater replacements, new fixture installations, and any pipe modifications. Permit fees start at $75 for minor work, with typical approval in 3-5 business days. Only licensed plumbers can pull permits in Massachusetts. We handle all permit paperwork and schedule required inspections as part of our service.
+
+Source: [Boston Inspectional Services Department](https://www.boston.gov/departments/inspectional-services)
+
+---
+
+**Word Count:** 73
+
+**Data Points Used:**
+- Jurisdiction: Boston / Inspectional Services Department
+- What requires permit: water heaters, fixtures, pipe mods
+- Fee: $75 starting
+- Timeline: 3-5 business days
+- Requirement: licensed plumbers only
+
+---
+
+### Example 2 (Electrical)
+
+---
+
+**Electrical Permits in Austin, TX**
+
+Austin requires permits for most electrical work beyond simple outlet or switch replacements. The Development Services Department charges $45-$150 depending on scope, with residential permits typically processed within 2-3 days. Texas allows homeowners to pull permits for their own residence, but all work must pass inspection. We coordinate directly with Austin inspectors and include permit costs in our quotes.
+
+Source: [Austin Development Services](https://www.austintexas.gov/department/development-services)
+
+---
+
+**Word Count:** 76
+
+---
+
+### Example 3 (Roofing)
+
+---
+
+**Roofing Permits in Denver**
+
+Denver requires building permits for roof replacements and repairs exceeding $5,000 in value. Permits cost $120-$300 based on project scope, processed through Denver's Development Services. Typical turnaround is 5-7 business days, though expedited review is available. Colorado's 6% sales tax applies to materials. We pull permits before starting work and ensure your roof passes final inspection—required before permit closure.
+
+Source: [Denver Development Services](https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development)
+
+---
+
+**Word Count:** 78
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have:
+- [ ] Specific city or county name
+- [ ] Service type (plumbing, electrical, HVAC, roofing, etc.)
+- [ ] State (for licensing requirements)
+
+**If user hasn't specified, ASK:**
+- "What city or county should I research permit requirements for?"
+- "What type of work are we focusing on (plumbing, electrical, HVAC, roofing, general)?"
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] **Word count is 120 or LESS**
+- [ ] References specific city/county (not just state)
+- [ ] Includes at least one specific fee or cost
+- [ ] Includes timeline (days/weeks for approval)
+- [ ] **SOURCES ARE INCLUDED WITH URLs** (mandatory - see below)
+- [ ] Mentions how YOUR business helps with permits
+- [ ] Data is current (verify source is up to date)
+- [ ] Could NOT be used for a different jurisdiction
+
+---
+
+## SOURCE CITATIONS (MANDATORY)
+
+**You MUST include source URLs with every permits & codes section.**
+
+This is critical for:
+1. **E-E-A-T signals** - Citing official government sources builds trust
+2. **Backlink opportunities** - Links to .gov sites add authority
+3. **Verifiability** - Permit requirements can be confirmed
+4. **Legal protection** - Sourced regulatory info is defensible
+
+### Required Format:
+```
+**Source:** [City/County Department Name](URL)
+```
+
+### Example:
+```
+**Source:** [Boston Inspectional Services Department](https://www.boston.gov/departments/inspectional-services)
+```
+
+**Only use official sources:**
+- City/County building department websites (.gov)
+- State contractor licensing boards
+- Official municipal code databases
+
+**If you cannot find official source:** Tell the user "I couldn't find the official permit information for [city]. Please verify with [suggested department] or I'll mark it as [NEEDS VERIFICATION]."
+
+---
+
+## WHAT TO AVOID
+
+**Generic statements (NEVER USE):**
+- "Most cities require permits" → Name the specific city
+- "Permit fees vary" → Give specific fee or range
+- "Check with your local building department" → Provide the actual link
+
+**Outdated information:**
+- Always verify fees/requirements are current
+- Note if recent changes occurred
+
+**Missing official sources:**
+- NEVER cite unofficial sources for permit info
+- Always link to city/county government websites
+
+---
+
+## PERMIT TOPICS BY TRADE
+
+### Plumbing
+- Water heater installation/replacement
+- New fixture installations
+- Pipe repairs/replacements
+- Sewer line work
+- Gas line work
+
+### Electrical
+- Panel upgrades
+- New circuit installations
+- Rewiring projects
+- Generator installations
+- EV charger installations
+
+### HVAC
+- New system installations
+- System replacements
+- Ductwork modifications
+- Gas furnace installations
+
+### Roofing
+- Full roof replacements
+- Structural repairs
+- Solar panel installations
+- Skylight installations
+
+### General Construction
+- Room additions
+- Structural modifications
+- Deck/patio construction
+- Bathroom/kitchen remodels
+
+---
+
+## ADDITIONAL VALUE-ADD
+
+Consider including:
+- **Inspection process** - What inspectors look for
+- **Common failures** - Why permits get rejected
+- **Homeowner tips** - What to ask contractors about permits
+- **Red flags** - Contractors who avoid permits
+

@@ -1,0 +1,295 @@
+# PROMPT 11: LOCAL PROPERTY MARKET DATA SECTION
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Property market data
+- Local market trends
+- Area property values
+- Real estate statistics
+- Market snapshot
+- Investment area overview
+- Property price history
+- Neighborhood market data
+
+**Best for:** Property investors, real estate agents, mortgage brokers, refinancing specialists, property managers, home builders, renovation contractors.
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+AI systems frequently answer location-based investment queries like:
+- "Is [area] a good place to invest in property?"
+- "What are property prices like in [neighborhood]?"
+- "How has [area] property market performed?"
+- "[Area] real estate market trends"
+
+A data-driven market snapshot:
+1. **Provides citable facts** - Specific numbers AI can reference in answers
+2. **Creates unique content** - Every location has different data
+3. **Builds E-E-A-T** - Shows expertise through market knowledge
+4. **Attracts backlinks** - Data-rich content gets cited by others
+5. **Answers high-intent queries** - Investment decisions require local data
+
+---
+
+## PROPERTY MARKET DATA REQUIREMENTS
+
+### Format Specifications
+- **MAXIMUM LENGTH: 100 words** (strict limit)
+- Must include 3-5 specific data points with numbers
+- Must cite sources with hyperlinks
+- Must cover 10-year trend (or longest available)
+- Must be specific to the EXACT location (suburb/neighborhood level)
+
+### Required Data Points (include at least 3)
+1. **Median property price** (current)
+2. **Price change** (10-year % increase/decrease)
+3. **Average annual growth rate**
+4. **Rental yield** (if relevant to audience)
+5. **Days on market** (average)
+6. **Auction clearance rate** (if applicable)
+7. **Population growth** (if relevant)
+
+### Required Elements
+1. **Location name** - Specific suburb/neighborhood
+2. **Current median price** - With property type (house/unit)
+3. **Historical comparison** - 10-year or 5-year change
+4. **Growth indicator** - Annual % or total %
+5. **Source citation** - Hyperlinked to authoritative source
+
+---
+
+## RESEARCH INSTRUCTIONS
+
+Before writing, research the following from authoritative sources:
+
+### Recommended Data Sources (by country)
+
+**Australia:**
+- [CoreLogic](https://www.corelogic.com.au/) - Median prices, growth rates
+- [Domain](https://www.domain.com.au/research/) - Suburb profiles
+- [REA Group/realestate.com.au](https://www.realestate.com.au/neighbourhoods/) - Market data
+- [ABS](https://www.abs.gov.au/) - Population, economic data
+
+**United States:**
+- [Zillow Research](https://www.zillow.com/research/) - Home values, trends
+- [Redfin Data Center](https://www.redfin.com/news/data-center/) - Market statistics
+- [Realtor.com](https://www.realtor.com/research/) - Local market data
+- [Federal Reserve Economic Data](https://fred.stlouisfed.org/) - Housing indices
+
+**United Kingdom:**
+- [HM Land Registry](https://www.gov.uk/government/organisations/land-registry) - Price paid data
+- [Rightmove](https://www.rightmove.co.uk/house-prices.html) - House price index
+- [Zoopla](https://www.zoopla.co.uk/house-prices/) - Area guides
+- [ONS](https://www.ons.gov.uk/) - Official statistics
+
+**General/International:**
+- [Numbeo](https://www.numbeo.com/) - Cost of living, property prices
+- Local government statistics portals
+- Central bank housing data
+
+### Research Checklist
+- [ ] Find current median house price for exact suburb/neighborhood
+- [ ] Find price from 10 years ago (or earliest available)
+- [ ] Calculate percentage change
+- [ ] Note any significant trends or events
+- [ ] Verify data is from last 12 months
+- [ ] Confirm source is authoritative
+
+---
+
+## CONTENT STRUCTURE
+
+### Format Template
+```
+**[Location] Property Market Snapshot**
+
+[Opening sentence with current median price and property type]. [10-year growth statistic with percentage]. [One additional relevant metric]. [Brief context or trend note].
+
+Sources: [Hyperlinked source name]
+```
+
+### Example Output
+
+---
+
+**Back Bay, Boston Property Market Snapshot**
+
+Back Bay's median home price currently sits at $1.85M, reflecting a 67% increase over the past decade. Annual appreciation has averaged 5.3% since 2014, outpacing Greater Boston's 4.1% average. The neighborhood's historic brownstones and proximity to downtown continue driving demand, with properties averaging just 21 days on market.
+
+Sources: [Zillow Research](https://www.zillow.com/research/), [Redfin Data Center](https://www.redfin.com/news/data-center/)
+
+---
+
+**Word Count:** 62
+
+**Data Points Used:**
+- Current median: $1.85M
+- 10-year growth: 67%
+- Annual appreciation: 5.3%
+- Comparison benchmark: Greater Boston 4.1%
+- Days on market: 21
+
+---
+
+### Example 2 (Australian Market)
+
+---
+
+**Paddington, Brisbane Property Market Snapshot**
+
+Paddington's median house price has reached $1.42M, up 89% from $752K a decade ago. The inner-city suburb has delivered 6.6% average annual growth, with particularly strong gains post-2020. Rental yields sit at 3.2%, while the average days on market of 28 reflects continued buyer competition for the area's character Queenslanders.
+
+Sources: [CoreLogic](https://www.corelogic.com.au/), [Domain Research](https://www.domain.com.au/research/)
+
+---
+
+**Word Count:** 68
+
+---
+
+### Example 3 (UK Market)
+
+---
+
+**Clapham, London Property Market Snapshot**
+
+Clapham's average property price stands at £725,000, representing a 58% increase over ten years. Despite recent market cooling, the SW4 postcode has maintained 4.7% annual growth since 2014. First-time buyer activity remains strong in the flat market, where average prices of £485,000 offer relative affordability for Zone 2 London.
+
+Sources: [HM Land Registry](https://www.gov.uk/government/organisations/land-registry), [Rightmove](https://www.rightmove.co.uk/house-prices.html)
+
+---
+
+**Word Count:** 64
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have:
+- [ ] Exact suburb/neighborhood name
+- [ ] Property type focus (houses, units, or both)
+- [ ] Target audience (investors, buyers, refinancers)
+- [ ] Country/region (to select appropriate sources)
+
+**If user hasn't specified location details, ASK:**
+- "What specific suburb or neighborhood should I research?"
+- "Are you focusing on houses, apartments/units, or the overall market?"
+- "Is your audience primarily investors, home buyers, or refinancing clients?"
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] **Word count is 100 or LESS** (strict limit)
+- [ ] Includes at least 3 specific numbers/statistics
+- [ ] Data is suburb/neighborhood-specific (not city-wide)
+- [ ] 10-year (or longest available) trend is included
+- [ ] **SOURCES ARE INCLUDED WITH URLs** (mandatory - see below)
+- [ ] Sources are authoritative (government, major portals, research firms)
+- [ ] Data is recent (within last 12 months)
+- [ ] Content could NOT be used for a different location
+
+---
+
+## SOURCE CITATIONS (MANDATORY)
+
+**You MUST include source URLs with every property market data section.**
+
+This is critical for:
+1. **E-E-A-T signals** - Citing authoritative sources builds trust with AI systems
+2. **Backlink opportunities** - User can link to sources for additional SEO value
+3. **Verifiability** - Claims can be fact-checked
+4. **Legal protection** - Sourced financial data is defensible
+
+### Required Format:
+```
+**Sources:**
+- [Source Name](URL) - What data came from here
+- [Source Name](URL) - What data came from here
+```
+
+### Example:
+```
+**Sources:**
+- [CoreLogic](https://www.corelogic.com.au/) - Median prices, annual growth rates
+- [Domain Research](https://www.domain.com.au/research/) - Days on market, suburb profile
+```
+
+**If you cannot find reliable sourced data:** Tell the user "I couldn't find verifiable data for [specific metric]. Please provide this or I'll mark it as [NEEDS SOURCE]."
+
+---
+
+## WHAT TO AVOID
+
+**Generic statements (NEVER USE):**
+- "Property prices have increased significantly" → Use exact %
+- "The market has performed well" → Use specific growth rate
+- "A popular area for investors" → Use rental yield or growth data
+
+**Unreliable sources (AVOID):**
+- Wikipedia
+- Generic news articles without data
+- Outdated reports (>12 months old)
+- Non-authoritative blogs
+
+**City-level data (AVOID):**
+- "Sydney median price" → Use "Paddington, Sydney median price"
+- "Boston housing market" → Use "Back Bay, Boston median price"
+
+---
+
+## SOURCE CITATION FORMAT
+
+Always hyperlink sources using markdown:
+
+```
+Sources: [Source Name](URL)
+```
+
+**Multiple sources:**
+```
+Sources: [Source 1](URL1), [Source 2](URL2)
+```
+
+**Example:**
+```
+Sources: [CoreLogic](https://www.corelogic.com.au/), [Domain Research](https://www.domain.com.au/research/)
+```
+
+---
+
+## INDUSTRY-SPECIFIC ANGLES
+
+### For Property Investors
+Focus on: Growth rates, rental yields, vacancy rates, capital growth vs. income
+
+### For Real Estate Agents
+Focus on: Days on market, clearance rates, buyer demand, price comparisons to nearby areas
+
+### For Mortgage Brokers/Refinancing
+Focus on: Equity growth (10-year increase), median prices, affordability metrics
+
+### For Property Managers
+Focus on: Rental yields, vacancy rates, median rent, rental growth
+
+### For Builders/Renovators
+Focus on: Price per sqm, renovation uplift potential, land values
+
+---
+
+## FRESHNESS REQUIREMENT
+
+Property data changes frequently. When generating this section:
+
+1. **Acknowledge data date** - "As of [Month Year]" if relevant
+2. **Use recent sources** - Data should be within 12 months
+3. **Note significant changes** - If market has shifted recently, mention it
+
+**Example freshness note:**
+"As of late 2024, Paddington's median has risen 12% year-on-year..."
+

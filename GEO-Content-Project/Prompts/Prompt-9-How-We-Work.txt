@@ -1,0 +1,177 @@
+# PROMPT 9: HOW WE WORK / PROCESS SECTION
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- How we work
+- Our process
+- What to expect
+- How it works
+- Step-by-step process
+- Service process
+- How we do it
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+AI systems frequently answer process-related queries like:
+- "What happens when I call a plumber?"
+- "How does [service] work?"
+- "What should I expect from [service] in [area]?"
+
+A well-structured process section:
+1. **Answers procedural queries** - Directly matches how people ask AI about services
+2. **Differentiates from competitors** - Your specific process can't be templated
+3. **Builds E-E-A-T** - Demonstrates expertise through methodology
+4. **Creates unique content** - Adds 150-200 words impossible to duplicate
+
+---
+
+## PROCESS SECTION REQUIREMENTS
+
+### Format Specifications
+- **Length:** 150-200 words
+- **Structure:** 4-6 numbered steps
+- **Each step:** 25-40 words with local context
+
+### Required Elements Per Step
+1. **Action** - What happens
+2. **Who** - Named person or role
+3. **Timeline** - How long / how fast
+4. **Local context** - Area-specific detail
+
+### Required Steps to Cover
+1. **Initial Contact** - Who answers, what they ask
+2. **Dispatch/Scheduling** - Response time to specific areas
+3. **Assessment/Diagnosis** - How you evaluate (specific to local conditions)
+4. **Pricing/Approval** - Transparency, no surprises
+5. **Service Delivery** - Methods used, adapted for local factors
+6. **Follow-up** - Warranty, guarantee, ongoing support
+
+---
+
+## CONTENT STRUCTURE
+
+### Step Format
+```
+**Step [#]: [Action Name]**
+[Who does it] + [What happens] + [Timeline] + [Local context or differentiator].
+```
+
+### Example Output
+
+---
+
+**HOW WE WORK: Plumbing Service in Back Bay**
+
+**Step 1: You Call, We Answer**
+When you call (617) 555-0123, you'll speak directly with our dispatch team—not a call center. We'll ask about your issue, your building type (brownstone, condo, etc.), and schedule based on urgency. Emergency? We dispatch immediately.
+
+**Step 2: Fast Local Response**
+Your technician—usually Mike Torres for Back Bay calls—arrives within 45 minutes. Living in Somerville, Mike knows the fastest routes to Commonwealth Ave, Beacon Hill, and South End, even during Red Sox traffic.
+
+**Step 3: Honest Diagnosis**
+Before touching a wrench, we inspect the full system. In Back Bay brownstones, that means checking the original copper lines, galvanized transitions, and cast iron stacks that trip up less experienced plumbers. We explain what we find in plain English.
+
+**Step 4: Upfront Pricing**
+You get a written quote before any work begins. No hourly surprises—just a flat rate for the job. Most Back Bay repairs run $150-$450. You approve it or we leave, no charge for the diagnosis.
+
+**Step 5: Expert Repair**
+We use low-impact techniques suited to historic homes. No unnecessary demolition, no forcing modern solutions onto century-old systems. Average repair time: 2-3 hours.
+
+**Step 6: Guaranteed Results**
+Every repair includes a 1-year warranty. We photograph our work, email you a summary, and follow up in 48 hours to make sure everything's running smoothly.
+
+---
+
+**Word Count:** 198
+
+**Local Signals Used:**
+- Named technician (Mike Torres)
+- Specific neighborhoods (Back Bay, Beacon Hill, South End, Commonwealth Ave)
+- Local building types (brownstones, historic homes)
+- Local infrastructure (copper lines, galvanized transitions, cast iron stacks)
+- Local reference (Red Sox traffic)
+- Specific response time (45 minutes)
+- Specific pricing ($150-$450)
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have from Business-Information.txt:
+- [ ] Phone number
+- [ ] Who answers calls (person/team name)
+- [ ] Response time guarantee
+- [ ] Primary technician name for this area
+- [ ] Where technician lives (for local credibility)
+- [ ] Specific neighborhoods covered
+- [ ] Local building types served
+- [ ] Diagnostic approach
+- [ ] Pricing structure (flat rate vs hourly)
+- [ ] Typical price range
+- [ ] Average job duration
+- [ ] Warranty/guarantee terms
+- [ ] Follow-up process
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] Has 4-6 clear steps
+- [ ] Each step names WHO does it
+- [ ] Each step includes timeline or duration
+- [ ] At least 3 steps have local context
+- [ ] Includes specific pricing or price range
+- [ ] Names at least one team member
+- [ ] References local building types or conditions
+- [ ] Could NOT be used for a different location
+- [ ] Length is 150-200 words
+- [ ] Ends with guarantee/follow-up (trust signal)
+
+---
+
+## WHAT TO AVOID
+
+**Generic Process Steps:**
+- "We provide excellent service" → Show HOW with specifics
+- "Our team responds quickly" → "Mike arrives within 45 minutes"
+- "We diagnose the problem" → "We inspect brownstone copper lines and cast iron stacks"
+
+**Missing Local Context:**
+Every step should have SOMETHING location-specific:
+- Response times to specific neighborhoods
+- Building types common in that area
+- Local challenges addressed
+- Named team members who serve that area
+
+**No Numbers:**
+Each process section needs specific metrics:
+- Response time in minutes
+- Price range in dollars
+- Job duration
+- Warranty period
+
+---
+
+## PROCESS VARIATIONS BY INDUSTRY
+
+Adapt the 6-step structure to fit different service types:
+
+### Home Services (Plumbing, HVAC, Electrical)
+Call → Dispatch → Diagnose → Quote → Repair → Guarantee
+
+### Professional Services (Legal, Accounting)
+Consultation → Assessment → Proposal → Engagement → Delivery → Review
+
+### Health/Wellness (Dental, Chiro, Med Spa)
+Book → Intake → Exam → Treatment Plan → Procedure → Follow-up
+
+### Contractors (Roofing, Remodeling)
+Inquiry → Site Visit → Estimate → Contract → Build → Walkthrough
+
+The structure adapts, but the requirements stay the same: WHO, WHAT, WHEN, and LOCAL CONTEXT in every step.

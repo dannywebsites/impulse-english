@@ -1,0 +1,52 @@
+# Handoff — 2026-08-07T17-39-02
+goal: "Merge the best of exa-seo-writer into seo-blog-writer, promote the merged writer (C), and prove it beats the alternatives on real articles"
+now: "Final 3-way test part-done. C's aesthetic-doctor article written and passing; 4 of 6 articles still unwritten"
+
+done_this_session:
+  - "Fixed inverted Spanish check in validate.js (fired on 23/33 runs, wrong every time) — two-tier errors/warnings, assemble now blocks"
+  - "Filled empty voiceSample in impulse-english brand from verbatim shipped sobre-nosotros copy"
+  - "30 evidence-backed blog briefs for primaria/ESO parents: GEO-Content-Project/primaria-eso-blog-briefs.md"
+  - "Built source persistence, readability (FK + Fernandez-Huerta), attribution triage, YMYL mode, authority pass"
+  - "Ran 2 bake-offs: PRP (2 writers) and 6-article (3 writers x 2 niches). Two published artifacts"
+  - "Closed both gaps B won: citations 2 -> 4-6, reading grade 8.83 -> 5.83 (B was 6.6)"
+
+blockers: []
+
+decisions:
+  - "Writer C ships; A and B kept as CONTROLS. Baseline frozen at tag blogwriter-premerge in ~/.claude/skills"
+  - "Citability is a WHITELIST (authorities only). Competitors are readable, never linkable — SEO book: 'never competitors'"
+  - "No clinical sign-off gate — Danny's call, articles go to client or we publish"
+  - "Readability fixed by TELLING the writer targets in write-context, not by tightening the gate. That was the whole gap"
+  - "Lexical attribution cannot verify meaning; links make it deterministic instead"
+
+findings:
+  - "Exa found the real Madrid Cambridge calendar (49 rows, dates+prices) that DataForSEO+Firecrawl missed entirely"
+  - "Gemini brief invents figures: 3 wrong exam prices, and a 45-60min duration contradicting the client's own 30-45"
+  - "C's geo-locked research returns local COMPETITORS — only 2 of 5 sources citable. Authority pass fixes it (4-6)"
+  - "Parallel research runs rate-limit Firecrawl and silently fall back to capped Apify. Keep research SEQUENTIAL"
+  - "verify_claims passed an article containing 2 false attributions to real hospitals — it only reads bare numbers"
+
+next:
+  - "Write remaining 4 articles: C-Spanish (run exists, msj62sa2), B-Spanish, A x2 for the ask-your-doctor + hates-English topics"
+  - "Publish the 3-way comparison artifact with pros/cons per writer"
+  - "Decide readability-vs-length trade-off: C hit grade 5.83 but 1043 words vs 1200 floor"
+  - "Build the brief gate — figures need sources, brand facts outrank research. Origin of all 7 fabrications"
+  - "Re-check the other 29 briefs against SITE PAGES, not just blog posts (missed /examenes-cambridge/fechas-precios/)"
+
+files:
+  modified:
+    - "~/.claude/skills/seo-blog-writer/scripts/lib/{validate,sources,readability,attribution,ymyl,authorities,exa,brand,research}.js"
+    - "~/.claude/skills/seo-blog-writer/scripts/{prewrite,assemble}.js"
+    - "~/.claude/skills/seo-blog-writer/brands/{impulse-english,la-vida-medical,academia-las-tablas}.brand.json"
+    - "~/.claude/skills/seo-blog-writer/references/writer-guide.md"
+    - ".claude/skills/exa-seo-writer/{requirements.txt,SKILL.md,INSTALL.md,.gitignore} (on branch seo/extranjero-hub)"
+    - "GEO-Content-Project/primaria-eso-blog-briefs.md (untracked)"
+    - "seo references and book/SEO-Decisions-Log.md (uncommitted)"
+  read:
+    - "March-Impulse-Web-*/dist/ (sobre-nosotros, examenes-cambridge/fechas-precios)"
+    - "seo references and book/SEO-Master-Class-Reference.md"
+
+errors:
+  - "seo references and book/SEO-Decisions-Log 2.md — Desktop-sync duplicate, delete before it overwrites the real log"
+
+git_branch: "feat/blog-extranjero-hub"

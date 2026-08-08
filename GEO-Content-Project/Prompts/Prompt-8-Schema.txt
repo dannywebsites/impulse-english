@@ -1,0 +1,390 @@
+# PROMPT 8: SCHEMA MARKUP GENERATOR
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Schema markup
+- Structured data
+- JSON-LD
+- Rich snippets code
+- Schema.org markup
+- LocalBusiness schema
+- FAQ schema
+- Service schema
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+Schema markup is the translation layer between your website and AI systems.
+
+**Research findings:**
+- GPT-4 accuracy improves from 16% to 54% with structured data
+- LLMs grounded in knowledge graphs achieve 300% higher accuracy
+- Pages with schema are 36% more likely to appear in AI summaries
+- Microsoft confirmed at SMX Munich 2025: "Schema helps LLMs understand content"
+
+**Critical point:** Each location page needs UNIQUE schema markup. Copy-pasting schema with only the address changed signals duplicate content.
+
+---
+
+## REQUIRED SCHEMA TYPES
+
+Every service/location page should include these four schema types:
+
+### 1. LocalBusiness (or specific subtype)
+Tells AI: "This is a real business in a specific location"
+- Use specific type when applicable (Plumber, Electrician, Dentist, etc.)
+- Must include geo coordinates
+- Must include areaServed
+
+### 2. Service
+Tells AI: "This is the specific service offered"
+- Links to the LocalBusiness
+- Includes pricing information
+- Describes what the service includes
+
+### 3. FAQPage
+Tells AI: "Here are questions this page answers"
+- Highest citation probability of all schema types
+- Must match visible FAQ content on page
+- Each Q&A should be location-specific
+
+### 4. AggregateRating
+Tells AI: "This business has verified social proof"
+- Include review count
+- Include rating value
+- Link to review source
+
+---
+
+## SCHEMA SPECIFICATIONS
+
+### LocalBusiness Schema
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "[Specific Business Type]",
+  "@id": "[Page URL]#business",
+  "name": "[Business Name - Location]",
+  "image": "[Image URL]",
+  "url": "[Page URL]",
+  "telephone": "[Phone]",
+  "priceRange": "[$ to $$$$]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[Street Address]",
+    "addressLocality": "[City]",
+    "addressRegion": "[State]",
+    "postalCode": "[ZIP]",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": [Latitude],
+    "longitude": [Longitude]
+  },
+  "areaServed": [
+    {"@type": "Neighborhood", "name": "[Neighborhood 1]"},
+    {"@type": "Neighborhood", "name": "[Neighborhood 2]"},
+    {"@type": "Neighborhood", "name": "[Neighborhood 3]"}
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "[Open Time]",
+    "closes": "[Close Time]"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "[Rating]",
+    "reviewCount": "[Review Count]",
+    "bestRating": "5"
+  },
+  "sameAs": [
+    "[Yelp URL]",
+    "[Facebook URL]",
+    "[LinkedIn URL]"
+  ]
+}
+```
+
+### Service Schema
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "[Page URL]#service",
+  "name": "[Service Name] in [Location]",
+  "description": "[Service description - 1-2 sentences]",
+  "provider": {
+    "@id": "[Page URL]#business"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "[City, State]"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "[Starting Price]",
+    "priceCurrency": "USD",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "[Starting Price]",
+      "priceCurrency": "USD",
+      "minPrice": "[Min Price]",
+      "maxPrice": "[Max Price]"
+    }
+  }
+}
+```
+
+### FAQPage Schema
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "[Question 1]",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Answer 1]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "[Question 2]",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Answer 2]"
+      }
+    }
+  ]
+}
+```
+
+---
+
+## OUTPUT FORMAT
+
+Generate complete, valid JSON-LD ready to paste into the <head> section:
+
+### Example Output:
+
+```html
+<!-- LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "@id": "https://abcplumbing.com/boston-back-bay/#business",
+  "name": "ABC Plumbing - Back Bay Boston",
+  "image": "https://abcplumbing.com/images/back-bay-team.jpg",
+  "url": "https://abcplumbing.com/boston-back-bay/",
+  "telephone": "+1-617-555-0123",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "234 Newbury Street",
+    "addressLocality": "Boston",
+    "addressRegion": "MA",
+    "postalCode": "02116",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.3505,
+    "longitude": -71.0789
+  },
+  "areaServed": [
+    {"@type": "Neighborhood", "name": "Back Bay"},
+    {"@type": "Neighborhood", "name": "Beacon Hill"},
+    {"@type": "Neighborhood", "name": "South End"}
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5"
+  },
+  "sameAs": [
+    "https://www.yelp.com/biz/abc-plumbing-boston-back-bay",
+    "https://www.facebook.com/abcplumbingboston"
+  ]
+}
+</script>
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://abcplumbing.com/boston-back-bay/#service",
+  "name": "Emergency Plumbing Services in Back Bay Boston",
+  "description": "24/7 emergency plumbing for Back Bay brownstones. Specializing in historic copper and galvanized pipe systems. 45-minute response guaranteed.",
+  "provider": {
+    "@id": "https://abcplumbing.com/boston-back-bay/#business"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Boston, MA"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "89",
+    "priceCurrency": "USD",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "89",
+      "priceCurrency": "USD",
+      "minPrice": "89",
+      "maxPrice": "450"
+    }
+  }
+}
+</script>
+
+<!-- FAQPage Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a plumber cost in Back Bay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Emergency plumbing service in Back Bay starts at $89 for the service call, with most repairs ranging from $150-$450 depending on complexity. We provide upfront pricing before any work begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you respond to a plumbing emergency in Back Bay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We guarantee 45-minute response times to Back Bay emergencies, 24 hours a day. Our lead technician Mike Torres is based in Somerville and knows the fastest routes through Boston."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work on older brownstone plumbing without damaging the historic pipes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely—it's our specialty. Back Bay brownstones built between 1860-1900 have unique copper and galvanized systems that require a different approach. Mike Torres is certified in historic building systems."
+      }
+    }
+  ]
+}
+</script>
+```
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have from Business-Information.txt:
+
+### For LocalBusiness:
+- [ ] Business name
+- [ ] Business type (for schema @type)
+- [ ] Street address
+- [ ] City, State, ZIP
+- [ ] Phone number
+- [ ] Website URL
+- [ ] Page URL (this specific page)
+- [ ] Latitude and longitude
+- [ ] Neighborhoods served (for areaServed)
+- [ ] Hours of operation
+- [ ] Price range ($, $$, $$$, $$$$)
+- [ ] Rating and review count
+- [ ] Social profile URLs
+
+### For Service:
+- [ ] Service name
+- [ ] Service description
+- [ ] Starting price
+- [ ] Price range (min/max)
+
+### For FAQPage:
+- [ ] At least 3 FAQ questions
+- [ ] Answers for each (matching visible page content)
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] JSON syntax is valid (no trailing commas, proper quotes)
+- [ ] @id values are unique and use the page URL
+- [ ] Phone number is in international format (+1-XXX-XXX-XXXX)
+- [ ] Geo coordinates are accurate for this location
+- [ ] areaServed lists specific neighborhoods (not just city)
+- [ ] FAQ questions match the visible content on the page
+- [ ] All required fields are populated
+- [ ] Price values are numbers (not strings with $)
+
+---
+
+## WHAT MUST BE UNIQUE PER LOCATION
+
+When creating schema for multiple location pages, these fields MUST be different:
+
+- [ ] @id (include page URL)
+- [ ] name (include location)
+- [ ] url (page-specific URL)
+- [ ] telephone (if different per location)
+- [ ] address (completely different)
+- [ ] geo coordinates (different lat/long)
+- [ ] areaServed (different neighborhoods)
+- [ ] aggregateRating (if tracked per location)
+- [ ] FAQ questions and answers (location-specific)
+
+---
+
+## VALIDATION
+
+Always validate schema before publishing:
+
+**Google Rich Results Test:**
+https://search.google.com/test/rich-results
+
+**Schema.org Validator:**
+https://validator.schema.org/
+
+---
+
+## COMMON MISTAKES
+
+**Invalid JSON:**
+- Trailing commas after last item in arrays
+- Missing quotes around string values
+- Using single quotes instead of double quotes
+
+**Missing Required Fields:**
+- LocalBusiness without address
+- Service without provider link
+- FAQPage with empty answers
+
+**Copy-Paste Errors:**
+- Same @id across multiple pages
+- Same geo coordinates for different locations
+- Generic FAQ answers that don't match page content
+
+**Incorrect Data Types:**
+- Price as "$89" instead of "89"
+- Rating as string instead of number
+- Coordinates as strings instead of numbers

@@ -1,0 +1,176 @@
+# PROMPT 5: TESTIMONIAL ENHANCEMENT
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Testimonial
+- Review enhancement
+- Customer quote
+- Social proof
+- Client feedback
+- Review rewrite
+- Testimonial improvement
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+Generic testimonials are duplicate content signals. When AI sees "John D. - Great service!" on multiple pages, it adds zero unique value.
+
+**AI systems analyze testimonials for:**
+1. Authenticity signals (full names, specific locations)
+2. Specific details (problems solved, results achieved)
+3. Local relevance (was this customer in THIS area?)
+4. Verifiable information (can this be fact-checked?)
+
+**The transformation goal:**
+Turn "Great service, highly recommend!" into location-specific social proof that AI recognizes as unique, authentic content.
+
+---
+
+## TESTIMONIAL REQUIREMENTS
+
+### Format Specifications
+- **Length:** 75-100 words
+- **Must include:** Full name, specific location, specific problem, specific result
+- **Attribution format:** "— Full Name, Street/Neighborhood, Area"
+
+### Required Elements
+1. **Full customer name** (with permission) - NOT "John D."
+2. **Specific location** (neighborhood, street, building type)
+3. **Specific problem** they had (in local context)
+4. **Specific solution** provided (what you did)
+5. **Specific result** (numbers when possible - money saved, time, etc.)
+6. **Service provider name** (mention technician/team member)
+7. **Timeframe** (when this happened, how quickly resolved)
+
+---
+
+## ENHANCEMENT APPROACH
+
+### If Working with Existing Review:
+Preserve the customer's authentic voice and words. ADD specificity, don't rewrite their sentiment.
+
+**Original:**
+"Great service! John was professional and fixed our problem quickly. Highly recommend!"
+
+**Enhanced:**
+"When our Back Bay brownstone's pipes burst during the February cold snap, we panicked. Mike from ABC Plumbing arrived in 30 minutes—on a Sunday morning. He immediately identified the issue with our 1890s copper piping and had us back up and running by noon. The other quote we got was $2,000 more. Can't recommend them enough!"
+— Sarah Mitchell, Marlborough Street, Back Bay
+
+### If Creating New Testimonial:
+Use details from Business-Information.txt about real customers and projects. Mark any details that need customer verification.
+
+---
+
+## OUTPUT FORMAT
+
+Generate the enhanced testimonial with annotations:
+
+### Example Output:
+
+---
+
+**ENHANCED TESTIMONIAL**
+
+"When our Back Bay brownstone's pipes burst during the February cold snap, we panicked. Mike from ABC Plumbing arrived in 30 minutes—on a Sunday morning. He immediately identified the issue with our 1890s copper piping and had us back up and running by noon. The other quote we got was $2,000 more. Can't recommend them enough!"
+
+— Sarah Mitchell, Marlborough Street, Back Bay
+
+---
+
+**Elements Included:**
+- ✓ Full name: Sarah Mitchell
+- ✓ Specific location: Marlborough Street, Back Bay
+- ✓ Building type: Brownstone
+- ✓ Specific problem: Pipes burst during February cold snap
+- ✓ Local context: 1890s copper piping
+- ✓ Response detail: 30 minutes, Sunday morning
+- ✓ Service provider name: Mike
+- ✓ Specific result: Fixed by noon
+- ✓ Comparative value: $2,000 savings vs. competitor
+
+**Word Count:** 73
+
+**Authenticity Notes:**
+- Maintains conversational tone
+- Includes emotional context ("we panicked")
+- Specific enough to be verifiable
+- Local details impossible to fake
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have from Business-Information.txt:
+- [ ] Customer full name (with permission to use)
+- [ ] Customer location (neighborhood/street)
+- [ ] Date of service
+- [ ] Service provided
+- [ ] The problem they had
+- [ ] How it was solved
+- [ ] Specific result/outcome
+- [ ] Original quote or testimonial (if available)
+- [ ] Team member who helped them
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] Uses full name (not initials)
+- [ ] Includes specific location reference (street, neighborhood, building type)
+- [ ] Describes specific problem with local context
+- [ ] Mentions service provider by name
+- [ ] Includes specific result or number
+- [ ] Sounds authentic (conversational, not marketing-speak)
+- [ ] Could NOT be used for a different location
+- [ ] Is 75-100 words
+- [ ] Would pass a "could this be verified?" test
+
+---
+
+## TESTIMONIAL PATTERNS TO USE
+
+### Pattern 1: Problem-Urgency-Resolution
+"When [specific local problem] happened at our [building type] in [neighborhood], [name] from [business] was there in [time]. [Specific action taken]. [Specific result]."
+
+### Pattern 2: Comparison-Value
+"After getting [X] quotes for [service] at our [location] home, [business] came in at [price difference]. [Name] explained [specific detail] and finished [timeframe]. Worth every penny."
+
+### Pattern 3: Long-Term Relationship
+"[Business] has handled our [building type]'s [service needs] on [street] for [X years]. [Name] knows our [specific local characteristic] and always [specific positive behavior]. [Result/recommendation]."
+
+### Pattern 4: Emergency Response
+"[Time/day] emergency at our [location] [property type]. Called [business] and [name] arrived in [time]. [Specific problem solved]. [Emotional relief + recommendation]."
+
+---
+
+## WHAT TO AVOID
+
+**Generic Attribution:**
+- "John D." → Use full name
+- "Boston customer" → Use specific neighborhood
+- "Local homeowner" → Use specific building type and street
+
+**Vague Problems:**
+- "Had a plumbing issue" → "Pipes burst during the February cold snap"
+- "Needed help fast" → "Sunday morning emergency"
+- "Old pipes" → "1890s copper piping in our brownstone"
+
+**Marketing Speak:**
+- "World-class service" → Let specific actions show quality
+- "Exceeded expectations" → Show HOW with details
+- "True professionals" → Name the specific person and action
+
+---
+
+## PERMISSION REMINDER
+
+Before publishing any testimonial:
+- Verify you have permission to use the customer's full name
+- Confirm location details are accurate
+- Ensure the customer approves the final wording
+- Consider offering to show them the enhanced version before publishing

@@ -1,0 +1,270 @@
+# PROMPT 13: LOCAL COURT & LEGAL PROCESS SECTION
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Court process information
+- Legal timeline
+- What to expect at court
+- Local legal process
+- Case duration
+- Courthouse information
+
+**Best for:** Personal injury lawyers, family law attorneys, criminal defense lawyers, estate/probate attorneys, bankruptcy lawyers, immigration attorneys.
+
+**THIS IS AN OPTIONAL INDUSTRY-SPECIFIC PROMPT** - Only use for legal services businesses.
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+AI systems frequently answer legal process questions like:
+- "How long does a [case type] take in [county]?"
+- "What happens at [county] courthouse?"
+- "[County] divorce process timeline"
+- "What to expect at [court type] in [area]"
+
+A local court/legal process section:
+1. **Answers high-anxiety queries** - People facing legal issues need reassurance
+2. **Creates jurisdiction-specific content** - Every court system is different
+3. **Builds E-E-A-T** - Demonstrates real local court experience
+4. **Differentiates from out-of-area lawyers** - Shows you know THIS courthouse
+
+---
+
+## LOCAL COURT & LEGAL PROCESS REQUIREMENTS
+
+### Format Specifications
+- **MAXIMUM LENGTH: 150 words** (strict limit)
+- Must reference specific county/court
+- Must include typical timelines
+- Must include practical "what to expect" guidance
+- Should cite official court source
+
+### Required Elements
+1. **Court/jurisdiction name** - Specific county or district court
+2. **Typical timeline** - How long cases take in this court
+3. **Process overview** - Key steps specific to this jurisdiction
+4. **Practical detail** - Parking, location, what to bring, etc.
+5. **Your experience** - How many cases you've handled here
+
+---
+
+## RESEARCH INSTRUCTIONS
+
+Before writing, research from official sources:
+
+### Where to Find Court Information
+
+**United States:**
+- State court system websites
+- County clerk of court websites
+- [USCourts.gov](https://www.uscourts.gov/) for federal courts
+- State bar association resources
+
+**Search queries to use:**
+- "[County] [court type] court"
+- "[County] court case timeline"
+- "[State] [case type] process"
+- "[County] courthouse location parking"
+
+### Data to Gather
+- [ ] Specific court name and location
+- [ ] Typical case duration for this case type
+- [ ] Key procedural steps in this jurisdiction
+- [ ] Filing fees (if relevant)
+- [ ] Practical logistics (parking, security, etc.)
+- [ ] Any local court rules or preferences
+
+---
+
+## CONTENT STRUCTURE
+
+### Format Template
+```
+**[Case Type] Process in [County/Court]**
+
+[Timeline overview]. [Key steps specific to this court]. [Practical detail about the court/process]. [Your experience in this court].
+
+[Official court website if applicable]
+```
+
+### Example Output
+
+---
+
+**Personal Injury Cases in Suffolk County, MA**
+
+Personal injury cases in Suffolk County Superior Court typically resolve in 18-24 months, though complex cases can extend longer. After filing, expect 6-8 months of discovery, followed by mandatory mediation at the courthouse on New Chardon Street. Most cases settle before trial—we've resolved 94% of our Suffolk County cases without our clients needing to testify. When trials do proceed, Judge assignments rotate, and we've appeared before every judge on the civil bench. The courthouse has limited parking; we recommend the Government Center garage.
+
+Source: [Massachusetts Trial Court](https://www.mass.gov/orgs/trial-court)
+
+---
+
+**Word Count:** 98
+
+**Data Points Used:**
+- Jurisdiction: Suffolk County Superior Court
+- Timeline: 18-24 months
+- Process: 6-8 months discovery, mandatory mediation
+- Location detail: New Chardon Street, parking recommendation
+- Experience: 94% settlement rate, appeared before every judge
+
+---
+
+### Example 2 (Family Law)
+
+---
+
+**Divorce Process in Harris County, Texas**
+
+Texas requires a 60-day waiting period before any divorce can be finalized, but contested divorces in Harris County Family Courts average 8-12 months. You'll file at the Harris County District Clerk on Congress Street, then attend a temporary orders hearing within 14 days if children or property disputes exist. Harris County mandates mediation before trial—we've mediated over 200 cases at the courthouse annex. Uncontested divorces with signed agreements can finalize at the 61-day mark. Courthouse security requires ID; leave pocket knives in your car.
+
+Source: [Harris County District Clerk](https://www.cclerk.hctx.net/)
+
+---
+
+**Word Count:** 103
+
+---
+
+### Example 3 (Criminal Defense)
+
+---
+
+**DUI Cases in Maricopa County, Arizona**
+
+First-offense DUI cases in Maricopa County typically resolve in 3-6 months. After arrest, you'll receive a court date for arraignment at one of the county's 26 justice courts or at Superior Court downtown if charged with felony DUI. Arizona's MVD will suspend your license 15 days after arrest unless we request a hearing within that window—a deadline many attorneys miss. We've handled 500+ DUI cases in Maricopa County courts and know which prosecutors are open to plea negotiations and which judges require ignition interlock devices even for first offenses.
+
+Source: [Maricopa County Superior Court](https://superiorcourt.maricopa.gov/)
+
+---
+
+**Word Count:** 107
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have:
+- [ ] Specific county or court jurisdiction
+- [ ] Practice area / case type
+- [ ] State (for state-specific rules)
+- [ ] Attorney's experience in this court (cases handled, years practicing here)
+
+**If user hasn't specified, ASK:**
+- "What county or court jurisdiction should I focus on?"
+- "What type of cases are we writing about (personal injury, family law, criminal, etc.)?"
+- "How many cases have you handled in this specific court?"
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] **Word count is 150 or LESS**
+- [ ] References specific county/court by name
+- [ ] Includes typical timeline for this case type
+- [ ] Includes at least one practical detail (parking, location, what to expect)
+- [ ] Mentions attorney's experience in this specific court
+- [ ] **SOURCES ARE INCLUDED WITH URLs** (mandatory - see below)
+- [ ] Could NOT be used for a different jurisdiction
+- [ ] Avoids making outcome promises or guarantees
+
+---
+
+## SOURCE CITATIONS (MANDATORY)
+
+**You MUST include source URLs with every legal/court process section.**
+
+This is critical for:
+1. **E-E-A-T signals** - Citing official court sources builds trust
+2. **Backlink opportunities** - Links to court websites add authority
+3. **Verifiability** - Court procedures can be confirmed
+4. **Legal/ethical protection** - Sourced legal info is defensible
+
+### Required Format:
+```
+**Source:** [Court/Agency Name](URL)
+```
+
+### Example:
+```
+**Source:** [Massachusetts Trial Court](https://www.mass.gov/orgs/trial-court)
+```
+
+**Preferred sources (in order):**
+1. State court system websites (.gov)
+2. County clerk of court websites
+3. State bar association resources
+4. Official court self-help portals
+
+**If you cannot find official source:** Tell the user "I couldn't verify current court procedures for [county]. Please confirm with the clerk's office or I'll mark it as [NEEDS VERIFICATION]."
+
+**IMPORTANT:** Never cite unofficial sources for legal procedures. Only use official court or government websites.
+
+---
+
+## WHAT TO AVOID
+
+**Legal ethics violations (NEVER):**
+- Guarantee specific outcomes
+- Promise specific timelines as certain
+- Disparage specific judges by name
+- Share confidential case details
+
+**Generic statements (NEVER USE):**
+- "Every case is different" without specific timeline ranges
+- "Courts are busy" without specific wait times
+- "We know the local courts" without proof (case count, years)
+
+**Missing jurisdiction specifics:**
+- State-level info when county-level is needed
+- Generic "courthouse" without specific location
+
+---
+
+## PRACTICE AREA VARIATIONS
+
+### Personal Injury
+Focus on: Case duration, discovery timeline, mediation requirements, trial frequency, settlement rates
+
+### Family Law
+Focus on: Waiting periods, custody evaluation process, mediation requirements, temporary orders timeline
+
+### Criminal Defense
+Focus on: Arraignment timeline, plea negotiation windows, typical sentencing ranges, diversion programs
+
+### Estate/Probate
+Focus on: Probate timeline, filing requirements, hearing schedules, executor appointment process
+
+### Bankruptcy
+Focus on: Chapter 7 vs 13 timelines, trustee meeting process, discharge timeline, local trustee preferences
+
+### Immigration
+Focus on: USCIS office processing times, interview locations, typical approval timelines, local office quirks
+
+---
+
+## LOCAL COURT DETAILS TO INCLUDE
+
+**Practical logistics:**
+- Courthouse address and parking
+- Security screening process
+- What to wear / what to bring
+- How early to arrive
+
+**Process specifics:**
+- Local rules that differ from state standard
+- Judge rotation/assignment system
+- Mediation requirements
+- E-filing requirements
+
+**Attorney experience signals:**
+- Number of cases in this court
+- Years practicing in this jurisdiction
+- Knowledge of specific judges/procedures
+- Relationships with court staff (appropriate)
+

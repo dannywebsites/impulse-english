@@ -1,0 +1,279 @@
+# PROMPT 15: SEASONAL & CLIMATE CONSIDERATIONS SECTION
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Seasonal maintenance
+- Climate considerations
+- Weather-related service info
+- Best time to service
+- Seasonal tips
+- Local weather impacts
+
+**Best for:** HVAC technicians, roofers, landscapers, pool services, pest control, gutter cleaners, foundation repair, waterproofing companies.
+
+**THIS IS AN OPTIONAL INDUSTRY-SPECIFIC PROMPT** - Only use for weather/season-dependent service businesses.
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+AI systems frequently answer seasonal service questions like:
+- "When should I service my AC in [area]?"
+- "Best time to replace roof in [region]?"
+- "[City] HVAC maintenance schedule"
+- "Does [area] weather affect [service]?"
+
+A seasonal/climate section:
+1. **Answers timing queries** - People want to know WHEN to act
+2. **Creates climate-specific content** - Phoenix ≠ Portland ≠ Miami
+3. **Builds local authority** - Shows you understand THIS area's conditions
+4. **Drives preventive bookings** - Seasonal content prompts action
+
+---
+
+## SEASONAL & CLIMATE REQUIREMENTS
+
+### Format Specifications
+- **MAXIMUM LENGTH: 120 words** (strict limit)
+- Must reference specific local climate conditions
+- Must include specific timing recommendations
+- Must include at least one local weather fact/statistic
+- Should include seasonal service recommendation
+
+### Required Elements
+1. **Local climate reference** - Specific to this area
+2. **Timing recommendation** - When to service/maintain
+3. **Weather fact** - Temperature ranges, rainfall, humidity, etc.
+4. **Local impact** - How climate affects this specific service
+5. **Your recommendation** - What you advise local customers
+
+---
+
+## RESEARCH INSTRUCTIONS
+
+Before writing, research local climate data:
+
+### Where to Find Climate Information
+
+**United States:**
+- [NOAA Climate Data](https://www.ncdc.noaa.gov/)
+- [Weather.gov](https://www.weather.gov/) - Local forecasts and normals
+- [Climate.gov](https://www.climate.gov/)
+- Local utility company seasonal tips
+
+**Search queries to use:**
+- "[City] average temperatures by month"
+- "[City] annual rainfall"
+- "[Region] climate characteristics"
+- "[City] heating degree days cooling degree days"
+
+### Data to Gather
+- [ ] Average high/low temperatures by season
+- [ ] Annual rainfall/snowfall
+- [ ] Humidity levels
+- [ ] Freeze dates (first/last frost)
+- [ ] Extreme weather frequency
+- [ ] Local climate classification
+
+---
+
+## CONTENT STRUCTURE
+
+### Format Template
+```
+**[Service] Timing for [Area] Climate**
+
+[Local climate characteristic]. [How it affects this service]. [Specific timing recommendation]. [What you recommend for local customers].
+```
+
+### Example Output
+
+---
+
+**HVAC Maintenance Timing for Phoenix**
+
+Phoenix's extreme heat—averaging 106°F in July with 100+ degree days from May through September—puts exceptional strain on air conditioning systems. We recommend AC tune-ups in March or April, before temperatures spike and every HVAC company is booked solid. Phoenix units work twice as hard as those in moderate climates, often running 3,000+ hours annually compared to 1,000 in cooler regions. Schedule your maintenance when overnight lows still drop below 70°F, and your system will be ready when triple digits arrive.
+
+---
+
+**Word Count:** 88
+
+**Data Points Used:**
+- Average July temp: 106°F
+- Hot season: May-September (100+ days)
+- Recommended timing: March-April
+- Runtime comparison: 3,000+ hours vs 1,000
+- Overnight threshold: 70°F
+
+---
+
+### Example 2 (Roofing - Pacific Northwest)
+
+---
+
+**Roof Replacement Timing for Seattle**
+
+Seattle's 152 annual rainy days make roof timing critical—summer is your only reliable window. June through September averages just 4-6 rain days monthly, compared to 18-20 November through January. Moss growth accelerates in our wet winters, so inspect and clean in early fall before moisture sets in. If your roof needs replacement, book by April for summer installation. We've replaced 400+ Seattle roofs and won't start jobs when rain is forecast—water under new shingles causes immediate failure. The dry stretch is short; plan accordingly.
+
+---
+
+**Word Count:** 93
+
+---
+
+### Example 3 (Foundation - Texas)
+
+---
+
+**Foundation Care for North Texas Clay Soil**
+
+North Texas sits on expansive clay soil that swells when wet and cracks when dry—we average just 37 inches of rain annually, with summer droughts causing the most foundation movement. August and September are peak foundation repair months, after clay contracts in summer heat. Dallas homes shift an average of 1-2 inches seasonally between wet and dry periods. We recommend foundation watering during droughts and inspections after extended dry spells. The 90-day period from July to September causes more foundation calls than the rest of the year combined.
+
+---
+
+**Word Count:** 97
+
+---
+
+### Example 4 (HVAC - Florida)
+
+---
+
+**AC Maintenance for Tampa's Humidity**
+
+Tampa's 73% average humidity means your AC does double duty—cooling AND dehumidifying year-round. Unlike northern climates with a winter break, Tampa systems run 10-11 months annually, making twice-yearly maintenance essential. Schedule tune-ups in February before our 90°F+ days arrive (typically April), and again in September after peak summer strain. Humidity above 60% accelerates mold growth in ducts and drain lines; we include antimicrobial treatment with every Tampa service call. Our busiest months are April and May—booking March guarantees same-week appointments.
+
+---
+
+**Word Count:** 90
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have:
+- [ ] City or region
+- [ ] Service type
+- [ ] Climate zone (humid subtropical, desert, continental, etc.)
+
+**If user hasn't specified, ASK:**
+- "What city or region should I focus on?"
+- "What service are we writing about (HVAC, roofing, landscaping, etc.)?"
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] **Word count is 120 or LESS**
+- [ ] References specific local climate conditions
+- [ ] Includes at least one specific weather statistic
+- [ ] Gives specific timing recommendation (months)
+- [ ] Explains WHY timing matters for this climate
+- [ ] Includes local experience signal (jobs completed, local knowledge)
+- [ ] Could NOT be used for a different climate zone
+
+---
+
+## SOURCE CITATIONS (RECOMMENDED)
+
+**For climate/weather statistics, include source URLs when citing specific data.**
+
+This applies to:
+- Temperature averages (highs, lows, seasonal)
+- Rainfall/snowfall amounts
+- Number of rain days or extreme weather days
+- Humidity percentages
+- Heating/cooling degree days
+
+### When to Cite:
+- **Specific statistics** (e.g., "106°F average in July") → Include source
+- **General knowledge** (e.g., "Phoenix summers are hot") → No source needed
+
+### Recommended Sources:
+- [NOAA Climate Data](https://www.ncdc.noaa.gov/)
+- [Weather.gov](https://www.weather.gov/)
+- [Climate.gov](https://www.climate.gov/)
+- Local utility company seasonal reports
+
+### Format:
+```
+**Climate data source:** [NOAA](https://www.ncdc.noaa.gov/)
+```
+
+**Note:** Unlike legal/financial sections, climate sources are recommended but not strictly mandatory for general seasonal advice. However, specific statistics should always be sourced.
+
+---
+
+## WHAT TO AVOID
+
+**Generic statements (NEVER USE):**
+- "Weather varies throughout the year" → Give specific temps/conditions
+- "Seasonal maintenance is important" → Say WHICH season and WHY
+- "Schedule service before the busy season" → Name the specific months
+
+**Wrong climate assumptions:**
+- Don't assume snow in warm climates
+- Don't assume AC-only focus in heating-required areas
+- Research the actual local climate
+
+---
+
+## CLIMATE ZONES & SERVICE IMPACTS
+
+### Hot & Dry (Phoenix, Las Vegas, Tucson)
+- **HVAC:** AC runs 6+ months, extreme strain, dust filtration critical
+- **Roofing:** UV damage primary concern, thermal expansion
+- **Landscaping:** Irrigation timing, drought-tolerant focus
+
+### Hot & Humid (Miami, Houston, New Orleans)
+- **HVAC:** Humidity control as important as cooling, mold risk
+- **Roofing:** Algae/mold growth, hurricane prep
+- **Pest Control:** Year-round pest activity, mosquito focus
+
+### Cold Winters (Chicago, Minneapolis, Boston)
+- **HVAC:** Heating-focused, furnace tune-ups fall priority
+- **Roofing:** Ice dam prevention, snow load considerations
+- **Plumbing:** Freeze protection, winterization
+
+### Mild/Temperate (San Francisco, Portland, Seattle)
+- **HVAC:** Moderate demand, heat pump efficiency
+- **Roofing:** Moss/moisture management, limited dry windows
+- **Landscaping:** Extended growing seasons, rain management
+
+### Four-Season (Denver, Kansas City, Philadelphia)
+- **HVAC:** Both heating and cooling critical, spring/fall tune-ups
+- **Roofing:** Weather windows matter, freeze-thaw cycles
+- **Foundation:** Freeze-thaw soil movement
+
+---
+
+## SEASONAL SERVICE CALENDAR FRAMEWORK
+
+**Spring (March-May):**
+- AC tune-ups before summer
+- Roof inspections after winter
+- Landscaping prep/planting
+- Gutter cleaning post-leaves
+
+**Summer (June-August):**
+- Peak AC repair season
+- Optimal roofing weather (most regions)
+- Irrigation system focus
+- Pool service peak
+
+**Fall (September-November):**
+- Furnace tune-ups before winter
+- Final roof repairs before rain/snow
+- Gutter cleaning before winter
+- Winterization services
+
+**Winter (December-February):**
+- Heating emergency repairs
+- Limited outdoor work
+- Planning/booking season
+- Indoor service focus
+

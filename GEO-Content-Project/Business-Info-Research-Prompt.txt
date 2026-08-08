@@ -1,0 +1,211 @@
+# BUSINESS INFORMATION RESEARCH PROMPT
+## Use This With Any AI Deep Research Tool
+
+---
+
+## WHAT THIS IS FOR
+
+Use this prompt with AI research tools (ChatGPT Deep Research, Claude, Gemini Deep Research, Perplexity, etc.) to automatically fill out your Business Information Template by analyzing your website.
+
+**Time saved:** 1-2 hours of manual data entry
+
+---
+
+## HOW TO USE
+
+1. Copy the prompt below
+2. Open your preferred AI research tool
+3. Paste the prompt
+4. Attach or upload the `Business-Information-Template.txt` file
+5. Provide your website URL
+6. Let the AI research and fill out the template
+7. Review the output and fill in any "[NO INFORMATION FOUND]" gaps manually
+
+---
+
+## THE PROMPT
+
+Copy everything below this line:
+
+---
+
+**TASK:** Research the following website and fill out the attached Business Information Template as completely as possible.
+
+**WEBSITE TO RESEARCH:** [PASTE YOUR WEBSITE URL HERE]
+
+**INSTRUCTIONS:**
+
+1. **Thoroughly analyze the website** including:
+   - Homepage
+   - About/About Us page
+   - Service pages
+   - Location/Contact pages
+   - Team/Staff pages
+   - Testimonials/Reviews pages
+   - Case studies/Portfolio
+   - FAQ page
+   - Footer information
+   - Schema markup (if visible)
+   - Google Business Profile (if linked)
+
+2. **Fill out every field in the template** with information found on the website.
+
+3. **For any field where information is NOT found**, enter exactly: `[NO INFORMATION FOUND]`
+
+4. **Do NOT invent or assume information.** Only include facts explicitly stated on the website.
+
+5. **For reviews/ratings**, check:
+   - Google Business Profile
+   - Yelp listing
+   - Any review widgets on the site
+   - Testimonial pages
+
+6. **For team members**, look for:
+   - About page bios
+   - Team page
+   - LinkedIn links
+   - Author bios on blog posts
+
+7. **For service areas**, check:
+   - Service area pages
+   - Location pages
+   - Footer service area lists
+   - Schema markup
+
+8. **For pricing**, look for:
+   - Pricing pages
+   - Service pages with rates
+   - "Starting at" mentions
+   - Promotional banners
+
+9. **Return the completed template** in the same format as the original, with all fields filled in or marked `[NO INFORMATION FOUND]`.
+
+10. **At the end, provide a summary** of:
+    - How many fields were filled vs. not found
+    - Key information gaps that should be prioritized
+    - Any additional information found that might be useful but wasn't in the template
+
+---
+
+## EXAMPLE OUTPUT FORMAT
+
+The AI should return something like:
+
+```
+# BUSINESS INFORMATION TEMPLATE
+## Completed via Website Research
+
+---
+
+# SECTION 1: BUSINESS FUNDAMENTALS
+
+## Basic Information
+- Business Name (exact legal name): ABC Plumbing LLC
+- Business Name (local/casual version, if different): ABC Plumbing
+- Website URL: https://www.abcplumbing.com
+- Primary Phone Number: (617) 555-0123
+- Email Address: info@abcplumbing.com
+- Year Business Established: 2009
+- Years Serving Current Area: 15 years
+
+## Business Type
+- Industry/Category: Home Services
+- Specific Business Type: Plumber
+- Schema.org Type: [NO INFORMATION FOUND]
+
+...
+
+---
+
+## RESEARCH SUMMARY
+
+**Fields Completed:** 67 of 95 (71%)
+**Fields Not Found:** 28 of 95 (29%)
+
+**Priority Gaps to Fill Manually:**
+1. Team member credentials and license numbers
+2. Specific testimonial details (customer names, addresses)
+3. Case study cost/outcome numbers
+4. Geo coordinates for schema
+5. Insurance coverage amounts
+
+**Additional Information Found:**
+- Business has a blog with 45+ posts (could mine for FAQ content)
+- Found 3 video testimonials on YouTube channel
+- Google Business Profile shows 4.8 stars with 234 reviews
+```
+
+---
+
+## TIPS FOR BEST RESULTS
+
+### Before Running:
+- Make sure your website is publicly accessible
+- Have any password-protected pages unlocked
+- Check that your Google Business Profile is claimed and updated
+
+### Choose the Right Tool:
+- **ChatGPT with browsing:** Good for most websites
+- **Claude:** Good for analyzing uploaded documents alongside web research
+- **Gemini Deep Research:** Good for comprehensive multi-page analysis
+- **Perplexity:** Good for finding external information (reviews, citations)
+
+### After Running:
+- Review ALL `[NO INFORMATION FOUND]` fields
+- Prioritize filling in: team credentials, testimonial details, pricing, case study numbers
+- These gaps are often the most valuable for GEO differentiation
+
+---
+
+## WHAT TO DO WITH GAPS
+
+Fields marked `[NO INFORMATION FOUND]` fall into two categories:
+
+### 1. Information Exists But Isn't on Website
+You know this information—add it manually:
+- License numbers
+- Insurance amounts
+- Team member details
+- Pricing specifics
+- Case study outcomes
+
+### 2. Information Doesn't Exist Yet
+You need to gather this:
+- Customer testimonials (ask clients)
+- Case study details (document next project)
+- Team credentials (ask staff)
+- Review counts (check platforms)
+
+**Pro tip:** The gaps the AI couldn't find are often the same gaps causing your pages to lack differentiation. Filling them improves both your website AND your GEO content.
+
+---
+
+## ALTERNATIVE: MULTI-SOURCE RESEARCH
+
+For more complete results, ask the AI to also check:
+
+```
+Also research these external sources for additional business information:
+- Google Business Profile for [Business Name]
+- Yelp listing for [Business Name]
+- LinkedIn company page for [Business Name]
+- Better Business Bureau listing
+- Industry directory listings
+- Local chamber of commerce
+- State licensing board (for license verification)
+```
+
+This can fill gaps like review counts, ratings, and credentials that may not be on your website.
+
+---
+
+## PRIVACY NOTE
+
+The AI will only access publicly available information. It cannot access:
+- Password-protected pages
+- Private customer databases
+- Internal documents
+- Analytics data
+
+All information gathered is what any visitor to your website could find.
+

@@ -1,0 +1,52 @@
+# Handoff — 2026-08-05T17-56-55
+goal: "Build a study-abroad section for Impulse, named by real search volume, as a secondary revenue line."
+now: "Pillar built and committed. Next: /irlanda/ hub + /irlanda/ano-escolar/ money page, then Malta/Canada/EEUU hubs."
+done_this_session:
+  - "NAMING SETTLED BY DATA: 'viajes linguisticos'=10/mo, 'mini estancias'=0, 'viaje de estudios'=0 — all dead. 'ano escolar'=9,900 is a CALENDAR trap."
+  - "Architecture: /ingles-en-el-extranjero/ pillar (~1,410/mo) > destination hubs. Ireland-only would have siloed Malta/Canada/USA."
+  - "SHIPPED c60b757: /ingles-en-el-extranjero/ pillar. astro check 0 errors, build 151 pages, title 50 chars, Service+FAQPage+BreadcrumbList in dist."
+  - "SHIPPED 517508c: scripts/fetch-facebook-assets.mjs + gitignore. 169 photos staged in 'new fotos/facebook-scrape/', all consentCleared:false."
+  - "SHIPPED e97e01b: fixed FALSE POSITIVE in review gate — it read 'Fitzpatrick', 'Canada', 'Sobre', 'Sigan', 'Excelente' as unapproved teacher names. Eligible 93->99, 0 lost, 0 excluded teachers leaked."
+  - "Verified partners against their own sites: ELI Schools = LT Education Abroad Ltd (605302), Dublin+Drogheda, EAQUALS. KBL Languages = Mataro Spain, ASEPROCE."
+  - "TeacherCard gained optional imageSrc (defaults to JP) so these pages front Daniel."
+blockers:
+  - "NO Ireland/Malta/Canada/USA photography exists. dnny-tour-of-ireland.jpg is a DUPLICATE of a Madrid classroom photo, not Ireland."
+  - "169 scraped FB photos are unreviewed and consent-gated (minors, GDPR). None cleared for publication."
+  - "Danny believes more trip reviews exist; the 180-review pool (pulled 2026-08-02) contains exactly 5. Either newer than Aug 2, or on Facebook not Google."
+decisions:
+  - "DANNY CORRECTED: Impulse is an academy that sends its OWN students, 14 yrs in industry, own trips + partner network. NOT 'ELI's partner school'."
+  - "Accreditation is EAQUALS, NOT ACELS — Danny said ACELS, verification showed ELI never claims it. Publishing it would have been a false claim."
+  - "Scope: 6 pages — pillar + 4 destination hubs + /irlanda/ano-escolar/. Name is 'Daniel Fitzpatrick' EVERYWHERE (task #9 aligns napData + 2 bio pages)."
+  - "Antonio Perez Blazquez review: COPY to ano-escolar, do NOT move (Danny's call, overrides the no-repeats rule)."
+  - "Monitors APPROVED 2026-08-05: 'viajan con los alumnos y estan con ellos 24/7'. Corroborated by Antonio's review."
+findings:
+  - "Malta is an ADULT/summer destination: 'curso de ingles en malta'=210 but 'ano escolar en malta'=only 10. Never frame Malta as a school-year page."
+  - "Ireland ~2,860/mo vs Malta ~610, USA ~500, Canada ~460. 'ano escolar en irlanda' 480 @ EUR13.33 is the money term; season is Sep 1,000 > Oct 880 > Nov 720."
+  - "New terms the old spec missed: 'colegios en irlanda' 170 @ competition 20, 'internado en irlanda' 170."
+  - "Danny HAS a bio and photos — the previous handoff was wrong on both. He is IRISH, 12 yrs in Madrid (NuestroEquipoPage.tsx:170-176)."
+  - "Apify = SEPARATE account dannyaiagents2@gmail.com, Starter, cap raised to $100, now at $85.66. BE CAUTIOUS. DataForSEO connected, $20.69."
+next:
+  - "Build /irlanda/ hub (~1,070/mo: curso de ingles 260, estudiar ingles 260, estudiar en 210, colegios 170, internado 170). Review: jorge vila prieto."
+  - "Build /irlanda/ano-escolar/ (480/mo). Subsets as H2: curso escolar 210, 4 ESO 110, precios 90, bachillerato 90, trimestre 70, Transition Year 50. COPY Antonio's review here."
+  - "Build Malta (adult-led), Canada (review: RAUL SAN SEGUNDO), Estados Unidos hubs."
+  - "Task #4 nav: ONE top-level 'En el extranjero' dropdown in components/Navbar.tsx after Examenes. Task #9: Danny->Daniel in napData.ts:161 + 2 bio pages."
+  - "Task #8 (independent): subscription backend for seo-writer — plan approved, see ~/.claude/plans/sequential-tumbling-dolphin.md."
+  - "NO trips ran in 2025 or 2026 — programme restarting now. The 5 trip reviews (Jul-Aug 2023/24) are ALL the proof there is. A re-pull adds general reviews only."
+  - "Danny: do NOT surface the pause on the website. Omitting is fine; NEVER write 'todos los veranos'/'cada año'/'sin interrupción' — that would be false, not discreet."
+files:
+  modified:
+    - "March-Impulse-Web-.../pages/extranjero/ExtranjeroHubPage.tsx (NEW)"
+    - "March-Impulse-Web-.../src/pages/ingles-en-el-extranjero/index.astro (NEW)"
+    - "March-Impulse-Web-.../scripts/fetch-facebook-assets.mjs (NEW)"
+    - "March-Impulse-Web-.../components/TeacherCard.tsx (imageSrc prop)"
+    - "GEO-Content-Project/reviews/build_pool.py (NOT_PEOPLE + APPROVED_TEACHERS)"
+    - "GEO-Content-Project/reviews/review-pool.json (regenerated, 99 eligible)"
+    - "~/.claude/skills/geo-pages/facts/impulse-english.facts.md (study-abroad facts + never-write list)"
+    - ".gitignore (new fotos/facebook-scrape/)"
+  read:
+    - "~/.claude/skills/geo-pages/references/gotchas.md + sites/impulse-english.site.json"
+    - "March-Impulse-Web-.../DESIGN.md + pages/ubicaciones/TetuanPage.tsx (reference impl)"
+    - "March-Impulse-Web-.../utils/schemaData.ts + napData.ts + src/layouts/BaseLayout.astro"
+    - "GEO-Content-Project/reviews/allocation.json + review-pool.json"
+errors: []
+git_branch: "seo/extranjero-hub (branched from main; 3 commits: 517508c, c60b757, e97e01b)"

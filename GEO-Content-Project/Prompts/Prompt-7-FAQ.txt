@@ -1,0 +1,213 @@
+# PROMPT 7: LOCATION-SPECIFIC FAQ GENERATOR
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- FAQs
+- Frequently asked questions
+- Q&A section
+- Common questions
+- Customer questions
+- Questions and answers
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+FAQPage schema has the HIGHEST citation probability of all schema types for AI search.
+
+**Research findings:**
+- Pages with FAQPage markup are 3.2x more likely to appear in Google AI Overviews
+- FAQ content directly matches how people query AI systems ("How much does X cost in Y?")
+- AI systems extract Q&A pairs as structured answers
+
+**The problem:** Most FAQ sections are generic and identical across location pages.
+
+**The solution:** Every FAQ must be location-specific, with questions and answers that could ONLY apply to that area.
+
+---
+
+## FAQ REQUIREMENTS
+
+### Format Specifications
+- **Number of FAQs:** 5-7 per page (optimal for schema and readability)
+- **Answer length:** 40-60 words each (answer capsule format)
+- **Question format:** Natural language, how a LOCAL person would ask
+- **Answer format:** Direct answer first, then supporting detail
+
+### Required FAQ Topics
+Generate at least one FAQ for each of these topics:
+
+1. **Pricing** - "How much does [service] cost in [area]?"
+2. **Availability/Coverage** - "Do you serve [specific neighborhood]?"
+3. **Response Time** - "How quickly can you get to [area]?"
+4. **Local Expertise** - About local building types or conditions
+5. **Emergency/Urgent** - After-hours or urgent service
+6. **Process** - What to expect when booking
+7. **Comparison** - Why choose you over competitors
+
+### Answer Requirements
+Each answer must include:
+- Direct answer in first sentence
+- At least one specific number
+- Reference to the specific area
+- Supporting detail that proves expertise
+
+---
+
+## FAQ STRUCTURE
+
+### Question Format
+Questions should sound like real people asking:
+- ✓ "How much does emergency plumbing cost in Back Bay?"
+- ✓ "Can you fix pipes in older brownstones in Beacon Hill?"
+- ✗ "What are your service offerings?" (too corporate)
+- ✗ "How do I contact you?" (not a real FAQ)
+
+### Answer Structure
+```
+[Direct answer]. [Specific detail with number]. [Local context]. [Call to action if relevant].
+```
+
+### Example:
+**Q: How quickly can a plumber get to Back Bay?**
+
+A: We guarantee 45-minute response times to Back Bay emergencies. Our technician Mike Torres is based in nearby Somerville and knows the fastest routes to Commonwealth Ave, Marlborough Street, and Beacon Hill. For non-emergencies, we offer same-day appointments—call (617) 555-0123 to schedule.
+
+---
+
+## OUTPUT FORMAT
+
+Generate 7 FAQs with questions and answers:
+
+### Example Output:
+
+---
+
+**FAQ SECTION: Plumbing Services in Back Bay, Boston**
+
+---
+
+**Q1: How much does a plumber cost in Back Bay?**
+
+A: Emergency plumbing service in Back Bay starts at $89 for the service call, with most repairs ranging from $150-$450 depending on complexity. We provide upfront pricing before any work begins—no surprises. Brownstone-specific work like historic pipe repair may be quoted separately after inspection. Call (617) 555-0123 for a free estimate.
+
+*Word count: 58*
+
+---
+
+**Q2: Do you provide plumbing services in Beacon Hill and South End too?**
+
+A: Yes, we serve the entire historic Boston core including Back Bay, Beacon Hill, South End, and Bay Village. Our team has completed over 2,000 jobs in these neighborhoods since 2009 and specializes in the brownstone and Victorian plumbing systems common to this area. Same response times apply across all service areas.
+
+*Word count: 57*
+
+---
+
+**Q3: How quickly can you respond to a plumbing emergency in Back Bay?**
+
+A: We guarantee 45-minute response times to Back Bay emergencies, 24 hours a day. Our lead technician Mike Torres is based in Somerville and knows the fastest routes through Boston—even during Red Sox games when traffic backs up. For true emergencies, call our direct line: (617) 555-0123.
+
+*Word count: 54*
+
+---
+
+**Q4: Can you work on older brownstone plumbing without damaging the historic pipes?**
+
+A: Absolutely—it's our specialty. Back Bay brownstones built between 1860-1900 have unique copper and galvanized systems that require a different approach than modern homes. Mike Torres is certified in historic building systems and uses low-impact repair techniques that preserve your original plumbing while meeting current Massachusetts codes.
+
+*Word count: 55*
+
+---
+
+**Q5: Do you offer emergency plumbing on weekends and holidays in Back Bay?**
+
+A: Yes, we're available 24/7/365 including weekends and holidays—no extra charge for weekend calls in Back Bay. Our average response time stays at 45 minutes regardless of when you call. We've handled Super Bowl Sunday emergencies, Christmas Eve pipe bursts, and everything in between. Same team, same quality, any time.
+
+*Word count: 56*
+
+---
+
+**Q6: What should I expect when I call for plumbing service in Back Bay?**
+
+A: When you call, you'll speak with a real person who'll assess your situation and dispatch a technician—usually Mike Torres for Back Bay calls. He'll arrive within 45 minutes, diagnose the issue, and give you a written quote before any work starts. Most repairs are completed same-day. No work begins without your approval.
+
+*Word count: 60*
+
+---
+
+**Q7: Why should I choose ABC Plumbing over other Boston plumbers?**
+
+A: We specialize in exactly what Back Bay needs: historic brownstone expertise, not generic service. Our 15 years and 2,000+ jobs in Back Bay mean we've seen every quirk of Commonwealth Ave plumbing. Plus, our $89 service call is half what most Boston plumbers charge. Check our 127 five-star Google reviews from Back Bay customers.
+
+*Word count: 59*
+
+---
+
+**Schema Ready:** All 7 FAQs are formatted for FAQPage schema implementation.
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have from Business-Information.txt:
+- [ ] Service name
+- [ ] Specific neighborhoods/areas
+- [ ] Starting price / price range
+- [ ] Response time
+- [ ] Service hours (24/7?)
+- [ ] Team member name
+- [ ] Local building types
+- [ ] Years in business
+- [ ] Job count in area
+- [ ] Phone number
+- [ ] Review count/rating
+- [ ] Key differentiators
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify each FAQ:
+- [ ] Question sounds like a real person asking (conversational)
+- [ ] Question includes specific location reference
+- [ ] Answer starts with direct response (not "Great question!")
+- [ ] Answer is 40-60 words
+- [ ] Answer includes at least one specific number
+- [ ] Answer references the specific area
+- [ ] Answer could NOT be used for a different location
+- [ ] All 7 required topics are covered
+
+---
+
+## WHAT TO AVOID
+
+**Generic Questions:**
+- "What services do you offer?" → "What plumbing services do you provide in Back Bay?"
+- "How do I contact you?" → "How do I schedule emergency plumbing in Back Bay?"
+- "What are your hours?" → "Are you available for weekend emergencies in Back Bay?"
+
+**Generic Answers:**
+- "We offer competitive pricing" → "Service calls start at $89, repairs typically $150-$450"
+- "We respond quickly" → "45-minute guaranteed response to Back Bay"
+- "We serve the Boston area" → "We specialize in Back Bay, Beacon Hill, and South End brownstones"
+
+**Corporate Tone:**
+- "Thank you for your inquiry" → Just answer the question
+- "We pride ourselves on..." → Show with specifics instead
+- "Our team of professionals" → Name the actual person
+
+---
+
+## LOCATION-SPECIFIC FAQ IDEAS
+
+### Questions That Force Local Specificity:
+- "Can you work on [local building type] in [neighborhood]?"
+- "How long does it take to get to [neighborhood] from your location?"
+- "Do you know the permit requirements for [service] in [city]?"
+- "Have you worked on buildings on [specific street]?"
+- "What's different about [service] in [older/historic/etc.] [area] homes?"
+
+These questions CAN'T be answered with generic responses—they require local knowledge.

@@ -1,0 +1,49 @@
+# Handoff — 2026-08-05T18-10-54
+goal: "Build a study-abroad section for Impulse, named by real search volume, as a secondary revenue line."
+now: "Irlanda hub + ano-escolar pages WRITTEN BUT UNVERIFIED — astro check and build were interrupted before running. Verify first, then commit."
+done_this_session:
+  - "SHIPPED c60b757: /ingles-en-el-extranjero/ pillar. Verified from dist: 0 errors, 151 pages, title 50 chars, Service+FAQPage+BreadcrumbList."
+  - "SHIPPED 517508c: scripts/fetch-facebook-assets.mjs. 169 photos staged in 'new fotos/facebook-scrape/', gitignored, all consentCleared:false."
+  - "SHIPPED e97e01b + 722199e: fixed THREE false positives in the review gate (surname 'Fitzpatrick', Spanish words 'Sobre'/'Sigan'/'Excelente', and hyphens read as duplicate name tokens). Eligible 93 -> 101."
+  - "Re-pulled reviews: 180 -> 183. Three new on 2026-08-04, incl. Jorge from Work & Study Travel Espana — a THIRD partner, thanking Daniel by name."
+  - "WRITTEN, NOT YET VERIFIED: pages/extranjero/IrlandaPage.tsx + AnoEscolarIrlandaPage.tsx + their two .astro wrappers."
+blockers:
+  - "Irlanda pages unverified — MUST run `npx astro check` then `rm -rf dist && npm run build`, then verify titles/schema FROM dist before committing."
+  - "No photography from any destination exists. dnny-tour-of-ireland.jpg is a DUPLICATE of a Madrid classroom shot. 169 scraped FB photos unreviewed + consent-gated (minors, GDPR)."
+decisions:
+  - "MONITORS (approved): 'viajan con los alumnos y estan con ellos 24/7'. Used as the key differentiator on both Irlanda pages."
+  - "TRIPS: no organised GROUP trips in 2025/26 but Impulse KEPT SENDING students. Do not surface the pause; present tense is accurate. Never claim an unbroken run of group trips."
+  - "Antonio Perez Blazquez review COPIED (not moved) to ano-escolar — Danny's call, overrides the no-repeats rule. Still live on MontecarmeloLasTablasPage."
+  - "EAQUALS not ACELS — verified against elischools.com; Danny's original ACELS claim was wrong and would have been a false accreditation."
+  - "Partner bylines (Work & Study Travel, KBLanguage) must NEVER be quoted as family testimonials — labelled partner block only."
+findings:
+  - "Malta is ADULT/summer, not school-year: 'curso de ingles en malta' 210 vs 'ano escolar en malta' only 10."
+  - "Ireland ~2,860/mo. Money term 'ano escolar en irlanda' 480 @ EUR13.33, season Sep 1,000 > Oct 880 > Nov 720 — NOT September-only."
+  - "Missed by the old spec: 'colegios en irlanda' 170 @ competition 20, 'internado en irlanda' 170. Both covered on the Irlanda hub."
+  - "Danny HAS a bio and photos (previous handoff wrong on both). He is IRISH, 12 yrs in Madrid — NuestroEquipoPage.tsx:170-176."
+  - "Apify = separate account dannyaiagents2@gmail.com, cap $100, at $85.66 — be cautious. DataForSEO connected, $20.69."
+next:
+  - "VERIFY the two Irlanda pages: npx astro check -> rm -rf dist && npm run build -> read titles/schema from dist -> then commit."
+  - "Build Malta (adult-led), Canada (review: RAUL SAN SEGUNDO), Estados Unidos hubs under /ingles-en-el-extranjero/."
+  - "Task #4: ONE top-level 'En el extranjero' dropdown in components/Navbar.tsx after Examenes + footer + contextual links from cursos-ingles/secundaria + adultos."
+  - "Task #9: Danny -> Daniel Fitzpatrick in utils/napData.ts:161, NuestroEquipoPage.tsx, SobreNosotrosPage.tsx (entity consistency)."
+  - "Task #7 full gates: verify:design, geo-audit.py --set, verify_quotes.py --dist, Rich Results, Lighthouse x4."
+  - "Task #8 (independent): seo-writer subscription backend — approved plan at ~/.claude/plans/sequential-tumbling-dolphin.md."
+files:
+  modified:
+    - "March-Impulse-Web-.../pages/extranjero/ExtranjeroHubPage.tsx (committed)"
+    - "March-Impulse-Web-.../pages/extranjero/IrlandaPage.tsx (NEW, unverified)"
+    - "March-Impulse-Web-.../pages/extranjero/AnoEscolarIrlandaPage.tsx (NEW, unverified)"
+    - "March-Impulse-Web-.../src/pages/ingles-en-el-extranjero/{index,irlanda/index,irlanda/ano-escolar}.astro"
+    - "March-Impulse-Web-.../scripts/fetch-facebook-assets.mjs"
+    - "March-Impulse-Web-.../components/TeacherCard.tsx (imageSrc prop, defaults to JP)"
+    - "GEO-Content-Project/reviews/build_pool.py + review-pool.json + reviews.json + reviews-raw.json"
+    - "~/.claude/skills/geo-pages/facts/impulse-english.facts.md (study-abroad facts, never-write list, partner labelling)"
+  read:
+    - "~/.claude/skills/geo-pages/references/gotchas.md + sites/impulse-english.site.json"
+    - "March-Impulse-Web-.../DESIGN.md + pages/ubicaciones/TetuanPage.tsx"
+    - "March-Impulse-Web-.../utils/schemaData.ts + napData.ts + buildPageTitle.ts + src/layouts/BaseLayout.astro"
+    - "March-Impulse-Web-.../components/{TeacherCard,GoogleReviews,CTABand,QuickFacts,FAQSection}.tsx"
+    - "GEO-Content-Project/reviews/allocation.json + build_pool.py"
+errors: []
+git_branch: "seo/extranjero-hub (from main; 4 commits: 517508c, c60b757, e97e01b, 722199e)"

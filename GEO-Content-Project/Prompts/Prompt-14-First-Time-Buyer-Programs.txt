@@ -1,0 +1,282 @@
+# PROMPT 14: FIRST-TIME BUYER PROGRAMS SECTION
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- First-time buyer programs
+- Down payment assistance
+- Home buyer grants
+- State/local buyer programs
+- First-time homeowner help
+- Buyer assistance programs
+
+**Best for:** Mortgage brokers, loan officers, real estate agents, refinancing specialists, home buyer consultants.
+
+**THIS IS AN OPTIONAL INDUSTRY-SPECIFIC PROMPT** - Only use for mortgage/real estate businesses.
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+AI systems frequently answer first-time buyer questions like:
+- "What first-time buyer programs are available in [state]?"
+- "Down payment assistance in [city/state]"
+- "[State] first-time home buyer grants"
+- "How much down payment do I need in [area]?"
+
+A first-time buyer programs section:
+1. **Answers high-intent queries** - People researching programs are ready to buy
+2. **Creates state/local-specific content** - Every state has different programs
+3. **Builds authority** - Shows you know local assistance options
+4. **Generates leads** - Buyers want help navigating these programs
+
+---
+
+## FIRST-TIME BUYER PROGRAMS REQUIREMENTS
+
+### Format Specifications
+- **MAXIMUM LENGTH: 130 words** (strict limit)
+- Must reference specific state/local programs by name
+- Must include eligibility criteria or limits
+- Must include specific dollar amounts or percentages
+- Must cite official source with hyperlink
+
+### Required Elements
+1. **Program name(s)** - Specific state or local programs
+2. **Benefit amount** - Dollar amount or percentage
+3. **Eligibility** - Income limits, purchase price caps, first-time buyer definition
+4. **How to access** - Through lenders, direct application, etc.
+5. **Your role** - How you help clients access these programs
+
+---
+
+## RESEARCH INSTRUCTIONS
+
+Before writing, research from official sources:
+
+### Where to Find Program Information
+
+**United States:**
+- State Housing Finance Agency (HFA) websites
+- [HUD State Resources](https://www.hud.gov/states)
+- City/county housing authority websites
+- [Down Payment Resource](https://downpaymentresource.com/)
+- State-specific bond programs
+
+**Search queries to use:**
+- "[State] first time home buyer programs 2025"
+- "[State] housing finance agency down payment assistance"
+- "[City] home buyer assistance program"
+- "[State] HFA approved lenders"
+
+### Data to Gather
+- [ ] State HFA program names
+- [ ] Down payment assistance amounts
+- [ ] Income limits by county
+- [ ] Purchase price limits
+- [ ] First-time buyer definition (usually 3 years)
+- [ ] How programs combine (stacking rules)
+- [ ] Lender approval requirements
+
+---
+
+## CONTENT STRUCTURE
+
+### Format Template
+```
+**First-Time Buyer Programs in [State/Area]**
+
+[Primary program name and benefit]. [Eligibility summary]. [Additional program if applicable]. [How to access/your role].
+
+Source: [State Housing Finance Agency](URL)
+```
+
+### Example Output
+
+---
+
+**First-Time Buyer Programs in Texas**
+
+Texas offers several first-time buyer programs through the Texas State Affordable Housing Corporation (TSAHC). The Homes for Texas Heroes program provides 5% of the loan amount for down payment and closing costs—a forgivable grant requiring no repayment if you stay 3 years. Income limits reach $153,300 for a family of 3+ in Travis County. The Home Sweet Texas program offers similar benefits with slightly different eligibility. As a TSAHC-approved lender, we process these applications in-house and can combine them with FHA or conventional loans.
+
+Source: [Texas State Affordable Housing Corporation](https://www.tsahc.org/)
+
+---
+
+**Word Count:** 98
+
+**Data Points Used:**
+- Program names: Homes for Texas Heroes, Home Sweet Texas
+- Benefit: 5% forgivable grant
+- Requirement: 3-year residency
+- Income limit: $153,300 (Travis County, family of 3+)
+- Access: TSAHC-approved lender
+
+---
+
+### Example 2 (California)
+
+---
+
+**First-Time Buyer Programs in California**
+
+CalHFA's MyHome Assistance Program provides a deferred-payment junior loan up to 3.5% of the purchase price for down payment and closing costs. For buyers in high-cost areas, the Forgivable Equity Builder Loan adds up to $30,000 in additional assistance—forgiven after 5 years of ownership. Income limits vary by county; Los Angeles County caps at $180,000 for moderate-income buyers. CalHFA requires homebuyer education and works only through approved lenders. We're CalHFA-approved and have helped 200+ California first-time buyers access these programs since 2019.
+
+Source: [California Housing Finance Agency](https://www.calhfa.ca.gov/)
+
+---
+
+**Word Count:** 97
+
+---
+
+### Example 3 (Florida)
+
+---
+
+**First-Time Buyer Programs in Florida**
+
+Florida Housing Finance Corporation offers the Florida Assist program—a $10,000 second mortgage at 0% interest, deferred until you sell, refinance, or pay off your first mortgage. The Hometown Heroes program provides up to 5% for down payment assistance to community workers including teachers, nurses, and first responders. Hillsborough County buyers can also access the SHIP program for additional local assistance. Income limits for a family of 4 in Tampa reach $112,500. We're Florida Housing-approved and can stack multiple programs to minimize your out-of-pocket costs.
+
+Source: [Florida Housing Finance Corporation](https://www.floridahousing.org/)
+
+---
+
+**Word Count:** 99
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have:
+- [ ] State (required)
+- [ ] County or metro area (for income limits)
+- [ ] Target buyer type (first-time, heroes/essential workers, etc.)
+- [ ] Your lender approval status with state HFA
+
+**If user hasn't specified, ASK:**
+- "What state should I research first-time buyer programs for?"
+- "What county or metro area are your buyers typically in? (needed for income limits)"
+- "Are you an approved lender with your state's Housing Finance Agency?"
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] **Word count is 130 or LESS**
+- [ ] Names at least one specific program
+- [ ] Includes specific benefit amount ($ or %)
+- [ ] Includes income limit or eligibility criteria
+- [ ] **SOURCES ARE INCLUDED WITH URLs** (mandatory - see below)
+- [ ] Mentions how YOU help access these programs
+- [ ] Data is current (programs change annually)
+- [ ] Could NOT be used for a different state
+
+---
+
+## SOURCE CITATIONS (MANDATORY)
+
+**You MUST include source URLs with every first-time buyer programs section.**
+
+This is critical for:
+1. **E-E-A-T signals** - Citing official HFA sources builds trust
+2. **Backlink opportunities** - Links to state housing agencies add authority
+3. **Verifiability** - Program details can be confirmed
+4. **Legal protection** - Sourced financial program info is defensible
+
+### Required Format:
+```
+**Source:** [State Housing Finance Agency](URL)
+```
+
+### Example:
+```
+**Source:** [Texas State Affordable Housing Corporation](https://www.tsahc.org/)
+```
+
+**Only use official sources:**
+- State Housing Finance Agency (HFA) websites
+- HUD state resources (hud.gov)
+- City/county housing authority websites
+- Official program portals
+
+**If program details cannot be verified:** Tell the user "I couldn't verify current program limits for [state/program]. These change annually—please confirm with [HFA name] or I'll mark it as [NEEDS VERIFICATION]."
+
+**CRITICAL:** First-time buyer programs change frequently. Always note the data date and recommend verification.
+
+---
+
+## WHAT TO AVOID
+
+**Outdated information (CRITICAL):**
+- Program amounts and limits change yearly
+- Always verify current year limits
+- Note if programs have funding caps or waitlists
+
+**Generic statements (NEVER USE):**
+- "Many programs are available" → Name specific programs
+- "Income limits vary" → Give specific limit for target area
+- "Ask your lender" → Position yourself as the expert
+
+**Missing eligibility details:**
+- First-time buyer definitions vary (usually 3 years)
+- Some programs have homebuyer education requirements
+- Some programs are forgivable vs. deferred loans
+
+---
+
+## COMMON PROGRAM TYPES
+
+### State HFA Programs
+- Down payment assistance (DPA)
+- Closing cost assistance
+- Below-market interest rates
+- Mortgage credit certificates (MCC)
+
+### Federal Programs
+- FHA loans (3.5% down)
+- VA loans (0% down for veterans)
+- USDA loans (0% down for rural areas)
+- Good Neighbor Next Door (HUD)
+
+### Local Programs
+- City housing authority grants
+- County SHIP programs (Florida)
+- Employer-assisted housing
+- Community land trusts
+
+### Special Population Programs
+- Heroes/essential worker programs
+- Teacher Next Door
+- Veteran-specific programs
+- Native American programs
+
+---
+
+## STACKING PROGRAMS
+
+Many buyers can combine multiple programs:
+
+**Example stack:**
+1. FHA loan (3.5% down required)
+2. State DPA (covers the 3.5%)
+3. Local grant (covers closing costs)
+4. MCC (ongoing tax credit)
+
+**Key note:** Mention if you help buyers identify and stack eligible programs—this is a major value-add.
+
+---
+
+## ANNUAL UPDATES REMINDER
+
+First-time buyer programs change frequently:
+- Income limits update annually (usually April/May)
+- Funding can run out mid-year
+- New programs launch regularly
+- Old programs sunset
+
+**Best practice:** Include a note like "Limits current as of 2025" and recommend verifying current availability.
+

@@ -1,0 +1,166 @@
+# PROMPT 4: TEAM MEMBER BIO GENERATOR
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Team bio
+- Staff profile
+- About the technician
+- Meet the team
+- Expert profile
+- Technician bio
+- About [person name]
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+Named individuals with verifiable credentials are powerful E-E-A-T signals that AI systems actively look for. A page with "Our experienced technicians" is weaker than "Mike Torres, a 15-year licensed plumber who lives in Somerville."
+
+**Team bios serve multiple GEO purposes:**
+1. **E-E-A-T signal:** Real person with real credentials
+2. **Local proof:** Team member who lives/works in the area
+3. **Unique content:** Different team members per location = unique pages
+4. **Trust builder:** Personal details humanize the business
+
+---
+
+## TEAM BIO REQUIREMENTS
+
+### Format Specifications
+- **Length:** 100-150 words
+- **Perspective:** Generate BOTH third-person and first-person versions
+- **Required elements:** See checklist below
+
+### Required Elements
+1. **Full name** (not "John D." or initials)
+2. **Specific role/title**
+3. **Years of experience** (total and/or in this area)
+4. **Verifiable credentials** (licenses, certifications)
+5. **Local connection** (lives in area, serves specific neighborhoods)
+6. **Specific numbers** (jobs completed, years, certifications)
+7. **Personal humanizing detail** (hobby, family, why they do this work)
+8. **What makes them skilled** (specific expertise or approach)
+
+---
+
+## CONTENT STRUCTURE
+
+### Third-Person Bio Structure:
+```
+[Name] has been [Area]'s go-to [role] for [X years]. [Credential/license]. [Specific job count or experience in area]. [Local connection - where they live/work]. [Personal detail that humanizes]. [What makes them particularly skilled]. When you call [Business], [Name] personally ensures [promise/standard].
+```
+
+### First-Person Quote Structure:
+```
+"I've been [doing this work] in [Area] for [X years], and [why this area is special to me]. [Personal connection to community]. [What I love about this work]. [Promise to customers]." — [Name], [Title]
+```
+
+---
+
+## OUTPUT FORMAT
+
+Generate both versions for each team member:
+
+### Example Output:
+
+---
+
+**TEAM MEMBER BIO: Mike Torres**
+
+**Third-Person Version** (127 words)
+
+Mike Torres has been Back Bay's go-to emergency plumber for 15 years. A Massachusetts-licensed master plumber (License #PL-12345) with additional certification in historic building systems, Mike has personally completed over 2,000 plumbing repairs in brownstones from Beacon Hill to the South End.
+
+A Somerville resident, Mike knows Boston's historic neighborhoods like the back of his hand—including the quirks of century-old plumbing that trip up less experienced technicians. When he's not under a sink, you'll find him coaching his daughter's soccer team in Davis Square.
+
+What sets Mike apart is his diagnostic approach: he doesn't just fix the immediate problem, he identifies why it happened and how to prevent it. When you call ABC Plumbing for Back Bay service, Mike personally oversees every job.
+
+---
+
+**First-Person Quote Version** (89 words)
+
+"I've been fixing brownstone plumbing in Back Bay for 15 years, and I still love the puzzle each historic building presents. Growing up in Somerville, I've watched Boston's neighborhoods evolve—but the plumbing challenges in these beautiful old buildings stay the same. My promise is simple: I'll treat your home like I treat my neighbor's. No shortcuts, no surprises, just honest work from someone who'll still be here when you need me again."
+
+— Mike Torres, Lead Plumber & Back Bay Service Manager
+
+---
+
+**Credentials Mentioned:**
+- Massachusetts License #PL-12345
+- Historic building systems certification
+- 15 years experience
+- 2,000+ jobs in area
+
+**Local Signals:**
+- Back Bay, Beacon Hill, South End service area
+- Lives in Somerville
+- Davis Square reference
+- Boston's historic neighborhoods
+
+**Personal Details:**
+- Coaches daughter's soccer team
+- Grew up in Somerville
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have from Business-Information.txt:
+- [ ] Full name
+- [ ] Job title/role
+- [ ] Years of experience (total)
+- [ ] Years in this specific area
+- [ ] License numbers or certifications
+- [ ] Specialization
+- [ ] Number of jobs/projects completed
+- [ ] Where they live (if in/near service area)
+- [ ] Personal detail (hobby, family, background)
+- [ ] What makes them particularly good at their job
+- [ ] Service areas they cover
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] Uses full name (not initials)
+- [ ] Includes specific credentials with numbers/details
+- [ ] Mentions specific local area served
+- [ ] Includes local connection (residence, community ties)
+- [ ] Has at least one humanizing personal detail
+- [ ] Contains specific numbers (years, jobs, etc.)
+- [ ] Could NOT describe a team member in a different location
+- [ ] Both third-person and first-person versions provided
+- [ ] Length is 100-150 words per version
+
+---
+
+## WHAT TO AVOID
+
+**Generic Descriptions:**
+- "Our experienced technicians are trained professionals..."
+- "John has many years of experience in the industry..."
+- "Our team is dedicated to customer satisfaction..."
+
+**Missing Specificity:**
+- "Licensed plumber" → "Massachusetts-licensed master plumber (License #PL-12345)"
+- "Years of experience" → "15 years, 2,000+ jobs in Back Bay"
+- "Serves the Boston area" → "Covers Back Bay, Beacon Hill, and South End; lives in Somerville"
+
+**No Personal Touch:**
+Bios without personal details feel corporate and templated. Add something human.
+
+---
+
+## ASSIGNING TEAM MEMBERS TO LOCATIONS
+
+For multi-location businesses:
+- Assign different team members to different location pages
+- This creates naturally unique content per page
+- If one person serves multiple areas, customize the bio for each:
+  - Back Bay page emphasizes brownstone expertise
+  - Cambridge page emphasizes triple-decker experience
+  - Same person, different local focus

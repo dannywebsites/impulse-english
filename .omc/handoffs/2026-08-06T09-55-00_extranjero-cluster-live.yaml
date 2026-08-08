@@ -1,0 +1,70 @@
+# Handoff — 2026-08-06T09-55-00
+goal: "Ship the study-abroad section as a second revenue line: pages named by real search volume, real photography, and enquiries routed to the person who actually runs the programmes."
+now: "LIVE IN PRODUCTION. PR #15 merged to main as b3269c5, Vercel deployed, all four routes verified 200 on impulse-english.es. Nothing outstanding is blocking."
+
+done_this_session:
+  - "MERGED PR #15 — 17 commits, main = b3269c5. First time any of this cluster reached GitHub; the branch had never been pushed and origin/main was 13 commits behind before today."
+  - "SHIPPED 50eae2f: /irlanda/ + /irlanda/ano-escolar/ verified from dist (titles 44 and 40 chars, Service+FAQPage+BreadcrumbList). These were written but NEVER type-checked by the previous session — astro check came back 0 errors."
+  - "SHIPPED 29e82b9: reviewCount 180 -> 183. geo-audit cross-checks napData against reviews.json and was dropping AggregateRating to 6/10 on EVERY page. Also fixed 26 files of hardcoded '180 reseñas' visible copy. servicios/barrios 93 -> 96."
+  - "SHIPPED 5bf4a7b: hub was shipping three live 404s (/malta/, /canada/, /estados-unidos/). href is now optional on a destino; unlinked cards invite an enquiry instead. Verified live: malta and estados-unidos return 404 and are linked from nowhere."
+  - "SHIPPED f20db67: verify_quotes.py matched only DOUBLE-quoted review objects and still printed '0 FAIL'. Six testimonials across the whole extranjero cluster had never been checked, two already live. 124 -> 130 quotes."
+  - "SHIPPED 4c52b4c: /canada/ built as año escolar, not a language course — data-led, see findings."
+  - "SHIPPED a44f8bc: pages/extranjero was in NO gate. Added to verify:design PAGE_DIRS and a new geo-audit --set extranjero. Also fixed score_schema, which inferred schema from 'does the wrapper call generateLocationPageSchema' and scored 0 on LocalBusiness/Service/AggregateRating for pages that emit it any other way. Those rows now read dist/."
+  - "SHIPPED c9320ce: section had ZERO inbound links. Navbar dropdown, footer, interlink strip on 7 course pages, contextual links in Secundaria + Adultos, internal-links.ts, llms.txt. 0 -> all 154 pages."
+  - "SHIPPED 1f17371: founder schema name 'Daniel Fitzpatrick' + alternateName 'Danny'. Visible copy deliberately unchanged — 24 Google reviews call him Danny."
+  - "SHIPPED 013682c: 'Convalidable en España' was stated flatly in 8 places incl. meta description and FAQPage schema. Not in approved facts; convalidation is a Ministerio de Educación process and is not automatic. All aligned to the cautious wording. Also closed the honest half of the GEO gap, 67 -> 75."
+  - "SHIPPED d53b13b: nav labels shortened to Extranjero/Nosotros; FAQSection gained defaultOpen 'first'|'all' with a Set, extranjero pages pass 'all'. The other 37 mounts are byte-for-byte unchanged."
+  - "SHIPPED 2f62d81: 34 real Ireland photos, 5.1 MB, avg 153 KB, no EXIF/GPS. Different slice of 8 per page, zero overlap."
+  - "SHIPPED b01f470: all extranjero CTAs + a new popup variant route to Daniel's own WhatsApp."
+  - "SHIPPED be46fd4: 30 article briefs from live SERP + PAA data."
+
+blockers:
+  - "NONE blocking. Two things need Danny, neither stops anything shipping."
+  - "⚠️ DANIEL'S WHATSAPP IS UNVERIFIED BY TEST. Danny wrote '+347-223-34244'; read as +34 722 334 244 -> wa.me/34722334244 (9 digits, valid Spanish mobile). It is LIVE. One wrong digit silently swallows every study-abroad lead and no gate would catch it. Open the link once and check it reaches Daniel."
+  - "Convalidación wording is the CONSERVATIVE version. Danny said 'leave it for now'. If he later confirms it reliably goes through, add it to the facts file FIRST, then strengthen the copy."
+
+decisions:
+  - "CANADÁ IS A AÑO ESCOLAR DESTINATION, not a language course. año escolar en canadá 140/mo @ €12,90 vs curso de inglés en canadá 10. The exact inverse of Malta. One page, not hub+child — the whole cluster is ~700 behind a 140 head term."
+  - "Malta and Estados Unidos de-linked, not built. Restoring is one `href` line each."
+  - "Danny -> Daniel is SCHEMA ONLY. Visible copy stays 'Danny' because 24 unedited reviews say so; changing it would put the site out of step with its own testimonials."
+  - "Daniel's number is NOT in the business NAP. Absent from all JSON-LD, footer and GBP — verified live. Two numbers on one entity is the NAP inconsistency that costs local rankings."
+  - "Photo consent CONFIRMED by Danny 2026-08-06 for commercial website use, and all 34 confirmed taken in Ireland. Recorded in src/data/EXTRANJERO-PHOTO-CONSENT.md, deliberately in src/data/ and NOT public/ (anything in public/ is served)."
+  - "Do NOT chase geo-audit extranjero to 90. Pricing 2/10 and Service Schema 6/10 both follow from enquiry-only being an approved decision; Case Studies 0/10 would need a Canada case no review supports."
+
+findings:
+  - "trabajar en irlanda = 1.900/mo at competition 29, and I REVISED MY OWN RECOMMENDATION DOWN after pulling the SERP: page one is mites.gob.es, SEPE, InfoJobs, Glassdoor. An academy does not outrank the Ministry of Labour. CPC €1,23 vs €12,90 for año escolar en canadá. NO pillar — target the English-gap long tail, led by 'trabajo en irlanda para españoles sin inglés'."
+  - "EVERY competitor publishes prices and Impulse publishes none: CLS 18.600 € (boarding 32.000 €), infoidiomas 6.750 €, Top School Canadá trimestre 9.704 €, Google's AI Overview 'desde 17.000 €'. año escolar en irlanda precios = 90/mo. Biggest single content gap. Brief 4 proposes market ranges with sources and no Impulse figure — needs Danny's call."
+  - "AI Overviews render at rank 1 on all three money terms. Answers must be extractable in the first 80 words."
+  - "mini estancia irlanda returns NO DATA — third dead phrase after mini estancias = 0 and viaje de estudios = 0. Cover the product under campamento de verano en irlanda (140)."
+  - "vivir en irlanda 260 @ competition 21 is the softest term in the entire research set."
+  - "Canadá peaks in MARCH (320), not September — publish its articles by January."
+  - "RAUL SAN SEGUNDO's review is NOT Canada-trip proof: he improved his English at Impulse in Madrid then delivered a course to Canadian osteopaths. Confined to the adults block with the framing said out loud."
+  - "GATES HERE FAIL SILENTLY. Three verifiers were passing by not-looking, all found today. Caught only because a quote count stayed at 124 after adding two quotes — not because anything failed."
+
+next:
+  - "Danny: tap the WhatsApp CTA on /ingles-en-el-extranjero/ once and confirm it reaches him."
+  - "Decide on Brief 4 — publishing market price ranges (with sources, no Impulse figure)."
+  - "Write briefs 21, 24, 27 first (summer term while seasonal + the two softest terms). Route through seo-blog-writer, NEVER geo-pages. 3+ images each."
+  - "Briefs 11-13 by January, ahead of the Canadá March peak."
+  - "Wire Danny's studio portrait (danny profile.jpeg, workspace root): resize + webp, and it is PORTRAIT so match the TeacherCard box rather than cropping. Both bio pages currently use a classroom shot as his headshot."
+  - "Malta + Estados Unidos pages when wanted. Malta must be summer/adult-led — año escolar en malta is 10/mo."
+  - "Consider rolling defaultOpen='all' to the other 21 refresh-variant pages."
+  - "Submit the updated sitemap in GSC; four new URLs are live."
+
+files:
+  modified:
+    - "March-Impulse-Web-.../pages/extranjero/{ExtranjeroHub,Irlanda,AnoEscolarIrlanda,Canada}Page.tsx"
+    - "March-Impulse-Web-.../src/pages/ingles-en-el-extranjero/{index,canada,irlanda/index,irlanda/ano-escolar}.astro"
+    - "March-Impulse-Web-.../components/{Navbar,Footer,CTABand,CoursePopup,FAQSection,GoogleReviews,TestimonialsSection,ValuesSection}.tsx"
+    - "March-Impulse-Web-.../utils/{napData,popupVariants}.ts"
+    - "March-Impulse-Web-.../src/data/{extranjeroImages.ts,EXTRANJERO-PHOTO-CONSENT.md,academyImages.ts}"
+    - "March-Impulse-Web-.../public/images/extranjero/ (34 webp)"
+    - "March-Impulse-Web-.../scripts/verify-design/run.mjs"
+    - "GEO-Content-Project/{geo-audit.py,reviews/verify_quotes.py,extranjero-blog-briefs.md}"
+    - "~/.claude/skills/geo-pages/facts/impulse-english.facts.md"
+  read:
+    - "March-Impulse-Web-.../DESIGN.md + components/AcademyGallery.tsx + scripts/verify-tracking/config.mjs"
+
+errors: []
+gates: "astro check 0 errors · 154 pages · verify:design ALL PASS, token debt 793 = baseline · verify_quotes --dist 134 quotes 0 FAIL · verify:tracking ALL PASS 28 checks · geo-audit barrios 96 / servicios 96 / extranjero 75"
+git_branch: "main (b3269c5) — PR #15 merged and deployed. seo/extranjero-hub can be deleted."

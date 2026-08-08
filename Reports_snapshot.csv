@@ -1,0 +1,542 @@
+# ----------------------------------------
+# Reports snapshot
+# Account: Google Ads Account
+# Property: www.impulse-english.es
+# ----------------------------------------
+#  
+# Start date: 20260101
+# End date: 20260630
+Nth week,Active users
+0010,2
+0011,6
+0012,73
+0013,41
+0014,79
+0015,66
+0016,71
+0017,80
+0018,116
+0019,119
+0020,132
+0021,155
+0022,158
+0023,145
+0024,157
+0025,161
+0026,57
+
+# Start date: 20260101
+# End date: 20260630
+Nth week,New users
+0010,1
+0011,5
+0012,70
+0013,41
+0014,74
+0015,62
+0016,67
+0017,76
+0018,108
+0019,114
+0020,128
+0021,154
+0022,154
+0023,140
+0024,150
+0025,151
+0026,53
+
+# Start date: 20260101
+# End date: 20260630
+Nth week,Average engagement time per active user
+0010,152.5
+0011,145.83333333333334
+0012,75.6986301369863
+0013,91.4390243902439
+0014,96.0886075949367
+0015,73.36363636363636
+0016,50.943661971830984
+0017,50.8625
+0018,39.46551724137931
+0019,56.32773109243698
+0020,46.628787878787875
+0021,54.10322580645161
+0022,60.20886075949367
+0023,39.39310344827586
+0024,66.87261146496816
+0025,77.1863354037267
+0026,45.91228070175438
+
+# Start date: 20260101
+# End date: 20260630
+Nth week,Total revenue
+0010,0
+0011,0
+0012,0
+0013,0
+0014,0
+0015,0
+0016,0
+0017,0
+0018,0
+0019,0
+0020,0
+0021,0
+0022,0
+0023,0
+0024,0
+0025,0
+0026,0
+
+# Where do your new users come from?
+# Start date: 20260101
+# End date: 20260630
+First user primary channel group (Default channel group),New users
+Organic Search,1347
+Direct,164
+Unassigned,15
+Referral,9
+AI Assistant,7
+Organic Social,3
+Paid Search,3
+
+#  
+# Start date: 20260101
+# End date: 20260630
+Session primary channel group (Default channel group),Sessions
+Organic Search,1651
+Direct,250
+Unassigned,18
+Referral,14
+AI Assistant,10
+Organic Social,3
+Paid Search,3
+
+#  
+# Start date: 20260101
+# End date: 20260630
+Country ID,Active users
+AR,14
+AZ,1
+BE,7
+BO,1
+CA,2
+CH,1
+CL,12
+CO,12
+CR,1
+CU,1
+DE,3
+EC,3
+EG,1
+ES,1429
+FR,4
+GB,4
+GQ,1
+GR,1
+GT,2
+IE,14
+IN,1
+IS,1
+IT,2
+KW,1
+MA,1
+MX,23
+NL,4
+PE,7
+PL,1
+PT,2
+SG,1
+TR,1
+US,15
+UY,2
+
+# Start date: 20260101
+# End date: 20260630
+Country,Active users
+ES,1429
+MX,23
+US,15
+AR,14
+IE,14
+CL,12
+CO,12
+
+# How are active users trending?
+# Start date: 20260101
+# End date: 20260630
+Nth day,30 days,7 days,1 day
+0000,0,0,0
+0001,0,0,0
+0002,0,0,0
+0003,0,0,0
+0004,0,0,0
+0005,0,0,0
+0006,0,0,0
+0007,0,0,0
+0008,0,0,0
+0009,0,0,0
+0010,0,0,0
+0011,0,0,0
+0012,0,0,0
+0013,0,0,0
+0014,0,0,0
+0015,0,0,0
+0016,0,0,0
+0017,0,0,0
+0018,0,0,0
+0019,0,0,0
+0020,0,0,0
+0021,0,0,0
+0022,0,0,0
+0023,0,0,0
+0024,0,0,0
+0025,0,0,0
+0026,0,0,0
+0027,0,0,0
+0028,0,0,0
+0029,0,0,0
+0030,0,0,0
+0031,0,0,0
+0032,0,0,0
+0033,0,0,0
+0034,0,0,0
+0035,0,0,0
+0036,0,0,0
+0037,0,0,0
+0038,0,0,0
+0039,0,0,0
+0040,0,0,0
+0041,0,0,0
+0042,0,0,0
+0043,0,0,0
+0044,0,0,0
+0045,0,0,0
+0046,0,0,0
+0047,0,0,0
+0048,0,0,0
+0049,0,0,0
+0050,0,0,0
+0051,0,0,0
+0052,0,0,0
+0053,0,0,0
+0054,0,0,0
+0055,0,0,0
+0056,0,0,0
+0057,0,0,0
+0058,0,0,0
+0059,0,0,0
+0060,0,0,0
+0061,0,0,0
+0062,0,0,0
+0063,0,0,0
+0064,0,0,0
+0065,0,0,0
+0066,0,0,0
+0067,0,0,0
+0068,0,0,0
+0069,1,1,1
+0070,1,1,1
+0071,1,1,0
+0072,2,2,1
+0073,2,2,0
+0074,2,2,1
+0075,2,2,0
+0076,2,2,0
+0077,2,2,0
+0078,3,3,2
+0079,7,6,5
+0080,9,8,2
+0081,18,17,9
+0082,38,37,21
+0083,53,52,16
+0084,65,64,13
+0085,77,75,13
+0086,80,73,4
+0087,86,77,6
+0088,94,77,8
+0089,99,62,5
+0090,107,55,8
+0091,109,45,2
+0092,112,36,4
+0093,121,41,9
+0094,122,36,1
+0095,141,47,19
+0096,149,51,9
+0097,165,59,18
+0098,180,73,16
+0099,192,82,14
+0100,198,79,6
+0101,203,83,5
+0102,213,76,14
+0103,227,84,14
+0104,231,71,5
+0105,244,70,14
+0106,257,69,13
+0107,260,66,3
+0108,263,66,4
+0109,271,65,15
+0110,280,63,13
+0111,282,69,11
+0112,276,69,13
+0113,271,67,10
+0114,266,71,7
+0115,259,72,5
+0116,269,71,13
+0117,277,72,13
+0118,286,78,17
+0119,299,83,18
+0120,299,82,9
+0121,303,80,5
+0122,310,86,11
+0123,324,97,26
+0124,335,96,13
+0125,343,107,28
+0126,354,106,18
+0127,351,115,16
+0128,343,116,6
+0129,347,124,18
+0130,354,113,15
+0131,369,119,19
+0132,369,105,15
+0133,374,107,20
+0134,389,111,19
+0135,390,119,14
+0136,390,113,12
+0137,411,122,24
+0138,434,131,29
+0139,444,140,23
+0140,451,139,20
+0141,459,138,18
+0142,454,132,8
+0143,456,132,12
+0144,477,138,28
+0145,500,138,29
+0146,520,146,32
+0147,531,150,24
+0148,530,147,16
+0149,529,155,16
+0150,541,162,19
+0151,564,163,28
+0152,584,165,31
+0153,586,158,25
+0154,587,149,14
+0155,581,156,24
+0156,581,158,18
+0157,583,156,17
+0158,601,152,25
+0159,600,138,18
+0160,613,142,28
+0161,619,152,24
+0162,619,142,14
+0163,618,145,20
+0164,610,139,12
+0165,622,141,28
+0166,637,151,28
+0167,635,144,22
+0168,630,146,26
+0169,634,158,27
+0170,633,157,18
+0171,624,155,9
+0172,651,164,36
+0173,665,163,29
+0174,670,176,33
+0175,661,170,21
+0176,652,165,22
+0177,643,161,13
+0178,647,172,22
+0179,663,169,34
+0180,645,142,1
+
+# How well do you retain your users?
+# Start date: 20260517
+# End date: 20260627
+Date,Week 0,Week 1,Week 2,Week 3,Week 4,Week 5
+17 May - 23 May,131,0,1,0,1,1
+24 May - 30 May,154,1,0,2,0,-1
+31 May - 6 Jun,155,3,0,0,-1,-1
+7 Jun - 13 Jun,140,2,1,-1,-1,-1
+14 Jun - 20 Jun,150,4,-1,-1,-1,-1
+21 Jun - 27 Jun,154,-1,-1,-1,-1,-1
+
+#  
+# Start date: 20260101
+# End date: 20260630
+Page title and screen class,Views
+PDFs Cambridge Advanced C1 | Impulse English Academy La Vaguada,562
+"Impulse English Academy | academia de inglés en Barrio del Pilar, Madrid. Con profesores nativos especializados en exámenes Cambridge, ofrecemos cursos para niños, infantiles, adolescentes y adultos",407
+Recursos PDF Linguaskill | Impulse English Academy La Vaguada,181
+Ejercicios B2 Cambridge First | Impulse English Academy La Vaguada,132
+Fechas y Precios Exámenes Cambridge Madrid 2026 | Calendario Oficial,100
+Exámenes Cambridge | Impulse English Academy La Vaguada,85
+Clases Inglés Adultos | Impulse English Academy La Vaguada,83
+"Escala Cambridge: Puntuaciones, Niveles y Equivalencias [Guía 2026]",78
+Contacto | Impulse English Academy La Vaguada | Barrio del Pilar,65
+Reservar Clase | Impulse English Academy La Vaguada | Barrio del Pilar,58
+Linguaskill | Impulse English Academy La Vaguada | Barrio del Pilar,57
+"Examen C1 Advanced (CAE) Cambridge: Estructura, Precios y Preparación [2026]",48
+Inglés Infantil (2–5 años) | Impulse English Academy La Vaguada,39
+Preparación Cambridge B2 First | Impulse English Academy La Vaguada,34
+Inglés Primaria (6–12 años) | Impulse English Academy La Vaguada,31
+Sobre Nosotros | Impulse English Academy La Vaguada – Barrio del Pilar,31
+Clases Particulares Inglés | Impulse English Academy La Vaguada,30
+Nota para Aprobar el B2 First de Cambridge — Puntuación Mínima [2026],29
+¿Necesitas B1 para la Universidad en España? Requisitos por Comunidad [2026],29
+¿Cuánto Tiempo Se Tarda en Pasar de B2 a C1? Plan Realista [2026],28
+Opiniones Linguaskill | Impulse English Academy La Vaguada,27
+¿Es Difícil el C1 Advanced? Nivel Real y | Impulse English La Vaguada,27
+Trabajos que Piden C1 de Inglés: Sectores | Impulse English La Vaguada,25
+Inglés Secundaria y EBAU | Impulse English Academy La Vaguada,24
+Preparar B1 desde Cero | Impulse English Academy La Vaguada,24
+¿Es Difícil el B2 First de Cambridge? Nivel Real y Consejos para Aprobar [2026],22
+Academias Inglés Baratas Madrid | Impulse English Academy La Vaguada,20
+Ejemplo Examen Linguaskill | Impulse English Academy La Vaguada,20
+Fechas Exámenes Cambridge 2026 | Impulse English Academy La Vaguada,20
+Blog Inglés | Impulse English Academy La Vaguada | Barrio del Pilar,19
+Linguaskill para Oposiciones | Impulse English Academy La Vaguada,17
+Universidades Aceptan Linguaskill | Impulse English Academy La Vaguada,17
+Testimonios | Impulse English Academy La Vaguada – Barrio del Pilar,16
+¿Cuánto Dura el B2 de Cambridge? Validez y Caducidad [2026],15
+¿Cuánto Tiempo Se Necesita para Preparar el B2 First? Plan de Estudio [2026],14
+Clases Inglés Online | Impulse English Academy La Vaguada,12
+Linguaskill Online desde Casa | Impulse English Academy La Vaguada,12
+Precio Linguaskill Online | Impulse English Academy La Vaguada,12
+Preparación Cambridge B1 PET | Impulse English Academy La Vaguada,12
+B1 vs B2: ¿Qué Nivel de Inglés Necesitas? Comparativa Completa [2026],11
+¿El C1 Advanced de Cambridge Caduca? Validez Oficial [2026],11
+Gracias | Impulse English Academy La Vaguada | Barrio del Pilar,9
+Página No Encontrada | Impulse English Academy La Vaguada,9
+¿Merece la Pena el C1 en España? Benefici | Impulse English La Vaguada,9
+Academia Inglés Barrio del Pilar | Impulse English Academy La Vaguada,8
+Diferencia entre B2 y C1 de Inglés: ¿Cuál Necesitas Realmente? [2026],8
+Política Privacidad | Impulse English Academy La Vaguada,8
+Curso Intensivo Linguaskill | Impulse English Academy La Vaguada,7
+Metodología | Impulse English Academy La Vaguada | Barrio del Pilar,7
+Academia Inglés Montecarmelo y Las Tablas | Impulse English La Vaguada,6
+Clases de Inglés para Adultos en Madrid | Horarios Flexibles — Impulse English,6
+Examen Cambridge C1 Advanced | Impulse English Academy La Vaguada,6
+Suspender el B2 First | Impulse English Academy La Vaguada,6
+¿El C1 Advanced Caduca? Validez Permanent | Impulse English La Vaguada,6
+¿Linguaskill en Casa es Fiable? | Impulse English Academy La Vaguada,6
+Academia de Inglés cerca de Tetuán Madrid | Impulse English Academy La Vaguada – Barrio del Pilar,5
+Linguaskill vs Aptis | Impulse English Academy La Vaguada,5
+Precio Examen C1 Cambridge en Madrid — Tasas y Centros [2026],5
+Preparar B2 First en 3 Meses: Plan de Est | Impulse English La Vaguada,5
+Sobre Nosotros | Impulse English Academy La Vaguada | Barrio del Pilar,5
+¿Cuánto Tiempo Se Tarda en Aprender Inglés? Plazos Realistas por Nivel [2026],5
+Academia Inglés La Vaguada | Impulse English Academy La Vaguada,4
+Academia Inglés Mirasierra | Impulse English Academy La Vaguada,4
+Academia Inglés Peñagrande | Impulse English Academy La Vaguada,4
+Academia de Inglés cerca de Plaza Castilla Madrid | Impulse English Academy La Vaguada – Barrio del Pilar,4
+De B2 a C1: ¿Cuánto Tiempo Necesitas? Guí | Impulse English La Vaguada,4
+Linguaskill Precios y Fechas | Impulse English Academy La Vaguada,4
+Nuestro Equipo | Impulse English Academy La Vaguada – Barrio del Pilar,4
+Precio Examen B1 Cambridge (PET) en Madrid — Guía Actualizada [2026],4
+Precio Linguaskill y Reserva | Impulse English Academy La Vaguada,4
+Preparar Cambridge para Niños | Impulse English Academy La Vaguada,4
+¿Cuántas Veces Puedo Hacer el B2 First? S | Impulse English La Vaguada,4
+Academia de Inglés cerca de La Ventilla | Impulse English Academy La Vaguada – Barrio del Pilar,3
+Academias Inglés por Barrios Madrid | Impulse English La Vaguada,3
+C1 Advanced vs IELTS | Impulse English Academy La Vaguada,3
+Cursos de Inglés en Madrid Norte | Impulse English Academy La Vaguada,3
+Excusas no aprender inglés: 10 claves par | Impulse English La Vaguada,3
+Guía Completa Examen B1 Preliminary Cambridge: Estructura y Consejos [2026],3
+"Impulse English Academy | English academy in Barrio del Pilar, Madrid. With native teachers specializing in Cambridge exams, we offer courses for children, teenagers, and adults.",3
+Precios y Tarifas | Impulse English Academy La Vaguada,3
+About Us | Impulse English Academy La Vaguada – Barrio del Pilar,2
+Academia de Inglés La Vaguada | Impulse English | Impulse English Academy,2
+Academia de Inglés cerca de Cuatro Torres Business Area Madrid | Impulse English Academy La Vaguada – Barrio del Pilar,2
+Academia vs Profesor Particular | Impulse English Academy La Vaguada,2
+Cambridge vs Linguaskill | Impulse English Academy La Vaguada,2
+Centros Cambridge en Madrid | Impulse English Academy La Vaguada,2
+Centros Linguaskill España | Impulse English Academy La Vaguada,2
+Certificaciones Inglés Madrid | Impulse English Academy La Vaguada,2
+Contact | Impulse English Academy La Vaguada | Barrio del Pilar,2
+Examen C1 Advanced (CAE) Cambridge: Todo lo que Necesitas Saber [2026],2
+FAQ Inglés | Impulse English Academy La Vaguada | Barrio del Pilar,2
+Guía Exámenes Cambridge | Impulse English Academy La Vaguada,2
+Inglés para Niños en Madrid | Impulse English Academy La Vaguada,2
+Linguaskill Internacional | Impulse English Academy La Vaguada,2
+Precio Examen B1 Cambridge | Impulse English Academy La Vaguada,2
+Registro Linguaskill | Impulse English Academy La Vaguada,2
+¿Es Difícil el B2 First? Dificultad Real | Impulse English La Vaguada,2
+Academia Cambridge vs academia genérica: | Impulse English La Vaguada,1
+Academia Inglés Plaza Castilla | Impulse English Academy La Vaguada,1
+Academia Inglés Tetuán | Impulse English Academy La Vaguada,1
+Academia de Inglés Barrio del Pilar | Impulse English | Impulse English Academy,1
+Academia de Inglés cerca de Cuatro Torres Business Area Madrid | Impulse English Academy,1
+Academia de Inglés cerca de La Paz Madrid | Impulse English Academy La Vaguada – Barrio del Pilar,1
+"Academia de Inglés cerca de Tetuán Madrid | Impulse English Academy La Vaguada, Barrio del Pilar",1
+Academia de Inglés en Barrio del Pilar | Impulse English Academy La Vaguada – Barrio del Pilar,1
+B1 para Universidad España | Impulse English Academy La Vaguada,1
+"Blog - Artículos sobre Inglés, Cambridge y Linguaskill | Impulse English Academy La Vaguada – Barrio del Pilar",1
+C1 Advanced para trabajar: ¿realmente mer | Impulse English La Vaguada,1
+Clases Particulares vs Academia | Impulse English Academy La Vaguada,1
+Clases de Inglés Online | En Directo con Profesores Nativos | Impulse English Academy La Vaguada – Barrio del Pilar,1
+Clases de Inglés para Adultos | Cambridge y Linguaskill | Impulse English Academy La Vaguada – Barrio del Pilar,1
+Contacto - Academia de Inglés La Vaguada Madrid | Impulse English Academy,1
+Contacto | Impulse English Academy La Vaguada – Barrio del Pilar,1
+Cómo Aprender Inglés | Impulse English Academy La Vaguada,1
+Edad Empezar Inglés Bebés | Impulse English Academy La Vaguada,1
+Entiendo Inglés Pero No Hablo | Impulse English Academy La Vaguada,1
+Exámenes Cambridge 2026: Guía Completa de Niveles y Preparación | Impulse English Academy La Vaguada – Barrio del Pilar,1
+Exámenes Cambridge | Centro Preparador Oficial | Impulse English Academy La Vaguada – Barrio del Pilar,1
+Inglés Entrevistas de Trabajo | Impulse English Academy La Vaguada,1
+Inglés Infantil (2–5 años) Great Little People | La Vaguada – Barrio del Pilar | Impulse English Academy,1
+Inglés Infantil (2–5 años) | Great Little People | Impulse English Academy La Vaguada – Barrio del Pilar,1
+Inglés Secundaria (13–17) | EBAU + Cambridge B1–C1 | Impulse English Academy La Vaguada – Barrio del Pilar,1
+Las 8 Mejores Academias de Inglés en Madrid Norte [Ranking 2026],1
+Libros preparar B2 First 2026: Los mejore | Impulse English La Vaguada,1
+Linguaskill Examen Ejemplo: Guía Completa 2026 | Impulse English Academy La Vaguada – Barrio del Pilar,1
+Mejorar Speaking en Inglés | Impulse English Academy La Vaguada,1
+Mejores Academias Inglés Madrid | Impulse English Academy La Vaguada,1
+Mi Hijo No Avanza en Inglés | Impulse English Academy La Vaguada,1
+No Entiendo Inglés Hablado | Impulse English Academy La Vaguada,1
+Nota para Aprobar B2 First: Puntuación Mí | Impulse English La Vaguada,1
+Nota para Aprobar el B2 First de Cambridge: Puntuación Mínima [2026],1
+Opiniones | Impulse English Academy La Vaguada | Barrio del Pilar,1
+Our Team | Impulse English Academy La Vaguada | Barrio del Pilar,1
+Política de Cookies | Impulse English Academy La Vaguada,1
+Por Qué No Avanzo en Inglés | Impulse English Academy La Vaguada,1
+Precio Cambridge C1 Madrid | Impulse English Academy La Vaguada,1
+Precio de preparar el C1 Advanced en Madr | Impulse English La Vaguada,1
+Reservar Clase de Prueba Gratuita | Impulse English Academy La Vaguada – Barrio del Pilar,1
+Testimonios | Impulse English Academy,1
+Todos los artículos del blog | Impulse En | Impulse English La Vaguada,1
+¿Cuánto Dura el Certificado B2 Cambridge? | Impulse English La Vaguada,1
+¿Cuánto tiempo se tarda en preparar el B2 | Impulse English La Vaguada,1
+
+#  
+# Start date: 20260101
+# End date: 20260630
+Event name,Event count
+user_engagement,2910
+page_view,2762
+session_start,1938
+first_visit,1548
+scroll,287
+click,132
+form_start,22
+
+# What are your top performing key events?
+# Start date: 20260101
+# End date: 20260630
+Event name,Key events
+
+
+# Where does your average 120d value come from?
+# Start date: 20260101
+# End date: 20260630
+First user primary channel group (Default channel group),Average 120d value
+
+
+#  
+# Start date: 20260101
+# End date: 20260630
+Item name,Items purchased
+
+
+# How does activity on your platforms compare?
+# Start date: 20260101
+# End date: 20260630
+Platform,Key events

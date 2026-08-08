@@ -1,0 +1,155 @@
+# PROMPT 1: TITLE TAG & META DESCRIPTION GENERATOR
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Title tag
+- Meta description
+- Page title
+- SEO title
+- SERP snippet
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+Title tags and meta descriptions are the FIRST thing AI systems evaluate when determining if a page is unique or a duplicate. Microsoft's research shows that LLMs group pages with similar titles together and only cite ONE.
+
+**The #1 pattern that gets pages marked as duplicates:**
+`[Service] in [City] | [Brand]`
+
+This pattern is death for GEO. If you have 10 pages with "Plumbing Services in [City] | ABC Plumbing" - AI will treat them as duplicates.
+
+---
+
+## TITLE TAG REQUIREMENTS
+
+### Format Specifications
+- Length: 50-60 characters (optimal for display)
+- Must be 100% unique per location
+- Must be impossible to use for a different location
+
+### Required Elements
+1. **Lead with differentiator or specialty** - NOT the generic service name
+2. **Include specific neighborhood/area** - NOT just the city
+3. **Include a unique angle** (building type, specialty, response time, etc.)
+4. **Brand name** - at the end, not the beginning
+
+### Structure Options (choose one)
+```
+[Specialty/Angle] in [Neighborhood] | [Response/Promise] | [Brand]
+[Building Type] [Service] in [Neighborhood] | [Brand]
+[Urgency Word] [Service] in [Specific Area] | [Differentiator] | [Brand]
+```
+
+### FORBIDDEN Patterns (Never Use)
+- "[Service] in [City] | [Brand]"
+- "[City] [Service] | Professional [Service]"
+- "[Brand] - Your Local [City] [Service Provider]"
+- "Best [Service] in [City] | [Brand]"
+- "[Service] Services in [City] Area"
+
+---
+
+## META DESCRIPTION REQUIREMENTS
+
+### Format Specifications
+- **MAXIMUM LENGTH: 160 characters** (NEVER exceed this limit)
+- Optimal range: 150-160 characters
+- Must include at least ONE specific number
+- Must include specific area served
+- Must include clear call-to-action
+- Should end with phone number
+
+### Required Elements
+1. **Specific number** (years experience, response time, price, review count)
+2. **Area-specific reference** (neighborhood or street names)
+3. **Value proposition** (what makes you different)
+4. **Call-to-action** (Call, Book, Schedule, Get Quote)
+5. **Phone number** (at the end)
+
+### Structure Template
+```
+[Area]'s trusted [service] for [X years]. [Specialty/differentiator]. [Specific offer with number]. [CTA]: [Phone]
+```
+
+---
+
+## OUTPUT FORMAT
+
+Generate 3 title tag options and 2 meta description options.
+
+For each, include:
+- The text
+- Character count
+- Which angle it uses
+- Why it's GEO-optimized (brief note)
+
+### Example Output Format:
+
+**TITLE TAG OPTIONS:**
+
+**Option 1: Specialty Lead**
+`Emergency Plumber in Boston's Back Bay | 24/7 Brownstone Specialists`
+- Characters: 62
+- Angle: Specialty (brownstone expertise) + Urgency (emergency/24/7)
+- GEO Note: Neighborhood-specific, building type reference - impossible to template
+
+**Option 2: Response Time Lead**
+`45-Min Response Plumber in Back Bay | Historic Home Experts | ABC`
+- Characters: 58
+- Angle: Speed promise + Specialty
+- GEO Note: Specific metric + neighborhood + specialty creates uniqueness
+
+**Option 3: Building Type Lead**
+`Back Bay Brownstone Plumbing | 15-Year Local Expert | ABC Plumbing`
+- Characters: 61
+- Angle: Hyper-local building expertise
+- GEO Note: Building type + years + "local" signals authentic presence
+
+**META DESCRIPTION OPTIONS:**
+
+**Option 1:**
+`Back Bay's trusted emergency plumber for 15+ years. Brownstone pipe specialists serving Beacon Hill to South End. $89 service call, 45-min response. Call: (617) 555-0123`
+- Characters: 158
+- Numbers: 15+ years, $89, 45-min
+- GEO Note: Multiple neighborhoods, specific pricing, response time
+
+**Option 2:**
+`Need a plumber in Back Bay? Mike's team has fixed 2,000+ brownstone plumbing issues since 2009. Same-day service, upfront pricing. Book now: (617) 555-0123`
+- Characters: 156
+- Numbers: 2,000+, 2009
+- GEO Note: Named team member, specific job count, founding year
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have from Business-Information.txt:
+- [ ] Business name
+- [ ] Primary service
+- [ ] Specific location/neighborhood
+- [ ] Key differentiator or specialty
+- [ ] Response time or key metric
+- [ ] Years in business (in this area)
+- [ ] Starting price or service call fee
+- [ ] Phone number
+- [ ] Team member name (optional but valuable)
+- [ ] Review count or rating (optional)
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] Title is NOT in the "[Service] in [City] | [Brand]" format
+- [ ] Title includes specific neighborhood (not just city)
+- [ ] Title could NOT be used for a different location
+- [ ] Meta description includes at least one specific number
+- [ ] Meta description mentions specific area
+- [ ] Meta description has a clear CTA
+- [ ] Meta description ends with phone number
+- [ ] Title is within 50-60 characters
+- [ ] **Meta description is 160 characters or LESS** (hard limit)

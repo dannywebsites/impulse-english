@@ -1,0 +1,206 @@
+# PROMPT 6: CASE STUDY GENERATOR
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Case study
+- Project example
+- Success story
+- Portfolio item
+- Client story
+- Project spotlight
+- Work example
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+Case studies are GEO gold because they contain details that are IMPOSSIBLE to template:
+- Specific addresses or locations
+- Unique problem circumstances
+- Measurable outcomes with real numbers
+- Named team members who did the work
+- Actual photos from real projects
+
+**AI systems love case studies because:**
+1. They demonstrate genuine E-E-A-T (real experience)
+2. They contain unique, specific content
+3. They're often cited as proof of expertise
+4. They can't be duplicated across locations (each project is unique)
+
+---
+
+## CASE STUDY REQUIREMENTS
+
+### Format Specifications
+- **Length:** 200-300 words
+- **Structure:** Challenge → Solution → Results
+- **Required sections:** See structure below
+- **Specificity level:** Enough detail that it could be fact-checked
+
+### Required Elements
+1. **Specific location** (address, street, neighborhood)
+2. **Customer type** (homeowner, business, property manager)
+3. **Date/timeframe** (when project occurred)
+4. **Specific problem** (what went wrong, why it was challenging)
+5. **Local factors** (building type, local conditions, regulations)
+6. **Solution approach** (what you did, methods used)
+7. **Team member** who handled it (by name)
+8. **Time to complete** (specific duration)
+9. **Measurable results** (cost savings, time saved, specific metrics)
+10. **Customer reaction** (quote or outcome)
+
+---
+
+## CONTENT STRUCTURE
+
+### Section 1: Headline
+Include location and problem type.
+```
+[Problem Type] in [Neighborhood]: How [Business] [Solved/Saved/Fixed] [Specific Outcome]
+```
+
+### Section 2: The Challenge (50-75 words)
+- Specific problem with local context
+- What made it challenging or urgent
+- Any previous attempts or complications
+- Local factors that contributed
+
+### Section 3: Our Approach (75-100 words)
+- What you did to solve it
+- Specific methods, equipment, or techniques
+- Who on your team handled it
+- How your approach was tailored to this situation
+- Timeline of the work
+
+### Section 4: The Results (50-75 words)
+- Measurable outcomes with specific numbers
+- Cost savings for customer
+- Time saved or speed of resolution
+- Ongoing benefits
+- Customer quote or reaction
+
+---
+
+## OUTPUT FORMAT
+
+Generate a complete case study with all sections:
+
+### Example Output:
+
+---
+
+**CASE STUDY: Historic Brownstone Pipe Emergency in Back Bay**
+
+**The Challenge**
+
+When the temperature dropped to -10°F during Boston's February 2024 cold snap, the Andersons' 1885 brownstone on Commonwealth Avenue faced a homeowner's nightmare: a burst pipe in their third-floor bathroom sent water cascading through two floors. Previous attempts by another plumber to patch the aging copper system had failed within weeks. The Andersons needed a solution that would work with—not against—their home's historic plumbing.
+
+**Our Approach**
+
+Mike Torres arrived within 35 minutes of the emergency call—despite it being Super Bowl Sunday. Rather than the aggressive pipe replacement the previous plumber had attempted, Mike took a different approach suited to Back Bay brownstones: a careful assessment of the original 1880s copper trunk lines, followed by targeted reinforcement at vulnerable junction points. He worked with the building's existing galvanized-to-copper transitions rather than forcing modern PEX throughout. The repair took 4 hours, and Mike returned the following week for a pressure test and preventive inspection of other vulnerable areas.
+
+**The Results**
+
+The Andersons' repair cost $1,850—compared to the $4,200 quote they'd received for a full re-pipe that would have required opening walls throughout the brownstone. One year later, the repair is holding strong through another Boston winter. "Mike understood that our brownstone isn't just old pipes—it's our home's history," said Jennifer Anderson. "He fixed the problem without destroying what makes this place special."
+
+---
+
+**Key Details:**
+- Location: Commonwealth Avenue, Back Bay
+- Building type: 1885 brownstone
+- Problem: Burst pipe during -10°F cold snap
+- Response time: 35 minutes (Super Bowl Sunday)
+- Team member: Mike Torres
+- Duration: 4 hours
+- Cost: $1,850 (vs. $4,200 competitor quote)
+- Savings: $2,350
+- Follow-up: 1-year success verification
+
+**Word Count:** 287
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have from Business-Information.txt:
+- [ ] Location (specific as possible)
+- [ ] Customer type
+- [ ] Date of project
+- [ ] The problem/situation
+- [ ] What made it challenging
+- [ ] Any previous solutions tried
+- [ ] Local factors involved
+- [ ] What you did to solve it
+- [ ] Methods/equipment used
+- [ ] Team member who handled it
+- [ ] How long it took
+- [ ] Measurable outcome
+- [ ] Cost or savings numbers
+- [ ] Customer reaction/quote
+- [ ] Before/after photos available?
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] Headline includes location and problem type
+- [ ] Challenge section has local context
+- [ ] Team member is named
+- [ ] Specific numbers are included (time, cost, savings)
+- [ ] Solution explains WHY this approach was used
+- [ ] Results include measurable outcomes
+- [ ] Customer quote or reaction is included
+- [ ] Could NOT be used for a different location
+- [ ] Length is 200-300 words
+- [ ] Details are specific enough to be verifiable
+
+---
+
+## CASE STUDY TYPES THAT WORK WELL
+
+### Emergency Response
+Highlights speed and reliability under pressure.
+Focus on: response time, urgency, how you handled stress
+
+### Complex Problem
+Highlights expertise and problem-solving.
+Focus on: diagnostic approach, what others missed, technical skill
+
+### Cost Savings
+Highlights value and honest business practices.
+Focus on: competitor comparison, long-term value, avoiding unnecessary work
+
+### Historic/Specialty
+Highlights specialized knowledge.
+Focus on: unique challenges of building type, preservation approach
+
+### Long-Term Relationship
+Highlights reliability and trust.
+Focus on: ongoing service, knowing the property, preventive approach
+
+---
+
+## WHAT TO AVOID
+
+**Vague Locations:**
+- "A home in Boston" → "The Andersons' 1885 brownstone on Commonwealth Avenue"
+- "A local business" → "Chen's Restaurant on Newbury Street"
+
+**Generic Problems:**
+- "A plumbing issue" → "A burst pipe during -10°F temperatures"
+- "An emergency situation" → "Super Bowl Sunday, water cascading through two floors"
+
+**Missing Numbers:**
+Every case study should include specific metrics:
+- Response time in minutes
+- Cost with actual dollar amounts
+- Time to complete
+- Comparative savings
+- Follow-up results
+
+**No Team Member:**
+Saying "our team" is weaker than naming the specific person who did the work.

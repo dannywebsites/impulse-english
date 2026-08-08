@@ -1,0 +1,348 @@
+# ANTI-PATTERNS: CONTENT THAT KILLS GEO VISIBILITY
+## Reference File for GEO Content Project
+
+---
+
+## PURPOSE OF THIS FILE
+
+Before delivering ANY content, check it against the patterns in this file. If the content matches any of these anti-patterns, revise it before delivery.
+
+These patterns signal "duplicate content" or "low-quality template" to AI systems, causing pages to be grouped together (with only ONE getting citations) or ignored entirely.
+
+---
+
+## SECTION 1: TITLE TAG ANTI-PATTERNS
+
+### The Template Format (NEVER USE)
+```
+[Service] in [City] | [Brand]
+[City] [Service] | [Brand]
+[Brand] - [Service] in [City]
+Best [Service] in [City] | [Brand]
+#1 [Service] in [City] | [Brand]
+Professional [Service] in [City]
+[City] [Service] Company | [Brand]
+[Service] Services in [City] and Surrounding Areas
+Affordable [Service] in [City] | Call Today
+```
+
+### Why These Fail
+AI systems see these as templates. When you have:
+- "Plumbing Services in Boston | ABC Plumbing"
+- "Plumbing Services in Cambridge | ABC Plumbing"
+- "Plumbing Services in Somerville | ABC Plumbing"
+
+AI groups them as duplicates and cites only ONE.
+
+### What to Use Instead
+Each title must have a unique angle:
+- "Emergency Plumber in Boston's Back Bay | 24/7 Brownstone Specialists"
+- "Cambridge Victorian Home Plumbing | 15-Year Local Expert"
+- "Somerville Triple-Decker Plumbing Pros | Same-Day Service"
+
+---
+
+## SECTION 2: INTRO PARAGRAPH ANTI-PATTERNS
+
+### Generic Openings (NEVER USE)
+```
+"Welcome to [Brand], your trusted [service] provider in [City]."
+"At [Brand], we pride ourselves on providing quality [service] to [City] residents."
+"Looking for [service] in [City]? You've come to the right place."
+"[Brand] offers professional [service] to homeowners in [City] and surrounding areas."
+"We are [City]'s premier [service] company."
+"For over [X] years, [Brand] has been serving the [City] community."
+"Our experienced team provides top-quality [service] in [City]."
+"[Brand] is a full-service [service] company serving [City]."
+"Need [service] in [City]? Call the experts at [Brand]."
+"Trust [Brand] for all your [service] needs in [City]."
+```
+
+### Why These Fail
+- Could be used for ANY location (just swap city name)
+- No specific information that proves local expertise
+- No numbers, credentials, or differentiators
+- Reads like marketing copy, not authoritative content
+
+### What to Use Instead
+Answer Capsule format with specific local details:
+- Specific neighborhood names (not just city)
+- Specific building types or local challenges
+- Specific numbers (years, price, response time)
+- Named team members
+- Details that could ONLY apply to this location
+
+---
+
+## SECTION 3: SERVICE DESCRIPTION ANTI-PATTERNS
+
+### Swappable Content (NEVER USE)
+Any paragraph where you can replace the location name and it still makes sense:
+
+```
+"We provide comprehensive [service] to residents of [City]. Our experienced team
+handles all types of [service] issues, from minor repairs to major installations.
+With years of experience serving the [City] area, we understand what local
+homeowners need."
+```
+
+**The Swap Test:** Replace [City] with any other location. If the paragraph still works, it's too generic.
+
+### Vague Local References (AVOID)
+```
+"the Boston area"
+"greater Boston"
+"the local community"
+"this region"
+"nearby areas"
+"surrounding communities"
+```
+
+### What to Use Instead
+Specific local references that can't be swapped:
+- "Back Bay's 1880s brownstones"
+- "the copper piping common in Commonwealth Avenue homes"
+- "Cambridge triple-deckers with their shared plumbing stacks"
+- "the clay soil foundation issues in Arlington"
+
+---
+
+## SECTION 4: TESTIMONIAL ANTI-PATTERNS
+
+### Anonymous Attribution (NEVER USE)
+```
+"John D."
+"Sarah M."
+"A satisfied customer"
+"Local homeowner"
+"Boston resident"
+"Happy client"
+"J. Smith"
+```
+
+### Generic Praise (AVOID)
+```
+"Great service!"
+"Highly recommend!"
+"Very professional."
+"Will use again!"
+"Five stars!"
+"Best in the business!"
+"Excellent work."
+"On time and on budget."
+```
+
+### What to Use Instead
+Full attribution with specific details:
+- Full name (with permission): "Sarah Mitchell"
+- Specific location: "Marlborough Street, Back Bay"
+- Specific problem: "when our pipes burst during the February freeze"
+- Specific result: "saved us $2,000 compared to the other quote"
+- Named service provider: "Mike from ABC Plumbing"
+
+---
+
+## SECTION 5: FAQ ANTI-PATTERNS
+
+### Generic Questions (NEVER USE)
+```
+"What services do you offer?"
+"How do I contact you?"
+"What are your hours?"
+"Do you offer free estimates?"
+"Are you licensed and insured?"
+"What is your service area?"
+"How much do you charge?"
+```
+
+### Generic Answers (NEVER USE)
+```
+"We offer competitive pricing."
+"Contact us today to learn more."
+"We serve the greater [City] area."
+"Our experienced professionals..."
+"We pride ourselves on quality service."
+"Call for a free quote."
+```
+
+### What to Use Instead
+Location-specific questions and answers:
+- "How much does a plumber cost in Back Bay?" → "$89 service call, repairs typically $150-$450 for brownstone systems"
+- "Can you work on historic brownstone plumbing?" → Specific answer about building types in the area
+- "How quickly can you get to Beacon Hill?" → "45 minutes, our technician Mike is based in nearby Somerville"
+
+---
+
+## SECTION 6: TEAM BIO ANTI-PATTERNS
+
+### Unnamed Team (NEVER USE)
+```
+"Our experienced technicians..."
+"Our team of professionals..."
+"Our skilled staff..."
+"Our certified experts..."
+```
+
+### Generic Credentials (AVOID)
+```
+"years of experience"
+"fully licensed"
+"highly trained"
+"industry certified"
+"background checked"
+```
+
+### What to Use Instead
+- Full name: "Mike Torres"
+- Specific credentials: "Massachusetts License #PL-12345"
+- Specific numbers: "15 years, 2,000+ jobs in Back Bay"
+- Local connection: "Lives in Somerville, 10 minutes from Back Bay"
+- Personal detail: "Coaches daughter's soccer team in Davis Square"
+
+---
+
+## SECTION 7: CASE STUDY ANTI-PATTERNS
+
+### Vague Locations (NEVER USE)
+```
+"A home in Boston"
+"A local business"
+"A residential property"
+"A customer's home"
+"A nearby location"
+```
+
+### Vague Problems (AVOID)
+```
+"A plumbing issue"
+"A difficult situation"
+"An emergency"
+"A complex project"
+"A challenging repair"
+```
+
+### Vague Results (AVOID)
+```
+"The customer was satisfied"
+"We solved the problem"
+"Everything was fixed"
+"The project was successful"
+"They were happy with the results"
+```
+
+### What to Use Instead
+- Specific address/location: "The Andersons' brownstone on Commonwealth Avenue"
+- Specific problem: "Burst pipe during -10°F cold snap, water through two floors"
+- Specific solution: "Reinforced junction points in 1880s copper trunk lines"
+- Specific results: "$1,850 vs. $4,200 competitor quote, holding strong after one year"
+
+---
+
+## SECTION 8: SCHEMA ANTI-PATTERNS
+
+### Copy-Paste Schema (NEVER DO)
+Using identical schema across pages with only address changed.
+
+**Signals duplicate content when:**
+- Same @id across multiple pages
+- Same geo coordinates (impossible!)
+- Same areaServed for different locations
+- Identical FAQ content
+
+### Incomplete Schema (AVOID)
+- LocalBusiness without geo coordinates
+- LocalBusiness without areaServed
+- Service without pricing
+- FAQPage with generic questions
+- AggregateRating without reviewCount
+
+### What to Use Instead
+Completely unique schema per page:
+- Unique @id using page URL
+- Correct geo coordinates for that location
+- Location-specific areaServed neighborhoods
+- Location-specific FAQ questions and answers
+- Location-specific ratings if tracked separately
+
+---
+
+## SECTION 9: STRUCTURAL ANTI-PATTERNS
+
+### Template Page Structure
+If your Back Bay page and Cambridge page have:
+- Same section headings
+- Same content flow
+- Same testimonial placement
+- Same CTA placement
+- Only the location name changed
+
+**AI will see them as duplicates.**
+
+### What to Use Instead
+Vary the structure based on location characteristics:
+- Different lead angles based on local needs
+- Different featured case studies
+- Different team members highlighted
+- Different FAQ questions based on local concerns
+
+---
+
+## SECTION 10: PHRASE BLACKLIST
+
+### Never Use These Phrases
+```
+"proudly serving"
+"your trusted"
+"premier provider"
+"#1 rated"
+"best in class"
+"world-class service"
+"customer-focused"
+"dedicated to excellence"
+"committed to quality"
+"serving the community"
+"here to help"
+"your satisfaction guaranteed"
+"family-owned and operated" (unless adding specific detail)
+"no job too big or small"
+"we treat your home like our own"
+"going above and beyond"
+```
+
+### Why These Fail
+- Generic marketing speak
+- Used by thousands of businesses
+- Add no unique value
+- Signal template content to AI
+- Waste precious content space
+
+---
+
+## THE UNIVERSAL TEST
+
+Before delivering any content, ask:
+
+1. **The Swap Test:** Can I replace the location with another and have it still work? If YES → revise.
+
+2. **The Verification Test:** Could someone fact-check the specific claims in this content? If NO → add specifics.
+
+3. **The Uniqueness Test:** Is there anything in this content that could ONLY describe THIS location? If NO → add local signals.
+
+4. **The Template Test:** Does this follow a pattern I've used for other pages? If YES → differentiate.
+
+If content fails ANY of these tests, it needs revision before delivery.
+
+---
+
+## REMEMBER
+
+AI systems are designed to detect patterns. The patterns in this file have been identified as signals of:
+- Duplicate content
+- Template-based pages
+- Low-quality, low-effort content
+- Non-authoritative sources
+
+Every pattern you avoid increases your chances of AI citation.
+Every unique detail you add differentiates your page from competitors.
+
+When in doubt: **More specific always beats more polished.**

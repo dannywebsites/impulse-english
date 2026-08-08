@@ -1,0 +1,183 @@
+# PROMPT 2: ANSWER CAPSULE / HERO INTRO GENERATOR
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Hero intro
+- Opening paragraph
+- Answer capsule
+- First paragraph
+- Intro section
+- Above-the-fold content
+- Lead paragraph
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+The "Answer Capsule" is the single most important text block on any page for AI citations.
+
+**Research finding:** 72% of pages cited by ChatGPT have an answer capsule present - making it the most consistent predictor of AI citation.
+
+AI systems extract the first 40-60 words to use in responses. This text block must:
+- Directly answer a likely user question
+- Be self-contained (makes sense without context)
+- Include specific, verifiable details
+- Read naturally when spoken aloud
+
+---
+
+## ANSWER CAPSULE REQUIREMENTS
+
+### Format Specifications
+- **Length: Exactly 40-60 words** (critical - AI systems extract this length)
+- Must be a self-contained answer
+- Must read naturally when spoken aloud
+- Must include at least one specific number
+
+### Required Elements (all must be present)
+1. **Business/service identification** - Who provides this service
+2. **Specific area served** - Neighborhoods, not just city
+3. **Credibility signal** - Years, certifications, job count
+4. **Key differentiator** - What makes you different
+5. **Specific number** - Price, time, rating, years, or count
+6. **Call to action** - What to do next
+7. **Contact info** - Phone number
+
+### The 40-60 Word Formula
+```
+[Question hook OR Direct statement]? [Business name] has [served/provided] [specific area] for [X years/since XXXX]. [Key differentiator or specialty]. [Specific metric or offer]. [CTA with phone number].
+```
+
+---
+
+## THREE ANGLES TO GENERATE
+
+Always generate 3 versions with different lead angles:
+
+### Angle 1: Authority Lead
+Opens with experience, credentials, or track record.
+```
+"[Business] has been [Area]'s trusted [service] for [X years]..."
+```
+
+### Angle 2: Speed/Availability Lead
+Opens with response time or availability promise.
+```
+"Need [service] in [Area]? [Business] responds in [X minutes]..."
+```
+
+### Angle 3: Value Lead
+Opens with pricing or guarantee.
+```
+"[Service] in [Area] starting at [$X]. [Business] offers..."
+```
+
+---
+
+## OUTPUT FORMAT
+
+For each of the 3 versions, provide:
+- The complete answer capsule text
+- Word count (must be 40-60)
+- Which angle it uses
+- The implicit question it answers
+
+### Example Output:
+
+**ANSWER CAPSULE OPTIONS:**
+
+---
+
+**Option 1: Authority Lead** (52 words)
+
+"Looking for emergency plumbing in Back Bay? ABC Plumbing has served Boston's brownstone district for 15 years. Our certified team, led by Mike Torres, responds within 45 minutes—day or night. Starting at $89 for service calls, with upfront pricing guaranteed. Call (617) 555-0123 for same-day appointments."
+
+- Word Count: 52
+- Angle: Authority (15 years, certified, named expert)
+- Answers: "Who is the best emergency plumber in Back Bay?"
+
+---
+
+**Option 2: Speed/Availability Lead** (48 words)
+
+"Need a plumber in Back Bay right now? ABC Plumbing guarantees 45-minute response to brownstone emergencies across Beacon Hill, Back Bay, and South End. Our licensed team has resolved 2,000+ plumbing issues since 2009. $89 service call with no hidden fees. Call (617) 555-0123."
+
+- Word Count: 48
+- Angle: Speed (45-minute guarantee) + Coverage
+- Answers: "How quickly can I get a plumber in Back Bay?"
+
+---
+
+**Option 3: Value Lead** (55 words)
+
+"Back Bay plumbing service starting at $89—no trip charges, no surprises. ABC Plumbing specializes in historic brownstone pipes, serving Commonwealth Ave to Marlborough Street for 15 years. Mike Torres and our certified team respond in 45 minutes or less, day or night. Schedule your service call: (617) 555-0123."
+
+- Word Count: 55
+- Angle: Value (clear pricing) + Local expertise
+- Answers: "How much does a plumber cost in Back Bay?"
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have from Business-Information.txt:
+- [ ] Business name
+- [ ] Primary service
+- [ ] Specific neighborhoods served
+- [ ] Years in business (in this area specifically)
+- [ ] Primary team member name
+- [ ] Response time
+- [ ] Starting price / service call fee
+- [ ] Certifications or credentials
+- [ ] Phone number
+- [ ] Job count or other credibility metric
+- [ ] Specialty or differentiator
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify each answer capsule:
+- [ ] Is exactly 40-60 words
+- [ ] Includes the business name
+- [ ] Includes specific neighborhood(s) - not just city
+- [ ] Includes at least one specific number (years, price, time, or count)
+- [ ] Includes a call-to-action
+- [ ] Includes phone number
+- [ ] Reads naturally when spoken aloud
+- [ ] Answers a specific question someone might ask
+- [ ] Could NOT be used for a different location (unique details)
+- [ ] Does not use generic phrases like "proudly serving" or "your trusted"
+
+---
+
+## COMMON MISTAKES TO AVOID
+
+**Too Generic:**
+"We provide quality plumbing services to Boston and surrounding areas. Our experienced team is here to help with all your plumbing needs. Contact us today!"
+- No specific numbers
+- No neighborhood specificity
+- Could be used for any location
+- No personality
+
+**Too Long:**
+Going over 60 words dilutes the impact and AI systems may not extract it properly.
+
+**Missing CTA:**
+Informative but doesn't tell the reader what to do next.
+
+**Missing Number:**
+No years, price, time, or metric. Numbers create specificity and credibility.
+
+---
+
+## PLACEMENT GUIDANCE
+
+The answer capsule should appear:
+- Immediately after the H1 heading
+- Above the fold (visible without scrolling)
+- Before any images or secondary elements
+- In regular paragraph format (not in a special box that might not be crawled)

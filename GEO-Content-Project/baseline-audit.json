@@ -1,0 +1,712 @@
+{
+  "BarrioDelPilar": {
+    "raw": 102,
+    "geo": 64,
+    "grade": "D",
+    "elements": {
+      "Title Tag": {
+        "score": 7,
+        "evidence": "len=46 brand=True diff=False"
+      },
+      "H1 Heading": {
+        "score": 7,
+        "evidence": "local=True number=False"
+      },
+      "Intro Paragraph": {
+        "score": 8,
+        "evidence": "local_refs=4 numbers=1 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 5,
+        "evidence": "max_overlap=0.65 -> 35% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 1,
+        "evidence": "UNVERIFIED TESTIMONIALS — not in the approved review list: María José L., Alejandro Ruiz, Inmaculada Soto, David Fernández"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 10,
+        "evidence": "distinct_local_signals=18 travel_times=5"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 0,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 10,
+        "evidence": "faqs=12 location_specific=10"
+      },
+      "Contact Information": {
+        "score": 7,
+        "evidence": "phone=False address=True hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 9,
+        "evidence": "generateLocationPageSchema: geo=True areaServed=True"
+      },
+      "Service Schema": {
+        "score": 9,
+        "evidence": "Service + Offer with prices ['64', '83', '87', '94'] (via helper)"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 8,
+        "evidence": "AggregateRating via helper (reviewCount from napData — currently 178, must be 180)"
+      }
+    }
+  },
+  "CuatroTorres": {
+    "raw": 97,
+    "geo": 61,
+    "grade": "D",
+    "elements": {
+      "Title Tag": {
+        "score": 3,
+        "evidence": "template '[servicio] [barrio]', no differentiator"
+      },
+      "H1 Heading": {
+        "score": 9,
+        "evidence": "local=True number=True"
+      },
+      "Intro Paragraph": {
+        "score": 7,
+        "evidence": "local_refs=2 numbers=1 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 5,
+        "evidence": "max_overlap=0.69 -> 31% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 0,
+        "evidence": "no testimonials on page"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 10,
+        "evidence": "distinct_local_signals=12 travel_times=6"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 0,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 9,
+        "evidence": "faqs=5 location_specific=4"
+      },
+      "Contact Information": {
+        "score": 7,
+        "evidence": "phone=False address=True hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 9,
+        "evidence": "generateLocationPageSchema: geo=True areaServed=True"
+      },
+      "Service Schema": {
+        "score": 9,
+        "evidence": "Service + Offer with prices ['64', '83', '87', '94'] (via helper)"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 8,
+        "evidence": "AggregateRating via helper (reviewCount from napData — currently 178, must be 180)"
+      }
+    }
+  },
+  "LaPaz": {
+    "raw": 94,
+    "geo": 59,
+    "grade": "F",
+    "elements": {
+      "Title Tag": {
+        "score": 3,
+        "evidence": "template '[servicio] [barrio]', no differentiator"
+      },
+      "H1 Heading": {
+        "score": 7,
+        "evidence": "local=True number=False"
+      },
+      "Intro Paragraph": {
+        "score": 8,
+        "evidence": "local_refs=1 numbers=3 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 2,
+        "evidence": "max_overlap=0.74 -> 26% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 1,
+        "evidence": "UNVERIFIED TESTIMONIALS — not in the approved review list: Elena Mart\\u00edn, Javier Rodr\\u00edguez, Marta D\\u00edaz"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 10,
+        "evidence": "distinct_local_signals=13 travel_times=11"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 0,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 9,
+        "evidence": "faqs=5 location_specific=4"
+      },
+      "Contact Information": {
+        "score": 7,
+        "evidence": "phone=False address=True hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 9,
+        "evidence": "generateLocationPageSchema: geo=True areaServed=True"
+      },
+      "Service Schema": {
+        "score": 9,
+        "evidence": "Service + Offer with prices ['64', '83', '87', '94'] (via helper)"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 8,
+        "evidence": "AggregateRating via helper (reviewCount from napData — currently 178, must be 180)"
+      }
+    }
+  },
+  "LaVaguada": {
+    "raw": 109,
+    "geo": 68,
+    "grade": "D",
+    "elements": {
+      "Title Tag": {
+        "score": 7,
+        "evidence": "len=40 brand=True diff=False"
+      },
+      "H1 Heading": {
+        "score": 7,
+        "evidence": "local=True number=False"
+      },
+      "Intro Paragraph": {
+        "score": 10,
+        "evidence": "local_refs=4 numbers=2 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 5,
+        "evidence": "max_overlap=0.50 -> 50% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 1,
+        "evidence": "UNVERIFIED TESTIMONIALS — not in the approved review list: Pati, Antonio Castillo, María Marcos, Chus Zuazo"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 10,
+        "evidence": "distinct_local_signals=20 travel_times=7"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 2,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 10,
+        "evidence": "faqs=10 location_specific=8"
+      },
+      "Contact Information": {
+        "score": 10,
+        "evidence": "phone=True address=True hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 9,
+        "evidence": "generateLocationPageSchema: geo=True areaServed=True"
+      },
+      "Service Schema": {
+        "score": 9,
+        "evidence": "Service + Offer with prices ['64', '83', '87', '94'] (via helper)"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 8,
+        "evidence": "AggregateRating via helper (reviewCount from napData — currently 178, must be 180)"
+      }
+    }
+  },
+  "LaVentilla": {
+    "raw": 147,
+    "geo": 92,
+    "grade": "A",
+    "elements": {
+      "Title Tag": {
+        "score": 9,
+        "evidence": "len=71 brand=True diff=True"
+      },
+      "H1 Heading": {
+        "score": 9,
+        "evidence": "local=True number=True"
+      },
+      "Intro Paragraph": {
+        "score": 9,
+        "evidence": "local_refs=2 numbers=4 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 7,
+        "evidence": "max_overlap=0.42 -> 58% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 10,
+        "evidence": "named=['JP', 'Danny Fitzpatrick', 'Danny']"
+      },
+      "Testimonials": {
+        "score": 9,
+        "evidence": "verified testimonials=2"
+      },
+      "Case Studies": {
+        "score": 9,
+        "evidence": "case_studies=['Daniel de la Pe']"
+      },
+      "Service Area Details": {
+        "score": 10,
+        "evidence": "distinct_local_signals=11 travel_times=10"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 10,
+        "evidence": "price_figures=['239 €', '29 €', '40 €', '45 €', '64 €', '83 €']"
+      },
+      "FAQ Section": {
+        "score": 10,
+        "evidence": "faqs=7 location_specific=4"
+      },
+      "Contact Information": {
+        "score": 10,
+        "evidence": "phone=True address=True hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 9,
+        "evidence": "generateLocationPageSchema: geo=True areaServed=True"
+      },
+      "Service Schema": {
+        "score": 9,
+        "evidence": "Service + Offer with prices ['64', '83', '87', '94'] (via helper)"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 8,
+        "evidence": "AggregateRating via helper (reviewCount from napData — currently 178, must be 180)"
+      }
+    }
+  },
+  "Mirasierra": {
+    "raw": 101,
+    "geo": 63,
+    "grade": "D",
+    "elements": {
+      "Title Tag": {
+        "score": 3,
+        "evidence": "template '[servicio] [barrio]', no differentiator"
+      },
+      "H1 Heading": {
+        "score": 7,
+        "evidence": "local=True number=False"
+      },
+      "Intro Paragraph": {
+        "score": 9,
+        "evidence": "local_refs=2 numbers=3 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 2,
+        "evidence": "max_overlap=0.76 -> 24% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 1,
+        "evidence": "UNVERIFIED TESTIMONIALS — not in the approved review list: Ana García R., Miguel Fernández, Cristina López M."
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 10,
+        "evidence": "distinct_local_signals=15 travel_times=12"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 2,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 10,
+        "evidence": "faqs=10 location_specific=9"
+      },
+      "Contact Information": {
+        "score": 10,
+        "evidence": "phone=True address=True hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 9,
+        "evidence": "generateLocationPageSchema: geo=True areaServed=True"
+      },
+      "Service Schema": {
+        "score": 9,
+        "evidence": "Service + Offer with prices ['64', '83', '87', '94'] (via helper)"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 8,
+        "evidence": "AggregateRating via helper (reviewCount from napData — currently 178, must be 180)"
+      }
+    }
+  },
+  "MontecarmeloLasTablas": {
+    "raw": 99,
+    "geo": 62,
+    "grade": "D",
+    "elements": {
+      "Title Tag": {
+        "score": 3,
+        "evidence": "template '[servicio] [barrio]', no differentiator"
+      },
+      "H1 Heading": {
+        "score": 7,
+        "evidence": "local=True number=False"
+      },
+      "Intro Paragraph": {
+        "score": 9,
+        "evidence": "local_refs=2 numbers=4 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 2,
+        "evidence": "max_overlap=0.71 -> 29% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 1,
+        "evidence": "UNVERIFIED TESTIMONIALS — not in the approved review list: Laura Martín P., Carlos Ruiz, Elena Sánchez R."
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 10,
+        "evidence": "distinct_local_signals=13 travel_times=19"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 0,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 10,
+        "evidence": "faqs=10 location_specific=7"
+      },
+      "Contact Information": {
+        "score": 10,
+        "evidence": "phone=True address=True hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 9,
+        "evidence": "generateLocationPageSchema: geo=True areaServed=True"
+      },
+      "Service Schema": {
+        "score": 9,
+        "evidence": "Service + Offer with prices ['64', '83', '87', '94'] (via helper)"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 8,
+        "evidence": "AggregateRating via helper (reviewCount from napData — currently 178, must be 180)"
+      }
+    }
+  },
+  "Penagrande": {
+    "raw": 102,
+    "geo": 64,
+    "grade": "D",
+    "elements": {
+      "Title Tag": {
+        "score": 3,
+        "evidence": "template '[servicio] [barrio]', no differentiator"
+      },
+      "H1 Heading": {
+        "score": 7,
+        "evidence": "local=True number=False"
+      },
+      "Intro Paragraph": {
+        "score": 10,
+        "evidence": "local_refs=5 numbers=3 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 2,
+        "evidence": "max_overlap=0.76 -> 24% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 1,
+        "evidence": "UNVERIFIED TESTIMONIALS — not in the approved review list: Rosa María V., Jesús Hernández, Lucía Gómez"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 10,
+        "evidence": "distinct_local_signals=14 travel_times=7"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 2,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 10,
+        "evidence": "faqs=9 location_specific=8"
+      },
+      "Contact Information": {
+        "score": 10,
+        "evidence": "phone=True address=True hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 9,
+        "evidence": "generateLocationPageSchema: geo=True areaServed=True"
+      },
+      "Service Schema": {
+        "score": 9,
+        "evidence": "Service + Offer with prices ['64', '83', '87', '94'] (via helper)"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 8,
+        "evidence": "AggregateRating via helper (reviewCount from napData — currently 178, must be 180)"
+      }
+    }
+  },
+  "PlazaCastilla": {
+    "raw": 97,
+    "geo": 61,
+    "grade": "D",
+    "elements": {
+      "Title Tag": {
+        "score": 3,
+        "evidence": "template '[servicio] [barrio]', no differentiator"
+      },
+      "H1 Heading": {
+        "score": 7,
+        "evidence": "local=True number=False"
+      },
+      "Intro Paragraph": {
+        "score": 8,
+        "evidence": "local_refs=4 numbers=1 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 5,
+        "evidence": "max_overlap=0.69 -> 31% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 1,
+        "evidence": "UNVERIFIED TESTIMONIALS — not in the approved review list: Ana Belén P., Roberto Sánchez, Patricia López"
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 10,
+        "evidence": "distinct_local_signals=12 travel_times=10"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 0,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 9,
+        "evidence": "faqs=5 location_specific=4"
+      },
+      "Contact Information": {
+        "score": 7,
+        "evidence": "phone=False address=True hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 9,
+        "evidence": "generateLocationPageSchema: geo=True areaServed=True"
+      },
+      "Service Schema": {
+        "score": 9,
+        "evidence": "Service + Offer with prices ['64', '83', '87', '94'] (via helper)"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 8,
+        "evidence": "AggregateRating via helper (reviewCount from napData — currently 178, must be 180)"
+      }
+    }
+  },
+  "Tetuan": {
+    "raw": 91,
+    "geo": 57,
+    "grade": "F",
+    "elements": {
+      "Title Tag": {
+        "score": 3,
+        "evidence": "template '[servicio] [barrio]', no differentiator"
+      },
+      "H1 Heading": {
+        "score": 5,
+        "evidence": "local=False number=False"
+      },
+      "Intro Paragraph": {
+        "score": 6,
+        "evidence": "local_refs=1 numbers=1 blacklist=0"
+      },
+      "Overall Uniqueness": {
+        "score": 2,
+        "evidence": "max_overlap=0.74 -> 26% unique vs nearest page"
+      },
+      "Team Member/Expert": {
+        "score": 2,
+        "evidence": "no named teacher"
+      },
+      "Testimonials": {
+        "score": 1,
+        "evidence": "UNVERIFIED TESTIMONIALS — not in the approved review list: Carlos M., Laura García, Miguel Ángel R."
+      },
+      "Case Studies": {
+        "score": 0,
+        "evidence": "no case study"
+      },
+      "Service Area Details": {
+        "score": 10,
+        "evidence": "distinct_local_signals=11 travel_times=5"
+      },
+      "Hero CTA": {
+        "score": 10,
+        "evidence": "link=True whatsapp=True prueba_de_nivel=True"
+      },
+      "Pricing Information": {
+        "score": 0,
+        "evidence": "no price figures"
+      },
+      "FAQ Section": {
+        "score": 10,
+        "evidence": "faqs=7 location_specific=6"
+      },
+      "Contact Information": {
+        "score": 7,
+        "evidence": "phone=False address=True hours=True"
+      },
+      "LocalBusiness Schema": {
+        "score": 9,
+        "evidence": "generateLocationPageSchema: geo=True areaServed=True"
+      },
+      "Service Schema": {
+        "score": 9,
+        "evidence": "Service + Offer with prices ['64', '83', '87', '94'] (via helper)"
+      },
+      "FAQPage Schema": {
+        "score": 9,
+        "evidence": "generateFAQSchema wired"
+      },
+      "AggregateRating": {
+        "score": 8,
+        "evidence": "AggregateRating via helper (reviewCount from napData — currently 178, must be 180)"
+      }
+    }
+  }
+}

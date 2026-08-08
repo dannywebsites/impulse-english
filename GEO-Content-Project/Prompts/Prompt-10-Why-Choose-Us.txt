@@ -1,0 +1,233 @@
+# PROMPT 10: WHY CHOOSE US / DIFFERENTIATORS SECTION
+## Reference File for GEO Content Project
+
+---
+
+## WHEN TO USE THIS FILE
+Use this file when the user requests:
+- Why choose us
+- Differentiators
+- What makes us different
+- Why we're better
+- Our advantages
+- What sets us apart
+- Unique selling points
+- USPs
+
+---
+
+## WHY THIS MATTERS FOR GEO
+
+AI systems frequently answer comparison and decision queries like:
+- "Why should I choose [business] in [area]?"
+- "What makes [service] in [location] different?"
+- "Best [service] in [area] - what to look for?"
+- "[Business A] vs other [service providers] in [area]"
+
+A well-structured "Why Choose Us" section:
+1. **Answers decision-stage queries** - Directly addresses "why this business?" questions
+2. **Provides citable differentiators** - Specific facts AI can reference
+3. **Builds E-E-A-T** - Demonstrates expertise through concrete proof
+4. **Creates unique content** - Your specific advantages can't be templated
+
+---
+
+## WHY CHOOSE US REQUIREMENTS
+
+### Format Specifications
+- **Length:** 150-250 words
+- **Structure:** 4-6 differentiators with proof
+- **Each differentiator:** 25-50 words with specific evidence
+
+### Required Elements Per Differentiator
+1. **Claim** - What makes you different (specific, not generic)
+2. **Proof** - Evidence supporting the claim (number, credential, example)
+3. **Local Context** - Why this matters for THIS area
+4. **Benefit** - What it means for the customer
+
+### Types of Differentiators to Include
+Choose 4-6 from these categories:
+
+**Experience & Expertise:**
+- Years serving specific area
+- Number of jobs in this neighborhood
+- Specialized training/certifications
+- Named expert who handles this area
+
+**Local Knowledge:**
+- Understanding of local building types
+- Familiarity with local codes/regulations
+- Knowledge of area-specific challenges
+- Relationships with local suppliers/inspectors
+
+**Service Quality:**
+- Response time guarantee (specific)
+- Warranty/guarantee (specific terms)
+- Pricing transparency (actual numbers)
+- Follow-up process
+
+**Trust Signals:**
+- License numbers (verifiable)
+- Insurance coverage (specific amounts)
+- Review ratings (with count)
+- Industry associations
+
+**Customer Experience:**
+- Who answers the phone
+- Communication style
+- Cleanliness/professionalism
+- After-service support
+
+---
+
+## CONTENT STRUCTURE
+
+### Differentiator Format
+```
+**[Differentiator Name]**
+[Claim] + [Proof/Number] + [Local context] + [Customer benefit].
+```
+
+### Example Output
+
+---
+
+**WHY CHOOSE ABC PLUMBING FOR BACK BAY**
+
+**15 Years of Brownstone Expertise**
+We've completed over 2,000 plumbing jobs in Back Bay alone since 2009. Mike Torres, our lead technician, has worked on brownstones from Commonwealth Ave to Marlborough Street—he knows the original 1880s copper and cast-iron systems that trip up generalist plumbers.
+
+**45-Minute Response, Guaranteed**
+When you call (617) 555-0123, our dispatch team answers—not a call center. For Back Bay emergencies, Mike typically arrives in under 30 minutes. We'll beat any competitor's response time or your service call is free.
+
+**Upfront Flat-Rate Pricing**
+No hourly surprises. We quote the job before touching a wrench—typical Back Bay repairs run $150-$450. You approve the price or we leave, no charge for the diagnosis. Compare that to hourly shops where a "quick fix" turns into $800.
+
+**Licensed, Insured, Local**
+Massachusetts Master Plumber License #PL-12345. $2M liability insurance. Mike lives in Somerville and has served Boston neighborhoods for 15 years. We're not a franchise—we're your neighbors.
+
+**1-Year Warranty on All Work**
+Every repair guaranteed for 12 months. If something fails, we fix it free. We photograph our work, email you a summary, and follow up in 48 hours. Check our 4.9 stars from 312 Google reviews.
+
+---
+
+**Word Count:** 218
+
+**Local Signals Used:**
+- Named technician (Mike Torres)
+- Specific neighborhoods (Back Bay, Commonwealth Ave, Marlborough Street)
+- Local building types (brownstones, 1880s systems)
+- Specific response time (45 minutes, under 30 for emergencies)
+- Specific pricing ($150-$450)
+- License number (PL-12345)
+- Insurance amount ($2M)
+- Review metrics (4.9 stars, 312 reviews)
+
+---
+
+## INPUT CHECKLIST
+
+Before generating, verify you have from Business-Information.txt:
+- [ ] Years serving this specific area
+- [ ] Number of jobs/projects completed in area
+- [ ] Primary technician/expert name for this area
+- [ ] Response time guarantee
+- [ ] Pricing structure (flat rate vs hourly)
+- [ ] Typical price range
+- [ ] License number(s)
+- [ ] Insurance coverage amount
+- [ ] Warranty terms
+- [ ] Google rating and review count
+- [ ] Phone number
+- [ ] What makes your approach different from competitors
+- [ ] Local building types/challenges you specialize in
+
+---
+
+## QUALITY CHECK
+
+Before delivering, verify:
+- [ ] Has 4-6 specific differentiators
+- [ ] Each differentiator has PROOF (number, credential, example)
+- [ ] At least 3 differentiators have local context
+- [ ] Includes specific pricing or price range
+- [ ] Names at least one team member
+- [ ] Includes verifiable credentials (license, rating, insurance)
+- [ ] References local building types or conditions
+- [ ] Could NOT be used for a different location
+- [ ] Length is 150-250 words
+- [ ] Every claim is backed by evidence
+
+---
+
+## WHAT TO AVOID
+
+**Generic Claims (NEVER USE):**
+- "We provide excellent service" → Show WHAT makes it excellent
+- "Our team is experienced" → "Mike has 15 years and 2,000+ Back Bay jobs"
+- "We're the best in the area" → "4.9 stars from 312 reviews"
+- "Customer satisfaction guaranteed" → "1-year warranty, free re-service"
+- "Competitive pricing" → "$150-$450 for typical repairs"
+
+**Unverifiable Statements (AVOID):**
+- "#1 rated" (unless you can prove it)
+- "Best in Boston" (subjective)
+- "Fastest response" (unless guaranteed)
+- "Lowest prices" (unless verifiable)
+
+**Missing Proof:**
+Every differentiator needs evidence:
+- Years → specific number + start date
+- Experience → job count + specific area
+- Quality → rating + review count
+- Speed → guaranteed response time
+- Price → actual range or starting price
+
+---
+
+## DIFFERENTIATOR CATEGORIES BY INDUSTRY
+
+### Home Services (Plumbing, HVAC, Electrical)
+- Response time guarantee
+- Flat-rate vs. hourly pricing
+- License/insurance specifics
+- Local building expertise
+- Warranty terms
+
+### Professional Services (Legal, Accounting)
+- Years practicing in this jurisdiction
+- Case results/success rates
+- Specific area of focus
+- Credentials and bar numbers
+- Communication approach
+
+### Health/Wellness (Dental, Chiro, Med Spa)
+- Years in practice at this location
+- Specific certifications/training
+- Technology/equipment used
+- Insurance accepted
+- Patient reviews/testimonials
+
+### Contractors (Roofing, Remodeling)
+- Projects completed in area
+- Permits pulled/passed inspections
+- Warranty on labor and materials
+- Before/after portfolio
+- Licensed/bonded/insured details
+
+---
+
+## ANTI-PATTERN CHECK
+
+Before delivering, verify content does NOT include:
+
+❌ "Proudly serving [City]"
+❌ "Your trusted [service] provider"
+❌ "We pride ourselves on..."
+❌ "Customer-focused approach"
+❌ "Quality workmanship"
+❌ "Dedicated to excellence"
+❌ Any claim without a specific number or proof
+
+✅ Replace with specific, verifiable facts that prove the claim.
+

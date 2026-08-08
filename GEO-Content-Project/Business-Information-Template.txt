@@ -1,0 +1,629 @@
+# BUSINESS INFORMATION TEMPLATE
+## Complete This Document For Your GEO Content Project
+
+Instructions: Fill out every section below with your actual business information. The more detail you provide, the better your AI-generated content will be. Leave sections blank if not applicable, but add [NEED TO GATHER] for information you have but haven't documented yet.
+
+---
+
+# SECTION 1: BUSINESS FUNDAMENTALS
+
+## Basic Information
+- Business Name (exact legal name):
+- Business Name (local/casual version, if different):
+- Website URL:
+- Primary Phone Number:
+- Email Address:
+- Year Business Established:
+- Years Serving Current Area:
+
+## Business Type
+- Industry/Category:
+- Specific Business Type (e.g., Plumber, Dentist, Lawyer, HVAC):
+- Schema.org Type (if known):
+
+## Primary Service (the one this project focuses on)
+- Service Name:
+- What specific problem does this service solve?:
+- Who is the ideal customer for this service?:
+- What makes your approach different from competitors?:
+
+## Credentials & Trust Signals
+- Business Licenses (list with numbers if possible):
+- Industry Certifications:
+- Insurance Coverage:
+- Professional Associations/Memberships:
+- Awards or Recognition:
+- Years of Combined Team Experience:
+
+## Service Guarantees
+- Satisfaction Guarantee (describe):
+- Warranty Offered:
+- Price Match Policy:
+- Other Guarantees:
+
+---
+
+# SECTION 2: LOCATIONS & SERVICE AREAS
+
+## Primary Location
+- Street Address:
+- City:
+- State:
+- ZIP Code:
+- Latitude (for schema):
+- Longitude (for schema):
+- Phone for This Location:
+- Email for This Location:
+
+## Hours of Operation
+- Monday:
+- Tuesday:
+- Wednesday:
+- Thursday:
+- Friday:
+- Saturday:
+- Sunday:
+- Holiday Hours Notes:
+- 24/7 Emergency Service Available?:
+- After-Hours Phone (if different):
+
+## Service Area Details
+List each neighborhood/area you serve with specific details:
+
+### Location/Neighborhood 1: [NAME]
+- Neighborhoods Included:
+- ZIP Codes Covered:
+- Major Landmarks Nearby:
+- Major Cross-Streets/Intersections:
+- Common Building Types (brownstones, Victorians, condos, etc.):
+- Local Challenges Specific to This Area:
+- How Long You've Served This Specific Area:
+- Estimated Jobs/Projects Completed Here:
+- Team Member(s) Assigned to This Area:
+- Average Response Time to This Area:
+- Any Local Nicknames for This Area:
+
+### Location/Neighborhood 2: [NAME]
+- Neighborhoods Included:
+- ZIP Codes Covered:
+- Major Landmarks Nearby:
+- Major Cross-Streets/Intersections:
+- Common Building Types:
+- Local Challenges Specific to This Area:
+- How Long You've Served This Specific Area:
+- Estimated Jobs/Projects Completed Here:
+- Team Member(s) Assigned to This Area:
+- Average Response Time to This Area:
+- Any Local Nicknames for This Area:
+
+### Location/Neighborhood 3: [NAME]
+- Neighborhoods Included:
+- ZIP Codes Covered:
+- Major Landmarks Nearby:
+- Major Cross-Streets/Intersections:
+- Common Building Types:
+- Local Challenges Specific to This Area:
+- How Long You've Served This Specific Area:
+- Estimated Jobs/Projects Completed Here:
+- Team Member(s) Assigned to This Area:
+- Average Response Time to This Area:
+- Any Local Nicknames for This Area:
+
+[Copy and paste the above block for additional locations]
+
+---
+
+# SECTION 3: TEAM MEMBERS
+
+## Team Member 1 (Primary/Featured)
+- Full Name:
+- Job Title/Role:
+- Years of Experience (total):
+- Years with This Company:
+- Primary Service Area(s):
+- Certifications/Licenses:
+- Specialization:
+- Number of Projects/Jobs Completed:
+- Lives In/Near Service Area? (Y/N, where):
+- Education/Training Background:
+- Why They Got Into This Work:
+- Personal Detail (hobby, family, interest):
+- What Makes Them Particularly Good at Their Job:
+- Professional Photo Available? (Y/N):
+- Photo File Name/Location:
+
+## Team Member 2
+- Full Name:
+- Job Title/Role:
+- Years of Experience (total):
+- Years with This Company:
+- Primary Service Area(s):
+- Certifications/Licenses:
+- Specialization:
+- Number of Projects/Jobs Completed:
+- Lives In/Near Service Area? (Y/N, where):
+- Personal Detail:
+- What Makes Them Particularly Good at Their Job:
+
+## Team Member 3
+- Full Name:
+- Job Title/Role:
+- Years of Experience (total):
+- Years with This Company:
+- Primary Service Area(s):
+- Certifications/Licenses:
+- Specialization:
+- Number of Projects/Jobs Completed:
+- Lives In/Near Service Area? (Y/N, where):
+- Personal Detail:
+- What Makes Them Particularly Good at Their Job:
+
+[Copy and paste for additional team members]
+
+---
+
+# SECTION 4: PRICING & TRANSACTIONAL DETAILS
+
+## Pricing Structure
+- Service Call Fee / Trip Charge: $
+- Starting Price for Primary Service: $
+- Typical Price Range: $ to $
+- Premium/Rush Pricing (if applicable): $
+- Do You Provide Free Estimates? (Y/N):
+- How Long Are Estimates Valid?:
+
+## Discounts & Offers
+- First-Time Customer Discount:
+- Senior Discount:
+- Military/Veteran Discount:
+- Seasonal Promotions (current):
+- Referral Program:
+- Bundle Discounts:
+
+## Payment Information
+- Payment Methods Accepted:
+- Financing Available? (Y/N):
+- Financing Partner/Details:
+- Payment Plans Offered:
+- Invoice/Billing Process:
+
+## Booking & Contact
+- How Should Customers Contact You? (preferred method):
+- Online Booking Available? (Y/N, URL):
+- Typical Response Time to Inquiries:
+- What Happens After They Call/Book?:
+
+---
+
+# SECTION 5: TESTIMONIALS & REVIEWS
+
+## Overall Review Profile
+- Google Rating:
+- Google Review Count:
+- Google Business Profile URL:
+- Yelp Rating:
+- Yelp Review Count:
+- Yelp URL:
+- Other Review Platform:
+- Rating/Count:
+- URL:
+- Common Phrases/Compliments in Reviews:
+
+## Testimonial 1
+- Customer Full Name:
+- Customer Location (neighborhood/street):
+- Date of Service:
+- Service Provided:
+- The Problem They Had:
+- How You Solved It:
+- Specific Result/Outcome:
+- Their Quote/Testimonial (exact words if available):
+- Permission to Use Name? (Y/N):
+- Photo Available? (Y/N):
+
+## Testimonial 2
+- Customer Full Name:
+- Customer Location (neighborhood/street):
+- Date of Service:
+- Service Provided:
+- The Problem They Had:
+- How You Solved It:
+- Specific Result/Outcome:
+- Their Quote/Testimonial:
+- Permission to Use Name? (Y/N):
+
+## Testimonial 3
+- Customer Full Name:
+- Customer Location (neighborhood/street):
+- Date of Service:
+- Service Provided:
+- The Problem They Had:
+- How You Solved It:
+- Specific Result/Outcome:
+- Their Quote/Testimonial:
+- Permission to Use Name? (Y/N):
+
+[Copy and paste for additional testimonials - aim for at least one per location]
+
+---
+
+# SECTION 6: CASE STUDIES / PROJECT EXAMPLES
+
+## Case Study 1
+- Project Title/Name:
+- Location (as specific as possible):
+- Customer Type (homeowner, business, etc.):
+- Date Completed:
+
+### The Situation
+- What was the customer's problem?:
+- What made it challenging or urgent?:
+- Had they tried other solutions?:
+- Any local factors involved?:
+
+### The Solution
+- What did you do?:
+- Specific methods/equipment used:
+- Who on your team handled it?:
+- How long did it take?:
+- Any unique approach for this situation?:
+
+### The Results
+- What was the outcome?:
+- Cost savings for customer: $
+- Time saved:
+- Other measurable results:
+- Customer reaction:
+- Ongoing relationship?:
+
+### Media
+- Before Photos Available? (Y/N):
+- After Photos Available? (Y/N):
+- Video Available? (Y/N):
+- File Names/Locations:
+
+## Case Study 2
+- Project Title/Name:
+- Location (as specific as possible):
+- Customer Type:
+- Date Completed:
+
+### The Situation
+- What was the customer's problem?:
+- What made it challenging or urgent?:
+- Had they tried other solutions?:
+- Any local factors involved?:
+
+### The Solution
+- What did you do?:
+- Specific methods/equipment used:
+- Who on your team handled it?:
+- How long did it take?:
+
+### The Results
+- What was the outcome?:
+- Cost savings for customer: $
+- Time saved:
+- Other measurable results:
+- Customer reaction:
+
+[Copy and paste for additional case studies - aim for at least one per location]
+
+---
+
+# SECTION 7: FREQUENTLY ASKED QUESTIONS
+
+## General FAQs (apply to all locations)
+
+### FAQ 1
+- Question:
+- Answer:
+
+### FAQ 2
+- Question:
+- Answer:
+
+### FAQ 3
+- Question:
+- Answer:
+
+### FAQ 4
+- Question:
+- Answer:
+
+### FAQ 5
+- Question:
+- Answer:
+
+## Location-Specific FAQs
+
+### [Location 1 Name] FAQs
+- Q:
+- A:
+
+- Q:
+- A:
+
+### [Location 2 Name] FAQs
+- Q:
+- A:
+
+- Q:
+- A:
+
+## Common Objections & Responses
+- Objection 1:
+- Your Response:
+
+- Objection 2:
+- Your Response:
+
+---
+
+# SECTION 8: COMPETITIVE LANDSCAPE
+
+## Competitor 1
+- Business Name:
+- What They Do Well:
+- What They Do Poorly:
+- What You Do Better:
+- What Customers Say When Switching to You:
+
+## Competitor 2
+- Business Name:
+- What They Do Well:
+- What They Do Poorly:
+- What You Do Better:
+- What Customers Say When Switching to You:
+
+## Competitor 3
+- Business Name:
+- What They Do Well:
+- What They Do Poorly:
+- What You Do Better:
+
+## Your Unique Differentiators
+- Differentiator 1:
+- Differentiator 2:
+- Differentiator 3:
+- Why choose you over cheaper alternatives?:
+- What do you offer that NO competitor offers?:
+
+---
+
+# SECTION 9: BRAND VOICE & STYLE
+
+## Tone
+- How would you describe your brand voice? (professional, friendly, expert, casual, etc.):
+- Words/phrases you WANT associated with your brand:
+- Words/phrases to AVOID:
+
+## Existing Content Examples
+- URL of a page with content you like:
+- URL of a page with content you want to improve:
+- Any brand guidelines document? (Y/N, file name):
+
+---
+
+# SECTION 10: ADDITIONAL INFORMATION
+
+## Community Involvement
+- Local Events Sponsored:
+- Community Organizations Involved With:
+- Local Partnerships:
+- Charity/Volunteer Work:
+
+## Media & Press
+- Press Mentions:
+- Media Appearances:
+- Published Articles/Content:
+
+## Social Proof
+- Social Media URLs:
+  - Facebook:
+  - Instagram:
+  - LinkedIn:
+  - Twitter/X:
+  - YouTube:
+  - TikTok:
+- Industry Directory Listings:
+- BBB Profile:
+- Other Trust Signals:
+
+## Anything Else
+Use this space for any other information that might be relevant:
+
+
+
+
+---
+
+# SECTION 11: HOW WE WORK / SERVICE PROCESS
+
+This section captures your step-by-step process for AI to answer questions like "What happens when I call?" or "How does [service] work?"
+
+## Initial Contact
+- Who answers the phone? (person's name/role, or team name):
+- What information do you ask for on the first call?:
+- Do you have a call center or do calls go direct?:
+- What happens with emergency vs. non-emergency calls?:
+
+## Dispatch & Scheduling
+- Average response time to schedule:
+- Same-day appointments available? (Y/N):
+- How do you assign technicians to jobs?:
+- Does a specific technician cover specific areas?:
+
+## On-Site Assessment
+- What does your technician do first when arriving?:
+- How long does a typical diagnosis/assessment take?:
+- What equipment or methods do you use to diagnose?:
+- How do you explain findings to customers?:
+
+## Pricing & Approval
+- Do you give quotes before starting work? (Y/N):
+- Flat rate vs. hourly pricing?:
+- Do you charge for diagnosis/estimates? (Y/N, amount):
+- What happens if customer declines the quote?:
+
+## Service Delivery
+- Average time to complete a typical job:
+- What methods/techniques set you apart?:
+- Any special approaches for specific building types?:
+- Do you clean up after yourself?:
+
+## Follow-Up & Guarantees
+- Warranty period on work:
+- Do you follow up after service? (how, when):
+- Do you provide documentation/photos of work?:
+- How do customers reach you if there's an issue?:
+
+## Process Differentiators
+- What's different about YOUR process vs. competitors?:
+- Any local factors that affect your process?:
+- Customer comments about your process:
+
+---
+
+# SECTION 12: WHY CHOOSE US / DIFFERENTIATORS
+
+This section captures your key advantages for AI to answer "Why should I choose [your business]?" queries.
+
+## Experience & Track Record
+- Total years in business:
+- Years serving THIS specific area:
+- Total jobs/projects completed:
+- Jobs completed in THIS specific area:
+- Notable achievements or milestones:
+
+## Credentials & Trust Signals
+- Primary license number(s):
+- Insurance coverage amount:
+- Bonding amount (if applicable):
+- Industry certifications:
+- Professional association memberships:
+- Awards or recognition received:
+
+## Local Expertise
+- What local building types do you specialize in?:
+- Local codes/regulations you're expert in:
+- Local challenges you're uniquely equipped to handle:
+- Relationships with local suppliers/inspectors:
+- How long have you personally lived/worked in this area?:
+
+## Service Guarantees
+- Response time guarantee (specific):
+- Warranty terms (specific duration):
+- Satisfaction guarantee details:
+- What happens if customer isn't satisfied?:
+- Price match or price guarantee:
+
+## Review Profile
+- Google rating:
+- Google review count:
+- Yelp rating:
+- Yelp review count:
+- Other platform ratings:
+- Common compliments in reviews:
+
+## Key Differentiators (Top 5)
+List your 5 strongest differentiators WITH PROOF:
+
+### Differentiator 1
+- Claim (what makes you different):
+- Proof (number, credential, or example):
+- Why it matters to customers:
+
+### Differentiator 2
+- Claim:
+- Proof:
+- Why it matters:
+
+### Differentiator 3
+- Claim:
+- Proof:
+- Why it matters:
+
+### Differentiator 4
+- Claim:
+- Proof:
+- Why it matters:
+
+### Differentiator 5
+- Claim:
+- Proof:
+- Why it matters:
+
+## Competitor Comparison
+- What do customers say when switching FROM competitors TO you?:
+- What's the #1 complaint about your competitors that you solve?:
+- What can you do that NO competitor in your area can?:
+
+---
+
+# SECTION 13: LOCAL PROPERTY MARKET DATA (Property Industry Only)
+
+Skip this section if you're NOT in property investing, real estate, mortgage/refinancing, or property management.
+
+This section helps AI generate accurate, sourced property market snapshots for your service areas.
+
+## Target Areas
+List each suburb/neighborhood you want property data for:
+
+### Area 1: [SUBURB/NEIGHBORHOOD NAME]
+- Property type focus (houses, units, or both):
+- Current median price (if known):
+- 10-year price change (if known):
+- Key sources you trust for this area:
+- Any notable market trends:
+
+### Area 2: [SUBURB/NEIGHBORHOOD NAME]
+- Property type focus:
+- Current median price (if known):
+- 10-year price change (if known):
+- Key sources you trust:
+- Notable market trends:
+
+### Area 3: [SUBURB/NEIGHBORHOOD NAME]
+- Property type focus:
+- Current median price (if known):
+- 10-year price change (if known):
+- Key sources you trust:
+- Notable market trends:
+
+## Your Audience
+- Primary audience (investors, first-home buyers, refinancers, sellers):
+- What data matters most to them? (growth rates, yields, affordability):
+- Any specific metrics you always quote to clients?:
+
+## Preferred Data Sources
+List the sources you consider authoritative for your market:
+- Source 1 (name + URL):
+- Source 2 (name + URL):
+- Source 3 (name + URL):
+
+---
+
+# COMPLETION CHECKLIST
+
+Before uploading this file to your project, verify:
+
+[ ] Section 1: Business Fundamentals - Complete
+[ ] Section 2: At least 1 location with full details
+[ ] Section 3: At least 1 team member with full details
+[ ] Section 4: Pricing information included
+[ ] Section 5: At least 1 detailed testimonial per location
+[ ] Section 6: At least 1 case study per location
+[ ] Section 7: At least 5 FAQs
+[ ] Section 8: Competitive positioning documented
+[ ] Section 9: Brand voice described
+[ ] Section 11: Service process details included
+[ ] Section 12: At least 4 differentiators with proof
+[ ] Section 13: Property market data (if applicable to your industry)
+
+The more complete this document, the better your GEO-optimized content will be.
+
+---
+
+Document Version: 1.0
+Last Updated: [DATE]
