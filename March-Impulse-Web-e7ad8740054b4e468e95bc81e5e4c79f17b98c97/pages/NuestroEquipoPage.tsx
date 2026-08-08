@@ -239,7 +239,7 @@ export default function NuestroEquipoPage() {
               {
                 icon: <Star className="w-8 h-8" />,
                 title: "Resultados Medibles",
-                description: "100% de aprobados Cambridge B2 First en 2025-2026. Resultados que hablan por sí solos."
+                description: "100% de aprobados Cambridge B2 First en 2025/26. Resultados que hablan por sí solos."
               },
               {
                 icon: <BookOpen className="w-8 h-8" />,

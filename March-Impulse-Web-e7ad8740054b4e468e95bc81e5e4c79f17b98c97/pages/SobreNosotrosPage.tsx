@@ -13,7 +13,7 @@ const certifications = [
   "Partner de Great Little People (metodología infantil)",
   "Partner school de ESIC Idiomas (Cambridge Exam Centre ES278)",
   "183 reseñas de 5 estrellas en Google",
-  "100% de aprobados Cambridge 2025-2026"
+  "100% de aprobados Cambridge 2025/26"
 ];
 
 const faqs = [
@@ -205,7 +205,7 @@ export default function SobreNosotrosPage() {
                   JP es el director de estudios y cofundador de Impulse English Academy La Vaguada, y suma más de diez años de experiencia enseñando inglés. Antes de instalarse en Madrid vivió diez años en Irlanda. Es experto en exámenes Cambridge y en la adquisición temprana del idioma, y dirige el día a día académico del centro. Es, sencillamente, quien hace posible todo esto: un apasionado de la enseñanza de idiomas que se vuelca en cada alumno y en cada profesor del equipo.
                 </p>
                 <p>
-                  Bajo su dirección académica, Impulse ha alcanzado un 100% de aprobados en los exámenes Cambridge en el curso 2024-25.
+                  Bajo su dirección académica, Impulse ha alcanzado un 100% de aprobados en los exámenes Cambridge en el curso 2024/25.
                 </p>
               </div>
 

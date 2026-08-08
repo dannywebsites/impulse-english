@@ -819,7 +819,7 @@ export default function LinguaskillPreciosSedesPage() {
                   Prepárate con Impulse English Academy
                 </h2>
                 <p className="text-zinc-600 mb-6">
-                  Como Centro Oficial de Preparación Cambridge en Madrid, ofrecemos cursos especializados de preparación Linguaskill con <strong>100% de aprobados</strong> en 2024-25.
+                  Como Centro Oficial de Preparación Cambridge en Madrid, ofrecemos cursos especializados de preparación Linguaskill con <strong>100% de aprobados</strong> en 2024/25.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3 text-zinc-600">
