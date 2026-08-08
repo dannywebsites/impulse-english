@@ -7,9 +7,11 @@ import FAQSection from './FAQSection';
 import Breadcrumb from './Breadcrumb';
 import RelatedArticles from './RelatedArticles';
 import CTABand from './CTABand';
+import GoogleReviews from './GoogleReviews';
+import LazyVideo from './LazyVideo';
 import { categoryConfig } from '../data/category-config';
 import { resolveInternalLinks } from '../data/internal-links';
-import type { PAAArticle, ArticleCard, ArticleImage } from '../data/articles/types';
+import type { PAAArticle, ArticleCard, ArticleImage, ArticleVideo } from '../data/articles/types';
 
 interface PAAArticlePageProps {
   article: PAAArticle;
@@ -52,6 +54,27 @@ const articleImages: Record<string, { url: string; alt: string }> = {
   },
 };
 
+/**
+ * One channel clip, framed for its aspect ratio.
+ *
+ * A Short is 9:16. Handing that to <LazyVideo> inside .container-narrow at full width
+ * produces a player taller than the viewport, so the vertical case is capped and
+ * centred; a 16:9 clip fills the measure as normal.
+ */
+function ArticleVideoBlock({ video }: { video: ArticleVideo }) {
+  const vertical = video.vertical ?? true;
+  return (
+    <figure className={vertical ? 'mx-auto w-full max-w-xs' : 'w-full'}>
+      <LazyVideo
+        videoId={video.youtubeId}
+        title={video.title}
+        vertical={vertical}
+      />
+      <figcaption className="t-small mt-3 text-zinc-500">{video.title}</figcaption>
+    </figure>
+  );
+}
+
 export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArticlePageProps) {
   // Fallback to Cambridge B2 First config if article category is invalid/missing,
   // so a bad category in content can't crash the entire build.
@@ -70,6 +93,15 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
     ? article.articleImages.filter(i => i.placement === 'inline')
     : [];
 
+  // Channel clips. `placement` carries a zod default of 'hero', so a frontmatter entry
+  // that omits it is a hero video — but data built by hand may not have been parsed,
+  // hence the explicit fallback rather than a strict === 'hero'.
+  const heroVideo: ArticleVideo | null =
+    article.videos?.find(v => (v.placement ?? 'hero') === 'hero') ?? null;
+
+  const inlineVideos: ArticleVideo[] =
+    article.videos?.filter(v => v.placement === 'inline') ?? [];
+
   const resolvedLinks = resolveInternalLinks(article.internalLinkRefs);
 
   // Where the mid-article CTA band goes. Placed after a section rather than at a
@@ -77,6 +109,15 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
   const midSectionIndex = article.contextSections.length >= 4
     ? Math.floor(article.contextSections.length / 2)
     : -1;
+
+  // Listicle review cards go straight after the LAST ranked entry ("## 6. Kids&Us"), so
+  // they close the ranking rather than trailing the article. findLastIndex is avoided:
+  // the build targets a browser baseline that predates it.
+  const reviews = article.googleReviews ?? [];
+  let lastRankedIndex = -1;
+  article.contextSections.forEach((s, i) => {
+    if (/^\s*\d+[.)]\s+/.test(s.heading)) lastRankedIndex = i;
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -137,7 +178,19 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
         </div>
       </section>
 
-      {/* Direct answer. This is the block AI Overviews quote, so it leads. */}
+      {/* The hook. Deliberately ABOVE the direct answer: on these queries Google's AI
+          Overview cites video ahead of text, and the SERP carries both a video carousel
+          and a separate "Vídeos cortos" carousel. The answer follows immediately, so it
+          is still the first block of prose on the page. */}
+      {heroVideo && (
+        <section className="section-tight">
+          <div className="container-narrow">
+            <ArticleVideoBlock video={heroVideo} />
+          </div>
+        </section>
+      )}
+
+      {/* Direct answer. This is the block AI Overviews quote, so it leads the prose. */}
       <section className="section-tight">
         <div className="container-narrow">
           <div className="card border-l-4 border-l-accent-blue p-6 md:p-8">
@@ -155,6 +208,11 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
           ? inlineImages[inlineImageIndex]
           : null;
 
+        // One inline clip per section, in order. The bundled guides ("Errores comunes
+        // de gramática") give each Short its own section, so section N introduces
+        // clip N and the video sits directly under the prose that sets it up.
+        const inlineVid = index < inlineVideos.length ? inlineVideos[index] : null;
+
         return (
           <React.Fragment key={index}>
             <section className={`section ${index % 2 === 0 ? '' : 'surface-alt'}`}>
@@ -169,6 +227,11 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
                   className="article-prose measure"
                   dangerouslySetInnerHTML={{ __html: section.content }}
                 />
+                {inlineVid && (
+                  <div className="mt-8">
+                    <ArticleVideoBlock video={inlineVid} />
+                  </div>
+                )}
               </div>
             </section>
 
@@ -192,6 +255,17 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
               <CTABand
                 title="¿Quieres saber en qué nivel está de verdad?"
                 subtitle="Una prueba de nivel gratuita de 25 minutos te lo dice, sin compromiso."
+              />
+            )}
+
+            {/* Listicle reviews: real Google review cards, straight after the last ranked
+                entry. Rendered here rather than in the prose because review volume is one
+                of the ranking criteria, so it belongs with the ranking, not at the end. */}
+            {index === lastRankedIndex && reviews.length > 0 && (
+              <GoogleReviews
+                heading="Lo que dicen nuestros alumnos"
+                intro="Reseñas verificadas de Google, sin editar."
+                reviews={reviews}
               />
             )}
           </React.Fragment>
