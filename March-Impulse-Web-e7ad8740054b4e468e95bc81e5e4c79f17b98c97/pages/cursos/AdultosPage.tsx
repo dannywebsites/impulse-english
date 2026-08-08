@@ -99,8 +99,12 @@ export const faqs: FAQItem[] = [
     answer: "Para funcionar en entorno empresarial (emails, reuniones básicas): B1-B2 en 6-12 meses de estudio serio. Para liderazgo o cliente-facing: C1 en 18-24 meses. Aceleradores: inmersión en empresa + academia + conversación regular con nativos = 30-40% más rápido."
   },
   {
-    question: "¿Inglés mejora salario?",
-    answer: "Estadísticas muestran 15-25% aumento salarial con B2/C1. En multinacionales, C1 es requisito para promoción. Inversión en inglés (1000-1500€) se recupera en aumento salarial en menos de 1 año. ROI clarísimo."
+    question: "¿El inglés mejora las opciones laborales?",
+    // 2026-08-08: was "Estadísticas muestran 15-25% aumento salarial… ROI clarísimo", citing
+    // nothing, plus a "1000-1500 €" investment band that is not an Impulse price (adultos son
+    // 94 €/mes). Danny's call: cut the figures, keep what is verifiable. Never restate a
+    // salary percentage here without a source on the page.
+    answer: "En muchas ofertas cualificadas el nivel de inglés aparece como requisito, y en empresas con equipos internacionales un C1 suele pedirse para puestos de responsabilidad. Un certificado Cambridge o Linguaskill acredita tu nivel en el proceso de selección, que es justo lo que preparamos. El curso de adultos cuesta 94 € al mes."
   },
   {
     question: "¿Email profesional en inglés?",
