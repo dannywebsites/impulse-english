@@ -50,10 +50,13 @@ duplicate waiting to ship. Until `allocate.py` learns to scan `src/content/artic
 grep -rh "^  - name:" src/content/articles/*.md | sort -u
 ```
 
+Each row carries its slug: `assemble.js` skips the row matching the article it is
+assembling, so a page can be re-assembled without its own reviews reading as duplicates.
+
 | Page | Reviews |
 |---|---|
-| Blog · Tetuán listicle | Paloma aranda · Begoña Carnicero · Daniel de la Peña de Alaiz · Laura · Joaquín |
-| Blog · Fuencarral-El Pardo listicle | Lorena · Ana Zalazar · César Cadenillas Medina · A Verguizas |
+| Blog · Tetuán listicle — `mejores-academias-ingles-tetuan` | Paloma aranda · Begoña Carnicero · Daniel de la Peña de Alaiz · Laura · Joaquín |
+| Blog · Fuencarral-El Pardo listicle — `mejores-academias-ingles-fuencarral-el-pardo` | Lorena · Ana Zalazar · César Cadenillas Medina · A Verguizas |
 
 Note: the "Lorena" above is the Montecarmelo reviewer, a different person from the
 "Lorena Jiménez" quoted on the Secundaria and Montecarmelo/Las Tablas pages.
