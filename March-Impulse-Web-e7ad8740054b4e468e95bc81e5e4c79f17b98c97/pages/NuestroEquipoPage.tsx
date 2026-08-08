@@ -35,7 +35,7 @@ export const faqs: FAQItem[] = [
 export default function NuestroEquipoPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Nuestro Equipo | Impulse English Academy La Vaguada – Barrio del Pilar';
+    document.title = 'Nuestro Equipo | Impulse English Academy – Barrio del Pilar';
   }, []);
 
   useEffect(() => {
@@ -88,7 +88,7 @@ export default function NuestroEquipoPage() {
             </p>
 
             <div className="flex flex-wrap gap-3 mt-8 animate-hero-fade-up animation-delay-300">
-              {["Centro Oficial Cambridge", "100% Aprobados 24/25", "Profesores Certificados"].map((badge, index) => (
+              {["Centro Oficial Cambridge", "100% Aprobados B2 First 24/25 y 25/26", "Profesores Certificados"].map((badge, index) => (
                 <span
                   key={index}
                   className="bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm px-4 py-2 rounded-full"
@@ -128,7 +128,7 @@ export default function NuestroEquipoPage() {
               </h2>
               <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
                 <p>
-                  JP es el director de estudios y cofundador de Impulse English Academy La Vaguada, y suma más de diez años de experiencia enseñando inglés. Antes de instalarse en Madrid vivió diez años en Irlanda. Es experto en exámenes Cambridge y en la adquisición temprana del idioma, y dirige el día a día académico del centro. Es, sencillamente, quien hace posible todo esto: un apasionado de la enseñanza de idiomas que se vuelca en cada alumno y en cada profesor del equipo.
+                  JP es el director de estudios y cofundador de Impulse English Academy, y suma más de diez años de experiencia enseñando inglés. Antes de instalarse en Madrid vivió diez años en Irlanda. Es experto en exámenes Cambridge y en la adquisición temprana del idioma, y dirige el día a día académico del centro. Es, sencillamente, quien hace posible todo esto: un apasionado de la enseñanza de idiomas que se vuelca en cada alumno y en cada profesor del equipo.
                 </p>
               </div>
 
@@ -169,7 +169,7 @@ export default function NuestroEquipoPage() {
               </h2>
               <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
                 <p>
-                  Danny es cofundador de Impulse English Academy La Vaguada. Junto a JP, construyó la academia desde sus cimientos en el Barrio del Pilar con la convicción de que el método con el que los españoles aprenden inglés estaba roto, y de que existía una forma mejor, más científica y más humana de hacerlo.
+                  Danny es cofundador de Impulse English Academy. Junto a JP, construyó la academia desde sus cimientos en el Barrio del Pilar con la convicción de que el método con el que los españoles aprenden inglés estaba roto, y de que existía una forma mejor, más científica y más humana de hacerlo.
                 </p>
                 <p>
                   Profesor titulado de educación física e idiomas y licenciado en Marketing por ESIC University, Madrid, su especialidad es el inglés de negocios: le apasiona ayudar a los alumnos a dominar el inglés para acceder a mejores oportunidades laborales. Irlandés afincado en Madrid desde hace 12 años, une su experiencia en el mundo profesional con la enseñanza para que cada estudiante trabaje un inglés práctico y aplicable a su carrera.
@@ -239,7 +239,7 @@ export default function NuestroEquipoPage() {
               {
                 icon: <Star className="w-8 h-8" />,
                 title: "Resultados Medibles",
-                description: "100% de aprobados Cambridge B2 First en 2025/26. Resultados que hablan por sí solos."
+                description: "100% de aprobados en B2 First en 2024/25 y 2025/26 (alumnos presentados). Resultados que hablan por sí solos."
               },
               {
                 icon: <BookOpen className="w-8 h-8" />,

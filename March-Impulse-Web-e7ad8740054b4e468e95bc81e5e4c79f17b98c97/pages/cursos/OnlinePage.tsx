@@ -17,7 +17,7 @@ import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 export const courseSchema = generateCourseSchema({
   name: "Clases de Inglés Online",
-  description: "Clases de inglés online en directo con profesores nativos. Grupos reducidos, preparación Cambridge y Linguaskill, modalidad 100% online o híbrida. Misma metodología Impulse, desde cualquier lugar de España.",
+  description: "Clases de inglés online en directo con profesores nativos y bilingües certificados. Grupos reducidos, preparación Cambridge y Linguaskill, modalidad 100% online o híbrida. Misma metodología Impulse, desde cualquier lugar de España.",
   url: `${businessInfo.url}/cursos-ingles/online`,
   courseCode: "ONLINE-ALL",
   educationalLevel: "All Levels",
@@ -56,7 +56,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Preparáis exámenes Cambridge y Linguaskill online?",
-    answer: "Preparamos B1 Preliminary, B2 First, C1 Advanced y Linguaskill en modalidad online con la misma metodología y resultados que en presencial. Nuestro 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados) incluye alumnos online."
+    answer: "Preparamos B1 Preliminary, B2 First, C1 Advanced y Linguaskill en modalidad online con la misma metodología y resultados que en presencial. Nuestro 100% de aprobados en B2 First en 2024/25 y 2025/26 (alumnos presentados) incluye alumnos online."
   },
   {
     question: "¿Las clases online son igual de efectivas?",
@@ -162,7 +162,7 @@ export default function OnlinePage() {
               {
                 icon: <Target className="w-6 h-6" />,
                 title: "Necesitas una certificación",
-                description: "B2 para tu máster, B1 para la universidad de tu hijo, Linguaskill para tu empresa. Preparamos todos los exámenes Cambridge online, con un 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados)."
+                description: "B2 para tu máster, B1 para la universidad de tu hijo, Linguaskill para tu empresa. Preparamos todos los exámenes Cambridge online, con un 100% de aprobados en B2 First en 2024/25 y 2025/26 (alumnos presentados)."
               },
               {
                 icon: <Laptop className="w-6 h-6" />,

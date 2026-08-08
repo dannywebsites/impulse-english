@@ -167,12 +167,12 @@ export default function LocationsSection() {
                 <div className="text-xs text-zinc-500">del Metro</div>
               </div>
               <div className="text-center p-4 bg-zinc-50 rounded-lg">
-                <div className="text-2xl font-bold text-accent-blue">150+</div>
+                <div className="text-2xl font-bold text-accent-blue">{NAP.aggregateRating.reviewCount}</div>
                 <div className="text-xs text-zinc-500">Reseñas Google</div>
               </div>
               <div className="text-center p-4 bg-zinc-50 rounded-lg">
                 <div className="text-2xl font-bold text-accent-blue">100%</div>
-                <div className="text-xs text-zinc-500">Aprobados</div>
+                <div className="text-xs text-zinc-500">Aprobados B2 First</div>
               </div>
             </div>
           </div>

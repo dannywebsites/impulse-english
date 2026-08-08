@@ -7,6 +7,10 @@ import LazyVideo from '../components/LazyVideo';
 import OptimizedImage from '../components/OptimizedImage';
 import Breadcrumb from '../components/Breadcrumb';
 import { facilityImages, certificationImages } from '../src/data/images';
+// Review count comes from napData, never a literal. The page shipped "155+" and "150+"
+// while its own meta description and every JSON-LD node said 183 — the count moves every
+// time reviews/pull_reviews.py runs, and hand-typed copies do not move with it.
+import { NAP } from '../utils/napData';
 
 const videoTestimonials = [
   {
@@ -104,7 +108,7 @@ export default function TestimonialsPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Testimonios | Impulse English Academy La Vaguada – Barrio del Pilar';
+    document.title = 'Testimonios | Impulse English Academy – Barrio del Pilar';
   }, []);
 
   const nextReview = () => {
@@ -145,7 +149,7 @@ export default function TestimonialsPage() {
             <div className="flex items-center gap-4 mb-6 animate-hero-fade-up">
               <div className="w-8 h-px bg-white/40"></div>
               <span className="font-display text-white/70 text-xs uppercase tracking-[0.2em]">
-                155+ Reseñas 5 Estrellas
+                {NAP.aggregateRating.reviewCount} Reseñas 5 Estrellas
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
@@ -269,7 +273,7 @@ export default function TestimonialsPage() {
               ))}
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 mb-4">
-              150+ Familias Nos Dan 5 Estrellas
+              {NAP.aggregateRating.reviewCount} Familias Nos Dan 5 Estrellas
             </h2>
             <p className="text-zinc-600 text-lg">
               Todas estas opiniones son de alumnos y familias reales verificadas en Google.
@@ -326,7 +330,7 @@ export default function TestimonialsPage() {
             Tu Historia Puede Ser la Siguiente
           </h2>
           <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            No te quedes con nuestras palabras. Escucha a nuestros alumnos. Y cuando estés listo, únete a nuestra comunidad de más de 150 familias que confían en nosotros.
+            No te quedes con nuestras palabras. Escucha a nuestros alumnos. Y cuando estés listo, únete a las {NAP.aggregateRating.reviewCount} familias que ya nos han valorado con 5 estrellas.
           </p>
         </div>
       </section>

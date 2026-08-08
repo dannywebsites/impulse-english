@@ -1,14 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SobreNosotrosPage from '../../pages/SobreNosotrosPage';
+import SobreNosotrosPage, { faqs } from '../../pages/SobreNosotrosPage';
 import CookieBanner from '../../components/CookieBanner';
 import { channelVideoSchema } from '../../utils/channelVideos';
+import { generateFAQSchema } from '../../utils/schemaData';
 ---
 
 <BaseLayout
-  schemas={[channelVideoSchema('quienesSomos')]}
+  schemas={[channelVideoSchema('quienesSomos'), generateFAQSchema(faqs)]}
   title="Sobre Nosotros"
-  description="Conoce Impulse English Academy. Centro preparador Cambridge oficial en La Vaguada, Madrid. Más de 10 años enseñando inglés. 100% aprobados."
+  description="Conoce Impulse English Academy. Centro preparador Cambridge oficial en La Vaguada, Madrid. Dirección académica con más de 10 años de experiencia y un 100% de aprobados en B2 First."
   keywords="sobre nosotros academia inglés, quienes somos impulse english, historia academia inglés madrid, equipo profesores inglés"
   canonical="/sobre-nosotros/"
 >

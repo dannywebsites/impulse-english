@@ -8,8 +8,11 @@ import Breadcrumb from '../components/Breadcrumb';
 import FAQSection from '../components/FAQSection';
 import { NAP } from '../utils/napData';
 import WhatsAppIcon from '../components/icons/WhatsAppIcon';
+import type { FAQItem } from '../utils/schemaData';
 
-const faqs = [
+// Exported so src/pages/contacto.astro can emit FAQPage schema. Declared `const`,
+// these nine Q&As rendered on the page but were invisible to Google.
+export const faqs: FAQItem[] = [
   {
     question: "¿Cómo puedo saber mi nivel de inglés?",
     answer: "Ofrecemos una prueba de nivel gratuita y sin compromiso. Solo tienes que contactarnos para concertar una cita. La prueba dura unos 25 minutos y evalúa todas las destrezas comunicativas."
@@ -32,12 +35,16 @@ const faqs = [
   },
   {
     question: "¿Cuál es el horario de atención?",
-    answer: "Nuestro horario es: Lunes y Miércoles de 10:00 a 21:30, Martes y Jueves de 15:30 a 21:30, y Viernes de 15:30 a 19:30. Fines de semana cerrado."
+    // Built from NAP.openingHoursText so this answer cannot drift from the hours panel,
+    // the LocalBusiness schema or the Google Business Profile.
+    answer: `Nuestro horario es: ${NAP.openingHoursText.slice(0, 5).join('; ')}. Fines de semana cerrado.`
   },
   // Price PAAs (9)
   {
     question: "¿Cuánto cuesta academia inglés Madrid?",
-    answer: "El costo varía según el tipo de curso y academia. En Impulse ofrecemos garantía 100% aprobados Cambridge con excelente relación valor-calidad. Grupos reducidos, material incluido y seguimiento personalizado. Contacta para presupuesto personalizado."
+    // NO GUARANTEE WORDING. "Garantía 100% aprobados" was retired on 2026-07-30 (SEO-Decisions-Log.md:838)
+    // because it promises a future outcome; the approved form reports a past result and names the exam.
+    answer: "En Impulse los cursos en grupo van de 64 € a 99 € al mes según la edad y el número de clases semanales, con matrícula de 45 € y libro de máximo 40 €. Las clases particulares son 29 € la hora. Grupos reducidos, seguimiento personalizado y un 100% de aprobados en B2 First en 2024/25 y 2025/26 (alumnos presentados)."
   },
   {
     question: "¿Hay descuento por hermanos?",
@@ -211,13 +218,17 @@ export default function ContactoPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-zinc-900 mb-2">Horario de atención</h3>
+                    {/* Rendered from napData, never retyped. This block and the FAQ answer above
+                        used to state different Friday hours on the same page. */}
                     <div className="space-y-1 text-zinc-600 text-sm">
-                      <p><span className="font-medium">Lunes:</span> 10:00 - 21:30</p>
-                      <p><span className="font-medium">Martes:</span> 15:30 - 21:30</p>
-                      <p><span className="font-medium">Miércoles:</span> 10:00 - 21:30</p>
-                      <p><span className="font-medium">Jueves:</span> 15:30 - 21:30</p>
-                      <p><span className="font-medium">Viernes:</span> 13:30 - 19:30</p>
-                      <p><span className="font-medium">Sábado - Domingo:</span> Cerrado</p>
+                      {NAP.openingHoursText.map((line) => {
+                        const [day, ...rest] = line.split(':');
+                        return (
+                          <p key={line}>
+                            <span className="font-medium">{day}:</span> {rest.join(':').trim()}
+                          </p>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

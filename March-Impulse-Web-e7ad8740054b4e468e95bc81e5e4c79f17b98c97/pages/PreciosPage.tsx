@@ -80,21 +80,25 @@ const courses: CoursePrice[] = [
   {
     name: "Clases Particulares",
     ages: "Todas las edades",
-    price: "A consultar",
+    // 29 €/hora was already published on /cursos-ingles/particulares/, in NAP.priceRange and on
+    // the Google Business Profile. The price page was the only place that withheld it.
+    price: "29€/hora",
+    detail: "Sesiones de 60 min, ampliables a 90 o 120 min · Presencial u online",
     desc: "Clases individuales presenciales u online, adaptadas a tu ritmo.",
     href: "/cursos-ingles/particulares/"
   },
   {
     name: "Clases Online",
     ages: "Todas las edades",
-    price: "A consultar",
+    price: "Desde 64€/mes",
+    detail: "Mismas tarifas que el grupo presencial equivalente · 1:1 online: 29€/hora",
     desc: "Misma calidad desde casa. Plataforma interactiva y profesor en directo.",
-    href: "/contacto/"
+    href: "/cursos-ingles/online/"
   }
 ];
 
 const included = [
-  "Clases semanales en grupos reducidos (máx. 7-10)",
+  "Clases semanales en grupos reducidos (7 en infantil, 10 en primaria y secundaria, 8 en adultos y online)",
   "Material de clase incluido, libro aparte (máx. 40 €)",
   "Simulacros de examen Cambridge",
   "Seguimiento personalizado del progreso",

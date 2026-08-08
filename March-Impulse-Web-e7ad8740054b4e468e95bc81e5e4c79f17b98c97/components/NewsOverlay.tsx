@@ -13,7 +13,9 @@ export default function NewsOverlay(_props: NewsOverlayProps = {}) {
   const items = [
     {
       label: "Cambridge",
-      title: "100% de aprobados en exámenes Cambridge 2025/26.",
+      // Always name the exam and the qualifier. The both-years claim is sourced for B2 First
+      // specifically, not for Cambridge as a whole — see GEO-Content-Project/FACT-AUDIT-2026-08-08.md.
+      title: "100% de aprobados en B2 First en 2024/25 y 2025/26 (alumnos presentados).",
       action: "Ver Exámenes",
       href: "/examenes-cambridge/"
     },

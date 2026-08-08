@@ -203,7 +203,7 @@ export default function PrimariaPage() {
           "Máx. 10 alumnos",
           "2 horas/semana",
           "L/M o M/J",
-          "100% aprobados Cambridge 24/25 (presentados)",
+          "100% aprobados B2 First 24/25 y 25/26",
         ]}
         whatsappText="Hola, me gustaría información sobre las clases de primaria"
       />
@@ -249,7 +249,7 @@ export default function PrimariaPage() {
                   <Award className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-zinc-900 text-lg mb-2">100% aprobados Cambridge 24/25 (alumnos presentados)</h3>
+                  <h3 className="font-bold text-zinc-900 text-lg mb-2">100% de aprobados en B2 First en 24/25 y 25/26 (alumnos presentados)</h3>
                   <p className="text-zinc-600 text-sm">
                     Todos nuestros alumnos que se presentaron a exámenes Cambridge Young Learners en 24/25 aprobaron. Preparamos con material oficial y simulacros de examen.
                   </p>
