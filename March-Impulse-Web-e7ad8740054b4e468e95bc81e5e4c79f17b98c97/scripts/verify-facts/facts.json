@@ -73,23 +73,19 @@
     "list can only shrink by being fixed — the same ratchet verify-design uses for token debt.",
     "Never add an entry here to make a run green. Add one only with a reason, a date and an owner."
   ],
-  "accepted": [
+  "accepted": [],
+  "_acceptedHistory": [
     {
       "rule": "retired legal name",
-      "routes": ["/", "/cursos-ingles/", "/cursos-ingles/infantil/", "/cursos-ingles/primaria/",
-                 "/cursos-ingles/secundaria/", "/cursos-ingles/adultos/", "/cursos-ingles/particulares/",
-                 "/cursos-ingles/online/", "/precios/", "/sobre-nosotros/", "/nuestro-equipo/",
-                 "/testimonios/", "/contacto/", "/preguntas-frecuentes/"],
-      "reason": "utils/buildPageTitle.ts CORE_BRAND is still 'Impulse English Academy La Vaguada', so the retired name is in the <title> of all 189 pages. Fixing it is a one-line change with site-wide title impact — needs Danny's decision, not a silent edit.",
       "raised": "2026-08-08",
-      "owner": "Danny"
+      "closed": "2026-08-08",
+      "how": "utils/buildPageTitle.ts now reads CORE_BRAND/SHORT_BRAND from napData instead of hardcoding the locality-bearing name. All 190 titles clean."
     },
     {
       "rule": "unsourced salary statistic",
-      "routes": ["/cursos-ingles/adultos/"],
-      "reason": "Danny says he has a source (2026-08-08). Holding the claim until the citation arrives; the '1000-1500 €' investment band still needs replacing regardless, since adults are 94 €/mes.",
       "raised": "2026-08-08",
-      "owner": "Danny"
+      "closed": "2026-08-08",
+      "how": "Danny's call: cut the figures rather than source them. The adultos FAQ now answers from what is verifiable — certification in selection processes — with no percentage and no invented investment band."
     }
   ],
 
