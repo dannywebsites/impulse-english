@@ -7,7 +7,7 @@ Source of truth is the live Google Business Profile (place_id `ChIJG7G2oAkpQg0Re
 hand-transcribed subset. **No review appears on two pages.** Every quote on the
 site is verbatim; `verify_quotes.py` fails the build if a single character drifts.
 
-Pool: **100 eligible** of 180. Allocated: **95**. Spare: **5**.
+Pool: **100 eligible** of 180. Allocated: **98**. Spare: **2**.
 
 | Page | Reviews |
 |---|---|
@@ -35,6 +35,7 @@ Pool: **100 eligible** of 180. Allocated: **95**. Spare: **5**.
 | Irlanda | Begoña Carnicero |
 | Extranjero · hub | Gaby S · Lucía Fernández Casanova · Maria Dolores Muñoz |
 | Las Tablas | Paloma Aranda · Stefany Jiménez Espitia · Daniela Janet Luna Rodriguez |
+| Inglés para empresas | Raul San Segundo · Fernando Garcia · Inés I |
 
 ## Eligibility rules (`build_pool.py`)
 5 stars · 90–420 characters · a real full name · no teacher named outside

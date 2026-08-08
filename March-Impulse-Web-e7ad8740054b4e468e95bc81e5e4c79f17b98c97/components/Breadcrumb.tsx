@@ -79,6 +79,7 @@ export const breadcrumbPaths = {
   secundaria: { label: 'Secundaria', href: '/cursos-ingles/secundaria/' },
   adultos: { label: 'Adultos', href: '/cursos-ingles/adultos/' },
   particulares: { label: 'Particulares', href: '/cursos-ingles/particulares/' },
+  empresas: { label: 'Inglés para Empresas', href: '/ingles-para-empresas/' },
 
   // Cambridge
   examenesCambridge: { label: 'Exámenes Cambridge', href: '/examenes-cambridge/' },

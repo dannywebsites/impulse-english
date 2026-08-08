@@ -1,7 +1,7 @@
 {
   "meta": {
     "pool_eligible": 100,
-    "allocated": 95
+    "allocated": 98
   },
   "pages": {
     "ubicaciones/BarrioDelPilarPage.tsx": {
@@ -1230,6 +1230,40 @@
           "text": "Es una buena academia para aprender y mejorar tu inglés.",
           "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6cktlQ2ZREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgICzrKeCfQ%7C%7C?hl=es",
           "timestamp": "2024-05-31 14:09:57 +00:00",
+          "themes": []
+        }
+      ]
+    },
+    "cursos/EmpresasPage.tsx": {
+      "label": "Inglés para empresas",
+      "reviews": [
+        {
+          "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwd2RHcEJREAE",
+          "name": "Raul San Segundo",
+          "role": "Reseña verificada en Google",
+          "text": "Me ayudó muchísimo a mejorar mi inglés y poder dar un curso en Canadá. Gracias a Danny pude estar dos semanas hablando en inglés para Osteópatas canadienses con excelentes resultados. Totalmente recomendable y sigo manteniendo mi inglés gracias a él. 👏👏👏👏",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwd2RHcEJREAE!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpwdGpBQ%7C%7C?hl=es",
+          "timestamp": "2023-08-23 08:34:10 +00:00",
+          "themes": [
+            "recommend"
+          ]
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcjR6N21BRRAB",
+          "name": "Fernando Garcia",
+          "role": "Reseña verificada en Google",
+          "text": "Buenos profesores, me han ayudado mucho. Gracias.",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcjR6N21BRRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDpr4z7mAE%7C%7C?hl=es",
+          "timestamp": "2023-08-31 17:55:43 +00:00",
+          "themes": []
+        },
+        {
+          "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLWR1THh3RRAB",
+          "name": "Inés I",
+          "role": "Reseña verificada en Google",
+          "text": "Con ellos es facilísimo aprender inglés....",
+          "review_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLWR1THh3RRAB!2m1!1s0x0:0xbe6ef3e2ba8bb87b!3m1!1s2@1:CIHM0ogKEICAgIDp-duLxwE%7C%7C?hl=es",
+          "timestamp": "2023-08-25 10:40:21 +00:00",
           "themes": []
         }
       ]
