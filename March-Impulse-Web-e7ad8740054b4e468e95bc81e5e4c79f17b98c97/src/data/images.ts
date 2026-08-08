@@ -532,13 +532,6 @@ export const s3CambridgeImages = {
     category: 'cambridge',
     url: '/images/academy/cambridge-logo-edited.png'
   },
-  cambridgeSearch: {
-    name: 'cambridge-search-centro-preparador',
-    alt: 'Búsqueda centro Cambridge - Impulse English Academy verificado',
-    altEn: 'Cambridge center search - Impulse English Academy verified',
-    category: 'cambridge',
-    url: '/images/academy/cambridge-search.jpeg'
-  },
   cambridgeCertificate: {
     name: 'cambridge-certificado-oficial',
     alt: 'Certificado oficial Cambridge - centro preparador autorizado',

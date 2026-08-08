@@ -520,7 +520,6 @@ export default function AdultosPage() {
             {/* More landscape photos */}
             {[
               { url: "/images/academy/6e08cd95-47b7-4d36-95c7-fecfb41e3883.jpeg", alt: "Certificado oficial Cambridge English academia La Vaguada Madrid" },
-              { url: "/images/academy/cambridge-search.jpeg", alt: "Centro Cambridge verificado Impulse English Academy Madrid" },
               { url: "/images/academy/classroom-facilities-main-classroom.jpg", alt: "Aula principal academia inglés La Vaguada Barrio del Pilar" },
               { url: "/images/academy/technology-based-classroom-photo.jpg", alt: "Aula tecnológica academia inglés La Vaguada Madrid" },
               { url: "/images/academy/outside-academy.jpg", alt: "Fachada exterior Impulse English Academy La Vaguada Madrid" },
