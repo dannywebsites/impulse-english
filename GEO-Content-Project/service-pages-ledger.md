@@ -356,3 +356,71 @@ it loads every session, and enforced by `npm run verify:design`.
 Same lesson as the content round: **a checker that reads the input rather than the output will
 certify things that are not true.** Always run a gate against a case you know is broken before
 trusting a pass.
+
+---
+
+## 2026-08-08 — Las Tablas split out of Montecarmelo, and a page for "inglés para empresas"
+
+Branch `feat/ingles-para-empresas`, worktree at `/Users/danny/impulse-empresas`, cut from
+`seo/gbp-pack-nap-consistency`. Two builds that had been flagged out of scope in the previous
+round and that Danny brought back in.
+
+**Why these two.** Las Tablas had **685 real GSC impressions over 90 days** — more than any other
+location on the site — and sat at position **11.8** on `academia ingles las tablas` (296
+impressions, 0 clicks), stuck on page two because the page it lived on was titled and H1'd about
+Montecarmelo. Separately, the **homepage** ranks **1.11** for `clases de ingles empresas` and
+**1.19** for `academias de ingles para empresas` and earns **zero clicks**, because the word
+"empresas" appears on it zero times.
+
+| # | Date | Step | Files | Commit | Gates | Reverse with |
+|---|---|---|---|---|---|---|
+| E1 | 2026-08-08 | Drop the unsourced 147 timings sitewide; `alternateName` stopped listing `NAP.legalName` as an alias of itself | `components/LocationsSection.tsx`, `pages/ubicaciones/TetuanPage.tsx`, `src/pages/{academia-ingles-tetuan,index}.astro`, `utils/schemaData.ts`, `src/layouts/BaseLayout.astro`, `scripts/verify-tracking/*`, `reviews/pull_reviews.py` | `262ff4d` | — (also on `feat/aprende-ingles-video-cluster` as `58b0ffc`; **duplicate patch, resolve before both reach main**) | `git revert 262ff4d` |
+| E2 | 2026-08-08 | Register the pages that were spending the review pool unseen: 4 extranjero pages pinned to their live picks; Montecarmelo key renamed alongside its PAGES entry; a partner-agency byline excluded | `reviews/allocate.py`, `reviews/allocation.json`, `reviews/excluded-names.txt`, `reviews/review-pool.json`, `review-allocation.md` | `0d5d472` | pool 100 eligible, 95 allocated across 24 pages; Montecarmelo keeps its three | `git revert 0d5d472` |
+| E3 | 2026-08-08 | Tetuán title/H1 regression from E1 repaired with **sourced** numbers; `verify_quotes.py` given `--dir` | `pages/ubicaciones/TetuanPage.tsx`, `src/pages/academia-ingles-tetuan.astro`, `reviews/verify_quotes.py` | `0f43522` | Tetuán Title **7→10**, H1 **7→9**; quote gate against the correct tree: 137 quotes **0 FAIL** (it had been reporting 170/27 from the wrong checkout) | `git revert 0f43522` |
+| E4 | 2026-08-08 | Split `/academia-ingles-montecarmelo-las-tablas/` into `/academia-ingles-las-tablas/` + `/academia-ingles-montecarmelo/`; combined URL 308s to Las Tablas | `pages/ubicaciones/{LasTablas,Montecarmelo}Page.tsx` (new), `MontecarmeloLasTablasPage.tsx` (deleted), `src/pages/academia-ingles-{las-tablas,montecarmelo}.astro`, `utils/barrioAreas.ts`, `components/{Footer,LocationsSection}.tsx`, `data/internal-links.ts`, `pages/blog/{AcademiasPorBarriosMadrid,MejoresAcademiasMadridNorte}Page.tsx`, `public/llms.txt`, `vercel.json`, `scripts/verify-{design/baseline.json,tracking/config.mjs}` | `2e12e39` | barrios **14→15 columns**; Las Tablas **97**, Montecarmelo **97**, both grade A, every element ≥9, Uniqueness **10**; site-wide **96** unchanged, no incumbent regressed; worst Jaccard **0.159** / **0.111** vs a 0.40 fail line (a naive clone measures 0.825); design debt **793→740**, both new pages at **0**; quotes 0 FAIL source+dist; `astro check` 0/0; 0 dist files link the retired slug | `git revert 2e12e39` |
+| E5 | 2026-08-08 | New `/ingles-para-empresas/` service page + registration + de-cannibalisation | `pages/cursos/EmpresasPage.tsx` (new), `src/pages/ingles-para-empresas.astro` (new), `pages/PreguntasFrecuentesPage.tsx`, `pages/cursos/{AdultosPage,CursosOverviewPage}.tsx`, `pages/ubicaciones/{CuatroTorres,Chamartin}Page.tsx`, `components/{Navbar,Footer,Breadcrumb}.tsx`, `data/{internal-links,category-config,articles/types}.ts`, `utils/popupVariants.ts`, `public/llms.txt`, `vercel.json`, `scripts/verify-tracking/config.mjs`, `reviews/*` | `e88201b` | servicios **97/100** grade A, every element ≥9; barrios unchanged at 96; design 0 errors, EmpresasPage **0** debt; quotes **140** (+3) 0 FAIL; `astro check` 0/0 | `git revert e88201b` |
+
+### Open, and blocking publication of E5
+
+`/ingles-para-empresas/` is complete and passes every gate, but **must not go live** until Danny
+answers the twelve facts listed at the top of `pages/cursos/EmpresasPage.tsx`. Nothing on the page
+asserts any of them — every sentence is written to be true without them — but the page is thinner
+than it should be until they land, and one of them carries real liability:
+
+- **IVA**: is B2B language training exento under art. 20.1.9 LIVA, or 21 %? Most-asked B2B
+  question, worst one to get wrong in public.
+- **FUNDAE**: entidad organizadora or client's gestoría? Who does the tramitación? Is
+  online/teleformación bonifiable in our setup? Minimum group for a bonified action?
+- **In company**: minimum and maximum group size, travel radius, desplazamiento surcharge,
+  minimum contract length.
+- **Commercial**: quote turnaround as a number the page can state; does the 45 € matrícula apply
+  to corporate contracts?
+
+### Three things the gates themselves got wrong, found by running them
+
+1. **`verify_quotes.py` had a hard-coded site root and no override.** Run from a worktree it
+   scanned the *main* checkout, reported its usual 170 quotes and 27 pre-existing failures, and
+   read exactly like a pass while never looking at the pages under test. `geo-audit.py` already
+   had `--dir`; only one of the two was ever being passed it, so matching the existing invocation
+   pattern inherited the bug. Fixed, and it now prints the tree it read.
+2. **Removing an invented number is only half the job.** Dropping the unsourced "8 minutos" from
+   Tetuán was correct, but `score_title` and `score_h1` both read for a concrete claim, so a
+   purely subtractive and otherwise-right edit silently dropped two elements below gate. If you
+   take a figure out, you owe the page a sourced one in its place.
+3. **`allocate.py` cannot see pages that are not in `PAGES`, and does not fail when it meets one.**
+   Four extranjero pages were publishing verified quotes the allocator counted as spare, so all
+   three of Las Tablas' first picks came back already live elsewhere. Registering them fixed it.
+   **Still open, and Danny's call:** the seven `pages/cursos/*.tsx` pages publish ~40 reviews and
+   are also unregistered, several already allocated elsewhere — `SecundariaPage.tsx` re-uses two of
+   Montecarmelo's. The "no review appears on two pages" rule was set on 2026-08-02 for ten barrio
+   pages and no course testimonials; there are now 15 barrio pages, 4 extranjero pages and 7 course
+   pages against 101 eligible reviews. The rule may have been outgrown rather than broken.
+
+### Timing
+
+Both peak 2–3× in September. The split retires the only URL currently ranking for these terms, and
+Google needs 2–4 weeks to recrawl and settle two new URLs — which lands *at* the peak, not before
+it. Deploy and request indexing for both URLs immediately. Past roughly 20 August the realistic
+upside is October. Montecarmelo is the sacrificed half: it sits at position 8.0 on
+`academia de idiomas en montecarmelo`, page one, and moves to a URL with no history. Worth watching
+that query weekly.
