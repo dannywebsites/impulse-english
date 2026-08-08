@@ -13,7 +13,10 @@ export default function LocationsSection({ showHubLink = true }: { showHubLink?:
   // Rutas reales hasta Av. de El Ferrol, 22. Cada barrio se enlaza una sola vez
   // en todo el bloque para no sobrecargar de enlaces internos.
   const metroRoutes = [
-    { from: "Peñagrande", line: "L9", time: "Línea directa", href: "/academia-ingles-penagrande/" },
+    // 2026-08-08, Danny: Peñagrande es la línea 7, no la 9, y desde su estación son
+    // 10-15 minutos andando. Estuvo publicado como "línea 9 · 3 minutos" en varios
+    // sitios a la vez, así que se corroboraba solo.
+    { from: "Peñagrande", line: "L7", time: "10-15 min andando", href: "/academia-ingles-penagrande/" },
     { from: "Mirasierra", line: "L9", time: "Línea directa", href: "/academia-ingles-mirasierra/" },
     { from: "Herrera Oria", line: "L9", time: "Línea directa", href: null },
     { from: "Montecarmelo", line: "L9", time: "Línea directa", href: "/academia-ingles-montecarmelo/" },
