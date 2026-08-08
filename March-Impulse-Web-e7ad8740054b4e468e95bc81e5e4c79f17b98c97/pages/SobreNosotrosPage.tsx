@@ -6,6 +6,7 @@ import LeadForm from '../components/LeadForm';
 import FAQSection from '../components/FAQSection';
 import LazyVideo from '../components/LazyVideo';
 import Breadcrumb from '../components/Breadcrumb';
+import type { FAQItem } from '../utils/schemaData';
 
 const certifications = [
   "Centro preparador oficial Cambridge",
@@ -13,10 +14,12 @@ const certifications = [
   "Partner de Great Little People (metodología infantil)",
   "Partner school de ESIC Idiomas (Cambridge Exam Centre ES278)",
   "183 reseñas de 5 estrellas en Google",
-  "100% de aprobados Cambridge 2025/26"
+  "100% de aprobados en B2 First 24/25 y 25/26 (alumnos presentados)"
 ];
 
-const faqs = [
+// Exported so src/pages/sobre-nosotros.astro can emit FAQPage schema. Declared `const`,
+// these four Q&As rendered on the page but were invisible to Google.
+export const faqs: FAQItem[] = [
   {
     question: "¿Qué significa ser Centro Preparador Oficial?",
     answer: "Ser Centro Preparador Oficial significa estar registrado por Cambridge English para preparar y presentar candidatos a sus exámenes. Los más de 52.000 centros mundiales acceden a logotipos oficiales, certificados categorizados por número de candidatos, materiales promocionales, masterclasses gratuitas, recursos didácticos, formación docente personalizada y pueden organizar exámenes propios (mínimo 10 candidatos por nivel) o participar en sesiones abiertas regionales."
@@ -38,7 +41,7 @@ const faqs = [
 export default function SobreNosotrosPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Sobre Nosotros | Impulse English Academy La Vaguada – Barrio del Pilar';
+    document.title = 'Sobre Nosotros | Impulse English Academy – Barrio del Pilar';
   }, []);
 
   useEffect(() => {
@@ -202,10 +205,10 @@ export default function SobreNosotrosPage() {
               </h3>
               <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
                 <p>
-                  JP es el director de estudios y cofundador de Impulse English Academy La Vaguada, y suma más de diez años de experiencia enseñando inglés. Antes de instalarse en Madrid vivió diez años en Irlanda. Es experto en exámenes Cambridge y en la adquisición temprana del idioma, y dirige el día a día académico del centro. Es, sencillamente, quien hace posible todo esto: un apasionado de la enseñanza de idiomas que se vuelca en cada alumno y en cada profesor del equipo.
+                  JP es el director de estudios y cofundador de Impulse English Academy, y suma más de diez años de experiencia enseñando inglés. Antes de instalarse en Madrid vivió diez años en Irlanda. Es experto en exámenes Cambridge y en la adquisición temprana del idioma, y dirige el día a día académico del centro. Es, sencillamente, quien hace posible todo esto: un apasionado de la enseñanza de idiomas que se vuelca en cada alumno y en cada profesor del equipo.
                 </p>
                 <p>
-                  Bajo su dirección académica, Impulse ha alcanzado un 100% de aprobados en los exámenes Cambridge en el curso 2024/25.
+                  Bajo su dirección académica, Impulse ha alcanzado un 100% de aprobados en B2 First en los cursos 2024/25 y 2025/26 (alumnos presentados).
                 </p>
               </div>
 
@@ -240,7 +243,7 @@ export default function SobreNosotrosPage() {
               </h3>
               <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
                 <p>
-                  Danny es cofundador de Impulse English Academy La Vaguada. Junto a JP, construyó la academia desde sus cimientos en el Barrio del Pilar con la convicción de que el método con el que los españoles aprenden inglés estaba roto, y de que existía una forma mejor, más científica y más humana de hacerlo.
+                  Danny es cofundador de Impulse English Academy. Junto a JP, construyó la academia desde sus cimientos en el Barrio del Pilar con la convicción de que el método con el que los españoles aprenden inglés estaba roto, y de que existía una forma mejor, más científica y más humana de hacerlo.
                 </p>
                 <p>
                   Profesor titulado de educación física e idiomas y licenciado en Marketing por ESIC University, Madrid, su especialidad es el inglés de negocios: le apasiona ayudar a los alumnos a dominar el inglés para acceder a mejores oportunidades laborales. Irlandés afincado en Madrid desde hace 12 años, une su experiencia en marketing y estrategia de negocio con la enseñanza para impulsar el crecimiento de la academia.

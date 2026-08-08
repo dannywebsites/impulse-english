@@ -22,7 +22,7 @@ import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 export const courseSchema = generateCourseSchema({
   name: "Curso de Inglés Secundaria (13-17 años)",
-  description: "Clases de inglés para secundaria en La Vaguada / Barrio del Pilar. Preparación EBAU y Cambridge B1, B2, C1 con grupos reducidos y seguimiento. 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados).",
+  description: "Clases de inglés para secundaria en La Vaguada / Barrio del Pilar. Preparación EBAU y Cambridge B1, B2, C1 con grupos reducidos y seguimiento. 100% de aprobados en B2 First en 2024/25 y 2025/26 (alumnos presentados).",
   url: `${businessInfo.url}/cursos-ingles/secundaria`,
   courseCode: "SEC-CAM",
   educationalLevel: "Secondary",
@@ -181,7 +181,7 @@ export default function SecundariaPage() {
           "Máx. 10 alumnos",
           "2 horas/semana",
           "Grupos por nivel real, no por curso",
-          "100% aprobados Cambridge 24/25 (presentados)",
+          "100% aprobados B2 First 24/25 y 25/26",
         ]}
         whatsappText="Hola, me gustaría información sobre las clases de secundaria y EBAU"
       />
@@ -325,7 +325,7 @@ export default function SecundariaPage() {
             </div>
           </div>
           <p className="text-white/90 font-medium">
-            100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados)
+            100% de aprobados en B2 First en 2024/25 y 2025/26 (alumnos presentados)
           </p>
         </div>
       </section>

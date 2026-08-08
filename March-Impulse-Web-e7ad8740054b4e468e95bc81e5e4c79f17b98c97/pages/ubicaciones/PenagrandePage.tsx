@@ -56,7 +56,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Academia inglés Peñagrande con buena relación calidad-precio?",
-    answer: "Impulse English ofrece excelente relación de valor en Peñagrande. Incluimos material de clase, simulacros de examen, seguimiento personalizado y garantía 100% aprobados Cambridge. Al margen de la cuota hay dos pagos únicos: matrícula, 45 €, y libro, como mucho 40 €. Prueba de nivel gratuita para evaluar tu caso. Contacta para conocer opciones."
+    answer: "Impulse English ofrece excelente relación de valor en Peñagrande. Incluimos material de clase, simulacros de examen, seguimiento personalizado y un 100% de aprobados en B2 First en 2024/25 y 2025/26 (alumnos presentados). Al margen de la cuota hay dos pagos únicos: matrícula, 45 €, y libro, como mucho 40 €. Prueba de nivel gratuita para evaluar tu caso. Contacta para conocer opciones."
   },
   {
     question: "¿Hay academias de inglés para niños cerca de Peñagrande?",

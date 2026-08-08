@@ -1,0 +1,131 @@
+{
+  "_doc": [
+    "Fact register for the commercial pages. Consumed by scripts/verify-facts/run.mjs.",
+    "",
+    "'retired' strings must NEVER appear in the built output. Each entry records why it was",
+    "retired and what replaced it, so a future writer who trips the gate can see the ruling",
+    "rather than just a red line.",
+    "",
+    "'canonical' facts must appear on the routes listed, with the exact approved value.",
+    "",
+    "Rulings recorded here come from GEO-Content-Project/FACT-AUDIT-2026-08-08.md and Danny's",
+    "answers on 2026-08-08. Source hierarchy: Danny's rulings > utils/napData.ts >",
+    "~/.claude/skills/geo-pages/facts/impulse-english.facts.md > blog-batch-windows/_CONTRACT.md."
+  ],
+
+  "routes": [
+    "/", "/cursos-ingles/", "/cursos-ingles/infantil/", "/cursos-ingles/primaria/",
+    "/cursos-ingles/secundaria/", "/cursos-ingles/adultos/", "/cursos-ingles/particulares/",
+    "/cursos-ingles/online/", "/precios/", "/sobre-nosotros/", "/nuestro-equipo/",
+    "/testimonios/", "/contacto/", "/preguntas-frecuentes/"
+  ],
+
+  "retired": [
+    {
+      "pattern": "\\b1[05][05]\\s*\\+",
+      "label": "150+ / 155+ review count",
+      "why": "The review count is 183 (reviews.json, pulled 2026-08-05). Danny ruled 183 in commit 139f2da. /testimonios/ shipped 155+ and 150+ while its own meta description and every JSON-LD node said 183.",
+      "instead": "Render NAP.aggregateRating.reviewCount — never a literal."
+    },
+    {
+      "pattern": "garant[íi]a\\s+100\\s*%\\s*aprobad",
+      "label": "pass-rate guarantee",
+      "why": "Retired 2026-07-30 (SEO-Decisions-Log.md:838). A guarantee promises a future outcome; the approved claim reports a past result.",
+      "instead": "un 100% de aprobados en B2 First en 2024/25 y 2025/26 (alumnos presentados)"
+    },
+    {
+      "pattern": "\\+\\s*1\\.000\\s*alumnos|m[áa]s de 1\\.000 alumnos",
+      "why": "Danny ruled 960, not '+1.000', on 2026-08-07 (commit 139f2da).",
+      "label": "+1.000 alumnos",
+      "instead": "960 alumnos desde 2023",
+      "scope": "routes"
+    },
+    {
+      "pattern": "Impulse English Academy La Vaguada",
+      "label": "retired legal name",
+      "why": "legalName was consolidated to 'Impulse English Academy' (utils/napData.ts:8-11) — a locality inside the name reads as a second entity. The location lives in the address fields.",
+      "instead": "Impulse English Academy",
+      "ignoreInAltText": true
+    },
+    {
+      "pattern": "15\\s*-\\s*25\\s*%[^.]{0,40}salarial",
+      "label": "unsourced salary statistic",
+      "why": "AWAITING SOURCE from Danny (2026-08-08). 'Estadísticas muestran' cited nothing and the '1000-1500 €' investment band is not a published Impulse price. Delete this entry once the citation lands.",
+      "instead": "Cite the source inline, or drop the figure."
+    }
+  ],
+
+  "_acceptedDoc": [
+    "Real findings, acknowledged, awaiting a decision from Danny. They are PRINTED on every run",
+    "and counted, but do not fail the gate. A finding NOT on this list fails immediately, so the",
+    "list can only shrink by being fixed — the same ratchet verify-design uses for token debt.",
+    "Never add an entry here to make a run green. Add one only with a reason, a date and an owner."
+  ],
+  "accepted": [
+    {
+      "rule": "retired legal name",
+      "routes": ["/", "/cursos-ingles/", "/cursos-ingles/infantil/", "/cursos-ingles/primaria/",
+                 "/cursos-ingles/secundaria/", "/cursos-ingles/adultos/", "/cursos-ingles/particulares/",
+                 "/cursos-ingles/online/", "/precios/", "/sobre-nosotros/", "/nuestro-equipo/",
+                 "/testimonios/", "/contacto/", "/preguntas-frecuentes/"],
+      "reason": "utils/buildPageTitle.ts CORE_BRAND is still 'Impulse English Academy La Vaguada', so the retired name is in the <title> of all 189 pages. Fixing it is a one-line change with site-wide title impact — needs Danny's decision, not a silent edit.",
+      "raised": "2026-08-08",
+      "owner": "Danny"
+    },
+    {
+      "rule": "unsourced salary statistic",
+      "routes": ["/cursos-ingles/adultos/"],
+      "reason": "Danny says he has a source (2026-08-08). Holding the claim until the citation arrives; the '1000-1500 €' investment band still needs replacing regardless, since adults are 94 €/mes.",
+      "raised": "2026-08-08",
+      "owner": "Danny"
+    }
+  ],
+
+  "canonical": [
+    {
+      "fact": "reviewCount",
+      "value": "183",
+      "mustAppearOn": ["/testimonios/", "/sobre-nosotros/", "/contacto/"],
+      "source": "utils/napData.ts aggregateRating.reviewCount + GEO-Content-Project/reviews/reviews.json"
+    },
+    {
+      "fact": "fridayHours",
+      "value": "Viernes: 13:30 - 19:30",
+      "mustAppearOn": ["/contacto/"],
+      "source": "utils/napData.ts openingHours — Danny confirmed 13:30 on 2026-08-08"
+    },
+    {
+      "fact": "streetAddress",
+      "value": "Av. de El Ferrol, 22",
+      "mustAppearOn": ["/contacto/", "/precios/", "/testimonios/"],
+      "source": "utils/napData.ts streetAddress"
+    },
+    {
+      "fact": "phone",
+      "value": "604 910 611",
+      "mustAppearOn": ["/contacto/"],
+      "source": "utils/napData.ts phone"
+    },
+    {
+      "fact": "adultGroupSize",
+      "value": "8",
+      "mustAppearOn": ["/cursos-ingles/adultos/"],
+      "source": "impulse-english.facts.md:14 — Adultos 8, confirmed by Danny 2026-08-03"
+    }
+  ],
+
+  "schemaChecks": [
+    {
+      "fact": "AggregateRating.reviewCount",
+      "jsonPathContains": "\"reviewCount\":183",
+      "allRoutes": true,
+      "why": "geo-audit.py drops AggregateRating to 6/10 sitewide when this disagrees with reviews.json."
+    },
+    {
+      "fact": "Friday openingHoursSpecification",
+      "jsonPathContains": "\"opens\":\"13:30\"",
+      "allRoutes": true,
+      "why": "The visible Friday hours and the structured data must agree — they did not before 2026-08-08."
+    }
+  ]
+}

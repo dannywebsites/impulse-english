@@ -4,6 +4,9 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import FAQSection from '../components/FAQSection';
 import Breadcrumb from '../components/Breadcrumb';
+// Hours and group sizes come from the shared sources, never retyped into an answer —
+// this page shipped a Friday time that contradicted napData and the LocalBusiness schema.
+import { NAP } from '../utils/napData';
 import WhatsAppIcon from '../components/icons/WhatsAppIcon';
 
 import type { FAQItem } from '../utils/schemaData';
@@ -52,7 +55,7 @@ const faqSections: FAQSection[] = [
       },
       {
         question: "¿Qué horario tiene la academia?",
-        answer: "Lunes: 10:00-21:30 | Martes: 15:30-21:30 | Miércoles: 10:00-21:30 | Jueves: 15:30-21:30 | Viernes: 15:30-19:30"
+        answer: NAP.openingHoursText.join(" | ")
       },
       {
         question: "¿Sois un Centro Oficial Cambridge?",
@@ -64,7 +67,7 @@ const faqSections: FAQSection[] = [
       },
       {
         question: "¿Cuántos estudiantes tenéis por clase?",
-        answer: "Máximo 7 alumnos en infantil, máximo 10 alumnos en primaria/secundaria/adultos. Grupos realmente reducidos."
+        answer: "Máximo 7 alumnos en infantil, 10 en primaria y secundaria, y 8 en adultos y online. Las clases particulares son uno a uno. Grupos realmente reducidos."
       }
     ]
   },
@@ -229,8 +232,8 @@ const faqSections: FAQSection[] = [
         answer: "70% del tiempo hablas TÚ en inglés. Conversación, role-plays, situaciones reales. No memorización pasiva."
       },
       {
-        question: "¿Por qué tenéis 100% de aprobados?",
-        answer: "Metodología probada + profesores certificados + grupos reducidos + simulacros mensuales + feedback personalizado."
+        question: "¿Por qué tenéis un 100% de aprobados en B2 First?",
+        answer: "En los cursos 2024/25 y 2025/26 aprobaron el B2 First todos los alumnos que presentamos. Detrás hay metodología probada, profesores certificados, grupos reducidos, simulacros mensuales y feedback personalizado. Solo presentamos al examen a quien llega preparado."
       },
       {
         question: "¿Los profesores son nativos?",

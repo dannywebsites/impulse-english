@@ -386,7 +386,7 @@ export default function AdultosPage() {
             </div>
           </div>
           <p className="text-white/90 font-medium">
-            100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados)
+            100% de aprobados en B2 First en 2024/25 y 2025/26 (alumnos presentados)
           </p>
         </div>
       </section>
@@ -489,7 +489,7 @@ export default function AdultosPage() {
             <h2 className="t-h2 text-zinc-900 mb-4">
               Nuestros alumnos adultos
             </h2>
-            <p className="text-zinc-600 text-lg">Certificaciones Cambridge y Linguaskill, con un 100% de aprobados Cambridge en el curso 2024/25 (alumnos presentados)</p>
+            <p className="text-zinc-600 text-lg">Certificaciones Cambridge y Linguaskill, con un 100% de aprobados en B2 First en 2024/25 y 2025/26 (alumnos presentados)</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
