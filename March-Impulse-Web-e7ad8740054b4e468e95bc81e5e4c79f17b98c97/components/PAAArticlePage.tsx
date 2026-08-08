@@ -55,6 +55,21 @@ const articleImages: Record<string, { url: string; alt: string }> = {
 };
 
 /**
+ * Give every injected <table> a scrolling wrapper.
+ *
+ * Tables arrive as raw HTML from the writer (brand.useHtmlTables), and the design brief
+ * bars the writer from emitting a <div>, so the wrapper has to be added here. index.css
+ * described this behaviour in a comment for months while nothing implemented it: a
+ * comparison table rendered straight into a 68ch column with no overflow handling, so on
+ * a narrow phone it either crushed its columns or pushed the page body sideways.
+ *
+ * Applied to every article, not just listicles — 45 of them contain a table.
+ */
+function wrapTables(html: string): string {
+  return html.replace(/<table[\s\S]*?<\/table>/gi, (t) => `<div class="table-scroll">${t}</div>`);
+}
+
+/**
  * One channel clip, framed for its aspect ratio.
  *
  * A Short is 9:16. Handing that to <LazyVideo> inside .container-narrow at full width
@@ -222,10 +237,13 @@ export default function PAAArticlePage({ article, siblingArticles = [] }: PAAArt
                 {/* .article-prose styles the injected HTML. Without it the
                     <p>/<ul>/<table> inside render at browser defaults — the
                     `prose` classes that used to sit here matched nothing,
-                    because @tailwindcss/typography is not installed. */}
+                    because @tailwindcss/typography is not installed.
+                    `measure` is applied per text element in index.css rather
+                    than here, so a comparison table can use the full column
+                    instead of being squeezed into 68ch. */}
                 <div
-                  className="article-prose measure"
-                  dangerouslySetInnerHTML={{ __html: section.content }}
+                  className="article-prose"
+                  dangerouslySetInnerHTML={{ __html: wrapTables(section.content) }}
                 />
                 {inlineVid && (
                   <div className="mt-8">
