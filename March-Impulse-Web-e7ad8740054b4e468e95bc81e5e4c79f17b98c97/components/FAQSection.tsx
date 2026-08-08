@@ -33,7 +33,10 @@ export default function FAQSection({
   className = "",
   variant = 'legacy',
   eyebrow,
-  defaultOpen = 'first',
+  // Everything open at mount, site-wide (Danny, 2026-08-08). An answer behind a click is an
+  // answer most readers never read, and the accordion was saving vertical space we do not
+  // need. Collapsing still works; it is just no longer required in order to READ.
+  defaultOpen = 'all',
 }: FAQSectionProps) {
   // A Set rather than a single index, so `all` can hold more than one open at a time.
   // Lazy initialiser: this is the mount-time state, not a value recomputed each render.
@@ -126,8 +129,20 @@ export default function FAQSection({
                   className={`w-5 h-5 text-accent-blue flex-shrink-0 transition-transform ${isOpen(index) ? 'rotate-180' : ''}`}
                 />
               </button>
-              <div id={`faq-answer-${index}`} role="region" className={`px-6 overflow-hidden transition-all duration-300 ${isOpen(index) ? 'pb-5 max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-                <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+              {/* Same 0fr -> 1fr technique as the refresh variant above. This branch still
+                  used max-h-96, which silently clips any answer over ~384px — and this is the
+                  variant the blog uses (PAAArticlePage passes no `variant`). With every panel
+                  open by default a clip would be permanently visible rather than rare. */}
+              <div
+                id={`faq-answer-${index}`}
+                role="region"
+                className={`grid px-6 transition-[grid-template-rows,opacity] duration-300 ease-out motion-reduce:transition-none ${
+                  isOpen(index) ? 'grid-rows-[1fr] pb-5 opacity-100' : 'grid-rows-[0fr] opacity-0'
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <p className="text-zinc-600 leading-relaxed">{faq.answer}</p>
+                </div>
               </div>
             </div>
           ))}

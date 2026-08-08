@@ -73,7 +73,7 @@ articleImages:
     alt: Instalaciones aula academia inglés La Vaguada Barrio del Pilar Madrid
     placement: inline
   - url: /images/academy/nabscabdsc-6785.jpeg
-    alt: Vista aérea aula Stephen academia inglés La Vaguada Madrid
+    alt: Vista aérea de un aula de Impulse English Academy en La Vaguada, Madrid
     placement: inline
 ---
 

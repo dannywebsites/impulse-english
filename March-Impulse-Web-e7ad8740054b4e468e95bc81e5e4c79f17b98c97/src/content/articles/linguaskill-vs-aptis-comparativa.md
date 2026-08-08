@@ -23,7 +23,7 @@ contextSections:
     content: <p>No existe un examen universalmente "mejor". Existe el examen que mejor se adapta a tu situación específica en 2026.</p><ul><li>Buscas prestigio de marca Cambridge para tu CV profesional</li><li>Necesitas flexibilidad modular para certificar competencias específicas</li><li>Trabajas o aspiras a trabajar en multinacionales o empresas tecnológicas</li><li>Valoras un sistema adaptativo que refleje con precisión tu nivel real</li></ul><ul><li>Necesitas cumplir requisitos universitarios en instituciones públicas madrileñas</li><li>Buscas la habilitación lingüística como docente</li><li>Prefieres un formato predecible que puedas entrenar específicamente</li><li>Preparas oposiciones de enseñanza en la Comunidad de Madrid</li><li>Buscas certificación para tu hijo adolescente (APTIS for Teens)</li></ul><p>Recuerda que, más allá del examen que elijas, lo fundamental es prepararte adecuadamente. Un mes de preparación específica con materiales oficiales y, si es posible, en un centro especializado, puede marcar la diferencia entre aprobar justamente y obtener una puntuación que realmente destaque en tu currículum.</p><p>La certificación de inglés que elijas hoy puede abrir puertas importantes en tu futuro profesional o académico en Madrid. Tómate el tiempo necesario para evaluar tu situación específica, elige el examen que mejor responda a tus necesidades reales, y prepárate con seriedad. El mercado laboral madrileño valora cada vez más las competencias lingüísticas certificadas, y tanto Linguaskill como APTIS pueden ser tu pasaporte hacia nuevas oportunidades.</p>
 impulseSection:
   heading: Impulse English Academy te ayuda con el Linguaskill
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2025-2026, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2025/26, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
   ctaLinks:
     - text: Prueba de nivel gratis
       href: /prueba-de-nivel-ingles
@@ -67,7 +67,7 @@ articleImages:
     alt: Aula principal academia inglés La Vaguada Madrid
     placement: inline
   - url: /images/academy/nabscabdsc-6785.jpeg
-    alt: Vista aérea aula Stephen academia inglés La Vaguada Madrid
+    alt: Vista aérea de un aula de Impulse English Academy en La Vaguada, Madrid
     placement: inline
 ---
 

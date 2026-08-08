@@ -139,6 +139,48 @@
         "imageKey": {
           "type": "string"
         },
+        "listItems": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "position": {
+                "type": "number"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "position",
+              "name",
+              "description"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "googleReviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "text"
+            ],
+            "additionalProperties": false
+          }
+        },
         "articleImages": {
           "type": "array",
           "items": {
@@ -166,6 +208,49 @@
             "additionalProperties": false
           },
           "minItems": 3
+        },
+        "videos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "youtubeId": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "uploadDate": {
+                "type": "string"
+              },
+              "duration": {
+                "type": "string"
+              },
+              "vertical": {
+                "type": "boolean",
+                "default": true
+              },
+              "placement": {
+                "type": "string",
+                "enum": [
+                  "hero",
+                  "inline"
+                ],
+                "default": "hero"
+              }
+            },
+            "required": [
+              "youtubeId",
+              "title",
+              "description",
+              "uploadDate",
+              "duration"
+            ],
+            "additionalProperties": false
+          }
         },
         "$schema": {
           "type": "string"

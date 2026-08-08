@@ -12,7 +12,10 @@ const WEBHOOK_URL =
 // "solicita información" popup had it suppressed forever, so without a new key
 // they would never be shown the new offer.
 const DISMISS_KEY = 'impulse_popup_dismissed_v2';
-const DELAY_MS = 30000; // fire after 30s on page
+// 45s, raised from 30s (Danny, 2026-08-08). If this changes again, the --popup wait in
+// scripts/verify-tracking/run.mjs must move with it or the harness reports
+// "popup never appeared" — a false failure that reads like a real regression.
+const DELAY_MS = 45000; // fire after 45s on page
 
 // "What are you looking for" — same offering set + values the existing LeadForm
 // uses, so the selection maps onto the same CRM `level` field.

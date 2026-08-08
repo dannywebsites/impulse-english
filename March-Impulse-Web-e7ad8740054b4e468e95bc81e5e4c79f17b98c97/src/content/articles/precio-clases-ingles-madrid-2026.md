@@ -23,7 +23,7 @@ contextSections:
     content: "<p>Para facilitar la decisión final, aquí tenéis una guía según situaciones específicas:</p><ul><li>Opción ideal: Academia grupal de barrio (65€-90€/mes)</li><li>Razón: Socialización, método lúdico, precio contenido</li><li>Priorizar: Centro preparador Young Learners oficial</li></ul><ul><li>Opción ideal: Curso intensivo presencial (300€-450€/mes durante 2-3 meses)</li><li>Razón: Inmersión total, preparación específica de examen</li><li>Priorizar: Centros con alta tasa de aprobados en Cambridge</li></ul><ul><li>Opción ideal: Clases particulares online (15€-20€/hora, 2 veces por semana = 120€-160€/mes)</li><li>Razón: Flexibilidad horaria, precio reducido, personalización</li><li>Priorizar: Profesor especializado en examen objetivo (IELTS, TOEFL)</li></ul><ul><li>Opción ideal: Clases particulares presenciales con nativo (30€-40€/hora, 1-2 veces por semana)</li><li>Razón: Vocabulario especializado, práctica de presentaciones, networking</li><li>Priorizar: Profesor con experiencia empresarial real</li></ul><ul><li>Opción ideal: Academia con descuento hermanos (150€-200€/mes total)</li><li>Razón: Economía de escala, seguimiento compartido, desplazamiento único</li><li>Priorizar: Centro con grupos por edad y nivel separados</li></ul>"
 impulseSection:
   heading: Impulse English Academy te ayuda con tu preparacion
-  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2025-2026, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
+  content: En Impulse English Academy, Centro Preparador Oficial Cambridge en La Vaguada (Madrid), os acompañamos en cada paso. Con un 100% de aprobados en exámenes Cambridge 2025/26, grupos reducidos de máximo 10 alumnos y profesores nativos certificados TEFL/CELTA, tenéis todo lo necesario para alcanzar vuestros objetivos.
   ctaLinks:
     - text: Prueba de nivel gratis
       href: /prueba-de-nivel-ingles
@@ -66,7 +66,7 @@ articleImages:
     alt: Fachada exterior academia Impulse English La Vaguada Madrid
     placement: inline
   - url: /images/academy/nabscabdsc-6785.jpeg
-    alt: Vista aérea aula Stephen academia inglés La Vaguada Madrid
+    alt: Vista aérea de un aula de Impulse English Academy en La Vaguada, Madrid
     placement: inline
 ---
 
