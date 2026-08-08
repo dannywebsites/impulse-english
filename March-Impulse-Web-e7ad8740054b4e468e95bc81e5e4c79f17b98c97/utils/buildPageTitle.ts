@@ -1,6 +1,14 @@
-const CORE_BRAND = 'Impulse English Academy La Vaguada';
+import { NAP } from './napData';
+
+// The brand chain reads from napData so the title says exactly what the schema, the GBP and
+// every citation say. Until 2026-08-08 these were hardcoded as "Impulse English Academy
+// La Vaguada" / "Impulse English La Vaguada" — the locality-bearing name that napData:8-11
+// retired, which put the retired entity on the <title> of all 190 pages, the strongest
+// entity signal on the site. The locality still reaches the title through BARRIO_SUFFIX,
+// where it belongs: as a place, not as part of the name.
+const CORE_BRAND = NAP.name;
 const BARRIO_SUFFIX = 'Barrio del Pilar';
-const SHORT_BRAND = 'Impulse English La Vaguada';
+const SHORT_BRAND = NAP.shortName;
 const SEP = ' | ';
 
 export function buildPageTitle(theme: string): string {
