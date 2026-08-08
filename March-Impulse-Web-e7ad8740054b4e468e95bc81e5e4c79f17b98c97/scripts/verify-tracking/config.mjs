@@ -119,7 +119,9 @@ export const MATRIX = [
   },
 ];
 
-// Popup test (run with --popup): waits 41s on this page, fills the popup, submits.
+// Popup test (run with --popup): waits 47s on this page, fills the popup, submits.
+// Must stay ahead of CoursePopup.tsx DELAY_MS (45000). The old comment said 41s while the
+// harness actually waited 32s — keep these two numbers honest or the test lies.
 export const POPUP_PAGE = '/cursos-ingles/primaria/';
 
 export const TEST_LEAD = {

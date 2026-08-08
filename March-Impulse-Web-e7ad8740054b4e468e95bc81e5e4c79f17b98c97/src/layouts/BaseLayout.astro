@@ -16,11 +16,17 @@ interface Props {
   modifiedTime?: string;
   author?: string;
   fullTitle?: boolean;
+  /** Social title. Defaults to `title`. Use when the <title> deliberately drops the brand
+      (listicles) but the shared card should still carry it. */
+  ogTitle?: string;
   schemas?: object[];
 }
 
 const DEFAULT_OG_IMAGE = '/images/academy/logo-white-background.jpg';
-const SITE_NAME = 'Impulse English Academy La Vaguada, Barrio del Pilar';
+// ONE canonical entity name, identical to NAP.name and to the schema publisher/author.
+// Was 'Impulse English Academy La Vaguada, Barrio del Pilar' — a third name variant that
+// fragmented entity resolution. Location belongs in the address fields, not in the name.
+const SITE_NAME = 'Impulse English Academy';
 const BASE_URL = 'https://impulse-english.es';
 
 const {
@@ -35,10 +41,12 @@ const {
   modifiedTime,
   author = 'Impulse English Academy',
   fullTitle = false,
+  ogTitle,
   schemas = [],
 } = Astro.props;
 
 const pageTitle = fullTitle ? title : buildPageTitle(title);
+const socialTitle = ogTitle ?? title;
 // Ensure trailing slash on all canonical URLs for consistency with live site
 const rawCanonical = canonical?.startsWith('http') ? canonical : `${BASE_URL}${canonical || '/'}`;
 const canonicalUrl = rawCanonical.endsWith('/') ? rawCanonical : `${rawCanonical}/`;
@@ -163,7 +171,7 @@ const schemaGraph = {
     <link rel="canonical" href={canonicalUrl} />
 
     <!-- Open Graph -->
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={socialTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content={ogType} />
     <meta property="og:image" content={ogImage} />
@@ -175,7 +183,7 @@ const schemaGraph = {
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:title" content={socialTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
     <meta name="twitter:site" content="@ImpulseEnglish" />

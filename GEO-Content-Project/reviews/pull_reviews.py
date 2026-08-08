@@ -28,8 +28,10 @@ RAW = os.path.join(HERE, "reviews-raw.json")
 OUT = os.path.join(HERE, "reviews.json")
 
 # The academy's Google place, verified against the live knowledge panel 2026-08-02.
-PLACE_ID = "ChIJG7G2oAkpQg0Re7iLuuLzbr4"
-CID = "13722173269762357371"
+# Defaults are Impulse's. Override per client with --place-id / --cid / --out so this script
+# is the first step of onboarding ANY business, not just this one.
+PLACE_ID = os.environ.get("REVIEWS_PLACE_ID", "ChIJG7G2oAkpQg0Re7iLuuLzbr4")
+CID = os.environ.get("REVIEWS_CID", "13722173269762357371")
 
 API = "https://api.dataforseo.com/v3/business_data/google/reviews"
 
@@ -140,6 +142,9 @@ def normalise(payload):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
+    ap.add_argument("--place-id", help="Google place_id of the business (default: Impulse)")
+    ap.add_argument("--cid", help="Google cid of the business (default: Impulse)")
+    ap.add_argument("--out", help="where to write reviews.json (default: alongside this script)")
     ap.add_argument("--normalise-only", action="store_true")
     ap.add_argument("--depth", type=int, default=200)
     a = ap.parse_args()

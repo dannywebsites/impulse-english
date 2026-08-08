@@ -12,7 +12,7 @@ import type { FAQItem } from '../../utils/schemaData';
 import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 const benefits = [
-  { title: "El bus 147 te deja en la puerta", desc: "Directo desde Tetuán y Valdeacederas, unos 8 minutos y sin transbordos. En metro son dos líneas; en bus, ninguna." },
+  { title: "El bus 147 te deja en la puerta", desc: "Directo, sin transbordos, hasta Ginzo de Limia - Ferrol, a un minuto de la academia. En metro son dos líneas; en bus, ninguna." },
   { title: "Centro oficial Cambridge y Linguaskill", desc: "Te preparas y te examinas en el mismo sitio. No tienes que cruzar Madrid el día del examen." },
   { title: "100 alumnos aprobados en Cambridge", desc: "100% de aprobados en B2 First en 2024/25 y 2025/26. Casi todos empezaron desde un nivel muy básico." },
   { title: "Grupos de 7 a 10 alumnos", desc: "Máximo 10 en adultos. Suficientemente pequeño para que hables en todas las clases, no una vez al mes." },
@@ -46,7 +46,7 @@ const localReviews = [
 export const localFaqs: FAQItem[] = [
   {
     question: "¿Cómo se llega desde Tetuán a la academia?",
-    answer: "Lo más rápido es el autobús 147, que sale de Tetuán y Valdeacederas y tarda unos 8 minutos sin transbordos. En metro necesitas dos líneas: L1 hasta Plaza de Castilla y L9 hasta Barrio del Pilar. En coche, por Av. de la Paz, entre 8 y 12 minutos."
+    answer: "El autobús 147 es la opción directa: su recorrido conecta el eje de la Castellana (Santiago Bernabéu, Cuzco, Plaza de Castilla) con Barrio del Pilar y para en Ginzo de Limia - Ferrol, a un minuto andando de la academia, sin transbordos. En metro necesitas dos líneas: L1 hasta Plaza de Castilla y L9 hasta Barrio del Pilar. El tiempo depende de tu punto de partida dentro de Tetuán; consúltalo en el planificador de la EMT."
   },
   {
     question: "¿Cuánto cuestan las clases de inglés cerca de Tetuán?",
@@ -71,12 +71,12 @@ export const localFaqs: FAQItem[] = [
   {
     // Valdeacederas se cubre aquí a propósito, en lugar de abrir una página que
     // competiría con esta por la misma intención de búsqueda.
-    question: "Vivo en Valdeacederas. ¿El 147 sale también desde mi zona?",
-    answer: "Sí. El autobús 147 sale de Tetuán y Valdeacederas y tarda unos 8 minutos hasta la parada de Ginzo de Limia - Ferrol, a un minuto andando de la academia. Es directo, sin transbordos, así que desde Valdeacederas se llega igual de rápido que desde el propio Tetuán. En coche, por la Av. de la Paz, entre 8 y 12 minutos."
+    question: "Vivo en Valdeacederas. ¿Cómo llego a la academia?",
+    answer: "Desde Valdeacederas lo más directo es la L1 de metro hasta Plaza de Castilla y allí enlazar con la L9 hasta Barrio del Pilar, o tomar el 147 en el eje de la Castellana: para en Ginzo de Limia - Ferrol, a un minuto andando de la academia. En coche se llega por la Av. de la Paz. Si quieres el tiempo exacto desde tu portal, el planificador de la EMT lo calcula."
   },
   {
     question: "¿Por qué elegiros y no una academia del propio Tetuán?",
-    answer: "Por tres cosas comprobables: 5,0 sobre 183 reseñas en Google, todas de 5 estrellas; precios publicados desde 64 €/mes sin letra pequeña; y que los dos fundadores, JP y Danny, dan clase en persona. A 8 minutos en el 147, merece la pena el trayecto."
+    answer: "Por tres cosas comprobables: 5,0 sobre 183 reseñas en Google, todas de 5 estrellas; precios publicados desde 64 €/mes sin letra pequeña; y que los dos fundadores, JP y Danny, dan clase en persona. Con el 147 directo hasta la puerta, merece la pena el trayecto."
   }
 ];
 
@@ -95,7 +95,7 @@ export default function TetuanPage() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/academy/outside-academy.jpg" alt="Fachada de Impulse English Academy en Av. de El Ferrol 22, a 8 minutos de Tetuán en el bus 147" className="w-full h-full object-cover" loading="eager" />
+          <img src="/images/academy/outside-academy.jpg" alt="Fachada de Impulse English Academy en Av. de El Ferrol 22, con el bus 147 directo desde Tetuán" className="w-full h-full object-cover" loading="eager" />
           <div className="absolute inset-0 bg-accent-blue/90"></div>
         </div>
         <div className="absolute inset-0 hero-grain opacity-[0.03]"></div>
@@ -120,7 +120,7 @@ export default function TetuanPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Academia de inglés a 8 minutos de Tetuán
+              Academia de inglés cerca de Tetuán
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
@@ -128,7 +128,7 @@ export default function TetuanPage() {
             </p>
             <div className="flex items-center gap-2 text-white/60 font-display text-sm mb-2 animate-hero-fade-up animation-delay-200">
               <Train className="w-4 h-4" />
-              <span>Bus 147 directo desde Tetuán · 8 min · sin transbordos</span>
+              <span>Bus 147 directo desde Tetuán · sin transbordos</span>
             </div>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress} · <a href={NAP.phoneTel} className="underline hover:text-white/80">{NAP.phone}</a>
@@ -176,7 +176,7 @@ export default function TetuanPage() {
 
           <p className="t-lede text-zinc-700 max-w-3xl mb-12">
             ¿Buscas academia de inglés cerca de Tetuán? Impulse English Academy está a{' '}
-            <strong className="text-zinc-900 font-semibold">8 minutos en el autobús 147</strong>,
+            <strong className="text-zinc-900 font-semibold">un autobús directo, el 147</strong>,
             directo y sin transbordos. Centro oficial Cambridge desde 2022, grupos de 7 a 10
             alumnos y clases desde 64 €/mes. Reserva tu prueba de nivel gratuita con JP:{' '}
             <a href={NAP.phoneTel} className="text-accent-blue font-semibold hover:underline whitespace-nowrap">604 910 611</a>.
@@ -184,7 +184,7 @@ export default function TetuanPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { n: 1, title: "Bus 147", body: "Sale de Tetuán y Valdeacederas y te deja en Av. de El Ferrol. Unos 8 minutos, sin cambiar de línea." },
+              { n: 1, title: "Bus 147", body: "Recorre el eje de la Castellana y te deja en Ginzo de Limia - Ferrol, junto a Av. de El Ferrol. Sin cambiar de línea." },
               { n: 2, title: "O en metro, con un cambio", body: "L1 desde Tetuán hasta Plaza de Castilla, y allí L9 hasta Barrio del Pilar. Más pasos que el bus." },
               { n: 3, title: "En coche, 8 a 12 minutos", body: "Por Av. de la Paz hasta Av. de El Ferrol, 22. Hay aparcamiento libre en la calle y en el entorno de La Vaguada." }
             ].map((step) => (
@@ -758,7 +758,7 @@ export default function TetuanPage() {
                   </div>
                 ))}
               </div>
-              <p className="text-zinc-900 font-bold text-lg mb-4">A 8 minutos en el bus 147 desde Tetuán. Sin excusas.</p>
+              <p className="text-zinc-900 font-bold text-lg mb-4">Bus 147 directo desde Tetuán, sin transbordos. Sin excusas.</p>
               <p className="text-zinc-600">{NAP.fullAddress}</p>
             </div>
             <div>
