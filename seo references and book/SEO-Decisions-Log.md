@@ -5,6 +5,76 @@ Every SEO decision is logged here, grounded in [`SEO-Master-Class-Reference.md`]
 
 ---
 
+## 2026-08-08 — Google Business Profile rebuilt as the map-pack lever (book-gap territory)
+
+Artifact: `impulse-seo-ops/gbp/GBP-PACK-2026-08.md`, gated by `gbp/verify_gbp_pack.py`.
+The 2026-06-28 pack is marked SUPERSEDED (eight stale facts, listed in its banner).
+Repo half committed as `be08c51` on `seo/gbp-pack-nap-consistency`.
+
+**Scope note, stated up front:** the book has **no GBP / map-pack / NAP-citations chapter**
+(`SEO-Master-Class-Reference.md:10-12`). Everything below is the external local-SEO half, paired
+with the on-page work rather than derived from the book. Where the book *does* apply, it is cited.
+
+### Decision 1 — Treat the GBP, not more on-page work, as this quarter's lever for the money terms.
+**Evidence:** GSC 2026-08-05, 3,407 queries, synthetic `"mejor academia de inglés para niños en [X]"`
+template stripped (82 queries, 1,044 impressions, **0 clicks**). Every high-volume commercial term
+shows impressions with **zero clicks** at organic positions 20 to 65: `clases de ingles para adultos`
+226 impr @ 28.1, `academia ingles madrid` 222 @ 25.9, `clases de ingles niños` 150 @ 63.6,
+`academias de ingles en madrid baratas` 87 @ 22.9. All render a local pack; Impulse is absent from it.
+**Why (book gap):** the book's local chapter is geo-tiered content hubs and geographic keywords, which
+is already built and already ranking 1.1 to 4.6 on the barrio terms. Organic page 3 is not winnable
+this quarter, so the remaining gap is the pack, which the book does not cover.
+
+### Decision 2 — Services carry the words; Products and Posts carry the links.
+GBP **Services** have no URL field and Google strips URLs from service and description text; service
+descriptions cap at 300 chars, the business description at 750, service areas at 20. So the 13
+services are written for keyword relevance only, mirrored into **Products** (the sole per-item surface
+with a URL and button) and into **14 Posts** with CTA buttons, which is the surface that always exists
+regardless of category gating. **Why (book §5, n-grams):** the service names are the n-gram variations
+the money queries are built from, so they belong where Google reads them for matching.
+
+### Decision 3 — Add an `Inglés para empresas` service now, page later.
+`clases de ingles empresas` ranks **1.1** and `academias de ingles para empresas` **1.8**, with no
+dedicated page. Service points at `/cursos-ingles/adultos/` as a stopgap; a real
+`/ingles-para-empresas/` is flagged as the cheapest on-page win available.
+**Why (book §2, one intent = one page):** B2B is a distinct intent already ranking on borrowed
+relevance. It earns its own page; until it has one, the closest existing page is the honest target.
+
+### Decision 4 — Service areas chosen by demand, not by page count. Alcobendas and Sanse stay out.
+20 slots ordered by measured impressions, led by Barrio del Pilar, La Vaguada, Las Tablas (685 real
+impressions, the highest of any location) and Sanchinarro (343, position 43.6). Alcobendas (70/mo) and
+San Sebastián de los Reyes (90/mo) are the largest volumes on the board and are still excluded:
+**no students, so no authentic local signal** (Danny, confirmed; `Location-Page-Discovery.md:147-150`).
+The 20th slot is left empty on purpose.
+
+### Decision 5 — Publish prices on the profile; keep the 100% out of the description.
+Prices go in (64/83/87/94 €/mes, 29 €/hora, matrícula 45 €, libro máx 40 €) because no local
+competitor states any of them, which makes `academias de ingles en madrid baratas` (87 impr, pos 22.9)
+answerable with a number. The **100% pass rate is deliberately excluded from the description** and
+confined to the Cambridge services and posts where the year is named: it has no published denominator,
+and an unverifiable claim in the highest-visibility field is what costs citations. Never "100% de 960".
+
+### Decision 6 — Never claim to be a Cambridge exam centre.
+The June pack's Q&A said "te preparas y te examinas con nosotros". Impulse is a **Centro Oficial de
+Preparación** Cambridge; the site says exactly that. The new Q&A states the official exam is sat at a
+centro examinador and its fee is separate. `verify_gbp_pack.py` fails the build on the false form while
+allowing the honest disclaimer.
+
+### Decision 7 — Site and profile must stop contradicting each other (the consensus principle).
+Fixed in `be08c51`: pass-rate year form normalised to `2024/25` and `2025/26` on pass-rate lines only
+(45 lines, 35 files; ~51 exam-calendar uses of `2025-2026` deliberately untouched); `priceRange`
+widened to `€29/hora - €99/mes`; `areaServed` gained Chamartín, Valdezarza, Arroyo del Fresno and
+Sanchinarro, whose pages had been live but unregistered. **Open, Danny's call:** whether `legalName`
+carries "La Vaguada". Sign, GBP, schema and directories all have to agree; `origin/main` still has
+the longer form.
+
+### Decision 8 — Shape the review ask, never the review.
+Carries forward the 2026-07-30 decision unchanged: nudge questions steer reviewers toward
+`academia de inglés`, the barrio, the Cambridge term, the course type, brand, metro and outcome, in
+that priority. No scripting, no incentives. Target 183 to 250 at +6 to +10/month.
+
+---
+
 ## 2026-08-07 — Blog targeting for primaria/ESO parents (30 briefs)
 
 Artifact: `GEO-Content-Project/primaria-eso-blog-briefs.md`. All figures are live DataForSEO Labs
@@ -1042,3 +1112,224 @@ measurable volume. Clusters C and D are largely zero-volume decision content —
 of choosing local intent over national volume. **Judge them on enquiries, not clicks.** Publish
 A and B before September (`academia de ingles` 9.900 → 27.100; `academia de ingles madrid`
 1.300 → 2.900).
+
+---
+
+## 2026-08-07 — `/blog/mejor-academia-ingles-tetuan/` (Local Madrid)
+
+### Decision 1 — The blog piece takes the *comparison* intent; `/academia-ingles-tetuan/` keeps the *money* intent.
+**Why (book §"Anti-cannibalization", one intent = ONE page):** the live SERP for
+`mejor academia de ingles tetuan`, `academias de ingles en tetuan` and `academia ingles tetuan madrid`
+returns a **near-identical top 4** (inglesmadrid.es, englishconnection.es, skippinandkids.com,
+kidsandus.es). Google is treating these as one intent, so a second Impulse page aimed at
+"academia de inglés en Tetuán" would have competed with our own location page.
+The article is therefore built as a buyer's guide (criteria, comparison table, price method) and
+links **down** to `/academia-ingles-tetuan/` with that anchor. Per the book's "tiers are fluid"
+note, the link direction and anchor tell Google which page plays the money role.
+
+### Decision 2 — Lead with the price-opacity gap, because it is the one thing no rival gives.
+**Why:** all five Tetuán academies were scraped on 2026-08-07 and **none publishes a tariff**.
+Impulse does (from 64 €/mes, matrícula 45 €, libro máx 40 €). That is a verifiable differentiator
+rather than an adjective, and it also answers the strongest PAA on the query
+(*¿Cuánto cuesta What's Up?*) and the related search *Academias de inglés en Madrid baratas*.
+
+### Decision 3 — Do not fabricate competitor prices. Say "no publicado" instead.
+**Why:** the 2025 article `academias-ingles-vaguada-barrio-pilar.md` invented per-month price bands
+for seven named rivals. Every competitor figure in this piece is either quoted from their own site
+and attributed as their claim (English Connection's self-reported 90% Cambridge pass rate) or
+recorded as absent. Design contract also bars linking any competitor.
+
+**Opportunity noted:** this query currently has **no AI Overview and no featured snippet**. The
+opening 80 words are written as a direct, quotable answer to take that slot.
+
+**Watch for cannibalization** against the existing static pages `/blog/mejores-academias-madrid/`
+and `/blog/mejores-academias-madrid-norte/` — different (city-wide) intent, but same family.
+
+---
+
+## 2026-08-07 — `/blog/mejor-academia-ingles-chamartin/` (Local Madrid)
+
+### Decision 1 — Publish despite near-zero volume, as an authority/comparison asset.
+**Why (book §2, Keyword Levels 4–5, "no volume ≠ no search"):** measured on 2026-08-07 via Google
+Ads (Madrid, es), `mejor academia de ingles chamartin` returns **no volume record at all**;
+`academia de ingles chamartin` and `academias de ingles chamartin` are **10/mo** each — but at
+**HIGH competition (index 93) and 5,38 € CPC**, i.e. the handful of searches are commercially
+expensive. `mejores academias de ingles madrid` is 40/mo. This is a Tier-4/5 long-tail play.
+**Judge it on enquiries, not clicks** — same honest ceiling recorded for the local cluster above.
+**Winnability (book §2, "ripe for the picking"):** no page-1 result uses the exact phrase in its
+title tag; the organic #1 is a *"cerca de Chamartín"* page from a centre that is not in the district.
+
+### Decision 2 — The article does NOT reuse the Tetuán angle. Different district, different gap.
+**Why (book §2 anti-cannibalization + the 3-gram uniqueness lesson from the barrio pages):** the
+Tetuán piece leads on **price opacity** ("none of the five publishes a tariff"). That hook is
+**false in Chamartín** — The English Exam Centre publishes 340 €/325 € per course, and both it and
+Cambridge House publish a maximum class size. Reusing the Tetuán frame would have been factually
+wrong *and* near-duplicate. Chamartín's real gap is the **unit of measurement**: a course price and
+a monthly price are not comparable, so the piece teaches the conversion (340 € = ~38 €/mes over 9
+months, ~113 €/mes over 3) and the three questions that close it.
+
+### Decision 3 — Lead filter is "the name is not an accreditation", stated without accusing anyone.
+**Why:** the zone contains centres branded *Exam Centre* and *Examination Institute*. The article
+separates **centro preparador** / **centro examinador** / "reconocido por Cambridge", and sends the
+reader to Cambridge English's own centre finder plus one plain question ("el día del examen, ¿entro
+por esta misma puerta?"). **No negative claim is asserted about any named centre** — only what each
+site says about itself. This is also Impulse's genuine differentiator: Cambridge *preparador*, and
+official **Linguaskill** centre where the test is actually sat (certificate in 48 h).
+
+### Decision 4 — Comparison intent to the blog; money intent stays with `/academia-ingles-chamartin/`.
+**Why (book §4, "tiers are fluid" — anchor + link direction assign the role):** the location page
+already exists and targets the money term. The article links **down** to it with the location anchor,
+plus `/academia-ingles-plaza-castilla/` (the actual interchange on the route) and the Tetuán sibling,
+keeping the Local Madrid ring circular.
+
+**Data provenance:** every competitor fact was fetched from the centre's own site or its Google
+listing on 2026-08-07 and is attributed as their claim; absent data is recorded as **"No publicado"**,
+never estimated. Two centres (EEI, The Green Monkey) refused the fetch — they appear with address
+only, no invented detail. Continues the Decision-3 rule from the Tetuán entry.
+
+**Opportunity noted:** the SERP has a local pack + a `compare_sites` carousel but **no AI Overview
+and no featured snippet** on the exact phrase. The `paaAnswer` and opening 80 words are written as a
+direct, quotable answer to take that slot. 5 of the 8 FAQs are verbatim PAA questions scraped the
+same day (deliberately a *different* selection from the Tetuán piece to avoid duplicate FAQ blocks).
+
+---
+
+## 2026-08-07 — `/blog/mejores-academias-ingles-tetuan/` (listicle format)
+
+### Decision 1 — The listicle and the guide are separate pages. Danny's ruling.
+**Why:** I flagged that `mejores academias de inglés en Tetuán` overlaps
+`/blog/mejor-academia-ingles-tetuan/` (shipped the same day) and `/academia-ingles-tetuan/`, and
+that the live SERP returns a near-identical top 4 for the singular and plural forms — which by the
+book's "one intent = ONE page" rule reads as one intent. **Danny's call: they are different pages.**
+Proceeding on that basis. The separation held in the writing: the guide answers *how to choose*
+(six criteria, process, no ranking); the listicle *is* the ranking. **Watch GSC for the two
+swapping positions on the same query** — that is the signal the split did not hold.
+
+### Decision 2 — A brand-owned ranking, stated openly, with competitors as facts only.
+**Why (standing instruction, not an SEO judgement):** these are local rivals. They get address,
+ages, method and price-transparency taken from their own sites, and no verdict of any kind. We do
+not call a competitor "ideal para" anything, and we do not attack one. Impulse is entry 1.
+To keep that honest rather than covert, the page carries a "Cómo hemos ordenado esta lista"
+section that says outright that Impulse publishes the list and states the four ranking criteria.
+Enforced mechanically in `scripts/lib/listicle.js`; ten regression cases in `test-listicle.js`.
+
+### Decision 3 — Answer-first ordering, because retrieval rewards it.
+**Why:** ranked/numbered lists make up 71–86% of the listicles AI answer engines cite, and the
+Princeton/Georgia Tech GEO paper measured up to ~40% visibility lift from statistics, direct quotes
+and citations. So the page order is verdict (≤80 words, becomes `paaAnswer`) → compact ranking →
+comparison table → the expanded entries. The first three are the extraction surface and the gate
+**errors** if any of them falls below the first entry. Also emits `ItemList` schema, verified in
+`dist`: 6 positions, contiguous, Impulse at 1, no competitor URLs.
+
+### Decision 4 — Primary research = verified Google reviews, not interviews.
+**Why:** customer interviews are not available (Danny). The listicle quotes one verbatim review
+from the 183-review pull, matched character-for-character by the gate. Reviews are allocated one
+per page across the site, so this run used **Concep R. H**, previously unallocated.
+
+**Ceiling to record:** this is a self-ranked list. It will not be cited as a neutral roundup, and
+it should not pretend to be one. Its value is the comparison table and the price-transparency
+finding (five of six publish no tariff), both of which are verifiable and neither of which the
+rivals publish.
+
+### Amendment (same day) — rebuilt as a ranked LISTICLE via `seo-blog-writer --format listicle`.
+Danny's call: the guide version above was replaced by a ranked listicle at the **same URL**
+(`assemble.js --slug mejor-academia-ingles-chamartin`, so nothing moved). Rationale matches the
+listicle guide's own test: `mejor/mejores academias de inglés en Chamartín` presupposes a ranking,
+so a ranked, numbered, modular page is the right shape. It ships **ItemList schema** (7 ListItem
+nodes) plus the FAQPage, which the guide version could not. FAQ is **7 of 8 verbatim PAA (87%)**.
+
+**What changed in substance.** The competitor set is now drawn from the run's own Firecrawl scrapes
+plus a same-day Google Maps check: Number 16 School (P.º de La Habana 12) enters; The Bridge is
+**excluded and the exclusion is stated in the article**, because it publishes neither address,
+group size nor price, so it has nothing to compare. Two honest caveats were added that the guide
+version lacked: that a review **count** measures age rather than teaching quality, and that
+"No publicado" is a missing datum rather than a defect. Competitor blocks carry verified facts and
+no adjectives, per the standing "we do not recommend a rival" instruction.
+
+**Two pipeline defects found and fixed while shipping this (both silent — validation passed clean
+while the rendered page was wrong).** Recorded because they affect every article, not just this one:
+1. Inline `<a href>` written as raw HTML in the body was half-escaped to `<a href="…"&gt;text</a&gt;`
+   and rendered as visible text. Markdown links convert correctly; raw inline HTML anchors do not.
+2. `mdToHtml()` in `scripts/lib/cms-impulse-astro.js` had **no markdown blockquote branch**, so the
+   listicle format's mandatory verbatim review (`> quote`) was escaped into `<p>&gt; quote</p>`,
+   losing the `<blockquote>` styling DESIGN.md defines. Fixed in the skill; all 10 `test-listicle.js`
+   gate cases still pass. **`/blog/mejores-academias-ingles-tetuan/` is still live with this defect.**
+
+---
+
+## 2026-08-08 — Two false claims retired from the Tetuán cluster
+
+### Decision 1 — "8 minutos en el bus 147 desde Tetuán y Valdeacederas" removed sitewide.
+**Why:** checked independently against the web, on Danny's instruction. Spanish Wikipedia's
+line-147 article gives the route as Plaza de Callao ↔ Barrio del Pilar via Paseo de la Castellana,
+with **no stop on Bravo Murillo and none in Valdeacederas** — which is where Metro Tetuán and
+Valdeacederas actually are. The published EMT timetable puts **Ginzo de Limia - Ferrol → Plaza de
+Castilla alone at 12 minutes**, and Plaza de Castilla is the *northern edge* of Tetuán, so any trip
+from Metro Tetuán is longer still. Both halves of the claim were wrong.
+
+**Danny's ruling:** keep the route, drop the number, until a real door-to-door time is confirmed.
+Corrected in the listicle, the guide, `TetuanPage.tsx` (11 places incl. H1, hero badge, image alt
+and **three FAQ answers that generate FAQPage schema**), the `.astro` title and meta description,
+and the homepage `LocationsSection` bus row. The page's hook survives: "Bus 147 directo desde
+Tetuán" is confirmed true.
+
+**Deliberately left alone:** the Montecarmelo→L9 "~8 min" row and the Tetuán car route "8-12 min".
+Different claims, no evidence against them. Replacing a number I cannot source with another number
+I cannot source is the same error twice.
+
+### Decision 2 — "La única con acreditación oficial de Cambridge y de Linguaskill" removed.
+**Why:** false. English Connection prepares A2 Key→C2 Proficiency and Skippin and Kids prepares
+Cambridge certifications, both stated on their own sites. **"La única que publica sus precios"
+stays** — that one was checked: five of six publish no tariff anywhere.
+
+### Decision 3 — Reviews render as review cards, minimum four.
+**Why:** v1 shipped its single review as bare body text — `dist` had zero `<blockquote>` elements,
+so no stars, no Google mark, no author. On branded queries ~57% of citations go to reviews and
+social proof, so the format was giving that away. Now five verbatim reviews render through the
+site's own `<GoogleReviews>` component. Gate: 4 minimum, matched character-for-character against
+`reviews.json`, and any author already in `review-allocation.md` is blocked — no review appears
+twice on the site.
+
+### Decision 4 — Stop publishing directions to competitors.
+**Why:** entries carried nearest-metro and bus-line detail for rivals. Their address identifies the
+business and stays; wayfinding is free help for a competitor, published on our own page.
+
+---
+
+## 2026-08-08 — Listicle title/description, and one canonical entity name
+
+### Decision 1 — Listicles drop the brand chain from `<title>`; the brand moves to the social card.
+**Why:** the title was 66 chars (truncates near 60) and `buildPageTitle` was injecting
+"La Vaguada" — a *competing location term* on a page targeting Tetuán, muddying a geographic signal
+that is already stretched. New title is **50 chars, ranked, numbered and dated**:
+`Las 6 mejores academias de inglés en Tetuán (2026)`. Ranked/numbered titles are the pattern that
+dominates AI citations, and the number was missing entirely.
+
+Scoped to listicles only (`fullTitle={!!data.listItems}` in `blog/[slug].astro`) — Danny's call.
+Ordinary articles keep the chain. New `ogTitle` prop on `BaseLayout` carries
+`… | Impulse English Academy` on the social card, which has no length limit. `metaTitleMaxLength`
+raised 41 → 60, since the brand chain no longer eats the budget.
+
+### Decision 2 — Description sells the differentiator, not filler.
+Replaced ~43 characters of nothing ("Encuentra la formación que tú necesitas hoy") with the finding
+that earns the click and gets lifted: **"Solo una publica precios: desde 64 €/mes."**
+
+### Decision 3 — One canonical entity name.
+Four variants existed. `og:site_name` and `meta[name=publisher]` rendered
+`Impulse English Academy La Vaguada, Barrio del Pilar`; `NAP.legalName` was a third form. Both now
+`Impulse English Academy`, identical to `NAP.name` and the schema publisher/author. `alternateName`
+reduced to the genuine short form so the canonical name is not an alias of itself. Location lives in
+the address fields. **`buildPageTitle`'s location suffix is deliberately NOT changed** — that would
+rewrite all 183 title tags including the La Vaguada and Barrio del Pilar location pages, where the
+suffix is accurate. Open question, recorded rather than bundled in.
+
+⚠️ Off-code half still outstanding: GBP, directory listings and review replies must use the same
+single name or the fragmentation persists where it matters most.
+
+### Decision 4 — Section depth: measured, mostly a non-issue.
+The ~94 words/section average was an artefact of averaging FAQ H3s and ranked entries together.
+Measured separately, the prose sections were already 167–239 words. The six entries are capped at
+40–90 **by the listicle gate, on the original spec** ("each item must survive being torn out");
+padding them to 120+ would break the format. Only real fix: the Comparativa section was a table with
+one sentence of lead-in, now 205 words explaining how to read it and which column decides.
+Non-entry sections now average **181 words**.
