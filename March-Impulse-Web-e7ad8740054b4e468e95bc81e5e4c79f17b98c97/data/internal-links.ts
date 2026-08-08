@@ -110,6 +110,14 @@ const ALIASES: Record<string, string> = {
   'Academia de inglés en Barrio del Pilar': 'Barrio del Pilar page',
   'Academia de inglés en La Vaguada': 'La Vaguada page',
   'Academia de inglés en Tetuán': 'Tetuán page',
+  // The barrio pages the writer's sitemap offers but the alias table never covered, so
+  // "Academia de inglés en Peñagrande" resolved to nothing and the ref was dropped from
+  // "Te puede interesar" with a green build. Caught by verify:links on the Fuencarral-El
+  // Pardo listicle; the remaining barrio pages are aliased here for the same reason.
+  'Academia de inglés en Peñagrande': 'Peñagrande page',
+  'Academia de inglés en Mirasierra': 'Mirasierra page',
+  'Academia de inglés en La Paz': 'La Paz page',
+  'Academia de inglés en La Ventilla': 'La Ventilla page',
   'Fechas y precios exámenes Cambridge': 'Precios Cambridge',
   'Preparación B2 First en Madrid': 'Preparación B2 Madrid',
   // No dedicated page exists for either. The Cambridge hub is the closest real

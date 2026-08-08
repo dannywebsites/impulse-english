@@ -37,6 +37,27 @@ Pool: **100 eligible** of 180. Allocated: **98**. Spare: **2**.
 | Las Tablas | Paloma Aranda · Stefany Jiménez Espitia · Daniela Janet Luna Rodriguez |
 | Inglés para empresas | Raul San Segundo · Fernando Garcia · Inés I |
 
+## Blog listicles — allocated outside `allocate.py` (append by hand)
+
+⚠️ `allocate.py` does not know about `--format listicle` articles, so the table above is
+**incomplete**: the five reviews live on `/blog/mejores-academias-ingles-tetuan/` were absent
+from it and every one of them still read as "free". `assemble.js` blocks a listicle whose quote
+matches an already-allocated author, and it reads THIS FILE, so an unrecorded review is a
+duplicate waiting to ship. Until `allocate.py` learns to scan `src/content/articles/*.md`
+`googleReviews`, add listicle rows here by hand and cross-check with:
+
+```
+grep -rh "^  - name:" src/content/articles/*.md | sort -u
+```
+
+| Page | Reviews |
+|---|---|
+| Blog · Tetuán listicle | Paloma aranda · Begoña Carnicero · Daniel de la Peña de Alaiz · Laura · Joaquín |
+| Blog · Fuencarral-El Pardo listicle | Lorena · Ana Zalazar · César Cadenillas Medina · A Verguizas |
+
+Note: the "Lorena" above is the Montecarmelo reviewer, a different person from the
+"Lorena Jiménez" quoted on the Secundaria and Montecarmelo/Las Tablas pages.
+
 ## Eligibility rules (`build_pool.py`)
 5 stars · 90–420 characters · a real full name · no teacher named outside
 {JP, Danny} · written in Spanish or English. Reviews that name another teacher
