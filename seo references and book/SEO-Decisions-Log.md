@@ -1380,3 +1380,52 @@ rule) and `geo-audit --set hubs`.
 
 **Out of scope, still open:** the other four pages in the cluster (parent at position **60.65**)
 are the same shape and share the 0.16% CTR.
+### Amendment 2 (2026-08-08) — rebuilt on the updated writer; consolidated to ONE URL.
+
+**One page, not two.** The guide version and the listicle had been sitting at
+`/blog/mejor-academia-ingles-chamartin/` and `/blog/mejores-academias-ingles-chamartin/` with the
+**same H1, same title and near-identical bodies** — self-cannibalisation of exactly the kind the
+book's "one intent = ONE page" rule exists to prevent. The singular slug was deleted. **No redirect
+was added**: it had never been committed or deployed, so the URL never existed publicly (standing
+preference: a 404 over a weak 301 where there is no live predecessor). The surviving slug matches
+the sibling listicles (`-tetuan`, `-plaza-castilla`, `-fuencarral-el-pardo`).
+
+**Also deleted: 5 Desktop-sync twins** (`… 2.md`) sitting in the content collection, each of which
+Astro was building as a **live duplicate page on a URL containing a space**. Blog pages 111 → 105,
+exactly the 6 removed. This is the sync-duplicate trap biting the content collection rather than
+`dist/`.
+
+**Rewritten against the updated pipeline.** The material change is reviews: the listicle contract
+now requires a `## Reseñas verificadas en Google` section of **4+ verbatim reviews**, lifted into
+`googleReviews` front-matter and rendered as real Google review cards (stars, Google mark, author)
+instead of one blockquote of body text. Reviews consumed by this page, none previously allocated
+and each evidencing a different criterion:
+
+| Author | Evidences |
+|---|---|
+| rorik09 | C1 obtained with the director |
+| Karina Garcia | attention to individual needs |
+| Stefany Jiménez Espitia | intensive summer course |
+| Jose Hernandez | parent, children's progress |
+
+`Lidia Ramirez` was rejected despite passing the filter: it names "Stephan", a misspelling of a
+former teacher on `excludeMentioning`, so the spelling slipped the gate while the dating problem
+the exclusion exists to prevent remained. **The exclusion list matches literal spellings only.**
+
+**Ranking criterion, stated in the article:** how much a reader can learn *before phoning* — centres
+publishing both group size and price first, then one of the two, then neither. Teaching quality is
+explicitly not ranked, because we have no honest way to measure it in a centre that is not ours.
+`The English Exam Centre` was re-verified from its own site on 2026-08-08 and publishes both (6–9
+per class, 340 €/325 € per course), so it ranks second on its own disclosure.
+
+**The comparison table.** Cut to **4 columns** (Academia · Zona · Grupo máximo · Precio publicado)
+and given the scrolling wrapper that `index.css` had described in a comment for months without
+anything implementing it: tables rendered into a 68ch column with no `overflow-x`. Fixed in
+`PAAArticlePage` (`wrapTables()`) plus `.table-scroll` rules, so the reading measure now applies to
+text elements and a table may use the full column. This repaired **all 20 collection-rendered
+articles with tables**, not just this one. The other 44 blog pages with tables are static `.astro`
+wrappers that already carried their own `overflow-x-auto` and were never affected.
+
+**Gates:** assemble validation clean at 2282 words, `errors: []`; ItemList (7 ListItem) + FAQPage
+(8 Question) + Article; FAQ **6/8 verbatim PAA (75%)**; title 58 chars via the listicle
+`fullTitle` path; `verify:design` ALL PASS with token debt unchanged at 793.

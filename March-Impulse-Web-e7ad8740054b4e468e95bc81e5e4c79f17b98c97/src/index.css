@@ -302,9 +302,33 @@
     @apply list-decimal marker:font-semibold marker:text-accent-blue/70;
   }
 
+  /* The reading measure belongs to the TEXT, not to the block that contains it.
+     It used to sit on the wrapper in PAAArticlePage, which capped comparison
+     tables at 68ch alongside the prose. Applied per element, a table is free to
+     use the whole column while paragraphs stay comfortable to read. */
+  .article-prose > p,
+  .article-prose > ul,
+  .article-prose > ol,
+  .article-prose > h3,
+  .article-prose > h4,
+  .article-prose > blockquote {
+    @apply max-w-measure;
+  }
+
   /* Tables are the one thing the writer emits as raw HTML by contract
      (brand.useHtmlTables), so they have to survive on a 390px phone. The
-     wrapper scrolls rather than letting the page body scroll sideways. */
+     wrapper scrolls rather than letting the page body scroll sideways; it is
+     added by wrapTables() in PAAArticlePage because the writer may not emit a
+     <div>. The negative margin lets the scroll area reach the screen edge on a
+     phone, so a cut-off column reads as scrollable rather than as broken. */
+  .article-prose .table-scroll {
+    @apply -mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0;
+  }
+
+  .article-prose .table-scroll > table {
+    @apply my-0 min-w-[36rem];
+  }
+
   .article-prose table {
     @apply my-7 w-full border-collapse text-left text-[0.9375rem];
   }
@@ -314,12 +338,36 @@
            text-xs font-semibold uppercase tracking-[0.12em] text-accent-blue;
   }
 
-  .article-prose tbody td {
+  /* A comparison table has to say where its numbers came from and when, or the
+     reader has no reason to trust the cells. Nothing styled <caption> before, so
+     one rendered as a centred, body-sized paragraph. Keep captions short: the
+     caption inherits the table's min-width, so a long one scrolls with it. */
+  .article-prose caption {
+    @apply mb-3 text-left text-xs font-medium uppercase tracking-[0.12em] text-zinc-500;
+  }
+
+  .article-prose tbody td,
+  .article-prose tbody th {
     @apply border-b border-zinc-200/80 py-3 pr-4 align-top;
   }
 
-  .article-prose tbody tr:last-child td {
+  /* <th scope="row"> is the correct markup for the row-label column and makes the
+     row machine-readable, but only tbody td was styled, so it used to render as
+     centred default-weight text. */
+  .article-prose tbody th {
+    @apply text-left font-semibold text-zinc-900;
+  }
+
+  .article-prose tbody tr:last-child td,
+  .article-prose tbody tr:last-child th {
     @apply border-b-0;
+  }
+
+  /* Six rows of five columns is enough for the eye to lose its place, and it is
+     worse mid-scroll on a phone. */
+  .article-prose tbody tr:hover td,
+  .article-prose tbody tr:hover th {
+    @apply bg-accent-blue-50/70;
   }
 
   .article-prose blockquote {

@@ -42,10 +42,6 @@ const courseGalleryImages = [
     alt: "Lara con certificado Cambridge C1 Advanced academia La Vaguada Madrid"
   },
   {
-    url: "/images/academy/cambridge-search.jpeg",
-    alt: "Búsqueda centro Cambridge oficial Impulse English Academy verificado"
-  },
-  {
     url: "/images/academy/cambridge-logo-edited.png",
     alt: "Centro Preparador Oficial Cambridge English La Vaguada Madrid"
   },
