@@ -20,7 +20,9 @@ export function toCanonicalPageUrl(url: string): string {
 
 export const businessInfo = {
   name: NAP.name,
-  alternateName: [NAP.legalName, NAP.shortName],
+  // NAP.legalName is now identical to NAP.name, so listing it here would emit the canonical
+  // name as an alias of itself. Only the genuine short form remains.
+  alternateName: [NAP.shortName],
   description: "Academia de inglés en Madrid especializada en preparación de exámenes Cambridge, Linguaskill y clases para todas las edades. Centro oficial Cambridge con 100% de aprobados en el curso 2024/25 (alumnos presentados).",
   url: NAP.website,
   logo: NAP.logo,
@@ -310,6 +312,50 @@ export function generateFAQSchema(faqs: FAQItem[]) {
         "@type": "Answer",
         text: faq.answer
       }
+    }))
+  };
+}
+
+// Generate ItemList schema for ranked listicles ("mejores academias de inglés en X").
+//
+// Blog listicles are written by the seo-blog-writer skill in `--format listicle` mode. It
+// parses the article's "## <n>. <Name>" entries into `listItems` front-matter using the SAME
+// parser that gates the article, so the schema can never describe a different ranking from
+// the one a reader sees.
+//
+// Deliberately NOT emitting `url` per item: entries are competitors, and linking a rival from
+// our own page is barred by the blog design contract. ListItem without a url is valid.
+export interface ListItemEntry {
+  position: number;
+  name: string;
+  description: string;
+}
+
+export function generateItemListSchema(items: ListItemEntry[], name?: string) {
+  // Same build-time validation stance as generateFAQSchema: a mistyped key should fail the
+  // build, not ship a silently malformed ranking.
+  items.forEach((item, i) => {
+    if (typeof item.position !== 'number' || item.position < 1) {
+      throw new Error(`ItemList entry ${i}: missing or invalid "position". Got: ${JSON.stringify(item)}`);
+    }
+    if (!item.name || typeof item.name !== 'string') {
+      throw new Error(`ItemList entry ${i}: missing or invalid "name". Got: ${JSON.stringify(item)}`);
+    }
+  });
+
+  const ordered = [...items].sort((a, b) => a.position - b.position);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    ...(name ? { name } : {}),
+    itemListOrder: "https://schema.org/ItemListOrderDescending",
+    numberOfItems: ordered.length,
+    itemListElement: ordered.map(item => ({
+      "@type": "ListItem",
+      position: item.position,
+      name: item.name,
+      ...(item.description ? { description: item.description } : {})
     }))
   };
 }

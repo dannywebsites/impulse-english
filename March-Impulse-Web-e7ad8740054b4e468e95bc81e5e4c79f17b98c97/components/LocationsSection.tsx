@@ -19,7 +19,11 @@ export default function LocationsSection() {
   ];
 
   const busRoutes = [
-    { line: "147", from: "Tetuán y Valdeacederas", time: "~8 min", href: "/academia-ingles-tetuan/" },
+    // 2026-08-08: was "Tetuán y Valdeacederas · ~8 min". Neither half verified. The 147 runs
+    // Callao–Barrio del Pilar along Paseo de la Castellana with no stop on Bravo Murillo or in
+    // Valdeacederas, and the published EMT timetable puts Ginzo de Limia–Plaza de Castilla alone
+    // at 12 minutes. Route kept, unsourced number dropped.
+    { line: "147", from: "Eje de la Castellana", time: "Directo", href: "/academia-ingles-tetuan/" },
     { line: "42", from: "Plaza Castilla", time: "~15 min", href: null },
     { line: "83", from: "Moncloa", time: "~20 min", href: null },
     { line: "126", from: "Nuevos Ministerios", time: "~18 min", href: null },
