@@ -111,9 +111,84 @@ no duration. Readers on the Bravo Murillo side get told the metro route instead.
 Revert this step: `rm -rf runs/.../sources-2026-08-08 runs/.../facts-2026-08-08.md` — the Aug 7
 evidence was never touched.
 
-## Step 4 — Rewrite `article.md`  ⏳
+## Step 4 — Rewrite `article.md`  ✅
 
-## Step 5 — Assemble + publish  ⏳
+Rewritten in-session from `facts-2026-08-08.md` (subscription, no metered API). 2,514 words.
+
+**Both gates clean: `checkListicle` 0 errors / 0 warnings, `validateArticle` 0 errors / 0 warnings.**
+Entry lengths 85 / 90 / 83 / 85 / 70 / 79 words, all inside the 40–90 extraction band. Verdict 59
+words (cap 80). 12 internal links, each URL once. `node scripts/test-listicle.js` → all 17 cases pass.
+
+What changed, against the four GEO gaps:
+
+1. **Ranking list and table no longer restate each other.** The `de un vistazo` list now carries the
+   *reason for the position*, one distinguishing fact per centre; the table carries *only comparable
+   data*. The two previously overlapped ~60%, spending the table's extraction value on prose.
+2. **Added a sixth column, `Exámenes oficiales`, plus a `<caption>`.** The column closes the uneven
+   coverage gap directly: Cambridge preparation is now answered for all six centres (three say yes,
+   three do not mention it) instead of appearing in three entries and missing from the other three.
+   The caption states source and date.
+3. **First column is `<th scope="row">`**, the machine-readable form for a row label, and now styled.
+4. **FAQ re-aimed at this query's fan-out.** Was 6 questions with 4 generic; now 8, of which 4 are
+   query-specific: cost in Tetuán, which centres prepare Cambridge, which publishes the smallest
+   groups, how to get there. Dropped `¿Es posible aprender inglés en 2 meses?` and `¿Qué es wats up?`.
+   **Recovered `¿Cuánto cuesta What's Up?`** — a real PAA on this SERP that the first draft dropped
+   despite it being the most on-topic price question available.
+
+⚠️ **The PAA-ratio "gate" does not exist.** `write-context.md:14` claims "The gate fails the article
+below that ratio" for the half-verbatim-PAA rule. `validate.js:79-87` enforces only the FAQ *heading*
+text; there is no ratio check anywhere. The instruction was honoured regardless (4 of 8 verbatim), but
+the claim is false, and it is the same shape as the three verifiers that were passing by not looking.
+
+Two published facts corrected:
+
+- **Adult group size.** The old text said "un máximo de 10 en adultos". The brand's own value props
+  are 7 infantil / 10 primaria y secundaria / **8 adultos**. Now stated per stage.
+- **What's Up! minimum age.** "Admite alumnos a partir de los 12 años" was sourced from nothing. Now
+  `De 12 a 17 años y adultos`, from the `Teens (12–17)` band they publish.
+
+Revert this step: `cp article.before.md article.md` in the run dir, then re-assemble.
+
+## Step 5 — Assemble + publish  ✅
+
+```
+node scripts/assemble.js --run runs/mejores-academias-ingles-tetuan-listicle \
+  --slug mejores-academias-ingles-tetuan
+```
+
+`validation.json` → `{"format":"listicle","errors":[],"warnings":[],"wordCount":2514}`.
+
+The slug pin is visible doing its job in the log: `runMeta()` generated
+`"Mejores academias de inglés en Tetuán: Encuentra la tuya"` and it was **discarded** for the pinned
+title, description and slug. Without the pin the URL would have moved to a `-2` variant.
+
+Front-matter verified before copying: `url: /blog/mejores-academias-ingles-tetuan/` ·
+`category: Local Madrid` exact (no silent Cambridge B2 First fallback) · `listItems` 6, non-empty so
+`fullTitle` still fires · `googleReviews` 5 · `articleImages` 3, on the `.min(3)` floor · `faqItems` 8
+· dates `2026-08-08`.
+
+`contextSections` = 11, unchanged, so the index-coupled template slots landed as intended: inline
+image 1 after `Comparativa` (the Cambridge certificate, backing the new column), inline image 2 after
+entry 2, `<GoogleReviews>` after entry 6. The mid-article `<CTABand>` still lands at index 5, inside
+the ranking after entry 4 — the known template limitation, out of scope and unchanged.
+
+Copied to `src/content/articles/mejores-academias-ingles-tetuan.md` (32,730 → 35,853 bytes).
+
+### ⚠️ Open: the five reviews are not in the allocation ledger
+`Paloma aranda · Begoña Carnicero · Daniel de la Peña de Alaiz · Laura · Joaquín` are quoted here and
+appear in **no** row of `review-allocation.md`. They were deliberately not added:
+
+- that file's header says *"Do not edit by hand: re-run `pull_reviews.py && build_pool.py &&
+  allocate.py`"*, so a hand-added row would be wiped by the next generator run;
+- `allocate.py:30-56` models `.tsx` page files only. It has **no concept of a content-collection blog
+  article**, and re-running it would allocate five reviews of its own choosing rather than adopt the
+  five already quoted.
+
+Consequence: the listicle gate blocks an author only once they are *in* the ledger, so nothing stops a
+later article in the 42+27 batch quoting one of these five a second time. Needs a decision — teach
+`allocate.py` about collection articles, or accept hand-maintained rows for CMS blog pages.
+
+Revert this step: `cp collection.before.md` over the collection file.
 
 ## Step 6 — Fix the blog table CSS  ✅ (done out of order, before the rewrite)
 
@@ -155,4 +230,58 @@ Revert this step: `git revert` the commit below; the pre-existing `wrapTables` w
 commit, so a revert removes that too — restore it from `git show <sha>` if only my three rules are
 unwanted.
 
-## Step 7 — Build + verify  ⏳
+## Step 7 — Build + verify  ✅
+
+`rm -rf dist && npm run build` → **185 pages, green.**
+
+| Gate | Result |
+|---|---|
+| `npm run verify:design` | **ALL PASS** — no structural errors across 27 page components; token debt **793, baseline 793** (unchanged, so `PAAArticlePage`'s zero allowance held) |
+| `npm run verify:links` | **ALL PASS** — 54 articles, 355 refs requested, 355 rendered |
+| `node scripts/test-listicle.js` | all 17 cases pass |
+
+### Assertions against `dist/`, not source
+
+1. `dist/blog/mejores-academias-ingles-tetuan/index.html` exists; **0 `… 2/` clone directories**
+   (previous build had 5).
+2. `<title>` = `Las 6 mejores academias de inglés en Tetuán (2026)` — 50 chars, **no "La Vaguada"
+   chain**, so `listItems` survived and the `fullTitle` branch fired.
+3. Exactly **1** `<table>`, with `<caption>`, `<thead>`, 12 `scope` attributes, wrapped in
+   `.table-scroll`.
+4. ItemList JSON-LD: 6 `ListItem`s, positions 1–6, `numberOfItems: 6`, names matching the visible
+   ranking.
+5. FAQPage JSON-LD: 8 questions, and **neither dropped question is still present**.
+6. 5 review cards, with `fill-amber-400` stars and the `#4285F4` Google mark.
+7. 6 numbered `<h2>`s, `Exámenes oficiales` column present, 14 honest `No indicado` cells.
+
+### The measurement `verify:design` cannot make
+Rendered `dist/` in real Chrome at both breakpoints (`scratchpad/check-table.mjs`, screenshots
+alongside):
+
+| | 390 × 844 | 1440 × 900 |
+|---|---|---|
+| page `scrollWidth` vs `clientWidth` | 390 vs 390 → **0px overflow** | 1440 vs 1440 → **0px overflow** |
+| `.table-scroll` | present, `overflow-x: auto` | present, `overflow-x: auto` |
+| scrolls inside its own box | **yes** (374 client / 608 scroll) | no (832 / 832, no need) |
+| table width | 576px (the `min-w-[36rem]` floor) | **832px = exactly its heading width** |
+| header cell heights | all 44px — **nothing wrapping** | all 44px |
+
+Before this work the same page dragged the body sideways at 390px and capped the table at ~635px on
+desktop, narrower than its own heading. Both are now measured fixed, not assumed.
+
+---
+
+## ⚠️ Concurrent session hazard — read before continuing this branch
+
+A second session was committing to this repo throughout, doing the 2026-08-08 fact-audit work
+(`b039340`, `7b4890d`, `20e81fb`). Observed twice:
+
+1. `src/index.css` **changed under an open read**, which is how the better `wrapTables` implementation
+   was discovered instead of being overwritten.
+2. The checkout **moved off this branch to `feat/aprende-ingles-video-cluster` mid-task and back
+   again**, so `git log` briefly showed none of this work and the ledger file vanished from disk.
+
+State at the time of writing: this branch (`content/tetuan-listicle-geo-rewrite`) holds the work, and
+`feat/aprende-ingles-video-cluster` **also** contains the table fix at its HEAD. Those two will need
+reconciling at merge time; the content is identical, so it should resolve cleanly, but check rather
+than assume.
