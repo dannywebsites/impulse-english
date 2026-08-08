@@ -895,7 +895,7 @@ export default function LibrosCambridgeRecursosPage() {
                   Prepárate con Impulse English Academy
                 </h2>
                 <p className="text-zinc-600 mb-6">
-                  Centro Oficial de Preparación Cambridge con <strong>100% de aprobados</strong> en las convocatorias 2024-25. Metodología basada en repetición espaciada y práctica comunicativa intensiva.
+                  Centro Oficial de Preparación Cambridge con <strong>100% de aprobados</strong> en las convocatorias 2024/25. Metodología basada en repetición espaciada y práctica comunicativa intensiva.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3 text-zinc-600">

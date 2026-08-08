@@ -5,7 +5,10 @@ export const NAP = {
   // Business identity
   name: "Impulse English Academy",
   shortName: "Impulse English",
-  legalName: "Impulse English Academy La Vaguada",
+  // One canonical entity name, identical everywhere: site, schema, GBP, directories, review
+  // replies. Was "Impulse English Academy La Vaguada" — location inside the name is a second
+  // entity as far as a model is concerned. The location lives in the address fields below.
+  legalName: "Impulse English Academy",
 
   // Address components
   streetAddress: "Av. de El Ferrol, 22",
@@ -83,8 +86,11 @@ export const NAP = {
     "Sábado - Domingo: Cerrado",
   ],
 
-  // Price range
-  priceRange: "€64 - €99/mes",
+  // Price range. Spans BOTH published bands, not just the monthly one: group courses run
+  // €64-€99/mes (Infantil 2x/sem is the €99 ceiling) and particulares/online are published
+  // per hour at €29. A range that stopped at the monthly band told Google and the GBP that
+  // the hourly offer did not exist, while the course pages and the barrio pages sold it.
+  priceRange: "€29/hora - €99/mes",
 
   // Social profiles
   social: {
@@ -108,7 +114,12 @@ export const NAP = {
     "https://www.youtube.com/@Impulse_English_lavaguada",
   ],
 
-  // Areas served
+  // Areas served. MUST stay in step with utils/barrioAreas.ts — every barrio with a live page
+  // needs a schema claim here, or the page asserts a service area the organisation's own
+  // structured data denies. The last four were added 2026-08-08: their pages had been live
+  // since the phase-2 build but were never registered, so Chamartín, Valdezarza, Arroyo del
+  // Fresno and Sanchinarro each had a page Google could not tie back to the served area.
+  // Also mirrors the GBP service-area list (see impulse-seo-ops/gbp/GBP-PACK-2026-08.md §5).
   areaServed: [
     "Barrio del Pilar",
     "La Vaguada",
@@ -121,6 +132,10 @@ export const NAP = {
     "Mirasierra",
     "Montecarmelo",
     "Las Tablas",
+    "Chamartín",
+    "Valdezarza",
+    "Arroyo del Fresno",
+    "Sanchinarro",
     "Fuencarral-El Pardo",
     "Madrid",
   ],

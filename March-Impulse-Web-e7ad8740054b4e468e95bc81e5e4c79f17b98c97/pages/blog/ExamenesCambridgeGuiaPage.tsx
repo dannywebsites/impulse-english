@@ -1086,7 +1086,7 @@ export default function ExamenesCambridgeGuiaPage() {
                   Abrimos puertas contigo
                 </h2>
                 <p className="text-zinc-600 mb-6">
-                  Con <strong>100% de aprobados</strong> en 2024-25, no prometemos resultados: los garantizamos con trabajo, dedicación y el método correcto. Tenemos la experiencia de llevar a cientos de estudiantes exactamente donde querían estar. Ahora es tu turno.
+                  Con <strong>100% de aprobados</strong> en 2024/25, no prometemos resultados: los garantizamos con trabajo, dedicación y el método correcto. Tenemos la experiencia de llevar a cientos de estudiantes exactamente donde querían estar. Ahora es tu turno.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3 text-zinc-600">

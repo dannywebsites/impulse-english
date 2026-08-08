@@ -26,7 +26,7 @@ const preparacionB2Faqs = [
   },
   {
     question: "¿Qué tasa de aprobados tenéis?",
-    answer: "100% de aprobados en 2025-2026. Nuestra metodología incluye simulacros mensuales en condiciones reales y feedback personalizado continuo."
+    answer: "100% de aprobados en 2025/26. Nuestra metodología incluye simulacros mensuales en condiciones reales y feedback personalizado continuo."
   }
 ];
 

@@ -897,7 +897,7 @@ export default function FechasExamenesCambridgePage() {
                   Prepárate con Impulse English Academy
                 </h2>
                 <p className="text-zinc-600 mb-6">
-                  Centro Oficial de Preparación Cambridge con <strong>100% de aprobados</strong> en las convocatorias 2024-25. Conocemos el calendario oficial, los plazos y las mejores estrategias para cada convocatoria.
+                  Centro Oficial de Preparación Cambridge con <strong>100% de aprobados</strong> en las convocatorias 2024/25. Conocemos el calendario oficial, los plazos y las mejores estrategias para cada convocatoria.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3 text-zinc-600">
