@@ -318,33 +318,63 @@ const faqSections: FAQSection[] = [
   }
 ];
 
-function FAQAccordion({ section }: { section: FAQSection }) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+// Every question on the page, in the order a reader meets them, for FAQPage schema.
+// Exported so src/pages/preguntas-frecuentes.astro can mark them up: this page carried 60
+// visible Q&As and emitted no FAQPage node at all. Both arrays must stay in here — schema
+// that claims a question the page does not show is the thing Google penalises.
+export const faqs: FAQItem[] = [...seoFAQs, ...faqSections.flatMap((section) => section.items)];
+
+// The answer is ALWAYS in the DOM; only its height is animated. It used to be rendered
+// conditionally (`{openIndex === index && …}`) with openIndex starting at null, which meant
+// none of the answers on this page were ever server-rendered: Google received the question
+// buttons and nothing that answered them, on the page built to answer them.
+//
+// Same technique as components/FAQSection.tsx:93-103 — grid-rows 0fr -> 1fr animates to the
+// answer's true height. Deliberately NOT max-h-*: FAQSection.tsx:132-135 records that max-h-96
+// silently clipped long answers, and several answers here are longer than that.
+function FAQAccordion({ section, sectionIndex }: { section: FAQSection; sectionIndex: number }) {
+  // First answer of each section open, the rest collapsed but present (Danny, 2026-08-08).
+  // Single-open within a section, which is how this accordion already behaved.
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <div className="mb-12">
       <h2 className="t-h3 text-zinc-900 mb-6">{section.title}</h2>
       <div className="space-y-3">
-        {section.items.map((item, index) => (
-          <div key={index} className="bg-white rounded-xl border border-zinc-100 overflow-hidden">
-            <button
-              onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              className="w-full flex items-center justify-between p-5 text-left hover:bg-zinc-50 transition-colors"
-            >
-              <span className="font-semibold text-zinc-900 pr-4">{item.question}</span>
-              <ChevronDown
-                className={`w-5 h-5 text-zinc-400 flex-shrink-0 transition-transform ${
-                  openIndex === index ? 'rotate-180' : ''
+        {section.items.map((item, index) => {
+          const open = openIndex === index;
+          // Ten FAQAccordion instances mount on this page, so the panel id must carry the
+          // section too — a bare index would emit duplicate DOM ids and break aria-controls.
+          const panelId = `faq-${sectionIndex}-answer-${index}`;
+          return (
+            <div key={index} className="bg-white rounded-xl border border-zinc-100 overflow-hidden">
+              <button
+                onClick={() => setOpenIndex(open ? null : index)}
+                aria-expanded={open}
+                aria-controls={panelId}
+                className="w-full flex items-center justify-between p-5 text-left hover:bg-zinc-50 transition-colors"
+              >
+                <span className="font-semibold text-zinc-900 pr-4">{item.question}</span>
+                <ChevronDown
+                  className={`w-5 h-5 text-zinc-400 flex-shrink-0 transition-transform ${
+                    open ? 'rotate-180' : ''
+                  }`}
+                />
+              </button>
+              <div
+                id={panelId}
+                role="region"
+                className={`grid px-5 transition-[grid-template-rows,opacity] duration-300 ease-out motion-reduce:transition-none ${
+                  open ? 'grid-rows-[1fr] pb-5 opacity-100' : 'grid-rows-[0fr] opacity-0'
                 }`}
-              />
-            </button>
-            {openIndex === index && (
-              <div className="px-5 pb-5">
-                <p className="text-zinc-600">{item.answer}</p>
+              >
+                <div className="overflow-hidden">
+                  <p className="text-zinc-600">{item.answer}</p>
+                </div>
               </div>
-            )}
-          </div>
-        ))}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
@@ -410,7 +440,7 @@ export default function PreguntasFrecuentesPage() {
       <section className="section px-6 surface-alt">
         <div className="container mx-auto max-w-4xl">
           {faqSections.map((section, index) => (
-            <FAQAccordion key={index} section={section} />
+            <FAQAccordion key={index} section={section} sectionIndex={index} />
           ))}
         </div>
       </section>

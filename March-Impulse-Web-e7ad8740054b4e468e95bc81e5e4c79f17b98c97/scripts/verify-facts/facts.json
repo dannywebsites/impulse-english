@@ -166,6 +166,12 @@
       "source": "Danny, 2026-08-08 — replaces the 3 / 4 / 6 / 500 m spread"
     },
     {
+      "fact": "faqHubAnswersRendered",
+      "value": "Grupos realmente reducidos",
+      "mustAppearOn": ["/preguntas-frecuentes/"],
+      "source": "An answer from faqSections. Until 2026-08-08 the accordion rendered answers only while open, so all 54 were absent from the served HTML — Google got 54 questions and nothing answering them. This check fails the moment that regresses."
+    },
+    {
       "fact": "adultGroupSize",
       "value": "8",
       "mustAppearOn": [
@@ -186,6 +192,12 @@
       "jsonPathContains": "\"opens\":\"13:30\"",
       "allRoutes": true,
       "why": "The visible Friday hours and the structured data must agree — they did not before 2026-08-08."
+    },
+    {
+      "fact": "FAQPage on the FAQ hub",
+      "jsonPathContains": "\"@type\":\"FAQPage\"",
+      "routes": ["/preguntas-frecuentes/", "/contacto/", "/sobre-nosotros/", "/nuestro-equipo/"],
+      "why": "These four pages render visible Q&As. Each shipped without a FAQPage node — three because `faqs` was declared const instead of export const, and the FAQ hub because its wrapper passed no schemas prop at all. 60 answered questions on the hub alone were unmarked."
     }
   ]
 }

@@ -181,8 +181,20 @@ for (const fact of FACTS.canonical) {
 }
 
 // 3. Structured data must agree with the visible copy.
+// `routes` scopes a check to specific pages; omit it to apply to all 14.
 for (const check of FACTS.schemaChecks) {
-  for (const [route, html] of pages) {
+  const scoped = check.routes ?? [...pages.keys()];
+  for (const route of scoped) {
+    if (!pages.has(route)) {
+      failures.push({
+        route, kind: 'schema', label: check.fact,
+        detail: 'route named in facts.json schemaChecks has no built output',
+        why: 'A check pointed at a route that does not exist is a check that never runs.',
+        instead: 'Fix the route list in facts.json.',
+      });
+      continue;
+    }
+    const html = pages.get(route);
     checks++;
     const ld = [...normalise(html).matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)]
       .map((m) => m[1].replace(/\s+/g, '')).join('');
