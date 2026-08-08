@@ -115,6 +115,44 @@ evidence was never touched.
 
 ## Step 5 — Assemble + publish  ⏳
 
-## Step 6 — Fix the blog table CSS  ⏳
+## Step 6 — Fix the blog table CSS  ✅ (done out of order, before the rewrite)
+
+Moved ahead of the rewrite so the table markup could be written against known rendering.
+
+### ⚠️ Most of this was already implemented in the working tree, by someone else
+On opening `src/index.css` the planned edit failed: the file had changed since it was read. Both
+`src/index.css` and `components/PAAArticlePage.tsx` were already **modified and uncommitted**, with a
+more complete fix than the CSS-only route this plan had chosen:
+
+- `wrapTables()` (`PAAArticlePage.tsx:68-70`) wraps every `<table>` in `<div class="table-scroll">`
+  before injection — the wrapper the writer is barred from emitting. Applied to **all** articles, not
+  just listicles; 45 of them contain a table.
+- `.article-prose .table-scroll` → `-mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0`, so the scroll area
+  bleeds to the screen edge on a phone and a cut-off column reads as scrollable rather than broken.
+- `.table-scroll > table` → `min-w-[36rem]`, so columns scroll instead of crushing.
+- **`.measure` was moved off the prose wrapper** onto `> p, ul, ol, h3, h4, blockquote`. That is the
+  fix for the desktop half of the problem, which this plan had judged unreachable from CSS alone: the
+  table is now free to use the full `.container-narrow` column instead of being capped at 68ch.
+
+That work is better than what was planned and was left intact. Nothing was reverted or rewritten.
+
+### What this step actually added, on top
+Three gaps that remained, all needed by the rewritten table:
+
+1. `.article-prose caption` — there was **no caption rule at all**, so a `<caption>` rendered as a
+   centred body-sized paragraph. Now left-aligned 12px uppercase micro-caps in zinc-500.
+2. `.article-prose tbody th` — only `tbody td` was styled, so `<th scope="row">` (the correct markup
+   for the academy-name column, and the more machine-readable one) rendered as centred
+   default-weight text. Now left-aligned, semibold, zinc-900, sharing td's borders.
+3. `tbody tr:hover` — row tracking across 6 rows × 5 columns, using the `accent-blue-50` token that
+   `tailwind.config.ts:6-10` says exists precisely so hovers stop reaching for stock Tailwind.
+
+Verified by compiling: `npx tailwindcss -i src/index.css -o /tmp/tw-check.css` emits all three rules
+(`caption` → `text-align:left; font-size:.75rem`, `tbody th` → `font-weight:600`, hover →
+`rgb(241 246 251 / 0.7)`).
+
+Revert this step: `git revert` the commit below; the pre-existing `wrapTables` work is in the same
+commit, so a revert removes that too — restore it from `git show <sha>` if only my three rules are
+unwanted.
 
 ## Step 7 — Build + verify  ⏳
