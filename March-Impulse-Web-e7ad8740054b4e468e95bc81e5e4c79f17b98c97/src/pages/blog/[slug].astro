@@ -13,8 +13,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PAAArticlePage from '../../../components/PAAArticlePage';
 import CookieBanner from '../../../components/CookieBanner';
 import { getBlogSiblingCards } from '../../../data/blog-directory';
-import { generateArticleSchema, generateFAQSchema, businessInfo, toCanonicalPageUrl } from '../../../utils/schemaData';
+import { generateArticleSchema, generateFAQSchema, generateItemListSchema, generateVideoObjectSchema, businessInfo, toCanonicalPageUrl } from '../../../utils/schemaData';
 import { EXTRANJERO_CATEGORY } from '../../../utils/extranjeroCluster';
+import { APRENDE_INGLES_CATEGORY } from '../../../utils/aprendeInglesCluster';
 import type { PAAArticle } from '../../../data/articles/types';
 
 export async function getStaticPaths() {
@@ -25,6 +26,11 @@ export async function getStaticPaths() {
     // emitted at BOTH paths, a real file then sits at every redirect source, and
     // the 308s in vercel.json quietly stop mattering.
     .filter((entry) => entry.data.category !== EXTRANJERO_CATEGORY)
+    // Same for the learn-English cluster, built by aprende-ingles/[slug].astro.
+    // These articles have no legacy /blog/ URLs, so there are no redirects to
+    // defeat — but a twin at /blog/<slug>/ would be a duplicate of the canonical
+    // page competing with it, which is worse.
+    .filter((entry) => entry.data.category !== APRENDE_INGLES_CATEGORY)
     .map((entry) => ({
       // entry.id includes the .md extension in Astro 5, strip it for clean URLs
       params: { slug: entry.id.replace(/\.md$/, '') },
@@ -75,11 +81,38 @@ const schemas: object[] = [articleSchema];
 if (data.faqItems.length > 0) {
   schemas.push(generateFAQSchema(data.faqItems));
 }
+// Ranked listicles carry an ItemList so the ranking itself is machine-readable, not just
+// the prose that describes it.
+const isListicle = !!(data.listItems && data.listItems.length > 0);
+if (isListicle) {
+  schemas.push(generateItemListSchema(data.listItems!, data.seoTitle));
+}
+// Channel clips. Kept identical to aprende-ingles/[slug].astro so an article that
+// moves between the two clusters keeps its video markup unchanged.
+if (data.videos?.length) {
+  for (const v of data.videos) {
+    schemas.push(
+      generateVideoObjectSchema({
+        name: v.title,
+        description: v.description,
+        embedUrl: `https://www.youtube.com/embed/${v.youtubeId}`,
+        thumbnailUrl: `https://i.ytimg.com/vi/${v.youtubeId}/oardefault.jpg`,
+        uploadDate: v.uploadDate,
+        duration: v.duration,
+      })
+    );
+  }
+}
+// A listicle's <title> is its own seoTitle verbatim — no brand chain. It needs the full 60
+// characters for a ranked, numbered, dated headline, and on a Tetuán-targeted page the default
+// chain injects "La Vaguada", a competing location term. The brand moves to the social card,
+// which has no length limit. Ordinary articles keep buildPageTitle's chain.
 ---
 
 <BaseLayout
   title={data.seoTitle}
   description={data.metaDescription}
+  {...(isListicle ? { fullTitle: true, ogTitle: `${data.seoTitle} | Impulse English Academy` } : {})}
   canonical={data.url}
   ogType="article"
   publishedTime={data.publishedDate}

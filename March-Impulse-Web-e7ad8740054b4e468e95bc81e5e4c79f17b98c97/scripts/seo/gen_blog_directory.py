@@ -66,6 +66,13 @@ MD_TO_DISPLAY = {
     "Definitions": "Exámenes Cambridge",
     "Inglés en el extranjero": "Inglés en el extranjero",
     "Niveles de inglés": "Niveles de inglés",
+    # The /aprende-ingles/ resource cluster. Mapped explicitly rather than left to the
+    # `.get(..., "Aprender Inglés")` fallback below: the fallback happens to give the
+    # right answer today, which means a future rename would break this silently.
+    # Deliberately NOT in SELF_RINGED — these should ring together with the 8 existing
+    # "Aprender Inglés" articles (podcasts, cuánto se tarda…), which are the same topic
+    # and the same reader, rather than forming a second isolated ring.
+    "Aprender inglés": "Aprender Inglés",
 }
 
 # Categories that own their own section and therefore their own related-articles ring.

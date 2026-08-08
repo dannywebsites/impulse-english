@@ -175,4 +175,24 @@ export const categoryConfig: Record<ArticleCategory, CategoryConfig> = {
     leadFormSource: 'paa-niveles',
     color: 'purple',
   },
+  // The learn-English resource cluster, built from the academy's own YouTube Shorts.
+  //
+  // hubPath deliberately breaks the "always point at a converting page" convention the
+  // other categories follow. This cluster has a real Tier-1 pillar at /aprende-ingles/,
+  // and its articles are supposed to link UP to it — that is what makes the cluster
+  // legible to Google as a cluster rather than 12 loose pages. Conversion is carried by
+  // the mid-article CTABand and the impulseSection links instead.
+  //
+  // blogFilterName matches the "Aprender Inglés" group the 8 existing static articles
+  // already use, so these join that group in the /blog/ directory rather than opening a
+  // near-identical second one.
+  'Aprender inglés': {
+    displayName: 'Aprender inglés',
+    hubPath: '/aprende-ingles/',
+    hubLabel: 'Aprender inglés',
+    blogFilterName: 'Aprender Inglés',
+    imageKey: 'classroom',
+    leadFormSource: 'paa-aprende-ingles',
+    color: 'sky',
+  },
 };

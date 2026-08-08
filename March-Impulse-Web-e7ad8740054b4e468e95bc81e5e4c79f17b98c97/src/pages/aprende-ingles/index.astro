@@ -1,0 +1,30 @@
+---
+/**
+ * Tier-1 pillar for the learn-English resource cluster, at /aprende-ingles/.
+ *
+ * This page predates the cluster — it shipped in the WordPress migration as a
+ * standalone guide. It is reused rather than replaced because a second page on the
+ * same head term would cannibalise it. Moving it from `aprende-ingles.astro` into
+ * `aprende-ingles/index.astro` changes nothing about the built URL (build.format is
+ * 'directory', so both emit dist/aprende-ingles/index.html) — it just makes room for
+ * the `[slug].astro` children beside it. No redirect is needed or wanted.
+ *
+ * The pillar exists to organise and pass equity, not to rank: "aprender inglés" is
+ * 8.100/mo at MEDIUM-HIGH competition, above this domain's authority. The children
+ * do the ranking.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AprendeInglesGuiaPage from '../../../pages/blog/AprendeInglesGuiaPage';
+import CookieBanner from '../../../components/CookieBanner';
+---
+
+<BaseLayout
+  title="Cómo Aprender Inglés"
+  description="Guía completa para aprender inglés: mejores cursos online, plataformas gratuitas y premium, países para estudiar, academias en España y métodos efectivos. 22 preguntas respondidas."
+  keywords="aprender inglés, cursos inglés online, plataformas aprender inglés, países estudiar inglés, babbel, duolingo, academias inglés españa, métodos aprender inglés"
+  canonical="/aprende-ingles/"
+  ogType="article"
+>
+  <AprendeInglesGuiaPage client:idle />
+  <CookieBanner client:idle />
+</BaseLayout>
