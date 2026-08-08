@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import LaVentillaPage, { locationMeta, localFaqs } from '../../pages/ubicaciones/LaVentillaPage';
 import CookieBanner from '../../components/CookieBanner';
 import { generateLocationPageSchema, generateFAQSchema, generateBreadcrumbSchema } from '../../utils/schemaData';
+import { channelVideoSchema } from '../../utils/channelVideos';
 
 const locationSchema = generateLocationPageSchema(locationMeta);
 const locationItems = locationSchema["@graph"] || [locationSchema];
@@ -11,7 +12,10 @@ const breadcrumb = generateBreadcrumbSchema([
   { name: 'Ubicaciones', url: 'https://impulse-english.es/academias-ingles-madrid/por-barrios/' },
   { name: locationMeta.locationName, url: `${locationMeta.pageUrl}/` },
 ]);
-const schemas = [...locationItems, breadcrumb, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : [])];
+// The page embeds this clip through <LazyVideo>; without the VideoObject it is
+// invisible to Google. Metadata comes from utils/channelVideos.ts so the duration
+// and upload date cannot drift from the channel.
+const schemas = [...locationItems, breadcrumb, ...(localFaqs?.length > 0 ? [generateFAQSchema(localFaqs)] : []), channelVideoSchema('quienesSomos')];
 ---
 
 <BaseLayout

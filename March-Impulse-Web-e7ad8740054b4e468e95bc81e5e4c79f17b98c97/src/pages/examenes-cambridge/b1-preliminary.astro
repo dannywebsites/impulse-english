@@ -3,10 +3,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import B1PreliminaryPage, { courseSchema, b1Faqs } from '../../../pages/examenes-cambridge/B1PreliminaryPage';
 import CookieBanner from '../../../components/CookieBanner';
 import { generateFAQSchema } from '../../../utils/schemaData';
+import { channelVideoSchema } from '../../../utils/channelVideos';
 
+// The page embeds this clip through <LazyVideo>; without the VideoObject it is
+// invisible to Google. Metadata comes from utils/channelVideos.ts so the duration
+// and upload date cannot drift from the channel.
 const schemas = [
   courseSchema,
   ...(b1Faqs?.length > 0 ? [generateFAQSchema(b1Faqs)] : []),
+  channelVideoSchema('quienesSomos'),
 ];
 ---
 

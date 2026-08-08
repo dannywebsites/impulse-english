@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import CursosOverviewPage, { faqs } from '../../../pages/cursos/CursosOverviewPage';
 import CookieBanner from '../../../components/CookieBanner';
 import { generateBreadcrumbSchema, generateFAQSchema, generateLocationPageSchema } from '../../../utils/schemaData';
+import { channelVideoSchema } from '../../../utils/channelVideos';
 
 const locationSchema = generateLocationPageSchema({
   locationName: 'La Vaguada',
@@ -13,10 +14,14 @@ const breadcrumb = generateBreadcrumbSchema([
   { name: 'Inicio', url: 'https://impulse-english.es/' },
   { name: 'Cursos de Inglés', url: 'https://impulse-english.es/cursos-ingles/' },
 ]);
+// The page embeds this clip through <LazyVideo>; without the VideoObject it is
+// invisible to Google. Metadata comes from utils/channelVideos.ts so the duration
+// and upload date cannot drift from the channel.
 const schemas = [
   ...locationItems,
   breadcrumb,
   ...(faqs?.length > 0 ? [generateFAQSchema(faqs)] : []),
+  channelVideoSchema('quienesSomos'),
 ];
 
 ---
