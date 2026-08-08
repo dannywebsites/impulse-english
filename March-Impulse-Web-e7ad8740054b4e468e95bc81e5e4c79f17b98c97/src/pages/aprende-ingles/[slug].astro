@@ -88,6 +88,18 @@ if (data.faqItems.length > 0) {
 // video carousels and cite video in the AI Overview — an embed with no markup is
 // invisible to both. generateVideoObjectSchema throws at build time on a missing
 // embedUrl, so a mistyped ID fails the build rather than shipping a dead entry.
+// fullTitle below, like the listicle route and for the same reason. buildPageTitle
+// appends "| Impulse English Academy La Vaguada" and, for short themes, "| Barrio del
+// Pilar" on top. These are national informational queries — "días de la semana en
+// inglés" is 18.100/mo across Spain — so the location chain spends title characters on
+// terms the searcher never typed and muddies what the page is about. The brand moves to
+// the social card, which has no length limit.
+//
+// The trade: seoTitle IS the <title> verbatim, so it must be <= 60 characters. Nothing
+// truncates it for us any more. Verify from dist/, not from this prop.
+//
+// (Kept as a JS comment inside the fence on purpose: an HTML comment out in the template
+// is rendered into the page, ahead of <html>, on every article in the cluster.)
 if (data.videos?.length) {
   for (const v of data.videos) {
     schemas.push(
@@ -109,6 +121,8 @@ if (data.videos?.length) {
 <BaseLayout
   title={data.seoTitle}
   description={data.metaDescription}
+  fullTitle={true}
+  ogTitle={`${data.seoTitle} | Impulse English Academy`}
   canonical={url}
   ogType="article"
   publishedTime={data.publishedDate}
