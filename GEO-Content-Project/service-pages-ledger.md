@@ -424,3 +424,24 @@ it. Deploy and request indexing for both URLs immediately. Past roughly 20 Augus
 upside is October. Montecarmelo is the sacrificed half: it sits at position 8.0 on
 `academia de idiomas en montecarmelo`, page one, and moves to a URL with no history. Worth watching
 that query weekly.
+
+### Tracking: tick 1 green, tick 2 NOT verified — re-run against production after deploy
+
+`utils/popupVariants.ts` feeds `CoursePopup.tsx`, which is on the mandatory tracking list, so
+`npm run verify:tracking` was run — against a **local preview**, because neither new URL exists on
+production yet.
+
+- **Tick 1 (browser actually sends the event): ALL PASS, 31/31 rows**, including
+  `/academia-ingles-las-tablas/` and `/ingles-para-empresas/`, both firing `whatsapp_click` and
+  `phone_click` against the correct stream `G-KNMS5YW69T`.
+- **Tick 2 (GA4 Realtime recorded the event): not trustworthy from localhost.** Recorded
+  `{whatsapp_click: 8, phone_click: 5, email_click: 0}` against `{14, 14, 3}` needed. All three
+  event types under-recorded, including three `email_click` rows on `/`, `/contacto/` and
+  `/gracias/` that this harness recorded as **PASS** against production days earlier on unchanged
+  code. That pattern is Realtime attribution on localhost traffic, not a defect — but it is
+  exactly the kind of reasoning the double-tick standard exists to refuse.
+
+**So this is not "verified" and must not be recorded as such.** `last-audit.md` was deliberately
+restored to the production run rather than overwritten with the localhost one, so the committed
+evidence stays real. Re-run `npm run verify:tracking` against `https://impulse-english.es` once
+these pages are deployed and require ALL PASS then.
