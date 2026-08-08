@@ -329,9 +329,19 @@ export interface ListItemEntry {
   position: number;
   name: string;
   description: string;
+  /** Only for lists of our own pages. Never set it for competitor entries. */
+  url?: string;
 }
 
-export function generateItemListSchema(items: ListItemEntry[], name?: string) {
+// `url` and `order` are opt-in so the 58 blog listicles emit byte-identical JSON.
+// The comment above deliberately omits url because listicle entries are competitors;
+// the ubicaciones hub lists OUR OWN 15 barrio pages, where linking them is the point.
+export function generateItemListSchema(
+  items: ListItemEntry[],
+  nameOrOpts?: string | { name?: string; order?: string }
+) {
+  const opts = typeof nameOrOpts === 'string' ? { name: nameOrOpts } : (nameOrOpts || {});
+  const name = opts.name;
   // Same build-time validation stance as generateFAQSchema: a mistyped key should fail the
   // build, not ship a silently malformed ranking.
   items.forEach((item, i) => {
@@ -349,13 +359,14 @@ export function generateItemListSchema(items: ListItemEntry[], name?: string) {
     "@context": "https://schema.org",
     "@type": "ItemList",
     ...(name ? { name } : {}),
-    itemListOrder: "https://schema.org/ItemListOrderDescending",
+    itemListOrder: opts.order || "https://schema.org/ItemListOrderDescending",
     numberOfItems: ordered.length,
     itemListElement: ordered.map(item => ({
       "@type": "ListItem",
       position: item.position,
       name: item.name,
-      ...(item.description ? { description: item.description } : {})
+      ...(item.description ? { description: item.description } : {}),
+      ...(item.url ? { url: item.url } : {})
     }))
   };
 }

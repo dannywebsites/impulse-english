@@ -12,14 +12,23 @@
     "answers on 2026-08-08. Source hierarchy: Danny's rulings > utils/napData.ts >",
     "~/.claude/skills/geo-pages/facts/impulse-english.facts.md > blog-batch-windows/_CONTRACT.md."
   ],
-
   "routes": [
-    "/", "/cursos-ingles/", "/cursos-ingles/infantil/", "/cursos-ingles/primaria/",
-    "/cursos-ingles/secundaria/", "/cursos-ingles/adultos/", "/cursos-ingles/particulares/",
-    "/cursos-ingles/online/", "/precios/", "/sobre-nosotros/", "/nuestro-equipo/",
-    "/testimonios/", "/contacto/", "/preguntas-frecuentes/"
+    "/",
+    "/cursos-ingles/",
+    "/cursos-ingles/infantil/",
+    "/cursos-ingles/primaria/",
+    "/cursos-ingles/secundaria/",
+    "/cursos-ingles/adultos/",
+    "/cursos-ingles/particulares/",
+    "/cursos-ingles/online/",
+    "/precios/",
+    "/sobre-nosotros/",
+    "/nuestro-equipo/",
+    "/testimonios/",
+    "/contacto/",
+    "/preguntas-frecuentes/",
+    "/academias-ingles-madrid/por-barrios/"
   ],
-
   "retired": [
     {
       "pattern": "\\b1[05][05]\\s*\\+",
@@ -64,9 +73,14 @@
       "label": "unsourced salary statistic",
       "why": "AWAITING SOURCE from Danny (2026-08-08). 'Estadísticas muestran' cited nothing and the '1000-1500 €' investment band is not a published Impulse price. Delete this entry once the citation lands.",
       "instead": "Cite the source inline, or drop the figure."
+    },
+    {
+      "pattern": "\\b(?:nuestras?|las?)\\s+\\d+\\s+sedes|\\d+\\s+sedes\\s+en\\s+(?:el\\s+)?norte",
+      "label": "multiple sedes claim",
+      "why": "There is ONE centre: Av. de El Ferrol 22. The 15 barrio pages are pages, not premises. /academias-ingles-madrid/por-barrios/ shipped 'nuestras 10 sedes en el norte de la ciudad' in its hero and nothing caught it, because that route was in no gate.",
+      "instead": "un solo centro, en Av. de El Ferrol 22 (Barrio del Pilar)"
     }
   ],
-
   "_acceptedDoc": [
     "Real findings, acknowledged, awaiting a decision from Danny. They are PRINTED on every run",
     "and counted, but do not fail the gate. A finding NOT on this list fails immediately, so the",
@@ -88,7 +102,6 @@
       "how": "Danny's call: cut the figures rather than source them. The adultos FAQ now answers from what is verifiable — certification in selection processes — with no percentage and no invented investment band."
     }
   ],
-
   "_confirmedByDanny": {
     "date": "2026-08-08",
     "note": "Read back to Danny item by item and confirmed correct. Do not re-litigate these without a new ruling; if one changes, change it in napData/PreciosPage AND here on the same day.",
@@ -103,46 +116,64 @@
       "Adult group size 8; per-course 7/10/10/8/8/1:1"
     ]
   },
-
   "canonical": [
     {
       "fact": "reviewCount",
       "value": "183",
-      "mustAppearOn": ["/testimonios/", "/sobre-nosotros/", "/contacto/"],
+      "mustAppearOn": [
+        "/testimonios/",
+        "/sobre-nosotros/",
+        "/contacto/"
+      ],
       "source": "utils/napData.ts aggregateRating.reviewCount + reviews.json — confirmed by Danny 2026-08-08"
     },
     {
       "fact": "fridayHours",
       "value": "Viernes: 13:30 - 19:30",
-      "mustAppearOn": ["/contacto/"],
+      "mustAppearOn": [
+        "/contacto/"
+      ],
       "source": "utils/napData.ts openingHours — Danny confirmed 13:30, and the whole week, on 2026-08-08"
     },
     {
       "fact": "streetAddress",
       "value": "Av. de El Ferrol, 22",
-      "mustAppearOn": ["/contacto/", "/precios/", "/testimonios/"],
+      "mustAppearOn": [
+        "/contacto/",
+        "/precios/",
+        "/testimonios/",
+        "/academias-ingles-madrid/por-barrios/"
+      ],
       "source": "utils/napData.ts streetAddress"
     },
     {
       "fact": "phone",
       "value": "604 910 611",
-      "mustAppearOn": ["/contacto/"],
+      "mustAppearOn": [
+        "/contacto/"
+      ],
       "source": "utils/napData.ts phone"
     },
     {
       "fact": "metroWalkTime",
       "value": "4 minutos",
-      "mustAppearOn": ["/", "/contacto/", "/cursos-ingles/"],
+      "mustAppearOn": [
+        "/",
+        "/contacto/",
+        "/cursos-ingles/",
+        "/academias-ingles-madrid/por-barrios/"
+      ],
       "source": "Danny, 2026-08-08 — replaces the 3 / 4 / 6 / 500 m spread"
     },
     {
       "fact": "adultGroupSize",
       "value": "8",
-      "mustAppearOn": ["/cursos-ingles/adultos/"],
+      "mustAppearOn": [
+        "/cursos-ingles/adultos/"
+      ],
       "source": "impulse-english.facts.md:14 — Adultos 8, confirmed by Danny 2026-08-03"
     }
   ],
-
   "schemaChecks": [
     {
       "fact": "AggregateRating.reviewCount",

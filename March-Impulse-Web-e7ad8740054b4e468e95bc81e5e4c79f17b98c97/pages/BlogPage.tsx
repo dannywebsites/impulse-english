@@ -793,15 +793,10 @@ const spokeArticles = [
     href: "/academias-ingles-madrid/certificaciones/",
     hub: null,
   },
-  {
-    id: 'academias-por-barrios',
-    title: "Academias de Inglés por Barrios en Madrid 2026",
-    excerpt: "Encuentra la mejor academia de inglés cerca de ti. Guía por zonas con precios y transporte.",
-    category: "Academias Madrid",
-    readTime: "12 min",
-    href: "/academias-ingles-madrid/por-barrios/",
-    hub: null,
-  },
+  // 2026-08-08: /academias-ingles-madrid/por-barrios/ dejó de ser un artículo. Ahora es
+  // el hub de ubicaciones (pages/hubs/UbicacionesHubPage.tsx) y se enlaza desde el
+  // footer y desde NearbyAreas, no desde el índice del blog. Listarlo aquí como
+  // "12 min de lectura" contradecía lo que la página hace.
   {
     id: 'cursos-ingles-ninos',
     title: "Cursos de Inglés para Niños en Madrid 2026",
