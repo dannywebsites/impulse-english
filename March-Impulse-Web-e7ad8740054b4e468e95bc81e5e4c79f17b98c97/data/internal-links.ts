@@ -54,7 +54,12 @@ export const internalLinkMap: Record<string, { url: string; anchorText: string }
   'Tetuán page': { url: '/academia-ingles-tetuan/', anchorText: 'academia Tetuán' },
   'Cuatro Torres page': { url: '/academia-ingles-cuatro-torres/', anchorText: 'academia Cuatro Torres' },
   'Mirasierra page': { url: '/academia-ingles-mirasierra/', anchorText: 'academia Mirasierra' },
-  'Montecarmelo Las Tablas page': { url: '/academia-ingles-montecarmelo-las-tablas/', anchorText: 'academia Montecarmelo y Las Tablas' },
+  // Kept, repointed at Las Tablas rather than deleted: resolveInternalLinks drops
+  // an unknown ref silently, so removing the key would quietly delete links from
+  // every PAA row that still names it, with nothing failing to say so.
+  'Montecarmelo Las Tablas page': { url: '/academia-ingles-las-tablas/', anchorText: 'academia Las Tablas' },
+  'Las Tablas page': { url: '/academia-ingles-las-tablas/', anchorText: 'academia Las Tablas' },
+  'Montecarmelo page': { url: '/academia-ingles-montecarmelo/', anchorText: 'academia Montecarmelo' },
 
   // Pages the map never covered, which is why the writer's refs for them resolved to
   // nothing. "Prueba de nivel gratis de 25 minutos" alone was requested 27 times — the

@@ -81,7 +81,8 @@
     { "source": "/ubicaciones/tetuan/", "destination": "/academia-ingles-tetuan/", "permanent": true },
     { "source": "/ubicaciones/cuatro-torres/", "destination": "/academia-ingles-cuatro-torres/", "permanent": true },
     { "source": "/ubicaciones/mirasierra/", "destination": "/academia-ingles-mirasierra/", "permanent": true },
-    { "source": "/ubicaciones/montecarmelo-las-tablas/", "destination": "/academia-ingles-montecarmelo-las-tablas/", "permanent": true },
+    { "source": "/ubicaciones/montecarmelo-las-tablas/", "destination": "/academia-ingles-las-tablas/", "permanent": true },
+    { "source": "/academia-ingles-montecarmelo-las-tablas/", "destination": "/academia-ingles-las-tablas/", "permanent": true },
 
     { "source": "/hello-world/", "destination": "/", "permanent": true },
     { "source": "/hello-world/feed/", "destination": "/", "permanent": true },
