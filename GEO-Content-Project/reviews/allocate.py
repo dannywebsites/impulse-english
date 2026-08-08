@@ -35,7 +35,12 @@ PAGES = [
     ("ubicaciones/LaPazPage.tsx",                "La Paz",           2, ["parent", "kids"]),
     ("ubicaciones/CuatroTorresPage.tsx",         "Cuatro Torres",    2, ["adult", "cambridge"]),
     ("ubicaciones/PlazaCastillaPage.tsx",        "Plaza Castilla",   2, ["adult", "method"]),
-    ("ubicaciones/MontecarmeloLasTablasPage.tsx", "Montecarmelo",    3, ["parent", "kids", "teens"]),
+    # 2026-08-08: the combined Montecarmelo/Las Tablas page was split in two.
+    # Renamed in place, at its original index, so the pick order of every page
+    # after it is unchanged. The matching key in allocation.json was renamed too:
+    # rename one without the other and load_pins() strands these three reviews in
+    # `pins` with no page to belong to, and they vanish from the site silently.
+    ("ubicaciones/MontecarmeloPage.tsx",         "Montecarmelo",    3, ["parent", "kids", "teens"]),
     ("ubicaciones/MirasierraPage.tsx",           "Mirasierra",       3, ["parent", "teens", "atmosphere"]),
     ("ubicaciones/PenagrandePage.tsx",           "Peñagrande",       3, ["parent", "progress", "atmosphere"]),
     # The homepage carries the most weight, so it gets its picks straight after the
@@ -54,6 +59,28 @@ PAGES = [
     ("ubicaciones/SanchinarroPage.tsx",          "Sanchinarro",       2, ["parent", "teens"]),
     ("ubicaciones/ValdezarzaPage.tsx",           "Valdezarza",        2, ["adult", "progress"]),
     ("ubicaciones/ChamartinPage.tsx",            "Chamartín",         2, ["adult", "cambridge"]),
+    # The study-abroad pages, registered 2026-08-08. They were publishing verified
+    # quotes that PAGES had never heard of, so the allocator counted those reviews
+    # as spare and offered them again: all three of Las Tablas' first picks came
+    # back already live on pages/extranjero/. Registering them is the fix — an
+    # unregistered page does not stop consuming reviews, it just stops being
+    # counted. Their current picks were seeded into allocation.json as pins, so
+    # this reserves what is live rather than reshuffling it.
+    #
+    # Antonio Pérez Blázquez is deliberately NOT reserved here. He is allocated to
+    # Montecarmelo and also appears on AnoEscolarIrlandaPage.tsx — a duplicate
+    # authorised by Danny and documented at the top of that file. That is why this
+    # entry asks for 1 and not 2.
+    ("extranjero/AnoEscolarIrlandaPage.tsx",     "Año escolar Irlanda", 1, ["parent", "kids"]),
+    ("extranjero/CanadaPage.tsx",                "Canadá",              1, ["parent", "recommend"]),
+    ("extranjero/IrlandaPage.tsx",               "Irlanda",             1, ["progress"]),
+    ("extranjero/ExtranjeroHubPage.tsx",         "Extranjero · hub",    3, ["recommend", "atmosphere", "parent"]),
+    # Las Tablas, 2026-08-08. Split out of the Montecarmelo page, which keeps its
+    # three. Appended for the same reason as the 2026-08-03 batch above: taking
+    # from what is left cannot disturb a quote already placed and verified.
+    # Themes lean adult because Las Tablas is the office-park half of the pair.
+    # Listed last so it draws only from what nothing else is already publishing.
+    ("ubicaciones/LasTablasPage.tsx",            "Las Tablas",        3, ["adult", "progress", "cambridge"]),
 ]
 
 IDEAL_MIN, IDEAL_MAX = 140, 330
