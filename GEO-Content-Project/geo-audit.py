@@ -79,6 +79,21 @@ PAGE_SETS = {
         "label": "study-abroad pages",
         "own_place_name": True,
     },
+    # Hubs, 2026-08-08. own_place_name is False because barrio_of() would read
+    # "Ubicaciones" off the filename and credit a nonsense token in score_h1.
+    #
+    # peer_glob is NOT optional. With a single file in a set, score_uniqueness
+    # finds no others, returns worst=0, and hands the page 10/10 for free — a row
+    # that cannot fail, which is this repo's documented failure mode. Comparing
+    # against the barrio pages makes the row mean something real ("the hub must
+    # not read like a barrio page"). Peers are excluded from `results`, so the 15
+    # barrio scores under --set barrios are untouched.
+    "hubs": {
+        "glob": "pages/hubs/*.tsx",
+        "label": "hub pages",
+        "own_place_name": False,
+        "peer_glob": "pages/ubicaciones/*.tsx",
+    },
 }
 
 # Spanish generic-marketing blacklist — the anti-pattern phrases that cap a score.
@@ -596,6 +611,10 @@ def main():
     if not files:
         sys.exit(f"no {pset['label']} under {root}/{pset['glob']}")
 
+    # Peers widen ONLY the uniqueness comparison. They are never scored or printed.
+    peers = [p for p in sorted(glob.glob(os.path.join(root, pset.get("peer_glob", "")))) 
+             if pset.get("peer_glob") and p not in files]
+
     srcs = {f: read(f) for f in files}
     texts = {f: strip_code(s) for f, s in srcs.items()}
     comp_srcs = {f: imported_component_sources(f, root) for f in files}
@@ -604,6 +623,8 @@ def main():
         w = WORD_RE.findall(t.lower())
         return set(tuple(w[i:i + n]) for i in range(len(w) - n + 1))
     sets = {f: shingles(t) for f, t in texts.items()}
+    for p in peers:
+        sets[p] = shingles(strip_code(read(p)))
     helper = resolve_schema_helper(root)
     astros = {f: find_astro_for(f, root) for f in files}
     astro_srcs = {f: (read(a) if a else None) for f, a in astros.items()}

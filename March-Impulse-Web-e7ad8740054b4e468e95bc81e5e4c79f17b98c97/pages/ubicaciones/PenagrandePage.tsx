@@ -12,7 +12,7 @@ import type { FAQItem } from '../../utils/schemaData';
 import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 
 const benefits = [
-  { title: "A 3 Minutos en Metro desde Peñagrande (Línea 9)", desc: "O de 3 a 5 en coche por la Av. de Peñagrande." },
+  { title: "Andando desde Peñagrande, sin coger el metro", desc: "De 10 a 15 minutos a pie por la Av. de Peñagrande. En coche, de 3 a 5." },
   { title: "Centro Oficial de Preparación Cambridge", desc: "Preparación y examen en el mismo lugar." },
   { title: "100% de Aprobados Cambridge 24/25", desc: "Metodología Impulse con resultados probados." },
   { title: "Grupos Reducidos (Máximo 7-10 Alumnos)", desc: "Atención personalizada garantizada." },
@@ -47,12 +47,12 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Cómo llego a la academia desde Peñagrande?",
-    answer: "Unos 3 minutos en la línea 9 hasta Barrio del Pilar, más 3 andando: son 500 metros por la Av. de El Ferrol hasta el número 22. Desde la estación de Peñagrande (línea 7) se llega andando en unos 8 minutos. En coche, de 3 a 5 minutos por la Av. de Peñagrande."
+    answer: "Andando. Desde Peñagrande son de 10 a 15 minutos a pie hasta Av. de El Ferrol 22, por la propia Av. de Peñagrande, y para mucha gente del barrio sale más a cuenta que bajar al metro. Tu estación es Peñagrande, en la línea 7. Si prefieres el metro, la parada de la puerta es Barrio del Pilar, en la línea 9, a cuatro minutos andando. En coche, de 3 a 5 minutos."
   },
   // Local Madrid PAAs (2)
   {
     question: "¿Clases inglés Peñagrande zona Fuencarral?",
-    answer: "Academia Impulse es accesible desde Peñagrande y Fuencarral: unos 3 minutos en la línea 9 hasta Barrio del Pilar, u 8 minutos andando desde la estación de Peñagrande (línea 7). Centro Oficial Cambridge y Linguaskill, grupos de 7 a 10 alumnos, para adultos y niños."
+    answer: "Academia Impulse es accesible desde Peñagrande y Fuencarral: de 10 a 15 minutos andando por la Av. de Peñagrande, o de 3 a 5 en coche. Tu estación es Peñagrande, en la línea 7. Centro Oficial Cambridge y Linguaskill, grupos de 7 a 10 alumnos, para adultos y niños."
   },
   {
     question: "¿Academia inglés Peñagrande con buena relación calidad-precio?",
@@ -60,7 +60,7 @@ export const localFaqs: FAQItem[] = [
   },
   {
     question: "¿Hay academias de inglés para niños cerca de Peñagrande?",
-    answer: "Sí. Al elegir academia de inglés para niños cerca de Peñagrande, valora el método (si es lúdico y adaptado a la edad), el tamaño de los grupos, y si preparan exámenes oficiales como Cambridge Young Learners. Impulse English Academy queda a unos 3 minutos en la línea 9, u 8 andando desde la estación de Peñagrande (línea 7)."
+    answer: "Sí. Al elegir academia de inglés para niños cerca de Peñagrande, valora el método (si es lúdico y adaptado a la edad), el tamaño de los grupos, y si preparan exámenes oficiales como Cambridge Young Learners. Impulse English Academy queda a 10-15 minutos andando desde Peñagrande, o de 3 a 5 en coche."
   },
   {
     question: "¿Hay academias de inglés con horario de mañana en zona norte de Madrid?",
@@ -108,7 +108,7 @@ export default function PenagrandePage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 animate-hero-fade-up animation-delay-100">
-              Academia de inglés a 3 minutos de Peñagrande
+              Academia de inglés en Peñagrande, a 10-15 minutos andando
             </h1>
             <div className="w-16 h-0.5 bg-brand-red mb-6 animate-hero-fade-up animation-delay-150"></div>
             <p className="font-display text-lg md:text-xl text-white/80 font-light leading-relaxed mb-4 animate-hero-fade-up animation-delay-200">
@@ -116,7 +116,7 @@ export default function PenagrandePage() {
             </p>
             <div className="flex items-center gap-2 text-white/60 font-display text-sm mb-2 animate-hero-fade-up animation-delay-200">
               <Train className="w-4 h-4" />
-              <span>Línea 9 · unos 3 minutos · o 3-5 en coche</span>
+              <span>Andando por la Av. de Peñagrande · o 3-5 en coche · metro Peñagrande, línea 7</span>
             </div>
             <p className="font-display text-white/50 text-sm mb-8 animate-hero-fade-up animation-delay-200">
               {NAP.fullAddress}
@@ -152,7 +152,7 @@ export default function PenagrandePage() {
       <section className="section-tight px-6 bg-white">
         <div className="container mx-auto max-w-4xl">
           <p className="text-lg text-zinc-700 leading-relaxed mb-4">
-            ¿Buscas una academia de inglés cerca de Peñagrande? Estamos en Av. de El Ferrol 22, a unos 3 minutos en la línea 9 y otros 3 andando, o de 3 a 5 minutos en coche por la Av. de Peñagrande. Grupos de 7 a 10 alumnos, desde 64 €/mes, y una prueba de nivel gratuita de 25 minutos con el director de estudios.
+            ¿Buscas una academia de inglés cerca de Peñagrande? Estamos en Av. de El Ferrol 22, a 10-15 minutos andando por la Av. de Peñagrande, o de 3 a 5 minutos en coche. Tu estación es Peñagrande, en la línea 7; la de nuestra puerta es Barrio del Pilar, en la 9. Grupos de 7 a 10 alumnos, desde 64 €/mes, y una prueba de nivel gratuita de 25 minutos con el director de estudios.
           </p>
           <p className="text-lg text-zinc-700 leading-relaxed">
             Es la distancia corta la que hace que el inglés dure todo el curso. Peñagrande está en Fuencarral-El Pardo (28029) y para muchas familias de la zona la academia queda de camino, no en un viaje aparte: se deja al niño en clase y se vuelve sin cruzar Madrid. Somos centro preparador oficial de Cambridge y centro oficial de Linguaskill, así que se prepara y se examina en el mismo sitio.

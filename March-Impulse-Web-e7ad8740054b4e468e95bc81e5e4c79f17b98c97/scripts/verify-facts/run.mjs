@@ -119,6 +119,7 @@ if (SELF_TEST) {
       'wrong metro walking time': 'Estamos a 3 minutos andando del metro de Barrio del Pilar',
       'La Vaguada walk understated': 'El centro comercial La Vaguada está a 1 min.',
       'unsourced salary statistic': 'Estadísticas muestran 15-25% aumento salarial con B2',
+      'multiple sedes claim': 'Visítanos en nuestras 10 sedes en el norte de la ciudad',
     }[rule.label];
     if (!probe) { console.error(RED(`  no probe defined for "${rule.label}" — add one`)); process.exit(1); }
     if (new RegExp(rule.pattern, 'i').test(probe)) { console.log(GREEN(`  caught  ${rule.label}`)); caught++; }

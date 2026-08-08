@@ -1334,6 +1334,52 @@ padding them to 120+ would break the format. Only real fix: the Comparativa sect
 one sentence of lead-in, now 205 words explaining how to read it and which column decides.
 Non-entry sections now average **181 words**.
 
+---
+
+## 2026-08-08 — `/academias-ingles-madrid/por-barrios/` retargeted from city-wide to barrio hub
+
+**Decision.** The locations hub stops competing for `academia de ingles madrid` and becomes a
+genuine hub for the 15 barrio pages. Slug unchanged (~40 references depend on it).
+
+**Book principle.** Maverick Method: match the page to the intent it can actually win, and do not
+let a page compete with a stronger page on your own site for the same term. This page was doing
+both — losing a head term at position 46 while outranking `/academia-ingles-barrio-del-pilar/` for
+that barrio's own name, and absorbing brand queries that belong to the homepage.
+
+**Evidence (GSC `impulse-seo-ops/data/gsc/2026-08-05/`, 28d; 90d from `2026-08-03`).**
+- The URL: 524 impr / **2 clicks** / pos **29.69** (90d: 2,127 impr / 6 clicks / pos 20.67 — **0.28% CTR**)
+- Its head terms: `academia de ingles madrid` **46.12** · `…en madrid` **40.77** · `academias de ingles en madrid` **44.16** · `academias ingles madrid` **52.74** · `academia ingles madrid` **62.61**
+- DataForSEO: `academia de ingles madrid` **880/mo**, competition index **82**, CPC **€7.04**, Sept peak 2,400
+- Brand leakage: `impulse english academy` 34 impr @ **1.47** landing here, not on the homepage
+- Self-cannibalisation: `academia de ingles barrio del pilar` here at pos **34**
+- Rejected target `madrid norte`: only **10/mo**, and the homepage already ranks **1–10**; five URLs already contest it
+
+**BASELINE TO MEASURE AGAINST — recorded before the change ships.** Re-check at 8 weeks:
+
+| Metric | 2026-08-08 baseline |
+|---|---|
+| This URL, impressions (28d) | 524 |
+| This URL, clicks (28d) | 2 |
+| This URL, position | 29.69 |
+| This URL, CTR | 0.38% |
+| Whole `/academias-ingles-madrid/` cluster | 5,523 impr / 9 clicks / **0.16% CTR** |
+| Homepage pos, `academia de ingles madrid` | 39.85 (page-level avg) |
+
+**Impressions on this URL are expected to FALL, possibly by half. That is the intended outcome,
+not a regression** — they sit at positions 40–62 where nobody sees them. Judge this change on CTR,
+on aggregate clicks to the 15 `/academia-ingles-*/` pages, and on whether brand queries return to
+the homepage.
+
+**Also fixed:** competitor names (International House, British Council) removed from our own page;
+invented statistics removed (including a "78% de opositores" figure pasted from an unrelated
+oposiciones brief); the hero's false "nuestras 10 sedes" claim replaced — there is one centre.
+
+**Gap closed:** the page was covered by **no gate at all**. It is now in `verify:design`
+(`pages/hubs` added to `PAGE_DIRS`), `verify:facts` (route + a new `multiple sedes claim` retired
+rule) and `geo-audit --set hubs`.
+
+**Out of scope, still open:** the other four pages in the cluster (parent at position **60.65**)
+are the same shape and share the 0.16% CTR.
 ### Amendment 2 (2026-08-08) — rebuilt on the updated writer; consolidated to ONE URL.
 
 **One page, not two.** The guide version and the listicle had been sitting at

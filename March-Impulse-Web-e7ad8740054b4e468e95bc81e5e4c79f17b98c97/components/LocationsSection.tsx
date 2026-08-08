@@ -4,13 +4,19 @@ import { NAP } from '../utils/napData';
 import { BARRIO_AREAS } from '../utils/barrioAreas';
 import WhatsAppIcon from './icons/WhatsAppIcon';
 
-export default function LocationsSection() {
+// Se renderiza en DOS páginas: la home y el hub de ubicaciones
+// (/academias-ingles-madrid/por-barrios/). Cualquier cambio aquí toca las dos.
+// `showHubLink={false}` lo usa el hub para no enlazarse a sí mismo.
+export default function LocationsSection({ showHubLink = true }: { showHubLink?: boolean } = {}) {
   const areas = BARRIO_AREAS;
 
   // Rutas reales hasta Av. de El Ferrol, 22. Cada barrio se enlaza una sola vez
   // en todo el bloque para no sobrecargar de enlaces internos.
   const metroRoutes = [
-    { from: "Peñagrande", line: "L9", time: "Línea directa", href: "/academia-ingles-penagrande/" },
+    // 2026-08-08, Danny: Peñagrande es la línea 7, no la 9, y desde su estación son
+    // 10-15 minutos andando. Estuvo publicado como "línea 9 · 3 minutos" en varios
+    // sitios a la vez, así que se corroboraba solo.
+    { from: "Peñagrande", line: "L7", time: "10-15 min andando", href: "/academia-ingles-penagrande/" },
     { from: "Mirasierra", line: "L9", time: "Línea directa", href: "/academia-ingles-mirasierra/" },
     { from: "Herrera Oria", line: "L9", time: "Línea directa", href: null },
     { from: "Montecarmelo", line: "L9", time: "Línea directa", href: "/academia-ingles-montecarmelo/" },
@@ -154,11 +160,13 @@ export default function LocationsSection() {
                 </a>
               ))}
             </div>
-            <div className="mt-4 text-center">
-              <a href="/academias-ingles-madrid/por-barrios/" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
-                Ver todas las ubicaciones <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
+            {showHubLink && (
+              <div className="mt-4 text-center">
+                <a href="/academias-ingles-madrid/por-barrios/" className="text-accent-blue hover:underline text-sm font-medium inline-flex items-center gap-1">
+                  Ver todas las ubicaciones <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            )}
 
             <div className="mt-8 p-4 bg-accent-blue/5 rounded-lg border border-accent-blue/10">
               <p className="text-sm text-accent-blue font-medium">
