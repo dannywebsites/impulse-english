@@ -185,6 +185,7 @@ export default function Footer({ variant = 'full' }: FooterProps) {
               <li><a href="/preguntas-frecuentes/" className={FOOTER_LINK}>Preguntas Frecuentes</a></li>
               <li><a href="/blog/" className={FOOTER_LINK}>Blog</a></li>
               <li><a href="/blog/todos/" className={FOOTER_LINK}>Todos los artículos</a></li>
+              <li><a href="/aprende-ingles/" className={FOOTER_LINK}>Aprender inglés gratis</a></li>
             </ul>
           </div>
 

@@ -47,7 +47,20 @@ const navItems: NavItem[] = [
   },
   { label: "Nosotros", href: "/sobre-nosotros/" },
   { label: "Testimonios", href: "/testimonios/" },
-  { label: "Blog", href: "/blog/" },
+  // Blog becomes a dropdown rather than gaining a ninth top-level item, for the reason
+  // given above: the desktop row only fits from xl: as it is. The label is unchanged, so
+  // the row grows by one chevron and nothing else. /blog/ keeps its sitewide link
+  // through the first child — a dropdown parent renders as a <button>, not an <a>, so
+  // dropping the child would silently remove /blog/ from the navigation entirely.
+  // The children are in the static HTML (the dropdown is hidden with opacity/invisible,
+  // not conditionally rendered), so both links are crawlable.
+  {
+    label: "Blog",
+    children: [
+      { label: "Todos los artículos", href: "/blog/", description: "Cambridge, Linguaskill, precios y niveles" },
+      { label: "Aprender inglés", href: "/aprende-ingles/", description: "Recursos gratis: vocabulario, gramática y pronunciación" },
+    ]
+  },
   { label: "Contacto", href: "/contacto/" }
 ];
 
