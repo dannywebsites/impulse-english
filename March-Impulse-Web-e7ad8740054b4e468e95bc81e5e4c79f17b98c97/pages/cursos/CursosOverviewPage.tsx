@@ -72,7 +72,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Cómo se llega en metro y cuánto se tarda?",
-    answer: "Metro Barrio del Pilar (Línea 9) está a 3 minutos andando. Peñagrande y Herrera Oria, en la Línea 7, dejan también a poca distancia."
+    answer: "Metro Barrio del Pilar (Línea 9) está a 4 minutos andando. Peñagrande y Herrera Oria, en la Línea 7, dejan también a poca distancia."
   },
   {
     question: "¿Desde qué barrios vienen las familias?",
@@ -80,7 +80,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Hay parada de autobús cerca del centro?",
-    answer: "Los autobuses 147, 42 y 83 tienen parada en Ginzo de Limia - Ferrol, a 1 minuto de la academia."
+    answer: "Los autobuses 147, 42 y 83 tienen parada en Ginzo de Limia - Ferrol, en la propia calle de la academia."
   },
   {
     question: "¿Qué cursos de inglés ofrecéis?",

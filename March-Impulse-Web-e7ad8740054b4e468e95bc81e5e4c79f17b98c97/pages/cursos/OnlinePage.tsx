@@ -36,7 +36,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Cuánto se tarda hasta la academia si un día quiero ir?",
-    answer: "Metro Barrio del Pilar (Línea 9) deja a 3 minutos andando, y los buses 147, 42 y 83 paran a 1 minuto, en Ginzo de Limia - Ferrol."
+    answer: "Metro Barrio del Pilar (Línea 9) deja a 4 minutos andando, y los buses 147, 42 y 83 paran en Ginzo de Limia - Ferrol, en la propia calle de la academia."
   },
   {
     question: "¿Hay alumnos online fuera de Madrid o del barrio?",

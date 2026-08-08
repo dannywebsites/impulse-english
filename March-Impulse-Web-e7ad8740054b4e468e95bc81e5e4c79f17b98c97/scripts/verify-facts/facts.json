@@ -48,6 +48,18 @@
       "ignoreInAltText": true
     },
     {
+      "pattern": "[3356]\\s*min(?:utos?)?\\.?\\s*(?:andando|a pie|caminando)?\\s*(?:del|de la|desde el|desde la)?\\s*[Mm]etro|(?:a|en)\\s*(?:solo\\s*)?500\\s*metros",
+      "label": "wrong metro walking time",
+      "why": "Danny confirmed 4 minutos on 2026-08-08. The site had published 3, 4, 6 and '500 metros' for the same walk — three of them on the homepage alone. Any figure other than 4 is stale.",
+      "instead": "a 4 minutos andando del metro Barrio del Pilar (Línea 9)"
+    },
+    {
+      "pattern": "La Vaguada (?:est[áa]|es cosa de|,)?\\s*(?:a|de)?\\s*1 min",
+      "label": "La Vaguada walk understated",
+      "why": "Danny corrected this to 5+ minutos on 2026-08-08. '1 minuto' from a centre that size reads as a stretch to anyone who knows the area — and it was internally consistent across three pages, so no cross-check could catch it. Only he could.",
+      "instead": "a unos 5 minutos andando del centro comercial La Vaguada"
+    },
+    {
       "pattern": "15\\s*-\\s*25\\s*%[^.]{0,40}salarial",
       "label": "unsourced salary statistic",
       "why": "AWAITING SOURCE from Danny (2026-08-08). 'Estadísticas muestran' cited nothing and the '1000-1500 €' investment band is not a published Impulse price. Delete this entry once the citation lands.",
@@ -105,6 +117,12 @@
       "value": "604 910 611",
       "mustAppearOn": ["/contacto/"],
       "source": "utils/napData.ts phone"
+    },
+    {
+      "fact": "metroWalkTime",
+      "value": "4 minutos",
+      "mustAppearOn": ["/", "/contacto/", "/cursos-ingles/"],
+      "source": "Danny, 2026-08-08 — replaces the 3 / 4 / 6 / 500 m spread"
     },
     {
       "fact": "adultGroupSize",

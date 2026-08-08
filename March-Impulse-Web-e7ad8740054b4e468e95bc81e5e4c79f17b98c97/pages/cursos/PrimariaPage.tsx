@@ -33,11 +33,11 @@ export const courseSchema = generateCourseSchema({
 export const faqs: FAQItem[] = [
   {
     question: "¿Dónde está el centro y qué metro me deja cerca?",
-    answer: "En Av. de El Ferrol, 22, al lado del centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) queda a 3 minutos andando."
+    answer: "En Av. de El Ferrol, 22, al lado del centro comercial La Vaguada. Metro Barrio del Pilar (Línea 9) queda a 4 minutos andando."
   },
   {
     question: "¿Cuánto se tarda desde los colegios de la zona?",
-    answer: "Desde los colegios de Barrio del Pilar y La Vaguada, entre 5 y 10 minutos andando. Por eso los grupos de primaria empiezan a media tarde, al salir de clase."
+    answer: "Desde los colegios de Barrio del Pilar y La Vaguada se viene andando. Por eso los grupos de primaria empiezan a media tarde, al salir de clase."
   },
   {
     question: "¿Desde qué barrios vienen los niños de primaria?",
@@ -45,7 +45,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "¿Qué autobús para cerca de la academia?",
-    answer: "Los buses 147, 42 y 83, en la parada Ginzo de Limia - Ferrol, a 1 minuto de la puerta."
+    answer: "Los buses 147, 42 y 83, en la parada Ginzo de Limia - Ferrol, en la propia calle de la academia."
   },
   {
     question: "¿Cómo sé qué nivel tiene mi hijo?",
