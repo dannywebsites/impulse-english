@@ -29,8 +29,15 @@ import argparse, difflib, glob, json, os, re, sys, unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REVIEWS = os.path.join(HERE, "reviews.json")
-SITE = ("/Users/danny/Desktop/backup website Impuls Englisch /"
-        "March-Impulse-Web-e7ad8740054b4e468e95bc81e5e4c79f17b98c97")
+# The default is the main checkout. It is only a default: `--dir` exists because
+# a hard-coded absolute path turns this gate into a false negative the moment you
+# run it from a git worktree — it happily scans the OTHER tree, reports the same
+# quote count as before, and reads exactly like a pass. That is how a split that
+# added three quotes came back showing no change at all. geo-audit.py already
+# takes --dir; this now matches it. Same reason `main()` prints the tree it read.
+DEFAULT_SITE = ("/Users/danny/Desktop/backup website Impuls Englisch /"
+                "March-Impulse-Web-e7ad8740054b4e468e95bc81e5e4c79f17b98c97")
+SITE = DEFAULT_SITE
 
 APPROVED_TEACHERS = {"jp", "j.p", "j.p.", "pj", "danny", "dani", "daniel", "fitzpatrick"}
 # People named in real reviews who are NOT in the approved set. Publishing a
@@ -200,7 +207,16 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--page", help="check a single page file")
     ap.add_argument("--dist", action="store_true", help="also scan built HTML")
+    ap.add_argument("--dir", default=DEFAULT_SITE,
+                    help="site root to scan; pass a worktree path when working outside the main checkout")
     a = ap.parse_args()
+
+    global SITE, DIST
+    SITE = a.dir
+    DIST = os.path.join(SITE, "dist")
+    # Say which tree was read. A gate that does not name its input is one rename
+    # away from certifying a directory nobody is working in.
+    print("scanning %s" % SITE)
 
     doc, by_author = load_reviews()
     files = []
